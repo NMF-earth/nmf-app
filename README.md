@@ -24,6 +24,18 @@ $ yarn ios | yarn android
 
 - Typescript is used in the project for typechecking and should be configured in your [editor](https://github.com/Microsoft/TypeScript/wiki/TypeScript-Editor-Support).
 
+You can also check this manually by running:
+
+```sh
+yarn lint
+```
+
+or 
+
+```sh
+yarn typescript
+```
+
 ### 🛠 Testing
 
 Use the following command to run unit tests with coverage:
