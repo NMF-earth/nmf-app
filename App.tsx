@@ -4,8 +4,15 @@ import * as Font from "expo-font";
 import React, { useState } from "react";
 import { Platform, StatusBar, StyleSheet, View } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+import * as Sentry from "sentry-expo";
 
 import AppNavigator from "./app/navigation/AppNavigator";
+
+Sentry.init({
+  dsn: "https://9bf816b68cfd4c2a8f44189cdfdfcdb4@sentry.io/1833935",
+  enableInExpoDevelopment: true,
+  debug: true
+});
 
 export default function App(props) {
   const [isLoadingComplete, setLoadingComplete] = useState(false);
