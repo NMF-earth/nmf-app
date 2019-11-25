@@ -325,6 +325,7 @@ typings/
 ## Various settings
 
 ## Other
+ios/Pods/*
 
 ### Xcode Patch ###
 *.xcodeproj/*
