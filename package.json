@@ -6,10 +6,18 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject",
-    "test": "jest --watchAll"
+    "test:watch": "jest --watchAll",
+    "test": "jest --coverage",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx ./app",
+    "typescript": "tsc --noEmit",
+    "ci": "yarn lint && yarn typescript && yarn test"
   },
   "jest": {
-    "preset": "jest-expo"
+    "preset": "jest-expo",
+    "collectCoverageFrom": [
+      "app/**/*.(js|jsx|ts|tsx)"
+    ],
+    "collectCoverage": true
   },
   "dependencies": {
     "@expo/vector-icons": "10.0.3",
@@ -33,10 +41,19 @@
     "redux": "4.0.4",
     "redux-persist": "6.0.0",
     "redux-thunk": "2.3.0",
-    "sentry-expo": "2.0.1"
+    "sentry-expo": "2.0.1",
+    "typescript": "^3.7.2"
   },
   "devDependencies": {
+    "@types/jest": "^24.0.23",
+    "@types/react": "^16.9.13",
+    "@types/react-native": "^0.60.23",
+    "@typescript-eslint/eslint-plugin": "^2.8.0",
+    "@typescript-eslint/parser": "^2.8.0",
     "babel-preset-expo": "7.0.0",
+    "eslint": "^6.7.1",
+    "eslint-plugin-jest": "^23.0.4",
+    "eslint-plugin-react": "^7.16.0",
     "jest-expo": "35.0.0"
   },
   "private": true
