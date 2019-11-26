@@ -1,5 +1,7 @@
 ## 🌱 React Native app for Not My Fault.
 
+![](https://github.com/NotMyFaultEarth/nmf-app/workflows/Test%20CI/badge.svg)
+
 Source code repository for the Not My Fault React Native application.
 
 ### 📦 Getting started
