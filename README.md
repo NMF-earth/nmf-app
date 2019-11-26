@@ -21,6 +21,12 @@ For starting the app on a specfic OS:
 $ yarn ios | yarn android
 ```
 
+Copy the 2 files that contains secrets and replace them with yours
+```
+$ cp app.example.json app.json
+$ cp secret.example.ts secret.ts
+```
+
 ### 👩🏾‍💻 Development
 - Eslint is used in the project to enforce code style and should be configured in your [editor](https://eslint.org/docs/user-guide/integrations).
 
