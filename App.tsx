@@ -5,33 +5,60 @@ import React, { useState } from "react";
 import { Platform, StatusBar, StyleSheet, View } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import * as Sentry from "sentry-expo";
-
+import Constants from "expo-constants";
 import AppNavigator from "./app/navigation/AppNavigator";
+import secret from "./secret";
 
+/* TODO: change secret.dsn to Constants.manifest.extra.sentryPublicDsn */
 Sentry.init({
-  dsn: "https://9bf816b68cfd4c2a8f44189cdfdfcdb4@sentry.io/1833935",
-  enableInExpoDevelopment: true,
+  dsn: secret.dsn,
+  enableInExpoDevelopment: false,
   debug: true
 });
 
-export default function App(props) {
-  const [isLoadingComplete, setLoadingComplete] = useState(false);
+/* TODO: set Constants.manifest.revisionId with expo */
+Sentry.setRelease(Constants.manifest.revisionId);
 
-  if (!isLoadingComplete && !props.skipLoadingScreen) {
-    return (
-      <AppLoading
-        startAsync={loadResourcesAsync}
-        onError={handleLoadingError}
-        onFinish={() => handleFinishLoading(setLoadingComplete)}
-      />
-    );
-  } else {
-    return (
-      <View style={styles.container}>
-        {Platform.OS === "ios" && <StatusBar barStyle="default" />}
-        <AppNavigator />
-      </View>
-    );
+interface IProps {
+  skipLoadingScreen: boolean;
+}
+interface IState {
+  isLoadingComplete: boolean;
+}
+
+export default class App extends React.Component<IProps, IState> {
+  constructor(props: IProps) {
+    super(props);
+    this.state = {
+      isLoadingComplete: false
+    };
+  }
+  componentDidCatch(error: Error) {
+    /* TODO: add more params for better error reporting */
+    Sentry.captureException(error);
+  }
+
+  render() {
+    if (!this.state.isLoadingComplete && !this.props.skipLoadingScreen) {
+      return (
+        <AppLoading
+          startAsync={loadResourcesAsync}
+          onError={handleLoadingError}
+          onFinish={() =>
+            handleFinishLoading(() => {
+              this.setState({ isLoadingComplete: true });
+            })
+          }
+        />
+      );
+    } else {
+      return (
+        <View style={styles.container}>
+          {Platform.OS === "ios" && <StatusBar barStyle="default" />}
+          <AppNavigator />
+        </View>
+      );
+    }
   }
 }
 

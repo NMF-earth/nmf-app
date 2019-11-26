@@ -314,28 +314,6 @@ typings/
 # dotenv environment variables file
 .env
 
-
-### Xcode ###
-# Xcode
-#
-# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
-
-## Build generated
-
-## Various settings
-
-## Other
-ios/Pods/*
-
-### Xcode Patch ###
-*.xcodeproj/*
-!*.xcodeproj/project.pbxproj
-!*.xcodeproj/xcshareddata/
-!*.xcworkspace/contents.xcworkspacedata
-/*.gcno
-
-# End of https://www.gitignore.io/api/reactnative,intellij,android,osx,xcode
-
-node_modules/**/*
-.expo/*
-npm-debug.*
+# hidden files with tokens
+secret.ts
+app.json

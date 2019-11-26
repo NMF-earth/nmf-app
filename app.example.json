@@ -25,9 +25,9 @@
         {
           "file": "sentry-expo/upload-sourcemaps",
           "config": {
-            "organization": "nmf",
-            "project": "not-my-fault-earth",
-            "authToken": "ea4a0c08671e4f3dae6f45475c15a5fb5c70c9245e3445f3bb279ee851e3defa"
+            "organization": null,
+            "project": null,
+            "authToken": null
           }
         }
       ]
