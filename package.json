@@ -22,11 +22,14 @@
   "dependencies": {
     "@expo/vector-icons": "10.0.3",
     "@reduxjs/toolkit": "1.0.4",
+    "@types/i18n-js": "^3.0.1",
     "expo": "35.0.0",
     "expo-asset": "7.0.0",
     "expo-constants": "7.0.0",
     "expo-font": "7.0.0",
+    "expo-localization": "^7.0.0",
     "expo-web-browser": "7.0.0",
+    "i18n-js": "^3.5.0",
     "moment": "2.24.0",
     "ramda": "0.26.1",
     "react": "16.8.3",
@@ -45,11 +48,11 @@
     "typescript": "3.7.2"
   },
   "devDependencies": {
+    "@types/jest": "24.0.23",
     "@types/node": "12.12.14",
     "@types/react": "16.9.13",
     "@types/react-dom": "16.9.4",
     "@types/react-native": "0.60.23",
-    "@types/jest": "24.0.23",
     "@typescript-eslint/eslint-plugin": "2.8.0",
     "@typescript-eslint/parser": "2.8.0",
     "babel-preset-expo": "7.0.0",

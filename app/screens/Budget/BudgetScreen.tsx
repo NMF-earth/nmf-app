@@ -1,15 +1,6 @@
 import React from "react";
 import { ScrollView, StyleSheet } from "react-native";
-
-export default function BudgetScreen() {
-  // throw new Error("My first Sentry error!");
-
-  return <ScrollView style={styles.container}></ScrollView>;
-}
-
-BudgetScreen.navigationOptions = {
-  title: "Budget"
-};
+import { t } from "../../utils/i18n";
 
 const styles = StyleSheet.create({
   container: {
@@ -18,3 +9,12 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff"
   }
 });
+
+export default function BudgetScreen(): React.ReactElement {
+  return <ScrollView style={styles.container}></ScrollView>;
+}
+
+BudgetScreen.navigationOptions = {
+  title: t("budget")
+};
+

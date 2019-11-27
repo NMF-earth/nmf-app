@@ -1,13 +1,7 @@
 import React from "react";
 import { ScrollView, StyleSheet } from "react-native";
 
-export default function ActScreen() {
-  return <ScrollView style={styles.container}></ScrollView>;
-}
-
-ActScreen.navigationOptions = {
-  title: "Act"
-};
+import { t } from "../../utils/i18n"
 
 const styles = StyleSheet.create({
   container: {
@@ -16,3 +10,11 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff"
   }
 });
+
+export default function ActScreen(): React.ReactElement {
+  return <ScrollView style={styles.container}></ScrollView>;
+}
+
+ActScreen.navigationOptions = {
+  title: t("act")
+};

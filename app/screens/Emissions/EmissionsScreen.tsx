@@ -1,13 +1,6 @@
 import React from "react";
 import { ScrollView, StyleSheet } from "react-native";
-
-export default function EmissionsScreen() {
-  return <ScrollView style={styles.container}></ScrollView>;
-}
-
-EmissionsScreen.navigationOptions = {
-  title: "Emissions"
-};
+import { t } from "../../utils/i18n";
 
 const styles = StyleSheet.create({
   container: {
@@ -16,3 +9,12 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff"
   }
 });
+
+export default function EmissionsScreen(): React.ReactElement {
+  return <ScrollView style={styles.container}></ScrollView>;
+}
+
+EmissionsScreen.navigationOptions = {
+  title: t("emissions")
+};
+
