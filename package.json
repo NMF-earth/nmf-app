@@ -16,8 +16,7 @@
     "preset": "jest-expo",
     "collectCoverageFrom": [
       "app/**/*.(js|jsx|ts|tsx)"
-    ],
-    "collectCoverage": true
+    ]
   },
   "dependencies": {
     "@expo/vector-icons": "10.0.3",

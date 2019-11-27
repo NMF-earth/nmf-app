@@ -15,6 +15,11 @@ i18n.locale = Localization.locale
  * t('act') // Act
  * t('monthlyEmissionNumber', { co2: '100kg' }) // Your emissions this month 100kg
  **/
-export function t(key: keyof TranslationKeys, values?: { [id: string]: string }): string {
-  return values ? i18n.t(key, values) : i18n.t(key);
+export function t(
+  key: keyof TranslationKeys, 
+  values?: { [id: string]: string }
+): string {
+  return values 
+    ? i18n.t(key, values) 
+    : i18n.t(key);
 }
