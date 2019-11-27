@@ -3,6 +3,7 @@ import { Text } from "react-native";
 
 interface Props {
   style?: any,
+  children: string | React.ReactElement,
 }
 
 export function MonoText(props: Props) {
