@@ -16,5 +16,5 @@ export default function ActScreen(): React.ReactElement {
 }
 
 ActScreen.navigationOptions = {
-  title: t("act")
+  title: t("ACT")
 };

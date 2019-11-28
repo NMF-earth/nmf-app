@@ -1,8 +1,8 @@
 export interface TranslationKeys {
-  act: string;
-  budget: string;
-  settings: string;
-  emissions: string;
+  ACT: string;
+  BUDGET: string;
+  SETTINGS: string;
+  EMISSIONS: string;
 }
 
 export { default as en } from "./en";

@@ -26,7 +26,7 @@ const ActStack = createStackNavigator(
 );
 
 ActStack.navigationOptions = {
-  tabBarLabel: t("act"),
+  tabBarLabel: t("ACT"),
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
@@ -49,7 +49,7 @@ const BudgetStack = createStackNavigator(
 );
 
 BudgetStack.navigationOptions = {
-  tabBarLabel: t("budget"),
+  tabBarLabel: t("BUDGET"),
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
@@ -68,7 +68,7 @@ const SettingsStack = createStackNavigator(
 );
 
 SettingsStack.navigationOptions = {
-  tabBarLabel: t("settings"),
+  tabBarLabel: t("SETTINGS"),
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
@@ -87,7 +87,7 @@ const EmissionsStack = createStackNavigator(
 );
 
 EmissionsStack.navigationOptions = {
-  tabBarLabel: t("emissions"),
+  tabBarLabel: t("EMISSIONS"),
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}

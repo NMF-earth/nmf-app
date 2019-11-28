@@ -1,6 +1,6 @@
 export default {
-  act: "Tu was",
-  budget: "Budget",
-  settings: "Einstellungen",
-  emissions: "Emissionen",
+  ACT: "Tu was",
+  BUDGET: "Budget",
+  SETTINGS: "Einstellungen",
+  EMISSIONS: "Emissionen",
 }

@@ -1,6 +1,6 @@
 export default {
-  act: "Act",
-  budget: "Budget",
-  settings: "Settings",
-  emissions: "Emissions",
+  ACT: "Act",
+  BUDGET: "Budget",
+  SETTINGS: "Settings",
+  EMISSIONS: "Emissions",
 }

@@ -10,11 +10,11 @@ const styles = StyleSheet.create({
   }
 });
 
-export default function SettingsScreen() {
+export default function SettingsScreen(): React.ReactElement {
   return <ScrollView style={styles.container}></ScrollView>;
 }
 
 SettingsScreen.navigationOptions = {
-  title: t("settings")
+  title: t("SETTINGS")
 };
 

@@ -15,6 +15,6 @@ export default function BudgetScreen(): React.ReactElement {
 }
 
 BudgetScreen.navigationOptions = {
-  title: t("budget")
+  title: t("BUDGET")
 };
 
