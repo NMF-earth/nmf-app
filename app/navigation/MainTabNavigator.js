@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"; 
 import { Platform } from "react-native";
 import {
   createStackNavigator,
@@ -10,6 +10,8 @@ import ActScreen from "../screens/Act";
 import BudgetScreen from "../screens/Budget";
 import EmissionsScreen from "../screens/Emissions";
 import SettingsScreen from "../screens/Settings";
+
+import { t } from "../utils/i18n";
 
 const config = Platform.select({
   web: { headerMode: "screen" },
@@ -24,7 +26,7 @@ const ActStack = createStackNavigator(
 );
 
 ActStack.navigationOptions = {
-  tabBarLabel: "Act",
+  tabBarLabel: t("ACT"),
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
@@ -47,7 +49,7 @@ const BudgetStack = createStackNavigator(
 );
 
 BudgetStack.navigationOptions = {
-  tabBarLabel: "Budget",
+  tabBarLabel: t("BUDGET"),
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
@@ -66,7 +68,7 @@ const SettingsStack = createStackNavigator(
 );
 
 SettingsStack.navigationOptions = {
-  tabBarLabel: "Settings",
+  tabBarLabel: t("SETTINGS"),
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
@@ -85,7 +87,7 @@ const EmissionsStack = createStackNavigator(
 );
 
 EmissionsStack.navigationOptions = {
-  tabBarLabel: "Emissions",
+  tabBarLabel: t("EMISSIONS"),
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}

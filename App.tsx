@@ -7,7 +7,8 @@ import { Ionicons } from "@expo/vector-icons";
 import * as Sentry from "sentry-expo";
 import Constants from "expo-constants";
 import AppNavigator from "./app/navigation/AppNavigator";
-import secret from "./secret";
+
+const secret = require("./secret.ts").default || require("./secret.example.ts").default;
 
 /* TODO: change secret.dsn to Constants.manifest.extra.sentryPublicDsn */
 Sentry.init({
