@@ -17,17 +17,9 @@ import colors from "../style/colors";
 
 import { t } from "../utils/i18n";
 
-const config = Platform.select({
-  web: { headerMode: "screen" },
-  default: {}
+const ActStack = createStackNavigator({
+  Act: ActScreen
 });
-
-const ActStack = createStackNavigator(
-  {
-    Act: ActScreen
-  },
-  config
-);
 
 ActStack.navigationOptions = {
   tabBarLabel: ({ focused }) => (
@@ -40,14 +32,9 @@ ActStack.navigationOptions = {
   )
 };
 
-ActStack.path = "act";
-
-const BudgetStack = createStackNavigator(
-  {
-    Budget: BudgetScreen
-  },
-  config
-);
+const BudgetStack = createStackNavigator({
+  Budget: BudgetScreen
+});
 
 BudgetStack.navigationOptions = {
   tabBarLabel: ({ focused }) => (
@@ -60,14 +47,9 @@ BudgetStack.navigationOptions = {
   )
 };
 
-BudgetStack.path = "budget";
-
-const SettingsStack = createStackNavigator(
-  {
-    Settings: SettingsScreen
-  },
-  config
-);
+const SettingsStack = createStackNavigator({
+  Settings: SettingsScreen
+});
 
 SettingsStack.navigationOptions = {
   tabBarLabel: ({ focused }) => (
@@ -78,14 +60,9 @@ SettingsStack.navigationOptions = {
   tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name={"md-hand"} />
 };
 
-SettingsStack.path = "settings";
-
-const EmissionsStack = createStackNavigator(
-  {
-    Emissions: EmissionsScreen
-  },
-  config
-);
+const EmissionsStack = createStackNavigator({
+  Emissions: EmissionsScreen
+});
 
 EmissionsStack.navigationOptions = {
   tabBarLabel: ({ focused }) => (
@@ -97,8 +74,6 @@ EmissionsStack.navigationOptions = {
     <TabBarIcon focused={focused} name={"md-switch"} />
   )
 };
-
-EmissionsStack.path = "emissions";
 
 const tabNavigator = createBottomTabNavigator(
   {
@@ -116,7 +91,5 @@ const tabNavigator = createBottomTabNavigator(
     }
   }
 );
-
-tabNavigator.path = "";
 
 export default tabNavigator;
