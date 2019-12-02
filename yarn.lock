@@ -2982,7 +2982,7 @@ expo-file-system@~7.0.0:
   dependencies:
     uuid-js "^0.7.5"
 
-expo-font@7.0.0, expo-font@~7.0.0:
+expo-font@~7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/expo-font/-/expo-font-7.0.0.tgz#0b36f5c91a77eb718fb20559b2c0c58d762ba535"
   integrity sha512-OVlUydfexjq1u57Xlymcx5egfFF2WZ5MXkg3GGjHyiSMfp09inZ7OzAu+O/TXjxjlaq9d6vBXiwVxqQoUIlx1Q==

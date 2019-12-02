@@ -1,4 +1,4 @@
-import React from "react"; 
+import React from "react";
 import { Platform } from "react-native";
 import {
   createStackNavigator,
@@ -6,10 +6,14 @@ import {
 } from "react-navigation";
 
 import TabBarIcon from "../components/TabBarIcon";
+import MonoText from "../components/atoms";
+
 import ActScreen from "../screens/Act";
 import BudgetScreen from "../screens/Budget";
 import EmissionsScreen from "../screens/Emissions";
 import SettingsScreen from "../screens/Settings";
+
+import colors from "../style/colors";
 
 import { t } from "../utils/i18n";
 
@@ -26,16 +30,13 @@ const ActStack = createStackNavigator(
 );
 
 ActStack.navigationOptions = {
-  tabBarLabel: t("ACT"),
+  tabBarLabel: ({ focused }) => (
+    <MonoText style={{ color: focused ? colors.linkGreen : colors.swordGray }}>
+      {t("ACT")}
+    </MonoText>
+  ),
   tabBarIcon: ({ focused }) => (
-    <TabBarIcon
-      focused={focused}
-      name={
-        Platform.OS === "ios"
-          ? `ios-information-circle${focused ? "" : "-outline"}`
-          : "md-information-circle"
-      }
-    />
+    <TabBarIcon focused={focused} name={"md-calculator"} />
   )
 };
 
@@ -49,12 +50,13 @@ const BudgetStack = createStackNavigator(
 );
 
 BudgetStack.navigationOptions = {
-  tabBarLabel: t("BUDGET"),
+  tabBarLabel: ({ focused }) => (
+    <MonoText style={{ color: focused ? colors.linkGreen : colors.swordGray }}>
+      {t("BUDGET")}
+    </MonoText>
+  ),
   tabBarIcon: ({ focused }) => (
-    <TabBarIcon
-      focused={focused}
-      name={Platform.OS === "ios" ? "ios-link" : "md-link"}
-    />
+    <TabBarIcon focused={focused} name={"md-stats"} />
   )
 };
 
@@ -68,13 +70,12 @@ const SettingsStack = createStackNavigator(
 );
 
 SettingsStack.navigationOptions = {
-  tabBarLabel: t("SETTINGS"),
-  tabBarIcon: ({ focused }) => (
-    <TabBarIcon
-      focused={focused}
-      name={Platform.OS === "ios" ? "ios-options" : "md-options"}
-    />
-  )
+  tabBarLabel: ({ focused }) => (
+    <MonoText style={{ color: focused ? colors.linkGreen : colors.swordGray }}>
+      {t("SETTINGS")}
+    </MonoText>
+  ),
+  tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name={"md-hand"} />
 };
 
 SettingsStack.path = "settings";
@@ -87,23 +88,34 @@ const EmissionsStack = createStackNavigator(
 );
 
 EmissionsStack.navigationOptions = {
-  tabBarLabel: t("EMISSIONS"),
+  tabBarLabel: ({ focused }) => (
+    <MonoText style={{ color: focused ? colors.linkGreen : colors.swordGray }}>
+      {t("EMISSIONS")}
+    </MonoText>
+  ),
   tabBarIcon: ({ focused }) => (
-    <TabBarIcon
-      focused={focused}
-      name={Platform.OS === "ios" ? "ios-options" : "md-options"}
-    />
+    <TabBarIcon focused={focused} name={"md-switch"} />
   )
 };
 
 EmissionsStack.path = "emissions";
 
-const tabNavigator = createBottomTabNavigator({
-  ActStack,
-  BudgetStack,
-  SettingsStack,
-  EmissionsStack
-});
+const tabNavigator = createBottomTabNavigator(
+  {
+    ActStack,
+    BudgetStack,
+    SettingsStack,
+    EmissionsStack
+  },
+  {
+    tabBarOptions: {
+      style: {
+        backgroundColor: "#EDF7F1",
+        borderTopWidth: 0
+      }
+    }
+  }
+);
 
 tabNavigator.path = "";
 

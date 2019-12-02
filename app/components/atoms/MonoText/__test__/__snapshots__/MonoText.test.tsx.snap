@@ -6,7 +6,8 @@ exports[`renders correctly 1`] = `
     Array [
       undefined,
       Object {
-        "fontFamily": "space-mono",
+        "fontFamily": "Inter-Medium",
+        "fontSize": 12,
       },
     ]
   }

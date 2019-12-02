@@ -1,14 +1,15 @@
+import React from "react";
 import { AppLoading } from "expo";
 import { Asset } from "expo-asset";
 import * as Font from "expo-font";
-import React, { useState } from "react";
 import { Platform, StatusBar, StyleSheet, View } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import * as Sentry from "sentry-expo";
 import Constants from "expo-constants";
 import AppNavigator from "./app/navigation/AppNavigator";
 
-const secret = require("./secret.ts").default || require("./secret.example.ts").default;
+const secret =
+  require("./secret.ts").default || require("./secret.example.ts").default;
 
 /* TODO: change secret.dsn to Constants.manifest.extra.sentryPublicDsn */
 Sentry.init({
@@ -70,11 +71,24 @@ async function loadResourcesAsync() {
       require("./assets/images/robot-prod.png")
     ]),
     Font.loadAsync({
-      // This is the font that we are using for our tab bar
       ...Ionicons.font,
-      // We include SpaceMono because we use it in HomeScreen.js. Feel free to
-      // remove this if you are not using it in your app
-      "space-mono": require("./assets/fonts/SpaceMono-Regular.ttf")
+      "Inter-Black": require("./assets/fonts/Inter-Black.ttf"),
+      "Inter-Bold": require("./assets/fonts/Inter-Bold.ttf"),
+      "Inter-BoldItalic": require("./assets/fonts/Inter-BoldItalic.ttf"),
+      "Inter-ExtraBold": require("./assets/fonts/Inter-ExtraBold.ttf"),
+      "Inter-ExtraBoldItalic": require("./assets/fonts/Inter-ExtraBoldItalic.ttf"),
+      "Inter-ExtraLight-BETA": require("./assets/fonts/Inter-ExtraLight-BETA.ttf"),
+      "Inter-ExtraLightItalic-BETA": require("./assets/fonts/Inter-ExtraLightItalic-BETA.ttf"),
+      "Inter-Italic": require("./assets/fonts/Inter-Italic.ttf"),
+      "Inter-Light-BETA": require("./assets/fonts/Inter-Light-BETA.ttf"),
+      "Inter-LightItalic-BETA": require("./assets/fonts/Inter-LightItalic-BETA.ttf"),
+      "Inter-Medium": require("./assets/fonts/Inter-Medium.ttf"),
+      "Inter-MediumItalic": require("./assets/fonts/Inter-MediumItalic.ttf"),
+      "Inter-Regular": require("./assets/fonts/Inter-Regular.ttf"),
+      "Inter-SemiBold": require("./assets/fonts/Inter-SemiBold.ttf"),
+      "Inter-SemiBoldItalic": require("./assets/fonts/Inter-SemiBoldItalic.ttf"),
+      "Inter-Thin-BETA": require("./assets/fonts/Inter-Thin-BETA.ttf"),
+      "Inter-ThinItalic-BETA": require("./assets/fonts/Inter-ThinItalic-BETA.ttf")
     })
   ]);
 }
