@@ -1,6 +1,7 @@
 ## 🌱 React Native app for Not My Fault.
 
 ![](https://github.com/NotMyFaultEarth/nmf-app/workflows/Test%20CI/badge.svg)
+[![Depfu](https://badges.depfu.com/badges/f3b06c819202baf2a14b3241cbf249c9/overview.svg)](https://depfu.com/repos/github/NotMyFaultEarth/nmf-app?project_id=10243)
 
 Source code repository for the Not My Fault React Native application.
 
