@@ -17,21 +17,6 @@ import colors from "../style/colors";
 
 import { t } from "../utils/i18n";
 
-const ActStack = createStackNavigator({
-  Act: ActScreen
-});
-
-ActStack.navigationOptions = {
-  tabBarLabel: ({ focused }) => (
-    <MonoText style={{ color: focused ? colors.linkGreen : colors.swordGray }}>
-      {t("ACT")}
-    </MonoText>
-  ),
-  tabBarIcon: ({ focused }) => (
-    <TabBarIcon focused={focused} name={"md-calculator"} />
-  )
-};
-
 const BudgetStack = createStackNavigator({
   Budget: BudgetScreen
 });
@@ -43,21 +28,8 @@ BudgetStack.navigationOptions = {
     </MonoText>
   ),
   tabBarIcon: ({ focused }) => (
-    <TabBarIcon focused={focused} name={"md-stats"} />
+    <TabBarIcon focused={focused} name={"md-calculator"} />
   )
-};
-
-const SettingsStack = createStackNavigator({
-  Settings: SettingsScreen
-});
-
-SettingsStack.navigationOptions = {
-  tabBarLabel: ({ focused }) => (
-    <MonoText style={{ color: focused ? colors.linkGreen : colors.swordGray }}>
-      {t("SETTINGS")}
-    </MonoText>
-  ),
-  tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name={"md-hand"} />
 };
 
 const EmissionsStack = createStackNavigator({
@@ -71,16 +43,44 @@ EmissionsStack.navigationOptions = {
     </MonoText>
   ),
   tabBarIcon: ({ focused }) => (
+    <TabBarIcon focused={focused} name={"md-stats"} />
+  )
+};
+
+const ActStack = createStackNavigator({
+  Act: ActScreen
+});
+
+ActStack.navigationOptions = {
+  tabBarLabel: ({ focused }) => (
+    <MonoText style={{ color: focused ? colors.linkGreen : colors.swordGray }}>
+      {t("ACT")}
+    </MonoText>
+  ),
+  tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name={"md-hand"} />
+};
+
+const SettingsStack = createStackNavigator({
+  Settings: SettingsScreen
+});
+
+SettingsStack.navigationOptions = {
+  tabBarLabel: ({ focused }) => (
+    <MonoText style={{ color: focused ? colors.linkGreen : colors.swordGray }}>
+      {t("SETTINGS")}
+    </MonoText>
+  ),
+  tabBarIcon: ({ focused }) => (
     <TabBarIcon focused={focused} name={"md-switch"} />
   )
 };
 
 const tabNavigator = createBottomTabNavigator(
   {
-    ActStack,
     BudgetStack,
-    SettingsStack,
-    EmissionsStack
+    EmissionsStack,
+    ActStack,
+    SettingsStack
   },
   {
     tabBarOptions: {
