@@ -6,7 +6,7 @@ import {
 } from "react-navigation";
 
 import TabBarIcon from "../components/TabBarIcon";
-import MonoText from "../components/atoms";
+import { Text } from "../components";
 
 import ActScreen from "../screens/Act";
 import BudgetScreen from "../screens/Budget";
@@ -23,9 +23,11 @@ const BudgetStack = createStackNavigator({
 
 BudgetStack.navigationOptions = {
   tabBarLabel: ({ focused }) => (
-    <MonoText style={{ color: focused ? colors.linkGreen : colors.swordGray }}>
+    <Text.Secondary
+      style={{ color: focused ? colors.linkGreen : colors.swordGray }}
+    >
       {t("BUDGET")}
-    </MonoText>
+    </Text.Secondary>
   ),
   tabBarIcon: ({ focused }) => (
     <TabBarIcon focused={focused} name={"md-calculator"} />
@@ -38,9 +40,11 @@ const EmissionsStack = createStackNavigator({
 
 EmissionsStack.navigationOptions = {
   tabBarLabel: ({ focused }) => (
-    <MonoText style={{ color: focused ? colors.linkGreen : colors.swordGray }}>
+    <Text.Secondary
+      style={{ color: focused ? colors.linkGreen : colors.swordGray }}
+    >
       {t("EMISSIONS")}
-    </MonoText>
+    </Text.Secondary>
   ),
   tabBarIcon: ({ focused }) => (
     <TabBarIcon focused={focused} name={"md-stats"} />
@@ -53,9 +57,11 @@ const ActStack = createStackNavigator({
 
 ActStack.navigationOptions = {
   tabBarLabel: ({ focused }) => (
-    <MonoText style={{ color: focused ? colors.linkGreen : colors.swordGray }}>
+    <Text.Secondary
+      style={{ color: focused ? colors.linkGreen : colors.swordGray }}
+    >
       {t("ACT")}
-    </MonoText>
+    </Text.Secondary>
   ),
   tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name={"md-hand"} />
 };
@@ -66,9 +72,11 @@ const SettingsStack = createStackNavigator({
 
 SettingsStack.navigationOptions = {
   tabBarLabel: ({ focused }) => (
-    <MonoText style={{ color: focused ? colors.linkGreen : colors.swordGray }}>
+    <Text.Secondary
+      style={{ color: focused ? colors.linkGreen : colors.swordGray }}
+    >
       {t("SETTINGS")}
-    </MonoText>
+    </Text.Secondary>
   ),
   tabBarIcon: ({ focused }) => (
     <TabBarIcon focused={focused} name={"md-switch"} />
