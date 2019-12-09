@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import { PADDING_HORIZONTAL } from "../../constants/Layout";
 
 export default StyleSheet.create({
   containerNoPadding: {
@@ -6,6 +7,6 @@ export default StyleSheet.create({
   },
   containerWithPadding: {
     flex: 1,
-    paddingHorizontal: 14
+    paddingHorizontal: PADDING_HORIZONTAL
   }
 });
