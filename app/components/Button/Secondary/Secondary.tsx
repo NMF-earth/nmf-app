@@ -16,7 +16,7 @@ interface Props {
 }
 
 export default function Secondary(props: Props): React.ReactElement {
-  let customStyle = [mainStyle.default, styles.default, props.style];
+  const customStyle = [mainStyle.default, styles.default, props.style];
   const { fullWidth, children, textType, black, onPress } = props;
 
   if (fullWidth) {

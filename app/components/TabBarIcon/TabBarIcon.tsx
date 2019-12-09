@@ -1,4 +1,4 @@
-import React from "react";
+import React, {ReactElement} from "react";
 import { Ionicons } from "@expo/vector-icons";
 import colors from "../../style/colors";
 
@@ -7,7 +7,7 @@ interface Props {
   focused: boolean;
 }
 
-export default function TabBarIcon(props: Props) {
+export default function TabBarIcon(props: Props): ReactElement {
   return (
     <Ionicons
       name={props.name}

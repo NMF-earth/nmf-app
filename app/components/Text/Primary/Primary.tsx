@@ -14,7 +14,7 @@ interface Props {
 }
 
 export default function Primary(props: Props): React.ReactElement {
-  let customStyle = [styles.default, props.style];
+  const customStyle = [styles.default, props.style];
   const { white, green, darkGray, lightGray, bold, children } = props;
 
   if (darkGray) {

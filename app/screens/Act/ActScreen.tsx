@@ -1,7 +1,8 @@
 import React from "react";
-import { ScrollView, StyleSheet } from "react-native";
+import { ScrollView, StyleSheet, Text } from "react-native";
 
 import { t } from "../../utils/translations";
+import TabbedView from "../../components/TabbedView";
 
 const styles = StyleSheet.create({
   container: {
@@ -12,7 +13,14 @@ const styles = StyleSheet.create({
 });
 
 export default function ActScreen(): React.ReactElement {
-  return <ScrollView style={styles.container}></ScrollView>;
+  return <ScrollView style={styles.container}>
+    <TabbedView 
+      items={[
+        { title: "Habits", component: <Text>Habits</Text> },
+        { title: "Food", component: <Text>Food</Text> }
+      ]}
+    />
+  </ScrollView>;
 }
 
 ActScreen.navigationOptions = {

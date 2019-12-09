@@ -4,8 +4,15 @@ import { ScrollView, StyleSheet, SafeAreaView } from "react-native";
 import NoEmission from "../../components/NoEmission";
 import BudgetScreen from "./BudgetScreen";
 
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    paddingTop: 20
+  }
+});
+
 export default function Budget(): React.ReactElement {
-  let [emission, setEmission] = useState(false);
+  const [emission, setEmission] = useState(false);
 
   if (emission) {
     return <BudgetScreen />;
@@ -24,9 +31,3 @@ Budget.navigationOptions = {
   header: null
 };
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    paddingTop: 20
-  }
-});
