@@ -1,6 +1,6 @@
 import en from "./en";
-import fr from "./de";
-import de from "./en";
+import fr from "./fr";
+import de from "./de";
 
 interface TranslationKeys {
   EMISSIONS: string;
