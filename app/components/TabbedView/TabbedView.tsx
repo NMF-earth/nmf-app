@@ -42,8 +42,8 @@ export default class TabbedView extends React.Component<Props, State> {
     const tabStyles = isSelected ? styles.tabItemSelected : styles.tabItem;
     return (
       <View 
-      key={index} 
-      style={tabStyles}>
+        key={index} 
+        style={tabStyles}>
         <Button 
           color={buttonColor}
           onPress={() => this.handleTabPress(index)} 
