@@ -83,9 +83,9 @@ SettingsStack.navigationOptions = {
 
 const tabNavigator = createBottomTabNavigator(
   {
+    ActStack,
     BudgetStack,
     EmissionsStack,
-    ActStack,
     SettingsStack
   },
   {
