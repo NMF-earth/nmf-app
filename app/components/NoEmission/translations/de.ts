@@ -1,8 +1,8 @@
 export default {
-  NO_EMISSION_TITLE: "Hi there 👋",
+  NO_EMISSION_TITLE: "Hey 👋",
   NO_EMISSION_THANKS:
-    "Thanks for joining the fight to save our beautiful planet!",
+    "Danke, dass du mithilft unsere wunderschöne Erde zu retten!",
   NO_EMISSION_START_USING_APP:
-    "To start tracking your CO2 emissions, tap the button below",
-  NO_EMISSION_ADD_FIRST_EMISSION: "Add my first emission"
+    "Um deine CO2-Emissionen zu erfassen, klicke auf den Button",
+  NO_EMISSION_ADD_FIRST_EMISSION: "Erste Emissionen hinzufügen"
 };
