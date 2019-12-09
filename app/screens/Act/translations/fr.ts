@@ -1,3 +1,5 @@
 export default {
-  ACT: "Agir"
+  ACT: "Agir",
+  HABITS: "Habits",
+  FOOD: "Food",
 };

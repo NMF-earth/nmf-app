@@ -1,3 +1,5 @@
 export default {
-  ACT: "Tu was"
+  ACT: "Tu was",
+  HABITS: "Gewohnheiten",
+  FOOD: "Essen",
 };

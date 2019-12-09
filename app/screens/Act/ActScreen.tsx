@@ -14,10 +14,10 @@ const styles = StyleSheet.create({
 
 export default function ActScreen(): React.ReactElement {
   return <ScrollView style={styles.container}>
-    <TabbedView 
+    <TabbedView
       items={[
-        { title: "Habits", component: <Text>Habits</Text> },
-        { title: "Food", component: <Text>Food</Text> }
+        { title: t("HABITS"), component: <Text>Habits</Text> },
+        { title: t("FOOD"), component: <Text>Food</Text> }
       ]}
     />
   </ScrollView>;

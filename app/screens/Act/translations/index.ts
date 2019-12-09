@@ -4,6 +4,8 @@ import de from "./de";
 
 interface TranslationKeys {
   ACT: string;
+  HABITS: string;
+  FOOD: string;
 }
 
 export { en, fr, de, TranslationKeys };
