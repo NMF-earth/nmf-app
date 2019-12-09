@@ -29,8 +29,9 @@ module.exports = {
         "jest"
     ],
     "rules": {
+      "@typescript-eslint/explicit-function-return-type": [0],
       "quotes": [2, "double"],
       "react/display-name": [0],
-      "react/prop-types": [1]
+      "react/prop-types": [0]
     }
 };

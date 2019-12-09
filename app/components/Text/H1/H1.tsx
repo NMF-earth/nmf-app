@@ -11,7 +11,7 @@ interface Props {
 }
 
 export default function H1(props: Props): React.ReactElement {
-  let customStyle = [styles.default, props.style];
+  const customStyle = [styles.default, props.style];
   const { darkGray, lightGray } = props;
 
   if (darkGray) {

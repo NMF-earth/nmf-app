@@ -8,8 +8,7 @@ import navigationOptions from "./BudgetScreen.navigationOptions";
 Budget.navigationOptions = navigationOptions;
 
 export default function Budget(): React.ReactElement {
-  /* TODO: remove useState and chack if user has data instead */
-  let [emission, setEmission] = useState(false);
+  const [emission, setEmission] = useState(false);
 
   if (emission) {
     return <BudgetScreen />;

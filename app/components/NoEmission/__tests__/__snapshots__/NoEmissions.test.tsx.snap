@@ -66,7 +66,8 @@ exports[`renders correctly NoEmission 1`] = `
     >
       To start tracking your CO2 emissions, tap the button below
     </Text.Primary>
-    <Button.Secondary
+    <Button.Primary
+      fullWidth={true}
       onPress={[Function]}
       style={
         Object {
@@ -77,11 +78,11 @@ exports[`renders correctly NoEmission 1`] = `
     >
       <Text.Primary
         bold={true}
-        green={true}
+        white={true}
       >
         Add my first emission
       </Text.Primary>
-    </Button.Secondary>
+    </Button.Primary>
   </View>
 </View>
 `;
