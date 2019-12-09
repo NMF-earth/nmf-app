@@ -1,6 +1,7 @@
 import React from "react";
 import { ScrollView, StyleSheet } from "react-native";
-import { t } from "../../utils/i18n";
+
+import { t } from "../../utils/translations";
 
 const styles = StyleSheet.create({
   container: {
@@ -17,4 +18,3 @@ export default function EmissionsScreen(): React.ReactElement {
 EmissionsScreen.navigationOptions = {
   title: t("EMISSIONS")
 };
-

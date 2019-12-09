@@ -1,5 +1,4 @@
 import React from "react";
-import { Platform } from "react-native";
 import {
   createStackNavigator,
   createBottomTabNavigator
@@ -14,8 +13,7 @@ import EmissionsScreen from "../screens/Emissions";
 import SettingsScreen from "../screens/Settings";
 
 import colors from "../style/colors";
-
-import { t } from "../utils/i18n";
+import { t } from "../utils/translations";
 
 const BudgetStack = createStackNavigator({
   Budget: BudgetScreen

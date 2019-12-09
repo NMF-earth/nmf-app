@@ -1,7 +1,8 @@
 import React from "react";
 import { ScrollView, StyleSheet } from "react-native";
+
 import NoEmission from "../../components/NoEmission";
-import { t } from "../../utils/i18n";
+import { t } from "../../utils/translations";
 
 const styles = StyleSheet.create({
   container: {

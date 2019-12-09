@@ -64,19 +64,12 @@ exports[`renders correctly NoEmission 1`] = `
         }
       }
     >
-      You can start by setting your monthly
+      You can start using the app by
       <Text.Primary
         bold={true}
       >
-         Carbon Budget
+         adding your first emission.
       </Text.Primary>
-      , or head over to the
-      <Text.Primary
-        bold={true}
-      >
-         Emissions
-      </Text.Primary>
-       tab to add your first emission.
     </Text.Primary>
   </View>
 </View>
