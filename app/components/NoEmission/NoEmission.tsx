@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Image, Alert } from "react-native";
+import { View, Image } from "react-native";
 
 import { Text, Button } from "../";
 import ImagesAssets from "../../constants/ImagesAssets";
