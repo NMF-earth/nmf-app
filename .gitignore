@@ -318,5 +318,6 @@ typings/
 secret.ts
 app.json
 
-# expo
-.expo/*
+# Expo
+.expo
+__generated__
