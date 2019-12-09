@@ -1,7 +1,7 @@
 import React from "react";
-import { View, Image } from "react-native";
+import { View, Image, Alert } from "react-native";
 
-import { Text } from "../";
+import { Text, Button } from "../";
 import ImagesAssets from "../../constants/ImagesAssets";
 import styles from "./NoEmission.style";
 import { t } from "../../utils/translations";
@@ -23,12 +23,21 @@ export default function NoEmission(props: Props) {
       <View style={styles.textView}>
         <Text.H1 style={styles.header}>{t("NO_EMISSION_TITLE")}</Text.H1>
         <Text.Primary style={styles.paragraph}>
-          Thanks for joining the fight to save our beautiful planet!
+          {t("NO_EMISSION_THANKS")}
         </Text.Primary>
         <Text.Primary style={styles.paragraph}>
-          You can start using the app by
-          <Text.Primary bold> adding your first emission.</Text.Primary>
+          {t("NO_EMISSION_START_USING_APP")}
         </Text.Primary>
+        <Button.Primary
+          fullWidth
+          style={styles.button}
+          onPress={props.addEmission}
+          textType={"Primary"}
+        >
+          <Text.Primary bold white>
+            {t("NO_EMISSION_ADD_FIRST_EMISSION")}
+          </Text.Primary>
+        </Button.Primary>
       </View>
     </View>
   );

@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 import colors from "../../style/colors";
-import fonts from "../../style/fonts";
+import { fontWeight } from "../../style/font";
 
 export default StyleSheet.create({
   darkGray: {
@@ -9,7 +9,13 @@ export default StyleSheet.create({
   lightGray: {
     color: colors.swordGray
   },
+  green: {
+    color: colors.linkGreen
+  },
+  white: {
+    color: colors.white
+  },
   bold: {
-    fontFamily: fonts.Bold
+    fontFamily: fontWeight.Bold
   }
 });

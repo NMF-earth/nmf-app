@@ -76,6 +76,20 @@ it("renders correctly Primary lightGray", () => {
   expect(tree).toMatchSnapshot();
 });
 
+it("renders correctly Primary green", () => {
+  const tree = renderer
+    .create(<Text.Primary green>test</Text.Primary>)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it("renders correctly Primary white", () => {
+  const tree = renderer
+    .create(<Text.Primary white>test</Text.Primary>)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
 it("renders correctly Primary bold", () => {
   const tree = renderer.create(<Text.Primary bold>test</Text.Primary>).toJSON();
   expect(tree).toMatchSnapshot();
@@ -98,6 +112,20 @@ it("renders correctly Secondary darkGray", () => {
 it("renders correctly Secondary lightGray", () => {
   const tree = renderer
     .create(<Text.Secondary lightGray>test</Text.Secondary>)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it("renders correctly Secondary green", () => {
+  const tree = renderer
+    .create(<Text.Secondary green>test</Text.Secondary>)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it("renders correctly Secondary white", () => {
+  const tree = renderer
+    .create(<Text.Secondary white>test</Text.Secondary>)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
@@ -126,6 +154,20 @@ it("renders correctly Tertiary darkGray", () => {
 it("renders correctly Tertiary lightGray", () => {
   const tree = renderer
     .create(<Text.Tertiary lightGray>test</Text.Tertiary>)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it("renders correctly Tertiary green", () => {
+  const tree = renderer
+    .create(<Text.Tertiary green>test</Text.Tertiary>)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it("renders correctly Tertiary white", () => {
+  const tree = renderer
+    .create(<Text.Tertiary white>test</Text.Tertiary>)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });

@@ -9,11 +9,13 @@ interface Props {
   darkGray?: boolean;
   lightGray?: boolean;
   bold?: boolean;
+  white?: boolean;
+  green?: boolean;
 }
 
 export default function Primary(props: Props): React.ReactElement {
   let customStyle = [styles.default, props.style];
-  const { darkGray, lightGray, bold, children } = props;
+  const { white, green, darkGray, lightGray, bold, children } = props;
 
   if (darkGray) {
     customStyle.push(mainStyle.darkGray);
@@ -21,6 +23,14 @@ export default function Primary(props: Props): React.ReactElement {
 
   if (lightGray) {
     customStyle.push(mainStyle.lightGray);
+  }
+
+  if (green) {
+    customStyle.push(mainStyle.green);
+  }
+
+  if (white) {
+    customStyle.push(mainStyle.white);
   }
 
   if (bold) {

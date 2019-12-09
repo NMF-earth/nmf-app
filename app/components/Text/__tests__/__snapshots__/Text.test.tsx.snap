@@ -6,7 +6,7 @@ exports[`renders correctly H1 1`] = `
     Array [
       Object {
         "color": "#111714",
-        "fontFamily": "Inter-Bold",
+        "fontFamily": "Inter-ExtraBold",
         "fontSize": 30,
       },
       undefined,
@@ -24,7 +24,7 @@ exports[`renders correctly H1 darkGray 1`] = `
     Array [
       Object {
         "color": "#111714",
-        "fontFamily": "Inter-Bold",
+        "fontFamily": "Inter-ExtraBold",
         "fontSize": 30,
       },
       undefined,
@@ -45,7 +45,7 @@ exports[`renders correctly H1 lightGray 1`] = `
     Array [
       Object {
         "color": "#111714",
-        "fontFamily": "Inter-Bold",
+        "fontFamily": "Inter-ExtraBold",
         "fontSize": 30,
       },
       undefined,
@@ -65,7 +65,7 @@ exports[`renders correctly H2 1`] = `
     Array [
       Object {
         "color": "#111714",
-        "fontFamily": "Inter-Medium",
+        "fontFamily": "Inter-Bold",
         "fontSize": 26,
       },
       undefined,
@@ -83,7 +83,7 @@ exports[`renders correctly H2 darkGray 1`] = `
     Array [
       Object {
         "color": "#111714",
-        "fontFamily": "Inter-Medium",
+        "fontFamily": "Inter-Bold",
         "fontSize": 26,
       },
       undefined,
@@ -104,7 +104,7 @@ exports[`renders correctly H2 lightGray 1`] = `
     Array [
       Object {
         "color": "#111714",
-        "fontFamily": "Inter-Medium",
+        "fontFamily": "Inter-Bold",
         "fontSize": 26,
       },
       undefined,
@@ -236,6 +236,27 @@ exports[`renders correctly Primary darkGray 1`] = `
 </Text>
 `;
 
+exports[`renders correctly Primary green 1`] = `
+<Text
+  green={true}
+  style={
+    Array [
+      Object {
+        "color": "#111714",
+        "fontFamily": "Inter-Medium",
+        "fontSize": 18,
+      },
+      undefined,
+      Object {
+        "color": "#4BB377",
+      },
+    ]
+  }
+>
+  test
+</Text>
+`;
+
 exports[`renders correctly Primary lightGray 1`] = `
 <Text
   lightGray={true}
@@ -252,6 +273,27 @@ exports[`renders correctly Primary lightGray 1`] = `
       },
     ]
   }
+>
+  test
+</Text>
+`;
+
+exports[`renders correctly Primary white 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "color": "#111714",
+        "fontFamily": "Inter-Medium",
+        "fontSize": 18,
+      },
+      undefined,
+      Object {
+        "color": "#FFFFFF",
+      },
+    ]
+  }
+  white={true}
 >
   test
 </Text>
@@ -316,6 +358,27 @@ exports[`renders correctly Secondary darkGray 1`] = `
 </Text>
 `;
 
+exports[`renders correctly Secondary green 1`] = `
+<Text
+  green={true}
+  style={
+    Array [
+      Object {
+        "color": "#111714",
+        "fontFamily": "Inter-Medium",
+        "fontSize": 16,
+      },
+      undefined,
+      Object {
+        "color": "#4BB377",
+      },
+    ]
+  }
+>
+  test
+</Text>
+`;
+
 exports[`renders correctly Secondary lightGray 1`] = `
 <Text
   lightGray={true}
@@ -332,6 +395,27 @@ exports[`renders correctly Secondary lightGray 1`] = `
       },
     ]
   }
+>
+  test
+</Text>
+`;
+
+exports[`renders correctly Secondary white 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "color": "#111714",
+        "fontFamily": "Inter-Medium",
+        "fontSize": 16,
+      },
+      undefined,
+      Object {
+        "color": "#FFFFFF",
+      },
+    ]
+  }
+  white={true}
 >
   test
 </Text>
@@ -396,6 +480,27 @@ exports[`renders correctly Tertiary darkGray 1`] = `
 </Text>
 `;
 
+exports[`renders correctly Tertiary green 1`] = `
+<Text
+  green={true}
+  style={
+    Array [
+      Object {
+        "color": "#111714",
+        "fontFamily": "Inter-Medium",
+        "fontSize": 14,
+      },
+      undefined,
+      Object {
+        "color": "#4BB377",
+      },
+    ]
+  }
+>
+  test
+</Text>
+`;
+
 exports[`renders correctly Tertiary lightGray 1`] = `
 <Text
   lightGray={true}
@@ -412,6 +517,27 @@ exports[`renders correctly Tertiary lightGray 1`] = `
       },
     ]
   }
+>
+  test
+</Text>
+`;
+
+exports[`renders correctly Tertiary white 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "color": "#111714",
+        "fontFamily": "Inter-Medium",
+        "fontSize": 14,
+      },
+      undefined,
+      Object {
+        "color": "#FFFFFF",
+      },
+    ]
+  }
+  white={true}
 >
   test
 </Text>

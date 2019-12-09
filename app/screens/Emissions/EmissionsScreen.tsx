@@ -1,6 +1,7 @@
 import React from "react";
 import { ScrollView, StyleSheet } from "react-native";
 
+import NoEmission from "../../components/NoEmission";
 import { t } from "../../utils/translations";
 
 const styles = StyleSheet.create({
@@ -12,7 +13,11 @@ const styles = StyleSheet.create({
 });
 
 export default function EmissionsScreen(): React.ReactElement {
-  return <ScrollView style={styles.container}></ScrollView>;
+  return (
+    <ScrollView style={styles.container}>
+      <NoEmission addEmission={() => {}} />
+    </ScrollView>
+  );
 }
 
 EmissionsScreen.navigationOptions = {

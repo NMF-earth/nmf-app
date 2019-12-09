@@ -1,4 +1,4 @@
-const fonts = {
+const fontWeight = {
   Black: "Inter-Black",
   Bold: "Inter-Bold",
   BoldItalic: "Inter-BoldItalic",
@@ -18,4 +18,13 @@ const fonts = {
   ThinItalic: "Inter-ThinItalic-BETA"
 };
 
-export default fonts;
+const fontSize = {
+  H1: 30,
+  H2: 26,
+  H3: 22,
+  Primary: 18,
+  Secondary: 16,
+  Tertiary: 14
+};
+
+export { fontWeight, fontSize };

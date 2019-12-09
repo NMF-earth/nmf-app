@@ -1,0 +1,167 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly Primary Button with Secondary font 1`] = `
+<View
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "backgroundColor": "#4BB377",
+      "borderRadius": 40,
+      "opacity": 1,
+      "paddingHorizontal": 28,
+      "paddingVertical": 12,
+    }
+  }
+>
+  <Text.Secondary>
+    test
+  </Text.Secondary>
+</View>
+`;
+
+exports[`renders correctly Primary Button with Tertiary font 1`] = `
+<View
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "backgroundColor": "#4BB377",
+      "borderRadius": 38,
+      "opacity": 1,
+      "paddingHorizontal": 28,
+      "paddingVertical": 12,
+    }
+  }
+>
+  <Text.Tertiary>
+    test
+  </Text.Tertiary>
+</View>
+`;
+
+exports[`renders correctly Secondary Button with Secondary font 1`] = `
+<View
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#4BB377",
+      "borderRadius": 40,
+      "borderWidth": 2.5,
+      "opacity": 1,
+      "paddingHorizontal": 28,
+      "paddingVertical": 12,
+    }
+  }
+>
+  <Text.Secondary>
+    test
+  </Text.Secondary>
+</View>
+`;
+
+exports[`renders correctly Secondary Button with Tertiary font 1`] = `
+<View
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#4BB377",
+      "borderRadius": 38,
+      "borderWidth": 2.5,
+      "opacity": 1,
+      "paddingHorizontal": 28,
+      "paddingVertical": 12,
+    }
+  }
+>
+  <Text.Tertiary>
+    test
+  </Text.Tertiary>
+</View>
+`;
+
+exports[`renders correctly full width Primary Button with Primary font 1`] = `
+<View
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#4BB377",
+      "borderRadius": 42,
+      "opacity": 1,
+      "paddingHorizontal": 0,
+      "paddingVertical": 12,
+      "width": "100%",
+    }
+  }
+>
+  <Text.Primary>
+    test
+  </Text.Primary>
+</View>
+`;
+
+exports[`renders correctly full width Secondary Button with Primary font 1`] = `
+<View
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#4BB377",
+      "borderRadius": 42,
+      "borderWidth": 2.5,
+      "opacity": 1,
+      "paddingHorizontal": 0,
+      "paddingVertical": 12,
+      "width": "100%",
+    }
+  }
+>
+  <Text.Primary>
+    test
+  </Text.Primary>
+</View>
+`;
