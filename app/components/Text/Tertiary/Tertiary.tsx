@@ -12,7 +12,7 @@ interface Props {
 }
 
 export default function Tertiary(props: Props): React.ReactElement {
-  let customStyle = [styles.default, props.style];
+  const customStyle = [styles.default, props.style];
   const { darkGray, lightGray, bold } = props;
 
   if (darkGray) {
