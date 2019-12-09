@@ -1,10 +1,10 @@
 import React from "react";
-import { Text } from "react-native";
+import { Text, StyleProp, TextStyle } from "react-native";
 import styles from "./H3.styles";
 import mainStyle from "../styles";
 
 interface Props {
-  style?: any;
+  style?: StyleProp<TextStyle>;
   children: string | React.ReactElement;
   darkGray?: boolean;
   lightGray?: boolean;

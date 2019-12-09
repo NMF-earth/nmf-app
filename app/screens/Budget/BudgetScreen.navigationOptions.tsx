@@ -9,7 +9,7 @@ import { Text } from "../../components";
 import { Ionicons } from "@expo/vector-icons";
 import { PADDING_HORIZONTAL } from "../../constants/Layout";
 
-const navigationOptions = ({ navigation }) => ({
+const navigationOptions = () => ({
   headerStyle: {
     borderBottomWidth: 0
   },

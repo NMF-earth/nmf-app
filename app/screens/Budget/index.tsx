@@ -5,7 +5,12 @@ import NoEmission from "../../components/NoEmission";
 import BudgetScreen from "./BudgetScreen";
 import navigationOptions from "./BudgetScreen.navigationOptions";
 
-Budget.navigationOptions = navigationOptions;
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    marginTop: 20
+  }
+});
 
 export default function Budget(): React.ReactElement {
   const [emission, setEmission] = useState(false);
@@ -23,9 +28,4 @@ export default function Budget(): React.ReactElement {
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    marginTop: 20
-  }
-});
+Budget.navigationOptions = navigationOptions;

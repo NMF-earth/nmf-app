@@ -1,5 +1,5 @@
 import React from "react";
-import { TouchableOpacity } from "react-native";
+import { TouchableOpacity, StyleProp, ViewStyle } from "react-native";
 import styles from "./Primary.styles";
 import mainStyle from "../styles";
 import { fontSize } from "../../../style/font";
@@ -7,7 +7,7 @@ import { fontSize } from "../../../style/font";
 const PADDING_VERTICAL = 12;
 
 interface Props {
-  style?: any;
+  style?: StyleProp<ViewStyle>;
   children: React.ReactNode;
   fullWidth?: boolean;
   textType: "Primary" | "Secondary" | "Tertiary";
