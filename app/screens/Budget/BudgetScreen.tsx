@@ -13,11 +13,7 @@ const styles = StyleSheet.create({
 });
 
 export default function BudgetScreen(): React.ReactElement {
-  return (
-    <ScrollView style={styles.container}>
-      <NoEmission addEmission={() => {}} />
-    </ScrollView>
-  );
+  return <ScrollView style={styles.container}></ScrollView>;
 }
 
 BudgetScreen.navigationOptions = {
