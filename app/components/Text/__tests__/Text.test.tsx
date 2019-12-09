@@ -2,6 +2,10 @@ import React from "react";
 import renderer from "react-test-renderer";
 import Text from "../";
 
+jest.unmock("../");
+
+/* H1 Tests */
+
 it("renders correctly H1", () => {
   const tree = renderer.create(<Text.H1>test</Text.H1>).toJSON();
   expect(tree).toMatchSnapshot();
@@ -16,6 +20,8 @@ it("renders correctly H1 lightGray", () => {
   const tree = renderer.create(<Text.H1 lightGray>test</Text.H1>).toJSON();
   expect(tree).toMatchSnapshot();
 });
+
+/* H2 Tests */
 
 it("renders correctly H2", () => {
   const tree = renderer.create(<Text.H2>test</Text.H2>).toJSON();
@@ -32,6 +38,8 @@ it("renders correctly H2 lightGray", () => {
   expect(tree).toMatchSnapshot();
 });
 
+/* H3 Tests */
+
 it("renders correctly H3", () => {
   const tree = renderer.create(<Text.H3>test</Text.H3>).toJSON();
   expect(tree).toMatchSnapshot();
@@ -46,6 +54,8 @@ it("renders correctly H3 lightGray", () => {
   const tree = renderer.create(<Text.H3 lightGray>test</Text.H3>).toJSON();
   expect(tree).toMatchSnapshot();
 });
+
+/* Primary Tests */
 
 it("renders correctly Primary", () => {
   const tree = renderer.create(<Text.Primary>test</Text.Primary>).toJSON();
@@ -66,6 +76,13 @@ it("renders correctly Primary lightGray", () => {
   expect(tree).toMatchSnapshot();
 });
 
+it("renders correctly Primary bold", () => {
+  const tree = renderer.create(<Text.Primary bold>test</Text.Primary>).toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+/* Primary Tests */
+
 it("renders correctly Secondary", () => {
   const tree = renderer.create(<Text.Secondary>test</Text.Secondary>).toJSON();
   expect(tree).toMatchSnapshot();
@@ -85,6 +102,15 @@ it("renders correctly Secondary lightGray", () => {
   expect(tree).toMatchSnapshot();
 });
 
+it("renders correctly Secondary bold", () => {
+  const tree = renderer
+    .create(<Text.Secondary bold>test</Text.Secondary>)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+/* Tertiary Tests */
+
 it("renders correctly Tertiary", () => {
   const tree = renderer.create(<Text.Tertiary>test</Text.Tertiary>).toJSON();
   expect(tree).toMatchSnapshot();
@@ -100,6 +126,13 @@ it("renders correctly Tertiary darkGray", () => {
 it("renders correctly Tertiary lightGray", () => {
   const tree = renderer
     .create(<Text.Tertiary lightGray>test</Text.Tertiary>)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it("renders correctly Tertiary bold", () => {
+  const tree = renderer
+    .create(<Text.Tertiary bold>test</Text.Tertiary>)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
