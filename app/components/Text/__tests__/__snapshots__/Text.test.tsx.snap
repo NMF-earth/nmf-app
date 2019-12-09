@@ -1,0 +1,296 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly H1 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "color": "#111714",
+        "fontFamily": "Inter-Medium",
+        "fontSize": 24,
+      },
+      undefined,
+    ]
+  }
+>
+  test
+</Text>
+`;
+
+exports[`renders correctly H1 darkGray 1`] = `
+<Text
+  darkGray={true}
+  style={
+    Array [
+      Object {
+        "color": "#111714",
+        "fontFamily": "Inter-Medium",
+        "fontSize": 24,
+      },
+      undefined,
+      Object {
+        "color": "#585D5B",
+      },
+    ]
+  }
+>
+  test
+</Text>
+`;
+
+exports[`renders correctly H1 lightGray 1`] = `
+<Text
+  lightGray={true}
+  style={
+    Array [
+      Object {
+        "color": "#111714",
+        "fontFamily": "Inter-Medium",
+        "fontSize": 24,
+      },
+      undefined,
+      Object {
+        "color": "#9CA6A0",
+      },
+    ]
+  }
+>
+  test
+</Text>
+`;
+
+exports[`renders correctly H2 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "color": "#111714",
+        "fontFamily": "Inter-Medium",
+        "fontSize": 20,
+      },
+      undefined,
+    ]
+  }
+>
+  test
+</Text>
+`;
+
+exports[`renders correctly H2 darkGray 1`] = `
+<Text
+  darkGray={true}
+  style={
+    Array [
+      Object {
+        "color": "#111714",
+        "fontFamily": "Inter-Medium",
+        "fontSize": 20,
+      },
+      undefined,
+      Object {
+        "color": "#585D5B",
+      },
+    ]
+  }
+>
+  test
+</Text>
+`;
+
+exports[`renders correctly H2 lightGray 1`] = `
+<Text
+  lightGray={true}
+  style={
+    Array [
+      Object {
+        "color": "#111714",
+        "fontFamily": "Inter-Medium",
+        "fontSize": 20,
+      },
+      undefined,
+      Object {
+        "color": "#9CA6A0",
+      },
+    ]
+  }
+>
+  test
+</Text>
+`;
+
+exports[`renders correctly Primary 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "color": "#111714",
+        "fontFamily": "Inter-Medium",
+        "fontSize": 16,
+      },
+      undefined,
+    ]
+  }
+>
+  test
+</Text>
+`;
+
+exports[`renders correctly Primary darkGray 1`] = `
+<Text
+  darkGray={true}
+  style={
+    Array [
+      Object {
+        "color": "#111714",
+        "fontFamily": "Inter-Medium",
+        "fontSize": 16,
+      },
+      undefined,
+      Object {
+        "color": "#585D5B",
+      },
+    ]
+  }
+>
+  test
+</Text>
+`;
+
+exports[`renders correctly Primary lightGray 1`] = `
+<Text
+  lightGray={true}
+  style={
+    Array [
+      Object {
+        "color": "#111714",
+        "fontFamily": "Inter-Medium",
+        "fontSize": 16,
+      },
+      undefined,
+      Object {
+        "color": "#9CA6A0",
+      },
+    ]
+  }
+>
+  test
+</Text>
+`;
+
+exports[`renders correctly Secondary 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "color": "#111714",
+        "fontFamily": "Inter-Medium",
+        "fontSize": 14,
+      },
+      undefined,
+    ]
+  }
+>
+  test
+</Text>
+`;
+
+exports[`renders correctly Secondary darkGray 1`] = `
+<Text
+  darkGray={true}
+  style={
+    Array [
+      Object {
+        "color": "#111714",
+        "fontFamily": "Inter-Medium",
+        "fontSize": 14,
+      },
+      undefined,
+      Object {
+        "color": "#585D5B",
+      },
+    ]
+  }
+>
+  test
+</Text>
+`;
+
+exports[`renders correctly Secondary lightGray 1`] = `
+<Text
+  lightGray={true}
+  style={
+    Array [
+      Object {
+        "color": "#111714",
+        "fontFamily": "Inter-Medium",
+        "fontSize": 14,
+      },
+      undefined,
+      Object {
+        "color": "#9CA6A0",
+      },
+    ]
+  }
+>
+  test
+</Text>
+`;
+
+exports[`renders correctly Tertiary 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "color": "#111714",
+        "fontFamily": "Inter-Medium",
+        "fontSize": 12,
+      },
+      undefined,
+    ]
+  }
+>
+  test
+</Text>
+`;
+
+exports[`renders correctly Tertiary darkGray 1`] = `
+<Text
+  darkGray={true}
+  style={
+    Array [
+      Object {
+        "color": "#111714",
+        "fontFamily": "Inter-Medium",
+        "fontSize": 12,
+      },
+      undefined,
+      Object {
+        "color": "#585D5B",
+      },
+    ]
+  }
+>
+  test
+</Text>
+`;
+
+exports[`renders correctly Tertiary lightGray 1`] = `
+<Text
+  lightGray={true}
+  style={
+    Array [
+      Object {
+        "color": "#111714",
+        "fontFamily": "Inter-Medium",
+        "fontSize": 12,
+      },
+      undefined,
+      Object {
+        "color": "#9CA6A0",
+      },
+    ]
+  }
+>
+  test
+</Text>
+`;

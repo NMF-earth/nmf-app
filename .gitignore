@@ -317,3 +317,6 @@ typings/
 # hidden files with tokens
 secret.ts
 app.json
+
+# expo
+.expo/*
