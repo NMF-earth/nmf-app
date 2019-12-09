@@ -22,7 +22,10 @@ const BudgetStack = createStackNavigator({
 BudgetStack.navigationOptions = {
   tabBarLabel: ({ focused }) => (
     <Text.Secondary
-      style={{ color: focused ? colors.linkGreen : colors.swordGray }}
+      style={{
+        textAlign: "center",
+        color: focused ? colors.linkGreen : colors.swordGray
+      }}
     >
       {t("BUDGET")}
     </Text.Secondary>
@@ -39,7 +42,10 @@ const EmissionsStack = createStackNavigator({
 EmissionsStack.navigationOptions = {
   tabBarLabel: ({ focused }) => (
     <Text.Secondary
-      style={{ color: focused ? colors.linkGreen : colors.swordGray }}
+      style={{
+        textAlign: "center",
+        color: focused ? colors.linkGreen : colors.swordGray
+      }}
     >
       {t("EMISSIONS")}
     </Text.Secondary>
@@ -56,7 +62,10 @@ const ActStack = createStackNavigator({
 ActStack.navigationOptions = {
   tabBarLabel: ({ focused }) => (
     <Text.Secondary
-      style={{ color: focused ? colors.linkGreen : colors.swordGray }}
+      style={{
+        textAlign: "center",
+        color: focused ? colors.linkGreen : colors.swordGray
+      }}
     >
       {t("ACT")}
     </Text.Secondary>
@@ -71,7 +80,10 @@ const SettingsStack = createStackNavigator({
 SettingsStack.navigationOptions = {
   tabBarLabel: ({ focused }) => (
     <Text.Secondary
-      style={{ color: focused ? colors.linkGreen : colors.swordGray }}
+      style={{
+        textAlign: "center",
+        color: focused ? colors.linkGreen : colors.swordGray
+      }}
     >
       {t("SETTINGS")}
     </Text.Secondary>
@@ -91,7 +103,7 @@ const tabNavigator = createBottomTabNavigator(
   {
     tabBarOptions: {
       style: {
-        backgroundColor: "#EDF7F1",
+        backgroundColor: colors.linkGreen + "15",
         borderTopWidth: 0
       }
     }
