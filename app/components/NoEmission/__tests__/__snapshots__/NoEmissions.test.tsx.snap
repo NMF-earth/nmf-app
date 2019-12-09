@@ -64,13 +64,24 @@ exports[`renders correctly NoEmission 1`] = `
         }
       }
     >
-      You can start using the app by
+      To start tracking your CO2 emissions, tap the button below
+    </Text.Primary>
+    <Button.Secondary
+      onPress={[Function]}
+      style={
+        Object {
+          "marginTop": 20,
+        }
+      }
+      textType="Primary"
+    >
       <Text.Primary
         bold={true}
+        green={true}
       >
-         adding your first emission.
+        Add my first emission
       </Text.Primary>
-    </Text.Primary>
+    </Button.Secondary>
   </View>
 </View>
 `;

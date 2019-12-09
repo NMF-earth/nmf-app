@@ -9,11 +9,13 @@ interface Props {
   darkGray?: boolean;
   lightGray?: boolean;
   bold?: boolean;
+  white?: boolean;
+  green?: boolean;
 }
 
 export default function Tertiary(props: Props): React.ReactElement {
   const customStyle = [styles.default, props.style];
-  const { darkGray, lightGray, bold } = props;
+  const { white, green, darkGray, lightGray, bold, children } = props;
 
   if (darkGray) {
     customStyle.push(mainStyle.darkGray);
@@ -23,11 +25,23 @@ export default function Tertiary(props: Props): React.ReactElement {
     customStyle.push(mainStyle.lightGray);
   }
 
+  if (green) {
+    customStyle.push(mainStyle.green);
+  }
+
+  if (white) {
+    customStyle.push(mainStyle.white);
+  }
+
   if (bold) {
     customStyle.push(mainStyle.bold);
   }
 
-  return <Text {...props} style={customStyle} />;
+  return (
+    <Text {...props} style={customStyle}>
+      {children}
+    </Text>
+  );
 }
 
 Tertiary.displayName = "Tertiary";

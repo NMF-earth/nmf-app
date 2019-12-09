@@ -25,5 +25,8 @@ export default StyleSheet.create({
   },
   header: {
     paddingVertical: 20
+  },
+  button: {
+    marginTop: 20
   }
 });
