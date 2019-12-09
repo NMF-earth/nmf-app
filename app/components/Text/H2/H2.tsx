@@ -5,7 +5,7 @@ import mainStyle from "../styles";
 
 interface Props {
   style?: any;
-  children: string | React.ReactElement;
+  children: React.ReactNode;
   darkGray?: boolean;
   lightGray?: boolean;
 }

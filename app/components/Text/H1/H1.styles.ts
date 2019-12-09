@@ -5,7 +5,7 @@ import colors from "../../../style/colors";
 export default StyleSheet.create({
   default: {
     color: colors.darkLink,
-    fontFamily: fonts.Medium,
-    fontSize: 24
+    fontFamily: fonts.Bold,
+    fontSize: 30
   }
 });

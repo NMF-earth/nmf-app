@@ -1,296 +1,133 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly H1 1`] = `
-<Text
-  style={
-    Array [
-      Object {
-        "color": "#111714",
-        "fontFamily": "Inter-Medium",
-        "fontSize": 24,
-      },
-      undefined,
-    ]
-  }
->
+<Text.H1>
   test
-</Text>
+</Text.H1>
 `;
 
 exports[`renders correctly H1 darkGray 1`] = `
-<Text
+<Text.H1
   darkGray={true}
-  style={
-    Array [
-      Object {
-        "color": "#111714",
-        "fontFamily": "Inter-Medium",
-        "fontSize": 24,
-      },
-      undefined,
-      Object {
-        "color": "#585D5B",
-      },
-    ]
-  }
 >
   test
-</Text>
+</Text.H1>
 `;
 
 exports[`renders correctly H1 lightGray 1`] = `
-<Text
+<Text.H1
   lightGray={true}
-  style={
-    Array [
-      Object {
-        "color": "#111714",
-        "fontFamily": "Inter-Medium",
-        "fontSize": 24,
-      },
-      undefined,
-      Object {
-        "color": "#9CA6A0",
-      },
-    ]
-  }
 >
   test
-</Text>
+</Text.H1>
 `;
 
 exports[`renders correctly H2 1`] = `
-<Text
-  style={
-    Array [
-      Object {
-        "color": "#111714",
-        "fontFamily": "Inter-Medium",
-        "fontSize": 20,
-      },
-      undefined,
-    ]
-  }
->
+<Text.H2>
   test
-</Text>
+</Text.H2>
 `;
 
 exports[`renders correctly H2 darkGray 1`] = `
-<Text
+<Text.H2
   darkGray={true}
-  style={
-    Array [
-      Object {
-        "color": "#111714",
-        "fontFamily": "Inter-Medium",
-        "fontSize": 20,
-      },
-      undefined,
-      Object {
-        "color": "#585D5B",
-      },
-    ]
-  }
 >
   test
-</Text>
+</Text.H2>
 `;
 
 exports[`renders correctly H2 lightGray 1`] = `
-<Text
+<Text.H2
   lightGray={true}
-  style={
-    Array [
-      Object {
-        "color": "#111714",
-        "fontFamily": "Inter-Medium",
-        "fontSize": 20,
-      },
-      undefined,
-      Object {
-        "color": "#9CA6A0",
-      },
-    ]
-  }
 >
   test
-</Text>
+</Text.H2>
+`;
+
+exports[`renders correctly H3 1`] = `
+<Text.H3>
+  test
+</Text.H3>
+`;
+
+exports[`renders correctly H3 darkGray 1`] = `
+<Text.H3
+  darkGray={true}
+>
+  test
+</Text.H3>
+`;
+
+exports[`renders correctly H3 lightGray 1`] = `
+<Text.H3
+  lightGray={true}
+>
+  test
+</Text.H3>
 `;
 
 exports[`renders correctly Primary 1`] = `
-<Text
-  style={
-    Array [
-      Object {
-        "color": "#111714",
-        "fontFamily": "Inter-Medium",
-        "fontSize": 16,
-      },
-      undefined,
-    ]
-  }
->
+<Text.Primary>
   test
-</Text>
+</Text.Primary>
 `;
 
 exports[`renders correctly Primary darkGray 1`] = `
-<Text
+<Text.Primary
   darkGray={true}
-  style={
-    Array [
-      Object {
-        "color": "#111714",
-        "fontFamily": "Inter-Medium",
-        "fontSize": 16,
-      },
-      undefined,
-      Object {
-        "color": "#585D5B",
-      },
-    ]
-  }
 >
   test
-</Text>
+</Text.Primary>
 `;
 
 exports[`renders correctly Primary lightGray 1`] = `
-<Text
+<Text.Primary
   lightGray={true}
-  style={
-    Array [
-      Object {
-        "color": "#111714",
-        "fontFamily": "Inter-Medium",
-        "fontSize": 16,
-      },
-      undefined,
-      Object {
-        "color": "#9CA6A0",
-      },
-    ]
-  }
 >
   test
-</Text>
+</Text.Primary>
 `;
 
 exports[`renders correctly Secondary 1`] = `
-<Text
-  style={
-    Array [
-      Object {
-        "color": "#111714",
-        "fontFamily": "Inter-Medium",
-        "fontSize": 14,
-      },
-      undefined,
-    ]
-  }
->
+<Text.Secondary>
   test
-</Text>
+</Text.Secondary>
 `;
 
 exports[`renders correctly Secondary darkGray 1`] = `
-<Text
+<Text.Secondary
   darkGray={true}
-  style={
-    Array [
-      Object {
-        "color": "#111714",
-        "fontFamily": "Inter-Medium",
-        "fontSize": 14,
-      },
-      undefined,
-      Object {
-        "color": "#585D5B",
-      },
-    ]
-  }
 >
   test
-</Text>
+</Text.Secondary>
 `;
 
 exports[`renders correctly Secondary lightGray 1`] = `
-<Text
+<Text.Secondary
   lightGray={true}
-  style={
-    Array [
-      Object {
-        "color": "#111714",
-        "fontFamily": "Inter-Medium",
-        "fontSize": 14,
-      },
-      undefined,
-      Object {
-        "color": "#9CA6A0",
-      },
-    ]
-  }
 >
   test
-</Text>
+</Text.Secondary>
 `;
 
 exports[`renders correctly Tertiary 1`] = `
-<Text
-  style={
-    Array [
-      Object {
-        "color": "#111714",
-        "fontFamily": "Inter-Medium",
-        "fontSize": 12,
-      },
-      undefined,
-    ]
-  }
->
+<Text.Tertiary>
   test
-</Text>
+</Text.Tertiary>
 `;
 
 exports[`renders correctly Tertiary darkGray 1`] = `
-<Text
+<Text.Tertiary
   darkGray={true}
-  style={
-    Array [
-      Object {
-        "color": "#111714",
-        "fontFamily": "Inter-Medium",
-        "fontSize": 12,
-      },
-      undefined,
-      Object {
-        "color": "#585D5B",
-      },
-    ]
-  }
 >
   test
-</Text>
+</Text.Tertiary>
 `;
 
 exports[`renders correctly Tertiary lightGray 1`] = `
-<Text
+<Text.Tertiary
   lightGray={true}
-  style={
-    Array [
-      Object {
-        "color": "#111714",
-        "fontFamily": "Inter-Medium",
-        "fontSize": 12,
-      },
-      undefined,
-      Object {
-        "color": "#9CA6A0",
-      },
-    ]
-  }
 >
   test
-</Text>
+</Text.Tertiary>
 `;

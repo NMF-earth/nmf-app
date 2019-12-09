@@ -1,11 +1,11 @@
 import React from "react";
 import { Text } from "react-native";
-import styles from "./H1.styles";
+import styles from "./H3.styles";
 import mainStyle from "../styles";
 
 interface Props {
   style?: any;
-  children: React.ReactNode;
+  children: string | React.ReactElement;
   darkGray?: boolean;
   lightGray?: boolean;
 }
@@ -25,4 +25,4 @@ export default function H1(props: Props): React.ReactElement {
   return <Text {...props} style={customStyle} />;
 }
 
-H1.displayName = "H1";
+H1.displayName = "H3";

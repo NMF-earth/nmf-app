@@ -1,5 +1,6 @@
 import React from "react";
 import { ScrollView, StyleSheet } from "react-native";
+import NoEmission from "../../components/NoEmission";
 import { t } from "../../utils/i18n";
 
 const styles = StyleSheet.create({
@@ -11,10 +12,13 @@ const styles = StyleSheet.create({
 });
 
 export default function BudgetScreen(): React.ReactElement {
-  return <ScrollView style={styles.container}></ScrollView>;
+  return (
+    <ScrollView style={styles.container}>
+      <NoEmission addEmission={() => {}} />
+    </ScrollView>
+  );
 }
 
 BudgetScreen.navigationOptions = {
   title: t("BUDGET")
 };
-

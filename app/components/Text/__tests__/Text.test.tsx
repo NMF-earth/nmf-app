@@ -32,6 +32,21 @@ it("renders correctly H2 lightGray", () => {
   expect(tree).toMatchSnapshot();
 });
 
+it("renders correctly H3", () => {
+  const tree = renderer.create(<Text.H3>test</Text.H3>).toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it("renders correctly H3 darkGray", () => {
+  const tree = renderer.create(<Text.H3 darkGray>test</Text.H3>).toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it("renders correctly H3 lightGray", () => {
+  const tree = renderer.create(<Text.H3 lightGray>test</Text.H3>).toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
 it("renders correctly Primary", () => {
   const tree = renderer.create(<Text.Primary>test</Text.Primary>).toJSON();
   expect(tree).toMatchSnapshot();

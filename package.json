@@ -13,6 +13,9 @@
     "ci": "yarn lint && yarn typescript && yarn test"
   },
   "jest": {
+    "setupFiles": [
+      "<rootDir>/jest/setup.js"
+    ],
     "preset": "jest-expo",
     "collectCoverageFrom": [
       "app/**/*.(js|jsx|ts|tsx)"

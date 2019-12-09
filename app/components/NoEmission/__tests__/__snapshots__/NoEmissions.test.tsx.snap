@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly NoEmission 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "paddingHorizontal": 14,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "height": "100%",
+        "width": "100%",
+      }
+    }
+  >
+    <Image
+      resizeMode="contain"
+      source={1}
+      style={
+        Object {
+          "height": 650,
+          "width": "100%",
+        }
+      }
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+      }
+    }
+  >
+    <Text.H1
+      style={
+        Object {
+          "paddingVertical": 20,
+        }
+      }
+    >
+      Hi there 👋
+    </Text.H1>
+    <Text.Primary
+      style={
+        Object {
+          "paddingVertical": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      Thanks for joining the fight to save our beautiful planet!
+    </Text.Primary>
+    <Text.Primary
+      style={
+        Object {
+          "paddingVertical": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      You can start by setting your monthly
+      <Text.Primary
+        bold={true}
+      >
+         Carbon Budget
+      </Text.Primary>
+      , or head over to the
+      <Text.Primary
+        bold={true}
+      >
+         Emissions
+      </Text.Primary>
+       tab to add your first emission.
+    </Text.Primary>
+  </View>
+</View>
+`;

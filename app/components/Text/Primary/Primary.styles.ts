@@ -6,6 +6,6 @@ export default StyleSheet.create({
   default: {
     color: colors.darkLink,
     fontFamily: fonts.Medium,
-    fontSize: 16
+    fontSize: 18
   }
 });

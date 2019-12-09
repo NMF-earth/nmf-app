@@ -5,14 +5,15 @@ import mainStyle from "../styles";
 
 interface Props {
   style?: any;
-  children: string | React.ReactElement;
+  children: React.ReactNode;
   darkGray?: boolean;
   lightGray?: boolean;
+  bold?: boolean;
 }
 
 export default function Secondary(props: Props): React.ReactElement {
   let customStyle = [styles.default, props.style];
-  const { darkGray, lightGray } = props;
+  const { darkGray, lightGray, bold } = props;
 
   if (darkGray) {
     customStyle.push(mainStyle.darkGray);
@@ -20,6 +21,10 @@ export default function Secondary(props: Props): React.ReactElement {
 
   if (lightGray) {
     customStyle.push(mainStyle.lightGray);
+  }
+
+  if (bold) {
+    customStyle.push(mainStyle.bold);
   }
 
   return <Text {...props} style={customStyle} />;
