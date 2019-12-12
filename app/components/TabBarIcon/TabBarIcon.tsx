@@ -1,4 +1,4 @@
-import React, {ReactElement} from "react";
+import React, { ReactElement } from "react";
 import { Ionicons } from "@expo/vector-icons";
 import colors from "../../style/colors";
 
@@ -12,7 +12,7 @@ export default function TabBarIcon(props: Props): ReactElement {
     <Ionicons
       name={props.name}
       size={26}
-      style={{ marginBottom: -3 }}
+      style={{ marginBottom: -6 }}
       color={props.focused ? colors.linkGreen : colors.swordGray}
     />
   );

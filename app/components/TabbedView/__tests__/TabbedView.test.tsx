@@ -3,6 +3,8 @@ import renderer from "react-test-renderer";
 import TabbedView from "../";
 import { Text } from "react-native";
 
+jest.unmock("../");
+
 it("renders correctly TabbedView", () => {
   const items = [
     {
