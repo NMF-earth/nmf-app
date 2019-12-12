@@ -1,5 +1,5 @@
 import React from "react";
-import { View, FlatList , TouchableOpacity } from "react-native";
+import { FlatList, TouchableOpacity } from "react-native";
 import { t } from "../../utils/translations";
 
 import { Button, Text } from "../../components";
@@ -12,21 +12,24 @@ interface Props {
   onPress: (item: Guide) => void;
 }
 
-export default function ListView(props: Props) {
+export default function GuidePreview(props: Props) {
   return (
-    <View>
+    <React.Fragment>
       <Text.H3 style={styles.title}>{props.title}</Text.H3>
-      <FlatList 
+      <FlatList
         style={styles.list}
-        data={props.listItems} 
+        data={props.listItems}
         renderItem={({ item }: { item: Guide }) => (
-          <TouchableOpacity onPress={() => props.onPress(item)} style={styles.listItem}>
+          <TouchableOpacity
+            onPress={() => props.onPress(item)}
+            style={styles.listItem}
+          >
             <Text.Tertiary>{item.title}</Text.Tertiary>
           </TouchableOpacity>
         )}
       />
       <Button.Primary
-        style={{ marginTop: 20, alignSelf: "center" }}
+        style={styles.button}
         onPress={() => {}}
         textType={"Primary"}
       >
@@ -34,6 +37,6 @@ export default function ListView(props: Props) {
           {t("SEE_ALL")}
         </Text.Primary>
       </Button.Primary>
-    </View>
-  )
+    </React.Fragment>
+  );
 }

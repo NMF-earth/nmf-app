@@ -5,18 +5,21 @@ export default StyleSheet.create({
   title: {
     paddingTop: 15,
     paddingBottom: 15,
-    textAlign: "center",
+    textAlign: "center"
   },
   list: {
     borderTopColor: colors.gray,
-    borderTopWidth: 1,
+    borderTopWidth: 1
   },
   listItem: {
     flex: 1,
-    padding: 15,
+    padding: 15
   },
   buttonText: {
     textAlign: "center"
+  },
+  button: {
+    marginTop: 20,
+    alignSelf: "center"
   }
 });
-
