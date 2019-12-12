@@ -8,6 +8,7 @@ import TabBarIcon from "../components/TabBarIcon";
 import { Text } from "../components";
 
 import ActScreen from "../screens/Act";
+import ActDetailScreen from "../screens/ActDetail";
 import BudgetScreen from "../screens/Budget";
 import EmissionsScreen from "../screens/Emissions";
 import SettingsScreen from "../screens/Settings";
@@ -50,7 +51,8 @@ EmissionsStack.navigationOptions = {
 };
 
 const ActStack = createStackNavigator({
-  Act: ActScreen
+  Act: ActScreen,
+  Details: ActDetailScreen
 });
 
 ActStack.navigationOptions = {

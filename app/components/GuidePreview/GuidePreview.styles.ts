@@ -14,8 +14,9 @@ export default StyleSheet.create({
   listItem: {
     flex: 1,
     padding: 15,
-    borderBottomColor: colors.gray,
-    borderBottomWidth: 1,
+  },
+  buttonText: {
+    textAlign: "center"
   }
 });
 

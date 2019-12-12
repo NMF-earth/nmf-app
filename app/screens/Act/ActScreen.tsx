@@ -3,87 +3,57 @@ import { ScrollView, StyleSheet, View } from "react-native";
 
 import { t } from "../../utils/translations";
 import TabbedView from "../../components/TabbedView";
-import ListView from "../../components/ListView/ListView";
-import { Button, Text } from "../../components";
+import GuidePreview from "../../components/GuidePreview";
+import { Guide, GuideCategory } from "../../types/common-types";
+
+import Guides from "../../../assets/guides/guides.json"
+
+interface Props {
+  navigation: any;
+}
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     paddingTop: 15,
     backgroundColor: "#fff"
+  },
+  text: {
+    textAlign: "center"
   }
 });
 
-const dataList = [
-  {
-    title: "Don’t throw away peels",
-    key: "1",
-  },
-  {
-    title: "Make a compost on your balcony",
-    key: "2",
-  },
-  {
-    title: "Make your own soap",
-    key: "3"
-  }
-]
 
-const dataList2 = [
-  {
-    title: "Install an ad blocker",
-    key: "1",
-  },
-  {
-    title: "Clean your mailbox",
-    key: "2",
-  },
-  {
-    title: "Find replacement for GAFA services",
-    key: "3"
-  }
-]
+export default function ActScreen(props: Props): React.ReactElement {
+  const kitchenGuides = Guides
+    .filter(guide => guide.category === GuideCategory.kitchen) as Guide[];
+  const techGuides = Guides
+    .filter(guide => guide.category === GuideCategory.technology) as Guide[];
 
-export default function ActScreen(): React.ReactElement {
   return <ScrollView style={styles.container}>
     <TabbedView
       items={[
         { title: t("HABITS"), component: (
           <View>
-            <ListView title="Kitchen" dataSource={dataList} />
-            <Button.Primary
-              style={{ marginTop: 20, alignSelf: "center" }}
-              onPress={() => {}}
-              textType={"Primary"}
-            >
-              <Text.Primary bold white style={{ textAlign: "center" }}>
-                See All
-              </Text.Primary>
-            </Button.Primary>
-            <ListView title="Technology" dataSource={dataList2} />
-            <Button.Primary
-              style={{ marginTop: 20, alignSelf: "center" }}
-              onPress={() => {}}
-              textType={"Primary"}
-            >
-              <Text.Primary bold white style={{ textAlign: "center" }}>
-                See All
-              </Text.Primary>
-            </Button.Primary>
-          </View>
+            <GuidePreview
+              title="Kitchen" 
+              listItems={kitchenGuides} 
+              onPress={(guide: Guide) => props.navigation.push("Details", { guide })} 
+            />
+            <GuidePreview
+              title="Technology" 
+              listItems={techGuides} 
+              onPress={(guide: Guide) => props.navigation.push("Details", { guide })} 
+            />
+        </View>
         )},
         { title: t("FOOD"), component: (
           <React.Fragment>
-            <ListView title="Food" dataSource={dataList} />
-            <Button.Primary
-              fullWidth={false}
-              onPress={() => {}}
-              textType={"Primary"}
-            >
-              <Text.Primary bold white style={{ textAlign: "center" }}>
-                See All
-              </Text.Primary>
-            </Button.Primary>
+            <GuidePreview
+              title="Food" 
+              listItems={kitchenGuides} 
+              onPress={(guide: Guide) => props.navigation.push("Details", { guide })} 
+            />
           </React.Fragment>
         )},
       ]}
