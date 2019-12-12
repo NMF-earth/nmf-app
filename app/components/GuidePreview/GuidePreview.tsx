@@ -28,15 +28,15 @@ export default function GuidePreview(props: Props) {
           </TouchableOpacity>
         )}
       />
-      <Button.Primary
+      <Button.Secondary
         style={styles.button}
         onPress={() => {}}
-        textType={"Primary"}
+        textType={"Secondary"}
       >
-        <Text.Primary bold white style={styles.buttonText}>
+        <Text.Primary bold green center>
           {t("SEE_ALL")}
         </Text.Primary>
-      </Button.Primary>
+      </Button.Secondary>
     </React.Fragment>
   );
 }

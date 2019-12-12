@@ -11,11 +11,12 @@ interface Props {
   bold?: boolean;
   white?: boolean;
   green?: boolean;
+  center?: boolean;
 }
 
 export default function Secondary(props: Props): React.ReactElement {
   const customStyle = [styles.default, props.style];
-  const { white, green, darkGray, lightGray, bold, children } = props;
+  const { white, green, darkGray, lightGray, bold, children, center } = props;
 
   if (darkGray) {
     customStyle.push(mainStyle.darkGray);
@@ -35,6 +36,10 @@ export default function Secondary(props: Props): React.ReactElement {
 
   if (bold) {
     customStyle.push(mainStyle.bold);
+  }
+
+  if (center) {
+    customStyle.push(mainStyle.center);
   }
 
   return (

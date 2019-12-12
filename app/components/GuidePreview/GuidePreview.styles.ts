@@ -3,20 +3,13 @@ import colors from "../../style/colors";
 
 export default StyleSheet.create({
   title: {
-    paddingTop: 15,
-    paddingBottom: 15,
+    paddingTop: 28,
+    paddingBottom: 16,
     textAlign: "center"
-  },
-  list: {
-    borderTopColor: colors.gray,
-    borderTopWidth: 1
   },
   listItem: {
     flex: 1,
-    padding: 15
-  },
-  buttonText: {
-    textAlign: "center"
+    padding: 16
   },
   button: {
     marginTop: 20,

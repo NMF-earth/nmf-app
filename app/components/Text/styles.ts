@@ -17,5 +17,8 @@ export default StyleSheet.create({
   },
   bold: {
     fontFamily: fontWeight.Bold
+  },
+  center: {
+    textAlign: "center"
   }
 });
