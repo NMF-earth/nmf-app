@@ -1,9 +1,12 @@
 import React from "react";
 import HTML from "react-native-render-html";
 import { ScrollView, StyleSheet } from "react-native";
+import { NavigationState } from "react-navigation";
 
 interface Props {
-  navigation: any;
+  navigation: {
+    state: NavigationState;
+  };
 }
 
 const styles = StyleSheet.create({

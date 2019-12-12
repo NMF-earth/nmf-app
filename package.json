@@ -25,6 +25,7 @@
     "@expo/vector-icons": "10.0.3",
     "@reduxjs/toolkit": "1.0.4",
     "@types/i18n-js": "^3.0.1",
+    "@types/react-navigation": "^3.4.0",
     "expo": "35.0.0",
     "expo-asset": "7.0.0",
     "expo-constants": "7.0.0",

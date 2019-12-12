@@ -7,9 +7,12 @@ import GuidePreview from "../../components/GuidePreview";
 import { Guide, GuideCategory } from "../../types/common-types";
 
 import Guides from "../../../assets/guides/guides.json"
+import { NavigationParams } from "react-navigation";
 
 interface Props {
-  navigation: any;
+  navigation: {
+    push: (screen: string, params: NavigationParams) => void;
+  };
 }
 
 const styles = StyleSheet.create({
@@ -22,7 +25,6 @@ const styles = StyleSheet.create({
     textAlign: "center"
   }
 });
-
 
 export default function ActScreen(props: Props): React.ReactElement {
   const kitchenGuides = Guides

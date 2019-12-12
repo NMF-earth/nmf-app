@@ -6,6 +6,7 @@ interface TranslationKeys {
   ACT: string;
   HABITS: string;
   FOOD: string;
+  SEE_ALL: string;
 }
 
 export { en, fr, de, TranslationKeys };
