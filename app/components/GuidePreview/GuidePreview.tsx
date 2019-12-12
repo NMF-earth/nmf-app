@@ -17,7 +17,6 @@ export default function GuidePreview(props: Props) {
     <React.Fragment>
       <Text.H3 style={styles.title}>{props.title}</Text.H3>
       <FlatList
-        style={styles.list}
         data={props.listItems}
         renderItem={({ item }: { item: Guide }) => (
           <TouchableOpacity
