@@ -215,6 +215,27 @@ exports[`renders correctly Primary bold 1`] = `
 </Text>
 `;
 
+exports[`renders correctly Primary center 1`] = `
+<Text
+  bold={true}
+  style={
+    Array [
+      Object {
+        "color": "#111714",
+        "fontFamily": "Inter-Medium",
+        "fontSize": 18,
+      },
+      undefined,
+      Object {
+        "fontFamily": "Inter-Bold",
+      },
+    ]
+  }
+>
+  test
+</Text>
+`;
+
 exports[`renders correctly Primary darkGray 1`] = `
 <Text
   darkGray={true}
@@ -337,6 +358,27 @@ exports[`renders correctly Secondary bold 1`] = `
 </Text>
 `;
 
+exports[`renders correctly Secondary center 1`] = `
+<Text
+  center={true}
+  style={
+    Array [
+      Object {
+        "color": "#111714",
+        "fontFamily": "Inter-Medium",
+        "fontSize": 16,
+      },
+      undefined,
+      Object {
+        "textAlign": "center",
+      },
+    ]
+  }
+>
+  test
+</Text>
+`;
+
 exports[`renders correctly Secondary darkGray 1`] = `
 <Text
   darkGray={true}
@@ -451,6 +493,27 @@ exports[`renders correctly Tertiary bold 1`] = `
       undefined,
       Object {
         "fontFamily": "Inter-Bold",
+      },
+    ]
+  }
+>
+  test
+</Text>
+`;
+
+exports[`renders correctly Tertiary center 1`] = `
+<Text
+  center={true}
+  style={
+    Array [
+      Object {
+        "color": "#111714",
+        "fontFamily": "Inter-Medium",
+        "fontSize": 14,
+      },
+      undefined,
+      Object {
+        "textAlign": "center",
       },
     ]
   }

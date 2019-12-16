@@ -4,7 +4,7 @@ import { Button, View } from "react-native";
 import styles from "./TabbedView.styles";
 import colors from "../../style/colors";
 
-interface TabbedViewItem {
+export interface TabbedViewItem {
   title: string;
   component: ReactElement;
 }
@@ -23,6 +23,7 @@ interface TabItemProps {
 function TabItem({ title, index, handleTabPress, isSelected }: TabItemProps): ReactElement {
   const buttonColor = isSelected ? colors.linkGreen : colors.gray;
   const tabStyles = isSelected ? styles.tabItemSelected : styles.tabItem;
+
   return (
     <View 
       style={tabStyles}>

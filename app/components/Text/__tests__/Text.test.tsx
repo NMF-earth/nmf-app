@@ -95,6 +95,11 @@ it("renders correctly Primary bold", () => {
   expect(tree).toMatchSnapshot();
 });
 
+it("renders correctly Primary center", () => {
+  const tree = renderer.create(<Text.Primary bold>test</Text.Primary>).toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
 /* Primary Tests */
 
 it("renders correctly Secondary", () => {
@@ -137,6 +142,13 @@ it("renders correctly Secondary bold", () => {
   expect(tree).toMatchSnapshot();
 });
 
+it("renders correctly Secondary center", () => {
+  const tree = renderer
+    .create(<Text.Secondary center>test</Text.Secondary>)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
 /* Tertiary Tests */
 
 it("renders correctly Tertiary", () => {
@@ -175,6 +187,13 @@ it("renders correctly Tertiary white", () => {
 it("renders correctly Tertiary bold", () => {
   const tree = renderer
     .create(<Text.Tertiary bold>test</Text.Tertiary>)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it("renders correctly Tertiary center", () => {
+  const tree = renderer
+    .create(<Text.Tertiary center>test</Text.Tertiary>)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
