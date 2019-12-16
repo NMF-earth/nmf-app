@@ -3,7 +3,7 @@ import colors from "../../style/colors";
 
 export default StyleSheet.create({
   default: {
-    paddingHorizontal: 28
+    paddingHorizontal: 42
   },
   black: {
     backgroundColor: colors.darkLink

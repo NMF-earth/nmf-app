@@ -1,18 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly TabbedView 1`] = `
-<View>
+Array [
   <Text.H3
     style={
       Object {
-        "paddingBottom": 15,
-        "paddingTop": 15,
+        "paddingBottom": 16,
+        "paddingTop": 28,
         "textAlign": "center",
       }
     }
   >
     Foo
-  </Text.H3>
+  </Text.H3>,
   <RCTScrollView
     data={Array []}
     disableVirtualization={false}
@@ -34,19 +34,13 @@ exports[`renders correctly TabbedView 1`] = `
     renderItem={[Function]}
     scrollEventThrottle={50}
     stickyHeaderIndices={Array []}
-    style={
-      Object {
-        "borderTopColor": "#CED4DA",
-        "borderTopWidth": 1,
-      }
-    }
     updateCellsBatchingPeriod={50}
     viewabilityConfigCallbackPairs={Array []}
     windowSize={21}
   >
     <View />
-  </RCTScrollView>
-  <Button.Primary
+  </RCTScrollView>,
+  <Button.Secondary
     onPress={[Function]}
     style={
       Object {
@@ -54,19 +48,15 @@ exports[`renders correctly TabbedView 1`] = `
         "marginTop": 20,
       }
     }
-    textType="Primary"
+    textType="Secondary"
   >
     <Text.Primary
       bold={true}
-      style={
-        Object {
-          "textAlign": "center",
-        }
-      }
-      white={true}
+      center={true}
+      green={true}
     >
       See All
     </Text.Primary>
-  </Button.Primary>
-</View>
+  </Button.Secondary>,
+]
 `;
