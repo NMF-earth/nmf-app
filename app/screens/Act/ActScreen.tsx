@@ -38,12 +38,12 @@ export default function ActScreen(props: Props): React.ReactElement {
         { title: t("HABITS"), component: (
           <View>
             <GuidePreview
-              title="Kitchen" 
+              title={t("KITCHEN")}
               listItems={kitchenGuides} 
               onPress={(guide: Guide) => props.navigation.push("Details", { guide })} 
             />
             <GuidePreview
-              title="Technology" 
+              title={t("TECHNOLOGY")}
               listItems={techGuides} 
               onPress={(guide: Guide) => props.navigation.push("Details", { guide })} 
             />
@@ -52,7 +52,7 @@ export default function ActScreen(props: Props): React.ReactElement {
         { title: t("FOOD"), component: (
           <React.Fragment>
             <GuidePreview
-              title="Food" 
+              title={t("FOOD")}
               listItems={kitchenGuides} 
               onPress={(guide: Guide) => props.navigation.push("Details", { guide })} 
             />

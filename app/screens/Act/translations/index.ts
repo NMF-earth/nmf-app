@@ -6,6 +6,8 @@ interface TranslationKeys {
   ACT: string;
   HABITS: string;
   FOOD: string;
+  KITCHEN: string;
+  TECHNOLOGY: string;
   SEE_ALL: string;
 }
 
