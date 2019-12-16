@@ -1,6 +1,9 @@
 import React from "react";
 
-jest.mock("TouchableOpacity", () => "TouchableOpacity");
+jest.mock(
+  "react-native/Libraries/Components/Touchable/TouchableOpacity",
+  () => "TouchableOpacity"
+);
 jest.mock("../../../app/components/TabbedView", () => "TabbedView");
 jest.mock("../../../app/components/NoEmission", () => "NoEmission");
 jest.mock("../../../app/components/Text", () => require("./Text.mock").default);

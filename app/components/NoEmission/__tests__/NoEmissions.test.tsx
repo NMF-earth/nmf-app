@@ -5,6 +5,14 @@ import NoEmission from "../";
 jest.unmock("../");
 
 it("renders correctly NoEmission", () => {
-  const tree = renderer.create(<NoEmission addEmission={() => {}} />).toJSON();
+  const tree = renderer
+    .create(
+      <NoEmission
+        addEmission={() => {
+          // do nothing.
+        }}
+      />
+    )
+    .toJSON();
   expect(tree).toMatchSnapshot();
 });

@@ -34,35 +34,49 @@ export default function ActScreen(props: Props): React.ReactElement {
   const kitchenGuides = filter(isKitchen, Guides) as Guide[];
   const techGuides = filter(isTechnology, Guides) as Guide[];
 
-  return <ScrollView style={styles.container}>
-    <TabbedView
-      items={[
-        { title: t("HABITS"), component: (
-          <React.Fragment>
-            <GuidePreview
-              title={t("KITCHEN")}
-              listItems={kitchenGuides} 
-              onPress={(guide: Guide) => props.navigation.push("Details", { guide })} 
-            />
-            <GuidePreview
-              title={t("TECHNOLOGY")}
-              listItems={techGuides} 
-              onPress={(guide: Guide) => props.navigation.push("Details", { guide })} 
-            />
-        </React.Fragment>
-        )},
-        { title: t("FOOD"), component: (
-          <React.Fragment>
-            <GuidePreview
-              title={t("FOOD")}
-              listItems={kitchenGuides} 
-              onPress={(guide: Guide) => props.navigation.push("Details", { guide })} 
-            />
-          </React.Fragment>
-        )},
-      ]}
-    />
-  </ScrollView>;
+  return (
+    <ScrollView style={styles.container}>
+      <TabbedView
+        items={[
+          {
+            title: t("HABITS"),
+            component: (
+              <React.Fragment>
+                <GuidePreview
+                  title={t("KITCHEN")}
+                  listItems={kitchenGuides}
+                  onPress={(guide: Guide) =>
+                    props.navigation.push("Details", { guide })
+                  }
+                />
+                <GuidePreview
+                  title={t("TECHNOLOGY")}
+                  listItems={techGuides}
+                  onPress={(guide: Guide) =>
+                    props.navigation.push("Details", { guide })
+                  }
+                />
+              </React.Fragment>
+            )
+          },
+          {
+            title: t("FOOD"),
+            component: (
+              <React.Fragment>
+                <GuidePreview
+                  title={t("FOOD")}
+                  listItems={kitchenGuides}
+                  onPress={(guide: Guide) =>
+                    props.navigation.push("Details", { guide })
+                  }
+                />
+              </React.Fragment>
+            )
+          }
+        ]}
+      />
+    </ScrollView>
+  );
 }
 
 ActScreen.navigationOptions = {

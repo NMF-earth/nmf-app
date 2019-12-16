@@ -15,7 +15,11 @@ const styles = StyleSheet.create({
 export default function EmissionsScreen(): React.ReactElement {
   return (
     <ScrollView style={styles.container}>
-      <NoEmission addEmission={() => {}} />
+      <NoEmission
+        addEmission={() => {
+          // do nothing.
+        }}
+      />
     </ScrollView>
   );
 }

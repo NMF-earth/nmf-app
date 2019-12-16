@@ -29,7 +29,9 @@ export default function GuidePreview(props: Props) {
       />
       <Button.Secondary
         style={styles.button}
-        onPress={() => {}}
+        onPress={() => {
+          // do nothing.
+        }}
         textType={"Secondary"}
       >
         <Text.Primary bold green center>

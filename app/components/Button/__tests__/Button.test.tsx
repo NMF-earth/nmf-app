@@ -5,12 +5,16 @@ import Text from "../../Text";
 
 jest.unmock("../");
 
+const foo = () => {
+  // do nothing.
+};
+
 /* Primary Button Tests */
 
 it("renders correctly full width Primary Button with Primary font", () => {
   const tree = renderer
     .create(
-      <Button.Primary fullWidth onPress={() => {}} textType={"Primary"}>
+      <Button.Primary fullWidth onPress={foo} textType={"Primary"}>
         <Text.Primary>test</Text.Primary>
       </Button.Primary>
     )
@@ -21,7 +25,7 @@ it("renders correctly full width Primary Button with Primary font", () => {
 it("renders correctly Primary Button with Secondary font", () => {
   const tree = renderer
     .create(
-      <Button.Primary onPress={() => {}} textType={"Secondary"}>
+      <Button.Primary onPress={foo} textType={"Secondary"}>
         <Text.Secondary>test</Text.Secondary>
       </Button.Primary>
     )
@@ -32,7 +36,7 @@ it("renders correctly Primary Button with Secondary font", () => {
 it("renders correctly Primary Button with Tertiary font", () => {
   const tree = renderer
     .create(
-      <Button.Primary onPress={() => {}} textType={"Tertiary"}>
+      <Button.Primary onPress={foo} textType={"Tertiary"}>
         <Text.Tertiary>test</Text.Tertiary>
       </Button.Primary>
     )
@@ -45,7 +49,7 @@ it("renders correctly Primary Button with Tertiary font", () => {
 it("renders correctly full width Secondary Button with Primary font", () => {
   const tree = renderer
     .create(
-      <Button.Secondary fullWidth onPress={() => {}} textType={"Primary"}>
+      <Button.Secondary fullWidth onPress={foo} textType={"Primary"}>
         <Text.Primary>test</Text.Primary>
       </Button.Secondary>
     )
@@ -56,7 +60,7 @@ it("renders correctly full width Secondary Button with Primary font", () => {
 it("renders correctly Secondary Button with Secondary font", () => {
   const tree = renderer
     .create(
-      <Button.Secondary onPress={() => {}} textType={"Secondary"}>
+      <Button.Secondary onPress={foo} textType={"Secondary"}>
         <Text.Secondary>test</Text.Secondary>
       </Button.Secondary>
     )
@@ -67,7 +71,7 @@ it("renders correctly Secondary Button with Secondary font", () => {
 it("renders correctly Secondary Button with Tertiary font", () => {
   const tree = renderer
     .create(
-      <Button.Secondary onPress={() => {}} textType={"Tertiary"}>
+      <Button.Secondary onPress={foo} textType={"Tertiary"}>
         <Text.Tertiary>test</Text.Tertiary>
       </Button.Secondary>
     )
