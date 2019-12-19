@@ -39,18 +39,18 @@ export default function ActScreen(props: Props): React.ReactElement {
       <TabbedView
         items={[
           {
-            title: t("HABITS"),
+            title: t("ACT_SCREEN_HABITS"),
             component: (
               <React.Fragment>
                 <GuidePreview
-                  title={t("KITCHEN")}
+                  title={t("ACT_SCREEN_KITCHEN")}
                   listItems={kitchenGuides}
                   onPress={(guide: Guide) =>
                     props.navigation.push("Details", { guide })
                   }
                 />
                 <GuidePreview
-                  title={t("TECHNOLOGY")}
+                  title={t("ACT_SCREEN_TECHNOLOGY")}
                   listItems={techGuides}
                   onPress={(guide: Guide) =>
                     props.navigation.push("Details", { guide })
@@ -60,11 +60,11 @@ export default function ActScreen(props: Props): React.ReactElement {
             )
           },
           {
-            title: t("FOOD"),
+            title: t("ACT_SCREEN_FOOD"),
             component: (
               <React.Fragment>
                 <GuidePreview
-                  title={t("FOOD")}
+                  title={t("ACT_SCREEN_FOOD")}
                   listItems={kitchenGuides}
                   onPress={(guide: Guide) =>
                     props.navigation.push("Details", { guide })
@@ -80,5 +80,5 @@ export default function ActScreen(props: Props): React.ReactElement {
 }
 
 ActScreen.navigationOptions = {
-  title: t("ACT")
+  title: t("ACT_SCREEN_TITLE")
 };

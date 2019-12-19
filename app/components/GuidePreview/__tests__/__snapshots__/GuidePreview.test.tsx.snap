@@ -50,13 +50,13 @@ Array [
     }
     textType="Secondary"
   >
-    <Text.Primary
+    <Text.Secondary
       bold={true}
       center={true}
       green={true}
     >
       See All
-    </Text.Primary>
+    </Text.Secondary>
   </Button.Secondary>,
 ]
 `;

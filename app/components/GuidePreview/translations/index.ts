@@ -3,8 +3,7 @@ import fr from "./fr";
 import de from "./de";
 
 interface TranslationKeys {
-  SETTINGS_SCREEN_TAB_NAME: string;
-  SETTINGS_SCREEN_TITLE: string;
+  GUIDE_PREVIEW_SEE_ALL: string;
 }
 
 export { en, fr, de, TranslationKeys };

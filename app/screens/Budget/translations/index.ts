@@ -3,7 +3,14 @@ import fr from "./de";
 import de from "./en";
 
 interface TranslationKeys {
-  BUDGET: string;
+  BUDGET_SCREEN_TAB_NAME: string;
+  BUDGET_SCREEN_TITLE: string;
+  BUDGET_SCREEN_PROGRESS_CHART_LEGEND_ITEM_TOTAL: string;
+  BUDGET_SCREEN_PROGRESS_CHART_LEGEND_ITEM_TRANSPORT: string;
+  BUDGET_SCREEN_PROGRESS_CHART_LEGEND_ITEM_FOOD: string;
+  BUDGET_SCREEN_PROGRESS_CHART_LEGEND_ITEM_OTHER: string;
+  BUDGET_SCREEN_PROGRESS_CHART_LEGEND_MONTHLY_BUDGET: string;
+  BUDGET_SCREEN_SET_MONTHLY_BUDGET: string;
 }
 
 export { en, fr, de, TranslationKeys };

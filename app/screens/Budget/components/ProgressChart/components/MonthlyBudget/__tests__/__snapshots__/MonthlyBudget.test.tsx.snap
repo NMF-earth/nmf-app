@@ -14,8 +14,7 @@ exports[`MonthlyBudget renders correctly 1`] = `
     bold={true}
     center={true}
   >
-    Budget for this month :
-     
+    Budget for this month : 
     <Text.Secondary
       center={true}
       lightGray={true}

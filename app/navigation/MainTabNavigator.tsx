@@ -26,7 +26,7 @@ BudgetStack.navigationOptions = {
         color: focused ? colors.linkGreen : colors.swordGray
       }}
     >
-      {t("BUDGET")}
+      {t("BUDGET_SCREEN_TAB_NAME")}
     </Text.Secondary>
   ),
   tabBarIcon: ({ focused }) => (
@@ -46,7 +46,7 @@ EmissionsStack.navigationOptions = {
         color: focused ? colors.linkGreen : colors.swordGray
       }}
     >
-      {t("EMISSIONS")}
+      {t("EMISSIONS_SCREEN_TAB_NAME")}
     </Text.Secondary>
   ),
   tabBarIcon: ({ focused }) => (
@@ -67,7 +67,7 @@ ActStack.navigationOptions = {
         color: focused ? colors.linkGreen : colors.swordGray
       }}
     >
-      {t("ACT")}
+      {t("ACT_SCREEN_TAB_NAME")}
     </Text.Secondary>
   ),
   tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name={"md-hand"} />
@@ -85,7 +85,7 @@ SettingsStack.navigationOptions = {
         color: focused ? colors.linkGreen : colors.swordGray
       }}
     >
-      {t("SETTINGS")}
+      {t("SETTINGS_SCREEN_TAB_NAME")}
     </Text.Secondary>
   ),
   tabBarIcon: ({ focused }) => (

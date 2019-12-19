@@ -34,9 +34,9 @@ export default function GuidePreview(props: Props) {
         }}
         textType={"Secondary"}
       >
-        <Text.Primary bold green center>
-          {t("SEE_ALL")}
-        </Text.Primary>
+        <Text.Secondary bold green center>
+          {t("GUIDE_PREVIEW_SEE_ALL")}
+        </Text.Secondary>
       </Button.Secondary>
     </React.Fragment>
   );

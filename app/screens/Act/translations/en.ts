@@ -1,8 +1,8 @@
 export default {
-  ACT: "Act",
-  HABITS: "Habits",
-  FOOD: "Food",
-  KITCHEN: "Kitchen",
-  TECHNOLOGY: "Technology",
-  SEE_ALL: "See All",
+  ACT_SCREEN_TAB_NAME: "Act",
+  ACT_SCREEN_TITLE: "Act",
+  ACT_SCREEN_HABITS: "Habits",
+  ACT_SCREEN_FOOD: "Food",
+  ACT_SCREEN_KITCHEN: "Kitchen",
+  ACT_SCREEN_TECHNOLOGY: "Technology"
 };

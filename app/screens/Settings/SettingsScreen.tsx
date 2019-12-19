@@ -16,5 +16,5 @@ export default function SettingsScreen(): React.ReactElement {
 }
 
 SettingsScreen.navigationOptions = {
-  title: t("SETTINGS")
+  title: t("SETTINGS_SCREEN_TITLE")
 };

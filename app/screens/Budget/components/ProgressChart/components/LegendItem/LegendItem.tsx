@@ -21,7 +21,7 @@ const LegendItem = ({ name = "", value = 0, color = "" }: Props) => {
       </View>
       <View>
         <Text.Secondary bold>{name}</Text.Secondary>
-        <Text.Secondary>{value + " kg"}</Text.Secondary>
+        <Text.Secondary lightGray>{value + " kg"}</Text.Secondary>
       </View>
     </View>
   );

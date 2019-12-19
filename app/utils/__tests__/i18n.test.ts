@@ -9,7 +9,7 @@ const en = {
 it("parses a simple string", () => {
   i18n.translations = { en };
   i18n.locale = "en";
-  const result = t("ACT");
+  const result = t("ACT_SCREEN_TAB_NAME");
 
   expect(result).toEqual("some string");
 });
@@ -17,7 +17,7 @@ it("parses a simple string", () => {
 it("parses a string with a value", () => {
   i18n.translations = { en };
   i18n.locale = "en";
-  const result = t("SETTINGS", { value: "a value" });
+  const result = t("SETTINGS_SCREEN_TITLE", { value: "a value" });
 
   expect(result).toEqual("some string with a value");
 });

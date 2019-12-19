@@ -25,5 +25,5 @@ export default function EmissionsScreen(): React.ReactElement {
 }
 
 EmissionsScreen.navigationOptions = {
-  title: t("EMISSIONS")
+  title: t("EMISSIONS_SCREEN_TITLE")
 };

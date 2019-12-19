@@ -40,7 +40,9 @@ exports[`LegendItem renders correctly 1`] = `
     >
       Food
     </Text.Secondary>
-    <Text.Secondary>
+    <Text.Secondary
+      lightGray={true}
+    >
       10 kg
     </Text.Secondary>
   </View>

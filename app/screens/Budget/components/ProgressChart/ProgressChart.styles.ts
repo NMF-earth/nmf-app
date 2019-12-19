@@ -19,8 +19,7 @@ export default StyleSheet.create({
     ...shadow,
     backgroundColor: colors.white,
     paddingBottom: 14,
-    borderRadius: 10,
-    marginTop: 20,
+    borderRadius: 14,
     marginBottom: 20,
     paddingTop: 10,
     flex: 1
