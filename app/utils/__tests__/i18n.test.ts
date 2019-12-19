@@ -2,8 +2,8 @@ import i18n from "i18n-js";
 import { t } from "../translations";
 
 const en = {
-  ACT: "some string",
-  SETTINGS: "some string with {{value}}"
+  ACT_SCREEN_TAB_NAME: "some string",
+  SETTINGS_SCREEN_TITLE: "some string with {{value}}"
 };
 
 it("parses a simple string", () => {
