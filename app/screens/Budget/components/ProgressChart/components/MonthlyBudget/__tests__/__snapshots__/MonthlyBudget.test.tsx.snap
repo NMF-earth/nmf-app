@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MonthlyBudget renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "paddingBottom": 16,
+      "paddingTop": 20,
+    }
+  }
+>
+  <Text.Secondary
+    bold={true}
+    center={true}
+  >
+    Budget for this month :
+     
+    <Text.Secondary
+      center={true}
+      lightGray={true}
+    >
+      1000 Kg
+    </Text.Secondary>
+  </Text.Secondary>
+</View>
+`;

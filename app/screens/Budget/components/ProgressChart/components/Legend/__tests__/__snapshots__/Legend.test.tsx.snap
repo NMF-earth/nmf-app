@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Legend renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "flexDirection": "row",
+      "flexWrap": "wrap",
+      "justifyContent": "space-between",
+      "paddingVertical": 20,
+    }
+  }
+>
+  <LegendItem
+    color="#EB9276"
+    name="Total"
+    value={900}
+  />
+  <LegendItem
+    color="#FABC53"
+    name="Transport"
+    value={600}
+  />
+  <LegendItem
+    color="#4BB377"
+    name="Food"
+    value={200}
+  />
+  <LegendItem
+    color="#585D5B"
+    name="Other"
+    value={100}
+  />
+</View>
+`;

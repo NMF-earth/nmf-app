@@ -13,7 +13,7 @@ const navigationOptions = () => ({
   headerStyle: {
     borderBottomWidth: 0
   },
-  headerTitle: () => <Text.H2>Carbon Budget</Text.H2>,
+  headerTitle: () => <Text.H1>Carbon Budget</Text.H1>,
   headerRight: (
     <Ionicons
       size={26}

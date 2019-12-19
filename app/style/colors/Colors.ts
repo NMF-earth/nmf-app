@@ -4,5 +4,7 @@ export default {
   darkLink70: "#585D5B",
   gray: "#CED4DA",
   swordGray: "#9CA6A0",
-  white: "#FFFFFF"
+  white: "#FFFFFF",
+  apricot: "#EB9276",
+  mango: "#FABC53"
 };

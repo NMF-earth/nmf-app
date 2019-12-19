@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BudgetScreen renders correctly 1`] = `
+<RCTScrollView
+  style={
+    Object {
+      "flex": 1,
+      "paddingHorizontal": 14,
+    }
+  }
+>
+  <View>
+    <MonthSelector />
+    <ProgressChart
+      foodEmissions={200}
+      monthlyEmissionsBudget={1000}
+      otherEmissions={0}
+      totalEmissions={800}
+      transportEmissions={600}
+    />
+    <Button.Primary
+      fullWidth={true}
+      onPress={[Function]}
+      style={
+        Object {
+          "marginVertical": 20,
+        }
+      }
+      textType="Primary"
+    >
+      <Text.Primary
+        bold={true}
+        center={true}
+        white={true}
+      >
+        Set monthly budget
+      </Text.Primary>
+    </Button.Primary>
+  </View>
+</RCTScrollView>
+`;

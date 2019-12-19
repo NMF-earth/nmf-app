@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
 });
 
 export default function Budget(): React.ReactElement {
-  const [emission, setEmission] = useState(false);
+  const [emission, setEmission] = useState(true);
 
   if (emission) {
     return <BudgetScreen />;

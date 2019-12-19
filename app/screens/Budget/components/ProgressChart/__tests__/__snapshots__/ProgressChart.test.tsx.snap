@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProgressChart renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "borderRadius": 10,
+      "elevation": 4,
+      "flex": 1,
+      "marginBottom": 20,
+      "marginTop": 20,
+      "paddingBottom": 14,
+      "paddingHorizontal": 14,
+      "paddingTop": 10,
+      "shadowColor": "#000",
+      "shadowOffset": Object {
+        "height": 2,
+        "width": 0,
+      },
+      "shadowOpacity": 0.23,
+      "shadowRadius": 2.62,
+    }
+  }
+>
+  <Chart
+    foodEmissionsPercentage={0.2}
+    totalEmissionsPercentage={0.9}
+    transportEmissionsPercentage={0.6}
+  />
+  <Legend
+    foodEmissions={200}
+    otherEmissions={100}
+    totalEmissions={900}
+    transportEmissions={600}
+  />
+  <Chart
+    monthlyEmissionsBudget={1000}
+  />
+</View>
+`;

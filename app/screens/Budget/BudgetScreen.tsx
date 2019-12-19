@@ -1,33 +1,40 @@
 import React from "react";
-import { ScrollView, Dimensions } from "react-native";
-import { ProgressChart } from "react-native-chart-kit";
+import { ScrollView } from "react-native";
 import styles from "./BudgetScreen.styles";
+import { Text, Button } from "../../components";
+import { MonthSelector, ProgressChart } from "./components";
 
-const data = {
-  labels: ["Swim", "Bike", "Run"], // optional
-  data: [0.4, 0.6, 0.8]
-};
+const foodEmissions = 200;
+const transportEmissions = 600;
+const otherEmissions = 0;
+const totalEmissions = foodEmissions + transportEmissions + otherEmissions;
+const monthlyEmissionsBudget = 1000;
 
-export default function BudgetScreen(): React.ReactElement {
+const BudgetScreen = () => {
   return (
     <ScrollView style={styles.container}>
+      <MonthSelector />
       <ProgressChart
-        data={data}
-        width={Dimensions.get("window").width}
-        height={220}
-        chartConfig={{
-          // backgroundColor: "#fff",
-          backgroundGradientFrom: "#eee",
-          backgroundGradientTo: "#eee",
-          decimalPlaces: 2, // optional, defaults to 2dp
-          color: (opacity = 1) => `rgba(100, 100, 100, ${opacity})`,
-          labelColor: (opacity = 1) => `rgba(200, 200, 200, ${opacity})`,
-          style: {
-            borderRadius: 16
-          }
-        }}
-        hideLegend={false}
+        totalEmissions={totalEmissions}
+        foodEmissions={foodEmissions}
+        transportEmissions={transportEmissions}
+        otherEmissions={otherEmissions}
+        monthlyEmissionsBudget={monthlyEmissionsBudget}
       />
+      <Button.Primary
+        style={styles.monthlyBudgetButton}
+        fullWidth
+        textType={"Primary"}
+        onPress={() => {
+          // do nothing.
+        }}
+      >
+        <Text.Primary bold center white>
+          Set monthly budget
+        </Text.Primary>
+      </Button.Primary>
     </ScrollView>
   );
-}
+};
+
+export default BudgetScreen;

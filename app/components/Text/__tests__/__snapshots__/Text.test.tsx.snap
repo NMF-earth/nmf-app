@@ -6,7 +6,7 @@ exports[`renders correctly H1 1`] = `
     Array [
       Object {
         "color": "#111714",
-        "fontFamily": "Inter-ExtraBold",
+        "fontFamily": "Inter-Black",
         "fontSize": 30,
       },
       undefined,
@@ -24,7 +24,7 @@ exports[`renders correctly H1 darkGray 1`] = `
     Array [
       Object {
         "color": "#111714",
-        "fontFamily": "Inter-ExtraBold",
+        "fontFamily": "Inter-Black",
         "fontSize": 30,
       },
       undefined,
@@ -45,7 +45,7 @@ exports[`renders correctly H1 lightGray 1`] = `
     Array [
       Object {
         "color": "#111714",
-        "fontFamily": "Inter-ExtraBold",
+        "fontFamily": "Inter-Black",
         "fontSize": 30,
       },
       undefined,

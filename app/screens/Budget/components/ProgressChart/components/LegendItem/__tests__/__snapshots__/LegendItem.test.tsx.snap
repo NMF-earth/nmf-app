@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LegendItem renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "flexDirection": "row",
+      "justifyContent": "center",
+      "paddingTop": 10,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "height": "100%",
+        "marginHorizontal": 6,
+        "width": 16,
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "red",
+          },
+          Object {
+            "borderRadius": 8,
+            "height": 16,
+            "width": 16,
+          },
+        ]
+      }
+    />
+  </View>
+  <View>
+    <Text.Secondary
+      bold={true}
+    >
+      Food
+    </Text.Secondary>
+    <Text.Secondary>
+      10 kg
+    </Text.Secondary>
+  </View>
+</View>
+`;
