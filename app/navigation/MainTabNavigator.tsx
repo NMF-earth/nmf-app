@@ -10,12 +10,14 @@ import ActDetailScreen from "../screens/ActDetail";
 import BudgetScreen from "../screens/Budget";
 import EmissionsScreen from "../screens/Emissions";
 import SettingsScreen from "../screens/Settings";
+import MontlyBudgetScreen from "../screens/MonthlyBudget";
 
 import colors from "../style/colors";
 import { t } from "../utils/translations";
 
 const BudgetStack = createStackNavigator({
-  Budget: BudgetScreen
+  Budget: BudgetScreen,
+  MontlyBudget: MontlyBudgetScreen
 });
 
 BudgetStack.navigationOptions = {
@@ -103,6 +105,7 @@ const tabNavigator = createBottomTabNavigator(
   {
     tabBarOptions: {
       style: {
+        paddingTop: 6,
         backgroundColor: colors.linkGreen + "15",
         borderTopWidth: 0
       }

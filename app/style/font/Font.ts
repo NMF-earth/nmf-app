@@ -21,7 +21,7 @@ const fontWeight = {
 };
 
 const fontSizeNormalDevice = {
-  H1: 30,
+  H1: 28,
   H2: 26,
   H3: 22,
   Primary: 18,

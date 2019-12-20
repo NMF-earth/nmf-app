@@ -12,11 +12,17 @@ const styles = StyleSheet.create({
   }
 });
 
-export default function Budget(): React.ReactElement {
+interface Props {
+  navigation: {
+    push: (screen: string) => void;
+  };
+}
+
+const Budget = (props: Props) => {
   const [emission, setEmission] = useState(true);
 
   if (emission) {
-    return <BudgetScreen />;
+    return <BudgetScreen {...props} />;
   } else {
     return (
       <SafeAreaView style={styles.container}>
@@ -26,6 +32,8 @@ export default function Budget(): React.ReactElement {
       </SafeAreaView>
     );
   }
-}
+};
 
 Budget.navigationOptions = navigationOptions;
+
+export default Budget;

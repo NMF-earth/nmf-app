@@ -3,6 +3,7 @@ import { ScrollView } from "react-native";
 import styles from "./BudgetScreen.styles";
 import { Text, Button } from "../../components";
 import { MonthSelector, ProgressChart } from "./components";
+import { t } from "../../utils/translations";
 
 const foodEmissions = 200;
 const transportEmissions = 600;
@@ -10,7 +11,13 @@ const otherEmissions = 0;
 const totalEmissions = foodEmissions + transportEmissions + otherEmissions;
 const monthlyEmissionsBudget = 1000;
 
-const BudgetScreen = () => {
+interface Props {
+  navigation: {
+    push: (screen: string) => void;
+  };
+}
+
+const BudgetScreen = (props: Props) => {
   return (
     <ScrollView style={styles.container}>
       <MonthSelector />
@@ -26,11 +33,11 @@ const BudgetScreen = () => {
         fullWidth
         textType={"Primary"}
         onPress={() => {
-          // do nothing.
+          props.navigation.push("MontlyBudget");
         }}
       >
         <Text.Primary bold center white>
-          Set monthly budget
+          {t("BUDGET_SCREEN_SET_MONTHLY_BUDGET")}
         </Text.Primary>
       </Button.Primary>
     </ScrollView>

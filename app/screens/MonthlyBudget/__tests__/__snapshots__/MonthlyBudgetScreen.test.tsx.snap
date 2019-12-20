@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MonthlyBudgetScreen renders correctly 1`] = `
+<RCTScrollView
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "flex": 1,
+      "padding": 16,
+    }
+  }
+>
+  <View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "flexWrap": "wrap",
+        }
+      }
+    >
+      <Text.Primary
+        bold={true}
+      >
+        My carbon monthly budget : 
+      </Text.Primary>
+      <Text.Primary
+        lightGray={true}
+      >
+        500 kg
+      </Text.Primary>
+    </View>
+    <Slider
+      maximumValue={1000}
+      minimumTrackTintColor="#4BB377"
+      minimumValue={0}
+      onValueChange={[Function]}
+      style={
+        Object {
+          "flex": 1,
+          "marginHorizontal": 24,
+          "marginTop": 14,
+        }
+      }
+      thumbStyle={
+        Object {
+          "backgroundColor": "#4BB377",
+          "borderRadius": 10,
+          "height": 20,
+          "shadowOffset": Object {
+            "height": 2,
+            "width": 0,
+          },
+          "shadowOpacity": 0.35,
+          "shadowRadius": 2,
+          "width": 20,
+        }
+      }
+      trackStyle={
+        Object {
+          "borderRadius": 1,
+          "height": 2,
+        }
+      }
+      value={500}
+    />
+  </View>
+</RCTScrollView>
+`;

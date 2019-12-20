@@ -4,3 +4,5 @@ jest.mock("react-native-svg", () => {
 
   return svg;
 });
+
+jest.mock("react-native-slider", () => "Slider");
