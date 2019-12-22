@@ -6,5 +6,6 @@ export default {
   swordGray: "#9CA6A0",
   white: "#FFFFFF",
   apricot: "#EB9276",
-  mango: "#FABC53"
+  mango: "#FABC53",
+  black: "#000000"
 };
