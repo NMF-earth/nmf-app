@@ -7,8 +7,10 @@ export default StyleSheet.create({
     textAlign: "center"
   },
   listItem: {
+    flexDirection: "row",
     flex: 1,
-    padding: 16
+    padding: 16,
+    justifyContent: "space-between"
   },
   button: {
     marginTop: 14,

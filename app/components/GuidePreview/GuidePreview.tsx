@@ -1,10 +1,12 @@
 import React from "react";
 import { FlatList, TouchableOpacity } from "react-native";
-import { t } from "../../utils/translations";
+import { Ionicons } from "@expo/vector-icons";
 
+import { t } from "../../utils/translations";
 import { Button, Text } from "../../components";
 import styles from "./GuidePreview.styles";
 import { Guide } from "../../types/common-types";
+import colors from "../../style/colors";
 
 interface Props {
   title: string;
@@ -24,6 +26,11 @@ export default function GuidePreview(props: Props) {
             style={styles.listItem}
           >
             <Text.Tertiary>{item.title}</Text.Tertiary>
+            <Ionicons
+              name={"ios-arrow-forward"}
+              size={22}
+              color={colors.darkLink}
+            />
           </TouchableOpacity>
         )}
       />
