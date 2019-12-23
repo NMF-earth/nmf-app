@@ -11,7 +11,7 @@ export default StyleSheet.create({
     padding: 16
   },
   button: {
-    marginTop: 20,
+    marginTop: 14,
     alignSelf: "center"
   }
 });

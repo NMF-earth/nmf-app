@@ -12,6 +12,7 @@ interface Props {
   white?: boolean;
   green?: boolean;
   center?: boolean;
+  numberOfLines?: number;
 }
 
 export default function Tertiary(props: Props): React.ReactElement {

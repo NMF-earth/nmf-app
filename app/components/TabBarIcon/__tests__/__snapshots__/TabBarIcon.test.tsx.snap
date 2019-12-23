@@ -1,3 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `<Text />`;
+exports[`renders correctly 1`] = `
+<Ionicons
+  color="#9CA6A0"
+  name="ios-information-circle"
+  size={26}
+  style={
+    Object {
+      "marginBottom": -6,
+    }
+  }
+/>
+`;

@@ -45,7 +45,7 @@ Array [
     style={
       Object {
         "alignSelf": "center",
-        "marginTop": 20,
+        "marginTop": 14,
       }
     }
     textType="Secondary"
