@@ -6,31 +6,57 @@ jest.unmock("../EmissionListItem.tsx");
 
 const TITLE = "170 g of red meat";
 const SUBTITLE = "2.1 kg CO2";
+const ONPRESS = () => {
+  // do nothing.
+};
 
 it("EmissionListItem renders correctly by default", () => {
   const tree = renderer
-    .create(<EmissionListItem title={TITLE} subTitle={SUBTITLE} />)
+    .create(
+      <EmissionListItem onPress={ONPRESS} title={TITLE} subTitle={SUBTITLE} />
+    )
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
 
 it("EmissionListItem renders correctly with restaurant icon", () => {
   const tree = renderer
-    .create(<EmissionListItem title={TITLE} subTitle={SUBTITLE} restaurant />)
+    .create(
+      <EmissionListItem
+        onPress={ONPRESS}
+        title={TITLE}
+        subTitle={SUBTITLE}
+        restaurant
+      />
+    )
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
 
 it("EmissionListItem renders correctly with plane icon", () => {
   const tree = renderer
-    .create(<EmissionListItem title={TITLE} subTitle={SUBTITLE} plane />)
+    .create(
+      <EmissionListItem
+        onPress={ONPRESS}
+        title={TITLE}
+        subTitle={SUBTITLE}
+        plane
+      />
+    )
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
 
 it("EmissionListItem renders correctly with build icon", () => {
   const tree = renderer
-    .create(<EmissionListItem title={TITLE} subTitle={SUBTITLE} build />)
+    .create(
+      <EmissionListItem
+        onPress={ONPRESS}
+        title={TITLE}
+        subTitle={SUBTITLE}
+        build
+      />
+    )
     .toJSON();
   expect(tree).toMatchSnapshot();
 });

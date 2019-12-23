@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`EmissionListItem renders correctly by default 1`] = `
-<View
+<TouchableOpacity
+  onPress={[Function]}
   style={
     Object {
       "alignItems": "center",
@@ -37,6 +38,7 @@ exports[`EmissionListItem renders correctly by default 1`] = `
       170 g of red meat
     </Text.Primary>
     <Text.Tertiary
+      light={true}
       lightGray={true}
       numberOfLines={1}
     >
@@ -54,11 +56,12 @@ exports[`EmissionListItem renders correctly by default 1`] = `
       }
     }
   />
-</View>
+</TouchableOpacity>
 `;
 
 exports[`EmissionListItem renders correctly with build icon 1`] = `
-<View
+<TouchableOpacity
+  onPress={[Function]}
   style={
     Object {
       "alignItems": "center",
@@ -94,6 +97,7 @@ exports[`EmissionListItem renders correctly with build icon 1`] = `
       170 g of red meat
     </Text.Primary>
     <Text.Tertiary
+      light={true}
       lightGray={true}
       numberOfLines={1}
     >
@@ -111,11 +115,12 @@ exports[`EmissionListItem renders correctly with build icon 1`] = `
       }
     }
   />
-</View>
+</TouchableOpacity>
 `;
 
 exports[`EmissionListItem renders correctly with plane icon 1`] = `
-<View
+<TouchableOpacity
+  onPress={[Function]}
   style={
     Object {
       "alignItems": "center",
@@ -151,6 +156,7 @@ exports[`EmissionListItem renders correctly with plane icon 1`] = `
       170 g of red meat
     </Text.Primary>
     <Text.Tertiary
+      light={true}
       lightGray={true}
       numberOfLines={1}
     >
@@ -168,11 +174,12 @@ exports[`EmissionListItem renders correctly with plane icon 1`] = `
       }
     }
   />
-</View>
+</TouchableOpacity>
 `;
 
 exports[`EmissionListItem renders correctly with restaurant icon 1`] = `
-<View
+<TouchableOpacity
+  onPress={[Function]}
   style={
     Object {
       "alignItems": "center",
@@ -208,6 +215,7 @@ exports[`EmissionListItem renders correctly with restaurant icon 1`] = `
       170 g of red meat
     </Text.Primary>
     <Text.Tertiary
+      light={true}
       lightGray={true}
       numberOfLines={1}
     >
@@ -225,5 +233,5 @@ exports[`EmissionListItem renders correctly with restaurant icon 1`] = `
       }
     }
   />
-</View>
+</TouchableOpacity>
 `;

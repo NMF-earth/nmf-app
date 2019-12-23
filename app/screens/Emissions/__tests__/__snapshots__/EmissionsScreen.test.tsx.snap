@@ -24,16 +24,19 @@ Array [
                 }
               >
                 <EmissionListItem
+                  onPress={[Function]}
                   restaurant={true}
                   subTitle="2.1 kg CO2"
                   title="170 g of red meat"
                 />
                 <EmissionListItem
                   build={true}
+                  onPress={[Function]}
                   subTitle="2.1 kg CO2"
                   title="170 g of red meat"
                 />
                 <EmissionListItem
+                  onPress={[Function]}
                   plane={true}
                   subTitle="2.1 kg CO2"
                   title="170 g of red meat"
@@ -52,10 +55,12 @@ Array [
               >
                 <EmissionListItem
                   build={true}
+                  onPress={[Function]}
                   subTitle="2.1 kg CO2"
                   title="170 g of red meat"
                 />
                 <EmissionListItem
+                  onPress={[Function]}
                   plane={true}
                   subTitle="2.1 kg CO2"
                   title="170 g of red meat"

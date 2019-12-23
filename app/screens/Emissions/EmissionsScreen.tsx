@@ -42,6 +42,9 @@ const ActionButtons = () => (
 /* TO DO: remove these constants */
 const TITLE = "170 g of red meat";
 const SUBTITLE = "2.1 kg CO2";
+const ONPRESS = () => {
+  // do nothing.
+};
 
 /* TO DO: line bellow later */
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -56,12 +59,23 @@ const EmissionsScreen = (props: Props) => {
               component: (
                 <View style={styles.itemContainer}>
                   <EmissionListItem
+                    onPress={ONPRESS}
                     title={TITLE}
                     subTitle={SUBTITLE}
                     restaurant
                   />
-                  <EmissionListItem title={TITLE} subTitle={SUBTITLE} build />
-                  <EmissionListItem title={TITLE} subTitle={SUBTITLE} plane />
+                  <EmissionListItem
+                    onPress={ONPRESS}
+                    title={TITLE}
+                    subTitle={SUBTITLE}
+                    build
+                  />
+                  <EmissionListItem
+                    onPress={ONPRESS}
+                    title={TITLE}
+                    subTitle={SUBTITLE}
+                    plane
+                  />
                 </View>
               )
             },
@@ -69,8 +83,18 @@ const EmissionsScreen = (props: Props) => {
               title: t("EMISSIONS_SCREEN_MITIGATED"),
               component: (
                 <View style={styles.itemContainer}>
-                  <EmissionListItem title={TITLE} subTitle={SUBTITLE} build />
-                  <EmissionListItem title={TITLE} subTitle={SUBTITLE} plane />
+                  <EmissionListItem
+                    onPress={ONPRESS}
+                    title={TITLE}
+                    subTitle={SUBTITLE}
+                    build
+                  />
+                  <EmissionListItem
+                    onPress={ONPRESS}
+                    title={TITLE}
+                    subTitle={SUBTITLE}
+                    plane
+                  />
                 </View>
               )
             }

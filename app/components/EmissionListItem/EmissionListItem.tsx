@@ -1,5 +1,5 @@
 import React from "react";
-import { View } from "react-native";
+import { View, TouchableOpacity } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import colors from "../../style/colors";
 import styles from "./EmissionListItem.styles";
@@ -11,6 +11,7 @@ interface Props {
   build?: boolean;
   title: string;
   subTitle: string;
+  onPress: () => void;
 }
 
 const EmissionListItem = ({
@@ -18,7 +19,8 @@ const EmissionListItem = ({
   restaurant = false,
   build = false,
   title = "",
-  subTitle = ""
+  subTitle = "",
+  onPress
 }: Props) => {
   let iconName = "";
   let iconSize = 28;
@@ -38,7 +40,7 @@ const EmissionListItem = ({
   }
 
   return (
-    <View style={styles.container}>
+    <TouchableOpacity onPress={onPress} style={styles.container}>
       <Ionicons
         name={iconName}
         size={iconSize}
@@ -47,7 +49,7 @@ const EmissionListItem = ({
       />
       <View style={styles.textContainer}>
         <Text.Primary numberOfLines={1}>{title}</Text.Primary>
-        <Text.Tertiary numberOfLines={1} lightGray>
+        <Text.Tertiary numberOfLines={1} light lightGray>
           {subTitle}
         </Text.Tertiary>
       </View>
@@ -57,7 +59,7 @@ const EmissionListItem = ({
         style={styles.icon}
         color={colors.darkLink}
       />
-    </View>
+    </TouchableOpacity>
   );
 };
 

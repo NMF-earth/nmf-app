@@ -23,7 +23,7 @@ export default function GuidePreview(props: Props) {
             onPress={() => props.onPress(item)}
             style={styles.listItem}
           >
-            <Text.Secondary>{item.title}</Text.Secondary>
+            <Text.Tertiary>{item.title}</Text.Tertiary>
           </TouchableOpacity>
         )}
       />

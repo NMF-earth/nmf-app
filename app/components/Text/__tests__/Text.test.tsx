@@ -149,6 +149,13 @@ it("renders correctly Secondary center", () => {
   expect(tree).toMatchSnapshot();
 });
 
+it("renders correctly Secondary light", () => {
+  const tree = renderer
+    .create(<Text.Secondary light>test</Text.Secondary>)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
 /* Tertiary Tests */
 
 it("renders correctly Tertiary", () => {
@@ -194,6 +201,13 @@ it("renders correctly Tertiary bold", () => {
 it("renders correctly Tertiary center", () => {
   const tree = renderer
     .create(<Text.Tertiary center>test</Text.Tertiary>)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it("renders correctly Tertiary light", () => {
+  const tree = renderer
+    .create(<Text.Tertiary light>test</Text.Tertiary>)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
