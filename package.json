@@ -10,7 +10,9 @@
     "test": "jest --coverage",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx ./app",
     "typescript": "tsc --noEmit",
-    "ci": "yarn lint && yarn typescript && yarn test"
+    "ci": "yarn lint && yarn typescript && yarn test",
+    "storybook": "start-storybook -p 7007",
+    "prestorybook": "rnstl"
   },
   "jest": {
     "setupFiles": [
@@ -63,6 +65,12 @@
     "typescript": "3.7.3"
   },
   "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@storybook/addon-actions": "^5.2.8",
+    "@storybook/addon-links": "^5.2.8",
+    "@storybook/addons": "^5.2.8",
+    "@storybook/react-native": "^5.2.8",
+    "@storybook/react-native-server": "^5.2.8",
     "@types/jest": "24.0.23",
     "@types/node": "12.12.18",
     "@types/react": "16.9.16",
@@ -70,16 +78,24 @@
     "@types/react-test-renderer": "16.9.1",
     "@typescript-eslint/eslint-plugin": "2.11.0",
     "@typescript-eslint/parser": "2.11.0",
+    "babel-loader": "^8.0.6",
     "babel-preset-expo": "8.0.0",
     "eslint": "6.7.2",
     "eslint-plugin-jest": "23.1.1",
     "eslint-plugin-react": "7.17.0",
-    "jest-expo": "36.0.1"
+    "jest-expo": "36.0.1",
+    "react-native-storybook-loader": "^1.8.1"
   },
   "private": true,
   "husky": {
     "hooks": {
       "pre-commit": "yarn ci"
+    }
+  },
+  "config": {
+    "react-native-storybook-loader": {
+      "pattern": "**/*.story.tsx",
+      "outputFile": "./storybook/storyLoader.js"
     }
   }
 }

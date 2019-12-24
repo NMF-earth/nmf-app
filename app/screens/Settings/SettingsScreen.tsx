@@ -1,20 +1,34 @@
 import React from "react";
-import { ScrollView, StyleSheet } from "react-native";
-
+import { ScrollView } from "react-native";
+import { Button, Text } from "../../components";
 import { t } from "../../utils/translations";
+import styles from "./SettingsScreen.styles";
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    paddingTop: 15,
-    backgroundColor: "#fff"
-  }
-});
-
-export default function SettingsScreen(): React.ReactElement {
-  return <ScrollView style={styles.container}></ScrollView>;
+interface Props {
+  navigation: {
+    push: (screen: string) => void;
+  };
 }
+
+const SettingsScreen = (props: Props) => {
+  return (
+    <ScrollView style={styles.container}>
+      <Button.Primary
+        textType={"Primary"}
+        onPress={() => {
+          props.navigation.push("Storybook");
+        }}
+      >
+        <Text.Primary white center>
+          Open Storybook
+        </Text.Primary>
+      </Button.Primary>
+    </ScrollView>
+  );
+};
 
 SettingsScreen.navigationOptions = {
   title: t("SETTINGS_SCREEN_TITLE")
 };
+
+export default SettingsScreen;
