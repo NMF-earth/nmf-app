@@ -12,6 +12,7 @@ interface Props {
   white?: boolean;
   green?: boolean;
   center?: boolean;
+  numberOfLines?: number;
 }
 
 export default function Primary(props: Props): React.ReactElement {

@@ -54,7 +54,7 @@ exports[`renders correctly NoEmission 1`] = `
         }
       }
     >
-      Thanks for joining the fight to save our beautiful planet!
+      Thanks for joining our fight against climate change!
     </Text.Primary>
     <Text.Primary
       style={

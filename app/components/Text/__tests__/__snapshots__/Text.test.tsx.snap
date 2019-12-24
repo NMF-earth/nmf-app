@@ -421,6 +421,27 @@ exports[`renders correctly Secondary green 1`] = `
 </Text>
 `;
 
+exports[`renders correctly Secondary light 1`] = `
+<Text
+  light={true}
+  style={
+    Array [
+      Object {
+        "color": "#111714",
+        "fontFamily": "Inter-Medium",
+        "fontSize": 16,
+      },
+      undefined,
+      Object {
+        "fontFamily": "Inter-Light-BETA",
+      },
+    ]
+  }
+>
+  test
+</Text>
+`;
+
 exports[`renders correctly Secondary lightGray 1`] = `
 <Text
   lightGray={true}
@@ -556,6 +577,27 @@ exports[`renders correctly Tertiary green 1`] = `
       undefined,
       Object {
         "color": "#4BB377",
+      },
+    ]
+  }
+>
+  test
+</Text>
+`;
+
+exports[`renders correctly Tertiary light 1`] = `
+<Text
+  light={true}
+  style={
+    Array [
+      Object {
+        "color": "#111714",
+        "fontFamily": "Inter-Medium",
+        "fontSize": 14,
+      },
+      undefined,
+      Object {
+        "fontFamily": "Inter-Light-BETA",
       },
     ]
   }

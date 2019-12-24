@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly TabbedView 1`] = `
-<View>
+Array [
   <View
     style={
       Object {
@@ -92,9 +92,9 @@ exports[`renders correctly TabbedView 1`] = `
         </View>
       </TouchableOpacity>
     </View>
-  </View>
+  </View>,
   <Text>
     Some details
-  </Text>
-</View>
+  </Text>,
+]
 `;

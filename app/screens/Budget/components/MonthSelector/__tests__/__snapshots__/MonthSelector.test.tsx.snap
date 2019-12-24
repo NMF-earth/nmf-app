@@ -20,7 +20,11 @@ exports[`MonthSelector renders correctly 1`] = `
       }
     }
   >
-    <Text />
+    <Ionicons
+      color="#9CA6A0"
+      name="ios-arrow-back"
+      size={30}
+    />
   </TouchableOpacity>
   <View
     style={
@@ -45,7 +49,11 @@ exports[`MonthSelector renders correctly 1`] = `
       }
     }
   >
-    <Text />
+    <Ionicons
+      color="#9CA6A0"
+      name="ios-arrow-forward"
+      size={30}
+    />
   </TouchableOpacity>
 </View>
 `;

@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmissionsScreen renders correctly 1`] = `
+Array [
+  <RCTScrollView
+    style={
+      Object {
+        "flex": 1,
+        "paddingTop": 10,
+      }
+    }
+  >
+    <View>
+      <TabbedView
+        items={
+          Array [
+            Object {
+              "component": <View
+                style={
+                  Object {
+                    "flex": 1,
+                    "paddingTop": 20,
+                  }
+                }
+              >
+                <EmissionListItem
+                  onPress={[Function]}
+                  restaurant={true}
+                  subTitle="2.1 kg CO2"
+                  title="170 g of red meat"
+                />
+                <EmissionListItem
+                  build={true}
+                  onPress={[Function]}
+                  subTitle="2.1 kg CO2"
+                  title="170 g of red meat"
+                />
+                <EmissionListItem
+                  onPress={[Function]}
+                  plane={true}
+                  subTitle="2.1 kg CO2"
+                  title="170 g of red meat"
+                />
+              </View>,
+              "title": "To offset",
+            },
+            Object {
+              "component": <View
+                style={
+                  Object {
+                    "flex": 1,
+                    "paddingTop": 20,
+                  }
+                }
+              >
+                <EmissionListItem
+                  build={true}
+                  onPress={[Function]}
+                  subTitle="2.1 kg CO2"
+                  title="170 g of red meat"
+                />
+                <EmissionListItem
+                  onPress={[Function]}
+                  plane={true}
+                  subTitle="2.1 kg CO2"
+                  title="170 g of red meat"
+                />
+              </View>,
+              "title": "Mitigated",
+            },
+          ]
+        }
+      />
+    </View>
+  </RCTScrollView>,
+  <View
+    style={
+      Object {
+        "bottom": 0,
+        "flexDirection": "row",
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+      }
+    }
+  >
+    <Button.Primary
+      black={true}
+      onPress={[Function]}
+      style={
+        Object {
+          "flex": 1,
+          "marginBottom": 20,
+          "marginLeft": 14,
+          "marginRight": 7,
+        }
+      }
+      textType="Primary"
+    >
+      <Text.Primary
+        bold={true}
+        center={true}
+        white={true}
+      >
+        Mitigate
+      </Text.Primary>
+    </Button.Primary>
+    <Button.Primary
+      onPress={[Function]}
+      style={
+        Object {
+          "flex": 1,
+          "marginBottom": 20,
+          "marginLeft": 7,
+          "marginRight": 14,
+        }
+      }
+      textType="Primary"
+    >
+      <Text.Primary
+        bold={true}
+        center={true}
+        white={true}
+      >
+        Add
+      </Text.Primary>
+    </Button.Primary>
+  </View>,
+]
+`;

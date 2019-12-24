@@ -1,0 +1,237 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmissionListItem renders correctly by default 1`] = `
+<TouchableOpacity
+  onPress={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+      "marginHorizontal": 14,
+      "marginVertical": 4,
+    }
+  }
+>
+  <Ionicons
+    color="#111714"
+    name=""
+    size={28}
+    style={
+      Object {
+        "marginTop": 2,
+        "paddingHorizontal": 14,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <Text.Primary
+      numberOfLines={1}
+    >
+      170 g of red meat
+    </Text.Primary>
+    <Text.Tertiary
+      light={true}
+      lightGray={true}
+      numberOfLines={1}
+    >
+      2.1 kg CO2
+    </Text.Tertiary>
+  </View>
+  <Ionicons
+    color="#111714"
+    name="ios-arrow-forward"
+    size={22}
+    style={
+      Object {
+        "marginTop": 2,
+        "paddingHorizontal": 14,
+      }
+    }
+  />
+</TouchableOpacity>
+`;
+
+exports[`EmissionListItem renders correctly with build icon 1`] = `
+<TouchableOpacity
+  onPress={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+      "marginHorizontal": 14,
+      "marginVertical": 4,
+    }
+  }
+>
+  <Ionicons
+    color="#111714"
+    name="md-build"
+    size={26}
+    style={
+      Object {
+        "marginTop": 2,
+        "paddingHorizontal": 14,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <Text.Primary
+      numberOfLines={1}
+    >
+      170 g of red meat
+    </Text.Primary>
+    <Text.Tertiary
+      light={true}
+      lightGray={true}
+      numberOfLines={1}
+    >
+      2.1 kg CO2
+    </Text.Tertiary>
+  </View>
+  <Ionicons
+    color="#111714"
+    name="ios-arrow-forward"
+    size={22}
+    style={
+      Object {
+        "marginTop": 2,
+        "paddingHorizontal": 14,
+      }
+    }
+  />
+</TouchableOpacity>
+`;
+
+exports[`EmissionListItem renders correctly with plane icon 1`] = `
+<TouchableOpacity
+  onPress={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+      "marginHorizontal": 14,
+      "marginVertical": 4,
+    }
+  }
+>
+  <Ionicons
+    color="#111714"
+    name="md-airplane"
+    size={30}
+    style={
+      Object {
+        "marginTop": 2,
+        "paddingHorizontal": 14,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <Text.Primary
+      numberOfLines={1}
+    >
+      170 g of red meat
+    </Text.Primary>
+    <Text.Tertiary
+      light={true}
+      lightGray={true}
+      numberOfLines={1}
+    >
+      2.1 kg CO2
+    </Text.Tertiary>
+  </View>
+  <Ionicons
+    color="#111714"
+    name="ios-arrow-forward"
+    size={22}
+    style={
+      Object {
+        "marginTop": 2,
+        "paddingHorizontal": 14,
+      }
+    }
+  />
+</TouchableOpacity>
+`;
+
+exports[`EmissionListItem renders correctly with restaurant icon 1`] = `
+<TouchableOpacity
+  onPress={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+      "marginHorizontal": 14,
+      "marginVertical": 4,
+    }
+  }
+>
+  <Ionicons
+    color="#111714"
+    name="md-restaurant"
+    size={28}
+    style={
+      Object {
+        "marginTop": 2,
+        "paddingHorizontal": 14,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <Text.Primary
+      numberOfLines={1}
+    >
+      170 g of red meat
+    </Text.Primary>
+    <Text.Tertiary
+      light={true}
+      lightGray={true}
+      numberOfLines={1}
+    >
+      2.1 kg CO2
+    </Text.Tertiary>
+  </View>
+  <Ionicons
+    color="#111714"
+    name="ios-arrow-forward"
+    size={22}
+    style={
+      Object {
+        "marginTop": 2,
+        "paddingHorizontal": 14,
+      }
+    }
+  />
+</TouchableOpacity>
+`;

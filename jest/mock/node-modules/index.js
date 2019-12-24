@@ -6,3 +6,10 @@ jest.mock("react-native-svg", () => {
 });
 
 jest.mock("react-native-slider", () => "Slider");
+
+jest.mock("@expo/vector-icons", () => {
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
+  const icons = require("./vector-icons.mock");
+
+  return icons;
+});

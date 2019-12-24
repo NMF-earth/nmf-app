@@ -1,14 +1,14 @@
 import React from "react";
-import { ScrollView, StyleSheet } from "react-native";
-
-import { t } from "../../utils/translations";
-import TabbedView from "../../components/TabbedView";
-import GuidePreview from "../../components/GuidePreview";
-import { Guide, GuideCategory } from "../../types/common-types";
+import { ScrollView } from "react-native";
+import { NavigationParams } from "react-navigation";
 import { filter, pathEq } from "ramda";
 
+import { t } from "../../utils/translations";
+import { TabbedView, GuidePreview } from "../../components";
+import { Guide, GuideCategory } from "../../types/common-types";
+import styles from "./ActScreen.styles";
 import Guides from "../../../assets/guides/guides.json";
-import { NavigationParams } from "react-navigation";
+import navigationOptions from "./ActScreen.navigationOptions";
 
 const isKitchen = pathEq(["category"], GuideCategory.kitchen);
 const isTechnology = pathEq(["category"], GuideCategory.technology);
@@ -19,18 +19,7 @@ interface Props {
   };
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    paddingTop: 15,
-    backgroundColor: "#fff"
-  },
-  text: {
-    textAlign: "center"
-  }
-});
-
-export default function ActScreen(props: Props): React.ReactElement {
+const ActScreen = (props: Props) => {
   const kitchenGuides = filter(isKitchen, Guides) as Guide[];
   const techGuides = filter(isTechnology, Guides) as Guide[];
 
@@ -77,8 +66,8 @@ export default function ActScreen(props: Props): React.ReactElement {
       />
     </ScrollView>
   );
-}
-
-ActScreen.navigationOptions = {
-  title: t("ACT_SCREEN_TITLE")
 };
+
+ActScreen.navigationOptions = navigationOptions;
+
+export default ActScreen;
