@@ -34,16 +34,22 @@ const ActScreen = (props: Props) => {
                 <GuidePreview
                   title={t("ACT_SCREEN_KITCHEN")}
                   listItems={kitchenGuides}
-                  onPress={(guide: Guide) =>
+                  onPressItem={(guide: Guide) =>
                     props.navigation.push("Details", { guide })
                   }
+                  onPressSeeAll={() => {
+                    // do nothing.
+                  }}
                 />
                 <GuidePreview
                   title={t("ACT_SCREEN_TECHNOLOGY")}
                   listItems={techGuides}
-                  onPress={(guide: Guide) =>
+                  onPressItem={(guide: Guide) =>
                     props.navigation.push("Details", { guide })
                   }
+                  onPressSeeAll={() => {
+                    // do nothing.
+                  }}
                 />
               </React.Fragment>
             )
@@ -51,15 +57,16 @@ const ActScreen = (props: Props) => {
           {
             title: t("ACT_SCREEN_FOOD"),
             component: (
-              <React.Fragment>
-                <GuidePreview
-                  title={t("ACT_SCREEN_FOOD")}
-                  listItems={kitchenGuides}
-                  onPress={(guide: Guide) =>
-                    props.navigation.push("Details", { guide })
-                  }
-                />
-              </React.Fragment>
+              <GuidePreview
+                title={t("ACT_SCREEN_FOOD")}
+                listItems={kitchenGuides}
+                onPressItem={(guide: Guide) =>
+                  props.navigation.push("Details", { guide })
+                }
+                onPressSeeAll={() => {
+                  // do nothing.
+                }}
+              />
             )
           }
         ]}

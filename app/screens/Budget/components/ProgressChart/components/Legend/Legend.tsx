@@ -1,7 +1,7 @@
 import React from "react";
 import { View } from "react-native";
 import styles from "./Legend.styles";
-import { LegendItem } from "../";
+import LegendItem from "../LegendItem";
 import colors from "../../../../../../style/colors";
 import { t } from "../../../../../../utils/translations";
 

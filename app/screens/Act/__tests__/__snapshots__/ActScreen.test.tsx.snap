@@ -45,7 +45,8 @@ exports[`EmissionsScreen renders correctly 1`] = `
                     },
                   ]
                 }
-                onPress={[Function]}
+                onPressItem={[Function]}
+                onPressSeeAll={[Function]}
                 title="Kitchen"
               />
               <GuidePreview
@@ -77,47 +78,47 @@ exports[`EmissionsScreen renders correctly 1`] = `
                     },
                   ]
                 }
-                onPress={[Function]}
+                onPressItem={[Function]}
+                onPressSeeAll={[Function]}
                 title="Technology"
               />
             </React.Fragment>,
             "title": "Habits",
           },
           Object {
-            "component": <React.Fragment>
-              <GuidePreview
-                listItems={
-                  Array [
-                    Object {
-                      "body": "<h3>Section</h3>
+            "component": <GuidePreview
+              listItems={
+                Array [
+                  Object {
+                    "body": "<h3>Section</h3>
 <p>Hello world, some markdown here</p>
 ",
-                      "category": "kitchen",
-                      "key": ".//dont-throw-away-peels.md",
-                      "title": "Don't throw away your peels",
-                    },
-                    Object {
-                      "body": "<h3>Section</h3>
+                    "category": "kitchen",
+                    "key": ".//dont-throw-away-peels.md",
+                    "title": "Don't throw away your peels",
+                  },
+                  Object {
+                    "body": "<h3>Section</h3>
 <p>Hello world, some markdown here</p>
 ",
-                      "category": "kitchen",
-                      "key": ".//make-your-own-soap.md",
-                      "title": "Make your own soap",
-                    },
-                    Object {
-                      "body": "<h3>Section</h3>
+                    "category": "kitchen",
+                    "key": ".//make-your-own-soap.md",
+                    "title": "Make your own soap",
+                  },
+                  Object {
+                    "body": "<h3>Section</h3>
 <p>Hello world, some markdown here</p>
 ",
-                      "category": "kitchen",
-                      "key": ".//make-compost-on-your-balcony.md",
-                      "title": "Make a compost on your balcony",
-                    },
-                  ]
-                }
-                onPress={[Function]}
-                title="Food"
-              />
-            </React.Fragment>,
+                    "category": "kitchen",
+                    "key": ".//make-compost-on-your-balcony.md",
+                    "title": "Make a compost on your balcony",
+                  },
+                ]
+              }
+              onPressItem={[Function]}
+              onPressSeeAll={[Function]}
+              title="Food"
+            />,
             "title": "Food",
           },
         ]

@@ -8,7 +8,10 @@ it("renders correctly TabbedView", () => {
       <GuidePreview
         title="Foo"
         listItems={[]}
-        onPress={() => {
+        onPressItem={() => {
+          // do nothing.
+        }}
+        onPressSeeAll={() => {
           // do nothing.
         }}
       />
