@@ -10,7 +10,7 @@ interface Props {
   style?: StyleProp<ViewStyle>;
   children: React.ReactNode;
   fullWidth?: boolean;
-  textType: "Primary" | "Secondary" | "Tertiary";
+  textType: "Primary" | "Secondary";
   black?: boolean;
   onPress: () => void;
 }

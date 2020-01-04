@@ -28,34 +28,6 @@ exports[`renders correctly Primary Button with Secondary font 1`] = `
 </TouchableOpacity>
 `;
 
-exports[`renders correctly Primary Button with Tertiary font 1`] = `
-<TouchableOpacity
-  onPress={[Function]}
-  style={
-    Array [
-      Array [
-        Object {
-          "paddingHorizontal": 42,
-        },
-        Object {
-          "backgroundColor": "#4BB377",
-        },
-        undefined,
-      ],
-      Object {
-        "borderRadius": 38,
-        "paddingVertical": 12,
-      },
-    ]
-  }
-  textType="Tertiary"
->
-  <Text.Tertiary>
-    test
-  </Text.Tertiary>
-</TouchableOpacity>
-`;
-
 exports[`renders correctly Secondary Button with Secondary font 1`] = `
 <TouchableOpacity
   onPress={[Function]}
@@ -83,36 +55,6 @@ exports[`renders correctly Secondary Button with Secondary font 1`] = `
   <Text.Secondary>
     test
   </Text.Secondary>
-</TouchableOpacity>
-`;
-
-exports[`renders correctly Secondary Button with Tertiary font 1`] = `
-<TouchableOpacity
-  onPress={[Function]}
-  style={
-    Array [
-      Array [
-        Object {
-          "paddingHorizontal": 42,
-        },
-        Object {
-          "backgroundColor": "#FFFFFF",
-          "borderColor": "#4BB377",
-          "borderWidth": 2.5,
-        },
-        undefined,
-      ],
-      Object {
-        "borderRadius": 38,
-        "paddingVertical": 12,
-      },
-    ]
-  }
-  textType="Tertiary"
->
-  <Text.Tertiary>
-    test
-  </Text.Tertiary>
 </TouchableOpacity>
 `;
 

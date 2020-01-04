@@ -33,17 +33,6 @@ it("renders correctly Primary Button with Secondary font", () => {
   expect(tree).toMatchSnapshot();
 });
 
-it("renders correctly Primary Button with Tertiary font", () => {
-  const tree = renderer
-    .create(
-      <Button.Primary onPress={foo} textType={"Tertiary"}>
-        <Text.Tertiary>test</Text.Tertiary>
-      </Button.Primary>
-    )
-    .toJSON();
-  expect(tree).toMatchSnapshot();
-});
-
 /* Secondary Button Tests */
 
 it("renders correctly full width Secondary Button with Primary font", () => {
@@ -62,17 +51,6 @@ it("renders correctly Secondary Button with Secondary font", () => {
     .create(
       <Button.Secondary onPress={foo} textType={"Secondary"}>
         <Text.Secondary>test</Text.Secondary>
-      </Button.Secondary>
-    )
-    .toJSON();
-  expect(tree).toMatchSnapshot();
-});
-
-it("renders correctly Secondary Button with Tertiary font", () => {
-  const tree = renderer
-    .create(
-      <Button.Secondary onPress={foo} textType={"Tertiary"}>
-        <Text.Tertiary>test</Text.Tertiary>
       </Button.Secondary>
     )
     .toJSON();
