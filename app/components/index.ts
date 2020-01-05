@@ -4,5 +4,14 @@ import TabBarIcon from "./TabBarIcon";
 import TabbedView from "./TabbedView";
 import GuidePreview from "./GuidePreview";
 import EmissionListItem from "./EmissionListItem";
+import Tag from "./Tag";
 
-export { TabBarIcon, Button, Text, TabbedView, GuidePreview, EmissionListItem };
+export {
+  Tag,
+  TabBarIcon,
+  Button,
+  Text,
+  TabbedView,
+  GuidePreview,
+  EmissionListItem
+};
