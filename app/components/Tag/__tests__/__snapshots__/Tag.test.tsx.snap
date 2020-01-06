@@ -1,0 +1,267 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tag renders correctly with airplane icon 1`] = `
+<TouchableOpacity
+  onPress={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#4BB37710",
+      "borderColor": "#11171420",
+      "borderRadius": 8,
+      "borderWidth": 1,
+      "marginRight": 12,
+      "minWidth": 130,
+      "paddingHorizontal": 12,
+      "paddingVertical": 10,
+    }
+  }
+>
+  <Ionicons
+    color="#585D5B"
+    name="md-airplane"
+    size={30}
+    style={
+      Object {
+        "marginBottom": 2,
+      }
+    }
+  />
+  <Text.Primary
+    darkGray={true}
+    green={false}
+  >
+    Transport
+  </Text.Primary>
+</TouchableOpacity>
+`;
+
+exports[`Tag renders correctly with airplane icon and selected 1`] = `
+<TouchableOpacity
+  onPress={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#4BB37720",
+      "borderColor": "#4BB377",
+      "borderRadius": 8,
+      "borderWidth": 1,
+      "marginRight": 12,
+      "minWidth": 130,
+      "paddingHorizontal": 12,
+      "paddingVertical": 10,
+    }
+  }
+>
+  <Ionicons
+    color="#4BB377"
+    name="md-airplane"
+    size={30}
+    style={
+      Object {
+        "marginBottom": 2,
+      }
+    }
+  />
+  <Text.Primary
+    darkGray={false}
+    green={true}
+  >
+    Transport
+  </Text.Primary>
+</TouchableOpacity>
+`;
+
+exports[`Tag renders correctly with build icon 1`] = `
+<TouchableOpacity
+  onPress={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#4BB37710",
+      "borderColor": "#11171420",
+      "borderRadius": 8,
+      "borderWidth": 1,
+      "marginRight": 12,
+      "minWidth": 130,
+      "paddingHorizontal": 12,
+      "paddingVertical": 10,
+    }
+  }
+>
+  <Ionicons
+    color="#585D5B"
+    name="md-build"
+    size={30}
+    style={
+      Object {
+        "marginBottom": 2,
+      }
+    }
+  />
+  <Text.Primary
+    darkGray={true}
+    green={false}
+  >
+    Transport
+  </Text.Primary>
+</TouchableOpacity>
+`;
+
+exports[`Tag renders correctly with build icon and selected 1`] = `
+<TouchableOpacity
+  onPress={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#4BB37720",
+      "borderColor": "#4BB377",
+      "borderRadius": 8,
+      "borderWidth": 1,
+      "marginRight": 12,
+      "minWidth": 130,
+      "paddingHorizontal": 12,
+      "paddingVertical": 10,
+    }
+  }
+>
+  <Ionicons
+    color="#4BB377"
+    name="md-build"
+    size={30}
+    style={
+      Object {
+        "marginBottom": 2,
+      }
+    }
+  />
+  <Text.Primary
+    darkGray={false}
+    green={true}
+  >
+    Transport
+  </Text.Primary>
+</TouchableOpacity>
+`;
+
+exports[`Tag renders correctly with no icon 1`] = `
+<TouchableOpacity
+  onPress={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#4BB37710",
+      "borderColor": "#11171420",
+      "borderRadius": 8,
+      "borderWidth": 1,
+      "marginRight": 12,
+      "paddingHorizontal": 12,
+      "paddingVertical": 6,
+    }
+  }
+>
+  <Text.Primary
+    darkGray={true}
+    green={false}
+  >
+    Transport
+  </Text.Primary>
+</TouchableOpacity>
+`;
+
+exports[`Tag renders correctly with no icon and selected 1`] = `
+<TouchableOpacity
+  onPress={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#4BB37720",
+      "borderColor": "#4BB377",
+      "borderRadius": 8,
+      "borderWidth": 1,
+      "marginRight": 12,
+      "paddingHorizontal": 12,
+      "paddingVertical": 6,
+    }
+  }
+>
+  <Text.Primary
+    darkGray={false}
+    green={true}
+  >
+    Transport
+  </Text.Primary>
+</TouchableOpacity>
+`;
+
+exports[`Tag renders correctly with restaurant icon 1`] = `
+<TouchableOpacity
+  onPress={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#4BB37710",
+      "borderColor": "#11171420",
+      "borderRadius": 8,
+      "borderWidth": 1,
+      "marginRight": 12,
+      "minWidth": 130,
+      "paddingHorizontal": 12,
+      "paddingVertical": 10,
+    }
+  }
+>
+  <Ionicons
+    color="#585D5B"
+    name="md-restaurant"
+    size={30}
+    style={
+      Object {
+        "marginBottom": 2,
+      }
+    }
+  />
+  <Text.Primary
+    darkGray={true}
+    green={false}
+  >
+    Transport
+  </Text.Primary>
+</TouchableOpacity>
+`;
+
+exports[`Tag renders correctly with restaurant icon and selected 1`] = `
+<TouchableOpacity
+  onPress={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#4BB37720",
+      "borderColor": "#4BB377",
+      "borderRadius": 8,
+      "borderWidth": 1,
+      "marginRight": 12,
+      "minWidth": 130,
+      "paddingHorizontal": 12,
+      "paddingVertical": 10,
+    }
+  }
+>
+  <Ionicons
+    color="#4BB377"
+    name="md-restaurant"
+    size={30}
+    style={
+      Object {
+        "marginBottom": 2,
+      }
+    }
+  />
+  <Text.Primary
+    darkGray={false}
+    green={true}
+  >
+    Transport
+  </Text.Primary>
+</TouchableOpacity>
+`;
