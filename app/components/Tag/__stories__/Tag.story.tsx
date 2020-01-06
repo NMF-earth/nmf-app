@@ -23,7 +23,7 @@ storiesOf("Tag", module)
       <Tag {...props} selected />
     </View>
   ))
-  .add("airplane icon and selected", () => (
+  .add("airplane icon and not selected", () => (
     <View style={container}>
       <Tag {...props} icon="md-airplane" />
     </View>
@@ -43,7 +43,7 @@ storiesOf("Tag", module)
       <Tag {...props} icon="md-restaurant" />
     </View>
   ))
-  .add("build icon and selected", () => (
+  .add("build icon and not selected", () => (
     <View style={container}>
       <Tag {...props} icon="md-build" />
     </View>

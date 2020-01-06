@@ -40,15 +40,6 @@ storiesOf("Button", module)
       </Button.Primary>
     </View>
   ))
-  .add("Primary Black", () => (
-    <View style={container}>
-      <Button.Primary onPress={onPressFake} black textType={"Primary"}>
-        <Text.Primary center white>
-          {DEFAULT_TEXT}
-        </Text.Primary>
-      </Button.Primary>
-    </View>
-  ))
   .add("Secondary", () => (
     <View style={container}>
       <Button.Secondary onPress={onPressFake} textType={"Secondary"}>
