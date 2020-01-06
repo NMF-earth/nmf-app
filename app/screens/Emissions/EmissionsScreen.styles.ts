@@ -10,9 +10,8 @@ export default StyleSheet.create({
     flex: 1,
     paddingTop: 10
   },
-  itemContainer: {
-    flex: 1,
-    paddingTop: 20
+  listContainer: {
+    paddingTop: 10
   },
   buttonView: {
     flexDirection: "row",

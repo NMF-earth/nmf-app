@@ -5,37 +5,37 @@ import colors from "../../style/colors";
 import styles from "./EmissionListItem.styles";
 import Text from "../Text";
 
-interface Props {
-  plane?: boolean;
-  restaurant?: boolean;
-  build?: boolean;
+interface EmissionListItemProps {
+  transport?: boolean;
+  food?: boolean;
+  custom?: boolean;
   title: string;
   subTitle: string;
   onPress: () => void;
 }
 
 const EmissionListItem = ({
-  plane = false,
-  restaurant = false,
-  build = false,
+  transport = false,
+  food = false,
+  custom = false,
   title = "",
   subTitle = "",
   onPress
-}: Props) => {
+}: EmissionListItemProps) => {
   let iconName = "";
   let iconSize = 28;
 
-  if (build) {
+  if (custom) {
     iconName = "md-build";
     iconSize = 26;
   }
 
-  if (plane) {
+  if (transport) {
     iconName = "md-airplane";
     iconSize = 30;
   }
 
-  if (restaurant) {
+  if (food) {
     iconName = "md-restaurant";
   }
 
@@ -63,4 +63,4 @@ const EmissionListItem = ({
   );
 };
 
-export default EmissionListItem;
+export { EmissionListItem, EmissionListItemProps };

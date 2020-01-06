@@ -2,7 +2,7 @@ import React from "react";
 
 import { storiesOf } from "@storybook/react-native";
 
-import EmissionListItem from "..";
+import { EmissionListItem } from "..";
 
 const init = {
   title: "170 g of red meat",
@@ -10,22 +10,22 @@ const init = {
   onPress: () => alert("onPress")
 };
 
-const plane = {
+const transport = {
   ...init,
-  plane: true
+  transport: true
 };
 
-const restaurant = {
+const food = {
   ...init,
-  restaurant: true
+  food: true
 };
 
-const build = {
+const custom = {
   ...init,
-  build: true
+  custom: true
 };
 
 storiesOf("EmissionListItem", module)
-  .add("plane", () => <EmissionListItem {...plane} />)
-  .add("build", () => <EmissionListItem {...build} />)
-  .add("restaurant", () => <EmissionListItem {...restaurant} />);
+  .add("transport", () => <EmissionListItem {...transport} />)
+  .add("custom", () => <EmissionListItem {...custom} />)
+  .add("food", () => <EmissionListItem {...food} />);

@@ -59,7 +59,7 @@ exports[`EmissionListItem renders correctly by default 1`] = `
 </TouchableOpacity>
 `;
 
-exports[`EmissionListItem renders correctly with build icon 1`] = `
+exports[`EmissionListItem renders correctly with custom icon 1`] = `
 <TouchableOpacity
   onPress={[Function]}
   style={
@@ -118,7 +118,7 @@ exports[`EmissionListItem renders correctly with build icon 1`] = `
 </TouchableOpacity>
 `;
 
-exports[`EmissionListItem renders correctly with plane icon 1`] = `
+exports[`EmissionListItem renders correctly with food icon 1`] = `
 <TouchableOpacity
   onPress={[Function]}
   style={
@@ -134,8 +134,8 @@ exports[`EmissionListItem renders correctly with plane icon 1`] = `
 >
   <Ionicons
     color="#111714"
-    name="md-airplane"
-    size={30}
+    name="md-restaurant"
+    size={28}
     style={
       Object {
         "marginTop": 2,
@@ -177,7 +177,7 @@ exports[`EmissionListItem renders correctly with plane icon 1`] = `
 </TouchableOpacity>
 `;
 
-exports[`EmissionListItem renders correctly with restaurant icon 1`] = `
+exports[`EmissionListItem renders correctly with transport icon 1`] = `
 <TouchableOpacity
   onPress={[Function]}
   style={
@@ -193,8 +193,8 @@ exports[`EmissionListItem renders correctly with restaurant icon 1`] = `
 >
   <Ionicons
     color="#111714"
-    name="md-restaurant"
-    size={28}
+    name="md-airplane"
+    size={30}
     style={
       Object {
         "marginTop": 2,

@@ -1,12 +1,11 @@
 import React from "react";
-import { ScrollView } from "react-native";
 import { NavigationParams } from "react-navigation";
 import { filter, pathEq } from "ramda";
 
 import { t } from "../../utils/translations";
 import { TabbedView, GuidePreview } from "../../components";
 import { Guide, GuideCategory } from "../../types/common-types";
-import styles from "./ActScreen.styles";
+// import styles from "./ActScreen.styles";
 import Guides from "../../../assets/guides/guides.json";
 import navigationOptions from "./ActScreen.navigationOptions";
 
@@ -24,41 +23,14 @@ const ActScreen = (props: Props) => {
   const techGuides = filter(isTechnology, Guides) as Guide[];
 
   return (
-    <ScrollView style={styles.container}>
-      <TabbedView
-        items={[
-          {
-            title: t("ACT_SCREEN_HABITS"),
-            component: (
-              <React.Fragment>
-                <GuidePreview
-                  title={t("ACT_SCREEN_KITCHEN")}
-                  listItems={kitchenGuides}
-                  onPressItem={(guide: Guide) =>
-                    props.navigation.push("Details", { guide })
-                  }
-                  onPressSeeAll={() => {
-                    // do nothing.
-                  }}
-                />
-                <GuidePreview
-                  title={t("ACT_SCREEN_TECHNOLOGY")}
-                  listItems={techGuides}
-                  onPressItem={(guide: Guide) =>
-                    props.navigation.push("Details", { guide })
-                  }
-                  onPressSeeAll={() => {
-                    // do nothing.
-                  }}
-                />
-              </React.Fragment>
-            )
-          },
-          {
-            title: t("ACT_SCREEN_FOOD"),
-            component: (
+    <TabbedView
+      items={[
+        {
+          title: t("ACT_SCREEN_HABITS"),
+          component: (
+            <React.Fragment>
               <GuidePreview
-                title={t("ACT_SCREEN_FOOD")}
+                title={t("ACT_SCREEN_KITCHEN")}
                 listItems={kitchenGuides}
                 onPressItem={(guide: Guide) =>
                   props.navigation.push("Details", { guide })
@@ -67,11 +39,36 @@ const ActScreen = (props: Props) => {
                   // do nothing.
                 }}
               />
-            )
-          }
-        ]}
-      />
-    </ScrollView>
+              <GuidePreview
+                title={t("ACT_SCREEN_TECHNOLOGY")}
+                listItems={techGuides}
+                onPressItem={(guide: Guide) =>
+                  props.navigation.push("Details", { guide })
+                }
+                onPressSeeAll={() => {
+                  // do nothing.
+                }}
+              />
+            </React.Fragment>
+          )
+        },
+        {
+          title: t("ACT_SCREEN_FOOD"),
+          component: (
+            <GuidePreview
+              title={t("ACT_SCREEN_FOOD")}
+              listItems={kitchenGuides}
+              onPressItem={(guide: Guide) =>
+                props.navigation.push("Details", { guide })
+              }
+              onPressSeeAll={() => {
+                // do nothing.
+              }}
+            />
+          )
+        }
+      ]}
+    />
   );
 };
 

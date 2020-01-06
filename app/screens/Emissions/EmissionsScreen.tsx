@@ -1,9 +1,15 @@
 import React from "react";
-import { ScrollView, View } from "react-native";
+import { FlatList, SafeAreaView, View } from "react-native";
 
 import { t } from "../../utils/translations";
 import styles from "./EmissionsScreen.styles";
-import { TabbedView, Text, Button, EmissionListItem } from "../../components";
+import {
+  TabbedView,
+  Text,
+  Button,
+  EmissionListItem,
+  EmissionListItemProps
+} from "../../components";
 
 interface Props {
   navigation: {
@@ -40,67 +46,90 @@ const ActionButtons = () => (
 );
 
 /* TO DO: remove these constants */
-const TITLE = "170 g of red meat";
-const SUBTITLE = "2.1 kg CO2";
-const ONPRESS = () => {
-  // do nothing.
-};
+const DATA = [
+  {
+    title: "170 g of red meat",
+    subTitle: "2.1 kg CO2",
+    food: true,
+    transport: false,
+    custom: false,
+    onPress: () => {
+      // do nothing.
+    }
+  },
+  {
+    title: "Custom emission",
+    subTitle: "3 kg CO2eq",
+    food: false,
+    transport: true,
+    custom: false,
+    onPress: () => {
+      // do nothing.
+    }
+  },
+  {
+    title: "5 hours flight",
+    subTitle: "1 125 kg CO2eq",
+    food: false,
+    transport: false,
+    custom: true,
+    onPress: () => {
+      // do nothing.
+    }
+  }
+];
 
 /* TO DO: line bellow later */
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const EmissionsScreen = (props: Props) => {
   return (
     <React.Fragment>
-      <ScrollView style={styles.container}>
+      <SafeAreaView style={styles.container}>
         <TabbedView
           items={[
             {
               title: t("EMISSIONS_SCREEN_TO_OFFSET"),
               component: (
-                <View style={styles.itemContainer}>
-                  <EmissionListItem
-                    onPress={ONPRESS}
-                    title={TITLE}
-                    subTitle={SUBTITLE}
-                    restaurant
-                  />
-                  <EmissionListItem
-                    onPress={ONPRESS}
-                    title={TITLE}
-                    subTitle={SUBTITLE}
-                    build
-                  />
-                  <EmissionListItem
-                    onPress={ONPRESS}
-                    title={TITLE}
-                    subTitle={SUBTITLE}
-                    plane
-                  />
-                </View>
+                <FlatList<EmissionListItemProps>
+                  style={styles.listContainer}
+                  data={DATA}
+                  keyExtractor={(item, index) => index.toString()}
+                  renderItem={({ item }: { item: EmissionListItemProps }) => (
+                    <EmissionListItem
+                      onPress={item.onPress}
+                      title={item.title}
+                      subTitle={item.subTitle}
+                      food={item.food}
+                      transport={item.transport}
+                      custom={item.custom}
+                    />
+                  )}
+                />
               )
             },
             {
               title: t("EMISSIONS_SCREEN_MITIGATED"),
               component: (
-                <View style={styles.itemContainer}>
-                  <EmissionListItem
-                    onPress={ONPRESS}
-                    title={TITLE}
-                    subTitle={SUBTITLE}
-                    build
-                  />
-                  <EmissionListItem
-                    onPress={ONPRESS}
-                    title={TITLE}
-                    subTitle={SUBTITLE}
-                    plane
-                  />
-                </View>
+                <FlatList<EmissionListItemProps>
+                  style={styles.listContainer}
+                  data={DATA.slice(1)}
+                  keyExtractor={(item, index) => index.toString()}
+                  renderItem={({ item }: { item: EmissionListItemProps }) => (
+                    <EmissionListItem
+                      onPress={item.onPress}
+                      title={item.title}
+                      subTitle={item.subTitle}
+                      food={item.food}
+                      transport={item.transport}
+                      custom={item.custom}
+                    />
+                  )}
+                />
               )
             }
           ]}
         />
-      </ScrollView>
+      </SafeAreaView>
       <ActionButtons />
     </React.Fragment>
   );

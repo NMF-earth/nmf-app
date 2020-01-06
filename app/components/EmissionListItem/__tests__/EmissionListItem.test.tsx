@@ -1,6 +1,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import EmissionListItem from "../EmissionListItem";
+import { EmissionListItem } from "../EmissionListItem";
 
 jest.unmock("../EmissionListItem.tsx");
 
@@ -19,42 +19,42 @@ it("EmissionListItem renders correctly by default", () => {
   expect(tree).toMatchSnapshot();
 });
 
-it("EmissionListItem renders correctly with restaurant icon", () => {
+it("EmissionListItem renders correctly with food icon", () => {
   const tree = renderer
     .create(
       <EmissionListItem
         onPress={ONPRESS}
         title={TITLE}
         subTitle={SUBTITLE}
-        restaurant
+        food
       />
     )
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
 
-it("EmissionListItem renders correctly with plane icon", () => {
+it("EmissionListItem renders correctly with transport icon", () => {
   const tree = renderer
     .create(
       <EmissionListItem
         onPress={ONPRESS}
         title={TITLE}
         subTitle={SUBTITLE}
-        plane
+        transport
       />
     )
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
 
-it("EmissionListItem renders correctly with build icon", () => {
+it("EmissionListItem renders correctly with custom icon", () => {
   const tree = renderer
     .create(
       <EmissionListItem
         onPress={ONPRESS}
         title={TITLE}
         subTitle={SUBTITLE}
-        build
+        custom
       />
     )
     .toJSON();

@@ -3,18 +3,16 @@ import colors from "../../style/colors";
 
 export default StyleSheet.create({
   tabContainer: {
-    flexDirection: "row",
-    flex: 1
+    flexDirection: "row"
   },
   tabItem: {
     flex: 1,
     borderBottomColor: colors.gray,
-    borderBottomWidth: 4,
+    borderBottomWidth: 4
   },
   tabItemSelected: {
     flex: 1,
     borderBottomColor: colors.linkGreen,
-    borderBottomWidth: 4,
+    borderBottomWidth: 4
   }
 });
-

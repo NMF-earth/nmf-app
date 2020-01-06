@@ -3,7 +3,7 @@ import Button from "./Button";
 import TabBarIcon from "./TabBarIcon";
 import TabbedView from "./TabbedView";
 import GuidePreview from "./GuidePreview";
-import EmissionListItem from "./EmissionListItem";
+import { EmissionListItem, EmissionListItemProps } from "./EmissionListItem";
 import Tag from "./Tag";
 
 export {
@@ -13,5 +13,6 @@ export {
   Text,
   TabbedView,
   GuidePreview,
-  EmissionListItem
+  EmissionListItem,
+  EmissionListItemProps
 };

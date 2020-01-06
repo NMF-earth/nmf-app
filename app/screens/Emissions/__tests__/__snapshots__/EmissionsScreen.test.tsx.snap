@@ -2,7 +2,8 @@
 
 exports[`EmissionsScreen renders correctly 1`] = `
 Array [
-  <RCTScrollView
+  <RCTSafeAreaView
+    emulateUnlessSupported={true}
     style={
       Object {
         "flex": 1,
@@ -10,69 +11,105 @@ Array [
       }
     }
   >
-    <View>
-      <TabbedView
-        items={
-          Array [
-            Object {
-              "component": <View
-                style={
+    <TabbedView
+      items={
+        Array [
+          Object {
+            "component": <FlatList
+              data={
+                Array [
                   Object {
-                    "flex": 1,
-                    "paddingTop": 20,
-                  }
-                }
-              >
-                <EmissionListItem
-                  onPress={[Function]}
-                  restaurant={true}
-                  subTitle="2.1 kg CO2"
-                  title="170 g of red meat"
-                />
-                <EmissionListItem
-                  build={true}
-                  onPress={[Function]}
-                  subTitle="2.1 kg CO2"
-                  title="170 g of red meat"
-                />
-                <EmissionListItem
-                  onPress={[Function]}
-                  plane={true}
-                  subTitle="2.1 kg CO2"
-                  title="170 g of red meat"
-                />
-              </View>,
-              "title": "To offset",
-            },
-            Object {
-              "component": <View
-                style={
+                    "custom": false,
+                    "food": true,
+                    "onPress": [Function],
+                    "subTitle": "2.1 kg CO2",
+                    "title": "170 g of red meat",
+                    "transport": false,
+                  },
                   Object {
-                    "flex": 1,
-                    "paddingTop": 20,
-                  }
+                    "custom": false,
+                    "food": false,
+                    "onPress": [Function],
+                    "subTitle": "3 kg CO2eq",
+                    "title": "Custom emission",
+                    "transport": true,
+                  },
+                  Object {
+                    "custom": true,
+                    "food": false,
+                    "onPress": [Function],
+                    "subTitle": "1 125 kg CO2eq",
+                    "title": "5 hours flight",
+                    "transport": false,
+                  },
+                ]
+              }
+              disableVirtualization={false}
+              horizontal={false}
+              initialNumToRender={10}
+              keyExtractor={[Function]}
+              maxToRenderPerBatch={10}
+              numColumns={1}
+              onEndReachedThreshold={2}
+              removeClippedSubviews={false}
+              renderItem={[Function]}
+              scrollEventThrottle={50}
+              style={
+                Object {
+                  "paddingTop": 10,
                 }
-              >
-                <EmissionListItem
-                  build={true}
-                  onPress={[Function]}
-                  subTitle="2.1 kg CO2"
-                  title="170 g of red meat"
-                />
-                <EmissionListItem
-                  onPress={[Function]}
-                  plane={true}
-                  subTitle="2.1 kg CO2"
-                  title="170 g of red meat"
-                />
-              </View>,
-              "title": "Mitigated",
-            },
-          ]
-        }
-      />
-    </View>
-  </RCTScrollView>,
+              }
+              updateCellsBatchingPeriod={50}
+              windowSize={21}
+            />,
+            "title": "To offset",
+          },
+          Object {
+            "component": <FlatList
+              data={
+                Array [
+                  Object {
+                    "custom": false,
+                    "food": false,
+                    "onPress": [Function],
+                    "subTitle": "3 kg CO2eq",
+                    "title": "Custom emission",
+                    "transport": true,
+                  },
+                  Object {
+                    "custom": true,
+                    "food": false,
+                    "onPress": [Function],
+                    "subTitle": "1 125 kg CO2eq",
+                    "title": "5 hours flight",
+                    "transport": false,
+                  },
+                ]
+              }
+              disableVirtualization={false}
+              horizontal={false}
+              initialNumToRender={10}
+              keyExtractor={[Function]}
+              maxToRenderPerBatch={10}
+              numColumns={1}
+              onEndReachedThreshold={2}
+              removeClippedSubviews={false}
+              renderItem={[Function]}
+              scrollEventThrottle={50}
+              style={
+                Object {
+                  "paddingTop": 10,
+                }
+              }
+              updateCellsBatchingPeriod={50}
+              windowSize={21}
+            />,
+            "title": "Mitigated",
+          },
+        ]
+      }
+    />
+  </RCTSafeAreaView>,
   <View
     style={
       Object {

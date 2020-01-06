@@ -5,7 +5,6 @@ Array [
   <View
     style={
       Object {
-        "flex": 1,
         "flexDirection": "row",
       }
     }
