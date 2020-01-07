@@ -9,15 +9,15 @@
   dependencies:
     "@babel/highlight" "^7.0.0"
 
-"@babel/core@^7.0.0", "@babel/core@^7.1.0":
-  version "7.7.4"
-  resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.7.4.tgz#37e864532200cb6b50ee9a4045f5f817840166ab"
-  integrity sha512-+bYbx56j4nYBmpsWtnPUsKW3NdnYxbqyfrP2w9wILBuHzdfIKz9prieZK0DFPyIzkjYVUe4QkusGL07r5pXznQ==
+"@babel/core@7.7.7":
+  version "7.7.7"
+  resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.7.7.tgz#ee155d2e12300bcc0cff6a8ad46f2af5063803e9"
+  integrity sha512-jlSjuj/7z138NLZALxVgrx13AOtqip42ATZP7+kYl53GvDV6+4dCek1mVUo8z8c8Xnw/mx2q3d9HWh3griuesQ==
   dependencies:
     "@babel/code-frame" "^7.5.5"
-    "@babel/generator" "^7.7.4"
+    "@babel/generator" "^7.7.7"
     "@babel/helpers" "^7.7.4"
-    "@babel/parser" "^7.7.4"
+    "@babel/parser" "^7.7.7"
     "@babel/template" "^7.7.4"
     "@babel/traverse" "^7.7.4"
     "@babel/types" "^7.7.4"
@@ -29,15 +29,15 @@
     semver "^5.4.1"
     source-map "^0.5.0"
 
-"@babel/core@^7.7.7":
-  version "7.7.7"
-  resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.7.7.tgz#ee155d2e12300bcc0cff6a8ad46f2af5063803e9"
-  integrity sha512-jlSjuj/7z138NLZALxVgrx13AOtqip42ATZP7+kYl53GvDV6+4dCek1mVUo8z8c8Xnw/mx2q3d9HWh3griuesQ==
+"@babel/core@^7.0.0", "@babel/core@^7.1.0":
+  version "7.7.4"
+  resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.7.4.tgz#37e864532200cb6b50ee9a4045f5f817840166ab"
+  integrity sha512-+bYbx56j4nYBmpsWtnPUsKW3NdnYxbqyfrP2w9wILBuHzdfIKz9prieZK0DFPyIzkjYVUe4QkusGL07r5pXznQ==
   dependencies:
     "@babel/code-frame" "^7.5.5"
-    "@babel/generator" "^7.7.7"
+    "@babel/generator" "^7.7.4"
     "@babel/helpers" "^7.7.4"
-    "@babel/parser" "^7.7.7"
+    "@babel/parser" "^7.7.4"
     "@babel/template" "^7.7.4"
     "@babel/traverse" "^7.7.4"
     "@babel/types" "^7.7.4"
@@ -1593,7 +1593,7 @@
     xcode "2.0.0"
     yargs "^12.0.2"
 
-"@storybook/addon-actions@^5.2.8":
+"@storybook/addon-actions@5.2.8":
   version "5.2.8"
   resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-5.2.8.tgz#f63c6e1afb59e94ca1ebc776b7cad9b815e7419e"
   integrity sha512-hadk+UaU6upOW0g447RfLRrnXRgE2rjRVk5sT8mVxBMj032NnwUd7ie/BZwy1yg5B8oFtpkgQYwqhPtoO2xBaQ==
@@ -1613,7 +1613,7 @@
     react-inspector "^3.0.2"
     uuid "^3.3.2"
 
-"@storybook/addon-links@^5.2.8":
+"@storybook/addon-links@5.2.8":
   version "5.2.8"
   resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-5.2.8.tgz#8d447581dd511387e9a07ce2484422374f00bc84"
   integrity sha512-egSBHjUOdAEd2IIoIB1kRmdaDc44IfpPg+kJ7h822MhwzpWo9E+4sU5WTemcFBqPt+g3jIYrO3JHlXNRZ7PBuw==
@@ -1627,7 +1627,7 @@
     prop-types "^15.7.2"
     qs "^6.6.0"
 
-"@storybook/addons@5.2.8", "@storybook/addons@^5.2.8":
+"@storybook/addons@5.2.8":
   version "5.2.8"
   resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-5.2.8.tgz#f8bf8bd555b7a69fb1e9a52ab8cdb96384d931ff"
   integrity sha512-yAo1N5z/45bNIQP8SD+HVTr7X898bYAtz1EZBrQ6zD8bGamzA2Br06rOLL9xXw29eQhsaVnPlqgDwCS1sTC7aQ==
@@ -1837,7 +1837,7 @@
     pretty-hrtime "^1.0.3"
     regenerator-runtime "^0.12.1"
 
-"@storybook/react-native-server@^5.2.8":
+"@storybook/react-native-server@5.2.8":
   version "5.2.8"
   resolved "https://registry.yarnpkg.com/@storybook/react-native-server/-/react-native-server-5.2.8.tgz#de909ef5307c256240621cbc213ffdc0630d72b2"
   integrity sha512-i/V05sSJRkKTW/ws7ZkuDTzoQBMKuoZx9MnJWqCy7K/6KLUgtLYWuDS9jZoEcvGrvae3iEYgVndUbO4Wn+LsBw==
@@ -1857,7 +1857,7 @@
     webpack "^4.33.0"
     ws "^6.1.0"
 
-"@storybook/react-native@^5.2.8":
+"@storybook/react-native@5.2.8":
   version "5.2.8"
   resolved "https://registry.yarnpkg.com/@storybook/react-native/-/react-native-5.2.8.tgz#034aea30b82a07c766e18445c70619576de50552"
   integrity sha512-uRbetQcC/42843+4XZMiBrLnWqFDS7Tqy5svyX1qMyoexYTQ6Pz9wLT3YhctAu2oK8Gfdiay1Tpg/OTrene1Sg==
@@ -3689,6 +3689,11 @@ capture-exit@^2.0.0:
   integrity sha512-PiT/hQmTonHhl/HFGN+Lx3JJUznrVYJ3+AQsnthneZbvW7x+f08Tk7yLJTLEOUvBTbduLeeBkxEaYXUOUrRq6g==
   dependencies:
     rsvp "^4.8.4"
+
+carbon-footprint@1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/carbon-footprint/-/carbon-footprint-1.0.1.tgz#7650302be2b89a4f829febcbdf8d434c70261cc4"
+  integrity sha512-TnaijlAj97IZmJmThCOctgH09FbEog+uReT75DsDMaSIPLDY/uEjUhdjxoN47zeQi2oGf6FdtHihQpY2mVe1NA==
 
 case-sensitive-paths-webpack-plugin@^2.2.0:
   version "2.2.0"
@@ -9866,7 +9871,7 @@ react-native-slider@0.11.0:
   dependencies:
     prop-types "^15.5.6"
 
-react-native-storybook-loader@^1.8.1:
+react-native-storybook-loader@1.8.1:
   version "1.8.1"
   resolved "https://registry.yarnpkg.com/react-native-storybook-loader/-/react-native-storybook-loader-1.8.1.tgz#5d6b3c51b0b85a3d676e9fafa95c19553a9ef918"
   integrity sha512-JdkN2SIB4CQtv9GJZ8inuhtFcVvVz6kswOMfpcpody37EoyH+zHa8DYD9V+G2ZqgJKQyjmdQQgMb/Sn13G6Veg==

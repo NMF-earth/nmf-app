@@ -29,6 +29,7 @@
     "@types/i18n-js": "3.0.1",
     "@types/ramda": "0.26.38",
     "@types/react-navigation": "3.4.0",
+    "carbon-footprint": "1.0.1",
     "expo": "36.0.0",
     "expo-asset": "8.0.0",
     "expo-constants": "8.0.0",
@@ -65,12 +66,12 @@
     "typescript": "3.7.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.7.7",
-    "@storybook/addon-actions": "^5.2.8",
-    "@storybook/addon-links": "^5.2.8",
-    "@storybook/addons": "^5.2.8",
-    "@storybook/react-native": "^5.2.8",
-    "@storybook/react-native-server": "^5.2.8",
+    "@babel/core": "7.7.7",
+    "@storybook/addon-actions": "5.2.8",
+    "@storybook/addon-links": "5.2.8",
+    "@storybook/addons": "5.2.8",
+    "@storybook/react-native": "5.2.8",
+    "@storybook/react-native-server": "5.2.8",
     "@types/jest": "24.0.23",
     "@types/node": "12.12.18",
     "@types/react": "16.9.16",
@@ -84,7 +85,7 @@
     "eslint-plugin-jest": "23.1.1",
     "eslint-plugin-react": "7.17.0",
     "jest-expo": "36.0.1",
-    "react-native-storybook-loader": "^1.8.1"
+    "react-native-storybook-loader": "1.8.1"
   },
   "private": true,
   "husky": {
