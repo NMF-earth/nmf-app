@@ -22,7 +22,7 @@ const MonthlyBudgetScreen = ({ navigation }) => {
         </Text.Primary>
         <Text.Primary lightGray>{Math.round(value) + " kg"}</Text.Primary>
       </View>
-      <View style={{ flex: 1, justifyContent: "space-between" }}>
+      <View style={styles.bottomContainer}>
         <Slider
           minimumTrackTintColor={colors.linkGreen}
           trackStyle={styles.track}
@@ -38,7 +38,7 @@ const MonthlyBudgetScreen = ({ navigation }) => {
           textType={"Primary"}
         >
           <Text.Primary white center bold>
-            Save
+            {t("MONTHLY_BUDGET_SAVE")}
           </Text.Primary>
         </Button.Primary>
       </View>

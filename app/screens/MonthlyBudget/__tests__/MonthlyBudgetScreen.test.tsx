@@ -1,7 +1,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
 import MonthlyBudgetScreen from "../MonthlyBudgetScreen";
-import ElementType from "react";
 
 const props = {
   navigation: {
