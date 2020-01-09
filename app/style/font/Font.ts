@@ -30,9 +30,9 @@ const fontSizeNormalDevice = {
 };
 
 const fontSizeSmallDevice = {
-  H1: 24,
-  H2: 22,
-  H3: 20,
+  H1: 22,
+  H2: 20,
+  H3: 18,
   Primary: 16,
   Secondary: 14,
   Tertiary: 12

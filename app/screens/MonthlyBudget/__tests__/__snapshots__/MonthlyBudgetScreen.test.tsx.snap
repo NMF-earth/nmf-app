@@ -1,35 +1,43 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MonthlyBudgetScreen renders correctly 1`] = `
-<RCTScrollView
+<View
   style={
     Object {
+      "alignContent": "flex-start",
       "backgroundColor": "#FFFFFF",
       "flex": 1,
       "padding": 16,
     }
   }
 >
-  <View>
-    <View
-      style={
-        Object {
-          "flexDirection": "row",
-          "flexWrap": "wrap",
-        }
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "flexWrap": "wrap",
       }
+    }
+  >
+    <Text.Primary
+      bold={true}
     >
-      <Text.Primary
-        bold={true}
-      >
-        My carbon monthly budget : 
-      </Text.Primary>
-      <Text.Primary
-        lightGray={true}
-      >
-        500 kg
-      </Text.Primary>
-    </View>
+      My carbon monthly budget : 
+    </Text.Primary>
+    <Text.Primary
+      lightGray={true}
+    >
+      500 kg
+    </Text.Primary>
+  </View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "justifyContent": "space-between",
+      }
+    }
+  >
     <Slider
       maximumValue={1000}
       minimumTrackTintColor="#4BB377"
@@ -37,7 +45,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
       onValueChange={[Function]}
       style={
         Object {
-          "flex": 1,
+          "height": 40,
           "marginHorizontal": 24,
           "marginTop": 14,
         }
@@ -64,6 +72,18 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
       }
       value={500}
     />
+    <Button.Primary
+      onPress={[Function]}
+      textType="Primary"
+    >
+      <Text.Primary
+        bold={true}
+        center={true}
+        white={true}
+      >
+        Save
+      </Text.Primary>
+    </Button.Primary>
   </View>
-</RCTScrollView>
+</View>
 `;

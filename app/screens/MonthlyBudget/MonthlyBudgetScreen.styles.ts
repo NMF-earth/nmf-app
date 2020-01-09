@@ -7,14 +7,19 @@ export default StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: colors.white,
-    padding: 16
+    padding: 16,
+    alignContent: "flex-start"
   },
   textContainer: {
     flexDirection: "row",
     flexWrap: "wrap"
   },
-  slider: {
+  sliderAndButtonContainer: {
     flex: 1,
+    justifyContent: "space-between"
+  },
+  slider: {
+    height: 40,
     marginTop: 14,
     marginHorizontal: 24
   },
