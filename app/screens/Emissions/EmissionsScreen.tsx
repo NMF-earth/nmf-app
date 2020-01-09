@@ -17,7 +17,7 @@ interface Props {
   };
 }
 
-const ActionButtons = () => (
+const ActionButtons = (props: Props) => (
   <View style={styles.buttonView}>
     <Button.Primary
       style={styles.buttonLeft}
@@ -34,7 +34,7 @@ const ActionButtons = () => (
     <Button.Primary
       style={styles.buttonRight}
       onPress={() => {
-        // do nothing.
+        props.navigation.push("AddEmission");
       }}
       textType={"Primary"}
     >
@@ -130,7 +130,7 @@ const EmissionsScreen = (props: Props) => {
           ]}
         />
       </SafeAreaView>
-      <ActionButtons />
+      <ActionButtons {...props} />
     </React.Fragment>
   );
 };

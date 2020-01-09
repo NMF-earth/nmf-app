@@ -38,6 +38,27 @@ exports[`renders correctly H1 darkGray 1`] = `
 </Text>
 `;
 
+exports[`renders correctly H1 green 1`] = `
+<Text
+  green={true}
+  style={
+    Array [
+      Object {
+        "color": "#111714",
+        "fontFamily": "Inter-ExtraBold",
+        "fontSize": 28,
+      },
+      undefined,
+      Object {
+        "color": "#4BB377",
+      },
+    ]
+  }
+>
+  test
+</Text>
+`;
+
 exports[`renders correctly H1 lightGray 1`] = `
 <Text
   lightGray={true}
