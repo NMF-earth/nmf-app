@@ -14,6 +14,10 @@ export default StyleSheet.create({
     flexDirection: "row",
     flexWrap: "wrap"
   },
+  bottomContainer: {
+    flex: 1,
+    justifyContent: "space-between"
+  },
   sliderAndButtonContainer: {
     flex: 1,
     justifyContent: "space-between"

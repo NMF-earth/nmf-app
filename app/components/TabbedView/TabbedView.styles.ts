@@ -14,5 +14,8 @@ export default StyleSheet.create({
     flex: 1,
     borderBottomColor: colors.linkGreen,
     borderBottomWidth: 4
+  },
+  buttonContainer: {
+    marginVertical: 10
   }
 });
