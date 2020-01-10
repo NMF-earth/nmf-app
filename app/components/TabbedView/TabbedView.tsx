@@ -1,8 +1,8 @@
 import React, { ReactElement, useState } from "react";
-import { Button, View } from "react-native";
+import { View, TouchableOpacity } from "react-native";
 
 import styles from "./TabbedView.styles";
-import colors from "../../style/colors";
+import Text from "../Text/";
 
 export interface TabbedViewItem {
   title: string;
@@ -26,16 +26,18 @@ const TabItem = ({
   handleTabPress,
   isSelected
 }: TabItemProps) => {
-  const buttonColor = isSelected ? colors.linkGreen : colors.gray;
   const tabStyles = isSelected ? styles.tabItemSelected : styles.tabItem;
 
   return (
     <View style={tabStyles}>
-      <Button
-        color={buttonColor}
+      <TouchableOpacity
+        style={styles.buttonContainer}
         onPress={() => handleTabPress(index)}
-        title={title}
-      />
+      >
+        <Text.Primary center green={isSelected} lightGray={!isSelected}>
+          {title}
+        </Text.Primary>
+      </TouchableOpacity>
     </View>
   );
 };

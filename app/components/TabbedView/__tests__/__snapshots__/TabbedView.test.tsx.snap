@@ -19,35 +19,20 @@ Array [
       }
     >
       <TouchableOpacity
-        accessibilityRole="button"
-        accessibilityStates={Array []}
         onPress={[Function]}
-      >
-        <View
-          style={
-            Array [
-              Object {},
-            ]
+        style={
+          Object {
+            "marginVertical": 10,
           }
+        }
+      >
+        <Text.Primary
+          center={true}
+          green={true}
+          lightGray={false}
         >
-          <Text
-            style={
-              Array [
-                Object {
-                  "color": "#007AFF",
-                  "fontSize": 18,
-                  "padding": 8,
-                  "textAlign": "center",
-                },
-                Object {
-                  "color": "#4BB377",
-                },
-              ]
-            }
-          >
-            Hello Tab 1
-          </Text>
-        </View>
+          Hello Tab 1
+        </Text.Primary>
       </TouchableOpacity>
     </View>
     <View
@@ -60,35 +45,20 @@ Array [
       }
     >
       <TouchableOpacity
-        accessibilityRole="button"
-        accessibilityStates={Array []}
         onPress={[Function]}
-      >
-        <View
-          style={
-            Array [
-              Object {},
-            ]
+        style={
+          Object {
+            "marginVertical": 10,
           }
+        }
+      >
+        <Text.Primary
+          center={true}
+          green={false}
+          lightGray={true}
         >
-          <Text
-            style={
-              Array [
-                Object {
-                  "color": "#007AFF",
-                  "fontSize": 18,
-                  "padding": 8,
-                  "textAlign": "center",
-                },
-                Object {
-                  "color": "#CED4DA",
-                },
-              ]
-            }
-          >
-            Hello Tab 1
-          </Text>
-        </View>
+          Hello Tab 1
+        </Text.Primary>
       </TouchableOpacity>
     </View>
   </View>,
