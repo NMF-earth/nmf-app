@@ -29,5 +29,8 @@ export default StyleSheet.create({
     ...button,
     marginRight: PADDING_HORIZONTAL,
     marginLeft: PADDING_HORIZONTAL / 2
+  },
+  textNoEmission: {
+    paddingVertical: 20
   }
 });

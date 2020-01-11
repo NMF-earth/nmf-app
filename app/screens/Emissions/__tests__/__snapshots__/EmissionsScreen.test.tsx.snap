@@ -65,45 +65,17 @@ Array [
             "title": "To offset",
           },
           Object {
-            "component": <FlatList
-              data={
-                Array [
-                  Object {
-                    "custom": false,
-                    "food": false,
-                    "onPress": [Function],
-                    "subTitle": "3 kg CO2eq",
-                    "title": "Custom emission",
-                    "transport": true,
-                  },
-                  Object {
-                    "custom": true,
-                    "food": false,
-                    "onPress": [Function],
-                    "subTitle": "1 125 kg CO2eq",
-                    "title": "5 hours flight",
-                    "transport": false,
-                  },
-                ]
-              }
-              disableVirtualization={false}
-              horizontal={false}
-              initialNumToRender={10}
-              keyExtractor={[Function]}
-              maxToRenderPerBatch={10}
-              numColumns={1}
-              onEndReachedThreshold={2}
-              removeClippedSubviews={false}
-              renderItem={[Function]}
-              scrollEventThrottle={50}
+            "component": <Text.Primary
+              center={true}
+              lightGray={true}
               style={
                 Object {
-                  "paddingTop": 10,
+                  "paddingVertical": 20,
                 }
               }
-              updateCellsBatchingPeriod={50}
-              windowSize={21}
-            />,
+            >
+              Emissions mitigated will appear here.
+            </Text.Primary>,
             "title": "Mitigated",
           },
         ]

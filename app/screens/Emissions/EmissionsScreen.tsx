@@ -79,6 +79,9 @@ const DATA = [
   }
 ];
 
+/* TO DO: remove these constants */
+const DATA_EMPTY = [];
+
 /* TO DO: line bellow later */
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const EmissionsScreen = (props: Props) => {
@@ -109,10 +112,10 @@ const EmissionsScreen = (props: Props) => {
             },
             {
               title: t("EMISSIONS_SCREEN_MITIGATED"),
-              component: (
+              component: DATA_EMPTY.length ? (
                 <FlatList<EmissionListItemProps>
                   style={styles.listContainer}
-                  data={DATA.slice(1)}
+                  data={DATA_EMPTY}
                   keyExtractor={(item, index) => index.toString()}
                   renderItem={({ item }: { item: EmissionListItemProps }) => (
                     <EmissionListItem
@@ -125,6 +128,10 @@ const EmissionsScreen = (props: Props) => {
                     />
                   )}
                 />
+              ) : (
+                <Text.Primary style={styles.textNoEmission} center lightGray>
+                  {t("EMISSIONS_SCREEN_NO_EMISSION_MITIGATED")}
+                </Text.Primary>
               )
             }
           ]}

@@ -9,6 +9,7 @@ interface TranslationKeys {
   EMISSIONS_SCREEN_MITIGATED: string;
   EMISSIONS_SCREEN_MITIGATE: string;
   EMISSIONS_SCREEN_ADD: string;
+  EMISSIONS_SCREEN_NO_EMISSION_MITIGATED: string;
 }
 
 export { en, fr, de, TranslationKeys };
