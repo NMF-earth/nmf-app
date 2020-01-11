@@ -5,6 +5,7 @@ import { createStackNavigator } from "react-navigation-stack";
 import TabBarIcon from "../components/TabBarIcon";
 import { Text } from "../components";
 
+import ComingSoonScreen from "../screens/ComingSoon";
 import ActScreen from "../screens/Act";
 import ActDetailScreen from "../screens/ActDetail";
 import BudgetScreen from "../screens/Budget";
@@ -38,7 +39,8 @@ BudgetStack.navigationOptions = {
 };
 
 const EmissionsStack = createStackNavigator({
-  Emissions: EmissionsScreen
+  Emissions: EmissionsScreen,
+  ComingSoon: ComingSoonScreen
 });
 
 EmissionsStack.navigationOptions = {

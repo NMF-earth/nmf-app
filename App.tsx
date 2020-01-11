@@ -1,9 +1,8 @@
 import React from "react";
 import { AppLoading } from "expo";
-import { Asset } from "expo-asset";
 import * as Font from "expo-font";
 import { Platform, StatusBar, StyleSheet, View } from "react-native";
-import { Ionicons } from "@expo/vector-icons";
+import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
 import * as Sentry from "sentry-expo";
 import Constants from "expo-constants";
 import AppNavigator from "./app/navigation/AppNavigator";
@@ -21,15 +20,15 @@ Sentry.init({
 /* TODO: set Constants.manifest.revisionId with expo */
 Sentry.setRelease(Constants.manifest.revisionId);
 
-interface IProps {
+interface Props {
   skipLoadingScreen: boolean;
 }
-interface IState {
+interface State {
   isLoadingComplete: boolean;
 }
 
-export default class App extends React.Component<IProps, IState> {
-  constructor(props: IProps) {
+export default class App extends React.Component<Props, State> {
+  constructor(props: Props) {
     super(props);
     this.state = {
       isLoadingComplete: false
@@ -68,6 +67,7 @@ async function loadResourcesAsync() {
   await Promise.all([
     Font.loadAsync({
       ...Ionicons.font,
+      ...MaterialCommunityIcons.font,
       "Inter-Black": require("./assets/fonts/Inter-Black.ttf"),
       "Inter-Bold": require("./assets/fonts/Inter-Bold.ttf"),
       "Inter-BoldItalic": require("./assets/fonts/Inter-BoldItalic.ttf"),

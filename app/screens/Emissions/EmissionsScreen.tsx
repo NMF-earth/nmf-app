@@ -17,13 +17,13 @@ interface Props {
   };
 }
 
-const ActionButtons = () => (
+const ActionButtons = (props: Props) => (
   <View style={styles.buttonView}>
     <Button.Primary
       style={styles.buttonLeft}
       black
       onPress={() => {
-        // do nothing.
+        props.navigation.push("ComingSoon");
       }}
       textType={"Primary"}
     >
@@ -130,7 +130,7 @@ const EmissionsScreen = (props: Props) => {
           ]}
         />
       </SafeAreaView>
-      <ActionButtons />
+      <ActionButtons {...props} />
     </React.Fragment>
   );
 };

@@ -4,6 +4,7 @@ import * as Budget from "../../screens/Budget/translations";
 import * as Emissions from "../../screens/Emissions/translations";
 import * as Settings from "../../screens/Settings/translations";
 import * as MonthlyBudget from "../../screens/MonthlyBudget/translations";
+import * as ComingSoon from "../../screens/ComingSoon/translations";
 
 /* COMPONENTS */
 import * as NoEmission from "../../components/NoEmission/translations";
@@ -16,7 +17,8 @@ const en = {
   ...Act.en,
   ...Budget.en,
   ...Emissions.en,
-  ...Settings.en
+  ...Settings.en,
+  ...ComingSoon.en
 };
 
 const de = {
@@ -26,7 +28,8 @@ const de = {
   ...Act.de,
   ...Budget.de,
   ...Emissions.de,
-  ...Settings.de
+  ...Settings.de,
+  ...ComingSoon.de
 };
 
 const fr = {
@@ -36,7 +39,8 @@ const fr = {
   ...Act.fr,
   ...Budget.fr,
   ...Emissions.fr,
-  ...Settings.fr
+  ...Settings.fr,
+  ...ComingSoon.fr
 };
 
 export interface TranslationKeys
@@ -46,6 +50,7 @@ export interface TranslationKeys
     Act.TranslationKeys,
     Budget.TranslationKeys,
     Emissions.TranslationKeys,
-    Settings.TranslationKeys {}
+    Settings.TranslationKeys,
+    ComingSoon.TranslationKeys {}
 
 export { en, de, fr };

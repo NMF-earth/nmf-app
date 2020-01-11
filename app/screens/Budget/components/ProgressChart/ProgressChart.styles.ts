@@ -1,6 +1,7 @@
 import { StyleSheet } from "react-native";
 import Layout from "../../../../style/layout";
 import colors from "../../../../style/colors";
+import { isIOS } from "../../../../utils/platform";
 
 const shadow = {
   shadowColor: "#000",
@@ -22,6 +23,7 @@ export default StyleSheet.create({
     borderRadius: 14,
     marginBottom: 20,
     paddingTop: 10,
+    marginHorizontal: isIOS ? 0 : 2,
     flex: 1
   }
 });

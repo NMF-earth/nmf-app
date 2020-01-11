@@ -9,6 +9,7 @@ exports[`ProgressChart renders correctly 1`] = `
       "elevation": 4,
       "flex": 1,
       "marginBottom": 20,
+      "marginHorizontal": 0,
       "paddingBottom": 14,
       "paddingHorizontal": 14,
       "paddingTop": 10,
