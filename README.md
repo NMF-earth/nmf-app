@@ -58,6 +58,12 @@ Use the following command to run unit tests with coverage:
 $ yarn test
 ```
 
+Use the following to update unit tests
+
+```
+$ yarn test -u
+```
+
 Use the following to run unit tests in watch mode while developing:
 
 ```
@@ -71,3 +77,11 @@ Stories (\*.story.tsx) can be automatically added to `storyLoader.js` with :
 ```
 $ yarn prestorybook
 ```
+
+### 👨‍💻 Contributors
+
+[Pierre Bresson](https://github.com/pierrebresson/) - [Theo Lampert](https://github.com/theolampert)
+
+### 🏆 Backers
+
+A big thank you to [Christopher Gwilliams](https://github.com/encima) and the Phelps family for their amazing contribution to the [Kickstarter](https://www.kickstarter.com/projects/pierrebresson/not-my-fault)!
