@@ -7,8 +7,7 @@ export default StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
-    marginVertical: 4,
-    marginHorizontal: PADDING_HORIZONTAL
+    marginVertical: 4
   },
   textContainer: {
     flex: 1

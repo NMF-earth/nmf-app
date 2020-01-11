@@ -9,7 +9,6 @@ exports[`EmissionListItem renders correctly by default 1`] = `
       "flex": 1,
       "flexDirection": "row",
       "justifyContent": "space-between",
-      "marginHorizontal": 14,
       "marginVertical": 4,
     }
   }
@@ -68,7 +67,6 @@ exports[`EmissionListItem renders correctly with custom icon 1`] = `
       "flex": 1,
       "flexDirection": "row",
       "justifyContent": "space-between",
-      "marginHorizontal": 14,
       "marginVertical": 4,
     }
   }
@@ -127,7 +125,6 @@ exports[`EmissionListItem renders correctly with food icon 1`] = `
       "flex": 1,
       "flexDirection": "row",
       "justifyContent": "space-between",
-      "marginHorizontal": 14,
       "marginVertical": 4,
     }
   }
@@ -186,7 +183,6 @@ exports[`EmissionListItem renders correctly with transport icon 1`] = `
       "flex": 1,
       "flexDirection": "row",
       "justifyContent": "space-between",
-      "marginHorizontal": 14,
       "marginVertical": 4,
     }
   }
