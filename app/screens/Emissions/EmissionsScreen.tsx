@@ -34,7 +34,7 @@ const ActionButtons = (props: Props) => (
     <Button.Primary
       style={styles.buttonRight}
       onPress={() => {
-        // do nothing.
+        props.navigation.push("AddEmission");
       }}
       textType={"Primary"}
     >

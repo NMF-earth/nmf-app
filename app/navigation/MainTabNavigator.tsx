@@ -4,6 +4,7 @@ import { createStackNavigator } from "react-navigation-stack";
 
 import TabBarIcon from "../components/TabBarIcon";
 import { Text } from "../components";
+import StorybookScreen from "../../storybook";
 
 import ComingSoonScreen from "../screens/ComingSoon";
 import ActScreen from "../screens/Act";
@@ -12,7 +13,7 @@ import BudgetScreen from "../screens/Budget";
 import EmissionsScreen from "../screens/Emissions";
 import SettingsScreen from "../screens/Settings";
 import MontlyBudgetScreen from "../screens/MonthlyBudget";
-import StorybookScreen from "../../storybook";
+import AddEmissionScreen from "../screens/AddEmission";
 
 import colors from "../style/colors";
 import { t } from "../utils/translations";
@@ -40,7 +41,8 @@ BudgetStack.navigationOptions = {
 
 const EmissionsStack = createStackNavigator({
   Emissions: EmissionsScreen,
-  ComingSoon: ComingSoonScreen
+  ComingSoon: ComingSoonScreen,
+  AddEmission: AddEmissionScreen
 });
 
 EmissionsStack.navigationOptions = {

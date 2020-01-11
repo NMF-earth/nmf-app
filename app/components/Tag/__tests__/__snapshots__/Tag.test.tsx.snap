@@ -11,7 +11,7 @@ exports[`Tag renders correctly with airplane icon 1`] = `
       "borderRadius": 8,
       "borderWidth": 1,
       "marginRight": 12,
-      "minWidth": 130,
+      "minWidth": 110,
       "paddingHorizontal": 12,
       "paddingVertical": 10,
     }
@@ -47,7 +47,7 @@ exports[`Tag renders correctly with airplane icon and selected 1`] = `
       "borderRadius": 8,
       "borderWidth": 1,
       "marginRight": 12,
-      "minWidth": 130,
+      "minWidth": 110,
       "paddingHorizontal": 12,
       "paddingVertical": 10,
     }
@@ -83,7 +83,7 @@ exports[`Tag renders correctly with build icon 1`] = `
       "borderRadius": 8,
       "borderWidth": 1,
       "marginRight": 12,
-      "minWidth": 130,
+      "minWidth": 110,
       "paddingHorizontal": 12,
       "paddingVertical": 10,
     }
@@ -119,7 +119,7 @@ exports[`Tag renders correctly with build icon and selected 1`] = `
       "borderRadius": 8,
       "borderWidth": 1,
       "marginRight": 12,
-      "minWidth": 130,
+      "minWidth": 110,
       "paddingHorizontal": 12,
       "paddingVertical": 10,
     }
@@ -205,7 +205,7 @@ exports[`Tag renders correctly with restaurant icon 1`] = `
       "borderRadius": 8,
       "borderWidth": 1,
       "marginRight": 12,
-      "minWidth": 130,
+      "minWidth": 110,
       "paddingHorizontal": 12,
       "paddingVertical": 10,
     }
@@ -241,7 +241,7 @@ exports[`Tag renders correctly with restaurant icon and selected 1`] = `
       "borderRadius": 8,
       "borderWidth": 1,
       "marginRight": 12,
-      "minWidth": 130,
+      "minWidth": 110,
       "paddingHorizontal": 12,
       "paddingVertical": 10,
     }

@@ -22,7 +22,7 @@ export default StyleSheet.create({
     borderColor: colors.linkGreen
   },
   containerIcon: {
-    minWidth: 130,
+    minWidth: 110,
     paddingVertical: 10
   },
   icon: {
