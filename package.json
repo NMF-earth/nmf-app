@@ -30,7 +30,7 @@
     "@types/ramda": "0.26.39",
     "@types/react-navigation": "3.4.0",
     "carbon-footprint": "1.0.1",
-    "expo": "36.0.0",
+    "expo": "36.0.2",
     "expo-asset": "8.0.0",
     "expo-constants": "8.0.0",
     "expo-font": "8.0.0",
