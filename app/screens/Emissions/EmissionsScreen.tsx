@@ -1,6 +1,6 @@
 import React from "react";
 import { FlatList, SafeAreaView, View } from "react-native";
-
+// import { connect } from "react-redux";
 import { t } from "../../utils/translations";
 import styles from "./EmissionsScreen.styles";
 import {
@@ -10,6 +10,7 @@ import {
   EmissionListItem,
   EmissionListItemProps
 } from "../../components";
+// import { emissions } from "../../ducks";
 
 interface Props {
   navigation: {
@@ -85,6 +86,7 @@ const DATA_EMPTY = [];
 /* TO DO: line bellow later */
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const EmissionsScreen = (props: Props) => {
+  console.log("TCL: EmissionsScreen -> props", props);
   return (
     <React.Fragment>
       <SafeAreaView style={styles.container}>
@@ -143,3 +145,11 @@ const EmissionsScreen = (props: Props) => {
 };
 
 export default EmissionsScreen;
+
+// const mapStateToProps = state => ({
+//   stat: state,
+//   emissionsToMitigate: emissions.selectors.getEmissionsToMitigate(state),
+//   emissionsMitigated: emissions.selectors.getEmissionsMitigated(state)
+// });
+
+// export default connect(mapStateToProps, null)(EmissionsScreen);
