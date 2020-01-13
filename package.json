@@ -29,6 +29,7 @@
     "@types/i18n-js": "3.0.1",
     "@types/ramda": "0.26.39",
     "@types/react-navigation": "3.4.0",
+    "@types/react-redux": "^7.1.5",
     "carbon-footprint": "1.0.1",
     "expo": "36.0.2",
     "expo-asset": "8.0.0",
