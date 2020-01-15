@@ -1,18 +1,12 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { Emission } from "../../interfaces";
 
 interface Emissions {
-  userEmissions: Array<Emission>;
-}
-
-interface Emission {
-  id: number;
-  date: string;
-  quantityOfCO2: number;
-  mitigated: boolean;
+  list: Array<Emission>;
 }
 
 const initialState: Emissions = {
-  userEmissions: []
+  list: []
 };
 
 const emissions = createSlice({
@@ -20,12 +14,10 @@ const emissions = createSlice({
   initialState,
   reducers: {
     createEmission(state, action: PayloadAction<Emission>) {
-      state.userEmissions.push(action.payload);
+      state.list.push(action.payload);
     },
     deleteEmissionById(state, action: PayloadAction<number>) {
-      state.userEmissions = state.userEmissions.filter(
-        item => item.id !== action.payload
-      );
+      state.list = state.list.filter(item => item.id !== action.payload);
     }
   }
 });

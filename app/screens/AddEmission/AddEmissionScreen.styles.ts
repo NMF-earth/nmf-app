@@ -19,8 +19,5 @@ export default StyleSheet.create({
   tagContainer: {
     paddingLeft: PADDING_HORIZONTAL,
     flexDirection: "row"
-  },
-  button: {
-    margin: PADDING_HORIZONTAL
   }
 });

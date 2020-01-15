@@ -1,30 +1,15 @@
 import React, { useState } from "react";
 import { View, ScrollView } from "react-native";
 
-import { Text, Button, Tag } from "../../components";
+import { Text, Tag } from "../../components";
 import styles from "./AddEmissionScreen.styles";
 import navigationOptions from "./AddEmissionScreen.navigationOptions";
 import { t } from "../../utils/translations";
-import { Food, Transport, Custom } from "./components";
-
-const TRANSPORT = "transport";
-const FOOD = "food";
-const CUSTOM = "custom";
-
-const AddThisEmissionButton = ({ navigation }) => (
-  <Button.Primary
-    onPress={() => navigation.goBack()}
-    textType={"Primary"}
-    style={styles.button}
-  >
-    <Text.Primary white center bold>
-      {t("ADD_EMISSION_ADD_THIS_EMISSION")}
-    </Text.Primary>
-  </Button.Primary>
-);
+import { Food, Transport, Custom, AddEmissionButton } from "./components";
+import { EmissionTypeEnum } from "../../interfaces";
 
 const AddEmissionScreen = ({ navigation }) => {
-  const [typeOfEmission, setTypeOfEmission] = useState(TRANSPORT);
+  const [emissionType, SetEmissionType] = useState(EmissionTypeEnum.transport);
 
   return (
     <ScrollView style={styles.container}>
@@ -35,28 +20,30 @@ const AddEmissionScreen = ({ navigation }) => {
         <ScrollView horizontal style={styles.tagContainer}>
           <Tag
             icon={"md-airplane"}
-            selected={typeOfEmission === TRANSPORT}
+            selected={emissionType === EmissionTypeEnum.transport}
             title={"Transport"}
-            onPress={() => setTypeOfEmission(TRANSPORT)}
+            onPress={() => SetEmissionType(EmissionTypeEnum.transport)}
           />
           <Tag
             icon={"md-restaurant"}
-            selected={typeOfEmission === FOOD}
+            selected={emissionType === EmissionTypeEnum.food}
             title={"Food"}
-            onPress={() => setTypeOfEmission(FOOD)}
+            onPress={() => SetEmissionType(EmissionTypeEnum.food)}
           />
           <Tag
             icon={"md-build"}
-            selected={typeOfEmission === CUSTOM}
+            selected={emissionType === EmissionTypeEnum.custom}
             title={"Custon"}
-            onPress={() => setTypeOfEmission(CUSTOM)}
+            onPress={() => SetEmissionType(EmissionTypeEnum.custom)}
           />
         </ScrollView>
       </View>
-      {typeOfEmission === TRANSPORT ? <Transport /> : null}
-      {typeOfEmission === FOOD ? <Food /> : null}
-      {typeOfEmission === CUSTOM ? <Custom /> : null}
-      <AddThisEmissionButton navigation={navigation} />
+
+      {emissionType === EmissionTypeEnum.transport ? <Transport /> : null}
+      {emissionType === EmissionTypeEnum.food ? <Food /> : null}
+      {emissionType === EmissionTypeEnum.custom ? <Custom /> : null}
+
+      <AddEmissionButton navigation={navigation} emissionType={emissionType} />
     </ScrollView>
   );
 };
