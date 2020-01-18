@@ -16,34 +16,7 @@ Array [
         Array [
           Object {
             "component": <FlatList
-              data={
-                Array [
-                  Object {
-                    "custom": false,
-                    "food": true,
-                    "onPress": [Function],
-                    "subTitle": "2.1 kg CO2",
-                    "title": "170 g of red meat",
-                    "transport": false,
-                  },
-                  Object {
-                    "custom": false,
-                    "food": false,
-                    "onPress": [Function],
-                    "subTitle": "3 kg CO2eq",
-                    "title": "Custom emission",
-                    "transport": true,
-                  },
-                  Object {
-                    "custom": true,
-                    "food": false,
-                    "onPress": [Function],
-                    "subTitle": "1 125 kg CO2eq",
-                    "title": "5 hours flight",
-                    "transport": false,
-                  },
-                ]
-              }
+              data={[MockFunction]}
               disableVirtualization={false}
               horizontal={false}
               initialNumToRender={10}
@@ -82,58 +55,12 @@ Array [
       }
     />
   </RCTSafeAreaView>,
-  <View
-    style={
+  <AddEmissionAndMitigateButtons
+    navigation={
       Object {
-        "bottom": 0,
-        "flexDirection": "row",
-        "left": 0,
-        "position": "absolute",
-        "right": 0,
+        "push": [Function],
       }
     }
-  >
-    <Button.Primary
-      black={true}
-      onPress={[Function]}
-      style={
-        Object {
-          "flex": 1,
-          "marginBottom": 20,
-          "marginLeft": 14,
-          "marginRight": 7,
-        }
-      }
-      textType="Primary"
-    >
-      <Text.Primary
-        bold={true}
-        center={true}
-        white={true}
-      >
-        Mitigate
-      </Text.Primary>
-    </Button.Primary>
-    <Button.Primary
-      onPress={[Function]}
-      style={
-        Object {
-          "flex": 1,
-          "marginBottom": 20,
-          "marginLeft": 7,
-          "marginRight": 14,
-        }
-      }
-      textType="Primary"
-    >
-      <Text.Primary
-        bold={true}
-        center={true}
-        white={true}
-      >
-        Add
-      </Text.Primary>
-    </Button.Primary>
-  </View>,
+  />,
 ]
 `;

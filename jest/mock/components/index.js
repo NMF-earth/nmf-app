@@ -30,6 +30,12 @@ jest.mock(
   () => "Chart"
 );
 
+/* Emissions Screen */
+jest.mock(
+  "../../../app/screens/Emissions/components/AddEmissionAndMitigateButtons/AddEmissionAndMitigateButtons",
+  () => "AddEmissionAndMitigateButtons"
+);
+
 /* Shared Components */
 jest.mock("../../../app/components/SocialMedia", () => "SocialMedia");
 jest.mock("../../../app/components/Tag", () => "Tag");

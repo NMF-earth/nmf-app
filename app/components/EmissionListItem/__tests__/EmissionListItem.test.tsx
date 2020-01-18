@@ -4,59 +4,33 @@ import { EmissionListItem } from "../EmissionListItem";
 
 jest.unmock("../EmissionListItem.tsx");
 
-const TITLE = "170 g of red meat";
-const SUBTITLE = "2.1 kg CO2";
-const ONPRESS = () => {
-  // do nothing.
+const props = {
+  id: 1,
+  title: "170 g of red meat",
+  subTitle: "2.1 kg CO2",
+  onPress: () => {
+    // do nothing.
+  }
 };
 
 it("EmissionListItem renders correctly by default", () => {
-  const tree = renderer
-    .create(
-      <EmissionListItem onPress={ONPRESS} title={TITLE} subTitle={SUBTITLE} />
-    )
-    .toJSON();
+  const tree = renderer.create(<EmissionListItem {...props} />).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
 it("EmissionListItem renders correctly with food icon", () => {
-  const tree = renderer
-    .create(
-      <EmissionListItem
-        onPress={ONPRESS}
-        title={TITLE}
-        subTitle={SUBTITLE}
-        food
-      />
-    )
-    .toJSON();
+  const tree = renderer.create(<EmissionListItem {...props} food />).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
 it("EmissionListItem renders correctly with transport icon", () => {
   const tree = renderer
-    .create(
-      <EmissionListItem
-        onPress={ONPRESS}
-        title={TITLE}
-        subTitle={SUBTITLE}
-        transport
-      />
-    )
+    .create(<EmissionListItem {...props} transport />)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
 
 it("EmissionListItem renders correctly with custom icon", () => {
-  const tree = renderer
-    .create(
-      <EmissionListItem
-        onPress={ONPRESS}
-        title={TITLE}
-        subTitle={SUBTITLE}
-        custom
-      />
-    )
-    .toJSON();
+  const tree = renderer.create(<EmissionListItem {...props} custom />).toJSON();
   expect(tree).toMatchSnapshot();
 });

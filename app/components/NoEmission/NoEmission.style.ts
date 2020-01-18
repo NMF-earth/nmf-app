@@ -21,10 +21,10 @@ export default StyleSheet.create({
   },
   paragraph: {
     textAlign: "center",
-    paddingVertical: 10
+    paddingVertical: 4
   },
   header: {
-    paddingVertical: 20
+    paddingVertical: 14
   },
   button: {
     marginTop: 20

@@ -6,6 +6,7 @@ import styles from "./EmissionListItem.styles";
 import Text from "../Text";
 
 interface EmissionListItemProps {
+  id: number;
   transport?: boolean;
   food?: boolean;
   custom?: boolean;

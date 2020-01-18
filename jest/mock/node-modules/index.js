@@ -13,3 +13,14 @@ jest.mock("@expo/vector-icons", () => {
 
   return icons;
 });
+
+jest.mock("react-redux", () => {
+  const createMock = require("../../utils").createMock;
+
+  return {
+    useDispatch: () => jest.fn(),
+    useSelector: () => jest.fn(),
+    connect: () => component => component,
+    Provider: createMock("Provider")
+  };
+});

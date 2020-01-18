@@ -5,7 +5,16 @@ import { Platform, StatusBar, StyleSheet, View } from "react-native";
 import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
 import * as Sentry from "sentry-expo";
 import Constants from "expo-constants";
+import { Provider } from "react-redux";
 import AppNavigator from "./app/navigation/AppNavigator";
+import store from "./app/redux/store";
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#fff"
+  }
+});
 
 const secret =
   require("./secret.ts").default || require("./secret.example.ts").default;
@@ -56,7 +65,9 @@ export default class App extends React.Component<Props, State> {
       return (
         <View style={styles.container}>
           {Platform.OS === "ios" && <StatusBar barStyle="default" />}
-          <AppNavigator />
+          <Provider store={store}>
+            <AppNavigator />
+          </Provider>
         </View>
       );
     }
@@ -98,10 +109,3 @@ function handleLoadingError(error) {
 function handleFinishLoading(setLoadingComplete) {
   setLoadingComplete(true);
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff"
-  }
-});

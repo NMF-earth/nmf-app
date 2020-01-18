@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly NoEmission 1`] = `
-<View
+<RCTSafeAreaView
+  emulateUnlessSupported={true}
   style={
     Object {
       "flex": 1,
@@ -40,7 +41,7 @@ exports[`renders correctly NoEmission 1`] = `
     <Text.H1
       style={
         Object {
-          "paddingVertical": 20,
+          "paddingVertical": 14,
         }
       }
     >
@@ -49,7 +50,7 @@ exports[`renders correctly NoEmission 1`] = `
     <Text.Primary
       style={
         Object {
-          "paddingVertical": 10,
+          "paddingVertical": 4,
           "textAlign": "center",
         }
       }
@@ -59,7 +60,7 @@ exports[`renders correctly NoEmission 1`] = `
     <Text.Primary
       style={
         Object {
-          "paddingVertical": 10,
+          "paddingVertical": 4,
           "textAlign": "center",
         }
       }
@@ -84,5 +85,5 @@ exports[`renders correctly NoEmission 1`] = `
       </Text.Primary>
     </Button.Primary>
   </View>
-</View>
+</RCTSafeAreaView>
 `;

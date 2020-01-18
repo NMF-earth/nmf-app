@@ -14,3 +14,5 @@ it("BudgetScreen renders correctly", () => {
   const tree = renderer.create(<BudgetScreen {...props} />).toJSON();
   expect(tree).toMatchSnapshot();
 });
+
+// TODO: add test to verify that monthly budget is opened
