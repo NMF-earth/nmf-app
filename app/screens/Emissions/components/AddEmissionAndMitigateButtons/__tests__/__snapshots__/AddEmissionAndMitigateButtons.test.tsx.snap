@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddEmissionAndMitigateButtons renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "bottom": 0,
+      "flexDirection": "row",
+      "left": 0,
+      "position": "absolute",
+      "right": 0,
+    }
+  }
+>
+  <Button.Primary
+    black={true}
+    onPress={[Function]}
+    style={
+      Object {
+        "flex": 1,
+        "marginBottom": 20,
+        "marginLeft": 14,
+        "marginRight": 7,
+      }
+    }
+    textType="Primary"
+  >
+    <Text.Primary
+      bold={true}
+      center={true}
+      white={true}
+    >
+      Mitigate
+    </Text.Primary>
+  </Button.Primary>
+  <Button.Primary
+    onPress={[Function]}
+    style={
+      Object {
+        "flex": 1,
+        "marginBottom": 20,
+        "marginLeft": 7,
+        "marginRight": 14,
+      }
+    }
+    textType="Primary"
+  >
+    <Text.Primary
+      bold={true}
+      center={true}
+      white={true}
+    >
+      Add
+    </Text.Primary>
+  </Button.Primary>
+</View>
+`;

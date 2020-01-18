@@ -5,6 +5,7 @@ import { storiesOf } from "@storybook/react-native";
 import { EmissionListItem } from "..";
 
 const init = {
+  id: 1,
   title: "170 g of red meat",
   subTitle: "2.1 kg CO2",
   onPress: () => alert("onPress")

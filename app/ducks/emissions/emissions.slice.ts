@@ -22,8 +22,10 @@ const emissions = createSlice({
   }
 });
 
-export const { createEmission, deleteEmissionById } = emissions.actions;
+const { createEmission, deleteEmissionById } = emissions.actions;
+
+export const actions = { createEmission, deleteEmissionById };
 
 export const namespace = emissions.name;
 
-export default emissions.reducer;
+export const reducer = emissions.reducer;

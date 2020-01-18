@@ -1,39 +1,34 @@
-import React, { useState } from "react";
-import { ScrollView, StyleSheet, SafeAreaView } from "react-native";
-
+import React from "react";
+import { connect } from "react-redux";
 import NoEmission from "../../components/NoEmission";
 import EmissionsScreen from "./EmissionsScreen";
 import navigationOptions from "./EmissionsScreen.navigationOptions";
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    marginTop: 20
-  }
-});
+import { EmissionListItemProps } from "../../components";
+import { emissions } from "../../ducks";
 
 interface Props {
+  emissionsToMitigate: Array<EmissionListItemProps>;
+  emissionsMitigated: Array<EmissionListItemProps>;
   navigation: {
     push: (screen: string) => void;
   };
 }
 
 const Emissions = (props: Props) => {
-  const [emission, setEmission] = useState(true);
+  const { emissionsToMitigate, emissionsMitigated, navigation } = props;
 
-  if (emission) {
-    return <EmissionsScreen {...props} />;
-  } else {
-    return (
-      <SafeAreaView style={styles.container}>
-        <ScrollView>
-          <NoEmission addEmission={() => setEmission(true)} />
-        </ScrollView>
-      </SafeAreaView>
-    );
+  if (emissionsToMitigate.length || emissionsMitigated.length) {
+    return <EmissionsScreen navigation={navigation} />;
   }
+
+  return <NoEmission addEmission={() => navigation.push("AddEmission")} />;
 };
 
 Emissions.navigationOptions = navigationOptions;
 
-export default Emissions;
+const mapStateToProps = state => ({
+  emissionsToMitigate: emissions.selectors.getEmissionsToMitigate(state),
+  emissionsMitigated: emissions.selectors.getEmissionsMitigated(state)
+});
+
+export default connect(mapStateToProps, null)(Emissions);

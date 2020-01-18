@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Image } from "react-native";
+import { SafeAreaView, View, Image } from "react-native";
 
 import { Text, Button } from "../";
 import ImagesAssets from "../../constants/ImagesAssets";
@@ -10,9 +10,9 @@ interface Props {
   addEmission: () => void;
 }
 
-export default function NoEmission(props: Props) {
+export default function NoEmission({ addEmission }: Props) {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <View style={styles.imageView}>
         <Image
           style={styles.image}
@@ -31,7 +31,7 @@ export default function NoEmission(props: Props) {
         <Button.Primary
           fullWidth
           style={styles.button}
-          onPress={props.addEmission}
+          onPress={addEmission}
           textType={"Primary"}
         >
           <Text.Primary bold white>
@@ -39,6 +39,6 @@ export default function NoEmission(props: Props) {
           </Text.Primary>
         </Button.Primary>
       </View>
-    </View>
+    </SafeAreaView>
   );
 }
