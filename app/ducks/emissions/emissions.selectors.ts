@@ -3,6 +3,7 @@ import { namespace } from "./emissions.slice";
 
 const getEmissions = pathOr([], [namespace, "list"]);
 
+/* TODO: add tests for this selector + check if working irl */
 const getEmissionById = (state, id) => find(propEq("id", id))(state[namespace]);
 
 const getEmissionsToMitigate = state =>

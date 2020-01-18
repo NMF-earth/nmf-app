@@ -52,6 +52,7 @@ const emissions = createSlice({
 
       state.list.push(action.payload);
     },
+    /* TODO: add test for deleteEmissionById and test if it's working irl */
     deleteEmissionById(state, action: PayloadAction<number>) {
       state.list = state.list.filter(item => item.id !== action.payload);
     }
