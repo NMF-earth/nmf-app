@@ -82,6 +82,8 @@ $ yarn prestorybook
 
 [Pierre Bresson](https://github.com/pierrebresson/) - [Theo Lampert](https://github.com/theolampert)
 
+Have a look [here](https://github.com/NotMyFaultEarth/nmf-app/blob/master/contributing.md) if you want to contribute!
+
 ### 🏆 Backers
 
 A big thank you to [Christopher Gwilliams](https://github.com/encima) and the to Phelps family for their amazing contribution to the [Kickstarter](https://www.kickstarter.com/projects/pierrebresson/not-my-fault)!
