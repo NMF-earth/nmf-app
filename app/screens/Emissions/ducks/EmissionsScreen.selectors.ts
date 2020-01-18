@@ -1,14 +1,14 @@
 import { toString, map, pipe } from "ramda";
 import { emissions } from "../../../ducks";
-import { EmissionTypeEnum } from "../../../interfaces";
+import { EmissionEnum } from "../../../interfaces";
 
 const getEmissionListItem = item => ({
   id: item.id,
   title: item.emissionType,
   subTitle: toString(item.co2eqKilograms),
-  food: item.emissionType === EmissionTypeEnum.food,
-  transport: item.emissionType === EmissionTypeEnum.transport,
-  custom: item.emissionType === EmissionTypeEnum.custom,
+  food: item.emissionType === EmissionEnum.food,
+  transport: item.emissionType === EmissionEnum.transport,
+  custom: item.emissionType === EmissionEnum.custom,
   onPress: () => {
     // do nothing.
   }

@@ -16,7 +16,7 @@ Array [
         Array [
           Object {
             "component": <FlatList
-              data={Array []}
+              data={[MockFunction]}
               disableVirtualization={false}
               horizontal={false}
               initialNumToRender={10}

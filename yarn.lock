@@ -3713,10 +3713,10 @@ capture-exit@^2.0.0:
   dependencies:
     rsvp "^4.8.4"
 
-carbon-footprint@1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/carbon-footprint/-/carbon-footprint-1.0.5.tgz#defa5b9271ac059554bde6223e5806bc5712dbfa"
-  integrity sha512-G7rZef4+shY1YBQE5ePXFxWV7k0vb1enRP75cRU20dY5n467sXexQioCSnBaeEcpJmM38AMqfSnLoOu3597eTQ==
+carbon-footprint@1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/carbon-footprint/-/carbon-footprint-1.0.6.tgz#7a9bb6600857d31a9d70bdbedd96ae54c562fe48"
+  integrity sha512-RojEDr+SXukPU1Uf/8bgk8Grc9TzWmunDFWfoHHvLGNnzG8t0mWLMbe++FDYF2m65W6ZJeKGBg0KfydQ8U98rA==
 
 case-sensitive-paths-webpack-plugin@^2.2.0:
   version "2.2.0"

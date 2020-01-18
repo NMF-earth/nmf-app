@@ -42,11 +42,6 @@ export default class App extends React.Component<Props, State> {
     this.state = {
       isLoadingComplete: false
     };
-
-    // TODO: check if needed
-    // if (process.env.NODE_ENV === "development" && module.hot) {
-    //   module.hot.accept("./app/App", this.render);
-    // }
   }
   componentDidCatch(error: Error) {
     /* TODO: add more params for better error reporting */

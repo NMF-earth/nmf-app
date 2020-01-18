@@ -1,24 +1,13 @@
-export enum EmissionTypeEnum {
+import { FoodEnum, TransportEnum } from "carbon-footprint";
+
+enum EmissionEnum {
   food = "food",
   transport = "transport",
   purchase = "purchase",
   custom = "custom"
 }
 
-export enum EmissionFoodTypeEnum {
-  redMeat = "red meat",
-  whiteMeat = "white meat",
-  fish = "fish"
-}
-
-export enum EmissionTransportTypeEnum {
-  car = "car",
-  plane = "plane",
-  bus = "bus",
-  boat = "boat"
-}
-
-export enum EmissionPurchaseTypeEnum {
+enum EmissionPurchaseEnum {
   tv = "tv",
   computer = "computer",
   phone = "phone",
@@ -26,25 +15,25 @@ export enum EmissionPurchaseTypeEnum {
   car = "car"
 }
 
-export interface EmissionFood {
-  foodType: EmissionFoodTypeEnum;
+interface EmissionFood {
+  foodType: FoodEnum;
   quantityKilograms: number;
 }
 
-export interface EmissionTransport {
-  transportType: EmissionTransportTypeEnum;
+interface EmissionTransport {
+  transportType: TransportEnum;
   durationHours: number;
 }
 
-export interface EmissionPurchase {
-  purchaseType: EmissionPurchaseTypeEnum;
+interface EmissionPurchase {
+  purchaseType: EmissionPurchaseEnum;
 }
 
-export interface Emission {
+interface Emission {
   id: number;
   creationDate: string;
   customName?: string;
-  emissionType: EmissionTypeEnum;
+  emissionType: EmissionEnum;
   co2eqKilograms: number;
   co2eqModelVersion: number;
   isMitigated: boolean;
@@ -52,3 +41,12 @@ export interface Emission {
   transport?: EmissionTransport;
   purchase?: EmissionPurchase;
 }
+
+export {
+  Emission,
+  EmissionFood,
+  EmissionPurchase,
+  EmissionTransport,
+  EmissionEnum,
+  EmissionPurchaseEnum
+};

@@ -3,10 +3,8 @@ import {
   EmissionFood,
   EmissionPurchase,
   EmissionTransport,
-  EmissionTypeEnum,
-  EmissionFoodTypeEnum,
-  EmissionTransportTypeEnum,
-  EmissionPurchaseTypeEnum
+  EmissionEnum,
+  EmissionPurchaseEnum
 } from "./emission";
 
 export {
@@ -14,8 +12,6 @@ export {
   EmissionFood,
   EmissionPurchase,
   EmissionTransport,
-  EmissionTypeEnum,
-  EmissionFoodTypeEnum,
-  EmissionTransportTypeEnum,
-  EmissionPurchaseTypeEnum
+  EmissionEnum,
+  EmissionPurchaseEnum
 };

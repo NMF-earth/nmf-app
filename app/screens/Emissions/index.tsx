@@ -1,5 +1,5 @@
 import React from "react";
-import { connect } from "react-redux";
+import { useSelector } from "react-redux";
 import NoEmission from "../../components/NoEmission";
 import EmissionsScreen from "./EmissionsScreen";
 import navigationOptions from "./EmissionsScreen.navigationOptions";
@@ -15,7 +15,13 @@ interface Props {
 }
 
 const Emissions = (props: Props) => {
-  const { emissionsToMitigate, emissionsMitigated, navigation } = props;
+  const emissionsToMitigate = useSelector(
+    emissions.selectors.getEmissionsToMitigate
+  );
+  const emissionsMitigated = useSelector(
+    emissions.selectors.getEmissionsMitigated
+  );
+  const { navigation } = props;
 
   if (emissionsToMitigate.length || emissionsMitigated.length) {
     return <EmissionsScreen navigation={navigation} />;
@@ -26,9 +32,4 @@ const Emissions = (props: Props) => {
 
 Emissions.navigationOptions = navigationOptions;
 
-const mapStateToProps = state => ({
-  emissionsToMitigate: emissions.selectors.getEmissionsToMitigate(state),
-  emissionsMitigated: emissions.selectors.getEmissionsMitigated(state)
-});
-
-export default connect(mapStateToProps, null)(Emissions);
+export default Emissions;
