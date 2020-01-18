@@ -7,10 +7,10 @@
     "web": "expo start --web",
     "eject": "expo eject",
     "test:watch": "jest --watchAll",
-    "test": "jest --coverage",
+    "test": "jest",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx ./app",
     "typescript": "tsc --noEmit",
-    "ci": "yarn lint && yarn typescript && yarn test",
+    "ci": "yarn lint && yarn typescript && yarn test --coverage",
     "storybook": "start-storybook -p 7007",
     "prestorybook": "rnstl"
   },
