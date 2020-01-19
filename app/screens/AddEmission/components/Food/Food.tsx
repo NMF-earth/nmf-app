@@ -5,18 +5,22 @@ import Slider from "react-native-slider";
 import styles from "./Food.styles";
 import { Text, Tag } from "../../../../components";
 import colors from "../../../../style/colors";
-import { t } from "../../../../utils/translations";
+import { t } from "../../../../utils";
+import { FoodEnum } from "carbon-footprint";
 
 const DEFAULT_SLIDER_VALUE = 200;
 const MIN_SLIDER_VALUE = 20;
 const MAX_SLIDER_VALUE = 500;
 
-const READ_MEAT = "Read Meat";
-const WHITE_MEAT = "White Meat";
+interface Props {
+  foodType: string;
+  setFoodType: (string) => void;
+  setCo2eqKilograms: (number) => void;
+  setQuantityKilograms: (number) => void;
+}
 
-export default () => {
+export default ({ setFoodType, foodType }: Props) => {
   const [sliderValue, setValue] = useState(DEFAULT_SLIDER_VALUE);
-  const [typeOfFood, setTypeOfFood] = useState(READ_MEAT);
 
   return (
     <React.Fragment>
@@ -25,14 +29,14 @@ export default () => {
       </View>
       <ScrollView horizontal style={styles.tagContainer}>
         <Tag
-          selected={typeOfFood === READ_MEAT}
+          selected={foodType === FoodEnum.redMeat}
           title={t("ADD_EMISSION_RED_MEAT")}
-          onPress={() => setTypeOfFood(READ_MEAT)}
+          onPress={() => setFoodType(FoodEnum.redMeat)}
         />
         <Tag
-          selected={typeOfFood === WHITE_MEAT}
+          selected={foodType === FoodEnum.whiteMeat}
           title={t("ADD_EMISSION_WHITE_MEAT")}
-          onPress={() => setTypeOfFood(WHITE_MEAT)}
+          onPress={() => setFoodType(FoodEnum.whiteMeat)}
         />
       </ScrollView>
       <View style={styles.durationContainer}>

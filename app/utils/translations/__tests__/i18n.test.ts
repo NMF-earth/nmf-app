@@ -1,5 +1,5 @@
 import i18n from "i18n-js";
-import { t } from "../translations";
+import { t } from "..";
 
 const en = {
   ACT_SCREEN_TAB_NAME: "some string",

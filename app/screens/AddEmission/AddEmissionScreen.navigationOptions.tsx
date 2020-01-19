@@ -1,6 +1,6 @@
 import React from "react";
 import { Text } from "../../components";
-import { t } from "../../utils/translations";
+import { t } from "../../utils";
 import colors from "../../style/colors";
 
 const navigationOptions = () => ({

@@ -3,7 +3,7 @@ import { ScrollView } from "react-native";
 import styles from "./BudgetScreen.styles";
 import { Text, Button } from "../../components";
 import { MonthSelector, ProgressChart } from "./components";
-import { t } from "../../utils/translations";
+import { t } from "../../utils";
 
 const foodEmissions = 200;
 const transportEmissions = 600;

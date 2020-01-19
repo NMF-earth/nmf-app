@@ -92,12 +92,12 @@ exports[`AddEmissionScreen renders correctly 1`] = `
         />
         <Tag
           onPress={[Function]}
-          selected={false}
+          selected={true}
           title="Car"
         />
         <Tag
           onPress={[Function]}
-          selected={true}
+          selected={false}
           title="Plane"
         />
         <Tag
@@ -123,18 +123,18 @@ exports[`AddEmissionScreen renders correctly 1`] = `
           }
         }
       >
-        Duration
+        Distance
       </Text.H3>
       <Text.Primary
         lightGray={true}
       >
-        120minutes
+        150 kilometer(s)
       </Text.Primary>
     </View>
     <Slider
-      maximumValue={1200}
+      maximumValue={1000}
       minimumTrackTintColor="#4BB377"
-      minimumValue={20}
+      minimumValue={2}
       onValueChange={[Function]}
       style={
         Object {
@@ -162,7 +162,7 @@ exports[`AddEmissionScreen renders correctly 1`] = `
           "height": 2,
         }
       }
-      value={120}
+      value={150}
     />
     <View
       style={

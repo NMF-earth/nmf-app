@@ -1,7 +1,7 @@
 import React from "react";
 import { FlatList, SafeAreaView } from "react-native";
 import { useSelector } from "react-redux";
-import { t } from "../../utils/translations";
+import { t } from "../../utils";
 import styles from "./EmissionsScreen.styles";
 import {
   TabbedView,

@@ -5,20 +5,83 @@ import Slider from "react-native-slider";
 import styles from "./Transport.styles";
 import { Text, Tag } from "../../../../components";
 import colors from "../../../../style/colors";
-import { t } from "../../../../utils/translations";
+import { t, time } from "../../../../utils";
+import { TransportEnum } from "carbon-footprint";
 
-const DEFAULT_SLIDER_VALUE = 120;
-const MIN_SLIDER_VALUE = 20;
-const MAX_SLIDER_VALUE = 1200;
+const DEFAULT_SLIDER_VALUE = 150;
+const MIN_SLIDER_VALUE = 2;
+const MAX_SLIDER_VALUE = 1000;
 
-const TRAIN = "Train";
-const CAR = "Car";
-const PLANE = "Plane";
-const BOAT = "Boat";
+const MIN_SLIDER_VALUE_PLANE = 20;
+const MAX_SLIDER_VALUE_PLANE = 1200;
 
-export default () => {
-  const [sliderValue, setValue] = useState(DEFAULT_SLIDER_VALUE);
-  const [typeOfTransport, setTypeOfTransport] = useState(PLANE);
+interface Props {
+  transportType: string;
+  setTransportType: (string) => void;
+  setCo2eqKilograms: (number) => void;
+  setDistanceKilometers: (number) => void;
+  setDurationHours: (number) => void;
+}
+
+const TAGS = [
+  {
+    title: "ADD_EMISSION_TRAIN",
+    type: TransportEnum.train
+  },
+  {
+    title: "ADD_EMISSION_CAR",
+    type: TransportEnum.car
+  },
+  {
+    title: "ADD_EMISSION_PLANE",
+    type: TransportEnum.plane
+  },
+  {
+    title: "ADD_EMISSION_BOAT",
+    type: TransportEnum.boat
+  }
+];
+
+export default ({
+  setTransportType,
+  transportType,
+  setDistanceKilometers
+}: Props) => {
+  const [sliderValue, setSliderValue] = useState(DEFAULT_SLIDER_VALUE);
+
+  const onSliderValueChange = value => {
+    setSliderValue(value);
+    setDistanceKilometers(value);
+    // TODO: set duration
+  };
+
+  const renderDuration = () => {
+    const { hours, minutes } = time.convertMinutesToHoursAnMinutes(sliderValue);
+
+    return (
+      <View style={styles.durationDistanceContainer}>
+        <Text.H3 style={styles.miniHeader}>
+          {t("ADD_EMISSION_DURATION")}
+        </Text.H3>
+        <Text.Primary lightGray>
+          {hours + " hour(s) and " + minutes + " minute(s)."}
+        </Text.Primary>
+      </View>
+    );
+  };
+
+  const renderDistance = () => {
+    return (
+      <View style={styles.durationDistanceContainer}>
+        <Text.H3 style={styles.miniHeader}>
+          {t("ADD_EMISSION_DISTANCE")}
+        </Text.H3>
+        <Text.Primary lightGray>
+          {Math.round(sliderValue) + " kilometer(s)"}
+        </Text.Primary>
+      </View>
+    );
+  };
 
   return (
     <React.Fragment>
@@ -26,44 +89,38 @@ export default () => {
         <Text.H3>{t("ADD_EMISSION_TRANSPORT_TYPE")}</Text.H3>
       </View>
       <ScrollView horizontal style={styles.tagContainer}>
-        <Tag
-          selected={typeOfTransport === TRAIN}
-          title={t("ADD_EMISSION_TRAIN")}
-          onPress={() => setTypeOfTransport(TRAIN)}
-        />
-        <Tag
-          selected={typeOfTransport === CAR}
-          title={t("ADD_EMISSION_CAR")}
-          onPress={() => setTypeOfTransport(CAR)}
-        />
-        <Tag
-          selected={typeOfTransport === PLANE}
-          title={t("ADD_EMISSION_PLANE")}
-          onPress={() => setTypeOfTransport(PLANE)}
-        />
-        <Tag
-          selected={typeOfTransport === BOAT}
-          title={t("ADD_EMISSION_BOAT")}
-          onPress={() => setTypeOfTransport(BOAT)}
-        />
+        {TAGS.map(item => (
+          <Tag
+            key={item.type}
+            selected={transportType === item.type}
+            // TODO: fix typescript complains bellow
+            // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
+            // @ts-ignore
+            title={t(item.title)}
+            onPress={() => setTransportType(item.type)}
+          />
+        ))}
       </ScrollView>
-      <View style={styles.durationContainer}>
-        <Text.H3 style={styles.miniHeader}>
-          {t("ADD_EMISSION_DURATION")}
-        </Text.H3>
-        <Text.Primary lightGray>
-          {Math.round(sliderValue) + "minutes"}
-        </Text.Primary>
-      </View>
+      {transportType === TransportEnum.plane
+        ? renderDuration()
+        : renderDistance()}
       <Slider
         minimumTrackTintColor={colors.linkGreen}
         trackStyle={styles.track}
         thumbStyle={styles.thumb}
         style={styles.slider}
-        maximumValue={MAX_SLIDER_VALUE}
-        minimumValue={MIN_SLIDER_VALUE}
+        maximumValue={
+          transportType === TransportEnum.plane
+            ? MAX_SLIDER_VALUE_PLANE
+            : MAX_SLIDER_VALUE
+        }
+        minimumValue={
+          transportType === TransportEnum.plane
+            ? MIN_SLIDER_VALUE_PLANE
+            : MIN_SLIDER_VALUE
+        }
         value={sliderValue}
-        onValueChange={setValue}
+        onValueChange={onSliderValueChange}
       />
       <View style={styles.totalContainer}>
         <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_TOTAL")}</Text.H3>

@@ -1,14 +1,96 @@
 import React, { useState } from "react";
 import { View, ScrollView } from "react-native";
+import { version, TransportEnum, FoodEnum } from "carbon-footprint";
 import { Text, Tag } from "../../components";
 import styles from "./AddEmissionScreen.styles";
 import navigationOptions from "./AddEmissionScreen.navigationOptions";
-import { t } from "../../utils/translations";
+import { t } from "../../utils";
 import { Food, Transport, Custom, AddEmissionButton } from "./components";
-import { EmissionEnum } from "../../interfaces";
+import { Emission, EmissionEnum } from "../../interfaces";
+
+interface Props {
+  navigation: {
+    push: (screen: string) => void;
+  };
+}
 
 const AddEmissionScreen = ({ navigation }) => {
   const [emissionType, setEmissionType] = useState(EmissionEnum.transport);
+  const [transportType, setTransportType] = useState(TransportEnum.car);
+  const [foodType, setFoodType] = useState(FoodEnum.redMeat);
+  const [co2eqKilograms, setCo2eqKilograms] = useState(0);
+  const [durationHours, setDurationHours] = useState(0.5);
+  const [distanceKilometers, setDistanceKilometers] = useState(50);
+  const [quantityKilograms, setQuantityKilograms] = useState(0.15);
+
+  let emission: Emission = {
+    id: Date.now(),
+    creationDate: "now",
+    co2eqKilograms: co2eqKilograms,
+    co2eqModelVersion: version.co2eqModel,
+    emissionType: emissionType,
+    isMitigated: false
+  };
+
+  const renderTransport = () => {
+    if (emissionType === EmissionEnum.transport) {
+      if (transportType === TransportEnum.plane) {
+        emission = {
+          ...emission,
+          transport: {
+            transportType: transportType,
+            durationHours: durationHours
+          }
+        };
+      } else {
+        emission = {
+          ...emission,
+          transport: {
+            transportType: transportType,
+            distanceKilometers: distanceKilometers
+          }
+        };
+      }
+      return (
+        <Transport
+          setDistanceKilometers={setDistanceKilometers}
+          setDurationHours={setDurationHours}
+          setCo2eqKilograms={setCo2eqKilograms}
+          setTransportType={setTransportType}
+          transportType={transportType}
+        />
+      );
+    }
+    return null;
+  };
+
+  const renderFood = () => {
+    if (emissionType === EmissionEnum.food) {
+      emission = {
+        ...emission,
+        food: {
+          foodType: foodType,
+          quantityKilograms: quantityKilograms
+        }
+      };
+      return (
+        <Food
+          setQuantityKilograms={setQuantityKilograms}
+          setCo2eqKilograms={setCo2eqKilograms}
+          setFoodType={setFoodType}
+          foodType={foodType}
+        />
+      );
+    }
+    return null;
+  };
+
+  const renderCustom = () => {
+    if (emissionType === EmissionEnum.custom) {
+      return <Custom setCo2eqKilograms={setCo2eqKilograms} />;
+    }
+    return null;
+  };
 
   return (
     <ScrollView style={styles.container}>
@@ -38,11 +120,11 @@ const AddEmissionScreen = ({ navigation }) => {
         </ScrollView>
       </View>
 
-      {emissionType === EmissionEnum.transport ? <Transport /> : null}
-      {emissionType === EmissionEnum.food ? <Food /> : null}
-      {emissionType === EmissionEnum.custom ? <Custom /> : null}
+      {renderTransport()}
+      {renderFood()}
+      {renderCustom()}
 
-      <AddEmissionButton navigation={navigation} emissionType={emissionType} />
+      <AddEmissionButton navigation={navigation} emission={emission} />
     </ScrollView>
   );
 };

@@ -22,7 +22,8 @@ interface EmissionFood {
 
 interface EmissionTransport {
   transportType: TransportEnum;
-  durationHours: number;
+  durationHours?: number;
+  distanceKilometers?: number;
 }
 
 interface EmissionPurchase {
@@ -32,7 +33,7 @@ interface EmissionPurchase {
 interface Emission {
   id: number;
   creationDate: string;
-  customName?: string;
+  name?: string;
   emissionType: EmissionEnum;
   co2eqKilograms: number;
   co2eqModelVersion: number;

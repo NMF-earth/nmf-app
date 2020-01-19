@@ -3,6 +3,7 @@ export default {
   ADD_EMISSION_EMISSION_TYPE: "Emission type",
   ADD_EMISSION_TRANSPORT_TYPE: "Transport type",
   ADD_EMISSION_DURATION: "Duration",
+  ADD_EMISSION_DISTANCE: "Distance",
   ADD_EMISSION_TOTAL: "Total",
   ADD_EMISSION_FOOD_TYPE: "Food type",
   ADD_EMISSION_QUANTITY: "Quantity",

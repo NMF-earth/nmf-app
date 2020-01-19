@@ -1,7 +1,7 @@
 import React from "react";
 import { ScrollView } from "react-native";
 import { Button, Text } from "../../components";
-import { t } from "../../utils/translations";
+import { t } from "../../utils";
 import styles from "./SettingsScreen.styles";
 
 interface Props {

@@ -4,6 +4,8 @@ import { version } from "carbon-footprint";
 
 describe("Reducer should", () => {
   it("should return the initial state", () => {
+    // TODO: fix eslint complains bellow
+    // eslint-disable-next-line
     expect(emissions.reducer(undefined, {} as any)).toEqual({
       list: []
     });

@@ -1,6 +1,6 @@
 import React from "react";
 import { View } from "react-native";
-import { t } from "../../../../utils/translations";
+import { t } from "../../../../utils";
 import styles from "./AddEmissionAndMitigateButtons.styles";
 import { Text, Button } from "../../../../components";
 

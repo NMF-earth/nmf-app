@@ -2,7 +2,7 @@ import React from "react";
 import { View } from "react-native";
 import styles from "./MonthlyBudget.styles";
 import { Text } from "../../../../../../components";
-import { t } from "../../../../../../utils/translations";
+import { t } from "../../../../../../utils";
 
 interface Prop {
   monthlyEmissionsBudget: number;

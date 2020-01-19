@@ -2,7 +2,7 @@ import React from "react";
 import { NavigationParams } from "react-navigation";
 import { filter, pathEq } from "ramda";
 
-import { t } from "../../utils/translations";
+import { t } from "../../utils";
 import { TabbedView, GuidePreview } from "../../components";
 import { Guide, GuideCategory } from "../../types/common-types";
 // import styles from "./ActScreen.styles";

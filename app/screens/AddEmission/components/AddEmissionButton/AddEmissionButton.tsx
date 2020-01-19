@@ -1,26 +1,22 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { version } from "carbon-footprint";
 import { Text, Button } from "../../../../components";
 import styles from "./AddEmissionButton.styles";
-import { t } from "../../../../utils/translations";
+import { t } from "../../../../utils";
 import { Emission } from "../../../../interfaces";
 import { emissions } from "../../../../ducks";
 
-const AddEmissionButton = ({ navigation, emissionType }) => {
+interface Props {
+  emission: Emission;
+  navigation: {
+    goBack: () => void;
+  };
+}
+
+const AddEmissionButton = ({ navigation, emission }: Props) => {
   const dispatch = useDispatch();
 
   const addEmission = () => {
-    // TODO: should be a real emission
-    const emission: Emission = {
-      id: Date.now(),
-      creationDate: "now",
-      co2eqKilograms: 10,
-      co2eqModelVersion: version.co2eqModel,
-      emissionType: emissionType,
-      isMitigated: false
-    };
-
     dispatch(emissions.actions.createEmission(emission));
     navigation.goBack();
   };
