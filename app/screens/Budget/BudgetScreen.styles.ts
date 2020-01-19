@@ -6,6 +6,7 @@ export default StyleSheet.create({
     ...Layout.containerWithPadding
   },
   monthlyBudgetButton: {
-    marginVertical: 20
+    marginTop: 6,
+    marginBottom: 14
   }
 });

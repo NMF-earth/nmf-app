@@ -23,7 +23,8 @@ exports[`BudgetScreen renders correctly 1`] = `
       onPress={[Function]}
       style={
         Object {
-          "marginVertical": 20,
+          "marginBottom": 14,
+          "marginTop": 6,
         }
       }
       textType="Primary"
