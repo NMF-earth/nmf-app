@@ -1,10 +1,10 @@
 import { filter, propEq, find, pathOr, pipe } from "ramda";
 import { namespace } from "./emissions.slice";
 
-const getEmissions = pathOr([], [namespace, "list"]);
+const getEmissions = pathOr([], [namespace]);
 
 /* TODO: add tests for this selector + check if working irl */
-const getEmissionById = (state, id) => find(propEq("id", id))(state[namespace]);
+const getEmissionById = (state, id: number) => find(propEq("id", id))(state[namespace]);
 
 const getEmissionsToMitigate = state =>
   pipe(getEmissions, filter(propEq("isMitigated", false)))(state);

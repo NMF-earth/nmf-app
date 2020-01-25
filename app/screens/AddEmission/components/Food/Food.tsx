@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { View, ScrollView } from "react-native";
 import Slider from "react-native-slider";
+import { FormattedNumber } from "react-native-globalize";
 
 import styles from "./Food.styles";
 import { Text, Tag } from "../../../../components";
 import colors from "../../../../style/colors";
 import { t } from "../../../../utils";
-import { FoodEnum } from "carbon-footprint";
+import { FoodEnum, food } from "carbon-footprint";
 
 const DEFAULT_SLIDER_VALUE = 200;
 const MIN_SLIDER_VALUE = 20;
@@ -60,7 +61,7 @@ export default ({ setFoodType, foodType }: Props) => {
       <View style={styles.totalContainer}>
         <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_TOTAL")}</Text.H3>
         <Text.H1 green>
-          1500 <Text.Primary>kgCO2eq</Text.Primary>
+          <FormattedNumber value={sliderValue * food[foodType]}/> <Text.Primary>kgCO2eq</Text.Primary>
         </Text.H1>
       </View>
     </React.Fragment>

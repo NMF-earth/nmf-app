@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import { View, ScrollView } from "react-native";
 import Slider from "react-native-slider";
+import { FormattedNumber } from "react-native-globalize";
 
 import styles from "./Transport.styles";
 import { Text, Tag } from "../../../../components";
 import colors from "../../../../style/colors";
 import { t, time } from "../../../../utils";
-import { TransportEnum } from "carbon-footprint";
+import { transport, TransportEnum } from "carbon-footprint";
+import {TranslationKeys} from "../../translations";
 
 const DEFAULT_SLIDER_VALUE = 150;
 const MIN_SLIDER_VALUE = 2;
@@ -17,13 +19,18 @@ const MAX_SLIDER_VALUE_PLANE = 1200;
 
 interface Props {
   transportType: string;
-  setTransportType: (string) => void;
-  setCo2eqKilograms: (number) => void;
-  setDistanceKilometers: (number) => void;
-  setDurationHours: (number) => void;
+  setTransportType: (arg0: TransportEnum) => void;
+  setCo2eqKilograms: (arg0: number) => void;
+  setDistanceKilometers: (arg0: number) => void;
+  setDurationHours: (arg0: number) => void;
 }
 
-const TAGS = [
+interface TransportTag {
+  title: keyof TranslationKeys;
+  type: TransportEnum;
+}
+
+const TAGS: TransportTag[] = [
   {
     title: "ADD_EMISSION_TRAIN",
     type: TransportEnum.train
@@ -49,9 +56,10 @@ export default ({
 }: Props) => {
   const [sliderValue, setSliderValue] = useState(DEFAULT_SLIDER_VALUE);
 
-  const onSliderValueChange = value => {
-    setSliderValue(value);
-    setDistanceKilometers(value);
+  const onSliderValueChange = (value: number) => {
+    const val = Math.round(value);
+    setSliderValue(val);
+    setDistanceKilometers(val);
     // TODO: set duration
   };
 
@@ -93,9 +101,6 @@ export default ({
           <Tag
             key={item.type}
             selected={transportType === item.type}
-            // TODO: fix typescript complains bellow
-            // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
-            // @ts-ignore
             title={t(item.title)}
             onPress={() => setTransportType(item.type)}
           />
@@ -125,7 +130,7 @@ export default ({
       <View style={styles.totalContainer}>
         <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_TOTAL")}</Text.H3>
         <Text.H1 green>
-          1500 <Text.Primary>kgCO2eq</Text.Primary>
+          <FormattedNumber value={sliderValue * transport[transportType]}/> <Text.Primary>kgCO2eq</Text.Primary>
         </Text.H1>
       </View>
     </React.Fragment>

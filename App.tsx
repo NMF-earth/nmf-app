@@ -1,10 +1,12 @@
 import React from "react";
 import { AppLoading } from "expo";
 import * as Font from "expo-font";
+import { FormattedProvider } from "react-native-globalize";
+import { locale } from "expo-localization";
 import { Platform, StatusBar, StyleSheet, View } from "react-native";
 import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
-import * as Sentry from "sentry-expo";
 import Constants from "expo-constants";
+import * as Sentry from "sentry-expo";
 import { Provider } from "react-redux";
 import AppNavigator from "./app/navigation/AppNavigator";
 import store from "./app/redux/store";
@@ -66,7 +68,9 @@ export default class App extends React.Component<Props, State> {
         <View style={styles.container}>
           {Platform.OS === "ios" && <StatusBar barStyle="default" />}
           <Provider store={store}>
-            <AppNavigator />
+            <FormattedProvider locale={locale}>
+              <AppNavigator/>
+            </FormattedProvider>
           </Provider>
         </View>
       );
