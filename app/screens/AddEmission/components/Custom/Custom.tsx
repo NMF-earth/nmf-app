@@ -12,7 +12,7 @@ const MIN_SLIDER_VALUE = 1;
 const MAX_SLIDER_VALUE = 5000;
 
 interface Props {
-  setCo2eqKilograms: (number) => void;
+  setCo2eqKilograms: (arg0: number) => void;
 }
 
 export default ({ setCo2eqKilograms }: Props) => {

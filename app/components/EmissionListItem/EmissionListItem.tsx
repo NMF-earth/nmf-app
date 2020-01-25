@@ -1,6 +1,8 @@
 import React from "react";
 import { View, TouchableOpacity } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+import { FormattedNumber } from "react-native-globalize";
+
 import colors from "../../style/colors";
 import styles from "./EmissionListItem.styles";
 import Text from "../Text";
@@ -51,7 +53,7 @@ const EmissionListItem = ({
       <View style={styles.textContainer}>
         <Text.Primary numberOfLines={1}>{title}</Text.Primary>
         <Text.Tertiary numberOfLines={1} light lightGray>
-          {subTitle}
+          <FormattedNumber value={subTitle}/> kg
         </Text.Tertiary>
       </View>
       <Ionicons

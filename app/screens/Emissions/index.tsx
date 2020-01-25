@@ -22,6 +22,7 @@ const Emissions = (props: Props) => {
     emissions.selectors.getEmissionsMitigated
   );
   const { navigation } = props;
+  console.log(emissionsToMitigate);
 
   if (emissionsToMitigate.length || emissionsMitigated.length) {
     return <EmissionsScreen navigation={navigation} />;

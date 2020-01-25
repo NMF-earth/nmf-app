@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { View, ScrollView } from "react-native";
-import { version, TransportEnum, FoodEnum } from "carbon-footprint";
+import { TransportEnum, FoodEnum } from "carbon-footprint";
 import { Text, Tag } from "../../components";
 import styles from "./AddEmissionScreen.styles";
 import navigationOptions from "./AddEmissionScreen.navigationOptions";
@@ -14,7 +14,7 @@ interface Props {
   };
 }
 
-const AddEmissionScreen = ({ navigation }) => {
+const AddEmissionScreen: React.FunctionComponent<Props> = ({ navigation }) => {
   const [emissionType, setEmissionType] = useState(EmissionEnum.transport);
   const [transportType, setTransportType] = useState(TransportEnum.car);
   const [foodType, setFoodType] = useState(FoodEnum.redMeat);
@@ -24,12 +24,7 @@ const AddEmissionScreen = ({ navigation }) => {
   const [quantityKilograms, setQuantityKilograms] = useState(0.15);
 
   let emission: Emission = {
-    id: Date.now(),
-    creationDate: "now",
-    co2eqKilograms: co2eqKilograms,
-    co2eqModelVersion: version.co2eqModel,
     emissionType: emissionType,
-    isMitigated: false
   };
 
   const renderTransport = () => {
@@ -37,18 +32,14 @@ const AddEmissionScreen = ({ navigation }) => {
       if (transportType === TransportEnum.plane) {
         emission = {
           ...emission,
-          transport: {
-            transportType: transportType,
-            durationHours: durationHours
-          }
+          value: durationHours,
+          emissionModelType: transportType,
         };
       } else {
         emission = {
           ...emission,
-          transport: {
-            transportType: transportType,
-            distanceKilometers: distanceKilometers
-          }
+          value: distanceKilometers,
+          emissionModelType: transportType,
         };
       }
       return (
@@ -68,10 +59,8 @@ const AddEmissionScreen = ({ navigation }) => {
     if (emissionType === EmissionEnum.food) {
       emission = {
         ...emission,
-        food: {
-          foodType: foodType,
-          quantityKilograms: quantityKilograms
-        }
+        value: quantityKilograms,
+        emissionModelType: foodType,
       };
       return (
         <Food
@@ -87,6 +76,11 @@ const AddEmissionScreen = ({ navigation }) => {
 
   const renderCustom = () => {
     if (emissionType === EmissionEnum.custom) {
+      emission = {
+        ...emission,
+        value: co2eqKilograms,
+        emissionModelType: "custom",
+      };
       return <Custom setCo2eqKilograms={setCo2eqKilograms} />;
     }
     return null;

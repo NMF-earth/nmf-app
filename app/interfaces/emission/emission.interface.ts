@@ -31,16 +31,14 @@ interface EmissionPurchase {
 }
 
 interface Emission {
-  id: number;
-  creationDate: string;
+  id: string;
+  creationDate: number;
   name?: string;
   emissionType: EmissionEnum;
-  co2eqKilograms: number;
-  co2eqModelVersion: number;
   isMitigated: boolean;
-  food?: EmissionFood;
-  transport?: EmissionTransport;
-  purchase?: EmissionPurchase;
+  value: number;
+  unit: string;
+  emissionModelType: FoodEnum | TransportEnum | "custom";
 }
 
 export {
