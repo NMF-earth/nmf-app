@@ -24,3 +24,12 @@ jest.mock("react-redux", () => {
     Provider: createMock("Provider")
   };
 });
+
+jest.mock("react-native-globalize", () => {
+  const createMock = require("../../utils").createMock;
+
+  return {
+    FormattedProvider: createMock("FormattedProvider"),
+    FormattedNumber: createMock("FormattedNumber")
+  };
+});
