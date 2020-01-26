@@ -1,23 +1,115 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`AddEmissionScreen renders correctly 1`] = `
-<RCTScrollView
-  style={
-    Object {
-      "alignContent": "flex-start",
-      "backgroundColor": "#FFFFFF",
-      "flex": 1,
-    }
-  }
+<FormattedProvider
+  locale="en"
 >
-  <View>
-    <View
-      style={
-        Object {
-          "paddingBottom": 24,
-        }
+  <RCTScrollView
+    style={
+      Object {
+        "alignContent": "flex-start",
+        "backgroundColor": "#FFFFFF",
+        "flex": 1,
       }
-    >
+    }
+  >
+    <View>
+      <View
+        style={
+          Object {
+            "paddingBottom": 24,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "paddingHorizontal": 14,
+              "paddingVertical": 12,
+            }
+          }
+        >
+          <Text.H3>
+            Emission type
+          </Text.H3>
+        </View>
+        <RCTScrollView
+          horizontal={true}
+          style={
+            Object {
+              "flexDirection": "row",
+              "paddingLeft": 14,
+            }
+          }
+        >
+          <View>
+            <Tag
+              icon="md-airplane"
+              onPress={[Function]}
+              selected={true}
+              title="Transport"
+            />
+            <Tag
+              icon="md-restaurant"
+              onPress={[Function]}
+              selected={false}
+              title="Food"
+            />
+            <Tag
+              icon="md-build"
+              onPress={[Function]}
+              selected={false}
+              title="Custom"
+            />
+          </View>
+        </RCTScrollView>
+      </View>
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "paddingBottom": 12,
+            "paddingHorizontal": 14,
+          }
+        }
+      >
+        <Text.H3>
+          Transport type
+        </Text.H3>
+      </View>
+      <RCTScrollView
+        horizontal={true}
+        style={
+          Object {
+            "paddingBottom": 12,
+            "paddingLeft": 14,
+          }
+        }
+      >
+        <View>
+          <Tag
+            onPress={[Function]}
+            selected={false}
+            title="Train"
+          />
+          <Tag
+            onPress={[Function]}
+            selected={true}
+            title="Car"
+          />
+          <Tag
+            onPress={[Function]}
+            selected={false}
+            title="Plane"
+          />
+          <Tag
+            onPress={[Function]}
+            selected={false}
+            title="Boat"
+          />
+        </View>
+      </RCTScrollView>
       <View
         style={
           Object {
@@ -27,187 +119,103 @@ exports[`AddEmissionScreen renders correctly 1`] = `
           }
         }
       >
-        <Text.H3>
-          Emission type
+        <Text.H3
+          style={
+            Object {
+              "paddingBottom": 12,
+            }
+          }
+        >
+          Distance
         </Text.H3>
-      </View>
-      <RCTScrollView
-        horizontal={true}
-        style={
-          Object {
-            "flexDirection": "row",
-            "paddingLeft": 14,
-          }
-        }
-      >
-        <View>
-          <Tag
-            icon="md-airplane"
-            onPress={[Function]}
-            selected={true}
-            title="Transport"
-          />
-          <Tag
-            icon="md-restaurant"
-            onPress={[Function]}
-            selected={false}
-            title="Food"
-          />
-          <Tag
-            icon="md-build"
-            onPress={[Function]}
-            selected={false}
-            title="Custon"
-          />
-        </View>
-      </RCTScrollView>
-    </View>
-    <View
-      style={
-        Object {
-          "flex": 1,
-          "paddingBottom": 12,
-          "paddingHorizontal": 14,
-        }
-      }
-    >
-      <Text.H3>
-        Transport type
-      </Text.H3>
-    </View>
-    <RCTScrollView
-      horizontal={true}
-      style={
-        Object {
-          "paddingBottom": 12,
-          "paddingLeft": 14,
-        }
-      }
-    >
-      <View>
-        <Tag
-          onPress={[Function]}
-          selected={false}
-          title="Train"
-        />
-        <Tag
-          onPress={[Function]}
-          selected={false}
-          title="Car"
-        />
-        <Tag
-          onPress={[Function]}
-          selected={true}
-          title="Plane"
-        />
-        <Tag
-          onPress={[Function]}
-          selected={false}
-          title="Boat"
-        />
-      </View>
-    </RCTScrollView>
-    <View
-      style={
-        Object {
-          "flex": 1,
-          "paddingHorizontal": 14,
-          "paddingVertical": 12,
-        }
-      }
-    >
-      <Text.H3
-        style={
-          Object {
-            "paddingBottom": 12,
-          }
-        }
-      >
-        Duration
-      </Text.H3>
-      <Text.Primary
-        lightGray={true}
-      >
-        120minutes
-      </Text.Primary>
-    </View>
-    <Slider
-      maximumValue={1200}
-      minimumTrackTintColor="#4BB377"
-      minimumValue={20}
-      onValueChange={[Function]}
-      style={
-        Object {
-          "height": 40,
-          "marginHorizontal": 24,
-        }
-      }
-      thumbStyle={
-        Object {
-          "backgroundColor": "#4BB377",
-          "borderRadius": 10,
-          "height": 20,
-          "shadowOffset": Object {
-            "height": 2,
-            "width": 0,
-          },
-          "shadowOpacity": 0.35,
-          "shadowRadius": 2,
-          "width": 20,
-        }
-      }
-      trackStyle={
-        Object {
-          "borderRadius": 1,
-          "height": 2,
-        }
-      }
-      value={120}
-    />
-    <View
-      style={
-        Object {
-          "flex": 1,
-          "paddingHorizontal": 14,
-          "paddingVertical": 12,
-        }
-      }
-    >
-      <Text.H3
-        style={
-          Object {
-            "paddingBottom": 12,
-          }
-        }
-      >
-        Total
-      </Text.H3>
-      <Text.H1
-        green={true}
-      >
-        1500 
-        <Text.Primary>
-          kgCO2eq
+        <Text.Primary
+          lightGray={true}
+        >
+          150 kilometer(s)
         </Text.Primary>
-      </Text.H1>
-    </View>
-    <Button.Primary
-      onPress={[Function]}
-      style={
-        Object {
-          "margin": 14,
+      </View>
+      <Slider
+        maximumValue={1000}
+        minimumTrackTintColor="#4BB377"
+        minimumValue={2}
+        onValueChange={[Function]}
+        style={
+          Object {
+            "height": 40,
+            "marginHorizontal": 24,
+          }
         }
-      }
-      textType="Primary"
-    >
-      <Text.Primary
-        bold={true}
-        center={true}
-        white={true}
+        thumbStyle={
+          Object {
+            "backgroundColor": "#4BB377",
+            "borderRadius": 10,
+            "height": 20,
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 0,
+            },
+            "shadowOpacity": 0.35,
+            "shadowRadius": 2,
+            "width": 20,
+          }
+        }
+        trackStyle={
+          Object {
+            "borderRadius": 1,
+            "height": 2,
+          }
+        }
+        value={150}
+      />
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "paddingHorizontal": 14,
+            "paddingVertical": 12,
+          }
+        }
       >
-        Add this emission
-      </Text.Primary>
-    </Button.Primary>
-  </View>
-</RCTScrollView>
+        <Text.H3
+          style={
+            Object {
+              "paddingBottom": 12,
+            }
+          }
+        >
+          Total
+        </Text.H3>
+        <Text.H1
+          green={true}
+        >
+          <FormattedNumber
+            maximumFractionDigits={2}
+            value={38.550000000000004}
+          />
+           
+          <Text.Primary>
+            kgCO2eq
+          </Text.Primary>
+        </Text.H1>
+      </View>
+      <Button.Primary
+        onPress={[Function]}
+        style={
+          Object {
+            "margin": 14,
+          }
+        }
+        textType="Primary"
+      >
+        <Text.Primary
+          bold={true}
+          center={true}
+          white={true}
+        >
+          Add this emission
+        </Text.Primary>
+      </Button.Primary>
+    </View>
+  </RCTScrollView>
+</FormattedProvider>
 `;

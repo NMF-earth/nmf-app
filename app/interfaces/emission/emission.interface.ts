@@ -15,38 +15,16 @@ enum EmissionPurchaseEnum {
   car = "car"
 }
 
-interface EmissionFood {
-  foodType: FoodEnum;
-  quantityKilograms: number;
-}
-
-interface EmissionTransport {
-  transportType: TransportEnum;
-  durationHours: number;
-}
-
-interface EmissionPurchase {
-  purchaseType: EmissionPurchaseEnum;
-}
-
-interface Emission {
-  id: number;
-  creationDate: string;
-  customName?: string;
+interface EmissionPayload {
   emissionType: EmissionEnum;
-  co2eqKilograms: number;
-  co2eqModelVersion: number;
-  isMitigated: boolean;
-  food?: EmissionFood;
-  transport?: EmissionTransport;
-  purchase?: EmissionPurchase;
+  emissionModelType: FoodEnum | TransportEnum | "custom";
+  value: number;
 }
 
-export {
-  Emission,
-  EmissionFood,
-  EmissionPurchase,
-  EmissionTransport,
-  EmissionEnum,
-  EmissionPurchaseEnum
-};
+interface Emission extends EmissionPayload {
+  id: string;
+  creationDate: string;
+  isMitigated: boolean;
+}
+
+export { Emission, EmissionPayload, EmissionEnum, EmissionPurchaseEnum };

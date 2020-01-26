@@ -4,7 +4,7 @@ import { SafeAreaView, View, Image } from "react-native";
 import { Text, Button } from "../";
 import ImagesAssets from "../../constants/ImagesAssets";
 import styles from "./NoEmission.style";
-import { t } from "../../utils/translations";
+import { t } from "../../utils";
 
 interface Props {
   addEmission: () => void;

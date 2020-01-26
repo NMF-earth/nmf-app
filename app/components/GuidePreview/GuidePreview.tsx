@@ -1,6 +1,6 @@
 import React from "react";
 import { FlatList, TouchableOpacity } from "react-native";
-import { t } from "../../utils/translations";
+import { t } from "../../utils";
 
 import Text from "../../components/Text";
 import Button from "../../components/Button";

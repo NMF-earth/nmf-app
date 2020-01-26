@@ -16,7 +16,7 @@ import MontlyBudgetScreen from "../screens/MonthlyBudget";
 import AddEmissionScreen from "../screens/AddEmission";
 
 import colors from "../style/colors";
-import { t } from "../utils/translations";
+import { t } from "../utils";
 
 const BudgetStack = createStackNavigator({
   Budget: BudgetScreen,

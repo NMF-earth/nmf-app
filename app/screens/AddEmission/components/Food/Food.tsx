@@ -1,22 +1,27 @@
 import React, { useState } from "react";
 import { View, ScrollView } from "react-native";
 import Slider from "react-native-slider";
+import { FormattedNumber } from "react-native-globalize";
 
 import styles from "./Food.styles";
 import { Text, Tag } from "../../../../components";
 import colors from "../../../../style/colors";
-import { t } from "../../../../utils/translations";
+import { t } from "../../../../utils";
+import { FoodEnum, food } from "carbon-footprint";
 
 const DEFAULT_SLIDER_VALUE = 200;
 const MIN_SLIDER_VALUE = 20;
 const MAX_SLIDER_VALUE = 500;
 
-const READ_MEAT = "Read Meat";
-const WHITE_MEAT = "White Meat";
+interface Props {
+  foodType: string;
+  setFoodType: (arg0: FoodEnum) => void;
+  setCo2eqKilograms: (arg0: number) => void;
+  setQuantityKilograms: (arg0: number) => void;
+}
 
-export default () => {
+export default ({ setFoodType, foodType }: Props) => {
   const [sliderValue, setValue] = useState(DEFAULT_SLIDER_VALUE);
-  const [typeOfFood, setTypeOfFood] = useState(READ_MEAT);
 
   return (
     <React.Fragment>
@@ -25,14 +30,14 @@ export default () => {
       </View>
       <ScrollView horizontal style={styles.tagContainer}>
         <Tag
-          selected={typeOfFood === READ_MEAT}
+          selected={foodType === FoodEnum.redMeat}
           title={t("ADD_EMISSION_RED_MEAT")}
-          onPress={() => setTypeOfFood(READ_MEAT)}
+          onPress={() => setFoodType(FoodEnum.redMeat)}
         />
         <Tag
-          selected={typeOfFood === WHITE_MEAT}
+          selected={foodType === FoodEnum.whiteMeat}
           title={t("ADD_EMISSION_WHITE_MEAT")}
-          onPress={() => setTypeOfFood(WHITE_MEAT)}
+          onPress={() => setFoodType(FoodEnum.whiteMeat)}
         />
       </ScrollView>
       <View style={styles.durationContainer}>
@@ -56,7 +61,10 @@ export default () => {
       <View style={styles.totalContainer}>
         <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_TOTAL")}</Text.H3>
         <Text.H1 green>
-          1500 <Text.Primary>kgCO2eq</Text.Primary>
+          <FormattedNumber 
+            value={(sliderValue / 1000) * food[foodType]}
+            maximumFractionDigits={2}
+            /> <Text.Primary>kgCO2eq</Text.Primary>
         </Text.H1>
       </View>
     </React.Fragment>

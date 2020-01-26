@@ -6,7 +6,7 @@ import { Text, Button } from "../../components";
 import colors from "../../style/colors";
 import styles from "./MonthlyBudgetScreen.styles";
 import navigationOptions from "./MonthlyBudgetScreen.navigationOptions";
-import { t } from "../../utils/translations";
+import { t } from "../../utils";
 
 const DEFAULT_MONTHLY_CARBON_BUDGET = 500;
 const MIN_MONTHLY_CARBON_BUDGET = 0;

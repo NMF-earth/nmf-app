@@ -1,16 +1,16 @@
 import emissions from "../";
 import { Emission, EmissionEnum } from "../../../interfaces";
-import { version } from "carbon-footprint";
+import { TransportEnum } from "carbon-footprint";
 
 let state;
 
 const emissionToMitigate: Emission = {
-  id: Date.now(),
-  creationDate: "now",
-  co2eqKilograms: 10,
-  co2eqModelVersion: version.co2eqModel,
+  id: "123",
+  creationDate: "2020-01-26T11:04:55.334Z",
+  emissionModelType: TransportEnum.bus,
   emissionType: EmissionEnum.custom,
-  isMitigated: false
+  isMitigated: false,
+  value: 200,
 };
 
 const emissionMitigated: Emission = {
@@ -21,9 +21,7 @@ const emissionMitigated: Emission = {
 describe("if there are emissions", () => {
   beforeEach(() => {
     state = {
-      [emissions.namespace]: {
-        list: [emissionMitigated, emissionToMitigate]
-      }
+      [emissions.namespace]: [emissionMitigated, emissionToMitigate]
     };
   });
 
@@ -41,9 +39,7 @@ describe("if there are emissions", () => {
 describe("if there are no emissions", () => {
   beforeEach(() => {
     state = {
-      [emissions.namespace]: {
-        list: []
-      }
+      [emissions.namespace]: []
     };
   });
 

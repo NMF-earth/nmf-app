@@ -18,7 +18,7 @@ export default StyleSheet.create({
     paddingLeft: PADDING_HORIZONTAL,
     paddingBottom: VERTICAL_PADDING_BETWEEN_ITEMS
   },
-  durationContainer: {
+  durationDistanceContainer: {
     ...layout.containerWithPadding,
     ...separationContainers
   },

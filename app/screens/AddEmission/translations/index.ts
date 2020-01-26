@@ -18,6 +18,7 @@ interface TranslationKeys {
   ADD_EMISSION_BOAT: string;
   ADD_EMISSION_RED_MEAT: string;
   ADD_EMISSION_WHITE_MEAT: string;
+  ADD_EMISSION_DISTANCE: string;
 }
 
 export { en, fr, de, TranslationKeys };

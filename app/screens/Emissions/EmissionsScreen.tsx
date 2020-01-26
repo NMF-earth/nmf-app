@@ -1,7 +1,7 @@
 import React from "react";
 import { FlatList, SafeAreaView } from "react-native";
 import { useSelector } from "react-redux";
-import { t } from "../../utils/translations";
+import { t } from "../../utils";
 import styles from "./EmissionsScreen.styles";
 import {
   TabbedView,
@@ -33,13 +33,14 @@ const EmissionsScreen = ({ navigation }: Props) => {
                 <FlatList<EmissionListItemProps>
                   style={styles.listContainer}
                   data={emissionsToMitigate}
-                  keyExtractor={(item, index) => index.toString()}
+                  keyExtractor={item => item.id}
                   renderItem={({ item }: { item: EmissionListItemProps }) => (
                     <EmissionListItem
                       id={item.id}
+                      key={item.id}
                       onPress={item.onPress}
                       title={item.title}
-                      subTitle={item.subTitle}
+                      co2value={item.co2value}
                       food={item.food}
                       transport={item.transport}
                       custom={item.custom}
@@ -54,13 +55,13 @@ const EmissionsScreen = ({ navigation }: Props) => {
                 <FlatList<EmissionListItemProps>
                   style={styles.listContainer}
                   data={emissionsMitigated}
-                  keyExtractor={(item, index) => index.toString()}
+                  keyExtractor={item => item.id}
                   renderItem={({ item }: { item: EmissionListItemProps }) => (
                     <EmissionListItem
                       id={item.id}
                       onPress={item.onPress}
                       title={item.title}
-                      subTitle={item.subTitle}
+                      co2value={item.co2value}
                       food={item.food}
                       transport={item.transport}
                       custom={item.custom}

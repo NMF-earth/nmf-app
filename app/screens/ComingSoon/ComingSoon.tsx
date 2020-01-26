@@ -4,7 +4,7 @@ import { ScrollView, View, Image } from "react-native";
 import { Text, SocialMedia } from "../../components";
 import ImagesAssets from "../../constants/ImagesAssets";
 import styles from "./ComingSoon.styles";
-import { t } from "../../utils/translations";
+import { t } from "../../utils";
 import navigationOptions from "./ComingSoon.navigationOptions";
 
 interface Props {

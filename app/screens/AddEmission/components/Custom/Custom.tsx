@@ -5,14 +5,19 @@ import Slider from "react-native-slider";
 import styles from "./Custom.styles";
 import { Text } from "../../../../components";
 import colors from "../../../../style/colors";
-import { t } from "../../../../utils/translations";
+import { t } from "../../../../utils";
 
 const DEFAULT_SLIDER_VALUE = 800;
 const MIN_SLIDER_VALUE = 1;
 const MAX_SLIDER_VALUE = 5000;
 
-export default () => {
+interface Props {
+  setCo2eqKilograms: (arg0: number) => void;
+}
+
+export default ({ setCo2eqKilograms }: Props) => {
   const [sliderValue, setValue] = useState(DEFAULT_SLIDER_VALUE);
+  setCo2eqKilograms(sliderValue);
 
   return (
     <React.Fragment>

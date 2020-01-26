@@ -31,7 +31,7 @@
     "@types/react-navigation": "3.4.0",
     "@types/react-redux": "7.1.5",
     "@types/webpack-env": "1.15.0",
-    "carbon-footprint": "1.0.6",
+    "carbon-footprint": "1.0.7",
     "expo": "36.0.1",
     "expo-asset": "8.0.0",
     "expo-constants": "8.0.0",
@@ -53,6 +53,7 @@
     "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.1.tar.gz",
     "react-native-collapsible": "1.5.1",
     "react-native-gesture-handler": "1.5.1",
+    "react-native-globalize": "3.0.0",
     "react-native-keyboard-aware-scroll-view": "0.9.1",
     "react-native-reanimated": "1.4.0",
     "react-native-render-html": "4.1.2",
@@ -66,7 +67,8 @@
     "redux-persist": "6.0.0",
     "redux-thunk": "2.3.0",
     "sentry-expo": "2.0.1",
-    "typescript": "3.7.4"
+    "typescript": "3.7.4",
+    "uuid": "3.4.0"
   },
   "devDependencies": {
     "@babel/core": "7.7.7",
@@ -80,9 +82,10 @@
     "@types/react": "16.9.16",
     "@types/react-native": "0.60.25",
     "@types/react-test-renderer": "16.9.1",
+    "@types/uuid": "3.4.6",
     "@typescript-eslint/eslint-plugin": "2.11.0",
     "@typescript-eslint/parser": "2.11.0",
-    "babel-loader": "^8.0.6",
+    "babel-loader": "8.0.6",
     "babel-preset-expo": "8.0.0",
     "eslint": "6.7.2",
     "eslint-plugin-jest": "23.1.1",
@@ -90,7 +93,6 @@
     "jest-expo": "36.0.1",
     "react-native-storybook-loader": "1.8.1"
   },
-  "private": true,
   "husky": {
     "hooks": {
       "pre-commit": "yarn ci"
@@ -101,5 +103,6 @@
       "pattern": "**/*.story.tsx",
       "outputFile": "./storybook/storyLoader.js"
     }
-  }
+  },
+  "license": "GPLv3"
 }

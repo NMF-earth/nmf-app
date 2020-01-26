@@ -3,7 +3,7 @@ import { View } from "react-native";
 import styles from "./Legend.styles";
 import LegendItem from "../LegendItem";
 import colors from "../../../../../../style/colors";
-import { t } from "../../../../../../utils/translations";
+import { t } from "../../../../../../utils";
 
 interface Prop {
   totalEmissions: number;

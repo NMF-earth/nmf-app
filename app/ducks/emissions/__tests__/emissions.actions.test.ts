@@ -1,6 +1,6 @@
 import emissions from "../";
 import { Emission, EmissionEnum } from "../../../interfaces";
-import { version } from "carbon-footprint";
+import { TransportEnum } from "carbon-footprint";
 
 describe("Emissions actions should", () => {
   it("export expected actions", () =>
@@ -8,11 +8,11 @@ describe("Emissions actions should", () => {
 
   it("be able to create an emission", () => {
     const emission: Emission = {
-      id: Date.now(),
-      creationDate: "now",
-      co2eqKilograms: 10,
-      co2eqModelVersion: version.co2eqModel,
+      id: "123",
+      creationDate: "2020-01-26T11:04:55.334Z",
       emissionType: EmissionEnum.custom,
+      emissionModelType: TransportEnum.boat,
+      value: 200,
       isMitigated: false
     };
 
