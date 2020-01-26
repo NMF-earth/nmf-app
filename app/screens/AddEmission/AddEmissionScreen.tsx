@@ -22,8 +22,8 @@ const AddEmissionScreen: React.FunctionComponent<Props> & { navigationOptions: t
   const [foodType, setFoodType] = useState(FoodEnum.redMeat);
   const [co2eqKilograms, setCo2eqKilograms] = useState(0);
   const [durationHours, setDurationHours] = useState(0.5);
-  const [distanceKilometers, setDistanceKilometers] = useState(50);
-  const [quantityKilograms, setQuantityKilograms] = useState(0.15);
+  const [distance, setDistance] = useState(50);
+  const [quantity, setQuantity] = useState(0);
 
   const emissionPayload: EmissionPayload = {
     emissionType: emissionType,
@@ -37,12 +37,12 @@ const AddEmissionScreen: React.FunctionComponent<Props> & { navigationOptions: t
         emissionPayload.value = durationHours
         emissionPayload.emissionModelType = transportType
       } else {
-        emissionPayload.value = distanceKilometers 
+        emissionPayload.value = distance
         emissionPayload.emissionModelType = transportType
       }
       return (
         <Transport
-          setDistanceKilometers={setDistanceKilometers}
+          setDistanceKilometers={setDistance}
           setDurationHours={setDurationHours}
           setCo2eqKilograms={setCo2eqKilograms}
           setTransportType={setTransportType}
@@ -55,11 +55,11 @@ const AddEmissionScreen: React.FunctionComponent<Props> & { navigationOptions: t
 
   const renderFood = () => {
     if (emissionType === EmissionEnum.food) {
-      emissionPayload.value = quantityKilograms
+      emissionPayload.value = quantity
       emissionPayload.emissionModelType= foodType
       return (
         <Food
-          setQuantityKilograms={setQuantityKilograms}
+          setQuantityKilograms={setQuantity}
           setCo2eqKilograms={setCo2eqKilograms}
           setFoodType={setFoodType}
           foodType={foodType}
@@ -100,7 +100,7 @@ const AddEmissionScreen: React.FunctionComponent<Props> & { navigationOptions: t
           <Tag
             icon={"md-build"}
             selected={emissionType === EmissionEnum.custom}
-            title={"Custon"}
+            title={"Custom"}
             onPress={() => setEmissionType(EmissionEnum.custom)}
           />
         </ScrollView>

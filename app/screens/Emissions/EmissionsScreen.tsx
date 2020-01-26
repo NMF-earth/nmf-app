@@ -33,10 +33,11 @@ const EmissionsScreen = ({ navigation }: Props) => {
                 <FlatList<EmissionListItemProps>
                   style={styles.listContainer}
                   data={emissionsToMitigate}
-                  keyExtractor={(index) => index.toString()}
+                  keyExtractor={item => item.id}
                   renderItem={({ item }: { item: EmissionListItemProps }) => (
                     <EmissionListItem
                       id={item.id}
+                      key={item.id}
                       onPress={item.onPress}
                       title={item.title}
                       co2value={item.co2value}
@@ -54,7 +55,7 @@ const EmissionsScreen = ({ navigation }: Props) => {
                 <FlatList<EmissionListItemProps>
                   style={styles.listContainer}
                   data={emissionsMitigated}
-                  keyExtractor={(index) => index.toString()}
+                  keyExtractor={item => item.id}
                   renderItem={({ item }: { item: EmissionListItemProps }) => (
                     <EmissionListItem
                       id={item.id}
