@@ -185,7 +185,16 @@ exports[`AddEmissionScreen renders correctly 1`] = `
       <Text.H1
         green={true}
       >
-        1500 
+        <Text
+          accessibilityLabel=""
+          accessible={true}
+          adjustsFontSizeToFit={false}
+          allowFontScaling={true}
+          style={null}
+        >
+          0.039
+        </Text>
+         
         <Text.Primary>
           kgCO2eq
         </Text.Primary>

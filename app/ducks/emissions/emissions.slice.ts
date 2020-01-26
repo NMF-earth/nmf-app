@@ -2,7 +2,7 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { Emission } from "../../interfaces";
 import uuid from "uuid";
 
-const initialState: Emission[] = []
+const initialState: Emission[] = [];
 
 const emissions = createSlice({
   name: "emissions",
@@ -16,7 +16,7 @@ const emissions = createSlice({
       state.push(emission);
     },
     /* TODO: add test for deleteEmissionById and test if it's working irl */
-    deleteEmissionById(state, action: PayloadAction<number>) {
+    deleteEmissionById(state, action: PayloadAction<string>) {
       state = state.filter(item => item.id !== action.payload);
     }
   }

@@ -8,12 +8,12 @@ import styles from "./EmissionListItem.styles";
 import Text from "../Text";
 
 interface EmissionListItemProps {
-  id: number;
+  id: string;
   transport?: boolean;
   food?: boolean;
   custom?: boolean;
   title: string;
-  subTitle: string;
+  co2value: number;
   onPress: () => void;
 }
 
@@ -22,7 +22,7 @@ const EmissionListItem = ({
   food = false,
   custom = false,
   title = "",
-  subTitle = "",
+  co2value = 0,
   onPress
 }: EmissionListItemProps) => {
   let iconName = "";
@@ -53,7 +53,7 @@ const EmissionListItem = ({
       <View style={styles.textContainer}>
         <Text.Primary numberOfLines={1}>{title}</Text.Primary>
         <Text.Tertiary numberOfLines={1} light lightGray>
-          <FormattedNumber value={subTitle}/> kg
+          <FormattedNumber value={co2value} /> kg
         </Text.Tertiary>
       </View>
       <Ionicons

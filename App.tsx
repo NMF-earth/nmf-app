@@ -5,6 +5,7 @@ import { FormattedProvider } from "react-native-globalize";
 import { locale } from "expo-localization";
 import { Platform, StatusBar, StyleSheet, View } from "react-native";
 import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
+import Constants from "expo-constants";
 import * as Sentry from "sentry-expo";
 import { Provider } from "react-redux";
 import AppNavigator from "./app/navigation/AppNavigator";

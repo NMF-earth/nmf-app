@@ -41,7 +41,16 @@ exports[`EmissionListItem renders correctly by default 1`] = `
       lightGray={true}
       numberOfLines={1}
     >
-      2.1 kg CO2
+      <Text
+        accessibilityLabel=""
+        accessible={true}
+        adjustsFontSizeToFit={false}
+        allowFontScaling={true}
+        style={null}
+      >
+        2.1
+      </Text>
+       kg
     </Text.Tertiary>
   </View>
   <Ionicons
@@ -99,7 +108,16 @@ exports[`EmissionListItem renders correctly with custom icon 1`] = `
       lightGray={true}
       numberOfLines={1}
     >
-      2.1 kg CO2
+      <Text
+        accessibilityLabel=""
+        accessible={true}
+        adjustsFontSizeToFit={false}
+        allowFontScaling={true}
+        style={null}
+      >
+        2.1
+      </Text>
+       kg
     </Text.Tertiary>
   </View>
   <Ionicons
@@ -157,7 +175,16 @@ exports[`EmissionListItem renders correctly with food icon 1`] = `
       lightGray={true}
       numberOfLines={1}
     >
-      2.1 kg CO2
+      <Text
+        accessibilityLabel=""
+        accessible={true}
+        adjustsFontSizeToFit={false}
+        allowFontScaling={true}
+        style={null}
+      >
+        2.1
+      </Text>
+       kg
     </Text.Tertiary>
   </View>
   <Ionicons
@@ -215,7 +242,16 @@ exports[`EmissionListItem renders correctly with transport icon 1`] = `
       lightGray={true}
       numberOfLines={1}
     >
-      2.1 kg CO2
+      <Text
+        accessibilityLabel=""
+        accessible={true}
+        adjustsFontSizeToFit={false}
+        allowFontScaling={true}
+        style={null}
+      >
+        2.1
+      </Text>
+       kg
     </Text.Tertiary>
   </View>
   <Ionicons

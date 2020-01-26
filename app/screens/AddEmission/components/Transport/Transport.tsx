@@ -8,6 +8,7 @@ import { Text, Tag } from "../../../../components";
 import colors from "../../../../style/colors";
 import { t, time } from "../../../../utils";
 import { transport, TransportEnum } from "carbon-footprint";
+import { TranslationKeys } from "../../translations";
 
 const DEFAULT_SLIDER_VALUE = 150;
 const MIN_SLIDER_VALUE = 2;
@@ -24,7 +25,12 @@ interface Props {
   setDurationHours: (arg0: number) => void;
 }
 
-const TAGS = [
+interface TransportTag {
+  title: keyof TranslationKeys;
+  type: TransportEnum;
+}
+
+const TAGS: TransportTag[] = [
   {
     title: "ADD_EMISSION_TRAIN",
     type: TransportEnum.train
@@ -50,7 +56,7 @@ export default ({
 }: Props) => {
   const [sliderValue, setSliderValue] = useState(DEFAULT_SLIDER_VALUE);
 
-  const onSliderValueChange = value => {
+  const onSliderValueChange = (value: number) => {
     const val = Math.round(value);
     setSliderValue(val);
     setDistanceKilometers(val);
@@ -124,7 +130,8 @@ export default ({
       <View style={styles.totalContainer}>
         <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_TOTAL")}</Text.H3>
         <Text.H1 green>
-          <FormattedNumber value={sliderValue * transport[transportType]}/> <Text.Primary>kgCO2eq</Text.Primary>
+          <FormattedNumber value={sliderValue * transport[transportType]} />{" "}
+          <Text.Primary>kgCO2eq</Text.Primary>
         </Text.H1>
       </View>
     </React.Fragment>

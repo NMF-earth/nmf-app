@@ -15,37 +15,14 @@ enum EmissionPurchaseEnum {
   car = "car"
 }
 
-interface EmissionFood {
-  foodType: FoodEnum;
-  quantityKilograms: number;
-}
-
-interface EmissionTransport {
-  transportType: TransportEnum;
-  durationHours?: number;
-  distanceKilometers?: number;
-}
-
-interface EmissionPurchase {
-  purchaseType: EmissionPurchaseEnum;
-}
-
 interface Emission {
-  id: string;
-  creationDate: number;
+  id?: string;
+  creationDate?: number;
   name?: string;
   emissionType: EmissionEnum;
-  isMitigated: boolean;
+  isMitigated?: boolean;
   value: number;
-  unit: string;
   emissionModelType: FoodEnum | TransportEnum | "custom";
 }
 
-export {
-  Emission,
-  EmissionFood,
-  EmissionPurchase,
-  EmissionTransport,
-  EmissionEnum,
-  EmissionPurchaseEnum
-};
+export { Emission, EmissionEnum, EmissionPurchaseEnum };

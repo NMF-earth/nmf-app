@@ -11,10 +11,13 @@ import { Emission, EmissionEnum } from "../../interfaces";
 interface Props {
   navigation: {
     push: (screen: string) => void;
+    goBack: () => void;
   };
 }
 
-const AddEmissionScreen: React.FunctionComponent<Props> = ({ navigation }) => {
+const AddEmissionScreen: React.FunctionComponent<Props> & {
+  navigationOptions: typeof navigationOptions;
+} = ({ navigation }) => {
   const [emissionType, setEmissionType] = useState(EmissionEnum.transport);
   const [transportType, setTransportType] = useState(TransportEnum.car);
   const [foodType, setFoodType] = useState(FoodEnum.redMeat);
@@ -23,24 +26,20 @@ const AddEmissionScreen: React.FunctionComponent<Props> = ({ navigation }) => {
   const [distanceKilometers, setDistanceKilometers] = useState(50);
   const [quantityKilograms, setQuantityKilograms] = useState(0.15);
 
-  let emission: Emission = {
+  const emissionPayload: Emission = {
     emissionType: emissionType,
+    value: 0,
+    emissionModelType: null
   };
 
   const renderTransport = () => {
     if (emissionType === EmissionEnum.transport) {
       if (transportType === TransportEnum.plane) {
-        emission = {
-          ...emission,
-          value: durationHours,
-          emissionModelType: transportType,
-        };
+        emissionPayload.value = durationHours;
+        emissionPayload.emissionModelType = transportType;
       } else {
-        emission = {
-          ...emission,
-          value: distanceKilometers,
-          emissionModelType: transportType,
-        };
+        emissionPayload.value = distanceKilometers;
+        emissionPayload.emissionModelType = transportType;
       }
       return (
         <Transport
@@ -57,11 +56,8 @@ const AddEmissionScreen: React.FunctionComponent<Props> = ({ navigation }) => {
 
   const renderFood = () => {
     if (emissionType === EmissionEnum.food) {
-      emission = {
-        ...emission,
-        value: quantityKilograms,
-        emissionModelType: foodType,
-      };
+      emissionPayload.value = quantityKilograms;
+      emissionPayload.emissionModelType = foodType;
       return (
         <Food
           setQuantityKilograms={setQuantityKilograms}
@@ -76,11 +72,8 @@ const AddEmissionScreen: React.FunctionComponent<Props> = ({ navigation }) => {
 
   const renderCustom = () => {
     if (emissionType === EmissionEnum.custom) {
-      emission = {
-        ...emission,
-        value: co2eqKilograms,
-        emissionModelType: "custom",
-      };
+      emissionPayload.value = co2eqKilograms;
+      emissionPayload.emissionModelType = "custom";
       return <Custom setCo2eqKilograms={setCo2eqKilograms} />;
     }
     return null;
@@ -118,7 +111,7 @@ const AddEmissionScreen: React.FunctionComponent<Props> = ({ navigation }) => {
       {renderFood()}
       {renderCustom()}
 
-      <AddEmissionButton navigation={navigation} emission={emission} />
+      <AddEmissionButton navigation={navigation} emission={emissionPayload} />
     </ScrollView>
   );
 };
