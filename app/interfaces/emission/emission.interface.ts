@@ -15,14 +15,16 @@ enum EmissionPurchaseEnum {
   car = "car"
 }
 
-interface Emission {
-  id?: string;
-  creationDate?: number;
-  name?: string;
+interface EmissionPayload {
   emissionType: EmissionEnum;
-  isMitigated?: boolean;
-  value: number;
   emissionModelType: FoodEnum | TransportEnum | "custom";
+  value: number;
 }
 
-export { Emission, EmissionEnum, EmissionPurchaseEnum };
+interface Emission extends EmissionPayload {
+  id: string;
+  creationDate: string;
+  isMitigated: boolean;
+}
+
+export { Emission, EmissionPayload, EmissionEnum, EmissionPurchaseEnum };

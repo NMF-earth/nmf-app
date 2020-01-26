@@ -130,7 +130,10 @@ export default ({
       <View style={styles.totalContainer}>
         <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_TOTAL")}</Text.H3>
         <Text.H1 green>
-          <FormattedNumber value={sliderValue * transport[transportType]} />{" "}
+          <FormattedNumber
+            value={sliderValue * 1000 * transport[transportType]}
+            maximumFractionDigits={2}
+          />{" "}
           <Text.Primary>kgCO2eq</Text.Primary>
         </Text.H1>
       </View>

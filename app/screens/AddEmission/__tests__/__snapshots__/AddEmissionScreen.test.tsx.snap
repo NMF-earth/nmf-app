@@ -57,7 +57,7 @@ exports[`AddEmissionScreen renders correctly 1`] = `
             icon="md-build"
             onPress={[Function]}
             selected={false}
-            title="Custon"
+            title="Custom"
           />
         </View>
       </RCTScrollView>
@@ -192,7 +192,7 @@ exports[`AddEmissionScreen renders correctly 1`] = `
           allowFontScaling={true}
           style={null}
         >
-          0.039
+          38.55
         </Text>
          
         <Text.Primary>

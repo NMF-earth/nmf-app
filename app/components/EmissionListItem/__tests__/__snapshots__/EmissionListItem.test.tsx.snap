@@ -50,7 +50,8 @@ exports[`EmissionListItem renders correctly by default 1`] = `
       >
         2.1
       </Text>
-       kg
+       
+      kg
     </Text.Tertiary>
   </View>
   <Ionicons
@@ -117,7 +118,8 @@ exports[`EmissionListItem renders correctly with custom icon 1`] = `
       >
         2.1
       </Text>
-       kg
+       
+      kg
     </Text.Tertiary>
   </View>
   <Ionicons
@@ -184,7 +186,8 @@ exports[`EmissionListItem renders correctly with food icon 1`] = `
       >
         2.1
       </Text>
-       kg
+       
+      kg
     </Text.Tertiary>
   </View>
   <Ionicons
@@ -251,7 +254,8 @@ exports[`EmissionListItem renders correctly with transport icon 1`] = `
       >
         2.1
       </Text>
-       kg
+       
+      kg
     </Text.Tertiary>
   </View>
   <Ionicons

@@ -1,22 +1,32 @@
 import React from "react";
 import { useDispatch } from "react-redux";
+import uuid from "uuid";
+import moment from "moment";
+
 import { Text, Button } from "../../../../components";
 import styles from "./AddEmissionButton.styles";
 import { t } from "../../../../utils";
-import { Emission } from "../../../../interfaces";
 import { emissions } from "../../../../ducks";
+import { EmissionPayload } from "../../../../interfaces/emission/emission.interface";
 
 interface Props {
-  emission: Emission;
+  emissionPayload: EmissionPayload;
   navigation: {
     goBack: () => void;
   };
 }
 
-const AddEmissionButton = ({ navigation, emission }: Props) => {
+const AddEmissionButton = ({ navigation, emissionPayload }: Props) => {
   const dispatch = useDispatch();
 
   const addEmission = () => {
+    const emission = {
+        ...emissionPayload,
+        id: uuid(),
+        creationDate: moment().utc().toISOString(),
+        isMitigated: false,
+    }
+
     dispatch(emissions.actions.createEmission(emission));
     navigation.goBack();
   };

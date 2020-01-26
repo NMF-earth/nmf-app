@@ -6,7 +6,7 @@ let state;
 
 const emissionToMitigate: Emission = {
   id: "123",
-  creationDate: 1234,
+  creationDate: "2020-01-26T11:04:55.334Z",
   emissionModelType: TransportEnum.bus,
   emissionType: EmissionEnum.custom,
   isMitigated: false,

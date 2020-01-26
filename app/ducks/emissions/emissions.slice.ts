@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+
 import { Emission } from "../../interfaces";
-import uuid from "uuid";
 
 const initialState: Emission[] = [];
 
@@ -9,11 +9,7 @@ const emissions = createSlice({
   initialState,
   reducers: {
     createEmission(state, action: PayloadAction<Emission>) {
-      const emission = action.payload;
-      emission.creationDate = Date.now();
-      emission.id = uuid();
-      emission.isMitigated = false;
-      state.push(emission);
+      state.push(action.payload);
     },
     /* TODO: add test for deleteEmissionById and test if it's working irl */
     deleteEmissionById(state, action: PayloadAction<string>) {

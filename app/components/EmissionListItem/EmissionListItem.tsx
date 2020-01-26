@@ -53,7 +53,11 @@ const EmissionListItem = ({
       <View style={styles.textContainer}>
         <Text.Primary numberOfLines={1}>{title}</Text.Primary>
         <Text.Tertiary numberOfLines={1} light lightGray>
-          <FormattedNumber value={co2value} /> kg
+          <FormattedNumber
+            maximumFractionDigits={co2value >= 1 ? 2 : 4}
+            value={co2value}
+          />{" "}
+          kg
         </Text.Tertiary>
       </View>
       <Ionicons

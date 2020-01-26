@@ -9,7 +9,7 @@ describe("Emissions actions should", () => {
   it("be able to create an emission", () => {
     const emission: Emission = {
       id: "123",
-      creationDate: 1234,
+      creationDate: "2020-01-26T11:04:55.334Z",
       emissionType: EmissionEnum.custom,
       emissionModelType: TransportEnum.boat,
       value: 200,
