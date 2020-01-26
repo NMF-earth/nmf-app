@@ -12,7 +12,7 @@ describe("Reducer should", () => {
   it("should handle emission creation", () => {
     const emission: Emission = {
       id: "123",
-      creationDate: 1234,
+      creationDate: "2020-01-26T11:04:55.334Z",
       emissionType: EmissionEnum.custom,
       emissionModelType: FoodEnum.nuts,
       value: 200,

@@ -6,7 +6,8 @@ import styles from "./AddEmissionScreen.styles";
 import navigationOptions from "./AddEmissionScreen.navigationOptions";
 import { t } from "../../utils";
 import { Food, Transport, Custom, AddEmissionButton } from "./components";
-import { Emission, EmissionEnum } from "../../interfaces";
+import { EmissionEnum } from "../../interfaces";
+import { EmissionPayload } from "../../interfaces/emission/emission.interface";
 
 interface Props {
   navigation: {
@@ -24,7 +25,7 @@ const AddEmissionScreen: React.FunctionComponent<Props> & { navigationOptions: t
   const [distanceKilometers, setDistanceKilometers] = useState(50);
   const [quantityKilograms, setQuantityKilograms] = useState(0.15);
 
-  const emissionPayload: Emission = {
+  const emissionPayload: EmissionPayload = {
     emissionType: emissionType,
     value: 0,
     emissionModelType: null,
@@ -109,7 +110,7 @@ const AddEmissionScreen: React.FunctionComponent<Props> & { navigationOptions: t
       {renderFood()}
       {renderCustom()}
 
-      <AddEmissionButton navigation={navigation} emission={emissionPayload} />
+      <AddEmissionButton navigation={navigation} emissionPayload={emissionPayload} />
     </ScrollView>
   );
 };
