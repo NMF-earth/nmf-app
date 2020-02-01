@@ -52,31 +52,31 @@ const MonthlyBudgetScreen = ({ navigation }) => {
               />
             </Text.Primary>
           </View>
-          <Text.Secondary style={styles.worldExampleTitle}>
+          <Text.Secondary style={styles.worldExampleItem}>
             {t("MONTHLY_BUDGET_LUXEMBOURG")}
           </Text.Secondary>
-          <Text.Secondary style={styles.worldExampleTitle}>
+          <Text.Secondary style={styles.worldExampleItem}>
             {t("MONTHLY_BUDGET_UNITED_STATES")}
           </Text.Secondary>
-          <Text.Secondary style={styles.worldExampleTitle}>
+          <Text.Secondary style={styles.worldExampleItem}>
             {t("MONTHLY_BUDGET_JAPAN")}
           </Text.Secondary>
-          <Text.Secondary style={styles.worldExampleTitle}>
+          <Text.Secondary style={styles.worldExampleItem}>
             {t("MONTHLY_BUDGET_SWEDEN")}
           </Text.Secondary>
-          <Text.Secondary style={styles.worldExampleTitle}>
+          <Text.Secondary style={styles.worldExampleItem}>
             {t("MONTHLY_BUDGET_FRANCE")}
           </Text.Secondary>
-          <Text.Secondary style={styles.worldExampleTitle}>
+          <Text.Secondary style={styles.worldExampleItem}>
             {t("MONTHLY_BUDGET_CHINA")}
           </Text.Secondary>
-          <Text.Secondary style={styles.worldExampleTitle}>
+          <Text.Secondary style={styles.worldExampleItem}>
             {t("MONTHLY_BUDGET_BRAZIL")}
           </Text.Secondary>
-          <Text.Secondary style={styles.worldExampleTitle}>
+          <Text.Secondary style={styles.worldExampleItem}>
             {t("MONTHLY_BUDGET_INDIA")}
           </Text.Secondary>
-          <Text.Secondary style={styles.worldExampleTitle}>
+          <Text.Secondary style={styles.worldExampleItem}>
             {t("MONTHLY_BUDGET_ETHIOPIA")}
           </Text.Secondary>
         </View>

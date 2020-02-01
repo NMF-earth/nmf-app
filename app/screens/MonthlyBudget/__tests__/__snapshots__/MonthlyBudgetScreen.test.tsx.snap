@@ -76,7 +76,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
           <Text.Primary
             bold={true}
           >
-            CO2 emissions per capita per month per month 
+            CO2 emissions per capita per month 
             <Ionicons
               color="#4BB377"
               name="md-information-circle"
@@ -88,8 +88,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
         <Text.Secondary
           style={
             Object {
-              "flex": 1,
-              "marginBottom": 8,
+              "marginBottom": 6,
             }
           }
         >
@@ -98,8 +97,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
         <Text.Secondary
           style={
             Object {
-              "flex": 1,
-              "marginBottom": 8,
+              "marginBottom": 6,
             }
           }
         >
@@ -108,8 +106,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
         <Text.Secondary
           style={
             Object {
-              "flex": 1,
-              "marginBottom": 8,
+              "marginBottom": 6,
             }
           }
         >
@@ -118,8 +115,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
         <Text.Secondary
           style={
             Object {
-              "flex": 1,
-              "marginBottom": 8,
+              "marginBottom": 6,
             }
           }
         >
@@ -128,8 +124,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
         <Text.Secondary
           style={
             Object {
-              "flex": 1,
-              "marginBottom": 8,
+              "marginBottom": 6,
             }
           }
         >
@@ -138,8 +133,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
         <Text.Secondary
           style={
             Object {
-              "flex": 1,
-              "marginBottom": 8,
+              "marginBottom": 6,
             }
           }
         >
@@ -148,8 +142,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
         <Text.Secondary
           style={
             Object {
-              "flex": 1,
-              "marginBottom": 8,
+              "marginBottom": 6,
             }
           }
         >
@@ -158,8 +151,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
         <Text.Secondary
           style={
             Object {
-              "flex": 1,
-              "marginBottom": 8,
+              "marginBottom": 6,
             }
           }
         >
@@ -168,8 +160,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
         <Text.Secondary
           style={
             Object {
-              "flex": 1,
-              "marginBottom": 8,
+              "marginBottom": 6,
             }
           }
         >

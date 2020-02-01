@@ -24,7 +24,7 @@ export default StyleSheet.create({
     marginBottom: 8
   },
   worldExampleItem: {
-    marginBottom: 4
+    marginBottom: 6
   },
   buttonContainer: {
     position: "absolute",
