@@ -4,74 +4,190 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
 <View
   style={
     Object {
-      "alignContent": "flex-start",
-      "backgroundColor": "#FFFFFF",
       "flex": 1,
-      "padding": 16,
+      "paddingHorizontal": 14,
     }
   }
 >
+  <RCTScrollView>
+    <View>
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+            "flexWrap": "wrap",
+            "paddingTop": 26,
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+        >
+          My carbon monthly budget : 
+        </Text.Primary>
+        <Text.Primary
+          lightGray={true}
+        >
+          500 kg
+        </Text.Primary>
+      </View>
+      <RCTSlider
+        disabled={false}
+        enabled={true}
+        maximumTrackTintColor="#CED4DA"
+        maximumValue={1000}
+        minimumTrackTintColor="#4BB377"
+        minimumValue={0}
+        onChange={null}
+        onResponderTerminationRequest={[Function]}
+        onSlidingComplete={[Function]}
+        onStartShouldSetResponder={[Function]}
+        onValueChange={null}
+        step={0}
+        style={
+          Array [
+            Object {
+              "height": 40,
+            },
+            Object {
+              "marginTop": 14,
+            },
+          ]
+        }
+        thumbTintColor="#4BB377"
+        value={500}
+      />
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "marginVertical": 20,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "marginBottom": 8,
+            }
+          }
+        >
+          <Text.Primary
+            bold={true}
+          >
+            CO2 emissions per capita per month per month 
+            <Ionicons
+              color="#4BB377"
+              name="md-information-circle"
+              onPress={[Function]}
+              size={26}
+            />
+          </Text.Primary>
+        </View>
+        <Text.Secondary
+          style={
+            Object {
+              "flex": 1,
+              "marginBottom": 8,
+            }
+          }
+        >
+          Luxembourg : 3.5 tons
+        </Text.Secondary>
+        <Text.Secondary
+          style={
+            Object {
+              "flex": 1,
+              "marginBottom": 8,
+            }
+          }
+        >
+          United States : 1,5 tons
+        </Text.Secondary>
+        <Text.Secondary
+          style={
+            Object {
+              "flex": 1,
+              "marginBottom": 8,
+            }
+          }
+        >
+          Japan : 900 kg
+        </Text.Secondary>
+        <Text.Secondary
+          style={
+            Object {
+              "flex": 1,
+              "marginBottom": 8,
+            }
+          }
+        >
+          Sweden : 595 kg
+        </Text.Secondary>
+        <Text.Secondary
+          style={
+            Object {
+              "flex": 1,
+              "marginBottom": 8,
+            }
+          }
+        >
+          France : 575 kg
+        </Text.Secondary>
+        <Text.Secondary
+          style={
+            Object {
+              "flex": 1,
+              "marginBottom": 8,
+            }
+          }
+        >
+          China : 522 kg
+        </Text.Secondary>
+        <Text.Secondary
+          style={
+            Object {
+              "flex": 1,
+              "marginBottom": 8,
+            }
+          }
+        >
+          Brazil : 208 kg
+        </Text.Secondary>
+        <Text.Secondary
+          style={
+            Object {
+              "flex": 1,
+              "marginBottom": 8,
+            }
+          }
+        >
+          India : 139 kg
+        </Text.Secondary>
+        <Text.Secondary
+          style={
+            Object {
+              "flex": 1,
+              "marginBottom": 8,
+            }
+          }
+        >
+          Ethiopia : 8.3 kg
+        </Text.Secondary>
+      </View>
+    </View>
+  </RCTScrollView>
   <View
     style={
       Object {
-        "flexDirection": "row",
-        "flexWrap": "wrap",
+        "bottom": 20,
+        "left": 14,
+        "position": "absolute",
+        "right": 14,
       }
     }
   >
-    <Text.Primary
-      bold={true}
-    >
-      My carbon monthly budget : 
-    </Text.Primary>
-    <Text.Primary
-      lightGray={true}
-    >
-      500 kg
-    </Text.Primary>
-  </View>
-  <View
-    style={
-      Object {
-        "flex": 1,
-        "justifyContent": "space-between",
-      }
-    }
-  >
-    <Slider
-      maximumValue={1000}
-      minimumTrackTintColor="#4BB377"
-      minimumValue={0}
-      onValueChange={[Function]}
-      style={
-        Object {
-          "height": 40,
-          "marginHorizontal": 24,
-          "marginTop": 14,
-        }
-      }
-      thumbStyle={
-        Object {
-          "backgroundColor": "#4BB377",
-          "borderRadius": 10,
-          "height": 20,
-          "shadowOffset": Object {
-            "height": 2,
-            "width": 0,
-          },
-          "shadowOpacity": 0.35,
-          "shadowRadius": 2,
-          "width": 20,
-        }
-      }
-      trackStyle={
-        Object {
-          "borderRadius": 1,
-          "height": 2,
-        }
-      }
-      value={500}
-    />
     <Button.Primary
       onPress={[Function]}
       textType="Primary"
