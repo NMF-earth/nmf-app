@@ -1,9 +1,9 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import EmissionsScreen from "../EmissionsScreen";
+import EmissionItemScreen from "../EmissionItemScreen";
 
 it("EmissionsScreen renders correctly", () => {
   let props: any;
-  const tree = renderer.create(<EmissionsScreen {...props} />).toJSON();
+  const tree = renderer.create(<EmissionItemScreen {...props} />).toJSON();
   expect(tree).toMatchSnapshot();
 });

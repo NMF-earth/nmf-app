@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmissionsScreen renders correctly 1`] = `
+<RCTScrollView
+  style={
+    Object {
+      "flex": 1,
+      "paddingHorizontal": 14,
+    }
+  }
+>
+  <View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "marginTop": 22,
+        }
+      }
+    >
+      <Text.H1>
+        What was mitigated?
+      </Text.H1>
+      <Text.Primary
+        style={
+          Object {
+            "paddingVertical": 10,
+          }
+        }
+      />
+      <Text.H1>
+        Quantity:
+      </Text.H1>
+      <Text.Primary
+        style={
+          Object {
+            "paddingVertical": 10,
+          }
+        }
+      />
+      <Text.H1>
+        Price:
+      </Text.H1>
+      <Text.Primary
+        style={
+          Object {
+            "paddingVertical": 10,
+          }
+        }
+      />
+      <Text.H1>
+        Date:
+      </Text.H1>
+      <Text.Primary
+        style={
+          Object {
+            "paddingVertical": 10,
+          }
+        }
+      />
+    </View>
+  </View>
+</RCTScrollView>
+`;

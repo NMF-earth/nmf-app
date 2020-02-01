@@ -8,6 +8,7 @@ import StorybookScreen from "../../storybook";
 
 import ComingSoonScreen from "../screens/ComingSoon";
 import ActScreen from "../screens/Act";
+import EmissionItemScreen from "../screens/EmissionItem";
 import ActDetailScreen from "../screens/ActDetail";
 import BudgetScreen from "../screens/Budget";
 import EmissionsScreen from "../screens/Emissions";
@@ -42,6 +43,7 @@ BudgetStack.navigationOptions = {
 const EmissionsStack = createStackNavigator({
   Emissions: EmissionsScreen,
   ComingSoon: ComingSoonScreen,
+  EmissionItem: EmissionItemScreen,
   AddEmission: AddEmissionScreen
 });
 

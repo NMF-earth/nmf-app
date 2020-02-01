@@ -1,4 +1,5 @@
 import React from "react";
+import { NavigationParams } from "react-navigation";
 import { FlatList, SafeAreaView } from "react-native";
 import { useSelector } from "react-redux";
 import { t } from "../../utils";
@@ -15,8 +16,11 @@ import { selectors } from "./ducks";
 interface Props {
   navigation: {
     push: (screen: string) => void;
+    navigate: (screen: string, params: NavigationParams) => void;
   };
 }
+
+
 
 const EmissionsScreen = ({ navigation }: Props) => {
   const emissionsToMitigate = useSelector(selectors.getEmissionsToMitigate);
@@ -38,7 +42,9 @@ const EmissionsScreen = ({ navigation }: Props) => {
                     <EmissionListItem
                       id={item.id}
                       key={item.id}
-                      onPress={item.onPress}
+                      onPress={() => {
+                        navigation.navigate("EmissionItem", { item })
+                      }}
                       title={item.title}
                       co2value={item.co2value}
                       food={item.food}

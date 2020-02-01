@@ -5,12 +5,14 @@ import EmissionsScreen from "./EmissionsScreen";
 import navigationOptions from "./EmissionsScreen.navigationOptions";
 import { EmissionListItemProps } from "../../components";
 import { emissions } from "../../ducks";
+import { NavigationParams } from "react-navigation";
 
 interface Props {
   emissionsToMitigate: Array<EmissionListItemProps>;
   emissionsMitigated: Array<EmissionListItemProps>;
   navigation: {
     push: (screen: string) => void;
+    navigate: (screen: string, params: NavigationParams) => void;
   };
 }
 
