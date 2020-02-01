@@ -7,8 +7,7 @@ i18n.fallbacks = true;
 i18n.translations = { en, de, fr };
 
 // Test locales quickly by overriding this value
-i18n.locale = Localization.locale.includes("en") ? "en" : Localization.locale; 
-
+i18n.locale = Localization.locale;
 
 /*
  * Pass a translation key and receive a translated string, optionally passing a template value.
