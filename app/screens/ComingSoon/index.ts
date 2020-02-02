@@ -1,1 +1,1 @@
-export { default } from "./ComingSoon";
+export { default } from "./ComingSoonScreen";

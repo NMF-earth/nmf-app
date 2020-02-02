@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly ComingSoon 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "justifyContent": "space-between",
+      "paddingHorizontal": 14,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "justifyContent": "center",
+        "marginTop": 50,
+      }
+    }
+  >
+    <Image
+      resizeMode="contain"
+      source={1}
+      style={
+        Object {
+          "width": "60%",
+        }
+      }
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "marginTop": 22,
+      }
+    }
+  >
+    <Text.Primary
+      bold={true}
+      style={
+        Object {
+          "paddingVertical": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      Welcome to NMF!
+    </Text.Primary>
+    <Text.Secondary
+      style={
+        Object {
+          "paddingVertical": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      By continuing, you accept our terms of use.
+    </Text.Secondary>
+    <TouchableOpacity
+      onPress={[Function]}
+    >
+      <Text.Tertiary
+        green={true}
+        style={
+          Object {
+            "paddingVertical": 10,
+            "textAlign": "center",
+          }
+        }
+      >
+        Read terms of use
+      </Text.Tertiary>
+    </TouchableOpacity>
+    <Button.Primary
+      fullWidth={true}
+      onPress={[Function]}
+      style={
+        Object {
+          "bottom": 10,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+        }
+      }
+      textType="Primary"
+    >
+      <Text.Primary
+        bold={true}
+        center={true}
+        white={true}
+      >
+        Continue
+      </Text.Primary>
+    </Button.Primary>
+  </View>
+</View>
+`;
