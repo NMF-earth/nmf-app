@@ -3,7 +3,7 @@ import { View, TouchableOpacity } from "react-native";
 import styles from "./MonthSelector.styles";
 import { Text } from "../../../../components";
 import { Ionicons } from "@expo/vector-icons";
-import colors from "../../../../style/colors";
+import { Colors } from "../../../../style";
 
 const MonthSelector = () => {
   return (
@@ -14,7 +14,7 @@ const MonthSelector = () => {
         }}
         style={styles.arrowForward}
       >
-        <Ionicons name={"ios-arrow-back"} size={30} color={colors.swordGray} />
+        <Ionicons name={"ios-arrow-back"} size={30} color={Colors.swordGray} />
       </TouchableOpacity>
       <View style={styles.monthView}>
         <Text.H3>Month</Text.H3>
@@ -28,7 +28,7 @@ const MonthSelector = () => {
         <Ionicons
           name={"ios-arrow-forward"}
           size={30}
-          color={colors.swordGray}
+          color={Colors.swordGray}
         />
       </TouchableOpacity>
     </View>

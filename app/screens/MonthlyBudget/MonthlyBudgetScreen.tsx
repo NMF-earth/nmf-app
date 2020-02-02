@@ -3,7 +3,7 @@ import { View } from "react-native";
 import Slider from "react-native-slider";
 
 import { Text, Button } from "../../components";
-import colors from "../../style/colors";
+import { Colors } from "../../style";
 import styles from "./MonthlyBudgetScreen.styles";
 import navigationOptions from "./MonthlyBudgetScreen.navigationOptions";
 import { t } from "../../utils";
@@ -24,7 +24,7 @@ const MonthlyBudgetScreen = ({ navigation }) => {
       </View>
       <View style={styles.bottomContainer}>
         <Slider
-          minimumTrackTintColor={colors.linkGreen}
+          minimumTrackTintColor={Colors.linkGreen}
           trackStyle={styles.track}
           thumbStyle={styles.thumb}
           style={styles.slider}

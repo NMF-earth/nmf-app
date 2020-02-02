@@ -1,13 +1,13 @@
 import React from "react";
 import { Text } from "../../components";
 import { t } from "../../utils";
-import colors from "../../style/colors";
+import { Colors } from "../../style";
 
 const navigationOptions = () => ({
   headerStyle: {
     borderBottomWidth: 0
   },
-  headerTintColor: colors.darkLink,
+  headerTintColor: Colors.darkLink,
   headerTitle: () => <Text.H1>{t("MONTHLY_BUDGET_TITLE")}</Text.H1>
 });
 

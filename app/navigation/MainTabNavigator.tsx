@@ -15,7 +15,7 @@ import SettingsScreen from "../screens/Settings";
 import MontlyBudgetScreen from "../screens/MonthlyBudget";
 import AddEmissionScreen from "../screens/AddEmission";
 
-import colors from "../style/colors";
+import { Colors } from "../style";
 import { t } from "../utils";
 
 const BudgetStack = createStackNavigator({
@@ -28,7 +28,7 @@ BudgetStack.navigationOptions = {
     <Text.Secondary
       style={{
         textAlign: "center",
-        color: focused ? colors.linkGreen : colors.swordGray
+        color: focused ? Colors.linkGreen : Colors.swordGray
       }}
     >
       {t("BUDGET_SCREEN_TAB_NAME")}
@@ -50,7 +50,7 @@ EmissionsStack.navigationOptions = {
     <Text.Secondary
       style={{
         textAlign: "center",
-        color: focused ? colors.linkGreen : colors.swordGray
+        color: focused ? Colors.linkGreen : Colors.swordGray
       }}
     >
       {t("EMISSIONS_SCREEN_TAB_NAME")}
@@ -71,7 +71,7 @@ ActStack.navigationOptions = {
     <Text.Secondary
       style={{
         textAlign: "center",
-        color: focused ? colors.linkGreen : colors.swordGray
+        color: focused ? Colors.linkGreen : Colors.swordGray
       }}
     >
       {t("ACT_SCREEN_TAB_NAME")}
@@ -90,7 +90,7 @@ SettingsStack.navigationOptions = {
     <Text.Secondary
       style={{
         textAlign: "center",
-        color: focused ? colors.linkGreen : colors.swordGray
+        color: focused ? Colors.linkGreen : Colors.swordGray
       }}
     >
       {t("SETTINGS_SCREEN_TAB_NAME")}
@@ -112,7 +112,7 @@ const tabNavigator = createBottomTabNavigator(
     tabBarOptions: {
       style: {
         paddingTop: 6,
-        backgroundColor: colors.linkGreen + "15",
+        backgroundColor: Colors.linkGreen + "15",
         borderTopWidth: 0
       }
     }

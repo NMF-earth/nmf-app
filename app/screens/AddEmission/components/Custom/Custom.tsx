@@ -4,7 +4,7 @@ import Slider from "react-native-slider";
 
 import styles from "./Custom.styles";
 import { Text } from "../../../../components";
-import colors from "../../../../style/colors";
+import { Colors } from "../../../../style";
 import { t } from "../../../../utils";
 
 const DEFAULT_SLIDER_VALUE = 800;
@@ -30,7 +30,7 @@ export default ({ setCo2eqKilograms }: Props) => {
         </Text.Primary>
       </View>
       <Slider
-        minimumTrackTintColor={colors.linkGreen}
+        minimumTrackTintColor={Colors.linkGreen}
         trackStyle={styles.track}
         thumbStyle={styles.thumb}
         style={styles.slider}

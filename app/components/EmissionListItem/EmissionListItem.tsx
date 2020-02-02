@@ -3,7 +3,7 @@ import { View, TouchableOpacity } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { FormattedNumber } from "react-native-globalize";
 
-import colors from "../../style/colors";
+import { Colors } from "../../style";
 import styles from "./EmissionListItem.styles";
 import Text from "../Text";
 
@@ -48,7 +48,7 @@ const EmissionListItem = ({
         name={iconName}
         size={iconSize}
         style={styles.icon}
-        color={colors.darkLink}
+        color={Colors.darkLink}
       />
       <View style={styles.textContainer}>
         <Text.Primary numberOfLines={1}>{title}</Text.Primary>
@@ -64,7 +64,7 @@ const EmissionListItem = ({
         name={"ios-arrow-forward"}
         size={22}
         style={styles.icon}
-        color={colors.darkLink}
+        color={Colors.darkLink}
       />
     </TouchableOpacity>
   );

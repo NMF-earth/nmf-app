@@ -1,14 +1,11 @@
 import { StyleSheet } from "react-native";
-import colors from "../../style/colors";
+import { Layout, Colors } from "../../style";
 
 const SIZE_THUMB_SLIDER = 20;
 
 export default StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: colors.white,
-    padding: 16,
-    alignContent: "flex-start"
+    ...Layout.containerWithPadding
   },
   textContainer: {
     flexDirection: "row",
@@ -35,7 +32,7 @@ export default StyleSheet.create({
     width: SIZE_THUMB_SLIDER,
     height: SIZE_THUMB_SLIDER,
     borderRadius: SIZE_THUMB_SLIDER / 2,
-    backgroundColor: colors.linkGreen,
+    backgroundColor: Colors.linkGreen,
     shadowOffset: { width: 0, height: 2 },
     shadowRadius: 2,
     shadowOpacity: 0.35

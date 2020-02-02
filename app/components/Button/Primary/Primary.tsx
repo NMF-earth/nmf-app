@@ -2,7 +2,7 @@ import React from "react";
 import { TouchableOpacity, StyleProp, ViewStyle } from "react-native";
 import styles from "./Primary.styles";
 import mainStyle from "../styles";
-import { fontSize } from "../../../style/font";
+import { Font } from "../../../style";
 
 const PADDING_VERTICAL = 12;
 
@@ -29,7 +29,7 @@ export default function Primary(props: Props): React.ReactElement {
 
   const additionalStyle = {
     paddingVertical: PADDING_VERTICAL,
-    borderRadius: PADDING_VERTICAL * 2 + fontSize[textType]
+    borderRadius: PADDING_VERTICAL * 2 + Font.FontSize[textType]
   };
 
   return (

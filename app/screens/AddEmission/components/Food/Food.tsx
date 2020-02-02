@@ -5,7 +5,7 @@ import { FormattedNumber } from "react-native-globalize";
 
 import styles from "./Food.styles";
 import { Text, Tag } from "../../../../components";
-import colors from "../../../../style/colors";
+import { Colors } from "../../../../style";
 import { t } from "../../../../utils";
 import { FoodEnum, food } from "carbon-footprint";
 
@@ -49,7 +49,7 @@ export default ({ setFoodType, foodType }: Props) => {
         </Text.Primary>
       </View>
       <Slider
-        minimumTrackTintColor={colors.linkGreen}
+        minimumTrackTintColor={Colors.linkGreen}
         trackStyle={styles.track}
         thumbStyle={styles.thumb}
         style={styles.slider}
@@ -61,10 +61,11 @@ export default ({ setFoodType, foodType }: Props) => {
       <View style={styles.totalContainer}>
         <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_TOTAL")}</Text.H3>
         <Text.H1 green>
-          <FormattedNumber 
+          <FormattedNumber
             value={(sliderValue / 1000) * food[foodType]}
             maximumFractionDigits={2}
-            /> <Text.Primary>kgCO2eq</Text.Primary>
+          />{" "}
+          <Text.Primary>kgCO2eq</Text.Primary>
         </Text.H1>
       </View>
     </React.Fragment>
