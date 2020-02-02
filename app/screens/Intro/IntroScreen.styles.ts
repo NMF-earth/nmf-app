@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import { PADDING_HORIZONTAL } from "../../constants/Layout";
 import { Layout } from "../../style";
 
 export default StyleSheet.create({
@@ -23,5 +24,11 @@ export default StyleSheet.create({
   paragraph: {
     textAlign: "center",
     paddingVertical: 10
+  },
+  button: {
+    position: "absolute",
+    bottom: PADDING_HORIZONTAL,
+    right: 0,
+    left: 0
   }
 });

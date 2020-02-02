@@ -22,25 +22,26 @@ const IntroScreen = ({ navigation }) => {
           {t("INTRO_SCREEN_WELCOME")}
         </Text.Primary>
         <Text.Secondary style={styles.paragraph}>
-          {t("INTRO_SCREEN_CONTINUE_AND_ACCEPT_TERMS_OF_USE")}
+          {t("INTRO_SCREEN_PRELUDE")}
         </Text.Secondary>
+        <Text.Tertiary style={styles.paragraph}>
+          {t("INTRO_SCREEN_CONTINUE_AND_ACCEPT_TERMS_OF_USE")}
+        </Text.Tertiary>
         <TouchableOpacity
           onPress={() =>
             WebBrowser.openBrowserAsync("http://nmf.earth/terms-of-use.pdf")
           }
         >
-          <Text.Tertiary green style={styles.paragraph}>
-            {t("INTRO_SCREEN_TERMS_OF_USE")}
-          </Text.Tertiary>
+          <Text.Tertiary green>{t("INTRO_SCREEN_TERMS_OF_USE")}</Text.Tertiary>
         </TouchableOpacity>
         <Button.Primary
           fullWidth
-          style={{ position: "absolute", bottom: 10, right: 0, left: 0 }}
+          style={styles.button}
           onPress={() => navigation.navigate("BudgetStack")}
           textType={"Primary"}
         >
           <Text.Primary white center bold>
-            {t("INTRO_SCREEN_CONTINUE")}
+            {t("INTRO_SCREEN_START_APP")}
           </Text.Primary>
         </Button.Primary>
       </View>

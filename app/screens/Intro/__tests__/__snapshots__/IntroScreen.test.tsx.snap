@@ -48,7 +48,7 @@ exports[`renders correctly ComingSoon 1`] = `
         }
       }
     >
-      Welcome to NMF!
+      Welcome
     </Text.Primary>
     <Text.Secondary
       style={
@@ -58,19 +58,23 @@ exports[`renders correctly ComingSoon 1`] = `
         }
       }
     >
-      By continuing, you accept our terms of use.
+      Are you ready to reduce your waste and transition to a sustainable life?
     </Text.Secondary>
+    <Text.Tertiary
+      style={
+        Object {
+          "paddingVertical": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      By continuing, you accept our terms of use.
+    </Text.Tertiary>
     <TouchableOpacity
       onPress={[Function]}
     >
       <Text.Tertiary
         green={true}
-        style={
-          Object {
-            "paddingVertical": 10,
-            "textAlign": "center",
-          }
-        }
       >
         Read terms of use
       </Text.Tertiary>
@@ -80,7 +84,7 @@ exports[`renders correctly ComingSoon 1`] = `
       onPress={[Function]}
       style={
         Object {
-          "bottom": 10,
+          "bottom": 14,
           "left": 0,
           "position": "absolute",
           "right": 0,
@@ -93,7 +97,7 @@ exports[`renders correctly ComingSoon 1`] = `
         center={true}
         white={true}
       >
-        Continue
+        Start !
       </Text.Primary>
     </Button.Primary>
   </View>
