@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { View, ScrollView } from "react-native";
-import Slider from "react-native-slider";
+import { View, ScrollView, Slider } from "react-native";
 import { FormattedNumber } from "react-native-globalize";
 
 import styles from "./Food.styles";
@@ -21,7 +20,7 @@ interface Props {
 }
 
 export default ({ setFoodType, foodType }: Props) => {
-  const [sliderValue, setValue] = useState(DEFAULT_SLIDER_VALUE);
+  const [sliderValue, setSliderValue] = useState(DEFAULT_SLIDER_VALUE);
 
   return (
     <React.Fragment>
@@ -50,21 +49,22 @@ export default ({ setFoodType, foodType }: Props) => {
       </View>
       <Slider
         minimumTrackTintColor={colors.linkGreen}
-        trackStyle={styles.track}
-        thumbStyle={styles.thumb}
+        maximumTrackTintColor={colors.gray}
+        thumbTintColor={colors.linkGreen}
         style={styles.slider}
         maximumValue={MAX_SLIDER_VALUE}
         minimumValue={MIN_SLIDER_VALUE}
         value={sliderValue}
-        onValueChange={setValue}
+        onSlidingComplete={setSliderValue}
       />
       <View style={styles.totalContainer}>
         <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_TOTAL")}</Text.H3>
         <Text.H1 green>
-          <FormattedNumber 
+          <FormattedNumber
             value={(sliderValue / 1000) * food[foodType]}
             maximumFractionDigits={2}
-            /> <Text.Primary>kgCO2eq</Text.Primary>
+          />
+          <Text.Primary>kgCO2eq</Text.Primary>
         </Text.H1>
       </View>
     </React.Fragment>

@@ -32,18 +32,5 @@ export default StyleSheet.create({
   slider: {
     height: 40,
     marginHorizontal: 24
-  },
-  track: {
-    height: 2,
-    borderRadius: 1
-  },
-  thumb: {
-    width: SIZE_THUMB_SLIDER,
-    height: SIZE_THUMB_SLIDER,
-    borderRadius: SIZE_THUMB_SLIDER / 2,
-    backgroundColor: colors.linkGreen,
-    shadowOffset: { width: 0, height: 2 },
-    shadowRadius: 2,
-    shadowOpacity: 0.35
   }
 });
