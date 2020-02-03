@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { View } from "react-native";
-import Slider from "react-native-slider";
+import { View, Slider } from "react-native";
 
 import styles from "./Custom.styles";
 import { Text } from "../../../../components";
@@ -16,7 +15,7 @@ interface Props {
 }
 
 export default ({ setCo2eqKilograms }: Props) => {
-  const [sliderValue, setValue] = useState(DEFAULT_SLIDER_VALUE);
+  const [sliderValue, setSliderValue] = useState(DEFAULT_SLIDER_VALUE);
   setCo2eqKilograms(sliderValue);
 
   return (
@@ -31,13 +30,13 @@ export default ({ setCo2eqKilograms }: Props) => {
       </View>
       <Slider
         minimumTrackTintColor={Colors.linkGreen}
-        trackStyle={styles.track}
-        thumbStyle={styles.thumb}
+        maximumTrackTintColor={Colors.gray}
+        thumbTintColor={Colors.linkGreen}
         style={styles.slider}
         maximumValue={MAX_SLIDER_VALUE}
         minimumValue={MIN_SLIDER_VALUE}
         value={sliderValue}
-        onValueChange={setValue}
+        onSlidingComplete={setSliderValue}
       />
     </React.Fragment>
   );
