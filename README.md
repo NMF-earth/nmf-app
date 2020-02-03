@@ -87,4 +87,4 @@ Have a look [here](https://github.com/NotMyFaultEarth/nmf-app/blob/master/contri
 
 ### 🏆 Backers
 
-A big thank you to [Christopher Gwilliams](https://github.com/encima) and the to Phelps family for their amazing contribution to the [Kickstarter](https://www.kickstarter.com/projects/pierrebresson/not-my-fault)!
+A big thank you to [Christopher Gwilliams](https://github.com/encima) and to the Phelps family for their amazing contribution to the [Kickstarter](https://www.kickstarter.com/projects/pierrebresson/not-my-fault)!
