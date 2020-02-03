@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { View, ScrollView } from "react-native";
-import Slider from "react-native-slider";
+import { View, ScrollView, Slider } from "react-native";
 import { FormattedNumber } from "react-native-globalize";
 
 import styles from "./Transport.styles";
@@ -111,8 +110,8 @@ export default ({
         : renderDistance()}
       <Slider
         minimumTrackTintColor={colors.linkGreen}
-        trackStyle={styles.track}
-        thumbStyle={styles.thumb}
+        maximumTrackTintColor={colors.gray}
+        thumbTintColor={colors.linkGreen}
         style={styles.slider}
         maximumValue={
           transportType === TransportEnum.plane
@@ -125,7 +124,7 @@ export default ({
             : MIN_SLIDER_VALUE
         }
         value={sliderValue}
-        onValueChange={onSliderValueChange}
+        onSlidingComplete={onSliderValueChange}
       />
       <View style={styles.totalContainer}>
         <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_TOTAL")}</Text.H3>
@@ -133,7 +132,7 @@ export default ({
           <FormattedNumber
             value={sliderValue * 1000 * transport[transportType]}
             maximumFractionDigits={2}
-          />{" "}
+          />
           <Text.Primary>kgCO2eq</Text.Primary>
         </Text.H1>
       </View>

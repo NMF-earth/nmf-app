@@ -1,43 +1,38 @@
 import { StyleSheet } from "react-native";
-import colors from "../../style/colors";
-
-const SIZE_THUMB_SLIDER = 20;
+import layout from "../../style/layout";
+import { PADDING_HORIZONTAL } from "../../constants/Layout";
 
 export default StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: colors.white,
-    padding: 16,
-    alignContent: "flex-start"
+    ...layout.containerWithPadding
   },
-  textContainer: {
+  personnalBudgetContainer: {
+    paddingTop: 26,
     flexDirection: "row",
     flexWrap: "wrap"
   },
-  bottomContainer: {
-    flex: 1,
-    justifyContent: "space-between"
+  infoIcon: {
+    marginRight: 6,
+    marginLeft: 6
   },
-  sliderAndButtonContainer: {
+  worldBudgetContainer: {
     flex: 1,
-    justifyContent: "space-between"
+    marginVertical: 20
+  },
+  worldExampleTitle: {
+    flex: 1,
+    marginBottom: 8
+  },
+  worldExampleItem: {
+    marginBottom: 6
+  },
+  buttonContainer: {
+    position: "absolute",
+    bottom: 20,
+    right: PADDING_HORIZONTAL,
+    left: PADDING_HORIZONTAL
   },
   slider: {
-    height: 40,
-    marginTop: 14,
-    marginHorizontal: 24
-  },
-  track: {
-    height: 2,
-    borderRadius: 1
-  },
-  thumb: {
-    width: SIZE_THUMB_SLIDER,
-    height: SIZE_THUMB_SLIDER,
-    borderRadius: SIZE_THUMB_SLIDER / 2,
-    backgroundColor: colors.linkGreen,
-    shadowOffset: { width: 0, height: 2 },
-    shadowRadius: 2,
-    shadowOpacity: 0.35
+    marginTop: 14
   }
 });
