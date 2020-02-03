@@ -1,10 +1,10 @@
 import { StyleSheet } from "react-native";
-import layout from "../../style/layout";
+import { Layout } from "../../style";
 import { PADDING_HORIZONTAL } from "../../constants/Layout";
 
 export default StyleSheet.create({
   container: {
-    ...layout.containerWithPadding
+    ...Layout.containerWithPadding
   },
   personnalBudgetContainer: {
     paddingTop: 26,

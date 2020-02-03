@@ -1,11 +1,22 @@
-import { createAppContainer, createSwitchNavigator } from "react-navigation";
+import { createAppContainer } from "react-navigation";
+import { createStackNavigator } from "react-navigation-stack";
 
-import MainTabNavigator from "./MainTabNavigator";
+import RootStack from "./RootNavigator";
+import ModalScreens from "./ModalScreens";
 
 export default createAppContainer(
-  createSwitchNavigator({
-    // You could add another route here for authentication.
-    // Read more at https://reactnavigation.org/docs/en/auth-flow.html
-    Main: MainTabNavigator,
-  })
+  createStackNavigator(
+    {
+      Root: {
+        screen: RootStack,
+        navigationOptions: {
+          header: null
+        }
+      },
+      ...ModalScreens
+    },
+    {
+      mode: "modal"
+    }
+  )
 );

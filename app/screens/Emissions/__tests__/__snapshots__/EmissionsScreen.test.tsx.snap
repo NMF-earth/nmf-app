@@ -58,6 +58,7 @@ Array [
   <AddEmissionAndMitigateButtons
     navigation={
       Object {
+        "navigate": [Function],
         "push": [Function],
       }
     }

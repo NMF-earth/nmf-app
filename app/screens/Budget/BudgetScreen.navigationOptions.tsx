@@ -4,7 +4,7 @@ import { Text } from "../../components";
 import { Ionicons } from "@expo/vector-icons";
 import { PADDING_HORIZONTAL } from "../../constants/Layout";
 import { t } from "../../utils";
-import colors from "../../style/colors";
+import { Colors } from "../../style";
 
 const navigationOptions = () => ({
   headerStyle: {
@@ -21,7 +21,7 @@ const navigationOptions = () => ({
       <Ionicons
         size={26}
         style={{ marginRight: PADDING_HORIZONTAL }}
-        color={colors.black}
+        color={Colors.black}
         name={"md-share"}
       />
     </TouchableOpacity>

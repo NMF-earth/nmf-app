@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly ComingSoon 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "justifyContent": "space-between",
+      "paddingHorizontal": 14,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "justifyContent": "center",
+        "marginTop": 50,
+      }
+    }
+  >
+    <Image
+      resizeMode="contain"
+      source={1}
+      style={
+        Object {
+          "width": "60%",
+        }
+      }
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "marginTop": 22,
+      }
+    }
+  >
+    <Text.Primary
+      bold={true}
+      style={
+        Object {
+          "paddingVertical": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      Welcome
+    </Text.Primary>
+    <Text.Secondary
+      style={
+        Object {
+          "paddingVertical": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      Are you ready to reduce your waste and transition to a sustainable life?
+    </Text.Secondary>
+    <Text.Tertiary
+      style={
+        Object {
+          "paddingVertical": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      By continuing, you accept our terms of use.
+    </Text.Tertiary>
+    <TouchableOpacity
+      onPress={[Function]}
+    >
+      <Text.Tertiary
+        green={true}
+      >
+        Read terms of use
+      </Text.Tertiary>
+    </TouchableOpacity>
+    <Button.Primary
+      fullWidth={true}
+      onPress={[Function]}
+      style={
+        Object {
+          "bottom": 14,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+        }
+      }
+      textType="Primary"
+    >
+      <Text.Primary
+        bold={true}
+        center={true}
+        white={true}
+      >
+        Start !
+      </Text.Primary>
+    </Button.Primary>
+  </View>
+</View>
+`;

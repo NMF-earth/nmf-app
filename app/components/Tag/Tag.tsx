@@ -3,7 +3,7 @@ import { TouchableOpacity } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import Text from "../Text";
 import styles from "./Tag.styles";
-import colors from "../../style/colors";
+import { Colors } from "../../style";
 
 interface Props {
   selected: boolean;
@@ -26,7 +26,7 @@ const Tag = (props: Props) => {
         name={icon}
         size={30}
         style={styles.icon}
-        color={selected ? colors.linkGreen : colors.darkLink70}
+        color={selected ? Colors.linkGreen : Colors.darkLink70}
       />
     );
   }

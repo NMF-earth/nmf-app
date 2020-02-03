@@ -1,11 +1,10 @@
 import { StyleSheet } from "react-native";
-import { fontWeight, fontSize } from "../../../style/font";
-import colors from "../../../style/colors";
+import { Font, Colors } from "../../../style";
 
 export default StyleSheet.create({
   default: {
-    color: colors.darkLink,
-    fontFamily: fontWeight.Medium,
-    fontSize: fontSize.Primary
+    color: Colors.darkLink,
+    fontFamily: Font.FontWeight.Medium,
+    fontSize: Font.FontSize.Primary
   }
 });

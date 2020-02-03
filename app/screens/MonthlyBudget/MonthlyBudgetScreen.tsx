@@ -4,7 +4,7 @@ import { Ionicons } from "@expo/vector-icons";
 import * as WebBrowser from "expo-web-browser";
 
 import { Text, Button } from "../../components";
-import colors from "../../style/colors";
+import { Colors } from "../../style";
 import styles from "./MonthlyBudgetScreen.styles";
 import navigationOptions from "./MonthlyBudgetScreen.navigationOptions";
 import { t } from "../../utils";
@@ -31,9 +31,9 @@ const MonthlyBudgetScreen = ({ navigation }) => {
           <Text.Primary lightGray>{Math.round(value) + " kg"}</Text.Primary>
         </View>
         <Slider
-          minimumTrackTintColor={colors.linkGreen}
-          maximumTrackTintColor={colors.gray}
-          thumbTintColor={colors.linkGreen}
+          minimumTrackTintColor={Colors.linkGreen}
+          maximumTrackTintColor={Colors.gray}
+          thumbTintColor={Colors.linkGreen}
           style={styles.slider}
           maximumValue={MAX_MONTHLY_CARBON_BUDGET}
           minimumValue={MIN_MONTHLY_CARBON_BUDGET}
@@ -47,7 +47,7 @@ const MonthlyBudgetScreen = ({ navigation }) => {
               <Ionicons
                 name="md-information-circle"
                 size={26}
-                color={colors.linkGreen}
+                color={Colors.linkGreen}
                 onPress={onPressInfo}
               />
             </Text.Primary>

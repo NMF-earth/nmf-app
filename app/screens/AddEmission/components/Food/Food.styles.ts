@@ -1,9 +1,7 @@
 import { StyleSheet } from "react-native";
-import colors from "../../../../style/colors";
-import layout from "../../../../style/layout";
+import { Layout } from "../../../../style";
 import { PADDING_HORIZONTAL } from "../../../../constants/Layout";
 
-const SIZE_THUMB_SLIDER = 20;
 const VERTICAL_PADDING_BETWEEN_ITEMS = 12;
 const separationContainers = {
   paddingVertical: VERTICAL_PADDING_BETWEEN_ITEMS
@@ -12,18 +10,18 @@ const separationContainers = {
 export default StyleSheet.create({
   typeContainer: {
     paddingBottom: VERTICAL_PADDING_BETWEEN_ITEMS,
-    ...layout.containerWithPadding
+    ...Layout.containerWithPadding
   },
   tagContainer: {
     paddingLeft: PADDING_HORIZONTAL,
     paddingBottom: VERTICAL_PADDING_BETWEEN_ITEMS
   },
   durationContainer: {
-    ...layout.containerWithPadding,
+    ...Layout.containerWithPadding,
     ...separationContainers
   },
   totalContainer: {
-    ...layout.containerWithPadding,
+    ...Layout.containerWithPadding,
     ...separationContainers
   },
   miniHeader: {

@@ -1,6 +1,5 @@
 import { StyleSheet } from "react-native";
-import Layout from "../../../../style/layout";
-import colors from "../../../../style/colors";
+import { Colors, Layout } from "../../../../style";
 import { platform } from "../../../../utils";
 
 const shadow = {
@@ -18,7 +17,7 @@ export default StyleSheet.create({
   container: {
     ...Layout.containerWithPadding,
     ...shadow,
-    backgroundColor: colors.white,
+    backgroundColor: Colors.white,
     paddingBottom: 14,
     borderRadius: 14,
     marginBottom: 20,

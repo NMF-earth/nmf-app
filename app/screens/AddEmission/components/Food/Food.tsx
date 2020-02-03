@@ -4,7 +4,7 @@ import { FormattedNumber } from "react-native-globalize";
 
 import styles from "./Food.styles";
 import { Text, Tag } from "../../../../components";
-import colors from "../../../../style/colors";
+import { Colors } from "../../../../style";
 import { t } from "../../../../utils";
 import { FoodEnum, food } from "carbon-footprint";
 
@@ -48,9 +48,9 @@ export default ({ setFoodType, foodType }: Props) => {
         </Text.Primary>
       </View>
       <Slider
-        minimumTrackTintColor={colors.linkGreen}
-        maximumTrackTintColor={colors.gray}
-        thumbTintColor={colors.linkGreen}
+        minimumTrackTintColor={Colors.linkGreen}
+        maximumTrackTintColor={Colors.gray}
+        thumbTintColor={Colors.linkGreen}
         style={styles.slider}
         maximumValue={MAX_SLIDER_VALUE}
         minimumValue={MIN_SLIDER_VALUE}

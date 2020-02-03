@@ -1,12 +1,12 @@
 import { StyleSheet } from "react-native";
-import layout from "../../../../style/layout";
+import { Layout } from "../../../../style";
 
 const VERTICAL_PADDING_BETWEEN_ITEMS = 12;
 
 export default StyleSheet.create({
   container: {
     paddingBottom: VERTICAL_PADDING_BETWEEN_ITEMS,
-    ...layout.containerWithPadding
+    ...Layout.containerWithPadding
   },
   header: {
     paddingBottom: VERTICAL_PADDING_BETWEEN_ITEMS

@@ -4,7 +4,7 @@ import { FormattedNumber } from "react-native-globalize";
 
 import styles from "./Transport.styles";
 import { Text, Tag } from "../../../../components";
-import colors from "../../../../style/colors";
+import { Colors } from "../../../../style";
 import { t, time } from "../../../../utils";
 import { transport, TransportEnum } from "carbon-footprint";
 import { TranslationKeys } from "../../translations";
@@ -109,9 +109,9 @@ export default ({
         ? renderDuration()
         : renderDistance()}
       <Slider
-        minimumTrackTintColor={colors.linkGreen}
-        maximumTrackTintColor={colors.gray}
-        thumbTintColor={colors.linkGreen}
+        minimumTrackTintColor={Colors.linkGreen}
+        maximumTrackTintColor={Colors.gray}
+        thumbTintColor={Colors.linkGreen}
         style={styles.slider}
         maximumValue={
           transportType === TransportEnum.plane

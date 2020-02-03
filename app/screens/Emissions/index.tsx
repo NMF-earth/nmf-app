@@ -11,6 +11,7 @@ interface Props {
   emissionsMitigated: Array<EmissionListItemProps>;
   navigation: {
     push: (screen: string) => void;
+    navigate: (screen: string) => void;
   };
 }
 

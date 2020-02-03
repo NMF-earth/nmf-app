@@ -2,7 +2,7 @@ import React from "react";
 import { View } from "react-native";
 import styles from "./Legend.styles";
 import LegendItem from "../LegendItem";
-import colors from "../../../../../../style/colors";
+import { Colors } from "../../../../../../style";
 import { t } from "../../../../../../utils";
 
 interface Prop {
@@ -22,22 +22,22 @@ const Legend = ({
     {
       name: t("BUDGET_SCREEN_PROGRESS_CHART_LEGEND_ITEM_TOTAL"),
       value: totalEmissions,
-      color: colors.apricot
+      color: Colors.apricot
     },
     {
       name: t("BUDGET_SCREEN_PROGRESS_CHART_LEGEND_ITEM_TRANSPORT"),
       value: transportEmissions,
-      color: colors.mango
+      color: Colors.mango
     },
     {
       name: t("BUDGET_SCREEN_PROGRESS_CHART_LEGEND_ITEM_FOOD"),
       value: foodEmissions,
-      color: colors.linkGreen
+      color: Colors.linkGreen
     },
     {
       name: t("BUDGET_SCREEN_PROGRESS_CHART_LEGEND_ITEM_OTHER"),
       value: otherEmissions,
-      color: colors.darkLink70
+      color: Colors.darkLink70
     }
   ];
   return (

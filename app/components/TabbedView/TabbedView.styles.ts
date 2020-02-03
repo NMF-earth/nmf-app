@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import colors from "../../style/colors";
+import { Colors } from "../../style";
 
 export default StyleSheet.create({
   tabContainer: {
@@ -7,12 +7,12 @@ export default StyleSheet.create({
   },
   tabItem: {
     flex: 1,
-    borderBottomColor: colors.gray,
+    borderBottomColor: Colors.gray,
     borderBottomWidth: 4
   },
   tabItemSelected: {
     flex: 1,
-    borderBottomColor: colors.linkGreen,
+    borderBottomColor: Colors.linkGreen,
     borderBottomWidth: 4
   },
   buttonContainer: {
