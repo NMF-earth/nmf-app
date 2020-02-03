@@ -50,11 +50,6 @@ export default class App extends React.Component<Props, State> {
     Sentry.captureException(error);
   }
 
-  static getDerivedStateFromError(error) {
-    // Update state so the next render will show the fallback UI.
-    return { hasError: true };
-  }
-
   render() {
     if (!this.state.isLoadingComplete && !this.props.skipLoadingScreen) {
       return (
@@ -69,12 +64,11 @@ export default class App extends React.Component<Props, State> {
         />
       );
     } else {
-      console.log(locale);
       return (
         <View style={styles.container}>
           {Platform.OS === "ios" && <StatusBar barStyle="default" />}
           <Provider store={store}>
-            <FormattedProvider locale={"en"}>
+            <FormattedProvider locale={locale}>
               <AppNavigator/>
             </FormattedProvider>
           </Provider>

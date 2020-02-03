@@ -1,7 +1,7 @@
 {
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "start": "expo start -c",
+    "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
@@ -36,7 +36,7 @@
     "expo-asset": "8.0.0",
     "expo-constants": "8.0.0",
     "expo-font": "8.0.0",
-    "expo-localization": "~8.0.0",
+    "expo-localization": "8.0.0",
     "expo-web-browser": "8.0.0",
     "front-matter": "3.0.2",
     "glob": "7.1.6",
@@ -91,7 +91,6 @@
     "eslint-plugin-jest": "23.1.1",
     "eslint-plugin-react": "7.17.0",
     "jest-expo": "36.0.1",
-    "react-native-screens": "^2.0.0-alpha.32",
     "react-native-storybook-loader": "1.8.1"
   },
   "husky": {

@@ -7,7 +7,7 @@ import {
   Text,
 } from "../../components";
 import { NavigationState } from "react-navigation";
-import { emissions } from "../../ducks";
+import { selectors } from "./ducks";
 
 interface Props {
   navigation: {
@@ -15,11 +15,9 @@ interface Props {
   };
 }
 
-const EmissionItemScreen = ({ navigation }: Props) => {
-  
-  const em = useSelector(state => emissions.selectors.getEmissionById(state, navigation.state.params.item.id));
-
-
+const EmissionItemScreen = () => {
+  // TODO handle when ID is empty
+  const em = useSelector(selectors.getEmissionItemById);
   return (
 
     <ScrollView style={styles.container}>

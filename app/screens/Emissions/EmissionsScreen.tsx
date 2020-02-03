@@ -15,8 +15,7 @@ import { selectors } from "./ducks";
 
 interface Props {
   navigation: {
-    push: (screen: string) => void;
-    navigate: (screen: string, params: NavigationParams) => void;
+    push: (screen: string, params?: NavigationParams) => void;
   };
 }
 
@@ -41,9 +40,8 @@ const EmissionsScreen = ({ navigation }: Props) => {
                   renderItem={({ item }: { item: EmissionListItemProps }) => (
                     <EmissionListItem
                       id={item.id}
-                      key={item.id}
                       onPress={() => {
-                        navigation.navigate("EmissionItem", { item })
+                        navigation.push("EmissionItem", { id: item.id })
                       }}
                       title={item.title}
                       co2value={item.co2value}
