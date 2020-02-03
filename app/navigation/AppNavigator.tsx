@@ -1,15 +1,22 @@
-import { createAppContainer, createSwitchNavigator } from "react-navigation";
-import MainTabNavigator from "./MainTabNavigator";
-import IntroScreen from "../screens/Intro";
+import { createAppContainer } from "react-navigation";
+import { createStackNavigator } from "react-navigation-stack";
+
+import RootStack from "./RootNavigator";
+import ModalScreens from "./ModalScreens";
 
 export default createAppContainer(
-  createSwitchNavigator(
+  createStackNavigator(
     {
-      Intro: IntroScreen,
-      Main: MainTabNavigator
+      Root: {
+        screen: RootStack,
+        navigationOptions: {
+          header: null
+        }
+      },
+      ...ModalScreens
     },
     {
-      initialRouteName: "Intro"
+      mode: "modal"
     }
   )
 );

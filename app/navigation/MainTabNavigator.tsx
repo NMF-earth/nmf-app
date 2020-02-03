@@ -6,7 +6,6 @@ import TabBarIcon from "../components/TabBarIcon";
 import { Text } from "../components";
 import StorybookScreen from "../../storybook";
 
-import ComingSoonScreen from "../screens/ComingSoon";
 import ActScreen from "../screens/Act";
 import ActDetailScreen from "../screens/ActDetail";
 import BudgetScreen from "../screens/Budget";
@@ -41,7 +40,6 @@ BudgetStack.navigationOptions = {
 
 const EmissionsStack = createStackNavigator({
   Emissions: EmissionsScreen,
-  ComingSoon: ComingSoonScreen,
   AddEmission: AddEmissionScreen
 });
 
@@ -101,7 +99,7 @@ SettingsStack.navigationOptions = {
   )
 };
 
-const tabNavigator = createBottomTabNavigator(
+const MainTabNavigator = createBottomTabNavigator(
   {
     BudgetStack,
     EmissionsStack,
@@ -119,4 +117,4 @@ const tabNavigator = createBottomTabNavigator(
   }
 );
 
-export default tabNavigator;
+export default MainTabNavigator;

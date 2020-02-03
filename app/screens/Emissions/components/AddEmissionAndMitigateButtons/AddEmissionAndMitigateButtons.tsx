@@ -7,6 +7,7 @@ import { Text, Button } from "../../../../components";
 interface Props {
   navigation: {
     push: (screen: string) => void;
+    navigate: (screen: string) => void;
   };
 }
 
@@ -16,7 +17,7 @@ const AddEmissionAndMitigateButtons = ({ navigation }: Props) => (
       style={styles.buttonLeft}
       black
       onPress={() => {
-        navigation.push("ComingSoon");
+        navigation.navigate("ComingSoon");
       }}
       textType={"Primary"}
     >

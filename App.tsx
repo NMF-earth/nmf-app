@@ -23,9 +23,9 @@ const secret =
 
 /* TODO: change secret.dsn to Constants.manifest.extra.sentryPublicDsn */
 //Sentry.init({
-  //dsn: secret.dsn,
-  //enableInExpoDevelopment: false,
-  //debug: true
+//dsn: secret.dsn,
+//enableInExpoDevelopment: false,
+//debug: true
 //});
 
 /* TODO: set Constants.manifest.revisionId with expo */
@@ -69,7 +69,7 @@ export default class App extends React.Component<Props, State> {
           {Platform.OS === "ios" && <StatusBar barStyle="default" />}
           <Provider store={store}>
             <FormattedProvider locale={locale}>
-              <AppNavigator/>
+              <AppNavigator />
             </FormattedProvider>
           </Provider>
         </View>

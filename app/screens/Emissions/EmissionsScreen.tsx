@@ -15,6 +15,7 @@ import { selectors } from "./ducks";
 interface Props {
   navigation: {
     push: (screen: string) => void;
+    navigate: (screen: string) => void;
   };
 }
 

@@ -8,6 +8,9 @@ const props = {
   navigation: {
     push: () => {
       // do nothing.
+    },
+    navigate: () => {
+      // do nothing.
     }
   }
 };

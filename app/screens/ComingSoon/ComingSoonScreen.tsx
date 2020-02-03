@@ -4,7 +4,7 @@ import { ScrollView, View, Image } from "react-native";
 import { Text, SocialMedia } from "../../components";
 import ImagesAssets from "../../constants/ImagesAssets";
 import styles from "./ComingSoonScreen.styles";
-import { t } from "../../utils";
+import { t, platform } from "../../utils";
 import navigationOptions from "./ComingSoonScreen.navigationOptions";
 
 interface Props {
@@ -34,6 +34,6 @@ const ComingSoon = () => {
   );
 };
 
-ComingSoon.navigationOptions = navigationOptions;
+ComingSoon.navigationOptions = platform.isAndroid ? null : navigationOptions;
 
 export default ComingSoon;

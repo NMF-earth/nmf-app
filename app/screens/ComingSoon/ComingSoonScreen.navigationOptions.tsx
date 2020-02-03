@@ -1,15 +1,24 @@
 import React from "react";
-import { Text } from "../../components";
-import { t } from "../../utils";
+import { Header } from "react-navigation-stack";
+import { Ionicons } from "@expo/vector-icons";
 import { Colors } from "../../style";
+import { PADDING_HORIZONTAL } from "../../constants/Layout";
 
-const navigationOptions = () => ({
+const navigationOptions = ({ navigation }) => ({
   headerStyle: {
-    borderBottomWidth: 0
+    borderBottomWidth: 0,
+    marginRight: PADDING_HORIZONTAL
   },
-  headerTintColor: Colors.darkLink,
-  headerBackTitle: null,
-  headerTitle: () => <Text.H1>{t("COMING_SOON_SCREEN_TITLE")}</Text.H1>
+  header: props => <Header {...props} />,
+  headerLeft: null,
+  headerRight: (
+    <Ionicons
+      name="md-close"
+      size={32}
+      color={Colors.darkLink}
+      onPress={() => navigation.goBack()}
+    />
+  )
 });
 
 export default navigationOptions;
