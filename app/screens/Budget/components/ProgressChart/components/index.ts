@@ -1,5 +1,5 @@
 import Legend from "./Legend";
 import Chart from "./Chart";
-import MonthlyBudget from "./MonthlyBudget";
+import PeriodBudget from "./PeriodBudget";
 
-export { Chart, Legend, MonthlyBudget };
+export { Chart, Legend, PeriodBudget };

@@ -8,8 +8,8 @@ exports[`ProgressChart renders correctly 1`] = `
       "borderRadius": 14,
       "elevation": 4,
       "flex": 1,
-      "marginBottom": 20,
       "marginHorizontal": 0,
+      "marginVertical": 24,
       "paddingBottom": 14,
       "paddingHorizontal": 14,
       "paddingTop": 10,
@@ -23,6 +23,19 @@ exports[`ProgressChart renders correctly 1`] = `
     }
   }
 >
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "marginVertical": 4,
+      }
+    }
+  >
+    <Text.H3>
+      This year
+    </Text.H3>
+  </View>
   <Chart
     foodEmissionsPercentage={0.2}
     totalEmissionsPercentage={0.9}
@@ -34,8 +47,9 @@ exports[`ProgressChart renders correctly 1`] = `
     totalEmissions={900}
     transportEmissions={600}
   />
-  <Chart
-    monthlyEmissionsBudget={1000}
+  <PeriodBudget
+    period="this year"
+    periodEmissionsBudget={12000}
   />
 </View>
 `;

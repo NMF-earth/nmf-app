@@ -2,7 +2,7 @@ import React from "react";
 import { ScrollView } from "react-native";
 import styles from "./BudgetScreen.styles";
 import { Text, Button } from "../../components";
-import { MonthSelector, ProgressChart } from "./components";
+import { NumberOfDaysVegetarian, ProgressChart } from "./components";
 import { t } from "../../utils";
 
 const foodEmissions = 200;
@@ -20,8 +20,8 @@ interface Props {
 const BudgetScreen = (props: Props) => {
   return (
     <ScrollView style={styles.container}>
-      <MonthSelector />
       <ProgressChart
+        isMonth
         totalEmissions={totalEmissions}
         foodEmissions={foodEmissions}
         transportEmissions={transportEmissions}
@@ -40,6 +40,14 @@ const BudgetScreen = (props: Props) => {
           {t("BUDGET_SCREEN_SET_MONTHLY_BUDGET")}
         </Text.Primary>
       </Button.Primary>
+      <ProgressChart
+        totalEmissions={totalEmissions}
+        foodEmissions={foodEmissions}
+        transportEmissions={transportEmissions}
+        otherEmissions={otherEmissions}
+        monthlyEmissionsBudget={monthlyEmissionsBudget}
+      />
+      <NumberOfDaysVegetarian />
     </ScrollView>
   );
 };
