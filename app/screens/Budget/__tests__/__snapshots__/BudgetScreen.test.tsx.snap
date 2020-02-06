@@ -10,9 +10,9 @@ exports[`BudgetScreen renders correctly 1`] = `
   }
 >
   <View>
-    <MonthSelector />
     <ProgressChart
       foodEmissions={200}
+      isMonth={true}
       monthlyEmissionsBudget={1000}
       otherEmissions={0}
       totalEmissions={800}
@@ -23,8 +23,7 @@ exports[`BudgetScreen renders correctly 1`] = `
       onPress={[Function]}
       style={
         Object {
-          "marginBottom": 14,
-          "marginTop": 6,
+          "marginVertical": 6,
         }
       }
       textType="Primary"
@@ -37,6 +36,14 @@ exports[`BudgetScreen renders correctly 1`] = `
         Set monthly budget
       </Text.Primary>
     </Button.Primary>
+    <ProgressChart
+      foodEmissions={200}
+      monthlyEmissionsBudget={1000}
+      otherEmissions={0}
+      totalEmissions={800}
+      transportEmissions={600}
+    />
+    <NumberOfDaysVegetarian />
   </View>
 </RCTScrollView>
 `;

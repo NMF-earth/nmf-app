@@ -8,19 +8,30 @@ import { Colors } from "../../../../style";
 import { t } from "../../../../utils";
 import { FoodEnum, food } from "carbon-footprint";
 
-const DEFAULT_SLIDER_VALUE = 200;
 const MIN_SLIDER_VALUE = 20;
 const MAX_SLIDER_VALUE = 500;
 
 interface Props {
+  defaultValueSlider: number;
   foodType: string;
   setFoodType: (arg0: FoodEnum) => void;
-  setCo2eqKilograms: (arg0: number) => void;
-  setQuantityKilograms: (arg0: number) => void;
+  setQuantity: (arg0: number) => void;
 }
 
-export default ({ setFoodType, foodType }: Props) => {
-  const [sliderValue, setSliderValue] = useState(DEFAULT_SLIDER_VALUE);
+export default ({
+  setFoodType,
+  foodType,
+  setQuantity,
+  defaultValueSlider
+}: Props) => {
+  const [sliderValue, setSliderValue] = useState(defaultValueSlider * 1000);
+
+  const onSliderValueChange = (value: number) => {
+    const val = Math.round(value);
+    setSliderValue(val);
+    /* since we use kilograms as reference (and not grams), we need to divide by 1000 */
+    setQuantity(val / 1000);
+  };
 
   return (
     <React.Fragment>
@@ -55,7 +66,7 @@ export default ({ setFoodType, foodType }: Props) => {
         maximumValue={MAX_SLIDER_VALUE}
         minimumValue={MIN_SLIDER_VALUE}
         value={sliderValue}
-        onSlidingComplete={setSliderValue}
+        onSlidingComplete={onSliderValueChange}
       />
       <View style={styles.totalContainer}>
         <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_TOTAL")}</Text.H3>
@@ -63,7 +74,7 @@ export default ({ setFoodType, foodType }: Props) => {
           <FormattedNumber
             value={(sliderValue / 1000) * food[foodType]}
             maximumFractionDigits={2}
-          />
+          />{" "}
           <Text.Primary>kgCO2eq</Text.Primary>
         </Text.H1>
       </View>

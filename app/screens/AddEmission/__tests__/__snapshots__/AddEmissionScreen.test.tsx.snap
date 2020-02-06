@@ -186,6 +186,7 @@ exports[`AddEmissionScreen renders correctly 1`] = `
             maximumFractionDigits={2}
             value={38.550000000000004}
           />
+           
           <Text.Primary>
             kgCO2eq
           </Text.Primary>

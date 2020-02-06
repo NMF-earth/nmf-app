@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PeriodBudget renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "paddingBottom": 16,
+      "paddingTop": 12,
+    }
+  }
+>
+  <Text.Secondary
+    bold={true}
+    center={true}
+  >
+    Budget for 
+    this month
+     : 
+    <Text.Secondary
+      center={true}
+      lightGray={true}
+    >
+      760 kg
+    </Text.Secondary>
+  </Text.Secondary>
+</View>
+`;
+
+exports[`PeriodBudget renders correctly if tons 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "paddingBottom": 16,
+      "paddingTop": 12,
+    }
+  }
+>
+  <Text.Secondary
+    bold={true}
+    center={true}
+  >
+    Budget for 
+    this month
+     : 
+    <Text.Secondary
+      center={true}
+      lightGray={true}
+    >
+      760 kg
+    </Text.Secondary>
+  </Text.Secondary>
+</View>
+`;

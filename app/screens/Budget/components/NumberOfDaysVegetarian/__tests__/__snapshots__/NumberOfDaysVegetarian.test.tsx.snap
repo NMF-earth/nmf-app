@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NumberOfDaysVegetarian renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "marginBottom": 26,
+      "marginTop": 10,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Text.H3
+      green={true}
+    >
+      45 days
+    </Text.H3>
+    <Text.H3>
+       without meat!
+    </Text.H3>
+  </View>
+  <Text.H3>
+    Good job 🎉
+  </Text.H3>
+</View>
+`;

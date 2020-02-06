@@ -6,16 +6,16 @@ import { Text } from "../../../../components";
 import { Colors } from "../../../../style";
 import { t } from "../../../../utils";
 
-const DEFAULT_SLIDER_VALUE = 800;
 const MIN_SLIDER_VALUE = 1;
 const MAX_SLIDER_VALUE = 5000;
 
 interface Props {
+  defaultValueSlider: number;
   setCo2eqKilograms: (arg0: number) => void;
 }
 
-export default ({ setCo2eqKilograms }: Props) => {
-  const [sliderValue, setSliderValue] = useState(DEFAULT_SLIDER_VALUE);
+export default ({ setCo2eqKilograms, defaultValueSlider }: Props) => {
+  const [sliderValue, setSliderValue] = useState(defaultValueSlider);
   setCo2eqKilograms(sliderValue);
 
   return (
