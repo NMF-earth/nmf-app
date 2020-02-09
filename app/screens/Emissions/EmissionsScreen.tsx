@@ -1,5 +1,5 @@
 import React from "react";
-import { FlatList, SafeAreaView } from "react-native";
+import { FlatList, SafeAreaView, View } from "react-native";
 import { useSelector } from "react-redux";
 import { t } from "../../utils";
 import styles from "./EmissionsScreen.styles";
@@ -32,6 +32,7 @@ const EmissionsScreen = ({ navigation }: Props) => {
               title: t("EMISSIONS_SCREEN_TO_OFFSET"),
               component: (
                 <FlatList<EmissionListItemProps>
+                  ListFooterComponent={<View style={styles.separator} />}
                   style={styles.listContainer}
                   data={emissionsToMitigate}
                   keyExtractor={item => item.id}

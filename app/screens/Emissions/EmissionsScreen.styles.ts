@@ -32,5 +32,8 @@ export default StyleSheet.create({
   },
   textNoEmission: {
     paddingVertical: 20
+  },
+  separator: {
+    height: 100
   }
 });
