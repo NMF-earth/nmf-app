@@ -13,6 +13,24 @@ const DEFAULT_MONTHLY_CARBON_BUDGET = 500;
 const MIN_MONTHLY_CARBON_BUDGET = 0;
 const MAX_MONTHLY_CARBON_BUDGET = 1000;
 
+const translationMontlyBudgetCountries = [
+  "MONTHLY_BUDGET_LUXEMBOURG",
+  "MONTHLY_BUDGET_UNITED_STATES",
+  "MONTHLY_BUDGET_JAPAN",
+  "MONTHLY_BUDGET_SWEDEN",
+  "MONTHLY_BUDGET_FRANCE",
+  "MONTHLY_BUDGET_CHINA",
+  "MONTHLY_BUDGET_BRAZIL",
+  "MONTHLY_BUDGET_INDIA",
+  "MONTHLY_BUDGET_ETHIOPIA"
+];
+
+const CountryExample = translation => (
+  <Text.Secondary style={styles.worldExampleItem}>
+    {t(translation)}
+  </Text.Secondary>
+);
+
 const MonthlyBudgetScreen = ({ navigation }) => {
   const [value, setValue] = useState(DEFAULT_MONTHLY_CARBON_BUDGET);
   const onPressInfo = () =>
@@ -52,32 +70,12 @@ const MonthlyBudgetScreen = ({ navigation }) => {
               />
             </Text.Primary>
           </View>
-          <Text.Secondary style={styles.worldExampleItem}>
-            {t("MONTHLY_BUDGET_LUXEMBOURG")}
-          </Text.Secondary>
-          <Text.Secondary style={styles.worldExampleItem}>
-            {t("MONTHLY_BUDGET_UNITED_STATES")}
-          </Text.Secondary>
-          <Text.Secondary style={styles.worldExampleItem}>
-            {t("MONTHLY_BUDGET_JAPAN")}
-          </Text.Secondary>
-          <Text.Secondary style={styles.worldExampleItem}>
-            {t("MONTHLY_BUDGET_SWEDEN")}
-          </Text.Secondary>
-          <Text.Secondary style={styles.worldExampleItem}>
-            {t("MONTHLY_BUDGET_FRANCE")}
-          </Text.Secondary>
-          <Text.Secondary style={styles.worldExampleItem}>
-            {t("MONTHLY_BUDGET_CHINA")}
-          </Text.Secondary>
-          <Text.Secondary style={styles.worldExampleItem}>
-            {t("MONTHLY_BUDGET_BRAZIL")}
-          </Text.Secondary>
-          <Text.Secondary style={styles.worldExampleItem}>
-            {t("MONTHLY_BUDGET_INDIA")}
-          </Text.Secondary>
-          <Text.Secondary style={styles.worldExampleItem}>
-            {t("MONTHLY_BUDGET_ETHIOPIA")}
+          {translationMontlyBudgetCountries.map(CountryExample)}
+          <Text.Secondary
+            bold
+            style={[styles.worldExampleItem, styles.parisAgreement]}
+          >
+            {t("MONTHLY_BUDGET_PARIS_AGREEMENT")}
           </Text.Secondary>
         </View>
       </ScrollView>

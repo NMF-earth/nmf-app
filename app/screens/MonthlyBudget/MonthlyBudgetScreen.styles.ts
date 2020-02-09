@@ -34,5 +34,9 @@ export default StyleSheet.create({
   },
   slider: {
     marginTop: 14
+  },
+  parisAgreement: {
+    marginTop: 10,
+    marginBottom: 80
   }
 });

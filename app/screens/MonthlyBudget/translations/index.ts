@@ -16,6 +16,7 @@ interface TranslationKeys {
   MONTHLY_BUDGET_BRAZIL: string;
   MONTHLY_BUDGET_INDIA: string;
   MONTHLY_BUDGET_ETHIOPIA: string;
+  MONTHLY_BUDGET_PARIS_AGREEMENT: string;
 }
 
 export { en, fr, de, TranslationKeys };

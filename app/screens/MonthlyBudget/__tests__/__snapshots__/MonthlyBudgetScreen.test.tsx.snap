@@ -76,7 +76,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
           <Text.Primary
             bold={true}
           >
-            CO2 emissions per capita per month 
+            Examples of CO2 emissions per capita per month 
             <Ionicons
               color="#4BB377"
               name="md-information-circle"
@@ -165,6 +165,22 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
           }
         >
           Ethiopia : 8.3 kg
+        </Text.Secondary>
+        <Text.Secondary
+          bold={true}
+          style={
+            Array [
+              Object {
+                "marginBottom": 6,
+              },
+              Object {
+                "marginBottom": 80,
+                "marginTop": 10,
+              },
+            ]
+          }
+        >
+          To respect Paris agreement and keep the temperature rise below 2 degrees : 166 kg
         </Text.Secondary>
       </View>
     </View>
