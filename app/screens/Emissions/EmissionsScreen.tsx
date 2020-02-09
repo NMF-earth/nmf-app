@@ -22,10 +22,6 @@ interface Props {
 const EmissionsScreen = ({ navigation }: Props) => {
   const emissionsToMitigate = useSelector(selectors.getEmissionsToMitigate);
   const emissionsMitigated = useSelector(selectors.getEmissionsMitigated);
-  console.log(
-    "TCL: EmissionsScreen -> emissionsToMitigate",
-    emissionsToMitigate
-  );
 
   return (
     <React.Fragment>

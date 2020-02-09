@@ -3,6 +3,11 @@ import { PADDING_HORIZONTAL } from "../../constants/Layout";
 import { Layout } from "../../style";
 
 export default StyleSheet.create({
+  welcomeView: {
+    // backgroundColor: "green",
+    flex: 1,
+    justifyContent: "flex-end"
+  },
   container: {
     ...Layout.containerWithPadding,
     justifyContent: "space-between"
@@ -11,15 +16,15 @@ export default StyleSheet.create({
     width: "60%"
   },
   imageView: {
+    // backgroundColor: "orange",
     justifyContent: "center",
-    marginTop: 50,
-    flex: 1,
+    flex: 2,
     alignItems: "center"
   },
-  textView: {
-    marginTop: 22,
+  termsOfUseView: {
+    // backgroundColor: "red",
     alignItems: "center",
-    flex: 1
+    flex: 2
   },
   paragraph: {
     textAlign: "center",

@@ -1,10 +1,11 @@
 const imageAssets = {
-  components: {
-    nmfStickerEarth: require("../../assets/images/components/NoEmission/nmf-sticker-earth.png"),
-    nmfStickerBike: require("../../assets/images/components/comingSoon/nmf-sticker-bike.png")
+  stickers: {
+    earth: require("../../assets/images/stickers/earth.png"),
+    bike: require("../../assets/images/stickers/bike.png"),
+    restaurant: require("../../assets/images/stickers/restaurant.png")
   },
-  screens: {
-    logoNMF: require("../../assets/images/screens/Intro/logo-nmf.png")
+  logos: {
+    nmf: require("../../assets/images/logos/nmf.png")
   }
 };
 

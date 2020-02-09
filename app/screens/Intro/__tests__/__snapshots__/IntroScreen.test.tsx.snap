@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly ComingSoon 1`] = `
-<View
+<RCTSafeAreaView
+  emulateUnlessSupported={true}
   style={
     Object {
       "flex": 1,
@@ -13,10 +14,29 @@ exports[`renders correctly ComingSoon 1`] = `
   <View
     style={
       Object {
-        "alignItems": "center",
         "flex": 1,
+        "justifyContent": "flex-end",
+      }
+    }
+  >
+    <Text.Primary
+      bold={true}
+      style={
+        Object {
+          "paddingVertical": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      Welcome to NMF.earth
+    </Text.Primary>
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 2,
         "justifyContent": "center",
-        "marginTop": 50,
       }
     }
   >
@@ -34,22 +54,10 @@ exports[`renders correctly ComingSoon 1`] = `
     style={
       Object {
         "alignItems": "center",
-        "flex": 1,
-        "marginTop": 22,
+        "flex": 2,
       }
     }
   >
-    <Text.Primary
-      bold={true}
-      style={
-        Object {
-          "paddingVertical": 10,
-          "textAlign": "center",
-        }
-      }
-    >
-      Welcome
-    </Text.Primary>
     <Text.Secondary
       style={
         Object {
@@ -68,7 +76,7 @@ exports[`renders correctly ComingSoon 1`] = `
         }
       }
     >
-      By continuing, you accept our terms of use.
+      By proceeding, you are agreeing to our terms of use.
     </Text.Tertiary>
     <TouchableOpacity
       onPress={[Function]}
@@ -97,9 +105,9 @@ exports[`renders correctly ComingSoon 1`] = `
         center={true}
         white={true}
       >
-        Start !
+        I agree
       </Text.Primary>
     </Button.Primary>
   </View>
-</View>
+</RCTSafeAreaView>
 `;

@@ -7,7 +7,7 @@ interface TranslationKeys {
   INTRO_SCREEN_PRELUDE: string;
   INTRO_SCREEN_CONTINUE_AND_ACCEPT_TERMS_OF_USE: string;
   INTRO_SCREEN_TERMS_OF_USE: string;
-  INTRO_SCREEN_START_APP: string;
+  INTRO_SCREEN_I_AGREE: string;
 }
 
 export { en, fr, de, TranslationKeys };

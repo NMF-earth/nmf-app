@@ -18,7 +18,7 @@ const ComingSoon = () => {
         <Image
           style={styles.image}
           resizeMode="contain"
-          source={ImagesAssets.components.nmfStickerBike}
+          source={ImagesAssets.stickers.bike}
         />
       </View>
       <View style={styles.textView}>

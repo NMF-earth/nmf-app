@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Image, TouchableOpacity } from "react-native";
+import { SafeAreaView, View, Image, TouchableOpacity } from "react-native";
 import * as WebBrowser from "expo-web-browser";
 
 import { Text, Button } from "../../components";
@@ -9,18 +9,20 @@ import { t } from "../../utils";
 
 const IntroScreen = ({ navigation }) => {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
+      <View style={styles.welcomeView}>
+        <Text.Primary bold style={styles.paragraph}>
+          {t("INTRO_SCREEN_WELCOME")}
+        </Text.Primary>
+      </View>
       <View style={styles.imageView}>
         <Image
           style={styles.image}
           resizeMode="contain"
-          source={ImagesAssets.screens.logoNMF}
+          source={ImagesAssets.stickers.restaurant}
         />
       </View>
-      <View style={styles.textView}>
-        <Text.Primary bold style={styles.paragraph}>
-          {t("INTRO_SCREEN_WELCOME")}
-        </Text.Primary>
+      <View style={styles.termsOfUseView}>
         <Text.Secondary style={styles.paragraph}>
           {t("INTRO_SCREEN_PRELUDE")}
         </Text.Secondary>
@@ -41,11 +43,11 @@ const IntroScreen = ({ navigation }) => {
           textType={"Primary"}
         >
           <Text.Primary white center bold>
-            {t("INTRO_SCREEN_START_APP")}
+            {t("INTRO_SCREEN_I_AGREE")}
           </Text.Primary>
         </Button.Primary>
       </View>
-    </View>
+    </SafeAreaView>
   );
 };
 
