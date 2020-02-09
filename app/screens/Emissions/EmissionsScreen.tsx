@@ -55,6 +55,7 @@ const EmissionsScreen = ({ navigation }: Props) => {
               title: t("EMISSIONS_SCREEN_MITIGATED"),
               component: emissionsMitigated.length ? (
                 <FlatList<EmissionListItemProps>
+                  ListFooterComponent={<View style={styles.separator} />}
                   style={styles.listContainer}
                   data={emissionsMitigated}
                   keyExtractor={item => item.id}
