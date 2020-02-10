@@ -28,7 +28,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
         <Text.Primary
           lightGray={true}
         >
-          500 kg
+          NaN kg
         </Text.Primary>
       </View>
       <RCTSlider
@@ -55,7 +55,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
           ]
         }
         thumbTintColor="#4BB377"
-        value={500}
+        value={0}
       />
       <View
         style={

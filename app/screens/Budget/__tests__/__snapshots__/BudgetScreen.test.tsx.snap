@@ -13,7 +13,7 @@ exports[`BudgetScreen renders correctly 1`] = `
     <ProgressChart
       foodEmissions={200}
       isMonth={true}
-      monthlyEmissionsBudget={1000}
+      monthlyEmissionsBudget={[MockFunction]}
       otherEmissions={0}
       totalEmissions={800}
       transportEmissions={600}
@@ -38,7 +38,7 @@ exports[`BudgetScreen renders correctly 1`] = `
     </Button.Primary>
     <ProgressChart
       foodEmissions={200}
-      monthlyEmissionsBudget={1000}
+      monthlyEmissionsBudget={[MockFunction]}
       otherEmissions={0}
       totalEmissions={800}
       transportEmissions={600}

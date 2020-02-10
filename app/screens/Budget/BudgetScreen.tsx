@@ -1,15 +1,16 @@
 import React from "react";
 import { ScrollView } from "react-native";
+import { useSelector } from "react-redux";
 import styles from "./BudgetScreen.styles";
 import { Text, Button } from "../../components";
 import { NumberOfDaysVegetarian, ProgressChart } from "./components";
 import { t } from "../../utils";
+import { budget } from "../../ducks";
 
 const foodEmissions = 200;
 const transportEmissions = 600;
 const otherEmissions = 0;
 const totalEmissions = foodEmissions + transportEmissions + otherEmissions;
-const monthlyEmissionsBudget = 1000;
 
 interface Props {
   navigation: {
@@ -18,6 +19,10 @@ interface Props {
 }
 
 const BudgetScreen = (props: Props) => {
+  const monthlyCarbonBudget = useSelector(
+    budget.selectors.getMonthlyCarbonBudget
+  );
+
   return (
     <ScrollView style={styles.container}>
       <ProgressChart
@@ -26,7 +31,7 @@ const BudgetScreen = (props: Props) => {
         foodEmissions={foodEmissions}
         transportEmissions={transportEmissions}
         otherEmissions={otherEmissions}
-        monthlyEmissionsBudget={monthlyEmissionsBudget}
+        monthlyEmissionsBudget={monthlyCarbonBudget}
       />
       <Button.Primary
         style={styles.monthlyBudgetButton}
@@ -45,7 +50,7 @@ const BudgetScreen = (props: Props) => {
         foodEmissions={foodEmissions}
         transportEmissions={transportEmissions}
         otherEmissions={otherEmissions}
-        monthlyEmissionsBudget={monthlyEmissionsBudget}
+        monthlyEmissionsBudget={monthlyCarbonBudget}
       />
       <NumberOfDaysVegetarian />
     </ScrollView>
