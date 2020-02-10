@@ -5,7 +5,7 @@ describe("Budget reducer should", () => {
     // TODO: fix eslint complains bellow
     // eslint-disable-next-line
     expect(budget.reducer(undefined, {} as any)).toEqual({
-      monthlyCarbonBudget: 500
+      monthlyCarbonBudget: 166
     });
   });
 

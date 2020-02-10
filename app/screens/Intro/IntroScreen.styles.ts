@@ -4,7 +4,6 @@ import { Layout } from "../../style";
 
 export default StyleSheet.create({
   welcomeView: {
-    // backgroundColor: "green",
     flex: 1,
     justifyContent: "flex-end"
   },
@@ -16,7 +15,6 @@ export default StyleSheet.create({
     width: "60%"
   },
   imageView: {
-    // backgroundColor: "orange",
     justifyContent: "center",
     flex: 2,
     alignItems: "center"

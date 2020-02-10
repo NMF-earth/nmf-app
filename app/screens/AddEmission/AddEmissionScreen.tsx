@@ -27,6 +27,7 @@ const AddEmissionScreen: React.FunctionComponent<Props> & {
   const [emissionType, setEmissionType] = useState(EmissionEnum.transport);
   const [transportType, setTransportType] = useState(TransportEnum.car);
   const [foodType, setFoodType] = useState(FoodEnum.redMeat);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [durationHours, setDurationHours] = useState(0);
   const [co2eqKilograms, setCo2eqKilograms] = useState(
     DEFAULT_SLIDER_VALUE_CUSTOM
