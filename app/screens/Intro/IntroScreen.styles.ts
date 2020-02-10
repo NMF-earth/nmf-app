@@ -20,7 +20,6 @@ export default StyleSheet.create({
     alignItems: "center"
   },
   termsOfUseView: {
-    // backgroundColor: "red",
     alignItems: "center",
     flex: 2
   },

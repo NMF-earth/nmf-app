@@ -1,37 +1,31 @@
-import React, { useState } from "react";
-import { ScrollView, StyleSheet, SafeAreaView } from "react-native";
+import React from "react";
+import { useSelector } from "react-redux";
 
 import NoEmission from "../../components/NoEmission";
 import BudgetScreen from "./BudgetScreen";
 import navigationOptions from "./BudgetScreen.navigationOptions";
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    marginTop: 20
-  }
-});
+import { emissions } from "../../ducks";
 
 interface Props {
   navigation: {
     push: (screen: string) => void;
+    navigate: (screen: string) => void;
   };
 }
 
-const Budget = (props: Props) => {
-  const [emission, setEmission] = useState(true);
+const Budget = ({ navigation }: Props) => {
+  const emissionsToMitigate = useSelector(
+    emissions.selectors.getEmissionsToMitigate
+  );
+  const emissionsMitigated = useSelector(
+    emissions.selectors.getEmissionsMitigated
+  );
 
-  if (emission) {
-    return <BudgetScreen {...props} />;
-  } else {
-    return (
-      <SafeAreaView style={styles.container}>
-        <ScrollView>
-          <NoEmission addEmission={() => setEmission(true)} />
-        </ScrollView>
-      </SafeAreaView>
-    );
+  if (emissionsToMitigate.length || emissionsMitigated.length) {
+    return <BudgetScreen navigation={navigation} />;
   }
+
+  return <NoEmission addEmission={() => navigation.push("AddEmission")} />;
 };
 
 Budget.navigationOptions = navigationOptions;
