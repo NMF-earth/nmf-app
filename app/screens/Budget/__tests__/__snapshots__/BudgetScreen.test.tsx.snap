@@ -11,12 +11,12 @@ exports[`BudgetScreen renders correctly 1`] = `
 >
   <View>
     <ProgressChart
-      foodEmissions={200}
+      foodEmissions={[MockFunction]}
       isMonth={true}
-      monthlyEmissionsBudget={1000}
-      otherEmissions={0}
-      totalEmissions={800}
-      transportEmissions={600}
+      monthlyEmissionsBudget={[MockFunction]}
+      otherEmissions={[MockFunction]}
+      totalEmissions={[MockFunction]}
+      transportEmissions={[MockFunction]}
     />
     <Button.Primary
       fullWidth={true}
@@ -37,11 +37,11 @@ exports[`BudgetScreen renders correctly 1`] = `
       </Text.Primary>
     </Button.Primary>
     <ProgressChart
-      foodEmissions={200}
-      monthlyEmissionsBudget={1000}
-      otherEmissions={0}
-      totalEmissions={800}
-      transportEmissions={600}
+      foodEmissions={[MockFunction]}
+      monthlyEmissionsBudget={[MockFunction]}
+      otherEmissions={[MockFunction]}
+      totalEmissions={[MockFunction]}
+      transportEmissions={[MockFunction]}
     />
     <NumberOfDaysVegetarian />
   </View>

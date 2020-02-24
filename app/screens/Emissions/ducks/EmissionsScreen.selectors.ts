@@ -1,7 +1,7 @@
 import { map, pipe } from "ramda";
 import { emissions } from "../../../ducks";
 import { EmissionEnum, Emission } from "../../../interfaces";
-import { transport, food } from "carbon-footprint";
+import { calculation } from "../../../utils";
 
 interface EmissionListItem {
   id: string;
@@ -14,21 +14,12 @@ interface EmissionListItem {
   onPress: () => void;
 }
 
-const getCO2ForEmission = (emission: Emission) => {
-  if (emission.emissionModelType === "custom") return emission.value;
-  const model = {
-    ...transport,
-    ...food
-  };
-  return emission.value * model[emission.emissionModelType];
-};
-
 const getEmissionListItem = (item: Emission) => {
   const emissionItem: EmissionListItem = {
     id: item.id,
     title: item.emissionType,
     creationDate: item.creationDate,
-    co2value: getCO2ForEmission(item),
+    co2value: calculation.getC02ValueFromEmission(item),
     food: item.emissionType === EmissionEnum.food,
     transport: item.emissionType === EmissionEnum.transport,
     custom: item.emissionType === EmissionEnum.custom,
@@ -62,3 +53,5 @@ export default {
   getEmissionsToMitigate,
   getEmissionsMitigated
 };
+
+// TODO: write tests
