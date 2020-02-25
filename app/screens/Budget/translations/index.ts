@@ -11,8 +11,6 @@ interface TranslationKeys {
   BUDGET_SCREEN_PROGRESS_CHART_LEGEND_ITEM_OTHER: string;
   BUDGET_SCREEN_PROGRESS_CHART_LEGEND_PERIOD_BUDGET: string;
   BUDGET_SCREEN_SET_MONTHLY_BUDGET: string;
-  BUDGET_SCREEN_THIS_MONTH: string;
-  BUDGET_SCREEN_THIS_YEAR: string;
 }
 
 export { en, fr, de, TranslationKeys };
