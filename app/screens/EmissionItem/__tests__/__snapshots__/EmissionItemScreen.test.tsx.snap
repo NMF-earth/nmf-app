@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmissionsScreen renders correctly 1`] = `
+<RCTScrollView
+  style={
+    Object {
+      "flex": 1,
+      "paddingHorizontal": 14,
+      "paddingTop": 22,
+    }
+  }
+>
+  <View>
+    <Text.H3>
+      Type
+    </Text.H3>
+    <RCTScrollView
+      horizontal={true}
+      style={
+        Object {
+          "paddingBottom": 24,
+          "paddingTop": 6,
+        }
+      }
+    >
+      <View>
+        <Tag
+          onPress={[Function]}
+          selected={true}
+          title=""
+        />
+      </View>
+    </RCTScrollView>
+    <Text.H3>
+      Quantity
+    </Text.H3>
+    <Text.Primary
+      darkGray={true}
+      style={
+        Object {
+          "paddingBottom": 24,
+          "paddingTop": 6,
+        }
+      }
+    >
+      NaN
+       kgC02eq
+    </Text.Primary>
+    <Text.H3>
+      Date
+    </Text.H3>
+    <Text.Primary
+      darkGray={true}
+      style={
+        Object {
+          "paddingBottom": 24,
+          "paddingTop": 6,
+        }
+      }
+    >
+      Invalid date
+    </Text.Primary>
+    <Button.Primary
+      fullWidth={true}
+      onPress={[Function]}
+      textType="Primary"
+    >
+      <Text.Primary
+        white={true}
+      >
+        Delete emission
+      </Text.Primary>
+    </Button.Primary>
+  </View>
+</RCTScrollView>
+`;

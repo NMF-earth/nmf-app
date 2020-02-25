@@ -27,4 +27,21 @@ describe("Emissions reducer should", () => {
 
     expect(emissions.reducer([emission], action)).toEqual([emission, emission]);
   });
+
+  it("handle emission delete", () => {
+    const emission: Emission = {
+      id: "123",
+      creationDate: "2020-01-26T11:04:55.334Z",
+      emissionType: EmissionEnum.custom,
+      emissionModelType: FoodEnum.nuts,
+      value: 200,
+      isMitigated: false
+    };
+    const action = {
+      type: emissions.actions.deleteEmissionById.toString(),
+      payload: emission.id
+    };
+
+    expect(emissions.reducer([emission], action)).toEqual([]);
+  });
 });

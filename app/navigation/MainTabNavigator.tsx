@@ -7,6 +7,7 @@ import { Text } from "../components";
 import StorybookScreen from "../../storybook";
 
 import ActScreen from "../screens/Act";
+import EmissionItemScreen from "../screens/EmissionItem";
 import ActDetailScreen from "../screens/ActDetail";
 import BudgetScreen from "../screens/Budget";
 import EmissionsScreen from "../screens/Emissions";
@@ -40,6 +41,7 @@ BudgetStack.navigationOptions = {
 
 const EmissionsStack = createStackNavigator({
   Emissions: EmissionsScreen,
+  EmissionItem: EmissionItemScreen,
   AddEmission: AddEmissionScreen
 });
 

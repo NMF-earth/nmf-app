@@ -6,6 +6,7 @@ import * as Settings from "../../screens/Settings/translations";
 import * as MonthlyBudget from "../../screens/MonthlyBudget/translations";
 import * as ComingSoon from "../../screens/ComingSoon/translations";
 import * as AddEmission from "../../screens/AddEmission/translations";
+import * as EmissionItem from "../../screens/EmissionItem/translations";
 import * as Intro from "../../screens/Intro/translations";
 
 /* COMPONENTS */
@@ -22,6 +23,7 @@ const en = {
   ...Settings.en,
   ...ComingSoon.en,
   ...AddEmission.en,
+  ...EmissionItem.en,
   ...Intro.en
 };
 
@@ -35,6 +37,7 @@ const de = {
   ...Settings.de,
   ...ComingSoon.de,
   ...AddEmission.de,
+  ...EmissionItem.de,
   ...Intro.de
 };
 
@@ -48,6 +51,7 @@ const fr = {
   ...Settings.fr,
   ...ComingSoon.fr,
   ...AddEmission.fr,
+  ...EmissionItem.fr,
   ...Intro.fr
 };
 
@@ -60,6 +64,7 @@ export interface TranslationKeys
     Emissions.TranslationKeys,
     ComingSoon.TranslationKeys,
     AddEmission.TranslationKeys,
+    EmissionItem.TranslationKeys,
     Settings.TranslationKeys,
     Intro.TranslationKeys {}
 

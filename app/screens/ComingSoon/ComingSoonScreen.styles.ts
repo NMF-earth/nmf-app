@@ -3,9 +3,7 @@ import { screen } from "../../constants/Layout";
 import { Layout } from "../../style";
 
 export default StyleSheet.create({
-  container: {
-    ...Layout.containerWithPadding
-  },
+  container: Layout.containerWithPadding,
   image: {
     width: "100%",
     height: screen.width - 100

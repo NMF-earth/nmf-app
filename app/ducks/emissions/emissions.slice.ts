@@ -13,7 +13,7 @@ const emissions = createSlice({
     },
     /* TODO: add test for deleteEmissionById and test if it's working irl */
     deleteEmissionById(state, action: PayloadAction<string>) {
-      state = state.filter(item => item.id !== action.payload);
+      return (state = state.filter(item => item.id !== action.payload));
     }
   }
 });
