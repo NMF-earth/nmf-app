@@ -7,10 +7,6 @@ import styles from "./ComingSoonScreen.styles";
 import { t, platform } from "../../utils";
 import navigationOptions from "./ComingSoonScreen.navigationOptions";
 
-interface Props {
-  addEmission: () => void;
-}
-
 const ComingSoon = () => {
   return (
     <ScrollView style={styles.container}>
