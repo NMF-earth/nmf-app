@@ -27,7 +27,7 @@ exports[`EmissionsScreen renders correctly 1`] = `
         <Tag
           onPress={[Function]}
           selected={true}
-          title=""
+          title="Red Meat"
         />
       </View>
     </RCTScrollView>

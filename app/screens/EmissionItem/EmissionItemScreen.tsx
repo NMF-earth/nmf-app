@@ -5,12 +5,12 @@ import { pathOr } from "ramda";
 import moment from "moment";
 import { t } from "../../utils";
 import styles from "./EmissionItemScreen.styles";
+import { TransportEnum, FoodEnum } from "carbon-footprint";
 import { Text, Tag, Button } from "../../components";
 import { selectors } from "./ducks";
 import navigationOptions from "./EmissionItemScreen.navigationOptions";
 import { calculation } from "../../utils";
 import { emissions } from "../../ducks";
-
 interface Props {
   navigation: {
     state: {
@@ -21,6 +21,27 @@ interface Props {
     goBack: () => void;
   };
 }
+
+const getTranslationModelType = emissionModelType => {
+  switch (emissionModelType) {
+    case FoodEnum.redMeat:
+      return t("EMISSION_ITEM_RED_MEAT");
+    case FoodEnum.whiteMeat:
+      return t("EMISSION_ITEM_WHITE_MEAT");
+    case TransportEnum.plane:
+      return t("EMISSION_ITEM_PLANE");
+    case TransportEnum.train:
+      return t("EMISSION_ITEM_TRAIN");
+    case TransportEnum.car:
+      return t("EMISSION_ITEM_CAR");
+    case TransportEnum.boat:
+      return t("EMISSION_ITEM_BOAT");
+    case TransportEnum.bus:
+      return t("EMISSION_ITEM_BUS");
+    default:
+      return t("EMISSION_ITEM_RED_MEAT");
+  }
+};
 
 const EmissionItemScreen = ({ navigation }: Props) => {
   const emissionId = pathOr(false, ["state", "params", "id"], navigation);
@@ -56,7 +77,11 @@ const EmissionItemScreen = ({ navigation }: Props) => {
     <ScrollView style={styles.container}>
       <Text.H3>{t("EMISSION_ITEM_TYPE")}</Text.H3>
       <ScrollView horizontal style={styles.item}>
-        <Tag selected onPress={onPress} title={emissionModelType} />
+        <Tag
+          selected
+          onPress={onPress}
+          title={getTranslationModelType(emissionModelType)}
+        />
       </ScrollView>
       <Text.H3>{t("EMISSION_ITEM_QUANTITY")}</Text.H3>
       <Text.Primary darkGray style={styles.item}>
