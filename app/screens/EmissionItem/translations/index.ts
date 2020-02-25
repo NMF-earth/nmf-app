@@ -8,6 +8,7 @@ interface TranslationKeys {
   EMISSION_ITEM_QUANTITY: string;
   EMISSION_ITEM_PRICE: string;
   EMISSION_ITEM_DATE: string;
+  EMISSION_ITEM_DELETE_EMISSION: string;
 }
 
 export { en, fr, de, TranslationKeys };

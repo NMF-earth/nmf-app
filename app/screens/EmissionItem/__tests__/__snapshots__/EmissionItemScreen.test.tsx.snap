@@ -27,6 +27,7 @@ exports[`EmissionsScreen renders correctly 1`] = `
         <Tag
           onPress={[Function]}
           selected={true}
+          title=""
         />
       </View>
     </RCTScrollView>
@@ -41,7 +42,10 @@ exports[`EmissionsScreen renders correctly 1`] = `
           "paddingTop": 6,
         }
       }
-    />
+    >
+      NaN
+       kgC02eq
+    </Text.Primary>
     <Text.H3>
       Date
     </Text.H3>
@@ -56,6 +60,17 @@ exports[`EmissionsScreen renders correctly 1`] = `
     >
       Invalid date
     </Text.Primary>
+    <Button.Primary
+      fullWidth={true}
+      onPress={[Function]}
+      textType="Primary"
+    >
+      <Text.Primary
+        white={true}
+      >
+        Delete emission
+      </Text.Primary>
+    </Button.Primary>
   </View>
 </RCTScrollView>
 `;
