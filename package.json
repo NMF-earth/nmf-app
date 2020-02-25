@@ -57,6 +57,7 @@
     "react-native-keyboard-aware-scroll-view": "0.9.1",
     "react-native-reanimated": "1.4.0",
     "react-native-render-html": "4.1.2",
+    "react-native-screens": "1.0.0-alpha.23",
     "react-native-svg": "9.13.3",
     "react-navigation": "4.0.10",
     "react-navigation-stack": "1.10.3",

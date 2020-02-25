@@ -40,9 +40,9 @@ const EmissionsScreen = ({ navigation }: Props) => {
                   renderItem={({ item }: { item: EmissionListItemProps }) => (
                     <EmissionListItem
                       id={item.id}
-                      onPress={() => {
-                        navigation.push("EmissionItem", { id: item.id });
-                      }}
+                      onPress={() =>
+                        navigation.push("EmissionItem", { id: item.id })
+                      }
                       title={item.title}
                       co2value={item.co2value}
                       food={item.food}
