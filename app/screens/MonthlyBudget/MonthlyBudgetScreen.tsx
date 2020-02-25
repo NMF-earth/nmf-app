@@ -26,8 +26,8 @@ const translationMontlyBudgetCountries = [
   "MONTHLY_BUDGET_ETHIOPIA"
 ];
 
-const CountryExample = translation => (
-  <Text.Secondary style={styles.worldExampleItem}>
+const CountryExample = (translation, index) => (
+  <Text.Secondary key={index} style={styles.worldExampleItem}>
     {t(translation)}
   </Text.Secondary>
 );
