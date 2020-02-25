@@ -101,6 +101,11 @@ exports[`AddEmissionScreen renders correctly 1`] = `
           <Tag
             onPress={[Function]}
             selected={false}
+            title="Bus"
+          />
+          <Tag
+            onPress={[Function]}
+            selected={false}
             title="Plane"
           />
           <Tag

@@ -14,6 +14,7 @@ interface TranslationKeys {
   ADD_EMISSION_QUANTITY_OF_EMISSION: string;
   ADD_EMISSION_TRAIN: string;
   ADD_EMISSION_CAR: string;
+  ADD_EMISSION_BUS: string;
   ADD_EMISSION_PLANE: string;
   ADD_EMISSION_BOAT: string;
   ADD_EMISSION_RED_MEAT: string;

@@ -81,8 +81,6 @@ export default class App extends React.Component<Props, State> {
   }
 }
 
-
-
 async function loadResourcesAsync() {
   await Promise.all([
     Font.loadAsync({

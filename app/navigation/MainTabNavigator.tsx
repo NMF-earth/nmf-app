@@ -105,7 +105,7 @@ const MainTabNavigator = createBottomTabNavigator(
   {
     BudgetStack,
     EmissionsStack,
-    ActStack,
+    // ActStack,
     SettingsStack
   },
   {

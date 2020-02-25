@@ -37,6 +37,10 @@ const TAGS: TransportTag[] = [
     type: TransportEnum.car
   },
   {
+    title: "ADD_EMISSION_BUS",
+    type: TransportEnum.bus
+  },
+  {
     title: "ADD_EMISSION_PLANE",
     type: TransportEnum.plane
   },

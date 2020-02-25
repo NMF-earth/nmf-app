@@ -13,6 +13,7 @@ export default {
   ADD_EMISSION_CAR: "Voiture",
   ADD_EMISSION_PLANE: "Avion",
   ADD_EMISSION_BOAT: "Bateau",
+  ADD_EMISSION_BUS: "Bus",
   ADD_EMISSION_RED_MEAT: "Viande rouge",
   ADD_EMISSION_WHITE_MEAT: "Viande blanche"
 };
