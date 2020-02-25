@@ -1,7 +1,7 @@
 export default {
-  EMISSION_TITLE: "Emission",
-  EMISSION_MITIGATED_QUESTION: "What was mitigated?",
-  EMISSION_QUANTITY: "Quantity:",
-  EMISSION_PRICE: "Price:",
-  EMISSION_DATE: "Date:"
+  EMISSION_ITEM_TITLE: "Emission",
+  EMISSION_ITEM_TYPE: "Type",
+  EMISSION_ITEM_QUANTITY: "Quantité",
+  EMISSION_ITEM_PRICE: "Prix",
+  EMISSION_ITEM_DATE: "Date"
 };

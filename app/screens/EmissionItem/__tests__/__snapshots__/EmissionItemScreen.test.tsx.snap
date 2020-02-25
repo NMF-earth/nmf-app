@@ -6,59 +6,56 @@ exports[`EmissionsScreen renders correctly 1`] = `
     Object {
       "flex": 1,
       "paddingHorizontal": 14,
+      "paddingTop": 22,
     }
   }
 >
   <View>
-    <View
+    <Text.H3>
+      Type
+    </Text.H3>
+    <RCTScrollView
+      horizontal={true}
       style={
         Object {
-          "flex": 1,
-          "marginTop": 22,
+          "paddingBottom": 24,
+          "paddingTop": 6,
         }
       }
     >
-      <Text.H1>
-        What was mitigated?
-      </Text.H1>
-      <Text.Primary
-        style={
-          Object {
-            "paddingVertical": 10,
-          }
+      <View>
+        <Tag
+          onPress={[Function]}
+          selected={true}
+        />
+      </View>
+    </RCTScrollView>
+    <Text.H3>
+      Quantity
+    </Text.H3>
+    <Text.Primary
+      darkGray={true}
+      style={
+        Object {
+          "paddingBottom": 24,
+          "paddingTop": 6,
         }
-      />
-      <Text.H1>
-        Quantity:
-      </Text.H1>
-      <Text.Primary
-        style={
-          Object {
-            "paddingVertical": 10,
-          }
+      }
+    />
+    <Text.H3>
+      Date
+    </Text.H3>
+    <Text.Primary
+      darkGray={true}
+      style={
+        Object {
+          "paddingBottom": 24,
+          "paddingTop": 6,
         }
-      />
-      <Text.H1>
-        Price:
-      </Text.H1>
-      <Text.Primary
-        style={
-          Object {
-            "paddingVertical": 10,
-          }
-        }
-      />
-      <Text.H1>
-        Date:
-      </Text.H1>
-      <Text.Primary
-        style={
-          Object {
-            "paddingVertical": 10,
-          }
-        }
-      />
-    </View>
+      }
+    >
+      Invalid date
+    </Text.Primary>
   </View>
 </RCTScrollView>
 `;

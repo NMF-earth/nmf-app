@@ -9,7 +9,7 @@ const navigationOptions = () => ({
   },
   headerTintColor: Colors.darkLink,
   headerBackTitle: null,
-  headerTitle: () => <Text.H1>{t("EMISSION_TITLE")}</Text.H1>
+  headerTitle: () => <Text.H1>{t("EMISSION_ITEM_TITLE")}</Text.H1>
 });
 
 export default navigationOptions;
