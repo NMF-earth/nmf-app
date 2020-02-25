@@ -1,15 +1,11 @@
 import React from "react";
 import { ScrollView } from "react-native";
+import { useSelector } from "react-redux";
 import styles from "./BudgetScreen.styles";
 import { Text, Button } from "../../components";
-import { MonthSelector, ProgressChart } from "./components";
+import { NumberOfDaysVegetarian, ProgressChart } from "./components";
 import { t } from "../../utils";
-
-const foodEmissions = 200;
-const transportEmissions = 600;
-const otherEmissions = 0;
-const totalEmissions = foodEmissions + transportEmissions + otherEmissions;
-const monthlyEmissionsBudget = 1000;
+import { selectors } from "./ducks";
 
 interface Props {
   navigation: {
@@ -18,15 +14,21 @@ interface Props {
 }
 
 const BudgetScreen = (props: Props) => {
+  const monthlyCarbonBudget = useSelector(selectors.getMonthlyCarbonBudget);
+  const totalEmissions = useSelector(selectors.getAllCarbonValue);
+  const transportEmissions = useSelector(selectors.getTransportCarbonValue);
+  const foodEmissions = useSelector(selectors.getFoodCarbonValue);
+  const otherEmissions = useSelector(selectors.getCustomCarbonValue);
+
   return (
     <ScrollView style={styles.container}>
-      <MonthSelector />
       <ProgressChart
+        isMonth
         totalEmissions={totalEmissions}
         foodEmissions={foodEmissions}
         transportEmissions={transportEmissions}
         otherEmissions={otherEmissions}
-        monthlyEmissionsBudget={monthlyEmissionsBudget}
+        monthlyEmissionsBudget={monthlyCarbonBudget}
       />
       <Button.Primary
         style={styles.monthlyBudgetButton}
@@ -40,6 +42,14 @@ const BudgetScreen = (props: Props) => {
           {t("BUDGET_SCREEN_SET_MONTHLY_BUDGET")}
         </Text.Primary>
       </Button.Primary>
+      <ProgressChart
+        totalEmissions={totalEmissions}
+        foodEmissions={foodEmissions}
+        transportEmissions={transportEmissions}
+        otherEmissions={otherEmissions}
+        monthlyEmissionsBudget={monthlyCarbonBudget}
+      />
+      <NumberOfDaysVegetarian />
     </ScrollView>
   );
 };

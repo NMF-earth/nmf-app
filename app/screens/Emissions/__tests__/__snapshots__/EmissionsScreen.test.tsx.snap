@@ -16,6 +16,15 @@ Array [
         Array [
           Object {
             "component": <FlatList
+              ListFooterComponent={
+                <View
+                  style={
+                    Object {
+                      "height": 100,
+                    }
+                  }
+                />
+              }
               data={[MockFunction]}
               disableVirtualization={false}
               horizontal={false}
@@ -55,6 +64,13 @@ Array [
       }
     />
   </RCTSafeAreaView>,
-  <AddEmissionAndMitigateButtons />,
+  <AddEmissionAndMitigateButtons
+    navigation={
+      Object {
+        "navigate": [Function],
+        "push": [Function],
+      }
+    }
+  />,
 ]
 `;

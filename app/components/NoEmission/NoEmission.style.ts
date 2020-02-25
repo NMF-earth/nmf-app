@@ -1,10 +1,10 @@
 import { StyleSheet } from "react-native";
 import { screen } from "../../constants/Layout";
-import layout from "../../style/layout";
+import { Layout } from "../../style";
 
 export default StyleSheet.create({
   container: {
-    ...layout.containerWithPadding
+    ...Layout.containerWithPadding
   },
   image: {
     width: "100%",

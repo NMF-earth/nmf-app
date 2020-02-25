@@ -10,21 +10,20 @@ exports[`BudgetScreen renders correctly 1`] = `
   }
 >
   <View>
-    <MonthSelector />
     <ProgressChart
-      foodEmissions={200}
-      monthlyEmissionsBudget={1000}
-      otherEmissions={0}
-      totalEmissions={800}
-      transportEmissions={600}
+      foodEmissions={[MockFunction]}
+      isMonth={true}
+      monthlyEmissionsBudget={[MockFunction]}
+      otherEmissions={[MockFunction]}
+      totalEmissions={[MockFunction]}
+      transportEmissions={[MockFunction]}
     />
     <Button.Primary
       fullWidth={true}
       onPress={[Function]}
       style={
         Object {
-          "marginBottom": 14,
-          "marginTop": 6,
+          "marginVertical": 6,
         }
       }
       textType="Primary"
@@ -37,6 +36,14 @@ exports[`BudgetScreen renders correctly 1`] = `
         Set monthly budget
       </Text.Primary>
     </Button.Primary>
+    <ProgressChart
+      foodEmissions={[MockFunction]}
+      monthlyEmissionsBudget={[MockFunction]}
+      otherEmissions={[MockFunction]}
+      totalEmissions={[MockFunction]}
+      transportEmissions={[MockFunction]}
+    />
+    <NumberOfDaysVegetarian />
   </View>
 </RCTScrollView>
 `;

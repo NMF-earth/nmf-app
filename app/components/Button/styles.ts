@@ -1,12 +1,12 @@
 import { StyleSheet } from "react-native";
-import colors from "../../style/colors";
+import { Colors } from "../../style";
 
 export default StyleSheet.create({
   default: {
     paddingHorizontal: 36
   },
   black: {
-    backgroundColor: colors.darkLink
+    backgroundColor: Colors.darkLink
   },
   fullWidth: {
     width: "100%",

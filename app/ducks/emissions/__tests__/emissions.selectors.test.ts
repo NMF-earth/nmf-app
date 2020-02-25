@@ -1,19 +1,19 @@
 import emissions from "../";
-import { Emission, EmissionEnum } from "../../../interfaces";
-import { TransportEnum } from "carbon-footprint";
+import { Emission as EmissionType, EmissionEnum } from "../../../interfaces";
+import { FoodEnum } from "carbon-footprint";
 
 let state;
 
-const emissionToMitigate: Emission = {
+const emissionToMitigate: EmissionType = {
   id: "123",
   creationDate: "2020-01-26T11:04:55.334Z",
-  emissionModelType: TransportEnum.bus,
-  emissionType: EmissionEnum.custom,
+  emissionModelType: FoodEnum.beans,
+  emissionType: EmissionEnum.food,
   isMitigated: false,
-  value: 200,
+  value: 10
 };
 
-const emissionMitigated: Emission = {
+const emissionMitigated: EmissionType = {
   ...emissionToMitigate,
   isMitigated: true
 };

@@ -16,16 +16,7 @@ exports[`renders correctly SocialMedia 1`] = `
     onPress={[Function]}
   >
     <MaterialCommunityIcons
-      color="#c32aa3"
-      name="instagram"
-      size={32}
-    />
-  </TouchableOpacity>
-  <TouchableOpacity
-    onPress={[Function]}
-  >
-    <MaterialCommunityIcons
-      color="#4a154b"
+      color="#585D5B"
       name="slack"
       size={32}
     />
@@ -34,7 +25,7 @@ exports[`renders correctly SocialMedia 1`] = `
     onPress={[Function]}
   >
     <MaterialCommunityIcons
-      color="#333333"
+      color="#585D5B"
       name="github-circle"
       size={32}
     />
@@ -43,7 +34,7 @@ exports[`renders correctly SocialMedia 1`] = `
     onPress={[Function]}
   >
     <MaterialCommunityIcons
-      color="#2b90d9"
+      color="#585D5B"
       name="twitter"
       size={32}
     />
@@ -52,7 +43,7 @@ exports[`renders correctly SocialMedia 1`] = `
     onPress={[Function]}
   >
     <MaterialCommunityIcons
-      color="#2b90d9"
+      color="#585D5B"
       name="mastodon"
       size={32}
     />
@@ -61,7 +52,7 @@ exports[`renders correctly SocialMedia 1`] = `
     onPress={[Function]}
   >
     <MaterialCommunityIcons
-      color="#02b875"
+      color="#585D5B"
       name="medium"
       size={32}
     />

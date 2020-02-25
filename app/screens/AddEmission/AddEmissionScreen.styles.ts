@@ -1,19 +1,18 @@
 import { StyleSheet } from "react-native";
-import colors from "../../style/colors";
-import layout from "../../style/layout";
+import { Colors, Layout } from "../../style";
 import { PADDING_HORIZONTAL } from "../../constants/Layout";
 
 export default StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: colors.white,
+    backgroundColor: Colors.white,
     alignContent: "flex-start"
   },
   typeContainer: {
     paddingBottom: 24
   },
   textContainer: {
-    ...layout.containerWithPadding,
+    ...Layout.containerWithPadding,
     paddingVertical: 12
   },
   tagContainer: {

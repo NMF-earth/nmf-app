@@ -1,5 +1,5 @@
 import { StyleSheet, ViewStyle } from "react-native";
-import colors from "../../style/colors";
+import { Colors } from "../../style";
 
 const container: ViewStyle = {
   paddingVertical: 6,
@@ -13,13 +13,13 @@ const container: ViewStyle = {
 export default StyleSheet.create({
   containerNotSelected: {
     ...container,
-    backgroundColor: colors.linkGreen + "10",
-    borderColor: colors.darkLink + 20
+    backgroundColor: Colors.linkGreen + "10",
+    borderColor: Colors.darkLink + 20
   },
   containerSelected: {
     ...container,
-    backgroundColor: colors.linkGreen + "20",
-    borderColor: colors.linkGreen
+    backgroundColor: Colors.linkGreen + "20",
+    borderColor: Colors.linkGreen
   },
   containerIcon: {
     minWidth: 110,

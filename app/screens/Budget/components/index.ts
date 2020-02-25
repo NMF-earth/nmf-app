@@ -1,4 +1,4 @@
-import MonthSelector from "./MonthSelector";
+import NumberOfDaysVegetarian from "./NumberOfDaysVegetarian";
 import ProgressChart from "./ProgressChart";
 
-export { MonthSelector, ProgressChart };
+export { NumberOfDaysVegetarian, ProgressChart };

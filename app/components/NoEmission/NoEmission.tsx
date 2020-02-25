@@ -17,7 +17,7 @@ export default function NoEmission({ addEmission }: Props) {
         <Image
           style={styles.image}
           resizeMode="contain"
-          source={ImagesAssets.components.nmfStickerEarth}
+          source={ImagesAssets.stickers.earth}
         />
       </View>
       <View style={styles.textView}>

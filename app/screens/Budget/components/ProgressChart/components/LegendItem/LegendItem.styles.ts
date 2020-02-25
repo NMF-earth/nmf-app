@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { fontSize } from "../../../../../../style/font";
+import { Font } from "../../../../../../style";
 
 export default StyleSheet.create({
   container: {
@@ -8,13 +8,13 @@ export default StyleSheet.create({
     paddingTop: 10
   },
   coloredDot: {
-    width: fontSize.Secondary,
-    height: fontSize.Secondary,
+    width: Font.FontSize.Secondary,
+    height: Font.FontSize.Secondary,
     borderRadius: 8
   },
   coloredDotView: {
     marginHorizontal: 6,
-    width: fontSize.Secondary,
+    width: Font.FontSize.Secondary,
     height: "100%"
   }
 });

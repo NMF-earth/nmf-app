@@ -1,27 +1,37 @@
 import React, { useState } from "react";
-import { View, ScrollView } from "react-native";
-import Slider from "react-native-slider";
+import { View, ScrollView, Slider } from "react-native";
 import { FormattedNumber } from "react-native-globalize";
 
 import styles from "./Food.styles";
 import { Text, Tag } from "../../../../components";
-import colors from "../../../../style/colors";
+import { Colors } from "../../../../style";
 import { t } from "../../../../utils";
 import { FoodEnum, food } from "carbon-footprint";
 
-const DEFAULT_SLIDER_VALUE = 200;
 const MIN_SLIDER_VALUE = 20;
 const MAX_SLIDER_VALUE = 500;
 
 interface Props {
+  defaultValueSlider: number;
   foodType: string;
   setFoodType: (arg0: FoodEnum) => void;
-  setCo2eqKilograms: (arg0: number) => void;
-  setQuantityKilograms: (arg0: number) => void;
+  setQuantity: (arg0: number) => void;
 }
 
-export default ({ setFoodType, foodType }: Props) => {
-  const [sliderValue, setValue] = useState(DEFAULT_SLIDER_VALUE);
+export default ({
+  setFoodType,
+  foodType,
+  setQuantity,
+  defaultValueSlider
+}: Props) => {
+  const [sliderValue, setSliderValue] = useState(defaultValueSlider * 1000);
+
+  const onSliderValueChange = (value: number) => {
+    const val = Math.round(value);
+    setSliderValue(val);
+    /* since we use kilograms as reference (and not grams), we need to divide by 1000 */
+    setQuantity(val / 1000);
+  };
 
   return (
     <React.Fragment>
@@ -49,22 +59,23 @@ export default ({ setFoodType, foodType }: Props) => {
         </Text.Primary>
       </View>
       <Slider
-        minimumTrackTintColor={colors.linkGreen}
-        trackStyle={styles.track}
-        thumbStyle={styles.thumb}
+        minimumTrackTintColor={Colors.linkGreen}
+        maximumTrackTintColor={Colors.gray}
+        thumbTintColor={Colors.linkGreen}
         style={styles.slider}
         maximumValue={MAX_SLIDER_VALUE}
         minimumValue={MIN_SLIDER_VALUE}
         value={sliderValue}
-        onValueChange={setValue}
+        onSlidingComplete={onSliderValueChange}
       />
       <View style={styles.totalContainer}>
         <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_TOTAL")}</Text.H3>
         <Text.H1 green>
-          <FormattedNumber 
+          <FormattedNumber
             value={(sliderValue / 1000) * food[foodType]}
             maximumFractionDigits={2}
-            /> <Text.Primary>kgCO2eq</Text.Primary>
+          />{" "}
+          <Text.Primary>kgCO2eq</Text.Primary>
         </Text.H1>
       </View>
     </React.Fragment>

@@ -1,10 +1,8 @@
 import { StyleSheet } from "react-native";
-import layout from "../../style/layout";
+import { Layout } from "../../style";
 
 export default StyleSheet.create({
-  container: {
-    ...layout.containerWithPadding
-  },
+  container: Layout.containerWithPadding,
   textView: {
     marginTop: 22,
     flex: 1

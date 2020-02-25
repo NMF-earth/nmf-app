@@ -177,6 +177,27 @@ exports[`renders correctly H3 darkGray 1`] = `
 </Text>
 `;
 
+exports[`renders correctly H3 green 1`] = `
+<Text
+  green={true}
+  style={
+    Array [
+      Object {
+        "color": "#111714",
+        "fontFamily": "Inter-Bold",
+        "fontSize": 22,
+      },
+      undefined,
+      Object {
+        "color": "#4BB377",
+      },
+    ]
+  }
+>
+  test
+</Text>
+`;
+
 exports[`renders correctly H3 lightGray 1`] = `
 <Text
   lightGray={true}

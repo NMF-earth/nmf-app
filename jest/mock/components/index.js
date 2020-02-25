@@ -6,12 +6,12 @@ jest.mock(
 
 /* Budget Screen */
 jest.mock(
-  "../../../app/screens/Budget/components/MonthSelector",
-  () => "MonthSelector"
-);
-jest.mock(
   "../../../app/screens/Budget/components/ProgressChart",
   () => "ProgressChart"
+);
+jest.mock(
+  "../../../app/screens/Budget/components/NumberOfDaysVegetarian",
+  () => "NumberOfDaysVegetarian"
 );
 jest.mock(
   "../../../app/screens/Budget/components/ProgressChart/components/LegendItem",
@@ -22,8 +22,8 @@ jest.mock(
   () => "Legend"
 );
 jest.mock(
-  "../../../app/screens/Budget/components/ProgressChart/components/MonthlyBudget",
-  () => "Chart"
+  "../../../app/screens/Budget/components/ProgressChart/components/PeriodBudget",
+  () => "PeriodBudget"
 );
 jest.mock(
   "../../../app/screens/Budget/components/ProgressChart/components/Chart",

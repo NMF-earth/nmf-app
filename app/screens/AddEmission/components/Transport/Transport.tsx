@@ -1,16 +1,14 @@
 import React, { useState } from "react";
-import { View, ScrollView } from "react-native";
-import Slider from "react-native-slider";
+import { View, ScrollView, Slider } from "react-native";
 import { FormattedNumber } from "react-native-globalize";
 
 import styles from "./Transport.styles";
 import { Text, Tag } from "../../../../components";
-import colors from "../../../../style/colors";
+import { Colors } from "../../../../style";
 import { t, time } from "../../../../utils";
 import { transport, TransportEnum } from "carbon-footprint";
 import { TranslationKeys } from "../../translations";
 
-const DEFAULT_SLIDER_VALUE = 150;
 const MIN_SLIDER_VALUE = 2;
 const MAX_SLIDER_VALUE = 1000;
 
@@ -18,11 +16,10 @@ const MIN_SLIDER_VALUE_PLANE = 20;
 const MAX_SLIDER_VALUE_PLANE = 1200;
 
 interface Props {
+  defaultValueSlider: number;
   transportType: string;
   setTransportType: (arg0: TransportEnum) => void;
-  setCo2eqKilograms: (arg0: number) => void;
-  setDistanceKilometers: (arg0: number) => void;
-  setDurationHours: (arg0: number) => void;
+  setDistance: (arg0: number) => void;
 }
 
 interface TransportTag {
@@ -52,14 +49,16 @@ const TAGS: TransportTag[] = [
 export default ({
   setTransportType,
   transportType,
-  setDistanceKilometers
+  setDistance,
+  defaultValueSlider
 }: Props) => {
-  const [sliderValue, setSliderValue] = useState(DEFAULT_SLIDER_VALUE);
+  const [sliderValue, setSliderValue] = useState(defaultValueSlider / 1000);
 
   const onSliderValueChange = (value: number) => {
     const val = Math.round(value);
     setSliderValue(val);
-    setDistanceKilometers(val);
+    /* since we use meter as reference (and not kilometers), we need to multiply by 1000 */
+    setDistance(val * 1000);
     // TODO: set duration
   };
 
@@ -110,9 +109,9 @@ export default ({
         ? renderDuration()
         : renderDistance()}
       <Slider
-        minimumTrackTintColor={colors.linkGreen}
-        trackStyle={styles.track}
-        thumbStyle={styles.thumb}
+        minimumTrackTintColor={Colors.linkGreen}
+        maximumTrackTintColor={Colors.gray}
+        thumbTintColor={Colors.linkGreen}
         style={styles.slider}
         maximumValue={
           transportType === TransportEnum.plane
@@ -125,7 +124,7 @@ export default ({
             : MIN_SLIDER_VALUE
         }
         value={sliderValue}
-        onValueChange={onSliderValueChange}
+        onSlidingComplete={onSliderValueChange}
       />
       <View style={styles.totalContainer}>
         <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_TOTAL")}</Text.H3>

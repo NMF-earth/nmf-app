@@ -1,9 +1,12 @@
 import React from "react";
 import { View } from "react-native";
 import styles from "./ProgressChart.styles";
-import { Legend, Chart, MonthlyBudget } from "./components";
+import { Legend, Chart, PeriodBudget } from "./components";
+import { Text } from "../../../../components";
+import { t } from "../../../../utils";
 
 interface Prop {
+  isMonth?: boolean;
   totalEmissions: number;
   foodEmissions: number;
   transportEmissions: number;
@@ -16,19 +19,39 @@ const ProgressChart = ({
   foodEmissions = 0,
   transportEmissions = 0,
   otherEmissions = 0,
-  monthlyEmissionsBudget = 0
+  monthlyEmissionsBudget = 0,
+  isMonth = false
 }: Prop) => {
   if (!monthlyEmissionsBudget) {
     return null;
   }
 
-  const totalEmissionsPercentage = totalEmissions / monthlyEmissionsBudget;
+  const totalEmissionsPercentage =
+    totalEmissions / monthlyEmissionsBudget > 1
+      ? 1
+      : totalEmissions / monthlyEmissionsBudget;
   const transportEmissionsPercentage =
-    transportEmissions / monthlyEmissionsBudget;
-  const foodEmissionsPercentage = foodEmissions / monthlyEmissionsBudget;
+    transportEmissions / monthlyEmissionsBudget > 1
+      ? 1
+      : transportEmissions / monthlyEmissionsBudget;
+  const foodEmissionsPercentage =
+    foodEmissions / monthlyEmissionsBudget > 1
+      ? 1
+      : foodEmissions / monthlyEmissionsBudget;
+
+  const period = isMonth
+    ? t("BUDGET_SCREEN_THIS_MONTH")
+    : t("BUDGET_SCREEN_THIS_YEAR");
+
+  const periodEmissionsBudget = isMonth
+    ? monthlyEmissionsBudget
+    : monthlyEmissionsBudget * 12;
 
   return (
     <View style={styles.container}>
+      <View style={styles.periodContainer}>
+        <Text.H3>{period}</Text.H3>
+      </View>
       <Chart
         totalEmissionsPercentage={totalEmissionsPercentage}
         transportEmissionsPercentage={transportEmissionsPercentage}
@@ -40,7 +63,10 @@ const ProgressChart = ({
         transportEmissions={transportEmissions}
         otherEmissions={otherEmissions}
       />
-      <MonthlyBudget monthlyEmissionsBudget={monthlyEmissionsBudget} />
+      <PeriodBudget
+        period={period.toLowerCase()}
+        periodEmissionsBudget={periodEmissionsBudget}
+      />
     </View>
   );
 };

@@ -1,6 +1,6 @@
 import { isSmallDevice } from "../../constants/Layout";
 
-const fontWeight = {
+const FontWeight = {
   Black: "Inter-Black",
   Bold: "Inter-Bold",
   BoldItalic: "Inter-BoldItalic",
@@ -20,7 +20,7 @@ const fontWeight = {
   ThinItalic: "Inter-ThinItalic-BETA"
 };
 
-const fontSizeNormalDevice = {
+const FontSizeNormalDevice = {
   H1: 28,
   H2: 26,
   H3: 22,
@@ -29,7 +29,7 @@ const fontSizeNormalDevice = {
   Tertiary: 14
 };
 
-const fontSizeSmallDevice = {
+const FontSizeSmallDevice = {
   H1: 22,
   H2: 20,
   H3: 18,
@@ -38,6 +38,8 @@ const fontSizeSmallDevice = {
   Tertiary: 12
 };
 
-const fontSize = isSmallDevice ? fontSizeSmallDevice : fontSizeNormalDevice;
+const FontSize = isSmallDevice ? FontSizeSmallDevice : FontSizeNormalDevice;
 
-export { fontWeight, fontSize };
+const Font = { FontWeight, FontSize };
+
+export { Font };

@@ -16,16 +16,24 @@ interface Props {
   };
 }
 
+/* multiply or divide by 1000 to have kilograms or meters */
+const DEFAULT_SLIDER_VALUE_FOOD = 200 / 1000;
+const DEFAULT_SLIDER_VALUE_TRANSPORT = 150 * 1000;
+const DEFAULT_SLIDER_VALUE_CUSTOM = 800;
+
 const AddEmissionScreen: React.FunctionComponent<Props> & {
   navigationOptions: typeof navigationOptions;
 } = ({ navigation }) => {
   const [emissionType, setEmissionType] = useState(EmissionEnum.transport);
   const [transportType, setTransportType] = useState(TransportEnum.car);
   const [foodType, setFoodType] = useState(FoodEnum.redMeat);
-  const [co2eqKilograms, setCo2eqKilograms] = useState(0);
-  const [durationHours, setDurationHours] = useState(0.5);
-  const [distance, setDistance] = useState(50);
-  const [quantity, setQuantity] = useState(0);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [durationHours, setDurationHours] = useState(0);
+  const [co2eqKilograms, setCo2eqKilograms] = useState(
+    DEFAULT_SLIDER_VALUE_CUSTOM
+  );
+  const [distance, setDistance] = useState(DEFAULT_SLIDER_VALUE_TRANSPORT);
+  const [quantity, setQuantity] = useState(DEFAULT_SLIDER_VALUE_FOOD);
 
   const emissionPayload: EmissionPayload = {
     emissionType: emissionType,
@@ -44,9 +52,8 @@ const AddEmissionScreen: React.FunctionComponent<Props> & {
       }
       return (
         <Transport
-          setDistanceKilometers={setDistance}
-          setDurationHours={setDurationHours}
-          setCo2eqKilograms={setCo2eqKilograms}
+          defaultValueSlider={DEFAULT_SLIDER_VALUE_TRANSPORT}
+          setDistance={setDistance}
           setTransportType={setTransportType}
           transportType={transportType}
         />
@@ -61,8 +68,8 @@ const AddEmissionScreen: React.FunctionComponent<Props> & {
       emissionPayload.emissionModelType = foodType;
       return (
         <Food
-          setQuantityKilograms={setQuantity}
-          setCo2eqKilograms={setCo2eqKilograms}
+          defaultValueSlider={DEFAULT_SLIDER_VALUE_FOOD}
+          setQuantity={setQuantity}
           setFoodType={setFoodType}
           foodType={foodType}
         />
@@ -75,7 +82,12 @@ const AddEmissionScreen: React.FunctionComponent<Props> & {
     if (emissionType === EmissionEnum.custom) {
       emissionPayload.value = co2eqKilograms;
       emissionPayload.emissionModelType = "custom";
-      return <Custom setCo2eqKilograms={setCo2eqKilograms} />;
+      return (
+        <Custom
+          defaultValueSlider={DEFAULT_SLIDER_VALUE_CUSTOM}
+          setCo2eqKilograms={setCo2eqKilograms}
+        />
+      );
     }
     return null;
   };

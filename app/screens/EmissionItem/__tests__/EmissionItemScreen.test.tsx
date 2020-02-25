@@ -3,7 +3,7 @@ import renderer from "react-test-renderer";
 import EmissionItemScreen from "../EmissionItemScreen";
 
 it("EmissionsScreen renders correctly", () => {
-  let props: any;
+  const props = {};
   const tree = renderer.create(<EmissionItemScreen {...props} />).toJSON();
   expect(tree).toMatchSnapshot();
 });

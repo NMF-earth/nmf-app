@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly ComingSoon 1`] = `
+<RCTSafeAreaView
+  emulateUnlessSupported={true}
+  style={
+    Object {
+      "flex": 1,
+      "justifyContent": "space-between",
+      "paddingHorizontal": 14,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "justifyContent": "flex-end",
+      }
+    }
+  >
+    <Text.Primary
+      bold={true}
+      style={
+        Object {
+          "paddingVertical": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      Welcome to NMF.earth
+    </Text.Primary>
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 2,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Image
+      resizeMode="contain"
+      source={1}
+      style={
+        Object {
+          "width": "60%",
+        }
+      }
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 2,
+      }
+    }
+  >
+    <Text.Secondary
+      style={
+        Object {
+          "paddingVertical": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      Are you ready to reduce your waste and transition to a sustainable life?
+    </Text.Secondary>
+    <Text.Tertiary
+      style={
+        Object {
+          "paddingVertical": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      By proceeding, you are agreeing to our terms of use.
+    </Text.Tertiary>
+    <TouchableOpacity
+      onPress={[Function]}
+    >
+      <Text.Tertiary
+        green={true}
+      >
+        Read terms of use
+      </Text.Tertiary>
+    </TouchableOpacity>
+    <Button.Primary
+      fullWidth={true}
+      onPress={[Function]}
+      style={
+        Object {
+          "bottom": 14,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+        }
+      }
+      textType="Primary"
+    >
+      <Text.Primary
+        bold={true}
+        center={true}
+        white={true}
+      >
+        I agree
+      </Text.Primary>
+    </Button.Primary>
+  </View>
+</RCTSafeAreaView>
+`;

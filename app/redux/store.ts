@@ -9,7 +9,7 @@ const persistConfig = {
   key: "root",
   storage: AsyncStorage,
   blacklist: [],
-  whitelist: ["emissions"]
+  whitelist: ["emissions", "budget"]
 };
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);

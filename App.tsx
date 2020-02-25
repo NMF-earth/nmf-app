@@ -10,6 +10,7 @@ import * as Sentry from "sentry-expo";
 import { Provider } from "react-redux";
 import AppNavigator from "./app/navigation/AppNavigator";
 import store from "./app/redux/store";
+import { platform } from "./app/utils";
 
 const styles = StyleSheet.create({
   container: {
@@ -23,9 +24,9 @@ const secret =
 
 /* TODO: change secret.dsn to Constants.manifest.extra.sentryPublicDsn */
 //Sentry.init({
-  //dsn: secret.dsn,
-  //enableInExpoDevelopment: false,
-  //debug: true
+//dsn: secret.dsn,
+//enableInExpoDevelopment: false,
+//debug: true
 //});
 
 /* TODO: set Constants.manifest.revisionId with expo */
@@ -51,6 +52,8 @@ export default class App extends React.Component<Props, State> {
   }
 
   render() {
+    const localization = platform.isAndroid ? locale.substring(0, 2) : locale;
+
     if (!this.state.isLoadingComplete && !this.props.skipLoadingScreen) {
       return (
         <AppLoading
@@ -68,8 +71,8 @@ export default class App extends React.Component<Props, State> {
         <View style={styles.container}>
           {Platform.OS === "ios" && <StatusBar barStyle="default" />}
           <Provider store={store}>
-            <FormattedProvider locale={locale}>
-              <AppNavigator/>
+            <FormattedProvider locale={localization}>
+              <AppNavigator />
             </FormattedProvider>
           </Provider>
         </View>

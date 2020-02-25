@@ -1,6 +1,6 @@
 import React from "react";
 import { NavigationParams } from "react-navigation";
-import { FlatList, SafeAreaView } from "react-native";
+import { FlatList, SafeAreaView, View } from "react-native";
 import { useSelector } from "react-redux";
 import { t } from "../../utils";
 import styles from "./EmissionsScreen.styles";
@@ -16,10 +16,9 @@ import { selectors } from "./ducks";
 interface Props {
   navigation: {
     push: (screen: string, params?: NavigationParams) => void;
+    navigate: (screen: string) => void;
   };
 }
-
-
 
 const EmissionsScreen = ({ navigation }: Props) => {
   const emissionsToMitigate = useSelector(selectors.getEmissionsToMitigate);
@@ -34,6 +33,7 @@ const EmissionsScreen = ({ navigation }: Props) => {
               title: t("EMISSIONS_SCREEN_TO_OFFSET"),
               component: (
                 <FlatList<EmissionListItemProps>
+                  ListFooterComponent={<View style={styles.separator} />}
                   style={styles.listContainer}
                   data={emissionsToMitigate}
                   keyExtractor={item => item.id}
@@ -41,7 +41,7 @@ const EmissionsScreen = ({ navigation }: Props) => {
                     <EmissionListItem
                       id={item.id}
                       onPress={() => {
-                        navigation.push("EmissionItem", { id: item.id })
+                        navigation.push("EmissionItem", { id: item.id });
                       }}
                       title={item.title}
                       co2value={item.co2value}
@@ -57,6 +57,7 @@ const EmissionsScreen = ({ navigation }: Props) => {
               title: t("EMISSIONS_SCREEN_MITIGATED"),
               component: emissionsMitigated.length ? (
                 <FlatList<EmissionListItemProps>
+                  ListFooterComponent={<View style={styles.separator} />}
                   style={styles.listContainer}
                   data={emissionsMitigated}
                   keyExtractor={item => item.id}

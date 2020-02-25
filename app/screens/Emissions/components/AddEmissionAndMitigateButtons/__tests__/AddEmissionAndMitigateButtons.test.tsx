@@ -4,7 +4,8 @@ import AddEmissionAndMitigateButtons from "../AddEmissionAndMitigateButtons";
 
 const props = {
   navigation: {
-    push: jest.fn()
+    push: jest.fn(),
+    navigate: jest.fn()
   }
 };
 
@@ -26,5 +27,6 @@ it("AddEmissionAndMitigateButtons should navigate if any button is pressed", () 
 
   buttons[0].props.onPress();
   buttons[1].props.onPress();
-  expect(props.navigation.push).toHaveBeenCalledTimes(2);
+  expect(props.navigation.navigate).toHaveBeenCalled();
+  expect(props.navigation.push).toHaveBeenCalled();
 });

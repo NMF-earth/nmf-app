@@ -4,7 +4,7 @@ import { Svg, G, Path } from "react-native-svg";
 import Pie from "paths-js/pie";
 import { gt, lt, both, cond, always, __ } from "ramda";
 import styles from "./Chart.styles";
-import colors from "../../../../../../style/colors";
+import { Colors } from "../../../../../../style";
 import { PADDING_HORIZONTAL, screen } from "../../../../../../constants/Layout";
 
 const chartWidth = screen.width / 2;
@@ -44,7 +44,7 @@ const Chart = ({
       transportEmissionsPercentage,
       totalEmissionsPercentage
     ],
-    colors: [colors.linkGreen, colors.mango, colors.apricot]
+    colors: [Colors.linkGreen, Colors.mango, Colors.apricot]
   };
 
   const pies = data.values.map((pieData, i) => {

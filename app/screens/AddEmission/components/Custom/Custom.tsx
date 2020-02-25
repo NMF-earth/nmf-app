@@ -1,22 +1,21 @@
 import React, { useState } from "react";
-import { View } from "react-native";
-import Slider from "react-native-slider";
+import { View, Slider } from "react-native";
 
 import styles from "./Custom.styles";
 import { Text } from "../../../../components";
-import colors from "../../../../style/colors";
+import { Colors } from "../../../../style";
 import { t } from "../../../../utils";
 
-const DEFAULT_SLIDER_VALUE = 800;
 const MIN_SLIDER_VALUE = 1;
 const MAX_SLIDER_VALUE = 5000;
 
 interface Props {
+  defaultValueSlider: number;
   setCo2eqKilograms: (arg0: number) => void;
 }
 
-export default ({ setCo2eqKilograms }: Props) => {
-  const [sliderValue, setValue] = useState(DEFAULT_SLIDER_VALUE);
+export default ({ setCo2eqKilograms, defaultValueSlider }: Props) => {
+  const [sliderValue, setSliderValue] = useState(defaultValueSlider);
   setCo2eqKilograms(sliderValue);
 
   return (
@@ -30,14 +29,14 @@ export default ({ setCo2eqKilograms }: Props) => {
         </Text.Primary>
       </View>
       <Slider
-        minimumTrackTintColor={colors.linkGreen}
-        trackStyle={styles.track}
-        thumbStyle={styles.thumb}
+        minimumTrackTintColor={Colors.linkGreen}
+        maximumTrackTintColor={Colors.gray}
+        thumbTintColor={Colors.linkGreen}
         style={styles.slider}
         maximumValue={MAX_SLIDER_VALUE}
         minimumValue={MIN_SLIDER_VALUE}
         value={sliderValue}
-        onValueChange={setValue}
+        onSlidingComplete={setSliderValue}
       />
     </React.Fragment>
   );

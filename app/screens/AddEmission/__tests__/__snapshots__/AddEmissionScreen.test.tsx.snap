@@ -134,37 +134,31 @@ exports[`AddEmissionScreen renders correctly 1`] = `
           150 kilometer(s)
         </Text.Primary>
       </View>
-      <Slider
+      <RCTSlider
+        disabled={false}
+        enabled={true}
+        maximumTrackTintColor="#CED4DA"
         maximumValue={1000}
         minimumTrackTintColor="#4BB377"
         minimumValue={2}
-        onValueChange={[Function]}
+        onChange={null}
+        onResponderTerminationRequest={[Function]}
+        onSlidingComplete={[Function]}
+        onStartShouldSetResponder={[Function]}
+        onValueChange={null}
+        step={0}
         style={
-          Object {
-            "height": 40,
-            "marginHorizontal": 24,
-          }
-        }
-        thumbStyle={
-          Object {
-            "backgroundColor": "#4BB377",
-            "borderRadius": 10,
-            "height": 20,
-            "shadowOffset": Object {
-              "height": 2,
-              "width": 0,
+          Array [
+            Object {
+              "height": 40,
             },
-            "shadowOpacity": 0.35,
-            "shadowRadius": 2,
-            "width": 20,
-          }
+            Object {
+              "height": 40,
+              "marginHorizontal": 24,
+            },
+          ]
         }
-        trackStyle={
-          Object {
-            "borderRadius": 1,
-            "height": 2,
-          }
-        }
+        thumbTintColor="#4BB377"
         value={150}
       />
       <View
