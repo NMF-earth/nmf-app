@@ -33,7 +33,7 @@ exports[`ProgressChart renders correctly 1`] = `
     }
   >
     <Text.H3>
-      This year
+      2020
     </Text.H3>
   </View>
   <Chart
@@ -48,7 +48,7 @@ exports[`ProgressChart renders correctly 1`] = `
     transportEmissions={600}
   />
   <PeriodBudget
-    period="this year"
+    period="2020"
     periodEmissionsBudget={12000}
   />
 </View>

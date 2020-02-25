@@ -21,11 +21,13 @@ const AddEmissionButton = ({ navigation, emissionPayload }: Props) => {
 
   const addEmission = () => {
     const emission = {
-        ...emissionPayload,
-        id: uuid(),
-        creationDate: moment().utc().toISOString(),
-        isMitigated: false,
-    }
+      ...emissionPayload,
+      id: uuid(),
+      creationDate: moment()
+        .utc()
+        .toISOString(),
+      isMitigated: false
+    };
 
     dispatch(emissions.actions.createEmission(emission));
     navigation.goBack();

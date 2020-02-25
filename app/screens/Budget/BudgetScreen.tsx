@@ -3,7 +3,8 @@ import { ScrollView } from "react-native";
 import { useSelector } from "react-redux";
 import styles from "./BudgetScreen.styles";
 import { Text, Button } from "../../components";
-import { NumberOfDaysVegetarian, ProgressChart } from "./components";
+import { ProgressChart } from "./components";
+// import { NumberOfDaysVegetarian, ProgressChart } from "./components";
 import { t } from "../../utils";
 import { selectors } from "./ducks";
 
@@ -15,19 +16,40 @@ interface Props {
 
 const BudgetScreen = (props: Props) => {
   const monthlyCarbonBudget = useSelector(selectors.getMonthlyCarbonBudget);
-  const totalEmissions = useSelector(selectors.getAllCarbonValue);
-  const transportEmissions = useSelector(selectors.getTransportCarbonValue);
-  const foodEmissions = useSelector(selectors.getFoodCarbonValue);
-  const otherEmissions = useSelector(selectors.getCustomCarbonValue);
+  const totalCurrentMonthEmissions = useSelector(
+    selectors.getCurrentMonthAllCarbonValue
+  );
+  const transportCurrentMonthEmissions = useSelector(
+    selectors.getCurrentMonthTransportCarbonValue
+  );
+  const foodCurrentMonthEmissions = useSelector(
+    selectors.getCurrentMonthFoodCarbonValue
+  );
+  const otherCurrentMonthEmissions = useSelector(
+    selectors.getCurrentMonthCustomCarbonValue
+  );
+
+  const totalCurrentYearEmissions = useSelector(
+    selectors.getCurrentYearAllCarbonValue
+  );
+  const transportCurrentYearEmissions = useSelector(
+    selectors.getCurrentMonthTransportCarbonValue
+  );
+  const foodCurrentYearEmissions = useSelector(
+    selectors.getCurrentYearFoodCarbonValue
+  );
+  const otherCurrentYearEmissions = useSelector(
+    selectors.getCurrentYearCustomCarbonValue
+  );
 
   return (
     <ScrollView style={styles.container}>
       <ProgressChart
         isMonth
-        totalEmissions={totalEmissions}
-        foodEmissions={foodEmissions}
-        transportEmissions={transportEmissions}
-        otherEmissions={otherEmissions}
+        totalEmissions={totalCurrentMonthEmissions}
+        foodEmissions={foodCurrentMonthEmissions}
+        transportEmissions={transportCurrentMonthEmissions}
+        otherEmissions={otherCurrentMonthEmissions}
         monthlyEmissionsBudget={monthlyCarbonBudget}
       />
       <Button.Primary
@@ -43,13 +65,13 @@ const BudgetScreen = (props: Props) => {
         </Text.Primary>
       </Button.Primary>
       <ProgressChart
-        totalEmissions={totalEmissions}
-        foodEmissions={foodEmissions}
-        transportEmissions={transportEmissions}
-        otherEmissions={otherEmissions}
+        totalEmissions={totalCurrentYearEmissions}
+        foodEmissions={foodCurrentYearEmissions}
+        transportEmissions={transportCurrentYearEmissions}
+        otherEmissions={otherCurrentYearEmissions}
         monthlyEmissionsBudget={monthlyCarbonBudget}
       />
-      <NumberOfDaysVegetarian />
+      {/* <NumberOfDaysVegetarian /> */}
     </ScrollView>
   );
 };

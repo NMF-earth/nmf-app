@@ -3,7 +3,10 @@ import { View } from "react-native";
 import styles from "./ProgressChart.styles";
 import { Legend, Chart, PeriodBudget } from "./components";
 import { Text } from "../../../../components";
-import { t } from "../../../../utils";
+import moment from "moment";
+// TODO: import all languages and apply according to phone settings
+// import "moment/locale/fr";
+// moment.locale("fr");
 
 interface Prop {
   isMonth?: boolean;
@@ -39,9 +42,7 @@ const ProgressChart = ({
       ? 1
       : foodEmissions / monthlyEmissionsBudget;
 
-  const period = isMonth
-    ? t("BUDGET_SCREEN_THIS_MONTH")
-    : t("BUDGET_SCREEN_THIS_YEAR");
+  const period = isMonth ? moment().format("MMMM") : moment().format("YYYY");
 
   const periodEmissionsBudget = isMonth
     ? monthlyEmissionsBudget
