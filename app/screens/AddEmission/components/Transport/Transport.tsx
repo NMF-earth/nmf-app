@@ -8,17 +8,19 @@ import { Colors } from "../../../../style";
 import { t, time } from "../../../../utils";
 import { transport, TransportEnum } from "carbon-footprint";
 import { TranslationKeys } from "../../translations";
+import { calculation } from "../../../../utils";
 
 const MIN_SLIDER_VALUE = 2;
 const MAX_SLIDER_VALUE = 1000;
 
 const MIN_SLIDER_VALUE_PLANE = 20;
-const MAX_SLIDER_VALUE_PLANE = 1200;
+const MAX_SLIDER_VALUE_PLANE = 1000;
 
 interface Props {
   defaultValueSlider: number;
   transportType: string;
   setTransportType: (arg0: TransportEnum) => void;
+  setDurationMinutes: (arg0: number) => void;
   setDistance: (arg0: number) => void;
 }
 
@@ -51,6 +53,7 @@ const TAGS: TransportTag[] = [
 ];
 
 export default ({
+  setDurationMinutes,
   setTransportType,
   transportType,
   setDistance,
@@ -63,7 +66,7 @@ export default ({
     setSliderValue(val);
     /* since we use meter as reference (and not kilometers), we need to multiply by 1000 */
     setDistance(val * 1000);
-    // TODO: set duration
+    setDurationMinutes(val);
   };
 
   const renderDuration = () => {
@@ -134,7 +137,12 @@ export default ({
         <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_TOTAL")}</Text.H3>
         <Text.H1 green>
           <FormattedNumber
-            value={sliderValue * 1000 * transport[transportType]}
+            value={
+              transportType === TransportEnum.plane
+                ? calculation.getFlightEmissionValue(sliderValue) *
+                  transport[calculation.getFlightType(sliderValue)]
+                : sliderValue * 1000 * transport[transportType]
+            }
             maximumFractionDigits={2}
           />{" "}
           <Text.Primary>kgCO2eq</Text.Primary>

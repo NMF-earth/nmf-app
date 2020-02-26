@@ -42,3 +42,43 @@ describe("getC02ValueFromEmission should return the correct co2 emitted value fo
     );
   });
 });
+
+describe("getFlightType should return the correct flight type for", () => {
+  it("a short flight", () => {
+    expect(calculation.getFlightType(60)).toEqual(
+      TransportEnum.shortHaulFlight
+    );
+  });
+  it("a medium flight", () => {
+    expect(calculation.getFlightType(4 * 60)).toEqual(
+      TransportEnum.mediumHaulFlight
+    );
+  });
+  it("a long flight", () => {
+    expect(calculation.getFlightType(8 * 60)).toEqual(
+      TransportEnum.longHaulFlight
+    );
+  });
+});
+
+describe("getFlightEmissionValue should return the correct emission value for", () => {
+  it("a short flight", () => {
+    expect(calculation.getFlightEmissionValue(60)).toEqual(
+      (((588 * 1000) / (60 + 15) + (1543 * 1000) / (2 * 60 + 35)) / 2) * 60
+    );
+  });
+  it("a medium flight", () => {
+    expect(calculation.getFlightEmissionValue(4 * 60)).toEqual(
+      (((2255 * 1000) / (3 * 60 + 25) + (4205 * 1000) / (5 * 60 + 45)) / 2) *
+        4 *
+        60
+    );
+  });
+  it("a long flight", () => {
+    expect(calculation.getFlightEmissionValue(8 * 60)).toEqual(
+      (((5837 * 1000) / (8 * 60 + 15) + (11648 * 1000) / (14 * 60 + 30)) / 2) *
+        8 *
+        60
+    );
+  });
+});

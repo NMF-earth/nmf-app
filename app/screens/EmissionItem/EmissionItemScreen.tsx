@@ -28,7 +28,9 @@ const getTranslationModelType = emissionModelType => {
       return t("EMISSION_ITEM_RED_MEAT");
     case FoodEnum.whiteMeat:
       return t("EMISSION_ITEM_WHITE_MEAT");
-    case TransportEnum.plane:
+    case TransportEnum.shortHaulFlight:
+    case TransportEnum.mediumHaulFlight:
+    case TransportEnum.longHaulFlight:
       return t("EMISSION_ITEM_PLANE");
     case TransportEnum.train:
       return t("EMISSION_ITEM_TRAIN");
