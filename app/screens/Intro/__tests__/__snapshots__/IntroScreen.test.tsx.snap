@@ -87,27 +87,31 @@ exports[`renders correctly ComingSoon 1`] = `
         Read terms of use
       </Text.Tertiary>
     </TouchableOpacity>
-    <Button.Primary
-      fullWidth={true}
-      onPress={[Function]}
+    <View
       style={
         Object {
           "bottom": 14,
           "left": 0,
+          "marginHorizontal": 14,
           "position": "absolute",
           "right": 0,
         }
       }
-      textType="Primary"
     >
-      <Text.Primary
-        bold={true}
-        center={true}
-        white={true}
+      <Button.Primary
+        fullWidth={true}
+        onPress={[Function]}
+        textType="Primary"
       >
-        I agree
-      </Text.Primary>
-    </Button.Primary>
+        <Text.Primary
+          bold={true}
+          center={true}
+          white={true}
+        >
+          I agree
+        </Text.Primary>
+      </Button.Primary>
+    </View>
   </View>
 </RCTSafeAreaView>
 `;

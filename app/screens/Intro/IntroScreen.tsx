@@ -16,10 +16,6 @@ const IntroScreen = ({ navigation }) => {
   const acceptedTermsOfUseVersion = useSelector(
     userPreferences.selectors.getAcceptedTermsOfUseVersion
   );
-  console.log(
-    "TCL: IntroScreen -> acceptedTermsOfUseVersion",
-    acceptedTermsOfUseVersion
-  );
   if (currentTermsOfUseVersion === acceptedTermsOfUseVersion) {
     navigation.navigate("BudgetStack");
   }
@@ -60,16 +56,13 @@ const IntroScreen = ({ navigation }) => {
         >
           <Text.Tertiary green>{t("INTRO_SCREEN_TERMS_OF_USE")}</Text.Tertiary>
         </TouchableOpacity>
-        <Button.Primary
-          fullWidth
-          style={styles.button}
-          onPress={onPress}
-          textType={"Primary"}
-        >
-          <Text.Primary white center bold>
-            {t("INTRO_SCREEN_I_AGREE")}
-          </Text.Primary>
-        </Button.Primary>
+        <View style={styles.buttonView}>
+          <Button.Primary fullWidth onPress={onPress} textType={"Primary"}>
+            <Text.Primary white center bold>
+              {t("INTRO_SCREEN_I_AGREE")}
+            </Text.Primary>
+          </Button.Primary>
+        </View>
       </View>
     </SafeAreaView>
   );

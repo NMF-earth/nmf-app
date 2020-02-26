@@ -7,6 +7,7 @@ export default StyleSheet.create({
     ...Layout.containerWithPadding
   },
   image: {
+    marginVertical: 20,
     width: "100%",
     height: screen.width - 100
   },
@@ -27,6 +28,6 @@ export default StyleSheet.create({
     paddingVertical: 14
   },
   button: {
-    marginTop: 20
+    marginVertical: 20
   }
 });

@@ -27,10 +27,11 @@ export default StyleSheet.create({
     textAlign: "center",
     paddingVertical: 10
   },
-  button: {
+  buttonView: {
     position: "absolute",
     bottom: PADDING_HORIZONTAL,
     right: 0,
-    left: 0
+    left: 0,
+    marginHorizontal: PADDING_HORIZONTAL
   }
 });
