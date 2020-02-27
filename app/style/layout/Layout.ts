@@ -1,5 +1,6 @@
 import { StyleSheet } from "react-native";
 import { PADDING_HORIZONTAL } from "../../constants/Layout";
+import { platform } from "../../utils";
 
 export default StyleSheet.create({
   containerNoPadding: {
@@ -8,5 +9,8 @@ export default StyleSheet.create({
   containerWithPadding: {
     flex: 1,
     paddingHorizontal: PADDING_HORIZONTAL
+  },
+  androidNavTitle: {
+    paddingLeft: platform.isAndroid ? 6 : 0
   }
 });

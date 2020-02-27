@@ -5,13 +5,16 @@ import { Text } from "../../components";
 // import { PADDING_HORIZONTAL } from "../../constants/Layout";
 import { t } from "../../utils";
 // import { Colors } from "../../style";
+import { Layout } from "../../style";
 
 const navigationOptions = () => ({
   headerStyle: {
     borderBottomWidth: 0
   },
   headerBackTitle: null,
-  headerTitle: () => <Text.H1>{t("BUDGET_SCREEN_TITLE")}</Text.H1>
+  headerTitle: () => (
+    <Text.H1 style={Layout.androidNavTitle}>{t("BUDGET_SCREEN_TITLE")}</Text.H1>
+  )
   // headerRight: (
   //   <TouchableOpacity
   //     onPress={() => {

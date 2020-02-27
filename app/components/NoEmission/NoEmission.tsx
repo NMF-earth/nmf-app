@@ -1,5 +1,5 @@
 import React from "react";
-import { SafeAreaView, View, Image } from "react-native";
+import { ScrollView, View, Image } from "react-native";
 
 import { Text, Button } from "../";
 import ImagesAssets from "../../constants/ImagesAssets";
@@ -12,7 +12,7 @@ interface Props {
 
 export default function NoEmission({ addEmission }: Props) {
   return (
-    <SafeAreaView style={styles.container}>
+    <ScrollView style={styles.container}>
       <View style={styles.imageView}>
         <Image
           style={styles.image}
@@ -39,6 +39,6 @@ export default function NoEmission({ addEmission }: Props) {
           </Text.Primary>
         </Button.Primary>
       </View>
-    </SafeAreaView>
+    </ScrollView>
   );
 }

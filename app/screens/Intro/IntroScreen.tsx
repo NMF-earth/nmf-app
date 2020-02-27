@@ -1,13 +1,33 @@
 import React from "react";
 import { SafeAreaView, View, Image, TouchableOpacity } from "react-native";
 import * as WebBrowser from "expo-web-browser";
+import { useSelector, useDispatch } from "react-redux";
 
 import { Text, Button } from "../../components";
 import ImagesAssets from "../../constants/ImagesAssets";
 import styles from "./IntroScreen.styles";
 import { t } from "../../utils";
+import { userPreferences } from "../../ducks";
+
+const currentTermsOfUseVersion = 1;
 
 const IntroScreen = ({ navigation }) => {
+  const dispatch = useDispatch();
+  const acceptedTermsOfUseVersion = useSelector(
+    userPreferences.selectors.getAcceptedTermsOfUseVersion
+  );
+  if (currentTermsOfUseVersion === acceptedTermsOfUseVersion) {
+    navigation.navigate("BudgetStack");
+  }
+
+  const onPress = () => {
+    dispatch(
+      userPreferences.actions.acceptTermsOfUse(currentTermsOfUseVersion)
+    );
+
+    navigation.navigate("BudgetStack");
+  };
+
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.welcomeView}>
@@ -36,16 +56,13 @@ const IntroScreen = ({ navigation }) => {
         >
           <Text.Tertiary green>{t("INTRO_SCREEN_TERMS_OF_USE")}</Text.Tertiary>
         </TouchableOpacity>
-        <Button.Primary
-          fullWidth
-          style={styles.button}
-          onPress={() => navigation.navigate("BudgetStack")}
-          textType={"Primary"}
-        >
-          <Text.Primary white center bold>
-            {t("INTRO_SCREEN_I_AGREE")}
-          </Text.Primary>
-        </Button.Primary>
+        <View style={styles.buttonView}>
+          <Button.Primary fullWidth onPress={onPress} textType={"Primary"}>
+            <Text.Primary white center bold>
+              {t("INTRO_SCREEN_I_AGREE")}
+            </Text.Primary>
+          </Button.Primary>
+        </View>
       </View>
     </SafeAreaView>
   );
