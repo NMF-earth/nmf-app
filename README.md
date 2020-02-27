@@ -1,10 +1,16 @@
-## 🌱 React Native app for Not My Fault.
+# 🌱 React Native app for NMF.earth
 
 ![](https://github.com/NotMyFaultEarth/nmf-app/workflows/Test%20CI/badge.svg)
 [![Depfu](https://badges.depfu.com/badges/f3b06c819202baf2a14b3241cbf249c9/overview.svg)](https://depfu.com/repos/github/NotMyFaultEarth/nmf-app?project_id=10243)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md) 
 
 Source code repository for the Not My Fault React Native application.
+
+### Preview
+
+![screenshots](https://github.com/NotMyFaultEarth/nmf-app/blob/master/app-preview.png)
+
+Download for iOS and Android + more info on the website [NMF.earth](https://nmf.earth/).
 
 ### 📦 Getting started
 
@@ -81,7 +87,7 @@ $ yarn prestorybook
 
 ### 👨‍💻 Contributors
 
-[Pierre Bresson](https://github.com/pierrebresson/) - [Theo Lampert](https://github.com/theolampert)
+[Pierre Bresson](https://github.com/pierrebresson/) - [Theo Lampert](https://github.com/theolampert) - [Christopher Gwilliams](https://github.com/encima)
 
 Have a look [here](https://github.com/NotMyFaultEarth/nmf-app/blob/master/contributing.md) if you want to contribute!
 
