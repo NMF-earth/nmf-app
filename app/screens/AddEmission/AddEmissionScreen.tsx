@@ -8,6 +8,7 @@ import { t } from "../../utils";
 import { Food, Transport, Custom, AddEmissionButton } from "./components";
 import { EmissionEnum } from "../../interfaces";
 import { EmissionPayload } from "../../interfaces/emission/emission.interface";
+import { calculation } from "../../utils";
 
 interface Props {
   navigation: {
@@ -28,7 +29,9 @@ const AddEmissionScreen: React.FunctionComponent<Props> & {
   const [transportType, setTransportType] = useState(TransportEnum.car);
   const [foodType, setFoodType] = useState(FoodEnum.redMeat);
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [durationHours, setDurationHours] = useState(0);
+  const [durationMinutes, setDurationMinutes] = useState(
+    DEFAULT_SLIDER_VALUE_TRANSPORT / 1000
+  );
   const [co2eqKilograms, setCo2eqKilograms] = useState(
     DEFAULT_SLIDER_VALUE_CUSTOM
   );
@@ -44,8 +47,12 @@ const AddEmissionScreen: React.FunctionComponent<Props> & {
   const renderTransport = () => {
     if (emissionType === EmissionEnum.transport) {
       if (transportType === TransportEnum.plane) {
-        emissionPayload.value = durationHours;
-        emissionPayload.emissionModelType = transportType;
+        emissionPayload.value = calculation.getFlightEmissionValue(
+          durationMinutes
+        );
+        emissionPayload.emissionModelType = calculation.getFlightType(
+          durationMinutes
+        );
       } else {
         emissionPayload.value = distance;
         emissionPayload.emissionModelType = transportType;
@@ -54,6 +61,7 @@ const AddEmissionScreen: React.FunctionComponent<Props> & {
         <Transport
           defaultValueSlider={DEFAULT_SLIDER_VALUE_TRANSPORT}
           setDistance={setDistance}
+          setDurationMinutes={setDurationMinutes}
           setTransportType={setTransportType}
           transportType={transportType}
         />
