@@ -4,10 +4,7 @@ import { Colors } from "../../style";
 export default StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: 16,
+    paddingTop: 15,
     backgroundColor: Colors.white
-  },
-  hiddenBtn: {
-    marginHorizontal: 10
   }
 });

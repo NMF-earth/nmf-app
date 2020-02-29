@@ -36,6 +36,12 @@ jest.mock(
   () => "AddEmissionAndMitigateButtons"
 );
 
+/* Settings Screen */
+jest.mock(
+  "../../../app/screens/Settings/components/SettingsRow/SettingsRow",
+  () => "SettingsRow"
+);
+
 /* Shared Components */
 jest.mock("../../../app/components/SocialMedia", () => "SocialMedia");
 jest.mock("../../../app/components/Tag", () => "Tag");

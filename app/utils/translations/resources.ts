@@ -8,12 +8,14 @@ import * as ComingSoon from "../../screens/ComingSoon/translations";
 import * as AddEmission from "../../screens/AddEmission/translations";
 import * as EmissionItem from "../../screens/EmissionItem/translations";
 import * as Intro from "../../screens/Intro/translations";
+import * as About from "../../screens/About/translations";
 
 /* COMPONENTS */
 import * as NoEmission from "../../components/NoEmission/translations";
 import * as GuidePreview from "../../components/GuidePreview/translations";
 
 const en = {
+  ...About.en,
   ...MonthlyBudget.en,
   ...GuidePreview.en,
   ...NoEmission.en,
@@ -28,6 +30,7 @@ const en = {
 };
 
 const de = {
+  ...About.de,
   ...MonthlyBudget.de,
   ...GuidePreview.de,
   ...NoEmission.de,
@@ -42,6 +45,7 @@ const de = {
 };
 
 const fr = {
+  ...About.fr,
   ...MonthlyBudget.fr,
   ...GuidePreview.fr,
   ...NoEmission.fr,
@@ -66,6 +70,7 @@ export interface TranslationKeys
     AddEmission.TranslationKeys,
     EmissionItem.TranslationKeys,
     Settings.TranslationKeys,
-    Intro.TranslationKeys {}
+    Intro.TranslationKeys,
+    About.TranslationKeys {}
 
 export { en, de, fr };

@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SettingsScreen renders correctly 1`] = `
+<RCTScrollView
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "flex": 1,
+      "paddingTop": 16,
+    }
+  }
+>
+  <View>
+    <SettingsRow
+      isLastItem={false}
+      onPress={[Function]}
+      title="About"
+    />
+    <SettingsRow
+      isLastItem={false}
+      onPress={[Function]}
+      title="NMF.earth"
+    />
+    <SettingsRow
+      isLastItem={false}
+      onPress={[Function]}
+      title="Roadmap"
+    />
+    <SettingsRow
+      isLastItem={false}
+      onPress={[Function]}
+      title="Feedback"
+    />
+    <SettingsRow
+      isLastItem={true}
+      onPress={[Function]}
+      title="Terms of use"
+    />
+    <SocialMedia />
+    <Button.Primary
+      onPress={[Function]}
+      style={
+        Object {
+          "marginHorizontal": 10,
+        }
+      }
+      textType="Primary"
+    >
+      <Text.Primary
+        center={true}
+        white={true}
+      >
+        Open Storybook
+      </Text.Primary>
+    </Button.Primary>
+  </View>
+</RCTScrollView>
+`;

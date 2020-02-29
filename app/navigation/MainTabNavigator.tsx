@@ -14,6 +14,7 @@ import EmissionsScreen from "../screens/Emissions";
 import SettingsScreen from "../screens/Settings";
 import MontlyBudgetScreen from "../screens/MonthlyBudget";
 import AddEmissionScreen from "../screens/AddEmission";
+import AboutScreen from "../screens/About";
 
 import { Colors } from "../style";
 import { t } from "../utils";
@@ -82,6 +83,7 @@ ActStack.navigationOptions = {
 
 const SettingsStack = createStackNavigator({
   Settings: SettingsScreen,
+  About: AboutScreen,
   Storybook: StorybookScreen
 });
 

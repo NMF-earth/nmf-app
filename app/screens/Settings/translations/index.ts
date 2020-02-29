@@ -5,6 +5,11 @@ import de from "./de";
 interface TranslationKeys {
   SETTINGS_SCREEN_TAB_NAME: string;
   SETTINGS_SCREEN_TITLE: string;
+  SETTINGS_SCREEN_ABOUT: string;
+  SETTINGS_SCREEN_NMF_EARTH: string;
+  SETTINGS_SCREEN_ROADMAP: string;
+  SETTINGS_SCREEN_FEEDBACK: string;
+  SETTINGS_SCREEN_TERMS_OF_USE: string;
 }
 
 export { en, fr, de, TranslationKeys };
