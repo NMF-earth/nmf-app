@@ -4,16 +4,93 @@ exports[`AboutScreen renders correctly 1`] = `
 <RCTScrollView
   style={
     Object {
-      "backgroundColor": "#FFFFFF",
       "flex": 1,
-      "paddingTop": 15,
+      "paddingHorizontal": 14,
     }
   }
 >
   <View>
     <Text.Primary>
-      a propros
+      We are a small team concerned by the human impact on the planet. We are not a startup driven by growth or profit to pay dividends to investors. We are transparent and you can have a look to our figures on Indie Hackers.
     </Text.Primary>
+    <Text.H2
+      style={
+        Object {
+          "paddingVertical": 26,
+        }
+      }
+    >
+      We care about you
+    </Text.H2>
+    <Text.H3
+      style={
+        Object {
+          "paddingVertical": 12,
+        }
+      }
+    >
+      Privacy by design
+    </Text.H3>
+    <Text.Primary>
+      All data provided in the app will never be sold or shared to any companies and we don't track what you do in the app 
+    </Text.Primary>
+    <Text.H3
+      style={
+        Object {
+          "paddingVertical": 12,
+        }
+      }
+    >
+      Ethic by design
+    </Text.H3>
+    <Text.Primary>
+      We don't exploit psychological vulnerabilities like bottomless feeds or auto-play to keep users from leaving 
+    </Text.Primary>
+    <Text.H3
+      style={
+        Object {
+          "paddingVertical": 12,
+        }
+      }
+    >
+      100% Open source
+    </Text.H3>
+    <Text.Primary>
+      Everyone will be to add content to the app, verify emissions models and fix any incorrect information 
+    </Text.Primary>
+    <Text.H2
+      style={
+        Object {
+          "paddingVertical": 26,
+        }
+      }
+    >
+      Librairies & contributors
+    </Text.H2>
+    <TouchableOpacity
+      onPress={[Function]}
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <Text.Primary>
+        Can be found on 
+      </Text.Primary>
+      <Text.Primary
+        green={true}
+      >
+        Github
+      </Text.Primary>
+    </TouchableOpacity>
+    <View
+      style={
+        Object {
+          "height": 30,
+        }
+      }
+    />
   </View>
 </RCTScrollView>
 `;

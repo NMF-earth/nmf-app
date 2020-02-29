@@ -1,10 +1,18 @@
 import { StyleSheet } from "react-native";
-import { Colors } from "../../style";
+import { Layout } from "../../style";
 
 export default StyleSheet.create({
   container: {
-    flex: 1,
-    paddingTop: 15,
-    backgroundColor: Colors.white
-  }
+    ...Layout.containerWithPadding
+  },
+  header: {
+    paddingVertical: 26
+  },
+  subHeader: {
+    paddingVertical: 12
+  },
+  separator: {
+    height: 30
+  },
+  githubBtn: { flexDirection: "row" }
 });

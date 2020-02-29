@@ -11,9 +11,7 @@ const navigationOptions = () => ({
   },
   headerBackTitle: null,
   headerTitle: () => (
-    <Text.H1 style={Layout.androidNavTitle}>
-      {t("SETTINGS_SCREEN_TITLE")}
-    </Text.H1>
+    <Text.H1 style={Layout.androidNavTitle}>{t("ABOUT_SCREEN_TITLE")}</Text.H1>
   )
 });
 
