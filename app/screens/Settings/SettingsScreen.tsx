@@ -1,11 +1,12 @@
-import React from "react";
-import { ScrollView } from "react-native";
+import React, { useState } from "react";
+import { View, TouchableOpacity, ScrollView, Image } from "react-native";
 import { Button, Text, SocialMedia } from "../../components";
 import { SettingsRow } from "./components";
 import * as WebBrowser from "expo-web-browser";
 import styles from "./SettingsScreen.styles";
 import navigationOptions from "./SettingsScreen.navigationOptions";
 import { t } from "../../utils";
+import ImagesAssets from "../../constants/ImagesAssets";
 
 interface Props {
   navigation: {
@@ -41,6 +42,7 @@ const SettingsScreen = ({ navigation }: Props) => {
         WebBrowser.openBrowserAsync("http://nmf.earth/terms-of-use.pdf")
     }
   ];
+  const [steps, setSteps] = useState(0);
 
   return (
     <ScrollView style={styles.container}>
@@ -52,18 +54,43 @@ const SettingsScreen = ({ navigation }: Props) => {
           isLastItem={index === rowItems.length - 1}
         />
       ))}
-
       <SocialMedia />
-
-      <Button.Primary
-        style={styles.hiddenBtn}
-        textType={"Primary"}
-        onPress={() => navigation.push("Storybook")}
+      <TouchableOpacity
+        onPress={() => setSteps(steps + 1)}
+        style={styles.imageContainer}
       >
-        <Text.Primary white center>
-          Open Storybook
-        </Text.Primary>
-      </Button.Primary>
+        <Image
+          style={styles.image}
+          resizeMode="contain"
+          source={ImagesAssets.logos.nmf}
+        />
+      </TouchableOpacity>
+
+      {steps > 4 ? (
+        <View>
+          <Button.Primary
+            style={styles.hiddenBtn}
+            textType={"Primary"}
+            onPress={() => navigation.push("Storybook")}
+          >
+            <Text.Primary white center>
+              Open Storybook
+            </Text.Primary>
+          </Button.Primary>
+          <Button.Primary
+            black
+            style={styles.hiddenBtn}
+            textType={"Primary"}
+            onPress={() => {
+              throw new Error();
+            }}
+          >
+            <Text.Primary white center>
+              Crash test
+            </Text.Primary>
+          </Button.Primary>
+        </View>
+      ) : null}
     </ScrollView>
   );
 };

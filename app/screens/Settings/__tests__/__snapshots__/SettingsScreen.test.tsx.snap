@@ -37,22 +37,25 @@ exports[`SettingsScreen renders correctly 1`] = `
       title="Terms of use"
     />
     <SocialMedia />
-    <Button.Primary
+    <TouchableOpacity
       onPress={[Function]}
       style={
         Object {
-          "marginHorizontal": 10,
+          "alignItems": "center",
+          "flex": 1,
         }
       }
-      textType="Primary"
     >
-      <Text.Primary
-        center={true}
-        white={true}
-      >
-        Open Storybook
-      </Text.Primary>
-    </Button.Primary>
+      <Image
+        resizeMode="contain"
+        source={1}
+        style={
+          Object {
+            "width": "50%",
+          }
+        }
+      />
+    </TouchableOpacity>
   </View>
 </RCTScrollView>
 `;

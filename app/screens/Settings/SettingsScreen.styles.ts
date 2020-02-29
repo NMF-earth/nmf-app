@@ -8,6 +8,14 @@ export default StyleSheet.create({
     backgroundColor: Colors.white
   },
   hiddenBtn: {
+    marginTop: 8,
     marginHorizontal: 10
+  },
+  imageContainer: {
+    flex: 1,
+    alignItems: "center"
+  },
+  image: {
+    width: "50%"
   }
 });
