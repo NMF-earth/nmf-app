@@ -87,5 +87,3 @@ export default {
   getCurrentYearCustomCarbonValue,
   getCurrentYearAllCarbonValue
 };
-
-// TODO: write tests

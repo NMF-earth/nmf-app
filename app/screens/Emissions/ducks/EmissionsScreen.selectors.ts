@@ -51,7 +51,8 @@ const getEmissionsMitigated = state =>
 
 export default {
   getEmissionsToMitigate,
-  getEmissionsMitigated
+  getEmissionsMitigated,
+  getEmissionListItem
 };
 
 // TODO: write tests
