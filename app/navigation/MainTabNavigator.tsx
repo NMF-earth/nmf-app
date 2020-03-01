@@ -25,16 +25,7 @@ const BudgetStack = createStackNavigator({
 });
 
 BudgetStack.navigationOptions = {
-  tabBarLabel: ({ focused }) => (
-    <Text.Secondary
-      style={{
-        textAlign: "center",
-        color: focused ? Colors.linkGreen : Colors.swordGray
-      }}
-    >
-      {t("BUDGET_SCREEN_TAB_NAME")}
-    </Text.Secondary>
-  ),
+  tabBarLabel: t("BUDGET_SCREEN_TAB_NAME"),
   tabBarIcon: ({ focused }) => (
     <TabBarIcon focused={focused} name={"md-calculator"} />
   )
@@ -47,16 +38,7 @@ const EmissionsStack = createStackNavigator({
 });
 
 EmissionsStack.navigationOptions = {
-  tabBarLabel: ({ focused }) => (
-    <Text.Secondary
-      style={{
-        textAlign: "center",
-        color: focused ? Colors.linkGreen : Colors.swordGray
-      }}
-    >
-      {t("EMISSIONS_SCREEN_TAB_NAME")}
-    </Text.Secondary>
-  ),
+  tabBarLabel: t("EMISSIONS_SCREEN_TAB_NAME"),
   tabBarIcon: ({ focused }) => (
     <TabBarIcon focused={focused} name={"md-stats"} />
   )
@@ -68,16 +50,7 @@ const ActStack = createStackNavigator({
 });
 
 ActStack.navigationOptions = {
-  tabBarLabel: ({ focused }) => (
-    <Text.Secondary
-      style={{
-        textAlign: "center",
-        color: focused ? Colors.linkGreen : Colors.swordGray
-      }}
-    >
-      {t("ACT_SCREEN_TAB_NAME")}
-    </Text.Secondary>
-  ),
+  tabBarLabel: t("ACT_SCREEN_TAB_NAME"),
   tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name={"md-hand"} />
 };
 
@@ -88,16 +61,7 @@ const SettingsStack = createStackNavigator({
 });
 
 SettingsStack.navigationOptions = {
-  tabBarLabel: ({ focused }) => (
-    <Text.Secondary
-      style={{
-        textAlign: "center",
-        color: focused ? Colors.linkGreen : Colors.swordGray
-      }}
-    >
-      {t("SETTINGS_SCREEN_TAB_NAME")}
-    </Text.Secondary>
-  ),
+  tabBarLabel: t("SETTINGS_SCREEN_TAB_NAME"),
   tabBarIcon: ({ focused }) => (
     <TabBarIcon focused={focused} name={"md-switch"} />
   )
@@ -112,6 +76,8 @@ const MainTabNavigator = createBottomTabNavigator(
   },
   {
     tabBarOptions: {
+      activeTintColor: Colors.linkGreen,
+      inactiveTintColor: Colors.swordGray,
       style: {
         paddingTop: 6,
         backgroundColor: Colors.linkGreen + "15",
