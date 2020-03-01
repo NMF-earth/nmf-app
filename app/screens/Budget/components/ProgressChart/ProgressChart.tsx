@@ -29,24 +29,24 @@ const ProgressChart = ({
     return null;
   }
 
-  const totalEmissionsPercentage =
-    totalEmissions / monthlyEmissionsBudget > 1
-      ? 1
-      : totalEmissions / monthlyEmissionsBudget;
-  const transportEmissionsPercentage =
-    transportEmissions / monthlyEmissionsBudget > 1
-      ? 1
-      : transportEmissions / monthlyEmissionsBudget;
-  const foodEmissionsPercentage =
-    foodEmissions / monthlyEmissionsBudget > 1
-      ? 1
-      : foodEmissions / monthlyEmissionsBudget;
-
-  const period = isMonth ? moment().format("MMMM") : moment().format("YYYY");
-
   const periodEmissionsBudget = isMonth
     ? monthlyEmissionsBudget
     : monthlyEmissionsBudget * 12;
+
+  const totalEmissionsPercentage =
+    totalEmissions / periodEmissionsBudget > 1
+      ? 1
+      : totalEmissions / periodEmissionsBudget;
+  const transportEmissionsPercentage =
+    transportEmissions / periodEmissionsBudget > 1
+      ? 1
+      : transportEmissions / periodEmissionsBudget;
+  const foodEmissionsPercentage =
+    foodEmissions / periodEmissionsBudget > 1
+      ? 1
+      : foodEmissions / periodEmissionsBudget;
+
+  const period = isMonth ? moment().format("MMMM") : moment().format("YYYY");
 
   return (
     <View style={styles.container}>

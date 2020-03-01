@@ -37,9 +37,9 @@ exports[`ProgressChart renders correctly 1`] = `
     </Text.H3>
   </View>
   <Chart
-    foodEmissionsPercentage={0.2}
-    totalEmissionsPercentage={0.9}
-    transportEmissionsPercentage={0.6}
+    foodEmissionsPercentage={0.016666666666666666}
+    totalEmissionsPercentage={0.075}
+    transportEmissionsPercentage={0.05}
   />
   <Legend
     foodEmissions={200}
