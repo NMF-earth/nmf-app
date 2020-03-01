@@ -6,11 +6,13 @@ import moment from "moment";
 import { t } from "../../utils";
 import styles from "./EmissionItemScreen.styles";
 import { TransportEnum, FoodEnum } from "carbon-footprint";
+import { EmissionEnum } from "../../interfaces";
 import { Text, Tag, Button } from "../../components";
 import { selectors } from "./ducks";
 import navigationOptions from "./EmissionItemScreen.navigationOptions";
 import { calculation } from "../../utils";
 import { emissions } from "../../ducks";
+
 interface Props {
   navigation: {
     state: {
@@ -24,6 +26,8 @@ interface Props {
 
 const getTranslationModelType = emissionModelType => {
   switch (emissionModelType) {
+    case EmissionEnum.custom:
+      return t("EMISSION_ITEM_CUSTOM");
     case FoodEnum.redMeat:
       return t("EMISSION_ITEM_RED_MEAT");
     case FoodEnum.whiteMeat:
