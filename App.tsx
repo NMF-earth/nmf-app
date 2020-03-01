@@ -23,14 +23,14 @@ const secret =
   require("./secret.ts").default || require("./secret.example.ts").default;
 
 /* TODO: change secret.dsn to Constants.manifest.extra.sentryPublicDsn */
-//Sentry.init({
-//dsn: secret.dsn,
-//enableInExpoDevelopment: false,
-//debug: true
-//});
+Sentry.init({
+  dsn: secret.dsn,
+  enableInExpoDevelopment: false,
+  debug: true
+});
 
 /* TODO: set Constants.manifest.revisionId with expo */
-//Sentry.setRelease(Constants.manifest.revisionId);
+Sentry.setRelease(Constants.manifest.revisionId);
 
 interface Props {
   skipLoadingScreen: boolean;

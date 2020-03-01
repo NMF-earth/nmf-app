@@ -82,7 +82,7 @@ const SettingsScreen = ({ navigation }: Props) => {
             style={styles.hiddenBtn}
             textType={"Primary"}
             onPress={() => {
-              throw new Error();
+              throw new Error("Developer error test");
             }}
           >
             <Text.Primary white center>
