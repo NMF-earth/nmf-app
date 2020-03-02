@@ -3,6 +3,7 @@ import { AppLoading } from "expo";
 import * as Font from "expo-font";
 import { FormattedProvider } from "react-native-globalize";
 import { locale } from "expo-localization";
+import { includes } from "ramda";
 import { Platform, StatusBar, StyleSheet, View } from "react-native";
 import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
 import Constants from "expo-constants";
@@ -10,7 +11,8 @@ import * as Sentry from "sentry-expo";
 import { Provider } from "react-redux";
 import AppNavigator from "./app/navigation/AppNavigator";
 import store from "./app/redux/store";
-import { platform } from "./app/utils";
+
+const supportedLanguages = ["en", "fr", "de"];
 
 const styles = StyleSheet.create({
   container: {
@@ -52,7 +54,11 @@ export default class App extends React.Component<Props, State> {
   }
 
   render() {
-    const localization = platform.isAndroid ? locale.substring(0, 2) : locale;
+    let localization = locale.length > 2 ? locale.substring(0, 2) : locale;
+
+    if (!includes(localization, supportedLanguages)) {
+      localization = "en";
+    }
 
     if (!this.state.isLoadingComplete && !this.props.skipLoadingScreen) {
       return (

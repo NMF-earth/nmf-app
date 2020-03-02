@@ -14,5 +14,7 @@ export default StyleSheet.create({
   separator: {
     height: 30
   },
-  githubBtn: { flexDirection: "row" }
+  githubBtn: {
+    flexDirection: "row"
+  }
 });

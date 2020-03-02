@@ -1,5 +1,5 @@
 import en from "./en";
-import fr from "./de";
+import fr from "./fr";
 import de from "./en";
 
 interface TranslationKeys {
