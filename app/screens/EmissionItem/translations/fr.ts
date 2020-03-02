@@ -4,7 +4,7 @@ export default {
   EMISSION_ITEM_QUANTITY: "Quantité",
   EMISSION_ITEM_PRICE: "Prix",
   EMISSION_ITEM_DATE: "Date",
-  EMISSION_ITEM_DELETE_EMISSION: "Delete emission",
+  EMISSION_ITEM_DELETE_EMISSION: "Supprimer émission",
   EMISSION_ITEM_TRAIN: "Train",
   EMISSION_ITEM_CAR: "Voiture",
   EMISSION_ITEM_PLANE: "Avion",

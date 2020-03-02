@@ -9,7 +9,9 @@ import { t } from "../../utils";
 const AboutScreen = () => {
   return (
     <ScrollView style={styles.container}>
-      <Text.Primary>{t("ABOUT_SCREEN_INTRO")}</Text.Primary>
+      <Text.Primary style={styles.header}>
+        {t("ABOUT_SCREEN_INTRO")}
+      </Text.Primary>
       <Text.H2 style={styles.header}>{t("ABOUT_SCREEN_CARE_HEADER")}</Text.H2>
       <Text.H3 style={styles.subHeader}>{t("ABOUT_SCREEN_PRIVACY")}</Text.H3>
       <Text.Primary>{t("ABOUT_SCREEN_PRIVACY_BODY")}</Text.Primary>

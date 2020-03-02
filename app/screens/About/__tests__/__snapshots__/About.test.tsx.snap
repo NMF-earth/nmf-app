@@ -10,8 +10,14 @@ exports[`AboutScreen renders correctly 1`] = `
   }
 >
   <View>
-    <Text.Primary>
-      We are a small team concerned by the human impact on the planet. We are not a startup driven by growth or profit to pay dividends to investors. We are transparent and you can have a look to our figures on Indie Hackers.
+    <Text.Primary
+      style={
+        Object {
+          "paddingVertical": 26,
+        }
+      }
+    >
+      We are a small team concerned by the human impact on the planet. We are not a startup driven by growth or profit to pay dividends to investors. We are transparent and you can have a look to our figures on Indie Hackers. You can join our team if you wanna help the project. Or simply talk around you about our project, give us 5 stars on the store et send us your feedback on the app will help us a lot. Thanks you ✌️
     </Text.Primary>
     <Text.H2
       style={

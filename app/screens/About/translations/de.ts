@@ -1,7 +1,7 @@
 export default {
   ABOUT_SCREEN_TITLE: "About",
   ABOUT_SCREEN_INTRO:
-    "We are a small team concerned by the human impact on the planet. We are not a startup driven by growth or profit to pay dividends to investors. We are transparent and you can have a look to our figures on Indie Hackers.",
+    "We are a small team concerned by the human impact on the planet. We are not a startup driven by growth or profit to pay dividends to investors. We are transparent and you can have a look to our figures on Indie Hackers. You can join our team if you wanna help the project. Or simply talk around you about our project, give us 5 stars on the store et send us your feedback on the app will help us a lot. Thanks you ✌️",
   ABOUT_SCREEN_CARE_HEADER: "We care about you",
   ABOUT_SCREEN_PRIVACY: "Privacy by design",
   ABOUT_SCREEN_ETHIC: "Ethic by design",
