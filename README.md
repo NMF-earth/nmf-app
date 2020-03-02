@@ -10,7 +10,7 @@ Source code repository for the NMF.earth React Native application.
 
 ![screenshots](https://github.com/NotMyFaultEarth/nmf-app/blob/master/app-preview.png)
 
-Download for iOS and Android + more info on the website [NMF.earth](https://nmf.earth/).
+Download for iOS and Android + more info on the website [NMF.earth](https://nmf.earth/) and on the [Kickstarter page](https://www.kickstarter.com/projects/pierrebresson/not-my-fault).
 
 ### 📦 Getting started
 
@@ -94,3 +94,7 @@ Have a look [here](https://github.com/NotMyFaultEarth/nmf-app/blob/master/contri
 ### 🏆 Backers
 
 A big thank you to [Christopher Gwilliams](https://github.com/encima) and to the Phelps family for their amazing contribution to the [Kickstarter](https://www.kickstarter.com/projects/pierrebresson/not-my-fault)!
+
+### ©️ Licence
+
+The repo is under [GNU General Public License v3.0](https://github.com/NotMyFaultEarth/nmf-app/blob/master/LICENSE) except the [stickers](https://github.com/NotMyFaultEarth/nmf-app/tree/master/assets/images/stickers) which remains [Jenny Lelong](https://www.instagram.com/niniwanted/) property and therefore are not subject to the GNU Licence.
