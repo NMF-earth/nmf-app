@@ -52,7 +52,7 @@ export default class App extends React.Component<Props, State> {
   }
 
   render() {
-    const localization = platform.isAndroid ? locale.substring(0, 2) : locale;
+    const localization = locale.length > 2 ? locale.substring(0, 2) : locale;
 
     if (!this.state.isLoadingComplete && !this.props.skipLoadingScreen) {
       return (
