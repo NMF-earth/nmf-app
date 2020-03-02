@@ -1,6 +1,6 @@
 export default {
-  MONTHLY_BUDGET_TITLE: "Monthly Budget",
-  MONTHLY_BUDGET_MY_MONTHLY_CARBON_BUDGET: "My carbon monthly budget : ",
+  MONTHLY_BUDGET_TITLE: "Budget Mensuel",
+  MONTHLY_BUDGET_MY_MONTHLY_CARBON_BUDGET: "Mon budget carbone mensuel : ",
   MONTHLY_BUDGET_SAVE: "Enregistrer",
   MONTHLY_BUDGET_CARBON_EMISSIONS_WORLD:
     "Examples d'émissions de CO2 par habitant par mois ",
