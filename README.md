@@ -6,11 +6,11 @@
 
 Source code repository for the NMF.earth React Native application.
 
-### Preview
+### Preview & Download
 
 ![screenshots](https://github.com/NotMyFaultEarth/nmf-app/blob/master/app-preview.png)
 
-Download for iOS and Android + more info on the website [NMF.earth](https://nmf.earth/) and on the [Kickstarter page](https://www.kickstarter.com/projects/pierrebresson/not-my-fault).
+Download for [iOS](https://apps.apple.com/us/app/nmf-earth/id1494561829) and [Android](https://play.google.com/store/apps/details?id=nmf.earth).
 
 ### 📦 Getting started
 
