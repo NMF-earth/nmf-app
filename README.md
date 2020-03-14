@@ -2,9 +2,11 @@
 
 ![](https://github.com/NotMyFaultEarth/nmf-app/workflows/Test%20CI/badge.svg)
 [![Depfu](https://badges.depfu.com/badges/f3b06c819202baf2a14b3241cbf249c9/overview.svg)](https://depfu.com/repos/github/NotMyFaultEarth/nmf-app?project_id=10243)
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md) 
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md)
 
 Source code repository for the NMF.earth React Native application.
+
+Calculate, understand and reduce your carbon footprint - without ads and no tracking.
 
 ### Preview
 
@@ -97,4 +99,4 @@ A big thank you to [Christopher Gwilliams](https://github.com/encima) and to th
 
 ### ©️ Open source - licence
 
-The repo is under [GNU General Public License v3.0](https://github.com/NotMyFaultEarth/nmf-app/blob/master/LICENSE) 
+The repo is under [GNU General Public License v3.0](https://github.com/NotMyFaultEarth/nmf-app/blob/master/LICENSE)
