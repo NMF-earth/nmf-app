@@ -4,15 +4,15 @@
 [![Depfu](https://badges.depfu.com/badges/f3b06c819202baf2a14b3241cbf249c9/overview.svg)](https://depfu.com/repos/github/NotMyFaultEarth/nmf-app?project_id=10243)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md)
 
-Source code repository for the NMF.earth React Native application.
+Source code repository for the [NMF.earth](https://nmf.earth/) React Native application built with Expo, Redux Toolkit and Typescript.
 
 Calculate, understand and reduce your carbon footprint - without ads and no tracking.
 
-### Preview
+### Preview & Download
 
 ![screenshots](https://github.com/NotMyFaultEarth/nmf-app/blob/master/app-preview.png)
 
-Download for iOS and Android + more info on the website [NMF.earth](https://nmf.earth/) and on the [Kickstarter page](https://www.kickstarter.com/projects/pierrebresson/not-my-fault).
+Download for [iOS](https://apps.apple.com/us/app/nmf-earth/id1494561829) and [Android](https://play.google.com/store/apps/details?id=nmf.earth).
 
 ### 📦 Getting started
 
