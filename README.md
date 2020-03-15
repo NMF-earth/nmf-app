@@ -22,6 +22,7 @@
 
 Repository for the [NMF.earth](https://nmf.earth/) React Native application, built with Expo, Redux Toolkit and Typescript.
 
+<br />
 
 ### 📦 Getting started
 
@@ -50,6 +51,8 @@ $ cp app.example.json app.json
 $ cp secret.example.ts secret.ts
 ```
 
+<br />
+
 ### 👩🏾‍💻 Development
 
 - Eslint is used in the project to enforce code style and should be configured in your [editor](https://eslint.org/docs/user-guide/integrations).
@@ -67,6 +70,8 @@ or
 ```sh
 yarn typescript
 ```
+
+<br />
 
 ### 🛠 Testing
 
@@ -88,6 +93,8 @@ Use the following to run unit tests in watch mode while developing:
 $ yarn test --watch
 ```
 
+<br />
+
 ### 📚Storybook
 
 Stories (\*.story.tsx) can be automatically added to `storyLoader.js` with :
@@ -96,16 +103,22 @@ Stories (\*.story.tsx) can be automatically added to `storyLoader.js` with :
 $ yarn prestorybook
 ```
 
+<br />
+
 ### 👨‍💻 Contributors
 
 [Pierre Bresson](https://github.com/pierrebresson/) - [Theo Lampert](https://github.com/theolampert) - [Christopher Gwilliams](https://github.com/encima)
 
 Have a look [here](https://github.com/NotMyFaultEarth/nmf-app/blob/master/contributing.md) if you want to contribute!
 
+<br />
+
 ### 🏆 Backers
 
 A big thank you to [Christopher Gwilliams](https://github.com/encima) and to the Phelps family for their amazing contribution to the [Kickstarter](https://www.kickstarter.com/projects/pierrebresson/not-my-fault)!
 
+<br />
+
 ### ©️ Open source - licence
 
-Code and contributions are under [GNU General Public License v3.0](https://github.com/NotMyFaultEarth/nmf-app/blob/master/LICENSE)
+Repository and contributions are under [GNU General Public License v3.0](https://github.com/NotMyFaultEarth/nmf-app/blob/master/LICENSE)
