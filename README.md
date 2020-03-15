@@ -1,4 +1,6 @@
-# 🌱 React Native app for NMF.earth
+<h1 align="center">🌱 NMF.earth app</h1>
+
+![screenshots](https://github.com/NotMyFaultEarth/nmf-app/blob/master/app-preview.png)
 
 ![](https://github.com/NotMyFaultEarth/nmf-app/workflows/Test%20CI/badge.svg)
 [![Depfu](https://badges.depfu.com/badges/f3b06c819202baf2a14b3241cbf249c9/overview.svg)](https://depfu.com/repos/github/NotMyFaultEarth/nmf-app?project_id=10243)
@@ -9,8 +11,6 @@ Source code repository for the [NMF.earth](https://nmf.earth/) React Native appl
 Calculate, understand and reduce your carbon footprint - without ads and no tracking.
 
 ### Preview & Download
-
-![screenshots](https://github.com/NotMyFaultEarth/nmf-app/blob/master/app-preview.png)
 
 Download for [iOS](https://apps.apple.com/us/app/nmf-earth/id1494561829) and [Android](https://play.google.com/store/apps/details?id=nmf.earth).
 
