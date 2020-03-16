@@ -111,6 +111,8 @@ $ yarn prestorybook
 
 Have a look [here](https://github.com/NotMyFaultEarth/nmf-app/blob/master/contributing.md) if you want to contribute!
 
+🌐 You can help us with translations with our online tool [POEditor](https://poeditor.com/join/project/0MbginCsWp).
+
 <br />
 
 ### 🏆 Backers
