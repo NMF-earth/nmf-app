@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { View, TouchableOpacity, ScrollView, Image } from "react-native";
+import Constants from "expo-constants";
 import { Button, Text, SocialMedia } from "../../components";
 import { SettingsRow } from "./components";
 import * as WebBrowser from "expo-web-browser";
@@ -91,6 +92,8 @@ const SettingsScreen = ({ navigation }: Props) => {
           </Button.Primary>
         </View>
       ) : null}
+
+      <Text.Tertiary bold style={styles.appVersionTitle}>{t("SETTINGS_SCREEN_APP_VERSION", { version: Constants.manifest.version })}</Text.Tertiary>
     </ScrollView>
   );
 };

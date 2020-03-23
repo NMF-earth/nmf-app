@@ -56,6 +56,17 @@ exports[`SettingsScreen renders correctly 1`] = `
         }
       />
     </TouchableOpacity>
+    <Text.Tertiary
+      bold={true}
+      style={
+        Object {
+          "color": "#9CA6A0",
+          "textAlign": "center",
+        }
+      }
+    >
+      Version [missing %{version} value]
+    </Text.Tertiary>
   </View>
 </RCTScrollView>
 `;

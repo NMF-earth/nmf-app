@@ -5,5 +5,6 @@ export default {
   SETTINGS_SCREEN_NMF_EARTH: "NMF.earth",
   SETTINGS_SCREEN_ROADMAP: "Roadmap",
   SETTINGS_SCREEN_FEEDBACK: "Feedback",
-  SETTINGS_SCREEN_TERMS_OF_USE: "Terms of use"
+  SETTINGS_SCREEN_TERMS_OF_USE: "Terms of use",
+  SETTINGS_SCREEN_APP_VERSION: "Version %{version}"
 };
