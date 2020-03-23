@@ -10,6 +10,7 @@ interface TranslationKeys {
   SETTINGS_SCREEN_ROADMAP: string;
   SETTINGS_SCREEN_FEEDBACK: string;
   SETTINGS_SCREEN_TERMS_OF_USE: string;
+  SETTINGS_SCREEN_APP_VERSION: string;
 }
 
 export { en, fr, de, TranslationKeys };

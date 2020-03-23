@@ -17,5 +17,10 @@ export default StyleSheet.create({
   },
   image: {
     width: "50%"
-  }
+  },
+  appVersionTitle: {
+    textAlign: "center",
+    color: Colors.swordGray,
+    fontWeight: "bold"
+  },
 });
