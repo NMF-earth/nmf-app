@@ -3,7 +3,6 @@ import { createBottomTabNavigator } from "react-navigation-tabs";
 import { createStackNavigator } from "react-navigation-stack";
 
 import TabBarIcon from "../components/TabBarIcon";
-import { Text } from "../components";
 import StorybookScreen from "../../storybook";
 
 import ActScreen from "../screens/Act";

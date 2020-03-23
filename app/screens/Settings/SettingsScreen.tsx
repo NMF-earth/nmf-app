@@ -93,7 +93,11 @@ const SettingsScreen = ({ navigation }: Props) => {
         </View>
       ) : null}
 
-      <Text.Tertiary bold style={styles.appVersionTitle}>{t("SETTINGS_SCREEN_APP_VERSION", { version: Constants.manifest.version })}</Text.Tertiary>
+      <Text.Tertiary bold lightGray style={styles.appVersionTitle}>
+        {t("SETTINGS_SCREEN_APP_VERSION", {
+          version: Constants.manifest.version
+        })}
+      </Text.Tertiary>
     </ScrollView>
   );
 };
