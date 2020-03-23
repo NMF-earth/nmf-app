@@ -57,10 +57,10 @@ exports[`SettingsScreen renders correctly 1`] = `
       />
     </TouchableOpacity>
     <Text.Tertiary
+      bold={true}
       style={
         Object {
           "color": "#9CA6A0",
-          "fontWeight": "bold",
           "textAlign": "center",
         }
       }

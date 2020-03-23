@@ -21,6 +21,5 @@ export default StyleSheet.create({
   appVersionTitle: {
     textAlign: "center",
     color: Colors.swordGray,
-    fontWeight: "bold"
   },
 });
