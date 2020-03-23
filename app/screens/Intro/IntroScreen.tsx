@@ -6,7 +6,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { Text, Button } from "../../components";
 import ImagesAssets from "../../constants/ImagesAssets";
 import styles from "./IntroScreen.styles";
-import { t } from "../../utils";
+import { t, e2e } from "../../utils";
 import { userPreferences } from "../../ducks";
 
 const currentTermsOfUseVersion = 1;
@@ -50,6 +50,7 @@ const IntroScreen = ({ navigation }) => {
           {t("INTRO_SCREEN_CONTINUE_AND_ACCEPT_TERMS_OF_USE")}
         </Text.Tertiary>
         <TouchableOpacity
+          {...e2e.setAccessibilityProps("ACCEPT TERMS OF USE")}
           onPress={() =>
             WebBrowser.openBrowserAsync("http://nmf.earth/terms-of-use.pdf")
           }
