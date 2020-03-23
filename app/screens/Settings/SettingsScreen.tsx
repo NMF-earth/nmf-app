@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { View, TouchableOpacity, ScrollView, Image } from "react-native";
+import Constants from "expo-constants";
 import { Button, Text, SocialMedia } from "../../components";
 import { SettingsRow } from "./components";
 import * as WebBrowser from "expo-web-browser";
@@ -7,7 +8,6 @@ import styles from "./SettingsScreen.styles";
 import navigationOptions from "./SettingsScreen.navigationOptions";
 import { t } from "../../utils";
 import ImagesAssets from "../../constants/ImagesAssets";
-import AppInfos from "../../../app.json";
 
 interface Props {
   navigation: {
@@ -93,7 +93,7 @@ const SettingsScreen = ({ navigation }: Props) => {
         </View>
       ) : null}
 
-      <Text.Tertiary bold style={styles.appVersionTitle}>{t("SETTINGS_SCREEN_APP_VERSION", { version: AppInfos.expo.version })}</Text.Tertiary>
+      <Text.Tertiary bold style={styles.appVersionTitle}>{t("SETTINGS_SCREEN_APP_VERSION", { version: Constants.manifest.version })}</Text.Tertiary>
     </ScrollView>
   );
 };
