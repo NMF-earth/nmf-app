@@ -65,7 +65,7 @@ exports[`SettingsScreen renders correctly 1`] = `
         }
       }
     >
-      Version 1.0.0
+      Version [missing %{version} value]
     </Text.Tertiary>
   </View>
 </RCTScrollView>
