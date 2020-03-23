@@ -7,6 +7,7 @@ import styles from "./SettingsScreen.styles";
 import navigationOptions from "./SettingsScreen.navigationOptions";
 import { t } from "../../utils";
 import ImagesAssets from "../../constants/ImagesAssets";
+import AppInfos from "../../../app.json";
 
 interface Props {
   navigation: {
@@ -91,6 +92,8 @@ const SettingsScreen = ({ navigation }: Props) => {
           </Button.Primary>
         </View>
       ) : null}
+
+      <Text.Tertiary style={styles.appVersionTitle}>{t("SETTINGS_SCREEN_APP_VERSION", { version: AppInfos.expo.version })}</Text.Tertiary>
     </ScrollView>
   );
 };
