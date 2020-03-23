@@ -19,7 +19,6 @@ export default StyleSheet.create({
     width: "50%"
   },
   appVersionTitle: {
-    textAlign: "center",
-    color: Colors.swordGray,
-  },
+    textAlign: "center"
+  }
 });

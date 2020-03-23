@@ -108,7 +108,7 @@ $ yarn prestorybook
 
 ### 👨‍💻 Contributors
 
-[Pierre Bresson](https://github.com/pierrebresson/) - [Theo Lampert](https://github.com/theolampert) - [Christopher Gwilliams](https://github.com/encima)
+[Pierre Bresson](https://github.com/pierrebresson/) - [Theo Lampert](https://github.com/theolampert) - [Christopher Gwilliams](https://github.com/encima) - [Lucien Blunk-Lallet](https://github.com/lucienbl)
 
 Have a look [here](https://github.com/NotMyFaultEarth/nmf-app/blob/master/contributing.md) if you want to contribute!
 
