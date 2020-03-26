@@ -23,6 +23,7 @@
       "<rootDir>/jest/setup.js"
     ],
     "preset": "jest-expo",
+    "modulePathIgnorePatterns": ["<rootDir>/e2e/"],
     "collectCoverageFrom": [
       "app/**/*.(js|jsx|ts|tsx)"
     ]
