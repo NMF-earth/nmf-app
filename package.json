@@ -2,6 +2,7 @@
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
+    "runIOS": "SIM=\"iPhone 11 Pro Max (13.4)\" ./scripts/runIOS.sh",
     "build-android": "GENERATE_AL=true expo build:android",
     "build-ios": "GENERATE_AL=true expo build:ios",
     "build-ios-simulator": "GENERATE_AL=true expo build:ios -t simulator",
@@ -88,13 +89,15 @@
     "@types/uuid": "3.4.6",
     "@typescript-eslint/eslint-plugin": "2.11.0",
     "@typescript-eslint/parser": "2.11.0",
+    "appium": "^1.17.0",
     "babel-loader": "8.0.6",
     "babel-preset-expo": "8.0.0",
     "eslint": "6.7.2",
     "eslint-plugin-jest": "23.1.1",
     "eslint-plugin-react": "7.17.0",
     "jest-expo": "36.0.1",
-    "react-native-storybook-loader": "1.8.1"
+    "react-native-storybook-loader": "1.8.1",
+    "wd": "^1.12.1"
   },
   "husky": {
     "hooks": {

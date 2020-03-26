@@ -1,0 +1,7 @@
+const ANDROID_APK_PATH = "THIS PATH MUST BE FIXED POINTING TO .APK";
+
+const IOS_APP_PATH = "/Users/pierrebresson/Desktop/app.app";
+
+const IOS_IPA_PATH = "THIS PATH MUST BE FIXED POINTING TO .IPA";
+
+export default { ANDROID_APK_PATH, IOS_APP_PATH, IOS_IPA_PATH };
