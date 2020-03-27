@@ -5,12 +5,13 @@ const fs = require("fs");
 
 const pwd = process.env.PWD
 const appJsonTemplate = require(`${path.join(pwd, "app.example.json")}`);
+const SENTRY_DSN = process.env.SENTRY_DSN;
 
 appJsonTemplate.expo.hooks.postPublish
   .find(item => item.file == "sentry-expo/upload-sourcemaps").config.authToken = process.env.SENTRY_AUTH_TOKEN
 
 const secrets = `export default {
-    dsn: "${process.env.SENTRY_DSN}"
+    dsn: ${SENTRY_DSN ? `"${SENTRY_DSN}"` : null }
   }`;
 
 fs.writeFile(
