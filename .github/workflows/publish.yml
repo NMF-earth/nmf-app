@@ -1,8 +1,8 @@
 name: Expo Publish
 on:
   push:
-    branches:
-      - master
+    tags:
+      - 'v*'
 jobs:
   publish:
     name: Install and publish
