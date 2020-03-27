@@ -18,4 +18,7 @@ jobs:
           expo-password: ${{ secrets.EXPO_CLI_PASSWORD }}
       - run: yarn install
       - run: node scripts/generate-ci-config.js
+        env: 
+          SENTRY_DSN: ${{ secrets.DSN }}
+          SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
       - run: expo publish
