@@ -11,14 +11,15 @@ export default StyleSheet.create({
     marginTop: 8,
     marginHorizontal: 10
   },
-  imageContainer: {
+  logoNMFContainer: {
     flex: 1,
     alignItems: "center"
   },
-  image: {
+  logoNMF: {
     width: "50%"
   },
   appVersionTitle: {
-    textAlign: "center"
+    textAlign: "center",
+    marginBottom: 24
   }
 });

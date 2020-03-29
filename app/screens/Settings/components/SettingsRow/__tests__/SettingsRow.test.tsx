@@ -19,11 +19,6 @@ it("SettingsRow renders correctly", () => {
   expect(tree).toMatchSnapshot();
 });
 
-it("SettingsRow last item renders correctly", () => {
-  const tree = renderer.create(<SettingsRow {...props} isLastItem />).toJSON();
-  expect(tree).toMatchSnapshot();
-});
-
 it("should open link", () => {
   const root = renderer.create(<SettingsRow {...props} />).root;
   // eslint-disable-next-line @typescript-eslint/ban-ts-ignore

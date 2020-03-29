@@ -1,5 +1,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
+import * as WebBrowser from "expo-web-browser";
 import Text from "../";
 
 jest.unmock("../");
@@ -40,6 +41,11 @@ it("renders correctly H2 darkGray", () => {
 
 it("renders correctly H2 lightGray", () => {
   const tree = renderer.create(<Text.H2 lightGray>test</Text.H2>).toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it("renders correctly H2 green", () => {
+  const tree = renderer.create(<Text.H2 green>test</Text.H2>).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
@@ -220,4 +226,25 @@ it("renders correctly Tertiary light", () => {
     .create(<Text.Tertiary light>test</Text.Tertiary>)
     .toJSON();
   expect(tree).toMatchSnapshot();
+});
+
+/* Link Tests */
+
+it("renders correctly Link", () => {
+  const tree = renderer
+    .create(<Text.Link url="http://nmf.earth">test</Text.Link>)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it("open links", () => {
+  const spy = jest.spyOn(WebBrowser, "openBrowserAsync");
+  const root = renderer.create(
+    <Text.Link url="http://nmf.earth">test</Text.Link>
+  ).root;
+  // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
+  // @ts-ignore
+  const btn = root.findByType("TouchableOpacity");
+  btn.props.onPress();
+  expect(spy).toHaveBeenCalled();
 });

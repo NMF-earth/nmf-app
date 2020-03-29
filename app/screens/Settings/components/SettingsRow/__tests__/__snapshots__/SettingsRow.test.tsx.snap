@@ -1,60 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SettingsRow last item renders correctly 1`] = `
-<TouchableOpacity
-  onPress={[Function]}
-  style={
-    Array [
-      Object {
-        "borderTopColor": "#CED4DA",
-        "borderTopWidth": 1,
-        "flex": 1,
-        "flexDirection": "row",
-        "justifyContent": "space-between",
-        "paddingHorizontal": 8,
-        "paddingVertical": 14,
-      },
-      Object {
-        "borderBottomColor": "#CED4DA",
-        "borderBottomWidth": 1,
-        "marginBottom": 40,
-      },
-    ]
-  }
->
-  <Text.Tertiary>
-    title
-  </Text.Tertiary>
-  <Ionicons
-    color="#111714"
-    name="ios-arrow-forward"
-    size={18}
-  />
-</TouchableOpacity>
-`;
-
 exports[`SettingsRow renders correctly 1`] = `
 <TouchableOpacity
   onPress={[Function]}
   style={
     Object {
-      "borderTopColor": "#CED4DA",
-      "borderTopWidth": 1,
       "flex": 1,
       "flexDirection": "row",
       "justifyContent": "space-between",
-      "paddingHorizontal": 8,
+      "paddingHorizontal": 16,
       "paddingVertical": 14,
     }
   }
 >
-  <Text.Tertiary>
+  <Text.Secondary
+    bold={true}
+  >
     title
-  </Text.Tertiary>
+  </Text.Secondary>
   <Ionicons
     color="#111714"
     name="ios-arrow-forward"
-    size={18}
+    size={20}
   />
 </TouchableOpacity>
 `;

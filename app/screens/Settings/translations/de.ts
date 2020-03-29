@@ -2,6 +2,7 @@ export default {
   SETTINGS_SCREEN_TAB_NAME: "Einstellungen",
   SETTINGS_SCREEN_TITLE: "Einstellungen",
   SETTINGS_SCREEN_ABOUT: "About",
+  SETTINGS_SCREEN_SUPPORT_US: "Support us!",
   SETTINGS_SCREEN_NMF_EARTH: "NMF.earth",
   SETTINGS_SCREEN_ROADMAP: "Roadmap",
   SETTINGS_SCREEN_FEEDBACK: "Feedback",

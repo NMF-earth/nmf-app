@@ -70,13 +70,13 @@ export default ({
       />
       <View style={styles.totalContainer}>
         <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_TOTAL")}</Text.H3>
-        <Text.H1 green>
+        <Text.H2 green>
           <FormattedNumber
             value={(sliderValue / 1000) * food[foodType]}
             maximumFractionDigits={2}
           />{" "}
           <Text.Primary>kgCO2eq</Text.Primary>
-        </Text.H1>
+        </Text.H2>
       </View>
     </React.Fragment>
   );

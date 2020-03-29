@@ -3,8 +3,9 @@ import { Font, Colors } from "../../../style";
 
 export default StyleSheet.create({
   default: {
-    color: Colors.darkLink,
-    fontFamily: Font.FontWeight.Black,
-    fontSize: Font.FontSize.H1
+    textDecorationLine: "underline",
+    color: Colors.linkGreen,
+    fontFamily: Font.FontWeight.Medium,
+    fontSize: Font.FontSize.Primary
   }
 });

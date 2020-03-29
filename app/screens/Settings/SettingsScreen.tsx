@@ -22,6 +22,10 @@ const SettingsScreen = ({ navigation }: Props) => {
       onPress: () => navigation.push("About")
     },
     {
+      title: t("SETTINGS_SCREEN_SUPPORT_US"),
+      onPress: () => navigation.push("SupportUs")
+    },
+    {
       title: t("SETTINGS_SCREEN_NMF_EARTH"),
       onPress: () => WebBrowser.openBrowserAsync("http://nmf.earth")
     },
@@ -48,24 +52,24 @@ const SettingsScreen = ({ navigation }: Props) => {
   return (
     <ScrollView style={styles.container}>
       {rowItems.map((item, index) => (
-        <SettingsRow
-          key={index}
-          onPress={item.onPress}
-          title={item.title}
-          isLastItem={index === rowItems.length - 1}
-        />
+        <SettingsRow key={index} onPress={item.onPress} title={item.title} />
       ))}
-      <SocialMedia />
       <TouchableOpacity
         onPress={() => setSteps(steps + 1)}
-        style={styles.imageContainer}
+        style={styles.logoNMFContainer}
       >
         <Image
-          style={styles.image}
+          style={styles.logoNMF}
           resizeMode="contain"
           source={ImagesAssets.logos.nmf}
         />
       </TouchableOpacity>
+      <Text.Tertiary bold lightGray style={styles.appVersionTitle}>
+        {t("SETTINGS_SCREEN_APP_VERSION", {
+          version: Constants.manifest.version
+        })}
+      </Text.Tertiary>
+      <SocialMedia />
 
       {steps > 4 ? (
         <View>
@@ -92,12 +96,6 @@ const SettingsScreen = ({ navigation }: Props) => {
           </Button.Primary>
         </View>
       ) : null}
-
-      <Text.Tertiary bold lightGray style={styles.appVersionTitle}>
-        {t("SETTINGS_SCREEN_APP_VERSION", {
-          version: Constants.manifest.version
-        })}
-      </Text.Tertiary>
     </ScrollView>
   );
 };

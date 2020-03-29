@@ -7,7 +7,7 @@ import styles from "./ComingSoonScreen.styles";
 import { t, platform } from "../../utils";
 import navigationOptions from "./ComingSoonScreen.navigationOptions";
 
-const ComingSoon = () => {
+const ComingSoonScreen = () => {
   return (
     <ScrollView style={styles.container}>
       <View style={styles.imageView}>
@@ -30,6 +30,8 @@ const ComingSoon = () => {
   );
 };
 
-ComingSoon.navigationOptions = platform.isAndroid ? null : navigationOptions;
+ComingSoonScreen.navigationOptions = platform.isAndroid
+  ? null
+  : navigationOptions;
 
-export default ComingSoon;
+export default ComingSoonScreen;
