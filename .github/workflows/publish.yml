@@ -1,8 +1,8 @@
 name: Expo Publish
 on:
   push:
-    branches:
-      - master
+    tags:
+      - 'v*'
 jobs:
   publish:
     name: Install and publish
@@ -17,4 +17,8 @@ jobs:
           expo-username: ${{ secrets.EXPO_CLI_USERNAME }}
           expo-password: ${{ secrets.EXPO_CLI_PASSWORD }}
       - run: yarn install
+      - run: node scripts/generate-ci-config.js
+        env: 
+          SENTRY_DSN: ${{ secrets.DSN }}
+          SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
       - run: expo publish

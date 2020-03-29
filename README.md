@@ -104,6 +104,11 @@ Stories (\*.story.tsx) can be automatically added to `storyLoader.js` with :
 $ yarn prestorybook
 ```
 
+### 🚀 Deployment
+
+Any branches merged into master will trigger a github action that runs expo publish.
+During this step `app.example.json` is used to generate an `app.json` file for expo's deployment, this is done with the following script `scripts/generate-app-json.js`.
+
 <br />
 
 ### 👨‍💻 Contributors

@@ -1,15 +1,15 @@
 {
   "expo": {
-    "name": "Not My Fault",
-    "slug": "nmf",
+    "name": "NMF.earth",
+    "slug": "not-my-fault-earth",
     "privacy": "public",
-    "sdkVersion": "35.0.0",
+    "sdkVersion": "36.0.0",
     "platforms": ["ios", "android"],
-    "version": "1.0.0",
+    "version": "0.0.1",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/images/icon.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/images/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -18,15 +18,21 @@
     },
     "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "nmf.earth",
+      "supportsTablet": true,
+      "buildNumber": "4"
+    },
+    "android": {
+      "package": "nmf.earth",
+      "versionCode": 4
     },
     "hooks": {
       "postPublish": [
         {
           "file": "sentry-expo/upload-sourcemaps",
           "config": {
-            "organization": null,
-            "project": null,
+            "organization": "nmf",
+            "project": "not-my-fault-earth",
             "authToken": null
           }
         }
