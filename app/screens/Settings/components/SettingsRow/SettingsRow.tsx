@@ -8,19 +8,13 @@ import { Colors } from "../../../../style";
 interface Props {
   title: string;
   onPress: () => void;
-  isLastItem?: boolean;
 }
 
-const SettingsRow = ({ title, onPress, isLastItem }: Props) => {
+const SettingsRow = ({ title, onPress }: Props) => {
   return (
-    <TouchableOpacity
-      onPress={onPress}
-      style={
-        isLastItem ? [styles.container, styles.lastItem] : styles.container
-      }
-    >
-      <Text.Tertiary>{title}</Text.Tertiary>
-      <Ionicons name={"ios-arrow-forward"} size={18} color={Colors.darkLink} />
+    <TouchableOpacity onPress={onPress} style={styles.container}>
+      <Text.Secondary bold>{title}</Text.Secondary>
+      <Ionicons name={"ios-arrow-forward"} size={20} color={Colors.darkLink} />
     </TouchableOpacity>
   );
 };

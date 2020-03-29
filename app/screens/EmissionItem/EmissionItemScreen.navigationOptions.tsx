@@ -1,11 +1,12 @@
 import React from "react";
 import { Text } from "../../components";
 import { t } from "../../utils";
-import { Colors } from "../../style";
+import { Colors, Shadows } from "../../style";
 
 const navigationOptions = () => ({
   headerStyle: {
-    borderBottomWidth: 0
+    borderBottomWidth: 0,
+    ...Shadows.header
   },
   headerTintColor: Colors.darkLink,
   headerBackTitle: null,

@@ -2,11 +2,12 @@ import React from "react";
 // import { TouchableOpacity } from "react-native";
 import { Text } from "../../components";
 import { t } from "../../utils";
-import { Layout } from "../../style";
+import { Layout, Shadows } from "../../style";
 
 const navigationOptions = () => ({
   headerStyle: {
-    borderBottomWidth: 0
+    borderBottomWidth: 0,
+    ...Shadows.header
   },
   headerBackTitle: null,
   headerTitle: () => (

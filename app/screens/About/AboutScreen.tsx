@@ -1,6 +1,5 @@
 import React from "react";
-import * as WebBrowser from "expo-web-browser";
-import { ScrollView, View, TouchableOpacity } from "react-native";
+import { ScrollView, View } from "react-native";
 import { Text } from "../../components";
 import styles from "./AboutScreen.styles";
 import navigationOptions from "./AboutScreen.navigationOptions";
@@ -24,17 +23,12 @@ const AboutScreen = () => {
       <Text.H2 style={styles.header}>
         {t("ABOUT_SCREEN_LIBRARIES_AND_CONTRIBUTORS")}
       </Text.H2>
-      <TouchableOpacity
-        style={styles.githubBtn}
-        onPress={() =>
-          WebBrowser.openBrowserAsync(
-            "https://github.com/NotMyFaultEarth/nmf-app"
-          )
-        }
-      >
+      <View style={styles.githubView}>
         <Text.Primary>{t("ABOUT_SCREEN_CAN_BE_FOUND")}</Text.Primary>
-        <Text.Primary green>{t("ABOUT_SCREEN_GITHUB")}</Text.Primary>
-      </TouchableOpacity>
+        <Text.Link url="https://github.com/NotMyFaultEarth/nmf-app">
+          {t("ABOUT_SCREEN_GITHUB")}
+        </Text.Link>
+      </View>
       <View style={styles.separator} />
     </ScrollView>
   );

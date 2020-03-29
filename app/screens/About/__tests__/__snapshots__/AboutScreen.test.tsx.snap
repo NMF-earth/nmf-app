@@ -73,8 +73,7 @@ exports[`AboutScreen renders correctly 1`] = `
     >
       Librairies & contributors
     </Text.H2>
-    <TouchableOpacity
-      onPress={[Function]}
+    <View
       style={
         Object {
           "flexDirection": "row",
@@ -84,12 +83,12 @@ exports[`AboutScreen renders correctly 1`] = `
       <Text.Primary>
         Can be found on 
       </Text.Primary>
-      <Text.Primary
-        green={true}
+      <Text.Link
+        url="https://github.com/NotMyFaultEarth/nmf-app"
       >
         Github
-      </Text.Primary>
-    </TouchableOpacity>
+      </Text.Link>
+    </View>
     <View
       style={
         Object {

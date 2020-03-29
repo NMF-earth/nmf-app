@@ -6,7 +6,7 @@ exports[`renders correctly H1 1`] = `
     Array [
       Object {
         "color": "#111714",
-        "fontFamily": "Inter-ExtraBold",
+        "fontFamily": "Inter-Black",
         "fontSize": 28,
       },
       undefined,
@@ -24,7 +24,7 @@ exports[`renders correctly H1 darkGray 1`] = `
     Array [
       Object {
         "color": "#111714",
-        "fontFamily": "Inter-ExtraBold",
+        "fontFamily": "Inter-Black",
         "fontSize": 28,
       },
       undefined,
@@ -45,7 +45,7 @@ exports[`renders correctly H1 green 1`] = `
     Array [
       Object {
         "color": "#111714",
-        "fontFamily": "Inter-ExtraBold",
+        "fontFamily": "Inter-Black",
         "fontSize": 28,
       },
       undefined,
@@ -66,7 +66,7 @@ exports[`renders correctly H1 lightGray 1`] = `
     Array [
       Object {
         "color": "#111714",
-        "fontFamily": "Inter-ExtraBold",
+        "fontFamily": "Inter-Black",
         "fontSize": 28,
       },
       undefined,
@@ -110,6 +110,27 @@ exports[`renders correctly H2 darkGray 1`] = `
       undefined,
       Object {
         "color": "#585D5B",
+      },
+    ]
+  }
+>
+  test
+</Text>
+`;
+
+exports[`renders correctly H2 green 1`] = `
+<Text
+  green={true}
+  style={
+    Array [
+      Object {
+        "color": "#111714",
+        "fontFamily": "Inter-Bold",
+        "fontSize": 26,
+      },
+      undefined,
+      Object {
+        "color": "#4BB377",
       },
     ]
   }
@@ -217,6 +238,29 @@ exports[`renders correctly H3 lightGray 1`] = `
 >
   test
 </Text>
+`;
+
+exports[`renders correctly Link 1`] = `
+<TouchableOpacity
+  onPress={[Function]}
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#4BB377",
+          "fontFamily": "Inter-Medium",
+          "fontSize": 18,
+          "textDecorationLine": "underline",
+        },
+        undefined,
+      ]
+    }
+    url="http://nmf.earth"
+  >
+    test
+  </Text>
+</TouchableOpacity>
 `;
 
 exports[`renders correctly Primary 1`] = `

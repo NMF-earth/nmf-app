@@ -184,7 +184,7 @@ exports[`AddEmissionScreen renders correctly 1`] = `
         >
           Total
         </Text.H3>
-        <Text.H1
+        <Text.H2
           green={true}
         >
           <FormattedNumber
@@ -195,7 +195,7 @@ exports[`AddEmissionScreen renders correctly 1`] = `
           <Text.Primary>
             kgCO2eq
           </Text.Primary>
-        </Text.H1>
+        </Text.H2>
       </View>
       <Button.Primary
         onPress={[Function]}

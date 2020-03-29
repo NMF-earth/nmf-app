@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SupportUsScreen renders correctly 1`] = `
+<RCTScrollView
+  style={
+    Object {
+      "flex": 1,
+      "paddingHorizontal": 14,
+    }
+  }
+>
+  <View>
+    <Text.H2
+      style={
+        Object {
+          "paddingBottom": 4,
+          "paddingTop": 14,
+        }
+      }
+    >
+      Why you should consider supporting us
+    </Text.H2>
+    <Text.Primary
+      style={
+        Object {
+          "paddingVertical": 10,
+        }
+      }
+    >
+      NMF.earth is not for profit, we have only raised a small amount on Kickstarter and we keep working a lot on the project even if it's not financially sustainable. Besides that, we have many costs such as servers, domain name, softwares licences, apple developer account etc.
+    </Text.Primary>
+    <Text.Primary
+      style={
+        Object {
+          "paddingVertical": 10,
+        }
+      }
+    >
+      If you like this project, please consider donating a small amount to help us keep going! And since everything is transparent with us, you will be able to see how we used your donation by looking at end of the year report.
+    </Text.Primary>
+    <Text.Primary
+      style={
+        Object {
+          "paddingVertical": 10,
+        }
+      }
+    >
+      You can do so on Open Collective or on Patreon.
+    </Text.Primary>
+    <Text.Link
+      style={
+        Object {
+          "paddingVertical": 10,
+        }
+      }
+      url="https://www.patreon.com/nmf_earth"
+    >
+      Patreon
+    </Text.Link>
+    <Text.Link
+      style={
+        Object {
+          "paddingVertical": 10,
+        }
+      }
+      url="https://opencollective.com/nmf_earth"
+    >
+      Open Collective
+    </Text.Link>
+  </View>
+</RCTScrollView>
+`;

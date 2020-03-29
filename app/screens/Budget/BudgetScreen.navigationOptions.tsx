@@ -5,11 +5,12 @@ import { Text } from "../../components";
 // import { PADDING_HORIZONTAL } from "../../constants/Layout";
 import { t } from "../../utils";
 // import { Colors } from "../../style";
-import { Layout } from "../../style";
+import { Layout, Shadows } from "../../style";
 
 const navigationOptions = () => ({
   headerStyle: {
-    borderBottomWidth: 0
+    borderBottomWidth: 0,
+    ...Shadows.header
   },
   headerBackTitle: null,
   headerTitle: () => (

@@ -12,31 +12,29 @@ exports[`SettingsScreen renders correctly 1`] = `
 >
   <View>
     <SettingsRow
-      isLastItem={false}
       onPress={[Function]}
       title="About"
     />
     <SettingsRow
-      isLastItem={false}
+      onPress={[Function]}
+      title="Support us!"
+    />
+    <SettingsRow
       onPress={[Function]}
       title="NMF.earth"
     />
     <SettingsRow
-      isLastItem={false}
       onPress={[Function]}
       title="Roadmap"
     />
     <SettingsRow
-      isLastItem={false}
       onPress={[Function]}
       title="Feedback"
     />
     <SettingsRow
-      isLastItem={true}
       onPress={[Function]}
       title="Terms of use"
     />
-    <SocialMedia />
     <TouchableOpacity
       onPress={[Function]}
       style={
@@ -61,12 +59,14 @@ exports[`SettingsScreen renders correctly 1`] = `
       lightGray={true}
       style={
         Object {
+          "marginBottom": 24,
           "textAlign": "center",
         }
       }
     >
       Version [missing %{version} value]
     </Text.Tertiary>
+    <SocialMedia />
   </View>
 </RCTScrollView>
 `;
