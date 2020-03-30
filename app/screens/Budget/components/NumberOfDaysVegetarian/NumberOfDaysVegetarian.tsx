@@ -24,7 +24,8 @@ const NumberOfDaysVegetarian = () => {
   }
 
   if (!isAnyMeatEmissionSaved) {
-    message = "Seems like you haven't eaten any meat recently, good job! 🍾";
+    message =
+      "Seems like you haven't eaten any meat since you are using the app, good job! 🍾";
   }
 
   return (
