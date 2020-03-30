@@ -43,6 +43,7 @@ exports[`BudgetScreen renders correctly 1`] = `
       totalEmissions={[MockFunction]}
       transportEmissions={[MockFunction]}
     />
+    <NumberOfDaysVegetarian />
   </View>
 </RCTScrollView>
 `;
