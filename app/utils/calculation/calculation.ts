@@ -1,7 +1,8 @@
-import { pipe, prop, filter, map, sum, invoker, reduce, maxBy } from "ramda";
-import moment from "moment";
+import { isEmpty, prop, reduce, maxBy, either, isNil } from "ramda";
 import { transport, TransportEnum, food } from "carbon-footprint";
 import { EmissionEnum, Emission } from "../../interfaces";
+
+const isNilOrEmpty = either(isNil, isEmpty);
 
 const getFlightType = (duration: number) => {
   /* Below 3 hours */
@@ -57,21 +58,10 @@ const getC02ValueFromEmission = (emission: Emission) => {
   return emission.value * model[emission.emissionModelType];
 };
 
-// const isoToEpoch = pipe(moment, invoker("valueOf"));
-
-const getLatestEmission = (emissions: Array<Emission>) => {
-  // let toto = reduce(
-  //   maxBy(pipe(prop("creationDate"), isoToEpoch)),
-  //   { creationDate: "0000-00-00T00:00:00.0Z" },
-  //   emissions
-  // );
-  // console.log("getLatestEmission -> toto", toto);
-  // console.log("getLatestEmission -> emissions", emissions);
-  return emissions;
-};
-
-// var page = [1, 2, 3],
-//     result = R.reduce(R.max, -Infinity, page);
+const getLatestEmission = (emissions: Array<Emission>) =>
+  isNilOrEmpty(emissions)
+    ? null
+    : reduce(maxBy(prop("creationDate")), emissions[0], emissions);
 
 export default {
   getLatestEmission,
