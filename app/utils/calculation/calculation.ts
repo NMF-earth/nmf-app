@@ -57,7 +57,7 @@ const getC02ValueFromEmission = (emission: Emission) => {
   return emission.value * model[emission.emissionModelType];
 };
 
-const isoToEpoch = pipe(moment, invoker("valueOf"));
+// const isoToEpoch = pipe(moment, invoker("valueOf"));
 
 const getLatestEmission = (emissions: Array<Emission>) => {
   // let toto = reduce(
