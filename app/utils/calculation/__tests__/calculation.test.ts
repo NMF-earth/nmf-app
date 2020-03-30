@@ -11,6 +11,11 @@ const emissionFood: Emission = {
   value: 10
 };
 
+const emissionFoodRecent = {
+  ...emissionFood,
+  creationDate: "2020-03-27T11:04:55.334Z"
+};
+
 const emissionTransport = {
   ...emissionFood,
   emissionModelType: TransportEnum.boat,
@@ -80,5 +85,25 @@ describe("getFlightEmissionValue should return the correct emission value for", 
         8 *
         60
     );
+  });
+});
+
+describe("getLatestEmission should return the latest emission emitted", () => {
+  it("if no emissions", () => {
+    expect(calculation.getLatestEmission(null)).toEqual(null);
+  });
+
+  it("if no emission", () => {
+    expect(calculation.getLatestEmission([])).toEqual(null);
+  });
+
+  it("if one emission, return this emission", () => {
+    expect(calculation.getLatestEmission([emissionFood])).toEqual(emissionFood);
+  });
+
+  it("if several emissions, return the most recent emission", () => {
+    expect(
+      calculation.getLatestEmission([emissionFood, emissionFoodRecent])
+    ).toEqual(emissionFoodRecent);
   });
 });

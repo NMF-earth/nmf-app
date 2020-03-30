@@ -22,14 +22,18 @@ exports[`NumberOfDaysVegetarian renders correctly 1`] = `
     <Text.H3
       green={true}
     >
-      45 days
+      function mockConstructor() {
+        return fn.apply(this, arguments);
+      } days
     </Text.H3>
     <Text.H3>
        without meat!
     </Text.H3>
   </View>
-  <Text.H3>
-    Good job 🎉
+  <Text.H3
+    center={true}
+  >
+    Well done! 🎉
   </Text.H3>
 </View>
 `;
