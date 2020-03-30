@@ -1,28 +1,13 @@
 import { pipe, filter, map, sum } from "ramda";
-import { budget, emissions } from "../../../ducks";
-import { EmissionEnum } from "../../../interfaces";
-import { calculation } from "../../../utils";
 import moment from "moment";
+import { budget, emissions } from "../../../ducks";
+import { calculation } from "../../../utils";
 
-const getAllEmissions = emissions.selectors.getAllEmissions;
-
-const isTransportEmission = emission =>
-  emission.emissionType === EmissionEnum.transport;
-const isFoodEmission = emission => emission.emissionType === EmissionEnum.food;
-const isCustomEmission = emission =>
-  emission.emissionType === EmissionEnum.custom;
 const isEmissionInCurrentMonth = emission =>
   moment(emission.creationDate).isSame(new Date(), "month") &&
   moment(emission.creationDate).isSame(new Date(), "year");
 const isEmissionInCurrentYear = emission =>
   moment(emission.creationDate).isSame(new Date(), "year");
-
-const getTransportEmissions = pipe(
-  getAllEmissions,
-  filter(isTransportEmission)
-);
-const getFoodEmissions = pipe(getAllEmissions, filter(isFoodEmission));
-const getCustomEmissions = pipe(getAllEmissions, filter(isCustomEmission));
 
 const getCarbonValue = pipe(
   map(calculation.getC02ValueFromEmission),
@@ -33,17 +18,17 @@ const getCarbonValue = pipe(
 const getCurrentMonthEmissions = filter(isEmissionInCurrentMonth);
 
 const getCurrentMonthTransportCarbonValue = pipe(
-  getTransportEmissions,
+  emissions.selectors.getTransportEmissions,
   getCurrentMonthEmissions,
   getCarbonValue
 );
 const getCurrentMonthFoodCarbonValue = pipe(
-  getFoodEmissions,
+  emissions.selectors.getFoodEmissions,
   getCurrentMonthEmissions,
   getCarbonValue
 );
 const getCurrentMonthCustomCarbonValue = pipe(
-  getCustomEmissions,
+  emissions.selectors.getCustomEmissions,
   getCurrentMonthEmissions,
   getCarbonValue
 );
@@ -51,17 +36,17 @@ const getCurrentMonthCustomCarbonValue = pipe(
 const getCurrentYearEmissions = filter(isEmissionInCurrentYear);
 
 const getCurrentYearTransportCarbonValue = pipe(
-  getTransportEmissions,
+  emissions.selectors.getTransportEmissions,
   getCurrentYearEmissions,
   getCarbonValue
 );
 const getCurrentYearFoodCarbonValue = pipe(
-  getFoodEmissions,
+  emissions.selectors.getFoodEmissions,
   getCurrentYearEmissions,
   getCarbonValue
 );
 const getCurrentYearCustomCarbonValue = pipe(
-  getCustomEmissions,
+  emissions.selectors.getCustomEmissions,
   getCurrentYearEmissions,
   getCarbonValue
 );

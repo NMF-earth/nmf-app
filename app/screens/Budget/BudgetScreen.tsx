@@ -3,8 +3,7 @@ import { ScrollView } from "react-native";
 import { useSelector } from "react-redux";
 import styles from "./BudgetScreen.styles";
 import { Text, Button } from "../../components";
-import { ProgressChart } from "./components";
-// import { NumberOfDaysVegetarian, ProgressChart } from "./components";
+import { NumberOfDaysVegetarian, ProgressChart } from "./components";
 import { t } from "../../utils";
 import { selectors } from "./ducks";
 
@@ -71,7 +70,7 @@ const BudgetScreen = (props: Props) => {
         otherEmissions={otherCurrentYearEmissions}
         monthlyEmissionsBudget={monthlyCarbonBudget}
       />
-      {/* <NumberOfDaysVegetarian /> */}
+      <NumberOfDaysVegetarian />
     </ScrollView>
   );
 };
