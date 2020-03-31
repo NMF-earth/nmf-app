@@ -75,7 +75,7 @@ export default class App extends React.Component<Props, State> {
     } else {
       return (
         <View style={styles.container}>
-          {Platform.OS === "ios" && <StatusBar barStyle="default" />}
+          {Platform.OS === "ios" && <StatusBar barStyle="dark-content" />}
           <Provider store={store}>
             <FormattedProvider locale={localization}>
               <AppNavigator />
