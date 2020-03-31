@@ -22,7 +22,6 @@ const isFoodEmission = emission => emission.emissionType === EmissionEnum.food;
 const isCustomEmission = emission =>
   emission.emissionType === EmissionEnum.custom;
 
-/* TODO: add tests for getTransportEmissions/getFoodEmissions/getCustomEmissions */
 const getTransportEmissions = pipe(
   getAllEmissions,
   filter(isTransportEmission)
