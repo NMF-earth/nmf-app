@@ -6,5 +6,12 @@ export default {
   BUDGET_SCREEN_PROGRESS_CHART_LEGEND_ITEM_FOOD: "Food",
   BUDGET_SCREEN_PROGRESS_CHART_LEGEND_ITEM_OTHER: "Other",
   BUDGET_SCREEN_PROGRESS_CHART_LEGEND_PERIOD_BUDGET: "Budget for ",
-  BUDGET_SCREEN_SET_MONTHLY_BUDGET: "Set monthly budget"
+  BUDGET_SCREEN_SET_MONTHLY_BUDGET: "Set monthly budget",
+  BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_RECENT_MEAT:
+    "Oh no, you have recently eaten meat 🥺",
+  BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_NICE_START: "That's a nice start! 👌",
+  BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_WELL_DONE: "Well done! 🎉",
+  BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_NO_MEAT_SO_FAR:
+    "Seems like you haven't eaten any meat since you are using the app, good job! 🍾",
+  BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_DAYS: "days"
 };

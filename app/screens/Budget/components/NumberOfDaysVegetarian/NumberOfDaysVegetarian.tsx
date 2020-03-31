@@ -1,10 +1,10 @@
 import React from "react";
 import { View } from "react-native";
 import { useSelector } from "react-redux";
-import { isEmpty, pipe, not } from "ramda";
 import { Text } from "../../../../components";
 import styles from "./NumberOfDaysVegetarian.styles";
 import { selectors } from "./ducks";
+import { t } from "../../../../utils";
 
 const NumberOfDaysVegetarian = () => {
   const isAnyMeatEmissionSaved = useSelector(selectors.isAnyMeatEmissionSaved);
@@ -14,18 +14,23 @@ const NumberOfDaysVegetarian = () => {
   let message = "";
 
   if (daysWithoutEatingMeat < 1) {
-    message = "Meat is murder, please don't eat animals 🥺";
+    message = t("BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_RECENT_MEAT");
   } else if (daysWithoutEatingMeat < 8) {
-    days = daysWithoutEatingMeat + " days";
-    message = "That's a nice start! 👌";
+    days =
+      daysWithoutEatingMeat +
+      " " +
+      t("BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_DAYS");
+    message = t("BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_NICE_START");
   } else {
-    days = daysWithoutEatingMeat + " days";
-    message = "Well done! 🎉";
+    days =
+      daysWithoutEatingMeat +
+      " " +
+      t("BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_DAYS");
+    message = t("BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_WELL_DONE");
   }
 
   if (!isAnyMeatEmissionSaved) {
-    message =
-      "Seems like you haven't eaten any meat since you are using the app, good job! 🍾";
+    message = t("BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_NO_MEAT_SO_FAR");
   }
 
   return (
