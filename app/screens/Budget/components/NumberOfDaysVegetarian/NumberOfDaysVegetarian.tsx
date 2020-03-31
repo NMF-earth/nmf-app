@@ -13,7 +13,7 @@ const NumberOfDaysVegetarian = () => {
   let days = null;
   let message = "";
 
-  if (daysWithoutEatingMeat < 1) {
+  if (daysWithoutEatingMeat < 3) {
     message = t("BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_RECENT_MEAT");
   } else if (daysWithoutEatingMeat < 8) {
     days =
