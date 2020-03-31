@@ -1,5 +1,8 @@
+import { isEmpty, prop, reduce, maxBy, either, isNil } from "ramda";
 import { transport, TransportEnum, food } from "carbon-footprint";
 import { EmissionEnum, Emission } from "../../interfaces";
+
+const isNilOrEmpty = either(isNil, isEmpty);
 
 const getFlightType = (duration: number) => {
   /* Below 3 hours */
@@ -55,7 +58,13 @@ const getC02ValueFromEmission = (emission: Emission) => {
   return emission.value * model[emission.emissionModelType];
 };
 
+const getLatestEmission = (emissions: Array<Emission>) =>
+  isNilOrEmpty(emissions)
+    ? null
+    : reduce(maxBy(prop("creationDate")), emissions[0], emissions);
+
 export default {
+  getLatestEmission,
   getC02ValueFromEmission,
   getFlightType,
   getFlightEmissionValue

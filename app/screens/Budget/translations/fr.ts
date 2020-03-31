@@ -6,5 +6,12 @@ export default {
   BUDGET_SCREEN_PROGRESS_CHART_LEGEND_ITEM_FOOD: "Nourriture",
   BUDGET_SCREEN_PROGRESS_CHART_LEGEND_ITEM_OTHER: "Autre",
   BUDGET_SCREEN_PROGRESS_CHART_LEGEND_PERIOD_BUDGET: "Budget pour ",
-  BUDGET_SCREEN_SET_MONTHLY_BUDGET: "Choisir budget mensuel"
+  BUDGET_SCREEN_SET_MONTHLY_BUDGET: "Choisir budget mensuel",
+  BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_RECENT_MEAT:
+    "Oh non, vous avez récemment mangé de la viande 🥺",
+  BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_NICE_START: "C'est un bon début! 👌",
+  BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_WELL_DONE: "Bravo! 🎉",
+  BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_NO_MEAT_SO_FAR:
+    "On dirait que vous n'avez pas mangé de viande depuis que vous utilisé l'applocation, bravo! 🍾",
+  BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_DAYS: "jours"
 };

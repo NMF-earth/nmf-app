@@ -177,6 +177,27 @@ exports[`renders correctly H3 1`] = `
 </Text>
 `;
 
+exports[`renders correctly H3 center 1`] = `
+<Text
+  center={true}
+  style={
+    Array [
+      Object {
+        "color": "#111714",
+        "fontFamily": "Inter-Bold",
+        "fontSize": 22,
+      },
+      undefined,
+      Object {
+        "textAlign": "center",
+      },
+    ]
+  }
+>
+  test
+</Text>
+`;
+
 exports[`renders correctly H3 darkGray 1`] = `
 <Text
   darkGray={true}

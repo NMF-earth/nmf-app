@@ -1,5 +1,6 @@
 import { filter, propEq, find, pathOr, pipe } from "ramda";
 import { namespace } from "./emissions.slice";
+import { EmissionEnum } from "../../interfaces";
 
 const getAllEmissions = pathOr([], [namespace]);
 
@@ -13,8 +14,27 @@ const getEmissionsToMitigate = state =>
 const getEmissionsMitigated = state =>
   pipe(getAllEmissions, filter(propEq("isMitigated", true)))(state);
 
-export default {
+const isTransportEmission = emission =>
+  emission.emissionType === EmissionEnum.transport;
+
+const isFoodEmission = emission => emission.emissionType === EmissionEnum.food;
+
+const isCustomEmission = emission =>
+  emission.emissionType === EmissionEnum.custom;
+
+const getTransportEmissions = pipe(
   getAllEmissions,
+  filter(isTransportEmission)
+);
+
+const getFoodEmissions = pipe(getAllEmissions, filter(isFoodEmission));
+
+const getCustomEmissions = pipe(getAllEmissions, filter(isCustomEmission));
+
+export default {
+  getTransportEmissions,
+  getFoodEmissions,
+  getCustomEmissions,
   getEmissionById,
   getEmissionsToMitigate,
   getEmissionsMitigated
