@@ -27,7 +27,7 @@ const translationMontlyBudgetCountries = [
 ];
 
 const CountryExample = (translation, index) => (
-  <Text.Secondary key={index} style={styles.worldExampleItem}>
+  <Text.Secondary center key={index} style={styles.worldExampleItem}>
     {t(translation)}
   </Text.Secondary>
 );
@@ -51,12 +51,7 @@ const MonthlyBudgetScreen = ({ navigation }) => {
     <View style={styles.container}>
       <ScrollView>
         <View style={styles.personnalBudgetContainer}>
-          <Text.Primary bold>
-            {t("MONTHLY_BUDGET_MY_MONTHLY_CARBON_BUDGET")}
-          </Text.Primary>
-          <Text.Primary lightGray>
-            {Math.round(sliderValue) + " kg"}
-          </Text.Primary>
+          <Text.Primary bold>{t("MONTHLY_BUDGET_SLIDE_TO_SET")}</Text.Primary>
         </View>
         <Slider
           minimumTrackTintColor={Colors.linkGreen}
@@ -68,6 +63,9 @@ const MonthlyBudgetScreen = ({ navigation }) => {
           value={sliderValue}
           onSlidingComplete={setSliderValue}
         />
+        <Text.Primary lightGray>
+          {Math.round(sliderValue) + " kg CO2eq"}
+        </Text.Primary>
         <View style={styles.worldBudgetContainer}>
           <View style={styles.worldExampleTitle}>
             <Text.Primary bold>
@@ -81,12 +79,14 @@ const MonthlyBudgetScreen = ({ navigation }) => {
             </Text.Primary>
           </View>
           {translationMontlyBudgetCountries.map(CountryExample)}
-          <Text.Secondary
-            bold
-            style={[styles.worldExampleItem, styles.parisAgreement]}
-          >
-            {t("MONTHLY_BUDGET_PARIS_AGREEMENT")}
-          </Text.Secondary>
+          <View style={styles.parisAgreement}>
+            <Text.Secondary center>
+              {t("MONTHLY_BUDGET_PARIS_AGREEMENT")}
+              <Text.Secondary bold green>
+                {" 166 kg"}
+              </Text.Secondary>
+            </Text.Secondary>
+          </View>
         </View>
       </ScrollView>
       <View style={styles.buttonContainer}>

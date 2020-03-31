@@ -4,7 +4,7 @@ import de from "./de";
 
 interface TranslationKeys {
   MONTHLY_BUDGET_TITLE: string;
-  MONTHLY_BUDGET_MY_MONTHLY_CARBON_BUDGET: string;
+  MONTHLY_BUDGET_SLIDE_TO_SET: string;
   MONTHLY_BUDGET_SAVE: string;
   MONTHLY_BUDGET_CARBON_EMISSIONS_WORLD: string;
   MONTHLY_BUDGET_LUXEMBOURG: string;
