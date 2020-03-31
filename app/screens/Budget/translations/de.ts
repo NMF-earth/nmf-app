@@ -12,6 +12,6 @@ export default {
   BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_NICE_START: "That's a nice start! 👌",
   BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_WELL_DONE: "Well done! 🎉",
   BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_NO_MEAT_SO_FAR:
-    "Seems like you haven't eaten any meat since you are using the app, good job! 🍾",
+    "Seems like you haven't eaten any meat since using the app, good job! 🍾",
   BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_DAYS: "days"
 };
