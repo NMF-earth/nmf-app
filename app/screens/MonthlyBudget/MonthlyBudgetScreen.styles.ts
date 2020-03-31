@@ -21,7 +21,7 @@ export default StyleSheet.create({
   },
   worldExampleTitle: {
     flex: 1,
-    marginBottom: 8
+    marginBottom: 16
   },
   worldExampleItem: {
     marginBottom: 6
@@ -36,7 +36,7 @@ export default StyleSheet.create({
     marginTop: 14
   },
   parisAgreement: {
-    marginTop: 10,
+    marginTop: 16,
     marginBottom: 80
   }
 });

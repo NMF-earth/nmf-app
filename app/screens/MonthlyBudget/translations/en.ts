@@ -1,9 +1,9 @@
 export default {
   MONTHLY_BUDGET_TITLE: "Monthly Budget",
-  MONTHLY_BUDGET_MY_MONTHLY_CARBON_BUDGET: "My carbon monthly budget : ",
+  MONTHLY_BUDGET_SLIDE_TO_SET: "Slide to set your budget",
   MONTHLY_BUDGET_SAVE: "Save",
   MONTHLY_BUDGET_CARBON_EMISSIONS_WORLD:
-    "Examples of CO2 emissions per capita per month ",
+    "Average monthly emissions per capita in a sample of countries ",
   MONTHLY_BUDGET_LUXEMBOURG: "Luxembourg : 3.5 tons",
   MONTHLY_BUDGET_UNITED_STATES: "United States : 1,5 tons",
   MONTHLY_BUDGET_JAPAN: "Japan : 900 kg",
@@ -14,5 +14,5 @@ export default {
   MONTHLY_BUDGET_INDIA: "India : 139 kg",
   MONTHLY_BUDGET_ETHIOPIA: "Ethiopia : 8.3 kg",
   MONTHLY_BUDGET_PARIS_AGREEMENT:
-    "To respect Paris agreement and keep the temperature rise below 2 degrees : 166 kg"
+    "If you wish to respect the Paris agreement (to keep the rise in global average temperature below 2 degrees), set your monthly budget at"
 };
