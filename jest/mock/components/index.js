@@ -43,6 +43,7 @@ jest.mock(
 );
 
 /* Shared Components */
+jest.mock("../../../app/components/TextInput", () => "TextInput");
 jest.mock("../../../app/components/SocialMedia", () => "SocialMedia");
 jest.mock("../../../app/components/Tag", () => "Tag");
 jest.mock("../../../app/components/EmissionListItem", () => "EmissionListItem");

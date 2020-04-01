@@ -9,6 +9,7 @@ function loadStories() {
 	require('../app/components/SocialMedia/stories/SocialMedia.story');
 	require('../app/components/Tag/__stories__/Tag.story');
 	require('../app/components/Text/stories/Text.story');
+	require('../app/components/TextInput/__stories__/TextInput.story');
 }
 
 const stories = [
@@ -16,7 +17,8 @@ const stories = [
 	'../app/components/EmissionListItem/stories/EmissionListItem.story',
 	'../app/components/SocialMedia/stories/SocialMedia.story',
 	'../app/components/Tag/__stories__/Tag.story',
-	'../app/components/Text/stories/Text.story'
+	'../app/components/Text/stories/Text.story',
+	'../app/components/TextInput/__stories__/TextInput.story'
 ];
 
 module.exports = {

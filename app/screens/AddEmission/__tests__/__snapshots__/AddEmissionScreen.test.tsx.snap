@@ -5,6 +5,31 @@ exports[`AddEmissionScreen renders correctly 1`] = `
   locale="en"
 >
   <RCTScrollView
+    automaticallyAdjustContentInsets={false}
+    contentInset={
+      Object {
+        "bottom": 0,
+      }
+    }
+    enableAutomaticScroll={true}
+    enableOnAndroid={false}
+    enableResetScrollToCoords={true}
+    extraHeight={75}
+    extraScrollHeight={0}
+    getScrollResponder={[Function]}
+    handleOnScroll={[Function]}
+    keyboardDismissMode="interactive"
+    keyboardOpeningTime={250}
+    keyboardSpace={0}
+    onScroll={[Function]}
+    resetKeyboardSpace={[Function]}
+    scrollEventThrottle={1}
+    scrollForExtraHeightOnAndroid={[Function]}
+    scrollIntoView={[Function]}
+    scrollToEnd={[Function]}
+    scrollToFocusedInput={[Function]}
+    scrollToPosition={[Function]}
+    showsVerticalScrollIndicator={true}
     style={
       Object {
         "alignContent": "flex-start",
@@ -12,6 +37,8 @@ exports[`AddEmissionScreen renders correctly 1`] = `
         "flex": 1,
       }
     }
+    update={[Function]}
+    viewIsInsideTabBar={false}
   >
     <View>
       <View
@@ -197,6 +224,13 @@ exports[`AddEmissionScreen renders correctly 1`] = `
           </Text.Primary>
         </Text.H2>
       </View>
+      <TextInput
+        isOptional={true}
+        onChangeText={[Function]}
+        placeholder="e.g burger, flight from Paris to Rome…"
+        title="Name this emission "
+        value=""
+      />
       <Button.Primary
         onPress={[Function]}
         style={

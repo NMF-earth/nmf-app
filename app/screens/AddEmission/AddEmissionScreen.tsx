@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { View, ScrollView } from "react-native";
 import { TransportEnum, FoodEnum } from "carbon-footprint";
-import { Text, Tag } from "../../components";
+import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
+import { Text, Tag, TextInput } from "../../components";
 import styles from "./AddEmissionScreen.styles";
 import navigationOptions from "./AddEmissionScreen.navigationOptions";
-import { t } from "../../utils";
 import { Food, Transport, Custom, AddEmissionButton } from "./components";
 import { EmissionEnum } from "../../interfaces";
 import { EmissionPayload } from "../../interfaces/emission/emission.interface";
-import { calculation } from "../../utils";
+import { calculation, t } from "../../utils";
 
 interface Props {
   navigation: {
@@ -25,6 +25,7 @@ const DEFAULT_SLIDER_VALUE_CUSTOM = 800;
 const AddEmissionScreen: React.FunctionComponent<Props> & {
   navigationOptions: typeof navigationOptions;
 } = ({ navigation }) => {
+  const [emissionName, setEmissionName] = useState("");
   const [emissionType, setEmissionType] = useState(EmissionEnum.transport);
   const [transportType, setTransportType] = useState(TransportEnum.car);
   const [foodType, setFoodType] = useState(FoodEnum.redMeat);
@@ -39,6 +40,7 @@ const AddEmissionScreen: React.FunctionComponent<Props> & {
   const [quantity, setQuantity] = useState(DEFAULT_SLIDER_VALUE_FOOD);
 
   const emissionPayload: EmissionPayload = {
+    name: "",
     emissionType: emissionType,
     value: 0,
     emissionModelType: null
@@ -101,7 +103,7 @@ const AddEmissionScreen: React.FunctionComponent<Props> & {
   };
 
   return (
-    <ScrollView style={styles.container}>
+    <KeyboardAwareScrollView style={styles.container}>
       <View style={styles.typeContainer}>
         <View style={styles.textContainer}>
           <Text.H3>{t("ADD_EMISSION_EMISSION_TYPE")}</Text.H3>
@@ -132,11 +134,23 @@ const AddEmissionScreen: React.FunctionComponent<Props> & {
       {renderFood()}
       {renderCustom()}
 
+      <TextInput
+        isOptional
+        placeholder={t("ADD_EMISSION_TEXTINPUT_PLACEHOLDER")}
+        title={t("ADD_EMISSION_NAME_EMISSION")}
+        onChangeText={name => {
+          if (name.length < 150) {
+            setEmissionName(name);
+          }
+        }}
+        value={emissionName}
+      />
+
       <AddEmissionButton
         navigation={navigation}
-        emissionPayload={emissionPayload}
+        emissionPayload={{ ...emissionPayload, name: emissionName }}
       />
-    </ScrollView>
+    </KeyboardAwareScrollView>
   );
 };
 
