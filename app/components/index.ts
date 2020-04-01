@@ -6,6 +6,7 @@ import GuidePreview from "./GuidePreview";
 import { EmissionListItem, EmissionListItemProps } from "./EmissionListItem";
 import Tag from "./Tag";
 import SocialMedia from "./SocialMedia";
+import TextInput from "./TextInput";
 
 export {
   SocialMedia,
@@ -16,5 +17,6 @@ export {
   TabbedView,
   GuidePreview,
   EmissionListItem,
-  EmissionListItemProps
+  EmissionListItemProps,
+  TextInput
 };

@@ -70,7 +70,7 @@ const EmissionItemScreen = ({ navigation }: Props) => {
     return null;
   }
 
-  const { creationDate = "", emissionModelType = "" } = emission;
+  const { creationDate = "", emissionModelType = "", name = "" } = emission;
 
   const date = moment(creationDate, "YYYY-MM-DDTHH:mm:ss.sssZ").format(
     "dddd, MMMM Do YYYY"
@@ -81,6 +81,14 @@ const EmissionItemScreen = ({ navigation }: Props) => {
 
   return (
     <ScrollView style={styles.container}>
+      {name.length ? (
+        <>
+          <Text.H3>{t("EMISSION_ITEM_NAME")}</Text.H3>
+          <Text.Primary darkGray style={styles.item}>
+            {name}
+          </Text.Primary>
+        </>
+      ) : null}
       <Text.H3>{t("EMISSION_ITEM_TYPE")}</Text.H3>
       <ScrollView horizontal style={styles.item}>
         <Tag

@@ -15,5 +15,7 @@ export default {
   ADD_EMISSION_BOAT: "Boat",
   ADD_EMISSION_BUS: "Bus",
   ADD_EMISSION_RED_MEAT: "Red Meat",
-  ADD_EMISSION_WHITE_MEAT: "White Meat"
+  ADD_EMISSION_WHITE_MEAT: "White Meat",
+  ADD_EMISSION_TEXTINPUT_PLACEHOLDER: "e.g burger, flight from Paris to Rome…",
+  ADD_EMISSION_NAME_EMISSION: "Name this emission "
 };

@@ -12,5 +12,6 @@ export default {
   EMISSION_ITEM_BUS: "Bus",
   EMISSION_ITEM_RED_MEAT: "Red Meat",
   EMISSION_ITEM_WHITE_MEAT: "White Meat",
-  EMISSION_ITEM_CUSTOM: "Custom"
+  EMISSION_ITEM_CUSTOM: "Custom",
+  EMISSION_ITEM_NAME: "Name"
 };

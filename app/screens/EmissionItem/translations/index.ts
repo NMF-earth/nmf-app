@@ -17,6 +17,7 @@ interface TranslationKeys {
   EMISSION_ITEM_RED_MEAT: string;
   EMISSION_ITEM_WHITE_MEAT: string;
   EMISSION_ITEM_CUSTOM: string;
+  EMISSION_ITEM_NAME: string;
 }
 
 export { en, fr, de, TranslationKeys };

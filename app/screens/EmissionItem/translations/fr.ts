@@ -12,5 +12,6 @@ export default {
   EMISSION_ITEM_BUS: "Bus",
   EMISSION_ITEM_RED_MEAT: "Viande rouge",
   EMISSION_ITEM_WHITE_MEAT: "Viande blanche",
-  EMISSION_ITEM_CUSTOM: "Customisé"
+  EMISSION_ITEM_CUSTOM: "Customisé",
+  EMISSION_ITEM_NAME: "Nom"
 };
