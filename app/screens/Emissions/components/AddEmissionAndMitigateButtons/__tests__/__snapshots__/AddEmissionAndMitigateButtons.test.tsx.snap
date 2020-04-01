@@ -12,8 +12,7 @@ exports[`AddEmissionAndMitigateButtons renders correctly 1`] = `
     }
   }
 >
-  <Button.Primary
-    black={true}
+  <Button.Secondary
     onPress={[Function]}
     style={
       Object {
@@ -23,16 +22,16 @@ exports[`AddEmissionAndMitigateButtons renders correctly 1`] = `
         "marginRight": 7,
       }
     }
-    textType="Primary"
+    textType="Secondary"
   >
-    <Text.Primary
+    <Text.Secondary
       bold={true}
       center={true}
-      white={true}
+      green={true}
     >
       Mitigate
-    </Text.Primary>
-  </Button.Primary>
+    </Text.Secondary>
+  </Button.Secondary>
   <Button.Primary
     onPress={[Function]}
     style={
@@ -43,15 +42,15 @@ exports[`AddEmissionAndMitigateButtons renders correctly 1`] = `
         "marginRight": 14,
       }
     }
-    textType="Primary"
+    textType="Secondary"
   >
-    <Text.Primary
+    <Text.Secondary
       bold={true}
       center={true}
       white={true}
     >
       Add
-    </Text.Primary>
+    </Text.Secondary>
   </Button.Primary>
 </View>
 `;

@@ -23,10 +23,13 @@ it("AddEmissionAndMitigateButtons should navigate if any button is pressed", () 
     .root;
   // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
   // @ts-ignore
-  const buttons = root.findAllByType("Button.Primary");
+  const buttonPrimary = root.findByType("Button.Primary");
+  // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
+  // @ts-ignore
+  const buttonSecondary = root.findByType("Button.Secondary");
 
-  buttons[0].props.onPress();
-  buttons[1].props.onPress();
+  buttonPrimary.props.onPress();
+  buttonSecondary.props.onPress();
   expect(props.navigation.navigate).toHaveBeenCalled();
   expect(props.navigation.push).toHaveBeenCalled();
 });

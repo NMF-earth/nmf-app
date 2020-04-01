@@ -13,28 +13,25 @@ interface Props {
 
 const AddEmissionAndMitigateButtons = ({ navigation }: Props) => (
   <View style={styles.buttonView}>
-    <Button.Primary
+    <Button.Secondary
       style={styles.buttonLeft}
-      black
-      onPress={() => {
-        navigation.navigate("ComingSoon");
-      }}
-      textType={"Primary"}
+      onPress={() => navigation.navigate("ComingSoon")}
+      textType={"Secondary"}
     >
-      <Text.Primary center white bold>
+      <Text.Secondary center bold green>
         {t("EMISSIONS_SCREEN_MITIGATE")}
-      </Text.Primary>
-    </Button.Primary>
+      </Text.Secondary>
+    </Button.Secondary>
     <Button.Primary
       style={styles.buttonRight}
       onPress={() => {
         navigation.push("AddEmission");
       }}
-      textType={"Primary"}
+      textType={"Secondary"}
     >
-      <Text.Primary center white bold>
+      <Text.Secondary center white bold>
         {t("EMISSIONS_SCREEN_ADD")}
-      </Text.Primary>
+      </Text.Secondary>
     </Button.Primary>
   </View>
 );
