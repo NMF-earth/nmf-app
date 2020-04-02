@@ -8,16 +8,19 @@ import ImagesAssets from "../../constants/ImagesAssets";
 import styles from "./IntroScreen.styles";
 import { t } from "../../utils";
 import { userPreferences } from "../../ducks";
+import { navigate } from "../../navigation";
 
 const currentTermsOfUseVersion = 1;
 
 const IntroScreen = ({ navigation }) => {
+  const navigator = navigate(navigation);
+
   const dispatch = useDispatch();
   const acceptedTermsOfUseVersion = useSelector(
     userPreferences.selectors.getAcceptedTermsOfUseVersion
   );
   if (currentTermsOfUseVersion === acceptedTermsOfUseVersion) {
-    navigation.navigate("BudgetStack");
+    navigator.openBudgetStack();
   }
 
   const onPress = () => {
@@ -25,7 +28,7 @@ const IntroScreen = ({ navigation }) => {
       userPreferences.actions.acceptTermsOfUse(currentTermsOfUseVersion)
     );
 
-    navigation.navigate("BudgetStack");
+    navigator.openBudgetStack();
   };
 
   return (

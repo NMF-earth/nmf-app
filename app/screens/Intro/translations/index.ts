@@ -1,6 +1,7 @@
 import en from "./en";
 import fr from "./fr";
 import de from "./de";
+import sv from "./sv";
 
 interface TranslationKeys {
   INTRO_SCREEN_WELCOME: string;
@@ -10,4 +11,4 @@ interface TranslationKeys {
   INTRO_SCREEN_I_AGREE: string;
 }
 
-export { en, fr, de, TranslationKeys };
+export { en, fr, de, sv, TranslationKeys };

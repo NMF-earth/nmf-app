@@ -28,6 +28,7 @@ exports[`AddEmissionAndMitigateButtons renders correctly 1`] = `
       bold={true}
       center={true}
       green={true}
+      numberOfLines={1}
     >
       Mitigate
     </Text.Secondary>
@@ -47,6 +48,7 @@ exports[`AddEmissionAndMitigateButtons renders correctly 1`] = `
     <Text.Secondary
       bold={true}
       center={true}
+      numberOfLines={1}
       white={true}
     >
       Add

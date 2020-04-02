@@ -9,7 +9,7 @@ import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
 import Constants from "expo-constants";
 import * as Sentry from "sentry-expo";
 import { Provider } from "react-redux";
-import AppNavigator from "./app/navigation/AppNavigator";
+import AppNavigator from "./app/navigation/Navigator/AppNavigator";
 import store from "./app/redux/store";
 
 const supportedLanguages = ["en", "fr", "de"];

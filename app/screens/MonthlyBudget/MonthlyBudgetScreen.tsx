@@ -10,6 +10,7 @@ import styles from "./MonthlyBudgetScreen.styles";
 import navigationOptions from "./MonthlyBudgetScreen.navigationOptions";
 import { t } from "../../utils";
 import { budget } from "../../ducks";
+import { navigate } from "../../navigation";
 
 const MIN_MONTHLY_CARBON_BUDGET = 0;
 const MAX_MONTHLY_CARBON_BUDGET = 1000;
@@ -34,6 +35,8 @@ const CountryExample = (translation, index) => (
 
 const MonthlyBudgetScreen = ({ navigation }) => {
   const monthlyBudget = useSelector(budget.selectors.getMonthlyCarbonBudget);
+  const navigator = navigate(navigation);
+
   const [sliderValue, setSliderValue] = useState(monthlyBudget);
   const dispatch = useDispatch();
 
@@ -44,7 +47,7 @@ const MonthlyBudgetScreen = ({ navigation }) => {
 
   const onPressSaveBudget = () => {
     dispatch(budget.actions.setMonthlyCarbonBudget(Math.round(sliderValue)));
-    navigation.goBack();
+    navigator.goBack();
   };
 
   return (
@@ -83,7 +86,7 @@ const MonthlyBudgetScreen = ({ navigation }) => {
             <Text.Secondary center>
               {t("MONTHLY_BUDGET_PARIS_AGREEMENT")}
               <Text.Secondary bold green>
-                {" 166 kg"}
+                {" 166 kg CO2"}
               </Text.Secondary>
             </Text.Secondary>
           </View>

@@ -8,22 +8,18 @@ import styles from "./SettingsScreen.styles";
 import navigationOptions from "./SettingsScreen.navigationOptions";
 import { t } from "../../utils";
 import ImagesAssets from "../../constants/ImagesAssets";
+import { navigate } from "../../navigation";
 
-interface Props {
-  navigation: {
-    push: (screen: string) => void;
-  };
-}
-
-const SettingsScreen = ({ navigation }: Props) => {
+const SettingsScreen = props => {
+  const navigator = navigate(props.navigation);
   const rowItems = [
     {
       title: t("SETTINGS_SCREEN_ABOUT"),
-      onPress: () => navigation.push("About")
+      onPress: navigator.openAbout
     },
     {
       title: t("SETTINGS_SCREEN_SUPPORT_US"),
-      onPress: () => navigation.push("SupportUs")
+      onPress: navigator.openSupportUs
     },
     {
       title: t("SETTINGS_SCREEN_NMF_EARTH"),
@@ -76,7 +72,7 @@ const SettingsScreen = ({ navigation }: Props) => {
           <Button.Primary
             style={styles.hiddenBtn}
             textType={"Primary"}
-            onPress={() => navigation.push("Storybook")}
+            onPress={navigator.openStorybook}
           >
             <Text.Primary white center>
               Open Storybook

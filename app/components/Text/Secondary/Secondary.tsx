@@ -13,6 +13,7 @@ interface Props {
   green?: boolean;
   center?: boolean;
   light?: boolean;
+  numberOfLines?: number;
 }
 
 export default function Secondary(props: Props): React.ReactElement {

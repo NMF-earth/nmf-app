@@ -33,6 +33,7 @@ const emissionCustom: EmissionType = {
 
 const emissionMitigated: EmissionType = {
   ...emissionFood,
+  id: "4",
   isMitigated: true
 };
 
@@ -47,6 +48,11 @@ describe("if there are emissions", () => {
       ]
     };
   });
+
+  test("`getEmissionById` should return no emission", () =>
+    expect(emissions.selectors.getEmissionById(state, "1")).toEqual(
+      emissionFood
+    ));
 
   test("`getEmissionsMitigated` should return mitigated emissions", () =>
     expect(emissions.selectors.getEmissionsMitigated(state)).toEqual([
@@ -83,6 +89,9 @@ describe("if there are no emissions", () => {
       [emissions.namespace]: []
     };
   });
+
+  test("`getEmissionById` should return no emission", () =>
+    expect(emissions.selectors.getEmissionById(state, "1")).toEqual(undefined));
 
   test("`getEmissionsMitigated` should return mitigated no emission", () =>
     expect(emissions.selectors.getEmissionsMitigated(state)).toEqual([]));

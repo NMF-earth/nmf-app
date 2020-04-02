@@ -4,7 +4,6 @@ import AddEmissionScreen from "../AddEmissionScreen";
 import { emissions } from "../../../ducks";
 import { FormattedProvider } from "react-native-globalize";
 
-
 const props = {
   navigation: {
     push: jest.fn(),
@@ -13,11 +12,13 @@ const props = {
 };
 
 it("AddEmissionScreen renders correctly", () => {
-  const tree = renderer.create(
-    <FormattedProvider locale="en">
-      <AddEmissionScreen {...props} />
-    </FormattedProvider>
-  ).toJSON();
+  const tree = renderer
+    .create(
+      <FormattedProvider locale="en">
+        <AddEmissionScreen {...props} />
+      </FormattedProvider>
+    )
+    .toJSON();
   expect(tree).toMatchSnapshot();
 });
 

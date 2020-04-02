@@ -20,6 +20,16 @@ describe("Emissions actions should", () => {
       type: emissions.actions.createEmission.toString(),
       payload: emission
     };
+
     expect(emissions.actions.createEmission(emission)).toEqual(expectedAction);
+  });
+
+  it("be able to delete an emission", () => {
+    const expectedAction = {
+      type: emissions.actions.deleteEmissionById.toString(),
+      payload: "123"
+    };
+
+    expect(emissions.actions.deleteEmissionById("123")).toEqual(expectedAction);
   });
 });

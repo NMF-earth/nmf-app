@@ -4,8 +4,7 @@ import { EmissionEnum } from "../../interfaces";
 
 const getAllEmissions = pathOr([], [namespace]);
 
-/* TODO: add tests for this selector + check if working irl */
-const getEmissionById = (state, id: number) =>
+const getEmissionById = (state, id: string) =>
   find(propEq("id", id))(state[namespace]);
 
 const getEmissionsToMitigate = state =>
