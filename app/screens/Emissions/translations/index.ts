@@ -1,6 +1,7 @@
 import en from "./en";
 import fr from "./fr";
 import de from "./de";
+import sv from "./sv";
 
 interface TranslationKeys {
   EMISSIONS_SCREEN_TAB_NAME: string;
@@ -12,4 +13,4 @@ interface TranslationKeys {
   EMISSIONS_SCREEN_NO_EMISSION_MITIGATED: string;
 }
 
-export { en, fr, de, TranslationKeys };
+export { en, fr, de, sv, TranslationKeys };

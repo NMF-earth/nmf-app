@@ -1,5 +1,4 @@
 import React from "react";
-import { NavigationParams } from "react-navigation";
 import { FlatList, SafeAreaView, View } from "react-native";
 import { useSelector } from "react-redux";
 import { t } from "../../utils";
@@ -12,15 +11,10 @@ import {
 } from "../../components";
 import { AddEmissionAndMitigateButtons } from "./components";
 import { selectors } from "./ducks";
+import { navigate } from "../../navigation";
 
-interface Props {
-  navigation: {
-    push: (screen: string, params?: NavigationParams) => void;
-    navigate: (screen: string) => void;
-  };
-}
-
-const EmissionsScreen = ({ navigation }: Props) => {
+const EmissionsScreen = props => {
+  const navigator = navigate(props.navigation);
   const emissionsToMitigate = useSelector(selectors.getEmissionsToMitigate);
   const emissionsMitigated = useSelector(selectors.getEmissionsMitigated);
 
@@ -40,8 +34,9 @@ const EmissionsScreen = ({ navigation }: Props) => {
                   renderItem={({ item }: { item: EmissionListItemProps }) => (
                     <EmissionListItem
                       id={item.id}
+                      name={item.name}
                       onPress={() =>
-                        navigation.push("EmissionItem", { id: item.id })
+                        navigator.openEmissionItem({ id: item.id })
                       }
                       title={item.title}
                       co2value={item.co2value}
@@ -64,6 +59,7 @@ const EmissionsScreen = ({ navigation }: Props) => {
                   renderItem={({ item }: { item: EmissionListItemProps }) => (
                     <EmissionListItem
                       id={item.id}
+                      name={item.name}
                       onPress={item.onPress}
                       title={item.title}
                       co2value={item.co2value}
@@ -82,7 +78,7 @@ const EmissionsScreen = ({ navigation }: Props) => {
           ]}
         />
       </SafeAreaView>
-      <AddEmissionAndMitigateButtons navigation={navigation} />
+      <AddEmissionAndMitigateButtons navigation={props.navigation} />
     </React.Fragment>
   );
 };

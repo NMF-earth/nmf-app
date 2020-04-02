@@ -1,6 +1,7 @@
 import en from "./en";
 import fr from "./fr";
 import de from "./en";
+import sv from "./sv";
 
 interface TranslationKeys {
   BUDGET_SCREEN_TAB_NAME: string;
@@ -18,4 +19,4 @@ interface TranslationKeys {
   BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_DAYS: string;
 }
 
-export { en, fr, de, TranslationKeys };
+export { en, fr, de, sv, TranslationKeys };

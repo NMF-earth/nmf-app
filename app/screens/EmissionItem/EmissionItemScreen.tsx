@@ -5,13 +5,12 @@ import { pathOr } from "ramda";
 import moment from "moment";
 import { t } from "../../utils";
 import styles from "./EmissionItemScreen.styles";
-import { TransportEnum, FoodEnum } from "carbon-footprint";
-import { EmissionEnum } from "../../interfaces";
 import { Text, Tag, Button } from "../../components";
 import { selectors } from "./ducks";
 import navigationOptions from "./EmissionItemScreen.navigationOptions";
-import { calculation } from "../../utils";
+import { calculation, ui } from "../../utils";
 import { emissions } from "../../ducks";
+import { navigate } from "../../navigation";
 
 interface Props {
   navigation: {
@@ -20,41 +19,16 @@ interface Props {
         id: string;
       };
     };
-    goBack: () => void;
   };
 }
-
-const getTranslationModelType = emissionModelType => {
-  switch (emissionModelType) {
-    case EmissionEnum.custom:
-      return t("EMISSION_ITEM_CUSTOM");
-    case FoodEnum.redMeat:
-      return t("EMISSION_ITEM_RED_MEAT");
-    case FoodEnum.whiteMeat:
-      return t("EMISSION_ITEM_WHITE_MEAT");
-    case TransportEnum.shortHaulFlight:
-    case TransportEnum.mediumHaulFlight:
-    case TransportEnum.longHaulFlight:
-      return t("EMISSION_ITEM_PLANE");
-    case TransportEnum.train:
-      return t("EMISSION_ITEM_TRAIN");
-    case TransportEnum.car:
-      return t("EMISSION_ITEM_CAR");
-    case TransportEnum.boat:
-      return t("EMISSION_ITEM_BOAT");
-    case TransportEnum.bus:
-      return t("EMISSION_ITEM_BUS");
-    default:
-      return t("EMISSION_ITEM_RED_MEAT");
-  }
-};
 
 const EmissionItemScreen = ({ navigation }: Props) => {
   const emissionId = pathOr(false, ["state", "params", "id"], navigation);
   const dispatch = useDispatch();
+  const navigator = navigate(navigation);
 
   if (!emissionId) {
-    navigation.goBack();
+    navigator.goBack();
     return null;
   }
 
@@ -66,7 +40,7 @@ const EmissionItemScreen = ({ navigation }: Props) => {
 
   /* Avoid crash right after an emission is deleted */
   if (!emission) {
-    navigation.goBack();
+    navigator.goBack();
     return null;
   }
 
@@ -94,7 +68,7 @@ const EmissionItemScreen = ({ navigation }: Props) => {
         <Tag
           selected
           onPress={onPress}
-          title={getTranslationModelType(emissionModelType)}
+          title={ui.getTranslationModelType(emissionModelType)}
         />
       </ScrollView>
       <Text.H3>{t("EMISSION_ITEM_QUANTITY")}</Text.H3>

@@ -15,7 +15,11 @@ import * as SupportUs from "../../screens/SupportUs/translations";
 import * as NoEmission from "../../components/NoEmission/translations";
 import * as GuidePreview from "../../components/GuidePreview/translations";
 
+/* UTILS */
+import * as UI from "../../utils/ui/translations";
+
 const en = {
+  ...UI.en,
   ...About.en,
   ...MonthlyBudget.en,
   ...GuidePreview.en,
@@ -32,6 +36,7 @@ const en = {
 };
 
 const de = {
+  ...UI.de,
   ...About.de,
   ...MonthlyBudget.de,
   ...GuidePreview.de,
@@ -48,6 +53,7 @@ const de = {
 };
 
 const fr = {
+  ...UI.fr,
   ...About.fr,
   ...MonthlyBudget.fr,
   ...GuidePreview.fr,
@@ -63,8 +69,26 @@ const fr = {
   ...SupportUs.fr
 };
 
+const sv = {
+  ...UI.sv,
+  ...About.sv,
+  ...MonthlyBudget.sv,
+  ...GuidePreview.sv,
+  ...NoEmission.sv,
+  ...Act.sv,
+  ...Budget.sv,
+  ...Emissions.sv,
+  ...Settings.sv,
+  ...ComingSoon.sv,
+  ...AddEmission.sv,
+  ...EmissionItem.sv,
+  ...Intro.sv,
+  ...SupportUs.sv
+};
+
 export interface TranslationKeys
-  extends MonthlyBudget.TranslationKeys,
+  extends UI.TranslationKeys,
+    MonthlyBudget.TranslationKeys,
     GuidePreview.TranslationKeys,
     NoEmission.TranslationKeys,
     Act.TranslationKeys,
@@ -78,4 +102,4 @@ export interface TranslationKeys
     About.TranslationKeys,
     SupportUs.TranslationKeys {}
 
-export { en, de, fr };
+export { en, de, fr, sv };

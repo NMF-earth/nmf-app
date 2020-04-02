@@ -8,6 +8,7 @@ import styles from "./AddEmissionButton.styles";
 import { t } from "../../../../utils";
 import { emissions } from "../../../../ducks";
 import { EmissionPayload } from "../../../../interfaces/emission/emission.interface";
+import { navigate } from "../../../../navigation";
 
 interface Props {
   emissionPayload: EmissionPayload;
@@ -18,6 +19,7 @@ interface Props {
 
 const AddEmissionButton = ({ navigation, emissionPayload }: Props) => {
   const dispatch = useDispatch();
+  const navigator = navigate(navigation);
 
   const addEmission = () => {
     const emission = {
@@ -30,7 +32,7 @@ const AddEmissionButton = ({ navigation, emissionPayload }: Props) => {
     };
 
     dispatch(emissions.actions.createEmission(emission));
-    navigation.goBack();
+    navigator.goBack();
   };
 
   return (

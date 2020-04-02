@@ -5,13 +5,5 @@ export default {
   EMISSION_ITEM_PRICE: "Prix",
   EMISSION_ITEM_DATE: "Date",
   EMISSION_ITEM_DELETE_EMISSION: "Supprimer émission",
-  EMISSION_ITEM_TRAIN: "Train",
-  EMISSION_ITEM_CAR: "Voiture",
-  EMISSION_ITEM_PLANE: "Avion",
-  EMISSION_ITEM_BOAT: "Bateau",
-  EMISSION_ITEM_BUS: "Bus",
-  EMISSION_ITEM_RED_MEAT: "Viande rouge",
-  EMISSION_ITEM_WHITE_MEAT: "Viande blanche",
-  EMISSION_ITEM_CUSTOM: "Customisé",
   EMISSION_ITEM_NAME: "Nom"
 };

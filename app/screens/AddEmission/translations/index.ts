@@ -1,6 +1,7 @@
 import en from "./en";
 import fr from "./fr";
 import de from "./de";
+import sv from "./sv";
 
 interface TranslationKeys {
   ADD_EMISSION_TITLE: string;
@@ -24,4 +25,4 @@ interface TranslationKeys {
   ADD_EMISSION_NAME_EMISSION: string;
 }
 
-export { en, fr, de, TranslationKeys };
+export { en, fr, de, sv, TranslationKeys };
