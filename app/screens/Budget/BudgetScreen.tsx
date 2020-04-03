@@ -5,6 +5,7 @@ import styles from "./BudgetScreen.styles";
 import { Text, Button } from "../../components";
 import { NumberOfDaysVegetarian, ProgressChart } from "./components";
 import { t } from "../../utils";
+import { navigate } from "../../navigation";
 import { selectors } from "./ducks";
 
 interface Props {
@@ -14,6 +15,7 @@ interface Props {
 }
 
 const BudgetScreen = (props: Props) => {
+  const navigator = navigate(props.navigation);
   const monthlyCarbonBudget = useSelector(selectors.getMonthlyCarbonBudget);
   const totalCurrentMonthEmissions = useSelector(
     selectors.getCurrentMonthAllCarbonValue
@@ -55,9 +57,7 @@ const BudgetScreen = (props: Props) => {
         style={styles.monthlyBudgetButton}
         fullWidth
         textType={"Primary"}
-        onPress={() => {
-          props.navigation.push("MontlyBudget");
-        }}
+        onPress={navigator.openMontlyBudget}
       >
         <Text.Primary bold center white>
           {t("BUDGET_SCREEN_SET_MONTHLY_BUDGET")}

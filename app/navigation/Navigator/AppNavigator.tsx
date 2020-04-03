@@ -2,7 +2,7 @@ import { createAppContainer } from "react-navigation";
 import { createStackNavigator } from "react-navigation-stack";
 
 import RootStack from "./RootNavigator";
-import ModalScreens from "./ModalScreens";
+import ModalScreens from "./../Modal/ModalScreens";
 
 export default createAppContainer(
   createStackNavigator(

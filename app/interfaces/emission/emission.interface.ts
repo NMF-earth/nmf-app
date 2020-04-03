@@ -16,6 +16,7 @@ enum EmissionPurchaseEnum {
 }
 
 interface EmissionPayload {
+  name?: string;
   emissionType: EmissionEnum;
   emissionModelType: FoodEnum | TransportEnum | "custom";
   value: number;

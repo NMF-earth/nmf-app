@@ -2,22 +2,22 @@ import React from "react";
 import { createBottomTabNavigator } from "react-navigation-tabs";
 import { createStackNavigator } from "react-navigation-stack";
 
-import TabBarIcon from "../components/TabBarIcon";
-import StorybookScreen from "../../storybook";
+import TabBarIcon from "../../components/TabBarIcon";
+import StorybookScreen from "../../../storybook";
 
-import ActScreen from "../screens/Act";
-import EmissionItemScreen from "../screens/EmissionItem";
-import ActDetailScreen from "../screens/ActDetail";
-import BudgetScreen from "../screens/Budget";
-import EmissionsScreen from "../screens/Emissions";
-import SettingsScreen from "../screens/Settings";
-import MontlyBudgetScreen from "../screens/MonthlyBudget";
-import AddEmissionScreen from "../screens/AddEmission";
-import AboutScreen from "../screens/About";
-import SupportUsScreen from "../screens/SupportUs";
+import ActScreen from "../../screens/Act";
+import EmissionItemScreen from "../../screens/EmissionItem";
+import ActDetailScreen from "../../screens/ActDetail";
+import BudgetScreen from "../../screens/Budget";
+import EmissionsScreen from "../../screens/Emissions";
+import SettingsScreen from "../../screens/Settings";
+import MontlyBudgetScreen from "../../screens/MonthlyBudget";
+import AddEmissionScreen from "../../screens/AddEmission";
+import AboutScreen from "../../screens/About";
+import SupportUsScreen from "../../screens/SupportUs";
 
-import { Colors } from "../style";
-import { t } from "../utils";
+import { Colors } from "../../style";
+import { t } from "../../utils";
 
 const BudgetStack = createStackNavigator({
   Budget: BudgetScreen,

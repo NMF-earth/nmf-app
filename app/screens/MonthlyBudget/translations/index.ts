@@ -1,6 +1,7 @@
 import en from "./en";
 import fr from "./fr";
 import de from "./de";
+import sv from "./sv";
 
 interface TranslationKeys {
   MONTHLY_BUDGET_TITLE: string;
@@ -19,4 +20,4 @@ interface TranslationKeys {
   MONTHLY_BUDGET_PARIS_AGREEMENT: string;
 }
 
-export { en, fr, de, TranslationKeys };
+export { en, fr, de, sv, TranslationKeys };

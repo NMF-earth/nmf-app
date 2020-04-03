@@ -1,6 +1,7 @@
 import en from "./en";
 import fr from "./fr";
 import de from "./de";
+import sv from "./sv";
 
 interface TranslationKeys {
   ABOUT_SCREEN_TITLE: string;
@@ -17,4 +18,4 @@ interface TranslationKeys {
   ABOUT_SCREEN_GITHUB: string;
 }
 
-export { en, fr, de, TranslationKeys };
+export { en, fr, de, sv, TranslationKeys };

@@ -9,6 +9,7 @@ import Text from "../Text";
 
 interface EmissionListItemProps {
   id: string;
+  name?: string;
   transport?: boolean;
   food?: boolean;
   custom?: boolean;
@@ -18,6 +19,7 @@ interface EmissionListItemProps {
 }
 
 const EmissionListItem = ({
+  name = "",
   transport = false,
   food = false,
   custom = false,
@@ -51,7 +53,9 @@ const EmissionListItem = ({
         color={Colors.darkLink}
       />
       <View style={styles.textContainer}>
-        <Text.Primary numberOfLines={1}>{title}</Text.Primary>
+        <Text.Primary numberOfLines={1}>
+          {name.length ? name : title}
+        </Text.Primary>
         <Text.Tertiary numberOfLines={1} light lightGray>
           <FormattedNumber
             maximumFractionDigits={co2value >= 1 ? 2 : 4}

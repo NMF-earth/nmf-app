@@ -3,6 +3,7 @@ import { Header } from "react-navigation-stack";
 import { Ionicons } from "@expo/vector-icons";
 import { Colors } from "../../style";
 import { PADDING_HORIZONTAL } from "../../constants/Layout";
+import { navigate } from "../../navigation";
 
 const navigationOptions = ({ navigation }) => ({
   headerStyle: {
@@ -16,7 +17,9 @@ const navigationOptions = ({ navigation }) => ({
       name="md-close"
       size={32}
       color={Colors.darkLink}
-      onPress={() => navigation.goBack()}
+      onPress={() => {
+        navigate(navigation).goBack();
+      }}
     />
   )
 });

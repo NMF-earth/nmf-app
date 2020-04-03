@@ -191,7 +191,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
               bold={true}
               green={true}
             >
-               166 kg
+               166 kg CO2
             </Text.Secondary>
           </Text.Secondary>
         </View>

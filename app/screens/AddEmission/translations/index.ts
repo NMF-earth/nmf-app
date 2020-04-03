@@ -1,6 +1,7 @@
 import en from "./en";
 import fr from "./fr";
 import de from "./de";
+import sv from "./sv";
 
 interface TranslationKeys {
   ADD_EMISSION_TITLE: string;
@@ -20,6 +21,8 @@ interface TranslationKeys {
   ADD_EMISSION_RED_MEAT: string;
   ADD_EMISSION_WHITE_MEAT: string;
   ADD_EMISSION_DISTANCE: string;
+  ADD_EMISSION_TEXTINPUT_PLACEHOLDER: string;
+  ADD_EMISSION_NAME_EMISSION: string;
 }
 
-export { en, fr, de, TranslationKeys };
+export { en, fr, de, sv, TranslationKeys };

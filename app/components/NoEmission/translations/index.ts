@@ -1,6 +1,7 @@
 import en from "./en";
 import fr from "./fr";
 import de from "./de";
+import sv from "./sv";
 
 interface TranslationKeys {
   NO_EMISSION_TITLE: string;
@@ -9,4 +10,4 @@ interface TranslationKeys {
   NO_EMISSION_ADD_FIRST_EMISSION: string;
 }
 
-export { en, fr, de, TranslationKeys };
+export { en, fr, de, sv, TranslationKeys };

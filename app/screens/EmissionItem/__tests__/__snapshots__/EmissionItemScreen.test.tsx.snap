@@ -12,6 +12,20 @@ exports[`EmissionsScreen renders correctly 1`] = `
 >
   <View>
     <Text.H3>
+      Name
+    </Text.H3>
+    <Text.Primary
+      darkGray={true}
+      style={
+        Object {
+          "paddingBottom": 24,
+          "paddingTop": 6,
+        }
+      }
+    >
+      mockConstructor
+    </Text.Primary>
+    <Text.H3>
       Type
     </Text.H3>
     <RCTScrollView
@@ -27,7 +41,7 @@ exports[`EmissionsScreen renders correctly 1`] = `
         <Tag
           onPress={[Function]}
           selected={true}
-          title="Red Meat"
+          title="Custom"
         />
       </View>
     </RCTScrollView>

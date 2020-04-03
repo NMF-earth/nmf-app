@@ -1,6 +1,7 @@
 import en from "./en";
 import fr from "./fr";
 import de from "./de";
+import sv from "./sv";
 
 interface TranslationKeys {
   ACT_SCREEN_TAB_NAME: string;
@@ -11,4 +12,4 @@ interface TranslationKeys {
   ACT_SCREEN_TECHNOLOGY: string;
 }
 
-export { en, fr, de, TranslationKeys };
+export { en, fr, de, sv, TranslationKeys };

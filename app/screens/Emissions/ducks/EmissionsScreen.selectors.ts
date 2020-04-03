@@ -1,10 +1,11 @@
 import { map, pipe } from "ramda";
 import { emissions } from "../../../ducks";
 import { EmissionEnum, Emission } from "../../../interfaces";
-import { calculation } from "../../../utils";
+import { calculation, ui } from "../../../utils";
 
 interface EmissionListItem {
   id: string;
+  name: string;
   title: string;
   creationDate: string;
   co2value: number;
@@ -17,7 +18,8 @@ interface EmissionListItem {
 const getEmissionListItem = (item: Emission) => {
   const emissionItem: EmissionListItem = {
     id: item.id,
-    title: item.emissionType,
+    name: item.name,
+    title: ui.getTranslationModelType(item.emissionModelType),
     creationDate: item.creationDate,
     co2value: calculation.getC02ValueFromEmission(item),
     food: item.emissionType === EmissionEnum.food,
@@ -54,5 +56,3 @@ export default {
   getEmissionsMitigated,
   getEmissionListItem
 };
-
-// TODO: write tests
