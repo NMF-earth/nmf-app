@@ -1,7 +1,7 @@
-import en from "./en";
-import fr from "./fr";
-import de from "./de";
-import sv from "./sv";
+import en from "./en.json";
+import fr from "./fr.json";
+import de from "./de.json";
+import sv from "./sv.json";
 
 interface TranslationKeys {
   ADD_EMISSION_TITLE: string;
