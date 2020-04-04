@@ -36,7 +36,6 @@ const EmissionsScreen = (props) => {
                   renderSectionHeader={({ section: { date } }) =>
                     renderSectionHeader(date)
                   }
-                  style={styles.listContainer}
                   keyExtractor={(item) => item.id}
                   renderItem={({ item }: { item: EmissionListItemProps }) => (
                     <EmissionListItem
@@ -65,7 +64,6 @@ const EmissionsScreen = (props) => {
                   renderSectionHeader={({ section: { date } }) =>
                     renderSectionHeader(date)
                   }
-                  style={styles.listContainer}
                   keyExtractor={(item) => item.id}
                   renderItem={({ item }: { item: EmissionListItemProps }) => (
                     <EmissionListItem
