@@ -7,7 +7,6 @@ Array [
     style={
       Object {
         "flex": 1,
-        "paddingTop": 10,
       }
     }
   >
@@ -37,11 +36,6 @@ Array [
               scrollEventThrottle={50}
               sections={[MockFunction]}
               stickySectionHeadersEnabled={true}
-              style={
-                Object {
-                  "paddingTop": 10,
-                }
-              }
               updateCellsBatchingPeriod={50}
               windowSize={21}
             />,
