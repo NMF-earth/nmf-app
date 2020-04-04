@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render SectionHeader 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "borderBottomColor": "#CED4DA",
+      "borderBottomWidth": 2,
+      "paddingLeft": 14,
+      "paddingVertical": 10,
+    }
+  }
+>
+  <Text.Primary>
+    month year
+  </Text.Primary>
+</View>
+`;

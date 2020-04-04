@@ -1,5 +1,5 @@
 import React from "react";
-import { FlatList, SafeAreaView, View } from "react-native";
+import { SectionList, SafeAreaView, View } from "react-native";
 import { useSelector } from "react-redux";
 import { t } from "../../utils";
 import styles from "./EmissionsScreen.styles";
@@ -7,16 +7,19 @@ import {
   TabbedView,
   Text,
   EmissionListItem,
-  EmissionListItemProps
+  EmissionListItemProps,
 } from "../../components";
-import { AddEmissionAndMitigateButtons } from "./components";
+import { AddEmissionAndMitigateButtons, SectionHeader } from "./components";
 import { selectors } from "./ducks";
 import { navigate } from "../../navigation";
 
-const EmissionsScreen = props => {
+const EmissionsScreen = (props) => {
   const navigator = navigate(props.navigation);
   const emissionsToMitigate = useSelector(selectors.getEmissionsToMitigate);
   const emissionsMitigated = useSelector(selectors.getEmissionsMitigated);
+
+  const renderListFooter = () => <View style={styles.separator} />;
+  const renderSectionHeader = (date) => <SectionHeader date={date} />;
 
   return (
     <React.Fragment>
@@ -26,11 +29,15 @@ const EmissionsScreen = props => {
             {
               title: t("EMISSIONS_SCREEN_TO_OFFSET"),
               component: (
-                <FlatList<EmissionListItemProps>
-                  ListFooterComponent={<View style={styles.separator} />}
+                <SectionList<EmissionListItemProps>
+                  sections={emissionsToMitigate}
+                  stickySectionHeadersEnabled
+                  ListFooterComponent={renderListFooter()}
+                  renderSectionHeader={({ section: { date } }) =>
+                    renderSectionHeader(date)
+                  }
                   style={styles.listContainer}
-                  data={emissionsToMitigate}
-                  keyExtractor={item => item.id}
+                  keyExtractor={(item) => item.id}
                   renderItem={({ item }: { item: EmissionListItemProps }) => (
                     <EmissionListItem
                       id={item.id}
@@ -46,16 +53,20 @@ const EmissionsScreen = props => {
                     />
                   )}
                 />
-              )
+              ),
             },
             {
               title: t("EMISSIONS_SCREEN_MITIGATED"),
               component: emissionsMitigated.length ? (
-                <FlatList<EmissionListItemProps>
-                  ListFooterComponent={<View style={styles.separator} />}
+                <SectionList<EmissionListItemProps>
+                  sections={emissionsMitigated}
+                  stickySectionHeadersEnabled
+                  ListFooterComponent={renderListFooter()}
+                  renderSectionHeader={({ section: { date } }) =>
+                    renderSectionHeader(date)
+                  }
                   style={styles.listContainer}
-                  data={emissionsMitigated}
-                  keyExtractor={item => item.id}
+                  keyExtractor={(item) => item.id}
                   renderItem={({ item }: { item: EmissionListItemProps }) => (
                     <EmissionListItem
                       id={item.id}
@@ -73,8 +84,8 @@ const EmissionsScreen = props => {
                 <Text.Primary style={styles.textNoEmission} center lightGray>
                   {t("EMISSIONS_SCREEN_NO_EMISSION_MITIGATED")}
                 </Text.Primary>
-              )
-            }
+              ),
+            },
           ]}
         />
       </SafeAreaView>

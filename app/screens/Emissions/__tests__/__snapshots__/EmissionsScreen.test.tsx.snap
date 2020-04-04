@@ -15,7 +15,7 @@ Array [
       items={
         Array [
           Object {
-            "component": <FlatList
+            "component": <SectionList
               ListFooterComponent={
                 <View
                   style={
@@ -25,17 +25,18 @@ Array [
                   }
                 />
               }
-              data={[MockFunction]}
+              data={Array []}
               disableVirtualization={false}
               horizontal={false}
               initialNumToRender={10}
               keyExtractor={[Function]}
               maxToRenderPerBatch={10}
-              numColumns={1}
               onEndReachedThreshold={2}
-              removeClippedSubviews={false}
               renderItem={[Function]}
+              renderSectionHeader={[Function]}
               scrollEventThrottle={50}
+              sections={[MockFunction]}
+              stickySectionHeadersEnabled={true}
               style={
                 Object {
                   "paddingTop": 10,
