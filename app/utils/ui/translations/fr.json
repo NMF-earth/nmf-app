@@ -1,0 +1,11 @@
+{
+  "TRAIN": "Train",
+  "CAR": "Voiture",
+  "PLANE": "Avion",
+  "BOAT": "Bateau",
+  "BUS": "Bus",
+  "MOTORBIKE": "Moto",
+  "RED_MEAT": "Viande rouge",
+  "WHITE_MEAT": "Viande blanche",
+  "CUSTOM": "Customisé"
+}

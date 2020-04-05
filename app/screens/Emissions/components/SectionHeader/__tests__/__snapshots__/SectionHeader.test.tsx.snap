@@ -12,7 +12,10 @@ exports[`should render SectionHeader 1`] = `
     }
   }
 >
-  <Text.Primary>
+  <Text.Primary
+    bold={true}
+    darkGray={true}
+  >
     month year
   </Text.Primary>
 </View>

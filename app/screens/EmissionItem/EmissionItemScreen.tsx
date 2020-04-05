@@ -3,12 +3,11 @@ import { useSelector, useDispatch } from "react-redux";
 import { ScrollView } from "react-native";
 import { pathOr } from "ramda";
 import moment from "moment";
-import { t } from "../../utils";
 import styles from "./EmissionItemScreen.styles";
 import { Text, Tag, Button } from "../../components";
 import { selectors } from "./ducks";
 import navigationOptions from "./EmissionItemScreen.navigationOptions";
-import { calculation, ui } from "../../utils";
+import { calculation, ui, t } from "../../utils";
 import { emissions } from "../../ducks";
 import { navigate } from "../../navigation";
 
@@ -32,7 +31,7 @@ const EmissionItemScreen = ({ navigation }: Props) => {
     return null;
   }
 
-  const emission = useSelector(state =>
+  const emission = useSelector((state) =>
     selectors.getEmissionItemById(state, emissionId)
   );
   // eslint-disable-next-line @typescript-eslint/no-empty-function

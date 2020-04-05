@@ -5,7 +5,7 @@ import { FormattedNumber } from "react-native-globalize";
 import styles from "./Food.styles";
 import { Text, Tag } from "../../../../components";
 import { Colors } from "../../../../style";
-import { t } from "../../../../utils";
+import { t, ui } from "../../../../utils";
 import { FoodEnum, food } from "carbon-footprint";
 
 const MIN_SLIDER_VALUE = 20;
@@ -18,11 +18,13 @@ interface Props {
   setQuantity: (arg0: number) => void;
 }
 
+const TAGS: Array<FoodEnum> = [FoodEnum.redMeat, FoodEnum.whiteMeat];
+
 export default ({
   setFoodType,
   foodType,
   setQuantity,
-  defaultValueSlider
+  defaultValueSlider,
 }: Props) => {
   const [sliderValue, setSliderValue] = useState(defaultValueSlider * 1000);
 
@@ -39,16 +41,14 @@ export default ({
         <Text.H3>{t("ADD_EMISSION_FOOD_TYPE")}</Text.H3>
       </View>
       <ScrollView horizontal style={styles.tagContainer}>
-        <Tag
-          selected={foodType === FoodEnum.redMeat}
-          title={t("ADD_EMISSION_RED_MEAT")}
-          onPress={() => setFoodType(FoodEnum.redMeat)}
-        />
-        <Tag
-          selected={foodType === FoodEnum.whiteMeat}
-          title={t("ADD_EMISSION_WHITE_MEAT")}
-          onPress={() => setFoodType(FoodEnum.whiteMeat)}
-        />
+        {TAGS.map((item) => (
+          <Tag
+            key={item}
+            selected={foodType === item}
+            title={ui.getTranslationModelType(item)}
+            onPress={() => setFoodType(item)}
+          />
+        ))}
       </ScrollView>
       <View style={styles.durationContainer}>
         <Text.H3 style={styles.miniHeader}>
