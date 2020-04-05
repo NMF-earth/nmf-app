@@ -140,6 +140,11 @@ exports[`AddEmissionScreen renders correctly 1`] = `
             selected={false}
             title="Boat"
           />
+          <Tag
+            onPress={[Function]}
+            selected={false}
+            title="Motorbike"
+          />
         </View>
       </RCTScrollView>
       <View

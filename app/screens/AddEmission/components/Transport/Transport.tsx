@@ -5,9 +5,8 @@ import { FormattedNumber } from "react-native-globalize";
 import styles from "./Transport.styles";
 import { Text, Tag } from "../../../../components";
 import { Colors } from "../../../../style";
-import { t, time } from "../../../../utils";
+import { t, time, ui } from "../../../../utils";
 import { transport, TransportEnum } from "carbon-footprint";
-import { TranslationKeys } from "../../translations";
 import { calculation } from "../../../../utils";
 
 const MIN_SLIDER_VALUE = 2;
@@ -24,32 +23,13 @@ interface Props {
   setDistance: (arg0: number) => void;
 }
 
-interface TransportTag {
-  title: keyof TranslationKeys;
-  type: TransportEnum;
-}
-
-const TAGS: TransportTag[] = [
-  {
-    title: "ADD_EMISSION_TRAIN",
-    type: TransportEnum.train
-  },
-  {
-    title: "ADD_EMISSION_CAR",
-    type: TransportEnum.car
-  },
-  {
-    title: "ADD_EMISSION_BUS",
-    type: TransportEnum.bus
-  },
-  {
-    title: "ADD_EMISSION_PLANE",
-    type: TransportEnum.plane
-  },
-  {
-    title: "ADD_EMISSION_BOAT",
-    type: TransportEnum.boat
-  }
+const TAGS: Array<TransportEnum> = [
+  TransportEnum.train,
+  TransportEnum.car,
+  TransportEnum.bus,
+  TransportEnum.plane,
+  TransportEnum.boat,
+  TransportEnum.motorbike,
 ];
 
 export default ({
@@ -57,7 +37,7 @@ export default ({
   setTransportType,
   transportType,
   setDistance,
-  defaultValueSlider
+  defaultValueSlider,
 }: Props) => {
   const [sliderValue, setSliderValue] = useState(defaultValueSlider / 1000);
 
@@ -103,12 +83,12 @@ export default ({
         <Text.H3>{t("ADD_EMISSION_TRANSPORT_TYPE")}</Text.H3>
       </View>
       <ScrollView horizontal style={styles.tagContainer}>
-        {TAGS.map(item => (
+        {TAGS.map((item) => (
           <Tag
-            key={item.type}
-            selected={transportType === item.type}
-            title={t(item.title)}
-            onPress={() => setTransportType(item.type)}
+            key={item}
+            selected={transportType === item}
+            title={ui.getTranslationModelType(item)}
+            onPress={() => setTransportType(item)}
           />
         ))}
       </ScrollView>

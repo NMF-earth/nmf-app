@@ -2,7 +2,7 @@ import { TransportEnum, FoodEnum } from "carbon-footprint";
 import { EmissionEnum } from "../../interfaces";
 import { t } from "../translations";
 
-const getTranslationModelType = emissionModelType => {
+const getTranslationModelType = (emissionModelType) => {
   switch (emissionModelType) {
     case EmissionEnum.custom:
       return t("CUSTOM");
@@ -13,6 +13,7 @@ const getTranslationModelType = emissionModelType => {
     case TransportEnum.shortHaulFlight:
     case TransportEnum.mediumHaulFlight:
     case TransportEnum.longHaulFlight:
+    case TransportEnum.plane:
       return t("PLANE");
     case TransportEnum.train:
       return t("TRAIN");
@@ -20,6 +21,8 @@ const getTranslationModelType = emissionModelType => {
       return t("CAR");
     case TransportEnum.boat:
       return t("BOAT");
+    case TransportEnum.motorbike:
+      return t("MOTORBIKE");
     case TransportEnum.bus:
       return t("BUS");
     default:

@@ -5,7 +5,9 @@ import styles from "./SectionHeader.styles";
 
 const SectionHeader = ({ date }) => (
   <View style={styles.container}>
-    <Text.Primary>{date}</Text.Primary>
+    <Text.Primary darkGray bold>
+      {date}
+    </Text.Primary>
   </View>
 );
 
