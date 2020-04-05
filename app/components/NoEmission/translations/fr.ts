@@ -1,8 +1,0 @@
-export default {
-  NO_EMISSION_TITLE: "Bonjour 👋",
-  NO_EMISSION_THANKS:
-    "Merci de vous joindre à nous dans la lutte contre le réchauffement climatique!",
-  NO_EMISSION_START_USING_APP:
-    "Pour commencer, ajoutez une première émissions carbone, en tappant sur le bouton du dessous",
-  NO_EMISSION_ADD_FIRST_EMISSION: "Ajouter ma première émissions"
-};
