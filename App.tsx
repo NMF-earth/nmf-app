@@ -12,13 +12,13 @@ import { Provider } from "react-redux";
 import AppNavigator from "./app/navigation/Navigator/AppNavigator";
 import store from "./app/redux/store";
 
-const supportedLanguages = ["en", "fr", "de"];
+const supportedLanguages = ["en", "fr", "de", "sv"];
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff"
-  }
+    backgroundColor: "#fff",
+  },
 });
 
 const secret =
@@ -28,7 +28,7 @@ const secret =
 Sentry.init({
   dsn: secret.dsn,
   enableInExpoDevelopment: false,
-  debug: true
+  debug: true,
 });
 
 /* TODO: set Constants.manifest.revisionId with expo */
@@ -45,7 +45,7 @@ export default class App extends React.Component<Props, State> {
   constructor(props: Props) {
     super(props);
     this.state = {
-      isLoadingComplete: false
+      isLoadingComplete: false,
     };
   }
   componentDidCatch(error: Error) {
@@ -108,8 +108,8 @@ async function loadResourcesAsync() {
       "Inter-SemiBold": require("./assets/fonts/Inter-SemiBold.ttf"),
       "Inter-SemiBoldItalic": require("./assets/fonts/Inter-SemiBoldItalic.ttf"),
       "Inter-Thin-BETA": require("./assets/fonts/Inter-Thin-BETA.ttf"),
-      "Inter-ThinItalic-BETA": require("./assets/fonts/Inter-ThinItalic-BETA.ttf")
-    })
+      "Inter-ThinItalic-BETA": require("./assets/fonts/Inter-ThinItalic-BETA.ttf"),
+    }),
   ]);
 }
 
