@@ -11,14 +11,15 @@ import * as Sentry from "sentry-expo";
 import { Provider } from "react-redux";
 import AppNavigator from "./app/navigation/Navigator/AppNavigator";
 import store from "./app/redux/store";
+import { LocalizationContext } from "./app/utils";
 
-const supportedLanguages = ["en", "fr", "de"];
+const supportedLanguages = ["en", "fr", "de", "sv"];
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff"
-  }
+    backgroundColor: "#fff",
+  },
 });
 
 const secret =
@@ -28,7 +29,7 @@ const secret =
 Sentry.init({
   dsn: secret.dsn,
   enableInExpoDevelopment: false,
-  debug: true
+  debug: true,
 });
 
 /* TODO: set Constants.manifest.revisionId with expo */
@@ -38,14 +39,31 @@ interface Props {
   skipLoadingScreen: boolean;
 }
 interface State {
+  localization: string;
+  setLocalization: (localization: string) => void;
   isLoadingComplete: boolean;
 }
 
 export default class App extends React.Component<Props, State> {
+  setLocalization = null;
+
   constructor(props: Props) {
     super(props);
+
+    let localization = locale.length > 2 ? locale.substring(0, 2) : locale;
+    if (!includes(localization, supportedLanguages)) {
+      localization = "en";
+    }
+
+    this.setLocalization = (localization) =>
+      this.setState({
+        localization,
+      });
+
     this.state = {
-      isLoadingComplete: false
+      localization,
+      setLocalization: () => this.setLocalization,
+      isLoadingComplete: false,
     };
   }
   componentDidCatch(error: Error) {
@@ -54,12 +72,6 @@ export default class App extends React.Component<Props, State> {
   }
 
   render() {
-    let localization = locale.length > 2 ? locale.substring(0, 2) : locale;
-
-    if (!includes(localization, supportedLanguages)) {
-      localization = "en";
-    }
-
     if (!this.state.isLoadingComplete && !this.props.skipLoadingScreen) {
       return (
         <AppLoading
@@ -77,8 +89,15 @@ export default class App extends React.Component<Props, State> {
         <View style={styles.container}>
           {Platform.OS === "ios" && <StatusBar barStyle="dark-content" />}
           <Provider store={store}>
-            <FormattedProvider locale={localization}>
-              <AppNavigator />
+            <FormattedProvider locale={this.state.localization}>
+              <LocalizationContext.Provider
+                value={{
+                  localization: this.state.localization,
+                  setLocalization: this.state.setLocalization,
+                }}
+              >
+                <AppNavigator />
+              </LocalizationContext.Provider>
             </FormattedProvider>
           </Provider>
         </View>
@@ -108,8 +127,8 @@ async function loadResourcesAsync() {
       "Inter-SemiBold": require("./assets/fonts/Inter-SemiBold.ttf"),
       "Inter-SemiBoldItalic": require("./assets/fonts/Inter-SemiBoldItalic.ttf"),
       "Inter-Thin-BETA": require("./assets/fonts/Inter-Thin-BETA.ttf"),
-      "Inter-ThinItalic-BETA": require("./assets/fonts/Inter-ThinItalic-BETA.ttf")
-    })
+      "Inter-ThinItalic-BETA": require("./assets/fonts/Inter-ThinItalic-BETA.ttf"),
+    }),
   ]);
 }
 

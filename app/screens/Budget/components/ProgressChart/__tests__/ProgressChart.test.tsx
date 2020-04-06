@@ -9,7 +9,7 @@ const props = {
   foodEmissions: 200,
   transportEmissions: 600,
   otherEmissions: 100,
-  monthlyEmissionsBudget: 1000
+  monthlyEmissionsBudget: 1000,
 };
 
 it("ProgressChart renders correctly", () => {

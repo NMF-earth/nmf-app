@@ -1,14 +1,18 @@
 import React from "react";
+import moment from "moment";
+import "moment/locale/fr";
+import "moment/locale/de";
+import "moment/locale/sv";
 import { View } from "react-native";
 import styles from "./ProgressChart.styles";
 import { Legend, Chart, PeriodBudget } from "./components";
 import { Text } from "../../../../components";
-import moment from "moment";
-// TODO: import all languages and apply according to phone settings
-// import "moment/locale/fr";
-// moment.locale("fr");
+import {
+  withLocalization,
+  LocalizationContextInterface,
+} from "../../../../utils";
 
-interface Prop {
+interface Props {
   isMonth?: boolean;
   totalEmissions: number;
   foodEmissions: number;
@@ -23,8 +27,9 @@ const ProgressChart = ({
   transportEmissions = 0,
   otherEmissions = 0,
   monthlyEmissionsBudget = 0,
-  isMonth = false
-}: Prop) => {
+  isMonth = false,
+  localization = "",
+}: Props & LocalizationContextInterface) => {
   if (!monthlyEmissionsBudget) {
     return null;
   }
@@ -46,12 +51,14 @@ const ProgressChart = ({
       ? 1
       : foodEmissions / periodEmissionsBudget;
 
-  const period = isMonth ? moment().format("MMMM") : moment().format("YYYY");
+  const period = moment()
+    .locale(localization)
+    .format(isMonth ? "MMMM" : "YYYY");
 
   return (
     <View style={styles.container}>
       <View style={styles.periodContainer}>
-        <Text.H3>{period}</Text.H3>
+        <Text.H3 style={styles.header}>{period}</Text.H3>
       </View>
       <Chart
         totalEmissionsPercentage={totalEmissionsPercentage}
@@ -72,4 +79,4 @@ const ProgressChart = ({
   );
 };
 
-export default ProgressChart;
+export default withLocalization(ProgressChart);
