@@ -50,7 +50,8 @@ export default class App extends React.Component<Props, State> {
   constructor(props: Props) {
     super(props);
 
-    let localization = locale.length > 2 ? locale.substring(0, 2) : locale;
+    let localization = locale.substring(0, 2);
+
     if (!includes(localization, supportedLanguages)) {
       localization = "en";
     }

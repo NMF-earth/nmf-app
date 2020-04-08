@@ -6,7 +6,7 @@ import {
   t,
   LocalizationContext,
   withLocalization,
-  LocalizationContextInterface,
+  LocalizationContextProps,
 } from "./translations";
 
 export {
@@ -17,5 +17,5 @@ export {
   t,
   LocalizationContext,
   withLocalization,
-  LocalizationContextInterface,
+  LocalizationContextProps,
 };

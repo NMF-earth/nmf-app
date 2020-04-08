@@ -7,10 +7,7 @@ import { View } from "react-native";
 import styles from "./ProgressChart.styles";
 import { Legend, Chart, PeriodBudget } from "./components";
 import { Text } from "../../../../components";
-import {
-  withLocalization,
-  LocalizationContextInterface,
-} from "../../../../utils";
+import { withLocalization, LocalizationContextProps } from "../../../../utils";
 
 interface Props {
   isMonth?: boolean;
@@ -29,7 +26,7 @@ const ProgressChart = ({
   monthlyEmissionsBudget = 0,
   isMonth = false,
   localization = "",
-}: Props & LocalizationContextInterface) => {
+}: Props & LocalizationContextProps) => {
   if (!monthlyEmissionsBudget) {
     return null;
   }

@@ -1,6 +1,6 @@
 import React from "react";
 
-interface LocalizationContextInterface {
+interface LocalizationContextProps {
   localization?: string;
 }
 
@@ -12,22 +12,18 @@ const LocalizationContext = React.createContext({
   },
 });
 
-const withLocalization = (Component) => {
-  return class extends React.Component {
-    render() {
-      return (
-        <LocalizationContext.Consumer>
-          {({ localization, setLocalization }) => (
-            <Component
-              localization={localization}
-              setLocalization={setLocalization}
-              {...this.props}
-            />
-          )}
-        </LocalizationContext.Consumer>
-      );
-    }
-  };
-};
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const withLocalization = (Component: React.ComponentType<any>) => (props) => (
+  <LocalizationContext.Consumer>
+    {({ localization, setLocalization }) => (
+      <Component
+        {...props}
+        localization={localization}
+        setLocalization={setLocalization}
+        {...this.props}
+      />
+    )}
+  </LocalizationContext.Consumer>
+);
 
-export { withLocalization, LocalizationContext, LocalizationContextInterface };
+export { withLocalization, LocalizationContext, LocalizationContextProps };
