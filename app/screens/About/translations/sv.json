@@ -1,14 +1,14 @@
 {
-	"ABOUT_SCREEN_TITLE": "About",
-	"ABOUT_SCREEN_INTRO": "We are a small team concerned by the human impact on the planet. We are not a startup driven by growth or profit to pay dividends to investors. We are transparent and you can have a look to our figures on Indie Hackers. You can join our team if you wanna help the project. Or simply talk around you about our project, give us 5 stars on the store et send us your feedback on the app will help us a lot. Thanks you ✌️",
-	"ABOUT_SCREEN_CARE_HEADER": "We care about you",
-	"ABOUT_SCREEN_PRIVACY": "Privacy by design",
-	"ABOUT_SCREEN_ETHIC": "Ethic by design",
-	"ABOUT_SCREEN_OPEN_SOURCE": "100% Open source",
-	"ABOUT_SCREEN_PRIVACY_BODY": "All data provided in the app will never be sold or shared to any companies and we don't track what you do in the app ",
-	"ABOUT_SCREEN_ETHIC_BODY": "We don't exploit psychological vulnerabilities like bottomless feeds or auto-play to keep users from leaving ",
-	"ABOUT_SCREEN_OPEN_SOURCE_BODY": "Everyone will be to add content to the app, verify emissions models and fix any incorrect information ",
-	"ABOUT_SCREEN_LIBRARIES_AND_CONTRIBUTORS": "Librairies & contributors",
-	"ABOUT_SCREEN_CAN_BE_FOUND": "Can be found on ",
-	"ABOUT_SCREEN_GITHUB": "Github"
+  "ABOUT_SCREEN_TITLE": "Om appen",
+  "ABOUT_SCREEN_INTRO": "Vi är ett litet team som oroar oss för den mänskliga påverkan på planeten. Vi är inget startup-bolag med sikte på tillväxt eller vinst att dela ut till investerare. Vi är transparenta och du kan titta på våra räkenskaper på Indie Hackers. Du kan även gå med i vårt team om du vill hjälpa till. Eller prata bara om projektet i dina cirklar, ge vårt projekt fem stjärnor i app store, och skicka oss dina idéer om appen, så hjälper du oss rejält. Tack! ✌️",
+  "ABOUT_SCREEN_CARE_HEADER": "Vi bryr oss om dig",
+  "ABOUT_SCREEN_PRIVACY": "Personlig integritet från grunden",
+  "ABOUT_SCREEN_ETHIC": "Etik från gruden",
+  "ABOUT_SCREEN_OPEN_SOURCE": "100% Öppen källkod",
+  "ABOUT_SCREEN_PRIVACY_BODY": "All data som du matar in i appen kommer aldrig att säljas eller delas med några företag, och vi spårar inte vad du gör i appen ",
+  "ABOUT_SCREEN_ETHIC_BODY": "Vi utnyttjar inte psykologiska trick som oändliga feeds eller auto-play for att hålla användare kvar i appen",
+  "ABOUT_SCREEN_OPEN_SOURCE_BODY": "Alla kan lägga till innehåll i appen, kontrollera utsläppsmodeller och fixa ev. felaktigheter",
+  "ABOUT_SCREEN_LIBRARIES_AND_CONTRIBUTORS": "Kodbibliotek & medhjälpare",
+  "ABOUT_SCREEN_CAN_BE_FOUND": "Läs mer på ",
+  "ABOUT_SCREEN_GITHUB": "Github"
 }

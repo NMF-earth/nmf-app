@@ -1,11 +1,11 @@
 {
-	"SETTINGS_SCREEN_TAB_NAME": "Settings",
-	"SETTINGS_SCREEN_TITLE": "Settings",
-	"SETTINGS_SCREEN_ABOUT": "About",
-	"SETTINGS_SCREEN_SUPPORT_US": "Support us!",
-	"SETTINGS_SCREEN_NMF_EARTH": "NMF.earth",
-	"SETTINGS_SCREEN_ROADMAP": "Roadmap",
-	"SETTINGS_SCREEN_FEEDBACK": "Feedback",
-	"SETTINGS_SCREEN_TERMS_OF_USE": "Terms of use",
-	"SETTINGS_SCREEN_APP_VERSION": "Version %{version}"
+  "SETTINGS_SCREEN_TAB_NAME": "Inställningar",
+  "SETTINGS_SCREEN_TITLE": "Inställningar",
+  "SETTINGS_SCREEN_ABOUT": "Om appen",
+  "SETTINGS_SCREEN_SUPPORT_US": "Stöd oss!",
+  "SETTINGS_SCREEN_NMF_EARTH": "NMF.earth",
+  "SETTINGS_SCREEN_ROADMAP": "Utvecklingsplan",
+  "SETTINGS_SCREEN_FEEDBACK": "Synpunkter",
+  "SETTINGS_SCREEN_TERMS_OF_USE": "Villkor",
+  "SETTINGS_SCREEN_APP_VERSION": "Version %{version}"
 }
