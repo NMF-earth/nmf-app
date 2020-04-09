@@ -1,8 +1,6 @@
 import React from "react";
 import moment from "moment";
-import "moment/locale/fr";
-import "moment/locale/de";
-import "moment/locale/sv";
+import "moment/min/locales";
 import { View } from "react-native";
 import styles from "./ProgressChart.styles";
 import { Legend, Chart, PeriodBudget } from "./components";

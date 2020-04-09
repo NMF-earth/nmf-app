@@ -38,7 +38,10 @@ const NumberOfDaysVegetarian = () => {
       {isAnyMeatEmissionSaved && days ? (
         <View style={styles.daysContainer}>
           <Text.H3 green>{days}</Text.H3>
-          <Text.H3> without meat!</Text.H3>
+          <Text.H3> </Text.H3>
+          <Text.H3>
+            {t("BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_WITHOUT_MEAT")}
+          </Text.H3>
         </View>
       ) : null}
       <Text.H3 center>{message}</Text.H3>

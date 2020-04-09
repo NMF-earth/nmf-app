@@ -4,10 +4,13 @@ import { Layout } from "../../style";
 export default StyleSheet.create({
   container: {
     ...Layout.containerWithPadding,
-    paddingTop: 22
+    paddingTop: 22,
   },
   item: {
     paddingTop: 6,
-    paddingBottom: 24
-  }
+    paddingBottom: 24,
+  },
+  date: {
+    textTransform: "capitalize",
+  },
 });

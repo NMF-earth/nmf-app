@@ -5,6 +5,17 @@ import { FoodEnum, TransportEnum } from "carbon-footprint";
 
 let state;
 
+/* TODO: remove this function copied from selectors file */
+const getStartOfMonth = (time) => {
+  const date = new Date(time);
+  date.setDate(1);
+  date.setHours(0);
+  date.setMinutes(0);
+  date.setSeconds(0);
+  date.setMilliseconds(0);
+  return date.toISOString();
+};
+
 const emissionNotMitigatedOld: EmissionType = {
   id: "3",
   creationDate: "2020-03-01T17:06:40.185Z",
@@ -47,7 +58,7 @@ describe("if there are emissions", () => {
     expect(JSON.stringify(selectors.getEmissionsMitigated(state))).toEqual(
       JSON.stringify([
         {
-          date: "March 2020",
+          date: getStartOfMonth(emissionMitigated.creationDate),
           data: [selectors.getEmissionListItem(emissionMitigated)],
         },
       ])
@@ -58,11 +69,11 @@ describe("if there are emissions", () => {
     expect(JSON.stringify(selectors.getEmissionsToMitigate(state))).toEqual(
       JSON.stringify([
         {
-          date: "April 2020",
+          date: getStartOfMonth(emissionNotMitigated.creationDate),
           data: [selectors.getEmissionListItem(emissionNotMitigated)],
         },
         {
-          date: "March 2020",
+          date: getStartOfMonth(emissionNotMitigatedOld.creationDate),
           data: [selectors.getEmissionListItem(emissionNotMitigatedOld)],
         },
       ])

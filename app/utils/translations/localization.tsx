@@ -12,18 +12,28 @@ const LocalizationContext = React.createContext({
   },
 });
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const withLocalization = (Component: React.ComponentType<any>) => (props) => (
-  <LocalizationContext.Consumer>
-    {({ localization, setLocalization }) => (
-      <Component
-        {...props}
-        localization={localization}
-        setLocalization={setLocalization}
-        {...this.props}
-      />
-    )}
-  </LocalizationContext.Consumer>
-);
+const withLocalization = <P extends object>(
+  Component: React.ComponentType<P>
+) => {
+  return class extends React.Component<P> {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
+    // @ts-ignore
+    static navigationOptions = Component.navigationOptions;
+
+    render() {
+      return (
+        <LocalizationContext.Consumer>
+          {({ localization, setLocalization }) => (
+            <Component
+              localization={localization}
+              setLocalization={setLocalization}
+              {...this.props}
+            />
+          )}
+        </LocalizationContext.Consumer>
+      );
+    }
+  };
+};
 
 export { withLocalization, LocalizationContext, LocalizationContextProps };

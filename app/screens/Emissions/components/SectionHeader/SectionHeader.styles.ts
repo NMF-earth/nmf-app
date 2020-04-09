@@ -10,6 +10,9 @@ const styles = StyleSheet.create({
     borderBottomColor: Colors.gray,
     borderBottomWidth: 2,
   },
+  text: {
+    textTransform: "capitalize",
+  },
 });
 
 export default styles;

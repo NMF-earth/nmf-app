@@ -66,10 +66,15 @@ exports[`EmissionsScreen renders correctly 1`] = `
     <Text.Primary
       darkGray={true}
       style={
-        Object {
-          "paddingBottom": 24,
-          "paddingTop": 6,
-        }
+        Array [
+          Object {
+            "paddingBottom": 24,
+            "paddingTop": 6,
+          },
+          Object {
+            "textTransform": "capitalize",
+          },
+        ]
       }
     >
       Invalid date

@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { ScrollView } from "react-native";
 import { pathOr } from "ramda";
 import moment from "moment";
+import "moment/min/locales";
 import styles from "./EmissionItemScreen.styles";
 import { Text, Tag, Button } from "../../components";
 import { selectors } from "./ducks";
@@ -10,6 +11,7 @@ import navigationOptions from "./EmissionItemScreen.navigationOptions";
 import { calculation, ui, t } from "../../utils";
 import { emissions } from "../../ducks";
 import { navigate } from "../../navigation";
+import { withLocalization, LocalizationContextProps } from "../../utils";
 
 interface Props {
   navigation: {
@@ -21,7 +23,10 @@ interface Props {
   };
 }
 
-const EmissionItemScreen = ({ navigation }: Props) => {
+const EmissionItemScreen = ({
+  navigation,
+  localization = "",
+}: Props & LocalizationContextProps) => {
   const emissionId = pathOr(false, ["state", "params", "id"], navigation);
   const dispatch = useDispatch();
   const navigator = navigate(navigation);
@@ -45,9 +50,9 @@ const EmissionItemScreen = ({ navigation }: Props) => {
 
   const { creationDate = "", emissionModelType = "", name = "" } = emission;
 
-  const date = moment(creationDate, "YYYY-MM-DDTHH:mm:ss.sssZ").format(
-    "dddd, MMMM Do YYYY"
-  );
+  const date = moment(creationDate, "YYYY-MM-DDTHH:mm:ss.sssZ")
+    .locale(localization)
+    .format("dddd Do MMMM YYYY");
   const co2Emission = calculation.getC02ValueFromEmission(emission);
   const deleteEmission = () =>
     dispatch(emissions.actions.deleteEmissionById(emission.id));
@@ -76,7 +81,7 @@ const EmissionItemScreen = ({ navigation }: Props) => {
         {" kgC02eq"}
       </Text.Primary>
       <Text.H3>{t("EMISSION_ITEM_DATE")}</Text.H3>
-      <Text.Primary darkGray style={styles.item}>
+      <Text.Primary darkGray style={[styles.item, styles.date]}>
         {date}
       </Text.Primary>
       <Button.Primary fullWidth onPress={deleteEmission} textType={"Primary"}>
@@ -88,4 +93,4 @@ const EmissionItemScreen = ({ navigation }: Props) => {
 
 EmissionItemScreen.navigationOptions = navigationOptions;
 
-export default EmissionItemScreen;
+export default withLocalization(EmissionItemScreen);
