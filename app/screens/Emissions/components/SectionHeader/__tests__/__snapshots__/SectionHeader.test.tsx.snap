@@ -15,8 +15,13 @@ exports[`should render SectionHeader 1`] = `
   <Text.Primary
     bold={true}
     darkGray={true}
+    style={
+      Object {
+        "textTransform": "capitalize",
+      }
+    }
   >
-    month year
+    Invalid date
   </Text.Primary>
 </View>
 `;

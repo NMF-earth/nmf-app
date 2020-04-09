@@ -6,11 +6,11 @@ const shadow = {
   shadowColor: "#000",
   shadowOffset: {
     width: 0,
-    height: 2
+    height: 2,
   },
   shadowOpacity: 0.23,
   shadowRadius: 2.62,
-  elevation: 4
+  elevation: 4,
 };
 
 export default StyleSheet.create({
@@ -23,11 +23,14 @@ export default StyleSheet.create({
     marginVertical: 24,
     paddingTop: 10,
     marginHorizontal: platform.isIOS ? 0 : 2,
-    flex: 1
+    flex: 1,
   },
   periodContainer: {
     flex: 1,
     alignItems: "center",
-    marginVertical: 4
-  }
+    marginVertical: 4,
+  },
+  header: {
+    textTransform: "capitalize",
+  },
 });

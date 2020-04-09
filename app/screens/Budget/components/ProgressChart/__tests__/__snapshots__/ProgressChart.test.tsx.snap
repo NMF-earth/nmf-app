@@ -32,7 +32,13 @@ exports[`ProgressChart renders correctly 1`] = `
       }
     }
   >
-    <Text.H3>
+    <Text.H3
+      style={
+        Object {
+          "textTransform": "capitalize",
+        }
+      }
+    >
       2020
     </Text.H3>
   </View>

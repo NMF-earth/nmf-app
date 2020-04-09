@@ -2,7 +2,6 @@ import { map, pipe, groupBy, toPairs } from "ramda";
 import { emissions } from "../../../ducks";
 import { EmissionEnum, Emission } from "../../../interfaces";
 import { calculation, ui } from "../../../utils";
-import moment from "moment";
 
 interface EmissionListItem {
   id: string;
@@ -49,7 +48,7 @@ const groupByMonth = groupBy((item: EmissionListItem) =>
 );
 
 const dateObjMap = map(([date, data]) => ({
-  date: moment(date).format("MMMM YYYY"),
+  date: date,
   data: data,
 }));
 

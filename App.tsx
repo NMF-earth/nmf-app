@@ -11,6 +11,7 @@ import * as Sentry from "sentry-expo";
 import { Provider } from "react-redux";
 import AppNavigator from "./app/navigation/Navigator/AppNavigator";
 import store from "./app/redux/store";
+import { LocalizationContext } from "./app/utils";
 
 const supportedLanguages = ["en", "fr", "de", "sv"];
 
@@ -38,13 +39,31 @@ interface Props {
   skipLoadingScreen: boolean;
 }
 interface State {
+  localization: string;
+  setLocalization: (localization: string) => void;
   isLoadingComplete: boolean;
 }
 
 export default class App extends React.Component<Props, State> {
+  setLocalization = null;
+
   constructor(props: Props) {
     super(props);
+
+    let localization = locale.substring(0, 2);
+
+    if (!includes(localization, supportedLanguages)) {
+      localization = "en";
+    }
+
+    this.setLocalization = (localization) =>
+      this.setState({
+        localization,
+      });
+
     this.state = {
+      localization,
+      setLocalization: () => this.setLocalization,
       isLoadingComplete: false,
     };
   }
@@ -54,12 +73,6 @@ export default class App extends React.Component<Props, State> {
   }
 
   render() {
-    let localization = locale.length > 2 ? locale.substring(0, 2) : locale;
-
-    if (!includes(localization, supportedLanguages)) {
-      localization = "en";
-    }
-
     if (!this.state.isLoadingComplete && !this.props.skipLoadingScreen) {
       return (
         <AppLoading
@@ -77,8 +90,15 @@ export default class App extends React.Component<Props, State> {
         <View style={styles.container}>
           {Platform.OS === "ios" && <StatusBar barStyle="dark-content" />}
           <Provider store={store}>
-            <FormattedProvider locale={localization}>
-              <AppNavigator />
+            <FormattedProvider locale={this.state.localization}>
+              <LocalizationContext.Provider
+                value={{
+                  localization: this.state.localization,
+                  setLocalization: this.state.setLocalization,
+                }}
+              >
+                <AppNavigator />
+              </LocalizationContext.Provider>
             </FormattedProvider>
           </Provider>
         </View>
