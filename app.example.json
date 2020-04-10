@@ -20,11 +20,11 @@
     "ios": {
       "bundleIdentifier": "nmf.earth",
       "supportsTablet": true,
-      "buildNumber": "5"
+      "buildNumber": "6"
     },
     "android": {
       "package": "nmf.earth",
-      "versionCode": 5
+      "versionCode": 6
     },
     "hooks": {
       "postPublish": [
