@@ -101,12 +101,12 @@ export default class App extends React.Component<Props, State> {
         <View style={styles.container}>
           {Platform.OS === "ios" && <StatusBar barStyle="dark-content" />}
           <Provider store={store}>
-            <FormattedProvider locale={this.state.language}>
+            <FormattedProvider locale={this.state.language || "en"}>
               <LocalizationContext.Provider
                 value={{
-                  locale: this.state.locale,
+                  locale: this.state.locale || "en-US",
                   setLocale: this.state.setLocale,
-                  language: this.state.language,
+                  language: this.state.language || "en",
                   setLanguage: this.state.setLanguage,
                 }}
               >
