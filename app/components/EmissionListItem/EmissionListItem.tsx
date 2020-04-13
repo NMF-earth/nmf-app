@@ -23,12 +23,15 @@ const EmissionListItem = ({
   onPress,
 }: EmissionListItemProps) => (
   <TouchableOpacity onPress={onPress} style={styles.container}>
-    <Ionicons
-      name={iconName}
-      size={26}
-      style={styles.icon}
-      color={Colors.linkGreen}
-    />
+    <View style={styles.iconContainer}>
+      <View style={styles.iconBackground} />
+      <Ionicons
+        name={iconName}
+        size={22}
+        style={styles.icon}
+        color={Colors.linkGreen}
+      />
+    </View>
     <View style={styles.textContainer}>
       <Text.Primary numberOfLines={1}>
         {name.length ? name : title}

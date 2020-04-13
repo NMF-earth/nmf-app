@@ -16,21 +16,44 @@ exports[`EmissionListItem renders correctly with boat icon 1`] = `
       }
     }
   >
-    <Ionicons
-      color="#4BB377"
-      name="md-boat"
-      size={26}
+    <View
       style={
         Object {
-          "marginTop": 2,
-          "paddingHorizontal": 14,
+          "alignItems": "center",
+          "justifyContent": "center",
+          "marginLeft": 7,
+          "marginRight": 7,
+          "position": "absolute",
         }
       }
-    />
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#4BB37720",
+            "borderRadius": 17,
+            "height": 34,
+            "position": "absolute",
+            "width": 34,
+          }
+        }
+      />
+      <Ionicons
+        color="#4BB377"
+        name="md-boat"
+        size={22}
+        style={
+          Object {
+            "marginHorizontal": 14,
+          }
+        }
+      />
+    </View>
     <View
       style={
         Object {
           "flex": 1,
+          "marginLeft": 62,
         }
       }
     >
@@ -58,8 +81,7 @@ exports[`EmissionListItem renders correctly with boat icon 1`] = `
       size={22}
       style={
         Object {
-          "marginTop": 2,
-          "paddingHorizontal": 14,
+          "marginHorizontal": 14,
         }
       }
     />
@@ -83,21 +105,44 @@ exports[`EmissionListItem renders correctly with bus icon 1`] = `
       }
     }
   >
-    <Ionicons
-      color="#4BB377"
-      name="md-bus"
-      size={26}
+    <View
       style={
         Object {
-          "marginTop": 2,
-          "paddingHorizontal": 14,
+          "alignItems": "center",
+          "justifyContent": "center",
+          "marginLeft": 7,
+          "marginRight": 7,
+          "position": "absolute",
         }
       }
-    />
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#4BB37720",
+            "borderRadius": 17,
+            "height": 34,
+            "position": "absolute",
+            "width": 34,
+          }
+        }
+      />
+      <Ionicons
+        color="#4BB377"
+        name="md-bus"
+        size={22}
+        style={
+          Object {
+            "marginHorizontal": 14,
+          }
+        }
+      />
+    </View>
     <View
       style={
         Object {
           "flex": 1,
+          "marginLeft": 62,
         }
       }
     >
@@ -125,8 +170,7 @@ exports[`EmissionListItem renders correctly with bus icon 1`] = `
       size={22}
       style={
         Object {
-          "marginTop": 2,
-          "paddingHorizontal": 14,
+          "marginHorizontal": 14,
         }
       }
     />
@@ -150,21 +194,44 @@ exports[`EmissionListItem renders correctly with car icon 1`] = `
       }
     }
   >
-    <Ionicons
-      color="#4BB377"
-      name="md-car"
-      size={26}
+    <View
       style={
         Object {
-          "marginTop": 2,
-          "paddingHorizontal": 14,
+          "alignItems": "center",
+          "justifyContent": "center",
+          "marginLeft": 7,
+          "marginRight": 7,
+          "position": "absolute",
         }
       }
-    />
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#4BB37720",
+            "borderRadius": 17,
+            "height": 34,
+            "position": "absolute",
+            "width": 34,
+          }
+        }
+      />
+      <Ionicons
+        color="#4BB377"
+        name="md-car"
+        size={22}
+        style={
+          Object {
+            "marginHorizontal": 14,
+          }
+        }
+      />
+    </View>
     <View
       style={
         Object {
           "flex": 1,
+          "marginLeft": 62,
         }
       }
     >
@@ -192,8 +259,7 @@ exports[`EmissionListItem renders correctly with car icon 1`] = `
       size={22}
       style={
         Object {
-          "marginTop": 2,
-          "paddingHorizontal": 14,
+          "marginHorizontal": 14,
         }
       }
     />
@@ -217,21 +283,44 @@ exports[`EmissionListItem renders correctly with longHaulFlight icon 1`] = `
       }
     }
   >
-    <Ionicons
-      color="#4BB377"
-      name="md-airplane"
-      size={26}
+    <View
       style={
         Object {
-          "marginTop": 2,
-          "paddingHorizontal": 14,
+          "alignItems": "center",
+          "justifyContent": "center",
+          "marginLeft": 7,
+          "marginRight": 7,
+          "position": "absolute",
         }
       }
-    />
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#4BB37720",
+            "borderRadius": 17,
+            "height": 34,
+            "position": "absolute",
+            "width": 34,
+          }
+        }
+      />
+      <Ionicons
+        color="#4BB377"
+        name="md-airplane"
+        size={22}
+        style={
+          Object {
+            "marginHorizontal": 14,
+          }
+        }
+      />
+    </View>
     <View
       style={
         Object {
           "flex": 1,
+          "marginLeft": 62,
         }
       }
     >
@@ -259,8 +348,7 @@ exports[`EmissionListItem renders correctly with longHaulFlight icon 1`] = `
       size={22}
       style={
         Object {
-          "marginTop": 2,
-          "paddingHorizontal": 14,
+          "marginHorizontal": 14,
         }
       }
     />
@@ -284,21 +372,44 @@ exports[`EmissionListItem renders correctly with mediumHaulFlight icon 1`] = `
       }
     }
   >
-    <Ionicons
-      color="#4BB377"
-      name="md-airplane"
-      size={26}
+    <View
       style={
         Object {
-          "marginTop": 2,
-          "paddingHorizontal": 14,
+          "alignItems": "center",
+          "justifyContent": "center",
+          "marginLeft": 7,
+          "marginRight": 7,
+          "position": "absolute",
         }
       }
-    />
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#4BB37720",
+            "borderRadius": 17,
+            "height": 34,
+            "position": "absolute",
+            "width": 34,
+          }
+        }
+      />
+      <Ionicons
+        color="#4BB377"
+        name="md-airplane"
+        size={22}
+        style={
+          Object {
+            "marginHorizontal": 14,
+          }
+        }
+      />
+    </View>
     <View
       style={
         Object {
           "flex": 1,
+          "marginLeft": 62,
         }
       }
     >
@@ -326,8 +437,7 @@ exports[`EmissionListItem renders correctly with mediumHaulFlight icon 1`] = `
       size={22}
       style={
         Object {
-          "marginTop": 2,
-          "paddingHorizontal": 14,
+          "marginHorizontal": 14,
         }
       }
     />
@@ -351,21 +461,44 @@ exports[`EmissionListItem renders correctly with motorbike icon 1`] = `
       }
     }
   >
-    <Ionicons
-      color="#4BB377"
-      name="md-bicycle"
-      size={26}
+    <View
       style={
         Object {
-          "marginTop": 2,
-          "paddingHorizontal": 14,
+          "alignItems": "center",
+          "justifyContent": "center",
+          "marginLeft": 7,
+          "marginRight": 7,
+          "position": "absolute",
         }
       }
-    />
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#4BB37720",
+            "borderRadius": 17,
+            "height": 34,
+            "position": "absolute",
+            "width": 34,
+          }
+        }
+      />
+      <Ionicons
+        color="#4BB377"
+        name="md-bicycle"
+        size={22}
+        style={
+          Object {
+            "marginHorizontal": 14,
+          }
+        }
+      />
+    </View>
     <View
       style={
         Object {
           "flex": 1,
+          "marginLeft": 62,
         }
       }
     >
@@ -393,8 +526,7 @@ exports[`EmissionListItem renders correctly with motorbike icon 1`] = `
       size={22}
       style={
         Object {
-          "marginTop": 2,
-          "paddingHorizontal": 14,
+          "marginHorizontal": 14,
         }
       }
     />
@@ -418,21 +550,44 @@ exports[`EmissionListItem renders correctly with redMeat icon 1`] = `
       }
     }
   >
-    <Ionicons
-      color="#4BB377"
-      name="md-restaurant"
-      size={26}
+    <View
       style={
         Object {
-          "marginTop": 2,
-          "paddingHorizontal": 14,
+          "alignItems": "center",
+          "justifyContent": "center",
+          "marginLeft": 7,
+          "marginRight": 7,
+          "position": "absolute",
         }
       }
-    />
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#4BB37720",
+            "borderRadius": 17,
+            "height": 34,
+            "position": "absolute",
+            "width": 34,
+          }
+        }
+      />
+      <Ionicons
+        color="#4BB377"
+        name="md-restaurant"
+        size={22}
+        style={
+          Object {
+            "marginHorizontal": 14,
+          }
+        }
+      />
+    </View>
     <View
       style={
         Object {
           "flex": 1,
+          "marginLeft": 62,
         }
       }
     >
@@ -460,8 +615,7 @@ exports[`EmissionListItem renders correctly with redMeat icon 1`] = `
       size={22}
       style={
         Object {
-          "marginTop": 2,
-          "paddingHorizontal": 14,
+          "marginHorizontal": 14,
         }
       }
     />
@@ -485,21 +639,44 @@ exports[`EmissionListItem renders correctly with shortHaulFlight icon 1`] = `
       }
     }
   >
-    <Ionicons
-      color="#4BB377"
-      name="md-airplane"
-      size={26}
+    <View
       style={
         Object {
-          "marginTop": 2,
-          "paddingHorizontal": 14,
+          "alignItems": "center",
+          "justifyContent": "center",
+          "marginLeft": 7,
+          "marginRight": 7,
+          "position": "absolute",
         }
       }
-    />
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#4BB37720",
+            "borderRadius": 17,
+            "height": 34,
+            "position": "absolute",
+            "width": 34,
+          }
+        }
+      />
+      <Ionicons
+        color="#4BB377"
+        name="md-airplane"
+        size={22}
+        style={
+          Object {
+            "marginHorizontal": 14,
+          }
+        }
+      />
+    </View>
     <View
       style={
         Object {
           "flex": 1,
+          "marginLeft": 62,
         }
       }
     >
@@ -527,8 +704,7 @@ exports[`EmissionListItem renders correctly with shortHaulFlight icon 1`] = `
       size={22}
       style={
         Object {
-          "marginTop": 2,
-          "paddingHorizontal": 14,
+          "marginHorizontal": 14,
         }
       }
     />
@@ -552,21 +728,44 @@ exports[`EmissionListItem renders correctly with train icon 1`] = `
       }
     }
   >
-    <Ionicons
-      color="#4BB377"
-      name="md-train"
-      size={26}
+    <View
       style={
         Object {
-          "marginTop": 2,
-          "paddingHorizontal": 14,
+          "alignItems": "center",
+          "justifyContent": "center",
+          "marginLeft": 7,
+          "marginRight": 7,
+          "position": "absolute",
         }
       }
-    />
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#4BB37720",
+            "borderRadius": 17,
+            "height": 34,
+            "position": "absolute",
+            "width": 34,
+          }
+        }
+      />
+      <Ionicons
+        color="#4BB377"
+        name="md-train"
+        size={22}
+        style={
+          Object {
+            "marginHorizontal": 14,
+          }
+        }
+      />
+    </View>
     <View
       style={
         Object {
           "flex": 1,
+          "marginLeft": 62,
         }
       }
     >
@@ -594,8 +793,7 @@ exports[`EmissionListItem renders correctly with train icon 1`] = `
       size={22}
       style={
         Object {
-          "marginTop": 2,
-          "paddingHorizontal": 14,
+          "marginHorizontal": 14,
         }
       }
     />
@@ -619,21 +817,44 @@ exports[`EmissionListItem renders correctly with whiteMeat icon 1`] = `
       }
     }
   >
-    <Ionicons
-      color="#4BB377"
-      name="md-restaurant"
-      size={26}
+    <View
       style={
         Object {
-          "marginTop": 2,
-          "paddingHorizontal": 14,
+          "alignItems": "center",
+          "justifyContent": "center",
+          "marginLeft": 7,
+          "marginRight": 7,
+          "position": "absolute",
         }
       }
-    />
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#4BB37720",
+            "borderRadius": 17,
+            "height": 34,
+            "position": "absolute",
+            "width": 34,
+          }
+        }
+      />
+      <Ionicons
+        color="#4BB377"
+        name="md-restaurant"
+        size={22}
+        style={
+          Object {
+            "marginHorizontal": 14,
+          }
+        }
+      />
+    </View>
     <View
       style={
         Object {
           "flex": 1,
+          "marginLeft": 62,
         }
       }
     >
@@ -661,8 +882,7 @@ exports[`EmissionListItem renders correctly with whiteMeat icon 1`] = `
       size={22}
       style={
         Object {
-          "marginTop": 2,
-          "paddingHorizontal": 14,
+          "marginHorizontal": 14,
         }
       }
     />
