@@ -6,56 +6,67 @@ exports[`renders correctly SocialMedia 1`] = `
     Object {
       "flex": 1,
       "flexDirection": "row",
-      "justifyContent": "space-between",
-      "paddingHorizontal": 14,
-      "paddingVertical": 18,
+      "justifyContent": "center",
+      "paddingTop": 20,
     }
   }
 >
-  <TouchableOpacity
-    onPress={[Function]}
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "maxWidth": 300,
+        "paddingBottom": 50,
+      }
+    }
   >
-    <MaterialCommunityIcons
-      color="#585D5B"
-      name="slack"
-      size={32}
-    />
-  </TouchableOpacity>
-  <TouchableOpacity
-    onPress={[Function]}
-  >
-    <MaterialCommunityIcons
-      color="#585D5B"
-      name="github-circle"
-      size={32}
-    />
-  </TouchableOpacity>
-  <TouchableOpacity
-    onPress={[Function]}
-  >
-    <MaterialCommunityIcons
-      color="#585D5B"
-      name="twitter"
-      size={32}
-    />
-  </TouchableOpacity>
-  <TouchableOpacity
-    onPress={[Function]}
-  >
-    <MaterialCommunityIcons
-      color="#585D5B"
-      name="mastodon"
-      size={32}
-    />
-  </TouchableOpacity>
-  <TouchableOpacity
-    onPress={[Function]}
-  >
-    <MaterialCommunityIcons
-      color="#585D5B"
-      name="medium"
-      size={32}
-    />
-  </TouchableOpacity>
+    <TouchableOpacity
+      onPress={[Function]}
+    >
+      <MaterialCommunityIcons
+        color="#585D5B"
+        name="slack"
+        size={32}
+      />
+    </TouchableOpacity>
+    <TouchableOpacity
+      onPress={[Function]}
+    >
+      <MaterialCommunityIcons
+        color="#585D5B"
+        name="github-circle"
+        size={32}
+      />
+    </TouchableOpacity>
+    <TouchableOpacity
+      onPress={[Function]}
+    >
+      <MaterialCommunityIcons
+        color="#585D5B"
+        name="twitter"
+        size={32}
+      />
+    </TouchableOpacity>
+    <TouchableOpacity
+      onPress={[Function]}
+    >
+      <MaterialCommunityIcons
+        color="#585D5B"
+        name="mastodon"
+        size={32}
+      />
+    </TouchableOpacity>
+    <TouchableOpacity
+      onPress={[Function]}
+    >
+      <MaterialCommunityIcons
+        color="#585D5B"
+        name="medium"
+        size={32}
+      />
+    </TouchableOpacity>
+  </View>
 </View>
 `;

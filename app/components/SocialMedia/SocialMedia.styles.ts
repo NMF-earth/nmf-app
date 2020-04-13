@@ -1,11 +1,17 @@
 import { StyleSheet } from "react-native";
-import { Layout } from "../../style";
 
 export default StyleSheet.create({
   container: {
-    ...Layout.containerWithPadding,
+    flexDirection: "row",
+    justifyContent: "center",
+    flex: 1,
+    paddingTop: 20,
+  },
+  box: {
+    flex: 1,
     flexDirection: "row",
     justifyContent: "space-between",
-    paddingVertical: 18
-  }
+    maxWidth: 300,
+    paddingBottom: 50,
+  },
 });
