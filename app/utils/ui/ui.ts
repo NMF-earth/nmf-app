@@ -30,4 +30,30 @@ const getTranslationModelType = (emissionModelType) => {
   }
 };
 
-export default { getTranslationModelType };
+const getIconFromModelType = (emissionModelType) => {
+  switch (emissionModelType) {
+    case EmissionEnum.custom:
+      return "md-build";
+    case FoodEnum.redMeat:
+    case FoodEnum.whiteMeat:
+      return "md-restaurant";
+    case TransportEnum.shortHaulFlight:
+    case TransportEnum.mediumHaulFlight:
+    case TransportEnum.longHaulFlight:
+      return "md-airplane";
+    case TransportEnum.train:
+      return "md-train";
+    case TransportEnum.car:
+      return "md-car";
+    case TransportEnum.boat:
+      return "md-boat";
+    case TransportEnum.motorbike:
+      return "md-bicycle";
+    case TransportEnum.bus:
+      return "md-bus";
+    default:
+      return "md-build";
+  }
+};
+
+export default { getTranslationModelType, getIconFromModelType };

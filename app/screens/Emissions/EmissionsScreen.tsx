@@ -46,9 +46,7 @@ const EmissionsScreen = (props) => {
                       }
                       title={item.title}
                       co2value={item.co2value}
-                      food={item.food}
-                      transport={item.transport}
-                      custom={item.custom}
+                      iconName={item.iconName}
                     />
                   )}
                 />
@@ -72,9 +70,7 @@ const EmissionsScreen = (props) => {
                       onPress={item.onPress}
                       title={item.title}
                       co2value={item.co2value}
-                      food={item.food}
-                      transport={item.transport}
-                      custom={item.custom}
+                      iconName={item.iconName}
                     />
                   )}
                 />
