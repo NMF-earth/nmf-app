@@ -6,17 +6,24 @@ export default StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: Colors.white,
-    alignContent: "flex-start"
+    alignContent: "flex-start",
   },
   typeContainer: {
-    paddingBottom: 24
+    paddingBottom: 24,
   },
   textContainer: {
     ...Layout.containerWithPadding,
-    paddingVertical: 12
+    paddingVertical: 12,
+  },
+  dateContainer: {
+    paddingTop: 4,
+    flexDirection: "row",
   },
   tagContainer: {
     paddingLeft: PADDING_HORIZONTAL,
-    flexDirection: "row"
-  }
+    flexDirection: "row",
+  },
+  changeBtn: {
+    paddingLeft: 4,
+  },
 });

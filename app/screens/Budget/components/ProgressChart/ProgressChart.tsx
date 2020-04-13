@@ -23,7 +23,7 @@ const ProgressChart = ({
   otherEmissions = 0,
   monthlyEmissionsBudget = 0,
   isMonth = false,
-  localization = "",
+  language = "",
 }: Props & LocalizationContextProps) => {
   if (!monthlyEmissionsBudget) {
     return null;
@@ -47,7 +47,7 @@ const ProgressChart = ({
       : foodEmissions / periodEmissionsBudget;
 
   const period = moment()
-    .locale(localization)
+    .locale(language)
     .format(isMonth ? "MMMM" : "YYYY");
 
   return (

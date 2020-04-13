@@ -4,7 +4,7 @@ enum EmissionEnum {
   food = "food",
   transport = "transport",
   purchase = "purchase",
-  custom = "custom"
+  custom = "custom",
 }
 
 enum EmissionPurchaseEnum {
@@ -12,7 +12,7 @@ enum EmissionPurchaseEnum {
   computer = "computer",
   phone = "phone",
   tablet = "tablet",
-  car = "car"
+  car = "car",
 }
 
 interface EmissionPayload {
@@ -20,11 +20,11 @@ interface EmissionPayload {
   emissionType: EmissionEnum;
   emissionModelType: FoodEnum | TransportEnum | "custom";
   value: number;
+  creationDate: string;
 }
 
 interface Emission extends EmissionPayload {
   id: string;
-  creationDate: string;
   isMitigated: boolean;
 }
 

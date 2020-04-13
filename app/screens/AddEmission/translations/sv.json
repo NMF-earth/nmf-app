@@ -1,5 +1,8 @@
 {
   "ADD_EMISSION_TITLE": "Add emission",
+  "ADD_EMISSION_TRANSPORT": "Transport",
+  "ADD_EMISSION_FOOD": "Food",
+  "ADD_EMISSION_CUSTOM": "Custom",
   "ADD_EMISSION_EMISSION_TYPE": "Emission type",
   "ADD_EMISSION_TRANSPORT_TYPE": "Transport type",
   "ADD_EMISSION_DURATION": "Duration",
@@ -10,5 +13,10 @@
   "ADD_EMISSION_QUANTITY_OF_EMISSION": "Quantity of emission",
   "ADD_EMISSION_ADD_THIS_EMISSION": "Add this emission",
   "ADD_EMISSION_TEXTINPUT_PLACEHOLDER": "e.g burger, flight from Paris to Rome…",
-  "ADD_EMISSION_NAME_EMISSION": "Name this emission "
+  "ADD_EMISSION_NAME_EMISSION": "Name this emission ",
+  "ADD_EMISSION_DATE": "Date",
+  "ADD_EMISSION_CHANGE": "Change",
+  "ADD_EMISSION_PICKER_MODAL_HEADER_TEXT": "Pick a date",
+  "ADD_EMISSION_PICKER_MODAL_CONFIRM": "Confirm",
+  "ADD_EMISSION_PICKER_MODAL_CANCEL": "Cancel"
 }

@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "@expo/vector-icons": "^10.0.0",
+    "@react-native-community/datetimepicker": "2.2.2",
     "@reduxjs/toolkit": "1.2.1",
     "@types/i18n-js": "3.0.1",
     "@types/ramda": "0.26.39",
@@ -56,6 +57,7 @@
     "react-native-gesture-handler": "1.5.1",
     "react-native-globalize": "3.0.0",
     "react-native-keyboard-aware-scroll-view": "0.9.1",
+    "react-native-modal-datetime-picker": "8.5.4",
     "react-native-reanimated": "1.4.0",
     "react-native-render-html": "4.1.2",
     "react-native-screens": "2.2.0",

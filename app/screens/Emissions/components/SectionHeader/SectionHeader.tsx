@@ -6,10 +6,10 @@ import { Text } from "../../../../components";
 import styles from "./SectionHeader.styles";
 import { withLocalization } from "../../../../utils";
 
-const SectionHeader = ({ date, localization = "" }) => (
+const SectionHeader = ({ date, language = "" }) => (
   <View style={styles.container}>
     <Text.Primary darkGray bold style={styles.text}>
-      {moment(date).locale(localization).format("MMMM YYYY")}
+      {moment(date).locale(language).format("MMMM YYYY")}
     </Text.Primary>
   </View>
 );

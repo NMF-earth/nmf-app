@@ -1,13 +1,20 @@
 import React from "react";
 
+/* leave optional or ts complains */
 interface LocalizationContextProps {
-  localization?: string;
+  language?: string;
+  locale?: string;
 }
 
 const LocalizationContext = React.createContext({
-  localization: "en",
+  language: "en",
+  locale: "en_GB",
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  setLocalization: (localization: string) => {
+  setLanguage: (language: string) => {
+    //do nothing.
+  },
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  setLocale: (locale: string) => {
     //do nothing.
   },
 });
@@ -23,10 +30,12 @@ const withLocalization = <P extends object>(
     render() {
       return (
         <LocalizationContext.Consumer>
-          {({ localization, setLocalization }) => (
+          {({ language, setLanguage, locale, setLocale }) => (
             <Component
-              localization={localization}
-              setLocalization={setLocalization}
+              language={language}
+              setLanguage={setLanguage}
+              locale={locale}
+              setLocale={setLocale}
               {...this.props}
             />
           )}
