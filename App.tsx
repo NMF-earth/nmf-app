@@ -90,10 +90,10 @@ export default class App extends React.Component<Props, State> {
         <View style={styles.container}>
           {Platform.OS === "ios" && <StatusBar barStyle="dark-content" />}
           <Provider store={store}>
-            <FormattedProvider locale={this.state.localization}>
+            <FormattedProvider locale={this.state.localization || "en"}>
               <LocalizationContext.Provider
                 value={{
-                  localization: this.state.localization,
+                  localization: this.state.localization || "en",
                   setLocalization: this.state.setLocalization,
                 }}
               >
