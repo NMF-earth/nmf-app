@@ -25,7 +25,7 @@ interface Props {
 
 const EmissionItemScreen = ({
   navigation,
-  localization = "",
+  language = "",
 }: Props & LocalizationContextProps) => {
   const emissionId = pathOr(false, ["state", "params", "id"], navigation);
   const dispatch = useDispatch();
@@ -51,7 +51,7 @@ const EmissionItemScreen = ({
   const { creationDate = "", emissionModelType = "", name = "" } = emission;
 
   const date = moment(creationDate, "YYYY-MM-DDTHH:mm:ss.sssZ")
-    .locale(localization)
+    .locale(language)
     .format("dddd Do MMMM YYYY");
   const co2Emission = calculation.getC02ValueFromEmission(emission);
   const deleteEmission = () =>

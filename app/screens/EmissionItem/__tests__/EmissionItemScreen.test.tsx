@@ -8,10 +8,10 @@ it("EmissionsScreen renders correctly", () => {
       goBack: jest.fn(),
       state: {
         params: {
-          id: "ejew034-dsd"
-        }
-      }
-    }
+          id: "ejew034-dsd",
+        },
+      },
+    },
   };
   const tree = renderer.create(<EmissionItemScreen {...props} />).toJSON();
   expect(tree).toMatchSnapshot();

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import { View, ScrollView } from "react-native";
+import moment from "moment";
+import { View, ScrollView, TouchableOpacity } from "react-native";
 import { TransportEnum, FoodEnum } from "carbon-footprint";
+import DateTimePickerModal from "react-native-modal-datetime-picker";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 import { Text, Tag, TextInput } from "../../components";
 import styles from "./AddEmissionScreen.styles";
@@ -9,6 +11,7 @@ import { Food, Transport, Custom, AddEmissionButton } from "./components";
 import { EmissionEnum } from "../../interfaces";
 import { EmissionPayload } from "../../interfaces/emission/emission.interface";
 import { calculation, t } from "../../utils";
+import { withLocalization, LocalizationContextProps } from "../../utils";
 
 interface Props {
   navigation: {
@@ -22,14 +25,15 @@ const DEFAULT_SLIDER_VALUE_FOOD = 200 / 1000;
 const DEFAULT_SLIDER_VALUE_TRANSPORT = 150 * 1000;
 const DEFAULT_SLIDER_VALUE_CUSTOM = 800;
 
-const AddEmissionScreen: React.FunctionComponent<Props> & {
-  navigationOptions: typeof navigationOptions;
-} = ({ navigation }) => {
+const AddEmissionScreen = ({
+  navigation,
+  locale = "",
+  language = "",
+}: Props & LocalizationContextProps) => {
   const [emissionName, setEmissionName] = useState("");
   const [emissionType, setEmissionType] = useState(EmissionEnum.transport);
   const [transportType, setTransportType] = useState(TransportEnum.car);
   const [foodType, setFoodType] = useState(FoodEnum.redMeat);
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [durationMinutes, setDurationMinutes] = useState(
     DEFAULT_SLIDER_VALUE_TRANSPORT / 1000
   );
@@ -39,11 +43,23 @@ const AddEmissionScreen: React.FunctionComponent<Props> & {
   const [distance, setDistance] = useState(DEFAULT_SLIDER_VALUE_TRANSPORT);
   const [quantity, setQuantity] = useState(DEFAULT_SLIDER_VALUE_FOOD);
 
+  const [creationDate, setCreationDate] = useState(moment().utc());
+
+  const [isDatePickerVisible, setDatePickerVisibility] = useState(false);
+  const showDatePicker = () => setDatePickerVisibility(true);
+  const hideDatePicker = () => setDatePickerVisibility(false);
+
+  const handleConfirm = (date: Date) => {
+    setCreationDate(moment(date));
+    hideDatePicker();
+  };
+
   const emissionPayload: EmissionPayload = {
+    creationDate: creationDate.toISOString(),
     name: "",
     emissionType: emissionType,
     value: 0,
-    emissionModelType: null
+    emissionModelType: null,
   };
 
   const renderTransport = () => {
@@ -112,19 +128,19 @@ const AddEmissionScreen: React.FunctionComponent<Props> & {
           <Tag
             icon={"md-airplane"}
             selected={emissionType === EmissionEnum.transport}
-            title={"Transport"}
+            title={t("ADD_EMISSION_TRANSPORT")}
             onPress={() => setEmissionType(EmissionEnum.transport)}
           />
           <Tag
             icon={"md-restaurant"}
             selected={emissionType === EmissionEnum.food}
-            title={"Food"}
+            title={t("ADD_EMISSION_FOOD")}
             onPress={() => setEmissionType(EmissionEnum.food)}
           />
           <Tag
             icon={"md-build"}
             selected={emissionType === EmissionEnum.custom}
-            title={"Custom"}
+            title={t("ADD_EMISSION_CUSTOM")}
             onPress={() => setEmissionType(EmissionEnum.custom)}
           />
         </ScrollView>
@@ -138,7 +154,7 @@ const AddEmissionScreen: React.FunctionComponent<Props> & {
         isOptional
         placeholder={t("ADD_EMISSION_TEXTINPUT_PLACEHOLDER")}
         title={t("ADD_EMISSION_NAME_EMISSION")}
-        onChangeText={name => {
+        onChangeText={(name) => {
           if (name.length < 150) {
             setEmissionName(name);
           }
@@ -146,9 +162,41 @@ const AddEmissionScreen: React.FunctionComponent<Props> & {
         value={emissionName}
       />
 
+      <DateTimePickerModal
+        headerTextIOS={t("ADD_EMISSION_PICKER_MODAL_HEADER_TEXT")}
+        confirmTextIOS={t("ADD_EMISSION_PICKER_MODAL_CONFIRM")}
+        cancelTextIOS={t("ADD_EMISSION_PICKER_MODAL_CANCEL")}
+        locale={locale}
+        isVisible={isDatePickerVisible}
+        mode="date"
+        onConfirm={handleConfirm}
+        onCancel={hideDatePicker}
+      />
+
+      <View style={styles.textContainer}>
+        <Text.H3>{t("ADD_EMISSION_DATE")}</Text.H3>
+        <View style={styles.dateContainer}>
+          <Text.Primary lightGray bold>
+            {creationDate.locale(language).format("dddd Do MMMM YYYY")}
+          </Text.Primary>
+          <Text.Primary lightGray bold>
+            {" - "}
+          </Text.Primary>
+          <TouchableOpacity style={styles.changeBtn} onPress={showDatePicker}>
+            <Text.Primary bold green>
+              {t("ADD_EMISSION_CHANGE")}
+            </Text.Primary>
+          </TouchableOpacity>
+        </View>
+      </View>
+
       <AddEmissionButton
         navigation={navigation}
-        emissionPayload={{ ...emissionPayload, name: emissionName }}
+        emissionPayload={{
+          ...emissionPayload,
+          name: emissionName,
+          creationDate: creationDate.toISOString(),
+        }}
       />
     </KeyboardAwareScrollView>
   );
@@ -156,4 +204,4 @@ const AddEmissionScreen: React.FunctionComponent<Props> & {
 
 AddEmissionScreen.navigationOptions = navigationOptions;
 
-export default AddEmissionScreen;
+export default withLocalization(AddEmissionScreen);

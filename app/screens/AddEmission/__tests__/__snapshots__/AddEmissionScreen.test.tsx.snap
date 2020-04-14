@@ -236,6 +236,86 @@ exports[`AddEmissionScreen renders correctly 1`] = `
         title="Name this emission "
         value=""
       />
+      <Modal
+        animationType="none"
+        hardwareAccelerated={false}
+        transparent={true}
+        visible={false}
+      >
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "backgroundColor": "black",
+              "bottom": 0,
+              "height": 1334,
+              "left": 0,
+              "opacity": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "width": 750,
+            }
+          }
+        />
+      </Modal>
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "paddingHorizontal": 14,
+            "paddingVertical": 12,
+          }
+        }
+      >
+        <Text.H3>
+          Date
+        </Text.H3>
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+              "paddingTop": 4,
+            }
+          }
+        >
+          <Text.Primary
+            bold={true}
+            lightGray={true}
+          >
+            Monday 13th April 2020
+          </Text.Primary>
+          <Text.Primary
+            bold={true}
+            lightGray={true}
+          >
+             - 
+          </Text.Primary>
+          <TouchableOpacity
+            onPress={[Function]}
+            style={
+              Object {
+                "paddingLeft": 4,
+              }
+            }
+          >
+            <Text.Primary
+              bold={true}
+              green={true}
+            >
+              Change
+            </Text.Primary>
+          </TouchableOpacity>
+        </View>
+      </View>
       <Button.Primary
         onPress={[Function]}
         style={

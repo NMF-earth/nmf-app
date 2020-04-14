@@ -5,7 +5,7 @@ exports[`renders correctly TextInput 1`] = `
   style={
     Object {
       "marginHorizontal": 14,
-      "marginVertical": 12,
+      "marginTop": 12,
     }
   }
 >
@@ -36,6 +36,7 @@ exports[`renders correctly TextInput 1`] = `
         "borderRadius": 20,
         "borderWidth": 2,
         "height": 40,
+        "marginBottom": 8,
         "paddingHorizontal": 14,
       }
     }
@@ -50,7 +51,7 @@ exports[`renders correctly TextInput if optional 1`] = `
   style={
     Object {
       "marginHorizontal": 14,
-      "marginVertical": 12,
+      "marginTop": 12,
     }
   }
 >
@@ -81,6 +82,7 @@ exports[`renders correctly TextInput if optional 1`] = `
         "borderRadius": 20,
         "borderWidth": 2,
         "height": 40,
+        "marginBottom": 8,
         "paddingHorizontal": 14,
       }
     }

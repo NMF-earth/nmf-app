@@ -2,7 +2,7 @@ import React from "react";
 import { AppLoading } from "expo";
 import * as Font from "expo-font";
 import { FormattedProvider } from "react-native-globalize";
-import { locale } from "expo-localization";
+import { locale as localeExpo } from "expo-localization";
 import { includes } from "ramda";
 import { Platform, StatusBar, StyleSheet, View } from "react-native";
 import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
@@ -39,31 +39,42 @@ interface Props {
   skipLoadingScreen: boolean;
 }
 interface State {
-  localization: string;
-  setLocalization: (localization: string) => void;
+  locale: string;
+  language: string;
+  setLanguage: (language: string) => void;
+  setLocale: (locale: string) => void;
   isLoadingComplete: boolean;
 }
 
 export default class App extends React.Component<Props, State> {
-  setLocalization = null;
+  setLanguage = null;
+  setLocale = null;
 
   constructor(props: Props) {
     super(props);
 
-    let localization = locale.substring(0, 2);
+    const locale = localeExpo;
+    let language = localeExpo.substring(0, 2);
 
-    if (!includes(localization, supportedLanguages)) {
-      localization = "en";
+    if (!includes(language, supportedLanguages)) {
+      language = "en";
     }
 
-    this.setLocalization = (localization) =>
+    this.setLanguage = (language) =>
       this.setState({
-        localization,
+        language,
+      });
+
+    this.setLocale = (locale) =>
+      this.setState({
+        locale,
       });
 
     this.state = {
-      localization,
-      setLocalization: () => this.setLocalization,
+      locale,
+      language,
+      setLocale: () => this.setLocale,
+      setLanguage: () => this.setLanguage,
       isLoadingComplete: false,
     };
   }
@@ -90,11 +101,13 @@ export default class App extends React.Component<Props, State> {
         <View style={styles.container}>
           {Platform.OS === "ios" && <StatusBar barStyle="dark-content" />}
           <Provider store={store}>
-            <FormattedProvider locale={this.state.localization || "en"}>
+            <FormattedProvider locale={this.state.language || "en"}>
               <LocalizationContext.Provider
                 value={{
-                  localization: this.state.localization || "en",
-                  setLocalization: this.state.setLocalization,
+                  locale: this.state.locale || "en-US",
+                  setLocale: this.state.setLocale,
+                  language: this.state.language || "en",
+                  setLanguage: this.state.setLanguage,
                 }}
               >
                 <AppNavigator />

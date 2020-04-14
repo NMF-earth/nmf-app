@@ -1,5 +1,8 @@
 {
   "ADD_EMISSION_TITLE": "Ajouter émission",
+  "ADD_EMISSION_TRANSPORT": "Transport",
+  "ADD_EMISSION_FOOD": "Alimentation",
+  "ADD_EMISSION_CUSTOM": "Personnalisé",
   "ADD_EMISSION_EMISSION_TYPE": "Type d'émission",
   "ADD_EMISSION_TRANSPORT_TYPE": "Type de transport",
   "ADD_EMISSION_DURATION": "Durée",
@@ -10,5 +13,10 @@
   "ADD_EMISSION_QUANTITY_OF_EMISSION": "Quantité d'émission",
   "ADD_EMISSION_ADD_THIS_EMISSION": "Ajouter cette émission",
   "ADD_EMISSION_TEXTINPUT_PLACEHOLDER": "ex burger, vol Paris / Rome…",
-  "ADD_EMISSION_NAME_EMISSION": "Nommer cette émission "
+  "ADD_EMISSION_NAME_EMISSION": "Nommer cette émission ",
+  "ADD_EMISSION_DATE": "Date",
+  "ADD_EMISSION_CHANGE": "Changer",
+  "ADD_EMISSION_PICKER_MODAL_HEADER_TEXT": "Choisir une date",
+  "ADD_EMISSION_PICKER_MODAL_CONFIRM": "Confirmer",
+  "ADD_EMISSION_PICKER_MODAL_CANCEL": "Annuler"
 }

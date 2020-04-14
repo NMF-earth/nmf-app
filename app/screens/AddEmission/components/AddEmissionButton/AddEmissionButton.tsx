@@ -1,7 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import uuid from "uuid";
-import moment from "moment";
 
 import { Text, Button } from "../../../../components";
 import styles from "./AddEmissionButton.styles";
@@ -25,10 +24,7 @@ const AddEmissionButton = ({ navigation, emissionPayload }: Props) => {
     const emission = {
       ...emissionPayload,
       id: uuid(),
-      creationDate: moment()
-        .utc()
-        .toISOString(),
-      isMitigated: false
+      isMitigated: false,
     };
 
     dispatch(emissions.actions.createEmission(emission));
