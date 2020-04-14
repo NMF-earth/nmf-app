@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`EmissionListItem renders correctly by default 1`] = `
+exports[`EmissionListItem renders correctly with boat icon 1`] = `
 <FormattedProvider
   locale="en"
 >
@@ -16,21 +16,44 @@ exports[`EmissionListItem renders correctly by default 1`] = `
       }
     }
   >
-    <Ionicons
-      color="#111714"
-      name=""
-      size={28}
+    <View
       style={
         Object {
-          "marginTop": 2,
-          "paddingHorizontal": 14,
+          "alignItems": "center",
+          "justifyContent": "center",
+          "marginLeft": 7,
+          "marginRight": 7,
+          "position": "absolute",
         }
       }
-    />
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#4BB37720",
+            "borderRadius": 17,
+            "height": 34,
+            "position": "absolute",
+            "width": 34,
+          }
+        }
+      />
+      <Ionicons
+        color="#4BB377"
+        name="md-boat"
+        size={22}
+        style={
+          Object {
+            "marginHorizontal": 14,
+          }
+        }
+      />
+    </View>
     <View
       style={
         Object {
           "flex": 1,
+          "marginLeft": 62,
         }
       }
     >
@@ -58,8 +81,7 @@ exports[`EmissionListItem renders correctly by default 1`] = `
       size={22}
       style={
         Object {
-          "marginTop": 2,
-          "paddingHorizontal": 14,
+          "marginHorizontal": 14,
         }
       }
     />
@@ -67,7 +89,7 @@ exports[`EmissionListItem renders correctly by default 1`] = `
 </FormattedProvider>
 `;
 
-exports[`EmissionListItem renders correctly with custom icon 1`] = `
+exports[`EmissionListItem renders correctly with bus icon 1`] = `
 <FormattedProvider
   locale="en"
 >
@@ -83,21 +105,44 @@ exports[`EmissionListItem renders correctly with custom icon 1`] = `
       }
     }
   >
-    <Ionicons
-      color="#111714"
-      name="md-build"
-      size={26}
+    <View
       style={
         Object {
-          "marginTop": 2,
-          "paddingHorizontal": 14,
+          "alignItems": "center",
+          "justifyContent": "center",
+          "marginLeft": 7,
+          "marginRight": 7,
+          "position": "absolute",
         }
       }
-    />
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#4BB37720",
+            "borderRadius": 17,
+            "height": 34,
+            "position": "absolute",
+            "width": 34,
+          }
+        }
+      />
+      <Ionicons
+        color="#4BB377"
+        name="md-bus"
+        size={22}
+        style={
+          Object {
+            "marginHorizontal": 14,
+          }
+        }
+      />
+    </View>
     <View
       style={
         Object {
           "flex": 1,
+          "marginLeft": 62,
         }
       }
     >
@@ -125,8 +170,7 @@ exports[`EmissionListItem renders correctly with custom icon 1`] = `
       size={22}
       style={
         Object {
-          "marginTop": 2,
-          "paddingHorizontal": 14,
+          "marginHorizontal": 14,
         }
       }
     />
@@ -134,7 +178,7 @@ exports[`EmissionListItem renders correctly with custom icon 1`] = `
 </FormattedProvider>
 `;
 
-exports[`EmissionListItem renders correctly with food icon 1`] = `
+exports[`EmissionListItem renders correctly with car icon 1`] = `
 <FormattedProvider
   locale="en"
 >
@@ -150,21 +194,44 @@ exports[`EmissionListItem renders correctly with food icon 1`] = `
       }
     }
   >
-    <Ionicons
-      color="#111714"
-      name="md-restaurant"
-      size={28}
+    <View
       style={
         Object {
-          "marginTop": 2,
-          "paddingHorizontal": 14,
+          "alignItems": "center",
+          "justifyContent": "center",
+          "marginLeft": 7,
+          "marginRight": 7,
+          "position": "absolute",
         }
       }
-    />
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#4BB37720",
+            "borderRadius": 17,
+            "height": 34,
+            "position": "absolute",
+            "width": 34,
+          }
+        }
+      />
+      <Ionicons
+        color="#4BB377"
+        name="md-car"
+        size={22}
+        style={
+          Object {
+            "marginHorizontal": 14,
+          }
+        }
+      />
+    </View>
     <View
       style={
         Object {
           "flex": 1,
+          "marginLeft": 62,
         }
       }
     >
@@ -192,8 +259,7 @@ exports[`EmissionListItem renders correctly with food icon 1`] = `
       size={22}
       style={
         Object {
-          "marginTop": 2,
-          "paddingHorizontal": 14,
+          "marginHorizontal": 14,
         }
       }
     />
@@ -201,7 +267,7 @@ exports[`EmissionListItem renders correctly with food icon 1`] = `
 </FormattedProvider>
 `;
 
-exports[`EmissionListItem renders correctly with transport icon 1`] = `
+exports[`EmissionListItem renders correctly with longHaulFlight icon 1`] = `
 <FormattedProvider
   locale="en"
 >
@@ -217,21 +283,44 @@ exports[`EmissionListItem renders correctly with transport icon 1`] = `
       }
     }
   >
-    <Ionicons
-      color="#111714"
-      name="md-airplane"
-      size={30}
+    <View
       style={
         Object {
-          "marginTop": 2,
-          "paddingHorizontal": 14,
+          "alignItems": "center",
+          "justifyContent": "center",
+          "marginLeft": 7,
+          "marginRight": 7,
+          "position": "absolute",
         }
       }
-    />
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#4BB37720",
+            "borderRadius": 17,
+            "height": 34,
+            "position": "absolute",
+            "width": 34,
+          }
+        }
+      />
+      <Ionicons
+        color="#4BB377"
+        name="md-airplane"
+        size={22}
+        style={
+          Object {
+            "marginHorizontal": 14,
+          }
+        }
+      />
+    </View>
     <View
       style={
         Object {
           "flex": 1,
+          "marginLeft": 62,
         }
       }
     >
@@ -259,8 +348,541 @@ exports[`EmissionListItem renders correctly with transport icon 1`] = `
       size={22}
       style={
         Object {
-          "marginTop": 2,
-          "paddingHorizontal": 14,
+          "marginHorizontal": 14,
+        }
+      }
+    />
+  </TouchableOpacity>
+</FormattedProvider>
+`;
+
+exports[`EmissionListItem renders correctly with mediumHaulFlight icon 1`] = `
+<FormattedProvider
+  locale="en"
+>
+  <TouchableOpacity
+    onPress={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "marginVertical": 4,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "justifyContent": "center",
+          "marginLeft": 7,
+          "marginRight": 7,
+          "position": "absolute",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#4BB37720",
+            "borderRadius": 17,
+            "height": 34,
+            "position": "absolute",
+            "width": 34,
+          }
+        }
+      />
+      <Ionicons
+        color="#4BB377"
+        name="md-airplane"
+        size={22}
+        style={
+          Object {
+            "marginHorizontal": 14,
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "marginLeft": 62,
+        }
+      }
+    >
+      <Text.Primary
+        numberOfLines={1}
+      >
+        170 g of red meat
+      </Text.Primary>
+      <Text.Tertiary
+        light={true}
+        lightGray={true}
+        numberOfLines={1}
+      >
+        <FormattedNumber
+          maximumFractionDigits={2}
+          value={2.1}
+        />
+         
+        kg
+      </Text.Tertiary>
+    </View>
+    <Ionicons
+      color="#111714"
+      name="ios-arrow-forward"
+      size={22}
+      style={
+        Object {
+          "marginHorizontal": 14,
+        }
+      }
+    />
+  </TouchableOpacity>
+</FormattedProvider>
+`;
+
+exports[`EmissionListItem renders correctly with motorbike icon 1`] = `
+<FormattedProvider
+  locale="en"
+>
+  <TouchableOpacity
+    onPress={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "marginVertical": 4,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "justifyContent": "center",
+          "marginLeft": 7,
+          "marginRight": 7,
+          "position": "absolute",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#4BB37720",
+            "borderRadius": 17,
+            "height": 34,
+            "position": "absolute",
+            "width": 34,
+          }
+        }
+      />
+      <Ionicons
+        color="#4BB377"
+        name="md-bicycle"
+        size={22}
+        style={
+          Object {
+            "marginHorizontal": 14,
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "marginLeft": 62,
+        }
+      }
+    >
+      <Text.Primary
+        numberOfLines={1}
+      >
+        170 g of red meat
+      </Text.Primary>
+      <Text.Tertiary
+        light={true}
+        lightGray={true}
+        numberOfLines={1}
+      >
+        <FormattedNumber
+          maximumFractionDigits={2}
+          value={2.1}
+        />
+         
+        kg
+      </Text.Tertiary>
+    </View>
+    <Ionicons
+      color="#111714"
+      name="ios-arrow-forward"
+      size={22}
+      style={
+        Object {
+          "marginHorizontal": 14,
+        }
+      }
+    />
+  </TouchableOpacity>
+</FormattedProvider>
+`;
+
+exports[`EmissionListItem renders correctly with redMeat icon 1`] = `
+<FormattedProvider
+  locale="en"
+>
+  <TouchableOpacity
+    onPress={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "marginVertical": 4,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "justifyContent": "center",
+          "marginLeft": 7,
+          "marginRight": 7,
+          "position": "absolute",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#4BB37720",
+            "borderRadius": 17,
+            "height": 34,
+            "position": "absolute",
+            "width": 34,
+          }
+        }
+      />
+      <Ionicons
+        color="#4BB377"
+        name="md-restaurant"
+        size={22}
+        style={
+          Object {
+            "marginHorizontal": 14,
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "marginLeft": 62,
+        }
+      }
+    >
+      <Text.Primary
+        numberOfLines={1}
+      >
+        170 g of red meat
+      </Text.Primary>
+      <Text.Tertiary
+        light={true}
+        lightGray={true}
+        numberOfLines={1}
+      >
+        <FormattedNumber
+          maximumFractionDigits={2}
+          value={2.1}
+        />
+         
+        kg
+      </Text.Tertiary>
+    </View>
+    <Ionicons
+      color="#111714"
+      name="ios-arrow-forward"
+      size={22}
+      style={
+        Object {
+          "marginHorizontal": 14,
+        }
+      }
+    />
+  </TouchableOpacity>
+</FormattedProvider>
+`;
+
+exports[`EmissionListItem renders correctly with shortHaulFlight icon 1`] = `
+<FormattedProvider
+  locale="en"
+>
+  <TouchableOpacity
+    onPress={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "marginVertical": 4,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "justifyContent": "center",
+          "marginLeft": 7,
+          "marginRight": 7,
+          "position": "absolute",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#4BB37720",
+            "borderRadius": 17,
+            "height": 34,
+            "position": "absolute",
+            "width": 34,
+          }
+        }
+      />
+      <Ionicons
+        color="#4BB377"
+        name="md-airplane"
+        size={22}
+        style={
+          Object {
+            "marginHorizontal": 14,
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "marginLeft": 62,
+        }
+      }
+    >
+      <Text.Primary
+        numberOfLines={1}
+      >
+        170 g of red meat
+      </Text.Primary>
+      <Text.Tertiary
+        light={true}
+        lightGray={true}
+        numberOfLines={1}
+      >
+        <FormattedNumber
+          maximumFractionDigits={2}
+          value={2.1}
+        />
+         
+        kg
+      </Text.Tertiary>
+    </View>
+    <Ionicons
+      color="#111714"
+      name="ios-arrow-forward"
+      size={22}
+      style={
+        Object {
+          "marginHorizontal": 14,
+        }
+      }
+    />
+  </TouchableOpacity>
+</FormattedProvider>
+`;
+
+exports[`EmissionListItem renders correctly with train icon 1`] = `
+<FormattedProvider
+  locale="en"
+>
+  <TouchableOpacity
+    onPress={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "marginVertical": 4,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "justifyContent": "center",
+          "marginLeft": 7,
+          "marginRight": 7,
+          "position": "absolute",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#4BB37720",
+            "borderRadius": 17,
+            "height": 34,
+            "position": "absolute",
+            "width": 34,
+          }
+        }
+      />
+      <Ionicons
+        color="#4BB377"
+        name="md-train"
+        size={22}
+        style={
+          Object {
+            "marginHorizontal": 14,
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "marginLeft": 62,
+        }
+      }
+    >
+      <Text.Primary
+        numberOfLines={1}
+      >
+        170 g of red meat
+      </Text.Primary>
+      <Text.Tertiary
+        light={true}
+        lightGray={true}
+        numberOfLines={1}
+      >
+        <FormattedNumber
+          maximumFractionDigits={2}
+          value={2.1}
+        />
+         
+        kg
+      </Text.Tertiary>
+    </View>
+    <Ionicons
+      color="#111714"
+      name="ios-arrow-forward"
+      size={22}
+      style={
+        Object {
+          "marginHorizontal": 14,
+        }
+      }
+    />
+  </TouchableOpacity>
+</FormattedProvider>
+`;
+
+exports[`EmissionListItem renders correctly with whiteMeat icon 1`] = `
+<FormattedProvider
+  locale="en"
+>
+  <TouchableOpacity
+    onPress={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "marginVertical": 4,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "justifyContent": "center",
+          "marginLeft": 7,
+          "marginRight": 7,
+          "position": "absolute",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#4BB37720",
+            "borderRadius": 17,
+            "height": 34,
+            "position": "absolute",
+            "width": 34,
+          }
+        }
+      />
+      <Ionicons
+        color="#4BB377"
+        name="md-restaurant"
+        size={22}
+        style={
+          Object {
+            "marginHorizontal": 14,
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "marginLeft": 62,
+        }
+      }
+    >
+      <Text.Primary
+        numberOfLines={1}
+      >
+        170 g of red meat
+      </Text.Primary>
+      <Text.Tertiary
+        light={true}
+        lightGray={true}
+        numberOfLines={1}
+      >
+        <FormattedNumber
+          maximumFractionDigits={2}
+          value={2.1}
+        />
+         
+        kg
+      </Text.Tertiary>
+    </View>
+    <Ionicons
+      color="#111714"
+      name="ios-arrow-forward"
+      size={22}
+      style={
+        Object {
+          "marginHorizontal": 14,
         }
       }
     />

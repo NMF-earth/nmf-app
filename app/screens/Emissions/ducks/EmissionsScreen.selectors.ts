@@ -1,6 +1,6 @@
 import { map, pipe, groupBy, toPairs } from "ramda";
 import { emissions } from "../../../ducks";
-import { EmissionEnum, Emission } from "../../../interfaces";
+import { Emission } from "../../../interfaces";
 import { calculation, ui } from "../../../utils";
 
 interface EmissionListItem {
@@ -9,8 +9,7 @@ interface EmissionListItem {
   title: string;
   creationDate: string;
   co2value: number;
-  food?: boolean;
-  transport?: boolean;
+  iconName: string;
   custom?: boolean;
   onPress: () => void;
 }
@@ -22,9 +21,7 @@ const getEmissionListItem = (item: Emission) => {
     title: ui.getTranslationModelType(item.emissionModelType),
     creationDate: item.creationDate,
     co2value: calculation.getC02ValueFromEmission(item),
-    food: item.emissionType === EmissionEnum.food,
-    transport: item.emissionType === EmissionEnum.transport,
-    custom: item.emissionType === EmissionEnum.custom,
+    iconName: ui.getIconFromModelType(item.emissionModelType),
     onPress: () => {
       // do nothing.
     },

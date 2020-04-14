@@ -1,5 +1,10 @@
 import React, { useState } from "react";
-import { View, TouchableOpacity, ScrollView, Image } from "react-native";
+import {
+  View,
+  TouchableWithoutFeedback,
+  ScrollView,
+  Image,
+} from "react-native";
 import Constants from "expo-constants";
 import { Button, Text, SocialMedia } from "../../components";
 import { SettingsRow } from "./components";
@@ -10,38 +15,38 @@ import { t } from "../../utils";
 import ImagesAssets from "../../constants/ImagesAssets";
 import { navigate } from "../../navigation";
 
-const SettingsScreen = props => {
+const SettingsScreen = (props) => {
   const navigator = navigate(props.navigation);
   const rowItems = [
     {
       title: t("SETTINGS_SCREEN_ABOUT"),
-      onPress: navigator.openAbout
+      onPress: navigator.openAbout,
     },
     {
       title: t("SETTINGS_SCREEN_SUPPORT_US"),
-      onPress: navigator.openSupportUs
+      onPress: navigator.openSupportUs,
     },
     {
       title: t("SETTINGS_SCREEN_NMF_EARTH"),
-      onPress: () => WebBrowser.openBrowserAsync("http://nmf.earth")
+      onPress: () => WebBrowser.openBrowserAsync("http://nmf.earth"),
     },
     {
       title: t("SETTINGS_SCREEN_ROADMAP"),
       onPress: () =>
         WebBrowser.openBrowserAsync(
           "https://www.notion.so/notmyfault/cb98dacb015f4a18a7ebac5c0319495b?v=da9ec9ce3096417186dfd229a82aa90e"
-        )
+        ),
     },
     {
       title: t("SETTINGS_SCREEN_FEEDBACK"),
       onPress: () =>
-        WebBrowser.openBrowserAsync("https://nmf-earth.typeform.com/to/w0nNSk")
+        WebBrowser.openBrowserAsync("https://nmf-earth.typeform.com/to/w0nNSk"),
     },
     {
       title: t("SETTINGS_SCREEN_TERMS_OF_USE"),
       onPress: () =>
-        WebBrowser.openBrowserAsync("http://nmf.earth/terms-of-use.pdf")
-    }
+        WebBrowser.openBrowserAsync("http://nmf.earth/terms-of-use.pdf"),
+    },
   ];
   const [steps, setSteps] = useState(0);
 
@@ -50,19 +55,18 @@ const SettingsScreen = props => {
       {rowItems.map((item, index) => (
         <SettingsRow key={index} onPress={item.onPress} title={item.title} />
       ))}
-      <TouchableOpacity
-        onPress={() => setSteps(steps + 1)}
-        style={styles.logoNMFContainer}
-      >
-        <Image
-          style={styles.logoNMF}
-          resizeMode="contain"
-          source={ImagesAssets.logos.nmf}
-        />
-      </TouchableOpacity>
+      <TouchableWithoutFeedback onPress={() => setSteps(steps + 1)}>
+        <View style={styles.logoNMFContainer}>
+          <Image
+            style={styles.logoNMF}
+            resizeMode="contain"
+            source={ImagesAssets.logos.nmf}
+          />
+        </View>
+      </TouchableWithoutFeedback>
       <Text.Tertiary bold lightGray style={styles.appVersionTitle}>
         {t("SETTINGS_SCREEN_APP_VERSION", {
-          version: Constants.manifest.version
+          version: Constants.manifest.version,
         })}
       </Text.Tertiary>
       <SocialMedia />
