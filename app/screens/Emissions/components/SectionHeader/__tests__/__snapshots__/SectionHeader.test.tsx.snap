@@ -1,13 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render SectionHeader 1`] = `
+exports[`should render SectionHeader when user is below budget 1`] = `
 <View
   style={
     Object {
       "backgroundColor": "#FFFFFF",
-      "borderBottomColor": "#CED4DA",
+      "borderBottomColor": "#DCF0E5",
       "borderBottomWidth": 2,
-      "paddingLeft": 14,
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+      "paddingHorizontal": 14,
       "paddingVertical": 10,
     }
   }
@@ -23,5 +25,45 @@ exports[`should render SectionHeader 1`] = `
   >
     Invalid date
   </Text.Primary>
+  <Text.Secondary
+    green={true}
+    red={false}
+  >
+    50 % of budget
+  </Text.Secondary>
+</View>
+`;
+
+exports[`should render SectionHeader when user is over budget 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "borderBottomColor": "#DCF0E5",
+      "borderBottomWidth": 2,
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+      "paddingHorizontal": 14,
+      "paddingVertical": 10,
+    }
+  }
+>
+  <Text.Primary
+    bold={true}
+    darkGray={true}
+    style={
+      Object {
+        "textTransform": "capitalize",
+      }
+    }
+  >
+    Invalid date
+  </Text.Primary>
+  <Text.Secondary
+    green={false}
+    red={true}
+  >
+    150 % of budget
+  </Text.Secondary>
 </View>
 `;

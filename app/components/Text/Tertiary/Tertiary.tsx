@@ -8,11 +8,12 @@ interface Props {
   children: React.ReactNode;
   darkGray?: boolean;
   lightGray?: boolean;
+  red?: boolean;
   bold?: boolean;
   white?: boolean;
   green?: boolean;
   center?: boolean;
-  light?: boolean;
+  lightWeightText?: boolean;
   numberOfLines?: number;
 }
 
@@ -26,7 +27,8 @@ export default function Tertiary(props: Props): React.ReactElement {
     bold,
     children,
     center,
-    light
+    lightWeightText,
+    red,
   } = props;
 
   if (darkGray) {
@@ -53,8 +55,12 @@ export default function Tertiary(props: Props): React.ReactElement {
     customStyle.push(mainStyle.center);
   }
 
-  if (light) {
-    customStyle.push(mainStyle.light);
+  if (lightWeightText) {
+    customStyle.push(mainStyle.lightWeightText);
+  }
+
+  if (red) {
+    customStyle.push(mainStyle.red);
   }
 
   return (

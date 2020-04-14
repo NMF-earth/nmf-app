@@ -11,6 +11,7 @@ interface TranslationKeys {
   EMISSIONS_SCREEN_MITIGATE: string;
   EMISSIONS_SCREEN_ADD: string;
   EMISSIONS_SCREEN_NO_EMISSION_MITIGATED: string;
+  EMISSIONS_SCREEN_HEADER_OF_BUDGET: string;
 }
 
 export { en, fr, de, sv, TranslationKeys };

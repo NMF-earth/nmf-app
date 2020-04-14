@@ -8,6 +8,7 @@ interface Props {
   children: React.ReactNode;
   darkGray?: boolean;
   lightGray?: boolean;
+  red?: boolean;
   bold?: boolean;
   white?: boolean;
   green?: boolean;
@@ -17,7 +18,16 @@ interface Props {
 
 export default function Primary(props: Props): React.ReactElement {
   const customStyle = [styles.default, props.style];
-  const { white, green, darkGray, lightGray, bold, children, center } = props;
+  const {
+    red,
+    white,
+    green,
+    darkGray,
+    lightGray,
+    bold,
+    children,
+    center,
+  } = props;
 
   if (darkGray) {
     customStyle.push(mainStyle.darkGray);
@@ -41,6 +51,10 @@ export default function Primary(props: Props): React.ReactElement {
 
   if (center) {
     customStyle.push(mainStyle.center);
+  }
+
+  if (red) {
+    customStyle.push(mainStyle.red);
   }
 
   return (

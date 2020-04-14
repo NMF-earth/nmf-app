@@ -406,6 +406,27 @@ exports[`renders correctly Primary lightGray 1`] = `
 </Text>
 `;
 
+exports[`renders correctly Primary red 1`] = `
+<Text
+  red={true}
+  style={
+    Array [
+      Object {
+        "color": "#111714",
+        "fontFamily": "Inter-Medium",
+        "fontSize": 18,
+      },
+      undefined,
+      Object {
+        "color": "#FA4646",
+      },
+    ]
+  }
+>
+  test
+</Text>
+`;
+
 exports[`renders correctly Primary white 1`] = `
 <Text
   style={
@@ -528,9 +549,30 @@ exports[`renders correctly Secondary green 1`] = `
 </Text>
 `;
 
-exports[`renders correctly Secondary light 1`] = `
+exports[`renders correctly Secondary lightGray 1`] = `
 <Text
-  light={true}
+  lightGray={true}
+  style={
+    Array [
+      Object {
+        "color": "#111714",
+        "fontFamily": "Inter-Medium",
+        "fontSize": 16,
+      },
+      undefined,
+      Object {
+        "color": "#9CA6A0",
+      },
+    ]
+  }
+>
+  test
+</Text>
+`;
+
+exports[`renders correctly Secondary lightWeightText 1`] = `
+<Text
+  lightWeightText={true}
   style={
     Array [
       Object {
@@ -549,9 +591,9 @@ exports[`renders correctly Secondary light 1`] = `
 </Text>
 `;
 
-exports[`renders correctly Secondary lightGray 1`] = `
+exports[`renders correctly Secondary red 1`] = `
 <Text
-  lightGray={true}
+  red={true}
   style={
     Array [
       Object {
@@ -561,7 +603,7 @@ exports[`renders correctly Secondary lightGray 1`] = `
       },
       undefined,
       Object {
-        "color": "#9CA6A0",
+        "color": "#FA4646",
       },
     ]
   }
@@ -692,9 +734,30 @@ exports[`renders correctly Tertiary green 1`] = `
 </Text>
 `;
 
-exports[`renders correctly Tertiary light 1`] = `
+exports[`renders correctly Tertiary lightGray 1`] = `
 <Text
-  light={true}
+  lightGray={true}
+  style={
+    Array [
+      Object {
+        "color": "#111714",
+        "fontFamily": "Inter-Medium",
+        "fontSize": 14,
+      },
+      undefined,
+      Object {
+        "color": "#9CA6A0",
+      },
+    ]
+  }
+>
+  test
+</Text>
+`;
+
+exports[`renders correctly Tertiary lightWeightText 1`] = `
+<Text
+  lightWeightText={true}
   style={
     Array [
       Object {
@@ -713,9 +776,9 @@ exports[`renders correctly Tertiary light 1`] = `
 </Text>
 `;
 
-exports[`renders correctly Tertiary lightGray 1`] = `
+exports[`renders correctly Tertiary red 1`] = `
 <Text
-  lightGray={true}
+  red={true}
   style={
     Array [
       Object {
@@ -725,7 +788,7 @@ exports[`renders correctly Tertiary lightGray 1`] = `
       },
       undefined,
       Object {
-        "color": "#9CA6A0",
+        "color": "#FA4646",
       },
     ]
   }
