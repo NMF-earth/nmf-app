@@ -6,8 +6,8 @@ exports[`NumberOfDaysVegetarian renders correctly 1`] = `
     Object {
       "alignItems": "center",
       "flex": 1,
-      "marginBottom": 26,
-      "marginTop": 10,
+      "marginBottom": 20,
+      "marginTop": 26,
     }
   }
 >

@@ -36,6 +36,7 @@ exports[`BudgetScreen renders correctly 1`] = `
         Set monthly budget
       </Text.Primary>
     </Button.Primary>
+    <NumberOfDaysVegetarian />
     <ProgressChart
       foodEmissions={[MockFunction]}
       monthlyEmissionsBudget={[MockFunction]}
@@ -43,7 +44,6 @@ exports[`BudgetScreen renders correctly 1`] = `
       totalEmissions={[MockFunction]}
       transportEmissions={[MockFunction]}
     />
-    <NumberOfDaysVegetarian />
   </View>
 </RCTScrollView>
 `;

@@ -63,6 +63,7 @@ const BudgetScreen = (props: Props) => {
           {t("BUDGET_SCREEN_SET_MONTHLY_BUDGET")}
         </Text.Primary>
       </Button.Primary>
+      <NumberOfDaysVegetarian />
       <ProgressChart
         totalEmissions={totalCurrentYearEmissions}
         foodEmissions={foodCurrentYearEmissions}
@@ -70,7 +71,6 @@ const BudgetScreen = (props: Props) => {
         otherEmissions={otherCurrentYearEmissions}
         monthlyEmissionsBudget={monthlyCarbonBudget}
       />
-      <NumberOfDaysVegetarian />
     </ScrollView>
   );
 };

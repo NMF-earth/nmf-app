@@ -2,15 +2,15 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 10,
-    marginBottom: 26,
+    marginTop: 26,
+    marginBottom: 20,
     flex: 1,
-    alignItems: "center"
+    alignItems: "center",
   },
   daysContainer: {
     flex: 1,
-    flexDirection: "row"
-  }
+    flexDirection: "row",
+  },
 });
 
 export default styles;

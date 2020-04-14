@@ -1,6 +1,6 @@
 import { Colors } from "./colors";
 import { Font } from "./font";
 import { Layout } from "./layout";
-import { Shadows } from "./shadows";
+import ComponentsStyle from "./components";
 
-export { Colors, Font, Layout, Shadows };
+export { Colors, Font, Layout, ComponentsStyle };

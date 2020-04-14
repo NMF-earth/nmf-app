@@ -21,51 +21,53 @@ import { t } from "../../utils";
 
 const BudgetStack = createStackNavigator({
   Budget: BudgetScreen,
-  MontlyBudget: MontlyBudgetScreen
+  MontlyBudget: MontlyBudgetScreen,
 });
 
 BudgetStack.navigationOptions = {
   tabBarLabel: t("BUDGET_SCREEN_TAB_NAME"),
   tabBarIcon: ({ focused }) => (
     <TabBarIcon focused={focused} name={"md-calculator"} />
-  )
+  ),
 };
 
 const EmissionsStack = createStackNavigator({
   Emissions: EmissionsScreen,
   EmissionItem: EmissionItemScreen,
-  AddEmission: AddEmissionScreen
+  AddEmission: AddEmissionScreen,
 });
 
 EmissionsStack.navigationOptions = {
   tabBarLabel: t("EMISSIONS_SCREEN_TAB_NAME"),
   tabBarIcon: ({ focused }) => (
     <TabBarIcon focused={focused} name={"md-stats"} />
-  )
+  ),
 };
 
 const ActStack = createStackNavigator({
   Act: ActScreen,
-  Details: ActDetailScreen
+  Details: ActDetailScreen,
 });
 
 ActStack.navigationOptions = {
   tabBarLabel: t("ACT_SCREEN_TAB_NAME"),
-  tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name={"md-hand"} />
+  tabBarIcon: ({ focused }) => (
+    <TabBarIcon focused={focused} name={"md-hand"} />
+  ),
 };
 
 const SettingsStack = createStackNavigator({
   Settings: SettingsScreen,
   About: AboutScreen,
   SupportUs: SupportUsScreen,
-  Storybook: StorybookScreen
+  Storybook: StorybookScreen,
 });
 
 SettingsStack.navigationOptions = {
   tabBarLabel: t("SETTINGS_SCREEN_TAB_NAME"),
   tabBarIcon: ({ focused }) => (
     <TabBarIcon focused={focused} name={"md-switch"} />
-  )
+  ),
 };
 
 const MainTabNavigator = createBottomTabNavigator(
@@ -73,7 +75,7 @@ const MainTabNavigator = createBottomTabNavigator(
     BudgetStack,
     EmissionsStack,
     // ActStack,
-    SettingsStack
+    SettingsStack,
   },
   {
     tabBarOptions: {
@@ -82,9 +84,9 @@ const MainTabNavigator = createBottomTabNavigator(
       style: {
         paddingTop: 6,
         backgroundColor: Colors.linkGreen + "15",
-        borderTopWidth: 0
-      }
-    }
+        borderTopWidth: 0,
+      },
+    },
   }
 );
 

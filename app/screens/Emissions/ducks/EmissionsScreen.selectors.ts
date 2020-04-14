@@ -10,7 +10,6 @@ interface EmissionListItem {
   creationDate: string;
   co2value: number;
   iconName: string;
-  custom?: boolean;
   onPress: () => void;
 }
 

@@ -10,13 +10,13 @@ export default createAppContainer(
       Root: {
         screen: RootStack,
         navigationOptions: {
-          header: null
-        }
+          header: null,
+        },
       },
-      ...ModalScreens
+      ...ModalScreens,
     },
     {
-      mode: "modal"
+      mode: "modal",
     }
   )
 );
