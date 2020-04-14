@@ -96,7 +96,7 @@ exports[`EmissionsListItem renders correctly if mitigated 1`] = `
     <Ionicons
       color="#111714"
       name="ios-arrow-forward"
-      size={22}
+      size={18}
       style={
         Object {
           "marginHorizontal": 14,
@@ -193,7 +193,7 @@ exports[`EmissionsListItem renders correctly with boat icon 1`] = `
     <Ionicons
       color="#111714"
       name="ios-arrow-forward"
-      size={22}
+      size={18}
       style={
         Object {
           "marginHorizontal": 14,
@@ -290,7 +290,7 @@ exports[`EmissionsListItem renders correctly with bus icon 1`] = `
     <Ionicons
       color="#111714"
       name="ios-arrow-forward"
-      size={22}
+      size={18}
       style={
         Object {
           "marginHorizontal": 14,
@@ -387,7 +387,7 @@ exports[`EmissionsListItem renders correctly with car icon 1`] = `
     <Ionicons
       color="#111714"
       name="ios-arrow-forward"
-      size={22}
+      size={18}
       style={
         Object {
           "marginHorizontal": 14,
@@ -484,7 +484,7 @@ exports[`EmissionsListItem renders correctly with longHaulFlight icon 1`] = `
     <Ionicons
       color="#111714"
       name="ios-arrow-forward"
-      size={22}
+      size={18}
       style={
         Object {
           "marginHorizontal": 14,
@@ -581,7 +581,7 @@ exports[`EmissionsListItem renders correctly with mediumHaulFlight icon 1`] = `
     <Ionicons
       color="#111714"
       name="ios-arrow-forward"
-      size={22}
+      size={18}
       style={
         Object {
           "marginHorizontal": 14,
@@ -678,7 +678,7 @@ exports[`EmissionsListItem renders correctly with motorbike icon 1`] = `
     <Ionicons
       color="#111714"
       name="ios-arrow-forward"
-      size={22}
+      size={18}
       style={
         Object {
           "marginHorizontal": 14,
@@ -775,7 +775,7 @@ exports[`EmissionsListItem renders correctly with redMeat icon 1`] = `
     <Ionicons
       color="#111714"
       name="ios-arrow-forward"
-      size={22}
+      size={18}
       style={
         Object {
           "marginHorizontal": 14,
@@ -872,7 +872,7 @@ exports[`EmissionsListItem renders correctly with shortHaulFlight icon 1`] = `
     <Ionicons
       color="#111714"
       name="ios-arrow-forward"
-      size={22}
+      size={18}
       style={
         Object {
           "marginHorizontal": 14,
@@ -969,7 +969,7 @@ exports[`EmissionsListItem renders correctly with train icon 1`] = `
     <Ionicons
       color="#111714"
       name="ios-arrow-forward"
-      size={22}
+      size={18}
       style={
         Object {
           "marginHorizontal": 14,
@@ -1066,7 +1066,7 @@ exports[`EmissionsListItem renders correctly with whiteMeat icon 1`] = `
     <Ionicons
       color="#111714"
       name="ios-arrow-forward"
-      size={22}
+      size={18}
       style={
         Object {
           "marginHorizontal": 14,
