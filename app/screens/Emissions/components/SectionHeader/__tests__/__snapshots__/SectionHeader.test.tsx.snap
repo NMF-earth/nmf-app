@@ -7,10 +7,17 @@ exports[`should render SectionHeader when user is below budget 1`] = `
       "backgroundColor": "#FFFFFF",
       "borderBottomColor": "#DCF0E5",
       "borderBottomWidth": 2,
+      "elevation": 0,
       "flexDirection": "row",
       "justifyContent": "space-between",
       "paddingHorizontal": 14,
       "paddingVertical": 10,
+      "shadowColor": "transparent",
+      "shadowOffset": Object {
+        "height": 0,
+        "width": 0,
+      },
+      "shadowRadius": 0,
     }
   }
 >
@@ -41,10 +48,17 @@ exports[`should render SectionHeader when user is over budget 1`] = `
       "backgroundColor": "#FFFFFF",
       "borderBottomColor": "#DCF0E5",
       "borderBottomWidth": 2,
+      "elevation": 0,
       "flexDirection": "row",
       "justifyContent": "space-between",
       "paddingHorizontal": 14,
       "paddingVertical": 10,
+      "shadowColor": "transparent",
+      "shadowOffset": Object {
+        "height": 0,
+        "width": 0,
+      },
+      "shadowRadius": 0,
     }
   }
 >
