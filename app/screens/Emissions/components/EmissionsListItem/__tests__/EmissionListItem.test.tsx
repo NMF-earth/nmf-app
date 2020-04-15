@@ -1,14 +1,15 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import { EmissionListItem } from "../EmissionListItem";
+import EmissionsListItem from "../EmissionsListItem";
 import { FormattedProvider } from "react-native-globalize";
 import { FoodEnum, TransportEnum } from "carbon-footprint";
-import { ui } from "../../../utils";
+import { ui } from "../../../../../utils";
 
-jest.unmock("../EmissionListItem.tsx");
+jest.unmock("../EmissionsListItem");
 
 const props = {
   id: "123",
+  isMitigated: false,
   title: "170 g of red meat",
   co2value: 2.1,
   onPress: () => {
@@ -16,11 +17,26 @@ const props = {
   },
 };
 
-it("EmissionListItem renders correctly with redMeat icon", () => {
+it("EmissionsListItem renders correctly if mitigated", () => {
   const tree = renderer
     .create(
       <FormattedProvider locale="en">
-        <EmissionListItem
+        <EmissionsListItem
+          {...props}
+          isMitigated
+          iconName={ui.getIconFromModelType(FoodEnum.redMeat)}
+        />
+      </FormattedProvider>
+    )
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it("EmissionsListItem renders correctly with redMeat icon", () => {
+  const tree = renderer
+    .create(
+      <FormattedProvider locale="en">
+        <EmissionsListItem
           {...props}
           iconName={ui.getIconFromModelType(FoodEnum.redMeat)}
         />
@@ -30,11 +46,11 @@ it("EmissionListItem renders correctly with redMeat icon", () => {
   expect(tree).toMatchSnapshot();
 });
 
-it("EmissionListItem renders correctly with whiteMeat icon", () => {
+it("EmissionsListItem renders correctly with whiteMeat icon", () => {
   const tree = renderer
     .create(
       <FormattedProvider locale="en">
-        <EmissionListItem
+        <EmissionsListItem
           {...props}
           iconName={ui.getIconFromModelType(FoodEnum.whiteMeat)}
         />
@@ -44,11 +60,11 @@ it("EmissionListItem renders correctly with whiteMeat icon", () => {
   expect(tree).toMatchSnapshot();
 });
 
-it("EmissionListItem renders correctly with boat icon", () => {
+it("EmissionsListItem renders correctly with boat icon", () => {
   const tree = renderer
     .create(
       <FormattedProvider locale="en">
-        <EmissionListItem
+        <EmissionsListItem
           {...props}
           iconName={ui.getIconFromModelType(TransportEnum.boat)}
         />
@@ -58,11 +74,11 @@ it("EmissionListItem renders correctly with boat icon", () => {
   expect(tree).toMatchSnapshot();
 });
 
-it("EmissionListItem renders correctly with bus icon", () => {
+it("EmissionsListItem renders correctly with bus icon", () => {
   const tree = renderer
     .create(
       <FormattedProvider locale="en">
-        <EmissionListItem
+        <EmissionsListItem
           {...props}
           iconName={ui.getIconFromModelType(TransportEnum.bus)}
         />
@@ -72,11 +88,11 @@ it("EmissionListItem renders correctly with bus icon", () => {
   expect(tree).toMatchSnapshot();
 });
 
-it("EmissionListItem renders correctly with car icon", () => {
+it("EmissionsListItem renders correctly with car icon", () => {
   const tree = renderer
     .create(
       <FormattedProvider locale="en">
-        <EmissionListItem
+        <EmissionsListItem
           {...props}
           iconName={ui.getIconFromModelType(TransportEnum.car)}
         />
@@ -86,11 +102,11 @@ it("EmissionListItem renders correctly with car icon", () => {
   expect(tree).toMatchSnapshot();
 });
 
-it("EmissionListItem renders correctly with longHaulFlight icon", () => {
+it("EmissionsListItem renders correctly with longHaulFlight icon", () => {
   const tree = renderer
     .create(
       <FormattedProvider locale="en">
-        <EmissionListItem
+        <EmissionsListItem
           {...props}
           iconName={ui.getIconFromModelType(TransportEnum.longHaulFlight)}
         />
@@ -100,11 +116,11 @@ it("EmissionListItem renders correctly with longHaulFlight icon", () => {
   expect(tree).toMatchSnapshot();
 });
 
-it("EmissionListItem renders correctly with mediumHaulFlight icon", () => {
+it("EmissionsListItem renders correctly with mediumHaulFlight icon", () => {
   const tree = renderer
     .create(
       <FormattedProvider locale="en">
-        <EmissionListItem
+        <EmissionsListItem
           {...props}
           iconName={ui.getIconFromModelType(TransportEnum.mediumHaulFlight)}
         />
@@ -114,11 +130,11 @@ it("EmissionListItem renders correctly with mediumHaulFlight icon", () => {
   expect(tree).toMatchSnapshot();
 });
 
-it("EmissionListItem renders correctly with motorbike icon", () => {
+it("EmissionsListItem renders correctly with motorbike icon", () => {
   const tree = renderer
     .create(
       <FormattedProvider locale="en">
-        <EmissionListItem
+        <EmissionsListItem
           {...props}
           iconName={ui.getIconFromModelType(TransportEnum.motorbike)}
         />
@@ -128,11 +144,11 @@ it("EmissionListItem renders correctly with motorbike icon", () => {
   expect(tree).toMatchSnapshot();
 });
 
-it("EmissionListItem renders correctly with shortHaulFlight icon", () => {
+it("EmissionsListItem renders correctly with shortHaulFlight icon", () => {
   const tree = renderer
     .create(
       <FormattedProvider locale="en">
-        <EmissionListItem
+        <EmissionsListItem
           {...props}
           iconName={ui.getIconFromModelType(TransportEnum.shortHaulFlight)}
         />
@@ -142,11 +158,11 @@ it("EmissionListItem renders correctly with shortHaulFlight icon", () => {
   expect(tree).toMatchSnapshot();
 });
 
-it("EmissionListItem renders correctly with train icon", () => {
+it("EmissionsListItem renders correctly with train icon", () => {
   const tree = renderer
     .create(
       <FormattedProvider locale="en">
-        <EmissionListItem
+        <EmissionsListItem
           {...props}
           iconName={ui.getIconFromModelType(TransportEnum.train)}
         />

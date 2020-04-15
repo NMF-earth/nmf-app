@@ -2,25 +2,28 @@ import { StyleSheet } from "react-native";
 import { Colors, Font } from "../../style";
 
 export default StyleSheet.create({
+  red: {
+    color: Colors.bloodyRed,
+  },
   darkGray: {
-    color: Colors.darkLink70
+    color: Colors.darkLink70,
   },
   lightGray: {
-    color: Colors.swordGray
+    color: Colors.swordGray,
   },
   green: {
-    color: Colors.linkGreen
+    color: Colors.linkGreen,
   },
   white: {
-    color: Colors.white
+    color: Colors.white,
   },
   bold: {
-    fontFamily: Font.FontWeight.Bold
+    fontFamily: Font.FontWeight.Bold,
   },
-  light: {
-    fontFamily: Font.FontWeight.Light
+  lightWeightText: {
+    fontFamily: Font.FontWeight.Light,
   },
   center: {
-    textAlign: "center"
-  }
+    textAlign: "center",
+  },
 });

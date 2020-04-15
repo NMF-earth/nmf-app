@@ -1,13 +1,11 @@
 import React from "react";
 import { Text } from "../../components";
 import { t } from "../../utils";
-import { Layout } from "../../style";
+import { Layout, ComponentsStyle } from "../../style";
 
 const navigationOptions = () => ({
   headerStyle: {
-    elevation: 0,
-    shadowOpacity: 0,
-    borderBottomWidth: 0,
+    ...ComponentsStyle.header,
   },
   headerBackTitle: null,
   headerTitle: () => (

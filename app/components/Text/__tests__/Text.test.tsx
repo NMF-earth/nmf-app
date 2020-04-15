@@ -121,6 +121,11 @@ it("renders correctly Primary center", () => {
   expect(tree).toMatchSnapshot();
 });
 
+it("renders correctly Primary red", () => {
+  const tree = renderer.create(<Text.Primary red>test</Text.Primary>).toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
 /* Primary Tests */
 
 it("renders correctly Secondary", () => {
@@ -170,9 +175,16 @@ it("renders correctly Secondary center", () => {
   expect(tree).toMatchSnapshot();
 });
 
-it("renders correctly Secondary light", () => {
+it("renders correctly Secondary lightWeightText", () => {
   const tree = renderer
-    .create(<Text.Secondary light>test</Text.Secondary>)
+    .create(<Text.Secondary lightWeightText>test</Text.Secondary>)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it("renders correctly Secondary red", () => {
+  const tree = renderer
+    .create(<Text.Secondary red>test</Text.Secondary>)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
@@ -226,9 +238,16 @@ it("renders correctly Tertiary center", () => {
   expect(tree).toMatchSnapshot();
 });
 
-it("renders correctly Tertiary light", () => {
+it("renders correctly Tertiary lightWeightText", () => {
   const tree = renderer
-    .create(<Text.Tertiary light>test</Text.Tertiary>)
+    .create(<Text.Tertiary lightWeightText>test</Text.Tertiary>)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it("renders correctly Tertiary red", () => {
+  const tree = renderer
+    .create(<Text.Tertiary red>test</Text.Tertiary>)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });

@@ -2,12 +2,13 @@ import React from "react";
 
 import { storiesOf } from "@storybook/react-native";
 
-import { EmissionListItem } from "..";
+import EmissionsListItem from "..";
 import { FoodEnum, TransportEnum } from "carbon-footprint";
-import { ui } from "../../../utils";
+import { ui } from "../../../../../utils";
 
 const init = {
   id: "123",
+  isMitigated: false,
   title: "170 g of red meat",
   co2value: 2.1,
   onPress: () => alert("onPress"),
@@ -22,6 +23,7 @@ const whiteMeat = {
 
 const redMeat = {
   ...init,
+  isMitigated: true,
   iconName: ui.getIconFromModelType(FoodEnum.redMeat),
 };
 
@@ -34,6 +36,7 @@ const boat = {
 
 const bus = {
   ...init,
+  isMitigated: true,
   iconName: ui.getIconFromModelType(TransportEnum.bus),
 };
 
@@ -54,6 +57,7 @@ const mediumHaulFlight = {
 
 const motorbike = {
   ...init,
+  isMitigated: true,
   iconName: ui.getIconFromModelType(TransportEnum.motorbike),
 };
 
@@ -67,14 +71,14 @@ const train = {
   iconName: ui.getIconFromModelType(TransportEnum.train),
 };
 
-storiesOf("EmissionListItem", module)
-  .add("whiteMeat", () => <EmissionListItem {...whiteMeat} />)
-  .add("redMeat", () => <EmissionListItem {...redMeat} />)
-  .add("boat", () => <EmissionListItem {...boat} />)
-  .add("bus", () => <EmissionListItem {...bus} />)
-  .add("car", () => <EmissionListItem {...car} />)
-  .add("longHaulFlight", () => <EmissionListItem {...longHaulFlight} />)
-  .add("mediumHaulFlight", () => <EmissionListItem {...mediumHaulFlight} />)
-  .add("motorbike", () => <EmissionListItem {...motorbike} />)
-  .add("shortHaulFlight", () => <EmissionListItem {...shortHaulFlight} />)
-  .add("train", () => <EmissionListItem {...train} />);
+storiesOf("EmissionsListItem", module)
+  .add("whiteMeat", () => <EmissionsListItem {...whiteMeat} />)
+  .add("redMeat", () => <EmissionsListItem {...redMeat} />)
+  .add("boat", () => <EmissionsListItem {...boat} />)
+  .add("bus", () => <EmissionsListItem {...bus} />)
+  .add("car", () => <EmissionsListItem {...car} />)
+  .add("longHaulFlight", () => <EmissionsListItem {...longHaulFlight} />)
+  .add("mediumHaulFlight", () => <EmissionsListItem {...mediumHaulFlight} />)
+  .add("motorbike", () => <EmissionsListItem {...motorbike} />)
+  .add("shortHaulFlight", () => <EmissionsListItem {...shortHaulFlight} />)
+  .add("train", () => <EmissionsListItem {...train} />);

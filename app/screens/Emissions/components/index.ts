@@ -1,4 +1,4 @@
 import AddEmissionAndMitigateButtons from "./AddEmissionAndMitigateButtons";
-import SectionHeader from "./SectionHeader";
+import EmissionsList from "./EmissionsList";
 
-export { AddEmissionAndMitigateButtons, SectionHeader };
+export { AddEmissionAndMitigateButtons, EmissionsList };

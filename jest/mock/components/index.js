@@ -32,13 +32,25 @@ jest.mock(
 
 /* Emissions Screen */
 jest.mock(
-  "../../../app/screens/Emissions/components/AddEmissionAndMitigateButtons/AddEmissionAndMitigateButtons",
+  "../../../app/screens/Emissions/components/AddEmissionAndMitigateButtons",
   () => "AddEmissionAndMitigateButtons"
+);
+jest.mock(
+  "../../../app/screens/Emissions/components/EmissionsList",
+  () => "EmissionsList"
+);
+jest.mock(
+  "../../../app/screens/Emissions/components/EmissionsListItem",
+  () => "EmissionsListItem"
+);
+jest.mock(
+  "../../../app/screens/Emissions/components/SectionHeader",
+  () => "SectionHeader"
 );
 
 /* Settings Screen */
 jest.mock(
-  "../../../app/screens/Settings/components/SettingsRow/SettingsRow",
+  "../../../app/screens/Settings/components/SettingsRow",
   () => "SettingsRow"
 );
 
@@ -46,7 +58,6 @@ jest.mock(
 jest.mock("../../../app/components/TextInput", () => "TextInput");
 jest.mock("../../../app/components/SocialMedia", () => "SocialMedia");
 jest.mock("../../../app/components/Tag", () => "Tag");
-jest.mock("../../../app/components/EmissionListItem", () => "EmissionListItem");
 jest.mock("../../../app/components/TabbedView", () => "TabbedView");
 jest.mock("../../../app/components/NoEmission", () => "NoEmission");
 jest.mock("../../../app/components/Text", () => require("./Text.mock").default);

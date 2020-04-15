@@ -14,7 +14,7 @@ const socialMedia = [
   },
   {
     iconName: "github-circle",
-    url: "https://github.com/NotMyFaultEarth",
+    url: "https://github.com/NMF-earth",
   },
   {
     iconName: "twitter",

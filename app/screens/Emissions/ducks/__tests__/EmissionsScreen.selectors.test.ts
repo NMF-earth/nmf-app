@@ -2,8 +2,13 @@ import { selectors } from "../";
 import emissions from "../../../../ducks/emissions";
 import { Emission as EmissionType, EmissionEnum } from "../../../../interfaces";
 import { FoodEnum, TransportEnum } from "carbon-footprint";
+import { calculation } from "../../../../utils";
+import moment from "moment";
 
 let state;
+
+const today = moment();
+const monthsAgo = moment().subtract(2, "month");
 
 /* TODO: remove this function copied from selectors file */
 const getStartOfMonth = (time) => {
@@ -18,7 +23,7 @@ const getStartOfMonth = (time) => {
 
 const emissionNotMitigatedOld: EmissionType = {
   id: "3",
-  creationDate: "2020-03-01T17:06:40.185Z",
+  creationDate: monthsAgo.toISOString(),
   emissionModelType: FoodEnum.beans,
   emissionType: EmissionEnum.food,
   isMitigated: false,
@@ -27,7 +32,7 @@ const emissionNotMitigatedOld: EmissionType = {
 
 const emissionNotMitigated: EmissionType = {
   id: "1",
-  creationDate: "2020-04-01T17:06:40.185Z",
+  creationDate: today.toISOString(),
   emissionModelType: FoodEnum.beans,
   emissionType: EmissionEnum.food,
   isMitigated: false,
@@ -36,7 +41,7 @@ const emissionNotMitigated: EmissionType = {
 
 const emissionMitigated: EmissionType = {
   id: "12",
-  creationDate: "2020-03-01T10:35:15.411Z",
+  creationDate: today.toISOString(),
   emissionModelType: TransportEnum.boat,
   emissionType: EmissionEnum.transport,
   isMitigated: true,
@@ -54,30 +59,29 @@ describe("if there are emissions", () => {
     };
   });
 
-  test("`getEmissionsMitigated` should return mitigated emission(s)", () => {
-    expect(JSON.stringify(selectors.getEmissionsMitigated(state))).toEqual(
+  test("`getEmissions` should return all emissions", () => {
+    expect(JSON.stringify(selectors.getEmissions(state))).toEqual(
       JSON.stringify([
         {
           date: getStartOfMonth(emissionMitigated.creationDate),
-          data: [selectors.getEmissionListItem(emissionMitigated)],
-        },
-      ])
-    );
-  });
-
-  test("`getEmissionsToMitigate` should return emission(s) to mitigate", () =>
-    expect(JSON.stringify(selectors.getEmissionsToMitigate(state))).toEqual(
-      JSON.stringify([
-        {
-          date: getStartOfMonth(emissionNotMitigated.creationDate),
-          data: [selectors.getEmissionListItem(emissionNotMitigated)],
+          data: [
+            selectors.getEmissionListItem(emissionNotMitigated),
+            selectors.getEmissionListItem(emissionMitigated),
+          ],
+          co2value:
+            calculation.getC02ValueFromEmission(emissionNotMitigated) +
+            calculation.getC02ValueFromEmission(emissionMitigated),
         },
         {
           date: getStartOfMonth(emissionNotMitigatedOld.creationDate),
           data: [selectors.getEmissionListItem(emissionNotMitigatedOld)],
+          co2value: calculation.getC02ValueFromEmission(
+            emissionNotMitigatedOld
+          ),
         },
       ])
-    ));
+    );
+  });
 });
 
 describe("if there are no emissions", () => {
@@ -87,9 +91,6 @@ describe("if there are no emissions", () => {
     };
   });
 
-  test("`getEmissionsMitigated` should return mitigated emission(s)", () =>
-    expect(selectors.getEmissionsMitigated(state)).toEqual([]));
-
-  test("`getEmissionsToMitigate` should return emission(s) to mitigate", () =>
-    expect(selectors.getEmissionsToMitigate(state)).toEqual([]));
+  test("`getEmissions` should return empty array", () =>
+    expect(selectors.getEmissions(state)).toEqual([]));
 });
