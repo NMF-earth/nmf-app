@@ -23,7 +23,7 @@ interface Props {
 /* multiply or divide by 1000 to have kilograms or meters */
 const DEFAULT_SLIDER_VALUE_FOOD = 200 / 1000;
 const DEFAULT_SLIDER_VALUE_TRANSPORT = 150 * 1000;
-const DEFAULT_SLIDER_VALUE_CUSTOM = 800;
+const DEFAULT_SLIDER_VALUE_CUSTOM = 200;
 
 const AddEmissionScreen = ({
   navigation,
@@ -50,8 +50,13 @@ const AddEmissionScreen = ({
   const hideDatePicker = () => setDatePickerVisibility(false);
 
   const handleConfirm = (date: Date) => {
-    setCreationDate(moment(date));
     hideDatePicker();
+    const now = new Date();
+    if (date < now) {
+      setCreationDate(moment(date));
+    } else {
+      setCreationDate(moment(now));
+    }
   };
 
   const emissionPayload: EmissionPayload = {

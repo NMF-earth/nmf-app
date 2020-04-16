@@ -3,18 +3,18 @@ import { Layout } from "../../style";
 
 export default StyleSheet.create({
   container: {
-    ...Layout.containerWithPadding
+    ...Layout.containerWithPadding,
   },
   header: {
-    paddingVertical: 26
+    paddingVertical: 26,
   },
   subHeader: {
-    paddingVertical: 12
+    paddingVertical: 12,
   },
   separator: {
-    height: 30
+    height: 30,
   },
   githubView: {
-    flexDirection: "row"
-  }
+    flexDirection: "row",
+  },
 });

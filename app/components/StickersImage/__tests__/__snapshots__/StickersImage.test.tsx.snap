@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly StickersImage with bike image 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <Image
+    resizeMode="contain"
+    source={1}
+    style={
+      Object {
+        "alignSelf": "center",
+        "height": 650,
+        "marginVertical": 20,
+        "maxWidth": 320,
+        "width": "100%",
+      }
+    }
+  />
+</View>
+`;
+
+exports[`renders correctly StickersImage with earth image 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <Image
+    resizeMode="contain"
+    source={1}
+    style={
+      Object {
+        "alignSelf": "center",
+        "height": 650,
+        "marginVertical": 20,
+        "maxWidth": 320,
+        "width": "100%",
+      }
+    }
+  />
+</View>
+`;
+
+exports[`renders correctly StickersImage with restaurant image 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <Image
+    resizeMode="contain"
+    source={1}
+    style={
+      Object {
+        "alignSelf": "center",
+        "height": 650,
+        "marginVertical": 20,
+        "maxWidth": 320,
+        "width": "100%",
+      }
+    }
+  />
+</View>
+`;

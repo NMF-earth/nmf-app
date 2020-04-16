@@ -10,27 +10,9 @@ exports[`ComingSoonScreen renders correctly 1`] = `
   }
 >
   <View>
-    <View
-      style={
-        Object {
-          "flex": 1,
-          "height": "100%",
-          "marginTop": 14,
-          "width": "100%",
-        }
-      }
-    >
-      <Image
-        resizeMode="contain"
-        source={1}
-        style={
-          Object {
-            "height": 650,
-            "width": "100%",
-          }
-        }
-      />
-    </View>
+    <StickersImage
+      sticker="bike"
+    />
     <View
       style={
         Object {

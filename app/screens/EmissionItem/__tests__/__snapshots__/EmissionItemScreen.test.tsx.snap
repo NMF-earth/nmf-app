@@ -63,22 +63,41 @@ exports[`EmissionsScreen renders correctly 1`] = `
     <Text.H3>
       Date
     </Text.H3>
-    <Text.Primary
-      darkGray={true}
+    <View
       style={
-        Array [
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <Text.Primary
+        darkGray={true}
+        style={
+          Array [
+            Object {
+              "paddingBottom": 24,
+              "paddingTop": 6,
+            },
+            Object {
+              "textTransform": "capitalize",
+            },
+          ]
+        }
+      >
+        Invalid date 
+      </Text.Primary>
+      <Text.Primary
+        darkGray={true}
+        style={
           Object {
             "paddingBottom": 24,
             "paddingTop": 6,
-          },
-          Object {
-            "textTransform": "capitalize",
-          },
-        ]
-      }
-    >
-      Invalid date
-    </Text.Primary>
+          }
+        }
+      >
+        Invalid date
+      </Text.Primary>
+    </View>
     <Button.Primary
       fullWidth={true}
       onPress={[Function]}

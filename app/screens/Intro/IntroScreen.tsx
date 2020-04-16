@@ -1,10 +1,9 @@
 import React from "react";
-import { SafeAreaView, View, Image, TouchableOpacity } from "react-native";
+import { SafeAreaView, View, TouchableOpacity } from "react-native";
 import * as WebBrowser from "expo-web-browser";
 import { useSelector, useDispatch } from "react-redux";
 
-import { Text, Button } from "../../components";
-import ImagesAssets from "../../constants/ImagesAssets";
+import { Text, Button, StickersImage } from "../../components";
 import styles from "./IntroScreen.styles";
 import { t } from "../../utils";
 import { userPreferences } from "../../ducks";
@@ -39,11 +38,7 @@ const IntroScreen = ({ navigation }) => {
         </Text.Primary>
       </View>
       <View style={styles.imageView}>
-        <Image
-          style={styles.image}
-          resizeMode="contain"
-          source={ImagesAssets.stickers.restaurant}
-        />
+        <StickersImage sticker="restaurant" />
       </View>
       <View style={styles.termsOfUseView}>
         <Text.Secondary style={styles.paragraph}>

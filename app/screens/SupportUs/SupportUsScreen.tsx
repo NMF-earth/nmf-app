@@ -1,13 +1,14 @@
 import React from "react";
-import { ScrollView } from "react-native";
+import { ScrollView, View } from "react-native";
 
-import { Text } from "../../components";
+import { Text, StickersImage } from "../../components";
 import styles from "./SupportUsScreen.styles";
 import { t } from "../../utils";
 import navigationOptions from "./SupportUsScreen.navigationOptions";
 
 const SupportUsScreen = () => (
   <ScrollView style={styles.container}>
+    <StickersImage sticker="restaurant" />
     <Text.H2 style={styles.title}>
       {t("SUPPORT_US_SCREEN_WHY_DONATE_TITLE")}
     </Text.H2>
@@ -29,6 +30,7 @@ const SupportUsScreen = () => (
     >
       Open Collective
     </Text.Link>
+    <View style={styles.separator} />
   </ScrollView>
 );
 

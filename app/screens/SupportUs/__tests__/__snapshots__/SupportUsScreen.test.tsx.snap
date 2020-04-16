@@ -10,6 +10,9 @@ exports[`SupportUsScreen renders correctly 1`] = `
   }
 >
   <View>
+    <StickersImage
+      sticker="restaurant"
+    />
     <Text.H2
       style={
         Object {
@@ -67,6 +70,13 @@ exports[`SupportUsScreen renders correctly 1`] = `
     >
       Open Collective
     </Text.Link>
+    <View
+      style={
+        Object {
+          "height": 30,
+        }
+      }
+    />
   </View>
 </RCTScrollView>
 `;

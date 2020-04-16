@@ -4,31 +4,31 @@ import { PADDING_HORIZONTAL } from "../../../../constants/Layout";
 
 const VERTICAL_PADDING_BETWEEN_ITEMS = 12;
 const separationContainers = {
-  paddingVertical: VERTICAL_PADDING_BETWEEN_ITEMS
+  paddingVertical: VERTICAL_PADDING_BETWEEN_ITEMS,
 };
 
 export default StyleSheet.create({
   typeContainer: {
     paddingBottom: VERTICAL_PADDING_BETWEEN_ITEMS,
-    ...Layout.containerWithPadding
+    ...Layout.containerWithPadding,
   },
   tagContainer: {
     paddingLeft: PADDING_HORIZONTAL,
-    paddingBottom: VERTICAL_PADDING_BETWEEN_ITEMS
+    paddingBottom: VERTICAL_PADDING_BETWEEN_ITEMS,
   },
   durationContainer: {
     ...Layout.containerWithPadding,
-    ...separationContainers
+    ...separationContainers,
   },
   totalContainer: {
     ...Layout.containerWithPadding,
-    ...separationContainers
+    ...separationContainers,
   },
   miniHeader: {
-    paddingBottom: VERTICAL_PADDING_BETWEEN_ITEMS
+    paddingBottom: VERTICAL_PADDING_BETWEEN_ITEMS,
   },
   slider: {
     height: 40,
-    marginHorizontal: 24
-  }
+    marginHorizontal: 16,
+  },
 });

@@ -1,4 +1,5 @@
 export default {
+  oceanBlue: "#3957D0",
   linkGreen: "#4BB377",
   linkGreen10: "#DCF0E5",
   darkLink: "#111714",

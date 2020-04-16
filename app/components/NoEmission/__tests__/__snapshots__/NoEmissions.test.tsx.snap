@@ -10,27 +10,9 @@ exports[`renders correctly NoEmission 1`] = `
   }
 >
   <View>
-    <View
-      style={
-        Object {
-          "flex": 1,
-          "height": "100%",
-          "width": "100%",
-        }
-      }
-    >
-      <Image
-        resizeMode="contain"
-        source={1}
-        style={
-          Object {
-            "height": 650,
-            "marginVertical": 20,
-            "width": "100%",
-          }
-        }
-      />
-    </View>
+    <StickersImage
+      sticker="earth"
+    />
     <View
       style={
         Object {

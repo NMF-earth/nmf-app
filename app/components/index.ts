@@ -6,8 +6,10 @@ import GuidePreview from "./GuidePreview";
 import Tag from "./Tag";
 import SocialMedia from "./SocialMedia";
 import TextInput from "./TextInput";
+import StickersImage from "./StickersImage";
 
 export {
+  StickersImage,
   SocialMedia,
   Tag,
   TabBarIcon,

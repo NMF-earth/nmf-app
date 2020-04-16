@@ -17,7 +17,7 @@ const TextInput = ({
   onChangeText,
   value,
   placeholder,
-  title
+  title,
 }: Prop) => {
   const [isVisible, setIsVisible] = useState(isOptional ? false : true);
 
@@ -42,7 +42,7 @@ const TextInput = ({
         <TextInputRN
           placeholder={placeholder}
           style={styles.input}
-          onChangeText={text => onChangeText(text)}
+          onChangeText={(text) => onChangeText(text)}
           value={value}
         />
       )}

@@ -191,7 +191,7 @@ exports[`AddEmissionScreen renders correctly 1`] = `
             },
             Object {
               "height": 40,
-              "marginHorizontal": 24,
+              "marginHorizontal": 16,
             },
           ]
         }
@@ -217,7 +217,11 @@ exports[`AddEmissionScreen renders correctly 1`] = `
           Total
         </Text.H3>
         <Text.H2
-          green={true}
+          style={
+            Object {
+              "color": "#3957D0",
+            }
+          }
         >
           <FormattedNumber
             maximumFractionDigits={2}
@@ -291,7 +295,7 @@ exports[`AddEmissionScreen renders correctly 1`] = `
             bold={true}
             lightGray={true}
           >
-            Wednesday 15th April 2020
+            Thursday 16th April 2020
           </Text.Primary>
           <Text.Primary
             bold={true}

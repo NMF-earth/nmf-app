@@ -11,6 +11,9 @@ export default StyleSheet.create({
     paddingBottom: 24,
   },
   date: {
+    flexDirection: "row",
+  },
+  day: {
     textTransform: "capitalize",
   },
 });

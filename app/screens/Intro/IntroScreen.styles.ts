@@ -5,33 +5,29 @@ import { Layout } from "../../style";
 export default StyleSheet.create({
   welcomeView: {
     flex: 1,
-    justifyContent: "flex-end"
+    justifyContent: "flex-end",
   },
   container: {
     ...Layout.containerWithPadding,
-    justifyContent: "space-between"
-  },
-  image: {
-    width: "60%"
-  },
-  imageView: {
-    justifyContent: "center",
-    flex: 2,
-    alignItems: "center"
+    justifyContent: "space-between",
   },
   termsOfUseView: {
+    paddingHorizontal: PADDING_HORIZONTAL,
     alignItems: "center",
-    flex: 2
+    flex: 2,
   },
   paragraph: {
     textAlign: "center",
-    paddingVertical: 10
+    paddingVertical: 10,
   },
   buttonView: {
     position: "absolute",
     bottom: PADDING_HORIZONTAL,
     right: 0,
     left: 0,
-    marginHorizontal: PADDING_HORIZONTAL
-  }
+    marginHorizontal: PADDING_HORIZONTAL,
+  },
+  imageView: {
+    flex: 2,
+  },
 });

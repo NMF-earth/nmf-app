@@ -1,33 +1,22 @@
 import { StyleSheet } from "react-native";
-import { screen } from "../../constants/Layout";
 import { Layout } from "../../style";
 
 export default StyleSheet.create({
   container: {
-    ...Layout.containerWithPadding
-  },
-  image: {
-    marginVertical: 20,
-    width: "100%",
-    height: screen.width - 100
-  },
-  imageView: {
-    flex: 1,
-    width: "100%",
-    height: "100%"
+    ...Layout.containerWithPadding,
   },
   textView: {
     alignItems: "center",
-    flex: 1
+    flex: 1,
   },
   paragraph: {
     textAlign: "center",
-    paddingVertical: 4
+    paddingVertical: 4,
   },
   header: {
-    paddingVertical: 14
+    paddingVertical: 14,
   },
   button: {
-    marginVertical: 20
-  }
+    marginVertical: 20,
+  },
 });

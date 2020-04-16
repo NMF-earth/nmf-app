@@ -10,6 +10,9 @@ exports[`AboutScreen renders correctly 1`] = `
   }
 >
   <View>
+    <StickersImage
+      sticker="earth"
+    />
     <Text.Primary
       style={
         Object {
@@ -84,7 +87,7 @@ exports[`AboutScreen renders correctly 1`] = `
         Can be found on 
       </Text.Primary>
       <Text.Link
-        url="https://github.com/NotMyFaultEarth/nmf-app"
+        url="https://github.com/NMF-earth/nmf-app"
       >
         Github
       </Text.Link>

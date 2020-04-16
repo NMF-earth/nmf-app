@@ -34,20 +34,12 @@ exports[`renders correctly ComingSoon 1`] = `
   <View
     style={
       Object {
-        "alignItems": "center",
         "flex": 2,
-        "justifyContent": "center",
       }
     }
   >
-    <Image
-      resizeMode="contain"
-      source={1}
-      style={
-        Object {
-          "width": "60%",
-        }
-      }
+    <StickersImage
+      sticker="restaurant"
     />
   </View>
   <View
@@ -55,6 +47,7 @@ exports[`renders correctly ComingSoon 1`] = `
       Object {
         "alignItems": "center",
         "flex": 2,
+        "paddingHorizontal": 14,
       }
     }
   >

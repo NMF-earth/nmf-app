@@ -1,8 +1,7 @@
 import React from "react";
-import { ScrollView, View, Image } from "react-native";
+import { ScrollView, View } from "react-native";
 
-import { Text, Button } from "../";
-import ImagesAssets from "../../constants/ImagesAssets";
+import { Text, Button, StickersImage } from "../";
 import styles from "./NoEmission.style";
 import { t } from "../../utils";
 
@@ -13,13 +12,7 @@ interface Props {
 export default function NoEmission({ addEmission }: Props) {
   return (
     <ScrollView style={styles.container}>
-      <View style={styles.imageView}>
-        <Image
-          style={styles.image}
-          resizeMode="contain"
-          source={ImagesAssets.stickers.earth}
-        />
-      </View>
+      <StickersImage sticker="earth" />
       <View style={styles.textView}>
         <Text.H1 style={styles.header}>{t("NO_EMISSION_TITLE")}</Text.H1>
         <Text.Primary style={styles.paragraph}>

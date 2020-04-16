@@ -5,21 +5,15 @@ exports[`ProgressChart renders correctly 1`] = `
   style={
     Object {
       "backgroundColor": "#FFFFFF",
+      "borderColor": "#DCF0E5",
       "borderRadius": 14,
-      "elevation": 4,
+      "borderWidth": 2,
       "flex": 1,
       "marginHorizontal": 0,
       "marginVertical": 24,
       "paddingBottom": 14,
       "paddingHorizontal": 14,
       "paddingTop": 10,
-      "shadowColor": "#000",
-      "shadowOffset": Object {
-        "height": 2,
-        "width": 0,
-      },
-      "shadowOpacity": 0.23,
-      "shadowRadius": 2.62,
     }
   }
 >

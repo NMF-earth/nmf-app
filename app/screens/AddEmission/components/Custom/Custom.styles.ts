@@ -6,13 +6,13 @@ const VERTICAL_PADDING_BETWEEN_ITEMS = 12;
 export default StyleSheet.create({
   container: {
     paddingBottom: VERTICAL_PADDING_BETWEEN_ITEMS,
-    ...Layout.containerWithPadding
+    ...Layout.containerWithPadding,
   },
   header: {
-    paddingBottom: VERTICAL_PADDING_BETWEEN_ITEMS
+    paddingBottom: VERTICAL_PADDING_BETWEEN_ITEMS,
   },
   slider: {
     height: 40,
-    marginHorizontal: 24
-  }
+    marginHorizontal: 16,
+  },
 });
