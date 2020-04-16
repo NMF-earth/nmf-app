@@ -7,7 +7,6 @@
     "platforms": ["ios", "android"],
     "version": "0.2.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
     "splash": {
       "image": "./assets/images/splash.png",
       "resizeMode": "contain",
@@ -18,13 +17,15 @@
     },
     "assetBundlePatterns": ["**/*"],
     "ios": {
+      "icon": "./assets/images/ios.icon.png",
       "bundleIdentifier": "nmf.earth",
       "supportsTablet": true,
-      "buildNumber": "8"
+      "buildNumber": "9"
     },
     "android": {
+      "icon": "./assets/images/android.icon.png",
       "package": "nmf.earth",
-      "versionCode": 8
+      "versionCode": 9
     },
     "hooks": {
       "postPublish": [
