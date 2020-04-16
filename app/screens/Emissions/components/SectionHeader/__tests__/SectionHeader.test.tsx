@@ -5,7 +5,7 @@ import SectionHeader from "../SectionHeader";
 jest.unmock("../SectionHeader");
 
 it("should render SectionHeader when user is over budget", () => {
-  const date = new Date("20020-12-24T03:24:00");
+  const date = new Date("2020-12-24T03:24:00");
 
   const tree = renderer
     .create(
@@ -17,7 +17,7 @@ it("should render SectionHeader when user is over budget", () => {
 });
 
 it("should render SectionHeader when user is below budget", () => {
-  const date = new Date("20020-12-24T03:24:00");
+  const date = new Date("2020-12-24T03:24:00");
 
   const tree = renderer
     .create(

@@ -32,7 +32,7 @@ const getEmissionListItem = (item: Emission) => {
   return emissionItem;
 };
 
-const getStartOfMonth = (time) => moment(time).startOf("month").toISOString();
+const getStartOfMonth = (time) => moment(time).startOf("month").utc().format();
 
 const groupByMonth = groupBy((item: EmissionListItem) =>
   getStartOfMonth(item.creationDate)

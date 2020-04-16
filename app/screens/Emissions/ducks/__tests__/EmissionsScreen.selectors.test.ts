@@ -7,19 +7,11 @@ import moment from "moment";
 
 let state;
 
-const today = moment();
+const christmas = moment("2020-12-24T03:24:00");
 const monthsAgo = moment().subtract(2, "month");
 
 /* TODO: remove this function copied from selectors file */
-const getStartOfMonth = (time) => {
-  const date = new Date(time);
-  date.setDate(1);
-  date.setHours(0);
-  date.setMinutes(0);
-  date.setSeconds(0);
-  date.setMilliseconds(0);
-  return date.toISOString();
-};
+const getStartOfMonth = (time) => moment(time).startOf("month").format();
 
 const emissionNotMitigatedOld: EmissionType = {
   id: "3",
@@ -32,7 +24,7 @@ const emissionNotMitigatedOld: EmissionType = {
 
 const emissionNotMitigated: EmissionType = {
   id: "1",
-  creationDate: today.toISOString(),
+  creationDate: christmas.toISOString(),
   emissionModelType: FoodEnum.beans,
   emissionType: EmissionEnum.food,
   isMitigated: false,
@@ -41,7 +33,7 @@ const emissionNotMitigated: EmissionType = {
 
 const emissionMitigated: EmissionType = {
   id: "12",
-  creationDate: today.toISOString(),
+  creationDate: christmas.toISOString(),
   emissionModelType: TransportEnum.boat,
   emissionType: EmissionEnum.transport,
   isMitigated: true,
@@ -63,7 +55,9 @@ describe("if there are emissions", () => {
     expect(JSON.stringify(selectors.getEmissions(state))).toEqual(
       JSON.stringify([
         {
-          date: getStartOfMonth(emissionMitigated.creationDate),
+          date: moment(getStartOfMonth(emissionMitigated.creationDate))
+            .utc()
+            .format(),
           data: [
             selectors.getEmissionListItem(emissionNotMitigated),
             selectors.getEmissionListItem(emissionMitigated),
@@ -73,7 +67,9 @@ describe("if there are emissions", () => {
             calculation.getC02ValueFromEmission(emissionMitigated),
         },
         {
-          date: getStartOfMonth(emissionNotMitigatedOld.creationDate),
+          date: moment(getStartOfMonth(emissionNotMitigatedOld.creationDate))
+            .utc()
+            .format(),
           data: [selectors.getEmissionListItem(emissionNotMitigatedOld)],
           co2value: calculation.getC02ValueFromEmission(
             emissionNotMitigatedOld

@@ -30,7 +30,7 @@ exports[`should render SectionHeader when user is below budget 1`] = `
       }
     }
   >
-    Invalid date
+    December 2020
   </Text.Primary>
   <Text.Secondary
     green={true}
@@ -71,7 +71,7 @@ exports[`should render SectionHeader when user is over budget 1`] = `
       }
     }
   >
-    Invalid date
+    December 2020
   </Text.Primary>
   <Text.Secondary
     green={false}

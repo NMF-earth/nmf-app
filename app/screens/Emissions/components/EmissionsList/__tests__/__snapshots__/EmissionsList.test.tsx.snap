@@ -29,7 +29,7 @@ exports[`EmissionsList renders correctly 1`] = `
             "title": "Boat",
           },
         ],
-        "date": "2020-02-29T23:00:00.000Z",
+        "date": "2020-02-29T23:00:00Z",
       },
       Object {
         "co2value": 60,
@@ -45,7 +45,7 @@ exports[`EmissionsList renders correctly 1`] = `
             "title": "Custom",
           },
         ],
-        "date": "2019-12-31T23:00:00.000Z",
+        "date": "2019-12-31T23:00:00Z",
       },
     ]
   }
@@ -92,7 +92,7 @@ exports[`EmissionsList renders correctly 1`] = `
             "title": "Boat",
           },
         ],
-        "date": "2020-02-29T23:00:00.000Z",
+        "date": "2020-02-29T23:00:00Z",
       },
       Object {
         "co2value": 60,
@@ -108,7 +108,7 @@ exports[`EmissionsList renders correctly 1`] = `
             "title": "Custom",
           },
         ],
-        "date": "2019-12-31T23:00:00.000Z",
+        "date": "2019-12-31T23:00:00Z",
       },
     ]
   }
@@ -129,7 +129,7 @@ exports[`EmissionsList renders correctly 1`] = `
     >
       <SectionHeader
         co2value={20.0803}
-        date="2020-02-29T23:00:00.000Z"
+        date="2020-02-29T23:00:00Z"
         monthlyCarbonBudget={24}
       />
     </View>
@@ -169,7 +169,7 @@ exports[`EmissionsList renders correctly 1`] = `
     >
       <SectionHeader
         co2value={60}
-        date="2019-12-31T23:00:00.000Z"
+        date="2019-12-31T23:00:00Z"
         monthlyCarbonBudget={24}
       />
     </View>
