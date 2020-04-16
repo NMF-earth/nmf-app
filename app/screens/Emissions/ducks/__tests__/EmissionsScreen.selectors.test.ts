@@ -55,9 +55,7 @@ describe("if there are emissions", () => {
     expect(JSON.stringify(selectors.getEmissions(state))).toEqual(
       JSON.stringify([
         {
-          date: moment(getStartOfMonth(emissionMitigated.creationDate))
-            .utc()
-            .format(),
+          date: getStartOfMonth(emissionMitigated.creationDate),
           data: [
             selectors.getEmissionListItem(emissionNotMitigated),
             selectors.getEmissionListItem(emissionMitigated),
@@ -67,9 +65,7 @@ describe("if there are emissions", () => {
             calculation.getC02ValueFromEmission(emissionMitigated),
         },
         {
-          date: moment(getStartOfMonth(emissionNotMitigatedOld.creationDate))
-            .utc()
-            .format(),
+          date: getStartOfMonth(emissionNotMitigatedOld.creationDate),
           data: [selectors.getEmissionListItem(emissionNotMitigatedOld)],
           co2value: calculation.getC02ValueFromEmission(
             emissionNotMitigatedOld
