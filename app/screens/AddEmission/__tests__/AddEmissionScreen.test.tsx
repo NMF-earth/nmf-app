@@ -7,9 +7,19 @@ import { FormattedProvider } from "react-native-globalize";
 const props = {
   navigation: {
     push: jest.fn(),
-    goBack: jest.fn()
-  }
+    goBack: jest.fn(),
+  },
 };
+
+const RealDate = Date.now;
+
+beforeAll(() => {
+  Date.now = jest.fn(() => new Date("2019-04-07T10:20:30Z").getTime());
+});
+
+afterAll(() => {
+  Date.now = RealDate;
+});
 
 it("AddEmissionScreen renders correctly", () => {
   const tree = renderer

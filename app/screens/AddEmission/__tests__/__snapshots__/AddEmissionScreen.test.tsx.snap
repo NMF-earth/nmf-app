@@ -295,7 +295,7 @@ exports[`AddEmissionScreen renders correctly 1`] = `
             bold={true}
             lightGray={true}
           >
-            Thursday 16th April 2020
+            Sunday 7th April 2019
           </Text.Primary>
           <Text.Primary
             bold={true}

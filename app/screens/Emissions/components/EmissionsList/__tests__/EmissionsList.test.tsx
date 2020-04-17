@@ -59,11 +59,10 @@ const props = {
   },
 };
 
-// Hide for now
-// it("EmissionsList renders correctly", () => {
-//   const tree = renderer.create(<EmissionsList {...props} />).toJSON();
-//   expect(tree).toMatchSnapshot();
-// });
+it("EmissionsList renders correctly", () => {
+  const tree = renderer.create(<EmissionsList {...props} />).toJSON();
+  expect(tree).toMatchSnapshot();
+});
 
 it("EmissionsList renders correctly if no emissions", () => {
   const tree = renderer
