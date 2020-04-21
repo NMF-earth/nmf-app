@@ -2,9 +2,6 @@
   "EMISSIONS_SCREEN_ADD": "Lägg till",
   "EMISSIONS_SCREEN_HEADER_OF_BUDGET": "of budget",
   "EMISSIONS_SCREEN_MITIGATE": "Kompensera",
-  "EMISSIONS_SCREEN_MITIGATED": "Kompenserade",
-  "EMISSIONS_SCREEN_NO_EMISSION_MITIGATED": "Kompenserade utsläpp kommer att synas här.",
   "EMISSIONS_SCREEN_TAB_NAME": "Utsläpp",
-  "EMISSIONS_SCREEN_TITLE": "Utsläpp",
-  "EMISSIONS_SCREEN_TO_OFFSET": "Ännu ej kompenserade"
+  "EMISSIONS_SCREEN_TITLE": "Utsläpp"
 }
