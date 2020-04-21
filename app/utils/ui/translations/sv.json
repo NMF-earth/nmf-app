@@ -1,11 +1,11 @@
 {
-  "TRAIN": "Train",
-  "CAR": "Car",
-  "PLANE": "Plane",
-  "BOAT": "Boat",
-  "BUS": "Bus",
-  "MOTORBIKE": "Motorbike",
-  "RED_MEAT": "Red Meat",
-  "WHITE_MEAT": "White Meat",
-  "CUSTOM": "Custom"
+  "TRAIN": "Tåg",
+  "CAR": "Bil",
+  "PLANE": "Flyg",
+  "BOAT": "Båt",
+  "BUS": "Buss",
+  "MOTORBIKE": "MC",
+  "RED_MEAT": "Rött kött",
+  "WHITE_MEAT": "Vitt kött",
+  "CUSTOM": "Annat"
 }
