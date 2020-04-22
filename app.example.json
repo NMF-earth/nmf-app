@@ -20,12 +20,12 @@
       "icon": "./assets/images/ios.icon.png",
       "bundleIdentifier": "nmf.earth",
       "supportsTablet": true,
-      "buildNumber": "10"
+      "buildNumber": "11"
     },
     "android": {
       "icon": "./assets/images/android.icon.png",
       "package": "nmf.earth",
-      "versionCode": 10
+      "versionCode": 11
     },
     "hooks": {
       "postPublish": [
