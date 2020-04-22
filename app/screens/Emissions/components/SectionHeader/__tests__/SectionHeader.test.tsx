@@ -28,7 +28,7 @@ it("should render SectionHeader when user is below budget", () => {
   expect(tree).toMatchSnapshot();
 });
 
-it("should render SectionHeader when user has budget below 0.5%", () => {
+it("should render SectionHeader when user has budget below 1%", () => {
   const date = new Date("2020-12-24T03:24:00");
 
   const tree = renderer

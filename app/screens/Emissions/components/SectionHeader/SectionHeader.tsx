@@ -19,13 +19,12 @@ const SectionHeader = ({
   monthlyCarbonBudget,
   language = "",
 }: Props & LocalizationContextProps) => {
-  let percentageBudget = 0.0;
+  let percentageBudget = 1;
 
   if (monthlyCarbonBudget && co2value) {
     percentageBudget = Math.round((co2value / monthlyCarbonBudget) * 100);
     if (percentageBudget < 1) {
-      percentageBudget =
-        Math.round((co2value / monthlyCarbonBudget) * 1000) / 10;
+      percentageBudget = 1;
     }
   }
 

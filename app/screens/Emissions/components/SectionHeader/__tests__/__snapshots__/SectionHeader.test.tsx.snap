@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render SectionHeader when user has budget below 0.5% 1`] = `
+exports[`should render SectionHeader when user has budget below 1% 1`] = `
 <View
   style={
     Object {
@@ -36,7 +36,7 @@ exports[`should render SectionHeader when user has budget below 0.5% 1`] = `
     green={true}
     red={false}
   >
-    0.1 % of budget
+    1 % of budget
   </Text.Secondary>
 </View>
 `;
