@@ -4,38 +4,66 @@ import SectionHeader from "../SectionHeader";
 
 jest.unmock("../SectionHeader");
 
-it("should render SectionHeader when user is over budget", () => {
+describe("SectionHeader", () => {
   const date = new Date("2020-12-24T03:24:00");
 
-  const tree = renderer
-    .create(
-      <SectionHeader co2value={30} monthlyCarbonBudget={20} date={date} />
-    )
-    .toJSON();
+  it("should render when user is over budget", () => {
+    const tree = renderer
+      .create(
+        <SectionHeader co2value={30} monthlyCarbonBudget={20} date={date} />
+      )
+      .toJSON();
 
-  expect(tree).toMatchSnapshot();
-});
+    expect(tree).toMatchSnapshot();
+  });
 
-it("should render SectionHeader when user is below budget", () => {
-  const date = new Date("2020-12-24T03:24:00");
+  it("should render when user is below budget", () => {
+    const tree = renderer
+      .create(
+        <SectionHeader co2value={10} monthlyCarbonBudget={20} date={date} />
+      )
+      .toJSON();
 
-  const tree = renderer
-    .create(
-      <SectionHeader co2value={10} monthlyCarbonBudget={20} date={date} />
-    )
-    .toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 
-  expect(tree).toMatchSnapshot();
-});
+  it("should render when user has budget below 1%", () => {
+    const tree = renderer
+      .create(
+        <SectionHeader co2value={1} monthlyCarbonBudget={1000} date={date} />
+      )
+      .toJSON();
 
-it("should render SectionHeader when user has budget below 1%", () => {
-  const date = new Date("2020-12-24T03:24:00");
+    expect(tree).toMatchSnapshot();
+  });
 
-  const tree = renderer
-    .create(
-      <SectionHeader co2value={1} monthlyCarbonBudget={1000} date={date} />
-    )
-    .toJSON();
+  it("should render when co2value equals 0", () => {
+    const tree = renderer
+      .create(
+        <SectionHeader co2value={0} monthlyCarbonBudget={1} date={date} />
+      )
+      .toJSON();
 
-  expect(tree).toMatchSnapshot();
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("should render when monthlyCarbonBudget equals 0", () => {
+    const tree = renderer
+      .create(
+        <SectionHeader co2value={1} monthlyCarbonBudget={0} date={date} />
+      )
+      .toJSON();
+
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("should render when monthlyCarbonBudget and co2value equals 0", () => {
+    const tree = renderer
+      .create(
+        <SectionHeader co2value={0} monthlyCarbonBudget={0} date={date} />
+      )
+      .toJSON();
+
+    expect(tree).toMatchSnapshot();
+  });
 });

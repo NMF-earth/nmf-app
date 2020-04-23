@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render SectionHeader when user has budget below 1% 1`] = `
+exports[`SectionHeader should render when co2value equals 0 1`] = `
 <View
   style={
     Object {
@@ -41,7 +41,130 @@ exports[`should render SectionHeader when user has budget below 1% 1`] = `
 </View>
 `;
 
-exports[`should render SectionHeader when user is below budget 1`] = `
+exports[`SectionHeader should render when monthlyCarbonBudget and co2value equals 0 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "borderBottomColor": "#DCF0E5",
+      "borderBottomWidth": 2,
+      "elevation": 0,
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+      "paddingHorizontal": 14,
+      "paddingVertical": 10,
+      "shadowColor": "transparent",
+      "shadowOffset": Object {
+        "height": 0,
+        "width": 0,
+      },
+      "shadowRadius": 0,
+    }
+  }
+>
+  <Text.Primary
+    bold={true}
+    darkGray={true}
+    style={
+      Object {
+        "textTransform": "capitalize",
+      }
+    }
+  >
+    December 2020
+  </Text.Primary>
+  <Text.Secondary
+    green={true}
+    red={false}
+  >
+    1 % of budget
+  </Text.Secondary>
+</View>
+`;
+
+exports[`SectionHeader should render when monthlyCarbonBudget equals 0 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "borderBottomColor": "#DCF0E5",
+      "borderBottomWidth": 2,
+      "elevation": 0,
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+      "paddingHorizontal": 14,
+      "paddingVertical": 10,
+      "shadowColor": "transparent",
+      "shadowOffset": Object {
+        "height": 0,
+        "width": 0,
+      },
+      "shadowRadius": 0,
+    }
+  }
+>
+  <Text.Primary
+    bold={true}
+    darkGray={true}
+    style={
+      Object {
+        "textTransform": "capitalize",
+      }
+    }
+  >
+    December 2020
+  </Text.Primary>
+  <Text.Secondary
+    green={true}
+    red={false}
+  >
+    1 % of budget
+  </Text.Secondary>
+</View>
+`;
+
+exports[`SectionHeader should render when user has budget below 1% 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "borderBottomColor": "#DCF0E5",
+      "borderBottomWidth": 2,
+      "elevation": 0,
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+      "paddingHorizontal": 14,
+      "paddingVertical": 10,
+      "shadowColor": "transparent",
+      "shadowOffset": Object {
+        "height": 0,
+        "width": 0,
+      },
+      "shadowRadius": 0,
+    }
+  }
+>
+  <Text.Primary
+    bold={true}
+    darkGray={true}
+    style={
+      Object {
+        "textTransform": "capitalize",
+      }
+    }
+  >
+    December 2020
+  </Text.Primary>
+  <Text.Secondary
+    green={true}
+    red={false}
+  >
+    1 % of budget
+  </Text.Secondary>
+</View>
+`;
+
+exports[`SectionHeader should render when user is below budget 1`] = `
 <View
   style={
     Object {
@@ -82,7 +205,7 @@ exports[`should render SectionHeader when user is below budget 1`] = `
 </View>
 `;
 
-exports[`should render SectionHeader when user is over budget 1`] = `
+exports[`SectionHeader should render when user is over budget 1`] = `
 <View
   style={
     Object {

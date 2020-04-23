@@ -15,8 +15,8 @@ interface Props {
 
 const SectionHeader = ({
   date,
-  co2value,
-  monthlyCarbonBudget,
+  co2value = 1,
+  monthlyCarbonBudget = 1,
   language = "",
 }: Props & LocalizationContextProps) => {
   let percentageBudget = 1;
