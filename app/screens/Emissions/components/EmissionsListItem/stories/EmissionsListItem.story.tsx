@@ -21,6 +21,21 @@ const whiteMeat = {
   iconName: ui.getIconFromModelType(FoodEnum.whiteMeat),
 };
 
+const coffee = {
+  ...init,
+  iconName: ui.getIconFromModelType(FoodEnum.coffee),
+};
+
+const chocolate = {
+  ...init,
+  iconName: ui.getIconFromModelType(FoodEnum.chocolate),
+};
+
+const fish = {
+  ...init,
+  iconName: ui.getIconFromModelType(FoodEnum.fish),
+};
+
 const redMeat = {
   ...init,
   isMitigated: true,
@@ -74,6 +89,9 @@ const train = {
 storiesOf("EmissionsListItem", module)
   .add("whiteMeat", () => <EmissionsListItem {...whiteMeat} />)
   .add("redMeat", () => <EmissionsListItem {...redMeat} />)
+  .add("fish", () => <EmissionsListItem {...fish} />)
+  .add("chocolate", () => <EmissionsListItem {...chocolate} />)
+  .add("coffee", () => <EmissionsListItem {...coffee} />)
   .add("boat", () => <EmissionsListItem {...boat} />)
   .add("bus", () => <EmissionsListItem {...bus} />)
   .add("car", () => <EmissionsListItem {...car} />)
