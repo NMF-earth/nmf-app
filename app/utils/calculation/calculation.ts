@@ -48,12 +48,18 @@ const getFlightEmissionValue = (duration: number) => {
 };
 
 const getC02ValueFromEmission = (emission: Emission) => {
-  if (emission.emissionModelType === EmissionEnum.custom) {
+  const noCalculationEmissionModelType = [
+    EmissionEnum.streaming,
+    EmissionEnum.custom,
+  ];
+
+  if (noCalculationEmissionModelType.includes(emission.emissionType)) {
     return emission.value;
   }
+
   const model = {
     ...transport,
-    ...food
+    ...food,
   };
   return emission.value * model[emission.emissionModelType];
 };
@@ -67,5 +73,5 @@ export default {
   getLatestEmission,
   getC02ValueFromEmission,
   getFlightType,
-  getFlightEmissionValue
+  getFlightEmissionValue,
 };

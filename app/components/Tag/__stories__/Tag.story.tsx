@@ -7,7 +7,7 @@ import Tag from "..";
 const props = {
   selected: false,
   title: "Transport",
-  onPress: () => alert("onPress")
+  onPress: () => alert("onPress"),
 };
 
 const container: ViewStyle = { flexDirection: "row", margin: 20 };
@@ -51,5 +51,15 @@ storiesOf("Tag", module)
   .add("build icon and selected", () => (
     <View style={container}>
       <Tag {...props} icon="md-build" selected />
+    </View>
+  ))
+  .add("play-circle icon and not selected", () => (
+    <View style={container}>
+      <Tag {...props} icon="md-play-circle" />
+    </View>
+  ))
+  .add("play-circle icon and selected", () => (
+    <View style={container}>
+      <Tag {...props} icon="md-play-circle" selected />
     </View>
   ));

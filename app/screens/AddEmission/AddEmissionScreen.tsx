@@ -1,13 +1,26 @@
 import React, { useState } from "react";
 import moment from "moment";
 import { View, ScrollView, TouchableOpacity } from "react-native";
-import { TransportEnum, FoodEnum } from "carbon-footprint";
+import {
+  TransportEnum,
+  FoodEnum,
+  StreamingEnum,
+  ElectricityEnum,
+  getInternetUsageCarbonImpact,
+  streaming,
+} from "carbon-footprint";
 import DateTimePickerModal from "react-native-modal-datetime-picker";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 import { Text, Tag, TextInput } from "../../components";
 import styles from "./AddEmissionScreen.styles";
 import navigationOptions from "./AddEmissionScreen.navigationOptions";
-import { Food, Transport, Custom, AddEmissionButton } from "./components";
+import {
+  Food,
+  Transport,
+  Streaming,
+  Custom,
+  AddEmissionButton,
+} from "./components";
 import { EmissionEnum } from "../../interfaces";
 import { EmissionPayload } from "../../interfaces/emission/emission.interface";
 import { calculation, t } from "../../utils";
@@ -23,6 +36,7 @@ interface Props {
 /* multiply or divide by 1000 to have kilograms or meters */
 const DEFAULT_SLIDER_VALUE_FOOD = 200 / 1000;
 const DEFAULT_SLIDER_VALUE_TRANSPORT = 150 * 1000;
+const DEFAULT_SLIDER_VALUE_STREAMING = 120 * 60;
 const DEFAULT_SLIDER_VALUE_CUSTOM = 200;
 
 const AddEmissionScreen = ({
@@ -34,8 +48,12 @@ const AddEmissionScreen = ({
   const [emissionType, setEmissionType] = useState(EmissionEnum.transport);
   const [transportType, setTransportType] = useState(TransportEnum.car);
   const [foodType, setFoodType] = useState(FoodEnum.redMeat);
+  const [streamingType, setStreamingType] = useState(StreamingEnum.HDVideo);
   const [durationMinutes, setDurationMinutes] = useState(
     DEFAULT_SLIDER_VALUE_TRANSPORT / 1000
+  );
+  const [durationSeconds, setDurationSeconds] = useState(
+    DEFAULT_SLIDER_VALUE_STREAMING
   );
   const [co2eqKilograms, setCo2eqKilograms] = useState(
     DEFAULT_SLIDER_VALUE_CUSTOM
@@ -109,6 +127,26 @@ const AddEmissionScreen = ({
     return null;
   };
 
+  const renderStreaming = () => {
+    if (emissionType === EmissionEnum.streaming) {
+      emissionPayload.value = getInternetUsageCarbonImpact(
+        durationSeconds,
+        streaming[streamingType] * durationSeconds,
+        ElectricityEnum.world
+      );
+      emissionPayload.emissionModelType = streamingType;
+      return (
+        <Streaming
+          defaultValueSlider={DEFAULT_SLIDER_VALUE_STREAMING}
+          setDurationSeconds={setDurationSeconds}
+          setStreamingType={setStreamingType}
+          streamingType={streamingType}
+        />
+      );
+    }
+    return null;
+  };
+
   const renderCustom = () => {
     if (emissionType === EmissionEnum.custom) {
       emissionPayload.value = co2eqKilograms;
@@ -143,16 +181,24 @@ const AddEmissionScreen = ({
             onPress={() => setEmissionType(EmissionEnum.food)}
           />
           <Tag
+            icon={"md-play-circle"}
+            selected={emissionType === EmissionEnum.streaming}
+            title={t("ADD_EMISSION_STREAMING")}
+            onPress={() => setEmissionType(EmissionEnum.streaming)}
+          />
+          <Tag
             icon={"md-build"}
             selected={emissionType === EmissionEnum.custom}
             title={t("ADD_EMISSION_CUSTOM")}
             onPress={() => setEmissionType(EmissionEnum.custom)}
           />
+          <View style={styles.separator} />
         </ScrollView>
       </View>
 
       {renderTransport()}
       {renderFood()}
+      {renderStreaming()}
       {renderCustom()}
 
       <TextInput

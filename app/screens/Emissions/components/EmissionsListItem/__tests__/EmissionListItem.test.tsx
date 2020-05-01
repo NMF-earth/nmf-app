@@ -2,7 +2,7 @@ import React from "react";
 import renderer from "react-test-renderer";
 import EmissionsListItem from "../EmissionsListItem";
 import { FormattedProvider } from "react-native-globalize";
-import { FoodEnum, TransportEnum } from "carbon-footprint";
+import { FoodEnum, TransportEnum, StreamingEnum } from "carbon-footprint";
 import { ui } from "../../../../../utils";
 
 jest.unmock("../EmissionsListItem");
@@ -207,6 +207,62 @@ it("EmissionsListItem renders correctly with train icon", () => {
         <EmissionsListItem
           {...props}
           iconName={ui.getIconFromModelType(TransportEnum.train)}
+        />
+      </FormattedProvider>
+    )
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it("EmissionsListItem renders correctly with hd video icon", () => {
+  const tree = renderer
+    .create(
+      <FormattedProvider locale="en">
+        <EmissionsListItem
+          {...props}
+          iconName={ui.getIconFromModelType(StreamingEnum.HDVideo)}
+        />
+      </FormattedProvider>
+    )
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it("EmissionsListItem renders correctly with audio icon", () => {
+  const tree = renderer
+    .create(
+      <FormattedProvider locale="en">
+        <EmissionsListItem
+          {...props}
+          iconName={ui.getIconFromModelType(StreamingEnum.audioMP3)}
+        />
+      </FormattedProvider>
+    )
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it("EmissionsListItem renders correctly with full hd video icon", () => {
+  const tree = renderer
+    .create(
+      <FormattedProvider locale="en">
+        <EmissionsListItem
+          {...props}
+          iconName={ui.getIconFromModelType(StreamingEnum.fullHDVideo)}
+        />
+      </FormattedProvider>
+    )
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it("EmissionsListItem renders correctly with ultra hd video icon", () => {
+  const tree = renderer
+    .create(
+      <FormattedProvider locale="en">
+        <EmissionsListItem
+          {...props}
+          iconName={ui.getIconFromModelType(StreamingEnum.ultraHDVideo)}
         />
       </FormattedProvider>
     )

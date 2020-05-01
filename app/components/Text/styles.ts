@@ -17,6 +17,9 @@ export default StyleSheet.create({
   white: {
     color: Colors.white,
   },
+  oceanBlue: {
+    color: Colors.oceanBlue,
+  },
   bold: {
     fontFamily: Font.FontWeight.Bold,
   },

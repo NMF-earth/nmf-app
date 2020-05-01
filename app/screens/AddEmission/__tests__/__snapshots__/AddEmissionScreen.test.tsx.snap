@@ -84,10 +84,23 @@ exports[`AddEmissionScreen renders correctly 1`] = `
               title="Food"
             />
             <Tag
+              icon="md-play-circle"
+              onPress={[Function]}
+              selected={false}
+              title="Streaming"
+            />
+            <Tag
               icon="md-build"
               onPress={[Function]}
               selected={false}
               title="Custom"
+            />
+            <View
+              style={
+                Object {
+                  "width": 14,
+                }
+              }
             />
           </View>
         </RCTScrollView>

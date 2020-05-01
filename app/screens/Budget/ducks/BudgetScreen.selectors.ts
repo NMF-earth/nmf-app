@@ -3,10 +3,10 @@ import moment from "moment";
 import { budget, emissions } from "../../../ducks";
 import { calculation } from "../../../utils";
 
-const isEmissionInCurrentMonth = emission =>
+const isEmissionInCurrentMonth = (emission) =>
   moment(emission.creationDate).isSame(new Date(), "month") &&
   moment(emission.creationDate).isSame(new Date(), "year");
-const isEmissionInCurrentYear = emission =>
+const isEmissionInCurrentYear = (emission) =>
   moment(emission.creationDate).isSame(new Date(), "year");
 
 const getCarbonValue = pipe(
@@ -27,8 +27,8 @@ const getCurrentMonthFoodCarbonValue = pipe(
   getCurrentMonthEmissions,
   getCarbonValue
 );
-const getCurrentMonthCustomCarbonValue = pipe(
-  emissions.selectors.getCustomEmissions,
+const getCurrentMonthOtherCarbonValue = pipe(
+  emissions.selectors.getOtherEmissions,
   getCurrentMonthEmissions,
   getCarbonValue
 );
@@ -45,30 +45,30 @@ const getCurrentYearFoodCarbonValue = pipe(
   getCurrentYearEmissions,
   getCarbonValue
 );
-const getCurrentYearCustomCarbonValue = pipe(
-  emissions.selectors.getCustomEmissions,
+const getCurrentYearOtherCarbonValue = pipe(
+  emissions.selectors.getOtherEmissions,
   getCurrentYearEmissions,
   getCarbonValue
 );
 
-const getCurrentMonthAllCarbonValue = state =>
+const getCurrentMonthAllCarbonValue = (state) =>
   getCurrentMonthTransportCarbonValue(state) +
   getCurrentMonthFoodCarbonValue(state) +
-  getCurrentMonthCustomCarbonValue(state);
+  getCurrentMonthOtherCarbonValue(state);
 
-const getCurrentYearAllCarbonValue = state =>
+const getCurrentYearAllCarbonValue = (state) =>
   getCurrentYearTransportCarbonValue(state) +
   getCurrentYearFoodCarbonValue(state) +
-  getCurrentYearCustomCarbonValue(state);
+  getCurrentYearOtherCarbonValue(state);
 
 export default {
   getMonthlyCarbonBudget: budget.selectors.getMonthlyCarbonBudget,
   getCurrentMonthTransportCarbonValue,
   getCurrentMonthFoodCarbonValue,
-  getCurrentMonthCustomCarbonValue,
+  getCurrentMonthOtherCarbonValue,
   getCurrentMonthAllCarbonValue,
   getCurrentYearTransportCarbonValue,
   getCurrentYearFoodCarbonValue,
-  getCurrentYearCustomCarbonValue,
-  getCurrentYearAllCarbonValue
+  getCurrentYearOtherCarbonValue,
+  getCurrentYearAllCarbonValue,
 };

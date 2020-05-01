@@ -27,7 +27,7 @@ const BudgetScreen = (props: Props) => {
     selectors.getCurrentMonthFoodCarbonValue
   );
   const otherCurrentMonthEmissions = useSelector(
-    selectors.getCurrentMonthCustomCarbonValue
+    selectors.getCurrentMonthOtherCarbonValue
   );
 
   const totalCurrentYearEmissions = useSelector(
@@ -40,7 +40,7 @@ const BudgetScreen = (props: Props) => {
     selectors.getCurrentYearFoodCarbonValue
   );
   const otherCurrentYearEmissions = useSelector(
-    selectors.getCurrentYearCustomCarbonValue
+    selectors.getCurrentYearOtherCarbonValue
   );
 
   return (

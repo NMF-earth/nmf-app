@@ -9,37 +9,29 @@ let state;
 
 const emissionToday: EmissionType = {
   id: "1",
-  creationDate: moment()
-    .utc()
-    .toISOString(),
+  creationDate: moment().utc().toISOString(),
   emissionModelType: FoodEnum.beans,
   emissionType: EmissionEnum.food,
   isMitigated: false,
-  value: 10
+  value: 10,
 };
 
 const emissionLastMonth: EmissionType = {
   id: "12",
-  creationDate: moment()
-    .subtract(1, "month")
-    .utc()
-    .toISOString(),
+  creationDate: moment().subtract(1, "month").utc().toISOString(),
   emissionModelType: TransportEnum.boat,
   emissionType: EmissionEnum.transport,
   isMitigated: false,
-  value: 100
+  value: 100,
 };
 
 const emissionLastYear: EmissionType = {
   id: "123",
-  creationDate: moment()
-    .subtract(1, "year")
-    .utc()
-    .toISOString(),
+  creationDate: moment().subtract(1, "year").utc().toISOString(),
   emissionModelType: FoodEnum.cheese,
   emissionType: EmissionEnum.food,
   isMitigated: false,
-  value: 5
+  value: 5,
 };
 
 describe("if there are emissions", () => {
@@ -48,8 +40,8 @@ describe("if there are emissions", () => {
       [emissions.namespace]: [
         emissionToday,
         emissionLastMonth,
-        emissionLastYear
-      ]
+        emissionLastYear,
+      ],
     };
   });
 
@@ -63,8 +55,8 @@ describe("if there are emissions", () => {
       calculation.getC02ValueFromEmission(emissionToday)
     ));
 
-  test("`getCurrentMonthCustomCarbonValue` should return CO2 values from today's emission", () =>
-    expect(selectors.getCurrentMonthCustomCarbonValue(state)).toEqual(0));
+  test("`getCurrentMonthOtherCarbonValue` should return CO2 values from today's emission", () =>
+    expect(selectors.getCurrentMonthOtherCarbonValue(state)).toEqual(0));
 
   test("`getCurrentMonthTransportCarbonValue` should return CO2 values from today's emission", () =>
     expect(selectors.getCurrentMonthTransportCarbonValue(state)).toEqual(0));
@@ -80,8 +72,8 @@ describe("if there are emissions", () => {
         Math.round(calculation.getC02ValueFromEmission(emissionLastMonth))
     ));
 
-  test("`getCurrentYearCustomCarbonValue` should return CO2 values from today's emission", () =>
-    expect(selectors.getCurrentYearCustomCarbonValue(state)).toEqual(0));
+  test("`getCurrentYearOtherCarbonValue` should return CO2 values from today's emission", () =>
+    expect(selectors.getCurrentYearOtherCarbonValue(state)).toEqual(0));
 
   test("`getCurrentYearTransportCarbonValue` should return CO2 values from today's emission", () =>
     expect(selectors.getCurrentYearTransportCarbonValue(state)).toEqual(
@@ -92,7 +84,7 @@ describe("if there are emissions", () => {
 describe("if there are no emissions", () => {
   beforeEach(() => {
     state = {
-      [emissions.namespace]: []
+      [emissions.namespace]: [],
     };
   });
 
@@ -102,8 +94,8 @@ describe("if there are no emissions", () => {
   test("`getCurrentMonthAllCarbonValue` should return 0", () =>
     expect(selectors.getCurrentMonthAllCarbonValue(state)).toEqual(0));
 
-  test("`getCurrentMonthCustomCarbonValue` should return 0", () =>
-    expect(selectors.getCurrentMonthCustomCarbonValue(state)).toEqual(0));
+  test("`getCurrentMonthOtherCarbonValue` should return 0", () =>
+    expect(selectors.getCurrentMonthOtherCarbonValue(state)).toEqual(0));
 
   test("`getCurrentMonthTransportCarbonValue` should return 0", () =>
     expect(selectors.getCurrentMonthTransportCarbonValue(state)).toEqual(0));
@@ -114,8 +106,8 @@ describe("if there are no emissions", () => {
   test("`getCurrentYearAllCarbonValue` should return 0", () =>
     expect(selectors.getCurrentYearAllCarbonValue(state)).toEqual(0));
 
-  test("`getCurrentYearCustomCarbonValue` should return 0", () =>
-    expect(selectors.getCurrentYearCustomCarbonValue(state)).toEqual(0));
+  test("`getCurrentYearOtherCarbonValue` should return 0", () =>
+    expect(selectors.getCurrentYearOtherCarbonValue(state)).toEqual(0));
 
   test("`getCurrentYearTransportCarbonValue` should return 0", () =>
     expect(selectors.getCurrentYearTransportCarbonValue(state)).toEqual(0));

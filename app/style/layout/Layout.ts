@@ -4,13 +4,16 @@ import { platform } from "../../utils";
 
 export default StyleSheet.create({
   containerNoPadding: {
-    flex: 1
+    flex: 1,
   },
   containerWithPadding: {
     flex: 1,
-    paddingHorizontal: PADDING_HORIZONTAL
+    paddingHorizontal: PADDING_HORIZONTAL,
   },
   androidNavTitle: {
-    paddingLeft: platform.isAndroid ? 6 : 0
-  }
+    paddingLeft: platform.isAndroid ? 6 : 0,
+  },
+  separator: {
+    width: PADDING_HORIZONTAL,
+  },
 });

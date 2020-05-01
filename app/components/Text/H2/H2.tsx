@@ -8,12 +8,13 @@ interface Props {
   children: React.ReactNode;
   darkGray?: boolean;
   lightGray?: boolean;
+  oceanBlue?: boolean;
   green?: boolean;
 }
 
 export default function H2(props: Props): React.ReactElement {
   const customStyle = [styles.default, props.style];
-  const { darkGray, lightGray, green } = props;
+  const { darkGray, lightGray, oceanBlue, green } = props;
 
   if (darkGray) {
     customStyle.push(mainStyle.darkGray);
@@ -25,6 +26,10 @@ export default function H2(props: Props): React.ReactElement {
 
   if (green) {
     customStyle.push(mainStyle.green);
+  }
+
+  if (oceanBlue) {
+    customStyle.push(mainStyle.oceanBlue);
   }
 
   return <Text {...props} style={customStyle} />;

@@ -16,6 +16,10 @@ interface TranslationKeys {
   CHOCOLATE: string;
   COFFEE: string;
   FISH: string;
+  HD_VIDEO: string;
+  AUDIO: string;
+  FULL_HD_VIDEO: string;
+  ULTRA_HD_VIDEO: string;
 }
 
 export { en, fr, de, sv, TranslationKeys };
