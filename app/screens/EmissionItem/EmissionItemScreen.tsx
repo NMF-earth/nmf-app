@@ -6,7 +6,6 @@ import moment from "moment";
 import "moment/min/locales";
 import styles from "./EmissionItemScreen.styles";
 import { Text, Tag, Button } from "../../components";
-import { selectors } from "./ducks";
 import navigationOptions from "./EmissionItemScreen.navigationOptions";
 import { calculation, ui, t } from "../../utils";
 import { emissions } from "../../ducks";
@@ -37,7 +36,7 @@ const EmissionItemScreen = ({
   }
 
   const emission = useSelector((state) =>
-    selectors.getEmissionItemById(state, emissionId)
+    emissions.selectors.getEmissionById(state, emissionId)
   );
   // eslint-disable-next-line @typescript-eslint/no-empty-function
   const onPress = () => {};
