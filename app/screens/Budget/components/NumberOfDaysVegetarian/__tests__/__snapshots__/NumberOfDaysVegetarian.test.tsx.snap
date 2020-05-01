@@ -30,7 +30,7 @@ exports[`NumberOfDaysVegetarian renders correctly 1`] = `
        
     </Text.H3>
     <Text.H3>
-      without meat.
+      without meat or fish.
     </Text.H3>
   </View>
   <Text.H3

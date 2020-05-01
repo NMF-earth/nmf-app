@@ -60,6 +60,48 @@ it("EmissionsListItem renders correctly with whiteMeat icon", () => {
   expect(tree).toMatchSnapshot();
 });
 
+it("EmissionsListItem renders correctly with chocolate icon", () => {
+  const tree = renderer
+    .create(
+      <FormattedProvider locale="en">
+        <EmissionsListItem
+          {...props}
+          iconName={ui.getIconFromModelType(FoodEnum.chocolate)}
+        />
+      </FormattedProvider>
+    )
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it("EmissionsListItem renders correctly with coffee icon", () => {
+  const tree = renderer
+    .create(
+      <FormattedProvider locale="en">
+        <EmissionsListItem
+          {...props}
+          iconName={ui.getIconFromModelType(FoodEnum.coffee)}
+        />
+      </FormattedProvider>
+    )
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it("EmissionsListItem renders correctly with fish icon", () => {
+  const tree = renderer
+    .create(
+      <FormattedProvider locale="en">
+        <EmissionsListItem
+          {...props}
+          iconName={ui.getIconFromModelType(FoodEnum.fish)}
+        />
+      </FormattedProvider>
+    )
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
 it("EmissionsListItem renders correctly with boat icon", () => {
   const tree = renderer
     .create(

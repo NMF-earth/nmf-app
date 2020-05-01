@@ -7,5 +7,8 @@
   "MOTORBIKE": "MC",
   "RED_MEAT": "Rött kött",
   "WHITE_MEAT": "Vitt kött",
+  "CHOCOLATE": "Choklad",
+  "COFFEE": "Kaffe",
+  "FISH": "Fisk",
   "CUSTOM": "Annat"
 }

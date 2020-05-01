@@ -10,6 +10,12 @@ const getTranslationModelType = (emissionModelType) => {
       return t("RED_MEAT");
     case FoodEnum.whiteMeat:
       return t("WHITE_MEAT");
+    case FoodEnum.chocolate:
+      return t("CHOCOLATE");
+    case FoodEnum.coffee:
+      return t("COFFEE");
+    case FoodEnum.fish:
+      return t("FISH");
     case TransportEnum.shortHaulFlight:
     case TransportEnum.mediumHaulFlight:
     case TransportEnum.longHaulFlight:
@@ -36,7 +42,11 @@ const getIconFromModelType = (emissionModelType) => {
       return "md-build";
     case FoodEnum.redMeat:
     case FoodEnum.whiteMeat:
+    case FoodEnum.chocolate:
+    case FoodEnum.fish:
       return "md-restaurant";
+    case FoodEnum.coffee:
+      return "md-cafe";
     case TransportEnum.shortHaulFlight:
     case TransportEnum.mediumHaulFlight:
     case TransportEnum.longHaulFlight:
