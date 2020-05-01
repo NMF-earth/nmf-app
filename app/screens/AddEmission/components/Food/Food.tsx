@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import { View, ScrollView, Slider } from "react-native";
 import { FormattedNumber } from "react-native-globalize";
-
+import { FoodEnum, food } from "carbon-footprint";
 import styles from "./Food.styles";
 import { Text, Tag } from "../../../../components";
 import { Colors } from "../../../../style";
 import { t, ui } from "../../../../utils";
-import { FoodEnum, food } from "carbon-footprint";
 
 const MIN_SLIDER_VALUE = 20;
 const MAX_SLIDER_VALUE = 500;
@@ -18,7 +17,13 @@ interface Props {
   setQuantity: (arg0: number) => void;
 }
 
-const TAGS: Array<FoodEnum> = [FoodEnum.redMeat, FoodEnum.whiteMeat];
+const TAGS: Array<FoodEnum> = [
+  FoodEnum.redMeat,
+  FoodEnum.whiteMeat,
+  FoodEnum.fish,
+  FoodEnum.chocolate,
+  FoodEnum.coffee,
+];
 
 export default ({
   setFoodType,

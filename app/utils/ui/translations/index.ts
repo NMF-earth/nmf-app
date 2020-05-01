@@ -13,6 +13,9 @@ interface TranslationKeys {
   RED_MEAT: string;
   WHITE_MEAT: string;
   CUSTOM: string;
+  CHOCOLATE: string;
+  COFFEE: string;
+  FISH: string;
 }
 
 export { en, fr, de, sv, TranslationKeys };
