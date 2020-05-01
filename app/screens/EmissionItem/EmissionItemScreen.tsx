@@ -4,6 +4,7 @@ import { ScrollView, View } from "react-native";
 import { pathOr } from "ramda";
 import moment from "moment";
 import "moment/min/locales";
+import { FormattedNumber } from "react-native-globalize";
 import styles from "./EmissionItemScreen.styles";
 import { Text, Tag, Button } from "../../components";
 import navigationOptions from "./EmissionItemScreen.navigationOptions";
@@ -76,7 +77,10 @@ const EmissionItemScreen = ({
       </ScrollView>
       <Text.H3>{t("EMISSION_ITEM_QUANTITY")}</Text.H3>
       <Text.Primary darkGray style={styles.item}>
-        {Math.round(co2Emission)}
+        <FormattedNumber
+          maximumFractionDigits={co2Emission >= 1 ? 2 : 4}
+          value={co2Emission}
+        />{" "}
         {" kgC02eq"}
       </Text.Primary>
       <Text.H3>{t("EMISSION_ITEM_DATE")}</Text.H3>

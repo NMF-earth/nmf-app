@@ -57,7 +57,11 @@ exports[`EmissionsScreen renders correctly 1`] = `
         }
       }
     >
-      NaN
+      <FormattedNumber
+        maximumFractionDigits={4}
+        value={NaN}
+      />
+       
        kgC02eq
     </Text.Primary>
     <Text.H3>
