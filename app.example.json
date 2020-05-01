@@ -5,7 +5,7 @@
     "privacy": "public",
     "sdkVersion": "37.0.0",
     "platforms": ["ios", "android"],
-    "version": "0.2.1",
+    "version": "0.3.0",
     "orientation": "portrait",
     "splash": {
       "image": "./assets/images/splash.png",
@@ -20,12 +20,12 @@
       "icon": "./assets/images/ios.icon.png",
       "bundleIdentifier": "nmf.earth",
       "supportsTablet": true,
-      "buildNumber": "11"
+      "buildNumber": "12"
     },
     "android": {
       "icon": "./assets/images/android.icon.png",
       "package": "nmf.earth",
-      "versionCode": 11
+      "versionCode": 12
     },
     "hooks": {
       "postPublish": [
