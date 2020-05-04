@@ -78,10 +78,10 @@ const EmissionItemScreen = ({
       <Text.H3>{t("EMISSION_ITEM_QUANTITY")}</Text.H3>
       <Text.Primary darkGray style={styles.item}>
         <FormattedNumber
-          maximumFractionDigits={co2Emission >= 1 ? 2 : 4}
-          value={co2Emission}
+          maximumFractionDigits={2}
+          value={co2Emission > 1 ? co2Emission : co2Emission * 1000}
         />{" "}
-        {" kgC02eq"}
+        {co2Emission > 1 ? " kgC02eq" : " gC02eq"}
       </Text.Primary>
       <Text.H3>{t("EMISSION_ITEM_DATE")}</Text.H3>
       <View style={styles.date}>

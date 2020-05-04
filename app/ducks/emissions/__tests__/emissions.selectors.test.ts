@@ -1,6 +1,6 @@
 import emissions from "../";
 import { Emission as EmissionType, EmissionEnum } from "../../../interfaces";
-import { FoodEnum, TransportEnum } from "carbon-footprint";
+import { FoodEnum, TransportEnum, StreamingEnum } from "carbon-footprint";
 
 let state;
 
@@ -10,7 +10,7 @@ const emissionFood: EmissionType = {
   emissionModelType: FoodEnum.redMeat,
   emissionType: EmissionEnum.food,
   isMitigated: false,
-  value: 10
+  value: 10,
 };
 
 const emissionTransport: EmissionType = {
@@ -19,7 +19,7 @@ const emissionTransport: EmissionType = {
   emissionModelType: TransportEnum.bus,
   emissionType: EmissionEnum.transport,
   isMitigated: false,
-  value: 13
+  value: 13,
 };
 
 const emissionCustom: EmissionType = {
@@ -28,13 +28,22 @@ const emissionCustom: EmissionType = {
   emissionModelType: "custom",
   emissionType: EmissionEnum.custom,
   isMitigated: false,
-  value: 100
+  value: 100,
+};
+
+const emissionStreaming: EmissionType = {
+  id: "4",
+  creationDate: "2020-01-26T11:04:55.334Z",
+  emissionModelType: StreamingEnum.HDVideo,
+  emissionType: EmissionEnum.streaming,
+  isMitigated: false,
+  value: 23.32,
 };
 
 const emissionMitigated: EmissionType = {
   ...emissionFood,
-  id: "4",
-  isMitigated: true
+  id: "5",
+  isMitigated: true,
 };
 
 describe("if there are emissions", () => {
@@ -44,8 +53,9 @@ describe("if there are emissions", () => {
         emissionMitigated,
         emissionFood,
         emissionCustom,
-        emissionTransport
-      ]
+        emissionTransport,
+        emissionStreaming,
+      ],
     };
   });
 
@@ -56,37 +66,49 @@ describe("if there are emissions", () => {
 
   test("`getEmissionsMitigated` should return mitigated emissions", () =>
     expect(emissions.selectors.getEmissionsMitigated(state)).toEqual([
-      emissionMitigated
+      emissionMitigated,
     ]));
 
   test("`getEmissionsToMitigate` should return mitigated emissions", () =>
     expect(emissions.selectors.getEmissionsToMitigate(state)).toEqual([
       emissionFood,
       emissionCustom,
-      emissionTransport
+      emissionTransport,
+      emissionStreaming,
     ]));
 
-  test("`getCustomEmissions` should return mitigated emissions", () =>
+  test("`getCustomEmissions` should return custom emissions", () =>
     expect(emissions.selectors.getCustomEmissions(state)).toEqual([
-      emissionCustom
+      emissionCustom,
     ]));
 
-  test("`getFoodEmissions` should return mitigated emissions", () =>
+  test("`getFoodEmissions` should return food emissions", () =>
     expect(emissions.selectors.getFoodEmissions(state)).toEqual([
       emissionMitigated,
-      emissionFood
+      emissionFood,
     ]));
 
-  test("`getTransportEmissions` should return mitigated emissions", () =>
+  test("`getTransportEmissions` should return transport emissions", () =>
     expect(emissions.selectors.getTransportEmissions(state)).toEqual([
-      emissionTransport
+      emissionTransport,
+    ]));
+
+  test("`getStreamingEmissions` should return streaming emissions", () =>
+    expect(emissions.selectors.getStreamingEmissions(state)).toEqual([
+      emissionStreaming,
+    ]));
+
+  test("`getOtherEmissions` should return streaming and custom emissions", () =>
+    expect(emissions.selectors.getOtherEmissions(state)).toEqual([
+      emissionCustom,
+      emissionStreaming,
     ]));
 });
 
 describe("if there are no emissions", () => {
   beforeEach(() => {
     state = {
-      [emissions.namespace]: []
+      [emissions.namespace]: [],
     };
   });
 

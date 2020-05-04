@@ -31,4 +31,7 @@ export default StyleSheet.create({
     height: 40,
     marginHorizontal: 16,
   },
+  separator: {
+    ...Layout.separator,
+  },
 });

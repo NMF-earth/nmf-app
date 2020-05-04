@@ -26,4 +26,7 @@ export default StyleSheet.create({
   changeBtn: {
     paddingLeft: 4,
   },
+  separator: {
+    ...Layout.separator,
+  },
 });

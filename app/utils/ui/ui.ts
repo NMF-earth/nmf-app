@@ -1,4 +1,4 @@
-import { TransportEnum, FoodEnum } from "carbon-footprint";
+import { TransportEnum, FoodEnum, StreamingEnum } from "carbon-footprint";
 import { EmissionEnum } from "../../interfaces";
 import { t } from "../translations";
 
@@ -31,6 +31,14 @@ const getTranslationModelType = (emissionModelType) => {
       return t("MOTORBIKE");
     case TransportEnum.bus:
       return t("BUS");
+    case StreamingEnum.HDVideo:
+      return t("HD_VIDEO");
+    case StreamingEnum.audioMP3:
+      return t("AUDIO");
+    case StreamingEnum.fullHDVideo:
+      return t("FULL_HD_VIDEO");
+    case StreamingEnum.ultraHDVideo:
+      return t("ULTRA_HD_VIDEO");
     default:
       return t("CUSTOM");
   }
@@ -61,6 +69,12 @@ const getIconFromModelType = (emissionModelType) => {
       return "md-bicycle";
     case TransportEnum.bus:
       return "md-bus";
+    case StreamingEnum.audioMP3:
+      return "md-musical-note";
+    case StreamingEnum.HDVideo:
+    case StreamingEnum.fullHDVideo:
+    case StreamingEnum.ultraHDVideo:
+      return "md-film";
     default:
       return "md-build";
   }

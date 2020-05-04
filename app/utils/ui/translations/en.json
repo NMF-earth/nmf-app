@@ -10,5 +10,9 @@
   "CHOCOLATE": "Chocolate",
   "COFFEE": "Coffee",
   "FISH": "Fish",
-  "CUSTOM": "Custom"
+  "CUSTOM": "Custom",
+  "HD_VIDEO": "High-definition video (HD)",
+  "AUDIO": "Audio (MP3)",
+  "FULL_HD_VIDEO": "Full HD video (1080p)",
+  "ULTRA_HD_VIDEO": "Ultra HD video (4K)"
 }

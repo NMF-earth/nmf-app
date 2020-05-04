@@ -1,11 +1,3 @@
-import {
-  Emission,
-  EmissionEnum,
-  EmissionPurchaseEnum
-} from "./emission";
+import { Emission, EmissionEnum } from "./emission";
 
-export {
-  Emission,
-  EmissionEnum,
-  EmissionPurchaseEnum
-};
+export { Emission, EmissionEnum };

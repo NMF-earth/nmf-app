@@ -160,6 +160,27 @@ exports[`renders correctly H2 lightGray 1`] = `
 </Text>
 `;
 
+exports[`renders correctly H2 oceanBlue 1`] = `
+<Text
+  oceanBlue={true}
+  style={
+    Array [
+      Object {
+        "color": "#111714",
+        "fontFamily": "Inter-Bold",
+        "fontSize": 26,
+      },
+      undefined,
+      Object {
+        "color": "#3957D0",
+      },
+    ]
+  }
+>
+  test
+</Text>
+`;
+
 exports[`renders correctly H3 1`] = `
 <Text
   style={

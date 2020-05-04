@@ -58,11 +58,11 @@ exports[`EmissionsScreen renders correctly 1`] = `
       }
     >
       <FormattedNumber
-        maximumFractionDigits={4}
+        maximumFractionDigits={2}
         value={NaN}
       />
        
-       kgC02eq
+       gC02eq
     </Text.Primary>
     <Text.H3>
       Date

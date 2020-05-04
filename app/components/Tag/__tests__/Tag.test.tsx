@@ -12,7 +12,7 @@ beforeEach(() => {
     title: "Transport",
     onPress: () => {
       // do nothing.
-    }
+    },
   };
 });
 
@@ -64,6 +64,20 @@ it("Tag renders correctly with build icon", () => {
 it("Tag renders correctly with build icon and selected", () => {
   const tree = renderer
     .create(<Tag {...props} icon="md-build" selected />)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it("Tag renders correctly with md-play-circle icon", () => {
+  const tree = renderer
+    .create(<Tag {...props} icon="md-play-circle" />)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it("Tag renders correctly with md-play-circle icon and selected", () => {
+  const tree = renderer
+    .create(<Tag {...props} icon="md-play-circle" selected />)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });

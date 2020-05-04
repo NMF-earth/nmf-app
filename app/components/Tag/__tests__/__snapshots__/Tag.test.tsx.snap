@@ -144,6 +144,78 @@ exports[`Tag renders correctly with build icon and selected 1`] = `
 </TouchableOpacity>
 `;
 
+exports[`Tag renders correctly with md-play-circle icon 1`] = `
+<TouchableOpacity
+  onPress={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#4BB37710",
+      "borderColor": "#11171420",
+      "borderRadius": 8,
+      "borderWidth": 1,
+      "marginRight": 12,
+      "minWidth": 110,
+      "paddingHorizontal": 12,
+      "paddingVertical": 10,
+    }
+  }
+>
+  <Ionicons
+    color="#585D5B"
+    name="md-play-circle"
+    size={30}
+    style={
+      Object {
+        "marginBottom": 2,
+      }
+    }
+  />
+  <Text.Primary
+    darkGray={true}
+    green={false}
+  >
+    Transport
+  </Text.Primary>
+</TouchableOpacity>
+`;
+
+exports[`Tag renders correctly with md-play-circle icon and selected 1`] = `
+<TouchableOpacity
+  onPress={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#4BB37720",
+      "borderColor": "#4BB377",
+      "borderRadius": 8,
+      "borderWidth": 1,
+      "marginRight": 12,
+      "minWidth": 110,
+      "paddingHorizontal": 12,
+      "paddingVertical": 10,
+    }
+  }
+>
+  <Ionicons
+    color="#4BB377"
+    name="md-play-circle"
+    size={30}
+    style={
+      Object {
+        "marginBottom": 2,
+      }
+    }
+  />
+  <Text.Primary
+    darkGray={false}
+    green={true}
+  >
+    Transport
+  </Text.Primary>
+</TouchableOpacity>
+`;
+
 exports[`Tag renders correctly with no icon 1`] = `
 <TouchableOpacity
   onPress={[Function]}

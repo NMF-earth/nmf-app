@@ -1,67 +1,78 @@
 import React, { useState } from "react";
 import { View, ScrollView, Slider } from "react-native";
 import { FormattedNumber } from "react-native-globalize";
-import { FoodEnum, food } from "carbon-footprint";
-import styles from "./Food.styles";
+import {
+  streaming,
+  StreamingEnum,
+  getInternetUsageCarbonImpact,
+  ElectricityEnum,
+} from "carbon-footprint";
+import styles from "./Streaming.styles";
 import { Text, Tag } from "../../../../components";
 import { Colors } from "../../../../style";
-import { t, ui } from "../../../../utils";
+import { t, time, ui } from "../../../../utils";
 
-const MIN_SLIDER_VALUE = 20;
-const MAX_SLIDER_VALUE = 500;
+const MIN_SLIDER_VALUE = 15 * 60;
+const MAX_SLIDER_VALUE = 10 * 60 * 60;
 
 interface Props {
   defaultValueSlider: number;
-  foodType: string;
-  setFoodType: (arg0: FoodEnum) => void;
-  setQuantity: (arg0: number) => void;
+  streamingType: string;
+  setStreamingType: (arg0: StreamingEnum) => void;
+  setDurationSeconds: (arg0: number) => void;
 }
 
-const TAGS: Array<FoodEnum> = [
-  FoodEnum.redMeat,
-  FoodEnum.whiteMeat,
-  FoodEnum.fish,
-  FoodEnum.chocolate,
-  FoodEnum.coffee,
+const TAGS: Array<StreamingEnum> = [
+  StreamingEnum.HDVideo,
+  StreamingEnum.audioMP3,
+  StreamingEnum.fullHDVideo,
+  StreamingEnum.ultraHDVideo,
 ];
 
 export default ({
-  setFoodType,
-  foodType,
-  setQuantity,
+  setDurationSeconds,
+  setStreamingType,
+  streamingType,
   defaultValueSlider,
 }: Props) => {
-  const [sliderValue, setSliderValue] = useState(defaultValueSlider * 1000);
+  const [sliderValue, setSliderValue] = useState(defaultValueSlider);
 
   const onSliderValueChange = (value: number) => {
     const val = Math.round(value);
     setSliderValue(val);
-    /* since we use kilograms as reference (and not grams), we need to divide by 1000 */
-    setQuantity(val / 1000);
+    setDurationSeconds(val);
   };
+  const { hours, minutes } = time.convertMinutesToHoursAnMinutes(
+    sliderValue / 60
+  );
+  const carbonValue = getInternetUsageCarbonImpact(
+    sliderValue,
+    streaming[streamingType] * sliderValue,
+    ElectricityEnum.world
+  );
 
   return (
     <React.Fragment>
       <View style={styles.typeContainer}>
-        <Text.H3>{t("ADD_EMISSION_FOOD_TYPE")}</Text.H3>
+        <Text.H3>{t("ADD_EMISSION_STREAMING_TYPE")}</Text.H3>
       </View>
       <ScrollView horizontal style={styles.tagContainer}>
         {TAGS.map((item) => (
           <Tag
             key={item}
-            selected={foodType === item}
+            selected={streamingType === item}
             title={ui.getTranslationModelType(item)}
-            onPress={() => setFoodType(item)}
+            onPress={() => setStreamingType(item)}
           />
         ))}
         <View style={styles.separator} />
       </ScrollView>
-      <View style={styles.durationContainer}>
+      <View style={styles.durationDistanceContainer}>
         <Text.H3 style={styles.miniHeader}>
-          {t("ADD_EMISSION_QUANTITY")}
+          {t("ADD_EMISSION_DURATION")}
         </Text.H3>
         <Text.Primary lightGray>
-          {Math.round(sliderValue) + " grams"}
+          {hours + " hour(s) and " + minutes + " minute(s)."}
         </Text.Primary>
       </View>
       <Slider
@@ -78,10 +89,10 @@ export default ({
         <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_TOTAL")}</Text.H3>
         <Text.H2 oceanBlue>
           <FormattedNumber
-            value={(sliderValue / 1000) * food[foodType]}
+            value={carbonValue > 1 ? carbonValue : carbonValue * 1000}
             maximumFractionDigits={2}
           />{" "}
-          <Text.Primary>kgCO2eq</Text.Primary>
+          <Text.Primary>{carbonValue > 1 ? "kgCO2eq" : "gCO2eq"}</Text.Primary>
         </Text.H2>
       </View>
     </React.Fragment>

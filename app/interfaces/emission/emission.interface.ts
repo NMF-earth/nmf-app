@@ -1,24 +1,17 @@
-import { FoodEnum, TransportEnum } from "carbon-footprint";
+import { FoodEnum, TransportEnum, StreamingEnum } from "carbon-footprint";
 
 enum EmissionEnum {
   food = "food",
   transport = "transport",
   purchase = "purchase",
+  streaming = "streaming",
   custom = "custom",
-}
-
-enum EmissionPurchaseEnum {
-  tv = "tv",
-  computer = "computer",
-  phone = "phone",
-  tablet = "tablet",
-  car = "car",
 }
 
 interface EmissionPayload {
   name?: string;
   emissionType: EmissionEnum;
-  emissionModelType: FoodEnum | TransportEnum | "custom";
+  emissionModelType: FoodEnum | TransportEnum | StreamingEnum | "custom";
   value: number;
   creationDate: string;
 }
@@ -28,4 +21,4 @@ interface Emission extends EmissionPayload {
   isMitigated: boolean;
 }
 
-export { Emission, EmissionPayload, EmissionEnum, EmissionPurchaseEnum };
+export { Emission, EmissionPayload, EmissionEnum };

@@ -18,5 +18,7 @@
   "ADD_EMISSION_TITLE": "Lägg till utsläpp",
   "ADD_EMISSION_TOTAL": "Totalt",
   "ADD_EMISSION_TRANSPORT": "Transport",
-  "ADD_EMISSION_TRANSPORT_TYPE": "Transportslag"
+  "ADD_EMISSION_TRANSPORT_TYPE": "Transportslag",
+  "ADD_EMISSION_STREAMING_TYPE": "Streaming type",
+  "ADD_EMISSION_STREAMING": "Streaming"
 }

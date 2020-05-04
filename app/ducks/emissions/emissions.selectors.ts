@@ -19,8 +19,15 @@ const isTransportEmission = (emission) =>
 const isFoodEmission = (emission) =>
   emission.emissionType === EmissionEnum.food;
 
+const isStreamingEmission = (emission) =>
+  emission.emissionType === EmissionEnum.streaming;
+
 const isCustomEmission = (emission) =>
   emission.emissionType === EmissionEnum.custom;
+
+const isOtherEmission = (emission) =>
+  emission.emissionType === EmissionEnum.custom ||
+  emission.emissionType === EmissionEnum.streaming;
 
 const getTransportEmissions = pipe(
   getAllEmissions,
@@ -29,13 +36,22 @@ const getTransportEmissions = pipe(
 
 const getFoodEmissions = pipe(getAllEmissions, filter(isFoodEmission));
 
+const getStreamingEmissions = pipe(
+  getAllEmissions,
+  filter(isStreamingEmission)
+);
+
 const getCustomEmissions = pipe(getAllEmissions, filter(isCustomEmission));
+
+const getOtherEmissions = pipe(getAllEmissions, filter(isOtherEmission));
 
 export default {
   getAllEmissions,
   getTransportEmissions,
   getFoodEmissions,
+  getStreamingEmissions,
   getCustomEmissions,
+  getOtherEmissions,
   getEmissionById,
   getEmissionsToMitigate,
   getEmissionsMitigated,
