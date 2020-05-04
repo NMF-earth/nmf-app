@@ -11,8 +11,8 @@
   "COFFEE": "Café",
   "FISH": "Poisson",
   "CUSTOM": "Customisé",
-  "HD_VIDEO": "Vidéo haute définition (HD)",
-  "AUDIO": "Audio (MP3)",
-  "FULL_HD_VIDEO": "Vidéo Full HD (1080p)",
-  "ULTRA_HD_VIDEO": "Vidéo Ultra HD (4K)"
+  "HD_VIDEO": "Vidéo - HD",
+  "AUDIO": "Audio - MP3",
+  "FULL_HD_VIDEO": "Vidéo - FullHD/1080p",
+  "ULTRA_HD_VIDEO": "Vidéo - UltraHD/4K"
 }
