@@ -1,5 +1,12 @@
 import { isEmpty, prop, reduce, maxBy, either, isNil } from "ramda";
-import { transport, TransportEnum, food } from "carbon-footprint";
+import {
+  transport,
+  TransportEnum,
+  food,
+  getInternetUsageCarbonImpact,
+  ElectricityEnum,
+  streaming,
+} from "carbon-footprint";
 import { EmissionEnum, Emission } from "../../interfaces";
 
 const isNilOrEmpty = either(isNil, isEmpty);
@@ -48,13 +55,16 @@ const getFlightEmissionValue = (duration: number) => {
 };
 
 const getC02ValueFromEmission = (emission: Emission) => {
-  const noCalculationEmissionModelType = [
-    EmissionEnum.streaming,
-    EmissionEnum.custom,
-  ];
-
-  if (noCalculationEmissionModelType.includes(emission.emissionType)) {
+  if (emission.emissionType === EmissionEnum.custom) {
     return emission.value;
+  }
+
+  if (emission.emissionType === EmissionEnum.streaming) {
+    return getInternetUsageCarbonImpact(
+      emission.value,
+      streaming[emission.emissionModelType] * emission.value,
+      ElectricityEnum.world
+    );
   }
 
   const model = {

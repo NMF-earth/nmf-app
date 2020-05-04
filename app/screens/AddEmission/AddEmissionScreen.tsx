@@ -98,6 +98,7 @@ const AddEmissionScreen = ({
         emissionPayload.value = distance;
         emissionPayload.emissionModelType = transportType;
       }
+
       return (
         <Transport
           defaultValueSlider={DEFAULT_SLIDER_VALUE_TRANSPORT}
@@ -115,6 +116,7 @@ const AddEmissionScreen = ({
     if (emissionType === EmissionEnum.food) {
       emissionPayload.value = quantity;
       emissionPayload.emissionModelType = foodType;
+
       return (
         <Food
           defaultValueSlider={DEFAULT_SLIDER_VALUE_FOOD}
@@ -129,12 +131,9 @@ const AddEmissionScreen = ({
 
   const renderStreaming = () => {
     if (emissionType === EmissionEnum.streaming) {
-      emissionPayload.value = getInternetUsageCarbonImpact(
-        durationSeconds,
-        streaming[streamingType] * durationSeconds,
-        ElectricityEnum.world
-      );
+      emissionPayload.value = durationSeconds;
       emissionPayload.emissionModelType = streamingType;
+
       return (
         <Streaming
           defaultValueSlider={DEFAULT_SLIDER_VALUE_STREAMING}
@@ -151,6 +150,7 @@ const AddEmissionScreen = ({
     if (emissionType === EmissionEnum.custom) {
       emissionPayload.value = co2eqKilograms;
       emissionPayload.emissionModelType = "custom";
+
       return (
         <Custom
           defaultValueSlider={DEFAULT_SLIDER_VALUE_CUSTOM}

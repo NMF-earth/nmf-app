@@ -91,6 +91,7 @@ export default ({
             onPress={() => setTransportType(item)}
           />
         ))}
+        <View style={styles.separator} />
       </ScrollView>
       {transportType === TransportEnum.plane
         ? renderDuration()
