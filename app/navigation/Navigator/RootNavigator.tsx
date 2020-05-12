@@ -1,16 +1,36 @@
-import { createSwitchNavigator } from "react-navigation";
+import React from "react";
+import { createStackNavigator } from "@react-navigation/stack";
+import { useSelector } from "react-redux";
 
+import { userPreferences } from "../../ducks";
 import IntroScreen from "../../screens/Intro";
-import MainTabStack from "./MainTabNavigator";
+import BottomTabNavigator from "./BottomTabNavigator";
+import { currentTermsOfUseVersion } from "../../constants/Preferences";
 
-const RootStack = createSwitchNavigator(
-  {
-    Intro: IntroScreen,
-    MainTab: MainTabStack
-  },
-  {
-    initialRouteName: "Intro"
-  }
-);
+const Stack = createStackNavigator();
 
-export default RootStack;
+const RootNavigator = (): React.ReactElement => {
+  const hasAcceptedTermsOfUseVersion =
+    currentTermsOfUseVersion ===
+    useSelector(userPreferences.selectors.getAcceptedTermsOfUseVersion);
+
+  return (
+    <Stack.Navigator initialRouteName="Intro">
+      {hasAcceptedTermsOfUseVersion ? (
+        <Stack.Screen
+          name="BottomTab"
+          component={BottomTabNavigator}
+          options={{ headerShown: false }}
+        />
+      ) : (
+        <Stack.Screen
+          name="Intro"
+          component={IntroScreen}
+          options={{ headerShown: false }}
+        />
+      )}
+    </Stack.Navigator>
+  );
+};
+
+export default RootNavigator;

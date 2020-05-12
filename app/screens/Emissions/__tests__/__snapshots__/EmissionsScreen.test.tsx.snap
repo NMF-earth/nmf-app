@@ -18,7 +18,7 @@ Array [
           "goBack": undefined,
           "openAbout": [Function],
           "openAddEmission": [Function],
-          "openBudgetStack": [Function],
+          "openBudget": [Function],
           "openComingSoon": [Function],
           "openDetails": [Function],
           "openEmissionItem": [Function],

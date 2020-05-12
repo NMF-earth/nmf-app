@@ -7,6 +7,7 @@ import { NumberOfDaysVegetarian, ProgressChart } from "./components";
 import { t } from "../../utils";
 import { navigate } from "../../navigation";
 import { selectors } from "./ducks";
+import navigationOptions from "./BudgetScreen.navigationOptions";
 
 interface Props {
   navigation: {
@@ -74,5 +75,7 @@ const BudgetScreen = (props: Props) => {
     </ScrollView>
   );
 };
+
+BudgetScreen.navigationOptions = navigationOptions;
 
 export default BudgetScreen;

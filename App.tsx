@@ -1,5 +1,4 @@
-import React from "react";
-import { AppLoading } from "expo";
+import React, { useEffect, useState } from "react";
 import * as Font from "expo-font";
 import { FormattedProvider } from "react-native-globalize";
 import { locale as localeExpo } from "expo-localization";
@@ -46,112 +45,66 @@ interface State {
   isLoadingComplete: boolean;
 }
 
-export default class App extends React.Component<Props, State> {
-  setLanguage = null;
-  setLocale = null;
-
-  constructor(props: Props) {
-    super(props);
-
-    const locale = localeExpo;
-    let language = localeExpo.substring(0, 2);
-
-    if (!includes(language, supportedLanguages)) {
-      language = "en";
-    }
-
-    this.setLanguage = (language) =>
-      this.setState({
-        language,
-      });
-
-    this.setLocale = (locale) =>
-      this.setState({
-        locale,
-      });
-
-    this.state = {
-      locale,
-      language,
-      setLocale: () => this.setLocale,
-      setLanguage: () => this.setLanguage,
-      isLoadingComplete: false,
-    };
-  }
-  componentDidCatch(error: Error) {
-    /* TODO: add more params for better error reporting */
-    Sentry.captureException(error);
+const App = () => {
+  let lang = localeExpo.substring(0, 2);
+  if (!includes(lang, supportedLanguages)) {
+    lang = "en";
   }
 
-  render() {
-    if (!this.state.isLoadingComplete && !this.props.skipLoadingScreen) {
-      return (
-        <AppLoading
-          startAsync={loadResourcesAsync}
-          onError={handleLoadingError}
-          onFinish={() =>
-            handleFinishLoading(() => {
-              this.setState({ isLoadingComplete: true });
-            })
-          }
-        />
-      );
-    } else {
-      return (
-        <View style={styles.container}>
-          {Platform.OS === "ios" && <StatusBar barStyle="dark-content" />}
-          <Provider store={store}>
-            <FormattedProvider locale={this.state.language || "en"}>
-              <LocalizationContext.Provider
-                value={{
-                  locale: this.state.locale || "en-US",
-                  setLocale: this.state.setLocale,
-                  language: this.state.language || "en",
-                  setLanguage: this.state.setLanguage,
-                }}
-              >
-                <AppNavigator />
-              </LocalizationContext.Provider>
-            </FormattedProvider>
-          </Provider>
-        </View>
-      );
-    }
-  }
-}
+  const [ready, setReady] = useState(false);
+  const [language, setLanguage] = useState(lang);
+  const [locale, setLocale] = useState(localeExpo);
 
-async function loadResourcesAsync() {
-  await Promise.all([
-    Font.loadAsync({
-      ...Ionicons.font,
-      ...MaterialCommunityIcons.font,
-      "Inter-Black": require("./assets/fonts/Inter-Black.ttf"),
-      "Inter-Bold": require("./assets/fonts/Inter-Bold.ttf"),
-      "Inter-BoldItalic": require("./assets/fonts/Inter-BoldItalic.ttf"),
-      "Inter-ExtraBold": require("./assets/fonts/Inter-ExtraBold.ttf"),
-      "Inter-ExtraBoldItalic": require("./assets/fonts/Inter-ExtraBoldItalic.ttf"),
-      "Inter-ExtraLight-BETA": require("./assets/fonts/Inter-ExtraLight-BETA.ttf"),
-      "Inter-ExtraLightItalic-BETA": require("./assets/fonts/Inter-ExtraLightItalic-BETA.ttf"),
-      "Inter-Italic": require("./assets/fonts/Inter-Italic.ttf"),
-      "Inter-Light-BETA": require("./assets/fonts/Inter-Light-BETA.ttf"),
-      "Inter-LightItalic-BETA": require("./assets/fonts/Inter-LightItalic-BETA.ttf"),
-      "Inter-Medium": require("./assets/fonts/Inter-Medium.ttf"),
-      "Inter-MediumItalic": require("./assets/fonts/Inter-MediumItalic.ttf"),
-      "Inter-Regular": require("./assets/fonts/Inter-Regular.ttf"),
-      "Inter-SemiBold": require("./assets/fonts/Inter-SemiBold.ttf"),
-      "Inter-SemiBoldItalic": require("./assets/fonts/Inter-SemiBoldItalic.ttf"),
-      "Inter-Thin-BETA": require("./assets/fonts/Inter-Thin-BETA.ttf"),
-      "Inter-ThinItalic-BETA": require("./assets/fonts/Inter-ThinItalic-BETA.ttf"),
-    }),
-  ]);
-}
+  useEffect(() => {
+    Promise.all([
+      Font.loadAsync({
+        ...Ionicons.font,
+        ...MaterialCommunityIcons.font,
+        "Inter-Black": require("./assets/fonts/Inter-Black.ttf"),
+        "Inter-Bold": require("./assets/fonts/Inter-Bold.ttf"),
+        "Inter-BoldItalic": require("./assets/fonts/Inter-BoldItalic.ttf"),
+        "Inter-ExtraBold": require("./assets/fonts/Inter-ExtraBold.ttf"),
+        "Inter-ExtraBoldItalic": require("./assets/fonts/Inter-ExtraBoldItalic.ttf"),
+        "Inter-ExtraLight-BETA": require("./assets/fonts/Inter-ExtraLight-BETA.ttf"),
+        "Inter-ExtraLightItalic-BETA": require("./assets/fonts/Inter-ExtraLightItalic-BETA.ttf"),
+        "Inter-Italic": require("./assets/fonts/Inter-Italic.ttf"),
+        "Inter-Light-BETA": require("./assets/fonts/Inter-Light-BETA.ttf"),
+        "Inter-LightItalic-BETA": require("./assets/fonts/Inter-LightItalic-BETA.ttf"),
+        "Inter-Medium": require("./assets/fonts/Inter-Medium.ttf"),
+        "Inter-MediumItalic": require("./assets/fonts/Inter-MediumItalic.ttf"),
+        "Inter-Regular": require("./assets/fonts/Inter-Regular.ttf"),
+        "Inter-SemiBold": require("./assets/fonts/Inter-SemiBold.ttf"),
+        "Inter-SemiBoldItalic": require("./assets/fonts/Inter-SemiBoldItalic.ttf"),
+        "Inter-Thin-BETA": require("./assets/fonts/Inter-Thin-BETA.ttf"),
+        "Inter-ThinItalic-BETA": require("./assets/fonts/Inter-ThinItalic-BETA.ttf"),
+      }),
+    ])
+      .then(() => setReady(true))
+      .catch((error) => Sentry.captureException(error));
+  }, []);
 
-function handleLoadingError(error) {
-  // In this case, you might want to report the error to your error reporting
-  // service, for example Sentry
-  console.warn(error);
-}
+  return (
+    <>
+      {ready ? (
+        <Provider store={store}>
+          <FormattedProvider locale={language || "en"}>
+            <LocalizationContext.Provider
+              value={{
+                locale: locale || "en-US",
+                setLocale: setLocale,
+                language: language || "en",
+                setLanguage: setLanguage,
+              }}
+            >
+              <AppNavigator />
+            </LocalizationContext.Provider>
+          </FormattedProvider>
+        </Provider>
+      ) : (
+        <View />
+      )}
+    </>
+  );
+};
 
-function handleFinishLoading(setLoadingComplete) {
-  setLoadingComplete(true);
-}
+export default App;

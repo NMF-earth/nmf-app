@@ -1,33 +1,26 @@
 import React from "react";
 import { SafeAreaView, View, TouchableOpacity } from "react-native";
 import * as WebBrowser from "expo-web-browser";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 
 import { Text, Button, StickersImage } from "../../components";
 import styles from "./IntroScreen.styles";
 import { t } from "../../utils";
 import { userPreferences } from "../../ducks";
 import { navigate } from "../../navigation";
-
-const currentTermsOfUseVersion = 1;
+import { currentTermsOfUseVersion } from "../../constants/Preferences";
 
 const IntroScreen = ({ navigation }) => {
   const navigator = navigate(navigation);
 
   const dispatch = useDispatch();
-  const acceptedTermsOfUseVersion = useSelector(
-    userPreferences.selectors.getAcceptedTermsOfUseVersion
-  );
-  if (currentTermsOfUseVersion === acceptedTermsOfUseVersion) {
-    navigator.openBudgetStack();
-  }
 
   const onPress = () => {
     dispatch(
       userPreferences.actions.acceptTermsOfUse(currentTermsOfUseVersion)
     );
 
-    navigator.openBudgetStack();
+    navigator.openBudget();
   };
 
   return (
