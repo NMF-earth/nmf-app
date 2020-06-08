@@ -3,9 +3,9 @@ import { Layout } from "../../style";
 
 export default StyleSheet.create({
   container: {
-    ...Layout.containerWithPadding
+    ...Layout.containerWithPadding,
   },
   monthlyBudgetButton: {
-    marginVertical: 6
-  }
+    marginVertical: 6,
+  },
 });

@@ -4,6 +4,7 @@ exports[`AboutScreen renders correctly 1`] = `
 <RCTScrollView
   style={
     Object {
+      "backgroundColor": "#FFFFFF",
       "flex": 1,
       "paddingHorizontal": 14,
     }

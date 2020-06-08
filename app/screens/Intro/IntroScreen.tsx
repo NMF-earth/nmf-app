@@ -1,42 +1,26 @@
 import React from "react";
 import { SafeAreaView, View, TouchableOpacity } from "react-native";
 import * as WebBrowser from "expo-web-browser";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 
 import { Text, Button, StickersImage } from "../../components";
 import styles from "./IntroScreen.styles";
+import navigationOptions from "./IntroScreen.navigation";
 import { t } from "../../utils";
 import { userPreferences } from "../../ducks";
-import { navigate } from "../../navigation";
+import { currentTermsOfUseVersion } from "../../constants/Preferences";
 
-const currentTermsOfUseVersion = 1;
-
-const IntroScreen = ({ navigation }) => {
-  const navigator = navigate(navigation);
-
+const IntroScreen = () => {
   const dispatch = useDispatch();
-  const acceptedTermsOfUseVersion = useSelector(
-    userPreferences.selectors.getAcceptedTermsOfUseVersion
-  );
-  if (currentTermsOfUseVersion === acceptedTermsOfUseVersion) {
-    navigator.openBudgetStack();
-  }
 
   const onPress = () => {
     dispatch(
       userPreferences.actions.acceptTermsOfUse(currentTermsOfUseVersion)
     );
-
-    navigator.openBudgetStack();
   };
 
   return (
     <SafeAreaView style={styles.container}>
-      <View style={styles.welcomeView}>
-        <Text.Primary bold style={styles.paragraph}>
-          {t("INTRO_SCREEN_WELCOME")}
-        </Text.Primary>
-      </View>
       <View style={styles.imageView}>
         <StickersImage sticker="restaurant" />
       </View>
@@ -65,5 +49,7 @@ const IntroScreen = ({ navigation }) => {
     </SafeAreaView>
   );
 };
+
+IntroScreen.navigationOptions = navigationOptions;
 
 export default IntroScreen;

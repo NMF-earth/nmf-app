@@ -3,7 +3,7 @@ import { ScrollView, View } from "react-native";
 
 import { Text, SocialMedia, StickersImage } from "../../components";
 import styles from "./ComingSoonScreen.styles";
-import { t, platform } from "../../utils";
+import { t } from "../../utils";
 import navigationOptions from "./ComingSoonScreen.navigationOptions";
 
 const ComingSoonScreen = () => {
@@ -23,8 +23,6 @@ const ComingSoonScreen = () => {
   );
 };
 
-ComingSoonScreen.navigationOptions = platform.isAndroid
-  ? null
-  : navigationOptions;
+ComingSoonScreen.navigationOptions = navigationOptions;
 
 export default ComingSoonScreen;

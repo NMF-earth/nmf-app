@@ -3,10 +3,6 @@ import { PADDING_HORIZONTAL } from "../../constants/Layout";
 import { Layout } from "../../style";
 
 export default StyleSheet.create({
-  welcomeView: {
-    flex: 1,
-    justifyContent: "flex-end",
-  },
   container: {
     ...Layout.containerWithPadding,
     justifyContent: "space-between",

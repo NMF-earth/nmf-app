@@ -18,8 +18,8 @@ jest.mock("react-redux", () => {
   return {
     useDispatch: () => jest.fn(),
     useSelector: () => jest.fn(),
-    connect: () => component => component,
-    Provider: createMock("Provider")
+    connect: () => (component) => component,
+    Provider: createMock("Provider"),
   };
 });
 
@@ -28,6 +28,13 @@ jest.mock("react-native-globalize", () => {
 
   return {
     FormattedProvider: createMock("FormattedProvider"),
-    FormattedNumber: createMock("FormattedNumber")
+    FormattedNumber: createMock("FormattedNumber"),
+  };
+});
+
+jest.mock("@react-navigation/native", () => {
+  return {
+    useNavigation: () => jest.fn(),
+    useRoute: () => jest.fn(),
   };
 });

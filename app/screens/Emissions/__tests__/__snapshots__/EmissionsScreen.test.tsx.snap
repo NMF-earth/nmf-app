@@ -6,6 +6,7 @@ Array [
     emulateUnlessSupported={true}
     style={
       Object {
+        "backgroundColor": "#FFFFFF",
         "flex": 1,
       }
     }
@@ -13,29 +14,8 @@ Array [
     <EmissionsList
       emissions={[MockFunction]}
       monthlyCarbonBudget={[MockFunction]}
-      navigator={
-        Object {
-          "goBack": undefined,
-          "openAbout": [Function],
-          "openAddEmission": [Function],
-          "openBudgetStack": [Function],
-          "openComingSoon": [Function],
-          "openDetails": [Function],
-          "openEmissionItem": [Function],
-          "openMontlyBudget": [Function],
-          "openStorybook": [Function],
-          "openSupportUs": [Function],
-        }
-      }
     />
   </RCTSafeAreaView>,
-  <AddEmissionAndMitigateButtons
-    navigation={
-      Object {
-        "navigate": [Function],
-        "push": [Function],
-      }
-    }
-  />,
+  <AddEmissionAndMitigateButtons />,
 ]
 `;

@@ -1,11 +1,16 @@
 import React from "react";
 import { SectionList, View } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 import EmissionsListItem from "../EmissionsListItem";
 import EmissionsListItemProps from "../EmissionsListItem/EmissionsListItemProps";
 import SectionHeader from "../SectionHeader";
 import styles from "./EmissionsList.styles";
+import { navigate } from "../../../../navigation";
 
-const EmissionsList = ({ emissions, navigator, monthlyCarbonBudget }) => {
+const EmissionsList = ({ emissions, monthlyCarbonBudget }) => {
+  const navigation = useNavigation();
+  const navigator = navigate(navigation);
+
   const renderListFooter = () => <View style={styles.separator} />;
   const renderSectionHeader = (date, co2value) => (
     <SectionHeader

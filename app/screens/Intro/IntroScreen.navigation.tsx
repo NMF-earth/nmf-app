@@ -1,15 +1,18 @@
 import React from "react";
 import { Text } from "../../components";
 import { t } from "../../utils";
-import { Colors, ComponentsStyle } from "../../style";
+import { Layout, ComponentsStyle } from "../../style";
 
 const navigationOptions = () => ({
   headerStyle: {
     ...ComponentsStyle.header,
   },
-  headerBackTitleVisible: false,
-  headerTintColor: Colors.darkLink,
-  headerTitle: () => <Text.H1>{t("ADD_EMISSION_TITLE")}</Text.H1>,
+  headerBackTitle: null,
+  headerTitle: () => (
+    <Text.H1 style={Layout.androidNavTitle}>
+      {t("INTRO_SCREEN_WELCOME")}
+    </Text.H1>
+  ),
 });
 
 export default navigationOptions;

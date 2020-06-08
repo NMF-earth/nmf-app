@@ -1,13 +1,8 @@
 import React from "react";
 import HTML from "react-native-render-html";
 import { ScrollView, StyleSheet } from "react-native";
-import { NavigationState } from "react-navigation";
-
-interface Props {
-  navigation: {
-    state: NavigationState;
-  };
-}
+import { useRoute } from "@react-navigation/native";
+import { pathOr } from "ramda";
 
 const styles = StyleSheet.create({
   container: {
@@ -17,17 +12,21 @@ const styles = StyleSheet.create({
   },
 });
 
-export default class ActDetailScreen extends React.Component<Props> {
-  static navigationOptions = ({ navigation }) => {
-    const title = navigation.state.params.guide.title;
-    return { title }
-  }
+export default class ActDetailScreen extends React.Component {
+  static navigationOptions = () => {
+    const route = useRoute();
+    const title = pathOr("", ["params", "guide", "title"], route);
+
+    return { title };
+  };
 
   render() {
-    const guide = this.props.navigation.state.params.guide;
+    const route = useRoute();
+    const body = pathOr("", ["params", "guide", "body"], route);
+
     return (
       <ScrollView style={styles.container}>
-        <HTML html={guide.body} />
+        <HTML html={body} />
       </ScrollView>
     );
   }

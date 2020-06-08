@@ -1,0 +1,32 @@
+import React from "react";
+import { createStackNavigator } from "@react-navigation/stack";
+
+import SettingsScreen from "../../../screens/Settings";
+import AboutScreen from "../../../screens/About";
+import SupportUsScreen from "../../../screens/SupportUs";
+import StorybookScreen from "../../../../storybook";
+
+const Stack = createStackNavigator();
+
+const SettingsNavigator = (): React.ReactElement => (
+  <Stack.Navigator>
+    <Stack.Screen
+      name="Settings"
+      options={SettingsScreen.navigationOptions}
+      component={SettingsScreen}
+    />
+    <Stack.Screen
+      name="About"
+      options={AboutScreen.navigationOptions}
+      component={AboutScreen}
+    />
+    <Stack.Screen
+      name="SupportUs"
+      options={SupportUsScreen.navigationOptions}
+      component={SupportUsScreen}
+    />
+    <Stack.Screen name="Storybook" component={StorybookScreen} />
+  </Stack.Navigator>
+);
+
+export default SettingsNavigator;

@@ -5,32 +5,13 @@ exports[`renders correctly ComingSoon 1`] = `
   emulateUnlessSupported={true}
   style={
     Object {
+      "backgroundColor": "#FFFFFF",
       "flex": 1,
       "justifyContent": "space-between",
       "paddingHorizontal": 14,
     }
   }
 >
-  <View
-    style={
-      Object {
-        "flex": 1,
-        "justifyContent": "flex-end",
-      }
-    }
-  >
-    <Text.Primary
-      bold={true}
-      style={
-        Object {
-          "paddingVertical": 10,
-          "textAlign": "center",
-        }
-      }
-    >
-      Welcome to NMF.earth
-    </Text.Primary>
-  </View>
   <View
     style={
       Object {
