@@ -25,8 +25,8 @@ const RootNavigator = (): React.ReactElement => {
       ) : (
         <Stack.Screen
           name="Intro"
-          component={IntroScreen}
           options={{ headerShown: false }}
+          component={IntroScreen}
         />
       )}
     </Stack.Navigator>

@@ -8,13 +8,9 @@ const openComingSoon = (navigation) => (props = {}) => {
   navigation.navigate("ComingSoon", props);
 };
 
-const openBudget = (navigation) => (props = {}) => {
-  navigation.navigate("Budget", props);
-};
-
 /* push */
 const openMontlyBudget = (navigation) => (props = {}) => {
-  navigation.push("MontlyBudget", props);
+  navigation.push("MonthlyBudget", props);
 };
 
 const openAddEmission = (navigation) => (props = {}) => {
@@ -39,6 +35,10 @@ const openSupportUs = (navigation) => (props = {}) => {
 
 const openStorybook = (navigation) => (props = {}) => {
   navigation.push("Storybook", props);
+};
+
+const openBudget = (navigation) => (props = {}) => {
+  navigation.push("Budget", props);
 };
 
 const navigate = (navigation) => ({

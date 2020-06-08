@@ -4,6 +4,7 @@ exports[`renders correctly NoEmission 1`] = `
 <RCTScrollView
   style={
     Object {
+      "backgroundColor": "#FFFFFF",
       "flex": 1,
       "paddingHorizontal": 14,
     }

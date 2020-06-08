@@ -23,8 +23,8 @@ const ComingSoonScreen = () => {
   );
 };
 
-// ComingSoonScreen.navigationOptions = platform.isAndroid
-//   ? null
-//   : navigationOptions;
+ComingSoonScreen.navigationOptions = platform.isAndroid
+  ? null
+  : navigationOptions;
 
 export default ComingSoonScreen;

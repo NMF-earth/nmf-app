@@ -9,7 +9,7 @@ const navigationOptions = () => ({
     ...ComponentsStyle.header,
   },
   headerTintColor: Colors.darkLink,
-  headerBackTitle: null,
+  headerBackTitleVisible: false,
   headerTitle: () => (
     <Text.H1 style={Layout.androidNavTitle}>{t("ABOUT_SCREEN_TITLE")}</Text.H1>
   ),

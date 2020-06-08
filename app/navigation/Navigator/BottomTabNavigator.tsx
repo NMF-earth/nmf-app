@@ -52,11 +52,10 @@ const MainTabNavigator = (): React.ReactElement => (
       },
     }}
     // screenOptions={TabBarVisibleOnRootScreenOptions}
-    // initialRouteName={initialTabRoute}
     // tabBar={(props) => <HomeBottomNavigation {...props} />}
   >
     <BottomTab.Screen
-      name="Budget"
+      name="BudgetNavigator"
       options={BudgetOptions}
       component={BudgetNavigator}
     />
@@ -67,8 +66,8 @@ const MainTabNavigator = (): React.ReactElement => (
     />
     {/* <BottomTab.Screen name="Act" options={ActOptions} component={ActNavigator} /> */}
     <BottomTab.Screen
-      options={SettingsOptions}
       name="SettingsNavigator"
+      options={SettingsOptions}
       component={SettingsNavigator}
     />
   </BottomTab.Navigator>

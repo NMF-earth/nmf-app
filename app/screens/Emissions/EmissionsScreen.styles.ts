@@ -1,5 +1,6 @@
 import { StyleSheet } from "react-native";
 import { PADDING_HORIZONTAL } from "../../constants/Layout";
+import { Layout } from "../../style";
 
 const button = {
   flex: 1,
@@ -7,7 +8,7 @@ const button = {
 };
 export default StyleSheet.create({
   container: {
-    flex: 1,
+    ...Layout.containerNoPadding,
   },
   buttonView: {
     flexDirection: "row",

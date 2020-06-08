@@ -7,7 +7,11 @@ const Stack = createStackNavigator();
 
 const ModalNavigator = (): React.ReactElement => (
   <Stack.Navigator>
-    <Stack.Screen name="ComingSoon" component={ComingSoonScreen} />
+    <Stack.Screen
+      name="ComingSoon"
+      options={ComingSoonScreen.navigationOptions}
+      component={ComingSoonScreen}
+    />
   </Stack.Navigator>
 );
 

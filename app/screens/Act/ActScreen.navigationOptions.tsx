@@ -7,7 +7,7 @@ const navigationOptions = () => ({
   headerStyle: {
     ...ComponentsStyle.header,
   },
-  headerBackTitle: null,
+  headerBackTitleVisible: false,
   headerTitle: () => <Text.H1>{t("ACT_SCREEN_TITLE")}</Text.H1>,
 });
 

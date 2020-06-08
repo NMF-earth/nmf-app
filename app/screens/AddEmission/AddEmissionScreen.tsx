@@ -1,14 +1,7 @@
 import React, { useState } from "react";
 import moment from "moment";
 import { View, ScrollView, TouchableOpacity } from "react-native";
-import {
-  TransportEnum,
-  FoodEnum,
-  StreamingEnum,
-  ElectricityEnum,
-  getInternetUsageCarbonImpact,
-  streaming,
-} from "carbon-footprint";
+import { TransportEnum, FoodEnum, StreamingEnum } from "carbon-footprint";
 import DateTimePickerModal from "react-native-modal-datetime-picker";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 import { Text, Tag, TextInput } from "../../components";

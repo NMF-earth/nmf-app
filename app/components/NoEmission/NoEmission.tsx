@@ -1,15 +1,16 @@
 import React from "react";
 import { ScrollView, View } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 
 import { Text, Button, StickersImage } from "../";
 import styles from "./NoEmission.style";
 import { t } from "../../utils";
+import { navigate } from "../../navigation";
 
-interface Props {
-  addEmission: () => void;
-}
+export default function NoEmission() {
+  const navigation = useNavigation();
+  const navigator = navigate(navigation);
 
-export default function NoEmission({ addEmission }: Props) {
   return (
     <ScrollView style={styles.container}>
       <StickersImage sticker="earth" />
@@ -24,7 +25,7 @@ export default function NoEmission({ addEmission }: Props) {
         <Button.Primary
           fullWidth
           style={styles.button}
-          onPress={addEmission}
+          onPress={navigator.openAddEmission}
           textType={"Primary"}
         >
           <Text.Primary bold white>

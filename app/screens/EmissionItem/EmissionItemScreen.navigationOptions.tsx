@@ -8,7 +8,7 @@ const navigationOptions = () => ({
     ...ComponentsStyle.header,
   },
   headerTintColor: Colors.darkLink,
-  headerBackTitle: null,
+  headerBackTitleVisible: false,
   headerTitle: () => <Text.H1>{t("EMISSION_ITEM_TITLE")}</Text.H1>,
 });
 

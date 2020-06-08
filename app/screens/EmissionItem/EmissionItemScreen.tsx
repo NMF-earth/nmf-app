@@ -5,6 +5,7 @@ import { pathOr } from "ramda";
 import moment from "moment";
 import "moment/min/locales";
 import { FormattedNumber } from "react-native-globalize";
+import { useNavigation, useRoute } from "@react-navigation/native";
 import styles from "./EmissionItemScreen.styles";
 import { Text, Tag, Button } from "../../components";
 import navigationOptions from "./EmissionItemScreen.navigationOptions";
@@ -13,28 +14,13 @@ import { emissions } from "../../ducks";
 import { navigate } from "../../navigation";
 import { withLocalization, LocalizationContextProps } from "../../utils";
 
-interface Props {
-  navigation: {
-    state: {
-      params: {
-        id: string;
-      };
-    };
-  };
-}
-
-const EmissionItemScreen = ({
-  navigation,
-  language = "",
-}: Props & LocalizationContextProps) => {
-  const emissionId = pathOr(false, ["state", "params", "id"], navigation);
-  const dispatch = useDispatch();
+const EmissionItemScreen = ({ language = "" }: LocalizationContextProps) => {
+  const navigation = useNavigation();
   const navigator = navigate(navigation);
+  const route = useRoute();
 
-  if (!emissionId) {
-    navigator.goBack();
-    return null;
-  }
+  const emissionId = pathOr("", ["params", "id"], route);
+  const dispatch = useDispatch();
 
   const emission = useSelector((state) =>
     emissions.selectors.getEmissionById(state, emissionId)

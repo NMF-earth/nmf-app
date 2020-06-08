@@ -5,31 +5,22 @@ import { useDispatch } from "react-redux";
 
 import { Text, Button, StickersImage } from "../../components";
 import styles from "./IntroScreen.styles";
+import navigationOptions from "./IntroScreen.navigation";
 import { t } from "../../utils";
 import { userPreferences } from "../../ducks";
-import { navigate } from "../../navigation";
 import { currentTermsOfUseVersion } from "../../constants/Preferences";
 
-const IntroScreen = ({ navigation }) => {
-  const navigator = navigate(navigation);
-
+const IntroScreen = () => {
   const dispatch = useDispatch();
 
   const onPress = () => {
     dispatch(
       userPreferences.actions.acceptTermsOfUse(currentTermsOfUseVersion)
     );
-
-    navigator.openBudget();
   };
 
   return (
     <SafeAreaView style={styles.container}>
-      <View style={styles.welcomeView}>
-        <Text.Primary bold style={styles.paragraph}>
-          {t("INTRO_SCREEN_WELCOME")}
-        </Text.Primary>
-      </View>
       <View style={styles.imageView}>
         <StickersImage sticker="restaurant" />
       </View>
@@ -58,5 +49,7 @@ const IntroScreen = ({ navigation }) => {
     </SafeAreaView>
   );
 };
+
+IntroScreen.navigationOptions = navigationOptions;
 
 export default IntroScreen;

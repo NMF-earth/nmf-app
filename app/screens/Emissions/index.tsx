@@ -4,10 +4,8 @@ import NoEmission from "../../components/NoEmission";
 import EmissionsScreen from "./EmissionsScreen";
 import navigationOptions from "./EmissionsScreen.navigationOptions";
 import { emissions } from "../../ducks";
-import { navigate } from "../../navigation";
 
-const Emissions = props => {
-  const navigator = navigate(props.navigation);
+const Emissions = () => {
   const emissionsToMitigate = useSelector(
     emissions.selectors.getEmissionsToMitigate
   );
@@ -16,10 +14,10 @@ const Emissions = props => {
   );
 
   if (emissionsToMitigate.length || emissionsMitigated.length) {
-    return <EmissionsScreen navigation={props.navigation} />;
+    return <EmissionsScreen />;
   }
 
-  return <NoEmission addEmission={navigator.openAddEmission} />;
+  return <NoEmission />;
 };
 
 Emissions.navigationOptions = navigationOptions;
