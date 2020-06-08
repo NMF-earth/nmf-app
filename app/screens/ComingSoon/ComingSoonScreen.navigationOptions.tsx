@@ -4,10 +4,19 @@ import { Ionicons } from "@expo/vector-icons";
 import { Colors, ComponentsStyle } from "../../style";
 import { PADDING_HORIZONTAL } from "../../constants/Layout";
 import { navigate } from "../../navigation";
+import { platform } from "../../utils";
 
 const iconStyle = { paddingRight: PADDING_HORIZONTAL };
 
-const navigationOptions = ({ navigation }) => ({
+const navigationOptionsAndroid = () => ({
+  headerStyle: {
+    ...ComponentsStyle.header,
+  },
+  headerTitle: () => null,
+  headerRight: () => null,
+});
+
+const navigationOptionsIOS = ({ navigation }) => ({
   headerStyle: {
     ...ComponentsStyle.header,
     borderBottomWidth: 0,
@@ -27,5 +36,9 @@ const navigationOptions = ({ navigation }) => ({
     </View>
   ),
 });
+
+const navigationOptions = platform.isAndroid
+  ? navigationOptionsAndroid
+  : navigationOptionsIOS;
 
 export default navigationOptions;
