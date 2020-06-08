@@ -17,9 +17,10 @@ import { withLocalization, LocalizationContextProps } from "../../utils";
 const EmissionItemScreen = ({ language = "" }: LocalizationContextProps) => {
   const navigation = useNavigation();
   const navigator = navigate(navigation);
-  const route = useRoute();
 
+  const route = useRoute();
   const emissionId = pathOr("", ["params", "id"], route);
+
   const dispatch = useDispatch();
 
   const emission = useSelector((state) =>
