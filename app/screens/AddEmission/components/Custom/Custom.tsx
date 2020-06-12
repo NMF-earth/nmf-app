@@ -25,7 +25,7 @@ export default ({ setCo2eqKilograms, defaultValueSlider }: Props) => {
           {t("ADD_EMISSION_QUANTITY_OF_EMISSION")}
         </Text.H3>
         <View style={{ flexDirection: "row" }}>
-          <Text.H2 oceanBlue>
+          <Text.H2 blue50>
             {Math.round(sliderValue)}
             <Text.Primary>{" kgCO2eq"}</Text.Primary>
           </Text.H2>

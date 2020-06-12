@@ -39,8 +39,8 @@ it("renders correctly H2 darkGray", () => {
   expect(tree).toMatchSnapshot();
 });
 
-it("renders correctly H2 oceanBlue", () => {
-  const tree = renderer.create(<Text.H2 oceanBlue>test</Text.H2>).toJSON();
+it("renders correctly H2 blue50", () => {
+  const tree = renderer.create(<Text.H2 blue50>test</Text.H2>).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
