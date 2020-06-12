@@ -76,7 +76,7 @@ export default ({
       />
       <View style={styles.totalContainer}>
         <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_TOTAL")}</Text.H3>
-        <Text.H2 oceanBlue>
+        <Text.H2 blue50>
           <FormattedNumber
             value={(sliderValue / 1000) * food[foodType]}
             maximumFractionDigits={2}

@@ -116,7 +116,7 @@ export default ({
       />
       <View style={styles.totalContainer}>
         <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_TOTAL")}</Text.H3>
-        <Text.H2 style={{ color: Colors.oceanBlue }}>
+        <Text.H2 style={{ color: Colors.blue50 }}>
           <FormattedNumber
             value={
               transportType === TransportEnum.plane
