@@ -2,6 +2,8 @@ import en from "./en.json";
 import fr from "./fr.json";
 import de from "./en.json";
 import sv from "./sv.json";
+import es from "./es.json";
+import pt from "./pt.json";
 
 interface TranslationKeys {
   BUDGET_SCREEN_TAB_NAME: string;
@@ -20,4 +22,4 @@ interface TranslationKeys {
   BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_WITHOUT_MEAT: string;
 }
 
-export { en, fr, de, sv, TranslationKeys };
+export { en, fr, de, sv, es, pt, TranslationKeys };
