@@ -10,6 +10,7 @@ import * as EmissionItem from "../../screens/EmissionItem/translations";
 import * as Intro from "../../screens/Intro/translations";
 import * as About from "../../screens/About/translations";
 import * as SupportUs from "../../screens/SupportUs/translations";
+import * as MyLocation from "../../screens/MyLocation/translations";
 
 /* COMPONENTS */
 import * as NoEmission from "../../components/NoEmission/translations";
@@ -32,7 +33,8 @@ const en = {
   ...AddEmission.en,
   ...EmissionItem.en,
   ...Intro.en,
-  ...SupportUs.en
+  ...SupportUs.en,
+  ...MyLocation.en,
 };
 
 const de = {
@@ -49,7 +51,8 @@ const de = {
   ...AddEmission.de,
   ...EmissionItem.de,
   ...Intro.de,
-  ...SupportUs.de
+  ...SupportUs.de,
+  ...MyLocation.de,
 };
 
 const fr = {
@@ -66,7 +69,8 @@ const fr = {
   ...AddEmission.fr,
   ...EmissionItem.fr,
   ...Intro.fr,
-  ...SupportUs.fr
+  ...SupportUs.fr,
+  ...MyLocation.fr,
 };
 
 const sv = {
@@ -83,7 +87,44 @@ const sv = {
   ...AddEmission.sv,
   ...EmissionItem.sv,
   ...Intro.sv,
-  ...SupportUs.sv
+  ...SupportUs.sv,
+  ...MyLocation.sv,
+};
+
+const pt = {
+  ...UI.pt,
+  ...About.pt,
+  ...MonthlyBudget.pt,
+  ...GuidePreview.pt,
+  ...NoEmission.pt,
+  ...Act.pt,
+  ...Budget.pt,
+  ...Emissions.pt,
+  ...Settings.pt,
+  ...ComingSoon.pt,
+  ...AddEmission.pt,
+  ...EmissionItem.pt,
+  ...Intro.pt,
+  ...SupportUs.pt,
+  ...MyLocation.pt,
+};
+
+const es = {
+  ...UI.es,
+  ...About.es,
+  ...MonthlyBudget.es,
+  ...GuidePreview.es,
+  ...NoEmission.es,
+  ...Act.es,
+  ...Budget.es,
+  ...Emissions.es,
+  ...Settings.es,
+  ...ComingSoon.es,
+  ...AddEmission.es,
+  ...EmissionItem.es,
+  ...Intro.es,
+  ...SupportUs.es,
+  ...MyLocation.es,
 };
 
 export interface TranslationKeys
@@ -100,6 +141,7 @@ export interface TranslationKeys
     Settings.TranslationKeys,
     Intro.TranslationKeys,
     About.TranslationKeys,
+    MyLocation.TranslationKeys,
     SupportUs.TranslationKeys {}
 
-export { en, de, fr, sv };
+export { en, de, fr, sv, pt, es };

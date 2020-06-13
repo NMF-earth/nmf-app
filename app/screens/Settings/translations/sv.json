@@ -1,5 +1,6 @@
 {
   "SETTINGS_SCREEN_ABOUT": "Om appen",
+  "SETTINGS_SCREEN_MY_LOCATION": "My Location",
   "SETTINGS_SCREEN_APP_VERSION": "Version %{version}",
   "SETTINGS_SCREEN_FEEDBACK": "Synpunkter",
   "SETTINGS_SCREEN_NMF_EARTH": "NMF.earth",

@@ -17,11 +17,15 @@ import { navigate } from "../../navigation";
 
 const SettingsScreen = (props) => {
   const navigator = navigate(props.navigation);
-  console.log("SettingsScreen -> props.navigation", navigator);
+
   const rowItems = [
     {
       title: t("SETTINGS_SCREEN_ABOUT"),
       onPress: navigator.openAbout,
+    },
+    {
+      title: t("SETTINGS_SCREEN_MY_LOCATION"),
+      onPress: navigator.openMyLocation,
     },
     {
       title: t("SETTINGS_SCREEN_SUPPORT_US"),

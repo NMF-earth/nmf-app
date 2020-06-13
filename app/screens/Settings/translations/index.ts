@@ -15,6 +15,7 @@ interface TranslationKeys {
   SETTINGS_SCREEN_FEEDBACK: string;
   SETTINGS_SCREEN_TERMS_OF_USE: string;
   SETTINGS_SCREEN_APP_VERSION: string;
+  SETTINGS_SCREEN_MY_LOCATION: string;
 }
 
 export { en, fr, de, sv, es, pt, TranslationKeys };
