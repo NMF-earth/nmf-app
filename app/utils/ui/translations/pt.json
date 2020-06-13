@@ -1,0 +1,18 @@
+{
+  "TRAIN": "Train",
+  "CAR": "Voiture",
+  "PLANE": "Avion",
+  "BOAT": "Bateau",
+  "BUS": "Bus",
+  "MOTORBIKE": "Moto",
+  "RED_MEAT": "Viande rouge",
+  "WHITE_MEAT": "Viande blanche",
+  "CHOCOLATE": "Chocolat",
+  "COFFEE": "Café",
+  "FISH": "Poisson",
+  "CUSTOM": "Customisé",
+  "HD_VIDEO": "Vidéo - HD",
+  "AUDIO": "Audio - MP3",
+  "FULL_HD_VIDEO": "Vidéo - FullHD/1080p",
+  "ULTRA_HD_VIDEO": "Vidéo - UltraHD/4K"
+}

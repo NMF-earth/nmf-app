@@ -2,6 +2,8 @@ import en from "./en.json";
 import fr from "./fr.json";
 import de from "./de.json";
 import sv from "./sv.json";
+import es from "./es.json";
+import pt from "./pt.json";
 
 interface TranslationKeys {
   ADD_EMISSION_TITLE: string;
@@ -28,4 +30,4 @@ interface TranslationKeys {
   ADD_EMISSION_PICKER_MODAL_CANCEL: string;
 }
 
-export { en, fr, de, sv, TranslationKeys };
+export { en, fr, de, sv, es, pt, TranslationKeys };
