@@ -5,16 +5,17 @@ export default StyleSheet.create({
   container: {
     justifyContent: "center",
     flexDirection: "row",
-    paddingTop: 10
+    paddingTop: 10,
   },
   coloredDot: {
-    width: Font.FontSize.Secondary,
-    height: Font.FontSize.Secondary,
-    borderRadius: 8
+    width: Font.FontSize.Secondary + 2,
+    height: Font.FontSize.Secondary + 2,
+    borderRadius: 10,
   },
   coloredDotView: {
+    alignSelf: "center",
     marginHorizontal: 6,
     width: Font.FontSize.Secondary,
-    height: "100%"
-  }
+    height: "100%",
+  },
 });

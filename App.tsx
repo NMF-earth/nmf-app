@@ -3,7 +3,7 @@ import * as Font from "expo-font";
 import { FormattedProvider } from "react-native-globalize";
 import { locale as localeExpo } from "expo-localization";
 import { includes } from "ramda";
-import { Platform, StatusBar, StyleSheet, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
 import Constants from "expo-constants";
 import * as Sentry from "sentry-expo";
@@ -13,13 +13,6 @@ import store from "./app/redux/store";
 import { LocalizationContext } from "./app/utils";
 
 const supportedLanguages = ["en", "fr", "de", "sv"];
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-  },
-});
 
 const secret =
   require("./secret.ts").default || require("./secret.example.ts").default;

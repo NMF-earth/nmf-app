@@ -235,7 +235,7 @@ const AddEmissionScreen = ({
       </View>
 
       <AddEmissionButton
-        navigation={navigation}
+        goBack={navigation.goBack}
         emissionPayload={{
           ...emissionPayload,
           name: emissionName,

@@ -7,18 +7,14 @@ import styles from "./AddEmissionButton.styles";
 import { t } from "../../../../utils";
 import { emissions } from "../../../../ducks";
 import { EmissionPayload } from "../../../../interfaces/emission/emission.interface";
-import { navigate } from "../../../../navigation";
 
 interface Props {
   emissionPayload: EmissionPayload;
-  navigation: {
-    goBack: () => void;
-  };
+  goBack: () => void;
 }
 
-const AddEmissionButton = ({ navigation, emissionPayload }: Props) => {
+const AddEmissionButton = ({ goBack, emissionPayload }: Props) => {
   const dispatch = useDispatch();
-  const navigator = navigate(navigation);
 
   const addEmission = () => {
     const emission = {
@@ -28,7 +24,7 @@ const AddEmissionButton = ({ navigation, emissionPayload }: Props) => {
     };
 
     dispatch(emissions.actions.createEmission(emission));
-    navigator.goBack();
+    goBack();
   };
 
   return (
