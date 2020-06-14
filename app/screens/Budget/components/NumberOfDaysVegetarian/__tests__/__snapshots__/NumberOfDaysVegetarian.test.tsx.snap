@@ -30,7 +30,7 @@ exports[`NumberOfDaysVegetarian renders correctly 1`] = `
        
     </Text.H3>
     <Text.H3>
-      without meat or fish.
+      [missing "mock.BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_WITHOUT_MEAT" translation]
     </Text.H3>
   </View>
   <Text.H3

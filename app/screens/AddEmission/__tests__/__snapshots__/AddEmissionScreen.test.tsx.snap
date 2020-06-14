@@ -88,7 +88,7 @@ exports[`AddEmissionScreen renders correctly 1`] = `
               icon="md-play-circle"
               onPress={[Function]}
               selected={false}
-              title="Streaming"
+              title="[missing \\"mock.ADD_EMISSION_STREAMING\\" translation]"
             />
             <Tag
               icon="md-build"
