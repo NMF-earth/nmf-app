@@ -10,6 +10,7 @@ import * as Sentry from "sentry-expo";
 import { Provider } from "react-redux";
 import AppNavigator from "./app/navigation/Navigator/AppNavigator";
 import store from "./app/redux/store";
+import SplashScreen from "./app/screens/Splash";
 import { LocalizationContext } from "./app/utils";
 
 const supportedLanguages = ["en", "fr", "de", "sv"];
@@ -21,7 +22,7 @@ const secret =
 Sentry.init({
   dsn: secret.dsn,
   enableInExpoDevelopment: false,
-  debug: true,
+  debug: true
 });
 
 /* TODO: set Constants.manifest.revisionId with expo */
@@ -45,6 +46,7 @@ const App = () => {
   }
 
   const [ready, setReady] = useState(false);
+  const [splashAnimation, setSplashAnimation] = useState(false); // to track splashScreen animation
   const [language, setLanguage] = useState(lang);
   const [locale, setLocale] = useState(localeExpo);
 
@@ -69,16 +71,23 @@ const App = () => {
         "Inter-SemiBold": require("./assets/fonts/Inter-SemiBold.ttf"),
         "Inter-SemiBoldItalic": require("./assets/fonts/Inter-SemiBoldItalic.ttf"),
         "Inter-Thin-BETA": require("./assets/fonts/Inter-Thin-BETA.ttf"),
-        "Inter-ThinItalic-BETA": require("./assets/fonts/Inter-ThinItalic-BETA.ttf"),
-      }),
+        "Inter-ThinItalic-BETA": require("./assets/fonts/Inter-ThinItalic-BETA.ttf")
+      })
     ])
-      .then(() => setReady(true))
-      .catch((error) => Sentry.captureException(error));
+      .then(() => {
+        setReady(true);
+      })
+      .catch(error => Sentry.captureException(error));
   }, []);
+
+  // callback to get splashScreen animation completion
+  const screenAnimationComplete = animation => {
+    setSplashAnimation(animation);
+  };
 
   return (
     <>
-      {ready ? (
+      {ready && splashAnimation ? (
         <Provider store={store}>
           <FormattedProvider locale={language || "en"}>
             <LocalizationContext.Provider
@@ -86,7 +95,7 @@ const App = () => {
                 locale: locale || "en-US",
                 setLocale: setLocale,
                 language: language || "en",
-                setLanguage: setLanguage,
+                setLanguage: setLanguage
               }}
             >
               <AppNavigator />
@@ -94,7 +103,7 @@ const App = () => {
           </FormattedProvider>
         </Provider>
       ) : (
-        <View />
+        <SplashScreen screenAnimationComplete={screenAnimationComplete} />
       )}
     </>
   );
