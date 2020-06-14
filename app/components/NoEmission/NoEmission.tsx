@@ -3,7 +3,7 @@ import { ScrollView, View } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
 import { Text, Button, StickersImage } from "../";
-import styles from "./NoEmission.style";
+import styles from "./NoEmission.styles";
 import { t } from "../../utils";
 import { navigate } from "../../navigation";
 

@@ -1,3 +1,4 @@
+import { ElectricityEnum } from "carbon-footprint";
 import userPreferences from "../";
 
 describe("userPreferences reducer should", () => {
@@ -5,7 +6,8 @@ describe("userPreferences reducer should", () => {
     // TODO: fix eslint complains bellow
     // eslint-disable-next-line
     expect(userPreferences.reducer(undefined, {} as any)).toEqual({
-      acceptedTermsOfUseVersion: 0
+      acceptedTermsOfUseVersion: 0,
+      location: ElectricityEnum.world,
     });
   });
 
@@ -14,11 +16,24 @@ describe("userPreferences reducer should", () => {
 
     const expectedAction = {
       type: userPreferences.actions.acceptTermsOfUse.toString(),
-      payload: acceptedTermsOfUseVersion
+      payload: acceptedTermsOfUseVersion,
     };
 
     expect(userPreferences.reducer(undefined, expectedAction)).toEqual({
-      acceptedTermsOfUseVersion: 2
+      acceptedTermsOfUseVersion: 2,
+      location: ElectricityEnum.world,
+    });
+  });
+
+  it("handle location change", () => {
+    const expectedAction = {
+      type: userPreferences.actions.updateLocation.toString(),
+      payload: ElectricityEnum.belgium,
+    };
+
+    expect(userPreferences.reducer(undefined, expectedAction)).toEqual({
+      acceptedTermsOfUseVersion: 0,
+      location: ElectricityEnum.belgium,
     });
   });
 });

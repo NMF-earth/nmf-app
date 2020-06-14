@@ -17,6 +17,10 @@ exports[`SettingsScreen renders correctly 1`] = `
     />
     <SettingsRow
       onPress={[Function]}
+      title="My Location"
+    />
+    <SettingsRow
+      onPress={[Function]}
       title="Support us!"
     />
     <SettingsRow

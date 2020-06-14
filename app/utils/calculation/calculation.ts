@@ -1,4 +1,4 @@
-import { isEmpty, prop, reduce, maxBy, either, isNil } from "ramda";
+import { isEmpty, prop, reduce, maxBy, either, isNil, pipe } from "ramda";
 import {
   transport,
   TransportEnum,
@@ -79,9 +79,18 @@ const getLatestEmission = (emissions: Array<Emission>) =>
     ? null
     : reduce(maxBy(prop("creationDate")), emissions[0], emissions);
 
+const toKWH = (x: number) => (x * 3.6) / Math.pow(10, -6);
+const toKgCO2 = (x: number) => x * 1000;
+const getCarbonIntensityInGramPerKWHromKgPerJoules = pipe(
+  toKWH,
+  toKgCO2,
+  Math.round
+);
+
 export default {
   getLatestEmission,
   getC02ValueFromEmission,
   getFlightType,
   getFlightEmissionValue,
+  getCarbonIntensityInGramPerKWHromKgPerJoules,
 };

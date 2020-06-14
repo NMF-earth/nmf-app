@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SelectableListItem /> render 1`] = `
+<TouchableOpacity
+  onPress={[Function]}
+  style={
+    Object {
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+    }
+  }
+>
+  <Text.Primary
+    bold={true}
+    green={true}
+    style={
+      Object {
+        "paddingVertical": 20,
+      }
+    }
+  >
+    France
+  </Text.Primary>
+  <Ionicons
+    color="#4BB377"
+    name="md-checkmark"
+    size={26}
+    style={
+      Object {
+        "marginTop": 16,
+      }
+    }
+  />
+</TouchableOpacity>
+`;
+
+exports[`<SelectableListItem /> render if not selected 1`] = `
+<TouchableOpacity
+  onPress={[Function]}
+  style={
+    Object {
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+    }
+  }
+>
+  <Text.Primary
+    bold={true}
+    green={true}
+    style={
+      Object {
+        "paddingVertical": 20,
+      }
+    }
+  >
+    France
+  </Text.Primary>
+  <Ionicons
+    color="#4BB377"
+    name="md-checkmark"
+    size={26}
+    style={
+      Object {
+        "marginTop": 16,
+      }
+    }
+  />
+</TouchableOpacity>
+`;

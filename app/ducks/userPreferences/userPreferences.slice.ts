@@ -1,7 +1,9 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { ElectricityEnum } from "carbon-footprint";
 
 const initialState = {
-  acceptedTermsOfUseVersion: 0
+  acceptedTermsOfUseVersion: 0,
+  location: ElectricityEnum.world,
 };
 
 const userPreferences = createSlice({
@@ -10,13 +12,16 @@ const userPreferences = createSlice({
   reducers: {
     acceptTermsOfUse(state, action: PayloadAction<number>) {
       state.acceptedTermsOfUseVersion = action.payload;
-    }
-  }
+    },
+    updateLocation(state, action: PayloadAction<ElectricityEnum>) {
+      state.location = action.payload;
+    },
+  },
 });
 
-const { acceptTermsOfUse } = userPreferences.actions;
+const { acceptTermsOfUse, updateLocation } = userPreferences.actions;
 
-export const actions = { acceptTermsOfUse };
+export const actions = { acceptTermsOfUse, updateLocation };
 
 export const namespace = userPreferences.name;
 
