@@ -7,8 +7,10 @@ import Tag from "./Tag";
 import SocialMedia from "./SocialMedia";
 import TextInput from "./TextInput";
 import StickersImage from "./StickersImage";
+import SelectableListItem from "./SelectableListItem";
 
 export {
+  SelectableListItem,
   StickersImage,
   SocialMedia,
   Tag,

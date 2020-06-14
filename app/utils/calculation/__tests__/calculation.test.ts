@@ -1,6 +1,12 @@
+import {
+  FoodEnum,
+  TransportEnum,
+  food,
+  transport,
+  electricity,
+} from "carbon-footprint";
 import calculation from "../";
 import { Emission, EmissionEnum } from "../../../interfaces";
-import { FoodEnum, TransportEnum, food, transport } from "carbon-footprint";
 
 const emissionFood: Emission = {
   id: "123",
@@ -8,24 +14,24 @@ const emissionFood: Emission = {
   emissionModelType: FoodEnum.beans,
   emissionType: EmissionEnum.food,
   isMitigated: false,
-  value: 10
+  value: 10,
 };
 
 const emissionFoodRecent = {
   ...emissionFood,
-  creationDate: "2020-03-27T11:04:55.334Z"
+  creationDate: "2020-03-27T11:04:55.334Z",
 };
 
 const emissionTransport = {
   ...emissionFood,
   emissionModelType: TransportEnum.boat,
-  emissionType: EmissionEnum.transport
+  emissionType: EmissionEnum.transport,
 };
 
 const emissionCustom = {
   ...emissionFood,
   emissionModelType: "custom",
-  emissionType: EmissionEnum.custom
+  emissionType: EmissionEnum.custom,
 };
 
 describe("getC02ValueFromEmission should return the correct co2 emitted value for", () => {
@@ -105,5 +111,15 @@ describe("getLatestEmission should return the latest emission emitted", () => {
     expect(
       calculation.getLatestEmission([emissionFood, emissionFoodRecent])
     ).toEqual(emissionFoodRecent);
+  });
+});
+
+describe("getCarbonIntensityInGramPerKWHromKgPerJoules should convert data from kgCO2/J to gCO2/kWh", () => {
+  it("if no emissions", () => {
+    expect(
+      calculation.getCarbonIntensityInGramPerKWHromKgPerJoules(
+        electricity.france
+      )
+    ).toEqual(31);
   });
 });

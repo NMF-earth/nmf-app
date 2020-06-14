@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Budget actions should export expected actions 1`] = `
+exports[`userPreferences actions should export expected actions 1`] = `
 Object {
   "acceptTermsOfUse": [Function],
+  "updateLocation": [Function],
 }
 `;

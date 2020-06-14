@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { Layout } from "../../style";
+import { Colors, Layout } from "../../style";
 
 const styles = StyleSheet.create({
   container: {
@@ -13,6 +13,10 @@ const styles = StyleSheet.create({
   },
   carbonIntensity: {
     paddingVertical: 20,
+  },
+  scrollContainer: {
+    borderTopColor: Colors.linkGreen10,
+    borderTopWidth: 2,
   },
 });
 
