@@ -66,7 +66,7 @@ exports[`AboutScreen renders correctly 1`] = `
       100% Open source
     </Text.H3>
     <Text.Primary>
-      Everyone will be to add content to the app, verify emissions models and fix any incorrect information 
+      Everyone will be able to add content to the app, verify emissions models and fix any incorrect information
     </Text.Primary>
     <Text.H2
       style={
