@@ -32,7 +32,7 @@ const TextInput = ({
           <Ionicons
             name={"md-add-circle"}
             size={24}
-            color={Colors.linkGreen}
+            color={Colors.green50}
             style={styles.icon}
           />
         )}

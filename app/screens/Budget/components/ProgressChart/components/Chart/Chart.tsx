@@ -44,7 +44,7 @@ const Chart = ({
       transportEmissionsPercentage,
       totalEmissionsPercentage
     ],
-    colors: [Colors.linkGreen, Colors.mango, Colors.apricot]
+    colors: [Colors.green50, Colors.mango, Colors.apricot]
   };
 
   const pies = data.values.map((pieData, i) => {
