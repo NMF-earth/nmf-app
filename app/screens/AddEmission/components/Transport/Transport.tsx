@@ -97,9 +97,9 @@ export default ({
         ? renderDuration()
         : renderDistance()}
       <Slider
-        minimumTrackTintColor={Colors.linkGreen}
+        minimumTrackTintColor={Colors.green50}
         maximumTrackTintColor={Colors.gray}
-        thumbTintColor={Colors.linkGreen}
+        thumbTintColor={Colors.green50}
         style={styles.slider}
         maximumValue={
           transportType === TransportEnum.plane

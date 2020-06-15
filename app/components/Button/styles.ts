@@ -6,7 +6,7 @@ export default StyleSheet.create({
     paddingHorizontal: 36
   },
   black: {
-    backgroundColor: Colors.darkLink
+    backgroundColor: Colors.grey100
   },
   fullWidth: {
     width: "100%",

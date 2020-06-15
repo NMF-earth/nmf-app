@@ -8,7 +8,7 @@ const navigationOptions = () => ({
     ...ComponentsStyle.header,
   },
   headerBackTitleVisible: false,
-  headerTintColor: Colors.darkLink,
+  headerTintColor: Colors.grey100,
   headerTitle: () => <Text.H1>{t("MONTHLY_BUDGET_TITLE")}</Text.H1>,
 });
 

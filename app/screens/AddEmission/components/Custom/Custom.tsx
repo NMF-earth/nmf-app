@@ -32,9 +32,9 @@ export default ({ setCo2eqKilograms, defaultValueSlider }: Props) => {
         </View>
       </View>
       <Slider
-        minimumTrackTintColor={Colors.linkGreen}
+        minimumTrackTintColor={Colors.green50}
         maximumTrackTintColor={Colors.gray}
-        thumbTintColor={Colors.linkGreen}
+        thumbTintColor={Colors.green50}
         style={styles.slider}
         maximumValue={MAX_SLIDER_VALUE}
         minimumValue={MIN_SLIDER_VALUE}

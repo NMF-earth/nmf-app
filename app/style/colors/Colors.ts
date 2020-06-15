@@ -1,8 +1,8 @@
 export default {
   blue50: "#3957D0",
-  linkGreen: "#4BB377",
+  green50: "#4BB377",
   linkGreen10: "#DCF0E5",
-  darkLink: "#111714",
+  grey100: "#111714",
   darkLink70: "#585D5B",
   gray: "#CED4DA",
   swordGray: "#9CA6A0",

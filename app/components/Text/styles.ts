@@ -12,7 +12,7 @@ export default StyleSheet.create({
     color: Colors.swordGray,
   },
   green: {
-    color: Colors.linkGreen,
+    color: Colors.green50,
   },
   white: {
     color: Colors.white,

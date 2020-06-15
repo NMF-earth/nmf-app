@@ -12,7 +12,7 @@ export default StyleSheet.create({
   },
   tabItemSelected: {
     flex: 1,
-    borderBottomColor: Colors.linkGreen,
+    borderBottomColor: Colors.green50,
     borderBottomWidth: 4,
   },
   buttonContainer: {
