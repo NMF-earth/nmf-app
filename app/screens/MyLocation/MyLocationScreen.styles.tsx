@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
     paddingVertical: 20,
   },
   scrollContainer: {
-    borderTopColor: Colors.linkGreen10,
+    borderTopColor: Colors.green10,
     borderTopWidth: 2,
   },
 });

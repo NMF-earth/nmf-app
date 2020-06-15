@@ -39,7 +39,7 @@ export default StyleSheet.create({
   },
   mitigatedCircle: {
     ...iconBackground,
-    backgroundColor: Colors.linkGreen10,
+    backgroundColor: Colors.green10,
   },
   notMitigatedCircle: {
     ...iconBackground,

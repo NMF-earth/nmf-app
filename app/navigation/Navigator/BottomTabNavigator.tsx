@@ -47,7 +47,7 @@ const MainTabNavigator = (): React.ReactElement => (
       inactiveTintColor: Colors.grey40,
       style: {
         paddingTop: 6,
-        backgroundColor: Colors.linkGreen10,
+        backgroundColor: Colors.green10,
         borderTopWidth: 0,
       },
     }}

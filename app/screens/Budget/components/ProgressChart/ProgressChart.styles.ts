@@ -8,7 +8,7 @@ export default StyleSheet.create({
     backgroundColor: Colors.white,
     paddingBottom: 14,
     borderRadius: 14,
-    borderColor: Colors.linkGreen10,
+    borderColor: Colors.green10,
     borderWidth: 2,
     marginVertical: 24,
     paddingTop: 10,
