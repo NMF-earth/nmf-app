@@ -20,7 +20,7 @@ const between340and400 = both(gt340, lt400);
 const getDirtyFactor = cond([
   [lt340, always(8)],
   [between340and400, always(6)],
-  [gt400, always(5)]
+  [gt400, always(5)],
 ]);
 
 const dirtyFactor = getDirtyFactor(screen.width);
@@ -36,15 +36,15 @@ interface Prop {
 const Chart = ({
   totalEmissionsPercentage,
   transportEmissionsPercentage,
-  foodEmissionsPercentage
+  foodEmissionsPercentage,
 }: Prop) => {
   const data = {
     values: [
       foodEmissionsPercentage,
       transportEmissionsPercentage,
-      totalEmissionsPercentage
+      totalEmissionsPercentage,
     ],
-    colors: [Colors.green50, Colors.mango, Colors.apricot]
+    colors: [Colors.green50, Colors.yellow50, Colors.apricot],
   };
 
   const pies = data.values.map((pieData, i) => {
@@ -55,7 +55,7 @@ const Chart = ({
       R: r,
       center: [0, 0],
       data: [pieData, 1 - pieData],
-      accessor: x => x
+      accessor: (x) => x,
     });
   });
 
@@ -67,7 +67,7 @@ const Chart = ({
       R: r,
       center: [0, 0],
       data: [0.999, 0.001],
-      accessor: x => x
+      accessor: (x) => x,
     });
   });
 

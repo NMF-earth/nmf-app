@@ -66,7 +66,7 @@ export default ({
       </View>
       <Slider
         minimumTrackTintColor={Colors.green50}
-        maximumTrackTintColor={Colors.gray}
+        maximumTrackTintColor={Colors.grey}
         thumbTintColor={Colors.green50}
         style={styles.slider}
         maximumValue={MAX_SLIDER_VALUE}

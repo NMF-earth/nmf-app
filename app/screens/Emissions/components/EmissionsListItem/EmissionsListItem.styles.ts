@@ -43,6 +43,6 @@ export default StyleSheet.create({
   },
   notMitigatedCircle: {
     ...iconBackground,
-    backgroundColor: Colors.gray + "60",
+    backgroundColor: Colors.grey + "60",
   },
 });
