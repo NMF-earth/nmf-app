@@ -22,7 +22,7 @@ const SelectableListItem = ({ selected, title, onPress }: Props) => {
           name={"md-checkmark"}
           size={26}
           style={{ marginTop: 16 }}
-          color={Colors.linkGreen}
+          color={Colors.green50}
         />
       )}
     </TouchableOpacity>
