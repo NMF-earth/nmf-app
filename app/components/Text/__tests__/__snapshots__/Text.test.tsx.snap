@@ -29,7 +29,7 @@ exports[`renders correctly H1 darkGray 1`] = `
       },
       undefined,
       Object {
-        "color": "#585D5B",
+        "color": "#595D58",
       },
     ]
   }
@@ -109,7 +109,7 @@ exports[`renders correctly H2 darkGray 1`] = `
       },
       undefined,
       Object {
-        "color": "#585D5B",
+        "color": "#595D58",
       },
     ]
   }
@@ -231,7 +231,7 @@ exports[`renders correctly H3 darkGray 1`] = `
       },
       undefined,
       Object {
-        "color": "#585D5B",
+        "color": "#595D58",
       },
     ]
   }
@@ -376,7 +376,7 @@ exports[`renders correctly Primary darkGray 1`] = `
       },
       undefined,
       Object {
-        "color": "#585D5B",
+        "color": "#595D58",
       },
     ]
   }
@@ -540,7 +540,7 @@ exports[`renders correctly Secondary darkGray 1`] = `
       },
       undefined,
       Object {
-        "color": "#585D5B",
+        "color": "#595D58",
       },
     ]
   }
@@ -725,7 +725,7 @@ exports[`renders correctly Tertiary darkGray 1`] = `
       },
       undefined,
       Object {
-        "color": "#585D5B",
+        "color": "#595D58",
       },
     ]
   }

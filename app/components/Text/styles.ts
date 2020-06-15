@@ -3,13 +3,13 @@ import { Colors, Font } from "../../style";
 
 export default StyleSheet.create({
   red: {
-    color: Colors.bloodyRed,
+    color: Colors.red50,
   },
   darkGray: {
-    color: Colors.darkLink70,
+    color: Colors.grey70,
   },
   lightGray: {
-    color: Colors.swordGray,
+    color: Colors.grey40,
   },
   green: {
     color: Colors.green50,
