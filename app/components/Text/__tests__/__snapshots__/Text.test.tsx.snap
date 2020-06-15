@@ -97,6 +97,27 @@ exports[`renders correctly H2 1`] = `
 </Text>
 `;
 
+exports[`renders correctly H2 blue50 1`] = `
+<Text
+  blue50={true}
+  style={
+    Array [
+      Object {
+        "color": "#111714",
+        "fontFamily": "Inter-Bold",
+        "fontSize": 26,
+      },
+      undefined,
+      Object {
+        "color": "#3957D0",
+      },
+    ]
+  }
+>
+  test
+</Text>
+`;
+
 exports[`renders correctly H2 darkGray 1`] = `
 <Text
   darkGray={true}
@@ -160,9 +181,9 @@ exports[`renders correctly H2 lightGray 1`] = `
 </Text>
 `;
 
-exports[`renders correctly H2 blue50 1`] = `
+exports[`renders correctly H2 oceanBlue 1`] = `
 <Text
-  blue50={true}
+  oceanBlue={true}
   style={
     Array [
       Object {
@@ -171,9 +192,6 @@ exports[`renders correctly H2 blue50 1`] = `
         "fontSize": 26,
       },
       undefined,
-      Object {
-        "color": "#3957D0",
-      },
     ]
   }
 >
