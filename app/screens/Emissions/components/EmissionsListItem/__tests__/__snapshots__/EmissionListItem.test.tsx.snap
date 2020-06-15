@@ -146,7 +146,7 @@ exports[`EmissionsListItem renders correctly with audio icon 1`] = `
         }
       />
       <Ionicons
-        color="#585D5B"
+        color="#595D58"
         name="md-musical-note"
         size={22}
         style={
@@ -243,7 +243,7 @@ exports[`EmissionsListItem renders correctly with boat icon 1`] = `
         }
       />
       <Ionicons
-        color="#585D5B"
+        color="#595D58"
         name="md-boat"
         size={22}
         style={
@@ -340,7 +340,7 @@ exports[`EmissionsListItem renders correctly with bus icon 1`] = `
         }
       />
       <Ionicons
-        color="#585D5B"
+        color="#595D58"
         name="md-bus"
         size={22}
         style={
@@ -437,7 +437,7 @@ exports[`EmissionsListItem renders correctly with car icon 1`] = `
         }
       />
       <Ionicons
-        color="#585D5B"
+        color="#595D58"
         name="md-car"
         size={22}
         style={
@@ -534,7 +534,7 @@ exports[`EmissionsListItem renders correctly with chocolate icon 1`] = `
         }
       />
       <Ionicons
-        color="#585D5B"
+        color="#595D58"
         name="md-restaurant"
         size={22}
         style={
@@ -631,7 +631,7 @@ exports[`EmissionsListItem renders correctly with coffee icon 1`] = `
         }
       />
       <Ionicons
-        color="#585D5B"
+        color="#595D58"
         name="md-cafe"
         size={22}
         style={
@@ -728,7 +728,7 @@ exports[`EmissionsListItem renders correctly with fish icon 1`] = `
         }
       />
       <Ionicons
-        color="#585D5B"
+        color="#595D58"
         name="md-restaurant"
         size={22}
         style={
@@ -825,7 +825,7 @@ exports[`EmissionsListItem renders correctly with full hd video icon 1`] = `
         }
       />
       <Ionicons
-        color="#585D5B"
+        color="#595D58"
         name="md-film"
         size={22}
         style={
@@ -922,7 +922,7 @@ exports[`EmissionsListItem renders correctly with hd video icon 1`] = `
         }
       />
       <Ionicons
-        color="#585D5B"
+        color="#595D58"
         name="md-film"
         size={22}
         style={
@@ -1019,7 +1019,7 @@ exports[`EmissionsListItem renders correctly with longHaulFlight icon 1`] = `
         }
       />
       <Ionicons
-        color="#585D5B"
+        color="#595D58"
         name="md-airplane"
         size={22}
         style={
@@ -1116,7 +1116,7 @@ exports[`EmissionsListItem renders correctly with mediumHaulFlight icon 1`] = `
         }
       />
       <Ionicons
-        color="#585D5B"
+        color="#595D58"
         name="md-airplane"
         size={22}
         style={
@@ -1213,7 +1213,7 @@ exports[`EmissionsListItem renders correctly with motorbike icon 1`] = `
         }
       />
       <Ionicons
-        color="#585D5B"
+        color="#595D58"
         name="md-bicycle"
         size={22}
         style={
@@ -1310,7 +1310,7 @@ exports[`EmissionsListItem renders correctly with redMeat icon 1`] = `
         }
       />
       <Ionicons
-        color="#585D5B"
+        color="#595D58"
         name="md-restaurant"
         size={22}
         style={
@@ -1407,7 +1407,7 @@ exports[`EmissionsListItem renders correctly with shortHaulFlight icon 1`] = `
         }
       />
       <Ionicons
-        color="#585D5B"
+        color="#595D58"
         name="md-airplane"
         size={22}
         style={
@@ -1504,7 +1504,7 @@ exports[`EmissionsListItem renders correctly with train icon 1`] = `
         }
       />
       <Ionicons
-        color="#585D5B"
+        color="#595D58"
         name="md-train"
         size={22}
         style={
@@ -1601,7 +1601,7 @@ exports[`EmissionsListItem renders correctly with ultra hd video icon 1`] = `
         }
       />
       <Ionicons
-        color="#585D5B"
+        color="#595D58"
         name="md-film"
         size={22}
         style={
@@ -1698,7 +1698,7 @@ exports[`EmissionsListItem renders correctly with whiteMeat icon 1`] = `
         }
       />
       <Ionicons
-        color="#585D5B"
+        color="#595D58"
         name="md-restaurant"
         size={22}
         style={

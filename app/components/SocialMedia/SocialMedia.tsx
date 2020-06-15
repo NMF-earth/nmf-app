@@ -38,7 +38,7 @@ export default () => (
           <MaterialCommunityIcons
             name={item.iconName}
             size={32}
-            color={Colors.darkLink70}
+            color={Colors.grey70}
           />
         </TouchableOpacity>
       ))}

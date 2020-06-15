@@ -44,7 +44,7 @@ const MainTabNavigator = (): React.ReactElement => (
   <BottomTab.Navigator
     tabBarOptions={{
       activeTintColor: Colors.green50,
-      inactiveTintColor: Colors.swordGray,
+      inactiveTintColor: Colors.grey40,
       style: {
         paddingTop: 6,
         backgroundColor: Colors.linkGreen10,
