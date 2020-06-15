@@ -32,12 +32,12 @@ const Legend = ({
     {
       name: t("BUDGET_SCREEN_PROGRESS_CHART_LEGEND_ITEM_FOOD"),
       value: foodEmissions,
-      color: Colors.linkGreen
+      color: Colors.green50
     },
     {
       name: t("BUDGET_SCREEN_PROGRESS_CHART_LEGEND_ITEM_OTHER"),
       value: otherEmissions,
-      color: Colors.darkLink70
+      color: Colors.grey70
     }
   ];
   return (

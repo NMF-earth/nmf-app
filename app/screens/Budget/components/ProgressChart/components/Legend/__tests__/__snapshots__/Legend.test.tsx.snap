@@ -27,7 +27,7 @@ exports[`Legend renders correctly 1`] = `
     value={200}
   />
   <LegendItem
-    color="#585D5B"
+    color="#595D58"
     name="Other"
     value={100}
   />

@@ -18,7 +18,7 @@ exports[`Tag renders correctly with airplane icon 1`] = `
   }
 >
   <Ionicons
-    color="#585D5B"
+    color="#595D58"
     name="md-airplane"
     size={30}
     style={
@@ -90,7 +90,7 @@ exports[`Tag renders correctly with build icon 1`] = `
   }
 >
   <Ionicons
-    color="#585D5B"
+    color="#595D58"
     name="md-build"
     size={30}
     style={
@@ -162,7 +162,7 @@ exports[`Tag renders correctly with md-play-circle icon 1`] = `
   }
 >
   <Ionicons
-    color="#585D5B"
+    color="#595D58"
     name="md-play-circle"
     size={30}
     style={
@@ -284,7 +284,7 @@ exports[`Tag renders correctly with restaurant icon 1`] = `
   }
 >
   <Ionicons
-    color="#585D5B"
+    color="#595D58"
     name="md-restaurant"
     size={30}
     style={

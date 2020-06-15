@@ -14,7 +14,7 @@ const SettingsRow = ({ title, onPress }: Props) => {
   return (
     <TouchableOpacity onPress={onPress} style={styles.container}>
       <Text.Secondary bold>{title}</Text.Secondary>
-      <Ionicons name={"ios-arrow-forward"} size={20} color={Colors.darkLink} />
+      <Ionicons name={"ios-arrow-forward"} size={20} color={Colors.grey100} />
     </TouchableOpacity>
   );
 };
