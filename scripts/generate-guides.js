@@ -12,6 +12,9 @@ const guidesPath = "./guides/*.md";
  * Script to parse and build all guides into
  * a single JSON file for distribution. Also use to pre-require images
  * for renderting HTML content from markdown files.
+ * This is useful because at the time of rendering img tag in HTML at ActDetailScreen,
+ * image needs to be pre-required. Requiring image files need to be imported at the compile time. So
+ * requiring all the required image files at the compile time.
  * */
 glob(guidesPath, {}, function (err, files) {
   if (err) {
