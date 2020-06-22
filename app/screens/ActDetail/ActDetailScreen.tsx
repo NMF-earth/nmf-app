@@ -1,33 +1,35 @@
 import React from "react";
-import HTML from "react-native-render-html";
-import { ScrollView, StyleSheet } from "react-native";
-import { useRoute } from "@react-navigation/native";
+import { Dimensions, ScrollView } from "react-native";
 import { pathOr } from "ramda";
+import HTML from "react-native-render-html";
+import HTMLImage from "../../components/HTMLImage";
+import styles from "./ActDetailScreen.styles";
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    padding: 15,
-  },
-});
+let navigationOptions;
 
-export default class ActDetailScreen extends React.Component {
-  static navigationOptions = () => {
-    const route = useRoute();
+const ActDetailScreen = ({ route }) => {
+  navigationOptions = () => {
     const title = pathOr("", ["params", "guide", "title"], route);
-
     return { title };
   };
 
-  render() {
-    const route = useRoute();
-    const body = pathOr("", ["params", "guide", "body"], route);
+  const body = pathOr("", ["params", "guide", "body"], route);
 
-    return (
-      <ScrollView style={styles.container}>
-        <HTML html={body} />
-      </ScrollView>
-    );
-  }
-}
+  return (
+    <ScrollView style={styles.container}>
+      <HTML
+        html={body}
+        imagesMaxWidth={Dimensions.get("window").width}
+        renderers={{
+          img: attribs => {
+            const [img] = attribs.src.split(".");
+            return <HTMLImage uri={img} key={img} />;
+          }
+        }}
+      />
+    </ScrollView>
+  );
+};
+
+ActDetailScreen.navigationOptions = navigationOptions;
+export default ActDetailScreen;

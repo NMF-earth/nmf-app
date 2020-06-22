@@ -6,3 +6,7 @@ category: kitchen
 ### Section
 
 Hello world, some markdown here
+
+![Earth](earth.png)
+
+Protect planet Earth, guys!
