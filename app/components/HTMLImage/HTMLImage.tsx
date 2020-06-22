@@ -1,11 +1,11 @@
 import React from "react";
 import { Image, View } from "react-native";
-import imagesPath from "../../screens/ActDetail/imagePath";
+import imagesPath from "./imagePath";
 import styles from "./HTMLImage.styles";
 
 const HTMLImage = ({ uri }) => {
   return (
-    <View>
+    <View style={styles.container}>
       <Image source={imagesPath[uri]} style={styles.image} />
     </View>
   );
