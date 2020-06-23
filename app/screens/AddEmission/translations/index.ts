@@ -8,6 +8,8 @@ import pt from "./pt.json";
 interface TranslationKeys {
   ADD_EMISSION_TITLE: string;
   ADD_EMISSION_TRANSPORT: string;
+  ADD_EMISSION_ELECTRICITY: string;
+  ADD_EMISSION_ELECTRICITY_CONSUMPTION: string;
   ADD_EMISSION_FOOD: string;
   ADD_EMISSION_CUSTOM: string;
   ADD_EMISSION_STREAMING: string;
