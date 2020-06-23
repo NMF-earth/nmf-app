@@ -113,7 +113,7 @@ During this step `app.example.json` is used to generate an `app.json` file for e
 
 ### 👨‍💻 Contributors
 
-[Pierre Bresson](https://github.com/pierrebresson/) - [Theo Lampert](https://github.com/theolampert) - [Christopher Gwilliams](https://github.com/encima) - [Lucien Blunk-Lallet](https://github.com/lucienbl)
+[Pierre Bresson](https://github.com/pierrebresson/) - [Theo Lampert](https://github.com/theolampert) - [Christopher Gwilliams](https://github.com/encima) - [Lucien Blunk-Lallet](https://github.com/lucienbl) - [Akash Kumar Pathak](https://github.com/akkikumar72) - [Devanshu Jain](https://github.com/devanshujain95)
 
 Have a look [here](https://github.com/NotMyFaultEarth/nmf-app/blob/master/contributing.md) if you want to contribute!
 
