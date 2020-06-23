@@ -62,4 +62,14 @@ storiesOf("Tag", module)
     <View style={container}>
       <Tag {...props} icon="md-play-circle" selected />
     </View>
+  ))
+  .add("flash icon and not selected", () => (
+    <View style={container}>
+      <Tag {...props} icon="md-flash" />
+    </View>
+  ))
+  .add("flash icon and selected", () => (
+    <View style={container}>
+      <Tag {...props} icon="md-flash" selected />
+    </View>
   ));

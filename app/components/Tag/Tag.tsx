@@ -7,7 +7,12 @@ import { Colors } from "../../style";
 
 interface Props {
   selected: boolean;
-  icon?: "md-airplane" | "md-restaurant" | "md-build" | "md-play-circle";
+  icon?:
+    | "md-airplane"
+    | "md-restaurant"
+    | "md-build"
+    | "md-play-circle"
+    | "md-flash";
   title: string;
   onPress: () => void;
 }

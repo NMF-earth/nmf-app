@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import moment from "moment";
+import { useSelector } from "react-redux";
 import { View, ScrollView, TouchableOpacity } from "react-native";
 import { TransportEnum, FoodEnum, StreamingEnum } from "carbon-footprint";
 import DateTimePickerModal from "react-native-modal-datetime-picker";
@@ -12,12 +13,18 @@ import {
   Transport,
   Streaming,
   Custom,
+  Electricity,
   AddEmissionButton,
 } from "./components";
 import { EmissionEnum } from "../../interfaces";
 import { EmissionPayload } from "../../interfaces/emission/emission.interface";
-import { calculation, t } from "../../utils";
-import { withLocalization, LocalizationContextProps } from "../../utils";
+import {
+  calculation,
+  t,
+  withLocalization,
+  LocalizationContextProps,
+} from "../../utils";
+import { userPreferences } from "../../ducks";
 
 interface Props {
   navigation: {
@@ -29,6 +36,7 @@ interface Props {
 /* multiply or divide by 1000 to have kilograms or meters */
 const DEFAULT_SLIDER_VALUE_FOOD = 200 / 1000;
 const DEFAULT_SLIDER_VALUE_TRANSPORT = 150 * 1000;
+const DEFAULT_SLIDER_VALUE_ELECTRICITY = 100 * 1000;
 const DEFAULT_SLIDER_VALUE_STREAMING = 120 * 60;
 const DEFAULT_SLIDER_VALUE_CUSTOM = 200;
 
@@ -37,9 +45,13 @@ const AddEmissionScreen = ({
   locale = "",
   language = "",
 }: Props & LocalizationContextProps) => {
+  const location = useSelector(userPreferences.selectors.getLocation);
   const [emissionName, setEmissionName] = useState("");
   const [emissionType, setEmissionType] = useState(EmissionEnum.transport);
   const [transportType, setTransportType] = useState(TransportEnum.car);
+  const [electricityConsumption, setElectricityConsumption] = useState(
+    DEFAULT_SLIDER_VALUE_ELECTRICITY
+  );
   const [foodType, setFoodType] = useState(FoodEnum.redMeat);
   const [streamingType, setStreamingType] = useState(StreamingEnum.HDVideo);
   const [durationMinutes, setDurationMinutes] = useState(
@@ -99,6 +111,21 @@ const AddEmissionScreen = ({
           setDurationMinutes={setDurationMinutes}
           setTransportType={setTransportType}
           transportType={transportType}
+        />
+      );
+    }
+    return null;
+  };
+
+  const renderElectricity = () => {
+    if (emissionType === EmissionEnum.electricity) {
+      emissionPayload.value = electricityConsumption;
+      emissionPayload.emissionModelType = location;
+
+      return (
+        <Electricity
+          defaultValueSlider={DEFAULT_SLIDER_VALUE_ELECTRICITY}
+          setElectricityConsumption={setElectricityConsumption}
         />
       );
     }
@@ -180,6 +207,12 @@ const AddEmissionScreen = ({
             onPress={() => setEmissionType(EmissionEnum.streaming)}
           />
           <Tag
+            icon={"md-flash"}
+            selected={emissionType === EmissionEnum.electricity}
+            title={t("ADD_EMISSION_ELECTRICITY")}
+            onPress={() => setEmissionType(EmissionEnum.electricity)}
+          />
+          <Tag
             icon={"md-build"}
             selected={emissionType === EmissionEnum.custom}
             title={t("ADD_EMISSION_CUSTOM")}
@@ -192,6 +225,7 @@ const AddEmissionScreen = ({
       {renderTransport()}
       {renderFood()}
       {renderStreaming()}
+      {renderElectricity()}
       {renderCustom()}
 
       <TextInput

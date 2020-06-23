@@ -1,6 +1,8 @@
 {
   "ADD_EMISSION_TITLE": "Ajouter émission",
   "ADD_EMISSION_TRANSPORT": "Transport",
+  "ADD_EMISSION_ELECTRICITY": "Electricity",
+  "ADD_EMISSION_ELECTRICITY_CONSUMPTION": "Electricity consumption",
   "ADD_EMISSION_FOOD": "Alimentation",
   "ADD_EMISSION_CUSTOM": "Personnalisé",
   "ADD_EMISSION_STREAMING": "Streaming",
