@@ -15,4 +15,11 @@ export default StyleSheet.create({
     height: 40,
     marginHorizontal: 16,
   },
+  miniHeader: {
+    paddingBottom: VERTICAL_PADDING_BETWEEN_ITEMS,
+  },
+  totalContainer: {
+    paddingVertical: 12,
+    ...Layout.containerWithPadding,
+  },
 });

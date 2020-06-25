@@ -1,20 +1,24 @@
 import React, { useState } from "react";
 import { View, Slider } from "react-native";
+import { FormattedNumber } from "react-native-globalize";
+import { electricity } from "carbon-footprint";
 
 import { Text } from "../../../../components";
 import { Colors } from "../../../../style";
 import { t } from "../../../../utils";
 import styles from "./Electricity.styles";
 
-const MIN_SLIDER_VALUE = 10;
-const MAX_SLIDER_VALUE = 10000;
+const MIN_SLIDER_VALUE = 3.6 * Math.pow(10, 6);
+const MAX_SLIDER_VALUE = 3.6 * Math.pow(10, 9);
 
 interface Props {
+  electricityCountry: string;
   defaultValueSlider: number;
   setElectricityConsumption: (arg0: number) => void;
 }
 
 const Electricity = ({
+  electricityCountry,
   setElectricityConsumption,
   defaultValueSlider,
 }: Props) => {
@@ -29,7 +33,7 @@ const Electricity = ({
         </Text.H3>
         <View style={{ flexDirection: "row" }}>
           <Text.H2 blue50>
-            {Math.round(sliderValue)}
+            {Math.round((sliderValue / 3.6) * Math.pow(10, -6))}
             <Text.Primary>{" kWh"}</Text.Primary>
           </Text.H2>
         </View>
@@ -44,6 +48,16 @@ const Electricity = ({
         value={sliderValue}
         onSlidingComplete={setSliderValue}
       />
+      <View style={styles.totalContainer}>
+        <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_TOTAL")}</Text.H3>
+        <Text.H2 blue50>
+          <FormattedNumber
+            value={sliderValue * electricity[electricityCountry]}
+            maximumFractionDigits={2}
+          />{" "}
+          <Text.Primary>kgCO2eq</Text.Primary>
+        </Text.H2>
+      </View>
     </>
   );
 };

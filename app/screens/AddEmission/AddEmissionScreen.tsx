@@ -36,7 +36,7 @@ interface Props {
 /* multiply or divide by 1000 to have kilograms or meters */
 const DEFAULT_SLIDER_VALUE_FOOD = 200 / 1000;
 const DEFAULT_SLIDER_VALUE_TRANSPORT = 150 * 1000;
-const DEFAULT_SLIDER_VALUE_ELECTRICITY = 100 * 1000;
+const DEFAULT_SLIDER_VALUE_ELECTRICITY = 100 * 3.6 * Math.pow(10, 6);
 const DEFAULT_SLIDER_VALUE_STREAMING = 120 * 60;
 const DEFAULT_SLIDER_VALUE_CUSTOM = 200;
 
@@ -124,6 +124,7 @@ const AddEmissionScreen = ({
 
       return (
         <Electricity
+          electricityCountry={location}
           defaultValueSlider={DEFAULT_SLIDER_VALUE_ELECTRICITY}
           setElectricityConsumption={setElectricityConsumption}
         />
