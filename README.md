@@ -16,7 +16,7 @@
 
 ![screenshots](https://github.com/NotMyFaultEarth/nmf-app/blob/master/app-preview.png)
 
-![](https://github.com/NotMyFaultEarth/nmf-app/workflows/Test%20CI/badge.svg)
+![](https://github.com/NMF-earth/nmf-app/workflows/Test%20CI/badge.svg)
 [![Depfu](https://badges.depfu.com/badges/f3b06c819202baf2a14b3241cbf249c9/overview.svg)](https://depfu.com/repos/github/NotMyFaultEarth/nmf-app?project_id=10243)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md)
 [![Build Status](https://img.shields.io/static/v1.svg?label=CSL&message=software%20against%20climate%20change&color=green?style=flat&logo=github)](https://github.com/climate-strike/license)
