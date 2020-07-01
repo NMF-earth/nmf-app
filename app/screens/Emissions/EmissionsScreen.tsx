@@ -13,7 +13,7 @@ const EmissionsScreen = () => {
   const emissions = useSelector(selectors.getEmissions);
 
   return (
-    <React.Fragment>
+    <>
       <SafeAreaView style={styles.container}>
         <EmissionsList
           monthlyCarbonBudget={monthlyCarbonBudget}
@@ -21,7 +21,7 @@ const EmissionsScreen = () => {
         />
       </SafeAreaView>
       <AddEmissionAndMitigateButtons />
-    </React.Fragment>
+    </>
   );
 };
 

@@ -1,8 +1,20 @@
-import { TransportEnum, FoodEnum, StreamingEnum } from "carbon-footprint";
+import {
+  TransportEnum,
+  FoodEnum,
+  StreamingEnum,
+  ElectricityEnum,
+} from "carbon-footprint";
+import { contains, __ } from "ramda";
 import { EmissionEnum } from "../../interfaces";
 import { t } from "../translations";
 
+const isElectrictyEmission = contains(__, Object.keys(ElectricityEnum));
+
 const getTranslationModelType = (emissionModelType) => {
+  if (isElectrictyEmission(emissionModelType)) {
+    return t("ELECTRICITY");
+  }
+
   switch (emissionModelType) {
     case EmissionEnum.custom:
       return t("CUSTOM");
@@ -45,6 +57,10 @@ const getTranslationModelType = (emissionModelType) => {
 };
 
 const getIconFromModelType = (emissionModelType) => {
+  if (isElectrictyEmission(emissionModelType)) {
+    return "md-flash";
+  }
+
   switch (emissionModelType) {
     case EmissionEnum.custom:
       return "md-build";

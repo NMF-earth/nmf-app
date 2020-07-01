@@ -5,6 +5,7 @@ import {
   food,
   getInternetUsageCarbonImpact,
   ElectricityEnum,
+  electricity,
   streaming,
 } from "carbon-footprint";
 import { EmissionEnum, Emission } from "../../interfaces";
@@ -57,6 +58,10 @@ const getFlightEmissionValue = (duration: number) => {
 const getC02ValueFromEmission = (emission: Emission) => {
   if (emission.emissionType === EmissionEnum.custom) {
     return emission.value;
+  }
+
+  if (emission.emissionType === EmissionEnum.electricity) {
+    return emission.value * electricity[emission.emissionModelType];
   }
 
   if (emission.emissionType === EmissionEnum.streaming) {

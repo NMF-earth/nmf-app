@@ -1,9 +1,13 @@
 import {
   FoodEnum,
   TransportEnum,
+  StreamingEnum,
+  ElectricityEnum,
+  streaming,
   food,
   transport,
   electricity,
+  getInternetUsageCarbonImpact,
 } from "carbon-footprint";
 import calculation from "../";
 import { Emission, EmissionEnum } from "../../../interfaces";
@@ -28,6 +32,18 @@ const emissionTransport = {
   emissionType: EmissionEnum.transport,
 };
 
+const emissionStreaming = {
+  ...emissionFood,
+  emissionModelType: StreamingEnum.HDVideo,
+  emissionType: EmissionEnum.streaming,
+};
+
+const emissionElectricity = {
+  ...emissionFood,
+  emissionModelType: ElectricityEnum.france,
+  emissionType: EmissionEnum.electricity,
+};
+
 const emissionCustom = {
   ...emissionFood,
   emissionModelType: "custom",
@@ -43,6 +59,22 @@ describe("getC02ValueFromEmission should return the correct co2 emitted value fo
   it("transport emission", () => {
     expect(calculation.getC02ValueFromEmission(emissionTransport)).toEqual(
       transport.boat * emissionTransport.value
+    );
+  });
+  it("streaming emission", () => {
+    expect(calculation.getC02ValueFromEmission(emissionStreaming)).toEqual(
+      getInternetUsageCarbonImpact(
+        emissionStreaming.value,
+        streaming[emissionStreaming.emissionModelType] *
+          emissionStreaming.value,
+        ElectricityEnum.world
+      )
+    );
+  });
+  it("electricity emission", () => {
+    expect(calculation.getC02ValueFromEmission(emissionElectricity)).toEqual(
+      emissionElectricity.value *
+        electricity[emissionElectricity.emissionModelType]
     );
   });
   it("custom emission", () => {
