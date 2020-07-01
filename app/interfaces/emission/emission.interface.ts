@@ -25,6 +25,7 @@ interface EmissionPayload {
     | "custom";
   value: number;
   creationDate: string;
+  location?: ElectricityEnum;
 }
 
 interface Emission extends EmissionPayload {
