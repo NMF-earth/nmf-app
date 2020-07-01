@@ -4,12 +4,8 @@ import { emissions } from "../../../ducks";
 import { Emission } from "../../../interfaces";
 import { calculation, ui } from "../../../utils";
 
-interface EmissionListItem {
-  id: string;
-  isMitigated: boolean;
-  name: string;
+interface EmissionListItem extends Emission {
   title: string;
-  creationDate: string;
   co2value: number;
   iconName: string;
   onPress: () => void;
@@ -17,11 +13,8 @@ interface EmissionListItem {
 
 const getEmissionListItem = (item: Emission) => {
   const emissionItem: EmissionListItem = {
-    id: item.id,
-    isMitigated: item.isMitigated,
-    name: item.name,
+    ...item,
     title: ui.getTranslationModelType(item.emissionModelType),
-    creationDate: item.creationDate,
     co2value: calculation.getC02ValueFromEmission(item),
     iconName: ui.getIconFromModelType(item.emissionModelType),
     onPress: () => {
