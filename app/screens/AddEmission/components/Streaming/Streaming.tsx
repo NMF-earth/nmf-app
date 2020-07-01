@@ -16,6 +16,7 @@ const MIN_SLIDER_VALUE = 15 * 60;
 const MAX_SLIDER_VALUE = 10 * 60 * 60;
 
 interface Props {
+  electricityCountry: ElectricityEnum;
   defaultValueSlider: number;
   streamingType: string;
   setStreamingType: (arg0: StreamingEnum) => void;
@@ -30,6 +31,7 @@ const TAGS: Array<StreamingEnum> = [
 ];
 
 export default ({
+  electricityCountry,
   setDurationSeconds,
   setStreamingType,
   streamingType,
@@ -48,7 +50,7 @@ export default ({
   const carbonValue = getInternetUsageCarbonImpact(
     sliderValue,
     streaming[streamingType] * sliderValue,
-    ElectricityEnum.world
+    electricityCountry
   );
 
   return (

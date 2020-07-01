@@ -68,7 +68,7 @@ const getC02ValueFromEmission = (emission: Emission) => {
     return getInternetUsageCarbonImpact(
       emission.value,
       streaming[emission.emissionModelType] * emission.value,
-      ElectricityEnum.world
+      emission.location || ElectricityEnum.world
     );
   }
 

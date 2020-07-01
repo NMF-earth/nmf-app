@@ -154,9 +154,11 @@ const AddEmissionScreen = ({
     if (emissionType === EmissionEnum.streaming) {
       emissionPayload.value = durationSeconds;
       emissionPayload.emissionModelType = streamingType;
+      emissionPayload.location = location;
 
       return (
         <Streaming
+          electricityCountry={location}
           defaultValueSlider={DEFAULT_SLIDER_VALUE_STREAMING}
           setDurationSeconds={setDurationSeconds}
           setStreamingType={setStreamingType}

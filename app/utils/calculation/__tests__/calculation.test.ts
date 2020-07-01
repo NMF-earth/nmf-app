@@ -36,6 +36,7 @@ const emissionStreaming = {
   ...emissionFood,
   emissionModelType: StreamingEnum.HDVideo,
   emissionType: EmissionEnum.streaming,
+  location: ElectricityEnum.argentina,
 };
 
 const emissionElectricity = {
@@ -67,7 +68,7 @@ describe("getC02ValueFromEmission should return the correct co2 emitted value fo
         emissionStreaming.value,
         streaming[emissionStreaming.emissionModelType] *
           emissionStreaming.value,
-        ElectricityEnum.world
+        emissionStreaming.location
       )
     );
   });
