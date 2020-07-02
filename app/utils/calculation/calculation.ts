@@ -5,6 +5,7 @@ import {
   food,
   getInternetUsageCarbonImpact,
   ElectricityEnum,
+  electricity,
   streaming,
 } from "carbon-footprint";
 import { EmissionEnum, Emission } from "../../interfaces";
@@ -59,11 +60,15 @@ const getC02ValueFromEmission = (emission: Emission) => {
     return emission.value;
   }
 
+  if (emission.emissionType === EmissionEnum.electricity) {
+    return emission.value * electricity[emission.emissionModelType];
+  }
+
   if (emission.emissionType === EmissionEnum.streaming) {
     return getInternetUsageCarbonImpact(
       emission.value,
       streaming[emission.emissionModelType] * emission.value,
-      ElectricityEnum.world
+      emission.location || ElectricityEnum.world
     );
   }
 

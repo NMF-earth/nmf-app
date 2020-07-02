@@ -22,6 +22,7 @@ interface TranslationKeys {
   AUDIO: string;
   FULL_HD_VIDEO: string;
   ULTRA_HD_VIDEO: string;
+  ELECTRICITY: string;
 }
 
 export { en, fr, de, sv, es, pt, TranslationKeys };

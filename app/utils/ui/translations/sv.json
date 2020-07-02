@@ -14,5 +14,6 @@
   "HD_VIDEO": "Video - HD",
   "AUDIO": "Audio - MP3",
   "FULL_HD_VIDEO": "Video - FullHD/1080p",
-  "ULTRA_HD_VIDEO": "Video - UltraHD/4K"
+  "ULTRA_HD_VIDEO": "Video - UltraHD/4K",
+  "ELECTRICITY": "Electricity"
 }

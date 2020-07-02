@@ -6,6 +6,8 @@
   "ADD_EMISSION_DISTANCE": "Avstånd",
   "ADD_EMISSION_DURATION": "Längd",
   "ADD_EMISSION_EMISSION_TYPE": "Typ av utsläpp",
+  "ADD_EMISSION_ELECTRICITY": "Electricity",
+  "ADD_EMISSION_ELECTRICITY_CONSUMPTION": "Electricity consumption",
   "ADD_EMISSION_FOOD": "Mat",
   "ADD_EMISSION_FOOD_TYPE": "Typ av mat",
   "ADD_EMISSION_NAME_EMISSION": "Namnge detta utsläpp ",

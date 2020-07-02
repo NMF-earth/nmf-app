@@ -81,3 +81,15 @@ it("Tag renders correctly with md-play-circle icon and selected", () => {
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
+
+it("Tag renders correctly with md-flash icon", () => {
+  const tree = renderer.create(<Tag {...props} icon="md-flash" />).toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it("Tag renders correctly with md-flash icon and selected", () => {
+  const tree = renderer
+    .create(<Tag {...props} icon="md-flash" selected />)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});

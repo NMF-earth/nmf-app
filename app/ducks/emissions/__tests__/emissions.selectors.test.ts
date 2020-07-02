@@ -1,6 +1,11 @@
 import emissions from "../";
 import { Emission as EmissionType, EmissionEnum } from "../../../interfaces";
-import { FoodEnum, TransportEnum, StreamingEnum } from "carbon-footprint";
+import {
+  FoodEnum,
+  TransportEnum,
+  StreamingEnum,
+  ElectricityEnum,
+} from "carbon-footprint";
 
 let state;
 
@@ -40,6 +45,15 @@ const emissionStreaming: EmissionType = {
   value: 23.32,
 };
 
+const emissionElectricity: EmissionType = {
+  id: "4",
+  creationDate: "2020-01-26T11:04:55.334Z",
+  emissionModelType: ElectricityEnum.france,
+  emissionType: EmissionEnum.electricity,
+  isMitigated: false,
+  value: 1000,
+};
+
 const emissionMitigated: EmissionType = {
   ...emissionFood,
   id: "5",
@@ -55,6 +69,7 @@ describe("if there are emissions", () => {
         emissionCustom,
         emissionTransport,
         emissionStreaming,
+        emissionElectricity,
       ],
     };
   });
@@ -75,6 +90,7 @@ describe("if there are emissions", () => {
       emissionCustom,
       emissionTransport,
       emissionStreaming,
+      emissionElectricity,
     ]));
 
   test("`getCustomEmissions` should return custom emissions", () =>
@@ -98,10 +114,16 @@ describe("if there are emissions", () => {
       emissionStreaming,
     ]));
 
+  test("`getElectricityEmissions` should return electricity emissions", () =>
+    expect(emissions.selectors.getElectricityEmissions(state)).toEqual([
+      emissionElectricity,
+    ]));
+
   test("`getOtherEmissions` should return streaming and custom emissions", () =>
     expect(emissions.selectors.getOtherEmissions(state)).toEqual([
       emissionCustom,
       emissionStreaming,
+      emissionElectricity,
     ]));
 });
 
@@ -129,4 +151,10 @@ describe("if there are no emissions", () => {
 
   test("`getTransportEmissions` should return mitigated no emission", () =>
     expect(emissions.selectors.getTransportEmissions(state)).toEqual([]));
+
+  test("`getStreamingEmissions` should return mitigated no emission", () =>
+    expect(emissions.selectors.getStreamingEmissions(state)).toEqual([]));
+
+  test("`getElectricityEmissions` should return mitigated no emission", () =>
+    expect(emissions.selectors.getElectricityEmissions(state)).toEqual([]));
 });
