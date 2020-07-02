@@ -12,7 +12,8 @@ interface Props {
     | "md-restaurant"
     | "md-build"
     | "md-play-circle"
-    | "md-flash";
+    | "md-flash"
+    | string;
   title: string;
   onPress: () => void;
 }

@@ -1,6 +1,10 @@
 import React from "react";
 import { View, ViewStyle } from "react-native";
 import { storiesOf } from "@storybook/react-native";
+import {
+  text,
+  boolean,
+} from "@storybook/addon-knobs";
 
 import Button from "..";
 import Text from "../../Text";
@@ -15,18 +19,13 @@ const container: ViewStyle = { flexDirection: "row", margin: 20 };
 storiesOf("Button", module)
   .add("Primary", () => (
     <View style={container}>
-      <Button.Primary onPress={onPressFake} textType={"Primary"}>
+      <Button.Primary
+        fullWidth={boolean("FullWidth", false)}
+        onPress={onPressFake}
+        textType={"Primary"}
+      >
         <Text.Primary center white>
-          {DEFAULT_TEXT}
-        </Text.Primary>
-      </Button.Primary>
-    </View>
-  ))
-  .add("Primary fullWidth", () => (
-    <View style={container}>
-      <Button.Primary fullWidth onPress={onPressFake} textType={"Primary"}>
-        <Text.Primary center white>
-          {DEFAULT_TEXT}
+          {text("Title", DEFAULT_TEXT)}
         </Text.Primary>
       </Button.Primary>
     </View>
@@ -35,7 +34,7 @@ storiesOf("Button", module)
     <View style={container}>
       <Button.Primary onPress={onPressFake} black textType={"Primary"}>
         <Text.Primary center white>
-          {DEFAULT_TEXT}
+          {text("Title", DEFAULT_TEXT)}
         </Text.Primary>
       </Button.Primary>
     </View>
@@ -44,7 +43,7 @@ storiesOf("Button", module)
     <View style={container}>
       <Button.Secondary onPress={onPressFake} textType={"Secondary"}>
         <Text.Secondary center green>
-          {DEFAULT_TEXT}
+          {text("Title", DEFAULT_TEXT)}
         </Text.Secondary>
       </Button.Secondary>
     </View>

@@ -78,7 +78,9 @@
   "devDependencies": {
     "@babel/core": "7.7.7",
     "@storybook/addon-actions": "5.2.8",
+    "@storybook/addon-knobs": "^5.3.19",
     "@storybook/addon-links": "5.2.8",
+    "@storybook/addon-ondevice-knobs": "^5.3.19",
     "@storybook/addons": "5.2.8",
     "@storybook/react-native": "5.2.8",
     "@storybook/react-native-server": "5.2.8",
