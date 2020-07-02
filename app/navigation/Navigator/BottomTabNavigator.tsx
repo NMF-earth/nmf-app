@@ -16,26 +16,28 @@ const BudgetOptions = {
   tabBarLabel: t("BUDGET_SCREEN_TAB_NAME"),
   tabBarIcon: ({ focused }) => (
     <TabBarIcon focused={focused} name={"md-calculator"} />
-  )
+  ),
 };
 
 const EmissionsOptions = {
   tabBarLabel: t("EMISSIONS_SCREEN_TAB_NAME"),
   tabBarIcon: ({ focused }) => (
     <TabBarIcon focused={focused} name={"md-stats"} />
-  )
+  ),
 };
 
 const ActOptions = {
   tabBarLabel: t("ACT_SCREEN_TAB_NAME"),
-  tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name={"md-hand"} />
+  tabBarIcon: ({ focused }) => (
+    <TabBarIcon focused={focused} name={"md-hand"} />
+  ),
 };
 
 const SettingsOptions = {
   tabBarLabel: t("SETTINGS_SCREEN_TAB_NAME"),
   tabBarIcon: ({ focused }) => (
     <TabBarIcon focused={focused} name={"md-switch"} />
-  )
+  ),
 };
 
 const MainTabNavigator = (): React.ReactElement => (
@@ -46,8 +48,8 @@ const MainTabNavigator = (): React.ReactElement => (
       style: {
         paddingTop: 6,
         backgroundColor: Colors.green10,
-        borderTopWidth: 0
-      }
+        borderTopWidth: 0,
+      },
     }}
     // screenOptions={TabBarVisibleOnRootScreenOptions}
     // tabBar={(props) => <HomeBottomNavigation {...props} />}
@@ -62,11 +64,11 @@ const MainTabNavigator = (): React.ReactElement => (
       options={EmissionsOptions}
       component={EmissionsNavigator}
     />
-    <BottomTab.Screen
+    {/* <BottomTab.Screen
       name="Act"
       options={ActOptions}
       component={ActNavigator}
-    />
+    /> */}
     <BottomTab.Screen
       name="SettingsNavigator"
       options={SettingsOptions}
