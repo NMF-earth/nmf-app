@@ -8,8 +8,10 @@ import SocialMedia from "./SocialMedia";
 import TextInput from "./TextInput";
 import StickersImage from "./StickersImage";
 import SelectableListItem from "./SelectableListItem";
+import HTMLImage from "./HTMLImage";
 
 export {
+  HTMLImage,
   SelectableListItem,
   StickersImage,
   SocialMedia,

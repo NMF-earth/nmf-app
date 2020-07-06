@@ -28,7 +28,7 @@ const navigationOptionsIOS = ({ navigation }) => ({
       <Ionicons
         name="md-close"
         size={32}
-        color={Colors.darkLink}
+        color={Colors.grey100}
         onPress={() => {
           navigate(navigation).goBack();
         }}

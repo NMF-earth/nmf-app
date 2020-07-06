@@ -26,7 +26,7 @@ exports[`renders correctly SocialMedia 1`] = `
       onPress={[Function]}
     >
       <MaterialCommunityIcons
-        color="#585D5B"
+        color="#595D58"
         name="slack"
         size={32}
       />
@@ -35,7 +35,7 @@ exports[`renders correctly SocialMedia 1`] = `
       onPress={[Function]}
     >
       <MaterialCommunityIcons
-        color="#585D5B"
+        color="#595D58"
         name="github-circle"
         size={32}
       />
@@ -44,7 +44,7 @@ exports[`renders correctly SocialMedia 1`] = `
       onPress={[Function]}
     >
       <MaterialCommunityIcons
-        color="#585D5B"
+        color="#595D58"
         name="twitter"
         size={32}
       />
@@ -53,7 +53,7 @@ exports[`renders correctly SocialMedia 1`] = `
       onPress={[Function]}
     >
       <MaterialCommunityIcons
-        color="#585D5B"
+        color="#595D58"
         name="mastodon"
         size={32}
       />
@@ -62,7 +62,7 @@ exports[`renders correctly SocialMedia 1`] = `
       onPress={[Function]}
     >
       <MaterialCommunityIcons
-        color="#585D5B"
+        color="#595D58"
         name="medium"
         size={32}
       />

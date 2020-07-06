@@ -57,9 +57,9 @@ const MonthlyBudgetScreen = ({ navigation }) => {
           <Text.Primary bold>{t("MONTHLY_BUDGET_SLIDE_TO_SET")}</Text.Primary>
         </View>
         <Slider
-          minimumTrackTintColor={Colors.linkGreen}
-          maximumTrackTintColor={Colors.gray}
-          thumbTintColor={Colors.linkGreen}
+          minimumTrackTintColor={Colors.green50}
+          maximumTrackTintColor={Colors.grey}
+          thumbTintColor={Colors.green50}
           style={styles.slider}
           maximumValue={MAX_MONTHLY_CARBON_BUDGET}
           minimumValue={MIN_MONTHLY_CARBON_BUDGET}
@@ -76,7 +76,7 @@ const MonthlyBudgetScreen = ({ navigation }) => {
               <Ionicons
                 name="md-information-circle"
                 size={26}
-                color={Colors.linkGreen}
+                color={Colors.green50}
                 onPress={onPressInfo}
               />
             </Text.Primary>

@@ -12,6 +12,8 @@ exports[`EmissionsScreen renders correctly 1`] = `
                 Object {
                   "body": "<h3>Section</h3>
 <p>Hello world, some markdown here</p>
+<p><img src=\\"earth.png\\" alt=\\"Earth\\"></p>
+<p>Protect planet Earth, guys!</p>
 ",
                   "category": "kitchen",
                   "key": ".//dont-throw-away-peels.md",
@@ -20,6 +22,7 @@ exports[`EmissionsScreen renders correctly 1`] = `
                 Object {
                   "body": "<h3>Section</h3>
 <p>Hello world, some markdown here</p>
+<p><img src=\\"bike.png\\" alt=\\"Bike\\"></p>
 ",
                   "category": "kitchen",
                   "key": ".//make-your-own-soap.md",
@@ -27,6 +30,7 @@ exports[`EmissionsScreen renders correctly 1`] = `
                 },
                 Object {
                   "body": "<h3>Section</h3>
+<p><img src=\\"bike.png\\" alt=\\"Bike\\"></p>
 <p>Hello world, some markdown here</p>
 ",
                   "category": "kitchen",
@@ -45,6 +49,18 @@ exports[`EmissionsScreen renders correctly 1`] = `
                 Object {
                   "body": "<h3>Section</h3>
 <p>Hello world, some markdown here</p>
+<p><img src=\\"restaurant.png\\" alt=\\"Restaurant\\"></p>
+<p><img src=\\"bike.png\\" alt=\\"Bike\\"></p>
+",
+                  "category": "technology",
+                  "key": ".//find-replacement-for-GAFA-services.md",
+                  "title": "Find a replacement for GAFA services",
+                },
+                Object {
+                  "body": "<h3>Section</h3>
+<p>Hello world, some markdown here</p>
+<p><img src=\\"bike.png\\" alt=\\"Bike\\"></p>
+<p>Yeah, NFM on Bike!</p>
 ",
                   "category": "technology",
                   "key": ".//clean-your-mailbox.md",
@@ -53,18 +69,13 @@ exports[`EmissionsScreen renders correctly 1`] = `
                 Object {
                   "body": "<h3>Section</h3>
 <p>Hello world, some markdown here</p>
+<p><img src=\\"bike.png\\" alt=\\"Bike\\">
+<img src=\\"earth.png\\" alt=\\"Earth\\">
+<img src=\\"restaurant.png\\" alt=\\"Restaurant\\"></p>
 ",
                   "category": "technology",
                   "key": ".//install-adblocker.md",
                   "title": "Install an Adblocker",
-                },
-                Object {
-                  "body": "<h3>Section</h3>
-<p>Hello world, some markdown here</p>
-",
-                  "category": "technology",
-                  "key": ".//find-replacement-for-GAFA-services.md",
-                  "title": "Find a replacement for GAFA services",
                 },
               ]
             }
@@ -82,6 +93,8 @@ exports[`EmissionsScreen renders correctly 1`] = `
               Object {
                 "body": "<h3>Section</h3>
 <p>Hello world, some markdown here</p>
+<p><img src=\\"earth.png\\" alt=\\"Earth\\"></p>
+<p>Protect planet Earth, guys!</p>
 ",
                 "category": "kitchen",
                 "key": ".//dont-throw-away-peels.md",
@@ -90,6 +103,7 @@ exports[`EmissionsScreen renders correctly 1`] = `
               Object {
                 "body": "<h3>Section</h3>
 <p>Hello world, some markdown here</p>
+<p><img src=\\"bike.png\\" alt=\\"Bike\\"></p>
 ",
                 "category": "kitchen",
                 "key": ".//make-your-own-soap.md",
@@ -97,6 +111,7 @@ exports[`EmissionsScreen renders correctly 1`] = `
               },
               Object {
                 "body": "<h3>Section</h3>
+<p><img src=\\"bike.png\\" alt=\\"Bike\\"></p>
 <p>Hello world, some markdown here</p>
 ",
                 "category": "kitchen",

@@ -32,7 +32,7 @@ const Tag = (props: Props) => {
         name={icon}
         size={30}
         style={styles.icon}
-        color={selected ? Colors.linkGreen : Colors.darkLink70}
+        color={selected ? Colors.green50 : Colors.grey70}
       />
     );
   }

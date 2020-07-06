@@ -24,7 +24,7 @@ const EmissionsListItem = ({
         name={iconName}
         size={22}
         style={styles.icon}
-        color={isMitigated ? Colors.linkGreen : Colors.darkLink70}
+        color={isMitigated ? Colors.green50 : Colors.grey70}
       />
     </View>
     <View style={styles.textContainer}>
@@ -51,7 +51,7 @@ const EmissionsListItem = ({
       name={"ios-arrow-forward"}
       size={18}
       style={styles.icon}
-      color={Colors.darkLink}
+      color={Colors.grey100}
     />
   </TouchableOpacity>
 );

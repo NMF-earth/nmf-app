@@ -24,7 +24,7 @@ exports[`Chart renders correctly 1`] = `
         />
         <Path
           d="M 0 -112.5 A 112.5 112.5 0 1 1 -0.706854 -112.497779 L -0.706854 -112.497779 A 112.5 112.5 0 1 0 0 -112.5 Z "
-          stroke="#FABC5320"
+          stroke="#F3AE4520"
           strokeWidth={16}
         />
         <Path
@@ -43,7 +43,7 @@ exports[`Chart renders correctly 1`] = `
         />
         <Path
           d="M 0 -112.5 A 112.5 112.5 0 1 1 -0 -112.5 L -0 -112.5 A 112.5 112.5 0 1 0 0 -112.5 Z "
-          stroke="#FABC53"
+          stroke="#F3AE45"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth={16}

@@ -11,6 +11,7 @@ import * as Intro from "../../screens/Intro/translations";
 import * as About from "../../screens/About/translations";
 import * as SupportUs from "../../screens/SupportUs/translations";
 import * as MyLocation from "../../screens/MyLocation/translations";
+import * as ActDetail from "../../screens/ActDetail/translations";
 
 /* COMPONENTS */
 import * as NoEmission from "../../components/NoEmission/translations";
@@ -35,6 +36,7 @@ const en = {
   ...Intro.en,
   ...SupportUs.en,
   ...MyLocation.en,
+  ...ActDetail.en,
 };
 
 const de = {
@@ -53,6 +55,7 @@ const de = {
   ...Intro.de,
   ...SupportUs.de,
   ...MyLocation.de,
+  ...ActDetail.de,
 };
 
 const fr = {
@@ -71,6 +74,7 @@ const fr = {
   ...Intro.fr,
   ...SupportUs.fr,
   ...MyLocation.fr,
+  ...ActDetail.fr,
 };
 
 const sv = {
@@ -89,6 +93,7 @@ const sv = {
   ...Intro.sv,
   ...SupportUs.sv,
   ...MyLocation.sv,
+  ...ActDetail.sv,
 };
 
 const pt = {
@@ -107,6 +112,7 @@ const pt = {
   ...Intro.pt,
   ...SupportUs.pt,
   ...MyLocation.pt,
+  ...ActDetail.pt,
 };
 
 const es = {
@@ -125,6 +131,7 @@ const es = {
   ...Intro.es,
   ...SupportUs.es,
   ...MyLocation.es,
+  ...ActDetail.es,
 };
 
 export interface TranslationKeys
@@ -142,6 +149,7 @@ export interface TranslationKeys
     Intro.TranslationKeys,
     About.TranslationKeys,
     MyLocation.TranslationKeys,
-    SupportUs.TranslationKeys {}
+    SupportUs.TranslationKeys,
+    ActDetail.TranslationKeys {}
 
 export { en, de, fr, sv, pt, es };

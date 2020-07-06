@@ -5,7 +5,7 @@ import { Colors } from "../../style";
 import TabBarIcon from "../../components/TabBarIcon";
 import { t } from "../../utils";
 
-// import ActNavigator from "./BottomTab/ActNavigator";
+import ActNavigator from "./BottomTab/ActNavigator";
 import BudgetNavigator from "./BottomTab/BudgetNavigator";
 import EmissionsNavigator from "./BottomTab/EmissionsNavigator";
 import SettingsNavigator from "./BottomTab/SettingsNavigator";
@@ -26,12 +26,12 @@ const EmissionsOptions = {
   ),
 };
 
-// const ActOptions = {
-//   tabBarLabel: t("ACT_SCREEN_TAB_NAME"),
-//   tabBarIcon: ({ focused }) => (
-//     <TabBarIcon focused={focused} name={"md-hand"} />
-//   ),
-// };
+const ActOptions = {
+  tabBarLabel: t("ACT_SCREEN_TAB_NAME"),
+  tabBarIcon: ({ focused }) => (
+    <TabBarIcon focused={focused} name={"md-hand"} />
+  ),
+};
 
 const SettingsOptions = {
   tabBarLabel: t("SETTINGS_SCREEN_TAB_NAME"),
@@ -43,11 +43,11 @@ const SettingsOptions = {
 const MainTabNavigator = (): React.ReactElement => (
   <BottomTab.Navigator
     tabBarOptions={{
-      activeTintColor: Colors.linkGreen,
-      inactiveTintColor: Colors.swordGray,
+      activeTintColor: Colors.green50,
+      inactiveTintColor: Colors.grey40,
       style: {
         paddingTop: 6,
-        backgroundColor: Colors.linkGreen10,
+        backgroundColor: Colors.green10,
         borderTopWidth: 0,
       },
     }}
@@ -64,7 +64,11 @@ const MainTabNavigator = (): React.ReactElement => (
       options={EmissionsOptions}
       component={EmissionsNavigator}
     />
-    {/* <BottomTab.Screen name="Act" options={ActOptions} component={ActNavigator} /> */}
+    {/* <BottomTab.Screen
+      name="Act"
+      options={ActOptions}
+      component={ActNavigator}
+    /> */}
     <BottomTab.Screen
       name="SettingsNavigator"
       options={SettingsOptions}

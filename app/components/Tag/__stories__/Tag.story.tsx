@@ -8,7 +8,7 @@ import Tag from "..";
 const props = {
   selected: false,
   title: "Transport",
-  onPress: () => alert("onPress"),
+  onPress: () => alert("onPress")
 };
 
 const iconOptions = {

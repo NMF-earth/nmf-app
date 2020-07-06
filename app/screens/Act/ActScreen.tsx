@@ -11,7 +11,7 @@ import { navigate } from "../../navigation";
 const isKitchen = pathEq(["category"], GuideCategory.kitchen);
 const isTechnology = pathEq(["category"], GuideCategory.technology);
 
-const ActScreen = props => {
+const ActScreen = (props) => {
   const kitchenGuides = filter(isKitchen, Guides) as Guide[];
   const techGuides = filter(isTechnology, Guides) as Guide[];
   const navigator = navigate(props.navigation);
@@ -40,7 +40,7 @@ const ActScreen = props => {
                 }}
               />
             </React.Fragment>
-          )
+          ),
         },
         {
           title: t("ACT_SCREEN_FOOD"),
@@ -53,8 +53,8 @@ const ActScreen = props => {
                 // do nothing.
               }}
             />
-          )
-        }
+          ),
+        },
       ]}
     />
   );

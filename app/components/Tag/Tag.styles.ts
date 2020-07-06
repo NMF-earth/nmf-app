@@ -13,13 +13,13 @@ const container: ViewStyle = {
 export default StyleSheet.create({
   containerNotSelected: {
     ...container,
-    backgroundColor: Colors.linkGreen + "10",
-    borderColor: Colors.darkLink + 20
+    backgroundColor: Colors.green50 + "10",
+    borderColor: Colors.grey100 + 20
   },
   containerSelected: {
     ...container,
-    backgroundColor: Colors.linkGreen + "20",
-    borderColor: Colors.linkGreen
+    backgroundColor: Colors.green50 + "20",
+    borderColor: Colors.green50
   },
   containerIcon: {
     minWidth: 110,

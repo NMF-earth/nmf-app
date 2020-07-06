@@ -97,9 +97,9 @@ export default ({
         ? renderDuration()
         : renderDistance()}
       <Slider
-        minimumTrackTintColor={Colors.linkGreen}
-        maximumTrackTintColor={Colors.gray}
-        thumbTintColor={Colors.linkGreen}
+        minimumTrackTintColor={Colors.green50}
+        maximumTrackTintColor={Colors.grey}
+        thumbTintColor={Colors.green50}
         style={styles.slider}
         maximumValue={
           transportType === TransportEnum.plane
@@ -116,7 +116,7 @@ export default ({
       />
       <View style={styles.totalContainer}>
         <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_TOTAL")}</Text.H3>
-        <Text.H2 style={{ color: Colors.oceanBlue }}>
+        <Text.H2 style={{ color: Colors.blue50 }}>
           <FormattedNumber
             value={
               transportType === TransportEnum.plane

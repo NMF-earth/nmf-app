@@ -3,7 +3,7 @@ import { Colors } from "../../colors";
 
 export default StyleSheet.create({
   header: {
-    borderBottomColor: Colors.linkGreen10,
+    borderBottomColor: Colors.green10,
     borderBottomWidth: 2,
     shadowColor: "transparent",
     elevation: 0,

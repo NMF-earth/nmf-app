@@ -6,3 +6,7 @@ category: technology
 ### Section
 
 Hello world, some markdown here
+
+![Bike](bike.png)
+![Earth](earth.png)
+![Restaurant](restaurant.png)

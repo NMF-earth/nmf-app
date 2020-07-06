@@ -25,16 +25,16 @@ export default ({ setCo2eqKilograms, defaultValueSlider }: Props) => {
           {t("ADD_EMISSION_QUANTITY_OF_EMISSION")}
         </Text.H3>
         <View style={{ flexDirection: "row" }}>
-          <Text.H2 oceanBlue>
+          <Text.H2 blue50>
             {Math.round(sliderValue)}
             <Text.Primary>{" kgCO2eq"}</Text.Primary>
           </Text.H2>
         </View>
       </View>
       <Slider
-        minimumTrackTintColor={Colors.linkGreen}
-        maximumTrackTintColor={Colors.gray}
-        thumbTintColor={Colors.linkGreen}
+        minimumTrackTintColor={Colors.green50}
+        maximumTrackTintColor={Colors.grey}
+        thumbTintColor={Colors.green50}
         style={styles.slider}
         maximumValue={MAX_SLIDER_VALUE}
         minimumValue={MIN_SLIDER_VALUE}

@@ -78,9 +78,9 @@ export default ({
         </Text.Primary>
       </View>
       <Slider
-        minimumTrackTintColor={Colors.linkGreen}
-        maximumTrackTintColor={Colors.gray}
-        thumbTintColor={Colors.linkGreen}
+        minimumTrackTintColor={Colors.green50}
+        maximumTrackTintColor={Colors.grey}
+        thumbTintColor={Colors.green50}
         style={styles.slider}
         maximumValue={MAX_SLIDER_VALUE}
         minimumValue={MIN_SLIDER_VALUE}
@@ -89,7 +89,7 @@ export default ({
       />
       <View style={styles.totalContainer}>
         <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_TOTAL")}</Text.H3>
-        <Text.H2 oceanBlue>
+        <Text.H2 blue50>
           <FormattedNumber
             value={carbonValue > 1 ? carbonValue : carbonValue * 1000}
             maximumFractionDigits={2}
