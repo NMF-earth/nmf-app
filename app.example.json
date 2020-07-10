@@ -3,14 +3,19 @@
     "name": "NMF.earth",
     "slug": "not-my-fault-earth",
     "privacy": "public",
-    "sdkVersion": "37.0.0",
-    "platforms": ["ios", "android"],
+    "sdkVersion": "38.0.0",
+    "platforms": [
+      "ios",
+      "android"
+    ],
     "version": "0.4.0",
     "orientation": "portrait",
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "icon": "./assets/images/ios.icon.png",
       "bundleIdentifier": "nmf.earth",
@@ -29,7 +34,7 @@
           "config": {
             "organization": "nmf",
             "project": "not-my-fault-earth",
-            "authToken": null
+            "authToken": {}
           }
         }
       ]
