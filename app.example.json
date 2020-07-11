@@ -34,7 +34,7 @@
           "config": {
             "organization": "nmf",
             "project": "not-my-fault-earth",
-            "authToken": {}
+            "authToken": null
           }
         }
       ]
