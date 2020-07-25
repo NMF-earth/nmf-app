@@ -51,7 +51,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
           ]
         }
         thumbTintColor="#4BB377"
-        value={0}
+        value={0.5}
       />
       <Text.Primary
         lightGray={true}

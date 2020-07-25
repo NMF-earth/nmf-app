@@ -79,10 +79,12 @@ const getC02ValueFromEmission = (emission: Emission) => {
   return emission.value * model[emission.emissionModelType];
 };
 
+const getCreationDate: (Emission) => string = prop("creationDate");
+
 const getLatestEmission = (emissions: Array<Emission>) =>
   isNilOrEmpty(emissions)
     ? null
-    : reduce(maxBy(prop("creationDate")), emissions[0], emissions);
+    : reduce(maxBy(getCreationDate), emissions[0], emissions);
 
 const toKWH = (x: number) => (x * 3.6) / Math.pow(10, -6);
 const toKgCO2 = (x: number) => x * 1000;
