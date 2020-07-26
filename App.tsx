@@ -3,7 +3,6 @@ import * as Font from "expo-font";
 import { FormattedProvider } from "react-native-globalize";
 import { locale as localeExpo } from "expo-localization";
 import { includes } from "ramda";
-import { StyleSheet, View } from "react-native";
 import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
 import Constants from "expo-constants";
 import * as Sentry from "sentry-expo";
@@ -22,7 +21,7 @@ const secret =
 Sentry.init({
   dsn: secret.dsn,
   enableInExpoDevelopment: false,
-  debug: true
+  debug: true,
 });
 
 /* TODO: set Constants.manifest.revisionId with expo */
@@ -71,17 +70,17 @@ const App = () => {
         "Inter-SemiBold": require("./assets/fonts/Inter-SemiBold.ttf"),
         "Inter-SemiBoldItalic": require("./assets/fonts/Inter-SemiBoldItalic.ttf"),
         "Inter-Thin-BETA": require("./assets/fonts/Inter-Thin-BETA.ttf"),
-        "Inter-ThinItalic-BETA": require("./assets/fonts/Inter-ThinItalic-BETA.ttf")
-      })
+        "Inter-ThinItalic-BETA": require("./assets/fonts/Inter-ThinItalic-BETA.ttf"),
+      }),
     ])
       .then(() => {
         setReady(true);
       })
-      .catch(error => Sentry.captureException(error));
+      .catch((error) => Sentry.captureException(error));
   }, []);
 
   // callback to get splashScreen animation completion
-  const screenAnimationComplete = animation => {
+  const screenAnimationComplete = (animation) => {
     setSplashAnimation(animation);
   };
 
@@ -95,7 +94,7 @@ const App = () => {
                 locale: locale || "en-US",
                 setLocale: setLocale,
                 language: language || "en",
-                setLanguage: setLanguage
+                setLanguage: setLanguage,
               }}
             >
               <AppNavigator />

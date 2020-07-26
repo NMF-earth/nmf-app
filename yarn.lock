@@ -1165,10 +1165,10 @@
     xcode "^2.1.0"
     xml2js "^0.4.23"
 
-"@expo/configure-splash-screen@0.1.11":
-  version "0.1.11"
-  resolved "https://registry.yarnpkg.com/@expo/configure-splash-screen/-/configure-splash-screen-0.1.11.tgz#635a3f55134eecbc665ddd352057cdfb8dd4c539"
-  integrity sha512-KMLBnPB5olwPe8bqDaarH2tRoja95oSVquicZg0g9K7V0fo7YysNTfaYdbqPtGr1CIHkGH8UMBngA0HaquTn/Q==
+"@expo/configure-splash-screen@~0.1.0":
+  version "0.1.12"
+  resolved "https://registry.yarnpkg.com/@expo/configure-splash-screen/-/configure-splash-screen-0.1.12.tgz#8d8889fc98e87cececdb48af45bc8d6447ce699d"
+  integrity sha512-XvXZEmRaHmuO4/oJnE4cD2VFwYQec7kXBq0Ki9NtSdNHmGWE8XuXslZpn9anORcTjas/X0p9KtJbRsYQVVqbww==
   dependencies:
     "@react-native-community/cli-platform-android" "4.7.0"
     "@react-native-community/cli-platform-ios" "4.7.0"
@@ -1208,10 +1208,10 @@
   dependencies:
     cross-spawn "^6.0.5"
 
-"@expo/vector-icons@10.1.0":
-  version "10.1.0"
-  resolved "https://registry.yarnpkg.com/@expo/vector-icons/-/vector-icons-10.1.0.tgz#3fb2517924b031c1b98f86fa51a2032a257759b0"
-  integrity sha512-6ikFslHORJgsb8wKeSgXYfZNNXsiTb3yQf5xaNyGUCYg4zqE7VchdhnH9yZKTI3Lu16jna52pHQZl+3jcOSAbQ==
+"@expo/vector-icons@10.0.0":
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/@expo/vector-icons/-/vector-icons-10.0.0.tgz#e66729818a802681d7c8c30a0393f44e546c1265"
+  integrity sha512-2xa50wtYCQboArwMKTVUmxppEnLfQb1itsvOe4SO8Wufic6nvWvUPKRTubFdckncebd1aC3xwby01xr6Jybkdg==
   dependencies:
     lodash "^4.17.4"
 
@@ -1670,18 +1670,18 @@
   resolved "https://registry.yarnpkg.com/@react-native-community/masked-view/-/masked-view-0.1.10.tgz#5dda643e19e587793bc2034dd9bf7398ad43d401"
   integrity sha512-rk4sWFsmtOw8oyx8SD3KSvawwaK7gRBSEIy2TAwURyGt+3TizssXP1r8nx3zY+R7v2vYYHXZ+k2/GULAT/bcaQ==
 
-"@react-navigation/bottom-tabs@5.5.2":
-  version "5.5.2"
-  resolved "https://registry.yarnpkg.com/@react-navigation/bottom-tabs/-/bottom-tabs-5.5.2.tgz#b3d95e2a05eba47f7aa34fb9f2331ddede0ee4d5"
-  integrity sha512-unopBnv8i3hcjhp2qdhgSwF6GFnhkdtPwGbvJMOG8Na19oPscT8UQDUbHZKs9wiJMk2Q0usEz2PbFh8GQGAf7w==
+"@react-navigation/bottom-tabs@5.6.1":
+  version "5.6.1"
+  resolved "https://registry.yarnpkg.com/@react-navigation/bottom-tabs/-/bottom-tabs-5.6.1.tgz#f4aa23913a0c26ec3dd4dc268cd83e3d0e5f4dc4"
+  integrity sha512-aAqA4lCaa1x3cEWwEyUJ5hBPpVuv/TR0Q0Y/hkBgI2+h27Xdv9B/ZemMIjMWTNDZTjbYXTsJ41AJbVQnPSVTrg==
   dependencies:
     color "^3.1.2"
     react-native-iphone-x-helper "^1.2.1"
 
-"@react-navigation/core@^5.10.0":
-  version "5.12.0"
-  resolved "https://registry.yarnpkg.com/@react-navigation/core/-/core-5.12.0.tgz#0d3dab1ae8403b83f9387eaaee3f270dd8eadcfa"
-  integrity sha512-CTmYrFXCZwInN40CpEzkPxhrpzujj20qvsUgpH05+oO1flwsnaJsyBfYawIcTS62/1/Z6SAM7iW5PbKk+qw9iQ==
+"@react-navigation/core@^5.11.1":
+  version "5.12.1"
+  resolved "https://registry.yarnpkg.com/@react-navigation/core/-/core-5.12.1.tgz#46817ebf19ca9dc32559aaa70130c294deb3d7e0"
+  integrity sha512-/0IQ/MzsLHD1JthTPd1AwpIEWMejPksh0qAloynEwL+ILLZMq9jJF3b7T8rFxHVbsBuaM7lKOWUcULDvnOxksQ==
   dependencies:
     "@react-navigation/routers" "^5.4.9"
     escape-string-regexp "^4.0.0"
@@ -1697,12 +1697,12 @@
   dependencies:
     color "^3.1.2"
 
-"@react-navigation/native@5.5.1":
-  version "5.5.1"
-  resolved "https://registry.yarnpkg.com/@react-navigation/native/-/native-5.5.1.tgz#e669d9561e54d86b1315637b8d5630dc55ee9383"
-  integrity sha512-5pzsfvLdnvqfrWgTMCLDFaGK6Sj30p7tAMhUGneV2oGlx0OIbhgc6/04UUMpKEmAS2PaC/GZa1LQIsSVWDewvw==
+"@react-navigation/native@5.6.1":
+  version "5.6.1"
+  resolved "https://registry.yarnpkg.com/@react-navigation/native/-/native-5.6.1.tgz#a603b921f39fe3fcfcc27232d71b24e80effc1f2"
+  integrity sha512-jnSNEnuRzqLvG+7QcMthfB8eCZIzAE0Wku7HDgzfjFS2iA7Oa9ugeX/1qdP9heT2Mp0t9BDQ4XX4boJma9Z/xg==
   dependencies:
-    "@react-navigation/core" "^5.10.0"
+    "@react-navigation/core" "^5.11.1"
     nanoid "^3.1.9"
 
 "@react-navigation/routers@^5.4.9":
@@ -1712,10 +1712,10 @@
   dependencies:
     nanoid "^3.1.9"
 
-"@react-navigation/stack@5.5.1":
-  version "5.5.1"
-  resolved "https://registry.yarnpkg.com/@react-navigation/stack/-/stack-5.5.1.tgz#95efa28edbfd1323e5ad9f01f539d43ffad8decc"
-  integrity sha512-oU2FEm+Ba6jMd5VA2WnuNfCO2HlZmGhrEX9yjBCyFj7fFCG1SB7WJdKLhZShtx3KxG/qWKphICeTLlYvkHdSpQ==
+"@react-navigation/stack@5.6.2":
+  version "5.6.2"
+  resolved "https://registry.yarnpkg.com/@react-navigation/stack/-/stack-5.6.2.tgz#d2371f9ffdcf3eee26245697d0947c9722542f38"
+  integrity sha512-51Aasxg8j2eKxz4mhA0ajJXrhAyJQkk2iiNE511zcqJ3tlfxv/h70Eej3PetnbbHFMOwNsEwc2GjB3OnfQcxjQ==
   dependencies:
     color "^3.1.2"
     react-native-iphone-x-helper "^1.2.1"
@@ -1857,7 +1857,7 @@
     react-inspector "^3.0.2"
     uuid "^3.3.2"
 
-"@storybook/addon-knobs@^5.3.19":
+"@storybook/addon-knobs@5.3.19":
   version "5.3.19"
   resolved "https://registry.yarnpkg.com/@storybook/addon-knobs/-/addon-knobs-5.3.19.tgz#b2483e401e2dca6390e1c0a81801130a0b515efb"
   integrity sha512-e7z6KhvVOUGjygK4VL5Un1U3t0XG0jkb/BOHVWQMtH5dWNn3zofD3LrZZy24eAsyre/ej/LGo/BzwDSXkKLTog==
@@ -1895,7 +1895,7 @@
     prop-types "^15.7.2"
     qs "^6.6.0"
 
-"@storybook/addon-ondevice-knobs@^5.3.19":
+"@storybook/addon-ondevice-knobs@5.3.19":
   version "5.3.19"
   resolved "https://registry.yarnpkg.com/@storybook/addon-ondevice-knobs/-/addon-ondevice-knobs-5.3.19.tgz#94a13f6d9fb80e16735743257b5d349b858eec19"
   integrity sha512-k+3trTPNFgukRf7f2xQ3Mjz/OKFVGouUM3SWG/R32o60mE0rEiKvuGBm1/F2CB11wrNY76MYsbRG+G2uGywOQQ==
@@ -6003,12 +6003,12 @@ expo-permissions@~9.0.1:
   resolved "https://registry.yarnpkg.com/expo-permissions/-/expo-permissions-9.0.1.tgz#dc10b58654bbe39bbbed5827369942b01b08055e"
   integrity sha512-CosJgy8XQRN/OFG2JTQDcFxz3XTGi27coCMym/hVXWtQfk0z6PwdRG5IXHfLGuSckwIcgmirrwm2+Zc0X3MmNg==
 
-expo-splash-screen@0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/expo-splash-screen/-/expo-splash-screen-0.4.0.tgz#b751f11bf702a38b4ead4b4bedd4f82e24a35d70"
-  integrity sha512-6We+pL/uj3pYSxhrqcbvbxsWis5CN85uOHEbxbiE4fSKqaA+laIXq++EIjvWtB7dKxXYTH7nYYYWIOf9jwV8Rg==
+expo-splash-screen@0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/expo-splash-screen/-/expo-splash-screen-0.3.1.tgz#4dd79d9d1ab8135281f7cc5889a68e3003223f37"
+  integrity sha512-j87n6utSq8irvx9dA3YvFwHsqT9c/Cc/QnmpZHB0g3mPh3QBWReKgR3x41tHnkLMKHAi9Au9D4k/o615kUNeDg==
   dependencies:
-    "@expo/configure-splash-screen" "0.1.11"
+    "@expo/configure-splash-screen" "~0.1.0"
 
 expo-sqlite@~8.2.1:
   version "8.2.1"
@@ -6025,10 +6025,10 @@ expo-web-browser@8.3.1:
   dependencies:
     compare-urls "^2.0.0"
 
-expo@38.0.2:
-  version "38.0.2"
-  resolved "https://registry.yarnpkg.com/expo/-/expo-38.0.2.tgz#2e8f81c818046b15c9cf2a82e9a21664c3e06140"
-  integrity sha512-oTbSoncg2svTOJas3J2WzW0OAUcAUZqjLaFjlrYEKNyfW3YOvWmXzwcBm7Ky6U+lyfr39yvedBZxqCNfkD4iVA==
+expo@38.0.0:
+  version "38.0.0"
+  resolved "https://registry.yarnpkg.com/expo/-/expo-38.0.0.tgz#6e5df269f178220ce709ec24b79493799959a03a"
+  integrity sha512-ydRb95oPjeeJOlPLuCx0NzNG/W3rCMTn7RcTbKN0nsgUJLXKZZtPl1v4C+CL0fld102IJXAOS04wQD4XqqxRhg==
   dependencies:
     "@babel/runtime" "^7.1.2"
     "@expo/vector-icons" "^10.0.2"
@@ -7960,10 +7960,10 @@ jest-environment-node@^25.5.0:
     jest-util "^25.5.0"
     semver "^6.3.0"
 
-jest-expo@38.0.2:
-  version "38.0.2"
-  resolved "https://registry.yarnpkg.com/jest-expo/-/jest-expo-38.0.2.tgz#a6f59d83a427b9d38d79edc2ad4e252fab38dbca"
-  integrity sha512-+b+oJevwi0ZZcSWr4b1O2z4UrXkr8m6m6E5n/kd+AoBZfxfiW0oG71SPFb+cYVzcSB4hTV95nWeAAKUXZPa16g==
+jest-expo@38.0.0:
+  version "38.0.0"
+  resolved "https://registry.yarnpkg.com/jest-expo/-/jest-expo-38.0.0.tgz#29e482d638fd56cb5608b9fad3b6e6225202d375"
+  integrity sha512-789fhEypwqyfpjDdxjeAJuNWbpm4I+y560gTY1Xm/cDhd2o49daT37+ycfC82szuepn31cKAiQoLgmvmgryHZw==
   dependencies:
     "@expo/config" "^3.2.3"
     babel-jest "^25.2.0"
