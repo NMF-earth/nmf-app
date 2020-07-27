@@ -8,7 +8,7 @@ import { currentTermsOfUseVersion } from "../../constants/Preferences";
 import { ComponentsStyle } from "../../style";
 
 const Stack = createStackNavigator();
-const transitionPresets = {
+const screenOptions = {
   headerShown: false,
   ...ComponentsStyle.transitionBetweenScreenPresets,
 };
@@ -24,13 +24,13 @@ const RootNavigator = (): React.ReactElement => {
         <Stack.Screen
           name="BottomTab"
           component={BottomTabNavigator}
-          options={transitionPresets}
+          options={screenOptions}
         />
       ) : (
         <Stack.Screen
           name="Intro"
-          options={transitionPresets}
           component={IntroScreen}
+          options={screenOptions}
         />
       )}
     </Stack.Navigator>
