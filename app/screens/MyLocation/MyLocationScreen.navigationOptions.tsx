@@ -4,6 +4,7 @@ import { t } from "../../utils";
 import { Colors, ComponentsStyle } from "../../style";
 
 const navigationOptions = () => ({
+  ...ComponentsStyle.transitionBetweenScreenPresets,
   headerStyle: {
     ...ComponentsStyle.header,
   },

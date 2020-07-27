@@ -10,6 +10,7 @@ import { Provider } from "react-redux";
 import AppNavigator from "./app/navigation/Navigator/AppNavigator";
 import store from "./app/redux/store";
 import SplashScreen from "./app/screens/Splash";
+import { enableScreens } from "react-native-screens";
 import { LocalizationContext } from "./app/utils";
 
 const supportedLanguages = ["en", "fr", "de", "sv"];
@@ -39,7 +40,10 @@ interface State {
 }
 
 const App = () => {
+  enableScreens();
+
   let lang = localeExpo.substring(0, 2);
+
   if (!includes(lang, supportedLanguages)) {
     lang = "en";
   }

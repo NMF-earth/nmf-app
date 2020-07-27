@@ -9,6 +9,7 @@ import { platform } from "../../utils";
 const iconStyle = { paddingRight: PADDING_HORIZONTAL };
 
 const navigationOptionsAndroid = () => ({
+  ...ComponentsStyle.transitionBetweenScreenPresets,
   headerStyle: {
     ...ComponentsStyle.header,
   },

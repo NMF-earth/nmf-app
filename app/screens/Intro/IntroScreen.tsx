@@ -5,7 +5,6 @@ import { useDispatch } from "react-redux";
 
 import { Text, Button, StickersImage } from "../../components";
 import styles from "./IntroScreen.styles";
-import navigationOptions from "./IntroScreen.navigation";
 import { t } from "../../utils";
 import { userPreferences } from "../../ducks";
 import { currentTermsOfUseVersion } from "../../constants/Preferences";
@@ -49,7 +48,5 @@ const IntroScreen = () => {
     </SafeAreaView>
   );
 };
-
-IntroScreen.navigationOptions = navigationOptions;
 
 export default IntroScreen;
