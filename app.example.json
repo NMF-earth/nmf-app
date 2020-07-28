@@ -15,12 +15,12 @@
       "icon": "./assets/images/ios.icon.png",
       "bundleIdentifier": "nmf.earth",
       "supportsTablet": true,
-      "buildNumber": "16"
+      "buildNumber": "17"
     },
     "android": {
       "icon": "./assets/images/android.icon.png",
       "package": "nmf.earth",
-      "versionCode": 16
+      "versionCode": 17
     },
     "hooks": {
       "postPublish": [

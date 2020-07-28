@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { SafeAreaProvider } from "react-native-safe-area-context";
+import { StatusBar } from "expo-status-bar";
 import * as Font from "expo-font";
 import { FormattedProvider } from "react-native-globalize";
 import { locale as localeExpo } from "expo-localization";
@@ -89,7 +91,8 @@ const App = () => {
   };
 
   return (
-    <>
+    <SafeAreaProvider>
+      <StatusBar />
       {ready && splashAnimation ? (
         <Provider store={store}>
           <FormattedProvider locale={language || "en"}>
@@ -108,7 +111,7 @@ const App = () => {
       ) : (
         <SplashScreen screenAnimationComplete={screenAnimationComplete} />
       )}
-    </>
+    </SafeAreaProvider>
   );
 };
 
