@@ -1,5 +1,5 @@
 <h1 align="center">🌱 NMF.earth app</h1>
-<h3 align="center">Calculate, understand and reduce your carbon footprint</h3>
+<h3 align="center">Understand and reduce your carbon footprint</h3>
 
 <br />
 
