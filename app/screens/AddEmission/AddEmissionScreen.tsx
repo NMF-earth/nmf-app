@@ -23,6 +23,7 @@ import {
   t,
   withLocalization,
   LocalizationContextProps,
+  ui
 } from "../../utils";
 import { userPreferences } from "../../ducks";
 
@@ -184,6 +185,8 @@ const AddEmissionScreen = ({
     return null;
   };
 
+  const isDarkModeEnabled = ui.isDarkModeEnabled()
+
   return (
     <KeyboardAwareScrollView style={styles.container}>
       <View style={styles.typeContainer}>
@@ -249,6 +252,7 @@ const AddEmissionScreen = ({
         cancelTextIOS={t("ADD_EMISSION_PICKER_MODAL_CANCEL")}
         locale={locale}
         isVisible={isDatePickerVisible}
+        isDarkModeEnabled={isDarkModeEnabled}
         mode="date"
         onConfirm={handleConfirm}
         onCancel={hideDatePicker}

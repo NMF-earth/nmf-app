@@ -1,3 +1,4 @@
+import { Appearance } from "react-native";
 import {
   TransportEnum,
   FoodEnum,
@@ -96,4 +97,8 @@ const getIconFromModelType = (emissionModelType) => {
   }
 };
 
-export default { getTranslationModelType, getIconFromModelType };
+const isDarkModeEnabled = () => {
+  return Appearance.getColorScheme() === "dark"
+}
+
+export default { getTranslationModelType, getIconFromModelType, isDarkModeEnabled };
