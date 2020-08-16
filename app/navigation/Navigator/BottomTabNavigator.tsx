@@ -4,6 +4,7 @@ import { Colors } from "../../style";
 
 import TabBarIcon from "../../components/TabBarIcon";
 import { t } from "../../utils";
+import { Text } from "../../components";
 
 import ActNavigator from "./BottomTab/ActNavigator";
 import BudgetNavigator from "./BottomTab/BudgetNavigator";
@@ -51,8 +52,6 @@ const MainTabNavigator = (): React.ReactElement => (
         borderTopWidth: 0,
       },
     }}
-    // screenOptions={TabBarVisibleOnRootScreenOptions}
-    // tabBar={(props) => <HomeBottomNavigation {...props} />}
   >
     <BottomTab.Screen
       name="BudgetNavigator"
@@ -64,11 +63,11 @@ const MainTabNavigator = (): React.ReactElement => (
       options={EmissionsOptions}
       component={EmissionsNavigator}
     />
-    {/* <BottomTab.Screen
+    <BottomTab.Screen
       name="Act"
       options={ActOptions}
       component={ActNavigator}
-    /> */}
+    />
     <BottomTab.Screen
       name="SettingsNavigator"
       options={SettingsOptions}
