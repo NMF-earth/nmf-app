@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import { toUpper } from "ramda";
 import { View, Slider } from "react-native";
 import { FormattedNumber } from "react-native-globalize";
-import { electricity } from "carbon-footprint";
+import { electricity, ElectricityEnum } from "carbon-footprint";
 
 import { Text } from "../../../../components";
 import { Colors } from "../../../../style";
@@ -34,7 +35,10 @@ const Electricity = ({
         <View style={{ flexDirection: "row" }}>
           <Text.H2 blue50>
             {Math.round((sliderValue / 3.6) * Math.pow(10, -6))}
-            <Text.Primary>{" kWh"}</Text.Primary>
+            <Text.Primary>{" kWh - "}</Text.Primary>
+            <Text.Secondary lightGray>
+              {toUpper(ElectricityEnum[electricityCountry])}
+            </Text.Secondary>
           </Text.H2>
         </View>
       </View>
