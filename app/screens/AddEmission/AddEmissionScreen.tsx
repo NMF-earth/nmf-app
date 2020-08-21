@@ -23,7 +23,7 @@ import {
   t,
   withLocalization,
   LocalizationContextProps,
-  ui
+  ui,
 } from "../../utils";
 import { userPreferences } from "../../ducks";
 
@@ -185,7 +185,7 @@ const AddEmissionScreen = ({
     return null;
   };
 
-  const isDarkModeEnabled = ui.isDarkModeEnabled()
+  const isDarkModeEnabled = ui.isDarkModeEnabled();
 
   return (
     <KeyboardAwareScrollView style={styles.container}>
