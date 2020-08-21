@@ -18,7 +18,7 @@ const openAddEmission = (navigation) => (props = {}) => {
 };
 
 const openDetails = (navigation) => (props = {}) => {
-  navigation.push("Details", props);
+  navigation.jumpTo("ActDetail", props);
 };
 
 const openEmissionItem = (navigation) => (props = {}) => {

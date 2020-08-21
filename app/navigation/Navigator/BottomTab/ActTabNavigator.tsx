@@ -14,6 +14,7 @@ const ActTabNavigator = () => (
   <Tab.Navigator
     initialRouteName="Feed"
     tabBarOptions={{
+      scrollEnabled: true,
       activeTintColor: Colors.green50,
       inactiveTintColor: Colors.grey40,
       indicatorStyle: { backgroundColor: Colors.green50 },
@@ -25,19 +26,14 @@ const ActTabNavigator = () => (
     }}
   >
     <Tab.Screen
-      name="Feed"
+      name="Act"
       component={ActScreen}
-      options={{ tabBarLabel: "House" }}
+      options={{ tabBarLabel: "Act" }}
     />
     <Tab.Screen
-      name="Notifications"
+      name="ActDetail"
       component={ActDetailScreen}
-      options={{ tabBarLabel: "Tech" }}
-    />
-    <Tab.Screen
-      name="Profile"
-      component={ActScreen}
-      options={{ tabBarLabel: "Food" }}
+      options={{ tabBarLabel: "Act Detail" }}
     />
   </Tab.Navigator>
 );
