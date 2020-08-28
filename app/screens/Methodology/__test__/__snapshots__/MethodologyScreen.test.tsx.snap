@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ComingSoonScreen renders correctly 1`] = `
+<RCTScrollView
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "flex": 1,
+      "paddingHorizontal": 14,
+    }
+  }
+>
+  <View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "marginTop": 22,
+        }
+      }
+    >
+      <Text.Primary
+        style={
+          Object {
+            "paddingVertical": 10,
+            "textAlign": "center",
+          }
+        }
+      >
+        Some Random Text
+      </Text.Primary>
+    </View>
+  </View>
+</RCTScrollView>
+`;
