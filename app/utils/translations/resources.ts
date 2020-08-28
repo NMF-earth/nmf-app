@@ -5,6 +5,7 @@ import * as Emissions from "../../screens/Emissions/translations";
 import * as Settings from "../../screens/Settings/translations";
 import * as MonthlyBudget from "../../screens/MonthlyBudget/translations";
 import * as ComingSoon from "../../screens/ComingSoon/translations";
+import * as Methodology from "../../screens/Methodology/translations";
 import * as AddEmission from "../../screens/AddEmission/translations";
 import * as EmissionItem from "../../screens/EmissionItem/translations";
 import * as Intro from "../../screens/Intro/translations";
@@ -31,12 +32,13 @@ const en = {
   ...Emissions.en,
   ...Settings.en,
   ...ComingSoon.en,
+  ...Methodology.en,
   ...AddEmission.en,
   ...EmissionItem.en,
   ...Intro.en,
   ...SupportUs.en,
   ...MyLocation.en,
-  ...ActDetail.en,
+  ...ActDetail.en
 };
 
 const de = {
@@ -50,12 +52,13 @@ const de = {
   ...Emissions.de,
   ...Settings.de,
   ...ComingSoon.de,
+  ...Methodology.de,
   ...AddEmission.de,
   ...EmissionItem.de,
   ...Intro.de,
   ...SupportUs.de,
   ...MyLocation.de,
-  ...ActDetail.de,
+  ...ActDetail.de
 };
 
 const fr = {
@@ -69,12 +72,13 @@ const fr = {
   ...Emissions.fr,
   ...Settings.fr,
   ...ComingSoon.fr,
+  ...Methodology.fr,
   ...AddEmission.fr,
   ...EmissionItem.fr,
   ...Intro.fr,
   ...SupportUs.fr,
   ...MyLocation.fr,
-  ...ActDetail.fr,
+  ...ActDetail.fr
 };
 
 const sv = {
@@ -88,12 +92,13 @@ const sv = {
   ...Emissions.sv,
   ...Settings.sv,
   ...ComingSoon.sv,
+  ...Methodology.sv,
   ...AddEmission.sv,
   ...EmissionItem.sv,
   ...Intro.sv,
   ...SupportUs.sv,
   ...MyLocation.sv,
-  ...ActDetail.sv,
+  ...ActDetail.sv
 };
 
 const pt = {
@@ -106,13 +111,13 @@ const pt = {
   ...Budget.pt,
   ...Emissions.pt,
   ...Settings.pt,
-  ...ComingSoon.pt,
+  ...Methodology.pt,
   ...AddEmission.pt,
   ...EmissionItem.pt,
   ...Intro.pt,
   ...SupportUs.pt,
   ...MyLocation.pt,
-  ...ActDetail.pt,
+  ...ActDetail.pt
 };
 
 const es = {
@@ -125,13 +130,13 @@ const es = {
   ...Budget.es,
   ...Emissions.es,
   ...Settings.es,
-  ...ComingSoon.es,
+  ...Methodology.es,
   ...AddEmission.es,
   ...EmissionItem.es,
   ...Intro.es,
   ...SupportUs.es,
   ...MyLocation.es,
-  ...ActDetail.es,
+  ...ActDetail.es
 };
 
 export interface TranslationKeys
@@ -143,6 +148,7 @@ export interface TranslationKeys
     Budget.TranslationKeys,
     Emissions.TranslationKeys,
     ComingSoon.TranslationKeys,
+    Methodology.TranslationKeys,
     AddEmission.TranslationKeys,
     EmissionItem.TranslationKeys,
     Settings.TranslationKeys,

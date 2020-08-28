@@ -1,1 +1,1 @@
-export {default} from './MethodologyScreen'
+export {default} from "./MethodologyScreen"
