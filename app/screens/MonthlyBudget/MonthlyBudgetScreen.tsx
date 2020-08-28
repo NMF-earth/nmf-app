@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { View, Slider, ScrollView } from "react-native";
+import { View, ScrollView } from "react-native";
+import Slider from "@react-native-community/slider";
 import { Ionicons } from "@expo/vector-icons";
 import * as WebBrowser from "expo-web-browser";
 import { useDispatch, useSelector } from "react-redux";
@@ -24,7 +25,7 @@ const translationMontlyBudgetCountries = [
   "MONTHLY_BUDGET_CHINA",
   "MONTHLY_BUDGET_BRAZIL",
   "MONTHLY_BUDGET_INDIA",
-  "MONTHLY_BUDGET_ETHIOPIA",
+  "MONTHLY_BUDGET_ETHIOPIA"
 ];
 
 const CountryExample = (translation, index) => (

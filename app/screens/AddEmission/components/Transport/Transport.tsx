@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { View, ScrollView, Slider } from "react-native";
+import { View, ScrollView } from "react-native";
+import Slider from "@react-native-community/slider";
 import { FormattedNumber } from "react-native-globalize";
 
 import styles from "./Transport.styles";
@@ -29,7 +30,7 @@ const TAGS: Array<TransportEnum> = [
   TransportEnum.bus,
   TransportEnum.plane,
   TransportEnum.boat,
-  TransportEnum.motorbike,
+  TransportEnum.motorbike
 ];
 
 export default ({
@@ -37,7 +38,7 @@ export default ({
   setTransportType,
   transportType,
   setDistance,
-  defaultValueSlider,
+  defaultValueSlider
 }: Props) => {
   const [sliderValue, setSliderValue] = useState(defaultValueSlider / 1000);
 
@@ -83,7 +84,7 @@ export default ({
         <Text.H3>{t("ADD_EMISSION_TRANSPORT_TYPE")}</Text.H3>
       </View>
       <ScrollView horizontal style={styles.tagContainer}>
-        {TAGS.map((item) => (
+        {TAGS.map(item => (
           <Tag
             key={item}
             selected={transportType === item}
