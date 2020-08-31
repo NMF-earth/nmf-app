@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { toUpper } from "ramda";
-import { View, Slider } from "react-native";
+import { View } from "react-native";
+import Slider from "@react-native-community/slider";
 import { FormattedNumber } from "react-native-globalize";
 import { electricity, ElectricityEnum } from "carbon-footprint";
 
@@ -21,7 +22,7 @@ interface Props {
 const Electricity = ({
   electricityCountry,
   setElectricityConsumption,
-  defaultValueSlider,
+  defaultValueSlider
 }: Props) => {
   const [sliderValue, setSliderValue] = useState(defaultValueSlider);
   setElectricityConsumption(sliderValue);

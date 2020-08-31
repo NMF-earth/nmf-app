@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import { View, ScrollView, Slider } from "react-native";
+import { View, ScrollView } from "react-native";
+import Slider from "@react-native-community/slider";
 import { FormattedNumber } from "react-native-globalize";
 import {
   streaming,
   StreamingEnum,
   getInternetUsageCarbonImpact,
-  ElectricityEnum,
+  ElectricityEnum
 } from "carbon-footprint";
 import styles from "./Streaming.styles";
 import { Text, Tag } from "../../../../components";
@@ -27,7 +28,7 @@ const TAGS: Array<StreamingEnum> = [
   StreamingEnum.HDVideo,
   StreamingEnum.audioMP3,
   StreamingEnum.fullHDVideo,
-  StreamingEnum.ultraHDVideo,
+  StreamingEnum.ultraHDVideo
 ];
 
 export default ({
@@ -35,7 +36,7 @@ export default ({
   setDurationSeconds,
   setStreamingType,
   streamingType,
-  defaultValueSlider,
+  defaultValueSlider
 }: Props) => {
   const [sliderValue, setSliderValue] = useState(defaultValueSlider);
 
@@ -59,7 +60,7 @@ export default ({
         <Text.H3>{t("ADD_EMISSION_STREAMING_TYPE")}</Text.H3>
       </View>
       <ScrollView horizontal style={styles.tagContainer}>
-        {TAGS.map((item) => (
+        {TAGS.map(item => (
           <Tag
             key={item}
             selected={streamingType === item}

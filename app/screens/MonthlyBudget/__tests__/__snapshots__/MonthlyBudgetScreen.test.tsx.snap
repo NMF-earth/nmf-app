@@ -27,18 +27,20 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
           Slide to set your budget
         </Text.Primary>
       </View>
-      <RCTSlider
+      <RNCSlider
         disabled={false}
         enabled={true}
+        inverted={false}
         maximumTrackTintColor="#CED4DA"
         maximumValue={1000}
         minimumTrackTintColor="#4BB377"
         minimumValue={0}
         onChange={null}
+        onRNCSliderSlidingComplete={[Function]}
+        onRNCSliderSlidingStart={null}
+        onRNCSliderValueChange={null}
         onResponderTerminationRequest={[Function]}
-        onSlidingComplete={[Function]}
         onStartShouldSetResponder={[Function]}
-        onValueChange={null}
         step={0}
         style={
           Array [
@@ -50,8 +52,17 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
             },
           ]
         }
+        thumbImage={
+          Object {
+            "__packager_asset": true,
+            "height": 1,
+            "scale": 1,
+            "uri": "file://assets/full/path/to/directory/name.type",
+            "width": 1,
+          }
+        }
         thumbTintColor="#4BB377"
-        value={0.5}
+        value={0}
       />
       <Text.Primary
         lightGray={true}
