@@ -14,7 +14,7 @@ interface Props {
 const SelectableListItem = ({ selected, title, onPress }: Props) => {
   return (
     <TouchableOpacity onPress={onPress} style={styles.container}>
-      <Text.Primary bold green={selected} style={styles.text}>
+      <Text.Primary bold numberOfLines={1} green={selected} style={styles.text}>
         {title}
       </Text.Primary>
       {selected && (

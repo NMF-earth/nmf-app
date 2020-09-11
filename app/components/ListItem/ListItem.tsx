@@ -13,9 +13,9 @@ interface Props {
 const ListItem = ({ title, onPress }: Props) => {
   return (
     <TouchableOpacity onPress={onPress} style={styles.container}>
-      <Text.Primary numberOfLines={1} bold style={styles.text}>
+      <Text.Secondary numberOfLines={1} style={styles.text}>
         {title}
-      </Text.Primary>
+      </Text.Secondary>
       <Ionicons
         style={styles.icon}
         name={"ios-arrow-forward"}

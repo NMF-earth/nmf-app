@@ -80,8 +80,7 @@ exports[`ActScreen renders correctly 1`] = `
           }
         }
       >
-        <Text.Primary
-          bold={true}
+        <Text.Secondary
           numberOfLines={1}
           style={
             Object {
@@ -90,7 +89,7 @@ exports[`ActScreen renders correctly 1`] = `
           }
         >
           Find a replacement for GAFA services
-        </Text.Primary>
+        </Text.Secondary>
         <Ionicons
           color="#9CA6A0"
           name="ios-arrow-forward"
@@ -116,8 +115,7 @@ exports[`ActScreen renders correctly 1`] = `
           }
         }
       >
-        <Text.Primary
-          bold={true}
+        <Text.Secondary
           numberOfLines={1}
           style={
             Object {
@@ -126,7 +124,7 @@ exports[`ActScreen renders correctly 1`] = `
           }
         >
           Clean your mailbox
-        </Text.Primary>
+        </Text.Secondary>
         <Ionicons
           color="#9CA6A0"
           name="ios-arrow-forward"
@@ -152,8 +150,7 @@ exports[`ActScreen renders correctly 1`] = `
           }
         }
       >
-        <Text.Primary
-          bold={true}
+        <Text.Secondary
           numberOfLines={1}
           style={
             Object {
@@ -162,7 +159,7 @@ exports[`ActScreen renders correctly 1`] = `
           }
         >
           Install an Adblocker
-        </Text.Primary>
+        </Text.Secondary>
         <Ionicons
           color="#9CA6A0"
           name="ios-arrow-forward"

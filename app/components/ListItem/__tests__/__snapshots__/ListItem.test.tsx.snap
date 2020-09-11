@@ -10,8 +10,7 @@ exports[`<ListItem /> render 1`] = `
     }
   }
 >
-  <Text.Primary
-    bold={true}
+  <Text.Secondary
     numberOfLines={1}
     style={
       Object {
@@ -20,7 +19,7 @@ exports[`<ListItem /> render 1`] = `
     }
   >
     France
-  </Text.Primary>
+  </Text.Secondary>
   <Ionicons
     color="#9CA6A0"
     name="ios-arrow-forward"
