@@ -1,7 +1,6 @@
 export enum GuideCategory {
   kitchen = "kitchen",
   technology = "technology",
-  food = "food"
 }
 
 export interface Guide {
@@ -10,5 +9,3 @@ export interface Guide {
   body: string;
   key: string;
 }
-
-

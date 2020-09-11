@@ -59,7 +59,6 @@ jest.mock("../../../app/components/StickersImage", () => "StickersImage");
 jest.mock("../../../app/components/TextInput", () => "TextInput");
 jest.mock("../../../app/components/SocialMedia", () => "SocialMedia");
 jest.mock("../../../app/components/Tag", () => "Tag");
-jest.mock("../../../app/components/TabbedView", () => "TabbedView");
 jest.mock("../../../app/components/NoEmission", () => "NoEmission");
 jest.mock("../../../app/components/Text", () => require("./Text.mock").default);
 jest.mock(

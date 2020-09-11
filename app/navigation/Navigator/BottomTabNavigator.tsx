@@ -4,7 +4,6 @@ import { Colors } from "../../style";
 
 import TabBarIcon from "../../components/TabBarIcon";
 import { t } from "../../utils";
-import { Text } from "../../components";
 
 import ActNavigator from "./BottomTab/ActNavigator";
 import BudgetNavigator from "./BottomTab/BudgetNavigator";

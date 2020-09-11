@@ -19,7 +19,7 @@ const RootNavigator = (): React.ReactElement => {
     useSelector(userPreferences.selectors.getAcceptedTermsOfUseVersion);
 
   return (
-    <Stack.Navigator initialRouteName="Intro">
+    <Stack.Navigator>
       {hasAcceptedTermsOfUseVersion ? (
         <Stack.Screen
           name="BottomTab"

@@ -1,18 +1,19 @@
 import React from "react";
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
 
+import { GuideCategory } from "../../../types/guide";
 import { Text } from "../../../components";
 import { t } from "../../../utils";
 import { ComponentsStyle, Colors, Font } from "../../../style";
 
 import ActScreen from "../../../screens/Act";
-import ActDetailScreen from "../../../screens/ActDetail";
 
 const Tab = createMaterialTopTabNavigator();
 
+const tabs = Object.keys(GuideCategory);
+
 const ActTabNavigator = () => (
   <Tab.Navigator
-    initialRouteName="Feed"
     tabBarOptions={{
       scrollEnabled: true,
       activeTintColor: Colors.green50,
@@ -25,20 +26,19 @@ const ActTabNavigator = () => (
       style: { backgroundColor: Colors.white },
     }}
   >
-    <Tab.Screen
-      name="Act"
-      component={ActScreen}
-      options={{ tabBarLabel: "Act" }}
-    />
-    <Tab.Screen
-      name="ActDetail"
-      component={ActDetailScreen}
-      options={{ tabBarLabel: "Act Detail" }}
-    />
+    {tabs.map((tab) => (
+      <Tab.Screen
+        key={tab}
+        name={tab}
+        component={ActScreen}
+        options={{ tabBarLabel: tab }}
+      />
+    ))}
   </Tab.Navigator>
 );
 
 const navigationOptions = () => ({
+  ...ComponentsStyle.transitionBetweenScreenPresets,
   headerStyle: {
     ...ComponentsStyle.header,
   },

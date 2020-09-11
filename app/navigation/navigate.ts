@@ -17,8 +17,8 @@ const openAddEmission = (navigation) => (props = {}) => {
   navigation.push("AddEmission", props);
 };
 
-const openDetails = (navigation) => (props = {}) => {
-  navigation.jumpTo("ActDetail", props);
+const openActDetails = (navigation) => (props = {}) => {
+  navigation.push("ActDetail", props);
 };
 
 const openEmissionItem = (navigation) => (props = {}) => {
@@ -51,7 +51,7 @@ const navigate = (navigation) => ({
   openBudget: navigateOneTime(openBudget(navigation)),
   openMontlyBudget: navigateOneTime(openMontlyBudget(navigation)),
   openAddEmission: navigateOneTime(openAddEmission(navigation)),
-  openDetails: navigateOneTime(openDetails(navigation)),
+  openActDetails: navigateOneTime(openActDetails(navigation)),
   openEmissionItem: navigateOneTime(openEmissionItem(navigation)),
   openAbout: navigateOneTime(openAbout(navigation)),
   openMyLocation: navigateOneTime(openMyLocation(navigation)),
