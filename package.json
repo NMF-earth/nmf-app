@@ -39,7 +39,7 @@
     "expo-constants": "9.1.1",
     "expo-font": "8.2.1",
     "expo-localization": "8.2.1",
-    "expo-splash-screen": "0.3.1",
+    "expo-splash-screen": "0.5.0",
     "expo-status-bar": "1.0.2",
     "expo-web-browser": "8.3.1",
     "front-matter": "3.1.0",

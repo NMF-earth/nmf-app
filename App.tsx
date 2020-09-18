@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { View } from "react-native";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { StatusBar } from "expo-status-bar";
 import * as Font from "expo-font";
@@ -51,7 +52,7 @@ const App = () => {
   }
 
   const [ready, setReady] = useState(false);
-  const [splashAnimation, setSplashAnimation] = useState(false); // to track splashScreen animation
+  const [splashAnimation, setSplashAnimation] = useState(__DEV__); // to track splashScreen animation
   const [language, setLanguage] = useState(lang);
   const [locale, setLocale] = useState(localeExpo);
 
@@ -108,6 +109,8 @@ const App = () => {
             </LocalizationContext.Provider>
           </FormattedProvider>
         </Provider>
+      ) : __DEV__ ? (
+        <View />
       ) : (
         <SplashScreen screenAnimationComplete={screenAnimationComplete} />
       )}
