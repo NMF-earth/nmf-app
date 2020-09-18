@@ -16,7 +16,6 @@ import * as ActDetail from "../../screens/ActDetail/translations";
 
 /* COMPONENTS */
 import * as NoEmission from "../../components/NoEmission/translations";
-import * as GuidePreview from "../../components/GuidePreview/translations";
 
 /* UTILS */
 import * as UI from "../../utils/ui/translations";
@@ -25,7 +24,6 @@ const en = {
   ...UI.en,
   ...About.en,
   ...MonthlyBudget.en,
-  ...GuidePreview.en,
   ...NoEmission.en,
   ...Act.en,
   ...Budget.en,
@@ -45,7 +43,6 @@ const de = {
   ...UI.de,
   ...About.de,
   ...MonthlyBudget.de,
-  ...GuidePreview.de,
   ...NoEmission.de,
   ...Act.de,
   ...Budget.de,
@@ -65,7 +62,6 @@ const fr = {
   ...UI.fr,
   ...About.fr,
   ...MonthlyBudget.fr,
-  ...GuidePreview.fr,
   ...NoEmission.fr,
   ...Act.fr,
   ...Budget.fr,
@@ -85,7 +81,6 @@ const sv = {
   ...UI.sv,
   ...About.sv,
   ...MonthlyBudget.sv,
-  ...GuidePreview.sv,
   ...NoEmission.sv,
   ...Act.sv,
   ...Budget.sv,
@@ -105,7 +100,6 @@ const pt = {
   ...UI.pt,
   ...About.pt,
   ...MonthlyBudget.pt,
-  ...GuidePreview.pt,
   ...NoEmission.pt,
   ...Act.pt,
   ...Budget.pt,
@@ -124,7 +118,6 @@ const es = {
   ...UI.es,
   ...About.es,
   ...MonthlyBudget.es,
-  ...GuidePreview.es,
   ...NoEmission.es,
   ...Act.es,
   ...Budget.es,
@@ -142,7 +135,6 @@ const es = {
 export interface TranslationKeys
   extends UI.TranslationKeys,
     MonthlyBudget.TranslationKeys,
-    GuidePreview.TranslationKeys,
     NoEmission.TranslationKeys,
     Act.TranslationKeys,
     Budget.TranslationKeys,

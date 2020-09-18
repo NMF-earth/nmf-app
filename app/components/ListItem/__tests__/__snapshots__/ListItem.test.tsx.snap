@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ListItem /> render 1`] = `
+<TouchableOpacity
+  onPress={[Function]}
+  style={
+    Object {
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+    }
+  }
+>
+  <Text.Secondary
+    numberOfLines={1}
+    style={
+      Object {
+        "paddingVertical": 20,
+      }
+    }
+  >
+    France
+  </Text.Secondary>
+  <Ionicons
+    color="#9CA6A0"
+    name="ios-arrow-forward"
+    size={26}
+    style={
+      Object {
+        "marginTop": 18,
+      }
+    }
+  />
+</TouchableOpacity>
+`;

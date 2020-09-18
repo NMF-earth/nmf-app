@@ -1,61 +1,34 @@
 import React from "react";
+import { FlatList } from "react-native";
 import { filter, pathEq } from "ramda";
-import { t } from "../../utils";
-import { TabbedView, GuidePreview } from "../../components";
-import { Guide, GuideCategory } from "../../types/common-types";
-// import styles from "./ActScreen.styles";
+import { ListItem } from "../../components";
+import { Guide } from "../../types/guide";
 import Guides from "../../../assets/guides/guides.json";
 import navigationOptions from "./ActScreen.navigationOptions";
 import { navigate } from "../../navigation";
+import styles from "./ActScreen.styles";
 
-const isKitchen = pathEq(["category"], GuideCategory.kitchen);
-const isTechnology = pathEq(["category"], GuideCategory.technology);
+const getCategory = pathEq(["category"]);
 
 const ActScreen = (props) => {
-  const kitchenGuides = filter(isKitchen, Guides) as Guide[];
-  const techGuides = filter(isTechnology, Guides) as Guide[];
-  const navigator = navigate(props.navigation);
+  const { route, navigation } = props;
+  const data = filter(getCategory(route.name), Guides) as Guide[];
+  const navigator = navigate(navigation);
+
+  const renderItem = ({ item }) => (
+    <ListItem
+      key={item.title}
+      title={item.title}
+      onPress={() => navigator.openActDetails(item)}
+    />
+  );
 
   return (
-    <TabbedView
-      items={[
-        {
-          title: t("ACT_SCREEN_HABITS"),
-          component: (
-            <React.Fragment>
-              <GuidePreview
-                title={t("ACT_SCREEN_KITCHEN")}
-                listItems={kitchenGuides}
-                onPressItem={(guide: Guide) => navigator.openDetails({ guide })}
-                onPressSeeAll={() => {
-                  // do nothing.
-                }}
-              />
-              <GuidePreview
-                title={t("ACT_SCREEN_TECHNOLOGY")}
-                listItems={techGuides}
-                onPressItem={(guide: Guide) => navigator.openDetails({ guide })}
-                onPressSeeAll={() => {
-                  // do nothing.
-                }}
-              />
-            </React.Fragment>
-          ),
-        },
-        {
-          title: t("ACT_SCREEN_FOOD"),
-          component: (
-            <GuidePreview
-              title={t("ACT_SCREEN_FOOD")}
-              listItems={kitchenGuides}
-              onPressItem={(guide: Guide) => navigator.openDetails({ guide })}
-              onPressSeeAll={() => {
-                // do nothing.
-              }}
-            />
-          ),
-        },
-      ]}
+    <FlatList
+      style={styles.container}
+      data={data}
+      renderItem={renderItem}
+      keyExtractor={(item) => item.title}
     />
   );
 };

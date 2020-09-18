@@ -1,7 +1,6 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
-
-import ActScreen from "../../../screens/Act";
+import ActTabNavigator from "./ActTabNavigator";
 import ActDetailScreen from "../../../screens/ActDetail";
 
 const Stack = createStackNavigator();
@@ -9,14 +8,14 @@ const Stack = createStackNavigator();
 const ActNavigator = (): React.ReactElement => (
   <Stack.Navigator>
     <Stack.Screen
-      name="Act"
-      options={ActScreen.navigationOptions}
-      component={ActScreen}
+      name="ActTabNavigator"
+      options={ActTabNavigator.navigationOptions}
+      component={ActTabNavigator}
     />
     <Stack.Screen
-      name="Details"
-      options={ActDetailScreen.navigationOptions}
+      name="ActDetail"
       component={ActDetailScreen}
+      options={ActDetailScreen.navigationOptions}
     />
   </Stack.Navigator>
 );

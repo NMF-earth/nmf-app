@@ -14,14 +14,14 @@ interface Props {
 const SelectableListItem = ({ selected, title, onPress }: Props) => {
   return (
     <TouchableOpacity onPress={onPress} style={styles.container}>
-      <Text.Primary bold green={selected} style={{ paddingVertical: 20 }}>
+      <Text.Primary bold numberOfLines={1} green={selected} style={styles.text}>
         {title}
       </Text.Primary>
       {selected && (
         <Ionicons
           name={"md-checkmark"}
           size={26}
-          style={{ marginTop: 16 }}
+          style={styles.icon}
           color={Colors.green50}
         />
       )}

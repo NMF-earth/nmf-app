@@ -1,132 +1,177 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`EmissionsScreen renders correctly 1`] = `
-<TabbedView
-  items={
+exports[`ActScreen renders correctly 1`] = `
+<RCTScrollView
+  data={
     Array [
       Object {
-        "component": <React.Fragment>
-          <GuidePreview
-            listItems={
-              Array [
-                Object {
-                  "body": "<h3>Section</h3>
-<p>Hello world, some markdown here</p>
-<p><img src=\\"earth.png\\" alt=\\"Earth\\"></p>
-<p>Protect planet Earth, guys!</p>
-",
-                  "category": "kitchen",
-                  "key": ".//dont-throw-away-peels.md",
-                  "title": "Don't throw away your peels",
-                },
-                Object {
-                  "body": "<h3>Section</h3>
-<p>Hello world, some markdown here</p>
-<p><img src=\\"bike.png\\" alt=\\"Bike\\"></p>
-",
-                  "category": "kitchen",
-                  "key": ".//make-your-own-soap.md",
-                  "title": "Make your own soap",
-                },
-                Object {
-                  "body": "<h3>Section</h3>
-<p><img src=\\"bike.png\\" alt=\\"Bike\\"></p>
-<p>Hello world, some markdown here</p>
-",
-                  "category": "kitchen",
-                  "key": ".//make-compost-on-your-balcony.md",
-                  "title": "Make a compost on your balcony",
-                },
-              ]
-            }
-            onPressItem={[Function]}
-            onPressSeeAll={[Function]}
-            title="Kitchen"
-          />
-          <GuidePreview
-            listItems={
-              Array [
-                Object {
-                  "body": "<h3>Section</h3>
+        "body": "<h3>Section</h3>
 <p>Hello world, some markdown here</p>
 <p><img src=\\"restaurant.png\\" alt=\\"Restaurant\\"></p>
 <p><img src=\\"bike.png\\" alt=\\"Bike\\"></p>
 ",
-                  "category": "technology",
-                  "key": ".//find-replacement-for-GAFA-services.md",
-                  "title": "Find a replacement for GAFA services",
-                },
-                Object {
-                  "body": "<h3>Section</h3>
+        "category": "technology",
+        "key": ".//find-replacement-for-GAFA-services.md",
+        "title": "Find a replacement for GAFA services",
+      },
+      Object {
+        "body": "<h3>Section</h3>
 <p>Hello world, some markdown here</p>
 <p><img src=\\"bike.png\\" alt=\\"Bike\\"></p>
 <p>Yeah, NFM on Bike!</p>
 ",
-                  "category": "technology",
-                  "key": ".//clean-your-mailbox.md",
-                  "title": "Clean your mailbox",
-                },
-                Object {
-                  "body": "<h3>Section</h3>
+        "category": "technology",
+        "key": ".//clean-your-mailbox.md",
+        "title": "Clean your mailbox",
+      },
+      Object {
+        "body": "<h3>Section</h3>
 <p>Hello world, some markdown here</p>
 <p><img src=\\"bike.png\\" alt=\\"Bike\\">
 <img src=\\"earth.png\\" alt=\\"Earth\\">
 <img src=\\"restaurant.png\\" alt=\\"Restaurant\\"></p>
 ",
-                  "category": "technology",
-                  "key": ".//install-adblocker.md",
-                  "title": "Install an Adblocker",
-                },
-              ]
-            }
-            onPressItem={[Function]}
-            onPressSeeAll={[Function]}
-            title="Technology"
-          />
-        </React.Fragment>,
-        "title": "Habits",
-      },
-      Object {
-        "component": <GuidePreview
-          listItems={
-            Array [
-              Object {
-                "body": "<h3>Section</h3>
-<p>Hello world, some markdown here</p>
-<p><img src=\\"earth.png\\" alt=\\"Earth\\"></p>
-<p>Protect planet Earth, guys!</p>
-",
-                "category": "kitchen",
-                "key": ".//dont-throw-away-peels.md",
-                "title": "Don't throw away your peels",
-              },
-              Object {
-                "body": "<h3>Section</h3>
-<p>Hello world, some markdown here</p>
-<p><img src=\\"bike.png\\" alt=\\"Bike\\"></p>
-",
-                "category": "kitchen",
-                "key": ".//make-your-own-soap.md",
-                "title": "Make your own soap",
-              },
-              Object {
-                "body": "<h3>Section</h3>
-<p><img src=\\"bike.png\\" alt=\\"Bike\\"></p>
-<p>Hello world, some markdown here</p>
-",
-                "category": "kitchen",
-                "key": ".//make-compost-on-your-balcony.md",
-                "title": "Make a compost on your balcony",
-              },
-            ]
-          }
-          onPressItem={[Function]}
-          onPressSeeAll={[Function]}
-          title="Food"
-        />,
-        "title": "Food",
+        "category": "technology",
+        "key": ".//install-adblocker.md",
+        "title": "Install an Adblocker",
       },
     ]
   }
-/>
+  disableVirtualization={false}
+  getItem={[Function]}
+  getItemCount={[Function]}
+  horizontal={false}
+  initialNumToRender={10}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={10}
+  onContentSizeChange={[Function]}
+  onEndReachedThreshold={2}
+  onLayout={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={false}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={Array []}
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "flex": 1,
+      "paddingHorizontal": 14,
+    }
+  }
+  updateCellsBatchingPeriod={50}
+  viewabilityConfigCallbackPairs={Array []}
+  windowSize={21}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Secondary
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          Find a replacement for GAFA services
+        </Text.Secondary>
+        <Ionicons
+          color="#9CA6A0"
+          name="ios-arrow-forward"
+          size={26}
+          style={
+            Object {
+              "marginTop": 18,
+            }
+          }
+        />
+      </TouchableOpacity>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Secondary
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          Clean your mailbox
+        </Text.Secondary>
+        <Ionicons
+          color="#9CA6A0"
+          name="ios-arrow-forward"
+          size={26}
+          style={
+            Object {
+              "marginTop": 18,
+            }
+          }
+        />
+      </TouchableOpacity>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Secondary
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          Install an Adblocker
+        </Text.Secondary>
+        <Ionicons
+          color="#9CA6A0"
+          name="ios-arrow-forward"
+          size={26}
+          style={
+            Object {
+              "marginTop": 18,
+            }
+          }
+        />
+      </TouchableOpacity>
+    </View>
+  </View>
+</RCTScrollView>
 `;

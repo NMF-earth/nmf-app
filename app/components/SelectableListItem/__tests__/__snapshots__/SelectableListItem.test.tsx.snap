@@ -13,6 +13,7 @@ exports[`<SelectableListItem /> render 1`] = `
   <Text.Primary
     bold={true}
     green={true}
+    numberOfLines={1}
     style={
       Object {
         "paddingVertical": 20,
@@ -27,7 +28,7 @@ exports[`<SelectableListItem /> render 1`] = `
     size={26}
     style={
       Object {
-        "marginTop": 16,
+        "marginTop": 18,
       }
     }
   />
@@ -47,6 +48,7 @@ exports[`<SelectableListItem /> render if not selected 1`] = `
   <Text.Primary
     bold={true}
     green={true}
+    numberOfLines={1}
     style={
       Object {
         "paddingVertical": 20,
@@ -61,7 +63,7 @@ exports[`<SelectableListItem /> render if not selected 1`] = `
     size={26}
     style={
       Object {
-        "marginTop": 16,
+        "marginTop": 18,
       }
     }
   />
