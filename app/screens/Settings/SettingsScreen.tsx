@@ -92,7 +92,9 @@ const SettingsScreen = (props) => {
             style={styles.hiddenBtn}
             textType={"Primary"}
             onPress={() => {
-              throw new Error("Developer error test");
+              const date = new Date();
+              const timestamp = date.getTime();
+              throw new Error("Developer error test: " + timestamp);
             }}
           >
             <Text.Primary white center>
