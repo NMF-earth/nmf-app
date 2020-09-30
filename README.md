@@ -29,25 +29,25 @@ Repository for the [NMF.earth](https://nmf.earth/) React Native application, bui
 
 Installing Dependencies:
 
-```sh
+```bash
 $ yarn
 ```
 
 Running the app:
 
-```sh
+```bash
 $ yarn start
 ```
 
 For starting the app on a specfic OS:
 
-```sh
+```bash
 $ yarn ios | yarn android
 ```
 
 Copy the 2 files that contains secrets and replace them with yours
 
-```
+```bash
 $ cp app.example.json app.json
 $ cp secret.example.ts secret.ts
 ```
@@ -62,13 +62,13 @@ $ cp secret.example.ts secret.ts
 
 You can also check this manually by running:
 
-```sh
+```bash
 yarn lint
 ```
 
 or
 
-```sh
+```bash
 yarn typescript
 ```
 
@@ -78,19 +78,19 @@ yarn typescript
 
 Use the following command to run unit tests with coverage:
 
-```
+```bash
 $ yarn test
 ```
 
 Use the following to update unit tests
 
-```
+```bash
 $ yarn test -u
 ```
 
 Use the following to run unit tests in watch mode while developing:
 
-```
+```bash
 $ yarn test --watch
 ```
 
@@ -100,7 +100,7 @@ $ yarn test --watch
 
 Stories (\*.story.tsx) can be automatically added to `storyLoader.js` with :
 
-```
+```bash
 $ yarn prestorybook
 ```
 
