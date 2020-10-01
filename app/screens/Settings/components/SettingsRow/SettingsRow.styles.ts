@@ -6,6 +6,6 @@ export default StyleSheet.create({
     justifyContent: "space-between",
     paddingVertical: 14,
     paddingHorizontal: 16,
-    flex: 1
-  }
+    flex: 1,
+  },
 });

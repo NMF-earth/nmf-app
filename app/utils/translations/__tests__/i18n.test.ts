@@ -3,7 +3,7 @@ import { t } from "..";
 
 const en = {
   ACT_SCREEN_TAB_NAME: "some string",
-  SETTINGS_SCREEN_TITLE: "some string with {{value}}"
+  SETTINGS_SCREEN_TITLE: "some string with {{value}}",
 };
 
 it("parses a simple string", () => {

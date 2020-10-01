@@ -22,7 +22,7 @@ interface Props {
 const Electricity = ({
   electricityCountry,
   setElectricityConsumption,
-  defaultValueSlider
+  defaultValueSlider,
 }: Props) => {
   const [sliderValue, setSliderValue] = useState(defaultValueSlider);
   setElectricityConsumption(sliderValue);

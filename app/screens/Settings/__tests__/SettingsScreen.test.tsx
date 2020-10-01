@@ -4,8 +4,8 @@ import SettingsScreen from "../SettingsScreen";
 
 const props = {
   navigation: {
-    goBack: jest.fn()
-  }
+    goBack: jest.fn(),
+  },
 };
 
 it("SettingsScreen renders correctly", () => {

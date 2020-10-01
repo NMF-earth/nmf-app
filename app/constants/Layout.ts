@@ -8,7 +8,7 @@ const isSmallDevice = width < 375;
 
 const screen = {
   width,
-  height
+  height,
 };
 
 export { screen, isSmallDevice, PADDING_HORIZONTAL };

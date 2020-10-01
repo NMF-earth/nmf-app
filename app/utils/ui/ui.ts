@@ -98,7 +98,11 @@ const getIconFromModelType = (emissionModelType) => {
 };
 
 const isDarkModeEnabled = () => {
-  return Appearance.getColorScheme() === "dark"
-}
+  return Appearance.getColorScheme() === "dark";
+};
 
-export default { getTranslationModelType, getIconFromModelType, isDarkModeEnabled };
+export default {
+  getTranslationModelType,
+  getIconFromModelType,
+  isDarkModeEnabled,
+};

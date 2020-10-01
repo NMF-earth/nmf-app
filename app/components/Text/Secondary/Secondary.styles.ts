@@ -5,6 +5,6 @@ export default StyleSheet.create({
   default: {
     color: Colors.grey100,
     fontFamily: Font.FontWeight.Medium,
-    fontSize: Font.FontSize.Secondary
-  }
+    fontSize: Font.FontSize.Secondary,
+  },
 });

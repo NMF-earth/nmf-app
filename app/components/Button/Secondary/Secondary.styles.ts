@@ -5,6 +5,6 @@ export default StyleSheet.create({
   default: {
     backgroundColor: Colors.white,
     borderColor: Colors.green50,
-    borderWidth: 2.5
-  }
+    borderWidth: 2.5,
+  },
 });

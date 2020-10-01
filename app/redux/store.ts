@@ -9,14 +9,14 @@ const persistConfig = {
   key: "root",
   storage: AsyncStorage,
   blacklist: [],
-  whitelist: ["emissions", "budget", "userPreferences"]
+  whitelist: ["emissions", "budget", "userPreferences"],
 };
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 
 const store = configureStore({
   reducer: persistedReducer,
-  middleware: []
+  middleware: [],
 });
 
 export const persistor = persistStore(store);

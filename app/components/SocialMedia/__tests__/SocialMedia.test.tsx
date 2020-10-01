@@ -19,6 +19,6 @@ test("should open link", () => {
   // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
   // @ts-ignore
   const icons = root.findAllByType("TouchableOpacity");
-  icons.map(item => item.props.onPress());
+  icons.map((item) => item.props.onPress());
   expect(Linking.openURL).toHaveBeenCalledTimes(icons.length);
 });

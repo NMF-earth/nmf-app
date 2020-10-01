@@ -36,7 +36,7 @@ const en = {
   ...Intro.en,
   ...SupportUs.en,
   ...MyLocation.en,
-  ...ActDetail.en
+  ...ActDetail.en,
 };
 
 const de = {
@@ -55,7 +55,7 @@ const de = {
   ...Intro.de,
   ...SupportUs.de,
   ...MyLocation.de,
-  ...ActDetail.de
+  ...ActDetail.de,
 };
 
 const fr = {
@@ -74,7 +74,7 @@ const fr = {
   ...Intro.fr,
   ...SupportUs.fr,
   ...MyLocation.fr,
-  ...ActDetail.fr
+  ...ActDetail.fr,
 };
 
 const sv = {
@@ -93,7 +93,7 @@ const sv = {
   ...Intro.sv,
   ...SupportUs.sv,
   ...MyLocation.sv,
-  ...ActDetail.sv
+  ...ActDetail.sv,
 };
 
 const pt = {
@@ -111,7 +111,7 @@ const pt = {
   ...Intro.pt,
   ...SupportUs.pt,
   ...MyLocation.pt,
-  ...ActDetail.pt
+  ...ActDetail.pt,
 };
 
 const es = {
@@ -129,7 +129,7 @@ const es = {
   ...Intro.es,
   ...SupportUs.es,
   ...MyLocation.es,
-  ...ActDetail.es
+  ...ActDetail.es,
 };
 
 export interface TranslationKeys

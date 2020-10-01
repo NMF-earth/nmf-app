@@ -5,7 +5,7 @@ import LegendItem from "../LegendItem";
 const props = {
   name: "Food",
   value: 10,
-  color: "red"
+  color: "red",
 };
 
 jest.unmock("../LegendItem");

@@ -5,6 +5,6 @@ export default StyleSheet.create({
   default: {
     color: Colors.grey100,
     fontFamily: Font.FontWeight.Black,
-    fontSize: Font.FontSize.H1
-  }
+    fontSize: Font.FontSize.H1,
+  },
 });

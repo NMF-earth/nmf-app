@@ -6,7 +6,7 @@ import es from "./es.json";
 import pt from "./pt.json";
 
 interface TranslationKeys {
-    METHODOLOGY_SCREEN_TITLE: string;
+  METHODOLOGY_SCREEN_TITLE: string;
 }
 
 export { en, fr, de, sv, es, pt, TranslationKeys };

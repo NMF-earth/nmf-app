@@ -4,8 +4,8 @@ import MonthlyBudgetScreen from "../MonthlyBudgetScreen";
 
 const props = {
   navigation: {
-    goBack: jest.fn()
-  }
+    goBack: jest.fn(),
+  },
 };
 
 it("MonthlyBudgetScreen renders correctly", () => {

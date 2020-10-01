@@ -23,14 +23,14 @@ const TAGS: Array<FoodEnum> = [
   FoodEnum.whiteMeat,
   FoodEnum.fish,
   FoodEnum.chocolate,
-  FoodEnum.coffee
+  FoodEnum.coffee,
 ];
 
 export default ({
   setFoodType,
   foodType,
   setQuantity,
-  defaultValueSlider
+  defaultValueSlider,
 }: Props) => {
   const [sliderValue, setSliderValue] = useState(defaultValueSlider * 1000);
 
@@ -47,7 +47,7 @@ export default ({
         <Text.H3>{t("ADD_EMISSION_FOOD_TYPE")}</Text.H3>
       </View>
       <ScrollView horizontal style={styles.tagContainer}>
-        {TAGS.map(item => (
+        {TAGS.map((item) => (
           <Tag
             key={item}
             selected={foodType === item}
