@@ -6,6 +6,7 @@
 function loadStories() {
 	require('../app/components/Button/stories/Button.story');
 	require('../app/components/ListItem/stories/ListItem.story');
+	require('../app/components/NoEmission/stories/NoEmission.story');
 	require('../app/components/SelectableListItem/stories/SelectableListItem.story');
 	require('../app/components/SocialMedia/stories/SocialMedia.story');
 	require('../app/components/Tag/__stories__/Tag.story');
@@ -17,6 +18,7 @@ function loadStories() {
 const stories = [
 	'../app/components/Button/stories/Button.story',
 	'../app/components/ListItem/stories/ListItem.story',
+	'../app/components/NoEmission/stories/NoEmission.story',
 	'../app/components/SelectableListItem/stories/SelectableListItem.story',
 	'../app/components/SocialMedia/stories/SocialMedia.story',
 	'../app/components/Tag/__stories__/Tag.story',
