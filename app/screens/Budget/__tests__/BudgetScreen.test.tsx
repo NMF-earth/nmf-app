@@ -6,8 +6,8 @@ const props = {
   navigation: {
     push: () => {
       // do nothing.
-    }
-  }
+    },
+  },
 };
 
 it("BudgetScreen renders correctly", () => {

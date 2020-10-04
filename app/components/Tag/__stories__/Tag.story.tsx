@@ -8,7 +8,7 @@ import Tag from "..";
 const props = {
   selected: false,
   title: "Transport",
-  onPress: () => alert("onPress")
+  onPress: () => alert("onPress"),
 };
 
 const iconOptions = {
@@ -16,7 +16,7 @@ const iconOptions = {
   restaurant: "md-restaurant",
   build: "md-build",
   circle: "md-play-circle",
-  flash: "md-flash"
+  flash: "md-flash",
 };
 const container: ViewStyle = { flexDirection: "row", margin: 20 };
 

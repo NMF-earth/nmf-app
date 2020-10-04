@@ -1,7 +1,7 @@
 import React from "react";
 
 import { storiesOf } from "@storybook/react-native";
-import { text, boolean, number,select } from "@storybook/addon-knobs";
+import { text, boolean, number, select } from "@storybook/addon-knobs";
 
 import EmissionsListItem from "..";
 import { ui } from "../../../../../utils";
@@ -25,33 +25,37 @@ const transportOptions = {
 };
 
 storiesOf("EmissionsListItem", module)
-.add("Emission by food", () => {
-  const value = select("Type of Food", foodOptions, "coffee");
-  return (
+  .add("Emission by food", () => {
+    const value = select("Type of Food", foodOptions, "coffee");
+    return (
       <EmissionsListItem
-          {...{
-            id: "123",
-            isMitigated: boolean("isMitigated",false),
-            title: text("title","170 g of red meats"),
-            co2value: number("co2value",2.1),
-            iconName: ui.getIconFromModelType(value),
-            onPress: () => alert(value)
-          }}
+        {...{
+          id: "123",
+          isMitigated: boolean("isMitigated", false),
+          title: text("title", "170 g of red meats"),
+          co2value: number("co2value", 2.1),
+          iconName: ui.getIconFromModelType(value),
+          onPress: () => alert(value),
+        }}
       />
-  )
-})
-.add("Emission by transport", () => {
-  const transportValue = select("Type of Transport", transportOptions, "bike");
-  return (
+    );
+  })
+  .add("Emission by transport", () => {
+    const transportValue = select(
+      "Type of Transport",
+      transportOptions,
+      "bike"
+    );
+    return (
       <EmissionsListItem
-          {...{
-            id: "123",
-            isMitigated: boolean("isMitigated",false),
-            title: text("title","Bike" ),
-            co2value: number("co2value",2.1),
-            iconName: ui.getIconFromModelType(transportValue),
-            onPress: () => alert(transportValue)
-          }}
+        {...{
+          id: "123",
+          isMitigated: boolean("isMitigated", false),
+          title: text("title", "Bike"),
+          co2value: number("co2value", 2.1),
+          iconName: ui.getIconFromModelType(transportValue),
+          onPress: () => alert(transportValue),
+        }}
       />
-  )
-});
+    );
+  });

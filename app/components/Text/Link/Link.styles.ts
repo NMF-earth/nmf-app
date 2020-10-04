@@ -6,6 +6,6 @@ export default StyleSheet.create({
     textDecorationLine: "underline",
     color: Colors.green50,
     fontFamily: Font.FontWeight.Medium,
-    fontSize: Font.FontSize.Primary
-  }
+    fontSize: Font.FontSize.Primary,
+  },
 });

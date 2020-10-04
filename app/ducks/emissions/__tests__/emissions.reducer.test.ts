@@ -16,11 +16,11 @@ describe("Emissions reducer should", () => {
       emissionType: EmissionEnum.custom,
       emissionModelType: FoodEnum.nuts,
       value: 200,
-      isMitigated: false
+      isMitigated: false,
     };
     const action = {
       type: emissions.actions.createEmission.toString(),
-      payload: emission
+      payload: emission,
     };
 
     expect(emissions.reducer(undefined, action)).toEqual([emission]);
@@ -35,11 +35,11 @@ describe("Emissions reducer should", () => {
       emissionType: EmissionEnum.custom,
       emissionModelType: FoodEnum.nuts,
       value: 200,
-      isMitigated: false
+      isMitigated: false,
     };
     const action = {
       type: emissions.actions.deleteEmissionById.toString(),
-      payload: emission.id
+      payload: emission.id,
     };
 
     expect(emissions.reducer([emission], action)).toEqual([]);

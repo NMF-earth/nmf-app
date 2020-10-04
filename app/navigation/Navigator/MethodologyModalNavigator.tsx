@@ -6,13 +6,13 @@ import MethodologyScreen from "../../screens/Methodology";
 const Stack = createStackNavigator();
 
 const MethodologyModalNavigator = (): React.ReactElement => (
-    <Stack.Navigator>
-        <Stack.Screen
-            name="Methodology"
-            options={MethodologyScreen.navigationOptions}
-            component={MethodologyScreen}
-        />
-    </Stack.Navigator>
+  <Stack.Navigator>
+    <Stack.Screen
+      name="Methodology"
+      options={MethodologyScreen.navigationOptions}
+      component={MethodologyScreen}
+    />
+  </Stack.Navigator>
 );
 
 export default MethodologyModalNavigator;

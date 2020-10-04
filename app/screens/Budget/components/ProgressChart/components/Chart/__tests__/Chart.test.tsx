@@ -5,7 +5,7 @@ import Chart from "../Chart";
 const props = {
   totalEmissionsPercentage: 900,
   transportEmissionsPercentage: 600,
-  foodEmissionsPercentage: 200
+  foodEmissionsPercentage: 200,
 };
 
 jest.unmock("../Chart");

@@ -1,36 +1,31 @@
 import React from "react";
-import {Ionicons} from "@expo/vector-icons";
+import { Ionicons } from "@expo/vector-icons";
 import { Text } from "../../components";
 import { t } from "../../utils";
 import { Colors, ComponentsStyle } from "../../style";
-import {useNavigation} from "@react-navigation/native";
-import {navigate} from "../../navigation";
+import { useNavigation } from "@react-navigation/native";
+import { navigate } from "../../navigation";
 
 const navigationOptions = () => {
   const navigation = useNavigation();
   const navigator = navigate(navigation);
-  return ({
+  return {
     ...ComponentsStyle.transitionBetweenScreenPresets,
     headerStyle: {
-      ...ComponentsStyle.header
+      ...ComponentsStyle.header,
     },
     headerBackTitleVisible: false,
     headerTintColor: Colors.grey100,
-    headerRight:() => (
-        <Ionicons
-            name="md-information-circle"
-            size={26}
-            style={{ marginRight: 10 }}
-            color={Colors.grey100}
-            onPress={navigator.methodology}
-        />
+    headerRight: () => (
+      <Ionicons
+        name="md-information-circle"
+        size={26}
+        style={{ marginRight: 10 }}
+        color={Colors.grey100}
+        onPress={navigator.methodology}
+      />
     ),
-    headerTitle: () => (
-        <Text.H1>
-          {t("ADD_EMISSION_TITLE")}
-        </Text.H1>
-    )
-  });
-
-}
+    headerTitle: () => <Text.H1>{t("ADD_EMISSION_TITLE")}</Text.H1>,
+  };
+};
 export default navigationOptions;

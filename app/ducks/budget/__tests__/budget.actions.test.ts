@@ -8,7 +8,7 @@ describe("Budget actions should", () => {
 
     const expectedAction = {
       type: budget.actions.setMonthlyCarbonBudget.toString(),
-      payload: monthlyCarbonBudget
+      payload: monthlyCarbonBudget,
     };
     expect(budget.actions.setMonthlyCarbonBudget(monthlyCarbonBudget)).toEqual(
       expectedAction

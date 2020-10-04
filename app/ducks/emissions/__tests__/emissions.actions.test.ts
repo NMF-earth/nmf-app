@@ -13,12 +13,12 @@ describe("Emissions actions should", () => {
       emissionType: EmissionEnum.custom,
       emissionModelType: TransportEnum.boat,
       value: 200,
-      isMitigated: false
+      isMitigated: false,
     };
 
     const expectedAction = {
       type: emissions.actions.createEmission.toString(),
-      payload: emission
+      payload: emission,
     };
 
     expect(emissions.actions.createEmission(emission)).toEqual(expectedAction);
@@ -27,7 +27,7 @@ describe("Emissions actions should", () => {
   it("be able to delete an emission", () => {
     const expectedAction = {
       type: emissions.actions.deleteEmissionById.toString(),
-      payload: "123"
+      payload: "123",
     };
 
     expect(emissions.actions.deleteEmissionById("123")).toEqual(expectedAction);

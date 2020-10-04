@@ -3,14 +3,14 @@ import { Colors } from "../../style";
 
 export default StyleSheet.create({
   default: {
-    paddingHorizontal: 36
+    paddingHorizontal: 36,
   },
   black: {
-    backgroundColor: Colors.grey100
+    backgroundColor: Colors.grey100,
   },
   fullWidth: {
     width: "100%",
     alignItems: "center",
-    paddingHorizontal: 0
-  }
+    paddingHorizontal: 0,
+  },
 });

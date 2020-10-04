@@ -6,7 +6,7 @@ const props = {
   totalEmissions: 900,
   foodEmissions: 200,
   transportEmissions: 600,
-  otherEmissions: 100
+  otherEmissions: 100,
 };
 
 jest.unmock("../Legend");

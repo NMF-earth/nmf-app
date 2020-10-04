@@ -5,6 +5,6 @@ export default StyleSheet.create({
     justifyContent: "space-between",
     flexWrap: "wrap",
     flexDirection: "row",
-    paddingVertical: 20
-  }
+    paddingVertical: 20,
+  },
 });

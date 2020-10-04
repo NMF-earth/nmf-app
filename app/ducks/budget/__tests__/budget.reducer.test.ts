@@ -5,7 +5,7 @@ describe("Budget reducer should", () => {
     // TODO: fix eslint complains bellow
     // eslint-disable-next-line
     expect(budget.reducer(undefined, {} as any)).toEqual({
-      monthlyCarbonBudget: 166
+      monthlyCarbonBudget: 166,
     });
   });
 
@@ -14,11 +14,11 @@ describe("Budget reducer should", () => {
 
     const expectedAction = {
       type: budget.actions.setMonthlyCarbonBudget.toString(),
-      payload: monthlyCarbonBudget
+      payload: monthlyCarbonBudget,
     };
 
     expect(budget.reducer(undefined, expectedAction)).toEqual({
-      monthlyCarbonBudget: 200
+      monthlyCarbonBudget: 200,
     });
   });
 });

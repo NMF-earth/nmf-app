@@ -3,7 +3,7 @@ import { selectors } from "../";
 import emissions from "../../../../../../ducks/emissions";
 import {
   Emission as EmissionType,
-  EmissionEnum
+  EmissionEnum,
 } from "../../../../../../interfaces";
 import moment from "moment";
 
@@ -11,31 +11,26 @@ let state;
 
 const emissionToday: EmissionType = {
   id: "1",
-  creationDate: moment()
-    .utc()
-    .toISOString(),
+  creationDate: moment().utc().toISOString(),
   emissionModelType: FoodEnum.redMeat,
   emissionType: EmissionEnum.food,
   isMitigated: false,
-  value: 10
+  value: 10,
 };
 
 const emissionLastWeek: EmissionType = {
   id: "12",
-  creationDate: moment()
-    .subtract(1, "week")
-    .utc()
-    .toISOString(),
+  creationDate: moment().subtract(1, "week").utc().toISOString(),
   emissionModelType: FoodEnum.redMeat,
   emissionType: EmissionEnum.food,
   isMitigated: false,
-  value: 100
+  value: 100,
 };
 
 describe("if there is one meat emission today", () => {
   beforeEach(() => {
     state = {
-      [emissions.namespace]: [emissionToday, emissionLastWeek]
+      [emissions.namespace]: [emissionToday, emissionLastWeek],
     };
   });
 
@@ -47,7 +42,7 @@ describe("if there is one meat emission today", () => {
 describe("if there are emissions from last week", () => {
   beforeEach(() => {
     state = {
-      [emissions.namespace]: [emissionLastWeek]
+      [emissions.namespace]: [emissionLastWeek],
     };
   });
 
@@ -63,7 +58,7 @@ describe("if there are emissions from last week", () => {
 describe("if there is no meat emissions", () => {
   beforeEach(() => {
     state = {
-      [emissions.namespace]: []
+      [emissions.namespace]: [],
     };
   });
 

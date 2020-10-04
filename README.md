@@ -58,9 +58,11 @@ $ cp secret.example.ts secret.ts
 
 - Eslint is used in the project to enforce code style and should be configured in your [editor](https://eslint.org/docs/user-guide/integrations).
 
+- Prettier is also used and apply automatically by eslint
+
 - Typescript is used in the project for typechecking and should be configured in your [editor](https://github.com/Microsoft/TypeScript/wiki/TypeScript-Editor-Support).
 
-You can also check this manually by running:
+You can check this manually by running:
 
 ```bash
 yarn lint
@@ -70,6 +72,12 @@ or
 
 ```bash
 yarn typescript
+```
+
+You can ask eslint to fix issues by running:
+
+```bash
+yarn lint:fix
 ```
 
 <br />
@@ -96,7 +104,7 @@ $ yarn test --watch
 
 <br />
 
-### 📚Storybook
+### 📚 Storybook
 
 Stories (\*.story.tsx) can be automatically added to `storyLoader.js` with :
 

@@ -13,32 +13,27 @@ const meatArray = [
   FoodEnum.redMeat,
   FoodEnum.tuna,
   FoodEnum.turkey,
-  FoodEnum.whiteMeat
+  FoodEnum.whiteMeat,
 ];
 
-const isMeatEmission = emission =>
+const isMeatEmission = (emission) =>
   includes(emission.emissionModelType, meatArray);
 
-const getCreationDate = propOr(
-  moment()
-    .utc()
-    .toISOString(),
-  "creationDate"
-);
-const getDaysElapsedSinceToday = date => moment().diff(date, "days");
+const getCreationDate = propOr(moment().utc().toISOString(), "creationDate");
+const getDaysElapsedSinceToday = (date) => moment().diff(date, "days");
 
 const getFoodEmissions = emissions.selectors.getFoodEmissions;
 const getMeatEmissions = pipe(getFoodEmissions, filter(isMeatEmission));
 const isAnyMeatEmissionSaved = pipe(getMeatEmissions, isEmpty, not);
 
 const getLatestEmission = calculation.getLatestEmission;
-const getDaysSinceEmission = emission =>
+const getDaysSinceEmission = (emission) =>
   pipe(getCreationDate, moment, getDaysElapsedSinceToday)(emission);
 
-const getDaysWithoutEatingMeat = state =>
+const getDaysWithoutEatingMeat = (state) =>
   pipe(getMeatEmissions, getLatestEmission, getDaysSinceEmission)(state);
 
 export default {
   isAnyMeatEmissionSaved,
-  getDaysWithoutEatingMeat
+  getDaysWithoutEatingMeat,
 };

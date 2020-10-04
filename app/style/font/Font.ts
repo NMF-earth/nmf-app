@@ -13,7 +13,7 @@ const FontSizeNormalDevice = {
   H3: 22,
   Primary: 18,
   Secondary: 16,
-  Tertiary: 14
+  Tertiary: 14,
 };
 
 const FontSizeSmallDevice = {
@@ -22,7 +22,7 @@ const FontSizeSmallDevice = {
   H3: 18,
   Primary: 16,
   Secondary: 14,
-  Tertiary: 12
+  Tertiary: 12,
 };
 
 const FontSize = isSmallDevice ? FontSizeSmallDevice : FontSizeNormalDevice;

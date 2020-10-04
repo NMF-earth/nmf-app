@@ -4,7 +4,7 @@ import PeriodBudget from "../PeriodBudget";
 
 const props = {
   period: "this month",
-  periodEmissionsBudget: 760
+  periodEmissionsBudget: 760,
 };
 
 jest.unmock("../PeriodBudget");

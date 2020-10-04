@@ -1,7 +1,7 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 const initialState = {
-  monthlyCarbonBudget: 166
+  monthlyCarbonBudget: 166,
 };
 
 const emissions = createSlice({
@@ -10,8 +10,8 @@ const emissions = createSlice({
   reducers: {
     setMonthlyCarbonBudget(state, action: PayloadAction<number>) {
       state.monthlyCarbonBudget = action.payload;
-    }
-  }
+    },
+  },
 });
 
 const { setMonthlyCarbonBudget } = emissions.actions;

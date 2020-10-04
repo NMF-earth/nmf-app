@@ -3,7 +3,7 @@ import { gt, __, not, pipe } from "ramda";
 const isAboveZero = gt(__, 0);
 const isNotValidNumber = pipe(isAboveZero, not);
 
-const convertMinutesToHoursAnMinutes = minutes => {
+const convertMinutesToHoursAnMinutes = (minutes) => {
   if (isNotValidNumber(minutes)) {
     return { hours: 0, minutes: 0 };
   }

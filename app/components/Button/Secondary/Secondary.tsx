@@ -29,7 +29,7 @@ export default function Secondary(props: Props): React.ReactElement {
 
   const additionalStyle = {
     paddingVertical: PADDING_VERTICAL,
-    borderRadius: PADDING_VERTICAL * 2 + Font.FontSize[textType]
+    borderRadius: PADDING_VERTICAL * 2 + Font.FontSize[textType],
   };
 
   return (

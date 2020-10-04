@@ -25,7 +25,7 @@ const translationMontlyBudgetCountries = [
   "MONTHLY_BUDGET_CHINA",
   "MONTHLY_BUDGET_BRAZIL",
   "MONTHLY_BUDGET_INDIA",
-  "MONTHLY_BUDGET_ETHIOPIA"
+  "MONTHLY_BUDGET_ETHIOPIA",
 ];
 
 const CountryExample = (translation, index) => (

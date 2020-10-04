@@ -11,7 +11,7 @@ beforeEach(() => {
 
 const props = {
   title: "title",
-  onPress: () => Linking.openURL("http://nmf.earth")
+  onPress: () => Linking.openURL("http://nmf.earth"),
 };
 
 it("SettingsRow renders correctly", () => {

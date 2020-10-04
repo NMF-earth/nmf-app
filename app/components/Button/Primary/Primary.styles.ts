@@ -3,6 +3,6 @@ import { Colors } from "../../../style";
 
 export default StyleSheet.create({
   default: {
-    backgroundColor: Colors.green50
-  }
+    backgroundColor: Colors.green50,
+  },
 });
