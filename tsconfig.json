@@ -6,6 +6,12 @@
     "moduleResolution": "node",
     "noEmit": true,
     "skipLibCheck": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "*": ["app/*"],
+      "components/*": ["app/components/*"],
+      "utils/*": ["app/utils/*"],
+    },
   }
 }
