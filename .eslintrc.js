@@ -11,6 +11,7 @@ module.exports = {
         "plugin:jest/recommended",
         "plugin:import/errors",
         "plugin:import/warnings",
+        "plugin:import/typescript",
         "prettier/@typescript-eslint",
         "plugin:prettier/recommended"
     ],
@@ -42,6 +43,7 @@ module.exports = {
         "quotes": [2, "double"],
         "react/display-name": [0],
         "react/prop-types": [0],
+        "import/namespace": 0,
         "import/order": [
           "error",
           {

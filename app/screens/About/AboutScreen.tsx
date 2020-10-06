@@ -1,7 +1,9 @@
 import React from "react";
 import { ScrollView, View } from "react-native";
+// eslint-disable-next-line import/no-unresolved
 import { Text, StickersImage } from "components";
 
+// eslint-disable-next-line import/no-unresolved
 import { t } from "utils";
 
 import styles from "./AboutScreen.styles";
