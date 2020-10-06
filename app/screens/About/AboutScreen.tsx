@@ -1,9 +1,9 @@
 import React from "react";
 import { ScrollView, View } from "react-native";
-import { Text, StickersImage } from "../../components";
+import { Text, StickersImage } from "components";
 import styles from "./AboutScreen.styles";
 import navigationOptions from "./AboutScreen.navigationOptions";
-import { t } from "../../utils";
+import { t } from "utils";
 
 const AboutScreen = () => {
   return (
