@@ -39,6 +39,17 @@ module.exports = {
         "@typescript-eslint/explicit-function-return-type": [0],
         "quotes": [2, "double"],
         "react/display-name": [0],
-        "react/prop-types": [0]
+        "react/prop-types": [0],
+        "import/order": [
+          "error",
+          {
+            groups: [
+              ["external", "builtin"],
+              "internal",
+              ["parent", "sibling", "index"],
+            ],
+            "newlines-between": "always-and-inside-groups",
+          },
+        ],
     }
 };
