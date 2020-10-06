@@ -1,6 +1,7 @@
 import React from "react";
 import { FlatList } from "react-native";
 import { filter, pathEq } from "ramda";
+
 import { ListItem } from "../../components";
 import { Guide } from "../../types/guide";
 import Guides from "../../../assets/guides/guides.json";

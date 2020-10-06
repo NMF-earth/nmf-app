@@ -1,6 +1,7 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import { useSelector } from "react-redux";
+
 import { userPreferences } from "../../ducks";
 import IntroScreen from "../../screens/Intro";
 import BottomTabNavigator from "./BottomTabNavigator";

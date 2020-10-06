@@ -1,5 +1,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
+
 import SectionHeader from "../SectionHeader";
 
 jest.unmock("../SectionHeader");

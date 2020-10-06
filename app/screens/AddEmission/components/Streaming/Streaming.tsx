@@ -8,6 +8,7 @@ import {
   getInternetUsageCarbonImpact,
   ElectricityEnum,
 } from "carbon-footprint";
+
 import styles from "./Streaming.styles";
 import { Text, Tag } from "../../../../components";
 import { Colors } from "../../../../style";

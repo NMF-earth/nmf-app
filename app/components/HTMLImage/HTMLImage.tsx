@@ -1,5 +1,6 @@
 import React from "react";
 import { Image, View } from "react-native";
+
 import imagesPath from "./imagePath";
 import styles from "./HTMLImage.styles";
 

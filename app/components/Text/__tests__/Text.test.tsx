@@ -1,6 +1,7 @@
 import React from "react";
 import renderer from "react-test-renderer";
 import * as WebBrowser from "expo-web-browser";
+
 import Text from "../";
 
 jest.unmock("../");

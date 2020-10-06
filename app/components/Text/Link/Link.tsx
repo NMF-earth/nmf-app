@@ -1,6 +1,7 @@
 import React from "react";
 import { Text, StyleProp, TextStyle, TouchableOpacity } from "react-native";
 import * as WebBrowser from "expo-web-browser";
+
 import styles from "./Link.styles";
 import mainStyle from "../styles";
 

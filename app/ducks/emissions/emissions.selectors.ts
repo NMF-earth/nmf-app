@@ -1,4 +1,5 @@
 import { filter, propEq, find, pathOr, pipe } from "ramda";
+
 import { namespace } from "./emissions.slice";
 import { EmissionEnum } from "../../interfaces";
 

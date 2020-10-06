@@ -6,9 +6,11 @@ import {
   Image,
 } from "react-native";
 import Constants from "expo-constants";
+
+import * as WebBrowser from "expo-web-browser";
+
 import { Button, Text, SocialMedia } from "../../components";
 import { SettingsRow } from "./components";
-import * as WebBrowser from "expo-web-browser";
 import styles from "./SettingsScreen.styles";
 import navigationOptions from "./SettingsScreen.navigationOptions";
 import { t } from "../../utils";

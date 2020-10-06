@@ -1,6 +1,7 @@
 import React from "react";
 import { TouchableOpacity } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+
 import Text from "../Text";
 import styles from "./Tag.styles";
 import { Colors } from "../../style";

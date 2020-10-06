@@ -1,6 +1,7 @@
 import React from "react";
 import renderer from "react-test-renderer";
 import { Linking } from "expo";
+
 import SocialMedia from "../";
 
 jest.unmock("../");

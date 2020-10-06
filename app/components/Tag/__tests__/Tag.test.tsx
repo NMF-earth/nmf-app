@@ -1,5 +1,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
+
 import Tag from "../Tag";
 
 jest.unmock("../Tag.tsx");

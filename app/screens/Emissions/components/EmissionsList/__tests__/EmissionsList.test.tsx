@@ -1,5 +1,8 @@
 import React from "react";
 import renderer from "react-test-renderer";
+
+import { FoodEnum, TransportEnum } from "carbon-footprint";
+
 import EmissionsList from "../EmissionsList";
 import { selectors } from "../../../ducks";
 import emissions from "../../../../../ducks/emissions";
@@ -7,7 +10,6 @@ import {
   Emission as EmissionType,
   EmissionEnum,
 } from "../../../../../interfaces";
-import { FoodEnum, TransportEnum } from "carbon-footprint";
 
 jest.unmock("../EmissionsList");
 

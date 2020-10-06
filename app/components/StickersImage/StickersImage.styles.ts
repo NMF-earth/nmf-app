@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+
 import { screen } from "../../constants/Layout";
 
 const styles = StyleSheet.create({

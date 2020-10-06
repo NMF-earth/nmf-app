@@ -1,6 +1,7 @@
 import React from "react";
 import { Linking } from "expo";
 import renderer from "react-test-renderer";
+
 import SettingsRow from "../SettingsRow";
 
 jest.unmock("../SettingsRow");

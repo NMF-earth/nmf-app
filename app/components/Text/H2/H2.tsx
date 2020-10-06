@@ -1,5 +1,6 @@
 import React from "react";
 import { Text, StyleProp, TextStyle } from "react-native";
+
 import styles from "./H2.styles";
 import mainStyle from "../styles";
 

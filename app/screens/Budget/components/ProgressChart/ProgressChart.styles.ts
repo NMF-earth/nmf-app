@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+
 import { Colors, Layout } from "../../../../style";
 import { platform } from "../../../../utils";
 

@@ -1,4 +1,5 @@
 import { ElectricityEnum } from "carbon-footprint";
+
 import userPreferences from "../";
 
 describe("userPreferences reducer should", () => {

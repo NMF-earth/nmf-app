@@ -6,13 +6,19 @@ import moment from "moment";
 import "moment/min/locales";
 import { FormattedNumber } from "react-native-globalize";
 import { useNavigation, useRoute } from "@react-navigation/native";
+
 import styles from "./EmissionItemScreen.styles";
 import { Text, Tag, Button } from "../../components";
 import navigationOptions from "./EmissionItemScreen.navigationOptions";
-import { calculation, ui, t } from "../../utils";
+import {
+  calculation,
+  ui,
+  t,
+  withLocalization,
+  LocalizationContextProps,
+} from "../../utils";
 import { emissions } from "../../ducks";
 import { navigate } from "../../navigation";
-import { withLocalization, LocalizationContextProps } from "../../utils";
 
 const EmissionItemScreen = ({ language = "" }: LocalizationContextProps) => {
   const navigation = useNavigation();
