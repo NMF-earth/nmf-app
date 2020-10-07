@@ -9,7 +9,7 @@ import { t, time, ui, calculation } from "utils";
 
 import styles from "./Transport.styles";
 import { Text, Tag } from "../../../../components";
-import { Colors } from "../../../../style";
+import { Colors } from "style";
 
 const MIN_SLIDER_VALUE = 2;
 const MAX_SLIDER_VALUE = 1000;

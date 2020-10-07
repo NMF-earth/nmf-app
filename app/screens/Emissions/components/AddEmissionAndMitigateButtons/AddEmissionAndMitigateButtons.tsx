@@ -6,7 +6,7 @@ import { t } from "utils";
 
 import styles from "./AddEmissionAndMitigateButtons.styles";
 import { Text, Button } from "../../../../components";
-import { navigate } from "../../../../navigation";
+import { navigate } from "navigation";
 
 const AddEmissionAndMitigateButtons = () => {
   const navigation = useNavigation();

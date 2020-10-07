@@ -4,7 +4,7 @@ import { Ionicons } from "@expo/vector-icons";
 
 import styles from "./ListItem.styles";
 import Text from "../Text";
-import { Colors } from "../../style";
+import { Colors } from "style";
 
 interface Props {
   title: string;

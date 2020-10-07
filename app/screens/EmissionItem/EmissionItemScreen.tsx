@@ -21,7 +21,7 @@ import styles from "./EmissionItemScreen.styles";
 import { Text, Tag, Button } from "../../components";
 import navigationOptions from "./EmissionItemScreen.navigationOptions";
 
-import { navigate } from "../../navigation";
+import { navigate } from "navigation";
 
 const EmissionItemScreen = ({ language = "" }: LocalizationContextProps) => {
   const navigation = useNavigation();

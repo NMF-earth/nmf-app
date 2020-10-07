@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 
-import { Colors, Layout } from "../../style";
+import { Colors, Layout } from "style";
 import { PADDING_HORIZONTAL } from "../../constants/Layout";
 
 export default StyleSheet.create({

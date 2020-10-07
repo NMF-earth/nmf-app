@@ -6,7 +6,7 @@ import EmissionsListItem from "../EmissionsListItem";
 import EmissionsListItemProps from "../EmissionsListItem/EmissionsListItemProps";
 import SectionHeader from "../SectionHeader";
 import styles from "./EmissionsList.styles";
-import { navigate } from "../../../../navigation";
+import { navigate } from "navigation";
 
 const EmissionsList = ({ emissions, monthlyCarbonBudget }) => {
   const navigation = useNavigation();

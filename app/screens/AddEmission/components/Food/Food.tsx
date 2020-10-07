@@ -8,7 +8,7 @@ import { t, ui } from "utils";
 
 import styles from "./Food.styles";
 import { Text, Tag } from "../../../../components";
-import { Colors } from "../../../../style";
+import { Colors } from "style";
 
 const MIN_SLIDER_VALUE = 20;
 const MAX_SLIDER_VALUE = 500;

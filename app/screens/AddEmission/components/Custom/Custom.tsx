@@ -6,7 +6,7 @@ import { t } from "utils";
 
 import styles from "./Custom.styles";
 import { Text } from "../../../../components";
-import { Colors } from "../../../../style";
+import { Colors } from "style";
 
 const MIN_SLIDER_VALUE = 1;
 const MAX_SLIDER_VALUE = 1000;

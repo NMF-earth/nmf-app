@@ -7,7 +7,7 @@ import { userPreferences } from "ducks";
 import IntroScreen from "../../screens/Intro";
 import BottomTabNavigator from "./BottomTabNavigator";
 import { currentTermsOfUseVersion } from "../../constants/Preferences";
-import { ComponentsStyle } from "../../style";
+import { ComponentsStyle } from "style";
 
 const Stack = createStackNavigator();
 const screenOptions = {

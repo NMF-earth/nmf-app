@@ -3,7 +3,7 @@ import { TouchableOpacity, StyleProp, ViewStyle } from "react-native";
 
 import styles from "./Secondary.styles";
 import mainStyle from "../styles";
-import { Font } from "../../../style";
+import { Font } from "style";
 
 const PADDING_VERTICAL = 12;
 

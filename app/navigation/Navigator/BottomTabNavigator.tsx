@@ -3,7 +3,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
 import { t } from "utils";
 
-import { Colors } from "../../style";
+import { Colors } from "style";
 
 import TabBarIcon from "../../components/TabBarIcon";
 

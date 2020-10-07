@@ -9,7 +9,7 @@ import { t } from "utils";
 import styles from "./BudgetScreen.styles";
 import { Text, Button } from "../../components";
 import { NumberOfDaysVegetarian, ProgressChart } from "./components";
-import { navigate } from "../../navigation";
+import { navigate } from "navigation";
 import navigationOptions from "./BudgetScreen.navigationOptions";
 
 interface Props {

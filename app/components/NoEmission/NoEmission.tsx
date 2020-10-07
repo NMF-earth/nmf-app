@@ -6,7 +6,7 @@ import { t } from "utils";
 
 import { Text, Button, StickersImage } from "../";
 import styles from "./NoEmission.styles";
-import { navigate } from "../../navigation";
+import { navigate } from "navigation";
 
 export default function NoEmission() {
   const navigation = useNavigation();

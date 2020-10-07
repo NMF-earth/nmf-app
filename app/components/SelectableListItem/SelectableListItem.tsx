@@ -4,7 +4,7 @@ import { Ionicons } from "@expo/vector-icons";
 
 import styles from "./SelectableListItem.styles";
 import Text from "../../components/Text";
-import { Colors } from "../../style";
+import { Colors } from "style";
 
 interface Props {
   selected: boolean;

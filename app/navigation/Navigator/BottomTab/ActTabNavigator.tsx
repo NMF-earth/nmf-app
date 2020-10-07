@@ -5,7 +5,7 @@ import { t } from "utils";
 
 import { GuideCategory } from "../../../types/guide";
 import { Text } from "../../../components";
-import { ComponentsStyle, Colors, Font } from "../../../style";
+import { ComponentsStyle, Colors, Font } from "style";
 
 import ActScreen from "../../../screens/Act";
 

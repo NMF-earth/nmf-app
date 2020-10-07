@@ -4,7 +4,7 @@ import { Ionicons } from "@expo/vector-icons";
 
 import styles from "./SettingsRow.styles";
 import { Text } from "../../../../components";
-import { Colors } from "../../../../style";
+import { Colors } from "style";
 
 interface Props {
   title: string;

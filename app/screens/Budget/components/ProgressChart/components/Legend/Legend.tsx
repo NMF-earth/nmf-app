@@ -5,7 +5,7 @@ import { t } from "utils";
 
 import styles from "./Legend.styles";
 import LegendItem from "../LegendItem";
-import { Colors } from "../../../../../../style";
+import { Colors } from "style";
 
 interface Prop {
   totalEmissions: number;

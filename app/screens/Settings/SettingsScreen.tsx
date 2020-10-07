@@ -16,7 +16,7 @@ import { SettingsRow } from "./components";
 import styles from "./SettingsScreen.styles";
 import navigationOptions from "./SettingsScreen.navigationOptions";
 import ImagesAssets from "../../constants/ImagesAssets";
-import { navigate } from "../../navigation";
+import { navigate } from "navigation";
 
 const SettingsScreen = (props) => {
   const navigator = navigate(props.navigation);

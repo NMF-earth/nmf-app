@@ -1,7 +1,7 @@
 import { StyleSheet, ViewStyle } from "react-native";
 
 import { PADDING_HORIZONTAL } from "../../../../constants/Layout";
-import { Colors } from "../../../../style";
+import { Colors } from "style";
 
 const CIRCLE_WIDTH = 34;
 

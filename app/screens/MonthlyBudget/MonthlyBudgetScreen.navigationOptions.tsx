@@ -3,7 +3,7 @@ import React from "react";
 import { t } from "utils";
 
 import { Text } from "../../components";
-import { Colors, ComponentsStyle } from "../../style";
+import { Colors, ComponentsStyle } from "style";
 
 const navigationOptions = () => ({
   ...ComponentsStyle.transitionBetweenScreenPresets,
