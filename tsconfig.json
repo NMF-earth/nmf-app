@@ -12,6 +12,9 @@
       "*": ["app/*"],
       "components/*": ["app/components/*"],
       "utils/*": ["app/utils/*"],
+      "ducks/*": ["app/ducks/*"],
+      "style/*": ["app/style/*"],
+      "navigation/*": ["app/navigation/*"],
     },
   }
 }

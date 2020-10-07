@@ -1,6 +1,6 @@
 import { FoodEnum } from "carbon-footprint";
 import { selectors } from "../";
-import emissions from "../../../../../../ducks/emissions";
+import emissions from "ducks/emissions";
 import {
   Emission as EmissionType,
   EmissionEnum,

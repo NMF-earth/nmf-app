@@ -25,7 +25,7 @@ import {
   LocalizationContextProps,
   ui,
 } from "../../utils";
-import { userPreferences } from "../../ducks";
+import { userPreferences } from "ducks";
 
 interface Props {
   navigation: {

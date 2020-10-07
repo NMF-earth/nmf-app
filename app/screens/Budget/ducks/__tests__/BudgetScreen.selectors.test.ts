@@ -1,5 +1,5 @@
 import { selectors } from "../";
-import emissions from "../../../../ducks/emissions";
+import emissions from ".ducks/emissions";
 import { Emission as EmissionType, EmissionEnum } from "../../../../interfaces";
 import { FoodEnum, TransportEnum } from "carbon-footprint";
 import moment from "moment";

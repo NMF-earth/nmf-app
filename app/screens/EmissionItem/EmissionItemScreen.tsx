@@ -10,7 +10,7 @@ import styles from "./EmissionItemScreen.styles";
 import { Text, Tag, Button } from "../../components";
 import navigationOptions from "./EmissionItemScreen.navigationOptions";
 import { calculation, ui, t } from "../../utils";
-import { emissions } from "../../ducks";
+import { emissions } from "ducks";
 import { navigate } from "../../navigation";
 import { withLocalization, LocalizationContextProps } from "../../utils";
 

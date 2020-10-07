@@ -1,7 +1,7 @@
 import React from "react";
 import renderer from "react-test-renderer";
 import AddEmissionScreen from "../AddEmissionScreen";
-import { emissions } from "../../../ducks";
+import { emissions } from "ducks";
 import { FormattedProvider } from "react-native-globalize";
 
 const props = {

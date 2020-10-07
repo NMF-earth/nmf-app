@@ -1,8 +1,8 @@
 import React from "react";
 import renderer from "react-test-renderer";
 import EmissionsList from "../EmissionsList";
-import { selectors } from "../../../ducks";
-import emissions from "../../../../../ducks/emissions";
+import { selectors } from "ducks";
+import emissions from "ducks/emissions";
 import {
   Emission as EmissionType,
   EmissionEnum,
