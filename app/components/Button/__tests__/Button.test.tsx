@@ -33,13 +33,11 @@ it("renders correctly Primary Button with Secondary font", () => {
 /* Secondary Button Tests */
 
 it("renders correctly full width Secondary Button with Primary font", () => {
-  const tree = renderer
-    .create(
-      <Button.Secondary fullWidth onPress={foo} textType={"Primary"}>
-        <Text.Primary>test</Text.Primary>
-      </Button.Secondary>
-    )
-    .toJSON();
+  const tree = create(
+    <Button.Secondary fullWidth onPress={foo} textType={"Primary"}>
+      <Text.Primary>test</Text.Primary>
+    </Button.Secondary>
+  ).toJSON();
   expect(tree).toMatchSnapshot();
 });
 

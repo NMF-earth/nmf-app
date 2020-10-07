@@ -19,8 +19,8 @@ it("ProgressChart renders correctly", () => {
 });
 
 it("ProgressChart should not render if monthlyEmissionsBudget equals 0", () => {
-  const tree = renderer
-    .create(<ProgressChart {...props} monthlyEmissionsBudget={0} />)
-    .toJSON();
+  const tree = create(
+    <ProgressChart {...props} monthlyEmissionsBudget={0} />
+  ).toJSON();
   expect(tree).toBeNull();
 });

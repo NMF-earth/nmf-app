@@ -117,16 +117,14 @@ it("EmissionsListItem renders correctly with bus icon", () => {
 });
 
 it("EmissionsListItem renders correctly with car icon", () => {
-  const tree = renderer
-    .create(
-      <FormattedProvider locale="en">
-        <EmissionsListItem
-          {...props}
-          iconName={ui.getIconFromModelType(TransportEnum.car)}
-        />
-      </FormattedProvider>
-    )
-    .toJSON();
+  const tree = create(
+    <FormattedProvider locale="en">
+      <EmissionsListItem
+        {...props}
+        iconName={ui.getIconFromModelType(TransportEnum.car)}
+      />
+    </FormattedProvider>
+  ).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
@@ -143,16 +141,14 @@ it("EmissionsListItem renders correctly with longHaulFlight icon", () => {
 });
 
 it("EmissionsListItem renders correctly with mediumHaulFlight icon", () => {
-  const tree = renderer
-    .create(
-      <FormattedProvider locale="en">
-        <EmissionsListItem
-          {...props}
-          iconName={ui.getIconFromModelType(TransportEnum.mediumHaulFlight)}
-        />
-      </FormattedProvider>
-    )
-    .toJSON();
+  const tree = create(
+    <FormattedProvider locale="en">
+      <EmissionsListItem
+        {...props}
+        iconName={ui.getIconFromModelType(TransportEnum.mediumHaulFlight)}
+      />
+    </FormattedProvider>
+  ).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
