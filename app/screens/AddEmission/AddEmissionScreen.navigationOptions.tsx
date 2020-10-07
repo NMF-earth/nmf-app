@@ -24,7 +24,7 @@ const navigationOptions = () => {
         size={26}
         style={{ marginRight: 10 }}
         color={Colors.grey100}
-        onPress={navigator.methodology}
+        onPress={navigator.openMethodology}
       />
     ),
     headerTitle: () => <Text.H1>{t("ADD_EMISSION_TITLE")}</Text.H1>,

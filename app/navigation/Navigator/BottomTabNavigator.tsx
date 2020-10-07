@@ -41,7 +41,7 @@ const SettingsOptions = {
   ),
 };
 
-const MainTabNavigator = (): React.ReactElement => (
+const BottomTabNavigator = (): React.ReactElement => (
   <BottomTab.Navigator
     tabBarOptions={{
       activeTintColor: Colors.green50,
@@ -76,4 +76,4 @@ const MainTabNavigator = (): React.ReactElement => (
   </BottomTab.Navigator>
 );
 
-export default MainTabNavigator;
+export default BottomTabNavigator;
