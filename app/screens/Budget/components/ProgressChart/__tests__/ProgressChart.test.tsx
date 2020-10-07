@@ -1,5 +1,5 @@
 import React from "react";
-import renderer from "react-test-renderer";
+import { create } from "react-test-renderer";
 
 import ProgressChart from "../ProgressChart";
 
@@ -14,7 +14,7 @@ const props = {
 };
 
 it("ProgressChart renders correctly", () => {
-  const tree = renderer.create(<ProgressChart {...props} />).toJSON();
+  const tree = create(<ProgressChart {...props} />).toJSON();
   expect(tree).toMatchSnapshot();
 });
 

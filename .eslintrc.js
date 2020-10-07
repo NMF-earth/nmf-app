@@ -31,7 +31,10 @@ module.exports = {
     settings: {
         react: {
             version: "detect"
-        }
+        },
+        "import/resolver": {
+            "typescript": {} // this loads <rootdir>/tsconfig.json to eslint
+          },
     },
     "plugins": [
         "react",
@@ -44,6 +47,7 @@ module.exports = {
         "react/display-name": [0],
         "react/prop-types": [0],
         "import/namespace": 0,
+        "import/no-named-as-default-member": 0,
         "import/order": [
           "error",
           {

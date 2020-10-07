@@ -1,5 +1,5 @@
 import React from "react";
-import renderer from "react-test-renderer";
+import { create } from "react-test-renderer";
 
 import BudgetScreen from "../BudgetScreen";
 
@@ -12,7 +12,7 @@ const props = {
 };
 
 it("BudgetScreen renders correctly", () => {
-  const tree = renderer.create(<BudgetScreen {...props} />).toJSON();
+  const tree = create(<BudgetScreen {...props} />).toJSON();
   expect(tree).toMatchSnapshot();
 });
 

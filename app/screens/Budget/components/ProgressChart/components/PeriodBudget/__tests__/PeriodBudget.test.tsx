@@ -1,5 +1,5 @@
 import React from "react";
-import renderer from "react-test-renderer";
+import { create } from "react-test-renderer";
 
 import PeriodBudget from "../PeriodBudget";
 
@@ -11,13 +11,13 @@ const props = {
 jest.unmock("../PeriodBudget");
 
 it("PeriodBudget renders correctly", () => {
-  const tree = renderer.create(<PeriodBudget {...props} />).toJSON();
+  const tree = create(<PeriodBudget {...props} />).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
 it("PeriodBudget renders correctly if tons", () => {
-  const tree = renderer
-    .create(<PeriodBudget periodEmissionsBudget={14340} {...props} />)
-    .toJSON();
+  const tree = create(
+    <PeriodBudget periodEmissionsBudget={14340} {...props} />
+  ).toJSON();
   expect(tree).toMatchSnapshot();
 });

@@ -1,5 +1,5 @@
 import React from "react";
-import renderer from "react-test-renderer";
+import { create } from "react-test-renderer";
 
 import Button from "../";
 import Text from "../../Text";
@@ -13,24 +13,20 @@ const foo = () => {
 /* Primary Button Tests */
 
 it("renders correctly full width Primary Button with Primary font", () => {
-  const tree = renderer
-    .create(
-      <Button.Primary fullWidth onPress={foo} textType={"Primary"}>
-        <Text.Primary>test</Text.Primary>
-      </Button.Primary>
-    )
-    .toJSON();
+  const tree = create(
+    <Button.Primary fullWidth onPress={foo} textType={"Primary"}>
+      <Text.Primary>test</Text.Primary>
+    </Button.Primary>
+  ).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
 it("renders correctly Primary Button with Secondary font", () => {
-  const tree = renderer
-    .create(
-      <Button.Primary onPress={foo} textType={"Secondary"}>
-        <Text.Secondary>test</Text.Secondary>
-      </Button.Primary>
-    )
-    .toJSON();
+  const tree = create(
+    <Button.Primary onPress={foo} textType={"Secondary"}>
+      <Text.Secondary>test</Text.Secondary>
+    </Button.Primary>
+  ).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
@@ -48,12 +44,10 @@ it("renders correctly full width Secondary Button with Primary font", () => {
 });
 
 it("renders correctly Secondary Button with Secondary font", () => {
-  const tree = renderer
-    .create(
-      <Button.Secondary onPress={foo} textType={"Secondary"}>
-        <Text.Secondary>test</Text.Secondary>
-      </Button.Secondary>
-    )
-    .toJSON();
+  const tree = create(
+    <Button.Secondary onPress={foo} textType={"Secondary"}>
+      <Text.Secondary>test</Text.Secondary>
+    </Button.Secondary>
+  ).toJSON();
   expect(tree).toMatchSnapshot();
 });
