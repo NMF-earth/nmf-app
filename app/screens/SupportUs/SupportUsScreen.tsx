@@ -1,9 +1,10 @@
 import React from "react";
 import { ScrollView, View } from "react-native";
 
+import { t } from "utils";
+
 import { Text, StickersImage } from "../../components";
 import styles from "./SupportUsScreen.styles";
-import { t } from "../../utils";
 import navigationOptions from "./SupportUsScreen.navigationOptions";
 
 const SupportUsScreen = () => (

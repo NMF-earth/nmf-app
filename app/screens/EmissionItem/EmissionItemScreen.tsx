@@ -9,17 +9,17 @@ import { useNavigation, useRoute } from "@react-navigation/native";
 
 import { emissions } from "ducks";
 
-import styles from "./EmissionItemScreen.styles";
-import { Text, Tag, Button } from "../../components";
-import navigationOptions from "./EmissionItemScreen.navigationOptions";
-
 import {
   calculation,
   ui,
   t,
   withLocalization,
   LocalizationContextProps,
-} from "../../utils";
+} from "utils";
+
+import styles from "./EmissionItemScreen.styles";
+import { Text, Tag, Button } from "../../components";
+import navigationOptions from "./EmissionItemScreen.navigationOptions";
 
 import { navigate } from "../../navigation";
 

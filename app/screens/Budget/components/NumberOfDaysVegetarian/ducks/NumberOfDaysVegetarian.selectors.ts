@@ -4,7 +4,7 @@ import { FoodEnum } from "carbon-footprint";
 
 import { emissions } from "ducks";
 
-import { calculation } from "../../../../../utils";
+import { calculation } from "utils";
 
 const meatArray = [
   FoodEnum.beef,

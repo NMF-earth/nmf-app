@@ -5,8 +5,9 @@ import { useDispatch, useSelector } from "react-redux";
 
 import { userPreferences } from "ducks";
 
+import { t, calculation } from "utils";
+
 import { Text, SelectableListItem } from "../../components";
-import { t, calculation } from "../../utils";
 import navigationOptions from "./MyLocationScreen.navigationOptions";
 import styles from "./MyLocationScreen.styles";
 

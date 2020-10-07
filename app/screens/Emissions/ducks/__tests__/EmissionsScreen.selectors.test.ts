@@ -4,10 +4,11 @@ import moment from "moment";
 
 import { emissions } from "ducks";
 
+import { calculation } from "utils";
+
 import { selectors } from "../";
 
 import { Emission as EmissionType, EmissionEnum } from "../../../../interfaces";
-import { calculation } from "../../../../utils";
 
 let state;
 

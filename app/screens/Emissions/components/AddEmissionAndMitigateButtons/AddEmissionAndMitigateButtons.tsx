@@ -2,7 +2,8 @@ import React from "react";
 import { View } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
-import { t } from "../../../../utils";
+import { t } from "utils";
+
 import styles from "./AddEmissionAndMitigateButtons.styles";
 import { Text, Button } from "../../../../components";
 import { navigate } from "../../../../navigation";

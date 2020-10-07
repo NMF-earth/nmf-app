@@ -4,9 +4,10 @@ import { useSelector } from "react-redux";
 
 import { selectors } from "ducks";
 
+import { t } from "utils";
+
 import { Text } from "../../../../components";
 import styles from "./NumberOfDaysVegetarian.styles";
-import { t } from "../../../../utils";
 
 const NumberOfDaysVegetarian = () => {
   const isAnyMeatEmissionSaved = useSelector(selectors.isAnyMeatEmissionSaved);

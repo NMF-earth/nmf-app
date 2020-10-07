@@ -4,9 +4,10 @@ import uuid from "uuid";
 
 import { emissions } from "ducks";
 
+import { t } from "utils";
+
 import { Text, Button } from "../../../../components";
 import styles from "./AddEmissionButton.styles";
-import { t } from "../../../../utils";
 
 import { EmissionPayload } from "../../../../interfaces/emission/emission.interface";
 

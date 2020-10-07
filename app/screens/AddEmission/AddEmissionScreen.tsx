@@ -8,6 +8,14 @@ import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view
 
 import { userPreferences } from "ducks";
 
+import {
+  calculation,
+  t,
+  withLocalization,
+  LocalizationContextProps,
+  ui,
+} from "utils";
+
 import { Text, Tag, TextInput } from "../../components";
 import styles from "./AddEmissionScreen.styles";
 import navigationOptions from "./AddEmissionScreen.navigationOptions";
@@ -21,13 +29,6 @@ import {
 } from "./components";
 import { EmissionEnum } from "../../interfaces";
 import { EmissionPayload } from "../../interfaces/emission/emission.interface";
-import {
-  calculation,
-  t,
-  withLocalization,
-  LocalizationContextProps,
-  ui,
-} from "../../utils";
 
 interface Props {
   navigation: {

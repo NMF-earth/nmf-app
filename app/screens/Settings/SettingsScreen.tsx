@@ -9,11 +9,12 @@ import Constants from "expo-constants";
 
 import * as WebBrowser from "expo-web-browser";
 
+import { t } from "utils";
+
 import { Button, Text, SocialMedia } from "../../components";
 import { SettingsRow } from "./components";
 import styles from "./SettingsScreen.styles";
 import navigationOptions from "./SettingsScreen.navigationOptions";
-import { t } from "../../utils";
 import ImagesAssets from "../../constants/ImagesAssets";
 import { navigate } from "../../navigation";
 

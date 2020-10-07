@@ -65,8 +65,8 @@ The `import ... from '...';` at the top of files follow some rules:
 
 ```diff
 - import { Emission } from './Emission';
-- import { calculation } from "../../utils";
-+ import { calculation } from "../../utils";
+- import { calculation } from "utils";
++ import { calculation } from "utils";
 + import { Emission } from './Emission';
 ```
 

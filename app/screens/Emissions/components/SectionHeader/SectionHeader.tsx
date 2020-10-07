@@ -3,13 +3,10 @@ import { View } from "react-native";
 import moment from "moment";
 
 import "moment/min/locales";
+import { withLocalization, LocalizationContextProps, t } from "utils";
+
 import { Text } from "../../../../components";
 import styles from "./SectionHeader.styles";
-import {
-  withLocalization,
-  LocalizationContextProps,
-  t,
-} from "../../../../utils";
 
 interface Props {
   date: Date;

@@ -1,10 +1,11 @@
 import React from "react";
 import { View } from "react-native";
 
+import { t } from "utils";
+
 import styles from "./Legend.styles";
 import LegendItem from "../LegendItem";
 import { Colors } from "../../../../../../style";
-import { t } from "../../../../../../utils";
 
 interface Prop {
   totalEmissions: number;

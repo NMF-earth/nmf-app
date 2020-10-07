@@ -4,10 +4,11 @@ import { useSelector } from "react-redux";
 
 import { selectors } from "ducks";
 
+import { t } from "utils";
+
 import styles from "./BudgetScreen.styles";
 import { Text, Button } from "../../components";
 import { NumberOfDaysVegetarian, ProgressChart } from "./components";
-import { t } from "../../utils";
 import { navigate } from "../../navigation";
 import navigationOptions from "./BudgetScreen.navigationOptions";
 

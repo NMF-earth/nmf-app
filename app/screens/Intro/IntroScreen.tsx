@@ -5,9 +5,10 @@ import { useDispatch } from "react-redux";
 
 import { userPreferences } from "ducks";
 
+import { t } from "utils";
+
 import { Text, Button, StickersImage } from "../../components";
 import styles from "./IntroScreen.styles";
-import { t } from "../../utils";
 import { currentTermsOfUseVersion } from "../../constants/Preferences";
 
 const IntroScreen = () => {

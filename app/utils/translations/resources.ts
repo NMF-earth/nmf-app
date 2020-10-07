@@ -1,4 +1,6 @@
 /* SCREENS */
+import * as UI from "utils/ui/translations";
+
 import * as Act from "../../screens/Act/translations";
 import * as Budget from "../../screens/Budget/translations";
 import * as Emissions from "../../screens/Emissions/translations";
@@ -18,7 +20,6 @@ import * as ActDetail from "../../screens/ActDetail/translations";
 import * as NoEmission from "../../components/NoEmission/translations";
 
 /* UTILS */
-import * as UI from "../../utils/ui/translations";
 
 const en = {
   ...UI.en,

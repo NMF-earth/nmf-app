@@ -3,8 +3,9 @@ import { Ionicons } from "@expo/vector-icons";
 
 import { useNavigation } from "@react-navigation/native";
 
+import { t } from "utils";
+
 import { Text } from "../../components";
-import { t } from "../../utils";
 import { Colors, ComponentsStyle } from "../../style";
 import { navigate } from "../../navigation";
 

@@ -1,10 +1,11 @@
 import React from "react";
 
 // import { TouchableOpacity } from "react-native";
+import { t } from "utils";
+
 import { Text } from "../../components";
 // import { Ionicons } from "@expo/vector-icons";
 // import { PADDING_HORIZONTAL } from "../../constants/Layout";
-import { t } from "../../utils";
 // import { Colors } from "../../style";
 import { Layout, ComponentsStyle } from "../../style";
 

@@ -1,4 +1,4 @@
-import { createMock } from "../../utils";
+import { createMock } from "utils";
 
 export const Circle = createMock("Circle");
 export const ClipPath = createMock("ClipPath");

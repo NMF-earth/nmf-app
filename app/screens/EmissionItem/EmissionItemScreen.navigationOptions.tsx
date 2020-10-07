@@ -1,7 +1,8 @@
 import React from "react";
 
+import { t } from "utils";
+
 import { Text } from "../../components";
-import { t } from "../../utils";
 import { Colors, ComponentsStyle } from "../../style";
 
 const navigationOptions = () => ({
