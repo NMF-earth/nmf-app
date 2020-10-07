@@ -2,10 +2,12 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import uuid from "uuid";
 
+import { emissions } from "ducks";
+
 import { Text, Button } from "../../../../components";
 import styles from "./AddEmissionButton.styles";
 import { t } from "../../../../utils";
-import { emissions } from ".ducks";
+
 import { EmissionPayload } from "../../../../interfaces/emission/emission.interface";
 
 interface Props {

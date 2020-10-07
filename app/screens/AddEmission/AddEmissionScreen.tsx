@@ -5,6 +5,9 @@ import { View, ScrollView, TouchableOpacity } from "react-native";
 import { TransportEnum, FoodEnum, StreamingEnum } from "carbon-footprint";
 import DateTimePickerModal from "react-native-modal-datetime-picker";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
+
+import { userPreferences } from "ducks";
+
 import { Text, Tag, TextInput } from "../../components";
 import styles from "./AddEmissionScreen.styles";
 import navigationOptions from "./AddEmissionScreen.navigationOptions";
@@ -25,7 +28,6 @@ import {
   LocalizationContextProps,
   ui,
 } from "../../utils";
-import { userPreferences } from "ducks";
 
 interface Props {
   navigation: {

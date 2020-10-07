@@ -1,9 +1,11 @@
 import React from "react";
 import { Ionicons } from "@expo/vector-icons";
+
+import { useNavigation } from "@react-navigation/native";
+
 import { Text } from "../../components";
 import { t } from "../../utils";
 import { Colors, ComponentsStyle } from "../../style";
-import { useNavigation } from "@react-navigation/native";
 import { navigate } from "../../navigation";
 
 const navigationOptions = () => {

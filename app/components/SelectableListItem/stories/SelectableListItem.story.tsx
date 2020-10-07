@@ -1,6 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react-native";
 import { boolean, text } from "@storybook/addon-knobs";
+
 import SelectableListItem from "..";
 
 storiesOf("SelectableListItem", module).add("basic list item", () => (

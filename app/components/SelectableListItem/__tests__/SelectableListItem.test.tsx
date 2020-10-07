@@ -1,6 +1,6 @@
 import "react-native";
 import React from "react";
-import renderer from "react-test-renderer";
+import { create } from "react-test-renderer";
 
 import SelectableListItem from "../SelectableListItem";
 
@@ -12,13 +12,13 @@ describe("<SelectableListItem />", () => {
       // do nothing.
     },
   };
-  const wrapper = renderer.create(<SelectableListItem {...defaultProps} />);
+  const wrapper = create(<SelectableListItem {...defaultProps} />);
 
   test("render", () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  const wrapperNotSelected = renderer.create(
+  const wrapperNotSelected = create(
     <SelectableListItem selected={false} {...defaultProps} />
   );
 

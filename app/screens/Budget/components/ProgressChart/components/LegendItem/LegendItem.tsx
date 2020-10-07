@@ -1,5 +1,6 @@
 import React from "react";
 import { View } from "react-native";
+
 import styles from "./LegendItem.styles";
 import { Text } from "../../../../../../components";
 

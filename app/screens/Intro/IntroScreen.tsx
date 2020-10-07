@@ -3,10 +3,11 @@ import { SafeAreaView, View, TouchableOpacity } from "react-native";
 import * as WebBrowser from "expo-web-browser";
 import { useDispatch } from "react-redux";
 
+import { userPreferences } from "ducks";
+
 import { Text, Button, StickersImage } from "../../components";
 import styles from "./IntroScreen.styles";
 import { t } from "../../utils";
-import { userPreferences } from "ducks";
 import { currentTermsOfUseVersion } from "../../constants/Preferences";
 
 const IntroScreen = () => {

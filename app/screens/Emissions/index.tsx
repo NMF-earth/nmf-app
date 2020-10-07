@@ -1,9 +1,11 @@
 import React from "react";
 import { useSelector } from "react-redux";
+
+import { emissions } from "ducks";
+
 import NoEmission from "../../components/NoEmission";
 import EmissionsScreen from "./EmissionsScreen";
 import navigationOptions from "./EmissionsScreen.navigationOptions";
-import { emissions } from "ducks";
 
 const Emissions = () => {
   const emissionsToMitigate = useSelector(

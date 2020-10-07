@@ -1,6 +1,7 @@
 import React from "react";
 import { View } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+
 import { Colors, ComponentsStyle } from "../../style";
 import { PADDING_HORIZONTAL } from "../../constants/Layout";
 import { navigate } from "../../navigation";

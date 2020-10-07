@@ -1,11 +1,14 @@
 import { FoodEnum } from "carbon-footprint";
-import { selectors } from "../";
+
+import moment from "moment";
+
 import emissions from "ducks/emissions";
+
+import { selectors } from "../";
 import {
   Emission as EmissionType,
   EmissionEnum,
 } from "../../../../../../interfaces";
-import moment from "moment";
 
 let state;
 

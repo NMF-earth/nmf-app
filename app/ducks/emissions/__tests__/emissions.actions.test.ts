@@ -1,6 +1,7 @@
+import { TransportEnum } from "carbon-footprint";
+
 import emissions from "../";
 import { Emission, EmissionEnum } from "../../../interfaces";
-import { TransportEnum } from "carbon-footprint";
 
 describe("Emissions actions should", () => {
   it("export expected actions", () =>

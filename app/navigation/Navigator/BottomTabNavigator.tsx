@@ -1,5 +1,6 @@
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+
 import { Colors } from "../../style";
 
 import TabBarIcon from "../../components/TabBarIcon";

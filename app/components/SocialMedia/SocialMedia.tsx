@@ -2,6 +2,7 @@ import React from "react";
 import { View, TouchableOpacity } from "react-native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { Linking } from "expo";
+
 import { Colors } from "../../style";
 
 import styles from "./SocialMedia.styles";
