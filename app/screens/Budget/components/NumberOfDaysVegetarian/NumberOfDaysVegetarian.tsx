@@ -2,9 +2,9 @@ import React from "react";
 import { View } from "react-native";
 import { useSelector } from "react-redux";
 
-import { selectors } from "ducks";
-
 import { t } from "utils";
+
+import { selectors } from "./ducks";
 
 import { Text } from "../../../../components";
 import styles from "./NumberOfDaysVegetarian.styles";

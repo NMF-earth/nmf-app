@@ -3,8 +3,9 @@ import { create } from "react-test-renderer";
 
 import { FoodEnum, TransportEnum } from "carbon-footprint";
 
-import { selectors } from "ducks";
 import emissions from "ducks/emissions";
+
+import { selectors } from "screens/Emissions/ducks";
 
 import EmissionsList from "../EmissionsList";
 import {
