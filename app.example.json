@@ -3,7 +3,6 @@
     "name": "NMF.earth",
     "slug": "not-my-fault-earth",
     "privacy": "public",
-    "sdkVersion": "38.0.0",
     "platforms": ["ios", "android"],
     "version": "0.4.0",
     "orientation": "portrait",
