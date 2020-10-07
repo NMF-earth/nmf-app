@@ -5,7 +5,7 @@ import {
   ScrollView,
   Image,
 } from "react-native";
-import { NativeConstants } from "expo-constants";
+import Constants from "expo-constants";
 
 import * as WebBrowser from "expo-web-browser";
 
@@ -73,7 +73,7 @@ const SettingsScreen = (props) => {
       </TouchableWithoutFeedback>
       <Text.Tertiary bold lightGray style={styles.appVersionTitle}>
         {t("SETTINGS_SCREEN_APP_VERSION", {
-          version: NativeConstants.manifest.version,
+          version: manifest.version,
         })}
       </Text.Tertiary>
       <SocialMedia />
