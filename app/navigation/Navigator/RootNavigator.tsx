@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import { userPreferences } from "../../ducks";
 import IntroScreen from "../../screens/Intro";
 import BottomTabNavigator from "./BottomTabNavigator";
-import { currentTermsOfUseVersion } from "../../constants/Preferences";
+import { Preferences } from "constant";
 import { ComponentsStyle } from "../../style";
 
 const Stack = createStackNavigator();
@@ -15,7 +15,7 @@ const screenOptions = {
 
 const RootNavigator = (): React.ReactElement => {
   const hasAcceptedTermsOfUseVersion =
-    currentTermsOfUseVersion ===
+    Preferences.currentTermsOfUseVersion ===
     useSelector(userPreferences.selectors.getAcceptedTermsOfUseVersion);
 
   return (

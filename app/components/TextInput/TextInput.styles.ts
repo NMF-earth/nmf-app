@@ -1,15 +1,15 @@
 import { StyleSheet } from "react-native";
 import { Colors } from "../../style";
-import { PADDING_HORIZONTAL } from "../../constants/Layout";
+import { Layout } from "constant";
 
 export default StyleSheet.create({
   container: {
     marginTop: 12,
-    marginHorizontal: PADDING_HORIZONTAL,
+    marginHorizontal: Layout.PADDING_HORIZONTAL,
   },
   input: {
     marginBottom: 8,
-    paddingHorizontal: PADDING_HORIZONTAL,
+    paddingHorizontal: Layout.PADDING_HORIZONTAL,
     height: 40,
     borderColor: Colors.grey,
     borderWidth: 2,

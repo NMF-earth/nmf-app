@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 import { Layout } from "../../style";
-import { PADDING_HORIZONTAL } from "../../constants/Layout";
+import { Layout as ConstantsLayout } from "constant";
 
 export default StyleSheet.create({
   container: {
@@ -29,8 +29,8 @@ export default StyleSheet.create({
   buttonContainer: {
     position: "absolute",
     bottom: 20,
-    right: PADDING_HORIZONTAL,
-    left: PADDING_HORIZONTAL,
+    right: ConstantsLayout.PADDING_HORIZONTAL,
+    left: ConstantsLayout.PADDING_HORIZONTAL,
   },
   slider: {
     marginTop: 14,

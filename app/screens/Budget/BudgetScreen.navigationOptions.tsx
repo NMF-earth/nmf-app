@@ -2,7 +2,7 @@ import React from "react";
 // import { TouchableOpacity } from "react-native";
 import { Text } from "../../components";
 // import { Ionicons } from "@expo/vector-icons";
-// import { PADDING_HORIZONTAL } from "../../constants/Layout";
+// import { Layout as ConstantsLayout } from "/constants";
 import { t } from "../../utils";
 // import { Colors } from "../../style";
 import { Layout, ComponentsStyle } from "../../style";
@@ -23,7 +23,7 @@ const navigationOptions = () => ({
   //   >
   //     <Ionicons
   //       size={26}
-  //       style={{ marginRight: PADDING_HORIZONTAL }}
+  //       style={{ marginRight: ConstantsLayout.PADDING_HORIZONTAL }}
   //       color={Colors.black}
   //       name={"md-share"}
   //     />

@@ -5,9 +5,9 @@ import Pie from "paths-js/pie";
 import { gt, lt, both, cond, always, __ } from "ramda";
 import styles from "./Chart.styles";
 import { Colors } from "../../../../../../style";
-import { PADDING_HORIZONTAL, screen } from "../../../../../../constants/Layout";
+import { Layout } from "constant";
 
-const chartWidth = screen.width / 2;
+const chartWidth = Layout.screen.width / 2;
 const chartHeight = chartWidth;
 
 const gt400 = gt(__, 399);
@@ -23,7 +23,7 @@ const getDirtyFactor = cond([
   [gt400, always(5)],
 ]);
 
-const dirtyFactor = getDirtyFactor(screen.width);
+const dirtyFactor = getDirtyFactor(Layout.screen.width);
 
 const ringWidth = chartWidth / dirtyFactor;
 
@@ -73,8 +73,14 @@ const Chart = ({
 
   return (
     <View style={styles.container}>
-      <Svg width={screen.width - PADDING_HORIZONTAL * 4} height={chartHeight}>
-        <G x={screen.width / 2 - PADDING_HORIZONTAL * 2} y={chartHeight / 2}>
+      <Svg
+        width={Layout.screen.width - Layout.PADDING_HORIZONTAL * 4}
+        height={chartHeight}
+      >
+        <G
+          x={Layout.screen.width / 2 - Layout.PADDING_HORIZONTAL * 2}
+          y={chartHeight / 2}
+        >
           <G>
             {pieBackgrounds.map((pie, i) => {
               return (

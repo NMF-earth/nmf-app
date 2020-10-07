@@ -12,7 +12,7 @@ import * as WebBrowser from "expo-web-browser";
 import styles from "./SettingsScreen.styles";
 import navigationOptions from "./SettingsScreen.navigationOptions";
 import { t } from "../../utils";
-import ImagesAssets from "../../constants/ImagesAssets";
+import { ImagesAssets } from "constant";
 import { navigate } from "../../navigation";
 
 const SettingsScreen = (props) => {

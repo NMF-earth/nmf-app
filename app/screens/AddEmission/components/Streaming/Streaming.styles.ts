@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 import { Layout } from "../../../../style";
-import { PADDING_HORIZONTAL } from "../../../../constants/Layout";
+import { Layout as ConstantsLayout } from "constant";
 
 const VERTICAL_PADDING_BETWEEN_ITEMS = 12;
 const separationContainers = {
@@ -13,7 +13,7 @@ export default StyleSheet.create({
     ...Layout.containerWithPadding,
   },
   tagContainer: {
-    paddingLeft: PADDING_HORIZONTAL,
+    paddingLeft: ConstantsLayout.PADDING_HORIZONTAL,
     paddingBottom: VERTICAL_PADDING_BETWEEN_ITEMS,
   },
   durationDistanceContainer: {

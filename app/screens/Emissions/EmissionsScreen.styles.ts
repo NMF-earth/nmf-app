@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { PADDING_HORIZONTAL } from "../../constants/Layout";
+import { Layout as ConstantsLayout } from "constant";
 import { Layout } from "../../style";
 
 const button = {
@@ -19,13 +19,13 @@ export default StyleSheet.create({
   },
   buttonLeft: {
     ...button,
-    marginLeft: PADDING_HORIZONTAL,
-    marginRight: PADDING_HORIZONTAL / 2,
+    marginLeft: ConstantsLayout.PADDING_HORIZONTAL,
+    marginRight: ConstantsLayout.PADDING_HORIZONTAL / 2,
   },
   buttonRight: {
     ...button,
-    marginRight: PADDING_HORIZONTAL,
-    marginLeft: PADDING_HORIZONTAL / 2,
+    marginRight: ConstantsLayout.PADDING_HORIZONTAL,
+    marginLeft: ConstantsLayout.PADDING_HORIZONTAL / 2,
   },
   textNoEmission: {
     paddingVertical: 20,
