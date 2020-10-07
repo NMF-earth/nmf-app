@@ -3,11 +3,12 @@ import React from "react";
 // import { TouchableOpacity } from "react-native";
 import { t } from "utils";
 
+import { Layout, ComponentsStyle } from "style";
+
 import { Text } from "../../components";
 // import { Ionicons } from "@expo/vector-icons";
 // import { PADDING_HORIZONTAL } from "../../constants/Layout";
 // import { Colors } from "style";
-import { Layout, ComponentsStyle } from "style";
 
 const navigationOptions = () => ({
   headerStyle: {

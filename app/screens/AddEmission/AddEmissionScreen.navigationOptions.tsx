@@ -5,9 +5,10 @@ import { useNavigation } from "@react-navigation/native";
 
 import { t } from "utils";
 
-import { Text } from "../../components";
 import { Colors, ComponentsStyle } from "style";
 import { navigate } from "navigation";
+
+import { Text } from "../../components";
 
 const navigationOptions = () => {
   const navigation = useNavigation();

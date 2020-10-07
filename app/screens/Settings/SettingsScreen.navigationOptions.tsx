@@ -3,8 +3,9 @@ import React from "react";
 // import { TouchableOpacity } from "react-native";
 import { t } from "utils";
 
-import { Text } from "../../components";
 import { Layout, ComponentsStyle } from "style";
+
+import { Text } from "../../components";
 
 const navigationOptions = () => ({
   headerStyle: {

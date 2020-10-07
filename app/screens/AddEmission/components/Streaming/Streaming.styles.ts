@@ -1,6 +1,7 @@
 import { StyleSheet } from "react-native";
 
 import { Layout } from "style";
+
 import { PADDING_HORIZONTAL } from "../../../../constants/Layout";
 
 const VERTICAL_PADDING_BETWEEN_ITEMS = 12;

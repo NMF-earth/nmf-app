@@ -1,6 +1,7 @@
 import { StyleSheet } from "react-native";
 
 import { Layout } from "style";
+
 import { PADDING_HORIZONTAL } from "../../constants/Layout";
 
 export default StyleSheet.create({

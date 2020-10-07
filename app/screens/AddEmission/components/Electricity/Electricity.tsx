@@ -7,8 +7,9 @@ import { electricity, ElectricityEnum } from "carbon-footprint";
 
 import { t } from "utils";
 
-import { Text } from "../../../../components";
 import { Colors } from "style";
+
+import { Text } from "../../../../components";
 import styles from "./Electricity.styles";
 
 const MIN_SLIDER_VALUE = 3.6 * Math.pow(10, 6);

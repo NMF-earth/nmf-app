@@ -1,7 +1,8 @@
 import { StyleSheet } from "react-native";
 
-import { PADDING_HORIZONTAL } from "../../constants/Layout";
 import { Layout } from "style";
+
+import { PADDING_HORIZONTAL } from "../../constants/Layout";
 
 const button = {
   flex: 1,

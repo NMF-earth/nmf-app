@@ -4,8 +4,9 @@ import { Svg, G, Path } from "react-native-svg";
 import Pie from "paths-js/pie";
 import { gt, lt, both, cond, always, __ } from "ramda";
 
-import styles from "./Chart.styles";
 import { Colors } from "style";
+
+import styles from "./Chart.styles";
 import { PADDING_HORIZONTAL, screen } from "../../../../../../constants/Layout";
 
 const chartWidth = screen.width / 2;

@@ -2,8 +2,9 @@ import React from "react";
 
 import { t } from "utils";
 
-import { Text } from "../../components";
 import { ComponentsStyle } from "style";
+
+import { Text } from "../../components";
 
 const navigationOptions = () => ({
   headerStyle: {

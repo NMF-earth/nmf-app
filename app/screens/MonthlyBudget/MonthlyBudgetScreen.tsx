@@ -9,11 +9,13 @@ import { budget } from "ducks";
 
 import { t } from "utils";
 
-import { Text, Button } from "../../components";
 import { Colors } from "style";
+
+import { navigate } from "navigation";
+
+import { Text, Button } from "../../components";
 import styles from "./MonthlyBudgetScreen.styles";
 import navigationOptions from "./MonthlyBudgetScreen.navigationOptions";
-import { navigate } from "navigation";
 
 const MIN_MONTHLY_CARBON_BUDGET = 0;
 const MAX_MONTHLY_CARBON_BUDGET = 1000;
