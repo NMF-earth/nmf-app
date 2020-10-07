@@ -13,7 +13,7 @@ jest.mock("@expo/vector-icons", () => {
 });
 
 jest.mock("react-redux", () => {
-  const createMock = require("utils").createMock;
+  const createMock = require("../../utils").createMock;
 
   return {
     useDispatch: () => jest.fn(),
@@ -24,7 +24,7 @@ jest.mock("react-redux", () => {
 });
 
 jest.mock("react-native-globalize", () => {
-  const createMock = require("utils").createMock;
+  const createMock = require("../../utils").createMock;
 
   return {
     FormattedProvider: createMock("FormattedProvider"),
