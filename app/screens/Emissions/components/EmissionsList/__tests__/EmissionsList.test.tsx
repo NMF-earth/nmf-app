@@ -1,5 +1,8 @@
 import React from "react";
-import renderer from "react-test-renderer";
+import { create } from "react-test-renderer";
+
+import { FoodEnum, TransportEnum } from "carbon-footprint";
+
 import EmissionsList from "../EmissionsList";
 import { selectors } from "../../../ducks";
 import emissions from "../../../../../ducks/emissions";
@@ -7,7 +10,6 @@ import {
   Emission as EmissionType,
   EmissionEnum,
 } from "../../../../../interfaces";
-import { FoodEnum, TransportEnum } from "carbon-footprint";
 
 jest.unmock("../EmissionsList");
 
@@ -60,13 +62,11 @@ const props = {
 };
 
 it("EmissionsList renders correctly", () => {
-  const tree = renderer.create(<EmissionsList {...props} />).toJSON();
+  const tree = create(<EmissionsList {...props} />).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
 it("EmissionsList renders correctly if no emissions", () => {
-  const tree = renderer
-    .create(<EmissionsList {...props} emissions={[]} />)
-    .toJSON();
+  const tree = create(<EmissionsList {...props} emissions={[]} />).toJSON();
   expect(tree).toMatchSnapshot();
 });

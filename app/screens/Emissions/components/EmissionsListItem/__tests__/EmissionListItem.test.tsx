@@ -1,8 +1,10 @@
 import React from "react";
-import renderer from "react-test-renderer";
-import EmissionsListItem from "../EmissionsListItem";
+import { create } from "react-test-renderer";
+
 import { FormattedProvider } from "react-native-globalize";
 import { FoodEnum, TransportEnum, StreamingEnum } from "carbon-footprint";
+
+import EmissionsListItem from "../EmissionsListItem";
 import { ui } from "../../../../../utils";
 
 jest.unmock("../EmissionsListItem");
@@ -18,254 +20,218 @@ const props = {
 };
 
 it("EmissionsListItem renders correctly if mitigated", () => {
-  const tree = renderer
-    .create(
-      <FormattedProvider locale="en">
-        <EmissionsListItem
-          {...props}
-          isMitigated
-          iconName={ui.getIconFromModelType(FoodEnum.redMeat)}
-        />
-      </FormattedProvider>
-    )
-    .toJSON();
+  const tree = create(
+    <FormattedProvider locale="en">
+      <EmissionsListItem
+        {...props}
+        isMitigated
+        iconName={ui.getIconFromModelType(FoodEnum.redMeat)}
+      />
+    </FormattedProvider>
+  ).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
 it("EmissionsListItem renders correctly with redMeat icon", () => {
-  const tree = renderer
-    .create(
-      <FormattedProvider locale="en">
-        <EmissionsListItem
-          {...props}
-          iconName={ui.getIconFromModelType(FoodEnum.redMeat)}
-        />
-      </FormattedProvider>
-    )
-    .toJSON();
+  const tree = create(
+    <FormattedProvider locale="en">
+      <EmissionsListItem
+        {...props}
+        iconName={ui.getIconFromModelType(FoodEnum.redMeat)}
+      />
+    </FormattedProvider>
+  ).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
 it("EmissionsListItem renders correctly with whiteMeat icon", () => {
-  const tree = renderer
-    .create(
-      <FormattedProvider locale="en">
-        <EmissionsListItem
-          {...props}
-          iconName={ui.getIconFromModelType(FoodEnum.whiteMeat)}
-        />
-      </FormattedProvider>
-    )
-    .toJSON();
+  const tree = create(
+    <FormattedProvider locale="en">
+      <EmissionsListItem
+        {...props}
+        iconName={ui.getIconFromModelType(FoodEnum.whiteMeat)}
+      />
+    </FormattedProvider>
+  ).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
 it("EmissionsListItem renders correctly with chocolate icon", () => {
-  const tree = renderer
-    .create(
-      <FormattedProvider locale="en">
-        <EmissionsListItem
-          {...props}
-          iconName={ui.getIconFromModelType(FoodEnum.chocolate)}
-        />
-      </FormattedProvider>
-    )
-    .toJSON();
+  const tree = create(
+    <FormattedProvider locale="en">
+      <EmissionsListItem
+        {...props}
+        iconName={ui.getIconFromModelType(FoodEnum.chocolate)}
+      />
+    </FormattedProvider>
+  ).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
 it("EmissionsListItem renders correctly with coffee icon", () => {
-  const tree = renderer
-    .create(
-      <FormattedProvider locale="en">
-        <EmissionsListItem
-          {...props}
-          iconName={ui.getIconFromModelType(FoodEnum.coffee)}
-        />
-      </FormattedProvider>
-    )
-    .toJSON();
+  const tree = create(
+    <FormattedProvider locale="en">
+      <EmissionsListItem
+        {...props}
+        iconName={ui.getIconFromModelType(FoodEnum.coffee)}
+      />
+    </FormattedProvider>
+  ).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
 it("EmissionsListItem renders correctly with fish icon", () => {
-  const tree = renderer
-    .create(
-      <FormattedProvider locale="en">
-        <EmissionsListItem
-          {...props}
-          iconName={ui.getIconFromModelType(FoodEnum.fish)}
-        />
-      </FormattedProvider>
-    )
-    .toJSON();
+  const tree = create(
+    <FormattedProvider locale="en">
+      <EmissionsListItem
+        {...props}
+        iconName={ui.getIconFromModelType(FoodEnum.fish)}
+      />
+    </FormattedProvider>
+  ).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
 it("EmissionsListItem renders correctly with boat icon", () => {
-  const tree = renderer
-    .create(
-      <FormattedProvider locale="en">
-        <EmissionsListItem
-          {...props}
-          iconName={ui.getIconFromModelType(TransportEnum.boat)}
-        />
-      </FormattedProvider>
-    )
-    .toJSON();
+  const tree = create(
+    <FormattedProvider locale="en">
+      <EmissionsListItem
+        {...props}
+        iconName={ui.getIconFromModelType(TransportEnum.boat)}
+      />
+    </FormattedProvider>
+  ).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
 it("EmissionsListItem renders correctly with bus icon", () => {
-  const tree = renderer
-    .create(
-      <FormattedProvider locale="en">
-        <EmissionsListItem
-          {...props}
-          iconName={ui.getIconFromModelType(TransportEnum.bus)}
-        />
-      </FormattedProvider>
-    )
-    .toJSON();
+  const tree = create(
+    <FormattedProvider locale="en">
+      <EmissionsListItem
+        {...props}
+        iconName={ui.getIconFromModelType(TransportEnum.bus)}
+      />
+    </FormattedProvider>
+  ).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
 it("EmissionsListItem renders correctly with car icon", () => {
-  const tree = renderer
-    .create(
-      <FormattedProvider locale="en">
-        <EmissionsListItem
-          {...props}
-          iconName={ui.getIconFromModelType(TransportEnum.car)}
-        />
-      </FormattedProvider>
-    )
-    .toJSON();
+  const tree = create(
+    <FormattedProvider locale="en">
+      <EmissionsListItem
+        {...props}
+        iconName={ui.getIconFromModelType(TransportEnum.car)}
+      />
+    </FormattedProvider>
+  ).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
 it("EmissionsListItem renders correctly with longHaulFlight icon", () => {
-  const tree = renderer
-    .create(
-      <FormattedProvider locale="en">
-        <EmissionsListItem
-          {...props}
-          iconName={ui.getIconFromModelType(TransportEnum.longHaulFlight)}
-        />
-      </FormattedProvider>
-    )
-    .toJSON();
+  const tree = create(
+    <FormattedProvider locale="en">
+      <EmissionsListItem
+        {...props}
+        iconName={ui.getIconFromModelType(TransportEnum.longHaulFlight)}
+      />
+    </FormattedProvider>
+  ).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
 it("EmissionsListItem renders correctly with mediumHaulFlight icon", () => {
-  const tree = renderer
-    .create(
-      <FormattedProvider locale="en">
-        <EmissionsListItem
-          {...props}
-          iconName={ui.getIconFromModelType(TransportEnum.mediumHaulFlight)}
-        />
-      </FormattedProvider>
-    )
-    .toJSON();
+  const tree = create(
+    <FormattedProvider locale="en">
+      <EmissionsListItem
+        {...props}
+        iconName={ui.getIconFromModelType(TransportEnum.mediumHaulFlight)}
+      />
+    </FormattedProvider>
+  ).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
 it("EmissionsListItem renders correctly with motorbike icon", () => {
-  const tree = renderer
-    .create(
-      <FormattedProvider locale="en">
-        <EmissionsListItem
-          {...props}
-          iconName={ui.getIconFromModelType(TransportEnum.motorbike)}
-        />
-      </FormattedProvider>
-    )
-    .toJSON();
+  const tree = create(
+    <FormattedProvider locale="en">
+      <EmissionsListItem
+        {...props}
+        iconName={ui.getIconFromModelType(TransportEnum.motorbike)}
+      />
+    </FormattedProvider>
+  ).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
 it("EmissionsListItem renders correctly with shortHaulFlight icon", () => {
-  const tree = renderer
-    .create(
-      <FormattedProvider locale="en">
-        <EmissionsListItem
-          {...props}
-          iconName={ui.getIconFromModelType(TransportEnum.shortHaulFlight)}
-        />
-      </FormattedProvider>
-    )
-    .toJSON();
+  const tree = create(
+    <FormattedProvider locale="en">
+      <EmissionsListItem
+        {...props}
+        iconName={ui.getIconFromModelType(TransportEnum.shortHaulFlight)}
+      />
+    </FormattedProvider>
+  ).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
 it("EmissionsListItem renders correctly with train icon", () => {
-  const tree = renderer
-    .create(
-      <FormattedProvider locale="en">
-        <EmissionsListItem
-          {...props}
-          iconName={ui.getIconFromModelType(TransportEnum.train)}
-        />
-      </FormattedProvider>
-    )
-    .toJSON();
+  const tree = create(
+    <FormattedProvider locale="en">
+      <EmissionsListItem
+        {...props}
+        iconName={ui.getIconFromModelType(TransportEnum.train)}
+      />
+    </FormattedProvider>
+  ).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
 it("EmissionsListItem renders correctly with hd video icon", () => {
-  const tree = renderer
-    .create(
-      <FormattedProvider locale="en">
-        <EmissionsListItem
-          {...props}
-          iconName={ui.getIconFromModelType(StreamingEnum.HDVideo)}
-        />
-      </FormattedProvider>
-    )
-    .toJSON();
+  const tree = create(
+    <FormattedProvider locale="en">
+      <EmissionsListItem
+        {...props}
+        iconName={ui.getIconFromModelType(StreamingEnum.HDVideo)}
+      />
+    </FormattedProvider>
+  ).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
 it("EmissionsListItem renders correctly with audio icon", () => {
-  const tree = renderer
-    .create(
-      <FormattedProvider locale="en">
-        <EmissionsListItem
-          {...props}
-          iconName={ui.getIconFromModelType(StreamingEnum.audioMP3)}
-        />
-      </FormattedProvider>
-    )
-    .toJSON();
+  const tree = create(
+    <FormattedProvider locale="en">
+      <EmissionsListItem
+        {...props}
+        iconName={ui.getIconFromModelType(StreamingEnum.audioMP3)}
+      />
+    </FormattedProvider>
+  ).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
 it("EmissionsListItem renders correctly with full hd video icon", () => {
-  const tree = renderer
-    .create(
-      <FormattedProvider locale="en">
-        <EmissionsListItem
-          {...props}
-          iconName={ui.getIconFromModelType(StreamingEnum.fullHDVideo)}
-        />
-      </FormattedProvider>
-    )
-    .toJSON();
+  const tree = create(
+    <FormattedProvider locale="en">
+      <EmissionsListItem
+        {...props}
+        iconName={ui.getIconFromModelType(StreamingEnum.fullHDVideo)}
+      />
+    </FormattedProvider>
+  ).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
 it("EmissionsListItem renders correctly with ultra hd video icon", () => {
-  const tree = renderer
-    .create(
-      <FormattedProvider locale="en">
-        <EmissionsListItem
-          {...props}
-          iconName={ui.getIconFromModelType(StreamingEnum.ultraHDVideo)}
-        />
-      </FormattedProvider>
-    )
-    .toJSON();
+  const tree = create(
+    <FormattedProvider locale="en">
+      <EmissionsListItem
+        {...props}
+        iconName={ui.getIconFromModelType(StreamingEnum.ultraHDVideo)}
+      />
+    </FormattedProvider>
+  ).toJSON();
   expect(tree).toMatchSnapshot();
 });

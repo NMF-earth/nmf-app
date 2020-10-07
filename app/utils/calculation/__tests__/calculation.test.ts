@@ -9,6 +9,7 @@ import {
   electricity,
   getInternetUsageCarbonImpact,
 } from "carbon-footprint";
+
 import calculation from "../";
 import { Emission, EmissionEnum } from "../../../interfaces";
 

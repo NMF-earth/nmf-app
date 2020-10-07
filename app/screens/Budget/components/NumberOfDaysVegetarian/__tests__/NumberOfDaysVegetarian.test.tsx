@@ -1,10 +1,11 @@
 import React from "react";
-import renderer from "react-test-renderer";
+import { create } from "react-test-renderer";
+
 import NumberOfDaysVegetarian from "../NumberOfDaysVegetarian";
 
 jest.unmock("../NumberOfDaysVegetarian");
 
 it("NumberOfDaysVegetarian renders correctly", () => {
-  const tree = renderer.create(<NumberOfDaysVegetarian />).toJSON();
+  const tree = create(<NumberOfDaysVegetarian />).toJSON();
   expect(tree).toMatchSnapshot();
 });

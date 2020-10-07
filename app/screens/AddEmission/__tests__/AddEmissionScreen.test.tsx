@@ -1,8 +1,10 @@
 import React from "react";
-import renderer from "react-test-renderer";
+import { create } from "react-test-renderer";
+
+import { FormattedProvider } from "react-native-globalize";
+
 import AddEmissionScreen from "../AddEmissionScreen";
 import { emissions } from "../../../ducks";
-import { FormattedProvider } from "react-native-globalize";
 
 const props = {
   navigation: {
@@ -22,18 +24,16 @@ afterAll(() => {
 });
 
 it("AddEmissionScreen renders correctly", () => {
-  const tree = renderer
-    .create(
-      <FormattedProvider locale="en">
-        <AddEmissionScreen {...props} />
-      </FormattedProvider>
-    )
-    .toJSON();
+  const tree = create(
+    <FormattedProvider locale="en">
+      <AddEmissionScreen {...props} />
+    </FormattedProvider>
+  ).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
 it("AddEmissionScreen should go back and call usedispatch if save button is pressed", () => {
-  const root = renderer.create(
+  const root = create(
     <FormattedProvider locale="en">
       <AddEmissionScreen {...props} />
     </FormattedProvider>

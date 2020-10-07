@@ -1,5 +1,6 @@
 import React from "react";
-import renderer from "react-test-renderer";
+import { create } from "react-test-renderer";
+
 import Chart from "../Chart";
 
 const props = {
@@ -11,6 +12,6 @@ const props = {
 jest.unmock("../Chart");
 
 it("Chart renders correctly", () => {
-  const tree = renderer.create(<Chart {...props} />).toJSON();
+  const tree = create(<Chart {...props} />).toJSON();
   expect(tree).toMatchSnapshot();
 });

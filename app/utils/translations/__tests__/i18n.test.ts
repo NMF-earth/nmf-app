@@ -1,4 +1,5 @@
 import i18n from "i18n-js";
+
 import { t } from "..";
 
 const en = {

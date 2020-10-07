@@ -6,6 +6,7 @@ import {
   ElectricityEnum,
 } from "carbon-footprint";
 import { contains, __ } from "ramda";
+
 import { EmissionEnum } from "../../interfaces";
 import { t } from "../translations";
 

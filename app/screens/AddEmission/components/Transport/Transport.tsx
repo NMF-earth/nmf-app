@@ -3,12 +3,12 @@ import { View, ScrollView } from "react-native";
 import Slider from "@react-native-community/slider";
 import { FormattedNumber } from "react-native-globalize";
 
+import { transport, TransportEnum } from "carbon-footprint";
+
 import styles from "./Transport.styles";
 import { Text, Tag } from "../../../../components";
 import { Colors } from "../../../../style";
-import { t, time, ui } from "../../../../utils";
-import { transport, TransportEnum } from "carbon-footprint";
-import { calculation } from "../../../../utils";
+import { t, time, ui, calculation } from "../../../../utils";
 
 const MIN_SLIDER_VALUE = 2;
 const MAX_SLIDER_VALUE = 1000;

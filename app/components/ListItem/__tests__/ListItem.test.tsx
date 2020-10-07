@@ -1,6 +1,6 @@
 import "react-native";
 import React from "react";
-import renderer from "react-test-renderer";
+import { create } from "react-test-renderer";
 
 import ListItem from "../ListItem";
 
@@ -12,7 +12,7 @@ describe("<ListItem />", () => {
       // do nothing.
     },
   };
-  const wrapper = renderer.create(<ListItem {...defaultProps} />);
+  const wrapper = create(<ListItem {...defaultProps} />);
 
   test("render", () => {
     expect(wrapper).toMatchSnapshot();

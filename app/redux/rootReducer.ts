@@ -1,4 +1,5 @@
 import { combineReducers } from "@reduxjs/toolkit";
+
 import emissions from "../ducks/emissions";
 import budget from "../ducks/budget";
 import userPreferences from "../ducks/userPreferences";

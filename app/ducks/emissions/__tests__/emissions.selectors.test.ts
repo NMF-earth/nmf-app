@@ -1,11 +1,12 @@
-import emissions from "../";
-import { Emission as EmissionType, EmissionEnum } from "../../../interfaces";
 import {
   FoodEnum,
   TransportEnum,
   StreamingEnum,
   ElectricityEnum,
 } from "carbon-footprint";
+
+import emissions from "../";
+import { Emission as EmissionType, EmissionEnum } from "../../../interfaces";
 
 let state;
 

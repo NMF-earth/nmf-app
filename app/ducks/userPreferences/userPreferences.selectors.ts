@@ -1,5 +1,6 @@
 import { pathOr } from "ramda";
 import { ElectricityEnum } from "carbon-footprint";
+
 import { namespace } from "./userPreferences.slice";
 
 const getAcceptedTermsOfUseVersion = (state) =>

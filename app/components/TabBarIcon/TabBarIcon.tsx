@@ -1,5 +1,6 @@
 import React, { ReactElement } from "react";
 import { Ionicons } from "@expo/vector-icons";
+
 import { Colors } from "../../style";
 
 interface Props {
