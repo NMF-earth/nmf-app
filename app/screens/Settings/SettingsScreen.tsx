@@ -73,7 +73,7 @@ const SettingsScreen = (props) => {
       </TouchableWithoutFeedback>
       <Text.Tertiary bold lightGray style={styles.appVersionTitle}>
         {t("SETTINGS_SCREEN_APP_VERSION", {
-          version: manifest.version,
+          version: Constants.manifest.version,
         })}
       </Text.Tertiary>
       <SocialMedia />
