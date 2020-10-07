@@ -5,7 +5,7 @@ import { FoodEnum, TransportEnum } from "carbon-footprint";
 
 import emissions from "ducks/emissions";
 
-import { selectors } from "screens/Emissions/ducks";
+import { selectors } from "../../../../../screens/Emissions/ducks";
 
 import EmissionsList from "../EmissionsList";
 import {
