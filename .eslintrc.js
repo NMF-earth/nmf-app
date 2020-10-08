@@ -9,6 +9,9 @@ module.exports = {
         "plugin:@typescript-eslint/recommended",
         "plugin:react/recommended",
         "plugin:jest/recommended",
+        "plugin:import/errors",
+        "plugin:import/warnings",
+        "plugin:import/typescript",
         "prettier/@typescript-eslint",
         "plugin:prettier/recommended"
     ],
@@ -28,7 +31,10 @@ module.exports = {
     settings: {
         react: {
             version: "detect"
-        }
+        },
+        "import/resolver": {
+            "typescript": {} // this loads <rootdir>/tsconfig.json to eslint
+          },
     },
     "plugins": [
         "react",
@@ -39,6 +45,19 @@ module.exports = {
         "@typescript-eslint/explicit-function-return-type": [0],
         "quotes": [2, "double"],
         "react/display-name": [0],
-        "react/prop-types": [0]
+        "react/prop-types": [0],
+        "import/namespace": 0,
+        "import/no-named-as-default-member": 0,
+        "import/order": [
+          "error",
+          {
+            groups: [
+              ["external", "builtin"],
+              "internal",
+              ["parent", "sibling", "index"],
+            ],
+            "newlines-between": "always-and-inside-groups",
+          },
+        ],
     }
 };

@@ -1,6 +1,7 @@
 import React from "react";
 import { View } from "react-native";
 import { useSelector } from "react-redux";
+
 import { Text } from "../../../../components";
 import styles from "./NumberOfDaysVegetarian.styles";
 import { selectors } from "./ducks";

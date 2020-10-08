@@ -1,6 +1,8 @@
 import { StyleSheet } from "react-native";
-import { Layout } from "../../../../style";
+
 import { Layout as ConstantsLayout } from "constant";
+
+import { Layout } from "../../../../style";
 
 const VERTICAL_PADDING_BETWEEN_ITEMS = 12;
 const separationContainers = {

@@ -1,5 +1,6 @@
 import * as Localization from "expo-localization";
 import i18n from "i18n-js";
+
 import { en, de, fr, sv, TranslationKeys } from "./resources";
 
 // Configure

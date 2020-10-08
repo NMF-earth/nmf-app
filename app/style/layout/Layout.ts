@@ -1,5 +1,7 @@
 import { StyleSheet } from "react-native";
+
 import { Layout } from "constant";
+
 import { platform } from "../../utils";
 import { Colors } from "../colors";
 

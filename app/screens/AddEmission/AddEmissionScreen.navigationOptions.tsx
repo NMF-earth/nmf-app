@@ -1,9 +1,11 @@
 import React from "react";
 import { Ionicons } from "@expo/vector-icons";
+
+import { useNavigation } from "@react-navigation/native";
+
 import { Text } from "../../components";
 import { t } from "../../utils";
 import { Colors, ComponentsStyle } from "../../style";
-import { useNavigation } from "@react-navigation/native";
 import { navigate } from "../../navigation";
 
 const navigationOptions = () => {
@@ -22,7 +24,7 @@ const navigationOptions = () => {
         size={26}
         style={{ marginRight: 10 }}
         color={Colors.grey100}
-        onPress={navigator.methodology}
+        onPress={navigator.openMethodology}
       />
     ),
     headerTitle: () => <Text.H1>{t("ADD_EMISSION_TITLE")}</Text.H1>,

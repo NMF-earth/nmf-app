@@ -1,5 +1,6 @@
 import { map, pipe, groupBy, toPairs, sum } from "ramda";
 import moment from "moment";
+
 import { emissions } from "../../../ducks";
 import { Emission } from "../../../interfaces";
 import { calculation, ui } from "../../../utils";

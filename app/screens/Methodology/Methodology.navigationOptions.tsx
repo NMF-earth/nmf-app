@@ -1,8 +1,10 @@
 import React from "react";
 import { View } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { Colors, ComponentsStyle } from "../../style";
+
 import { Layout } from "constant";
+
+import { Colors, ComponentsStyle } from "../../style";
 import { navigate } from "../../navigation";
 import { platform, t } from "../../utils";
 import { Text } from "../../components";

@@ -3,9 +3,11 @@ import { View } from "react-native";
 import { Svg, G, Path } from "react-native-svg";
 import Pie from "paths-js/pie";
 import { gt, lt, both, cond, always, __ } from "ramda";
+
+import { Layout } from "constant";
+
 import styles from "./Chart.styles";
 import { Colors } from "../../../../../../style";
-import { Layout } from "constant";
 
 const chartWidth = Layout.screen.width / 2;
 const chartHeight = chartWidth;

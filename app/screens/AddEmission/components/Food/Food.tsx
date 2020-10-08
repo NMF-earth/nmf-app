@@ -3,6 +3,7 @@ import { View, ScrollView } from "react-native";
 import Slider from "@react-native-community/slider";
 import { FormattedNumber } from "react-native-globalize";
 import { FoodEnum, food } from "carbon-footprint";
+
 import styles from "./Food.styles";
 import { Text, Tag } from "../../../../components";
 import { Colors } from "../../../../style";

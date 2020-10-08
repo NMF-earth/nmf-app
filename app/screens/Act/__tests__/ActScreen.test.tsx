@@ -1,5 +1,6 @@
 import React from "react";
-import renderer from "react-test-renderer";
+import { create } from "react-test-renderer";
+
 import ActScreen from "../ActScreen";
 import { GuideCategory } from "../../../types/guide";
 
@@ -15,6 +16,6 @@ const props = {
 };
 
 it("ActScreen renders correctly", () => {
-  const tree = renderer.create(<ActScreen {...props} />).toJSON();
+  const tree = create(<ActScreen {...props} />).toJSON();
   expect(tree).toMatchSnapshot();
 });

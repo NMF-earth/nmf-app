@@ -1,5 +1,6 @@
 import React from "react";
-import renderer from "react-test-renderer";
+import { create } from "react-test-renderer";
+
 import SettingsScreen from "../SettingsScreen";
 
 const props = {
@@ -9,6 +10,6 @@ const props = {
 };
 
 it("SettingsScreen renders correctly", () => {
-  const tree = renderer.create(<SettingsScreen {...props} />).toJSON();
+  const tree = create(<SettingsScreen {...props} />).toJSON();
   expect(tree).toMatchSnapshot();
 });

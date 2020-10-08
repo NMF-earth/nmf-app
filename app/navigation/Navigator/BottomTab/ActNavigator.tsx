@@ -1,5 +1,6 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
+
 import ActTabNavigator from "./ActTabNavigator";
 import ActDetailScreen from "../../../screens/ActDetail";
 

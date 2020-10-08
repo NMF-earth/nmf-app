@@ -2,6 +2,7 @@ import React from "react";
 import { View, TouchableOpacity } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { FormattedNumber } from "react-native-globalize";
+
 import { Colors } from "../../../../style";
 import styles from "./EmissionsListItem.styles";
 import { Text } from "../../../../components";

@@ -1,5 +1,6 @@
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+
 import { Colors } from "../../style";
 
 import TabBarIcon from "../../components/TabBarIcon";
@@ -40,7 +41,7 @@ const SettingsOptions = {
   ),
 };
 
-const MainTabNavigator = (): React.ReactElement => (
+const BottomTabNavigator = (): React.ReactElement => (
   <BottomTab.Navigator
     tabBarOptions={{
       activeTintColor: Colors.green50,
@@ -75,4 +76,4 @@ const MainTabNavigator = (): React.ReactElement => (
   </BottomTab.Navigator>
 );
 
-export default MainTabNavigator;
+export default BottomTabNavigator;

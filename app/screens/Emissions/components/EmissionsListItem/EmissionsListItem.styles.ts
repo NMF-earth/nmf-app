@@ -1,5 +1,7 @@
 import { StyleSheet, ViewStyle } from "react-native";
+
 import { Layout } from "constant";
+
 import { Colors } from "../../../../style";
 
 const CIRCLE_WIDTH = 34;

@@ -1,6 +1,7 @@
 import React from "react";
 import { SectionList, View } from "react-native";
 import { useNavigation } from "@react-navigation/native";
+
 import EmissionsListItem from "../EmissionsListItem";
 import EmissionsListItemProps from "../EmissionsListItem/EmissionsListItemProps";
 import SectionHeader from "../SectionHeader";

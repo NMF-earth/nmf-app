@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { TextInput as TextInputRN, View, TouchableOpacity } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+
 import { Colors } from "../../style";
 import Text from "../Text";
 import styles from "./TextInput.styles";

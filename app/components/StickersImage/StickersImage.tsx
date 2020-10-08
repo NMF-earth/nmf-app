@@ -1,7 +1,9 @@
 import React from "react";
 import { View, Image } from "react-native";
-import styles from "./StickersImage.styles";
+
 import { ImagesAssets } from "constant";
+
+import styles from "./StickersImage.styles";
 
 interface Prop {
   sticker: "restaurant" | "bike" | "earth";

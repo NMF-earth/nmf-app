@@ -1,5 +1,7 @@
 import { StyleSheet } from "react-native";
+
 import { Layout as ConstantsLayout } from "constant";
+
 import { Layout } from "../../style";
 
 const button = {
