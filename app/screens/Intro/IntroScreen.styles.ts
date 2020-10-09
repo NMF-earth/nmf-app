@@ -1,6 +1,7 @@
 import { StyleSheet } from "react-native";
 
-import { PADDING_HORIZONTAL } from "../../constants/Layout";
+import { Layout as ConstantsLayout } from "constant";
+
 import { Layout } from "../../style";
 
 export default StyleSheet.create({
@@ -9,7 +10,7 @@ export default StyleSheet.create({
     justifyContent: "space-between",
   },
   termsOfUseView: {
-    paddingHorizontal: PADDING_HORIZONTAL,
+    paddingHorizontal: ConstantsLayout.PADDING_HORIZONTAL,
     alignItems: "center",
     flex: 2,
   },
@@ -19,10 +20,10 @@ export default StyleSheet.create({
   },
   buttonView: {
     position: "absolute",
-    bottom: PADDING_HORIZONTAL,
+    bottom: ConstantsLayout.PADDING_HORIZONTAL,
     right: 0,
     left: 0,
-    marginHorizontal: PADDING_HORIZONTAL,
+    marginHorizontal: ConstantsLayout.PADDING_HORIZONTAL,
   },
   imageView: {
     flex: 2,

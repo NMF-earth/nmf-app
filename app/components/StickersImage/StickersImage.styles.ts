@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 
-import { screen } from "../../constants/Layout";
+import { Layout } from "constant";
 
 const styles = StyleSheet.create({
   container: {
@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
     alignSelf: "center",
     maxWidth: 320,
     width: "100%",
-    height: screen.width - 100,
+    height: Layout.screen.width - 100,
   },
 });
 

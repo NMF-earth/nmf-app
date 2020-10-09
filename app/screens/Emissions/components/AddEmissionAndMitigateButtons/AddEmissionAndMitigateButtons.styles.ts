@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 
-import { PADDING_HORIZONTAL } from "../../../../constants/Layout";
+import { Layout } from "constant";
 
 const button = {
   flex: 1,
@@ -16,12 +16,12 @@ export default StyleSheet.create({
   },
   buttonLeft: {
     ...button,
-    marginLeft: PADDING_HORIZONTAL,
-    marginRight: PADDING_HORIZONTAL / 2,
+    marginLeft: Layout.PADDING_HORIZONTAL,
+    marginRight: Layout.PADDING_HORIZONTAL / 2,
   },
   buttonRight: {
     ...button,
-    marginRight: PADDING_HORIZONTAL,
-    marginLeft: PADDING_HORIZONTAL / 2,
+    marginRight: Layout.PADDING_HORIZONTAL,
+    marginLeft: Layout.PADDING_HORIZONTAL / 2,
   },
 });

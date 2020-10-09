@@ -1,7 +1,8 @@
 import { StyleSheet } from "react-native";
 
+import { Layout as ConstantsLayout } from "constant";
+
 import { Colors, Layout } from "../../style";
-import { PADDING_HORIZONTAL } from "../../constants/Layout";
 
 export default StyleSheet.create({
   container: {
@@ -21,7 +22,7 @@ export default StyleSheet.create({
     flexDirection: "row",
   },
   tagContainer: {
-    paddingLeft: PADDING_HORIZONTAL,
+    paddingLeft: ConstantsLayout.PADDING_HORIZONTAL,
     flexDirection: "row",
   },
   changeBtn: {
