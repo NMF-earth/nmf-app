@@ -2,13 +2,14 @@ import React from "react";
 import { View } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
+import { Layout } from "constant";
+
 import { Colors, ComponentsStyle } from "../../style";
-import { PADDING_HORIZONTAL } from "../../constants/Layout";
 import { navigate } from "../../navigation";
 import { platform, t } from "../../utils";
 import { Text } from "../../components";
 
-const iconStyle = { paddingRight: PADDING_HORIZONTAL };
+const iconStyle = { paddingRight: Layout.PADDING_HORIZONTAL };
 
 const navigationOptionsAndroid = () => ({
   ...ComponentsStyle.transitionBetweenScreenPresets,

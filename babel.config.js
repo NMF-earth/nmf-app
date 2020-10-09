@@ -11,6 +11,7 @@ module.exports = function(api) {
           alias: {
             "components": "./app/components",
             "utils": "./app/utils",
+            "constant": "./app/constant"
           }
         }
       ]

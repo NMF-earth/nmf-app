@@ -1,6 +1,7 @@
 import { StyleSheet, ViewStyle } from "react-native";
 
-import { PADDING_HORIZONTAL } from "../../../../constants/Layout";
+import { Layout } from "constant";
+
 import { Colors } from "../../../../style";
 
 const CIRCLE_WIDTH = 34;
@@ -22,15 +23,15 @@ export default StyleSheet.create({
   },
   textContainer: {
     flex: 1,
-    marginLeft: PADDING_HORIZONTAL * 2 + CIRCLE_WIDTH,
+    marginLeft: Layout.PADDING_HORIZONTAL * 2 + CIRCLE_WIDTH,
   },
   icon: {
-    marginHorizontal: PADDING_HORIZONTAL,
+    marginHorizontal: Layout.PADDING_HORIZONTAL,
   },
   iconContainer: {
     position: "absolute",
-    marginLeft: PADDING_HORIZONTAL / 2,
-    marginRight: PADDING_HORIZONTAL / 2,
+    marginLeft: Layout.PADDING_HORIZONTAL / 2,
+    marginRight: Layout.PADDING_HORIZONTAL / 2,
     justifyContent: "center",
     alignItems: "center",
   },

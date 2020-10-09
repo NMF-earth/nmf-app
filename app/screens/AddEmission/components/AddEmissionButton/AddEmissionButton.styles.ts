@@ -1,9 +1,9 @@
 import { StyleSheet } from "react-native";
 
-import { PADDING_HORIZONTAL } from "../../../../constants/Layout";
+import { Layout } from "constant";
 
 export default StyleSheet.create({
   button: {
-    margin: PADDING_HORIZONTAL,
+    margin: Layout.PADDING_HORIZONTAL,
   },
 });

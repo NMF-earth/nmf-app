@@ -3,18 +3,21 @@ import { SafeAreaView, View, TouchableOpacity } from "react-native";
 import * as WebBrowser from "expo-web-browser";
 import { useDispatch } from "react-redux";
 
-import { Text, Button, StickersImage } from "../../components";
+import { Text, Button, StickersImage } from "components";
+
 import styles from "./IntroScreen.styles";
 import { t } from "../../utils";
 import { userPreferences } from "../../ducks";
-import { currentTermsOfUseVersion } from "../../constants/Preferences";
+import { Preferences } from "../../constant";
 
 const IntroScreen = () => {
   const dispatch = useDispatch();
 
   const onPress = () => {
     dispatch(
-      userPreferences.actions.acceptTermsOfUse(currentTermsOfUseVersion)
+      userPreferences.actions.acceptTermsOfUse(
+        Preferences.currentTermsOfUseVersion
+      )
     );
   };
 

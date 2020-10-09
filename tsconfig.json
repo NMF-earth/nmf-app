@@ -13,6 +13,7 @@
       "*": ["app/*"],
       "components/*": ["app/components/*"],
       "utils/*": ["app/utils/*"],
+      "constant/*": ["app/constant/*"], 
     },
   }
 }

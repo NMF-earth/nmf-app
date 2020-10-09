@@ -1,4 +1,4 @@
-import { isSmallDevice } from "../../constants/Layout";
+import { Layout } from "constant";
 
 const FontWeight = {
   Black: "Inter-Black",
@@ -25,7 +25,9 @@ const FontSizeSmallDevice = {
   Tertiary: 12,
 };
 
-const FontSize = isSmallDevice ? FontSizeSmallDevice : FontSizeNormalDevice;
+const FontSize = Layout.isSmallDevice
+  ? FontSizeSmallDevice
+  : FontSizeNormalDevice;
 
 const Font = { FontWeight, FontSize };
 
