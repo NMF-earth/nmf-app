@@ -50,6 +50,7 @@ const BottomTabNavigator = (): React.ReactElement => (
         paddingTop: 6,
         backgroundColor: Colors.green10,
         borderTopWidth: 0,
+        paddingBottom: 6,
       },
     }}
   >
