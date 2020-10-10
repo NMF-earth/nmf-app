@@ -1,7 +1,7 @@
 {
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "preinstall": "npx only-allow yarn",
+    "preinstall": "node scripts/preinstall.js",
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
@@ -109,7 +109,6 @@
     "eslint-plugin-react": "7.17.0",
     "eslint-plugin-react-hooks": "4.1.2",
     "jest-expo": "39.0.0",
-    "only-allow": "1.0.0",
     "prettier": "2.1.2",
     "react-native-storybook-loader": "1.8.1"
   },
