@@ -6,4 +6,7 @@ export default StyleSheet.create({
   container: {
     ...Layout.containerWithPadding,
   },
+  comingSoonText: {
+    paddingTop: 10,
+  },
 });

@@ -2,7 +2,8 @@ import React from "react";
 import { FlatList } from "react-native";
 import { filter, pathEq } from "ramda";
 
-import { ListItem } from "../../components";
+import { ListItem, Text } from "components";
+
 import { Guide } from "../../types/guide";
 import Guides from "../../../assets/guides/guides.json";
 import navigationOptions from "./ActScreen.navigationOptions";
@@ -30,6 +31,11 @@ const ActScreen = (props) => {
       data={data}
       renderItem={renderItem}
       keyExtractor={(item) => item.title}
+      ListFooterComponent={
+        <Text.Tertiary style={styles.comingSoonText} center lightGray>
+          More coming soon! Stay tuned ✌️
+        </Text.Tertiary>
+      }
     />
   );
 };
