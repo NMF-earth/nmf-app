@@ -24,7 +24,7 @@ const AddEmissionAndMitigateButtons = () => {
       </Button.Secondary>
       <Button.Primary
         style={styles.buttonRight}
-        onPress={navigator.openAddEmission}
+        onPress={() => navigator.openAddEmission()}
         textType={"Secondary"}
       >
         <Text.Secondary numberOfLines={1} center white bold>
