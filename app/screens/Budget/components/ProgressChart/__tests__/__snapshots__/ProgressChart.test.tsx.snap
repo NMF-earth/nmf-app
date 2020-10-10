@@ -4,13 +4,17 @@ exports[`ProgressChart renders correctly 1`] = `
 <View
   style={
     Object {
+      "alignItems": "center",
+      "alignSelf": "center",
       "backgroundColor": "#FFFFFF",
       "borderColor": "#DCF0E5",
       "borderRadius": 14,
       "borderWidth": 2,
       "flex": 1,
+      "justifyContent": "center",
       "marginHorizontal": 0,
       "marginVertical": 24,
+      "maxWidth": 500,
       "paddingBottom": 14,
       "paddingHorizontal": 14,
       "paddingTop": 10,
