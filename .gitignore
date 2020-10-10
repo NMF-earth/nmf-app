@@ -312,6 +312,9 @@ typings/
 # Yarn Integrity file
 .yarn-integrity
 
+# We don't want package-lock.json accidentally commited, since we are using Yarn
+package-lock.json
+
 # dotenv environment variables file
 .env
 
