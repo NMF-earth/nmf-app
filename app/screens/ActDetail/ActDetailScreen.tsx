@@ -1,5 +1,10 @@
 import React from "react";
-import { Dimensions, ScrollView } from "react-native";
+import {
+  Dimensions,
+  ScrollView,
+  Linking,
+  GestureResponderEvent,
+} from "react-native";
 import HTML from "react-native-render-html";
 
 import { HTMLImage } from "../../components";
@@ -14,6 +19,9 @@ const ActDetailScreen = (props) => {
       <HTML
         html={body}
         imagesMaxWidth={Dimensions.get("window").width}
+        onLinkPress={(_: GestureResponderEvent, link: string) => {
+          Linking.openURL(link);
+        }}
         renderers={{
           img: (attribs) => {
             const [img] = attribs.src.split(".");
