@@ -25,7 +25,7 @@ export default function NoEmission() {
         <Button.Primary
           fullWidth
           style={styles.button}
-          onPress={navigator.openAddEmission}
+          onPress={() => navigator.openAddEmission()}
           textType={"Primary"}
         >
           <Text.Primary bold white>
