@@ -49,13 +49,13 @@ exports[`ActScreen renders correctly 1`] = `
 <p>They are several browser add-ons, mainly for Chrome and Firefox, that can help you decrease and understand better your digital carbon emissions.</p>
 <ul>
 <li>
-<p><a href=\\"https://addons.mozilla.org/en-US/firefox/addon/carbonalyser/\\">Carbon analyser</a>: excellent plugin that will help you to have an idea on what you emit when you browse the internet. It shows a chart of your main emissions so you can act on it. Open-source and made by the awesome french assiociation the Shift Project.</p>
+<a href=\\"https://addons.mozilla.org/en-US/firefox/addon/carbonalyser/\\">Carbon analyser</a>: excellent plugin that will help you to have an idea on what you emit when you browse the internet. It shows a chart of your main emissions so you can act on it. Open-source and made by the awesome french assiociation the Shift Project.
 </li>
 <li>
-<p><strong><a href=\\"https://addons.mozilla.org/fr/firefox/addon/low-web-extension/\\">Low Tech</a></strong>: open-source extension aims to reduce our datas and limit the energy consumption of our Internet browsing. For example, when possible, video quality is set to low quality, autoplay and loop parameters are disabled. If it's possible, quality of images is decreased or loading delayed and animated gif only plays when hovering them. Some &quot;superfluous&quot; content can also be blocked like share and like button, avatar images or fonts. <strong>100 % approved and recommended by the NMF.earth team!</strong></p>
+<strong><a href=\\"https://addons.mozilla.org/fr/firefox/addon/low-web-extension/\\">Low Tech</a></strong>: open-source extension aims to reduce our datas and limit the energy consumption of our Internet browsing. For example, when possible, video quality is set to low quality, autoplay and loop parameters are disabled. If it's possible, quality of images is decreased or loading delayed and animated gif only plays when hovering them. Some &quot;superfluous&quot; content can also be blocked like share and like button, avatar images or fonts. <strong>100 % approved and recommended by the NMF.earth team!</strong>
 </li>
 <li>
-<p><a href=\\"https://addons.mozilla.org/fr/firefox/addon/bare-tracker\\">Bare Tracker</a>: helps peoples get a barer, lighter browsing experience by informing them about their browsing environmental impact. Similar to carbon analyser.</p>
+<a href=\\"https://addons.mozilla.org/fr/firefox/addon/bare-tracker\\">Bare Tracker</a>: helps peoples get a barer, lighter browsing experience by informing them about their browsing environmental impact. Similar to carbon analyser.
 </li>
 </ul>
 ",
