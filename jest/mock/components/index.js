@@ -32,10 +32,6 @@ jest.mock(
 
 /* Emissions Screen */
 jest.mock(
-  "../../../app/screens/Emissions/components/AddEmissionAndMitigateButtons",
-  () => "AddEmissionAndMitigateButtons"
-);
-jest.mock(
   "../../../app/screens/Emissions/components/EmissionsList",
   () => "EmissionsList"
 );

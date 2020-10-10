@@ -16,6 +16,31 @@ Array [
       monthlyCarbonBudget={[MockFunction]}
     />
   </RCTSafeAreaView>,
-  <AddEmissionAndMitigateButtons />,
+  <View
+    style={
+      Object {
+        "bottom": 14,
+        "flexDirection": "row",
+        "left": 14,
+        "position": "absolute",
+        "right": 14,
+      }
+    }
+  >
+    <Button.Primary
+      fullWidth={true}
+      onPress={[Function]}
+      textType="Secondary"
+    >
+      <Text.Secondary
+        bold={true}
+        center={true}
+        numberOfLines={1}
+        white={true}
+      >
+        Add emission
+      </Text.Secondary>
+    </Button.Primary>
+  </View>,
 ]
 `;

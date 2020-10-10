@@ -1,10 +1,16 @@
 import React from "react";
-import { SafeAreaView } from "react-native";
+import { SafeAreaView, View } from "react-native";
 import { useSelector } from "react-redux";
+import { useNavigation } from "@react-navigation/native";
+
+import { Text, Button } from "components";
+
+import { t } from "../../utils";
+import { budget } from "../../ducks";
+import { navigate } from "../../navigation";
 
 import styles from "./EmissionsScreen.styles";
-import { AddEmissionAndMitigateButtons, EmissionsList } from "./components";
-import { budget } from "../../ducks";
+import { EmissionsList } from "./components";
 import { selectors } from "./ducks";
 
 const EmissionsScreen = () => {
@@ -12,6 +18,8 @@ const EmissionsScreen = () => {
     budget.selectors.getMonthlyCarbonBudget
   );
   const emissions = useSelector(selectors.getEmissions);
+  const navigation = useNavigation();
+  const navigator = navigate(navigation);
 
   return (
     <>
@@ -21,7 +29,17 @@ const EmissionsScreen = () => {
           emissions={emissions}
         />
       </SafeAreaView>
-      <AddEmissionAndMitigateButtons />
+      <View style={styles.buttonView}>
+        <Button.Primary
+          fullWidth
+          onPress={() => navigator.openAddEmission()}
+          textType={"Secondary"}
+        >
+          <Text.Secondary numberOfLines={1} center white bold>
+            {t("EMISSIONS_SCREEN_ADD_EMISSION")}
+          </Text.Secondary>
+        </Button.Primary>
+      </View>
     </>
   );
 };

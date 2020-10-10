@@ -4,10 +4,6 @@ import { Layout as ConstantsLayout } from "constant";
 
 import { Layout } from "../../style";
 
-const button = {
-  flex: 1,
-  marginBottom: 20,
-};
 export default StyleSheet.create({
   container: {
     ...Layout.containerNoPadding,
@@ -15,19 +11,9 @@ export default StyleSheet.create({
   buttonView: {
     flexDirection: "row",
     position: "absolute",
-    bottom: 0,
-    right: 0,
-    left: 0,
-  },
-  buttonLeft: {
-    ...button,
-    marginLeft: ConstantsLayout.PADDING_HORIZONTAL,
-    marginRight: ConstantsLayout.PADDING_HORIZONTAL / 2,
-  },
-  buttonRight: {
-    ...button,
-    marginRight: ConstantsLayout.PADDING_HORIZONTAL,
-    marginLeft: ConstantsLayout.PADDING_HORIZONTAL / 2,
+    bottom: ConstantsLayout.PADDING_HORIZONTAL,
+    right: ConstantsLayout.PADDING_HORIZONTAL,
+    left: ConstantsLayout.PADDING_HORIZONTAL,
   },
   textNoEmission: {
     paddingVertical: 20,
