@@ -22,6 +22,7 @@ const ActDetailScreen = (props) => {
         onLinkPress={(_: GestureResponderEvent, link: string) => {
           Linking.openURL(link);
         }}
+        baseFontStyle={{ fontSize: 18 }}
         renderers={{
           img: (attribs) => {
             const [img] = attribs.src.split(".");
