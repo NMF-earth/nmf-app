@@ -104,13 +104,20 @@ $ yarn test --watch
 
 <br />
 
-### 📚 Storybook
+### 🎨 Storybook
 
 Stories (\*.story.tsx) can be automatically added to `storyLoader.js` with :
 
 ```bash
 $ yarn prestorybook
 ```
+<br />
+
+### 📗 Sustainable guide
+
+To place a new `.md` files inside `guides` folder or modify existing guide and then run `node scripts/generate-guides.js` to generate a new sustainable guide. Images can be used in the `.md` as follow : `![Earth](earth.png)` and should be place in `assets/images/guide`.
+
+<br />
 
 ### 🚀 Deployment
 
