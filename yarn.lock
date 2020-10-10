@@ -10498,7 +10498,7 @@ onetime@^5.1.0:
   dependencies:
     mimic-fn "^2.1.0"
 
-only-allow@^1.0.0:
+only-allow@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/only-allow/-/only-allow-1.0.0.tgz#1ac662a2ad77f6181240847481b6add201f4ef45"
   integrity sha512-DQazysAz1cw8JxxYVqg+wXWSm6K7smVqORwS+dtXQWPeRwjsWvRpxMRa5FPiOPxH4e05xCDv12ncAUF8JlVukw==

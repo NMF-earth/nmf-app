@@ -109,7 +109,7 @@
     "eslint-plugin-react": "7.17.0",
     "eslint-plugin-react-hooks": "4.1.2",
     "jest-expo": "39.0.0",
-    "only-allow": "^1.0.0",
+    "only-allow": "1.0.0",
     "prettier": "2.1.2",
     "react-native-storybook-loader": "1.8.1"
   },
