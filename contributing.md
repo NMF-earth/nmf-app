@@ -98,6 +98,8 @@ The `import ... from '...';` at the top of files follow some rules:
 + <Emission distance={20} style={{ width: 30 }} />
 ```
 
+## NPM packages
 
+All packages used in `package.json` should be using strict version. No `~` or `^` are allowed. Freezing version ensure that we all have the same version and that we don't need to have a look to `yarn.lock` to see what version we are using. Debugging and bug finding should be easier thanks to that. 
 
-
+This rule can be discussed in the issues but until a better solution is found, any PR not respecting this rule will be declined.
