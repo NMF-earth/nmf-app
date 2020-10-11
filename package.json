@@ -103,14 +103,14 @@
     "eslint-plugin-jest": "23.8.2",
     "eslint-plugin-prettier": "3.1.4",
     "eslint-plugin-react": "7.17.0",
-		"eslint-plugin-react-hooks": "4.1.2",
-		"front-matter": "3.1.0",
-		"husky": "4.2.5",
-		"jest-expo": "39.0.0",
-		"markdown-it": "10.0.0",
-		"prettier": "2.1.2",
-		"react-native-storybook-loader": "1.8.1",
-		"typescript": "3.9.2"
+    "eslint-plugin-react-hooks": "4.1.2",
+    "front-matter": "3.1.0",
+    "husky": "4.2.5",
+    "jest-expo": "39.0.0",
+    "markdown-it": "10.0.0",
+    "prettier": "2.1.2",
+    "react-native-storybook-loader": "1.8.1",
+    "typescript": "3.9.2"
   },
   "husky": {
     "hooks": {
