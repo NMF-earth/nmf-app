@@ -17,8 +17,6 @@ export default StyleSheet.create({
     flex: 1,
     maxWidth: 500,
     alignSelf: "center",
-    justifyContent: "center",
-    alignItems: "center",
   },
   periodContainer: {
     flex: 1,
