@@ -10,26 +10,29 @@ import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
 import Constants from "expo-constants";
 import * as Sentry from "sentry-expo";
 import { Provider } from "react-redux";
+import { enableScreens } from "react-native-screens";
+
 import AppNavigator from "./app/navigation/Navigator/AppNavigator";
 import store from "./app/redux/store";
 import SplashScreen from "./app/screens/Splash";
-import { enableScreens } from "react-native-screens";
 import { LocalizationContext } from "./app/utils";
 
 const supportedLanguages = ["en", "fr", "de", "sv"];
 
-const secret =
-  require("./secret.ts").default || require("./secret.example.ts").default;
+if (!__DEV__) {
+  const secret =
+    require("./secret.ts").default || require("./secret.example.ts").default;
 
-/* TODO: change secret.dsn to Constants.manifest.extra.sentryPublicDsn */
-Sentry.init({
-  dsn: secret.dsn,
-  enableInExpoDevelopment: false,
-  debug: true,
-});
+  /* TODO: change secret.dsn to Constants.manifest.extra.sentryPublicDsn */
+  Sentry.init({
+    dsn: secret.dsn,
+    enableInExpoDevelopment: false,
+    debug: true,
+  });
 
-/* TODO: set Constants.manifest.revisionId with expo */
-Sentry.setRelease(Constants.manifest.revisionId);
+  /* TODO: set Constants.manifest.revisionId with expo */
+  Sentry.setRelease(Constants.manifest.revisionId);
+}
 
 interface Props {
   skipLoadingScreen: boolean;

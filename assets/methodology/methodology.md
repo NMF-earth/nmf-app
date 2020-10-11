@@ -1,6 +1,8 @@
-# Wondering how your carbon footprint is calculated? 
+# How is your carbon footprint calculated? 
 
-I think it’s important to say that there is no perfect calculation method, there are too many parameters to take into account (weather influences plane performance a lot for e.g) and some parameters that we can’t predict (lifespan of a car for e.g). However, what is important is the order of magnitude in order to compare and reduce our carbon footprint. The coefficient used are from [Ducky](https://static.ducky.eco/calculator_documentation.pdf).
+It's important to say that there is no perfect calculation method because there are too many parameters to take into account, such as the weather which can drastically influence plane fuel consumption and some parameters that we can't predict, like the lifespan of a car for example.
+
+However, what is important is the order of magnitude in order to compare and reduce our carbon footprint. Alls coefficients used are from [Ducky](https://static.ducky.eco/calculator_documentation.pdf).
 
 
 ## Transport

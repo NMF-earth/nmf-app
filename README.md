@@ -119,6 +119,10 @@ To place a new `.md` files inside `guides` folder or modify existing guide and t
 
 <br />
 
+Same for methodology screen, just run `node scripts/generate-methodology.js` to update `methodology.json` from `methodology.md`.
+
+<br />
+
 ### 🚀 Deployment
 
 Any branches merged into master will trigger a github action that runs expo publish.
