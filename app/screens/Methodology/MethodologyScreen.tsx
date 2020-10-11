@@ -1,16 +1,21 @@
 import React from "react";
-import { ScrollView, View } from "react-native";
+import { ScrollView, Linking, GestureResponderEvent } from "react-native";
+import HTML from "react-native-render-html";
 
-import { Text } from "../../components";
 import styles from "./MethodologyScreen.styles";
 import navigationOptions from "./Methodology.navigationOptions";
+import methodology from "../../../assets/methodology/methodology.json";
 
 const MethodologyScreen = () => {
   return (
     <ScrollView style={styles.container}>
-      <View style={styles.textView}>
-        <Text.Primary style={styles.paragraph}>Some Random Text</Text.Primary>
-      </View>
+      <HTML
+        html={methodology[0].body}
+        onLinkPress={(_: GestureResponderEvent, link: string) => {
+          Linking.openURL(link);
+        }}
+        baseFontStyle={{ fontSize: 18 }}
+      />
     </ScrollView>
   );
 };
