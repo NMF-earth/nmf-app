@@ -44,12 +44,9 @@
     "expo-splash-screen": "0.6.1",
     "expo-status-bar": "1.0.2",
     "expo-web-browser": "8.5.0",
-    "front-matter": "3.1.0",
     "glob": "7.1.6",
-    "husky": "4.2.5",
     "i18n-js": "3.5.1",
     "lodash.throttle": "4.1.1",
-    "markdown-it": "10.0.0",
     "moment": "2.24.0",
     "paths-js": "0.4.10",
     "prop-types": "15.7.2",
@@ -73,7 +70,6 @@
     "redux-persist": "6.0.0",
     "redux-thunk": "2.3.0",
     "sentry-expo": "2.1.2",
-    "typescript": "3.9.2",
     "uuid": "3.4.0"
   },
   "devDependencies": {
@@ -107,10 +103,14 @@
     "eslint-plugin-jest": "23.8.2",
     "eslint-plugin-prettier": "3.1.4",
     "eslint-plugin-react": "7.17.0",
-    "eslint-plugin-react-hooks": "4.1.2",
-    "jest-expo": "39.0.0",
-    "prettier": "2.1.2",
-    "react-native-storybook-loader": "1.8.1"
+		"eslint-plugin-react-hooks": "4.1.2",
+		"front-matter": "3.1.0",
+		"husky": "4.2.5",
+		"jest-expo": "39.0.0",
+		"markdown-it": "10.0.0",
+		"prettier": "2.1.2",
+		"react-native-storybook-loader": "1.8.1",
+		"typescript": "3.9.2"
   },
   "husky": {
     "hooks": {
