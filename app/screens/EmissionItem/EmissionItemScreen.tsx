@@ -45,10 +45,8 @@ const EmissionItemScreen = ({ language = "" }: LocalizationContextProps) => {
   const day = date.locale(language).format("dddd");
   const monthAndYear = date.locale(language).format("Do MMMM YYYY");
   const co2Emission = calculation.getC02ValueFromEmission(emission || {});
-  const deleteEmission = () => {
+  const deleteEmission = () =>
     dispatch(emissions.actions.deleteEmissionById(emission.id));
-    navigator.goBack();
-  };
 
   useEffect(() => {
     /* Avoid crash right after an emission is deleted */
