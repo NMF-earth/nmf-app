@@ -123,6 +123,12 @@ Same for methodology screen, just run `node scripts/generate-methodology.js` to 
 
 <br />
 
+### Translation
+
+Run `node scripts/generate-translation-files.js` in order to create the files needed for the new language you want to add to the app.
+
+<br />
+
 ### 🚀 Deployment
 
 Any branches merged into master will trigger a github action that runs expo publish.
