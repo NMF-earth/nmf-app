@@ -1,11 +1,11 @@
 import * as Localization from "expo-localization";
 import i18n from "i18n-js";
 
-import { en, de, fr, sv, ru, pl, pt, dk, TranslationKeys } from "./resources";
+import { en, de, fr, sv, ru, pl, pt, da, TranslationKeys } from "./resources";
 
 // Configure
 i18n.fallbacks = true;
-i18n.translations = { en, de, fr, sv, ru, pl, pt, dk };
+i18n.translations = { en, de, fr, sv, ru, pl, pt, da };
 
 // Test locales quickly by overriding this value
 i18n.locale = Localization.locale;

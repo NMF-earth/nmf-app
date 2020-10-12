@@ -168,22 +168,22 @@ const pl = {
   ...ActDetail.pl,
 };
 
-const dk = {
-  ...UI.dk,
-  ...About.dk,
-  ...MonthlyBudget.dk,
-  ...NoEmission.dk,
-  ...Act.dk,
-  ...Budget.dk,
-  ...Emissions.dk,
-  ...Settings.dk,
-  ...Methodology.dk,
-  ...AddEmission.dk,
-  ...EmissionItem.dk,
-  ...Intro.dk,
-  ...SupportUs.dk,
-  ...MyLocation.dk,
-  ...ActDetail.dk,
+const da = {
+  ...UI.da,
+  ...About.da,
+  ...MonthlyBudget.da,
+  ...NoEmission.da,
+  ...Act.da,
+  ...Budget.da,
+  ...Emissions.da,
+  ...Settings.da,
+  ...Methodology.da,
+  ...AddEmission.da,
+  ...EmissionItem.da,
+  ...Intro.da,
+  ...SupportUs.da,
+  ...MyLocation.da,
+  ...ActDetail.da,
 };
 
 export interface TranslationKeys
@@ -204,4 +204,4 @@ export interface TranslationKeys
     SupportUs.TranslationKeys,
     ActDetail.TranslationKeys {}
 
-export { en, de, fr, sv, pt, es, pl, ru, dk };
+export { en, de, fr, sv, pt, es, pl, ru, da };

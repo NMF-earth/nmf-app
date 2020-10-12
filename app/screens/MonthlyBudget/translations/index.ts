@@ -4,7 +4,7 @@ import de from "./de.json";
 import sv from "./sv.json";
 import es from "./es.json";
 import pt from "./pt.json";
-import dk from "./dk.json";
+import da from "./da.json";
 import ru from "./ru.json";
 import pl from "./pl.json";
 
@@ -25,4 +25,4 @@ interface TranslationKeys {
   MONTHLY_BUDGET_PARIS_AGREEMENT: string;
 }
 
-export { en, fr, de, sv, es, pt, dk, ru, pl, TranslationKeys };
+export { en, fr, de, sv, es, pt, da, ru, pl, TranslationKeys };
