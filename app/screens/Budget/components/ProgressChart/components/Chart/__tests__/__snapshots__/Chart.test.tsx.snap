@@ -4,6 +4,7 @@ exports[`Chart renders correctly 1`] = `
 <View
   style={
     Object {
+      "alignSelf": "center",
       "flex": 1,
     }
   }

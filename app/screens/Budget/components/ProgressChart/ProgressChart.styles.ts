@@ -15,6 +15,8 @@ export default StyleSheet.create({
     paddingTop: 10,
     marginHorizontal: platform.isIOS ? 0 : 2,
     flex: 1,
+    maxWidth: 500,
+    alignSelf: "center",
   },
   periodContainer: {
     flex: 1,
