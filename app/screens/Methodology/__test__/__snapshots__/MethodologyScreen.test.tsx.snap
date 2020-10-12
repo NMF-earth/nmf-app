@@ -147,9 +147,9 @@ exports[`MethodologyScreen renders correctly 1`] = `
 <h2>Transport</h2>
 <p>Very simple, knowing the amount of kilometres you have travelled, you simply multiply it by the coefficient  of your vehicle. For example, fossil fuelled cars coefficient is 257 gCO2/eq per km which means that you emit around 2,6 kg of CO2 every 10 kilometres.</p>
 <h3>For planes</h3>
-<p>Knowing the time of traveling allow us to know what kind of flight you had: small, medium or long haul. Knowing the average speed on this flights we deduct the distance and therefore the emission by multiplying by the corresponding coefficient.</p>
+<p>Knowing the length of the flight allow us to know what kind of flight you had: small, medium or long haul. Knowing the average speed on these flights we deduct the distance and therefore the emission by multiplying by the corresponding coefficient.</p>
 <h2>Food</h2>
-<p>We simply multiply the weight by the corresponding food coefficient ingredient.</p>
+<p>We simply multiply the weight by the corresponding food ingredient coefficient.</p>
 <h2>Electricity</h2>
 <p>We know thanks to <a href=\\"https://www.electricitymap.org/map\\">Electricity map</a> the carbon intensity of electricity of your country. Since we know how much watt hour you have consumed, you do a simple multiplication with your local carbon intensity to know your electricity emission.</p>
 <h2>Streaming</h2>
@@ -305,7 +305,7 @@ exports[`MethodologyScreen renders correctly 1`] = `
                                       "attribs": Object {},
                                       "children": Array [
                                         Object {
-                                          "data": "Knowing the time of traveling allow us to know what kind of flight you had: small, medium or long haul. Knowing the average speed on this flights we deduct the distance and therefore the emission by multiplying by the corresponding coefficient.",
+                                          "data": "Knowing the length of the flight allow us to know what kind of flight you had: small, medium or long haul. Knowing the average speed on these flights we deduct the distance and therefore the emission by multiplying by the corresponding coefficient.",
                                           "next": null,
                                           "parent": [Circular],
                                           "prev": null,
@@ -335,7 +335,7 @@ exports[`MethodologyScreen renders correctly 1`] = `
                                               "attribs": Object {},
                                               "children": Array [
                                                 Object {
-                                                  "data": "We simply multiply the weight by the corresponding food coefficient ingredient.",
+                                                  "data": "We simply multiply the weight by the corresponding food ingredient coefficient.",
                                                   "next": null,
                                                   "parent": [Circular],
                                                   "prev": null,
@@ -1109,7 +1109,7 @@ exports[`MethodologyScreen renders correctly 1`] = `
                                     "attribs": Object {},
                                     "children": Array [
                                       Object {
-                                        "data": "Knowing the time of traveling allow us to know what kind of flight you had: small, medium or long haul. Knowing the average speed on this flights we deduct the distance and therefore the emission by multiplying by the corresponding coefficient.",
+                                        "data": "Knowing the length of the flight allow us to know what kind of flight you had: small, medium or long haul. Knowing the average speed on these flights we deduct the distance and therefore the emission by multiplying by the corresponding coefficient.",
                                         "next": null,
                                         "parent": [Circular],
                                         "prev": null,
@@ -1139,7 +1139,7 @@ exports[`MethodologyScreen renders correctly 1`] = `
                                             "attribs": Object {},
                                             "children": Array [
                                               Object {
-                                                "data": "We simply multiply the weight by the corresponding food coefficient ingredient.",
+                                                "data": "We simply multiply the weight by the corresponding food ingredient coefficient.",
                                                 "next": null,
                                                 "parent": [Circular],
                                                 "prev": null,
@@ -1907,7 +1907,7 @@ exports[`MethodologyScreen renders correctly 1`] = `
                                       "attribs": Object {},
                                       "children": Array [
                                         Object {
-                                          "data": "Knowing the time of traveling allow us to know what kind of flight you had: small, medium or long haul. Knowing the average speed on this flights we deduct the distance and therefore the emission by multiplying by the corresponding coefficient.",
+                                          "data": "Knowing the length of the flight allow us to know what kind of flight you had: small, medium or long haul. Knowing the average speed on these flights we deduct the distance and therefore the emission by multiplying by the corresponding coefficient.",
                                           "next": null,
                                           "parent": [Circular],
                                           "prev": null,
@@ -1937,7 +1937,7 @@ exports[`MethodologyScreen renders correctly 1`] = `
                                               "attribs": Object {},
                                               "children": Array [
                                                 Object {
-                                                  "data": "We simply multiply the weight by the corresponding food coefficient ingredient.",
+                                                  "data": "We simply multiply the weight by the corresponding food ingredient coefficient.",
                                                   "next": null,
                                                   "parent": [Circular],
                                                   "prev": null,
@@ -2876,7 +2876,7 @@ exports[`MethodologyScreen renders correctly 1`] = `
               }
             }
           >
-            Knowing the time of traveling allow us to know what kind of flight you had: small, medium or long haul. Knowing the average speed on this flights we deduct the distance and therefore the emission by multiplying by the corresponding coefficient.
+            Knowing the length of the flight allow us to know what kind of flight you had: small, medium or long haul. Knowing the average speed on these flights we deduct the distance and therefore the emission by multiplying by the corresponding coefficient.
           </Text>
         </Text>
       </Text>
@@ -2955,7 +2955,7 @@ exports[`MethodologyScreen renders correctly 1`] = `
               }
             }
           >
-            We simply multiply the weight by the corresponding food coefficient ingredient.
+            We simply multiply the weight by the corresponding food ingredient coefficient.
           </Text>
         </Text>
       </Text>
@@ -3054,9 +3054,9 @@ exports[`MethodologyScreen renders correctly 1`] = `
 <h2>Transport</h2>
 <p>Very simple, knowing the amount of kilometres you have travelled, you simply multiply it by the coefficient  of your vehicle. For example, fossil fuelled cars coefficient is 257 gCO2/eq per km which means that you emit around 2,6 kg of CO2 every 10 kilometres.</p>
 <h3>For planes</h3>
-<p>Knowing the time of traveling allow us to know what kind of flight you had: small, medium or long haul. Knowing the average speed on this flights we deduct the distance and therefore the emission by multiplying by the corresponding coefficient.</p>
+<p>Knowing the length of the flight allow us to know what kind of flight you had: small, medium or long haul. Knowing the average speed on these flights we deduct the distance and therefore the emission by multiplying by the corresponding coefficient.</p>
 <h2>Food</h2>
-<p>We simply multiply the weight by the corresponding food coefficient ingredient.</p>
+<p>We simply multiply the weight by the corresponding food ingredient coefficient.</p>
 <h2>Electricity</h2>
 <p>We know thanks to <a href=\\"https://www.electricitymap.org/map\\">Electricity map</a> the carbon intensity of electricity of your country. Since we know how much watt hour you have consumed, you do a simple multiplication with your local carbon intensity to know your electricity emission.</p>
 <h2>Streaming</h2>
@@ -3650,7 +3650,7 @@ exports[`MethodologyScreen renders correctly 1`] = `
                               "attribs": Object {},
                               "children": Array [
                                 Object {
-                                  "data": "We simply multiply the weight by the corresponding food coefficient ingredient.",
+                                  "data": "We simply multiply the weight by the corresponding food ingredient coefficient.",
                                   "next": null,
                                   "parent": [Circular],
                                   "prev": null,
@@ -3688,7 +3688,7 @@ exports[`MethodologyScreen renders correctly 1`] = `
                                       "attribs": Object {},
                                       "children": Array [
                                         Object {
-                                          "data": "Knowing the time of traveling allow us to know what kind of flight you had: small, medium or long haul. Knowing the average speed on this flights we deduct the distance and therefore the emission by multiplying by the corresponding coefficient.",
+                                          "data": "Knowing the length of the flight allow us to know what kind of flight you had: small, medium or long haul. Knowing the average speed on these flights we deduct the distance and therefore the emission by multiplying by the corresponding coefficient.",
                                           "next": null,
                                           "parent": [Circular],
                                           "prev": null,
@@ -4454,7 +4454,7 @@ exports[`MethodologyScreen renders correctly 1`] = `
                             "attribs": Object {},
                             "children": Array [
                               Object {
-                                "data": "We simply multiply the weight by the corresponding food coefficient ingredient.",
+                                "data": "We simply multiply the weight by the corresponding food ingredient coefficient.",
                                 "next": null,
                                 "parent": [Circular],
                                 "prev": null,
@@ -4492,7 +4492,7 @@ exports[`MethodologyScreen renders correctly 1`] = `
                                     "attribs": Object {},
                                     "children": Array [
                                       Object {
-                                        "data": "Knowing the time of traveling allow us to know what kind of flight you had: small, medium or long haul. Knowing the average speed on this flights we deduct the distance and therefore the emission by multiplying by the corresponding coefficient.",
+                                        "data": "Knowing the length of the flight allow us to know what kind of flight you had: small, medium or long haul. Knowing the average speed on these flights we deduct the distance and therefore the emission by multiplying by the corresponding coefficient.",
                                         "next": null,
                                         "parent": [Circular],
                                         "prev": null,
@@ -5252,7 +5252,7 @@ exports[`MethodologyScreen renders correctly 1`] = `
                               "attribs": Object {},
                               "children": Array [
                                 Object {
-                                  "data": "We simply multiply the weight by the corresponding food coefficient ingredient.",
+                                  "data": "We simply multiply the weight by the corresponding food ingredient coefficient.",
                                   "next": null,
                                   "parent": [Circular],
                                   "prev": null,
@@ -5290,7 +5290,7 @@ exports[`MethodologyScreen renders correctly 1`] = `
                                       "attribs": Object {},
                                       "children": Array [
                                         Object {
-                                          "data": "Knowing the time of traveling allow us to know what kind of flight you had: small, medium or long haul. Knowing the average speed on this flights we deduct the distance and therefore the emission by multiplying by the corresponding coefficient.",
+                                          "data": "Knowing the length of the flight allow us to know what kind of flight you had: small, medium or long haul. Knowing the average speed on these flights we deduct the distance and therefore the emission by multiplying by the corresponding coefficient.",
                                           "next": null,
                                           "parent": [Circular],
                                           "prev": null,
@@ -5724,9 +5724,9 @@ exports[`MethodologyScreen renders correctly 1`] = `
 <h2>Transport</h2>
 <p>Very simple, knowing the amount of kilometres you have travelled, you simply multiply it by the coefficient  of your vehicle. For example, fossil fuelled cars coefficient is 257 gCO2/eq per km which means that you emit around 2,6 kg of CO2 every 10 kilometres.</p>
 <h3>For planes</h3>
-<p>Knowing the time of traveling allow us to know what kind of flight you had: small, medium or long haul. Knowing the average speed on this flights we deduct the distance and therefore the emission by multiplying by the corresponding coefficient.</p>
+<p>Knowing the length of the flight allow us to know what kind of flight you had: small, medium or long haul. Knowing the average speed on these flights we deduct the distance and therefore the emission by multiplying by the corresponding coefficient.</p>
 <h2>Food</h2>
-<p>We simply multiply the weight by the corresponding food coefficient ingredient.</p>
+<p>We simply multiply the weight by the corresponding food ingredient coefficient.</p>
 <h2>Electricity</h2>
 <p>We know thanks to <a href=\\"https://www.electricitymap.org/map\\">Electricity map</a> the carbon intensity of electricity of your country. Since we know how much watt hour you have consumed, you do a simple multiplication with your local carbon intensity to know your electricity emission.</p>
 <h2>Streaming</h2>
@@ -6312,7 +6312,7 @@ exports[`MethodologyScreen renders correctly 1`] = `
                                       "attribs": Object {},
                                       "children": Array [
                                         Object {
-                                          "data": "We simply multiply the weight by the corresponding food coefficient ingredient.",
+                                          "data": "We simply multiply the weight by the corresponding food ingredient coefficient.",
                                           "next": null,
                                           "parent": [Circular],
                                           "prev": null,
@@ -6350,7 +6350,7 @@ exports[`MethodologyScreen renders correctly 1`] = `
                                               "attribs": Object {},
                                               "children": Array [
                                                 Object {
-                                                  "data": "Knowing the time of traveling allow us to know what kind of flight you had: small, medium or long haul. Knowing the average speed on this flights we deduct the distance and therefore the emission by multiplying by the corresponding coefficient.",
+                                                  "data": "Knowing the length of the flight allow us to know what kind of flight you had: small, medium or long haul. Knowing the average speed on these flights we deduct the distance and therefore the emission by multiplying by the corresponding coefficient.",
                                                   "next": null,
                                                   "parent": [Circular],
                                                   "prev": null,
@@ -7116,7 +7116,7 @@ exports[`MethodologyScreen renders correctly 1`] = `
                                     "attribs": Object {},
                                     "children": Array [
                                       Object {
-                                        "data": "We simply multiply the weight by the corresponding food coefficient ingredient.",
+                                        "data": "We simply multiply the weight by the corresponding food ingredient coefficient.",
                                         "next": null,
                                         "parent": [Circular],
                                         "prev": null,
@@ -7154,7 +7154,7 @@ exports[`MethodologyScreen renders correctly 1`] = `
                                             "attribs": Object {},
                                             "children": Array [
                                               Object {
-                                                "data": "Knowing the time of traveling allow us to know what kind of flight you had: small, medium or long haul. Knowing the average speed on this flights we deduct the distance and therefore the emission by multiplying by the corresponding coefficient.",
+                                                "data": "Knowing the length of the flight allow us to know what kind of flight you had: small, medium or long haul. Knowing the average speed on these flights we deduct the distance and therefore the emission by multiplying by the corresponding coefficient.",
                                                 "next": null,
                                                 "parent": [Circular],
                                                 "prev": null,
@@ -7914,7 +7914,7 @@ exports[`MethodologyScreen renders correctly 1`] = `
                                       "attribs": Object {},
                                       "children": Array [
                                         Object {
-                                          "data": "We simply multiply the weight by the corresponding food coefficient ingredient.",
+                                          "data": "We simply multiply the weight by the corresponding food ingredient coefficient.",
                                           "next": null,
                                           "parent": [Circular],
                                           "prev": null,
@@ -7952,7 +7952,7 @@ exports[`MethodologyScreen renders correctly 1`] = `
                                               "attribs": Object {},
                                               "children": Array [
                                                 Object {
-                                                  "data": "Knowing the time of traveling allow us to know what kind of flight you had: small, medium or long haul. Knowing the average speed on this flights we deduct the distance and therefore the emission by multiplying by the corresponding coefficient.",
+                                                  "data": "Knowing the length of the flight allow us to know what kind of flight you had: small, medium or long haul. Knowing the average speed on these flights we deduct the distance and therefore the emission by multiplying by the corresponding coefficient.",
                                                   "next": null,
                                                   "parent": [Circular],
                                                   "prev": null,

@@ -11,12 +11,12 @@ Very simple, knowing the amount of kilometres you have travelled, you simply mul
 
 ### For planes
 
-Knowing the time of traveling allow us to know what kind of flight you had: small, medium or long haul. Knowing the average speed on this flights we deduct the distance and therefore the emission by multiplying by the corresponding coefficient.
+Knowing the length of the flight allow us to know what kind of flight you had: small, medium or long haul. Knowing the average speed on these flights we deduct the distance and therefore the emission by multiplying by the corresponding coefficient.
 
 
 ## Food
 
-We simply multiply the weight by the corresponding food coefficient ingredient.
+We simply multiply the weight by the corresponding food ingredient coefficient.
 
 
 ## Electricity
