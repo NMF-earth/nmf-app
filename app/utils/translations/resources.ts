@@ -132,6 +132,60 @@ const es = {
   ...ActDetail.es,
 };
 
+// const ru = {
+//   ...UI.ru,
+//   ...About.ru,
+//   ...MonthlyBudget.ru,
+//   ...NoEmission.ru,
+//   ...Act.ru,
+//   ...Budget.ru,
+//   ...Emissions.ru,
+//   ...Settings.ru,
+//   ...Methodology.ru,
+//   ...AddEmission.ru,
+//   ...EmissionItem.ru,
+//   ...Intro.ru,
+//   ...SupportUs.ru,
+//   ...MyLocation.ru,
+//   ...ActDetail.ru,
+// };
+
+// const pl = {
+//   ...UI.pl,
+//   ...About.pl,
+//   ...MonthlyBudget.pl,
+//   ...NoEmission.pl,
+//   ...Act.pl,
+//   ...Budget.pl,
+//   ...Emissions.pl,
+//   ...Settings.pl,
+//   ...Methodology.pl,
+//   ...AddEmission.pl,
+//   ...EmissionItem.pl,
+//   ...Intro.pl,
+//   ...SupportUs.pl,
+//   ...MyLocation.pl,
+//   ...ActDetail.pl,
+// };
+
+// const dk = {
+//   ...UI.dk,
+//   ...About.dk,
+//   ...MonthlyBudget.dk,
+//   ...NoEmission.dk,
+//   ...Act.dk,
+//   ...Budget.dk,
+//   ...Emissions.dk,
+//   ...Settings.dk,
+//   ...Methodology.dk,
+//   ...AddEmission.dk,
+//   ...EmissionItem.dk,
+//   ...Intro.dk,
+//   ...SupportUs.dk,
+//   ...MyLocation.dk,
+//   ...ActDetail.dk,
+// };
+
 export interface TranslationKeys
   extends UI.TranslationKeys,
     MonthlyBudget.TranslationKeys,
@@ -149,5 +203,7 @@ export interface TranslationKeys
     MyLocation.TranslationKeys,
     SupportUs.TranslationKeys,
     ActDetail.TranslationKeys {}
+
+// export { en, de, fr, sv, pt, es, pl, ru, dk };
 
 export { en, de, fr, sv, pt, es };

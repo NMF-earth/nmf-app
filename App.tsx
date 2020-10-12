@@ -17,7 +17,7 @@ import store from "./app/redux/store";
 import SplashScreen from "./app/screens/Splash";
 import { LocalizationContext } from "./app/utils";
 
-const supportedLanguages = ["en", "fr", "de", "sv"];
+const supportedLanguages = ["en", "fr", "de", "sv", "dk", "ru", "pt", "pl"];
 
 if (!__DEV__) {
   const secret =
