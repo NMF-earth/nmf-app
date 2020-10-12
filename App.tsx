@@ -17,7 +17,7 @@ import store from "./app/redux/store";
 import SplashScreen from "./app/screens/Splash";
 import { LocalizationContext } from "./app/utils";
 
-const supportedLanguages = ["en", "fr", "de", "sv", "dk", "ru", "pt", "pl"];
+const supportedLanguages = ["en", "fr", "de", "sv", "da", "ru", "pt", "pl"];
 
 if (!__DEV__) {
   const secret =
@@ -57,7 +57,9 @@ const App = () => {
   const [ready, setReady] = useState(false);
   const [splashAnimation, setSplashAnimation] = useState(__DEV__); // to track splashScreen animation
   const [language, setLanguage] = useState(lang);
+  console.log("App -> language", language);
   const [locale, setLocale] = useState(localeExpo);
+  console.log("App -> locale", locale);
 
   useEffect(() => {
     Promise.all([
