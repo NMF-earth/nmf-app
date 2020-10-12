@@ -28,10 +28,28 @@ import {
 } from "../../utils";
 import { userPreferences } from "../../ducks";
 
+interface EmissionInfo {
+  name?: string;
+  emissionType?: EmissionEnum;
+  transportType?: TransportEnum;
+  electricityConsumption?: number;
+  foodType?: FoodEnum;
+  streamingType?: StreamingEnum;
+  durationMinutes?: number;
+  durationSeconds?: number;
+  co2eqKilograms?: number;
+  distance?: number;
+  quantity?: number;
+}
 interface Props {
   navigation: {
     push: (screen: string) => void;
     goBack: () => void;
+  };
+  route?: {
+    params: {
+      linkingQueryParams?: EmissionInfo;
+    };
   };
 }
 
@@ -42,31 +60,51 @@ const DEFAULT_SLIDER_VALUE_ELECTRICITY = 100 * 3.6 * Math.pow(10, 6);
 const DEFAULT_SLIDER_VALUE_STREAMING = 120 * 60;
 const DEFAULT_SLIDER_VALUE_CUSTOM = 200;
 
+const INITIAL_DATA: EmissionInfo = {
+  name: "",
+  emissionType: EmissionEnum.transport,
+  transportType: TransportEnum.car,
+  electricityConsumption: DEFAULT_SLIDER_VALUE_ELECTRICITY,
+  foodType: FoodEnum.redMeat,
+  streamingType: StreamingEnum.HDVideo,
+  durationMinutes: DEFAULT_SLIDER_VALUE_TRANSPORT / 1000,
+  durationSeconds: DEFAULT_SLIDER_VALUE_STREAMING,
+  co2eqKilograms: DEFAULT_SLIDER_VALUE_CUSTOM,
+  distance: DEFAULT_SLIDER_VALUE_TRANSPORT,
+  quantity: DEFAULT_SLIDER_VALUE_FOOD,
+};
+
 const AddEmissionScreen = ({
   navigation,
   locale = "",
   language = "",
+  ...props
 }: Props & LocalizationContextProps) => {
+  const initialData = {
+    ...INITIAL_DATA,
+    ...(props?.route?.params?.linkingQueryParams || {}),
+  };
+
   const location = useSelector(userPreferences.selectors.getLocation);
-  const [emissionName, setEmissionName] = useState("");
-  const [emissionType, setEmissionType] = useState(EmissionEnum.transport);
-  const [transportType, setTransportType] = useState(TransportEnum.car);
+  const [emissionName, setEmissionName] = useState(initialData.name);
+  const [emissionType, setEmissionType] = useState(initialData.emissionType);
+  const [transportType, setTransportType] = useState(initialData.transportType);
   const [electricityConsumption, setElectricityConsumption] = useState(
-    DEFAULT_SLIDER_VALUE_ELECTRICITY
+    initialData.electricityConsumption
   );
-  const [foodType, setFoodType] = useState(FoodEnum.redMeat);
-  const [streamingType, setStreamingType] = useState(StreamingEnum.HDVideo);
+  const [foodType, setFoodType] = useState(initialData.foodType);
+  const [streamingType, setStreamingType] = useState(initialData.streamingType);
   const [durationMinutes, setDurationMinutes] = useState(
-    DEFAULT_SLIDER_VALUE_TRANSPORT / 1000
+    initialData.durationMinutes
   );
   const [durationSeconds, setDurationSeconds] = useState(
-    DEFAULT_SLIDER_VALUE_STREAMING
+    initialData.durationSeconds
   );
   const [co2eqKilograms, setCo2eqKilograms] = useState(
-    DEFAULT_SLIDER_VALUE_CUSTOM
+    initialData.co2eqKilograms
   );
-  const [distance, setDistance] = useState(DEFAULT_SLIDER_VALUE_TRANSPORT);
-  const [quantity, setQuantity] = useState(DEFAULT_SLIDER_VALUE_FOOD);
+  const [distance, setDistance] = useState(initialData.distance);
+  const [quantity, setQuantity] = useState(initialData.quantity);
 
   const [creationDate, setCreationDate] = useState(moment().utc());
 

@@ -1,10 +1,15 @@
+import { FoodEnum } from "carbon-footprint";
 import React from "react";
-import { create } from "react-test-renderer";
 
+import { create } from "react-test-renderer";
 import { FormattedProvider } from "react-native-globalize";
 
-import AddEmissionScreen from "../AddEmissionScreen";
+import { TextInput } from "components";
+
+import { EmissionEnum } from "../../../interfaces/emission/emission.interface";
 import { emissions } from "../../../ducks";
+import AddEmissionScreen from "../AddEmissionScreen";
+import { Food } from "../components";
 
 const props = {
   navigation: {
@@ -46,4 +51,32 @@ it("AddEmissionScreen should go back and call usedispatch if save button is pres
   button.props.onPress();
   expect(props.navigation.goBack).toHaveBeenCalled();
   expect(emissions.actions.createEmission).toHaveBeenCalled();
+});
+
+it("AddEmissionScreen should test if the states are loaded with linkingQueryParams", () => {
+  const localProps = {
+    ...props,
+    route: {
+      params: {
+        linkingQueryParams: {
+          name: "new emission name",
+          emissionType: EmissionEnum.food,
+          foodType: FoodEnum.chocolate,
+          quantity: 17,
+        },
+      },
+    },
+  };
+
+  const root = create(
+    <FormattedProvider locale="en">
+      <AddEmissionScreen {...localProps} />
+    </FormattedProvider>
+  ).root;
+
+  expect(root.findByType(TextInput).props.value).toEqual("new emission name");
+  expect(root.findByType(Food).props.foodType).toEqual("chocolate");
+  expect(
+    root.props.children.props.route.params.linkingQueryParams.quantity
+  ).toEqual(17);
 });

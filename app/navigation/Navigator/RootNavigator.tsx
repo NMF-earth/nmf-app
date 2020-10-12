@@ -2,6 +2,8 @@ import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import { useSelector } from "react-redux";
 
+import useNavigateLink from "utils/hooks/useNavigateLink";
+
 import { Preferences } from "constant";
 
 import { userPreferences } from "../../ducks";
@@ -19,6 +21,8 @@ const RootNavigator = (): React.ReactElement => {
   const hasAcceptedTermsOfUseVersion =
     Preferences.currentTermsOfUseVersion ===
     useSelector(userPreferences.selectors.getAcceptedTermsOfUseVersion);
+
+  useNavigateLink({});
 
   return (
     <Stack.Navigator>
