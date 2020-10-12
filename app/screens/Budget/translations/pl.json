@@ -1,0 +1,16 @@
+{
+  "BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_DAYS": "dni",
+  "BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_NICE_START": "To dobry początek! 👌",
+  "BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_NO_MEAT_SO_FAR": "Wygląda na to, że nie jadłaś/eś żadnego mięsa ani ryby, odkąd używasz aplikacji, świetna robota! 🍾",
+  "BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_RECENT_MEAT": "O nie, jadłaś/eś ostatnio mięso lub rybę 🥺",
+  "BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_WELL_DONE": "Świetnie! 🎉",
+  "BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_WITHOUT_MEAT": "without meat or fish.",
+  "BUDGET_SCREEN_PROGRESS_CHART_LEGEND_ITEM_FOOD": "Żywność",
+  "BUDGET_SCREEN_PROGRESS_CHART_LEGEND_ITEM_OTHER": "Inne",
+  "BUDGET_SCREEN_PROGRESS_CHART_LEGEND_ITEM_TOTAL": "Suma",
+  "BUDGET_SCREEN_PROGRESS_CHART_LEGEND_ITEM_TRANSPORT": "Transport",
+  "BUDGET_SCREEN_PROGRESS_CHART_LEGEND_PERIOD_BUDGET": "Budżet na ",
+  "BUDGET_SCREEN_SET_MONTHLY_BUDGET": "Ustaw miesięczny budżet",
+  "BUDGET_SCREEN_TAB_NAME": "Budżet",
+  "BUDGET_SCREEN_TITLE": "Budżet węglowy"
+}

@@ -1,9 +1,9 @@
 {
-	"EMISSION_ITEM_TITLE": "Emission",
-	"EMISSION_ITEM_TYPE": "Type",
-	"EMISSION_ITEM_QUANTITY": "Quantité",
-	"EMISSION_ITEM_PRICE": "Prix",
-	"EMISSION_ITEM_DATE": "Date",
-	"EMISSION_ITEM_DELETE_EMISSION": "Supprimer émission",
-	"EMISSION_ITEM_NAME": "Nom"
+	"EMISSION_ITEM_DATE": "Data",
+	"EMISSION_ITEM_DELETE_EMISSION": "Eliminar  a edição",
+	"EMISSION_ITEM_NAME": "Nome",
+	"EMISSION_ITEM_PRICE": "Preço",
+	"EMISSION_ITEM_QUANTITY": "Quantidade",
+	"EMISSION_ITEM_TITLE": "Emissões",
+	"EMISSION_ITEM_TYPE": "Tipo"
 }

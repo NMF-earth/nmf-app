@@ -108,6 +108,7 @@
     "jest-expo": "39.0.0",
     "markdown-it": "10.0.0",
     "prettier": "2.1.2",
+    "prompt-sync": "^4.2.0",
     "react-native-storybook-loader": "1.8.1",
     "typescript": "3.9.2"
   },

@@ -4,6 +4,9 @@ import de from "./de.json";
 import sv from "./sv.json";
 import es from "./es.json";
 import pt from "./pt.json";
+import dk from "./dk.json";
+import ru from "./ru.json";
+import pl from "./pl.json";
 
 interface TranslationKeys {
   ACT_SCREEN_TAB_NAME: string;
@@ -14,4 +17,4 @@ interface TranslationKeys {
   ACT_SCREEN_TECHNOLOGY: string;
 }
 
-export { en, fr, de, sv, es, pt, TranslationKeys };
+export { en, fr, de, sv, es, pt, dk, ru, pl, TranslationKeys };
