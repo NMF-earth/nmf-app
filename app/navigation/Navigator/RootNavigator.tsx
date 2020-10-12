@@ -22,7 +22,7 @@ const RootNavigator = (): React.ReactElement => {
     Preferences.currentTermsOfUseVersion ===
     useSelector(userPreferences.selectors.getAcceptedTermsOfUseVersion);
 
-  useNavigateLink({});
+  useNavigateLink();
 
   return (
     <Stack.Navigator>
