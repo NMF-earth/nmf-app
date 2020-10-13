@@ -1,4 +1,4 @@
-name: CI
+name: Run CI
 
 on: [push, pull_request]
 
