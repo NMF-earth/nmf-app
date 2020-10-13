@@ -14,47 +14,47 @@ const isElectrictyEmission = contains(__, Object.keys(ElectricityEnum));
 
 const getTranslationModelType = (emissionModelType) => {
   if (isElectrictyEmission(emissionModelType)) {
-    return t("ELECTRICITY");
+    return t("UI_ELECTRICITY");
   }
 
   switch (emissionModelType) {
     case EmissionEnum.custom:
-      return t("CUSTOM");
+      return t("UI_CUSTOM");
     case FoodEnum.redMeat:
-      return t("RED_MEAT");
+      return t("UI_RED_MEAT");
     case FoodEnum.whiteMeat:
-      return t("WHITE_MEAT");
+      return t("UI_WHITE_MEAT");
     case FoodEnum.chocolate:
-      return t("CHOCOLATE");
+      return t("UI_CHOCOLATE");
     case FoodEnum.coffee:
-      return t("COFFEE");
+      return t("UI_COFFEE");
     case FoodEnum.fish:
-      return t("FISH");
+      return t("UI_FISH");
     case TransportEnum.shortHaulFlight:
     case TransportEnum.mediumHaulFlight:
     case TransportEnum.longHaulFlight:
     case TransportEnum.plane:
-      return t("PLANE");
+      return t("UI_PLANE");
     case TransportEnum.train:
-      return t("TRAIN");
+      return t("UI_TRAIN");
     case TransportEnum.car:
-      return t("CAR");
+      return t("UI_CAR");
     case TransportEnum.boat:
-      return t("BOAT");
+      return t("UI_BOAT");
     case TransportEnum.motorbike:
-      return t("MOTORBIKE");
+      return t("UI_MOTORBIKE");
     case TransportEnum.bus:
-      return t("BUS");
+      return t("UI_BUS");
     case StreamingEnum.HDVideo:
-      return t("HD_VIDEO");
+      return t("UI_HD_VIDEO");
     case StreamingEnum.audioMP3:
-      return t("AUDIO");
+      return t("UI_AUDIO");
     case StreamingEnum.fullHDVideo:
-      return t("FULL_HD_VIDEO");
+      return t("UI_FULL_HD_VIDEO");
     case StreamingEnum.ultraHDVideo:
-      return t("ULTRA_HD_VIDEO");
+      return t("UI_ULTRA_HD_VIDEO");
     default:
-      return t("CUSTOM");
+      return t("UI_CUSTOM");
   }
 };
 

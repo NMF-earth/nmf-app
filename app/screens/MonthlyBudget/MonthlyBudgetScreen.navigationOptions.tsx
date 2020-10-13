@@ -11,7 +11,7 @@ const navigationOptions = () => ({
   },
   headerBackTitleVisible: false,
   headerTintColor: Colors.grey100,
-  headerTitle: () => <Text.H1>{t("MONTHLY_BUDGET_TITLE")}</Text.H1>,
+  headerTitle: () => <Text.H1>{t("MONTHLY_BUDGET_SCREEN_TITLE")}</Text.H1>,
 });
 
 export default navigationOptions;
