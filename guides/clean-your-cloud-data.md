@@ -1,6 +1,6 @@
 ---
 title: Clean your cloud data
-category: technology
+category: digital
 ---
 
 # Clean your cloud data

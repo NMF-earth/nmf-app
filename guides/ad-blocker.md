@@ -1,6 +1,6 @@
 ---
 title: Install an add blocker
-category: technology
+category: digital
 ---
 
 # Install an add blocker

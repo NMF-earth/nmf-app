@@ -1,6 +1,6 @@
 ---
 title: Get a phone you can repair/upgrade
-category: technology
+category: digital
 ---
 
 # Buy a phone you can repair

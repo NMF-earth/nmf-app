@@ -6,7 +6,7 @@ import { GuideCategory } from "../../../types/guide";
 
 const props = {
   route: {
-    name: GuideCategory.technology,
+    name: GuideCategory.digital,
   },
   navigation: {
     push: () => {
