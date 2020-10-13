@@ -9,11 +9,11 @@ import { calculation } from "../../../../utils";
 
 let state;
 
-const christmas = moment("2020-12-24T03:24:00");
-const monthsAgo = moment().subtract(2, "month");
+const christmas = moment.utc("2020-12-24T03:24:00");
+const monthsAgo = moment().utc().subtract(2, "month");
 
 /* TODO: remove this function copied from selectors file */
-const getStartOfMonth = (time) => moment(time).startOf("month").format();
+const getStartOfMonth = (time) => moment.utc(time).startOf("month").format();
 
 const emissionNotMitigatedOld: EmissionType = {
   id: "3",
