@@ -34,17 +34,6 @@ if (!__DEV__) {
   Sentry.setRelease(Constants.manifest.revisionId);
 }
 
-interface Props {
-  skipLoadingScreen: boolean;
-}
-interface State {
-  locale: string;
-  language: string;
-  setLanguage: (language: string) => void;
-  setLocale: (locale: string) => void;
-  isLoadingComplete: boolean;
-}
-
 const App = () => {
   enableScreens();
 
@@ -57,9 +46,7 @@ const App = () => {
   const [ready, setReady] = useState(false);
   const [splashAnimation, setSplashAnimation] = useState(__DEV__); // to track splashScreen animation
   const [language, setLanguage] = useState(lang);
-  console.log("App -> language", language);
   const [locale, setLocale] = useState(localeExpo);
-  console.log("App -> locale", locale);
 
   useEffect(() => {
     Promise.all([
