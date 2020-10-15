@@ -2,10 +2,10 @@ import React from "react";
 import { Ionicons } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
 
-import { navigate } from "../../../../navigation";
-import styles from "./InfoButton.styles";
+import { navigate } from "../../navigation";
+import styles from "./EmissionInfoButton.styles";
 
-export default () => {
+const EmissionInfoButton = () => {
   const navigation = useNavigation();
   const navigator = navigate(navigation);
   return (
@@ -17,3 +17,5 @@ export default () => {
     />
   );
 };
+
+export default EmissionInfoButton;

@@ -8,7 +8,7 @@
     "web": "expo start --web",
     "eject": "expo eject",
     "test:watch": "jest --watchAll",
-    "test": "TZ=GMT jest",
+    "test": "jest",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx ./app",
     "lint:fix": "eslint --ext .js,.jsx,.ts,.tsx ./app --fix",
     "typescript": "tsc --noEmit",

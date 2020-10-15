@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Text } from "../../components";
+import { Text, EmissionInfoButton } from "../../components";
 import { t } from "../../utils";
 import { Colors, ComponentsStyle } from "../../style";
 
@@ -11,6 +11,7 @@ const navigationOptions = () => ({
   },
   headerTintColor: Colors.grey100,
   headerBackTitleVisible: false,
+  headerRight: () => <EmissionInfoButton />,
   headerTitle: () => <Text.H1>{t("EMISSION_ITEM_TITLE")}</Text.H1>,
 });
 
