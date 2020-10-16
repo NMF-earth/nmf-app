@@ -88,7 +88,7 @@ const MonthlyBudgetScreen = ({ navigation }) => {
           <View style={styles.parisAgreement}>
             <Text.Secondary center>
               {t("MONTHLY_BUDGET_SCREEN_PARIS_AGREEMENT")}
-              <Text.Secondary bold green>
+              <Text.Secondary bold blue>
                 {" 166 kg CO2"}
               </Text.Secondary>
             </Text.Secondary>
