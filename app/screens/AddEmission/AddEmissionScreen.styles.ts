@@ -25,9 +25,6 @@ export default StyleSheet.create({
     paddingLeft: ConstantsLayout.PADDING_HORIZONTAL,
     flexDirection: "row",
   },
-  changeBtn: {
-    paddingLeft: 4,
-  },
   separator: {
     ...Layout.separator,
   },
