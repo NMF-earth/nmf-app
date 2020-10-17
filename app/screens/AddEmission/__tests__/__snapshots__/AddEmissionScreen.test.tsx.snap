@@ -328,7 +328,7 @@ exports[`AddEmissionScreen renders correctly 1`] = `
         <View
           style={
             Object {
-              "flexDirection": "row",
+              "flexDirection": "column",
               "paddingTop": 4,
             }
           }
@@ -339,17 +339,17 @@ exports[`AddEmissionScreen renders correctly 1`] = `
           >
             Sunday 7th April 2019
           </Text.Primary>
-        </View>
-        <TouchableOpacity
-          onPress={[Function]}
-        >
-          <Text.Primary
-            bold={true}
-            green={true}
+          <TouchableOpacity
+            onPress={[Function]}
           >
-            Change
-          </Text.Primary>
-        </TouchableOpacity>
+            <Text.Primary
+              bold={true}
+              green={true}
+            >
+              Change
+            </Text.Primary>
+          </TouchableOpacity>
+        </View>
       </View>
       <Button.Primary
         onPress={[Function]}
