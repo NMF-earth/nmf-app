@@ -26,7 +26,7 @@ export default StyleSheet.create({
     flexDirection: "row",
   },
   changeBtn: {
-    paddingLeft: 4,
+    paddingLeft: 1,
   },
   separator: {
     ...Layout.separator,
