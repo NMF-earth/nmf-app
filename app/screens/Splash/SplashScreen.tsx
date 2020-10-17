@@ -7,7 +7,7 @@ interface Props {
   screenAnimationComplete: (boolean) => void;
 }
 
-const SplashScreen = ({ screenAnimationComplete }: Props) => {
+const SplashScreen: React.FC<Props> = ({ screenAnimationComplete }) => {
   const fadeAnim = useMemo(() => new Animated.Value(0), []);
   useEffect(() => {
     Animated.timing(fadeAnim, {

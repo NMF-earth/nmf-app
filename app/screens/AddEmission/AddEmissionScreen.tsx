@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import moment from "moment";
+import React, { useCallback, useState } from "react";
+import moment, { Moment } from "moment";
 import { useSelector } from "react-redux";
 import { View, ScrollView, TouchableOpacity } from "react-native";
 import { TransportEnum, FoodEnum, StreamingEnum } from "carbon-footprint";
@@ -25,6 +25,7 @@ import {
   withLocalization,
   LocalizationContextProps,
   ui,
+  time,
 } from "../../utils";
 import { userPreferences } from "../../ducks";
 
@@ -48,41 +49,51 @@ const AddEmissionScreen = ({
   language = "",
 }: Props & LocalizationContextProps) => {
   const location = useSelector(userPreferences.selectors.getLocation);
-  const [emissionName, setEmissionName] = useState("");
-  const [emissionType, setEmissionType] = useState(EmissionEnum.transport);
-  const [transportType, setTransportType] = useState(TransportEnum.car);
-  const [electricityConsumption, setElectricityConsumption] = useState(
+  const [emissionName, setEmissionName] = useState<string>("");
+  const [emissionType, setEmissionType] = useState<EmissionEnum>(
+    EmissionEnum.transport
+  );
+  const [transportType, setTransportType] = useState<TransportEnum>(
+    TransportEnum.car
+  );
+  const [electricityConsumption, setElectricityConsumption] = useState<number>(
     DEFAULT_SLIDER_VALUE_ELECTRICITY
   );
-  const [foodType, setFoodType] = useState(FoodEnum.redMeat);
-  const [streamingType, setStreamingType] = useState(StreamingEnum.HDVideo);
-  const [durationMinutes, setDurationMinutes] = useState(
+  const [foodType, setFoodType] = useState<FoodEnum>(FoodEnum.redMeat);
+  const [streamingType, setStreamingType] = useState<StreamingEnum>(
+    StreamingEnum.HDVideo
+  );
+  const [durationMinutes, setDurationMinutes] = useState<number>(
     DEFAULT_SLIDER_VALUE_TRANSPORT / 1000
   );
-  const [durationSeconds, setDurationSeconds] = useState(
+  const [durationSeconds, setDurationSeconds] = useState<number>(
     DEFAULT_SLIDER_VALUE_STREAMING
   );
-  const [co2eqKilograms, setCo2eqKilograms] = useState(
+  const [co2eqKilograms, setCo2eqKilograms] = useState<number>(
     DEFAULT_SLIDER_VALUE_CUSTOM
   );
-  const [distance, setDistance] = useState(DEFAULT_SLIDER_VALUE_TRANSPORT);
-  const [quantity, setQuantity] = useState(DEFAULT_SLIDER_VALUE_FOOD);
+  const [distance, setDistance] = useState<number>(
+    DEFAULT_SLIDER_VALUE_TRANSPORT
+  );
+  const [quantity, setQuantity] = useState<number>(DEFAULT_SLIDER_VALUE_FOOD);
 
-  const [creationDate, setCreationDate] = useState(moment().utc());
+  const [creationDate, setCreationDate] = useState<Moment>(moment().utc());
 
-  const [isDatePickerVisible, setDatePickerVisibility] = useState(false);
-  const showDatePicker = () => setDatePickerVisibility(true);
-  const hideDatePicker = () => setDatePickerVisibility(false);
+  const [isDatePickerVisible, setDatePickerVisibility] = useState<boolean>(
+    false
+  );
+  const showDatePicker = useCallback(() => setDatePickerVisibility(true), []);
+  const hideDatePicker = useCallback(() => setDatePickerVisibility(false), []);
 
-  const handleConfirm = (date: Date) => {
-    hideDatePicker();
-    const now = new Date();
-    if (date < now) {
-      setCreationDate(moment(date));
-    } else {
-      setCreationDate(moment(now));
-    }
-  };
+  const handleConfirm = useCallback(
+    (date: Date) => {
+      hideDatePicker();
+      const now = new Date();
+      const effectiveCreationDate = time.getEarlierDate(date, now);
+      setCreationDate(moment(effectiveCreationDate));
+    },
+    [hideDatePicker]
+  );
 
   const emissionPayload: EmissionPayload = {
     creationDate: creationDate.toISOString(),
@@ -264,9 +275,6 @@ const AddEmissionScreen = ({
         <View style={styles.dateContainer}>
           <Text.Primary lightGray bold>
             {creationDate.locale(language).format("dddd Do MMMM YYYY")}
-          </Text.Primary>
-          <Text.Primary lightGray bold>
-            {" - "}
           </Text.Primary>
           <TouchableOpacity style={styles.changeBtn} onPress={showDatePicker}>
             <Text.Primary bold green>
