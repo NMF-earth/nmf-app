@@ -265,15 +265,12 @@ const AddEmissionScreen = ({
           <Text.Primary lightGray bold>
             {creationDate.locale(language).format("dddd Do MMMM YYYY")}
           </Text.Primary>
-          <Text.Primary lightGray bold>
-            {" - "}
-          </Text.Primary>
-          <TouchableOpacity style={styles.changeBtn} onPress={showDatePicker}>
-            <Text.Primary bold green>
-              {t("ADD_EMISSION_CHANGE")}
-            </Text.Primary>
-          </TouchableOpacity>
         </View>
+        <TouchableOpacity onPress={showDatePicker}>
+          <Text.Primary bold green>
+            {t("ADD_EMISSION_CHANGE")}
+          </Text.Primary>
+        </TouchableOpacity>
       </View>
 
       <AddEmissionButton
