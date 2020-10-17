@@ -1,5 +1,5 @@
 import React from "react";
-import { Linking } from "expo";
+import * as Linking from "expo-linking";
 import { create } from "react-test-renderer";
 
 import SettingsRow from "../SettingsRow";
@@ -7,7 +7,12 @@ import SettingsRow from "../SettingsRow";
 jest.unmock("../SettingsRow");
 
 beforeEach(() => {
-  Linking.openURL = jest.fn();
+  jest.spyOn(Linking, "openURL").mockImplementation((url: string) => {
+    if (url) {
+      return Promise.resolve(true);
+    }
+    Promise.reject(false);
+  });
 });
 
 const props = {

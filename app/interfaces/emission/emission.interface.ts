@@ -14,15 +14,17 @@ enum EmissionEnum {
   custom = "custom",
 }
 
+type EmissionModel =
+  | FoodEnum
+  | TransportEnum
+  | StreamingEnum
+  | ElectricityEnum
+  | "custom";
+
 interface EmissionPayload {
   name?: string;
   emissionType: EmissionEnum;
-  emissionModelType:
-    | FoodEnum
-    | TransportEnum
-    | StreamingEnum
-    | ElectricityEnum
-    | "custom";
+  emissionModelType: EmissionModel;
   value: number;
   creationDate: string;
   location?: ElectricityEnum;
@@ -33,4 +35,4 @@ interface Emission extends EmissionPayload {
   isMitigated: boolean;
 }
 
-export { Emission, EmissionPayload, EmissionEnum };
+export { Emission, EmissionPayload, EmissionEnum, EmissionModel };

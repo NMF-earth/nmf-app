@@ -42,6 +42,7 @@ const DEFAULT_SLIDER_VALUE_TRANSPORT = 150 * 1000;
 const DEFAULT_SLIDER_VALUE_ELECTRICITY = 100 * 3.6 * Math.pow(10, 6);
 const DEFAULT_SLIDER_VALUE_STREAMING = 120 * 60;
 const DEFAULT_SLIDER_VALUE_CUSTOM = 200;
+const EMISSION_NAME_MAX_LENGTH = 150;
 
 const AddEmissionScreen = ({
   navigation,
@@ -197,7 +198,29 @@ const AddEmissionScreen = ({
     return null;
   };
 
+  const onTransportTagPress = useCallback(() => {
+    setEmissionType(EmissionEnum.transport);
+  }, []);
+  const onFoodTagPress = useCallback(() => {
+    setEmissionType(EmissionEnum.food);
+  }, []);
+  const onStreamingTagPress = useCallback(() => {
+    setEmissionType(EmissionEnum.streaming);
+  }, []);
+  const onElectricityTagPress = useCallback(() => {
+    setEmissionType(EmissionEnum.electricity);
+  }, []);
+  const onCustomTagPress = useCallback(() => {
+    setEmissionType(EmissionEnum.custom);
+  }, []);
+
   const isDarkModeEnabled = ui.isDarkModeEnabled();
+
+  const onChangeEmissionName = useCallback((name: string) => {
+    if (name.length < EMISSION_NAME_MAX_LENGTH) {
+      setEmissionName(name);
+    }
+  }, []);
 
   return (
     <KeyboardAwareScrollView style={styles.container}>
@@ -210,31 +233,31 @@ const AddEmissionScreen = ({
             icon={"md-airplane"}
             selected={emissionType === EmissionEnum.transport}
             title={t("ADD_EMISSION_TRANSPORT")}
-            onPress={() => setEmissionType(EmissionEnum.transport)}
+            onPress={onTransportTagPress}
           />
           <Tag
             icon={"md-restaurant"}
             selected={emissionType === EmissionEnum.food}
             title={t("ADD_EMISSION_FOOD")}
-            onPress={() => setEmissionType(EmissionEnum.food)}
+            onPress={onFoodTagPress}
           />
           <Tag
             icon={"md-play-circle"}
             selected={emissionType === EmissionEnum.streaming}
             title={t("ADD_EMISSION_STREAMING")}
-            onPress={() => setEmissionType(EmissionEnum.streaming)}
+            onPress={onStreamingTagPress}
           />
           <Tag
             icon={"md-flash"}
             selected={emissionType === EmissionEnum.electricity}
             title={t("ADD_EMISSION_ELECTRICITY")}
-            onPress={() => setEmissionType(EmissionEnum.electricity)}
+            onPress={onElectricityTagPress}
           />
           <Tag
             icon={"md-build"}
             selected={emissionType === EmissionEnum.custom}
             title={t("ADD_EMISSION_CUSTOM")}
-            onPress={() => setEmissionType(EmissionEnum.custom)}
+            onPress={onCustomTagPress}
           />
           <View style={styles.separator} />
         </ScrollView>
@@ -250,11 +273,7 @@ const AddEmissionScreen = ({
         isOptional
         placeholder={t("ADD_EMISSION_TEXTINPUT_PLACEHOLDER")}
         title={t("ADD_EMISSION_NAME_EMISSION")}
-        onChangeText={(name) => {
-          if (name.length < 150) {
-            setEmissionName(name);
-          }
-        }}
+        onChangeText={onChangeEmissionName}
         value={emissionName}
       />
 
