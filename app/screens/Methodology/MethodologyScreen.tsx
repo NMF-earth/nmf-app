@@ -1,6 +1,8 @@
 import React from "react";
-import { ScrollView, Linking, GestureResponderEvent } from "react-native";
+import { ScrollView } from "react-native";
 import HTML from "react-native-render-html";
+
+import { ui } from "../../utils";
 
 import styles from "./MethodologyScreen.styles";
 import navigationOptions from "./Methodology.navigationOptions";
@@ -11,9 +13,7 @@ const MethodologyScreen = () => {
     <ScrollView style={styles.container}>
       <HTML
         html={methodology[0].body}
-        onLinkPress={(_: GestureResponderEvent, link: string) => {
-          Linking.openURL(link);
-        }}
+        onLinkPress={ui.onHTMLBodyLinkPress}
         baseFontStyle={{ fontSize: 18 }}
       />
     </ScrollView>

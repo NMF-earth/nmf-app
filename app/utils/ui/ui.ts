@@ -1,4 +1,4 @@
-import { Appearance } from "react-native";
+import { Appearance, Linking, GestureResponderEvent } from "react-native";
 import {
   TransportEnum,
   FoodEnum,
@@ -10,10 +10,10 @@ import { contains, __ } from "ramda";
 import { EmissionEnum } from "../../interfaces";
 import { t } from "../translations";
 
-const isElectrictyEmission = contains(__, Object.keys(ElectricityEnum));
+const isElectricityEmission = contains(__, Object.keys(ElectricityEnum));
 
 const getTranslationModelType = (emissionModelType) => {
-  if (isElectrictyEmission(emissionModelType)) {
+  if (isElectricityEmission(emissionModelType)) {
     return t("UI_ELECTRICITY");
   }
 
@@ -59,7 +59,7 @@ const getTranslationModelType = (emissionModelType) => {
 };
 
 const getIconFromModelType = (emissionModelType) => {
-  if (isElectrictyEmission(emissionModelType)) {
+  if (isElectricityEmission(emissionModelType)) {
     return "md-flash";
   }
 
@@ -98,12 +98,17 @@ const getIconFromModelType = (emissionModelType) => {
   }
 };
 
-const isDarkModeEnabled = () => {
-  return Appearance.getColorScheme() === "dark";
+const isDarkModeEnabled = () => Appearance.getColorScheme() === "dark";
+
+const onHTMLBodyLinkPress = (_: GestureResponderEvent, link: string) => {
+  if (link) {
+    Linking.openURL(link);
+  }
 };
 
 export default {
   getTranslationModelType,
   getIconFromModelType,
   isDarkModeEnabled,
+  onHTMLBodyLinkPress,
 };
