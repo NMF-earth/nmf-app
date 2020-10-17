@@ -1,10 +1,11 @@
 import { StyleSheet } from "react-native";
 
 import { Colors } from "../../style";
+import { Layout } from "constant";
 
 export default StyleSheet.create({
   infoIcon: {
-    marginRight: 10,
-    color: Colors.grey100,
+    marginRight: Layout.PADDING_HORIZONTAL,
+    color: Colors.green50,
   },
 });

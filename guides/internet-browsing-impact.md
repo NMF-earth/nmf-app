@@ -1,6 +1,6 @@
 ---
 title: Reduce your browsing emissions
-category: technology
+category: digital
 ---
 
 # Calculate your browsing carbon impact and reduce it

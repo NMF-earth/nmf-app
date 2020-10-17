@@ -47,9 +47,10 @@ const BottomTabNavigator = (): React.ReactElement => (
       activeTintColor: Colors.green50,
       inactiveTintColor: Colors.grey40,
       style: {
-        paddingTop: 6,
-        backgroundColor: Colors.green10,
-        borderTopWidth: 0,
+        paddingTop: -10,
+        backgroundColor: Colors.white,
+        borderTopWidth: 1,
+        borderTopColor: Colors.green10,
       },
     }}
   >

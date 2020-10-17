@@ -27,41 +27,9 @@ exports[`ActScreen renders correctly 1`] = `
 </ul>
 <p>Less ads, less compulsatory purchases, less CO2 emissions</p>
 ",
-        "category": "technology",
+        "category": "digital",
         "key": ".//ad-blocker.md",
         "title": "Install an add blocker",
-      },
-      Object {
-        "body": "<h1>Avoid streaming</h1>
-<p>Streaming is nice, streaming is amazing, but have you ever though about the consequences on the environement?</p>
-<p>To give you an idea on how bad the streaming is, let's take an example. The size of the article text in the English Wikipedia is around <a href=\\"https://en.wikipedia.org/wiki/Wikipedia:Size_of_Wikipedia\\">20 gigabytes</a> of data in 2020. It means that everytime you watch a season of the Walking Dead in HD (1080p), you have downloaded on your computer/phone the same amount of data as the entire Wikipedia encyclopedia.</p>
-<p>Same applies to Spotify, Apple Music, Amazon and Youtube. Music is much smaller than a HD video but an average user consumes several songs in a day so at the end of the year, the impact of the climate is not negligeable.</p>
-<p>Both music and video streaming relies on servers as well as internet infrastuctures to transport the data to you. All of this has a cost, so instead of streaming in all circomstances, try to listen to the radio, go the cinema.... Who knows, you might end up meeting real people in real life!</p>
-<p>Don't forget to cancel autoplay by default, leading to unecessary streaming like Youtube is doing. In most video streaming platform, you can save this behavior in the preferences. If you can, use Peertube, a decentralized and open-source video platform, much better for the environement compared to Youtube and more ethical.</p>
-<p>If you still want to use YouTube, we recomment <a href=\\"https://addons.mozilla.org/en-US/firefox/addon/youtube-focus/?utm_source=addons.mozilla.org&amp;utm_medium=referral&amp;utm_content=search\\">Youtube Focus</a>, an add-on who tries to promote a healthier watching. As said on their <a href=\\"https://github.com/Jompa14/YouTube_Focus\\">Github</a>, YouTube has one billion hours whatched daily, and it’s recommendation algorithm generates more than 70% of views. That means 700.000.000 hours every single day. What means that the greatest slice of time that people spend on YouTube isnt because they searched for something to whatch or something to learn, it is because they were sugested by YouTube's algorithm.</p>
-",
-        "category": "technology",
-        "key": ".//avoid-streaming.md",
-        "title": "Avoid streaming",
-      },
-      Object {
-        "body": "<h1>Calculate your browsing carbon impact and reduce it</h1>
-<p>They are several browser add-ons, mainly for Chrome and Firefox, that can help you decrease and understand better your digital carbon emissions.</p>
-<ul>
-<li>
-<a href=\\"https://addons.mozilla.org/en-US/firefox/addon/carbonalyser/\\">Carbon analyser</a>: excellent plugin that will help you to have an idea on what you emit when you browse the internet. It shows a chart of your main emissions so you can act on it. Open-source and made by the awesome french assiociation the Shift Project.
-</li>
-<li>
-<strong><a href=\\"https://addons.mozilla.org/fr/firefox/addon/low-web-extension/\\">Low Tech</a></strong>: open-source extension aims to reduce our datas and limit the energy consumption of our Internet browsing. For example, when possible, video quality is set to low quality, autoplay and loop parameters are disabled. If it's possible, quality of images is decreased or loading delayed and animated gif only plays when hovering them. Some &quot;superfluous&quot; content can also be blocked like share and like button, avatar images or fonts. <strong>100 % approved and recommended by the NMF.earth team!</strong>
-</li>
-<li>
-<a href=\\"https://addons.mozilla.org/fr/firefox/addon/bare-tracker\\">Bare Tracker</a>: helps peoples get a barer, lighter browsing experience by informing them about their browsing environmental impact. Similar to carbon analyser.
-</li>
-</ul>
-",
-        "category": "technology",
-        "key": ".//internet-browsing-impact.md",
-        "title": "Reduce your browsing emissions",
       },
       Object {
         "body": "<h1>Clean your cloud data</h1>
@@ -71,7 +39,7 @@ exports[`ActScreen renders correctly 1`] = `
 <p>Therefore, the less emails you have on your mailbox, the less data you have on the cloud, the better for the environment.</p>
 <h3>More data = more pollution</h3>
 ",
-        "category": "technology",
+        "category": "digital",
         "key": ".//clean-your-cloud-data.md",
         "title": "Clean your cloud data",
       },
@@ -98,9 +66,28 @@ exports[`ActScreen renders correctly 1`] = `
 <li>G**gle Play : <a href=\\"https://www.f-droid.org/\\">F-Droid</a></li>
 </ul>
 ",
-        "category": "technology",
+        "category": "digital",
         "key": ".//gafa-replacement.md",
         "title": "Find replacement for internet giants",
+      },
+      Object {
+        "body": "<h1>Calculate your browsing carbon impact and reduce it</h1>
+<p>They are several browser add-ons, mainly for Chrome and Firefox, that can help you decrease and understand better your digital carbon emissions.</p>
+<ul>
+<li>
+<p><a href=\\"https://addons.mozilla.org/en-US/firefox/addon/carbonalyser/\\">Carbon analyser</a>: excellent plugin that will help you to have an idea on what you emit when you browse the internet. It shows a chart of your main emissions so you can act on it. Open-source and made by the awesome french assiociation the Shift Project.</p>
+</li>
+<li>
+<p><strong><a href=\\"https://addons.mozilla.org/fr/firefox/addon/low-web-extension/\\">Low Tech</a></strong>: open-source extension aims to reduce our datas and limit the energy consumption of our Internet browsing. For example, when possible, video quality is set to low quality, autoplay and loop parameters are disabled. If it's possible, quality of images is decreased or loading delayed and animated gif only plays when hovering them. Some &quot;superfluous&quot; content can also be blocked like share and like button, avatar images or fonts. <strong>100 % approved and recommended by the NMF.earth team!</strong></p>
+</li>
+<li>
+<p><a href=\\"https://addons.mozilla.org/fr/firefox/addon/bare-tracker\\">Bare Tracker</a>: helps peoples get a barer, lighter browsing experience by informing them about their browsing environmental impact. Similar to carbon analyser.</p>
+</li>
+</ul>
+",
+        "category": "digital",
+        "key": ".//internet-browsing-impact.md",
+        "title": "Reduce your browsing emissions",
       },
       Object {
         "body": "<h1>Buy a phone you can repair</h1>
@@ -108,9 +95,22 @@ exports[`ActScreen renders correctly 1`] = `
 <p>Changing phone every year is not sustainable and it's bad for the environement. To face this issue, a Dutch company, <a href=\\"https://www.fairphone.com/\\">Fairphone</a>, is making ethical and modular phone that you can fix and upgrade yourself.</p>
 <p>If you are on Android, installing an alternative rom like <a href=\\"https://lineageos.org/\\">LineageOS</a> can make your old phone faster and increase its lifespan.</p>
 ",
-        "category": "technology",
+        "category": "digital",
         "key": ".//repair-phone.md",
         "title": "Get a phone you can repair/upgrade",
+      },
+      Object {
+        "body": "<h1>Avoid streaming</h1>
+<p>Streaming is nice, streaming is amazing, but have you ever though about the consequences on the environement?</p>
+<p>To give you an idea on how bad the streaming is, let's take an example. The size of the article text in the English Wikipedia is around <a href=\\"https://en.wikipedia.org/wiki/Wikipedia:Size_of_Wikipedia\\">20 gigabytes</a> of data in 2020. It means that everytime you watch a season of the Walking Dead in HD (1080p), you have downloaded on your computer/phone the same amount of data as the entire Wikipedia encyclopedia.</p>
+<p>Same applies to Spotify, Apple Music, Amazon and Youtube. Music is much smaller than a HD video but an average user consumes several songs in a day so at the end of the year, the impact of the climate is not negligeable.</p>
+<p>Both music and video streaming relies on servers as well as internet infrastuctures to transport the data to you. All of this has a cost, so instead of streaming in all circomstances, try to listen to the radio, go the cinema.... Who knows, you might end up meeting real people in real life!</p>
+<p>Don't forget to cancel autoplay by default, leading to unecessary streaming like Youtube is doing. In most video streaming platform, you can save this behavior in the preferences. If you can, use Peertube, a decentralized and open-source video platform, much better for the environement compared to Youtube and more ethical.</p>
+<p>If you still want to use YouTube, we recomment <a href=\\"https://addons.mozilla.org/en-US/firefox/addon/youtube-focus/?utm_source=addons.mozilla.org&amp;utm_medium=referral&amp;utm_content=search\\">Youtube Focus</a>, an add-on who tries to promote a healthier watching. As said on their <a href=\\"https://github.com/Jompa14/YouTube_Focus\\">Github</a>, YouTube has one billion hours whatched daily, and it’s recommendation algorithm generates more than 70% of views. That means 700.000.000 hours every single day. What means that the greatest slice of time that people spend on YouTube isnt because they searched for something to whatch or something to learn, it is because they were sugested by YouTube's algorithm.</p>
+",
+        "category": "digital",
+        "key": ".//avoid-streaming.md",
+        "title": "Avoid streaming",
       },
     ]
   }
@@ -166,76 +166,6 @@ exports[`ActScreen renders correctly 1`] = `
           }
         >
           Install an add blocker
-        </Text.Secondary>
-        <Ionicons
-          color="#9CA6A0"
-          name="ios-arrow-forward"
-          size={26}
-          style={
-            Object {
-              "marginTop": 18,
-            }
-          }
-        />
-      </TouchableOpacity>
-    </View>
-    <View
-      onLayout={[Function]}
-      style={null}
-    >
-      <TouchableOpacity
-        onPress={[Function]}
-        style={
-          Object {
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-          }
-        }
-      >
-        <Text.Secondary
-          numberOfLines={1}
-          style={
-            Object {
-              "paddingVertical": 20,
-            }
-          }
-        >
-          Avoid streaming
-        </Text.Secondary>
-        <Ionicons
-          color="#9CA6A0"
-          name="ios-arrow-forward"
-          size={26}
-          style={
-            Object {
-              "marginTop": 18,
-            }
-          }
-        />
-      </TouchableOpacity>
-    </View>
-    <View
-      onLayout={[Function]}
-      style={null}
-    >
-      <TouchableOpacity
-        onPress={[Function]}
-        style={
-          Object {
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-          }
-        }
-      >
-        <Text.Secondary
-          numberOfLines={1}
-          style={
-            Object {
-              "paddingVertical": 20,
-            }
-          }
-        >
-          Reduce your browsing emissions
         </Text.Secondary>
         <Ionicons
           color="#9CA6A0"
@@ -340,7 +270,77 @@ exports[`ActScreen renders correctly 1`] = `
             }
           }
         >
+          Reduce your browsing emissions
+        </Text.Secondary>
+        <Ionicons
+          color="#9CA6A0"
+          name="ios-arrow-forward"
+          size={26}
+          style={
+            Object {
+              "marginTop": 18,
+            }
+          }
+        />
+      </TouchableOpacity>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Secondary
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
           Get a phone you can repair/upgrade
+        </Text.Secondary>
+        <Ionicons
+          color="#9CA6A0"
+          name="ios-arrow-forward"
+          size={26}
+          style={
+            Object {
+              "marginTop": 18,
+            }
+          }
+        />
+      </TouchableOpacity>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Secondary
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          Avoid streaming
         </Text.Secondary>
         <Ionicons
           color="#9CA6A0"

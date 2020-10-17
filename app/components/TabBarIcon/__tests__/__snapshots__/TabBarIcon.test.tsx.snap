@@ -5,10 +5,5 @@ exports[`renders correctly 1`] = `
   color="#9CA6A0"
   name="ios-information-circle"
   size={26}
-  style={
-    Object {
-      "marginBottom": -6,
-    }
-  }
 />
 `;

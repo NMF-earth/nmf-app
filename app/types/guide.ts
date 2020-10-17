@@ -1,6 +1,6 @@
 export enum GuideCategory {
   kitchen = "kitchen",
-  technology = "technology",
+  digital = "digital",
 }
 
 export interface Guide {

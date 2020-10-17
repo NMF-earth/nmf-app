@@ -1,6 +1,6 @@
 ---
 title: Find replacement for internet giants
-category: technology
+category: digital
 ---
 
 # Find replacement for internet giants

@@ -10,12 +10,13 @@ interface Props {
   darkGray?: boolean;
   lightGray?: boolean;
   green?: boolean;
+  blue?: boolean;
   center?: boolean;
 }
 
 export default function H1(props: Props): React.ReactElement {
   const customStyle = [styles.default, props.style];
-  const { darkGray, lightGray, green, center } = props;
+  const { darkGray, lightGray, green, blue, center } = props;
 
   if (darkGray) {
     customStyle.push(mainStyle.darkGray);
@@ -27,6 +28,10 @@ export default function H1(props: Props): React.ReactElement {
 
   if (green) {
     customStyle.push(mainStyle.green);
+  }
+
+  if (blue) {
+    customStyle.push(mainStyle.blue50);
   }
 
   if (center) {

@@ -1,6 +1,6 @@
 ---
 title: Avoid streaming
-category: technology
+category: digital
 ---
 
 # Avoid streaming
