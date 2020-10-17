@@ -341,11 +341,6 @@ exports[`AddEmissionScreen renders correctly 1`] = `
           </Text.Primary>
           <TouchableOpacity
             onPress={[Function]}
-            style={
-              Object {
-                "paddingLeft": 1,
-              }
-            }
           >
             <Text.Primary
               bold={true}
