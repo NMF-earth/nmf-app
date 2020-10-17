@@ -339,28 +339,17 @@ exports[`AddEmissionScreen renders correctly 1`] = `
           >
             Sunday 7th April 2019
           </Text.Primary>
+        </View>
+        <TouchableOpacity
+          onPress={[Function]}
+        >
           <Text.Primary
             bold={true}
-            lightGray={true}
+            green={true}
           >
-             - 
+            Change
           </Text.Primary>
-          <TouchableOpacity
-            onPress={[Function]}
-            style={
-              Object {
-                "paddingLeft": 4,
-              }
-            }
-          >
-            <Text.Primary
-              bold={true}
-              green={true}
-            >
-              Change
-            </Text.Primary>
-          </TouchableOpacity>
-        </View>
+        </TouchableOpacity>
       </View>
       <Button.Primary
         onPress={[Function]}
