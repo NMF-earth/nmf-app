@@ -1,0 +1,5 @@
+Using chocolate to satisfy a sweet tooth never gets old. But gobbling up all those candy bars and bonbons is seriously impacting the environment. The commercial chocolate industry is shrinking rainforests, emitting significant levels of carbon dioxide into our atmosphere, and contributing to climate change. There’s no reason to quit chocolate entirely. In fact, there are steps manufacturers and consumers can take to make the chocolate industry more sustainable.
+
+People in the United States consume 2.8 billion pounds of chocolate annually, or around 11 pounds per person. And that’s only half of the rate chocolate is consumed in Switzerland. Globally, we're expected to consume 7.7 million tons in 2019.
+
+Monoculture farms that grow cocoa beans, sugar, and oil palms (for palm oil) are giant causes of deforestation; while milk chocolate is especially harmful because cows themselves generate a lot of methane gas. Then you've got all those individually wrapped bars and morsels, which quickly add up in manufacturing and waste.
