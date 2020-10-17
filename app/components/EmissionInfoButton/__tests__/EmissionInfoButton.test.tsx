@@ -3,7 +3,7 @@ import { create } from "react-test-renderer";
 
 import EmissionInfoButton from "../";
 
-it("renders correctly full width Primary Button with Primary font", () => {
+it("renders correctly", () => {
   const tree = create(<EmissionInfoButton />).toJSON();
   expect(tree).toMatchSnapshot();
 });
