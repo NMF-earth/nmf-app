@@ -49,8 +49,8 @@ it("getLaterTime should return the later date object when 2 dates are compared",
   date2.setTime(date2.getTime() + (1 + Math.floor(Math.random() * 100000))); // set the time to some future time
 
   // act
-  const earlierDate = time.getLaterDate(date1, date2);
+  const laterDate = time.getLaterDate(date1, date2);
 
   // assert
-  expect(earlierDate.getTime()).toEqual(date2.getTime());
+  expect(laterDate.getTime()).toEqual(date2.getTime());
 });
