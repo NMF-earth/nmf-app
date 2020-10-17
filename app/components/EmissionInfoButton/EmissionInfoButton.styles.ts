@@ -1,7 +1,8 @@
 import { StyleSheet } from "react-native";
 
-import { Colors } from "../../style";
 import { Layout } from "constant";
+
+import { Colors } from "../../style";
 
 export default StyleSheet.create({
   infoIcon: {
