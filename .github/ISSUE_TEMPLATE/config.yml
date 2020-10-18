@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+    - name: 📃 More info on the project
+      url: https://nmf.earth/
+      about: Please have a look to the website before open an issue or a pull request, it will help you understand the philosophy of the project.
