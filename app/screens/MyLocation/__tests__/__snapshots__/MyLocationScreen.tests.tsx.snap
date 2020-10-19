@@ -1,0 +1,865 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MyLocationScreen renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "flex": 1,
+      "paddingHorizontal": 14,
+    }
+  }
+>
+  <Text.Primary
+    style={
+      Object {
+        "paddingTop": 30,
+      }
+    }
+  >
+    Please select a country in order to improve emissions calculations for streaming and electricity.
+  </Text.Primary>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Text.Primary
+      style={
+        Object {
+          "paddingVertical": 20,
+        }
+      }
+    >
+      My carbon intensity : 
+    </Text.Primary>
+    <Text.Primary
+      bold={true}
+      green={true}
+      style={
+        Object {
+          "paddingVertical": 20,
+        }
+      }
+    >
+      NaN
+    </Text.Primary>
+    <Text.Primary
+      bold={true}
+      green={true}
+      style={
+        Object {
+          "paddingVertical": 20,
+        }
+      }
+    >
+       gCO₂eq/kWh
+    </Text.Primary>
+  </View>
+  <RCTScrollView
+    style={
+      Object {
+        "borderTopColor": "#DCF0E5",
+        "borderTopWidth": 2,
+      }
+    }
+  >
+    <View>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          EUROPE
+        </Text.Primary>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          USA
+        </Text.Primary>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          CHINA
+        </Text.Primary>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          WORLD
+        </Text.Primary>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          FRANCE
+        </Text.Primary>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          UK
+        </Text.Primary>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          IRELAND
+        </Text.Primary>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          SPAIN
+        </Text.Primary>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          PORTUGAL
+        </Text.Primary>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          NETHERLANDS
+        </Text.Primary>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          BELGIUM
+        </Text.Primary>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          DANMARK
+        </Text.Primary>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          GERMANY
+        </Text.Primary>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          POLAND
+        </Text.Primary>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          ITALY
+        </Text.Primary>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          TURKEY
+        </Text.Primary>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          FINLAND
+        </Text.Primary>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          NORWAY
+        </Text.Primary>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          CZECHIA
+        </Text.Primary>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          AUSTRIA
+        </Text.Primary>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          SERBIA
+        </Text.Primary>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          SLOVENIA
+        </Text.Primary>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          HUNGARY
+        </Text.Primary>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          SLOVAKIA
+        </Text.Primary>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          UKRAINE
+        </Text.Primary>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          ROMANIA
+        </Text.Primary>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          MOLDAVA
+        </Text.Primary>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          ESTONIA
+        </Text.Primary>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          LATVIA
+        </Text.Primary>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          LITHUANIA
+        </Text.Primary>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          PERU
+        </Text.Primary>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          BOLIVIA
+        </Text.Primary>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          ARGENTINA
+        </Text.Primary>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          URUGUAY
+        </Text.Primary>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          BRAZIL
+        </Text.Primary>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          AUSTRALIA
+        </Text.Primary>
+      </TouchableOpacity>
+    </View>
+  </RCTScrollView>
+</View>
+`;
