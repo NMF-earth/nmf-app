@@ -13,7 +13,7 @@ const EmissionInfoButton = () => {
       name="md-information-circle"
       size={26}
       style={styles.infoIcon}
-      onPress={navigator.openMethodology}
+      onPress={navigator.openHtmlView}
     />
   );
 };

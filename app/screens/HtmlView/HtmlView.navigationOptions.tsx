@@ -11,21 +11,21 @@ import { Text } from "../../components";
 
 const iconStyle = { paddingRight: Layout.PADDING_HORIZONTAL };
 
-const navigationOptionsAndroid = () => ({
+const navigationOptionsAndroid = (title: any) => () => ({
   ...ComponentsStyle.transitionBetweenScreenPresets,
   headerStyle: {
     ...ComponentsStyle.header,
   },
-  headerTitle: () => <Text.H1>{t("METHODOLOGY_SCREEN_TITLE")}</Text.H1>,
+  headerTitle: () => <Text.H1>{t(title)}</Text.H1>,
   headerRight: () => null,
 });
 
-const navigationOptionsIOS = ({ navigation }) => ({
+const navigationOptionsIOS = (title: any) => ({ navigation }) => ({
   headerStyle: {
     ...ComponentsStyle.header,
     borderBottomWidth: 0,
   },
-  headerTitle: () => <Text.H1>{t("METHODOLOGY_SCREEN_TITLE")}</Text.H1>,
+  headerTitle: () => <Text.H1>{t(title)}</Text.H1>,
   headerLeft: () => null,
   headerRight: () => (
     <View style={iconStyle}>
