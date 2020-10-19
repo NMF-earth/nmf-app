@@ -40,7 +40,7 @@
     "expo-asset": "8.2.0",
     "expo-constants": "9.2.0",
     "expo-font": "8.3.0",
-    "expo-linking": "^1.0.4",
+    "expo-linking": "1.0.4",
     "expo-localization": "9.0.0",
     "expo-splash-screen": "0.6.1",
     "expo-status-bar": "1.0.2",
@@ -109,7 +109,7 @@
     "jest-expo": "39.0.0",
     "markdown-it": "10.0.0",
     "prettier": "2.1.2",
-    "prompt-sync": "^4.2.0",
+    "prompt-sync": "4.2.0",
     "react-native-storybook-loader": "1.8.1",
     "typescript": "3.9.2"
   },
