@@ -26,7 +26,7 @@
     ]
   },
   "dependencies": {
-    "@expo/vector-icons": "10.0.0",
+    "@expo/vector-icons": "10.0.6",
     "@react-native-community/datetimepicker": "3.0.3",
     "@react-native-community/masked-view": "0.1.10",
     "@react-native-community/slider": "3.0.3",
