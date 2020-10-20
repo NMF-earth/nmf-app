@@ -1,15 +1,15 @@
 import React from "react";
-import {
-  Dimensions,
-  ScrollView,
-  Linking,
-  GestureResponderEvent,
-} from "react-native";
+import { Dimensions, ScrollView } from "react-native";
+
 import HTML from "react-native-render-html";
+
+import { ui } from "../../utils";
 
 import { HTMLImage } from "../../components";
 import styles from "./ActDetailScreen.styles";
 import navigationOptions from "./ActDetailScreen.navigationOptions";
+
+const baseFontStyle = { fontSize: 18 };
 
 const ActDetailScreen = (props) => {
   const { body } = props?.route?.params;
@@ -19,10 +19,8 @@ const ActDetailScreen = (props) => {
       <HTML
         html={body}
         imagesMaxWidth={Dimensions.get("window").width}
-        onLinkPress={(_: GestureResponderEvent, link: string) => {
-          Linking.openURL(link);
-        }}
-        baseFontStyle={{ fontSize: 18 }}
+        onLinkPress={ui.onHTMLBodyLinkPress}
+        baseFontStyle={baseFontStyle}
         renderers={{
           img: (attribs) => {
             const [img] = attribs.src.split(".");

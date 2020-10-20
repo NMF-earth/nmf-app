@@ -6,7 +6,7 @@ const fm = require("front-matter");
 const MarkdownIt = require("markdown-it");
 const md = new MarkdownIt();
 const data = [];
-const guidesPath = "./guides/*.md";
+const guidesPath = "../assets/guides/markdown/*.md";
 
 /*
  * Script to parse and build all guides into
@@ -21,7 +21,7 @@ glob(guidesPath, {}, function (err, files) {
     throw err;
   }
 
-  files.forEach(file => {
+  files.forEach((file) => {
     fs.readFile(file, {}, (error, fileData) => {
       if (error) {
         throw error;
@@ -30,7 +30,7 @@ glob(guidesPath, {}, function (err, files) {
       data.push({
         ...parsed.attributes,
         body: md.render(parsed.body),
-        key: file.replace("guides", "")
+        key: file.replace("guides", ""),
       });
       fs.writeFile(
         `${process.env.PWD}/assets/guides/guides.json`,
@@ -45,12 +45,12 @@ glob(guidesPath, {}, function (err, files) {
   // pre-requiring image that are used in markdown files.
   const imageFiles = fs
     .readdirSync(`${process.env.PWD}/assets/images/guide`)
-    .filter(x => x.includes("png" || "jpg"));
+    .filter((x) => x.includes("png" || "jpg"));
   const imagePath =
     "{\n" +
     imageFiles
       .map(
-        x =>
+        (x) =>
           `"${
             x.split(".png")[0]
           }": require("../../../assets/images/guide/${x}"),`

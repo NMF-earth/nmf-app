@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { View } from "react-native";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { StatusBar } from "expo-status-bar";
@@ -17,7 +17,18 @@ import store from "./app/redux/store";
 import SplashScreen from "./app/screens/Splash";
 import { LocalizationContext } from "./app/utils";
 
-const supportedLanguages = ["en", "fr", "de", "sv", "da", "ru", "pt", "pl"];
+const supportedLanguages: string[] = [
+  "en",
+  "fr",
+  "de",
+  "sv",
+  "da",
+  "ru",
+  "pt",
+  "pl",
+];
+const defaultLanguage = "en";
+const defaultLocale = "en-us";
 
 if (!__DEV__) {
   const secret =
@@ -34,13 +45,13 @@ if (!__DEV__) {
   Sentry.setRelease(Constants.manifest.revisionId);
 }
 
-const App = () => {
+const App: React.FC<{}> = () => {
   enableScreens();
 
   let lang = localeExpo.substring(0, 2);
 
   if (!includes(lang, supportedLanguages)) {
-    lang = "en";
+    lang = defaultLanguage;
   }
 
   const [ready, setReady] = useState(false);
@@ -66,33 +77,36 @@ const App = () => {
   }, []);
 
   // callback to get splashScreen animation completion
-  const screenAnimationComplete = (animation) => {
+  const screenAnimationComplete = useCallback((animation) => {
     setSplashAnimation(animation);
-  };
+  }, []);
+
+  let body = <SplashScreen screenAnimationComplete={screenAnimationComplete} />;
+  if (ready && splashAnimation) {
+    body = (
+      <Provider store={store}>
+        <FormattedProvider locale={language || defaultLanguage}>
+          <LocalizationContext.Provider
+            value={{
+              locale: locale || defaultLocale,
+              setLocale: setLocale,
+              language: language || defaultLanguage,
+              setLanguage: setLanguage,
+            }}
+          >
+            <AppNavigator />
+          </LocalizationContext.Provider>
+        </FormattedProvider>
+      </Provider>
+    );
+  } else if (__DEV__) {
+    body = <View />;
+  }
 
   return (
     <SafeAreaProvider>
       <StatusBar />
-      {ready && splashAnimation ? (
-        <Provider store={store}>
-          <FormattedProvider locale={language || "en"}>
-            <LocalizationContext.Provider
-              value={{
-                locale: locale || "en-US",
-                setLocale: setLocale,
-                language: language || "en",
-                setLanguage: setLanguage,
-              }}
-            >
-              <AppNavigator />
-            </LocalizationContext.Provider>
-          </FormattedProvider>
-        </Provider>
-      ) : __DEV__ ? (
-        <View />
-      ) : (
-        <SplashScreen screenAnimationComplete={screenAnimationComplete} />
-      )}
+      {body}
     </SafeAreaProvider>
   );
 };

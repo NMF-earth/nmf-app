@@ -1,13 +1,18 @@
 import React from "react";
 import { create } from "react-test-renderer";
-import { Linking } from "expo";
+import * as Linking from "expo-linking";
 
 import SocialMedia from "../";
 
 jest.unmock("../");
 
 beforeEach(() => {
-  Linking.openURL = jest.fn();
+  jest.spyOn(Linking, "openURL").mockImplementation((url: string) => {
+    if (url) {
+      return Promise.resolve(true);
+    }
+    Promise.reject(false);
+  });
 });
 
 test("renders correctly SocialMedia", () => {

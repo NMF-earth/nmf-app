@@ -6,7 +6,7 @@ const fm = require("front-matter");
 const MarkdownIt = require("markdown-it");
 const md = new MarkdownIt();
 const data = [];
-const guidesPath = "./assets/methodology/*.md";
+const guidesPath = "../assets/methodology/markdown/*.md";
 
 /*
  * Copy of generate-guides.js for methodology screen content generation

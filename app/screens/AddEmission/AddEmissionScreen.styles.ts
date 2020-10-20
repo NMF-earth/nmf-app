@@ -19,14 +19,11 @@ export default StyleSheet.create({
   },
   dateContainer: {
     paddingTop: 4,
-    flexDirection: "row",
+    flexDirection: "column",
   },
   tagContainer: {
     paddingLeft: ConstantsLayout.PADDING_HORIZONTAL,
     flexDirection: "row",
-  },
-  changeBtn: {
-    paddingLeft: 4,
   },
   separator: {
     ...Layout.separator,

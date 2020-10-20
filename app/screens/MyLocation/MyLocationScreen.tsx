@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useCallback } from "react";
 import { View, ScrollView } from "react-native";
 import { ElectricityEnum, electricity } from "carbon-footprint";
 import { useDispatch, useSelector } from "react-redux";
@@ -9,13 +9,35 @@ import { userPreferences } from "../../ducks";
 import navigationOptions from "./MyLocationScreen.navigationOptions";
 import styles from "./MyLocationScreen.styles";
 
+const Country: React.FC<{
+  selectedCountry: ElectricityEnum;
+  country: ElectricityEnum;
+  onSelectCountry: (country: ElectricityEnum) => void;
+}> = ({ country, onSelectCountry, selectedCountry }) => {
+  const onClickCountry = useCallback(() => {
+    onSelectCountry?.(country);
+  }, [country, onSelectCountry]);
+
+  return (
+    <SelectableListItem
+      key={country}
+      selected={selectedCountry === country}
+      title={country.toUpperCase()}
+      onPress={onClickCountry}
+    />
+  );
+};
+
 const MyLocationScreen = () => {
   const dispatch = useDispatch();
   const location = useSelector(userPreferences.selectors.getLocation);
 
-  const onPress = (country: ElectricityEnum) => {
-    dispatch(userPreferences.actions.updateLocation(country));
-  };
+  const onPress = useCallback(
+    (country: ElectricityEnum) => {
+      dispatch(userPreferences.actions.updateLocation(country));
+    },
+    [dispatch]
+  );
 
   return (
     <View style={styles.container}>
@@ -36,12 +58,12 @@ const MyLocationScreen = () => {
         </Text.Primary>
       </View>
       <ScrollView style={styles.scrollContainer}>
-        {Object.keys(ElectricityEnum).map((item: ElectricityEnum) => (
-          <SelectableListItem
-            key={item}
-            selected={location === item}
-            title={item.toUpperCase()}
-            onPress={() => onPress(item)}
+        {Object.keys(ElectricityEnum).map((country: ElectricityEnum) => (
+          <Country
+            key={location}
+            selectedCountry={location}
+            country={country}
+            onSelectCountry={onPress}
           />
         ))}
       </ScrollView>
