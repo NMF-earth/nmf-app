@@ -3,27 +3,23 @@ import { ScrollView, Linking, GestureResponderEvent } from "react-native";
 import HTML from "react-native-render-html";
 
 import styles from "./HtmlViewScreen.styles";
-import { HtmlViewPages } from "./HtmlViewPages";
+import { EmissionEnum } from "../../interfaces";
 import navigationOptions from "./HtmlView.navigationOptions";
 import methodology from "../../../assets/methodology/methodology.json";
 
-interface Props {
-  page: HtmlViewPages;
-}
-
-const HtmlViewScreen = ({page}: Props) => {
+const HtmlViewScreen = ({route}) => {
+  const emissionType = route?.params?.emissionType;
   let title: any, html: string;
-  switch (page)
-  {
-    case HtmlViewPages.custom:
+  switch (emissionType) {
+    case EmissionEnum.custom:
       break;
-    case HtmlViewPages.electricity:
+    case EmissionEnum.electricity:
       break;
-    case HtmlViewPages.food:
+    case EmissionEnum.food:
       break;
-    case HtmlViewPages.purchase:
+    case EmissionEnum.purchase:
       break;
-    case HtmlViewPages.streaming:
+    case EmissionEnum.streaming:
       break;
     default:
       title = "METHODOLOGY_SCREEN_TITLE"
