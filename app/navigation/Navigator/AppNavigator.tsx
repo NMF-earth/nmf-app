@@ -6,7 +6,7 @@ import ModalNavigator from "./ModalNavigator";
 import HtmlViewModalNavigator from "./HtmlViewModalNavigator";
 import RootNavigator from "./RootNavigator";
 import ComingSoonScreen from "../../screens/ComingSoon";
-import HtmlView from "../../screens/HtmlView";
+import HtmlViewScreen from "../../screens/HtmlView";
 
 const AppStack = createStackNavigator();
 
@@ -26,7 +26,7 @@ const App = (): React.ReactElement => {
         />
         <AppStack.Screen
           name="HtmlView"
-          options={HtmlView.navigationOptions}
+          options={HtmlViewScreen.navigationOptions}
           component={HtmlViewModalNavigator}
         />
       </AppStack.Navigator>

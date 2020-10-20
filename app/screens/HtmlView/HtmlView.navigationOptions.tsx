@@ -12,7 +12,33 @@ import { Text } from "../../components";
 
 const iconStyle = { paddingRight: Layout.PADDING_HORIZONTAL };
 
-const navigationOptionsAndroid = ({ route }) => () => ({
+const getTitleKey = ({ params }) => {
+  const { emissionType } = params || {};
+  let title: any;
+  switch (emissionType) {
+    case EmissionEnum.custom:
+      title = "CUSTOM_EMISSION_SCREEN_TITLE";
+      break;
+    case EmissionEnum.electricity:
+      title = "ELECTRICITY_EMISSION_SCREEN_TITLE";
+      break;
+    case EmissionEnum.food:
+      title = "FOOD_EMISSION_SCREEN_TITLE";
+      break;
+    case EmissionEnum.transport:
+      title = "TRANSPORT_EMISSION_SCREEN_TITLE";
+      break;
+    case EmissionEnum.streaming:
+      title = "STREAMING_EMISSION_SCREEN_TITLE";
+      break;
+    default:
+      title = "METHODOLOGY_SCREEN_TITLE";
+      break;
+  }
+  return title;
+};
+
+const navigationOptionsAndroid = ({ route }) => ({
   ...ComponentsStyle.transitionBetweenScreenPresets,
   headerStyle: {
     ...ComponentsStyle.header,
@@ -21,12 +47,12 @@ const navigationOptionsAndroid = ({ route }) => () => ({
   headerRight: () => null,
 });
 
-const navigationOptionsIOS = (title: any) => ({ navigation }) => ({
+const navigationOptionsIOS = ({ navigation, route }) => ({
   headerStyle: {
     ...ComponentsStyle.header,
     borderBottomWidth: 0,
   },
-  headerTitle: () => <Text.H1>{t(title)}</Text.H1>,
+  headerTitle: () => <Text.H1>{t(getTitleKey(route))}</Text.H1>,
   headerLeft: () => null,
   headerRight: () => (
     <View style={iconStyle}>
@@ -41,27 +67,6 @@ const navigationOptionsIOS = (title: any) => ({ navigation }) => ({
     </View>
   ),
 });
-
-const getTitleKey = ({ params }) => {
-  const { emissionType } = params || {}
-  let title: any;
-  switch (emissionType) {
-    case EmissionEnum.custom:
-      break;
-    case EmissionEnum.electricity:
-      break;
-    case EmissionEnum.food:
-      break;
-    case EmissionEnum.purchase:
-      break;
-    case EmissionEnum.streaming:
-      break;
-    default:
-      title = "METHODOLOGY_SCREEN_TITLE"
-      break;
-  }
-  return title;
-}
 
 const navigationOptions = platform.isAndroid
   ? navigationOptionsAndroid

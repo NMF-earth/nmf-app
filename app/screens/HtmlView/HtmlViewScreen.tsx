@@ -1,29 +1,31 @@
 import React from "react";
-import { ScrollView, Linking, GestureResponderEvent } from "react-native";
+import { ScrollView } from "react-native";
 import HTML from "react-native-render-html";
 
 import styles from "./HtmlViewScreen.styles";
 import { EmissionEnum } from "../../interfaces";
 import navigationOptions from "./HtmlView.navigationOptions";
 import methodology from "../../../assets/methodology/methodology.json";
+import { ui } from "../../utils";
 
-const HtmlViewScreen = ({route}) => {
+const HtmlViewScreen = ({ route }) => {
   const emissionType = route?.params?.emissionType;
-  let title: any, html: string;
+  let html: string;
   switch (emissionType) {
     case EmissionEnum.custom:
+      html = "<h2> Custom Placeholder </h2>";
       break;
     case EmissionEnum.electricity:
+      html = "<h2> Electricity Placeholder </h2>";
       break;
     case EmissionEnum.food:
-      break;
-    case EmissionEnum.purchase:
+      html = "<h2> Food Placeholder </h2>";
       break;
     case EmissionEnum.streaming:
+      html = "<h2> Streaming Placeholder </h2>";
       break;
     default:
-      title = "METHODOLOGY_SCREEN_TITLE"
-      html = methodology[0].body
+      html = methodology[0].body;
       break;
   }
 
@@ -31,9 +33,7 @@ const HtmlViewScreen = ({route}) => {
     <ScrollView style={styles.container}>
       <HTML
         html={html}
-        onLinkPress={(_: GestureResponderEvent, link: string) => {
-          Linking.openURL(link);
-        }}
+        onLinkPress={ui.onHTMLBodyLinkPress}
         baseFontStyle={{ fontSize: 18 }}
       />
     </ScrollView>
