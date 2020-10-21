@@ -9,7 +9,10 @@ const openComingSoon = (navigation) => (props = {}) => {
 };
 
 const openInfoModal = (navigation) => (props = {}) => {
-  navigation.navigate("InfoModal", props);
+  navigation.navigate("InfoModal", {
+    screen: "InfoModal",
+    params: props,
+  });
 };
 
 /* push */

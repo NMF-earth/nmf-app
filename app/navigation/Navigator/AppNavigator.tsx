@@ -6,7 +6,6 @@ import ModalNavigator from "./ModalNavigator";
 import InfoModalNavigator from "./InfoModalNavigator";
 import RootNavigator from "./RootNavigator";
 import ComingSoonScreen from "../../screens/ComingSoon";
-import InfoModalScreen from "../../screens/InfoModal";
 
 const AppStack = createStackNavigator();
 
@@ -16,8 +15,8 @@ const App = (): React.ReactElement => {
       <AppStack.Navigator mode="modal">
         <AppStack.Screen
           name="AppStack"
-          component={RootNavigator}
           options={{ headerShown: false }}
+          component={RootNavigator}
         />
         <AppStack.Screen
           name="ComingSoon"
@@ -26,7 +25,7 @@ const App = (): React.ReactElement => {
         />
         <AppStack.Screen
           name="InfoModal"
-          options={InfoModalScreen.navigationOptions}
+          options={{ headerShown: false }}
           component={InfoModalNavigator}
         />
       </AppStack.Navigator>
