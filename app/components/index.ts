@@ -8,7 +8,7 @@ import StickersImage from "./StickersImage";
 import SelectableListItem from "./SelectableListItem";
 import ListItem from "./ListItem";
 import HTMLImage from "./HTMLImage";
-import EmissionInfoButton from "./EmissionInfoButton";
+import InfoButton from "./InfoButton";
 
 export {
   HTMLImage,
@@ -21,5 +21,5 @@ export {
   Button,
   Text,
   TextInput,
-  EmissionInfoButton,
+  InfoButton,
 };

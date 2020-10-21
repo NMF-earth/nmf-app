@@ -3,10 +3,10 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 
 import ModalNavigator from "./ModalNavigator";
-import HtmlViewModalNavigator from "./HtmlViewModalNavigator";
+import InfoModalNavigator from "./InfoModalNavigator";
 import RootNavigator from "./RootNavigator";
 import ComingSoonScreen from "../../screens/ComingSoon";
-import HtmlViewScreen from "../../screens/HtmlView";
+import InfoModalScreen from "../../screens/InfoModal";
 
 const AppStack = createStackNavigator();
 
@@ -25,9 +25,9 @@ const App = (): React.ReactElement => {
           component={ModalNavigator}
         />
         <AppStack.Screen
-          name="HtmlView"
-          options={HtmlViewScreen.navigationOptions}
-          component={HtmlViewModalNavigator}
+          name="InfoModal"
+          options={InfoModalScreen.navigationOptions}
+          component={InfoModalNavigator}
         />
       </AppStack.Navigator>
     </NavigationContainer>
