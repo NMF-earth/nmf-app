@@ -1,7 +1,7 @@
 import { filter, propEq, find, pathOr, pipe } from "ramda";
 
 import { namespace } from "./emissions.slice";
-import { EmissionEnum } from "../../interfaces";
+import { EmissionType } from "../../interfaces";
 
 const getAllEmissions = pathOr([], [namespace]);
 
@@ -15,24 +15,24 @@ const getEmissionsMitigated = (state) =>
   pipe(getAllEmissions, filter(propEq("isMitigated", true)))(state);
 
 const isTransportEmission = (emission) =>
-  emission.emissionType === EmissionEnum.transport;
+  emission.emissionType === EmissionType.transport;
 
 const isFoodEmission = (emission) =>
-  emission.emissionType === EmissionEnum.food;
+  emission.emissionType === EmissionType.food;
 
 const isStreamingEmission = (emission) =>
-  emission.emissionType === EmissionEnum.streaming;
+  emission.emissionType === EmissionType.streaming;
 
 const isElectricityEmission = (emission) =>
-  emission.emissionType === EmissionEnum.electricity;
+  emission.emissionType === EmissionType.electricity;
 
 const isCustomEmission = (emission) =>
-  emission.emissionType === EmissionEnum.custom;
+  emission.emissionType === EmissionType.custom;
 
 const isOtherEmission = (emission) =>
-  emission.emissionType === EmissionEnum.custom ||
-  emission.emissionType === EmissionEnum.streaming ||
-  emission.emissionType === EmissionEnum.electricity;
+  emission.emissionType === EmissionType.custom ||
+  emission.emissionType === EmissionType.streaming ||
+  emission.emissionType === EmissionType.electricity;
 
 const getTransportEmissions = pipe(
   getAllEmissions,

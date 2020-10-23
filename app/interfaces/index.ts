@@ -1,3 +1,3 @@
-import { Emission, EmissionEnum } from "./emission";
+import { Emission, EmissionType } from "./emission";
 
-export { Emission, EmissionEnum };
+export { Emission, EmissionType };

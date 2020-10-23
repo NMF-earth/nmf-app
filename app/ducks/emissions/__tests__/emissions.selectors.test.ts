@@ -6,56 +6,56 @@ import {
 } from "carbon-footprint";
 
 import emissions from "../";
-import { Emission as EmissionType, EmissionEnum } from "../../../interfaces";
+import { Emission, EmissionType } from "../../../interfaces";
 
 let state;
 
-const emissionFood: EmissionType = {
+const emissionFood: Emission = {
   id: "1",
   creationDate: "2020-01-26T11:04:55.334Z",
   emissionModelType: FoodEnum.redMeat,
-  emissionType: EmissionEnum.food,
+  emissionType: EmissionType.food,
   isMitigated: false,
   value: 10,
 };
 
-const emissionTransport: EmissionType = {
+const emissionTransport: Emission = {
   id: "2",
   creationDate: "2020-01-26T11:04:55.334Z",
   emissionModelType: TransportEnum.bus,
-  emissionType: EmissionEnum.transport,
+  emissionType: EmissionType.transport,
   isMitigated: false,
   value: 13,
 };
 
-const emissionCustom: EmissionType = {
+const emissionCustom: Emission = {
   id: "3",
   creationDate: "2020-01-26T11:04:55.334Z",
   emissionModelType: "custom",
-  emissionType: EmissionEnum.custom,
+  emissionType: EmissionType.custom,
   isMitigated: false,
   value: 100,
 };
 
-const emissionStreaming: EmissionType = {
+const emissionStreaming: Emission = {
   id: "4",
   creationDate: "2020-01-26T11:04:55.334Z",
   emissionModelType: StreamingEnum.HDVideo,
-  emissionType: EmissionEnum.streaming,
+  emissionType: EmissionType.streaming,
   isMitigated: false,
   value: 23.32,
 };
 
-const emissionElectricity: EmissionType = {
+const emissionElectricity: Emission = {
   id: "4",
   creationDate: "2020-01-26T11:04:55.334Z",
   emissionModelType: ElectricityEnum.france,
-  emissionType: EmissionEnum.electricity,
+  emissionType: EmissionType.electricity,
   isMitigated: false,
   value: 1000,
 };
 
-const emissionMitigated: EmissionType = {
+const emissionMitigated: Emission = {
   ...emissionFood,
   id: "5",
   isMitigated: true,

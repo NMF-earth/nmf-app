@@ -4,35 +4,35 @@ import moment from "moment";
 
 import { selectors } from "../";
 import emissions from "../../../../ducks/emissions";
-import { Emission as EmissionType, EmissionEnum } from "../../../../interfaces";
+import { Emission, EmissionType } from "../../../../interfaces";
 
 import { calculation } from "../../../../utils";
 
 let state;
 
-const emissionToday: EmissionType = {
+const emissionToday: Emission = {
   id: "1",
   creationDate: moment().utc().toISOString(),
   emissionModelType: FoodEnum.beans,
-  emissionType: EmissionEnum.food,
+  emissionType: EmissionType.food,
   isMitigated: false,
   value: 10,
 };
 
-const emissionLastMonth: EmissionType = {
+const emissionLastMonth: Emission = {
   id: "12",
   creationDate: moment().subtract(1, "month").utc().toISOString(),
   emissionModelType: TransportEnum.boat,
-  emissionType: EmissionEnum.transport,
+  emissionType: EmissionType.transport,
   isMitigated: false,
   value: 100,
 };
 
-const emissionLastYear: EmissionType = {
+const emissionLastYear: Emission = {
   id: "123",
   creationDate: moment().subtract(1, "year").utc().toISOString(),
   emissionModelType: FoodEnum.cheese,
-  emissionType: EmissionEnum.food,
+  emissionType: EmissionType.food,
   isMitigated: false,
   value: 5,
 };

@@ -4,27 +4,24 @@ import moment from "moment";
 
 import { selectors } from "../";
 import emissions from "../../../../../../ducks/emissions";
-import {
-  Emission as EmissionType,
-  EmissionEnum,
-} from "../../../../../../interfaces";
+import { Emission, EmissionType } from "../../../../../../interfaces";
 
 let state;
 
-const emissionToday: EmissionType = {
+const emissionToday: Emission = {
   id: "1",
   creationDate: moment().utc().toISOString(),
   emissionModelType: FoodEnum.redMeat,
-  emissionType: EmissionEnum.food,
+  emissionType: EmissionType.food,
   isMitigated: false,
   value: 10,
 };
 
-const emissionLastWeek: EmissionType = {
+const emissionLastWeek: Emission = {
   id: "12",
   creationDate: moment().subtract(1, "week").utc().toISOString(),
   emissionModelType: FoodEnum.redMeat,
-  emissionType: EmissionEnum.food,
+  emissionType: EmissionType.food,
   isMitigated: false,
   value: 100,
 };

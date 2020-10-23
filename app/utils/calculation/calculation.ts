@@ -9,7 +9,7 @@ import {
   streaming,
 } from "carbon-footprint";
 
-import { EmissionEnum, Emission } from "../../interfaces";
+import { EmissionType, Emission } from "../../interfaces";
 
 const isNilOrEmpty = either(isNil, isEmpty);
 
@@ -57,15 +57,15 @@ const getFlightEmissionValue = (duration: number) => {
 };
 
 const getC02ValueFromEmission = (emission: Emission) => {
-  if (emission.emissionType === EmissionEnum.custom) {
+  if (emission.emissionType === EmissionType.custom) {
     return emission.value;
   }
 
-  if (emission.emissionType === EmissionEnum.electricity) {
+  if (emission.emissionType === EmissionType.electricity) {
     return emission.value * electricity[emission.emissionModelType];
   }
 
-  if (emission.emissionType === EmissionEnum.streaming) {
+  if (emission.emissionType === EmissionType.streaming) {
     return getInternetUsageCarbonImpact(
       emission.value,
       streaming[emission.emissionModelType] * emission.value,

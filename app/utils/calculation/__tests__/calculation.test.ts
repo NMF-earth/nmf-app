@@ -11,13 +11,13 @@ import {
 } from "carbon-footprint";
 
 import calculation from "../";
-import { Emission, EmissionEnum } from "../../../interfaces";
+import { Emission, EmissionType } from "../../../interfaces";
 
 const emissionFood: Emission = {
   id: "123",
   creationDate: "2020-01-26T11:04:55.334Z",
   emissionModelType: FoodEnum.beans,
-  emissionType: EmissionEnum.food,
+  emissionType: EmissionType.food,
   isMitigated: false,
   value: 10,
 };
@@ -30,26 +30,26 @@ const emissionFoodRecent = {
 const emissionTransport = {
   ...emissionFood,
   emissionModelType: TransportEnum.boat,
-  emissionType: EmissionEnum.transport,
+  emissionType: EmissionType.transport,
 };
 
 const emissionStreaming = {
   ...emissionFood,
   emissionModelType: StreamingEnum.HDVideo,
-  emissionType: EmissionEnum.streaming,
+  emissionType: EmissionType.streaming,
   location: ElectricityEnum.argentina,
 };
 
 const emissionElectricity = {
   ...emissionFood,
   emissionModelType: ElectricityEnum.france,
-  emissionType: EmissionEnum.electricity,
+  emissionType: EmissionType.electricity,
 };
 
 const emissionCustom = {
   ...emissionFood,
   emissionModelType: "custom",
-  emissionType: EmissionEnum.custom,
+  emissionType: EmissionType.custom,
 };
 
 describe("getC02ValueFromEmission should return the correct co2 emitted value for", () => {

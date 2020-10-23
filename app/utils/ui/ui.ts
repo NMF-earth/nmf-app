@@ -7,7 +7,7 @@ import {
 } from "carbon-footprint";
 import { contains, __ } from "ramda";
 
-import { EmissionEnum } from "../../interfaces";
+import { EmissionType } from "../../interfaces";
 import { t } from "../translations";
 
 const isElectricityEmission = contains(__, Object.keys(ElectricityEnum));
@@ -18,7 +18,7 @@ const getTranslationModelType = (emissionModelType) => {
   }
 
   switch (emissionModelType) {
-    case EmissionEnum.custom:
+    case EmissionType.custom:
       return t("UI_CUSTOM");
     case FoodEnum.redMeat:
       return t("UI_RED_MEAT");
@@ -64,7 +64,7 @@ const getIconFromModelType = (emissionModelType) => {
   }
 
   switch (emissionModelType) {
-    case EmissionEnum.custom:
+    case EmissionType.custom:
       return "md-build";
     case FoodEnum.redMeat:
     case FoodEnum.whiteMeat:

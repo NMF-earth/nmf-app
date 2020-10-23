@@ -5,7 +5,7 @@ import {
   ElectricityEnum,
 } from "carbon-footprint";
 
-enum EmissionEnum {
+enum EmissionType {
   food = "food",
   transport = "transport",
   purchase = "purchase",
@@ -23,7 +23,7 @@ type EmissionModel =
 
 interface EmissionPayload {
   name?: string;
-  emissionType: EmissionEnum;
+  emissionType: EmissionType;
   emissionModelType: EmissionModel;
   value: number;
   creationDate: string;
@@ -35,4 +35,4 @@ interface Emission extends EmissionPayload {
   isMitigated: boolean;
 }
 
-export { Emission, EmissionPayload, EmissionEnum, EmissionModel };
+export { Emission, EmissionPayload, EmissionType, EmissionModel };

@@ -17,7 +17,7 @@ import {
   Electricity,
   AddEmissionButton,
 } from "./components";
-import { EmissionEnum } from "../../interfaces";
+import { EmissionType } from "../../interfaces";
 import { EmissionPayload } from "../../interfaces/emission/emission.interface";
 import {
   calculation,
@@ -51,8 +51,8 @@ const AddEmissionScreen = ({
 }: Props & LocalizationContextProps) => {
   const location = useSelector(userPreferences.selectors.getLocation);
   const [emissionName, setEmissionName] = useState<string>("");
-  const [emissionType, setEmissionType] = useState<EmissionEnum>(
-    EmissionEnum.transport
+  const [emissionType, setEmissionType] = useState<EmissionType>(
+    EmissionType.transport
   );
   const [transportType, setTransportType] = useState<TransportEnum>(
     TransportEnum.car
@@ -105,7 +105,7 @@ const AddEmissionScreen = ({
   };
 
   const renderTransport = () => {
-    if (emissionType === EmissionEnum.transport) {
+    if (emissionType === EmissionType.transport) {
       if (transportType === TransportEnum.plane) {
         emissionPayload.value = calculation.getFlightEmissionValue(
           durationMinutes
@@ -132,7 +132,7 @@ const AddEmissionScreen = ({
   };
 
   const renderElectricity = () => {
-    if (emissionType === EmissionEnum.electricity) {
+    if (emissionType === EmissionType.electricity) {
       emissionPayload.value = electricityConsumption;
       emissionPayload.emissionModelType = location;
 
@@ -148,7 +148,7 @@ const AddEmissionScreen = ({
   };
 
   const renderFood = () => {
-    if (emissionType === EmissionEnum.food) {
+    if (emissionType === EmissionType.food) {
       emissionPayload.value = quantity;
       emissionPayload.emissionModelType = foodType;
 
@@ -165,7 +165,7 @@ const AddEmissionScreen = ({
   };
 
   const renderStreaming = () => {
-    if (emissionType === EmissionEnum.streaming) {
+    if (emissionType === EmissionType.streaming) {
       emissionPayload.value = durationSeconds;
       emissionPayload.emissionModelType = streamingType;
       emissionPayload.location = location;
@@ -184,7 +184,7 @@ const AddEmissionScreen = ({
   };
 
   const renderCustom = () => {
-    if (emissionType === EmissionEnum.custom) {
+    if (emissionType === EmissionType.custom) {
       emissionPayload.value = co2eqKilograms;
       emissionPayload.emissionModelType = "custom";
 
@@ -199,19 +199,19 @@ const AddEmissionScreen = ({
   };
 
   const onTransportTagPress = useCallback(() => {
-    setEmissionType(EmissionEnum.transport);
+    setEmissionType(EmissionType.transport);
   }, []);
   const onFoodTagPress = useCallback(() => {
-    setEmissionType(EmissionEnum.food);
+    setEmissionType(EmissionType.food);
   }, []);
   const onStreamingTagPress = useCallback(() => {
-    setEmissionType(EmissionEnum.streaming);
+    setEmissionType(EmissionType.streaming);
   }, []);
   const onElectricityTagPress = useCallback(() => {
-    setEmissionType(EmissionEnum.electricity);
+    setEmissionType(EmissionType.electricity);
   }, []);
   const onCustomTagPress = useCallback(() => {
-    setEmissionType(EmissionEnum.custom);
+    setEmissionType(EmissionType.custom);
   }, []);
 
   const isDarkModeEnabled = ui.isDarkModeEnabled();
@@ -231,31 +231,31 @@ const AddEmissionScreen = ({
         <ScrollView horizontal style={styles.tagContainer}>
           <Tag
             icon={"md-airplane"}
-            selected={emissionType === EmissionEnum.transport}
+            selected={emissionType === EmissionType.transport}
             title={t("ADD_EMISSION_SCREEN_TRANSPORT")}
             onPress={onTransportTagPress}
           />
           <Tag
             icon={"md-restaurant"}
-            selected={emissionType === EmissionEnum.food}
+            selected={emissionType === EmissionType.food}
             title={t("ADD_EMISSION_SCREEN_FOOD")}
             onPress={onFoodTagPress}
           />
           <Tag
             icon={"md-play-circle"}
-            selected={emissionType === EmissionEnum.streaming}
+            selected={emissionType === EmissionType.streaming}
             title={t("ADD_EMISSION_SCREEN_STREAMING")}
             onPress={onStreamingTagPress}
           />
           <Tag
             icon={"md-flash"}
-            selected={emissionType === EmissionEnum.electricity}
+            selected={emissionType === EmissionType.electricity}
             title={t("ADD_EMISSION_SCREEN_ELECTRICITY")}
             onPress={onElectricityTagPress}
           />
           <Tag
             icon={"md-build"}
-            selected={emissionType === EmissionEnum.custom}
+            selected={emissionType === EmissionType.custom}
             title={t("ADD_EMISSION_SCREEN_CUSTOM")}
             onPress={onCustomTagPress}
           />

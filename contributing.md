@@ -18,9 +18,11 @@ We welcome pull requests to change to the codebase.
 
 1. Fork the repo and create your branch from `master`.
 2. If you've added code that should be tested, add tests.
-4. Ensure the test suite passes.
-5. Make sure your code lints.
-6. Make your pull request
+3. Ensure the test suite passes.
+4. Make sure your code lints.
+5. Make your pull request
+
+NB : PR older than one month will be deleted.
 
 ### Contributions are under the GPL-3.0 License
 
@@ -37,7 +39,7 @@ Please try to do the following :
 - Every new piece of code requires tests. If you don't know how to do that, it's fine, but please create an issue and add a `/* TODO: write test for ...` so we don't forget about doing it.
 - Write stories for new components. If you don't know how to do that, write a todo like previously shown.
 - Update tests / stories if you change anything
-- Run `yarn lint` to make sure that your code passes linting. 
+- Run `yarn lint` to make sure that your code passes linting.
 - Naming and folder structure is _really_ important. Have a look to the current code and see how it's done 😉
 - Do not reinvent the wheel : if you want to add a library like lodash instead of ramda, open a ticket first so we can discuss it.
 
@@ -100,6 +102,6 @@ The `import ... from '...';` at the top of files follow some rules:
 
 ## NPM packages
 
-All packages used in `package.json` should be using strict version. No `~` or `^` are allowed. Freezing version ensure that we all have the same version and that we don't need to have a look to `yarn.lock` to see what version we are using. Debugging and bug finding should be easier thanks to that. 
+All packages used in `package.json` should be using strict version. No `~` or `^` are allowed. Freezing version ensure that we all have the same version and that we don't need to have a look to `yarn.lock` to see what version we are using. Debugging and bug finding should be easier thanks to that.
 
 This rule can be discussed in the issues but until a better solution is found, any PR not respecting this rule will be declined.

@@ -11,7 +11,7 @@ import {
   Linking,
 } from "react-native";
 
-import { EmissionEnum } from "../../../interfaces";
+import { EmissionType } from "../../../interfaces";
 
 import ui from "../";
 import * as translationUtils from "../../translations/i18n";
@@ -123,7 +123,7 @@ describe("tests for ui.getIconFromModelType", () => {
   describe("custom type emissions", () => {
     it("returns md-build if custom Emission model", () => {
       // arrange
-      const emissionModelType = EmissionEnum.custom;
+      const emissionModelType = EmissionType.custom;
 
       // act
       const icon = ui.getIconFromModelType(emissionModelType);
@@ -371,7 +371,7 @@ describe("tests for ui.getTranslationModelType", () => {
   describe("custom type emissions", () => {
     it("returns UI_CUSTOM if custom Emission model", () => {
       // arrange
-      const emissionModelType = EmissionEnum.custom;
+      const emissionModelType = EmissionType.custom;
 
       // act
       const translationModelType = ui.getTranslationModelType(
