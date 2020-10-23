@@ -45,15 +45,6 @@ exports[`renders correctly SocialMedia 1`] = `
     >
       <MaterialCommunityIcons
         color="#595D58"
-        name="twitter"
-        size={32}
-      />
-    </TouchableOpacity>
-    <TouchableOpacity
-      onPress={[Function]}
-    >
-      <MaterialCommunityIcons
-        color="#595D58"
         name="mastodon"
         size={32}
       />

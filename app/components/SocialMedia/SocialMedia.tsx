@@ -18,10 +18,6 @@ const socialMedia = [
     url: "https://github.com/NMF-earth",
   },
   {
-    iconName: "twitter",
-    url: "https://twitter.com/nmf_earth",
-  },
-  {
     iconName: "mastodon",
     url: "https://mastodon.social/@nmf_earth",
   },
