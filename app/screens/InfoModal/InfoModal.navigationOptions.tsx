@@ -6,26 +6,40 @@ import { Layout } from "constant";
 
 import { Colors, ComponentsStyle } from "../../style";
 import { navigate } from "../../navigation";
-import { platform, t } from "../../utils";
+import { platform, t, ui } from "../../utils";
 import { Text } from "../../components";
 
 const iconStyle = { paddingRight: Layout.PADDING_HORIZONTAL };
 
-const navigationOptionsAndroid = () => ({
+const navigationOptionsAndroid = ({ route }) => ({
   ...ComponentsStyle.transitionBetweenScreenPresets,
   headerStyle: {
     ...ComponentsStyle.header,
   },
-  headerTitle: () => <Text.H1>{t("METHODOLOGY_SCREEN_TITLE")}</Text.H1>,
+  headerTitle: () =>
+    route.params?.emissionModelType ? (
+      <Text.H1>
+        {ui.getTranslationModelType(route.params.emissionModelType)}
+      </Text.H1>
+    ) : (
+      <Text.H1>{t("INFO_MODAL_SCREEN_METHODOLOGY")}</Text.H1>
+    ),
   headerRight: () => null,
 });
 
-const navigationOptionsIOS = ({ navigation }) => ({
+const navigationOptionsIOS = ({ navigation, route }) => ({
   headerStyle: {
     ...ComponentsStyle.header,
     borderBottomWidth: 0,
   },
-  headerTitle: () => <Text.H1>{t("METHODOLOGY_SCREEN_TITLE")}</Text.H1>,
+  headerTitle: () =>
+    route.params?.emissionModelType ? (
+      <Text.H1>
+        {ui.getTranslationModelType(route.params.emissionModelType)}
+      </Text.H1>
+    ) : (
+      <Text.H1>{t("INFO_MODAL_SCREEN_METHODOLOGY")}</Text.H1>
+    ),
   headerLeft: () => null,
   headerRight: () => (
     <View style={iconStyle}>

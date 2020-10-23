@@ -5,7 +5,7 @@ import * as Emissions from "../../screens/Emissions/translations";
 import * as Settings from "../../screens/Settings/translations";
 import * as MonthlyBudget from "../../screens/MonthlyBudget/translations";
 import * as ComingSoon from "../../screens/ComingSoon/translations";
-import * as Methodology from "../../screens/Methodology/translations";
+import * as InfoModal from "../../screens/InfoModal/translations";
 import * as AddEmission from "../../screens/AddEmission/translations";
 import * as EmissionItem from "../../screens/EmissionItem/translations";
 import * as Intro from "../../screens/Intro/translations";
@@ -30,7 +30,7 @@ const en = {
   ...Emissions.en,
   ...Settings.en,
   ...ComingSoon.en,
-  ...Methodology.en,
+  ...InfoModal.en,
   ...AddEmission.en,
   ...EmissionItem.en,
   ...Intro.en,
@@ -49,7 +49,7 @@ const de = {
   ...Emissions.de,
   ...Settings.de,
   ...ComingSoon.de,
-  ...Methodology.de,
+  ...InfoModal.de,
   ...AddEmission.de,
   ...EmissionItem.de,
   ...Intro.de,
@@ -68,7 +68,7 @@ const fr = {
   ...Emissions.fr,
   ...Settings.fr,
   ...ComingSoon.fr,
-  ...Methodology.fr,
+  ...InfoModal.fr,
   ...AddEmission.fr,
   ...EmissionItem.fr,
   ...Intro.fr,
@@ -87,7 +87,7 @@ const sv = {
   ...Emissions.sv,
   ...Settings.sv,
   ...ComingSoon.sv,
-  ...Methodology.sv,
+  ...InfoModal.sv,
   ...AddEmission.sv,
   ...EmissionItem.sv,
   ...Intro.sv,
@@ -105,7 +105,7 @@ const pt = {
   ...Budget.pt,
   ...Emissions.pt,
   ...Settings.pt,
-  ...Methodology.pt,
+  ...InfoModal.pt,
   ...AddEmission.pt,
   ...EmissionItem.pt,
   ...Intro.pt,
@@ -123,7 +123,7 @@ const es = {
   ...Budget.es,
   ...Emissions.es,
   ...Settings.es,
-  ...Methodology.es,
+  ...InfoModal.es,
   ...AddEmission.es,
   ...EmissionItem.es,
   ...Intro.es,
@@ -141,7 +141,7 @@ const ru = {
   ...Budget.ru,
   ...Emissions.ru,
   ...Settings.ru,
-  ...Methodology.ru,
+  ...InfoModal.ru,
   ...AddEmission.ru,
   ...EmissionItem.ru,
   ...Intro.ru,
@@ -159,7 +159,7 @@ const pl = {
   ...Budget.pl,
   ...Emissions.pl,
   ...Settings.pl,
-  ...Methodology.pl,
+  ...InfoModal.pl,
   ...AddEmission.pl,
   ...EmissionItem.pl,
   ...Intro.pl,
@@ -177,7 +177,7 @@ const da = {
   ...Budget.da,
   ...Emissions.da,
   ...Settings.da,
-  ...Methodology.da,
+  ...InfoModal.da,
   ...AddEmission.da,
   ...EmissionItem.da,
   ...Intro.da,
@@ -194,7 +194,7 @@ export interface TranslationKeys
     Budget.TranslationKeys,
     Emissions.TranslationKeys,
     ComingSoon.TranslationKeys,
-    Methodology.TranslationKeys,
+    InfoModal.TranslationKeys,
     AddEmission.TranslationKeys,
     EmissionItem.TranslationKeys,
     Settings.TranslationKeys,

@@ -8,8 +8,11 @@ const openComingSoon = (navigation) => (props = {}) => {
   navigation.navigate("ComingSoon", props);
 };
 
-const openMethodology = (navigation) => (props = {}) => {
-  navigation.navigate("Methodology", props);
+const openInfoModal = (navigation) => (props = {}) => {
+  navigation.navigate("InfoModal", {
+    screen: "InfoModal",
+    params: props,
+  });
 };
 
 /* push */
@@ -52,7 +55,7 @@ const openBudget = (navigation) => (props = {}) => {
 const navigate = (navigation) => ({
   goBack: navigation.goBack,
   openComingSoon: navigateOneTime(openComingSoon(navigation)),
-  openMethodology: navigateOneTime(openMethodology(navigation)),
+  openInfoModal: navigateOneTime(openInfoModal(navigation)),
   openBudget: navigateOneTime(openBudget(navigation)),
   openMontlyBudget: navigateOneTime(openMontlyBudget(navigation)),
   openAddEmission: navigateOneTime(openAddEmission(navigation)),

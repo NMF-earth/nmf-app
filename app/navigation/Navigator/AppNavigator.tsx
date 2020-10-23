@@ -3,10 +3,9 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 
 import ModalNavigator from "./ModalNavigator";
-import MethodologyModalNavigator from "./MethodologyModalNavigator";
+import InfoModalNavigator from "./InfoModalNavigator";
 import RootNavigator from "./RootNavigator";
 import ComingSoonScreen from "../../screens/ComingSoon";
-import Methodology from "../../screens/Methodology";
 
 const AppStack = createStackNavigator();
 
@@ -16,8 +15,8 @@ const App = (): React.ReactElement => {
       <AppStack.Navigator mode="modal">
         <AppStack.Screen
           name="AppStack"
-          component={RootNavigator}
           options={{ headerShown: false }}
+          component={RootNavigator}
         />
         <AppStack.Screen
           name="ComingSoon"
@@ -25,9 +24,9 @@ const App = (): React.ReactElement => {
           component={ModalNavigator}
         />
         <AppStack.Screen
-          name="Methodology"
-          options={Methodology.navigationOptions}
-          component={MethodologyModalNavigator}
+          name="InfoModal"
+          options={{ headerShown: false }}
+          component={InfoModalNavigator}
         />
       </AppStack.Navigator>
     </NavigationContainer>

@@ -1,9 +1,8 @@
 import React from "react";
 
-import { Text } from "../../components";
+import { Text, InfoButton } from "../../components";
 import { t } from "../../utils";
 import { Colors, ComponentsStyle } from "../../style";
-import { InfoButton } from "./components";
 
 const navigationOptions = () => ({
   ...ComponentsStyle.transitionBetweenScreenPresets,

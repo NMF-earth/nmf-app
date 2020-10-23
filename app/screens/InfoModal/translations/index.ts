@@ -9,7 +9,7 @@ import ru from "./ru.json";
 import pl from "./pl.json";
 
 interface TranslationKeys {
-  METHODOLOGY_SCREEN_TITLE: string;
+  INFO_MODAL_SCREEN_METHODOLOGY: string;
 }
 
 export { en, fr, de, sv, es, pt, da, ru, pl, TranslationKeys };

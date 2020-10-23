@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 
 import { Layout } from "constant";
 
-import { Colors } from "../../../../style";
+import { Colors } from "../../style";
 
 export default StyleSheet.create({
   infoIcon: {

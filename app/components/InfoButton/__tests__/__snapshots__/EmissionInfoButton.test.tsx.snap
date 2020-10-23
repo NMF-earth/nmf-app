@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<Ionicons
+  name="md-information-circle"
+  onPress={[Function]}
+  size={26}
+  style={
+    Object {
+      "color": "#4BB377",
+      "marginRight": 14,
+    }
+  }
+/>
+`;
