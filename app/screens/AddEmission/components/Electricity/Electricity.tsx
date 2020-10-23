@@ -31,7 +31,7 @@ const Electricity = ({
     <>
       <View style={styles.container}>
         <Text.H3 style={styles.header}>
-          {t("ADD_EMISSION_ELECTRICITY_CONSUMPTION")}
+          {t("ADD_EMISSION_SCREEN_ELECTRICITY_CONSUMPTION")}
         </Text.H3>
         <View style={{ flexDirection: "row" }}>
           <Text.H2 blue50>
@@ -54,7 +54,9 @@ const Electricity = ({
         onSlidingComplete={setSliderValue}
       />
       <View style={styles.totalContainer}>
-        <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_TOTAL")}</Text.H3>
+        <Text.H3 style={styles.miniHeader}>
+          {t("ADD_EMISSION_SCREEN_TOTAL")}
+        </Text.H3>
         <Text.H2 blue50>
           <FormattedNumber
             value={sliderValue * electricity[electricityCountry]}

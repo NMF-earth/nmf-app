@@ -12,7 +12,7 @@ const navigationOptions = () => ({
   headerTintColor: Colors.grey100,
   headerBackTitleVisible: false,
   headerRight: () => <InfoButton />,
-  headerTitle: () => <Text.H1>{t("EMISSION_ITEM_TITLE")}</Text.H1>,
+  headerTitle: () => <Text.H1>{t("EMISSION_ITEM_SCREEN_TITLE")}</Text.H1>,
 });
 
 export default navigationOptions;

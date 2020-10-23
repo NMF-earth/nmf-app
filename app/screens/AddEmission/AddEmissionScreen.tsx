@@ -226,37 +226,37 @@ const AddEmissionScreen = ({
     <KeyboardAwareScrollView style={styles.container}>
       <View style={styles.typeContainer}>
         <View style={styles.textContainer}>
-          <Text.H3>{t("ADD_EMISSION_EMISSION_TYPE")}</Text.H3>
+          <Text.H3>{t("ADD_EMISSION_SCREEN_EMISSION_TYPE")}</Text.H3>
         </View>
         <ScrollView horizontal style={styles.tagContainer}>
           <Tag
             icon={"md-airplane"}
             selected={emissionType === EmissionEnum.transport}
-            title={t("ADD_EMISSION_TRANSPORT")}
+            title={t("ADD_EMISSION_SCREEN_TRANSPORT")}
             onPress={onTransportTagPress}
           />
           <Tag
             icon={"md-restaurant"}
             selected={emissionType === EmissionEnum.food}
-            title={t("ADD_EMISSION_FOOD")}
+            title={t("ADD_EMISSION_SCREEN_FOOD")}
             onPress={onFoodTagPress}
           />
           <Tag
             icon={"md-play-circle"}
             selected={emissionType === EmissionEnum.streaming}
-            title={t("ADD_EMISSION_STREAMING")}
+            title={t("ADD_EMISSION_SCREEN_STREAMING")}
             onPress={onStreamingTagPress}
           />
           <Tag
             icon={"md-flash"}
             selected={emissionType === EmissionEnum.electricity}
-            title={t("ADD_EMISSION_ELECTRICITY")}
+            title={t("ADD_EMISSION_SCREEN_ELECTRICITY")}
             onPress={onElectricityTagPress}
           />
           <Tag
             icon={"md-build"}
             selected={emissionType === EmissionEnum.custom}
-            title={t("ADD_EMISSION_CUSTOM")}
+            title={t("ADD_EMISSION_SCREEN_CUSTOM")}
             onPress={onCustomTagPress}
           />
           <View style={styles.separator} />
@@ -271,16 +271,16 @@ const AddEmissionScreen = ({
 
       <TextInput
         isOptional
-        placeholder={t("ADD_EMISSION_TEXTINPUT_PLACEHOLDER")}
-        title={t("ADD_EMISSION_NAME_EMISSION")}
+        placeholder={t("ADD_EMISSION_SCREEN_TEXTINPUT_PLACEHOLDER")}
+        title={t("ADD_EMISSION_SCREEN_NAME_EMISSION")}
         onChangeText={onChangeEmissionName}
         value={emissionName}
       />
 
       <DateTimePickerModal
-        headerTextIOS={t("ADD_EMISSION_PICKER_MODAL_HEADER_TEXT")}
-        confirmTextIOS={t("ADD_EMISSION_PICKER_MODAL_CONFIRM")}
-        cancelTextIOS={t("ADD_EMISSION_PICKER_MODAL_CANCEL")}
+        headerTextIOS={t("ADD_EMISSION_SCREEN_PICKER_MODAL_HEADER_TEXT")}
+        confirmTextIOS={t("ADD_EMISSION_SCREEN_PICKER_MODAL_CONFIRM")}
+        cancelTextIOS={t("ADD_EMISSION_SCREEN_PICKER_MODAL_CANCEL")}
         locale={locale}
         isVisible={isDatePickerVisible}
         isDarkModeEnabled={isDarkModeEnabled}
@@ -290,14 +290,14 @@ const AddEmissionScreen = ({
       />
 
       <View style={styles.textContainer}>
-        <Text.H3>{t("ADD_EMISSION_DATE")}</Text.H3>
+        <Text.H3>{t("ADD_EMISSION_SCREEN_DATE")}</Text.H3>
         <View style={styles.dateContainer}>
           <Text.Primary lightGray bold>
             {creationDate.locale(language).format("dddd Do MMMM YYYY")}
           </Text.Primary>
           <TouchableOpacity onPress={showDatePicker}>
             <Text.Primary bold green>
-              {t("ADD_EMISSION_CHANGE")}
+              {t("ADD_EMISSION_SCREEN_CHANGE")}
             </Text.Primary>
           </TouchableOpacity>
         </View>

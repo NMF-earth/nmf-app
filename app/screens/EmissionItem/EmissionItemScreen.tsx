@@ -59,13 +59,13 @@ const EmissionItemScreen = ({ language = "" }: LocalizationContextProps) => {
         <ScrollView style={styles.container}>
           {name.length ? (
             <>
-              <Text.H3>{t("EMISSION_ITEM_NAME")}</Text.H3>
+              <Text.H3>{t("EMISSION_ITEM_SCREEN_NAME")}</Text.H3>
               <Text.Primary darkGray style={styles.item}>
                 {name}
               </Text.Primary>
             </>
           ) : null}
-          <Text.H3>{t("EMISSION_ITEM_TYPE")}</Text.H3>
+          <Text.H3>{t("EMISSION_ITEM_SCREEN_TYPE")}</Text.H3>
           <ScrollView horizontal style={styles.item}>
             <Tag
               selected
@@ -73,7 +73,7 @@ const EmissionItemScreen = ({ language = "" }: LocalizationContextProps) => {
               title={ui.getTranslationModelType(emissionModelType)}
             />
           </ScrollView>
-          <Text.H3>{t("EMISSION_ITEM_QUANTITY")}</Text.H3>
+          <Text.H3>{t("EMISSION_ITEM_SCREEN_QUANTITY")}</Text.H3>
           <Text.Primary darkGray style={styles.item}>
             <FormattedNumber
               maximumFractionDigits={2}
@@ -81,7 +81,7 @@ const EmissionItemScreen = ({ language = "" }: LocalizationContextProps) => {
             />{" "}
             {co2Emission > 1 ? " kgC02eq" : " gC02eq"}
           </Text.Primary>
-          <Text.H3>{t("EMISSION_ITEM_DATE")}</Text.H3>
+          <Text.H3>{t("EMISSION_ITEM_SCREEN_DATE")}</Text.H3>
           <View style={styles.date}>
             <Text.Primary darkGray style={[styles.item, styles.day]}>
               {day + " "}
@@ -96,7 +96,7 @@ const EmissionItemScreen = ({ language = "" }: LocalizationContextProps) => {
             textType={"Primary"}
           >
             <Text.Primary white>
-              {t("EMISSION_ITEM_DELETE_EMISSION")}
+              {t("EMISSION_ITEM_SCREEN_DELETE_EMISSION")}
             </Text.Primary>
           </Button.Primary>
         </ScrollView>

@@ -58,7 +58,7 @@ export default ({
   return (
     <React.Fragment>
       <View style={styles.typeContainer}>
-        <Text.H3>{t("ADD_EMISSION_STREAMING_TYPE")}</Text.H3>
+        <Text.H3>{t("ADD_EMISSION_SCREEN_STREAMING_TYPE")}</Text.H3>
       </View>
       <ScrollView horizontal style={styles.tagContainer}>
         {TAGS.map((item) => (
@@ -73,7 +73,7 @@ export default ({
       </ScrollView>
       <View style={styles.durationDistanceContainer}>
         <Text.H3 style={styles.miniHeader}>
-          {t("ADD_EMISSION_DURATION")}
+          {t("ADD_EMISSION_SCREEN_DURATION")}
         </Text.H3>
         <Text.Primary lightGray>
           {hours + " hour(s) and " + minutes + " minute(s)."}
@@ -90,7 +90,9 @@ export default ({
         onSlidingComplete={onSliderValueChange}
       />
       <View style={styles.totalContainer}>
-        <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_TOTAL")}</Text.H3>
+        <Text.H3 style={styles.miniHeader}>
+          {t("ADD_EMISSION_SCREEN_TOTAL")}
+        </Text.H3>
         <Text.H2 blue50>
           <FormattedNumber
             value={carbonValue > 1 ? carbonValue : carbonValue * 1000}

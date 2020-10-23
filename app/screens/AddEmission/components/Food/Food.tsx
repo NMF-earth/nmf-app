@@ -45,7 +45,7 @@ export default ({
   return (
     <React.Fragment>
       <View style={styles.typeContainer}>
-        <Text.H3>{t("ADD_EMISSION_FOOD_TYPE")}</Text.H3>
+        <Text.H3>{t("ADD_EMISSION_SCREEN_FOOD_TYPE")}</Text.H3>
       </View>
       <ScrollView horizontal style={styles.tagContainer}>
         {TAGS.map((item) => (
@@ -60,7 +60,7 @@ export default ({
       </ScrollView>
       <View style={styles.durationContainer}>
         <Text.H3 style={styles.miniHeader}>
-          {t("ADD_EMISSION_QUANTITY")}
+          {t("ADD_EMISSION_SCREEN_QUANTITY")}
         </Text.H3>
         <Text.Primary lightGray>
           {Math.round(sliderValue) + " grams"}
@@ -77,7 +77,9 @@ export default ({
         onSlidingComplete={onSliderValueChange}
       />
       <View style={styles.totalContainer}>
-        <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_TOTAL")}</Text.H3>
+        <Text.H3 style={styles.miniHeader}>
+          {t("ADD_EMISSION_SCREEN_TOTAL")}
+        </Text.H3>
         <Text.H2 blue50>
           <FormattedNumber
             value={(sliderValue / 1000) * food[foodType]}

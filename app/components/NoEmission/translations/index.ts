@@ -9,10 +9,10 @@ import ru from "./ru.json";
 import pl from "./pl.json";
 
 interface TranslationKeys {
-  NO_EMISSION_TITLE: string;
-  NO_EMISSION_THANKS: string;
-  NO_EMISSION_START_USING_APP: string;
-  NO_EMISSION_ADD_FIRST_EMISSION: string;
+  NO_EMISSION_COMPONENT_TITLE: string;
+  NO_EMISSION_COMPONENT_THANKS: string;
+  NO_EMISSION_COMPONENT_START_USING_APP: string;
+  NO_EMISSION_COMPONENT_ADD_FIRST_EMISSION: string;
 }
 
 export { en, fr, de, sv, es, pt, da, ru, pl, TranslationKeys };

@@ -56,7 +56,7 @@ export default ({
     return (
       <View style={styles.durationDistanceContainer}>
         <Text.H3 style={styles.miniHeader}>
-          {t("ADD_EMISSION_DURATION")}
+          {t("ADD_EMISSION_SCREEN_DURATION")}
         </Text.H3>
         <Text.Primary lightGray>
           {hours + " hour(s) and " + minutes + " minute(s)."}
@@ -69,7 +69,7 @@ export default ({
     return (
       <View style={styles.durationDistanceContainer}>
         <Text.H3 style={styles.miniHeader}>
-          {t("ADD_EMISSION_DISTANCE")}
+          {t("ADD_EMISSION_SCREEN_DISTANCE")}
         </Text.H3>
         <Text.Primary lightGray>
           {Math.round(sliderValue) + " kilometer(s)"}
@@ -81,7 +81,7 @@ export default ({
   return (
     <React.Fragment>
       <View style={styles.typeContainer}>
-        <Text.H3>{t("ADD_EMISSION_TRANSPORT_TYPE")}</Text.H3>
+        <Text.H3>{t("ADD_EMISSION_SCREEN_TRANSPORT_TYPE")}</Text.H3>
       </View>
       <ScrollView horizontal style={styles.tagContainer}>
         {TAGS.map((item) => (
@@ -116,7 +116,9 @@ export default ({
         onSlidingComplete={onSliderValueChange}
       />
       <View style={styles.totalContainer}>
-        <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_TOTAL")}</Text.H3>
+        <Text.H3 style={styles.miniHeader}>
+          {t("ADD_EMISSION_SCREEN_TOTAL")}
+        </Text.H3>
         <Text.H2 style={{ color: Colors.blue50 }}>
           <FormattedNumber
             value={

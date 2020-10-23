@@ -9,13 +9,13 @@ import ru from "./ru.json";
 import pl from "./pl.json";
 
 interface TranslationKeys {
-  EMISSION_ITEM_TITLE: string;
-  EMISSION_ITEM_TYPE: string;
-  EMISSION_ITEM_QUANTITY: string;
-  EMISSION_ITEM_PRICE: string;
-  EMISSION_ITEM_DATE: string;
-  EMISSION_ITEM_DELETE_EMISSION: string;
-  EMISSION_ITEM_NAME: string;
+  EMISSION_ITEM_SCREEN_TITLE: string;
+  EMISSION_ITEM_SCREEN_TYPE: string;
+  EMISSION_ITEM_SCREEN_QUANTITY: string;
+  EMISSION_ITEM_SCREEN_PRICE: string;
+  EMISSION_ITEM_SCREEN_DATE: string;
+  EMISSION_ITEM_SCREEN_DELETE_EMISSION: string;
+  EMISSION_ITEM_SCREEN_NAME: string;
 }
 
 export { en, fr, de, sv, es, pt, da, ru, pl, TranslationKeys };

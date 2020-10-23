@@ -34,7 +34,7 @@ const AddEmissionButton = ({ goBack, emissionPayload }: Props) => {
       style={styles.button}
     >
       <Text.Primary white center bold>
-        {t("ADD_EMISSION_ADD_THIS_EMISSION")}
+        {t("ADD_EMISSION_SCREEN_ADD_THIS_EMISSION")}
       </Text.Primary>
     </Button.Primary>
   );

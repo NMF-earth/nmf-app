@@ -23,7 +23,7 @@ export default ({ setCo2eqKilograms, defaultValueSlider }: Props) => {
     <React.Fragment>
       <View style={styles.container}>
         <Text.H3 style={styles.header}>
-          {t("ADD_EMISSION_QUANTITY_OF_EMISSION")}
+          {t("ADD_EMISSION_SCREEN_QUANTITY_OF_EMISSION")}
         </Text.H3>
         <View style={{ flexDirection: "row" }}>
           <Text.H2 blue50>
