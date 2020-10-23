@@ -25,6 +25,10 @@ Repository for the [NMF.earth](https://nmf.earth/) React Native application, bui
 
 <br />
 
+### 🎌 Language support
+
+The app works in English, French, German, Swedish, Danish, Russian, Portugal, Polish.
+
 ### 📦 Getting started
 
 Installing Dependencies:
@@ -111,6 +115,7 @@ Stories (\*.story.tsx) can be automatically added to `storyLoader.js` with :
 ```bash
 $ yarn prestorybook
 ```
+
 <br />
 
 ### 📗 Sustainable guide
