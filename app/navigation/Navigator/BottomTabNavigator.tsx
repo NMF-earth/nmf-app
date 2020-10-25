@@ -1,5 +1,6 @@
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 import { Colors } from "../../style";
 
@@ -41,40 +42,43 @@ const SettingsOptions = {
   ),
 };
 
-const BottomTabNavigator = (): React.ReactElement => (
-  <BottomTab.Navigator
-    tabBarOptions={{
-      activeTintColor: Colors.green50,
-      inactiveTintColor: Colors.grey40,
-      style: {
-        paddingTop: -10,
-        backgroundColor: Colors.white,
-        borderTopWidth: 2,
-        borderTopColor: Colors.green10,
-      },
-    }}
-  >
-    <BottomTab.Screen
-      name="BudgetNavigator"
-      options={BudgetOptions}
-      component={BudgetNavigator}
-    />
-    <BottomTab.Screen
-      name="EmissionsNavigator"
-      options={EmissionsOptions}
-      component={EmissionsNavigator}
-    />
-    <BottomTab.Screen
-      name="Act"
-      options={ActOptions}
-      component={ActNavigator}
-    />
-    <BottomTab.Screen
-      name="SettingsNavigator"
-      options={SettingsOptions}
-      component={SettingsNavigator}
-    />
-  </BottomTab.Navigator>
-);
+const BottomTabNavigator = (): React.ReactElement => {
+  const { bottom } = useSafeAreaInsets();
+  return (
+    <BottomTab.Navigator
+      tabBarOptions={{
+        activeTintColor: Colors.green50,
+        inactiveTintColor: Colors.grey40,
+        style: {
+          backgroundColor: Colors.white,
+          borderTopWidth: 2,
+          borderTopColor: Colors.green10,
+          paddingBottom: bottom / 2 + 6,
+        },
+      }}
+    >
+      <BottomTab.Screen
+        name="BudgetNavigator"
+        options={BudgetOptions}
+        component={BudgetNavigator}
+      />
+      <BottomTab.Screen
+        name="EmissionsNavigator"
+        options={EmissionsOptions}
+        component={EmissionsNavigator}
+      />
+      <BottomTab.Screen
+        name="Act"
+        options={ActOptions}
+        component={ActNavigator}
+      />
+      <BottomTab.Screen
+        name="SettingsNavigator"
+        options={SettingsOptions}
+        component={SettingsNavigator}
+      />
+    </BottomTab.Navigator>
+  );
+};
 
 export default BottomTabNavigator;
