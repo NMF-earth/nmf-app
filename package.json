@@ -61,6 +61,7 @@
     "react-native-modal-datetime-picker": "8.5.4",
     "react-native-reanimated": "1.9.0",
     "react-native-render-html": "4.1.2",
+    "react-native-safe-area-context": "3.1.4",
     "react-native-screens": "2.11.0",
     "react-native-svg": "12.1.0",
     "react-native-tab-view": "2.15.1",
