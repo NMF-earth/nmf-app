@@ -1,9 +1,9 @@
 export {};
 import * as fs from "graceful-fs";
 
-const used_languages = ["en", "de", "fr", "sv", "pt", "es", "pl", "ru", "da"];
-const path_prefix = "../../../";
-const translation_dirs = [
+const usedLanguages = ["en", "de", "fr", "sv", "pt", "es", "pl", "ru", "da"];
+const pathPrefix = "../../../";
+const translationDirs = [
   "screens/Act/translations",
   "screens/Budget/translations",
   "screens/Emissions/translations",
@@ -30,7 +30,7 @@ const translation_dirs = [
 const getJSONfrom = (path: string) =>
   JSON.parse(JSON.stringify(fs.readFileSync(path)));
 
-used_languages.forEach((lang) => {
+usedLanguages.forEach((lang) => {
   // Log lang and create group for children logs
   console.log(
     ["🌎", "🌍", "🌏"][Math.round(Math.random() * 2)],
@@ -40,11 +40,11 @@ used_languages.forEach((lang) => {
   // Get reference JSON file with the source-of-truth content that'll be copied across other translation files
   const ref = getJSONfrom(`${lang}.json`);
   // Browse all the translation dirs and make necessary changes in the corresponding files
-  translation_dirs.forEach((translation_dir) => {
+  translationDirs.forEach((translationDir) => {
     // Select the file that matchs the current language
-    const path = `${path_prefix + translation_dir}/${lang}.json`;
+    const path = `${pathPrefix + translationDir}/${lang}.json`;
     // Get its content
-    let file = getJSONfrom(path);
+    const file = getJSONfrom(path);
     const keys = Object.keys(file);
     // Change content
     keys.forEach((key) => {
@@ -53,13 +53,13 @@ used_languages.forEach((lang) => {
         return (file[key] = ref[key]);
       } else {
         return console.warn(
-          `⚠ Reference doesn't have property '${key}' (from: '${translation_dir}')`
+          `⚠ Reference doesn't have property '${key}' (from: '${translationDir}')`
         );
       }
     });
     // Merge changes to the file
     fs.writeFileSync(path, JSON.stringify(file));
-    console.log("✔", translation_dir);
+    console.log("✔", translationDir);
   });
   console.groupEnd();
 });

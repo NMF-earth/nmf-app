@@ -23,20 +23,21 @@ import * as ActDetail from "../../../screens/ActDetail/translations";
 import * as NoEmission from "../../../components/NoEmission/translations";
 
 // Utils
-import * as UI from "../../../utils/ui/translations";
+import * as UI from "../../ui/translations";
 
 //! PUTTING ALL TRANSLATIONS TOGETHER
 
 // Languages
-const used_languages = ["en", "de", "fr", "sv", "pt", "es", "pl", "ru", "da"];
+const usedLanguages = ["en", "de", "fr", "sv", "pt", "es", "pl", "ru", "da"];
 
-let language_objects = {};
+const languageObjects = {};
 
-used_languages.forEach((language) => {
-  language_objects[language] = {
+usedLanguages.forEach((language) => {
+  languageObjects[language] = {
     ...UI[language],
     ...About[language],
     ...MonthlyBudget[language],
+    ...ComingSoon[language],
     ...NoEmission[language],
     ...Act[language],
     ...Budget[language],
@@ -54,10 +55,10 @@ used_languages.forEach((language) => {
 
 //! WRITING JSONs
 
-used_languages.forEach((language) => {
+usedLanguages.forEach((language) => {
   fs.writeFile(
     `${language}.json`,
-    JSON.stringify(language_objects[language]),
+    JSON.stringify(languageObjects[language]),
     (err) => {
       if (err) throw err;
       console.log("✔", language);
