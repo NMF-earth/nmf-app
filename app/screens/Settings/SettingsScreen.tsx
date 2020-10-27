@@ -67,7 +67,9 @@ const SettingsScreen = (props) => {
   return (
     <ScrollView style={styles.container}>
       {rowItems.map((item, index) => {
-        if (item.os && item.os !== Platform.OS) return null;
+        if (item.os && item.os !== Platform.OS) {
+          return null;
+        }
         return (
           <SettingsRow key={index} onPress={item.onPress} title={item.title} />
         );

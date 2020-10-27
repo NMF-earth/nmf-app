@@ -9,7 +9,7 @@ import { userPreferences } from "../../ducks";
 import navigationOptions from "./NotificationsScreen.navigationOptions";
 import styles from "./NotificationsScreen.styles";
 
-const MyLocationScreen = () => {
+const NotificationsScreen = () => {
   const dispatch = useDispatch();
   const [activated, setActivated] = useState(
     useSelector(userPreferences.selectors.getActivateNotifications)
@@ -17,22 +17,26 @@ const MyLocationScreen = () => {
 
   const onValueChange = useCallback(
     async (value: boolean) => {
-      await Notifications.requestPermissionsAsync();
-      if (value) {
-        await Notifications.scheduleNotificationAsync({
-          content: {
-            title: t("NOTIFICATIONS_SCREEN_NOTIFICATION_TITLE"),
-            body: t("NOTIFICATIONS_SCREEN_NOTIFICATION_BODY"),
-          },
-          trigger: {
-            weekday: 1,
-            hour: 21,
-            minute: 0,
-            repeats: true,
-          },
-        });
-      } else {
-        await Notifications.cancelAllScheduledNotificationsAsync();
+      try {
+        await Notifications.requestPermissionsAsync();
+        if (value) {
+          await Notifications.scheduleNotificationAsync({
+            content: {
+              title: t("NOTIFICATIONS_SCREEN_NOTIFICATION_TITLE"),
+              body: t("NOTIFICATIONS_SCREEN_NOTIFICATION_BODY"),
+            },
+            trigger: {
+              weekday: 1,
+              hour: 21,
+              minute: 0,
+              repeats: true,
+            },
+          });
+        } else {
+          await Notifications.cancelAllScheduledNotificationsAsync();
+        }
+      } catch (e) {
+        console.log(e);
       }
       setActivated(value);
       dispatch(userPreferences.actions.toggleNotifications(value));
@@ -55,6 +59,6 @@ const MyLocationScreen = () => {
   );
 };
 
-MyLocationScreen.navigationOptions = navigationOptions;
+NotificationsScreen.navigationOptions = navigationOptions;
 
-export default MyLocationScreen;
+export default NotificationsScreen;
