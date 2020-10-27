@@ -1,25 +1,22 @@
-export {};
-import * as fs from "graceful-fs";
-
+import * as fs from "fs";
 const usedLanguages = ["en", "de", "fr", "sv", "pt", "es", "pl", "ru", "da"];
-const pathPrefix = "../../../";
 const translationDirs = [
-  "screens/Act/translations",
-  "screens/Budget/translations",
-  "screens/Emissions/translations",
-  "screens/Settings/translations",
-  "screens/MonthlyBudget/translations",
-  "screens/ComingSoon/translations",
-  "screens/InfoModal/translations",
-  "screens/AddEmission/translations",
-  "screens/EmissionItem/translations",
-  "screens/Intro/translations",
-  "screens/About/translations",
-  "screens/SupportUs/translations",
-  "screens/MyLocation/translations",
-  "screens/ActDetail/translations",
-  "components/NoEmission/translations",
-  "utils/ui/translations",
+  "app/screens/Act/translations",
+  "app/screens/Budget/translations",
+  "app/screens/Emissions/translations",
+  "app/screens/Settings/translations",
+  "app/screens/MonthlyBudget/translations",
+  "app/screens/ComingSoon/translations",
+  "app/screens/InfoModal/translations",
+  "app/screens/AddEmission/translations",
+  "app/screens/EmissionItem/translations",
+  "app/screens/Intro/translations",
+  "app/screens/About/translations",
+  "app/screens/SupportUs/translations",
+  "app/screens/MyLocation/translations",
+  "app/screens/ActDetail/translations",
+  "app/components/NoEmission/translations",
+  "app/utils/ui/translations",
 ];
 
 /**
@@ -42,7 +39,7 @@ usedLanguages.forEach((lang) => {
   // Browse all the translation dirs and make necessary changes in the corresponding files
   translationDirs.forEach((translationDir) => {
     // Select the file that matchs the current language
-    const path = `${pathPrefix + translationDir}/${lang}.json`;
+    const path = `${translationDir}/${lang}.json`;
     // Get its content
     const file = getJSONfrom(path);
     const keys = Object.keys(file);
