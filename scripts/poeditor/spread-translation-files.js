@@ -27,12 +27,7 @@ const translationDirs = [
 const getJSONfrom = (path) => JSON.parse(JSON.stringify(fs.readFileSync(path)));
 
 usedLanguages.forEach((lang) => {
-  // Log lang and create group for children logs
-  console.log(
-    ["🌎", "🌍", "🌏"][Math.round(Math.random() * 2)],
-    lang.toUpperCase()
-  );
-  console.group(lang);
+  console.group(lang.toUpperCase() + ":");
   // Get reference JSON file with the source-of-truth content that'll be copied across other translation files
   const ref = getJSONfrom(`${lang}.json`);
   // Browse all the translation dirs and make necessary changes in the corresponding files
