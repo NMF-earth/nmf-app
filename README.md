@@ -43,13 +43,13 @@ Running the app:
 $ yarn start
 ```
 
-For starting the app on a specfic OS:
+For starting the app on a specific OS:
 
 ```bash
 $ yarn ios | yarn android
 ```
 
-Copy the 2 files that contains secrets and replace them with yours
+Copy the 2 files that contain secrets and replace them with yours
 
 ```bash
 $ cp app.example.json app.json
@@ -64,7 +64,7 @@ $ cp secret.example.ts secret.ts
 
 - Prettier is also used and apply automatically by eslint
 
-- Typescript is used in the project for typechecking and should be configured in your [editor](https://github.com/Microsoft/TypeScript/wiki/TypeScript-Editor-Support).
+- Typescript is used in the project for type-checking and should be configured in your [editor](https://github.com/Microsoft/TypeScript/wiki/TypeScript-Editor-Support).
 
 You can check this manually by running:
 
@@ -120,7 +120,7 @@ $ yarn prestorybook
 
 ### 📗 Sustainable guide
 
-To place a new `.md` files inside `guides` folder or modify existing guide and then run `node scripts/generate-guides.js` to generate a new sustainable guide. Images can be used in the `.md` as follow : `![Earth](earth.png)` and should be place in `assets/images/guide`.
+To place new `.md` files inside `guides` folder or modify existing guide and then run `node scripts/generate-guides.js` to generate a new sustainable guide. Images can be used in the `.md` as follow: `![Earth](earth.png)` and should be place in `assets/images/guide`.
 
 <br />
 
