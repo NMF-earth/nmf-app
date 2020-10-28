@@ -3,6 +3,7 @@ import * as Act from "../../screens/Act/translations";
 import * as Budget from "../../screens/Budget/translations";
 import * as Emissions from "../../screens/Emissions/translations";
 import * as Settings from "../../screens/Settings/translations";
+import * as Notifications from "../../screens/Notifications/translations";
 import * as MonthlyBudget from "../../screens/MonthlyBudget/translations";
 import * as ComingSoon from "../../screens/ComingSoon/translations";
 import * as InfoModal from "../../screens/InfoModal/translations";
@@ -23,6 +24,7 @@ import * as UI from "../../utils/ui/translations";
 const en = {
   ...UI.en,
   ...About.en,
+  ...Notifications.en,
   ...MonthlyBudget.en,
   ...NoEmission.en,
   ...Act.en,
@@ -61,6 +63,7 @@ const de = {
 const fr = {
   ...UI.fr,
   ...About.fr,
+  ...Notifications.fr,
   ...MonthlyBudget.fr,
   ...NoEmission.fr,
   ...Act.fr,
@@ -80,6 +83,7 @@ const fr = {
 const sv = {
   ...UI.sv,
   ...About.sv,
+  ...Notifications.sv,
   ...MonthlyBudget.sv,
   ...NoEmission.sv,
   ...Act.sv,
@@ -99,6 +103,7 @@ const sv = {
 const pt = {
   ...UI.pt,
   ...About.pt,
+  ...Notifications.pt,
   ...MonthlyBudget.pt,
   ...NoEmission.pt,
   ...Act.pt,
@@ -117,6 +122,7 @@ const pt = {
 const es = {
   ...UI.es,
   ...About.es,
+  ...Notifications.es,
   ...MonthlyBudget.es,
   ...NoEmission.es,
   ...Act.es,
@@ -135,6 +141,7 @@ const es = {
 const ru = {
   ...UI.ru,
   ...About.ru,
+  ...Notifications.ru,
   ...MonthlyBudget.ru,
   ...NoEmission.ru,
   ...Act.ru,
@@ -153,6 +160,7 @@ const ru = {
 const pl = {
   ...UI.pl,
   ...About.pl,
+  ...Notifications.pl,
   ...MonthlyBudget.pl,
   ...NoEmission.pl,
   ...Act.pl,
@@ -171,6 +179,7 @@ const pl = {
 const da = {
   ...UI.da,
   ...About.da,
+  ...Notifications.da,
   ...MonthlyBudget.da,
   ...NoEmission.da,
   ...Act.da,
@@ -200,6 +209,7 @@ export interface TranslationKeys
     Settings.TranslationKeys,
     Intro.TranslationKeys,
     About.TranslationKeys,
+    Notifications.TranslationKeys,
     MyLocation.TranslationKeys,
     SupportUs.TranslationKeys,
     ActDetail.TranslationKeys {}

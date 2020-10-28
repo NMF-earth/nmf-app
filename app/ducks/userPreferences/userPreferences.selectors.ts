@@ -9,7 +9,11 @@ const getAcceptedTermsOfUseVersion = (state) =>
 const getLocation = (state) =>
   pathOr(ElectricityEnum.world, [namespace, "location"], state);
 
+const getActivateNotifications = (state) =>
+  pathOr(false, [namespace, "activatedNotifications"], state);
+
 export default {
   getAcceptedTermsOfUseVersion,
+  getActivateNotifications,
   getLocation,
 };

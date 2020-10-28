@@ -6,6 +6,7 @@ let state;
 
 const initialState = {
   acceptedTermsOfUseVersion: 3,
+  activatedNotifications: false,
   location: ElectricityEnum.world,
 };
 
@@ -24,5 +25,10 @@ describe("userPreferences selector should", () => {
   test("return user location", () =>
     expect(userPreferences.selectors.getLocation(state)).toEqual(
       initialState.location
+    ));
+
+  test("return notification status", () =>
+    expect(userPreferences.selectors.getActivateNotifications(state)).toEqual(
+      initialState.activatedNotifications
     ));
 });
