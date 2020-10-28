@@ -115,7 +115,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
             }
           }
         >
-          United States : 1,5 tons
+          United States : 1.5 tons
         </Text.Secondary>
         <Text.Secondary
           center={true}

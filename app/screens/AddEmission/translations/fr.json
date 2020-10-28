@@ -1,7 +1,7 @@
 {
-  "ADD_EMISSION_SCREEN_TITLE": "Ajouter émission",
+  "ADD_EMISSION_SCREEN_TITLE": "Ajouter une émission",
   "ADD_EMISSION_SCREEN_TRANSPORT": "Transport",
-  "ADD_EMISSION_SCREEN_ELECTRICITY": "Electricité",
+  "ADD_EMISSION_SCREEN_ELECTRICITY": "Électricité",
   "ADD_EMISSION_SCREEN_ELECTRICITY_CONSUMPTION": "Consommation d'électricité",
   "ADD_EMISSION_SCREEN_FOOD": "Alimentation",
   "ADD_EMISSION_SCREEN_CUSTOM": "Personnalisé",
@@ -16,7 +16,7 @@
   "ADD_EMISSION_SCREEN_QUANTITY": "Quantité",
   "ADD_EMISSION_SCREEN_QUANTITY_OF_EMISSION": "Quantité d'émission",
   "ADD_EMISSION_SCREEN_ADD_THIS_EMISSION": "Ajouter cette émission",
-  "ADD_EMISSION_SCREEN_TEXTINPUT_PLACEHOLDER": "ex burger, vol Paris / Rome…",
+  "ADD_EMISSION_SCREEN_TEXTINPUT_PLACEHOLDER": "par ex. burger, vol Paris-Rome…",
   "ADD_EMISSION_SCREEN_NAME_EMISSION": "Nommer cette émission ",
   "ADD_EMISSION_SCREEN_DATE": "Date",
   "ADD_EMISSION_SCREEN_CHANGE": "Changer",
