@@ -1,4 +1,4 @@
-import * as fs from "fs";
+const fs = require("fs");
 const usedLanguages = ["en", "de", "fr", "sv", "pt", "es", "pl", "ru", "da"];
 const translationDirs = [
   "app/screens/Act/translations",
@@ -24,8 +24,7 @@ const translationDirs = [
  * @param  {string} path Path to the JSON
  * @returns {object} JSON file as an object
  */
-const getJSONfrom = (path: string) =>
-  JSON.parse(JSON.stringify(fs.readFileSync(path)));
+const getJSONfrom = (path) => JSON.parse(JSON.stringify(fs.readFileSync(path)));
 
 usedLanguages.forEach((lang) => {
   // Log lang and create group for children logs
