@@ -61,7 +61,7 @@ usedLanguages.forEach((language) => {
 usedLanguages.forEach((language) => {
   fs.writeFile(
     `scripts/poeditor/${language}.json`,
-    JSON.stringify(languageObjects[language], null, "\t"),
+    JSON.stringify(languageObjects[language], null, 2),
     (err) => {
       if (err) throw err;
       console.log("✔", language);
