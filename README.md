@@ -134,6 +134,10 @@ Run `node scripts/generate-translation-files.js` in order to create the files ne
 
 <br />
 
+### Manage Translation Files
+
+Run `node scripts/poeditor/group-translation-files.js` to generate 1 JSON file per language, with all the translation vars in it. From there, you can easily make any edit you want. When you're done, you can run `node scripts/poeditor/spread-translation-files.js` to merge your edits and spread them into all the translation files across the repo.
+
 ### 🚀 Deployment
 
 Any branches merged into master will trigger a github action that runs expo publish.
