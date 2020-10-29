@@ -1,14 +1,14 @@
 {
-	"ABOUT_SCREEN_TITLE": "Om os",
-	"ABOUT_SCREEN_INTRO": "Vi er et lille team som er bekymret for menneskehedens indvirket på vores planet. Vi er ikke noget startup firma som bygger på vækst eller som har profit der skal betales til investorer. Du er velkommen til at tilmelde dig vores team hvis du vil hjælpe med projektet. Du er også velkommen til at sprede budskabet om projektet, give det 5 stjerner i butikken eller sende os feedback. Tak på forhånd!",
-	"ABOUT_SCREEN_CARE_HEADER": "Vi bryder os om dig",
-	"ABOUT_SCREEN_PRIVACY": "Privacy by design",
-	"ABOUT_SCREEN_ETHIC": "Ethic by design",
-	"ABOUT_SCREEN_OPEN_SOURCE": "100% Open source",
-	"ABOUT_SCREEN_PRIVACY_BODY": "Al data du giver til os gennem appen vil aldrig blive solgt til eller delt med nogen virksomheder. Vi tracker ikke hvad du foretager dig i appen.",
-	"ABOUT_SCREEN_ETHIC_BODY": "Vi anvender ikke psykologiske teknikker som bundløse feeds og auto-play funktioner til at afholde folk fra at forlade appen.",
-	"ABOUT_SCREEN_OPEN_SOURCE_BODY": "Alle har mulighed for at tilføje materiale til appen og fixe ukorrekt information.",
-	"ABOUT_SCREEN_LIBRARIES_AND_CONTRIBUTORS": "Biblioteker & bidragsydere",
-	"ABOUT_SCREEN_CAN_BE_FOUND": "Kan findes på ",
-	"ABOUT_SCREEN_GITHUB": "Github"
+  "ABOUT_SCREEN_TITLE": "Om os",
+  "ABOUT_SCREEN_INTRO": "Vi er et lille team som er bekymret for menneskehedens indvirket på vores planet. Vi er ikke noget startup firma som bygger på vækst eller som har profit der skal betales til investorer. Du er velkommen til at tilmelde dig vores team hvis du vil hjælpe med projektet. Du er også velkommen til at sprede budskabet om projektet, give det 5 stjerner i butikken eller sende os feedback. Tak på forhånd!",
+  "ABOUT_SCREEN_CARE_HEADER": "Vi bryder os om dig",
+  "ABOUT_SCREEN_PRIVACY": "Privacy by design",
+  "ABOUT_SCREEN_ETHIC": "Ethic by design",
+  "ABOUT_SCREEN_OPEN_SOURCE": "100% Open source",
+  "ABOUT_SCREEN_PRIVACY_BODY": "Al data du giver til os gennem appen vil aldrig blive solgt til eller delt med nogen virksomheder. Vi tracker ikke hvad du foretager dig i appen.",
+  "ABOUT_SCREEN_ETHIC_BODY": "Vi anvender ikke psykologiske teknikker som bundløse feeds og auto-play funktioner til at afholde folk fra at forlade appen.",
+  "ABOUT_SCREEN_OPEN_SOURCE_BODY": "Alle har mulighed for at tilføje materiale til appen og fixe ukorrekt information.",
+  "ABOUT_SCREEN_LIBRARIES_AND_CONTRIBUTORS": "Biblioteker & bidragsydere",
+  "ABOUT_SCREEN_CAN_BE_FOUND": "Kan findes på ",
+  "ABOUT_SCREEN_GITHUB": "Github"
 }

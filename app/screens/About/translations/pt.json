@@ -1,14 +1,14 @@
 {
-	"ABOUT_SCREEN_TITLE": "Sobre nós",
-	"ABOUT_SCREEN_INTRO": "Somos uma pequena equipa preocupada com o impacto humano no planeta. Não somos uma start-up motivada pelo crescimento e o lucro. Não pagamos dividendos aos investidores porque não temos nenhum : somos independentes e continuaremos a sê-lo. Somos transparentes e você pode verificar os nossos resultados em Indie Hackers. Pode juntar-se à nossa equipa se quiser nos ajudar ou simplesmente pode falar do nosso projecto à sua volta. Deixar-nos 5 estrelas na loja e enviar-nos os seus comentários sobre melhorias para a aplicação irá ajudar-nos muito. Obrigado antecipadamente ✌️",
-	"ABOUT_SCREEN_CARE_HEADER": "Nós nos preocupamos de si",
-	"ABOUT_SCREEN_PRIVACY": "Respeito da vida privada",
-	"ABOUT_SCREEN_ETHIC": "Ética",
-	"ABOUT_SCREEN_OPEN_SOURCE": "100% Open source",
-	"ABOUT_SCREEN_PRIVACY_BODY": "Todos os dados fornecidos na aplicação nunca serão vendidos ou partilhados com ninguém e não estamos a espiar-vos.",
-	"ABOUT_SCREEN_ETHIC_BODY": "Não exploramos qualquer vulnerabilidade psicológica, tal como feeds sem fundo ou auto-jogo que o impeça de sair do seu smartphone.",
-	"ABOUT_SCREEN_OPEN_SOURCE_BODY": "A aplicação é inteiramente de código aberto no github e sob a Licença Pública Geral GNU v3.0. Isto permite-lhe verificar por si mesmo se respeitamos a sua privacidade, por exemplo. Qualquer pessoa pode acrescentar, verificar, corrigir o conteúdo da aplicação e participar no projecto.",
-	"ABOUT_SCREEN_LIBRARIES_AND_CONTRIBUTORS": "Bibliotecas & contribuidores",
-	"ABOUT_SCREEN_CAN_BE_FOUND": "Disponível em ",
-	"ABOUT_SCREEN_GITHUB": "Github"
+  "ABOUT_SCREEN_TITLE": "Sobre nós",
+  "ABOUT_SCREEN_INTRO": "Somos uma pequena equipa preocupada com o impacto humano no planeta. Não somos uma start-up motivada pelo crescimento e o lucro. Não pagamos dividendos aos investidores porque não temos nenhum : somos independentes e continuaremos a sê-lo. Somos transparentes e você pode verificar os nossos resultados em Indie Hackers. Pode juntar-se à nossa equipa se quiser nos ajudar ou simplesmente pode falar do nosso projecto à sua volta. Deixar-nos 5 estrelas na loja e enviar-nos os seus comentários sobre melhorias para a aplicação irá ajudar-nos muito. Obrigado antecipadamente ✌️",
+  "ABOUT_SCREEN_CARE_HEADER": "Nós nos preocupamos de si",
+  "ABOUT_SCREEN_PRIVACY": "Respeito da vida privada",
+  "ABOUT_SCREEN_ETHIC": "Ética",
+  "ABOUT_SCREEN_OPEN_SOURCE": "100% Open source",
+  "ABOUT_SCREEN_PRIVACY_BODY": "Todos os dados fornecidos na aplicação nunca serão vendidos ou partilhados com ninguém e não estamos a espiar-vos.",
+  "ABOUT_SCREEN_ETHIC_BODY": "Não exploramos qualquer vulnerabilidade psicológica, tal como feeds sem fundo ou auto-jogo que o impeça de sair do seu smartphone.",
+  "ABOUT_SCREEN_OPEN_SOURCE_BODY": "A aplicação é inteiramente de código aberto no github e sob a Licença Pública Geral GNU v3.0. Isto permite-lhe verificar por si mesmo se respeitamos a sua privacidade, por exemplo. Qualquer pessoa pode acrescentar, verificar, corrigir o conteúdo da aplicação e participar no projecto.",
+  "ABOUT_SCREEN_LIBRARIES_AND_CONTRIBUTORS": "Bibliotecas & contribuidores",
+  "ABOUT_SCREEN_CAN_BE_FOUND": "Disponível em ",
+  "ABOUT_SCREEN_GITHUB": "Github"
 }

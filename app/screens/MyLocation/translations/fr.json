@@ -1,5 +1,5 @@
 {
-	"MY_LOCATION_SCREEN_TITLE": "Ma Position",
-	"MY_LOCATION_SCREEN_INTRO": "Merci de sélectionner un pays afin d'affiner le calcul des émissions streaming et électricités.",
-	"MY_LOCATION_SCREEN_MY_CARBON_INTENSITY": "Mon intensité carbone actuelle : "
+  "MY_LOCATION_SCREEN_TITLE": "Ma Position",
+  "MY_LOCATION_SCREEN_INTRO": "Merci de sélectionner un pays afin d'affiner le calcul des émissions streaming et électricités.",
+  "MY_LOCATION_SCREEN_MY_CARBON_INTENSITY": "Mon intensité carbone actuelle : "
 }
