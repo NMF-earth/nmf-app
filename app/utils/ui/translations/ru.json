@@ -1,1 +1,19 @@
-{"UI_TRAIN":"Поезд","UI_CAR":"Машина","UI_PLANE":"Самолет","UI_BOAT":"Судно","UI_BUS":"Автобус","UI_MOTORBIKE":"Мотоцикл","UI_RED_MEAT":"Carne vermelha","UI_WHITE_MEAT":"Carne branca","UI_CHOCOLATE":"Chocolate","UI_COFFEE":"Coffee","UI_FISH":"Fish","UI_CUSTOM":"Настраиваемое","UI_HD_VIDEO":"Video - HD","UI_AUDIO":"Audio - MP3","UI_FULL_HD_VIDEO":"Video - FullHD/1080p","UI_ULTRA_HD_VIDEO":"Video - UltraHD/4K","UI_ELECTRICITY":"Electricity"}
+{
+	"UI_TRAIN": "Поезд",
+	"UI_CAR": "Машина",
+	"UI_PLANE": "Самолет",
+	"UI_BOAT": "Судно",
+	"UI_BUS": "Автобус",
+	"UI_MOTORBIKE": "Мотоцикл",
+	"UI_RED_MEAT": "Carne vermelha",
+	"UI_WHITE_MEAT": "Carne branca",
+	"UI_CHOCOLATE": "Chocolate",
+	"UI_COFFEE": "Coffee",
+	"UI_FISH": "Fish",
+	"UI_CUSTOM": "Настраиваемое",
+	"UI_HD_VIDEO": "Video - HD",
+	"UI_AUDIO": "Audio - MP3",
+	"UI_FULL_HD_VIDEO": "Video - FullHD/1080p",
+	"UI_ULTRA_HD_VIDEO": "Video - UltraHD/4K",
+	"UI_ELECTRICITY": "Electricity"
+}

@@ -1,4 +1,4 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
+/* eslint-disable @typescript-eslint/no-var-requires */
 const fs = require("fs");
 const usedLanguages = ["en", "de", "fr", "sv", "pt", "es", "pl", "ru", "da"];
 const relPrefix = "../../";
@@ -52,7 +52,7 @@ usedLanguages.forEach((lang) => {
       }
     });
     // Merge changes to the file
-    fs.writeFileSync(path, JSON.stringify(file));
+    fs.writeFileSync(path, JSON.stringify(file, null, "\t"));
     console.log("✔", translationDir);
   });
   console.groupEnd();
