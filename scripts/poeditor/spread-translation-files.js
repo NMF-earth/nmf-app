@@ -1,5 +1,7 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const fs = require("fs");
 const usedLanguages = ["en", "de", "fr", "sv", "pt", "es", "pl", "ru", "da"];
+const relPrefix = "../../";
 const translationDirs = [
   "app/screens/Act/translations",
   "app/screens/Budget/translations",
@@ -24,18 +26,19 @@ const translationDirs = [
  * @param  {string} path Path to the JSON
  * @returns {object} JSON file as an object
  */
-const getJSONfrom = (path) => JSON.parse(JSON.stringify(fs.readFileSync(path)));
+const getJSONfrom = (path) => JSON.parse(JSON.stringify(require(path)));
 
 usedLanguages.forEach((lang) => {
   console.group(lang.toUpperCase() + ":");
   // Get reference JSON file with the source-of-truth content that'll be copied across other translation files
-  const ref = getJSONfrom(`${lang}.json`);
+  const ref = getJSONfrom(`./${lang}.json`);
   // Browse all the translation dirs and make necessary changes in the corresponding files
   translationDirs.forEach((translationDir) => {
     // Select the file that matchs the current language
+    const relPath = `${relPrefix + translationDir}/${lang}.json`;
     const path = `${translationDir}/${lang}.json`;
     // Get its content
-    const file = getJSONfrom(path);
+    const file = getJSONfrom(relPath);
     const keys = Object.keys(file);
     // Change content
     keys.forEach((key) => {

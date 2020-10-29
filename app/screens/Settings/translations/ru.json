@@ -1,12 +1,1 @@
-{
-  "SETTINGS_SCREEN_ABOUT": "О приложении",
-  "SETTINGS_SCREEN_APP_VERSION": "Версия %{version}",
-  "SETTINGS_SCREEN_FEEDBACK": "Отзыв",
-  "SETTINGS_SCREEN_MY_LOCATION": "My Location",
-  "SETTINGS_SCREEN_NMF_EARTH": "NMF.earth",
-  "SETTINGS_SCREEN_ROADMAP": "Карта разработки",
-  "SETTINGS_SCREEN_SUPPORT_US": "Поддержите нас!",
-  "SETTINGS_SCREEN_TAB_NAME": "Настройки",
-  "SETTINGS_SCREEN_TERMS_OF_USE": "Условия использования",
-  "SETTINGS_SCREEN_TITLE": "Настройки"
-}
+{"SETTINGS_SCREEN_ABOUT":"О приложении","SETTINGS_SCREEN_APP_VERSION":"Версия %{version}","SETTINGS_SCREEN_FEEDBACK":"Отзыв","SETTINGS_SCREEN_MY_LOCATION":"My Location","SETTINGS_SCREEN_NMF_EARTH":"NMF.earth","SETTINGS_SCREEN_ROADMAP":"Карта разработки","SETTINGS_SCREEN_SUPPORT_US":"Поддержите нас!","SETTINGS_SCREEN_TAB_NAME":"Настройки","SETTINGS_SCREEN_TERMS_OF_USE":"Условия использования","SETTINGS_SCREEN_TITLE":"Настройки"}
