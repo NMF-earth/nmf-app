@@ -27,4 +27,14 @@ describe("userPreferences actions should", () => {
       userPreferences.actions.updateLocation(ElectricityEnum.france)
     ).toEqual(expectedAction);
   });
+
+  it("be able to update to update notifications", () => {
+    const expectedAction = {
+      type: userPreferences.actions.toggleNotifications.toString(),
+      payload: true,
+    };
+    expect(userPreferences.actions.toggleNotifications(true)).toEqual(
+      expectedAction
+    );
+  });
 });

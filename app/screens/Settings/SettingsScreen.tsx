@@ -4,6 +4,7 @@ import {
   TouchableWithoutFeedback,
   ScrollView,
   Image,
+  Platform,
 } from "react-native";
 import ExpoConstants from "expo-constants";
 
@@ -25,6 +26,11 @@ const SettingsScreen = (props) => {
     {
       title: t("SETTINGS_SCREEN_ABOUT"),
       onPress: navigator.openAbout,
+    },
+    {
+      title: t("SETTINGS_SCREEN_NOTIFICATIONS"),
+      onPress: navigator.openNotifications,
+      os: "ios",
     },
     {
       title: t("SETTINGS_SCREEN_MY_LOCATION"),
@@ -60,9 +66,14 @@ const SettingsScreen = (props) => {
 
   return (
     <ScrollView style={styles.container}>
-      {rowItems.map((item, index) => (
-        <SettingsRow key={index} onPress={item.onPress} title={item.title} />
-      ))}
+      {rowItems.map((item, index) => {
+        if (item.os && item.os !== Platform.OS) {
+          return null;
+        }
+        return (
+          <SettingsRow key={index} onPress={item.onPress} title={item.title} />
+        );
+      })}
       <TouchableWithoutFeedback onPress={() => setSteps(steps + 1)}>
         <View style={styles.logoNMFContainer}>
           <Image
