@@ -40,6 +40,10 @@ const openMyLocation = (navigation) => (props = {}) => {
   navigation.push("MyLocation", props);
 };
 
+const openNotifications = (navigation) => (props = {}) => {
+  navigation.push("Notifications", props);
+};
+
 const openSupportUs = (navigation) => (props = {}) => {
   navigation.push("SupportUs", props);
 };
@@ -63,6 +67,7 @@ const navigate = (navigation) => ({
   openEmissionItem: navigateOneTime(openEmissionItem(navigation)),
   openAbout: navigateOneTime(openAbout(navigation)),
   openMyLocation: navigateOneTime(openMyLocation(navigation)),
+  openNotifications: navigateOneTime(openNotifications(navigation)),
   openSupportUs: navigateOneTime(openSupportUs(navigation)),
   openStorybook: navigateOneTime(openStorybook(navigation)),
 });

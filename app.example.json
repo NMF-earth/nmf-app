@@ -23,6 +23,7 @@
     },
     "android": {
       "icon": "./assets/images/android.icon.png",
+      "useNextNotificationsApi": true,
       "package": "nmf.earth",
       "versionCode": 18
     },

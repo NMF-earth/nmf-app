@@ -5,6 +5,7 @@ import SettingsScreen from "../../../screens/Settings";
 import AboutScreen from "../../../screens/About";
 import SupportUsScreen from "../../../screens/SupportUs";
 import MyLocationScreen from "../../../screens/MyLocation";
+import NotificationsScreen from "../../../screens/Notifications";
 import StorybookScreen from "../../../../storybook";
 
 const Stack = createStackNavigator();
@@ -30,6 +31,11 @@ const SettingsNavigator = (): React.ReactElement => (
       name="MyLocation"
       options={MyLocationScreen.navigationOptions}
       component={MyLocationScreen}
+    />
+    <Stack.Screen
+      name="Notifications"
+      options={NotificationsScreen.navigationOptions}
+      component={NotificationsScreen}
     />
     <Stack.Screen name="Storybook" component={StorybookScreen} />
   </Stack.Navigator>

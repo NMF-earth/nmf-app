@@ -8,6 +8,7 @@ describe("userPreferences reducer should", () => {
     // eslint-disable-next-line
     expect(userPreferences.reducer(undefined, {} as any)).toEqual({
       acceptedTermsOfUseVersion: 0,
+      activatedNotifications: false,
       location: ElectricityEnum.world,
     });
   });
@@ -22,6 +23,7 @@ describe("userPreferences reducer should", () => {
 
     expect(userPreferences.reducer(undefined, expectedAction)).toEqual({
       acceptedTermsOfUseVersion: 2,
+      activatedNotifications: false,
       location: ElectricityEnum.world,
     });
   });
@@ -34,7 +36,21 @@ describe("userPreferences reducer should", () => {
 
     expect(userPreferences.reducer(undefined, expectedAction)).toEqual({
       acceptedTermsOfUseVersion: 0,
+      activatedNotifications: false,
       location: ElectricityEnum.belgium,
+    });
+  });
+
+  it("handle notification change", () => {
+    const expectedAction = {
+      type: userPreferences.actions.toggleNotifications.toString(),
+      payload: true,
+    };
+
+    expect(userPreferences.reducer(undefined, expectedAction)).toEqual({
+      acceptedTermsOfUseVersion: 0,
+      activatedNotifications: true,
+      location: ElectricityEnum.world,
     });
   });
 });

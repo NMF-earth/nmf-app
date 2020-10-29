@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NotificationsScreen renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "flex": 1,
+      "paddingHorizontal": 14,
+    }
+  }
+>
+  <Text.Primary
+    style={
+      Object {
+        "paddingTop": 30,
+      }
+    }
+  >
+    Receive a notification every Sunday at 9 p.m to remind you to add your weekly emissions.
+  </Text.Primary>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "marginTop": 22,
+      }
+    }
+  >
+    <Text.Secondary
+      bold={true}
+    >
+      Activated
+    </Text.Secondary>
+    <RCTSwitch
+      accessibilityRole="switch"
+      onChange={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "height": 31,
+          "width": 51,
+        }
+      }
+      value={false}
+    />
+  </View>
+</View>
+`;
