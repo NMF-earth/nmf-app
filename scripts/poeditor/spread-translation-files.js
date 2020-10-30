@@ -52,7 +52,7 @@ usedLanguages.forEach((lang) => {
       }
     });
     // Merge changes to the file
-    fs.writeFileSync(path, JSON.stringify(file, null, 2));
+    fs.writeFileSync(path, JSON.stringify(file, null, "\t"));
     console.log("✔", translationDir);
   });
   console.groupEnd();
