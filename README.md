@@ -20,6 +20,7 @@
 [![Depfu](https://badges.depfu.com/badges/f3b06c819202baf2a14b3241cbf249c9/overview.svg)](https://depfu.com/repos/github/NotMyFaultEarth/nmf-app?project_id=10243)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md)
 [![Build Status](https://img.shields.io/static/v1.svg?label=CSL&message=software%20against%20climate%20change&color=green?style=flat&logo=github)](https://github.com/climate-strike/license)
+[![runs with expo](https://img.shields.io/badge/Runs%20with%20Expo-000.svg?style=flat-square&logo=EXPO&labelColor=f3f3f3&logoColor=000)](https://expo.io/)
 
 Repository for the [NMF.earth](https://nmf.earth/) React Native application, built with Expo, Redux Toolkit and Typescript.
 
@@ -128,13 +129,15 @@ Same for methodology screen, just run `node scripts/generate-methodology.js` to 
 
 <br />
 
-### 🗣 Generate Translation Files
+## 🗣 Translation Files
+
+### Generate 
 
 Run `node scripts/generate-translation-files.js` in order to create the files needed for the new language you want to add to the app.
 
 <br />
 
-### Manage Translation Files
+### Manage Files
 
 Run `node scripts/poeditor/group-translation-files.js` to generate 1 JSON file per language, with all the translation vars in it. From there, you can easily make any edit you want. When you're done, you can run `node scripts/poeditor/spread-translation-files.js` to merge your edits and spread them into all the translation files across the repo.
 
@@ -145,7 +148,7 @@ During this step `app.example.json` is used to generate an `app.json` file for e
 
 <br />
 
-### 👨‍💻 Contributors
+### 👨‍💻 Contribute
 
 Have a look [here](https://github.com/NotMyFaultEarth/nmf-app/blob/master/contributing.md) if you want to contribute!
 
