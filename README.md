@@ -26,12 +26,6 @@ Repository for the [NMF.earth](https://nmf.earth/) React Native application, bui
 
 <br />
 
-### 🎌 Language support
-
-The app works in English, French, German, Swedish, Danish, Russian, Portugal, Polish.
-
-<br />
-
 ### 📦 Getting started
 
 Installing Dependencies:
@@ -131,7 +125,13 @@ Same for methodology screen, just run `node scripts/generate-methodology.js` to 
 
 <br />
 
-## 🗣 Translation Files
+## 🗣 Translations
+
+You can help us with translate the app with our online tool [POEditor](https://poeditor.com/join/project/0MbginCsWp).
+
+So far the app supports English, French, German, Swedish, Danish, Russian, Portugal, Polish.
+
+<br />
 
 ### Generate 
 
@@ -152,9 +152,8 @@ Any tag starting with `v` will runs expo publish. During this step `app.example.
 ### 👨‍💻 Contribute ❤️
 
 More than 25 developers have contribute to the app, thanks a lot to [them](https://github.com/NMF-earth/nmf-app/graphs/contributors)!
-Have a look [here](https://github.com/NotMyFaultEarth/nmf-app/blob/master/contributing.md) if you want to contribute!
 
-🌐 You can help us with translations with our online tool [POEditor](https://poeditor.com/join/project/0MbginCsWp).
+Have a look to [contributing.md](https://github.com/NotMyFaultEarth/nmf-app/blob/master/contributing.md) if you want to contribute!
 
 <br />
 
