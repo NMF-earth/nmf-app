@@ -27,6 +27,7 @@
       "package": "nmf.earth",
       "versionCode": 18
     },
+    "userInterfaceStyle": "automatic",
     "hooks": {
       "postPublish": [
         {
