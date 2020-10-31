@@ -1,5 +1,5 @@
 {
-  "MY_LOCATION_SCREEN_TITLE": "Location",
-  "MY_LOCATION_SCREEN_INTRO": "Please select a country in order to improve emissions calculations for streaming and electricity.",
-  "MY_LOCATION_SCREEN_MY_CARBON_INTENSITY": "My carbon intensity : "
+	"MY_LOCATION_SCREEN_TITLE": "Location",
+	"MY_LOCATION_SCREEN_INTRO": "Please select a country in order to improve emissions calculations for streaming and electricity.",
+	"MY_LOCATION_SCREEN_MY_CARBON_INTENSITY": "My carbon intensity : "
 }

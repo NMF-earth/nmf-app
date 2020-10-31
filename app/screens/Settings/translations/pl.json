@@ -1,13 +1,13 @@
 {
-  "SETTINGS_SCREEN_ABOUT": "O nas",
-  "SETTINGS_SCREEN_APP_VERSION": "Wersja %{version}",
-  "SETTINGS_SCREEN_FEEDBACK": "Opinie",
-  "SETTINGS_SCREEN_NOTIFICATIONS": "Notifications",
-  "SETTINGS_SCREEN_MY_LOCATION": "My Location",
-  "SETTINGS_SCREEN_NMF_EARTH": "NMF.earth",
-  "SETTINGS_SCREEN_ROADMAP": "Plan działania",
-  "SETTINGS_SCREEN_SUPPORT_US": "Wesprzyj nas!",
-  "SETTINGS_SCREEN_TAB_NAME": "Ustawienia",
-  "SETTINGS_SCREEN_TERMS_OF_USE": "Warunki użytkowania",
-  "SETTINGS_SCREEN_TITLE": "Ustawienia"
+	"SETTINGS_SCREEN_ABOUT": "O nas",
+	"SETTINGS_SCREEN_APP_VERSION": "Wersja %{version}",
+	"SETTINGS_SCREEN_FEEDBACK": "Opinie",
+	"SETTINGS_SCREEN_NOTIFICATIONS": "Notifications",
+	"SETTINGS_SCREEN_MY_LOCATION": "My Location",
+	"SETTINGS_SCREEN_NMF_EARTH": "NMF.earth",
+	"SETTINGS_SCREEN_ROADMAP": "Plan działania",
+	"SETTINGS_SCREEN_SUPPORT_US": "Wesprzyj nas!",
+	"SETTINGS_SCREEN_TAB_NAME": "Ustawienia",
+	"SETTINGS_SCREEN_TERMS_OF_USE": "Warunki użytkowania",
+	"SETTINGS_SCREEN_TITLE": "Ustawienia"
 }
