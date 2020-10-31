@@ -18,20 +18,6 @@ exports[`ActScreen renders correctly 1`] = `
   data={
     Array [
       Object {
-        "body": "<h1>Install an add blocker</h1>
-<p>All modern browser like Firefox, Safari, Chrome... let users the posibility to install add-ons, also name plugins or extensions.</p>
-<p>In order to not get ads or to see less ads, you can install the following browser extensions :</p>
-<ul>
-<li><a href=\\"https://addons.mozilla.org/da/firefox/addon/ghostery/\\">Ghostery</a>: built-in ad blocker removing advertisements from a web page to eliminate clutter so you can focus on the content you want. Protect your privacy, browse faster.</li>
-<li><a href=\\"https://addons.mozilla.org/da/firefox/addon/ublock-origin/\\">uBlock Origin</a> : content blocker with CPU and memory efficiency as a primary feature.</li>
-</ul>
-<p>Less ads, less compulsatory purchases, less CO2 emissions</p>
-",
-        "category": "digital",
-        "key": ".//ad-blocker.md",
-        "title": "Install an add blocker",
-      },
-      Object {
         "body": "<h1>Clean your cloud data</h1>
 <p>When your data is saved on the cloud, it means it's saved on remote computers (servers). It's really nice and convenient because if you loose your computer or your phone, your data is not lost!</p>
 <p>However, redundant data is not environmental friendly at all and will never be. Remember this: everytime you save data, transfer data it means CO2 emissions.</p>
@@ -40,7 +26,7 @@ exports[`ActScreen renders correctly 1`] = `
 <h3>More data = more pollution</h3>
 ",
         "category": "digital",
-        "key": ".//clean-your-cloud-data.md",
+        "key": "/Users/pierrebresson/Documents/Git/nmf-app/assets//markdown/clean-your-cloud-data.md",
         "title": "Clean your cloud data",
       },
       Object {
@@ -67,27 +53,8 @@ exports[`ActScreen renders correctly 1`] = `
 </ul>
 ",
         "category": "digital",
-        "key": ".//gafa-replacement.md",
+        "key": "/Users/pierrebresson/Documents/Git/nmf-app/assets//markdown/gafa-replacement.md",
         "title": "Find replacement for internet giants",
-      },
-      Object {
-        "body": "<h1>Calculate your browsing carbon impact and reduce it</h1>
-<p>They are several browser add-ons, mainly for Chrome and Firefox, that can help you decrease and understand better your digital carbon emissions.</p>
-<ul>
-<li>
-<p><a href=\\"https://addons.mozilla.org/en-US/firefox/addon/carbonalyser/\\">Carbon analyser</a>: excellent plugin that will help you to have an idea on what you emit when you browse the internet. It shows a chart of your main emissions so you can act on it. Open-source and made by the awesome french assiociation the Shift Project.</p>
-</li>
-<li>
-<p><strong><a href=\\"https://addons.mozilla.org/fr/firefox/addon/low-web-extension/\\">Low Tech</a></strong>: open-source extension aims to reduce our datas and limit the energy consumption of our Internet browsing. For example, when possible, video quality is set to low quality, autoplay and loop parameters are disabled. If it's possible, quality of images is decreased or loading delayed and animated gif only plays when hovering them. Some &quot;superfluous&quot; content can also be blocked like share and like button, avatar images or fonts. <strong>100 % approved and recommended by the NMF.earth team!</strong></p>
-</li>
-<li>
-<p><a href=\\"https://addons.mozilla.org/fr/firefox/addon/bare-tracker\\">Bare Tracker</a>: helps peoples get a barer, lighter browsing experience by informing them about their browsing environmental impact. Similar to carbon analyser.</p>
-</li>
-</ul>
-",
-        "category": "digital",
-        "key": ".//internet-browsing-impact.md",
-        "title": "Reduce your browsing emissions",
       },
       Object {
         "body": "<h1>Buy a phone you can repair</h1>
@@ -96,7 +63,7 @@ exports[`ActScreen renders correctly 1`] = `
 <p>If you are on Android, installing an alternative rom like <a href=\\"https://lineageos.org/\\">LineageOS</a> can make your old phone faster and increase its lifespan.</p>
 ",
         "category": "digital",
-        "key": ".//repair-phone.md",
+        "key": "/Users/pierrebresson/Documents/Git/nmf-app/assets//markdown/repair-phone.md",
         "title": "Get a phone you can repair/upgrade",
       },
       Object {
@@ -109,8 +76,35 @@ exports[`ActScreen renders correctly 1`] = `
 <p>If you still want to use YouTube, we recomment <a href=\\"https://addons.mozilla.org/en-US/firefox/addon/youtube-focus/?utm_source=addons.mozilla.org&amp;utm_medium=referral&amp;utm_content=search\\">Youtube Focus</a>, an add-on who tries to promote a healthier watching. As said on their <a href=\\"https://github.com/Jompa14/YouTube_Focus\\">Github</a>, YouTube has one billion hours whatched daily, and it’s recommendation algorithm generates more than 70% of views. That means 700.000.000 hours every single day. What means that the greatest slice of time that people spend on YouTube isnt because they searched for something to whatch or something to learn, it is because they were sugested by YouTube's algorithm.</p>
 ",
         "category": "digital",
-        "key": ".//avoid-streaming.md",
+        "key": "/Users/pierrebresson/Documents/Git/nmf-app/assets//markdown/avoid-streaming.md",
         "title": "Avoid streaming",
+      },
+      Object {
+        "body": "<h1>Calculate your browsing carbon impact and reduce it</h1>
+<p>They are several browser add-ons, mainly for Chrome and Firefox, that can help you decrease and understand better your digital carbon emissions.</p>
+<ul>
+<li><strong><a href=\\"https://addons.mozilla.org/en-US/firefox/addon/carbonalyser/\\">Carbon analyser</a>:</strong> excellent plugin that will help you to have an idea on what you emit when you browse the internet. It shows a chart of your main emissions so you can act on it. Open-source and made by the awesome french association the Shift Project.</li>
+<li><strong><a href=\\"https://addons.mozilla.org/fr/firefox/addon/low-web-extension/\\">Low Tech</a>:</strong> open-source extension aims to reduce our datas and limit the energy consumption of our Internet browsing. For example, when possible, video quality is set to low quality, autoplay and loop parameters are disabled. If it's possible, quality of images is decreased or loading delayed and animated gif only plays when hovering them. Some &quot;superfluous&quot; content can also be blocked like share and like button, avatar images or fonts. <strong>100 % approved and recommended by the NMF.earth team!</strong></li>
+<li><strong><a href=\\"https://addons.mozilla.org/fr/firefox/addon/bare-tracker\\">Bare Tracker</a>:</strong> helps peoples get a barer, lighter browsing experience by informing them about their browsing environmental impact. Similar to carbon analyser.</li>
+</ul>
+",
+        "category": "digital",
+        "key": "/Users/pierrebresson/Documents/Git/nmf-app/assets//markdown/internet-browsing-impact.md",
+        "title": "Reduce your browsing emissions",
+      },
+      Object {
+        "body": "<h1>Install an add blocker</h1>
+<p>All modern browser like Firefox, Safari, Chrome... let users the posibility to install add-ons, also name plugins or extensions.</p>
+<p>In order to not get ads or to see less ads, you can install the following browser extensions :</p>
+<ul>
+<li><a href=\\"https://addons.mozilla.org/da/firefox/addon/ghostery/\\">Ghostery</a>: built-in ad blocker removing advertisements from a web page to eliminate clutter so you can focus on the content you want. Protect your privacy, browse faster.</li>
+<li><a href=\\"https://addons.mozilla.org/da/firefox/addon/ublock-origin/\\">uBlock Origin</a> : content blocker with CPU and memory efficiency as a primary feature.</li>
+</ul>
+<p>Less ads, less compulsatory purchases, less CO2 emissions</p>
+",
+        "category": "digital",
+        "key": "/Users/pierrebresson/Documents/Git/nmf-app/assets//markdown/ad-blocker.md",
+        "title": "Install an add blocker",
       },
     ]
   }
@@ -144,41 +138,6 @@ exports[`ActScreen renders correctly 1`] = `
   windowSize={21}
 >
   <View>
-    <View
-      onLayout={[Function]}
-      style={null}
-    >
-      <TouchableOpacity
-        onPress={[Function]}
-        style={
-          Object {
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-          }
-        }
-      >
-        <Text.Secondary
-          numberOfLines={1}
-          style={
-            Object {
-              "paddingVertical": 20,
-            }
-          }
-        >
-          Install an add blocker
-        </Text.Secondary>
-        <Ionicons
-          color="#9CA6A0"
-          name="ios-arrow-forward"
-          size={26}
-          style={
-            Object {
-              "marginTop": 18,
-            }
-          }
-        />
-      </TouchableOpacity>
-    </View>
     <View
       onLayout={[Function]}
       style={null}
@@ -270,41 +229,6 @@ exports[`ActScreen renders correctly 1`] = `
             }
           }
         >
-          Reduce your browsing emissions
-        </Text.Secondary>
-        <Ionicons
-          color="#9CA6A0"
-          name="ios-arrow-forward"
-          size={26}
-          style={
-            Object {
-              "marginTop": 18,
-            }
-          }
-        />
-      </TouchableOpacity>
-    </View>
-    <View
-      onLayout={[Function]}
-      style={null}
-    >
-      <TouchableOpacity
-        onPress={[Function]}
-        style={
-          Object {
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-          }
-        }
-      >
-        <Text.Secondary
-          numberOfLines={1}
-          style={
-            Object {
-              "paddingVertical": 20,
-            }
-          }
-        >
           Get a phone you can repair/upgrade
         </Text.Secondary>
         <Ionicons
@@ -341,6 +265,76 @@ exports[`ActScreen renders correctly 1`] = `
           }
         >
           Avoid streaming
+        </Text.Secondary>
+        <Ionicons
+          color="#9CA6A0"
+          name="ios-arrow-forward"
+          size={26}
+          style={
+            Object {
+              "marginTop": 18,
+            }
+          }
+        />
+      </TouchableOpacity>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Secondary
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          Reduce your browsing emissions
+        </Text.Secondary>
+        <Ionicons
+          color="#9CA6A0"
+          name="ios-arrow-forward"
+          size={26}
+          style={
+            Object {
+              "marginTop": 18,
+            }
+          }
+        />
+      </TouchableOpacity>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Secondary
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          Install an add blocker
         </Text.Secondary>
         <Ionicons
           color="#9CA6A0"
