@@ -30,6 +30,8 @@ Repository for the [NMF.earth](https://nmf.earth/) React Native application, bui
 
 The app works in English, French, German, Swedish, Danish, Russian, Portugal, Polish.
 
+<br />
+
 ### 📦 Getting started
 
 Installing Dependencies:
@@ -135,21 +137,21 @@ Same for methodology screen, just run `node scripts/generate-methodology.js` to 
 
 Run `node scripts/generate-translation-files.js` in order to create the files needed for the new language you want to add to the app.
 
-<br />
-
 ### Manage Files
 
 Run `node scripts/poeditor/group-translation-files.js` to generate 1 JSON file per language, with all the translation vars in it. From there, you can easily make any edit you want. When you're done, you can run `node scripts/poeditor/spread-translation-files.js` to merge your edits and spread them into all the translation files across the repo.
 
+<br />
+
 ### 🚀 Deployment
 
-Any branches merged into master will trigger a github action that runs expo publish.
-During this step `app.example.json` is used to generate an `app.json` file for expo's deployment, this is done with the following script `scripts/generate-app-json.js`.
+Any tag starting with `v` will runs expo publish. During this step `app.example.json` is used to generate an `app.json` file for expo's deployment, this is done with the following script `scripts/generate-app-json.js`.
 
 <br />
 
-### 👨‍💻 Contribute
+### 👨‍💻 Contribute ❤️
 
+More than 25 developers have contribute to the app, thanks a lot to [them](https://github.com/NMF-earth/nmf-app/graphs/contributors)!
 Have a look [here](https://github.com/NotMyFaultEarth/nmf-app/blob/master/contributing.md) if you want to contribute!
 
 🌐 You can help us with translations with our online tool [POEditor](https://poeditor.com/join/project/0MbginCsWp).
