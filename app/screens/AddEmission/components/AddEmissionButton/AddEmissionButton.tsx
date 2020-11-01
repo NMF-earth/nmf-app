@@ -3,10 +3,10 @@ import { useDispatch } from "react-redux";
 import uuid from "uuid";
 
 import { Text, Button } from "components";
+import { emissions } from "ducks";
 
 import styles from "./AddEmissionButton.styles";
 import { t } from "../../../../utils";
-import { emissions } from "../../../../ducks";
 import { EmissionPayload } from "../../../../interfaces/emission/emission.interface";
 
 interface Props {

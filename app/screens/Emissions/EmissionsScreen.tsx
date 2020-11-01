@@ -4,9 +4,9 @@ import { useSelector } from "react-redux";
 import { useNavigation } from "@react-navigation/native";
 
 import { Text, Button } from "components";
+import { budget } from "ducks";
 
 import { t } from "../../utils";
-import { budget } from "../../ducks";
 import { navigate } from "../../navigation";
 import styles from "./EmissionsScreen.styles";
 import { EmissionsList } from "./components";

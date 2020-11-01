@@ -4,10 +4,10 @@ import * as WebBrowser from "expo-web-browser";
 import { useDispatch } from "react-redux";
 
 import { Text, Button, StickersImage } from "components";
+import { userPreferences } from "ducks";
 
 import styles from "./IntroScreen.styles";
 import { t } from "../../utils";
-import { userPreferences } from "../../ducks";
 import { Preferences } from "../../constant";
 
 const IntroScreen = () => {

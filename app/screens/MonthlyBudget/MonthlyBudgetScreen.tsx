@@ -6,12 +6,12 @@ import * as WebBrowser from "expo-web-browser";
 import { useDispatch, useSelector } from "react-redux";
 
 import { Text, Button } from "components";
+import { budget } from "ducks";
 
 import { Colors } from "../../style";
 import styles from "./MonthlyBudgetScreen.styles";
 import navigationOptions from "./MonthlyBudgetScreen.navigationOptions";
 import { t } from "../../utils";
-import { budget } from "../../ducks";
 import { navigate } from "../../navigation";
 
 const MIN_MONTHLY_CARBON_BUDGET = 0;

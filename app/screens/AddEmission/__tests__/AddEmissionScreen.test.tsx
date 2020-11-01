@@ -2,8 +2,9 @@ import React from "react";
 import { create } from "react-test-renderer";
 import { FormattedProvider } from "react-native-globalize";
 
+import { emissions } from "ducks";
+
 import AddEmissionScreen from "../AddEmissionScreen";
-import { emissions } from "../../../ducks";
 
 const props = {
   navigation: {

@@ -4,9 +4,9 @@ import { ElectricityEnum, electricity } from "carbon-footprint";
 import { useDispatch, useSelector } from "react-redux";
 
 import { Text, SelectableListItem } from "components";
+import { userPreferences } from "ducks";
 
 import { t, calculation } from "../../utils";
-import { userPreferences } from "../../ducks";
 import navigationOptions from "./MyLocationScreen.navigationOptions";
 import styles from "./MyLocationScreen.styles";
 

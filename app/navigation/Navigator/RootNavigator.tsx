@@ -3,8 +3,8 @@ import { createStackNavigator } from "@react-navigation/stack";
 import { useSelector } from "react-redux";
 
 import { Preferences } from "constant";
+import { userPreferences } from "ducks";
 
-import { userPreferences } from "../../ducks";
 import IntroScreen from "../../screens/Intro";
 import BottomTabNavigator from "./BottomTabNavigator";
 import { ComponentsStyle } from "../../style";

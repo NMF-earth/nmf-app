@@ -7,6 +7,7 @@ import DateTimePickerModal from "react-native-modal-datetime-picker";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 
 import { Text, Tag, TextInput } from "components";
+import { userPreferences } from "ducks";
 
 import styles from "./AddEmissionScreen.styles";
 import navigationOptions from "./AddEmissionScreen.navigationOptions";
@@ -28,7 +29,6 @@ import {
   ui,
   time,
 } from "../../utils";
-import { userPreferences } from "../../ducks";
 
 interface Props {
   navigation: {
