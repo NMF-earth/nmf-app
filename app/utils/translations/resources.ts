@@ -1,3 +1,4 @@
+/* eslint import/order:0 */
 /* SCREENS */
 import * as Act from "../../screens/Act/translations";
 import * as Budget from "../../screens/Budget/translations";

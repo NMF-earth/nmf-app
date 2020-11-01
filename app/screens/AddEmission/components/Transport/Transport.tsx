@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { View, ScrollView } from "react-native";
 import Slider from "@react-native-community/slider";
 import { FormattedNumber } from "react-native-globalize";
-
 import { transport, TransportEnum } from "carbon-footprint";
 
 import styles from "./Transport.styles";

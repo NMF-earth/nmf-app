@@ -1,5 +1,4 @@
 import { FoodEnum, TransportEnum } from "carbon-footprint";
-
 import moment from "moment";
 
 import { selectors } from "../";

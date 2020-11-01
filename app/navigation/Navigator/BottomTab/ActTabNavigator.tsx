@@ -5,7 +5,6 @@ import { GuideCategory } from "../../../types/guide";
 import { Text } from "../../../components";
 import { t } from "../../../utils";
 import { ComponentsStyle, Colors, Font } from "../../../style";
-
 import ActScreen from "../../../screens/Act";
 
 const Tab = createMaterialTopTabNavigator();
