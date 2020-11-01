@@ -1,6 +1,5 @@
 import React from "react";
 import { create } from "react-test-renderer";
-
 import { FoodEnum, TransportEnum } from "carbon-footprint";
 
 import EmissionsList from "../EmissionsList";

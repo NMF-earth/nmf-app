@@ -1,6 +1,5 @@
 import React from "react";
 import { create } from "react-test-renderer";
-
 import { FormattedProvider } from "react-native-globalize";
 
 import AddEmissionScreen from "../AddEmissionScreen";

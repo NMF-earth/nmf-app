@@ -4,7 +4,6 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 import * as Linking from "expo-linking";
 
 import { Colors } from "../../style";
-
 import styles from "./SocialMedia.styles";
 
 const socialMedia = [

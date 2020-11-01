@@ -57,7 +57,7 @@ module.exports = {
               "internal",
               ["parent", "sibling", "index"],
             ],
-            "newlines-between": "always-and-inside-groups",
+            "newlines-between": "always",
           },
         ],
     }

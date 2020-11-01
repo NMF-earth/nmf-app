@@ -1,10 +1,8 @@
 import React from "react";
 import { Dimensions, ScrollView } from "react-native";
-
 import HTML from "react-native-render-html";
 
 import { ui } from "../../utils";
-
 import { HTMLImage } from "../../components";
 import styles from "./ActDetailScreen.styles";
 import navigationOptions from "./ActDetailScreen.navigationOptions";

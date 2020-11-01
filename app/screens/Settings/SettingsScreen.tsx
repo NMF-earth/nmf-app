@@ -7,7 +7,6 @@ import {
   Platform,
 } from "react-native";
 import ExpoConstants from "expo-constants";
-
 import * as WebBrowser from "expo-web-browser";
 
 import { ImagesAssets } from "constant";
