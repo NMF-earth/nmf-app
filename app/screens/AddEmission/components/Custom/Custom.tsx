@@ -4,9 +4,9 @@ import Slider from "@react-native-community/slider";
 
 import { Text } from "components";
 import { t } from "utils";
+import { Colors } from "style";
 
 import styles from "./Custom.styles";
-import { Colors } from "../../../../style";
 
 const MIN_SLIDER_VALUE = 1;
 const MAX_SLIDER_VALUE = 1000;

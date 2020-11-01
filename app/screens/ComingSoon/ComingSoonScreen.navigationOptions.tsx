@@ -4,8 +4,8 @@ import { Ionicons } from "@expo/vector-icons";
 
 import { Layout } from "constant";
 import { platform } from "utils";
+import { Colors, ComponentsStyle } from "style";
 
-import { Colors, ComponentsStyle } from "../../style";
 import { navigate } from "../../navigation";
 
 const iconStyle = { paddingRight: Layout.PADDING_HORIZONTAL };

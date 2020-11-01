@@ -4,8 +4,8 @@ import { Ionicons } from "@expo/vector-icons";
 import { FormattedNumber } from "react-native-globalize";
 
 import { Text } from "components";
+import { Colors } from "style";
 
-import { Colors } from "../../../../style";
 import styles from "./EmissionsListItem.styles";
 import EmissionsListItemProps from "./EmissionsListItemProps";
 

@@ -2,9 +2,10 @@ import React from "react";
 import { TouchableOpacity } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
+import { Colors } from "style";
+
 import styles from "./ListItem.styles";
 import Text from "../Text";
-import { Colors } from "../../style";
 
 interface Props {
   title: string;

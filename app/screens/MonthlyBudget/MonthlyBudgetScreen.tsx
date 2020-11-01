@@ -8,8 +8,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { Text, Button } from "components";
 import { budget } from "ducks";
 import { t } from "utils";
+import { Colors } from "style";
 
-import { Colors } from "../../style";
 import styles from "./MonthlyBudgetScreen.styles";
 import navigationOptions from "./MonthlyBudgetScreen.navigationOptions";
 import { navigate } from "../../navigation";

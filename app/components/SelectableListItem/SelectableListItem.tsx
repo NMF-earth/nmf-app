@@ -3,9 +3,9 @@ import { TouchableOpacity } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
 import Text from "components/Text";
+import { Colors } from "style";
 
 import styles from "./SelectableListItem.styles";
-import { Colors } from "../../style";
 
 interface Props {
   selected: boolean;

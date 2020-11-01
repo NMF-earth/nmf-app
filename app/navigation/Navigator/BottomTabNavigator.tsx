@@ -4,8 +4,8 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 import TabBarIcon from "components/TabBarIcon";
 import { t } from "utils";
+import { Colors } from "style";
 
-import { Colors } from "../../style";
 import ActNavigator from "./BottomTab/ActNavigator";
 import BudgetNavigator from "./BottomTab/BudgetNavigator";
 import EmissionsNavigator from "./BottomTab/EmissionsNavigator";
