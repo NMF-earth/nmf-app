@@ -3,10 +3,10 @@ import { ScrollView } from "react-native";
 import { useSelector } from "react-redux";
 
 import { Text, Button } from "components";
+import { t } from "utils";
 
 import styles from "./BudgetScreen.styles";
 import { NumberOfDaysVegetarian, ProgressChart } from "./components";
-import { t } from "../../utils";
 import { navigate } from "../../navigation";
 import { selectors } from "./ducks";
 import navigationOptions from "./BudgetScreen.navigationOptions";

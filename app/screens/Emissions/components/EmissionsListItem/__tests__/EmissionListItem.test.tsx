@@ -3,8 +3,9 @@ import { create } from "react-test-renderer";
 import { FormattedProvider } from "react-native-globalize";
 import { FoodEnum, TransportEnum, StreamingEnum } from "carbon-footprint";
 
+import { ui } from "utils";
+
 import EmissionsListItem from "../EmissionsListItem";
-import { ui } from "../../../../../utils";
 
 jest.unmock("../EmissionsListItem");
 

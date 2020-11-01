@@ -5,10 +5,10 @@ import { FormattedNumber } from "react-native-globalize";
 import { transport, TransportEnum } from "carbon-footprint";
 
 import { Text, Tag } from "components";
+import { t, time, ui, calculation } from "utils";
 
 import styles from "./Transport.styles";
 import { Colors } from "../../../../style";
-import { t, time, ui, calculation } from "../../../../utils";
 
 const MIN_SLIDER_VALUE = 2;
 const MAX_SLIDER_VALUE = 1000;

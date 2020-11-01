@@ -4,10 +4,10 @@ import "moment/min/locales";
 import { View } from "react-native";
 
 import { Text } from "components";
+import { withLocalization, LocalizationContextProps } from "utils";
 
 import styles from "./ProgressChart.styles";
 import { Legend, Chart, PeriodBudget } from "./components";
-import { withLocalization, LocalizationContextProps } from "../../../../utils";
 
 interface Props {
   isMonth?: boolean;

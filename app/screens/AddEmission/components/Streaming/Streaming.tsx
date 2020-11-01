@@ -10,10 +10,10 @@ import {
 } from "carbon-footprint";
 
 import { Text, Tag } from "components";
+import { t, time, ui } from "utils";
 
 import styles from "./Streaming.styles";
 import { Colors } from "../../../../style";
-import { t, time, ui } from "../../../../utils";
 
 const MIN_SLIDER_VALUE = 15 * 60;
 const MAX_SLIDER_VALUE = 10 * 60 * 60;

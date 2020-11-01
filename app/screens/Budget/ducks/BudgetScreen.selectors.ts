@@ -2,8 +2,7 @@ import { pipe, filter, map, sum } from "ramda";
 import moment from "moment";
 
 import { budget, emissions } from "ducks";
-
-import { calculation } from "../../../utils";
+import { calculation } from "utils";
 
 const isEmissionInCurrentMonth = (emission) =>
   moment(emission.creationDate).isSame(new Date(), "month") &&

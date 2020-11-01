@@ -6,9 +6,9 @@ import { FormattedNumber } from "react-native-globalize";
 import { electricity, ElectricityEnum } from "carbon-footprint";
 
 import { Text } from "components";
+import { t } from "utils";
 
 import { Colors } from "../../../../style";
-import { t } from "../../../../utils";
 import styles from "./Electricity.styles";
 
 const MIN_SLIDER_VALUE = 3.6 * Math.pow(10, 6);

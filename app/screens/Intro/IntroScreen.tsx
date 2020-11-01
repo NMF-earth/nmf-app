@@ -5,9 +5,9 @@ import { useDispatch } from "react-redux";
 
 import { Text, Button, StickersImage } from "components";
 import { userPreferences } from "ducks";
+import { t } from "utils";
 
 import styles from "./IntroScreen.styles";
-import { t } from "../../utils";
 import { Preferences } from "../../constant";
 
 const IntroScreen = () => {

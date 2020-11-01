@@ -3,8 +3,8 @@ import { Dimensions, ScrollView } from "react-native";
 import HTML from "react-native-render-html";
 
 import { HTMLImage } from "components";
+import { ui } from "utils";
 
-import { ui } from "../../utils";
 import styles from "./ActDetailScreen.styles";
 import navigationOptions from "./ActDetailScreen.navigationOptions";
 

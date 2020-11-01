@@ -1,11 +1,12 @@
 import React from "react";
 
-// import { TouchableOpacity } from "react-native";
 import { Text } from "components";
+import { t } from "utils";
 
+// import { TouchableOpacity } from "react-native";
 // import { Ionicons } from "@expo/vector-icons";
 // import { Layout as ConstantsLayout } from "/constants";
-import { t } from "../../utils";
+
 // import { Colors } from "../../style";
 import { Layout, ComponentsStyle } from "../../style";
 

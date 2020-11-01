@@ -2,8 +2,9 @@ import React from "react";
 import { storiesOf } from "@storybook/react-native";
 import { text, boolean, number, select } from "@storybook/addon-knobs";
 
+import { ui } from "utils";
+
 import EmissionsListItem from "..";
-import { ui } from "../../../../../utils";
 
 const foodOptions = {
   whiteMeat: "whiteMeat",

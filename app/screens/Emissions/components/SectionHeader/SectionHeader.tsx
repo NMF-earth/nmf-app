@@ -4,13 +4,9 @@ import moment from "moment";
 
 import "moment/min/locales";
 import { Text } from "components";
+import { withLocalization, LocalizationContextProps, t } from "utils";
 
 import styles from "./SectionHeader.styles";
-import {
-  withLocalization,
-  LocalizationContextProps,
-  t,
-} from "../../../../utils";
 
 interface Props {
   date: Date;

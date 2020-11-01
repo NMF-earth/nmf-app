@@ -5,8 +5,8 @@ import { useDispatch, useSelector } from "react-redux";
 
 import { Text } from "components";
 import { userPreferences } from "ducks";
+import { t } from "utils";
 
-import { t } from "../../utils";
 import navigationOptions from "./NotificationsScreen.navigationOptions";
 import styles from "./NotificationsScreen.styles";
 

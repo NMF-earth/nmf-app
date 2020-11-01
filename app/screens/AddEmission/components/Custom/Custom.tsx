@@ -3,10 +3,10 @@ import { View } from "react-native";
 import Slider from "@react-native-community/slider";
 
 import { Text } from "components";
+import { t } from "utils";
 
 import styles from "./Custom.styles";
 import { Colors } from "../../../../style";
-import { t } from "../../../../utils";
 
 const MIN_SLIDER_VALUE = 1;
 const MAX_SLIDER_VALUE = 1000;

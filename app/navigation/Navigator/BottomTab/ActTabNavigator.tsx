@@ -2,9 +2,9 @@ import React from "react";
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
 
 import { Text } from "components";
+import { t } from "utils";
 
 import { GuideCategory } from "../../../types/guide";
-import { t } from "../../../utils";
 import { ComponentsStyle, Colors, Font } from "../../../style";
 import ActScreen from "../../../screens/Act";
 

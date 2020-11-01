@@ -10,6 +10,14 @@ import { Text, Tag, TextInput } from "components";
 import { userPreferences } from "ducks";
 import { EmissionType } from "interfaces";
 import { EmissionPayload } from "interfaces/emission/emission.interface";
+import {
+  calculation,
+  t,
+  withLocalization,
+  LocalizationContextProps,
+  ui,
+  time,
+} from "utils";
 
 import styles from "./AddEmissionScreen.styles";
 import navigationOptions from "./AddEmissionScreen.navigationOptions";
@@ -21,14 +29,6 @@ import {
   Electricity,
   AddEmissionButton,
 } from "./components";
-import {
-  calculation,
-  t,
-  withLocalization,
-  LocalizationContextProps,
-  ui,
-  time,
-} from "../../utils";
 
 interface Props {
   navigation: {

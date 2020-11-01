@@ -2,8 +2,8 @@ import React from "react";
 
 // import { TouchableOpacity } from "react-native";
 import { Text } from "components";
+import { t } from "utils";
 
-import { t } from "../../utils";
 import { Layout, ComponentsStyle } from "../../style";
 
 const navigationOptions = () => ({
