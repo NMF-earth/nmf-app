@@ -3,7 +3,8 @@ import { View, Switch } from "react-native";
 import * as Notifications from "expo-notifications";
 import { useDispatch, useSelector } from "react-redux";
 
-import { Text } from "../../components";
+import { Text } from "components";
+
 import { t } from "../../utils";
 import { userPreferences } from "../../ducks";
 import navigationOptions from "./NotificationsScreen.navigationOptions";

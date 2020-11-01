@@ -1,6 +1,7 @@
 import React from "react";
 
-import { Text, InfoButton } from "../../components";
+import { Text, InfoButton } from "components";
+
 import { t } from "../../utils";
 import { Colors, ComponentsStyle } from "../../style";
 

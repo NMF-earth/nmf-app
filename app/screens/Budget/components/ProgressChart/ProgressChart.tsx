@@ -3,9 +3,10 @@ import moment from "moment";
 import "moment/min/locales";
 import { View } from "react-native";
 
+import { Text } from "components";
+
 import styles from "./ProgressChart.styles";
 import { Legend, Chart, PeriodBudget } from "./components";
-import { Text } from "../../../../components";
 import { withLocalization, LocalizationContextProps } from "../../../../utils";
 
 interface Props {

@@ -1,8 +1,9 @@
 import React from "react";
 import { View } from "react-native";
 
+import { Text } from "components";
+
 import styles from "./LegendItem.styles";
-import { Text } from "../../../../../../components";
 
 interface Props {
   name: string;

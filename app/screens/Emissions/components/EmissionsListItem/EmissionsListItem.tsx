@@ -3,9 +3,10 @@ import { View, TouchableOpacity } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { FormattedNumber } from "react-native-globalize";
 
+import { Text } from "components";
+
 import { Colors } from "../../../../style";
 import styles from "./EmissionsListItem.styles";
-import { Text } from "../../../../components";
 import EmissionsListItemProps from "./EmissionsListItemProps";
 
 const EmissionsListItem = ({

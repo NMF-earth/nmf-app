@@ -3,7 +3,8 @@ import { View } from "react-native";
 import moment from "moment";
 
 import "moment/min/locales";
-import { Text } from "../../../../components";
+import { Text } from "components";
+
 import styles from "./SectionHeader.styles";
 import {
   withLocalization,

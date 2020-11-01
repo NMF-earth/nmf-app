@@ -4,8 +4,9 @@ import Slider from "@react-native-community/slider";
 import { FormattedNumber } from "react-native-globalize";
 import { transport, TransportEnum } from "carbon-footprint";
 
+import { Text, Tag } from "components";
+
 import styles from "./Transport.styles";
-import { Text, Tag } from "../../../../components";
 import { Colors } from "../../../../style";
 import { t, time, ui, calculation } from "../../../../utils";
 

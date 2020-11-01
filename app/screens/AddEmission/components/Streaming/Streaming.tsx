@@ -9,8 +9,9 @@ import {
   ElectricityEnum,
 } from "carbon-footprint";
 
+import { Text, Tag } from "components";
+
 import styles from "./Streaming.styles";
-import { Text, Tag } from "../../../../components";
 import { Colors } from "../../../../style";
 import { t, time, ui } from "../../../../utils";
 

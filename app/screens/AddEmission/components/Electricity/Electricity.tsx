@@ -5,7 +5,8 @@ import Slider from "@react-native-community/slider";
 import { FormattedNumber } from "react-native-globalize";
 import { electricity, ElectricityEnum } from "carbon-footprint";
 
-import { Text } from "../../../../components";
+import { Text } from "components";
+
 import { Colors } from "../../../../style";
 import { t } from "../../../../utils";
 import styles from "./Electricity.styles";

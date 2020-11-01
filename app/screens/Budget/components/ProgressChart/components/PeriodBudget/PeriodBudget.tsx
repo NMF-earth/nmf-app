@@ -1,8 +1,9 @@
 import React from "react";
 import { View } from "react-native";
 
+import { Text } from "components";
+
 import styles from "./PeriodBudget.styles";
-import { Text } from "../../../../../../components";
 import { t } from "../../../../../../utils";
 
 interface Prop {

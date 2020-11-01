@@ -10,8 +10,8 @@ import ExpoConstants from "expo-constants";
 import * as WebBrowser from "expo-web-browser";
 
 import { ImagesAssets } from "constant";
+import { Button, Text, SocialMedia } from "components";
 
-import { Button, Text, SocialMedia } from "../../components";
 import { SettingsRow } from "./components";
 import styles from "./SettingsScreen.styles";
 import navigationOptions from "./SettingsScreen.navigationOptions";

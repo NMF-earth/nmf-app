@@ -7,8 +7,9 @@ import "moment/min/locales";
 import { FormattedNumber } from "react-native-globalize";
 import { useNavigation, useRoute } from "@react-navigation/native";
 
+import { Text, Tag, Button } from "components";
+
 import styles from "./EmissionItemScreen.styles";
-import { Text, Tag, Button } from "../../components";
 import navigationOptions from "./EmissionItemScreen.navigationOptions";
 import {
   calculation,

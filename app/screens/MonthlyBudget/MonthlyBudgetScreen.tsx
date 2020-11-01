@@ -5,7 +5,8 @@ import { Ionicons } from "@expo/vector-icons";
 import * as WebBrowser from "expo-web-browser";
 import { useDispatch, useSelector } from "react-redux";
 
-import { Text, Button } from "../../components";
+import { Text, Button } from "components";
+
 import { Colors } from "../../style";
 import styles from "./MonthlyBudgetScreen.styles";
 import navigationOptions from "./MonthlyBudgetScreen.navigationOptions";

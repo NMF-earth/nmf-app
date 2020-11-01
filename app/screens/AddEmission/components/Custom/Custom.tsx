@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import { View } from "react-native";
 import Slider from "@react-native-community/slider";
 
+import { Text } from "components";
+
 import styles from "./Custom.styles";
-import { Text } from "../../../../components";
 import { Colors } from "../../../../style";
 import { t } from "../../../../utils";
 

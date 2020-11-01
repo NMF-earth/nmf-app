@@ -3,7 +3,8 @@ import { View, ScrollView } from "react-native";
 import { ElectricityEnum, electricity } from "carbon-footprint";
 import { useDispatch, useSelector } from "react-redux";
 
-import { Text, SelectableListItem } from "../../components";
+import { Text, SelectableListItem } from "components";
+
 import { t, calculation } from "../../utils";
 import { userPreferences } from "../../ducks";
 import navigationOptions from "./MyLocationScreen.navigationOptions";

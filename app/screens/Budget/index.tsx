@@ -1,7 +1,8 @@
 import React from "react";
 import { useSelector } from "react-redux";
 
-import NoEmission from "../../components/NoEmission";
+import NoEmission from "components/NoEmission";
+
 import BudgetScreen from "./BudgetScreen";
 import navigationOptions from "./BudgetScreen.navigationOptions";
 import { emissions } from "../../ducks";
