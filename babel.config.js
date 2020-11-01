@@ -10,9 +10,10 @@ module.exports = function (api) {
           extensions: [".ios.js", ".android.js", ".js", ".ts", ".tsx", ".json"],
           alias: {
             components: "./app/components",
-            utils: "./app/utils",
             constant: "./app/constant",
             ducks: "./app/ducks",
+            interfaces: "./app/interfaces",
+            utils: "./app/utils",
           },
         },
       ],

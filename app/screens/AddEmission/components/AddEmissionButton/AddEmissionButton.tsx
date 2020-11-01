@@ -4,10 +4,10 @@ import uuid from "uuid";
 
 import { Text, Button } from "components";
 import { emissions } from "ducks";
+import { EmissionPayload } from "interfaces/emission/emission.interface";
 
 import styles from "./AddEmissionButton.styles";
 import { t } from "../../../../utils";
-import { EmissionPayload } from "../../../../interfaces/emission/emission.interface";
 
 interface Props {
   emissionPayload: EmissionPayload;

@@ -12,9 +12,10 @@
     "paths": {
       "*": ["app/*"],
       "components/*": ["app/components/*"],
-      "utils/*": ["app/utils/*"],
       "constant/*": ["app/constant/*"],
       "ducks/*": ["app/ducks/*"],
+      "interfaces/*": ["app/interfaces/*"], 
+      "utils/*": ["app/utils/*"],
     },
   }
 }
