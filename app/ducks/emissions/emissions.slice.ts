@@ -14,12 +14,23 @@ const emissions = createSlice({
     deleteEmissionById(state, action: PayloadAction<string>) {
       return (state = state.filter((item) => item.id !== action.payload));
     },
+    loadEmissionsFromImport(state, action: PayloadAction<Array<Emission>>) {
+      return (state = action.payload);
+    },
   },
 });
 
-const { createEmission, deleteEmissionById } = emissions.actions;
+const {
+  createEmission,
+  deleteEmissionById,
+  loadEmissionsFromImport,
+} = emissions.actions;
 
-export const actions = { createEmission, deleteEmissionById };
+export const actions = {
+  createEmission,
+  deleteEmissionById,
+  loadEmissionsFromImport,
+};
 
 export const namespace = emissions.name;
 

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import {
+  Alert,
   View,
   TouchableWithoutFeedback,
   ScrollView,
@@ -7,12 +8,17 @@ import {
   Platform,
 } from "react-native";
 import ExpoConstants from "expo-constants";
+import * as DocumentPicker from "expo-document-picker";
+import * as FileSystem from "expo-file-system";
+import * as Sharing from "expo-sharing";
 
 import * as WebBrowser from "expo-web-browser";
 
 import { ImagesAssets } from "constant";
 
+import store from "../../redux/store";
 import { Button, Text, SocialMedia } from "../../components";
+import { budget, emissions, userPreferences } from "../../ducks";
 import { SettingsRow } from "./components";
 import styles from "./SettingsScreen.styles";
 import navigationOptions from "./SettingsScreen.navigationOptions";
@@ -31,6 +37,62 @@ const SettingsScreen = (props) => {
       title: t("SETTINGS_SCREEN_NOTIFICATIONS"),
       onPress: navigator.openNotifications,
       os: "ios",
+    },
+    {
+      title: "Import",
+      onPress: async () => {
+        const file = await DocumentPicker.getDocumentAsync({});
+        if (file.type !== "cancel") {
+          try {
+            const data = JSON.parse(
+              await FileSystem.readAsStringAsync(file.uri)
+            );
+            if (data._persist) {
+              store.dispatch(
+                budget.actions.setMonthlyCarbonBudget(
+                  data.budget.monthlyCarbonBudget
+                )
+              );
+              store.dispatch(
+                emissions.actions.loadEmissionsFromImport(data.emissions)
+              );
+
+              store.dispatch(
+                userPreferences.actions.acceptTermsOfUse(
+                  data.userPreferences.acceptedTermsOfUseVersion
+                )
+              );
+              store.dispatch(
+                userPreferences.actions.toggleNotifications(
+                  data.userPreferences.activatedNotifications
+                )
+              );
+              store.dispatch(
+                userPreferences.actions.updateLocation(
+                  data.userPreferences.location
+                )
+              );
+            } else {
+              throw "notBackup";
+            }
+          } catch {
+            Alert.alert("Error importing backup");
+          }
+        }
+      },
+    },
+    {
+      title: "Export",
+      onPress: async () => {
+        const exportData = JSON.stringify(store.getState());
+        FileSystem.writeAsStringAsync(
+          FileSystem.cacheDirectory + "export.json",
+          exportData,
+          { encoding: FileSystem.EncodingType.UTF8 }
+        ).then(() => {
+          Sharing.shareAsync(FileSystem.cacheDirectory + "export.json");
+        });
+      },
     },
     {
       title: t("SETTINGS_SCREEN_MY_LOCATION"),
