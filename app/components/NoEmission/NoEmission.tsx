@@ -3,10 +3,10 @@ import { ScrollView, View } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
 import { t } from "utils";
+import { navigate } from "navigation";
 
 import { Text, Button, StickersImage } from "../";
 import styles from "./NoEmission.styles";
-import { navigate } from "../../navigation";
 
 export default function NoEmission() {
   const navigation = useNavigation();

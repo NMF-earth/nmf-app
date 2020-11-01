@@ -13,6 +13,7 @@ module.exports = function (api) {
             constant: "./app/constant",
             ducks: "./app/ducks",
             interfaces: "./app/interfaces",
+            navigation: "./app/navigation",
             style: "./app/style",
             utils: "./app/utils",
           },

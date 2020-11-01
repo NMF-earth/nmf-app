@@ -6,8 +6,7 @@ import { Layout } from "constant";
 import { Text } from "components";
 import { platform, t, ui } from "utils";
 import { Colors, ComponentsStyle } from "style";
-
-import { navigate } from "../../navigation";
+import { navigate } from "navigation";
 
 const iconStyle = { paddingRight: Layout.PADDING_HORIZONTAL };
 

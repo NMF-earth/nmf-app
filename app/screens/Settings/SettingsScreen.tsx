@@ -12,11 +12,11 @@ import * as WebBrowser from "expo-web-browser";
 import { ImagesAssets } from "constant";
 import { Button, Text, SocialMedia } from "components";
 import { t } from "utils";
+import { navigate } from "navigation";
 
 import { SettingsRow } from "./components";
 import styles from "./SettingsScreen.styles";
 import navigationOptions from "./SettingsScreen.navigationOptions";
-import { navigate } from "../../navigation";
 
 const SettingsScreen = (props) => {
   const navigator = navigate(props.navigation);

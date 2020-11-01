@@ -2,11 +2,12 @@ import React from "react";
 import { SectionList, View } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
+import { navigate } from "navigation";
+
 import EmissionsListItem from "../EmissionsListItem";
 import EmissionsListItemProps from "../EmissionsListItem/EmissionsListItemProps";
 import SectionHeader from "../SectionHeader";
 import styles from "./EmissionsList.styles";
-import { navigate } from "../../../../navigation";
 
 const EmissionsList = ({ emissions, monthlyCarbonBudget }) => {
   const navigation = useNavigation();

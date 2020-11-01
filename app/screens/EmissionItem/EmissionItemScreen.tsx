@@ -16,10 +16,10 @@ import {
   withLocalization,
   LocalizationContextProps,
 } from "utils";
+import { navigate } from "navigation";
 
 import styles from "./EmissionItemScreen.styles";
 import navigationOptions from "./EmissionItemScreen.navigationOptions";
-import { navigate } from "../../navigation";
 
 const EmissionItemScreen = ({ language = "" }: LocalizationContextProps) => {
   const navigation = useNavigation();
