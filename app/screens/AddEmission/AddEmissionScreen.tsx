@@ -8,8 +8,7 @@ import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view
 
 import { Text, Tag, TextInput } from "components";
 import { userPreferences } from "ducks";
-import { EmissionType } from "interfaces";
-import { EmissionPayload } from "interfaces/emission/emission.interface";
+import { EmissionType, EmissionPayload } from "interfaces";
 import {
   calculation,
   t,

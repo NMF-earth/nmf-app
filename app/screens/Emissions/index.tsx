@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 
-import NoEmission from "components/NoEmission";
+import { NoEmission } from "components";
 import { emissions } from "ducks";
 
 import EmissionsScreen from "./EmissionsScreen";

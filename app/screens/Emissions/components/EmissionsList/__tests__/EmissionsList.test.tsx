@@ -2,7 +2,7 @@ import React from "react";
 import { create } from "react-test-renderer";
 import { FoodEnum, TransportEnum } from "carbon-footprint";
 
-import emissions from "ducks/emissions";
+import { emissions } from "ducks";
 import { Emission, EmissionType } from "interfaces";
 
 import { selectors } from "../../../ducks";

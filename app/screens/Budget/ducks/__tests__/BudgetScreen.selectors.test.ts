@@ -1,7 +1,7 @@
 import { FoodEnum, TransportEnum } from "carbon-footprint";
 import moment from "moment";
 
-import emissions from "ducks/emissions";
+import { emissions } from "ducks";
 import { Emission, EmissionType } from "interfaces";
 import { calculation } from "utils";
 

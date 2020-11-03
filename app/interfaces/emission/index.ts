@@ -1,3 +1,3 @@
-import { Emission, EmissionType } from "./emission.interface";
+import { Emission, EmissionType, EmissionPayload } from "./emission.interface";
 
-export { Emission, EmissionType };
+export { Emission, EmissionType, EmissionPayload };

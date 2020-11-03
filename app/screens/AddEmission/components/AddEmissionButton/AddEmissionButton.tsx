@@ -4,7 +4,7 @@ import uuid from "uuid";
 
 import { Text, Button } from "components";
 import { emissions } from "ducks";
-import { EmissionPayload } from "interfaces/emission/emission.interface";
+import { EmissionPayload } from "interfaces";
 import { t } from "utils";
 
 import styles from "./AddEmissionButton.styles";

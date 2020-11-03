@@ -2,7 +2,7 @@ import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
-import TabBarIcon from "components/TabBarIcon";
+import { TabBarIcon } from "components";
 import { t } from "utils";
 import { Colors } from "style";
 
