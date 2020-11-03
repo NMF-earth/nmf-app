@@ -7,7 +7,8 @@ import {
 } from "carbon-footprint";
 import { contains, __ } from "ramda";
 
-import { EmissionType } from "../../interfaces";
+import { EmissionType } from "interfaces";
+
 import { t } from "../translations";
 
 const isElectricityEmission = contains(__, Object.keys(ElectricityEnum));

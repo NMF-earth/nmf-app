@@ -1,7 +1,8 @@
 import { filter, propEq, find, pathOr, pipe } from "ramda";
 
+import { EmissionType } from "interfaces";
+
 import { namespace } from "./emissions.slice";
-import { EmissionType } from "../../interfaces";
 
 const getAllEmissions = pathOr([], [namespace]);
 
