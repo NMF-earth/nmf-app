@@ -1,9 +1,10 @@
 import React from "react";
 import { ScrollView, View } from "react-native";
 
-import { Text, SocialMedia, StickersImage } from "../../components";
+import { Text, SocialMedia, StickersImage } from "components";
+import { t } from "utils";
+
 import styles from "./ComingSoonScreen.styles";
-import { t } from "../../utils";
 import navigationOptions from "./ComingSoonScreen.navigationOptions";
 
 const ComingSoonScreen = () => {

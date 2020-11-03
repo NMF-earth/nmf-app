@@ -1,8 +1,8 @@
 import { StyleSheet } from "react-native";
 
 import { Layout } from "constant";
+import { platform } from "utils";
 
-import { platform } from "../../utils";
 import { Colors } from "../colors";
 
 export default StyleSheet.create({

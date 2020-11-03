@@ -4,8 +4,9 @@ import { pathOr } from "ramda";
 import { Ionicons } from "@expo/vector-icons";
 import { useNavigation, useRoute } from "@react-navigation/native";
 
-import { emissions } from "../../ducks";
-import { navigate } from "../../navigation";
+import { emissions } from "ducks";
+import { navigate } from "navigation";
+
 import styles from "./InfoButton.styles";
 
 const InfoButton = () => {

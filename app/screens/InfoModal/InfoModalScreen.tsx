@@ -2,10 +2,11 @@ import React from "react";
 import { ScrollView } from "react-native";
 import HTML from "react-native-render-html";
 
+import { ui } from "utils";
+
 import styles from "./InfoModalScreen.styles";
 import navigationOptions from "./InfoModal.navigationOptions";
 import methodology from "../../../assets/methodology/methodology.json";
-import { ui } from "../../utils";
 
 const InfoModalScreen = ({ route }) => {
   const emissionModelType = route?.params?.emissionModelType;

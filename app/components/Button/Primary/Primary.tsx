@@ -1,9 +1,10 @@
 import React from "react";
 import { TouchableOpacity, StyleProp, ViewStyle } from "react-native";
 
+import { Font } from "style";
+
 import styles from "./Primary.styles";
 import mainStyle from "../styles";
-import { Font } from "../../../style";
 
 const PADDING_VERTICAL = 12;
 

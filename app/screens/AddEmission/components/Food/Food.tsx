@@ -4,10 +4,11 @@ import Slider from "@react-native-community/slider";
 import { FormattedNumber } from "react-native-globalize";
 import { FoodEnum, food } from "carbon-footprint";
 
+import { Text, Tag } from "components";
+import { t, ui } from "utils";
+import { Colors } from "style";
+
 import styles from "./Food.styles";
-import { Text, Tag } from "../../../../components";
-import { Colors } from "../../../../style";
-import { t, ui } from "../../../../utils";
 
 const MIN_SLIDER_VALUE = 20;
 const MAX_SLIDER_VALUE = 500;

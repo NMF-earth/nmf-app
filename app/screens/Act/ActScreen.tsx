@@ -3,11 +3,11 @@ import { FlatList } from "react-native";
 import { filter, pathEq } from "ramda";
 
 import { ListItem, Text } from "components";
+import { navigate } from "navigation";
 
 import { Guide } from "../../types/guide";
 import Guides from "../../../assets/guides/guides.json";
 import navigationOptions from "./ActScreen.navigationOptions";
-import { navigate } from "../../navigation";
 import styles from "./ActScreen.styles";
 
 const getCategory = pathEq(["category"]);

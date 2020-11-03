@@ -11,7 +11,8 @@ import {
   Linking,
 } from "react-native";
 
-import { EmissionType } from "../../../interfaces";
+import { EmissionType } from "interfaces";
+
 import ui from "../";
 import * as translationUtils from "../../translations/i18n";
 

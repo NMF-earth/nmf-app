@@ -2,9 +2,10 @@ import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
-import { Colors } from "../../style";
-import TabBarIcon from "../../components/TabBarIcon";
-import { t } from "../../utils";
+import { TabBarIcon } from "components";
+import { t } from "utils";
+import { Colors } from "style";
+
 import ActNavigator from "./BottomTab/ActNavigator";
 import BudgetNavigator from "./BottomTab/BudgetNavigator";
 import EmissionsNavigator from "./BottomTab/EmissionsNavigator";
