@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+
 import { createMock } from "../../utils";
 
 const createIconSet = () => jest.fn().mockResolvedValue();

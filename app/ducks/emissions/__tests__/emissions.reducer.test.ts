@@ -1,7 +1,8 @@
 import { FoodEnum } from "carbon-footprint";
 
+import { Emission, EmissionType } from "interfaces";
+
 import emissions from "../";
-import { Emission, EmissionType } from "../../../interfaces";
 
 describe("Emissions reducer should", () => {
   it("return the initial state", () => {

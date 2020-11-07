@@ -1,6 +1,6 @@
 import { TransitionPresets } from "@react-navigation/stack";
 
-import { platform } from "../../../utils";
+import { platform } from "utils";
 
 const transitions = {
   transitionBetweenScreenPresets: platform.isAndroid

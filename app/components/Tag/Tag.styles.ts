@@ -1,6 +1,6 @@
 import { StyleSheet, ViewStyle } from "react-native";
 
-import { Colors } from "../../style";
+import { Colors } from "style";
 
 const container: ViewStyle = {
   paddingVertical: 6,

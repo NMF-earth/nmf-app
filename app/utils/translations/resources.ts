@@ -17,10 +17,10 @@ import * as MyLocation from "../../screens/MyLocation/translations";
 import * as ActDetail from "../../screens/ActDetail/translations";
 
 /* COMPONENTS */
-import * as NoEmission from "../../components/NoEmission/translations";
+import * as NoEmission from "components/NoEmission/translations";
 
 /* UTILS */
-import * as UI from "../../utils/ui/translations";
+import * as UI from "utils/ui/translations";
 
 const en = {
   ...UI.en,

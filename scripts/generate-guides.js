@@ -6,7 +6,7 @@ const fm = require("front-matter");
 const MarkdownIt = require("markdown-it");
 const md = new MarkdownIt();
 const data = [];
-const guidesPath = "../assets/guides/markdown/*.md";
+const guidesPath = `${process.env.PWD}/assets/guides/markdown/*.md`;
 
 /*
  * Script to parse and build all guides into

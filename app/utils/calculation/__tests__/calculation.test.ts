@@ -10,8 +10,9 @@ import {
   getInternetUsageCarbonImpact,
 } from "carbon-footprint";
 
+import { Emission, EmissionType } from "interfaces";
+
 import calculation from "../";
-import { Emission, EmissionType } from "../../../interfaces";
 
 const emissionFood: Emission = {
   id: "123",

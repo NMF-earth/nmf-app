@@ -3,10 +3,9 @@ import { View } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
 import { Layout } from "constant";
-
-import { Colors, ComponentsStyle } from "../../style";
-import { navigate } from "../../navigation";
-import { platform } from "../../utils";
+import { platform } from "utils";
+import { Colors, ComponentsStyle } from "style";
+import { navigate } from "navigation";
 
 const iconStyle = { paddingRight: Layout.PADDING_HORIZONTAL };
 

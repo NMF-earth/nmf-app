@@ -2,8 +2,8 @@ import { pipe, propOr, includes, filter, isEmpty, not } from "ramda";
 import moment from "moment";
 import { FoodEnum } from "carbon-footprint";
 
-import { emissions } from "../../../../../ducks";
-import { calculation } from "../../../../../utils";
+import { emissions } from "ducks";
+import { calculation } from "utils";
 
 const meatArray = [
   FoodEnum.beef,

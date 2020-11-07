@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-import { Emission } from "../../interfaces";
+import { Emission } from "interfaces";
 
 const initialState: Emission[] = [];
 

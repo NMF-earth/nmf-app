@@ -9,7 +9,7 @@ import {
   streaming,
 } from "carbon-footprint";
 
-import { EmissionType, Emission } from "../../interfaces";
+import { EmissionType, Emission } from "interfaces";
 
 const isNilOrEmpty = either(isNil, isEmpty);
 

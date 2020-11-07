@@ -5,13 +5,14 @@ import { Ionicons } from "@expo/vector-icons";
 import * as WebBrowser from "expo-web-browser";
 import { useDispatch, useSelector } from "react-redux";
 
-import { Text, Button } from "../../components";
-import { Colors } from "../../style";
+import { Text, Button } from "components";
+import { budget } from "ducks";
+import { t } from "utils";
+import { Colors } from "style";
+import { navigate } from "navigation";
+
 import styles from "./MonthlyBudgetScreen.styles";
 import navigationOptions from "./MonthlyBudgetScreen.navigationOptions";
-import { t } from "../../utils";
-import { budget } from "../../ducks";
-import { navigate } from "../../navigation";
 
 const MIN_MONTHLY_CARBON_BUDGET = 0;
 const MAX_MONTHLY_CARBON_BUDGET = 1000;

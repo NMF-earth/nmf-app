@@ -5,8 +5,9 @@ import {
   ElectricityEnum,
 } from "carbon-footprint";
 
+import { Emission, EmissionType } from "interfaces";
+
 import emissions from "../";
-import { Emission, EmissionType } from "../../../interfaces";
 
 let state;
 
