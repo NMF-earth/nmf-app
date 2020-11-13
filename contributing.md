@@ -16,7 +16,7 @@ We love your input, whether it's:
 
 We welcome pull requests to change the codebase.
 
-1. Fork the repo and create your branch from `master`.
+1. Fork the repo and create your branch from `main`.
 2. If you've added code that should be tested, add tests.
 3. Ensure the test suite passes.
 4. Make sure your code lints.
@@ -26,7 +26,7 @@ NB : PR older than one month will be deleted.
 
 ### Contributions are under the GPL-3.0 License
 
-When you submit code changes, your submissions are understood to be under [GPL-3.0 License](https://github.com/NotMyFaultEarth/nmf-app/blob/master/LICENSE).
+When you submit code changes, your submissions are understood to be under [GPL-3.0 License](https://github.com/NotMyFaultEarth/nmf-app/blob/main/LICENSE).
 
 ### Open source guide
 

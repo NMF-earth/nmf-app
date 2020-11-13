@@ -1,6 +1,6 @@
 <!-- Thanks for submitting a pull request! We appreciate a lot your help. Please provide some information so that others can review your pull request. The two last fields below are optional but appreciated. -->
 
-✅ I have read the [contributing file](https://github.com/NMF-earth/nmf-app/blob/master/contributing.md)
+✅ I have read the [contributing file](https://github.com/NMF-earth/nmf-app/blob/main/contributing.md)
 
 ## Summary
 

@@ -5,16 +5,16 @@
 
 <p align="center">
   <a href="https://apps.apple.com/us/app/nmf-earth/id1494561829">
-    <img alt="app-store" src="https://github.com/NotMyFaultEarth/nmf-app/blob/master/app-store.png" />
+    <img alt="app-store" src="https://github.com/NotMyFaultEarth/nmf-app/blob/main/app-store.png" />
   </a>
   <a href="https://play.google.com/store/apps/details?id=nmf.earth">
-    <img alt="google-play" src="https://github.com/NotMyFaultEarth/nmf-app/blob/master/play-store.png" />
+    <img alt="google-play" src="https://github.com/NotMyFaultEarth/nmf-app/blob/main/play-store.png" />
   </a>
 </p>
 
 <br />
 
-![screenshots](https://github.com/NotMyFaultEarth/nmf-app/blob/master/app-preview.png)
+![screenshots](https://github.com/NotMyFaultEarth/nmf-app/blob/main/app-preview.png)
 
 ![](https://github.com/NMF-earth/nmf-app/workflows/Test%20CI/badge.svg)
 [![Depfu](https://badges.depfu.com/badges/f3b06c819202baf2a14b3241cbf249c9/overview.svg)](https://depfu.com/repos/github/NotMyFaultEarth/nmf-app?project_id=10243)
@@ -133,7 +133,7 @@ So far the app supports English, French, German, Swedish, Danish, Russian, Portu
 
 <br />
 
-### Generate 
+### Generate
 
 Run `node scripts/generate-translation-files.js` in order to create the files needed for the new language you want to add to the app.
 
@@ -153,7 +153,7 @@ Any tag starting with `v` will runs expo publish. During this step `app.example.
 
 More than 25 developers have contribute to the app, thanks a lot to [them](https://github.com/NMF-earth/nmf-app/graphs/contributors)!
 
-Have a look to [contributing.md](https://github.com/NotMyFaultEarth/nmf-app/blob/master/contributing.md) if you want to contribute!
+Have a look to [contributing.md](https://github.com/NotMyFaultEarth/nmf-app/blob/main/contributing.md) if you want to contribute!
 
 <br />
 
@@ -165,4 +165,4 @@ A big thank you to [Christopher Gwilliams](https://github.com/encima) and to th
 
 ### ©️ Open source - licence
 
-Repository and contributions are under [GNU General Public License v3.0](https://github.com/NotMyFaultEarth/nmf-app/blob/master/LICENSE)
+Repository and contributions are under [GNU General Public License v3.0](https://github.com/NotMyFaultEarth/nmf-app/blob/main/LICENSE)
