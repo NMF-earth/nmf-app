@@ -19,6 +19,7 @@ const toBeImported = {
   SupportUs: "../../app/screens/SupportUs/translations",
   MyLocation: "../../app/screens/MyLocation/translations",
   ActDetail: "../../app/screens/ActDetail/translations",
+  Notifications: "../../app/screens/Notifications/translations",
   NoEmission: "../../app/components/NoEmission/translations",
   UI: "../../app/utils/ui/translations",
 };
@@ -54,6 +55,7 @@ usedLanguages.forEach((language) => {
     ...imports.SupportUs[language],
     ...imports.MyLocation[language],
     ...imports.ActDetail[language],
+    ...imports.Notifications[language],
   };
 });
 
