@@ -40,7 +40,7 @@ const SettingsScreen = (props) => {
       onPress: navigator.openSupportUs,
     },
     {
-      title: t("SETTINGS_SCREEN_NMF_EARTH"),
+      title: "NMF.earth",
       onPress: () => WebBrowser.openBrowserAsync("http://nmf.earth"),
     },
     {
