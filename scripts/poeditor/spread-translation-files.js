@@ -18,6 +18,7 @@ const translationDirs = [
   "app/screens/MyLocation/translations",
   "app/screens/ActDetail/translations",
   "app/components/NoEmission/translations",
+  "app/screens/Notifications/translations",
   "app/utils/ui/translations",
 ];
 
