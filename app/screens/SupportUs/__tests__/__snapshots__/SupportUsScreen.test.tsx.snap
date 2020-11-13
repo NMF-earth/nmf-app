@@ -49,7 +49,7 @@ exports[`SupportUsScreen renders correctly 1`] = `
         }
       }
     >
-      You can do so on Open Collective or on Patreon.
+      You can do so on Ko-fi.
     </Text.Primary>
     <Text.Link
       style={
@@ -57,19 +57,9 @@ exports[`SupportUsScreen renders correctly 1`] = `
           "paddingVertical": 10,
         }
       }
-      url="https://www.patreon.com/nmf_earth"
+      url="https://ko-fi.com/pierrebresson"
     >
-      Patreon
-    </Text.Link>
-    <Text.Link
-      style={
-        Object {
-          "paddingVertical": 10,
-        }
-      }
-      url="https://opencollective.com/nmf_earth"
-    >
-      Open Collective
+      Ko-fi
     </Text.Link>
     <View
       style={

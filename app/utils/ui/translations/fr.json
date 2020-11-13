@@ -15,5 +15,8 @@
 	"UI_AUDIO": "Audio - MP3",
 	"UI_FULL_HD_VIDEO": "Vidéo - FullHD/1080p",
 	"UI_ULTRA_HD_VIDEO": "Vidéo - UltraHD/4K",
-	"UI_ELECTRICITY": "Electricité"
+	"UI_ELECTRICITY": "Electricité",
+	"UI_MILK": "Milk",
+	"UI_CHEESE": "Cheese",
+	"UI_EGGS": "Eggs"
 }

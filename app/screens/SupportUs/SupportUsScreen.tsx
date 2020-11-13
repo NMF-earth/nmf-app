@@ -22,14 +22,8 @@ const SupportUsScreen = () => (
     <Text.Primary style={styles.paragraph}>
       {t("SUPPORT_US_SCREEN_PLATFORM")}
     </Text.Primary>
-    <Text.Link url="https://www.patreon.com/nmf_earth" style={styles.paragraph}>
-      Patreon
-    </Text.Link>
-    <Text.Link
-      url="https://opencollective.com/nmf_earth"
-      style={styles.paragraph}
-    >
-      Open Collective
+    <Text.Link url="https://ko-fi.com/pierrebresson" style={styles.paragraph}>
+      Ko-fi
     </Text.Link>
     <View style={styles.separator} />
   </ScrollView>

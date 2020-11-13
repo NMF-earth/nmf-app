@@ -13,7 +13,7 @@ export default StyleSheet.create({
     alignItems: "center",
     flex: 2,
   },
-  paragraph: {
+  text: {
     textAlign: "center",
     paddingVertical: 10,
   },

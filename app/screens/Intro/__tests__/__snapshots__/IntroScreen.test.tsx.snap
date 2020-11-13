@@ -20,7 +20,7 @@ exports[`renders correctly ComingSoon 1`] = `
     }
   >
     <StickersImage
-      sticker="restaurant"
+      sticker="bike"
     />
   </View>
   <View
@@ -32,7 +32,7 @@ exports[`renders correctly ComingSoon 1`] = `
       }
     }
   >
-    <Text.Secondary
+    <Text.H3
       style={
         Object {
           "paddingVertical": 10,
@@ -40,8 +40,8 @@ exports[`renders correctly ComingSoon 1`] = `
         }
       }
     >
-      Are you ready to reduce your waste and transition to a sustainable life?
-    </Text.Secondary>
+      Welcome to NMF.earth 🌱
+    </Text.H3>
     <Text.Tertiary
       style={
         Object {

@@ -24,13 +24,11 @@ const IntroScreen = () => {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.imageView}>
-        <StickersImage sticker="restaurant" />
+        <StickersImage sticker="bike" />
       </View>
       <View style={styles.termsOfUseView}>
-        <Text.Secondary style={styles.paragraph}>
-          {t("INTRO_SCREEN_PRELUDE")}
-        </Text.Secondary>
-        <Text.Tertiary style={styles.paragraph}>
+        <Text.H3 style={styles.text}>{t("INTRO_SCREEN_WELCOME")}</Text.H3>
+        <Text.Tertiary style={styles.text}>
           {t("INTRO_SCREEN_CONTINUE_AND_ACCEPT_TERMS_OF_USE")}
         </Text.Tertiary>
         <TouchableOpacity

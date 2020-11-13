@@ -9,8 +9,7 @@ export default StyleSheet.create({
     alignItems: "center",
     flex: 1,
   },
-  paragraph: {
-    textAlign: "center",
-    paddingVertical: 10,
+  text: {
+    fontSize: 18,
   },
 });

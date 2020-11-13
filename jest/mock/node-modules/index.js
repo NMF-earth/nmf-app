@@ -23,6 +23,12 @@ jest.mock("react-redux", () => {
   };
 });
 
+jest.mock("react-native-render-html", () => {
+  const createMock = require("../../utils").createMock;
+
+  return createMock("HTML");
+});
+
 jest.mock("react-native-globalize", () => {
   const createMock = require("../../utils").createMock;
 

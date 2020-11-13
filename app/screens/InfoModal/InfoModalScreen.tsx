@@ -23,7 +23,7 @@ const InfoModalScreen = ({ route }) => {
       <HTML
         html={html}
         onLinkPress={ui.onHTMLBodyLinkPress}
-        baseFontStyle={{ fontSize: 18 }}
+        baseFontStyle={styles.text}
       />
     </ScrollView>
   );

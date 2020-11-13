@@ -26,6 +26,9 @@ interface TranslationKeys {
   UI_FULL_HD_VIDEO: string;
   UI_ULTRA_HD_VIDEO: string;
   UI_ELECTRICITY: string;
+  UI_MILK: string;
+  UI_CHEESE: string;
+  UI_EGGS: string;
 }
 
 export { en, fr, de, sv, es, pt, da, ru, pl, TranslationKeys };

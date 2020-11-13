@@ -5,7 +5,9 @@ import { useNavigation } from "@react-navigation/native";
 import { t } from "utils";
 import { navigate } from "navigation";
 
-import { Text, Button, StickersImage } from "../";
+import Text from "../Text";
+import StickersImage from "../StickersImage";
+import Button from "../Button";
 import styles from "./NoEmission.styles";
 
 export default function NoEmission() {

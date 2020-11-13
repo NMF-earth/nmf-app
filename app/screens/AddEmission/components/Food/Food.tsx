@@ -26,6 +26,9 @@ const TAGS: Array<FoodEnum> = [
   FoodEnum.fish,
   FoodEnum.chocolate,
   FoodEnum.coffee,
+  FoodEnum.milk,
+  FoodEnum.cheese,
+  FoodEnum.eggs,
 ];
 
 export default ({
