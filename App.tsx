@@ -82,6 +82,7 @@ const App: React.FC<{}> = () => {
   }, []);
 
   let body = <SplashScreen screenAnimationComplete={screenAnimationComplete} />;
+
   if (ready && splashAnimation) {
     body = (
       <Provider store={store}>
