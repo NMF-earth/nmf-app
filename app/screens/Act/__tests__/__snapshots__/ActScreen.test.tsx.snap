@@ -18,6 +18,33 @@ exports[`ActScreen renders correctly 1`] = `
   data={
     Array [
       Object {
+        "body": "<h1>Avoid streaming</h1>
+<p>Streaming is nice, streaming is amazing, but have you ever though about the consequences on the environement?</p>
+<p>To give you an idea on how bad the streaming is, let's take an example. The size of the article text in the English Wikipedia is around <a href=\\"https://en.wikipedia.org/wiki/Wikipedia:Size_of_Wikipedia\\">20 gigabytes</a> of data in 2020. It means that everytime you watch a season of the Walking Dead in HD (1080p), you have downloaded on your computer/phone the same amount of data as the entire Wikipedia encyclopedia.</p>
+<p>Same applies to Spotify, Apple Music, Amazon and Youtube. Music is much smaller than a HD video but an average user consumes several songs in a day so at the end of the year, the impact of the climate is not negligeable.</p>
+<p>Both music and video streaming relies on servers as well as internet infrastuctures to transport the data to you. All of this has a cost, so instead of streaming in all circomstances, try to listen to the radio, go the cinema.... Who knows, you might end up meeting real people in real life!</p>
+<p>Don't forget to cancel autoplay by default, leading to unecessary streaming like Youtube is doing. In most video streaming platform, you can save this behavior in the preferences. If you can, use Peertube, a decentralized and open-source video platform, much better for the environement compared to Youtube and more ethical.</p>
+<p>If you still want to use YouTube, we recomment <a href=\\"https://addons.mozilla.org/en-US/firefox/addon/youtube-focus/?utm_source=addons.mozilla.org&amp;utm_medium=referral&amp;utm_content=search\\">Youtube Focus</a>, an add-on who tries to promote a healthier watching. As said on their <a href=\\"https://github.com/Jompa14/YouTube_Focus\\">Github</a>, YouTube has one billion hours whatched daily, and it’s recommendation algorithm generates more than 70% of views. That means 700.000.000 hours every single day. What means that the greatest slice of time that people spend on YouTube isnt because they searched for something to whatch or something to learn, it is because they were sugested by YouTube's algorithm.</p>
+",
+        "category": "digital",
+        "key": ".//markdown/avoid-streaming.md",
+        "title": "Avoid streaming",
+      },
+      Object {
+        "body": "<h1>Install an add blocker</h1>
+<p>All modern browser like Firefox, Safari, Chrome... let users the posibility to install add-ons, also name plugins or extensions.</p>
+<p>In order to not get ads or to see less ads, you can install the following browser extensions :</p>
+<ul>
+<li><a href=\\"https://addons.mozilla.org/da/firefox/addon/ghostery/\\">Ghostery</a>: built-in ad blocker removing advertisements from a web page to eliminate clutter so you can focus on the content you want. Protect your privacy, browse faster.</li>
+<li><a href=\\"https://addons.mozilla.org/da/firefox/addon/ublock-origin/\\">uBlock Origin</a> : content blocker with CPU and memory efficiency as a primary feature.</li>
+</ul>
+<p>Less ads, less compulsatory purchases, less CO2 emissions</p>
+",
+        "category": "digital",
+        "key": ".//markdown/ad-blocker.md",
+        "title": "Install an add blocker",
+      },
+      Object {
         "body": "<h1>Clean your cloud data</h1>
 <p>When your data is saved on the cloud, it means it's saved on remote computers (servers). It's really nice and convenient because if you loose your computer or your phone, your data is not lost!</p>
 <p>However, redundant data is not environmental friendly at all and will never be. Remember this: everytime you save data, transfer data it means CO2 emissions.</p>
@@ -26,7 +53,7 @@ exports[`ActScreen renders correctly 1`] = `
 <h3>More data = more pollution</h3>
 ",
         "category": "digital",
-        "key": "/Users/pierrebresson/Documents/Git/nmf-app/assets//markdown/clean-your-cloud-data.md",
+        "key": ".//markdown/clean-your-cloud-data.md",
         "title": "Clean your cloud data",
       },
       Object {
@@ -53,31 +80,8 @@ exports[`ActScreen renders correctly 1`] = `
 </ul>
 ",
         "category": "digital",
-        "key": "/Users/pierrebresson/Documents/Git/nmf-app/assets//markdown/gafa-replacement.md",
+        "key": ".//markdown/gafa-replacement.md",
         "title": "Find replacement for internet giants",
-      },
-      Object {
-        "body": "<h1>Buy a phone you can repair</h1>
-<p>A lot of people are changing their phones because the screen is damage, because they want a better camera or because the battery is not working well anymore.</p>
-<p>Changing phone every year is not sustainable and it's bad for the environement. To face this issue, a Dutch company, <a href=\\"https://www.fairphone.com/\\">Fairphone</a>, is making ethical and modular phone that you can fix and upgrade yourself.</p>
-<p>If you are on Android, installing an alternative rom like <a href=\\"https://lineageos.org/\\">LineageOS</a> can make your old phone faster and increase its lifespan.</p>
-",
-        "category": "digital",
-        "key": "/Users/pierrebresson/Documents/Git/nmf-app/assets//markdown/repair-phone.md",
-        "title": "Get a phone you can repair/upgrade",
-      },
-      Object {
-        "body": "<h1>Avoid streaming</h1>
-<p>Streaming is nice, streaming is amazing, but have you ever though about the consequences on the environement?</p>
-<p>To give you an idea on how bad the streaming is, let's take an example. The size of the article text in the English Wikipedia is around <a href=\\"https://en.wikipedia.org/wiki/Wikipedia:Size_of_Wikipedia\\">20 gigabytes</a> of data in 2020. It means that everytime you watch a season of the Walking Dead in HD (1080p), you have downloaded on your computer/phone the same amount of data as the entire Wikipedia encyclopedia.</p>
-<p>Same applies to Spotify, Apple Music, Amazon and Youtube. Music is much smaller than a HD video but an average user consumes several songs in a day so at the end of the year, the impact of the climate is not negligeable.</p>
-<p>Both music and video streaming relies on servers as well as internet infrastuctures to transport the data to you. All of this has a cost, so instead of streaming in all circomstances, try to listen to the radio, go the cinema.... Who knows, you might end up meeting real people in real life!</p>
-<p>Don't forget to cancel autoplay by default, leading to unecessary streaming like Youtube is doing. In most video streaming platform, you can save this behavior in the preferences. If you can, use Peertube, a decentralized and open-source video platform, much better for the environement compared to Youtube and more ethical.</p>
-<p>If you still want to use YouTube, we recomment <a href=\\"https://addons.mozilla.org/en-US/firefox/addon/youtube-focus/?utm_source=addons.mozilla.org&amp;utm_medium=referral&amp;utm_content=search\\">Youtube Focus</a>, an add-on who tries to promote a healthier watching. As said on their <a href=\\"https://github.com/Jompa14/YouTube_Focus\\">Github</a>, YouTube has one billion hours whatched daily, and it’s recommendation algorithm generates more than 70% of views. That means 700.000.000 hours every single day. What means that the greatest slice of time that people spend on YouTube isnt because they searched for something to whatch or something to learn, it is because they were sugested by YouTube's algorithm.</p>
-",
-        "category": "digital",
-        "key": "/Users/pierrebresson/Documents/Git/nmf-app/assets//markdown/avoid-streaming.md",
-        "title": "Avoid streaming",
       },
       Object {
         "body": "<h1>Calculate your browsing carbon impact and reduce it</h1>
@@ -89,22 +93,18 @@ exports[`ActScreen renders correctly 1`] = `
 </ul>
 ",
         "category": "digital",
-        "key": "/Users/pierrebresson/Documents/Git/nmf-app/assets//markdown/internet-browsing-impact.md",
+        "key": ".//markdown/internet-browsing-impact.md",
         "title": "Reduce your browsing emissions",
       },
       Object {
-        "body": "<h1>Install an add blocker</h1>
-<p>All modern browser like Firefox, Safari, Chrome... let users the posibility to install add-ons, also name plugins or extensions.</p>
-<p>In order to not get ads or to see less ads, you can install the following browser extensions :</p>
-<ul>
-<li><a href=\\"https://addons.mozilla.org/da/firefox/addon/ghostery/\\">Ghostery</a>: built-in ad blocker removing advertisements from a web page to eliminate clutter so you can focus on the content you want. Protect your privacy, browse faster.</li>
-<li><a href=\\"https://addons.mozilla.org/da/firefox/addon/ublock-origin/\\">uBlock Origin</a> : content blocker with CPU and memory efficiency as a primary feature.</li>
-</ul>
-<p>Less ads, less compulsatory purchases, less CO2 emissions</p>
+        "body": "<h1>Buy a phone you can repair</h1>
+<p>A lot of people are changing their phones because the screen is damage, because they want a better camera or because the battery is not working well anymore.</p>
+<p>Changing phone every year is not sustainable and it's bad for the environement. To face this issue, a Dutch company, <a href=\\"https://www.fairphone.com/\\">Fairphone</a>, is making ethical and modular phone that you can fix and upgrade yourself.</p>
+<p>If you are on Android, installing an alternative rom like <a href=\\"https://lineageos.org/\\">LineageOS</a> can make your old phone faster and increase its lifespan.</p>
 ",
         "category": "digital",
-        "key": "/Users/pierrebresson/Documents/Git/nmf-app/assets//markdown/ad-blocker.md",
-        "title": "Install an add blocker",
+        "key": ".//markdown/repair-phone.md",
+        "title": "Get a phone you can repair/upgrade",
       },
     ]
   }
@@ -138,6 +138,76 @@ exports[`ActScreen renders correctly 1`] = `
   windowSize={21}
 >
   <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Secondary
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          Avoid streaming
+        </Text.Secondary>
+        <Ionicons
+          color="#9CA6A0"
+          name="ios-arrow-forward"
+          size={26}
+          style={
+            Object {
+              "marginTop": 18,
+            }
+          }
+        />
+      </TouchableOpacity>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Secondary
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          Install an add blocker
+        </Text.Secondary>
+        <Ionicons
+          color="#9CA6A0"
+          name="ios-arrow-forward"
+          size={26}
+          style={
+            Object {
+              "marginTop": 18,
+            }
+          }
+        />
+      </TouchableOpacity>
+    </View>
     <View
       onLayout={[Function]}
       style={null}
@@ -229,76 +299,6 @@ exports[`ActScreen renders correctly 1`] = `
             }
           }
         >
-          Get a phone you can repair/upgrade
-        </Text.Secondary>
-        <Ionicons
-          color="#9CA6A0"
-          name="ios-arrow-forward"
-          size={26}
-          style={
-            Object {
-              "marginTop": 18,
-            }
-          }
-        />
-      </TouchableOpacity>
-    </View>
-    <View
-      onLayout={[Function]}
-      style={null}
-    >
-      <TouchableOpacity
-        onPress={[Function]}
-        style={
-          Object {
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-          }
-        }
-      >
-        <Text.Secondary
-          numberOfLines={1}
-          style={
-            Object {
-              "paddingVertical": 20,
-            }
-          }
-        >
-          Avoid streaming
-        </Text.Secondary>
-        <Ionicons
-          color="#9CA6A0"
-          name="ios-arrow-forward"
-          size={26}
-          style={
-            Object {
-              "marginTop": 18,
-            }
-          }
-        />
-      </TouchableOpacity>
-    </View>
-    <View
-      onLayout={[Function]}
-      style={null}
-    >
-      <TouchableOpacity
-        onPress={[Function]}
-        style={
-          Object {
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-          }
-        }
-      >
-        <Text.Secondary
-          numberOfLines={1}
-          style={
-            Object {
-              "paddingVertical": 20,
-            }
-          }
-        >
           Reduce your browsing emissions
         </Text.Secondary>
         <Ionicons
@@ -334,7 +334,7 @@ exports[`ActScreen renders correctly 1`] = `
             }
           }
         >
-          Install an add blocker
+          Get a phone you can repair/upgrade
         </Text.Secondary>
         <Ionicons
           color="#9CA6A0"
