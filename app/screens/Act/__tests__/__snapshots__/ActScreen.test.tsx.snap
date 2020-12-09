@@ -93,7 +93,7 @@ exports[`ActScreen renders correctly 1`] = `
         "title": "Reduce your browsing emissions",
       },
       Object {
-        "body": "<h1>Install an add blocker</h1>
+        "body": "<h1>Install an ad blocker</h1>
 <p>All modern browser like Firefox, Safari, Chrome... let users the posibility to install add-ons, also name plugins or extensions.</p>
 <p>In order to not get ads or to see less ads, you can install the following browser extensions :</p>
 <ul>
@@ -104,7 +104,7 @@ exports[`ActScreen renders correctly 1`] = `
 ",
         "category": "digital",
         "key": "/Users/pierrebresson/Documents/Git/nmf-app/assets//markdown/ad-blocker.md",
-        "title": "Install an add blocker",
+        "title": "Install an ad blocker",
       },
     ]
   }
@@ -334,7 +334,7 @@ exports[`ActScreen renders correctly 1`] = `
             }
           }
         >
-          Install an add blocker
+          Install an ad blocker
         </Text.Secondary>
         <Ionicons
           color="#9CA6A0"
