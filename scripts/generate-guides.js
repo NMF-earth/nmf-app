@@ -6,7 +6,8 @@ const fm = require("front-matter");
 const MarkdownIt = require("markdown-it");
 const md = new MarkdownIt();
 const data = [];
-const guidesPath = `${process.env.PWD}/assets/guides/markdown/*.md`;
+const pwd = process.env.PWD
+const guidesPath = `${pwd}/assets/guides/markdown/*.md`;
 
 /*
  * Script to parse and build all guides into
@@ -30,10 +31,10 @@ glob(guidesPath, {}, function (err, files) {
       data.push({
         ...parsed.attributes,
         body: md.render(parsed.body),
-        key: file.replace("guides", ""),
+        key: "./".concat(file.split("markdown").pop()),
       });
       fs.writeFile(
-        `${process.env.PWD}/assets/guides/guides.json`,
+        `${pwd}/assets/guides/guides.json`,
         JSON.stringify(data),
         () => {
           console.log("Wrote guides.json");
@@ -44,7 +45,7 @@ glob(guidesPath, {}, function (err, files) {
 
   // pre-requiring image that are used in markdown files.
   const imageFiles = fs
-    .readdirSync(`${process.env.PWD}/assets/images/guide`)
+    .readdirSync(`${pwd}/assets/images/guide`)
     .filter((x) => x.includes("png" || "jpg"));
   const imagePath =
     "{\n" +
@@ -59,7 +60,7 @@ glob(guidesPath, {}, function (err, files) {
     "}";
   const res = "export default " + imagePath;
   fs.writeFileSync(
-    `${process.env.PWD}/app/screens/ActDetail/imagePath.ts`,
+    `${pwd}/app/screens/ActDetail/imagePath.ts`,
     res
   );
 });
