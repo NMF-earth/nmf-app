@@ -66,19 +66,19 @@ $ cp secret.example.ts secret.ts
 You can check this manually by running:
 
 ```bash
-yarn lint
+$ yarn lint
 ```
 
 or
 
 ```bash
-yarn typescript
+$ yarn typescript
 ```
 
 You can ask eslint to fix issues by running:
 
 ```bash
-yarn lint:fix
+$ yarn lint:fix
 ```
 
 <br />
