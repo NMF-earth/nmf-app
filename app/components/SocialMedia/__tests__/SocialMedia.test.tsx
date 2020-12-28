@@ -2,9 +2,17 @@ import React from "react";
 import { create } from "react-test-renderer";
 import * as Linking from "expo-linking";
 
-import SocialMedia from "../";
+import SocialMedia from "..";
 
 jest.unmock("../");
+
+jest.mock("@expo/vector-icons", () => {
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
+  const { View } = require("react-native");
+  return {
+    FontAwesome5: View,
+  };
+});
 
 beforeEach(() => {
   jest.spyOn(Linking, "openURL").mockImplementation((url: string) => {
@@ -16,7 +24,7 @@ beforeEach(() => {
 });
 
 test("renders correctly SocialMedia", () => {
-  const tree = create(<SocialMedia />).toJSON();
+  const tree = create(<SocialMedia />);
   expect(tree).toMatchSnapshot();
 });
 

@@ -25,7 +25,7 @@ exports[`renders correctly SocialMedia 1`] = `
     <TouchableOpacity
       onPress={[Function]}
     >
-      <MaterialCommunityIcons
+      <View
         color="#595D58"
         name="slack"
         size={32}
@@ -34,16 +34,16 @@ exports[`renders correctly SocialMedia 1`] = `
     <TouchableOpacity
       onPress={[Function]}
     >
-      <MaterialCommunityIcons
+      <View
         color="#595D58"
-        name="github-circle"
+        name="github"
         size={32}
       />
     </TouchableOpacity>
     <TouchableOpacity
       onPress={[Function]}
     >
-      <MaterialCommunityIcons
+      <View
         color="#595D58"
         name="mastodon"
         size={32}
@@ -52,9 +52,9 @@ exports[`renders correctly SocialMedia 1`] = `
     <TouchableOpacity
       onPress={[Function]}
     >
-      <MaterialCommunityIcons
+      <View
         color="#595D58"
-        name="medium"
+        name="medium-m"
         size={32}
       />
     </TouchableOpacity>
