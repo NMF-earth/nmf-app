@@ -22,7 +22,7 @@ exports[`<ListItem /> render 1`] = `
   </Text.Secondary>
   <Ionicons
     color="#9CA6A0"
-    name="ios-arrow-forward"
+    name="ios-chevron-forward-outline"
     size={26}
     style={
       Object {

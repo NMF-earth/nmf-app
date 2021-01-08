@@ -50,7 +50,7 @@ const EmissionsListItem = ({
       </View>
     </View>
     <Ionicons
-      name={"ios-arrow-forward"}
+      name={"ios-chevron-forward-outline"}
       size={18}
       style={styles.icon}
       color={Colors.grey100}

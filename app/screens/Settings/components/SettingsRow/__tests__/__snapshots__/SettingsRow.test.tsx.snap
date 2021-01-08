@@ -20,7 +20,7 @@ exports[`SettingsRow renders correctly 1`] = `
   </Text.Secondary>
   <Ionicons
     color="#111714"
-    name="ios-arrow-forward"
+    name="ios-chevron-forward-outline"
     size={20}
   />
 </TouchableOpacity>
