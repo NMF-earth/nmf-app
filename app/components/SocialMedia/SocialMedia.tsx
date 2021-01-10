@@ -1,6 +1,6 @@
 import React from "react";
 import { View, TouchableOpacity } from "react-native";
-import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { FontAwesome5 } from "@expo/vector-icons";
 import * as Linking from "expo-linking";
 
 import { Colors } from "style";
@@ -14,7 +14,7 @@ const socialMedia = [
       "https://join.slack.com/t/not-my-fault/shared_invite/enQtODMzMzcyNjExMzc3LTVlNDQwMTA0OGUxMmJmNTE4MTA4MTgwZGZmNTBiZmRhNTcxY2FlN2MzZGQyMmRjZDVjN2Q2MjFlNzE4ZGI5ZTI",
   },
   {
-    iconName: "github-circle",
+    iconName: "github",
     url: "https://github.com/NMF-earth",
   },
   {
@@ -22,23 +22,21 @@ const socialMedia = [
     url: "https://mastodon.social/@nmf_earth",
   },
   {
-    iconName: "medium",
+    iconName: "medium-m",
     url: "https://medium.com/@nmf_earth",
   },
 ];
 
-export default () => (
+const SocialMedia = () => (
   <View style={styles.container}>
     <View style={styles.box}>
       {socialMedia.map((item, index) => (
         <TouchableOpacity key={index} onPress={() => Linking.openURL(item.url)}>
-          <MaterialCommunityIcons
-            name={item.iconName}
-            size={32}
-            color={Colors.grey70}
-          />
+          <FontAwesome5 name={item.iconName} size={32} color={Colors.grey70} />
         </TouchableOpacity>
       ))}
     </View>
   </View>
 );
+
+export default SocialMedia;

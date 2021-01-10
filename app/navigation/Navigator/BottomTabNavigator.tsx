@@ -23,21 +23,21 @@ const BudgetOptions = {
 const EmissionsOptions = {
   tabBarLabel: t("EMISSIONS_SCREEN_TAB_NAME"),
   tabBarIcon: ({ focused }) => (
-    <TabBarIcon focused={focused} name={"md-stats"} />
+    <TabBarIcon focused={focused} name={"md-stats-chart-sharp"} />
   ),
 };
 
 const ActOptions = {
   tabBarLabel: t("ACT_SCREEN_TAB_NAME"),
   tabBarIcon: ({ focused }) => (
-    <TabBarIcon focused={focused} name={"md-hand"} />
+    <TabBarIcon focused={focused} name={"md-hand-left-sharp"} />
   ),
 };
 
 const SettingsOptions = {
   tabBarLabel: t("SETTINGS_SCREEN_TAB_NAME"),
   tabBarIcon: ({ focused }) => (
-    <TabBarIcon focused={focused} name={"md-switch"} />
+    <TabBarIcon focused={focused} name={"md-options"} />
   ),
 };
 

@@ -95,7 +95,7 @@ exports[`EmissionsListItem renders correctly if mitigated 1`] = `
     </View>
     <Ionicons
       color="#111714"
-      name="ios-arrow-forward"
+      name="ios-chevron-forward-outline"
       size={18}
       style={
         Object {
@@ -192,7 +192,7 @@ exports[`EmissionsListItem renders correctly with audio icon 1`] = `
     </View>
     <Ionicons
       color="#111714"
-      name="ios-arrow-forward"
+      name="ios-chevron-forward-outline"
       size={18}
       style={
         Object {
@@ -289,7 +289,7 @@ exports[`EmissionsListItem renders correctly with boat icon 1`] = `
     </View>
     <Ionicons
       color="#111714"
-      name="ios-arrow-forward"
+      name="ios-chevron-forward-outline"
       size={18}
       style={
         Object {
@@ -386,7 +386,7 @@ exports[`EmissionsListItem renders correctly with bus icon 1`] = `
     </View>
     <Ionicons
       color="#111714"
-      name="ios-arrow-forward"
+      name="ios-chevron-forward-outline"
       size={18}
       style={
         Object {
@@ -483,7 +483,7 @@ exports[`EmissionsListItem renders correctly with car icon 1`] = `
     </View>
     <Ionicons
       color="#111714"
-      name="ios-arrow-forward"
+      name="ios-chevron-forward-outline"
       size={18}
       style={
         Object {
@@ -580,7 +580,7 @@ exports[`EmissionsListItem renders correctly with chocolate icon 1`] = `
     </View>
     <Ionicons
       color="#111714"
-      name="ios-arrow-forward"
+      name="ios-chevron-forward-outline"
       size={18}
       style={
         Object {
@@ -677,7 +677,7 @@ exports[`EmissionsListItem renders correctly with coffee icon 1`] = `
     </View>
     <Ionicons
       color="#111714"
-      name="ios-arrow-forward"
+      name="ios-chevron-forward-outline"
       size={18}
       style={
         Object {
@@ -774,7 +774,7 @@ exports[`EmissionsListItem renders correctly with fish icon 1`] = `
     </View>
     <Ionicons
       color="#111714"
-      name="ios-arrow-forward"
+      name="ios-chevron-forward-outline"
       size={18}
       style={
         Object {
@@ -871,7 +871,7 @@ exports[`EmissionsListItem renders correctly with full hd video icon 1`] = `
     </View>
     <Ionicons
       color="#111714"
-      name="ios-arrow-forward"
+      name="ios-chevron-forward-outline"
       size={18}
       style={
         Object {
@@ -968,7 +968,7 @@ exports[`EmissionsListItem renders correctly with hd video icon 1`] = `
     </View>
     <Ionicons
       color="#111714"
-      name="ios-arrow-forward"
+      name="ios-chevron-forward-outline"
       size={18}
       style={
         Object {
@@ -1065,7 +1065,7 @@ exports[`EmissionsListItem renders correctly with longHaulFlight icon 1`] = `
     </View>
     <Ionicons
       color="#111714"
-      name="ios-arrow-forward"
+      name="ios-chevron-forward-outline"
       size={18}
       style={
         Object {
@@ -1162,7 +1162,7 @@ exports[`EmissionsListItem renders correctly with mediumHaulFlight icon 1`] = `
     </View>
     <Ionicons
       color="#111714"
-      name="ios-arrow-forward"
+      name="ios-chevron-forward-outline"
       size={18}
       style={
         Object {
@@ -1259,7 +1259,7 @@ exports[`EmissionsListItem renders correctly with motorbike icon 1`] = `
     </View>
     <Ionicons
       color="#111714"
-      name="ios-arrow-forward"
+      name="ios-chevron-forward-outline"
       size={18}
       style={
         Object {
@@ -1356,7 +1356,7 @@ exports[`EmissionsListItem renders correctly with redMeat icon 1`] = `
     </View>
     <Ionicons
       color="#111714"
-      name="ios-arrow-forward"
+      name="ios-chevron-forward-outline"
       size={18}
       style={
         Object {
@@ -1453,7 +1453,7 @@ exports[`EmissionsListItem renders correctly with shortHaulFlight icon 1`] = `
     </View>
     <Ionicons
       color="#111714"
-      name="ios-arrow-forward"
+      name="ios-chevron-forward-outline"
       size={18}
       style={
         Object {
@@ -1550,7 +1550,7 @@ exports[`EmissionsListItem renders correctly with train icon 1`] = `
     </View>
     <Ionicons
       color="#111714"
-      name="ios-arrow-forward"
+      name="ios-chevron-forward-outline"
       size={18}
       style={
         Object {
@@ -1647,7 +1647,7 @@ exports[`EmissionsListItem renders correctly with ultra hd video icon 1`] = `
     </View>
     <Ionicons
       color="#111714"
-      name="ios-arrow-forward"
+      name="ios-chevron-forward-outline"
       size={18}
       style={
         Object {
@@ -1744,7 +1744,7 @@ exports[`EmissionsListItem renders correctly with whiteMeat icon 1`] = `
     </View>
     <Ionicons
       color="#111714"
-      name="ios-arrow-forward"
+      name="ios-chevron-forward-outline"
       size={18}
       style={
         Object {

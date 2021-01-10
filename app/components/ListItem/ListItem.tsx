@@ -20,7 +20,7 @@ const ListItem = ({ title, onPress }: Props) => {
       </Text.Secondary>
       <Ionicons
         style={styles.icon}
-        name={"ios-arrow-forward"}
+        name={"ios-chevron-forward-outline"}
         size={26}
         color={Colors.grey40}
       />
