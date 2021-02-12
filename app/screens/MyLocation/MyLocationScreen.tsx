@@ -61,7 +61,7 @@ const MyLocationScreen = () => {
       <ScrollView style={styles.scrollContainer}>
         {Object.keys(ElectricityEnum).map((country: ElectricityEnum) => (
           <Country
-            key={location}
+            key={country}
             selectedCountry={location}
             country={country}
             onSelectCountry={onPress}
