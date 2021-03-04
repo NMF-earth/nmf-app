@@ -1,4 +1,1 @@
-import Primary from "./Primary";
-import Secondary from "./Secondary";
-
-export default { Primary, Secondary };
+export { default } from "./Button";
