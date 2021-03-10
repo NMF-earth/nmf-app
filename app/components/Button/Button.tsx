@@ -3,22 +3,28 @@ import { TouchableOpacity, StyleProp, ViewStyle } from "react-native";
 
 import { Font } from "style";
 
-import styles from "./Secondary.styles";
-import mainStyle from "../styles";
+import styles from "./Button.styles";
+import mainStyle from "./styles";
 
 const PADDING_VERTICAL = 12;
 
-interface Props {
+type ButtonType = "Primary" | "Secondary";
+
+type Props = {
   style?: StyleProp<ViewStyle>;
   children: React.ReactNode;
   fullWidth?: boolean;
-  textType: "Primary" | "Secondary";
+  textType: ButtonType;
   black?: boolean;
   onPress: () => void;
+};
+
+interface ButtonFactory {
+  (type: ButtonType): React.FC<Props>;
 }
 
-export default function Secondary(props: Props): React.ReactElement {
-  const customStyle = [mainStyle.default, styles.default, props.style];
+const buttonFactory: ButtonFactory = (type) => (props) => {
+  const customStyle = [mainStyle.default, styles[type].default, props.style];
   const { fullWidth, children, textType, black, onPress } = props;
 
   if (fullWidth) {
@@ -43,6 +49,9 @@ export default function Secondary(props: Props): React.ReactElement {
       {children}
     </TouchableOpacity>
   );
-}
+};
 
-Secondary.displayName = "Secondary";
+const Primary = buttonFactory("Primary");
+const Secondary = buttonFactory("Secondary");
+
+export default { Primary, Secondary };
