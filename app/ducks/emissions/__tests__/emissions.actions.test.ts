@@ -1,4 +1,4 @@
-import { TransportEnum } from "carbon-footprint";
+import { TransportType } from "carbon-footprint";
 
 import { Emission, EmissionType } from "interfaces";
 
@@ -13,7 +13,7 @@ describe("Emissions actions should", () => {
       id: "123",
       creationDate: "2020-01-26T11:04:55.334Z",
       emissionType: EmissionType.custom,
-      emissionModelType: TransportEnum.boat,
+      emissionModelType: TransportType.boat,
       value: 200,
       isMitigated: false,
     };

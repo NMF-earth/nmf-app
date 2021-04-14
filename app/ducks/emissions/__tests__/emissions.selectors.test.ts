@@ -1,8 +1,8 @@
 import {
-  FoodEnum,
-  TransportEnum,
-  StreamingEnum,
-  ElectricityEnum,
+  FoodType,
+  TransportType,
+  StreamingType,
+  ElectricityType,
 } from "carbon-footprint";
 
 import { Emission, EmissionType } from "interfaces";
@@ -14,7 +14,7 @@ let state;
 const emissionFood: Emission = {
   id: "1",
   creationDate: "2020-01-26T11:04:55.334Z",
-  emissionModelType: FoodEnum.redMeat,
+  emissionModelType: FoodType.redMeat,
   emissionType: EmissionType.food,
   isMitigated: false,
   value: 10,
@@ -23,7 +23,7 @@ const emissionFood: Emission = {
 const emissionTransport: Emission = {
   id: "2",
   creationDate: "2020-01-26T11:04:55.334Z",
-  emissionModelType: TransportEnum.bus,
+  emissionModelType: TransportType.bus,
   emissionType: EmissionType.transport,
   isMitigated: false,
   value: 13,
@@ -41,7 +41,7 @@ const emissionCustom: Emission = {
 const emissionStreaming: Emission = {
   id: "4",
   creationDate: "2020-01-26T11:04:55.334Z",
-  emissionModelType: StreamingEnum.HDVideo,
+  emissionModelType: StreamingType.HDVideo,
   emissionType: EmissionType.streaming,
   isMitigated: false,
   value: 23.32,
@@ -50,7 +50,7 @@ const emissionStreaming: Emission = {
 const emissionElectricity: Emission = {
   id: "4",
   creationDate: "2020-01-26T11:04:55.334Z",
-  emissionModelType: ElectricityEnum.france,
+  emissionModelType: ElectricityType.france,
   emissionType: EmissionType.electricity,
   isMitigated: false,
   value: 1000,

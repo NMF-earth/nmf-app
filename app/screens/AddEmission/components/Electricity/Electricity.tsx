@@ -3,7 +3,7 @@ import { toUpper } from "ramda";
 import { View } from "react-native";
 import Slider from "@react-native-community/slider";
 import { FormattedNumber } from "react-native-globalize";
-import { electricity, ElectricityEnum } from "carbon-footprint";
+import { electricity, ElectricityType } from "carbon-footprint";
 
 import { Text } from "components";
 import { t } from "utils";
@@ -39,7 +39,7 @@ const Electricity = ({
             {Math.round((sliderValue / 3.6) * Math.pow(10, -6))}
             <Text.Primary>{" kWh - "}</Text.Primary>
             <Text.Secondary lightGray>
-              {toUpper(ElectricityEnum[electricityCountry])}
+              {toUpper(ElectricityType[electricityCountry])}
             </Text.Secondary>
           </Text.H2>
         </View>

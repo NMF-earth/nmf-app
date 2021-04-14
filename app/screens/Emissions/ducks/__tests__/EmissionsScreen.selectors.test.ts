@@ -1,4 +1,4 @@
-import { FoodEnum, TransportEnum } from "carbon-footprint";
+import { FoodType, TransportType } from "carbon-footprint";
 import moment from "moment";
 
 import { emissions } from "ducks";
@@ -18,7 +18,7 @@ const getStartOfMonth = (time) => moment(time).startOf("month").format();
 const emissionNotMitigatedOld: Emission = {
   id: "3",
   creationDate: monthsAgo.toISOString(),
-  emissionModelType: FoodEnum.beans,
+  emissionModelType: FoodType.beans,
   emissionType: EmissionType.food,
   isMitigated: false,
   value: 30,
@@ -27,7 +27,7 @@ const emissionNotMitigatedOld: Emission = {
 const emissionNotMitigated: Emission = {
   id: "1",
   creationDate: christmas.toISOString(),
-  emissionModelType: FoodEnum.beans,
+  emissionModelType: FoodType.beans,
   emissionType: EmissionType.food,
   isMitigated: false,
   value: 10,
@@ -36,7 +36,7 @@ const emissionNotMitigated: Emission = {
 const emissionMitigated: Emission = {
   id: "12",
   creationDate: christmas.toISOString(),
-  emissionModelType: TransportEnum.boat,
+  emissionModelType: TransportType.boat,
   emissionType: EmissionType.transport,
   isMitigated: true,
   value: 100,

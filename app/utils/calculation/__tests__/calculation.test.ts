@@ -1,8 +1,8 @@
 import {
-  FoodEnum,
-  TransportEnum,
-  StreamingEnum,
-  ElectricityEnum,
+  FoodType,
+  TransportType,
+  StreamingType,
+  ElectricityType,
   streaming,
   food,
   transport,
@@ -17,7 +17,7 @@ import calculation from "../";
 const emissionFood: Emission = {
   id: "123",
   creationDate: "2020-01-26T11:04:55.334Z",
-  emissionModelType: FoodEnum.beans,
+  emissionModelType: FoodType.beans,
   emissionType: EmissionType.food,
   isMitigated: false,
   value: 10,
@@ -30,20 +30,20 @@ const emissionFoodRecent = {
 
 const emissionTransport = {
   ...emissionFood,
-  emissionModelType: TransportEnum.boat,
+  emissionModelType: TransportType.boat,
   emissionType: EmissionType.transport,
 };
 
 const emissionStreaming = {
   ...emissionFood,
-  emissionModelType: StreamingEnum.HDVideo,
+  emissionModelType: StreamingType.HDVideo,
   emissionType: EmissionType.streaming,
-  location: ElectricityEnum.argentina,
+  location: ElectricityType.argentina,
 };
 
 const emissionElectricity = {
   ...emissionFood,
-  emissionModelType: ElectricityEnum.france,
+  emissionModelType: ElectricityType.france,
   emissionType: EmissionType.electricity,
 };
 
@@ -92,17 +92,17 @@ describe("getC02ValueFromEmission should return the correct co2 emitted value fo
 describe("getFlightType should return the correct flight type for", () => {
   it("a short flight", () => {
     expect(calculation.getFlightType(60)).toEqual(
-      TransportEnum.shortHaulFlight
+      TransportType.shortHaulFlight
     );
   });
   it("a medium flight", () => {
     expect(calculation.getFlightType(4 * 60)).toEqual(
-      TransportEnum.mediumHaulFlight
+      TransportType.mediumHaulFlight
     );
   });
   it("a long flight", () => {
     expect(calculation.getFlightType(8 * 60)).toEqual(
-      TransportEnum.longHaulFlight
+      TransportType.longHaulFlight
     );
   });
 });

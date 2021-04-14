@@ -1,8 +1,8 @@
 import {
-  ElectricityEnum,
-  FoodEnum,
-  StreamingEnum,
-  TransportEnum,
+  ElectricityType,
+  FoodType,
+  StreamingType,
+  TransportType,
 } from "carbon-footprint";
 import {
   Appearance,
@@ -106,7 +106,7 @@ describe("tests for ui.getIconFromModelType", () => {
   describe("electricity type emissions", () => {
     it("returns md-flash if electricity Emission model", () => {
       // arrange
-      const electricityEmissions = Object.keys(ElectricityEnum);
+      const electricityEmissions = Object.keys(ElectricityType);
       const emissionModelType =
         electricityEmissions[
           Math.floor(Math.random() * electricityEmissions.length)
@@ -136,7 +136,7 @@ describe("tests for ui.getIconFromModelType", () => {
   describe("food type emissions", () => {
     it("returns md-restaurant if it is food of type redMeat", () => {
       // arrange
-      const emissionModelType = FoodEnum.redMeat;
+      const emissionModelType = FoodType.redMeat;
 
       // act
       const icon = ui.getIconFromModelType(emissionModelType);
@@ -147,7 +147,7 @@ describe("tests for ui.getIconFromModelType", () => {
 
     it("returns md-restaurant if it is food of type whiteMeat", () => {
       // arrange
-      const emissionModelType = FoodEnum.whiteMeat;
+      const emissionModelType = FoodType.whiteMeat;
 
       // act
       const icon = ui.getIconFromModelType(emissionModelType);
@@ -158,7 +158,7 @@ describe("tests for ui.getIconFromModelType", () => {
 
     it("returns md-restaurant if it is food of type chocolate", () => {
       // arrange
-      const emissionModelType = FoodEnum.chocolate;
+      const emissionModelType = FoodType.chocolate;
 
       // act
       const icon = ui.getIconFromModelType(emissionModelType);
@@ -169,7 +169,7 @@ describe("tests for ui.getIconFromModelType", () => {
 
     it("returns md-restaurant if it is food of type fish", () => {
       // arrange
-      const emissionModelType = FoodEnum.fish;
+      const emissionModelType = FoodType.fish;
 
       // act
       const icon = ui.getIconFromModelType(emissionModelType);
@@ -180,7 +180,7 @@ describe("tests for ui.getIconFromModelType", () => {
 
     it("returns md-cafe if it is food of type coffee", () => {
       // arrange
-      const emissionModelType = FoodEnum.coffee;
+      const emissionModelType = FoodType.coffee;
 
       // act
       const icon = ui.getIconFromModelType(emissionModelType);
@@ -193,7 +193,7 @@ describe("tests for ui.getIconFromModelType", () => {
   describe("transport type emissions", () => {
     it("returns md-airplane if it is transport of type shortHaulFlight", () => {
       // arrange
-      const emissionModelType = TransportEnum.shortHaulFlight;
+      const emissionModelType = TransportType.shortHaulFlight;
 
       // act
       const icon = ui.getIconFromModelType(emissionModelType);
@@ -204,7 +204,7 @@ describe("tests for ui.getIconFromModelType", () => {
 
     it("returns md-airplane if it is transport of type mediumHaulFlight", () => {
       // arrange
-      const emissionModelType = TransportEnum.mediumHaulFlight;
+      const emissionModelType = TransportType.mediumHaulFlight;
 
       // act
       const icon = ui.getIconFromModelType(emissionModelType);
@@ -215,7 +215,7 @@ describe("tests for ui.getIconFromModelType", () => {
 
     it("returns md-airplane if it is transport of type longHaulFlight", () => {
       // arrange
-      const emissionModelType = TransportEnum.longHaulFlight;
+      const emissionModelType = TransportType.longHaulFlight;
 
       // act
       const icon = ui.getIconFromModelType(emissionModelType);
@@ -226,7 +226,7 @@ describe("tests for ui.getIconFromModelType", () => {
 
     it("returns md-train if it is transport of type train", () => {
       // arrange
-      const emissionModelType = TransportEnum.train;
+      const emissionModelType = TransportType.train;
 
       // act
       const icon = ui.getIconFromModelType(emissionModelType);
@@ -237,7 +237,7 @@ describe("tests for ui.getIconFromModelType", () => {
 
     it("returns md-car if it is transport of type car", () => {
       // arrange
-      const emissionModelType = TransportEnum.car;
+      const emissionModelType = TransportType.car;
 
       // act
       const icon = ui.getIconFromModelType(emissionModelType);
@@ -248,7 +248,7 @@ describe("tests for ui.getIconFromModelType", () => {
 
     it("returns md-boat if it is transport of type boat", () => {
       // arrange
-      const emissionModelType = TransportEnum.boat;
+      const emissionModelType = TransportType.boat;
 
       // act
       const icon = ui.getIconFromModelType(emissionModelType);
@@ -259,7 +259,7 @@ describe("tests for ui.getIconFromModelType", () => {
 
     it("returns md-motorbike if it is transport of type motorbike", () => {
       // arrange
-      const emissionModelType = TransportEnum.motorbike;
+      const emissionModelType = TransportType.motorbike;
 
       // act
       const icon = ui.getIconFromModelType(emissionModelType);
@@ -270,7 +270,7 @@ describe("tests for ui.getIconFromModelType", () => {
 
     it("returns md-bus if it is transport of type bus", () => {
       // arrange
-      const emissionModelType = TransportEnum.bus;
+      const emissionModelType = TransportType.bus;
 
       // act
       const icon = ui.getIconFromModelType(emissionModelType);
@@ -283,7 +283,7 @@ describe("tests for ui.getIconFromModelType", () => {
   describe("streaming emission type", () => {
     it("returns md-film for HDVideo", () => {
       // arrange
-      const emissionModelType = StreamingEnum.HDVideo;
+      const emissionModelType = StreamingType.HDVideo;
 
       // act
       const icon = ui.getIconFromModelType(emissionModelType);
@@ -294,7 +294,7 @@ describe("tests for ui.getIconFromModelType", () => {
 
     it("returns md-film for fullHDVideo", () => {
       // arrange
-      const emissionModelType = StreamingEnum.fullHDVideo;
+      const emissionModelType = StreamingType.fullHDVideo;
 
       // act
       const icon = ui.getIconFromModelType(emissionModelType);
@@ -305,7 +305,7 @@ describe("tests for ui.getIconFromModelType", () => {
 
     it("returns md-film for ultraHDVideo", () => {
       // arrange
-      const emissionModelType = StreamingEnum.ultraHDVideo;
+      const emissionModelType = StreamingType.ultraHDVideo;
 
       // act
       const icon = ui.getIconFromModelType(emissionModelType);
@@ -316,7 +316,7 @@ describe("tests for ui.getIconFromModelType", () => {
 
     it("returns md-musical-note for audioMP3", () => {
       // arrange
-      const emissionModelType = StreamingEnum.audioMP3;
+      const emissionModelType = StreamingType.audioMP3;
 
       // act
       const icon = ui.getIconFromModelType(emissionModelType);
@@ -352,7 +352,7 @@ describe("tests for ui.getTranslationModelType", () => {
   describe("electricity type emissions", () => {
     it("returns UI_ELECTRICITY if electricity Emission model", () => {
       // arrange
-      const electricityEmissions = Object.keys(ElectricityEnum);
+      const electricityEmissions = Object.keys(ElectricityType);
       const emissionModelType =
         electricityEmissions[
           Math.floor(Math.random() * electricityEmissions.length)
@@ -386,7 +386,7 @@ describe("tests for ui.getTranslationModelType", () => {
   describe("food type emissions", () => {
     it("returns UI_RED_MEAT if it is food of type redMeat", () => {
       // arrange
-      const emissionModelType = FoodEnum.redMeat;
+      const emissionModelType = FoodType.redMeat;
 
       // act
       const translationModelType = ui.getTranslationModelType(
@@ -399,7 +399,7 @@ describe("tests for ui.getTranslationModelType", () => {
 
     it("returns UI_WHITE_MEAT if it is food of type whiteMeat", () => {
       // arrange
-      const emissionModelType = FoodEnum.whiteMeat;
+      const emissionModelType = FoodType.whiteMeat;
 
       // act
       const translationModelType = ui.getTranslationModelType(
@@ -412,7 +412,7 @@ describe("tests for ui.getTranslationModelType", () => {
 
     it("returns UI_CHOCOLATE if it is food of type chocolate", () => {
       // arrange
-      const emissionModelType = FoodEnum.chocolate;
+      const emissionModelType = FoodType.chocolate;
 
       // act
       const translationModelType = ui.getTranslationModelType(
@@ -425,7 +425,7 @@ describe("tests for ui.getTranslationModelType", () => {
 
     it("returns UI_COFFEE if it is food of type coffee", () => {
       // arrange
-      const emissionModelType = FoodEnum.coffee;
+      const emissionModelType = FoodType.coffee;
 
       // act
       const translationModelType = ui.getTranslationModelType(
@@ -438,7 +438,7 @@ describe("tests for ui.getTranslationModelType", () => {
 
     it("returns UI_FISH if it is food of type fish", () => {
       // arrange
-      const emissionModelType = FoodEnum.fish;
+      const emissionModelType = FoodType.fish;
 
       // act
       const translationModelType = ui.getTranslationModelType(
@@ -453,7 +453,7 @@ describe("tests for ui.getTranslationModelType", () => {
   describe("transport type emissions", () => {
     it("returns UI_PLANE if it is transport of type shortHaulFlight", () => {
       // arrange
-      const emissionModelType = TransportEnum.shortHaulFlight;
+      const emissionModelType = TransportType.shortHaulFlight;
 
       // act
       const translationModelType = ui.getTranslationModelType(
@@ -466,7 +466,7 @@ describe("tests for ui.getTranslationModelType", () => {
 
     it("returns UI_PLANE if it is transport of type mediumHaulFlight", () => {
       // arrange
-      const emissionModelType = TransportEnum.mediumHaulFlight;
+      const emissionModelType = TransportType.mediumHaulFlight;
 
       // act
       const translationModelType = ui.getTranslationModelType(
@@ -479,7 +479,7 @@ describe("tests for ui.getTranslationModelType", () => {
 
     it("returns UI_PLANE if it is transport of type longHaulFlight", () => {
       // arrange
-      const emissionModelType = TransportEnum.longHaulFlight;
+      const emissionModelType = TransportType.longHaulFlight;
 
       // act
       const translationModelType = ui.getTranslationModelType(
@@ -492,7 +492,7 @@ describe("tests for ui.getTranslationModelType", () => {
 
     it("returns UI_TRAIN if it is transport of type train", () => {
       // arrange
-      const emissionModelType = TransportEnum.train;
+      const emissionModelType = TransportType.train;
 
       // act
       const translationModelType = ui.getTranslationModelType(
@@ -505,7 +505,7 @@ describe("tests for ui.getTranslationModelType", () => {
 
     it("returns UI_CAR if it is transport of type car", () => {
       // arrange
-      const emissionModelType = TransportEnum.car;
+      const emissionModelType = TransportType.car;
 
       // act
       const translationModelType = ui.getTranslationModelType(
@@ -518,7 +518,7 @@ describe("tests for ui.getTranslationModelType", () => {
 
     it("returns UI_BOAT if it is transport of type boat", () => {
       // arrange
-      const emissionModelType = TransportEnum.boat;
+      const emissionModelType = TransportType.boat;
 
       // act
       const translationModelType = ui.getTranslationModelType(
@@ -531,7 +531,7 @@ describe("tests for ui.getTranslationModelType", () => {
 
     it("returns UI_MOTORBIKE if it is transport of type motorbike", () => {
       // arrange
-      const emissionModelType = TransportEnum.motorbike;
+      const emissionModelType = TransportType.motorbike;
 
       // act
       const translationModelType = ui.getTranslationModelType(
@@ -544,7 +544,7 @@ describe("tests for ui.getTranslationModelType", () => {
 
     it("returns UI_BUS if it is transport of type bus", () => {
       // arrange
-      const emissionModelType = TransportEnum.bus;
+      const emissionModelType = TransportType.bus;
 
       // act
       const translationModelType = ui.getTranslationModelType(
@@ -559,7 +559,7 @@ describe("tests for ui.getTranslationModelType", () => {
   describe("streaming emission type", () => {
     it("returns UI_HD_VIDEO for HDVideo", () => {
       // arrange
-      const emissionModelType = StreamingEnum.HDVideo;
+      const emissionModelType = StreamingType.HDVideo;
 
       // act
       const translationModelType = ui.getTranslationModelType(
@@ -572,7 +572,7 @@ describe("tests for ui.getTranslationModelType", () => {
 
     it("returns UI_FULL_HD_VIDEO for fullHDVideo", () => {
       // arrange
-      const emissionModelType = StreamingEnum.fullHDVideo;
+      const emissionModelType = StreamingType.fullHDVideo;
 
       // act
       const translationModelType = ui.getTranslationModelType(
@@ -585,7 +585,7 @@ describe("tests for ui.getTranslationModelType", () => {
 
     it("returns UI_ULTRA_HD_VIDEO for ultraHDVideo", () => {
       // arrange
-      const emissionModelType = StreamingEnum.ultraHDVideo;
+      const emissionModelType = StreamingType.ultraHDVideo;
 
       // act
       const translationModelType = ui.getTranslationModelType(
@@ -598,7 +598,7 @@ describe("tests for ui.getTranslationModelType", () => {
 
     it("returns UI_AUDIO for audioMP3", () => {
       // arrange
-      const emissionModelType = StreamingEnum.audioMP3;
+      const emissionModelType = StreamingType.audioMP3;
 
       // act
       const translationModelType = ui.getTranslationModelType(

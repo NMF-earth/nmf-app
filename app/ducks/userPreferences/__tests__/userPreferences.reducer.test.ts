@@ -1,4 +1,4 @@
-import { ElectricityEnum } from "carbon-footprint";
+import { ElectricityType } from "carbon-footprint";
 
 import userPreferences from "../";
 
@@ -9,7 +9,7 @@ describe("userPreferences reducer should", () => {
     expect(userPreferences.reducer(undefined, {} as any)).toEqual({
       acceptedTermsOfUseVersion: 0,
       activatedNotifications: false,
-      location: ElectricityEnum.world,
+      location: ElectricityType.world,
     });
   });
 
@@ -24,20 +24,20 @@ describe("userPreferences reducer should", () => {
     expect(userPreferences.reducer(undefined, expectedAction)).toEqual({
       acceptedTermsOfUseVersion: 2,
       activatedNotifications: false,
-      location: ElectricityEnum.world,
+      location: ElectricityType.world,
     });
   });
 
   it("handle location change", () => {
     const expectedAction = {
       type: userPreferences.actions.updateLocation.toString(),
-      payload: ElectricityEnum.belgium,
+      payload: ElectricityType.belgium,
     };
 
     expect(userPreferences.reducer(undefined, expectedAction)).toEqual({
       acceptedTermsOfUseVersion: 0,
       activatedNotifications: false,
-      location: ElectricityEnum.belgium,
+      location: ElectricityType.belgium,
     });
   });
 
@@ -50,7 +50,7 @@ describe("userPreferences reducer should", () => {
     expect(userPreferences.reducer(undefined, expectedAction)).toEqual({
       acceptedTermsOfUseVersion: 0,
       activatedNotifications: true,
-      location: ElectricityEnum.world,
+      location: ElectricityType.world,
     });
   });
 });

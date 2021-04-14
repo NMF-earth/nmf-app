@@ -1,20 +1,20 @@
 import { pipe, propOr, includes, filter, isEmpty, not } from "ramda";
 import moment from "moment";
-import { FoodEnum } from "carbon-footprint";
+import { FoodType } from "carbon-footprint";
 
 import { emissions } from "ducks";
 import { calculation } from "utils";
 
 const meatArray = [
-  FoodEnum.beef,
-  FoodEnum.chicken,
-  FoodEnum.fish,
-  FoodEnum.lamb,
-  FoodEnum.pork,
-  FoodEnum.redMeat,
-  FoodEnum.tuna,
-  FoodEnum.turkey,
-  FoodEnum.whiteMeat,
+  FoodType.beef,
+  FoodType.chicken,
+  FoodType.fish,
+  FoodType.lamb,
+  FoodType.pork,
+  FoodType.redMeat,
+  FoodType.tuna,
+  FoodType.turkey,
+  FoodType.whiteMeat,
 ];
 
 const isMeatEmission = (emission) =>

@@ -33,7 +33,8 @@ const isCustomEmission = (emission) =>
 const isOtherEmission = (emission) =>
   emission.emissionType === EmissionType.custom ||
   emission.emissionType === EmissionType.streaming ||
-  emission.emissionType === EmissionType.electricity;
+  emission.emissionType === EmissionType.electricity ||
+  emission.emissionType === EmissionType.purchase;
 
 const getTransportEmissions = pipe(
   getAllEmissions,

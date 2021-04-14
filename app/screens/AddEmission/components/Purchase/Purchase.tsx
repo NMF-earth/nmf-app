@@ -2,62 +2,61 @@ import React, { useState } from "react";
 import { View, ScrollView } from "react-native";
 import Slider from "@react-native-community/slider";
 import { FormattedNumber } from "react-native-globalize";
-import { FoodType, food } from "carbon-footprint";
+import { PurchaseType, purchase } from "carbon-footprint";
 
 import { Text, Tag } from "components";
 import { t, ui } from "utils";
 import { Colors } from "style";
 
-import styles from "./Food.styles";
+import styles from "./Purchase.styles";
 
-const MIN_SLIDER_VALUE = 20;
-const MAX_SLIDER_VALUE = 500;
+const MIN_SLIDER_VALUE = 1;
+const MAX_SLIDER_VALUE = 10;
 
 interface Props {
   defaultValueSlider: number;
-  foodType: string;
-  setFoodType: (arg0: FoodType) => void;
+  purchaseType: string;
+  setPurchaseType: (arg0: PurchaseType) => void;
   setQuantity: (arg0: number) => void;
 }
 
-const TAGS: Array<FoodType> = [
-  FoodType.redMeat,
-  FoodType.whiteMeat,
-  FoodType.fish,
-  FoodType.chocolate,
-  FoodType.coffee,
-  FoodType.milk,
-  FoodType.cheese,
-  FoodType.eggs,
+const TAGS: Array<PurchaseType> = [
+  PurchaseType.smartphone,
+  PurchaseType.laptop,
+  PurchaseType.tablet,
+  PurchaseType.computer,
+  PurchaseType.tv,
+  PurchaseType.eletricCar,
+  PurchaseType.fossilFuelCar,
+  PurchaseType.hybridCar,
 ];
 
 export default ({
-  setFoodType,
-  foodType,
+  setPurchaseType,
+  purchaseType,
   setQuantity,
   defaultValueSlider,
 }: Props) => {
-  const [sliderValue, setSliderValue] = useState(defaultValueSlider * 1000);
+  const [sliderValue, setSliderValue] = useState(defaultValueSlider);
 
   const onSliderValueChange = (value: number) => {
     const val = Math.round(value);
     setSliderValue(val);
-    /* since we use kilograms as reference (and not grams), we need to divide by 1000 */
-    setQuantity(val / 1000);
+    setQuantity(val);
   };
 
   return (
     <React.Fragment>
       <View style={styles.typeContainer}>
-        <Text.H3>{t("ADD_EMISSION_SCREEN_FOOD_TYPE")}</Text.H3>
+        <Text.H3>{t("ADD_EMISSION_SCREEN_PURCHASE_TYPE")}</Text.H3>
       </View>
       <ScrollView horizontal style={styles.tagContainer}>
         {TAGS.map((item) => (
           <Tag
             key={item}
-            selected={foodType === item}
+            selected={purchaseType === item}
             title={ui.getTranslationModelType(item)}
-            onPress={() => setFoodType(item)}
+            onPress={() => setPurchaseType(item)}
           />
         ))}
         <View style={styles.separator} />
@@ -67,7 +66,7 @@ export default ({
           {t("ADD_EMISSION_SCREEN_QUANTITY")}
         </Text.H3>
         <Text.Primary lightGray>
-          {Math.round(sliderValue) + " grams"}
+          {sliderValue + " " + t("ADD_EMISSION_SCREEN_ITEMS")}
         </Text.Primary>
       </View>
       <Slider
@@ -86,7 +85,7 @@ export default ({
         </Text.H3>
         <Text.H2 blue50>
           <FormattedNumber
-            value={(sliderValue / 1000) * food[foodType]}
+            value={sliderValue * purchase[purchaseType]}
             maximumFractionDigits={2}
           />{" "}
           <Text.Primary>kgCO2eq</Text.Primary>

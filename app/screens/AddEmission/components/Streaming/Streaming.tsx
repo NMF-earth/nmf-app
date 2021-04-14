@@ -4,9 +4,9 @@ import Slider from "@react-native-community/slider";
 import { FormattedNumber } from "react-native-globalize";
 import {
   streaming,
-  StreamingEnum,
+  StreamingType,
   getInternetUsageCarbonImpact,
-  ElectricityEnum,
+  ElectricityType,
 } from "carbon-footprint";
 
 import { Text, Tag } from "components";
@@ -19,18 +19,18 @@ const MIN_SLIDER_VALUE = 15 * 60;
 const MAX_SLIDER_VALUE = 10 * 60 * 60;
 
 interface Props {
-  electricityCountry: ElectricityEnum;
+  electricityCountry: ElectricityType;
   defaultValueSlider: number;
   streamingType: string;
-  setStreamingType: (arg0: StreamingEnum) => void;
+  setStreamingType: (arg0: StreamingType) => void;
   setDurationSeconds: (arg0: number) => void;
 }
 
-const TAGS: Array<StreamingEnum> = [
-  StreamingEnum.HDVideo,
-  StreamingEnum.audioMP3,
-  StreamingEnum.fullHDVideo,
-  StreamingEnum.ultraHDVideo,
+const TAGS: Array<StreamingType> = [
+  StreamingType.HDVideo,
+  StreamingType.audioMP3,
+  StreamingType.fullHDVideo,
+  StreamingType.ultraHDVideo,
 ];
 
 export default ({

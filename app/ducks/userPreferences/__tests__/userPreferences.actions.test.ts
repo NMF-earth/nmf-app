@@ -1,4 +1,4 @@
-import { ElectricityEnum } from "carbon-footprint";
+import { ElectricityType } from "carbon-footprint";
 
 import userPreferences from "../";
 
@@ -21,10 +21,10 @@ describe("userPreferences actions should", () => {
   it("be able to update to update user location", () => {
     const expectedAction = {
       type: userPreferences.actions.updateLocation.toString(),
-      payload: ElectricityEnum.france,
+      payload: ElectricityType.france,
     };
     expect(
-      userPreferences.actions.updateLocation(ElectricityEnum.france)
+      userPreferences.actions.updateLocation(ElectricityType.france)
     ).toEqual(expectedAction);
   });
 

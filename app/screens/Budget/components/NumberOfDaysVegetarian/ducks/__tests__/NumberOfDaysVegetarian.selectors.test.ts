@@ -1,4 +1,4 @@
-import { FoodEnum } from "carbon-footprint";
+import { FoodType } from "carbon-footprint";
 import moment from "moment";
 
 import { emissions } from "ducks";
@@ -11,7 +11,7 @@ let state;
 const emissionToday: Emission = {
   id: "1",
   creationDate: moment().utc().toISOString(),
-  emissionModelType: FoodEnum.redMeat,
+  emissionModelType: FoodType.redMeat,
   emissionType: EmissionType.food,
   isMitigated: false,
   value: 10,
@@ -20,7 +20,7 @@ const emissionToday: Emission = {
 const emissionLastWeek: Emission = {
   id: "12",
   creationDate: moment().subtract(1, "week").utc().toISOString(),
-  emissionModelType: FoodEnum.redMeat,
+  emissionModelType: FoodType.redMeat,
   emissionType: EmissionType.food,
   isMitigated: false,
   value: 100,

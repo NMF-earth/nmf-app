@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { View, ScrollView } from "react-native";
 import Slider from "@react-native-community/slider";
 import { FormattedNumber } from "react-native-globalize";
-import { transport, TransportEnum } from "carbon-footprint";
+import { transport, TransportType } from "carbon-footprint";
 
 import { Text, Tag } from "components";
 import { t, time, ui, calculation } from "utils";
@@ -19,18 +19,18 @@ const MAX_SLIDER_VALUE_PLANE = 1000;
 interface Props {
   defaultValueSlider: number;
   transportType: string;
-  setTransportType: (arg0: TransportEnum) => void;
+  setTransportType: (arg0: TransportType) => void;
   setDurationMinutes: (arg0: number) => void;
   setDistance: (arg0: number) => void;
 }
 
-const TAGS: Array<TransportEnum> = [
-  TransportEnum.train,
-  TransportEnum.car,
-  TransportEnum.bus,
-  TransportEnum.plane,
-  TransportEnum.boat,
-  TransportEnum.motorbike,
+const TAGS: Array<TransportType> = [
+  TransportType.train,
+  TransportType.car,
+  TransportType.bus,
+  TransportType.plane,
+  TransportType.boat,
+  TransportType.motorbike,
 ];
 
 export default ({
@@ -94,7 +94,7 @@ export default ({
         ))}
         <View style={styles.separator} />
       </ScrollView>
-      {transportType === TransportEnum.plane
+      {transportType === TransportType.plane
         ? renderDuration()
         : renderDistance()}
       <Slider
@@ -103,12 +103,12 @@ export default ({
         thumbTintColor={Colors.green50}
         style={styles.slider}
         maximumValue={
-          transportType === TransportEnum.plane
+          transportType === TransportType.plane
             ? MAX_SLIDER_VALUE_PLANE
             : MAX_SLIDER_VALUE
         }
         minimumValue={
-          transportType === TransportEnum.plane
+          transportType === TransportType.plane
             ? MIN_SLIDER_VALUE_PLANE
             : MIN_SLIDER_VALUE
         }
@@ -122,7 +122,7 @@ export default ({
         <Text.H2 style={{ color: Colors.blue50 }}>
           <FormattedNumber
             value={
-              transportType === TransportEnum.plane
+              transportType === TransportType.plane
                 ? calculation.getFlightEmissionValue(sliderValue) *
                   transport[calculation.getFlightType(sliderValue)]
                 : sliderValue * 1000 * transport[transportType]

@@ -1,10 +1,10 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { ElectricityEnum } from "carbon-footprint";
+import { ElectricityType } from "carbon-footprint";
 
 const initialState = {
   acceptedTermsOfUseVersion: 0,
   activatedNotifications: false,
-  location: ElectricityEnum.world,
+  location: ElectricityType.world,
 };
 
 const userPreferences = createSlice({
@@ -17,7 +17,7 @@ const userPreferences = createSlice({
     toggleNotifications(state, action: PayloadAction<boolean>) {
       state.activatedNotifications = action.payload;
     },
-    updateLocation(state, action: PayloadAction<ElectricityEnum>) {
+    updateLocation(state, action: PayloadAction<ElectricityType>) {
       state.location = action.payload;
     },
   },
