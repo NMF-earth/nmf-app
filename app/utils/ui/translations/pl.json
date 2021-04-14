@@ -26,5 +26,12 @@
   "UI_LAPTOP": "Laptop",
   "UI_SMARTPHONE": "Smartphone",
   "UI_TABLET": "Tablet",
-  "UI_TV": "Television"
+  "UI_TV": "Television",
+  "UI_COAT": "Coat",
+  "UI_DRESS": "Dress",
+  "UI_JEANS": "Jeans",
+  "UI_SHIRT": "Shirt",
+  "UI_SHOES": "Shoes",
+  "UI_SWEATER": "Sweater",
+  "UI_T_SHIRT": "T-Shirt"
 }

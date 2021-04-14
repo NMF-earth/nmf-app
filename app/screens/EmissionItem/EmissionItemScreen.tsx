@@ -7,7 +7,7 @@ import "moment/min/locales";
 import { FormattedNumber } from "react-native-globalize";
 import { useNavigation, useRoute } from "@react-navigation/native";
 
-import { Text, Tag, Button } from "components";
+import { Text, Button } from "components";
 import { emissions } from "ducks";
 import {
   calculation,
@@ -33,8 +33,6 @@ const EmissionItemScreen = ({ language = "" }: LocalizationContextProps) => {
   const emission = useSelector((state) =>
     emissions.selectors.getEmissionById(state, emissionId)
   );
-  // eslint-disable-next-line @typescript-eslint/no-empty-function
-  const onPress = () => {};
 
   const { creationDate, emissionModelType, name } = emission || {
     creationDate: new Date(),
@@ -66,14 +64,12 @@ const EmissionItemScreen = ({ language = "" }: LocalizationContextProps) => {
               </Text.Primary>
             </>
           ) : null}
-          <Text.H3>{t("EMISSION_ITEM_SCREEN_TYPE")}</Text.H3>
-          <ScrollView horizontal style={styles.item}>
-            <Tag
-              selected
-              onPress={onPress}
-              title={ui.getTranslationModelType(emissionModelType)}
-            />
-          </ScrollView>
+          <>
+            <Text.H3>{t("EMISSION_ITEM_SCREEN_TYPE")}</Text.H3>
+            <Text.Primary darkGray style={styles.item}>
+              {ui.getTranslationModelType(emissionModelType)}
+            </Text.Primary>
+          </>
           <Text.H3>{t("EMISSION_ITEM_SCREEN_QUANTITY")}</Text.H3>
           <Text.Primary darkGray style={styles.item}>
             <FormattedNumber

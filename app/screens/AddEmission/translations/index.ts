@@ -36,6 +36,8 @@ interface TranslationKeys {
   ADD_EMISSION_SCREEN_PICKER_MODAL_CONFIRM: string;
   ADD_EMISSION_SCREEN_PICKER_MODAL_CANCEL: string;
   ADD_EMISSION_SCREEN_ITEMS: string;
+  ADD_EMISSION_SCREEN_FASHION_TYPE: string;
+  ADD_EMISSION_SCREEN_FASHION: string;
 }
 
 export { en, fr, de, sv, es, pt, da, ru, pl, TranslationKeys };

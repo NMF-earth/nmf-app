@@ -7,6 +7,7 @@ import {
   FoodType,
   StreamingType,
   PurchaseType,
+  FashionType,
 } from "carbon-footprint";
 import DateTimePickerModal from "react-native-modal-datetime-picker";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
@@ -33,6 +34,7 @@ import {
   Electricity,
   Purchase,
   AddEmissionButton,
+  Fashion,
 } from "./components";
 
 interface Props {
@@ -48,6 +50,7 @@ const DEFAULT_SLIDER_VALUE_TRANSPORT = 150 * 1000;
 const DEFAULT_SLIDER_VALUE_ELECTRICITY = 100 * 3.6 * Math.pow(10, 6);
 const DEFAULT_SLIDER_VALUE_STREAMING = 120 * 60;
 const DEFAULT_SLIDER_VALUE_PURCHASE = 1;
+const DEFAULT_SLIDER_VALUE_FASHION = 1;
 const DEFAULT_SLIDER_VALUE_CUSTOM = 200;
 const EMISSION_NAME_MAX_LENGTH = 150;
 
@@ -71,6 +74,7 @@ const AddEmissionScreen = ({
   const [purchaseType, setPurchaseType] = useState<PurchaseType>(
     PurchaseType.smartphone
   );
+  const [fashionType, setFashionType] = useState<FashionType>(FashionType.coat);
   const [streamingType, setStreamingType] = useState<StreamingType>(
     StreamingType.HDVideo
   );
@@ -91,6 +95,9 @@ const AddEmissionScreen = ({
   );
   const [purchaseQuantity, setPurchaseQuantity] = useState<number>(
     DEFAULT_SLIDER_VALUE_PURCHASE
+  );
+  const [fashionQuantity, setFashionQuantity] = useState<number>(
+    DEFAULT_SLIDER_VALUE_FASHION
   );
 
   const [creationDate, setCreationDate] = useState<Moment>(moment().utc());
@@ -179,6 +186,23 @@ const AddEmissionScreen = ({
     return null;
   };
 
+  const renderFashion = () => {
+    if (emissionType === EmissionType.fashion) {
+      emissionPayload.value = fashionQuantity;
+      emissionPayload.emissionModelType = fashionType;
+
+      return (
+        <Fashion
+          setFashionType={setFashionType}
+          fashionType={fashionType}
+          defaultValueSlider={DEFAULT_SLIDER_VALUE_FASHION}
+          setQuantity={setFashionQuantity}
+        />
+      );
+    }
+    return null;
+  };
+
   const renderFood = () => {
     if (emissionType === EmissionType.food) {
       emissionPayload.value = foodQuantity;
@@ -245,6 +269,9 @@ const AddEmissionScreen = ({
   const onPurchaseTagPress = useCallback(() => {
     setEmissionType(EmissionType.purchase);
   }, []);
+  const onFashionTagPress = useCallback(() => {
+    setEmissionType(EmissionType.fashion);
+  }, []);
   const onCustomTagPress = useCallback(() => {
     setEmissionType(EmissionType.custom);
   }, []);
@@ -289,6 +316,12 @@ const AddEmissionScreen = ({
             onPress={onPurchaseTagPress}
           />
           <Tag
+            icon={"md-shirt"}
+            selected={emissionType === EmissionType.fashion}
+            title={t("ADD_EMISSION_SCREEN_FASHION")}
+            onPress={onFashionTagPress}
+          />
+          <Tag
             icon={"md-flash"}
             selected={emissionType === EmissionType.electricity}
             title={t("ADD_EMISSION_SCREEN_ELECTRICITY")}
@@ -309,6 +342,7 @@ const AddEmissionScreen = ({
       {renderStreaming()}
       {renderElectricity()}
       {renderPurchase()}
+      {renderFashion()}
       {renderCustom()}
 
       <TextInput
