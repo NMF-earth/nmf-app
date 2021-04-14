@@ -3,7 +3,7 @@ title: Avoid streaming
 category: digital
 ---
 
-# Avoid streaming
+# Avoid streaming when possible
 
 Streaming is nice, streaming is amazing, but have you ever though about the consequences on the environement?
 

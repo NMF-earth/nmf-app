@@ -18,7 +18,19 @@ exports[`ActScreen renders correctly 1`] = `
   data={
     Array [
       Object {
-        "body": "<h1>Avoid streaming</h1>
+        "body": "<h1>Clean your cloud data</h1>
+<p>When your data is saved on the cloud, it means it's saved on remote computers (servers). It's really nice and convenient because if you loose your computer or your phone, your data is not lost!</p>
+<p>However, redundant data is not environmental friendly at all and will never be. Remember this: everytime you save data, transfer data it means CO2 emissions.</p>
+<p>Servers as well as your devices needs many rare metals but also because it needs electricity to work. For the servers, it's every single day of the year with no down time, to make sure you can access your data at any time of the day. As you know, electricity production always emits CO2, even if it's solar, windmills or nuclear. Yes, there is no &quot;green&quot; energy and solar panels manufacturing pollutes a lot.</p>
+<p>Therefore, the less emails you have on your mailbox, the less data you have on the cloud, the better for the environment.</p>
+<h3>More data = more pollution</h3>
+",
+        "category": "digital",
+        "key": ".//clean-your-cloud-data.md",
+        "title": "Clean your cloud data",
+      },
+      Object {
+        "body": "<h1>Avoid streaming when possible</h1>
 <p>Streaming is nice, streaming is amazing, but have you ever though about the consequences on the environement?</p>
 <p>To give you an idea on how bad the streaming is, let's take an example. The size of the article text in the English Wikipedia is around <a href=\\"https://en.wikipedia.org/wiki/Wikipedia:Size_of_Wikipedia\\">20 gigabytes</a> of data in 2020. It means that everytime you watch a season of the Walking Dead in HD (1080p), you have downloaded on your computer/phone the same amount of data as the entire Wikipedia encyclopedia.</p>
 <p>Same applies to Spotify, Apple Music, Amazon and Youtube. Music is much smaller than a HD video but an average user consumes several songs in a day so at the end of the year, the impact of the climate is not negligeable.</p>
@@ -27,11 +39,11 @@ exports[`ActScreen renders correctly 1`] = `
 <p>If you still want to use YouTube, we recomment <a href=\\"https://addons.mozilla.org/en-US/firefox/addon/youtube-focus/?utm_source=addons.mozilla.org&amp;utm_medium=referral&amp;utm_content=search\\">Youtube Focus</a>, an add-on who tries to promote a healthier watching. As said on their <a href=\\"https://github.com/Jompa14/YouTube_Focus\\">Github</a>, YouTube has one billion hours whatched daily, and it’s recommendation algorithm generates more than 70% of views. That means 700.000.000 hours every single day. What means that the greatest slice of time that people spend on YouTube isnt because they searched for something to whatch or something to learn, it is because they were sugested by YouTube's algorithm.</p>
 ",
         "category": "digital",
-        "key": ".//markdown/avoid-streaming.md",
+        "key": ".//avoid-streaming.md",
         "title": "Avoid streaming",
       },
       Object {
-        "body": "<h1>Install an add blocker</h1>
+        "body": "<h1>Install an ad blocker</h1>
 <p>All modern browser like Firefox, Safari, Chrome... let users the posibility to install add-ons, also name plugins or extensions.</p>
 <p>In order to not get ads or to see less ads, you can install the following browser extensions :</p>
 <ul>
@@ -41,26 +53,28 @@ exports[`ActScreen renders correctly 1`] = `
 <p>Less ads, less compulsatory purchases, less CO2 emissions</p>
 ",
         "category": "digital",
-        "key": ".//markdown/ad-blocker.md",
-        "title": "Install an add blocker",
+        "key": ".//ad-blocker.md",
+        "title": "Install an ad blocker",
       },
       Object {
-        "body": "<h1>Clean your cloud data</h1>
-<p>When your data is saved on the cloud, it means it's saved on remote computers (servers). It's really nice and convenient because if you loose your computer or your phone, your data is not lost!</p>
-<p>However, redundant data is not environmental friendly at all and will never be. Remember this: everytime you save data, transfer data it means CO2 emissions.</p>
-<p>Servers as well as your devices needs many rare metals but also because it needs electricity to work. For the servers, it's every single day of the year with no down time, to make sure you can access your data at any time of the day. As you know, electricity production always emits CO2, even if it's solar, windmills or nuclear. Yes, there is no &quot;green&quot; energy and solar panels manufacturing pollutes a lot.</p>
-<p>Therefore, the less emails you have on your mailbox, the less data you have on the cloud, the better for the environment.</p>
-<h3>More data = more pollution</h3>
+        "body": "<h3>When necessary, buy a phone &amp; computer you can upgrade and repair with a long lifespan</h3>
+<p>A lot of people are changing their hardware it is a bit outdated, because they want a better camera or because the battery is not working well anymore.</p>
+<p>Changing equipment every year is not sustainable and it's bad for the environement. To face this issue, a Dutch company, <a href=\\"https://www.fairphone.com/\\">Fairphone</a>, is making ethical and modular phone that you can fix and upgrade yourself. It's also worth mentioning brands like OnePlus which provide software updates for many years (contrary to Samsung) helping users to use their phone longer.</p>
+<p>If you are on Android, installing an alternative rom like <a href=\\"https://lineageos.org/\\">LineageOS</a> can make your old phone faster and increase its lifespan. Phones made by Google (Pixel serie) and flagship phones are usually well supported by alternative roms.</p>
+<p>For laptop, you can have a look to brands like <a href=\\"https://frame.work/\\">Framework</a> and for computers it's better to buy one you can assemble, upgrade and fix yourself!</p>
+<p><strong>NB:</strong> We don't do sponsored links and we encourage you to do some research and comparison before purchasing anything.</p>
+<h3>Disclamer</h3>
+<p>The most environmentally friendly product is the one that is not produced! It works for phone, computer but also for anything made by the industry like car, pen, t-shirt... Don't let the marketing fool you!</p>
 ",
         "category": "digital",
-        "key": ".//markdown/clean-your-cloud-data.md",
-        "title": "Clean your cloud data",
+        "key": ".//hardware.md",
+        "title": "Buying & reusing hardware",
       },
       Object {
         "body": "<h1>Find replacement for internet giants</h1>
-<p>G**gle, Facebook, 🍏 and any other tech monsters are harvesting data about their users and that's a bad thing for you and the environment.</p>
+<p>Google, Facebook, 🍏 and any other tech monsters are harvesting data about their users and that's a bad thing for you and the environment.</p>
 <p>If something is free, there is a trick, right? The more data these companies have on you, the more valuable you are for them. It allows target ads depending on your age, sex, religion, political opinion etc.</p>
-<p>Framasoft a French association is trying to de-g**gle-ify the internet by providing the same services as some of the GAFA but in a ethical and open source way.</p>
+<p>Framasoft a French association is trying to de-google-ify the internet by providing the same services as some of the GAFA but in a ethical and open source way.</p>
 <p>Examples :</p>
 <ul>
 <li><a href=\\"https://joinpeertube.org/\\">Peertube</a> alternative to Youtube.</li>
@@ -76,11 +90,11 @@ exports[`ActScreen renders correctly 1`] = `
 <li>Whatsapp : <a href=\\"https://signal.org\\">Signal</a></li>
 <li>Gmail : <a href=\\"https://protonmail.com/\\">Protonmail</a></li>
 <li>Maps : <a href=\\"https://www.openstreetmap.org\\">Open street map</a></li>
-<li>G**gle Play : <a href=\\"https://www.f-droid.org/\\">F-Droid</a></li>
+<li>Google Play : <a href=\\"https://www.f-droid.org/\\">F-Droid</a></li>
 </ul>
 ",
         "category": "digital",
-        "key": ".//markdown/gafa-replacement.md",
+        "key": ".//gafa-replacement.md",
         "title": "Find replacement for internet giants",
       },
       Object {
@@ -93,18 +107,8 @@ exports[`ActScreen renders correctly 1`] = `
 </ul>
 ",
         "category": "digital",
-        "key": ".//markdown/internet-browsing-impact.md",
+        "key": ".//internet-browsing-impact.md",
         "title": "Reduce your browsing emissions",
-      },
-      Object {
-        "body": "<h1>Buy a phone you can repair</h1>
-<p>A lot of people are changing their phones because the screen is damage, because they want a better camera or because the battery is not working well anymore.</p>
-<p>Changing phone every year is not sustainable and it's bad for the environement. To face this issue, a Dutch company, <a href=\\"https://www.fairphone.com/\\">Fairphone</a>, is making ethical and modular phone that you can fix and upgrade yourself.</p>
-<p>If you are on Android, installing an alternative rom like <a href=\\"https://lineageos.org/\\">LineageOS</a> can make your old phone faster and increase its lifespan.</p>
-",
-        "category": "digital",
-        "key": ".//markdown/repair-phone.md",
-        "title": "Get a phone you can repair/upgrade",
       },
     ]
   }
@@ -138,6 +142,41 @@ exports[`ActScreen renders correctly 1`] = `
   windowSize={21}
 >
   <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Secondary
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          Clean your cloud data
+        </Text.Secondary>
+        <Ionicons
+          color="#9CA6A0"
+          name="ios-chevron-forward-outline"
+          size={26}
+          style={
+            Object {
+              "marginTop": 18,
+            }
+          }
+        />
+      </TouchableOpacity>
+    </View>
     <View
       onLayout={[Function]}
       style={null}
@@ -194,7 +233,7 @@ exports[`ActScreen renders correctly 1`] = `
             }
           }
         >
-          Install an add blocker
+          Install an ad blocker
         </Text.Secondary>
         <Ionicons
           color="#9CA6A0"
@@ -229,7 +268,7 @@ exports[`ActScreen renders correctly 1`] = `
             }
           }
         >
-          Clean your cloud data
+          Buying & reusing hardware
         </Text.Secondary>
         <Ionicons
           color="#9CA6A0"
@@ -300,41 +339,6 @@ exports[`ActScreen renders correctly 1`] = `
           }
         >
           Reduce your browsing emissions
-        </Text.Secondary>
-        <Ionicons
-          color="#9CA6A0"
-          name="ios-chevron-forward-outline"
-          size={26}
-          style={
-            Object {
-              "marginTop": 18,
-            }
-          }
-        />
-      </TouchableOpacity>
-    </View>
-    <View
-      onLayout={[Function]}
-      style={null}
-    >
-      <TouchableOpacity
-        onPress={[Function]}
-        style={
-          Object {
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-          }
-        }
-      >
-        <Text.Secondary
-          numberOfLines={1}
-          style={
-            Object {
-              "paddingVertical": 20,
-            }
-          }
-        >
-          Get a phone you can repair/upgrade
         </Text.Secondary>
         <Ionicons
           color="#9CA6A0"

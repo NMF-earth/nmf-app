@@ -1,5 +1,5 @@
 export enum GuideCategory {
-  kitchen = "kitchen",
+  home = "home",
   digital = "digital",
 }
 

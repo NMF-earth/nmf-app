@@ -1,9 +1,9 @@
 ---
-title: Install an add blocker
+title: Install an ad blocker
 category: digital
 ---
 
-# Install an add blocker
+# Install an ad blocker
 
 All modern browser like Firefox, Safari, Chrome... let users the posibility to install add-ons, also name plugins or extensions.
 
