@@ -29,6 +29,14 @@ interface TranslationKeys {
   UI_MILK: string;
   UI_CHEESE: string;
   UI_EGGS: string;
+  UI_COMPUTER: string;
+  UI_ELECTRIC_CAR: string;
+  UI_FOSSIL_FUEL_CAR: string;
+  UI_HYBRID_CAR: string;
+  UI_LAPTOP: string;
+  UI_SMARTPHONE: string;
+  UI_TABLET: string;
+  UI_TV: string;
 }
 
 export { en, fr, de, sv, es, pt, da, ru, pl, TranslationKeys };

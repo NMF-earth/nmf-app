@@ -1,4 +1,4 @@
-import { FoodEnum } from "carbon-footprint";
+import { FoodType } from "carbon-footprint";
 
 import { Emission, EmissionType } from "interfaces";
 
@@ -16,7 +16,7 @@ describe("Emissions reducer should", () => {
       id: "123",
       creationDate: "2020-01-26T11:04:55.334Z",
       emissionType: EmissionType.custom,
-      emissionModelType: FoodEnum.nuts,
+      emissionModelType: FoodType.nuts,
       value: 200,
       isMitigated: false,
     };
@@ -35,7 +35,7 @@ describe("Emissions reducer should", () => {
       id: "123",
       creationDate: "2020-01-26T11:04:55.334Z",
       emissionType: EmissionType.custom,
-      emissionModelType: FoodEnum.nuts,
+      emissionModelType: FoodType.nuts,
       value: 200,
       isMitigated: false,
     };

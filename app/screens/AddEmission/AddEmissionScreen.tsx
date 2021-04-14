@@ -2,7 +2,12 @@ import React, { useCallback, useState } from "react";
 import moment, { Moment } from "moment";
 import { useSelector } from "react-redux";
 import { View, ScrollView, TouchableOpacity } from "react-native";
-import { TransportEnum, FoodEnum, StreamingEnum } from "carbon-footprint";
+import {
+  TransportType,
+  FoodType,
+  StreamingType,
+  PurchaseType,
+} from "carbon-footprint";
 import DateTimePickerModal from "react-native-modal-datetime-picker";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 
@@ -26,6 +31,7 @@ import {
   Streaming,
   Custom,
   Electricity,
+  Purchase,
   AddEmissionButton,
 } from "./components";
 
@@ -41,6 +47,7 @@ const DEFAULT_SLIDER_VALUE_FOOD = 200 / 1000;
 const DEFAULT_SLIDER_VALUE_TRANSPORT = 150 * 1000;
 const DEFAULT_SLIDER_VALUE_ELECTRICITY = 100 * 3.6 * Math.pow(10, 6);
 const DEFAULT_SLIDER_VALUE_STREAMING = 120 * 60;
+const DEFAULT_SLIDER_VALUE_PURCHASE = 1;
 const DEFAULT_SLIDER_VALUE_CUSTOM = 200;
 const EMISSION_NAME_MAX_LENGTH = 150;
 
@@ -54,15 +61,18 @@ const AddEmissionScreen = ({
   const [emissionType, setEmissionType] = useState<EmissionType>(
     EmissionType.transport
   );
-  const [transportType, setTransportType] = useState<TransportEnum>(
-    TransportEnum.car
+  const [transportType, setTransportType] = useState<TransportType>(
+    TransportType.car
   );
   const [electricityConsumption, setElectricityConsumption] = useState<number>(
     DEFAULT_SLIDER_VALUE_ELECTRICITY
   );
-  const [foodType, setFoodType] = useState<FoodEnum>(FoodEnum.redMeat);
-  const [streamingType, setStreamingType] = useState<StreamingEnum>(
-    StreamingEnum.HDVideo
+  const [foodType, setFoodType] = useState<FoodType>(FoodType.redMeat);
+  const [purchaseType, setPurchaseType] = useState<PurchaseType>(
+    PurchaseType.smartphone
+  );
+  const [streamingType, setStreamingType] = useState<StreamingType>(
+    StreamingType.HDVideo
   );
   const [durationMinutes, setDurationMinutes] = useState<number>(
     DEFAULT_SLIDER_VALUE_TRANSPORT / 1000
@@ -76,7 +86,12 @@ const AddEmissionScreen = ({
   const [distance, setDistance] = useState<number>(
     DEFAULT_SLIDER_VALUE_TRANSPORT
   );
-  const [quantity, setQuantity] = useState<number>(DEFAULT_SLIDER_VALUE_FOOD);
+  const [foodQuantity, setFoodQuantity] = useState<number>(
+    DEFAULT_SLIDER_VALUE_FOOD
+  );
+  const [purchaseQuantity, setPurchaseQuantity] = useState<number>(
+    DEFAULT_SLIDER_VALUE_PURCHASE
+  );
 
   const [creationDate, setCreationDate] = useState<Moment>(moment().utc());
 
@@ -106,7 +121,7 @@ const AddEmissionScreen = ({
 
   const renderTransport = () => {
     if (emissionType === EmissionType.transport) {
-      if (transportType === TransportEnum.plane) {
+      if (transportType === TransportType.plane) {
         emissionPayload.value = calculation.getFlightEmissionValue(
           durationMinutes
         );
@@ -147,15 +162,32 @@ const AddEmissionScreen = ({
     return null;
   };
 
+  const renderPurchase = () => {
+    if (emissionType === EmissionType.purchase) {
+      emissionPayload.value = purchaseQuantity;
+      emissionPayload.emissionModelType = purchaseType;
+
+      return (
+        <Purchase
+          setPurchaseType={setPurchaseType}
+          purchaseType={purchaseType}
+          defaultValueSlider={DEFAULT_SLIDER_VALUE_PURCHASE}
+          setQuantity={setPurchaseQuantity}
+        />
+      );
+    }
+    return null;
+  };
+
   const renderFood = () => {
     if (emissionType === EmissionType.food) {
-      emissionPayload.value = quantity;
+      emissionPayload.value = foodQuantity;
       emissionPayload.emissionModelType = foodType;
 
       return (
         <Food
           defaultValueSlider={DEFAULT_SLIDER_VALUE_FOOD}
-          setQuantity={setQuantity}
+          setQuantity={setFoodQuantity}
           setFoodType={setFoodType}
           foodType={foodType}
         />
@@ -210,6 +242,9 @@ const AddEmissionScreen = ({
   const onElectricityTagPress = useCallback(() => {
     setEmissionType(EmissionType.electricity);
   }, []);
+  const onPurchaseTagPress = useCallback(() => {
+    setEmissionType(EmissionType.purchase);
+  }, []);
   const onCustomTagPress = useCallback(() => {
     setEmissionType(EmissionType.custom);
   }, []);
@@ -248,6 +283,12 @@ const AddEmissionScreen = ({
             onPress={onStreamingTagPress}
           />
           <Tag
+            icon={"md-card"}
+            selected={emissionType === EmissionType.purchase}
+            title={t("ADD_EMISSION_SCREEN_PURCHASE")}
+            onPress={onPurchaseTagPress}
+          />
+          <Tag
             icon={"md-flash"}
             selected={emissionType === EmissionType.electricity}
             title={t("ADD_EMISSION_SCREEN_ELECTRICITY")}
@@ -267,6 +308,7 @@ const AddEmissionScreen = ({
       {renderFood()}
       {renderStreaming()}
       {renderElectricity()}
+      {renderPurchase()}
       {renderCustom()}
 
       <TextInput

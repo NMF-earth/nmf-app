@@ -91,6 +91,12 @@ exports[`AddEmissionScreen renders correctly 1`] = `
               title="Streaming"
             />
             <Tag
+              icon="md-card"
+              onPress={[Function]}
+              selected={false}
+              title="Purchase"
+            />
+            <Tag
               icon="md-flash"
               onPress={[Function]}
               selected={false}

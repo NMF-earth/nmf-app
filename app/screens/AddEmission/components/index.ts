@@ -4,5 +4,14 @@ import Custom from "./Custom";
 import Streaming from "./Streaming";
 import Electricity from "./Electricity";
 import AddEmissionButton from "./AddEmissionButton";
+import Purchase from "./Purchase";
 
-export { Food, Electricity, Streaming, Transport, Custom, AddEmissionButton };
+export {
+  Purchase,
+  Food,
+  Electricity,
+  Streaming,
+  Transport,
+  Custom,
+  AddEmissionButton,
+};

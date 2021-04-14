@@ -1,11 +1,12 @@
 import { isEmpty, prop, reduce, maxBy, either, isNil, pipe } from "ramda";
 import {
   transport,
-  TransportEnum,
+  TransportType,
   food,
   getInternetUsageCarbonImpact,
-  ElectricityEnum,
+  ElectricityType,
   electricity,
+  purchase,
   streaming,
 } from "carbon-footprint";
 
@@ -16,35 +17,35 @@ const isNilOrEmpty = either(isNil, isEmpty);
 const getFlightType = (duration: number) => {
   /* Below 3 hours */
   if (duration < 180) {
-    return TransportEnum.shortHaulFlight;
+    return TransportType.shortHaulFlight;
   }
 
   /* Between 3 and 6 hours */
   if (duration < 360) {
-    return TransportEnum.mediumHaulFlight;
+    return TransportType.mediumHaulFlight;
   }
 
   /* Above 6 hours */
-  return TransportEnum.longHaulFlight;
+  return TransportType.longHaulFlight;
 };
 
 const getFlightEmissionValue = (duration: number) => {
   switch (getFlightType(duration)) {
-    case TransportEnum.shortHaulFlight: {
+    case TransportType.shortHaulFlight: {
       /* Paris -> Toulouse 1h15 AF6122 588 km */
       /* Paris -> Stockholm 2h35 AF1462 1543 km */
       const averageSpeedShortHaulSpeed =
         ((588 * 1000) / (60 + 15) + (1543 * 1000) / (2 * 60 + 35)) / 2;
       return averageSpeedShortHaulSpeed * duration;
     }
-    case TransportEnum.mediumHaulFlight: {
+    case TransportType.mediumHaulFlight: {
       /* Paris -> Istanbul 3h25 AF1390 2255 km */
       /* Paris -> Dakar 5h45 AF718 4205 km */
       const averageMediumHaulSpeed =
         ((2255 * 1000) / (3 * 60 + 25) + (4205 * 1000) / (5 * 60 + 45)) / 2;
       return averageMediumHaulSpeed * duration;
     }
-    case TransportEnum.longHaulFlight: {
+    case TransportType.longHaulFlight: {
       /* Paris -> New York 8h15 AF22 5837 km */
       /* Paris -> Santiago 14h30 AF406 11648 km */
       const averageLongHaulSpeed =
@@ -69,13 +70,14 @@ const getC02ValueFromEmission = (emission: Emission) => {
     return getInternetUsageCarbonImpact(
       emission.value,
       streaming[emission.emissionModelType] * emission.value,
-      emission.location || ElectricityEnum.world
+      emission.location || ElectricityType.world
     );
   }
 
   const model = {
     ...transport,
     ...food,
+    ...purchase,
   };
   return emission.value * model[emission.emissionModelType];
 };

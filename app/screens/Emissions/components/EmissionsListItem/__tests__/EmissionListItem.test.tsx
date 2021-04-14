@@ -1,7 +1,7 @@
 import React from "react";
 import { create } from "react-test-renderer";
 import { FormattedProvider } from "react-native-globalize";
-import { FoodEnum, TransportEnum, StreamingEnum } from "carbon-footprint";
+import { FoodType, TransportType, StreamingType } from "carbon-footprint";
 
 import { ui } from "utils";
 
@@ -25,7 +25,7 @@ it("EmissionsListItem renders correctly if mitigated", () => {
       <EmissionsListItem
         {...props}
         isMitigated
-        iconName={ui.getIconFromModelType(FoodEnum.redMeat)}
+        iconName={ui.getIconFromModelType(FoodType.redMeat)}
       />
     </FormattedProvider>
   ).toJSON();
@@ -37,7 +37,7 @@ it("EmissionsListItem renders correctly with redMeat icon", () => {
     <FormattedProvider locale="en">
       <EmissionsListItem
         {...props}
-        iconName={ui.getIconFromModelType(FoodEnum.redMeat)}
+        iconName={ui.getIconFromModelType(FoodType.redMeat)}
       />
     </FormattedProvider>
   ).toJSON();
@@ -49,7 +49,7 @@ it("EmissionsListItem renders correctly with whiteMeat icon", () => {
     <FormattedProvider locale="en">
       <EmissionsListItem
         {...props}
-        iconName={ui.getIconFromModelType(FoodEnum.whiteMeat)}
+        iconName={ui.getIconFromModelType(FoodType.whiteMeat)}
       />
     </FormattedProvider>
   ).toJSON();
@@ -61,7 +61,7 @@ it("EmissionsListItem renders correctly with chocolate icon", () => {
     <FormattedProvider locale="en">
       <EmissionsListItem
         {...props}
-        iconName={ui.getIconFromModelType(FoodEnum.chocolate)}
+        iconName={ui.getIconFromModelType(FoodType.chocolate)}
       />
     </FormattedProvider>
   ).toJSON();
@@ -73,7 +73,7 @@ it("EmissionsListItem renders correctly with coffee icon", () => {
     <FormattedProvider locale="en">
       <EmissionsListItem
         {...props}
-        iconName={ui.getIconFromModelType(FoodEnum.coffee)}
+        iconName={ui.getIconFromModelType(FoodType.coffee)}
       />
     </FormattedProvider>
   ).toJSON();
@@ -85,7 +85,7 @@ it("EmissionsListItem renders correctly with fish icon", () => {
     <FormattedProvider locale="en">
       <EmissionsListItem
         {...props}
-        iconName={ui.getIconFromModelType(FoodEnum.fish)}
+        iconName={ui.getIconFromModelType(FoodType.fish)}
       />
     </FormattedProvider>
   ).toJSON();
@@ -97,7 +97,7 @@ it("EmissionsListItem renders correctly with boat icon", () => {
     <FormattedProvider locale="en">
       <EmissionsListItem
         {...props}
-        iconName={ui.getIconFromModelType(TransportEnum.boat)}
+        iconName={ui.getIconFromModelType(TransportType.boat)}
       />
     </FormattedProvider>
   ).toJSON();
@@ -109,7 +109,7 @@ it("EmissionsListItem renders correctly with bus icon", () => {
     <FormattedProvider locale="en">
       <EmissionsListItem
         {...props}
-        iconName={ui.getIconFromModelType(TransportEnum.bus)}
+        iconName={ui.getIconFromModelType(TransportType.bus)}
       />
     </FormattedProvider>
   ).toJSON();
@@ -121,7 +121,7 @@ it("EmissionsListItem renders correctly with car icon", () => {
     <FormattedProvider locale="en">
       <EmissionsListItem
         {...props}
-        iconName={ui.getIconFromModelType(TransportEnum.car)}
+        iconName={ui.getIconFromModelType(TransportType.car)}
       />
     </FormattedProvider>
   ).toJSON();
@@ -133,7 +133,7 @@ it("EmissionsListItem renders correctly with longHaulFlight icon", () => {
     <FormattedProvider locale="en">
       <EmissionsListItem
         {...props}
-        iconName={ui.getIconFromModelType(TransportEnum.longHaulFlight)}
+        iconName={ui.getIconFromModelType(TransportType.longHaulFlight)}
       />
     </FormattedProvider>
   ).toJSON();
@@ -145,7 +145,7 @@ it("EmissionsListItem renders correctly with mediumHaulFlight icon", () => {
     <FormattedProvider locale="en">
       <EmissionsListItem
         {...props}
-        iconName={ui.getIconFromModelType(TransportEnum.mediumHaulFlight)}
+        iconName={ui.getIconFromModelType(TransportType.mediumHaulFlight)}
       />
     </FormattedProvider>
   ).toJSON();
@@ -157,7 +157,7 @@ it("EmissionsListItem renders correctly with motorbike icon", () => {
     <FormattedProvider locale="en">
       <EmissionsListItem
         {...props}
-        iconName={ui.getIconFromModelType(TransportEnum.motorbike)}
+        iconName={ui.getIconFromModelType(TransportType.motorbike)}
       />
     </FormattedProvider>
   ).toJSON();
@@ -169,7 +169,7 @@ it("EmissionsListItem renders correctly with shortHaulFlight icon", () => {
     <FormattedProvider locale="en">
       <EmissionsListItem
         {...props}
-        iconName={ui.getIconFromModelType(TransportEnum.shortHaulFlight)}
+        iconName={ui.getIconFromModelType(TransportType.shortHaulFlight)}
       />
     </FormattedProvider>
   ).toJSON();
@@ -181,7 +181,7 @@ it("EmissionsListItem renders correctly with train icon", () => {
     <FormattedProvider locale="en">
       <EmissionsListItem
         {...props}
-        iconName={ui.getIconFromModelType(TransportEnum.train)}
+        iconName={ui.getIconFromModelType(TransportType.train)}
       />
     </FormattedProvider>
   ).toJSON();
@@ -193,7 +193,7 @@ it("EmissionsListItem renders correctly with hd video icon", () => {
     <FormattedProvider locale="en">
       <EmissionsListItem
         {...props}
-        iconName={ui.getIconFromModelType(StreamingEnum.HDVideo)}
+        iconName={ui.getIconFromModelType(StreamingType.HDVideo)}
       />
     </FormattedProvider>
   ).toJSON();
@@ -205,7 +205,7 @@ it("EmissionsListItem renders correctly with audio icon", () => {
     <FormattedProvider locale="en">
       <EmissionsListItem
         {...props}
-        iconName={ui.getIconFromModelType(StreamingEnum.audioMP3)}
+        iconName={ui.getIconFromModelType(StreamingType.audioMP3)}
       />
     </FormattedProvider>
   ).toJSON();
@@ -217,7 +217,7 @@ it("EmissionsListItem renders correctly with full hd video icon", () => {
     <FormattedProvider locale="en">
       <EmissionsListItem
         {...props}
-        iconName={ui.getIconFromModelType(StreamingEnum.fullHDVideo)}
+        iconName={ui.getIconFromModelType(StreamingType.fullHDVideo)}
       />
     </FormattedProvider>
   ).toJSON();
@@ -229,7 +229,7 @@ it("EmissionsListItem renders correctly with ultra hd video icon", () => {
     <FormattedProvider locale="en">
       <EmissionsListItem
         {...props}
-        iconName={ui.getIconFromModelType(StreamingEnum.ultraHDVideo)}
+        iconName={ui.getIconFromModelType(StreamingType.ultraHDVideo)}
       />
     </FormattedProvider>
   ).toJSON();

@@ -1,4 +1,4 @@
-import { FoodEnum, TransportEnum } from "carbon-footprint";
+import { FoodType, TransportType } from "carbon-footprint";
 import moment from "moment";
 
 import { emissions } from "ducks";
@@ -12,7 +12,7 @@ let state;
 const emissionToday: Emission = {
   id: "1",
   creationDate: moment().utc().toISOString(),
-  emissionModelType: FoodEnum.beans,
+  emissionModelType: FoodType.beans,
   emissionType: EmissionType.food,
   isMitigated: false,
   value: 10,
@@ -21,7 +21,7 @@ const emissionToday: Emission = {
 const emissionLastMonth: Emission = {
   id: "12",
   creationDate: moment().subtract(1, "month").utc().toISOString(),
-  emissionModelType: TransportEnum.boat,
+  emissionModelType: TransportType.boat,
   emissionType: EmissionType.transport,
   isMitigated: false,
   value: 100,
@@ -30,7 +30,7 @@ const emissionLastMonth: Emission = {
 const emissionLastYear: Emission = {
   id: "123",
   creationDate: moment().subtract(1, "year").utc().toISOString(),
-  emissionModelType: FoodEnum.cheese,
+  emissionModelType: FoodType.cheese,
   emissionType: EmissionType.food,
   isMitigated: false,
   value: 5,

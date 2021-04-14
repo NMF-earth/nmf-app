@@ -1,8 +1,9 @@
 import {
-  FoodEnum,
-  TransportEnum,
-  StreamingEnum,
-  ElectricityEnum,
+  FoodType,
+  TransportType,
+  StreamingType,
+  ElectricityType,
+  PurchaseType,
 } from "carbon-footprint";
 
 enum EmissionType {
@@ -15,10 +16,11 @@ enum EmissionType {
 }
 
 type EmissionModel =
-  | FoodEnum
-  | TransportEnum
-  | StreamingEnum
-  | ElectricityEnum
+  | FoodType
+  | TransportType
+  | StreamingType
+  | ElectricityType
+  | PurchaseType
   | "custom";
 
 interface EmissionPayload {
@@ -27,7 +29,7 @@ interface EmissionPayload {
   emissionModelType: EmissionModel;
   value: number;
   creationDate: string;
-  location?: ElectricityEnum;
+  location?: ElectricityType;
 }
 
 interface Emission extends EmissionPayload {

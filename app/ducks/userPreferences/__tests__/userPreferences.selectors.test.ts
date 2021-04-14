@@ -1,4 +1,4 @@
-import { ElectricityEnum } from "carbon-footprint";
+import { ElectricityType } from "carbon-footprint";
 
 import userPreferences from "../";
 
@@ -7,7 +7,7 @@ let state;
 const initialState = {
   acceptedTermsOfUseVersion: 3,
   activatedNotifications: false,
-  location: ElectricityEnum.world,
+  location: ElectricityType.world,
 };
 
 describe("userPreferences selector should", () => {

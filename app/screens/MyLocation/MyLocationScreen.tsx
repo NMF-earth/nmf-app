@@ -1,6 +1,6 @@
 import React, { useCallback } from "react";
 import { View, ScrollView } from "react-native";
-import { ElectricityEnum, electricity } from "carbon-footprint";
+import { ElectricityType, electricity } from "carbon-footprint";
 import { useDispatch, useSelector } from "react-redux";
 
 import { Text, SelectableListItem } from "components";
@@ -11,9 +11,9 @@ import navigationOptions from "./MyLocationScreen.navigationOptions";
 import styles from "./MyLocationScreen.styles";
 
 const Country: React.FC<{
-  selectedCountry: ElectricityEnum;
-  country: ElectricityEnum;
-  onSelectCountry: (country: ElectricityEnum) => void;
+  selectedCountry: ElectricityType;
+  country: ElectricityType;
+  onSelectCountry: (country: ElectricityType) => void;
 }> = ({ country, onSelectCountry, selectedCountry }) => {
   const onClickCountry = useCallback(() => {
     onSelectCountry?.(country);
@@ -34,7 +34,7 @@ const MyLocationScreen = () => {
   const location = useSelector(userPreferences.selectors.getLocation);
 
   const onPress = useCallback(
-    (country: ElectricityEnum) => {
+    (country: ElectricityType) => {
       dispatch(userPreferences.actions.updateLocation(country));
     },
     [dispatch]
@@ -51,7 +51,7 @@ const MyLocationScreen = () => {
         </Text.Primary>
         <Text.Primary bold green style={styles.carbonIntensity}>
           {calculation.getCarbonIntensityInGramPerKWHromKgPerJoules(
-            electricity[ElectricityEnum[location]]
+            electricity[ElectricityType[location]]
           )}
         </Text.Primary>
         <Text.Primary bold green style={styles.carbonIntensity}>
@@ -59,7 +59,7 @@ const MyLocationScreen = () => {
         </Text.Primary>
       </View>
       <ScrollView style={styles.scrollContainer}>
-        {Object.keys(ElectricityEnum).map((country: ElectricityEnum) => (
+        {Object.keys(ElectricityType).map((country: ElectricityType) => (
           <Country
             key={country}
             selectedCountry={location}

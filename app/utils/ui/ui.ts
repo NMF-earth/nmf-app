@@ -1,9 +1,10 @@
 import { Appearance, Linking, GestureResponderEvent } from "react-native";
 import {
-  TransportEnum,
-  FoodEnum,
-  StreamingEnum,
-  ElectricityEnum,
+  TransportType,
+  FoodType,
+  StreamingType,
+  ElectricityType,
+  PurchaseType,
 } from "carbon-footprint";
 import { contains, __ } from "ramda";
 
@@ -11,7 +12,7 @@ import { EmissionType } from "interfaces";
 
 import { t } from "../translations";
 
-const isElectricityEmission = contains(__, Object.keys(ElectricityEnum));
+const isElectricityEmission = contains(__, Object.keys(ElectricityType));
 
 const getTranslationModelType = (emissionModelType) => {
   if (isElectricityEmission(emissionModelType)) {
@@ -21,45 +22,61 @@ const getTranslationModelType = (emissionModelType) => {
   switch (emissionModelType) {
     case EmissionType.custom:
       return t("UI_CUSTOM");
-    case FoodEnum.redMeat:
+    case FoodType.redMeat:
       return t("UI_RED_MEAT");
-    case FoodEnum.whiteMeat:
+    case FoodType.whiteMeat:
       return t("UI_WHITE_MEAT");
-    case FoodEnum.chocolate:
+    case FoodType.chocolate:
       return t("UI_CHOCOLATE");
-    case FoodEnum.coffee:
+    case FoodType.coffee:
       return t("UI_COFFEE");
-    case FoodEnum.milk:
+    case FoodType.milk:
       return t("UI_MILK");
-    case FoodEnum.cheese:
+    case FoodType.cheese:
       return t("UI_CHEESE");
-    case FoodEnum.eggs:
+    case FoodType.eggs:
       return t("UI_EGGS");
-    case FoodEnum.fish:
+    case FoodType.fish:
       return t("UI_FISH");
-    case TransportEnum.shortHaulFlight:
-    case TransportEnum.mediumHaulFlight:
-    case TransportEnum.longHaulFlight:
-    case TransportEnum.plane:
+    case TransportType.shortHaulFlight:
+    case TransportType.mediumHaulFlight:
+    case TransportType.longHaulFlight:
+    case TransportType.plane:
       return t("UI_PLANE");
-    case TransportEnum.train:
+    case TransportType.train:
       return t("UI_TRAIN");
-    case TransportEnum.car:
+    case TransportType.car:
       return t("UI_CAR");
-    case TransportEnum.boat:
+    case TransportType.boat:
       return t("UI_BOAT");
-    case TransportEnum.motorbike:
+    case TransportType.motorbike:
       return t("UI_MOTORBIKE");
-    case TransportEnum.bus:
+    case TransportType.bus:
       return t("UI_BUS");
-    case StreamingEnum.HDVideo:
+    case StreamingType.HDVideo:
       return t("UI_HD_VIDEO");
-    case StreamingEnum.audioMP3:
+    case StreamingType.audioMP3:
       return t("UI_AUDIO");
-    case StreamingEnum.fullHDVideo:
+    case StreamingType.fullHDVideo:
       return t("UI_FULL_HD_VIDEO");
-    case StreamingEnum.ultraHDVideo:
+    case StreamingType.ultraHDVideo:
       return t("UI_ULTRA_HD_VIDEO");
+    case PurchaseType.computer:
+      return t("UI_COMPUTER");
+    case PurchaseType.eletricCar:
+      return t("UI_ELECTRIC_CAR");
+    case PurchaseType.fossilFuelCar:
+      return t("UI_FOSSIL_FUEL_CAR");
+    case PurchaseType.hybridCar:
+      return t("UI_HYBRID_CAR");
+    case PurchaseType.laptop:
+      return t("UI_LAPTOP");
+    case PurchaseType.smartphone:
+      return t("UI_SMARTPHONE");
+    case PurchaseType.tablet:
+      return t("UI_TABLET");
+    case PurchaseType.tv:
+      return t("UI_TV");
     default:
       return t("UI_CUSTOM");
   }
@@ -73,36 +90,45 @@ const getIconFromModelType = (emissionModelType) => {
   switch (emissionModelType) {
     case EmissionType.custom:
       return "md-build";
-    case FoodEnum.redMeat:
-    case FoodEnum.whiteMeat:
-    case FoodEnum.chocolate:
-    case FoodEnum.fish:
-    case FoodEnum.milk:
-    case FoodEnum.cheese:
-    case FoodEnum.eggs:
+    case FoodType.redMeat:
+    case FoodType.whiteMeat:
+    case FoodType.chocolate:
+    case FoodType.fish:
+    case FoodType.milk:
+    case FoodType.cheese:
+    case FoodType.eggs:
       return "md-restaurant";
-    case FoodEnum.coffee:
+    case FoodType.coffee:
       return "md-cafe";
-    case TransportEnum.shortHaulFlight:
-    case TransportEnum.mediumHaulFlight:
-    case TransportEnum.longHaulFlight:
+    case TransportType.shortHaulFlight:
+    case TransportType.mediumHaulFlight:
+    case TransportType.longHaulFlight:
       return "md-airplane";
-    case TransportEnum.train:
+    case TransportType.train:
       return "md-train";
-    case TransportEnum.car:
+    case TransportType.car:
       return "md-car";
-    case TransportEnum.boat:
+    case TransportType.boat:
       return "md-boat";
-    case TransportEnum.motorbike:
+    case TransportType.motorbike:
       return "md-bicycle";
-    case TransportEnum.bus:
+    case TransportType.bus:
       return "md-bus";
-    case StreamingEnum.audioMP3:
+    case StreamingType.audioMP3:
       return "md-musical-note";
-    case StreamingEnum.HDVideo:
-    case StreamingEnum.fullHDVideo:
-    case StreamingEnum.ultraHDVideo:
+    case StreamingType.HDVideo:
+    case StreamingType.fullHDVideo:
+    case StreamingType.ultraHDVideo:
       return "md-film";
+    case PurchaseType.computer:
+    case PurchaseType.eletricCar:
+    case PurchaseType.fossilFuelCar:
+    case PurchaseType.hybridCar:
+    case PurchaseType.laptop:
+    case PurchaseType.smartphone:
+    case PurchaseType.tablet:
+    case PurchaseType.tv:
+      return "md-card";
     default:
       return "md-build";
   }
