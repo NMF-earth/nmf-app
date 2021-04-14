@@ -5,6 +5,7 @@ import {
   StreamingType,
   ElectricityType,
   PurchaseType,
+  FashionType,
 } from "carbon-footprint";
 import { contains, __ } from "ramda";
 
@@ -77,6 +78,20 @@ const getTranslationModelType = (emissionModelType) => {
       return t("UI_TABLET");
     case PurchaseType.tv:
       return t("UI_TV");
+    case FashionType.coat:
+      return t("UI_COAT");
+    case FashionType.dress:
+      return t("UI_DRESS");
+    case FashionType.jeans:
+      return t("UI_JEANS");
+    case FashionType.shirt:
+      return t("UI_SHIRT");
+    case FashionType.shoes:
+      return t("UI_SHOES");
+    case FashionType.sweater:
+      return t("UI_SWEATER");
+    case FashionType.tshirt:
+      return t("UI_T_SHIRT");
     default:
       return t("UI_CUSTOM");
   }
@@ -129,6 +144,14 @@ const getIconFromModelType = (emissionModelType) => {
     case PurchaseType.tablet:
     case PurchaseType.tv:
       return "md-card";
+    case FashionType.coat:
+    case FashionType.dress:
+    case FashionType.jeans:
+    case FashionType.shirt:
+    case FashionType.shoes:
+    case FashionType.sweater:
+    case FashionType.tshirt:
+      return "md-shirt";
     default:
       return "md-build";
   }

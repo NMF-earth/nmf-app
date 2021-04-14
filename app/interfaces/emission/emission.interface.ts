@@ -4,6 +4,7 @@ import {
   StreamingType,
   ElectricityType,
   PurchaseType,
+  FashionType,
 } from "carbon-footprint";
 
 enum EmissionType {
@@ -12,6 +13,7 @@ enum EmissionType {
   purchase = "purchase",
   streaming = "streaming",
   electricity = "electricity",
+  fashion = "fashion",
   custom = "custom",
 }
 
@@ -21,6 +23,7 @@ type EmissionModel =
   | StreamingType
   | ElectricityType
   | PurchaseType
+  | FashionType
   | "custom";
 
 interface EmissionPayload {

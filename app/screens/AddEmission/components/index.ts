@@ -5,6 +5,7 @@ import Streaming from "./Streaming";
 import Electricity from "./Electricity";
 import AddEmissionButton from "./AddEmissionButton";
 import Purchase from "./Purchase";
+import Fashion from "./Fashion";
 
 export {
   Purchase,
@@ -14,4 +15,5 @@ export {
   Transport,
   Custom,
   AddEmissionButton,
+  Fashion,
 };

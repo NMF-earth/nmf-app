@@ -37,6 +37,13 @@ interface TranslationKeys {
   UI_SMARTPHONE: string;
   UI_TABLET: string;
   UI_TV: string;
+  UI_COAT: string;
+  UI_DRESS: string;
+  UI_JEANS: string;
+  UI_SHIRT: string;
+  UI_SHOES: string;
+  UI_SWEATER: string;
+  UI_T_SHIRT: string;
 }
 
 export { en, fr, de, sv, es, pt, da, ru, pl, TranslationKeys };

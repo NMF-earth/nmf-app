@@ -1,7 +1,14 @@
 import React from "react";
 import { create } from "react-test-renderer";
 import { FormattedProvider } from "react-native-globalize";
-import { FoodType, TransportType, StreamingType } from "carbon-footprint";
+import {
+  FoodType,
+  TransportType,
+  StreamingType,
+  ElectricityType,
+  PurchaseType,
+  FashionType,
+} from "carbon-footprint";
 
 import { ui } from "utils";
 
@@ -230,6 +237,42 @@ it("EmissionsListItem renders correctly with ultra hd video icon", () => {
       <EmissionsListItem
         {...props}
         iconName={ui.getIconFromModelType(StreamingType.ultraHDVideo)}
+      />
+    </FormattedProvider>
+  ).toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it("EmissionsListItem renders correctly with electricity icon", () => {
+  const tree = create(
+    <FormattedProvider locale="en">
+      <EmissionsListItem
+        {...props}
+        iconName={ui.getIconFromModelType(ElectricityType.europe)}
+      />
+    </FormattedProvider>
+  ).toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it("EmissionsListItem renders correctly with card icon", () => {
+  const tree = create(
+    <FormattedProvider locale="en">
+      <EmissionsListItem
+        {...props}
+        iconName={ui.getIconFromModelType(PurchaseType.computer)}
+      />
+    </FormattedProvider>
+  ).toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it("EmissionsListItem renders correctly with shirt icon", () => {
+  const tree = create(
+    <FormattedProvider locale="en">
+      <EmissionsListItem
+        {...props}
+        iconName={ui.getIconFromModelType(FashionType.coat)}
       />
     </FormattedProvider>
   ).toJSON();

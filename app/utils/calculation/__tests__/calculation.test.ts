@@ -8,6 +8,10 @@ import {
   transport,
   electricity,
   getInternetUsageCarbonImpact,
+  FashionType,
+  PurchaseType,
+  purchase,
+  fashion,
 } from "carbon-footprint";
 
 import { Emission, EmissionType } from "interfaces";
@@ -47,6 +51,18 @@ const emissionElectricity = {
   emissionType: EmissionType.electricity,
 };
 
+const emissionPurchase = {
+  ...emissionFood,
+  emissionModelType: PurchaseType.computer,
+  emissionType: EmissionType.purchase,
+};
+
+const emissionFashion = {
+  ...emissionFood,
+  emissionModelType: FashionType.coat,
+  emissionType: EmissionType.fashion,
+};
+
 const emissionCustom = {
   ...emissionFood,
   emissionModelType: "custom",
@@ -62,6 +78,16 @@ describe("getC02ValueFromEmission should return the correct co2 emitted value fo
   it("transport emission", () => {
     expect(calculation.getC02ValueFromEmission(emissionTransport)).toEqual(
       transport.boat * emissionTransport.value
+    );
+  });
+  it("purchase emission", () => {
+    expect(calculation.getC02ValueFromEmission(emissionPurchase)).toEqual(
+      purchase.computer * emissionPurchase.value
+    );
+  });
+  it("fashion emission", () => {
+    expect(calculation.getC02ValueFromEmission(emissionFashion)).toEqual(
+      fashion.coat * emissionFashion.value
     );
   });
   it("streaming emission", () => {

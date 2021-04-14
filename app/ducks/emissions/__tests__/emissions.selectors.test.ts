@@ -3,6 +3,8 @@ import {
   TransportType,
   StreamingType,
   ElectricityType,
+  FashionType,
+  PurchaseType,
 } from "carbon-footprint";
 
 import { Emission, EmissionType } from "interfaces";
@@ -62,6 +64,24 @@ const emissionMitigated: Emission = {
   isMitigated: true,
 };
 
+const emissionPurchase: Emission = {
+  id: "6",
+  creationDate: "2020-02-22T11:04:55.334Z",
+  emissionModelType: PurchaseType.computer,
+  emissionType: EmissionType.purchase,
+  isMitigated: false,
+  value: 249,
+};
+
+const emissionFashion: Emission = {
+  id: "7",
+  creationDate: "2020-03-21T11:04:55.334Z",
+  emissionModelType: FashionType.coat,
+  emissionType: EmissionType.fashion,
+  isMitigated: false,
+  value: 29,
+};
+
 describe("if there are emissions", () => {
   beforeEach(() => {
     state = {
@@ -72,6 +92,8 @@ describe("if there are emissions", () => {
         emissionTransport,
         emissionStreaming,
         emissionElectricity,
+        emissionFashion,
+        emissionPurchase,
       ],
     };
   });
@@ -93,6 +115,8 @@ describe("if there are emissions", () => {
       emissionTransport,
       emissionStreaming,
       emissionElectricity,
+      emissionFashion,
+      emissionPurchase,
     ]));
 
   test("`getCustomEmissions` should return custom emissions", () =>
@@ -121,11 +145,23 @@ describe("if there are emissions", () => {
       emissionElectricity,
     ]));
 
+  test("`getPurchaseEmissions` should return electricity emissions", () =>
+    expect(emissions.selectors.getPurchaseEmissions(state)).toEqual([
+      emissionPurchase,
+    ]));
+
+  test("`getFashionEmissions` should return electricity emissions", () =>
+    expect(emissions.selectors.getFashionEmissions(state)).toEqual([
+      emissionFashion,
+    ]));
+
   test("`getOtherEmissions` should return streaming and custom emissions", () =>
     expect(emissions.selectors.getOtherEmissions(state)).toEqual([
       emissionCustom,
       emissionStreaming,
       emissionElectricity,
+      emissionFashion,
+      emissionPurchase,
     ]));
 });
 
@@ -159,4 +195,10 @@ describe("if there are no emissions", () => {
 
   test("`getElectricityEmissions` should return mitigated no emission", () =>
     expect(emissions.selectors.getElectricityEmissions(state)).toEqual([]));
+
+  test("`getPurchaseEmissions` should return mitigated no emission", () =>
+    expect(emissions.selectors.getPurchaseEmissions(state)).toEqual([]));
+
+  test("`getFashionEmissions` should return mitigated no emission", () =>
+    expect(emissions.selectors.getFashionEmissions(state)).toEqual([]));
 });

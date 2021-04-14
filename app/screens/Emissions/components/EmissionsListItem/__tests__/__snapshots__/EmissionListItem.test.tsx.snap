@@ -495,6 +495,103 @@ exports[`EmissionsListItem renders correctly with car icon 1`] = `
 </FormattedProvider>
 `;
 
+exports[`EmissionsListItem renders correctly with card icon 1`] = `
+<FormattedProvider
+  locale="en"
+>
+  <TouchableOpacity
+    onPress={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "marginVertical": 6,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "justifyContent": "center",
+          "marginLeft": 7,
+          "marginRight": 7,
+          "position": "absolute",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#CED4DA60",
+            "borderRadius": 17,
+            "height": 34,
+            "position": "absolute",
+            "width": 34,
+          }
+        }
+      />
+      <Ionicons
+        color="#595D58"
+        name="md-card"
+        size={22}
+        style={
+          Object {
+            "marginHorizontal": 14,
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "marginLeft": 62,
+        }
+      }
+    >
+      <Text.Primary
+        numberOfLines={1}
+      >
+        170 g of red meat
+      </Text.Primary>
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+            "marginVertical": 2,
+          }
+        }
+      >
+        <Text.Tertiary
+          lightGray={true}
+          numberOfLines={1}
+        >
+          <FormattedNumber
+            maximumFractionDigits={2}
+            value={2.1}
+          />
+           
+          kgCO2
+        </Text.Tertiary>
+      </View>
+    </View>
+    <Ionicons
+      color="#111714"
+      name="ios-chevron-forward-outline"
+      size={18}
+      style={
+        Object {
+          "marginHorizontal": 14,
+        }
+      }
+    />
+  </TouchableOpacity>
+</FormattedProvider>
+`;
+
 exports[`EmissionsListItem renders correctly with chocolate icon 1`] = `
 <FormattedProvider
   locale="en"
@@ -633,6 +730,103 @@ exports[`EmissionsListItem renders correctly with coffee icon 1`] = `
       <Ionicons
         color="#595D58"
         name="md-cafe"
+        size={22}
+        style={
+          Object {
+            "marginHorizontal": 14,
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "marginLeft": 62,
+        }
+      }
+    >
+      <Text.Primary
+        numberOfLines={1}
+      >
+        170 g of red meat
+      </Text.Primary>
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+            "marginVertical": 2,
+          }
+        }
+      >
+        <Text.Tertiary
+          lightGray={true}
+          numberOfLines={1}
+        >
+          <FormattedNumber
+            maximumFractionDigits={2}
+            value={2.1}
+          />
+           
+          kgCO2
+        </Text.Tertiary>
+      </View>
+    </View>
+    <Ionicons
+      color="#111714"
+      name="ios-chevron-forward-outline"
+      size={18}
+      style={
+        Object {
+          "marginHorizontal": 14,
+        }
+      }
+    />
+  </TouchableOpacity>
+</FormattedProvider>
+`;
+
+exports[`EmissionsListItem renders correctly with electricity icon 1`] = `
+<FormattedProvider
+  locale="en"
+>
+  <TouchableOpacity
+    onPress={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "marginVertical": 6,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "justifyContent": "center",
+          "marginLeft": 7,
+          "marginRight": 7,
+          "position": "absolute",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#CED4DA60",
+            "borderRadius": 17,
+            "height": 34,
+            "position": "absolute",
+            "width": 34,
+          }
+        }
+      />
+      <Ionicons
+        color="#595D58"
+        name="md-flash"
         size={22}
         style={
           Object {
@@ -1312,6 +1506,103 @@ exports[`EmissionsListItem renders correctly with redMeat icon 1`] = `
       <Ionicons
         color="#595D58"
         name="md-restaurant"
+        size={22}
+        style={
+          Object {
+            "marginHorizontal": 14,
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "marginLeft": 62,
+        }
+      }
+    >
+      <Text.Primary
+        numberOfLines={1}
+      >
+        170 g of red meat
+      </Text.Primary>
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+            "marginVertical": 2,
+          }
+        }
+      >
+        <Text.Tertiary
+          lightGray={true}
+          numberOfLines={1}
+        >
+          <FormattedNumber
+            maximumFractionDigits={2}
+            value={2.1}
+          />
+           
+          kgCO2
+        </Text.Tertiary>
+      </View>
+    </View>
+    <Ionicons
+      color="#111714"
+      name="ios-chevron-forward-outline"
+      size={18}
+      style={
+        Object {
+          "marginHorizontal": 14,
+        }
+      }
+    />
+  </TouchableOpacity>
+</FormattedProvider>
+`;
+
+exports[`EmissionsListItem renders correctly with shirt icon 1`] = `
+<FormattedProvider
+  locale="en"
+>
+  <TouchableOpacity
+    onPress={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "marginVertical": 6,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "justifyContent": "center",
+          "marginLeft": 7,
+          "marginRight": 7,
+          "position": "absolute",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#CED4DA60",
+            "borderRadius": 17,
+            "height": 34,
+            "position": "absolute",
+            "width": 34,
+          }
+        }
+      />
+      <Ionicons
+        color="#595D58"
+        name="md-shirt"
         size={22}
         style={
           Object {

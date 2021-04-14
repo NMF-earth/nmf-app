@@ -21,6 +21,12 @@ const isTransportEmission = (emission) =>
 const isFoodEmission = (emission) =>
   emission.emissionType === EmissionType.food;
 
+const isPurchaseEmission = (emission) =>
+  emission.emissionType === EmissionType.purchase;
+
+const isFashionEmission = (emission) =>
+  emission.emissionType === EmissionType.fashion;
+
 const isStreamingEmission = (emission) =>
   emission.emissionType === EmissionType.streaming;
 
@@ -34,6 +40,7 @@ const isOtherEmission = (emission) =>
   emission.emissionType === EmissionType.custom ||
   emission.emissionType === EmissionType.streaming ||
   emission.emissionType === EmissionType.electricity ||
+  emission.emissionType === EmissionType.fashion ||
   emission.emissionType === EmissionType.purchase;
 
 const getTransportEmissions = pipe(
@@ -53,6 +60,10 @@ const getElectricityEmissions = pipe(
   filter(isElectricityEmission)
 );
 
+const getPurchaseEmissions = pipe(getAllEmissions, filter(isPurchaseEmission));
+
+const getFashionEmissions = pipe(getAllEmissions, filter(isFashionEmission));
+
 const getCustomEmissions = pipe(getAllEmissions, filter(isCustomEmission));
 
 const getOtherEmissions = pipe(getAllEmissions, filter(isOtherEmission));
@@ -63,6 +74,8 @@ export default {
   getFoodEmissions,
   getStreamingEmissions,
   getElectricityEmissions,
+  getFashionEmissions,
+  getPurchaseEmissions,
   getCustomEmissions,
   getOtherEmissions,
   getEmissionById,

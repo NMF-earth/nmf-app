@@ -3,6 +3,8 @@ import {
   FoodType,
   StreamingType,
   TransportType,
+  PurchaseType,
+  FashionType,
 } from "carbon-footprint";
 import {
   Appearance,
@@ -323,6 +325,115 @@ describe("tests for ui.getIconFromModelType", () => {
 
       // assert
       expect(icon).toBe("md-musical-note");
+    });
+  });
+
+  describe("purchase emission type", () => {
+    it("returns md-card for computer", () => {
+      const emissionModelType = PurchaseType.computer;
+      const icon = ui.getIconFromModelType(emissionModelType);
+
+      expect(icon).toBe("md-card");
+    });
+
+    it("returns md-card for eletricCar", () => {
+      const emissionModelType = PurchaseType.eletricCar;
+      const icon = ui.getIconFromModelType(emissionModelType);
+
+      expect(icon).toBe("md-card");
+    });
+
+    it("returns md-card for fossilFuelCar", () => {
+      const emissionModelType = PurchaseType.fossilFuelCar;
+      const icon = ui.getIconFromModelType(emissionModelType);
+
+      expect(icon).toBe("md-card");
+    });
+
+    it("returns md-card for hybridCar", () => {
+      const emissionModelType = PurchaseType.hybridCar;
+      const icon = ui.getIconFromModelType(emissionModelType);
+
+      expect(icon).toBe("md-card");
+    });
+
+    it("returns md-card for laptop", () => {
+      const emissionModelType = PurchaseType.laptop;
+      const icon = ui.getIconFromModelType(emissionModelType);
+
+      expect(icon).toBe("md-card");
+    });
+
+    it("returns md-card for smartphone", () => {
+      const emissionModelType = PurchaseType.smartphone;
+      const icon = ui.getIconFromModelType(emissionModelType);
+
+      expect(icon).toBe("md-card");
+    });
+
+    it("returns md-card for tablet", () => {
+      const emissionModelType = PurchaseType.tablet;
+      const icon = ui.getIconFromModelType(emissionModelType);
+
+      expect(icon).toBe("md-card");
+    });
+
+    it("returns md-card for tv", () => {
+      const emissionModelType = PurchaseType.tv;
+      const icon = ui.getIconFromModelType(emissionModelType);
+
+      expect(icon).toBe("md-card");
+    });
+  });
+
+  describe("fashion emission type", () => {
+    it("returns md-shirt for coat", () => {
+      const emissionModelType = FashionType.coat;
+      const icon = ui.getIconFromModelType(emissionModelType);
+
+      expect(icon).toBe("md-shirt");
+    });
+
+    it("returns md-shirt for dress", () => {
+      const emissionModelType = FashionType.dress;
+      const icon = ui.getIconFromModelType(emissionModelType);
+
+      expect(icon).toBe("md-shirt");
+    });
+
+    it("returns md-shirt for jeans", () => {
+      const emissionModelType = FashionType.jeans;
+      const icon = ui.getIconFromModelType(emissionModelType);
+
+      expect(icon).toBe("md-shirt");
+    });
+
+    it("returns md-shirt for shirt", () => {
+      const emissionModelType = FashionType.shirt;
+      const icon = ui.getIconFromModelType(emissionModelType);
+
+      expect(icon).toBe("md-shirt");
+    });
+
+    it("returns md-shirt for shoes", () => {
+      const emissionModelType = FashionType.shoes;
+      const icon = ui.getIconFromModelType(emissionModelType);
+
+      expect(icon).toBe("md-shirt");
+    });
+
+    it("returns md-shirt for sweater", () => {
+      const emissionModelType = FashionType.sweater;
+      const icon = ui.getIconFromModelType(emissionModelType);
+
+      expect(icon).toBe("md-shirt");
+    });
+
+    it("returns md-shirt for tshirt", () => {
+      const emissionModelType = FashionType.tshirt;
+      const icon = ui.getIconFromModelType(emissionModelType);
+
+      expect(icon).toBe("md-shirt");
     });
   });
 
