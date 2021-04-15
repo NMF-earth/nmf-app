@@ -1,5 +1,5 @@
 import React from "react";
-import { ScrollView } from "react-native";
+import { ScrollView, Alert } from "react-native";
 
 import { Text, Button } from "components";
 import { t } from "utils";
@@ -28,7 +28,25 @@ const MyDataScreen = () => {
         style={styles.button}
         textType={"Primary"}
         onPress={() => {
-          //do nothing.
+          Alert.alert(
+            t("MY_DATA_SCREEN_ALERT_CONFIRM"),
+            t("MY_DATA_SCREEN_ALERT_CONFIRM_IMPORT"),
+            [
+              {
+                text: t("MY_DATA_SCREEN_CANCEL"),
+                style: "cancel",
+                onPress: () => {
+                  //do nothing.
+                },
+              },
+              {
+                text: t("MY_DATA_SCREEN_OK"),
+                onPress: () => {
+                  //do nothing.
+                },
+              },
+            ]
+          );
         }}
       >
         <Text.Primary numberOfLines={1} center green bold>
@@ -40,7 +58,25 @@ const MyDataScreen = () => {
         style={styles.button}
         textType={"Primary"}
         onPress={() => {
-          //do nothing.
+          Alert.alert(
+            t("MY_DATA_SCREEN_ALERT_CONFIRM"),
+            t("MY_DATA_SCREEN_ALERT_CONFIRM_DELETE"),
+            [
+              {
+                text: t("MY_DATA_SCREEN_CANCEL"),
+                onPress: () => {
+                  //do nothing.
+                },
+              },
+              {
+                style: "destructive",
+                text: t("MY_DATA_SCREEN_OK"),
+                onPress: () => {
+                  //do nothing.
+                },
+              },
+            ]
+          );
         }}
       >
         <Text.Primary numberOfLines={1} center white bold>
