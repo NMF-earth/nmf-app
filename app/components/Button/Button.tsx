@@ -16,6 +16,7 @@ type Props = {
   fullWidth?: boolean;
   textType: ButtonType;
   black?: boolean;
+  red?: boolean;
   onPress: () => void;
 };
 
@@ -25,7 +26,7 @@ interface ButtonFactory {
 
 const buttonFactory: ButtonFactory = (type) => (props) => {
   const customStyle = [mainStyle.default, styles[type].default, props.style];
-  const { fullWidth, children, textType, black, onPress } = props;
+  const { fullWidth, children, textType, black, red, onPress } = props;
 
   if (fullWidth) {
     customStyle.push(mainStyle.fullWidth);
@@ -33,6 +34,10 @@ const buttonFactory: ButtonFactory = (type) => (props) => {
 
   if (black) {
     customStyle.push(mainStyle.black);
+  }
+
+  if (red) {
+    customStyle.push(mainStyle.red);
   }
 
   const additionalStyle = {

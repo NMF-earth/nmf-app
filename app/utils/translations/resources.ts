@@ -15,6 +15,7 @@ import * as About from "../../screens/About/translations";
 import * as SupportUs from "../../screens/SupportUs/translations";
 import * as MyLocation from "../../screens/MyLocation/translations";
 import * as ActDetail from "../../screens/ActDetail/translations";
+import * as MyData from "../../screens/MyDataScreen/translations";
 
 /* COMPONENTS */
 import * as NoEmission from "components/NoEmission/translations";
@@ -40,6 +41,7 @@ const en = {
   ...SupportUs.en,
   ...MyLocation.en,
   ...ActDetail.en,
+  ...MyData.en,
 };
 
 const de = {
@@ -59,6 +61,7 @@ const de = {
   ...SupportUs.de,
   ...MyLocation.de,
   ...ActDetail.de,
+  ...MyData.de,
 };
 
 const fr = {
@@ -79,6 +82,7 @@ const fr = {
   ...SupportUs.fr,
   ...MyLocation.fr,
   ...ActDetail.fr,
+  ...MyData.fr,
 };
 
 const sv = {
@@ -99,6 +103,7 @@ const sv = {
   ...SupportUs.sv,
   ...MyLocation.sv,
   ...ActDetail.sv,
+  ...MyData.sv,
 };
 
 const pt = {
@@ -118,6 +123,7 @@ const pt = {
   ...SupportUs.pt,
   ...MyLocation.pt,
   ...ActDetail.pt,
+  ...MyData.pt,
 };
 
 const es = {
@@ -137,6 +143,7 @@ const es = {
   ...SupportUs.es,
   ...MyLocation.es,
   ...ActDetail.es,
+  ...MyData.es,
 };
 
 const ru = {
@@ -156,6 +163,7 @@ const ru = {
   ...SupportUs.ru,
   ...MyLocation.ru,
   ...ActDetail.ru,
+  ...MyData.ru,
 };
 
 const pl = {
@@ -175,6 +183,7 @@ const pl = {
   ...SupportUs.pl,
   ...MyLocation.pl,
   ...ActDetail.pl,
+  ...MyData.pl,
 };
 
 const da = {
@@ -194,6 +203,7 @@ const da = {
   ...SupportUs.da,
   ...MyLocation.da,
   ...ActDetail.da,
+  ...MyData.da,
 };
 
 export interface TranslationKeys
@@ -213,6 +223,7 @@ export interface TranslationKeys
     Notifications.TranslationKeys,
     MyLocation.TranslationKeys,
     SupportUs.TranslationKeys,
+    MyData.TranslationKeys,
     ActDetail.TranslationKeys {}
 
 export { en, de, fr, sv, pt, es, pl, ru, da };

@@ -9,11 +9,6 @@ import styles from "./SocialMedia.styles";
 
 const socialMedia = [
   {
-    iconName: "slack",
-    url:
-      "https://join.slack.com/t/not-my-fault/shared_invite/enQtODMzMzcyNjExMzc3LTVlNDQwMTA0OGUxMmJmNTE4MTA4MTgwZGZmNTBiZmRhNTcxY2FlN2MzZGQyMmRjZDVjN2Q2MjFlNzE4ZGI5ZTI",
-  },
-  {
     iconName: "github",
     url: "https://github.com/NMF-earth",
   },

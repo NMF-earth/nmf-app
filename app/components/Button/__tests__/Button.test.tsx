@@ -21,6 +21,24 @@ it("renders correctly full width Primary Button with Primary font", () => {
   expect(tree).toMatchSnapshot();
 });
 
+it("renders correctly full width Primary Button with black color", () => {
+  const tree = create(
+    <Button.Primary black fullWidth onPress={foo} textType={"Primary"}>
+      <Text.Primary>test</Text.Primary>
+    </Button.Primary>
+  ).toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it("renders correctly full width Primary Button with red color", () => {
+  const tree = create(
+    <Button.Primary red fullWidth onPress={foo} textType={"Primary"}>
+      <Text.Primary>test</Text.Primary>
+    </Button.Primary>
+  ).toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
 it("renders correctly Primary Button with Secondary font", () => {
   const tree = create(
     <Button.Primary onPress={foo} textType={"Secondary"}>

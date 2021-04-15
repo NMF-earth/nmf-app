@@ -27,6 +27,10 @@ const SettingsScreen = (props) => {
       onPress: navigator.openAbout,
     },
     {
+      title: t("SETTINGS_SCREEN_IMPORT_SAVE_DELETE_DATA"),
+      onPress: navigator.openMyData,
+    },
+    {
       title: t("SETTINGS_SCREEN_NOTIFICATIONS"),
       onPress: navigator.openNotifications,
       os: "ios",

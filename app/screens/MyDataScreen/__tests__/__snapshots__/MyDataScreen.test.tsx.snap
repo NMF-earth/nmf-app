@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MyDataScreen renders correctly 1`] = `
+<RCTScrollView
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "flex": 1,
+      "paddingHorizontal": 14,
+    }
+  }
+>
+  <View>
+    <Text.Primary
+      style={
+        Object {
+          "marginTop": 12,
+          "paddingVertical": 10,
+        }
+      }
+    >
+      With NMF.earth, you own your data. It means that we don't save your data on any server and therefore that no one but you can access it. No security problem, your data never leaves your phone. However, it also means that you are in charge of saving your data in case you loose your phone for example. To do so, use the export button below to get your data and save it where ever you want to. When you want to import old data, just press the import button but be careful because it will also delete your old data.
+    </Text.Primary>
+    <Button.Primary
+      onPress={[Function]}
+      style={
+        Object {
+          "marginTop": 20,
+        }
+      }
+      textType="Primary"
+    >
+      <Text.Primary
+        bold={true}
+        center={true}
+        numberOfLines={1}
+        white={true}
+      >
+        Export my data
+      </Text.Primary>
+    </Button.Primary>
+    <Button.Secondary
+      onPress={[Function]}
+      style={
+        Object {
+          "marginTop": 20,
+        }
+      }
+      textType="Primary"
+    >
+      <Text.Primary
+        bold={true}
+        center={true}
+        green={true}
+        numberOfLines={1}
+      >
+        Import data
+      </Text.Primary>
+    </Button.Secondary>
+    <Button.Primary
+      onPress={[Function]}
+      red={true}
+      style={
+        Object {
+          "marginTop": 20,
+        }
+      }
+      textType="Primary"
+    >
+      <Text.Primary
+        bold={true}
+        center={true}
+        numberOfLines={1}
+        white={true}
+      >
+        Delete all my data
+      </Text.Primary>
+    </Button.Primary>
+  </View>
+</RCTScrollView>
+`;

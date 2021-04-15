@@ -92,6 +92,82 @@ exports[`renders correctly full width Primary Button with Primary font 1`] = `
 </TouchableOpacity>
 `;
 
+exports[`renders correctly full width Primary Button with black color 1`] = `
+<TouchableOpacity
+  black={true}
+  fullWidth={true}
+  onPress={[Function]}
+  style={
+    Array [
+      Array [
+        Object {
+          "paddingHorizontal": 36,
+        },
+        Object {
+          "backgroundColor": "#4BB377",
+        },
+        undefined,
+        Object {
+          "alignItems": "center",
+          "paddingHorizontal": 0,
+          "width": "100%",
+        },
+        Object {
+          "backgroundColor": "#111714",
+        },
+      ],
+      Object {
+        "borderRadius": 42,
+        "paddingVertical": 12,
+      },
+    ]
+  }
+  textType="Primary"
+>
+  <Text.Primary>
+    test
+  </Text.Primary>
+</TouchableOpacity>
+`;
+
+exports[`renders correctly full width Primary Button with red color 1`] = `
+<TouchableOpacity
+  fullWidth={true}
+  onPress={[Function]}
+  red={true}
+  style={
+    Array [
+      Array [
+        Object {
+          "paddingHorizontal": 36,
+        },
+        Object {
+          "backgroundColor": "#4BB377",
+        },
+        undefined,
+        Object {
+          "alignItems": "center",
+          "paddingHorizontal": 0,
+          "width": "100%",
+        },
+        Object {
+          "backgroundColor": "#FA4646",
+        },
+      ],
+      Object {
+        "borderRadius": 42,
+        "paddingVertical": 12,
+      },
+    ]
+  }
+  textType="Primary"
+>
+  <Text.Primary>
+    test
+  </Text.Primary>
+</TouchableOpacity>
+`;
+
 exports[`renders correctly full width Secondary Button with Primary font 1`] = `
 <TouchableOpacity
   fullWidth={true}

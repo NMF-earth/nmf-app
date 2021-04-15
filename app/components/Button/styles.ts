@@ -9,6 +9,9 @@ export default StyleSheet.create({
   black: {
     backgroundColor: Colors.grey100,
   },
+  red: {
+    backgroundColor: Colors.red50,
+  },
   fullWidth: {
     width: "100%",
     alignItems: "center",

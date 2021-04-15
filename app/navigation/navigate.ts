@@ -48,6 +48,10 @@ const openSupportUs = (navigation) => (props = {}) => {
   navigation.push("SupportUs", props);
 };
 
+const openMyData = (navigation) => (props = {}) => {
+  navigation.push("MyData", props);
+};
+
 const openStorybook = (navigation) => (props = {}) => {
   navigation.push("Storybook", props);
 };
@@ -58,6 +62,7 @@ const openBudget = (navigation) => (props = {}) => {
 
 const navigate = (navigation) => ({
   goBack: navigation.goBack,
+  openMyData: navigateOneTime(openMyData(navigation)),
   openComingSoon: navigateOneTime(openComingSoon(navigation)),
   openInfoModal: navigateOneTime(openInfoModal(navigation)),
   openBudget: navigateOneTime(openBudget(navigation)),
