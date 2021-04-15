@@ -8,5 +8,7 @@
   "MY_DATA_SCREEN_ALERT_CONFIRM_IMPORT": "This action will replace current data",
   "MY_DATA_SCREEN_ALERT_CONFIRM_DELETE": "This action will delete all your data",
   "MY_DATA_SCREEN_CANCEL": "Cancel",
-  "MY_DATA_SCREEN_OK": "Ok"
+  "MY_DATA_SCREEN_OK": "Ok",
+  "MY_DATA_SCREEN_DELETE_SUCCESSFUL": "We have successully deleted your emissions.",
+  "MY_DATA_SCREEN_GENERIC_ERROR": "Something went wrong."
 }

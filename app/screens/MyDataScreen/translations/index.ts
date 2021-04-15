@@ -19,6 +19,8 @@ interface TranslationKeys {
   MY_DATA_SCREEN_ALERT_CONFIRM_DELETE: string;
   MY_DATA_SCREEN_CANCEL: string;
   MY_DATA_SCREEN_OK: string;
+  MY_DATA_SCREEN_DELETE_SUCCESSFUL: string;
+  MY_DATA_SCREEN_GENERIC_ERROR: string;
 }
 
 export { en, fr, de, sv, es, pt, da, ru, pl, TranslationKeys };

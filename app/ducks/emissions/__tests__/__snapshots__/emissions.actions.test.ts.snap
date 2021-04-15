@@ -3,6 +3,8 @@
 exports[`Emissions actions should export expected actions 1`] = `
 Object {
   "createEmission": [Function],
+  "deleteAllEmissions": [Function],
   "deleteEmissionById": [Function],
+  "loadEmissionsFromImport": [Function],
 }
 `;
