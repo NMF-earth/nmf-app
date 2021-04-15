@@ -67,23 +67,22 @@ const MyDataScreen = () => {
                   userPreferences: { location },
                 } = data;
 
-                if (monthlyCarbonBudget) {
+                if (monthlyCarbonBudget && location && emissions) {
                   dispatch(
                     budget.actions.setMonthlyCarbonBudget(monthlyCarbonBudget)
                   );
-                }
-
-                if (emissions) {
                   dispatch(
                     emissionsDucks.actions.loadEmissionsFromImport(emissions)
                   );
-                }
-
-                if (location) {
                   dispatch(userPreferences.actions.updateLocation(location));
+                } else {
+                  throw `monthlyCarbonBudget :${!!monthlyCarbonBudget}, location: ${!!location}, emissions: ${!!emissions}`;
                 }
               } catch (error) {
-                Alert.alert(t("MY_DATA_SCREEN_GENERIC_ERROR"), error.message);
+                Alert.alert(
+                  t("MY_DATA_SCREEN_GENERIC_ERROR"),
+                  JSON.stringify(error.message ? error.message : error)
+                );
               }
             }
           },
