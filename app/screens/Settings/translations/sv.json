@@ -1,12 +1,13 @@
 {
-	"SETTINGS_SCREEN_ABOUT": "Om appen",
-	"SETTINGS_SCREEN_MY_LOCATION": "My Location",
-	"SETTINGS_SCREEN_NOTIFICATIONS": "Notifications",
-	"SETTINGS_SCREEN_APP_VERSION": "Version %{version}",
-	"SETTINGS_SCREEN_FEEDBACK": "Synpunkter",
-	"SETTINGS_SCREEN_ROADMAP": "Utvecklingsplan",
-	"SETTINGS_SCREEN_SUPPORT_US": "Stöd oss!",
-	"SETTINGS_SCREEN_TAB_NAME": "Inställningar",
-	"SETTINGS_SCREEN_TERMS_OF_USE": "Villkor",
-	"SETTINGS_SCREEN_TITLE": "Inställningar"
+  "SETTINGS_SCREEN_ABOUT": "Om appen",
+  "SETTINGS_SCREEN_MY_LOCATION": "My Location",
+  "SETTINGS_SCREEN_NOTIFICATIONS": "Notifications",
+  "SETTINGS_SCREEN_APP_VERSION": "Version %{version}",
+  "SETTINGS_SCREEN_FEEDBACK": "Synpunkter",
+  "SETTINGS_SCREEN_ROADMAP": "Utvecklingsplan",
+  "SETTINGS_SCREEN_SUPPORT_US": "Stöd oss!",
+  "SETTINGS_SCREEN_TAB_NAME": "Inställningar",
+  "SETTINGS_SCREEN_TERMS_OF_USE": "Villkor",
+  "SETTINGS_SCREEN_TITLE": "Inställningar",
+  "SETTINGS_SCREEN_IMPORT_SAVE_DELETE_DATA": "Import, save and delete data"
 }

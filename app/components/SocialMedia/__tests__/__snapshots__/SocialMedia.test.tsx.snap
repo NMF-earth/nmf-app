@@ -17,20 +17,11 @@ exports[`renders correctly SocialMedia 1`] = `
         "flex": 1,
         "flexDirection": "row",
         "justifyContent": "space-between",
-        "maxWidth": 300,
+        "maxWidth": 200,
         "paddingBottom": 50,
       }
     }
   >
-    <TouchableOpacity
-      onPress={[Function]}
-    >
-      <View
-        color="#595D58"
-        name="slack"
-        size={32}
-      />
-    </TouchableOpacity>
     <TouchableOpacity
       onPress={[Function]}
     >

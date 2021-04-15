@@ -1,12 +1,13 @@
 {
-	"SETTINGS_SCREEN_TAB_NAME": "Paramètres",
-	"SETTINGS_SCREEN_TITLE": "Paramètres",
-	"SETTINGS_SCREEN_ABOUT": "A propos",
-	"SETTINGS_SCREEN_NOTIFICATIONS": "Notifications",
-	"SETTINGS_SCREEN_MY_LOCATION": "Localisation",
-	"SETTINGS_SCREEN_SUPPORT_US": "Nous soutenir!",
-	"SETTINGS_SCREEN_ROADMAP": "Feuille de route",
-	"SETTINGS_SCREEN_FEEDBACK": "Vos retours",
-	"SETTINGS_SCREEN_TERMS_OF_USE": "Conditions d'utilisation",
-	"SETTINGS_SCREEN_APP_VERSION": "Version %{version}"
+  "SETTINGS_SCREEN_TAB_NAME": "Paramètres",
+  "SETTINGS_SCREEN_TITLE": "Paramètres",
+  "SETTINGS_SCREEN_ABOUT": "A propos",
+  "SETTINGS_SCREEN_NOTIFICATIONS": "Notifications",
+  "SETTINGS_SCREEN_MY_LOCATION": "Localisation",
+  "SETTINGS_SCREEN_SUPPORT_US": "Nous soutenir!",
+  "SETTINGS_SCREEN_ROADMAP": "Feuille de route",
+  "SETTINGS_SCREEN_FEEDBACK": "Vos retours",
+  "SETTINGS_SCREEN_TERMS_OF_USE": "Conditions d'utilisation",
+  "SETTINGS_SCREEN_APP_VERSION": "Version %{version}",
+  "SETTINGS_SCREEN_IMPORT_SAVE_DELETE_DATA": "Import, save and delete data"
 }

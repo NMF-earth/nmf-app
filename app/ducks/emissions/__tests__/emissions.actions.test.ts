@@ -34,4 +34,43 @@ describe("Emissions actions should", () => {
 
     expect(emissions.actions.deleteEmissionById("123")).toEqual(expectedAction);
   });
+
+  it("be able to load emissions", () => {
+    const emissionsList: Array<Emission> = [
+      {
+        id: "1",
+        creationDate: "2020-01-26T11:04:55.334Z",
+        emissionType: EmissionType.transport,
+        emissionModelType: TransportType.boat,
+        value: 200,
+        isMitigated: false,
+      },
+      {
+        id: "2",
+        creationDate: "2020-02-26T11:04:55.334Z",
+        emissionType: EmissionType.transport,
+        emissionModelType: TransportType.bus,
+        value: 100,
+        isMitigated: false,
+      },
+    ];
+
+    const expectedAction = {
+      type: emissions.actions.loadEmissionsFromImport.toString(),
+      payload: emissionsList,
+    };
+
+    expect(emissions.actions.loadEmissionsFromImport(emissionsList)).toEqual(
+      expectedAction
+    );
+  });
+
+  it("be able to delete all emissions", () => {
+    const expectedAction = {
+      type: emissions.actions.deleteAllEmissions.toString(),
+      payload: undefined,
+    };
+
+    expect(emissions.actions.deleteAllEmissions()).toEqual(expectedAction);
+  });
 });

@@ -1,0 +1,14 @@
+{
+  "MY_DATA_SCREEN_TITLE": "My Data",
+  "MY_DATA_SCREEN_BODY": "With NMF.earth, you own your data. It means that we don't save your data on any server and therefore that no one but you can access it. No security problem, your data never leaves your phone. However, it also means that you are in charge of saving your data in case you loose your phone for example. To do so, use the export button below to get your data and save it where ever you want to. When you want to import old data, just press the import button but be careful because it will also delete your old data.",
+  "MY_DATA_SCREEN_EXPORT_MY_DATA": "Export my data",
+  "MY_DATA_SCREEN_IMPORT_DATA": "Import data",
+  "MY_DATA_SCREEN_DELETE_ALL_MY_DATA": "Delete all my data",
+  "MY_DATA_SCREEN_ALERT_CONFIRM": "Confirm",
+  "MY_DATA_SCREEN_ALERT_CONFIRM_IMPORT": "This action will replace current data",
+  "MY_DATA_SCREEN_ALERT_CONFIRM_DELETE": "This action will delete all your data",
+  "MY_DATA_SCREEN_CANCEL": "Cancel",
+  "MY_DATA_SCREEN_OK": "Ok",
+  "MY_DATA_SCREEN_DELETE_SUCCESSFUL": "We have successully deleted your emissions.",
+  "MY_DATA_SCREEN_GENERIC_ERROR": "Something went wrong."
+}

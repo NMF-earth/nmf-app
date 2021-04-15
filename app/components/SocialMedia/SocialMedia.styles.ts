@@ -11,7 +11,7 @@ export default StyleSheet.create({
     flex: 1,
     flexDirection: "row",
     justifyContent: "space-between",
-    maxWidth: 300,
+    maxWidth: 200,
     paddingBottom: 50,
   },
 });

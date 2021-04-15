@@ -19,6 +19,8 @@ interface TranslationKeys {
   SETTINGS_SCREEN_TERMS_OF_USE: string;
   SETTINGS_SCREEN_APP_VERSION: string;
   SETTINGS_SCREEN_MY_LOCATION: string;
+  SETTINGS_SCREEN_SAVE_IMPORT_DATA: string;
+  SETTINGS_SCREEN_IMPORT_SAVE_DELETE_DATA: string;
 }
 
 export { en, fr, de, sv, es, pt, da, ru, pl, TranslationKeys };
