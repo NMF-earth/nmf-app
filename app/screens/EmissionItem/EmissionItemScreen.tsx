@@ -9,13 +9,7 @@ import { useNavigation, useRoute } from "@react-navigation/native";
 
 import { Text, Button } from "components";
 import { emissions } from "ducks";
-import {
-  calculation,
-  ui,
-  t,
-  withLocalization,
-  LocalizationContextProps,
-} from "utils";
+import { calculation, ui, t, withLocalization, LocalizationContextProps } from "utils";
 import { navigate } from "navigation";
 
 import styles from "./EmissionItemScreen.styles";
@@ -30,9 +24,7 @@ const EmissionItemScreen = ({ language = "" }: LocalizationContextProps) => {
 
   const dispatch = useDispatch();
 
-  const emission = useSelector((state) =>
-    emissions.selectors.getEmissionById(state, emissionId)
-  );
+  const emission = useSelector((state) => emissions.selectors.getEmissionById(state, emissionId));
 
   const { creationDate, emissionModelType, name } = emission || {
     creationDate: new Date(),
@@ -44,8 +36,7 @@ const EmissionItemScreen = ({ language = "" }: LocalizationContextProps) => {
   const day = date.locale(language).format("dddd");
   const monthAndYear = date.locale(language).format("Do MMMM YYYY");
   const co2Emission = calculation.getC02ValueFromEmission(emission || {});
-  const deleteEmission = () =>
-    dispatch(emissions.actions.deleteEmissionById(emission.id));
+  const deleteEmission = () => dispatch(emissions.actions.deleteEmissionById(emission.id));
 
   useEffect(() => {
     /* Avoid crash right after an emission is deleted */
@@ -87,14 +78,8 @@ const EmissionItemScreen = ({ language = "" }: LocalizationContextProps) => {
               {monthAndYear}
             </Text.Primary>
           </View>
-          <Button.Primary
-            fullWidth
-            onPress={deleteEmission}
-            textType={"Primary"}
-          >
-            <Text.Primary white>
-              {t("EMISSION_ITEM_SCREEN_DELETE_EMISSION")}
-            </Text.Primary>
+          <Button.Primary fullWidth onPress={deleteEmission} textType={"Primary"}>
+            <Text.Primary white>{t("EMISSION_ITEM_SCREEN_DELETE_EMISSION")}</Text.Primary>
           </Button.Primary>
         </ScrollView>
       )}

@@ -18,11 +18,7 @@ const SettingsNavigator = (): React.ReactElement => (
       options={SettingsScreen.navigationOptions}
       component={SettingsScreen}
     />
-    <Stack.Screen
-      name="About"
-      options={AboutScreen.navigationOptions}
-      component={AboutScreen}
-    />
+    <Stack.Screen name="About" options={AboutScreen.navigationOptions} component={AboutScreen} />
     <Stack.Screen
       name="SupportUs"
       options={SupportUsScreen.navigationOptions}
@@ -38,11 +34,7 @@ const SettingsNavigator = (): React.ReactElement => (
       options={NotificationsScreen.navigationOptions}
       component={NotificationsScreen}
     />
-    <Stack.Screen
-      name="MyData"
-      options={MyData.navigationOptions}
-      component={MyData}
-    />
+    <Stack.Screen name="MyData" options={MyData.navigationOptions} component={MyData} />
     <Stack.Screen name="Storybook" component={StorybookScreen} />
   </Stack.Navigator>
 );

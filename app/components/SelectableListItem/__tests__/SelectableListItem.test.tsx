@@ -18,9 +18,7 @@ describe("<SelectableListItem />", () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  const wrapperNotSelected = create(
-    <SelectableListItem selected={false} {...defaultProps} />
-  );
+  const wrapperNotSelected = create(<SelectableListItem selected={false} {...defaultProps} />);
 
   test("render if not selected", () => {
     expect(wrapperNotSelected).toMatchSnapshot();

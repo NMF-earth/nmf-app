@@ -10,8 +10,6 @@ describe("Budget actions should", () => {
       type: budget.actions.setMonthlyCarbonBudget.toString(),
       payload: monthlyCarbonBudget,
     };
-    expect(budget.actions.setMonthlyCarbonBudget(monthlyCarbonBudget)).toEqual(
-      expectedAction
-    );
+    expect(budget.actions.setMonthlyCarbonBudget(monthlyCarbonBudget)).toEqual(expectedAction);
   });
 });

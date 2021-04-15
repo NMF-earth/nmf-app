@@ -20,17 +20,7 @@ interface Props {
 
 export default function Tertiary(props: Props): React.ReactElement {
   const customStyle = [styles.default, props.style];
-  const {
-    white,
-    green,
-    darkGray,
-    lightGray,
-    bold,
-    children,
-    center,
-    lightWeightText,
-    red,
-  } = props;
+  const { white, green, darkGray, lightGray, bold, children, center, lightWeightText, red } = props;
 
   if (darkGray) {
     customStyle.push(mainStyle.darkGray);

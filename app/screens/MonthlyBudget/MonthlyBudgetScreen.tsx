@@ -56,9 +56,7 @@ const MonthlyBudgetScreen = ({ navigation }) => {
     <View style={styles.container}>
       <ScrollView>
         <View style={styles.personnalBudgetContainer}>
-          <Text.Primary bold>
-            {t("MONTHLY_BUDGET_SCREEN_SLIDE_TO_SET")}
-          </Text.Primary>
+          <Text.Primary bold>{t("MONTHLY_BUDGET_SCREEN_SLIDE_TO_SET")}</Text.Primary>
         </View>
         <Slider
           minimumTrackTintColor={Colors.green50}
@@ -70,9 +68,7 @@ const MonthlyBudgetScreen = ({ navigation }) => {
           value={sliderValue}
           onSlidingComplete={setSliderValue}
         />
-        <Text.Primary lightGray>
-          {Math.round(sliderValue) + " kg CO2eq"}
-        </Text.Primary>
+        <Text.Primary lightGray>{Math.round(sliderValue) + " kg CO2eq"}</Text.Primary>
         <View style={styles.worldBudgetContainer}>
           <View style={styles.worldExampleTitle}>
             <Text.Primary bold>

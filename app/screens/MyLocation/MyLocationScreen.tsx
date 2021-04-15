@@ -42,9 +42,7 @@ const MyLocationScreen = () => {
 
   return (
     <View style={styles.container}>
-      <Text.Primary style={styles.intro}>
-        {t("MY_LOCATION_SCREEN_INTRO")}
-      </Text.Primary>
+      <Text.Primary style={styles.intro}>{t("MY_LOCATION_SCREEN_INTRO")}</Text.Primary>
       <View style={styles.carbonIntensityContainer}>
         <Text.Primary style={styles.carbonIntensity}>
           {t("MY_LOCATION_SCREEN_MY_CARBON_INTENSITY")}

@@ -41,11 +41,7 @@ storiesOf("EmissionsListItem", module)
     );
   })
   .add("Emission by transport", () => {
-    const transportValue = select(
-      "Type of Transport",
-      transportOptions,
-      "bike"
-    );
+    const transportValue = select("Type of Transport", transportOptions, "bike");
     return (
       <EmissionsListItem
         {...{

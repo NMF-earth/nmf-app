@@ -16,8 +16,6 @@ it("PeriodBudget renders correctly", () => {
 });
 
 it("PeriodBudget renders correctly if tons", () => {
-  const tree = create(
-    <PeriodBudget periodEmissionsBudget={14340} {...props} />
-  ).toJSON();
+  const tree = create(<PeriodBudget periodEmissionsBudget={14340} {...props} />).toJSON();
   expect(tree).toMatchSnapshot();
 });

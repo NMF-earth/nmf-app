@@ -18,12 +18,8 @@ export default function NoEmission() {
     <ScrollView style={styles.container}>
       <StickersImage sticker="earth" />
       <View style={styles.textView}>
-        <Text.H1 style={styles.header}>
-          {t("NO_EMISSION_COMPONENT_TITLE")}
-        </Text.H1>
-        <Text.Primary style={styles.paragraph}>
-          {t("NO_EMISSION_COMPONENT_THANKS")}
-        </Text.Primary>
+        <Text.H1 style={styles.header}>{t("NO_EMISSION_COMPONENT_TITLE")}</Text.H1>
+        <Text.Primary style={styles.paragraph}>{t("NO_EMISSION_COMPONENT_THANKS")}</Text.Primary>
         <Text.Primary style={styles.paragraph}>
           {t("NO_EMISSION_COMPONENT_START_USING_APP")}
         </Text.Primary>

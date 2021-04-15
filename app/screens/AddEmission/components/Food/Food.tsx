@@ -31,12 +31,7 @@ const TAGS: Array<FoodType> = [
   FoodType.eggs,
 ];
 
-export default ({
-  setFoodType,
-  foodType,
-  setQuantity,
-  defaultValueSlider,
-}: Props) => {
+export default ({ setFoodType, foodType, setQuantity, defaultValueSlider }: Props) => {
   const [sliderValue, setSliderValue] = useState(defaultValueSlider * 1000);
 
   const onSliderValueChange = (value: number) => {
@@ -63,12 +58,8 @@ export default ({
         <View style={styles.separator} />
       </ScrollView>
       <View style={styles.durationContainer}>
-        <Text.H3 style={styles.miniHeader}>
-          {t("ADD_EMISSION_SCREEN_QUANTITY")}
-        </Text.H3>
-        <Text.Primary lightGray>
-          {Math.round(sliderValue) + " grams"}
-        </Text.Primary>
+        <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_SCREEN_QUANTITY")}</Text.H3>
+        <Text.Primary lightGray>{Math.round(sliderValue) + " grams"}</Text.Primary>
       </View>
       <Slider
         minimumTrackTintColor={Colors.green50}
@@ -81,9 +72,7 @@ export default ({
         onSlidingComplete={onSliderValueChange}
       />
       <View style={styles.totalContainer}>
-        <Text.H3 style={styles.miniHeader}>
-          {t("ADD_EMISSION_SCREEN_TOTAL")}
-        </Text.H3>
+        <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_SCREEN_TOTAL")}</Text.H3>
         <Text.H2 blue50>
           <FormattedNumber
             value={(sliderValue / 1000) * food[foodType]}

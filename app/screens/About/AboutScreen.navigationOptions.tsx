@@ -11,9 +11,7 @@ const navigationOptions = () => ({
   },
   headerTintColor: Colors.grey100,
   headerBackTitleVisible: false,
-  headerTitle: () => (
-    <Text.H1 style={Layout.androidNavTitle}>{t("ABOUT_SCREEN_TITLE")}</Text.H1>
-  ),
+  headerTitle: () => <Text.H1 style={Layout.androidNavTitle}>{t("ABOUT_SCREEN_TITLE")}</Text.H1>,
 });
 
 export default navigationOptions;

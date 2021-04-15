@@ -8,12 +8,8 @@ import EmissionsScreen from "./EmissionsScreen";
 import navigationOptions from "./EmissionsScreen.navigationOptions";
 
 const Emissions = () => {
-  const emissionsToMitigate = useSelector(
-    emissions.selectors.getEmissionsToMitigate
-  );
-  const emissionsMitigated = useSelector(
-    emissions.selectors.getEmissionsMitigated
-  );
+  const emissionsToMitigate = useSelector(emissions.selectors.getEmissionsToMitigate);
+  const emissionsMitigated = useSelector(emissions.selectors.getEmissionsMitigated);
 
   if (emissionsToMitigate.length || emissionsMitigated.length) {
     return <EmissionsScreen />;

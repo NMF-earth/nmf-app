@@ -9,13 +9,7 @@ import styles from "./Tag.styles";
 
 interface Props {
   selected: boolean;
-  icon?:
-    | "md-airplane"
-    | "md-restaurant"
-    | "md-build"
-    | "md-play-circle"
-    | "md-flash"
-    | string;
+  icon?: string;
   title: string;
   onPress: () => void;
 }
@@ -23,9 +17,7 @@ interface Props {
 const Tag = (props: Props) => {
   const { selected, onPress, title, icon } = props;
   let iconItem = null;
-  let containterStyle = selected
-    ? styles.containerSelected
-    : styles.containerNotSelected;
+  let containterStyle = selected ? styles.containerSelected : styles.containerNotSelected;
 
   if (icon) {
     containterStyle = { ...containterStyle, ...styles.containerIcon };

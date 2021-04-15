@@ -35,10 +35,7 @@ const SectionHeader = ({
         {moment(date).locale(language).format("MMMM YYYY")}
       </Text.Primary>
       {percentageBudget && (
-        <Text.Secondary
-          red={percentageBudget > 100}
-          green={percentageBudget < 100}
-        >
+        <Text.Secondary red={percentageBudget > 100} green={percentageBudget < 100}>
           {percentageBudget + " % " + t("EMISSIONS_SCREEN_HEADER_OF_BUDGET")}
         </Text.Secondary>
       )}

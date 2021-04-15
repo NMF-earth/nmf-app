@@ -19,9 +19,7 @@ const EmissionsListItem = ({
 }: EmissionsListItemProps) => (
   <TouchableOpacity onPress={onPress} style={styles.container}>
     <View style={styles.iconContainer}>
-      <View
-        style={isMitigated ? styles.mitigatedCircle : styles.notMitigatedCircle}
-      />
+      <View style={isMitigated ? styles.mitigatedCircle : styles.notMitigatedCircle} />
       <Ionicons
         name={iconName}
         size={22}
@@ -30,16 +28,10 @@ const EmissionsListItem = ({
       />
     </View>
     <View style={styles.textContainer}>
-      <Text.Primary numberOfLines={1}>
-        {name.length ? name : title}
-      </Text.Primary>
+      <Text.Primary numberOfLines={1}>{name.length ? name : title}</Text.Primary>
       <View style={styles.detailsContainer}>
         <Text.Tertiary numberOfLines={1} lightGray>
-          <FormattedNumber
-            maximumFractionDigits={co2value >= 1 ? 2 : 4}
-            value={co2value}
-          />{" "}
-          kgCO2
+          <FormattedNumber maximumFractionDigits={co2value >= 1 ? 2 : 4} value={co2value} /> kgCO2
         </Text.Tertiary>
         {isMitigated && (
           <>

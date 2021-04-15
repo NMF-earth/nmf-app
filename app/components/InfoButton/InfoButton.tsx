@@ -17,9 +17,7 @@ const InfoButton = () => {
   const emissionId = pathOr("", ["params", "id"], route);
 
   const { emissionModelType } =
-    useSelector((state) =>
-      emissions.selectors.getEmissionById(state, emissionId)
-    ) || {};
+    useSelector((state) => emissions.selectors.getEmissionById(state, emissionId)) || {};
 
   return (
     <Ionicons

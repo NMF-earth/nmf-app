@@ -10,11 +10,7 @@ const isEmissionInCurrentMonth = (emission) =>
 const isEmissionInCurrentYear = (emission) =>
   moment(emission.creationDate).isSame(new Date(), "year");
 
-const getCarbonValue = pipe(
-  map(calculation.getC02ValueFromEmission),
-  sum,
-  Math.round
-);
+const getCarbonValue = pipe(map(calculation.getC02ValueFromEmission), sum, Math.round);
 
 const getCurrentMonthEmissions = filter(isEmissionInCurrentMonth);
 

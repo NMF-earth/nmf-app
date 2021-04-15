@@ -16,11 +16,7 @@ const SettingsRow = ({ title, onPress }: Props) => {
   return (
     <TouchableOpacity onPress={onPress} style={styles.container}>
       <Text.Secondary bold>{title}</Text.Secondary>
-      <Ionicons
-        name={"ios-chevron-forward-outline"}
-        size={20}
-        color={Colors.grey100}
-      />
+      <Ionicons name={"ios-chevron-forward-outline"} size={20} color={Colors.grey100} />
     </TouchableOpacity>
   );
 };

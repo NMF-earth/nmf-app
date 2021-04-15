@@ -18,14 +18,12 @@ describe("userPreferences selector should", () => {
   });
 
   test("return the monthly userPreferences", () =>
-    expect(
-      userPreferences.selectors.getAcceptedTermsOfUseVersion(state)
-    ).toEqual(initialState.acceptedTermsOfUseVersion));
+    expect(userPreferences.selectors.getAcceptedTermsOfUseVersion(state)).toEqual(
+      initialState.acceptedTermsOfUseVersion
+    ));
 
   test("return user location", () =>
-    expect(userPreferences.selectors.getLocation(state)).toEqual(
-      initialState.location
-    ));
+    expect(userPreferences.selectors.getLocation(state)).toEqual(initialState.location));
 
   test("return notification status", () =>
     expect(userPreferences.selectors.getActivateNotifications(state)).toEqual(

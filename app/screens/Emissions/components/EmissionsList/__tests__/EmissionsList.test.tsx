@@ -38,11 +38,7 @@ const emissionMitigated: Emission = {
 };
 
 const state = {
-  [emissions.namespace]: [
-    emissionNotMitigated,
-    emissionMitigated,
-    emissionNotMitigatedOld,
-  ],
+  [emissions.namespace]: [emissionNotMitigated, emissionMitigated, emissionNotMitigatedOld],
 };
 
 const props = {

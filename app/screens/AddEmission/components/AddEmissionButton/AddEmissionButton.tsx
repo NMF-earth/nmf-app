@@ -29,11 +29,7 @@ const AddEmissionButton = ({ goBack, emissionPayload }: Props) => {
   };
 
   return (
-    <Button.Primary
-      onPress={addEmission}
-      textType={"Primary"}
-      style={styles.button}
-    >
+    <Button.Primary onPress={addEmission} textType={"Primary"} style={styles.button}>
       <Text.Primary white center bold>
         {t("ADD_EMISSION_SCREEN_ADD_THIS_EMISSION")}
       </Text.Primary>

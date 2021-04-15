@@ -39,11 +39,7 @@ const emissionLastYear: Emission = {
 describe("if there are emissions", () => {
   beforeEach(() => {
     state = {
-      [emissions.namespace]: [
-        emissionToday,
-        emissionLastMonth,
-        emissionLastYear,
-      ],
+      [emissions.namespace]: [emissionToday, emissionLastMonth, emissionLastYear],
     };
   });
 

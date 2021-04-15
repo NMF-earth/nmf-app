@@ -162,9 +162,7 @@ it("renders correctly Secondary center", () => {
 });
 
 it("renders correctly Secondary lightWeightText", () => {
-  const tree = create(
-    <Text.Secondary lightWeightText>test</Text.Secondary>
-  ).toJSON();
+  const tree = create(<Text.Secondary lightWeightText>test</Text.Secondary>).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
@@ -211,9 +209,7 @@ it("renders correctly Tertiary center", () => {
 });
 
 it("renders correctly Tertiary lightWeightText", () => {
-  const tree = create(
-    <Text.Tertiary lightWeightText>test</Text.Tertiary>
-  ).toJSON();
+  const tree = create(<Text.Tertiary lightWeightText>test</Text.Tertiary>).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
@@ -225,9 +221,7 @@ it("renders correctly Tertiary red", () => {
 /* Link Tests */
 
 it("renders correctly Link", () => {
-  const tree = create(
-    <Text.Link url="http://nmf.earth">test</Text.Link>
-  ).toJSON();
+  const tree = create(<Text.Link url="http://nmf.earth">test</Text.Link>).toJSON();
   expect(tree).toMatchSnapshot();
 });
 

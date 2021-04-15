@@ -14,13 +14,7 @@ interface Prop {
   value: string;
   onChangeText: (text: string) => void;
 }
-const TextInput = ({
-  isOptional,
-  onChangeText,
-  value,
-  placeholder,
-  title,
-}: Prop) => {
+const TextInput = ({ isOptional, onChangeText, value, placeholder, title }: Prop) => {
   const [isVisible, setIsVisible] = useState(isOptional ? false : true);
 
   return (
@@ -31,12 +25,7 @@ const TextInput = ({
         style={styles.containerOptionalTitle}
       >
         {isOptional && (
-          <Ionicons
-            name={"md-add-circle"}
-            size={24}
-            color={Colors.green50}
-            style={styles.icon}
-          />
+          <Ionicons name={"md-add-circle"} size={24} color={Colors.green50} style={styles.icon} />
         )}
         <Text.H3 green={isOptional}>{title}</Text.H3>
       </TouchableOpacity>

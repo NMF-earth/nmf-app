@@ -23,11 +23,7 @@ const container: ViewStyle = { flexDirection: "row", margin: 20 };
 storiesOf("Tag", module)
   .add("no icon", () => (
     <View style={container}>
-      <Tag
-        {...props}
-        title={text("Title", "transport")}
-        selected={boolean("Selected", false)}
-      />
+      <Tag {...props} title={text("Title", "transport")} selected={boolean("Selected", false)} />
     </View>
   ))
   .add("with Icons", () => {

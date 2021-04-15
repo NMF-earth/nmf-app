@@ -13,9 +13,7 @@ import { EmissionsList } from "./components";
 import { selectors } from "./ducks";
 
 const EmissionsScreen = () => {
-  const monthlyCarbonBudget = useSelector(
-    budget.selectors.getMonthlyCarbonBudget
-  );
+  const monthlyCarbonBudget = useSelector(budget.selectors.getMonthlyCarbonBudget);
   const emissions = useSelector(selectors.getEmissions);
   const navigation = useNavigation();
   const navigator = navigate(navigation);
@@ -23,10 +21,7 @@ const EmissionsScreen = () => {
   return (
     <>
       <SafeAreaView style={styles.container}>
-        <EmissionsList
-          monthlyCarbonBudget={monthlyCarbonBudget}
-          emissions={emissions}
-        />
+        <EmissionsList monthlyCarbonBudget={monthlyCarbonBudget} emissions={emissions} />
       </SafeAreaView>
       <View style={styles.buttonView}>
         <Button.Primary

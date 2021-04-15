@@ -31,22 +31,14 @@ const ProgressChart = ({
     return null;
   }
 
-  const periodEmissionsBudget = isMonth
-    ? monthlyEmissionsBudget
-    : monthlyEmissionsBudget * 12;
+  const periodEmissionsBudget = isMonth ? monthlyEmissionsBudget : monthlyEmissionsBudget * 12;
 
   const totalEmissionsPercentage =
-    totalEmissions / periodEmissionsBudget > 1
-      ? 1
-      : totalEmissions / periodEmissionsBudget;
+    totalEmissions / periodEmissionsBudget > 1 ? 1 : totalEmissions / periodEmissionsBudget;
   const transportEmissionsPercentage =
-    transportEmissions / periodEmissionsBudget > 1
-      ? 1
-      : transportEmissions / periodEmissionsBudget;
+    transportEmissions / periodEmissionsBudget > 1 ? 1 : transportEmissions / periodEmissionsBudget;
   const foodEmissionsPercentage =
-    foodEmissions / periodEmissionsBudget > 1
-      ? 1
-      : foodEmissions / periodEmissionsBudget;
+    foodEmissions / periodEmissionsBudget > 1 ? 1 : foodEmissions / periodEmissionsBudget;
 
   const period = moment()
     .locale(language)
@@ -68,10 +60,7 @@ const ProgressChart = ({
         transportEmissions={transportEmissions}
         otherEmissions={otherEmissions}
       />
-      <PeriodBudget
-        period={period.toLowerCase()}
-        periodEmissionsBudget={periodEmissionsBudget}
-      />
+      <PeriodBudget period={period.toLowerCase()} periodEmissionsBudget={periodEmissionsBudget} />
     </View>
   );
 };

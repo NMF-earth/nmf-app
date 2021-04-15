@@ -78,8 +78,7 @@ exports[`EmissionsListItem renders correctly if mitigated 1`] = `
             maximumFractionDigits={2}
             value={2.1}
           />
-           
-          kgCO2
+           kgCO2
         </Text.Tertiary>
         <Text.Tertiary
           lightGray={true}
@@ -185,8 +184,7 @@ exports[`EmissionsListItem renders correctly with audio icon 1`] = `
             maximumFractionDigits={2}
             value={2.1}
           />
-           
-          kgCO2
+           kgCO2
         </Text.Tertiary>
       </View>
     </View>
@@ -282,8 +280,7 @@ exports[`EmissionsListItem renders correctly with boat icon 1`] = `
             maximumFractionDigits={2}
             value={2.1}
           />
-           
-          kgCO2
+           kgCO2
         </Text.Tertiary>
       </View>
     </View>
@@ -379,8 +376,7 @@ exports[`EmissionsListItem renders correctly with bus icon 1`] = `
             maximumFractionDigits={2}
             value={2.1}
           />
-           
-          kgCO2
+           kgCO2
         </Text.Tertiary>
       </View>
     </View>
@@ -476,8 +472,7 @@ exports[`EmissionsListItem renders correctly with car icon 1`] = `
             maximumFractionDigits={2}
             value={2.1}
           />
-           
-          kgCO2
+           kgCO2
         </Text.Tertiary>
       </View>
     </View>
@@ -573,8 +568,7 @@ exports[`EmissionsListItem renders correctly with card icon 1`] = `
             maximumFractionDigits={2}
             value={2.1}
           />
-           
-          kgCO2
+           kgCO2
         </Text.Tertiary>
       </View>
     </View>
@@ -670,8 +664,7 @@ exports[`EmissionsListItem renders correctly with chocolate icon 1`] = `
             maximumFractionDigits={2}
             value={2.1}
           />
-           
-          kgCO2
+           kgCO2
         </Text.Tertiary>
       </View>
     </View>
@@ -767,8 +760,7 @@ exports[`EmissionsListItem renders correctly with coffee icon 1`] = `
             maximumFractionDigits={2}
             value={2.1}
           />
-           
-          kgCO2
+           kgCO2
         </Text.Tertiary>
       </View>
     </View>
@@ -864,8 +856,7 @@ exports[`EmissionsListItem renders correctly with electricity icon 1`] = `
             maximumFractionDigits={2}
             value={2.1}
           />
-           
-          kgCO2
+           kgCO2
         </Text.Tertiary>
       </View>
     </View>
@@ -961,8 +952,7 @@ exports[`EmissionsListItem renders correctly with fish icon 1`] = `
             maximumFractionDigits={2}
             value={2.1}
           />
-           
-          kgCO2
+           kgCO2
         </Text.Tertiary>
       </View>
     </View>
@@ -1058,8 +1048,7 @@ exports[`EmissionsListItem renders correctly with full hd video icon 1`] = `
             maximumFractionDigits={2}
             value={2.1}
           />
-           
-          kgCO2
+           kgCO2
         </Text.Tertiary>
       </View>
     </View>
@@ -1155,8 +1144,7 @@ exports[`EmissionsListItem renders correctly with hd video icon 1`] = `
             maximumFractionDigits={2}
             value={2.1}
           />
-           
-          kgCO2
+           kgCO2
         </Text.Tertiary>
       </View>
     </View>
@@ -1252,8 +1240,7 @@ exports[`EmissionsListItem renders correctly with longHaulFlight icon 1`] = `
             maximumFractionDigits={2}
             value={2.1}
           />
-           
-          kgCO2
+           kgCO2
         </Text.Tertiary>
       </View>
     </View>
@@ -1349,8 +1336,7 @@ exports[`EmissionsListItem renders correctly with mediumHaulFlight icon 1`] = `
             maximumFractionDigits={2}
             value={2.1}
           />
-           
-          kgCO2
+           kgCO2
         </Text.Tertiary>
       </View>
     </View>
@@ -1446,8 +1432,7 @@ exports[`EmissionsListItem renders correctly with motorbike icon 1`] = `
             maximumFractionDigits={2}
             value={2.1}
           />
-           
-          kgCO2
+           kgCO2
         </Text.Tertiary>
       </View>
     </View>
@@ -1543,8 +1528,7 @@ exports[`EmissionsListItem renders correctly with redMeat icon 1`] = `
             maximumFractionDigits={2}
             value={2.1}
           />
-           
-          kgCO2
+           kgCO2
         </Text.Tertiary>
       </View>
     </View>
@@ -1640,8 +1624,7 @@ exports[`EmissionsListItem renders correctly with shirt icon 1`] = `
             maximumFractionDigits={2}
             value={2.1}
           />
-           
-          kgCO2
+           kgCO2
         </Text.Tertiary>
       </View>
     </View>
@@ -1737,8 +1720,7 @@ exports[`EmissionsListItem renders correctly with shortHaulFlight icon 1`] = `
             maximumFractionDigits={2}
             value={2.1}
           />
-           
-          kgCO2
+           kgCO2
         </Text.Tertiary>
       </View>
     </View>
@@ -1834,8 +1816,7 @@ exports[`EmissionsListItem renders correctly with train icon 1`] = `
             maximumFractionDigits={2}
             value={2.1}
           />
-           
-          kgCO2
+           kgCO2
         </Text.Tertiary>
       </View>
     </View>
@@ -1931,8 +1912,7 @@ exports[`EmissionsListItem renders correctly with ultra hd video icon 1`] = `
             maximumFractionDigits={2}
             value={2.1}
           />
-           
-          kgCO2
+           kgCO2
         </Text.Tertiary>
       </View>
     </View>
@@ -2028,8 +2008,7 @@ exports[`EmissionsListItem renders correctly with whiteMeat icon 1`] = `
             maximumFractionDigits={2}
             value={2.1}
           />
-           
-          kgCO2
+           kgCO2
         </Text.Tertiary>
       </View>
     </View>

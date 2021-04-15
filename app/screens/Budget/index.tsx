@@ -15,12 +15,8 @@ interface Props {
 }
 
 const Budget = ({ navigation }: Props) => {
-  const emissionsToMitigate = useSelector(
-    emissions.selectors.getEmissionsToMitigate
-  );
-  const emissionsMitigated = useSelector(
-    emissions.selectors.getEmissionsMitigated
-  );
+  const emissionsToMitigate = useSelector(emissions.selectors.getEmissionsToMitigate);
+  const emissionsMitigated = useSelector(emissions.selectors.getEmissionsMitigated);
 
   if (emissionsToMitigate.length || emissionsMitigated.length) {
     return <BudgetScreen navigation={navigation} />;

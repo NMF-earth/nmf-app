@@ -20,31 +20,15 @@ interface Props {
 const BudgetScreen = (props: Props) => {
   const navigator = navigate(props.navigation);
   const monthlyCarbonBudget = useSelector(selectors.getMonthlyCarbonBudget);
-  const totalCurrentMonthEmissions = useSelector(
-    selectors.getCurrentMonthAllCarbonValue
-  );
-  const transportCurrentMonthEmissions = useSelector(
-    selectors.getCurrentMonthTransportCarbonValue
-  );
-  const foodCurrentMonthEmissions = useSelector(
-    selectors.getCurrentMonthFoodCarbonValue
-  );
-  const otherCurrentMonthEmissions = useSelector(
-    selectors.getCurrentMonthOtherCarbonValue
-  );
+  const totalCurrentMonthEmissions = useSelector(selectors.getCurrentMonthAllCarbonValue);
+  const transportCurrentMonthEmissions = useSelector(selectors.getCurrentMonthTransportCarbonValue);
+  const foodCurrentMonthEmissions = useSelector(selectors.getCurrentMonthFoodCarbonValue);
+  const otherCurrentMonthEmissions = useSelector(selectors.getCurrentMonthOtherCarbonValue);
 
-  const totalCurrentYearEmissions = useSelector(
-    selectors.getCurrentYearAllCarbonValue
-  );
-  const transportCurrentYearEmissions = useSelector(
-    selectors.getCurrentMonthTransportCarbonValue
-  );
-  const foodCurrentYearEmissions = useSelector(
-    selectors.getCurrentYearFoodCarbonValue
-  );
-  const otherCurrentYearEmissions = useSelector(
-    selectors.getCurrentYearOtherCarbonValue
-  );
+  const totalCurrentYearEmissions = useSelector(selectors.getCurrentYearAllCarbonValue);
+  const transportCurrentYearEmissions = useSelector(selectors.getCurrentMonthTransportCarbonValue);
+  const foodCurrentYearEmissions = useSelector(selectors.getCurrentYearFoodCarbonValue);
+  const otherCurrentYearEmissions = useSelector(selectors.getCurrentYearOtherCarbonValue);
 
   return (
     <ScrollView style={styles.container}>

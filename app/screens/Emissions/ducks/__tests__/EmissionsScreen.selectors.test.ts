@@ -45,11 +45,7 @@ const emissionMitigated: Emission = {
 describe("if there are emissions", () => {
   beforeEach(() => {
     state = {
-      [emissions.namespace]: [
-        emissionNotMitigated,
-        emissionMitigated,
-        emissionNotMitigatedOld,
-      ],
+      [emissions.namespace]: [emissionNotMitigated, emissionMitigated, emissionNotMitigatedOld],
     };
   });
 
@@ -59,9 +55,7 @@ describe("if there are emissions", () => {
         {
           date: getStartOfMonth(emissionNotMitigatedOld.creationDate),
           data: [selectors.getEmissionListItem(emissionNotMitigatedOld)],
-          co2value: calculation.getC02ValueFromEmission(
-            emissionNotMitigatedOld
-          ),
+          co2value: calculation.getC02ValueFromEmission(emissionNotMitigatedOld),
         },
         {
           date: getStartOfMonth(emissionMitigated.creationDate),

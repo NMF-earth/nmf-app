@@ -19,16 +19,7 @@ interface Props {
 
 export default function Primary(props: Props): React.ReactElement {
   const customStyle = [styles.default, props.style];
-  const {
-    red,
-    white,
-    green,
-    darkGray,
-    lightGray,
-    bold,
-    children,
-    center,
-  } = props;
+  const { red, white, green, darkGray, lightGray, bold, children, center } = props;
 
   if (darkGray) {
     customStyle.push(mainStyle.darkGray);

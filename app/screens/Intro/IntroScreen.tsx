@@ -14,11 +14,7 @@ const IntroScreen = () => {
   const dispatch = useDispatch();
 
   const onPress = () => {
-    dispatch(
-      userPreferences.actions.acceptTermsOfUse(
-        Preferences.currentTermsOfUseVersion
-      )
-    );
+    dispatch(userPreferences.actions.acceptTermsOfUse(Preferences.currentTermsOfUseVersion));
   };
 
   return (
@@ -32,9 +28,7 @@ const IntroScreen = () => {
           {t("INTRO_SCREEN_CONTINUE_AND_ACCEPT_TERMS_OF_USE")}
         </Text.Tertiary>
         <TouchableOpacity
-          onPress={() =>
-            WebBrowser.openBrowserAsync("http://nmf.earth/terms-of-use.pdf")
-          }
+          onPress={() => WebBrowser.openBrowserAsync("http://nmf.earth/terms-of-use.pdf")}
         >
           <Text.Tertiary green>{t("INTRO_SCREEN_TERMS_OF_USE")}</Text.Tertiary>
         </TouchableOpacity>

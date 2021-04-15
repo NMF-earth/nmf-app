@@ -9,11 +9,7 @@ const Stack = createStackNavigator();
 
 const BudgetNavigator = (): React.ReactElement => (
   <Stack.Navigator>
-    <Stack.Screen
-      name="Budget"
-      options={BudgetScreen.navigationOptions}
-      component={BudgetScreen}
-    />
+    <Stack.Screen name="Budget" options={BudgetScreen.navigationOptions} component={BudgetScreen} />
     <Stack.Screen
       name="MonthlyBudget"
       options={MontlyBudgetScreen.navigationOptions}

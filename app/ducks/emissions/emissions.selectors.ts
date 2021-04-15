@@ -6,8 +6,7 @@ import { namespace } from "./emissions.slice";
 
 const getAllEmissions = pathOr([], [namespace]);
 
-const getEmissionById = (state, id: string) =>
-  find(propEq("id", id))(state[namespace]);
+const getEmissionById = (state, id: string) => find(propEq("id", id))(state[namespace]);
 
 const getEmissionsToMitigate = (state) =>
   pipe(getAllEmissions, filter(propEq("isMitigated", false)))(state);
@@ -15,26 +14,19 @@ const getEmissionsToMitigate = (state) =>
 const getEmissionsMitigated = (state) =>
   pipe(getAllEmissions, filter(propEq("isMitigated", true)))(state);
 
-const isTransportEmission = (emission) =>
-  emission.emissionType === EmissionType.transport;
+const isTransportEmission = (emission) => emission.emissionType === EmissionType.transport;
 
-const isFoodEmission = (emission) =>
-  emission.emissionType === EmissionType.food;
+const isFoodEmission = (emission) => emission.emissionType === EmissionType.food;
 
-const isPurchaseEmission = (emission) =>
-  emission.emissionType === EmissionType.purchase;
+const isPurchaseEmission = (emission) => emission.emissionType === EmissionType.purchase;
 
-const isFashionEmission = (emission) =>
-  emission.emissionType === EmissionType.fashion;
+const isFashionEmission = (emission) => emission.emissionType === EmissionType.fashion;
 
-const isStreamingEmission = (emission) =>
-  emission.emissionType === EmissionType.streaming;
+const isStreamingEmission = (emission) => emission.emissionType === EmissionType.streaming;
 
-const isElectricityEmission = (emission) =>
-  emission.emissionType === EmissionType.electricity;
+const isElectricityEmission = (emission) => emission.emissionType === EmissionType.electricity;
 
-const isCustomEmission = (emission) =>
-  emission.emissionType === EmissionType.custom;
+const isCustomEmission = (emission) => emission.emissionType === EmissionType.custom;
 
 const isOtherEmission = (emission) =>
   emission.emissionType === EmissionType.custom ||
@@ -43,22 +35,13 @@ const isOtherEmission = (emission) =>
   emission.emissionType === EmissionType.fashion ||
   emission.emissionType === EmissionType.purchase;
 
-const getTransportEmissions = pipe(
-  getAllEmissions,
-  filter(isTransportEmission)
-);
+const getTransportEmissions = pipe(getAllEmissions, filter(isTransportEmission));
 
 const getFoodEmissions = pipe(getAllEmissions, filter(isFoodEmission));
 
-const getStreamingEmissions = pipe(
-  getAllEmissions,
-  filter(isStreamingEmission)
-);
+const getStreamingEmissions = pipe(getAllEmissions, filter(isStreamingEmission));
 
-const getElectricityEmissions = pipe(
-  getAllEmissions,
-  filter(isElectricityEmission)
-);
+const getElectricityEmissions = pipe(getAllEmissions, filter(isElectricityEmission));
 
 const getPurchaseEmissions = pipe(getAllEmissions, filter(isPurchaseEmission));
 

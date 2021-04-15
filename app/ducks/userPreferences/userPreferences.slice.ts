@@ -23,11 +23,7 @@ const userPreferences = createSlice({
   },
 });
 
-const {
-  acceptTermsOfUse,
-  updateLocation,
-  toggleNotifications,
-} = userPreferences.actions;
+const { acceptTermsOfUse, updateLocation, toggleNotifications } = userPreferences.actions;
 
 export const actions = {
   acceptTermsOfUse,

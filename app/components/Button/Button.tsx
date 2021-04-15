@@ -46,11 +46,7 @@ const buttonFactory: ButtonFactory = (type) => (props) => {
   };
 
   return (
-    <TouchableOpacity
-      onPress={onPress}
-      {...props}
-      style={[customStyle, additionalStyle]}
-    >
+    <TouchableOpacity onPress={onPress} {...props} style={[customStyle, additionalStyle]}>
       {children}
     </TouchableOpacity>
   );

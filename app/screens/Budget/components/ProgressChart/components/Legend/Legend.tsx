@@ -14,12 +14,7 @@ interface Prop {
   otherEmissions: number;
 }
 
-const Legend = ({
-  totalEmissions,
-  transportEmissions,
-  foodEmissions,
-  otherEmissions,
-}: Prop) => {
+const Legend = ({ totalEmissions, transportEmissions, foodEmissions, otherEmissions }: Prop) => {
   const items = [
     {
       name: t("BUDGET_SCREEN_PROGRESS_CHART_LEGEND_ITEM_TOTAL"),
@@ -45,12 +40,7 @@ const Legend = ({
   return (
     <View style={styles.container}>
       {items.map((item, index) => (
-        <LegendItem
-          key={index}
-          name={item.name}
-          value={item.value}
-          color={item.color}
-        />
+        <LegendItem key={index} name={item.name} value={item.value} color={item.color} />
       ))}
     </View>
   );

@@ -99,14 +99,10 @@ describe("if there are emissions", () => {
   });
 
   test("`getEmissionById` should return no emission", () =>
-    expect(emissions.selectors.getEmissionById(state, "1")).toEqual(
-      emissionFood
-    ));
+    expect(emissions.selectors.getEmissionById(state, "1")).toEqual(emissionFood));
 
   test("`getEmissionsMitigated` should return mitigated emissions", () =>
-    expect(emissions.selectors.getEmissionsMitigated(state)).toEqual([
-      emissionMitigated,
-    ]));
+    expect(emissions.selectors.getEmissionsMitigated(state)).toEqual([emissionMitigated]));
 
   test("`getEmissionsToMitigate` should return mitigated emissions", () =>
     expect(emissions.selectors.getEmissionsToMitigate(state)).toEqual([
@@ -120,40 +116,25 @@ describe("if there are emissions", () => {
     ]));
 
   test("`getCustomEmissions` should return custom emissions", () =>
-    expect(emissions.selectors.getCustomEmissions(state)).toEqual([
-      emissionCustom,
-    ]));
+    expect(emissions.selectors.getCustomEmissions(state)).toEqual([emissionCustom]));
 
   test("`getFoodEmissions` should return food emissions", () =>
-    expect(emissions.selectors.getFoodEmissions(state)).toEqual([
-      emissionMitigated,
-      emissionFood,
-    ]));
+    expect(emissions.selectors.getFoodEmissions(state)).toEqual([emissionMitigated, emissionFood]));
 
   test("`getTransportEmissions` should return transport emissions", () =>
-    expect(emissions.selectors.getTransportEmissions(state)).toEqual([
-      emissionTransport,
-    ]));
+    expect(emissions.selectors.getTransportEmissions(state)).toEqual([emissionTransport]));
 
   test("`getStreamingEmissions` should return streaming emissions", () =>
-    expect(emissions.selectors.getStreamingEmissions(state)).toEqual([
-      emissionStreaming,
-    ]));
+    expect(emissions.selectors.getStreamingEmissions(state)).toEqual([emissionStreaming]));
 
   test("`getElectricityEmissions` should return electricity emissions", () =>
-    expect(emissions.selectors.getElectricityEmissions(state)).toEqual([
-      emissionElectricity,
-    ]));
+    expect(emissions.selectors.getElectricityEmissions(state)).toEqual([emissionElectricity]));
 
   test("`getPurchaseEmissions` should return electricity emissions", () =>
-    expect(emissions.selectors.getPurchaseEmissions(state)).toEqual([
-      emissionPurchase,
-    ]));
+    expect(emissions.selectors.getPurchaseEmissions(state)).toEqual([emissionPurchase]));
 
   test("`getFashionEmissions` should return electricity emissions", () =>
-    expect(emissions.selectors.getFashionEmissions(state)).toEqual([
-      emissionFashion,
-    ]));
+    expect(emissions.selectors.getFashionEmissions(state)).toEqual([emissionFashion]));
 
   test("`getOtherEmissions` should return streaming and custom emissions", () =>
     expect(emissions.selectors.getOtherEmissions(state)).toEqual([

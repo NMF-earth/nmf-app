@@ -15,11 +15,7 @@ const EmissionsList = ({ emissions, monthlyCarbonBudget }) => {
 
   const renderListFooter = () => <View style={styles.separator} />;
   const renderSectionHeader = (date, co2value) => (
-    <SectionHeader
-      date={date}
-      co2value={co2value}
-      monthlyCarbonBudget={monthlyCarbonBudget}
-    />
+    <SectionHeader date={date} co2value={co2value} monthlyCarbonBudget={monthlyCarbonBudget} />
   );
 
   return (
@@ -27,13 +23,9 @@ const EmissionsList = ({ emissions, monthlyCarbonBudget }) => {
       sections={emissions}
       stickySectionHeadersEnabled
       ListFooterComponent={renderListFooter}
-      renderSectionHeader={({ section: { date, co2value } }) =>
-        renderSectionHeader(date, co2value)
-      }
+      renderSectionHeader={({ section: { date, co2value } }) => renderSectionHeader(date, co2value)}
       keyExtractor={({ id }) => id}
-      renderItem={({
-        item: { id, isMitigated, name, title, co2value, iconName },
-      }) => (
+      renderItem={({ item: { id, isMitigated, name, title, co2value, iconName } }) => (
         <EmissionsListItem
           id={id}
           isMitigated={isMitigated}

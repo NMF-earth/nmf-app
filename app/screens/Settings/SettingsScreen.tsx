@@ -1,11 +1,5 @@
 import React, { useState } from "react";
-import {
-  View,
-  TouchableWithoutFeedback,
-  ScrollView,
-  Image,
-  Platform,
-} from "react-native";
+import { View, TouchableWithoutFeedback, ScrollView, Image, Platform } from "react-native";
 import ExpoConstants from "expo-constants";
 import * as WebBrowser from "expo-web-browser";
 
@@ -56,13 +50,11 @@ const SettingsScreen = (props) => {
     },
     {
       title: t("SETTINGS_SCREEN_FEEDBACK"),
-      onPress: () =>
-        WebBrowser.openBrowserAsync("https://nmf-earth.typeform.com/to/w0nNSk"),
+      onPress: () => WebBrowser.openBrowserAsync("https://nmf-earth.typeform.com/to/w0nNSk"),
     },
     {
       title: t("SETTINGS_SCREEN_TERMS_OF_USE"),
-      onPress: () =>
-        WebBrowser.openBrowserAsync("http://nmf.earth/terms-of-use.pdf"),
+      onPress: () => WebBrowser.openBrowserAsync("http://nmf.earth/terms-of-use.pdf"),
     },
   ];
   const [steps, setSteps] = useState(0);
@@ -73,17 +65,11 @@ const SettingsScreen = (props) => {
         if (item.os && item.os !== Platform.OS) {
           return null;
         }
-        return (
-          <SettingsRow key={index} onPress={item.onPress} title={item.title} />
-        );
+        return <SettingsRow key={index} onPress={item.onPress} title={item.title} />;
       })}
       <TouchableWithoutFeedback onPress={() => setSteps(steps + 1)}>
         <View style={styles.logoNMFContainer}>
-          <Image
-            style={styles.logoNMF}
-            resizeMode="contain"
-            source={ImagesAssets.logos.nmf}
-          />
+          <Image style={styles.logoNMF} resizeMode="contain" source={ImagesAssets.logos.nmf} />
         </View>
       </TouchableWithoutFeedback>
       <Text.Tertiary bold lightGray style={styles.appVersionTitle}>

@@ -1,7 +1,6 @@
 import throttle from "lodash.throttle";
 
-const navigateOneTime = (navigate) =>
-  throttle(navigate, 1000, { trailing: false });
+const navigateOneTime = (navigate) => throttle(navigate, 1000, { trailing: false });
 
 /* navigate */
 const openComingSoon = (navigation) => (props = {}) => {

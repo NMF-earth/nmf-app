@@ -55,12 +55,8 @@ export default ({
 
     return (
       <View style={styles.durationDistanceContainer}>
-        <Text.H3 style={styles.miniHeader}>
-          {t("ADD_EMISSION_SCREEN_DURATION")}
-        </Text.H3>
-        <Text.Primary lightGray>
-          {hours + " hour(s) and " + minutes + " minute(s)."}
-        </Text.Primary>
+        <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_SCREEN_DURATION")}</Text.H3>
+        <Text.Primary lightGray>{hours + " hour(s) and " + minutes + " minute(s)."}</Text.Primary>
       </View>
     );
   };
@@ -68,12 +64,8 @@ export default ({
   const renderDistance = () => {
     return (
       <View style={styles.durationDistanceContainer}>
-        <Text.H3 style={styles.miniHeader}>
-          {t("ADD_EMISSION_SCREEN_DISTANCE")}
-        </Text.H3>
-        <Text.Primary lightGray>
-          {Math.round(sliderValue) + " kilometer(s)"}
-        </Text.Primary>
+        <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_SCREEN_DISTANCE")}</Text.H3>
+        <Text.Primary lightGray>{Math.round(sliderValue) + " kilometer(s)"}</Text.Primary>
       </View>
     );
   };
@@ -94,31 +86,23 @@ export default ({
         ))}
         <View style={styles.separator} />
       </ScrollView>
-      {transportType === TransportType.plane
-        ? renderDuration()
-        : renderDistance()}
+      {transportType === TransportType.plane ? renderDuration() : renderDistance()}
       <Slider
         minimumTrackTintColor={Colors.green50}
         maximumTrackTintColor={Colors.grey}
         thumbTintColor={Colors.green50}
         style={styles.slider}
         maximumValue={
-          transportType === TransportType.plane
-            ? MAX_SLIDER_VALUE_PLANE
-            : MAX_SLIDER_VALUE
+          transportType === TransportType.plane ? MAX_SLIDER_VALUE_PLANE : MAX_SLIDER_VALUE
         }
         minimumValue={
-          transportType === TransportType.plane
-            ? MIN_SLIDER_VALUE_PLANE
-            : MIN_SLIDER_VALUE
+          transportType === TransportType.plane ? MIN_SLIDER_VALUE_PLANE : MIN_SLIDER_VALUE
         }
         value={sliderValue}
         onSlidingComplete={onSliderValueChange}
       />
       <View style={styles.totalContainer}>
-        <Text.H3 style={styles.miniHeader}>
-          {t("ADD_EMISSION_SCREEN_TOTAL")}
-        </Text.H3>
+        <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_SCREEN_TOTAL")}</Text.H3>
         <Text.H2 style={{ color: Colors.blue50 }}>
           <FormattedNumber
             value={

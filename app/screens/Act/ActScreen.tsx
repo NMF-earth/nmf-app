@@ -18,11 +18,7 @@ const ActScreen = (props) => {
   const navigator = navigate(navigation);
 
   const renderItem = ({ item }) => (
-    <ListItem
-      key={item.title}
-      title={item.title}
-      onPress={() => navigator.openActDetails(item)}
-    />
+    <ListItem key={item.title} title={item.title} onPress={() => navigator.openActDetails(item)} />
   );
 
   return (

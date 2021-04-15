@@ -30,12 +30,7 @@ const TAGS: Array<FashionType> = [
   FashionType.tshirt,
 ];
 
-export default ({
-  setFashionType,
-  fashionType,
-  setQuantity,
-  defaultValueSlider,
-}: Props) => {
+export default ({ setFashionType, fashionType, setQuantity, defaultValueSlider }: Props) => {
   const [sliderValue, setSliderValue] = useState(defaultValueSlider);
 
   const onSliderValueChange = (value: number) => {
@@ -61,12 +56,8 @@ export default ({
         <View style={styles.separator} />
       </ScrollView>
       <View style={styles.durationContainer}>
-        <Text.H3 style={styles.miniHeader}>
-          {t("ADD_EMISSION_SCREEN_QUANTITY")}
-        </Text.H3>
-        <Text.Primary lightGray>
-          {sliderValue + " " + t("ADD_EMISSION_SCREEN_ITEMS")}
-        </Text.Primary>
+        <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_SCREEN_QUANTITY")}</Text.H3>
+        <Text.Primary lightGray>{sliderValue + " " + t("ADD_EMISSION_SCREEN_ITEMS")}</Text.Primary>
       </View>
       <Slider
         minimumTrackTintColor={Colors.green50}
@@ -79,14 +70,9 @@ export default ({
         onSlidingComplete={onSliderValueChange}
       />
       <View style={styles.totalContainer}>
-        <Text.H3 style={styles.miniHeader}>
-          {t("ADD_EMISSION_SCREEN_TOTAL")}
-        </Text.H3>
+        <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_SCREEN_TOTAL")}</Text.H3>
         <Text.H2 blue50>
-          <FormattedNumber
-            value={sliderValue * fashion[fashionType]}
-            maximumFractionDigits={2}
-          />{" "}
+          <FormattedNumber value={sliderValue * fashion[fashionType]} maximumFractionDigits={2} />{" "}
           <Text.Primary>kgCO2eq</Text.Primary>
         </Text.H2>
       </View>

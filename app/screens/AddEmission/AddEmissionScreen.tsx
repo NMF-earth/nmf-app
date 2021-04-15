@@ -15,14 +15,7 @@ import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view
 import { Text, Tag, TextInput } from "components";
 import { userPreferences } from "ducks";
 import { EmissionType, EmissionPayload } from "interfaces";
-import {
-  calculation,
-  t,
-  withLocalization,
-  LocalizationContextProps,
-  ui,
-  time,
-} from "utils";
+import { calculation, t, withLocalization, LocalizationContextProps, ui, time } from "utils";
 
 import styles from "./AddEmissionScreen.styles";
 import navigationOptions from "./AddEmissionScreen.navigationOptions";
@@ -61,50 +54,28 @@ const AddEmissionScreen = ({
 }: Props & LocalizationContextProps) => {
   const location = useSelector(userPreferences.selectors.getLocation);
   const [emissionName, setEmissionName] = useState<string>("");
-  const [emissionType, setEmissionType] = useState<EmissionType>(
-    EmissionType.transport
-  );
-  const [transportType, setTransportType] = useState<TransportType>(
-    TransportType.car
-  );
+  const [emissionType, setEmissionType] = useState<EmissionType>(EmissionType.transport);
+  const [transportType, setTransportType] = useState<TransportType>(TransportType.car);
   const [electricityConsumption, setElectricityConsumption] = useState<number>(
     DEFAULT_SLIDER_VALUE_ELECTRICITY
   );
   const [foodType, setFoodType] = useState<FoodType>(FoodType.redMeat);
-  const [purchaseType, setPurchaseType] = useState<PurchaseType>(
-    PurchaseType.smartphone
-  );
+  const [purchaseType, setPurchaseType] = useState<PurchaseType>(PurchaseType.smartphone);
   const [fashionType, setFashionType] = useState<FashionType>(FashionType.coat);
-  const [streamingType, setStreamingType] = useState<StreamingType>(
-    StreamingType.HDVideo
-  );
+  const [streamingType, setStreamingType] = useState<StreamingType>(StreamingType.HDVideo);
   const [durationMinutes, setDurationMinutes] = useState<number>(
     DEFAULT_SLIDER_VALUE_TRANSPORT / 1000
   );
-  const [durationSeconds, setDurationSeconds] = useState<number>(
-    DEFAULT_SLIDER_VALUE_STREAMING
-  );
-  const [co2eqKilograms, setCo2eqKilograms] = useState<number>(
-    DEFAULT_SLIDER_VALUE_CUSTOM
-  );
-  const [distance, setDistance] = useState<number>(
-    DEFAULT_SLIDER_VALUE_TRANSPORT
-  );
-  const [foodQuantity, setFoodQuantity] = useState<number>(
-    DEFAULT_SLIDER_VALUE_FOOD
-  );
-  const [purchaseQuantity, setPurchaseQuantity] = useState<number>(
-    DEFAULT_SLIDER_VALUE_PURCHASE
-  );
-  const [fashionQuantity, setFashionQuantity] = useState<number>(
-    DEFAULT_SLIDER_VALUE_FASHION
-  );
+  const [durationSeconds, setDurationSeconds] = useState<number>(DEFAULT_SLIDER_VALUE_STREAMING);
+  const [co2eqKilograms, setCo2eqKilograms] = useState<number>(DEFAULT_SLIDER_VALUE_CUSTOM);
+  const [distance, setDistance] = useState<number>(DEFAULT_SLIDER_VALUE_TRANSPORT);
+  const [foodQuantity, setFoodQuantity] = useState<number>(DEFAULT_SLIDER_VALUE_FOOD);
+  const [purchaseQuantity, setPurchaseQuantity] = useState<number>(DEFAULT_SLIDER_VALUE_PURCHASE);
+  const [fashionQuantity, setFashionQuantity] = useState<number>(DEFAULT_SLIDER_VALUE_FASHION);
 
   const [creationDate, setCreationDate] = useState<Moment>(moment().utc());
 
-  const [isDatePickerVisible, setDatePickerVisibility] = useState<boolean>(
-    false
-  );
+  const [isDatePickerVisible, setDatePickerVisibility] = useState<boolean>(false);
   const showDatePicker = useCallback(() => setDatePickerVisibility(true), []);
   const hideDatePicker = useCallback(() => setDatePickerVisibility(false), []);
 
@@ -129,12 +100,8 @@ const AddEmissionScreen = ({
   const renderTransport = () => {
     if (emissionType === EmissionType.transport) {
       if (transportType === TransportType.plane) {
-        emissionPayload.value = calculation.getFlightEmissionValue(
-          durationMinutes
-        );
-        emissionPayload.emissionModelType = calculation.getFlightType(
-          durationMinutes
-        );
+        emissionPayload.value = calculation.getFlightEmissionValue(durationMinutes);
+        emissionPayload.emissionModelType = calculation.getFlightType(durationMinutes);
       } else {
         emissionPayload.value = distance;
         emissionPayload.emissionModelType = transportType;

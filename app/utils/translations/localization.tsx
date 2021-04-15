@@ -19,9 +19,7 @@ const LocalizationContext = React.createContext({
   },
 });
 
-const withLocalization = <P extends object>(
-  Component: React.ComponentType<P>
-) => {
+const withLocalization = <P extends object>(Component: React.ComponentType<P>) => {
   return class extends React.Component<P> {
     // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
     // @ts-ignore

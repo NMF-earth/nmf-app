@@ -25,9 +25,7 @@ const FontSizeSmallDevice = {
   Tertiary: 12,
 };
 
-const FontSize = Layout.isSmallDevice
-  ? FontSizeSmallDevice
-  : FontSizeNormalDevice;
+const FontSize = Layout.isSmallDevice ? FontSizeSmallDevice : FontSizeNormalDevice;
 
 const Font = { FontWeight, FontSize };
 

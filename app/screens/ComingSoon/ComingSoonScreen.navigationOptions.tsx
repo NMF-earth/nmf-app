@@ -39,8 +39,6 @@ const navigationOptionsIOS = ({ navigation }) => ({
   ),
 });
 
-const navigationOptions = platform.isAndroid
-  ? navigationOptionsAndroid
-  : navigationOptionsIOS;
+const navigationOptions = platform.isAndroid ? navigationOptionsAndroid : navigationOptionsIOS;
 
 export default navigationOptions;

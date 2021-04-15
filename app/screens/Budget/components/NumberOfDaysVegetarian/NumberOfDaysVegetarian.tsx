@@ -18,16 +18,10 @@ const NumberOfDaysVegetarian = () => {
   if (daysWithoutEatingMeat < 3) {
     message = t("BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_RECENT_MEAT");
   } else if (daysWithoutEatingMeat < 8) {
-    days =
-      daysWithoutEatingMeat +
-      " " +
-      t("BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_DAYS");
+    days = daysWithoutEatingMeat + " " + t("BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_DAYS");
     message = t("BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_NICE_START");
   } else {
-    days =
-      daysWithoutEatingMeat +
-      " " +
-      t("BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_DAYS");
+    days = daysWithoutEatingMeat + " " + t("BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_DAYS");
     message = t("BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_WELL_DONE");
   }
 
@@ -41,9 +35,7 @@ const NumberOfDaysVegetarian = () => {
         <View style={styles.daysContainer}>
           <Text.H3 blue>{days}</Text.H3>
           <Text.H3> </Text.H3>
-          <Text.H3>
-            {t("BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_WITHOUT_MEAT")}
-          </Text.H3>
+          <Text.H3>{t("BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_WITHOUT_MEAT")}</Text.H3>
         </View>
       ) : null}
       <Text.H3 center>{message}</Text.H3>

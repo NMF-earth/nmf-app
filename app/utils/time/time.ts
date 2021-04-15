@@ -13,10 +13,8 @@ const convertMinutesToHoursAnMinutes = (minutes) => {
   return { hours: hours, minutes: minutesAboveHours };
 };
 
-const getEarlierDate = (date1: Date, date2: Date) =>
-  date1 < date2 ? date1 : date2;
+const getEarlierDate = (date1: Date, date2: Date) => (date1 < date2 ? date1 : date2);
 
-const getLaterDate = (date1: Date, date2: Date) =>
-  date1 > date2 ? date1 : date2;
+const getLaterDate = (date1: Date, date2: Date) => (date1 > date2 ? date1 : date2);
 
 export default { convertMinutesToHoursAnMinutes, getEarlierDate, getLaterDate };

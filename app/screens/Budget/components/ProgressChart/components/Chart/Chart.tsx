@@ -41,17 +41,12 @@ const Chart = ({
   foodEmissionsPercentage,
 }: Prop) => {
   const data = {
-    values: [
-      foodEmissionsPercentage,
-      transportEmissionsPercentage,
-      totalEmissionsPercentage,
-    ],
+    values: [foodEmissionsPercentage, transportEmissionsPercentage, totalEmissionsPercentage],
     colors: [Colors.green50, Colors.yellow50, Colors.apricot],
   };
 
   const pies = data.values.map((pieData, i) => {
-    const r =
-      ((chartHeight / 2 - ringWidth) / data.values.length) * i + ringWidth;
+    const r = ((chartHeight / 2 - ringWidth) / data.values.length) * i + ringWidth;
     return Pie({
       r,
       R: r,
@@ -62,8 +57,7 @@ const Chart = ({
   });
 
   const pieBackgrounds = data.values.map((pieData, i) => {
-    const r =
-      ((chartHeight / 2 - ringWidth) / data.values.length) * i + ringWidth;
+    const r = ((chartHeight / 2 - ringWidth) / data.values.length) * i + ringWidth;
     return Pie({
       r,
       R: r,
@@ -75,14 +69,8 @@ const Chart = ({
 
   return (
     <View style={styles.container}>
-      <Svg
-        width={Layout.screen.width - Layout.PADDING_HORIZONTAL * 4}
-        height={chartHeight}
-      >
-        <G
-          x={Layout.screen.width / 2 - Layout.PADDING_HORIZONTAL * 2}
-          y={chartHeight / 2}
-        >
+      <Svg width={Layout.screen.width - Layout.PADDING_HORIZONTAL * 4} height={chartHeight}>
+        <G x={Layout.screen.width / 2 - Layout.PADDING_HORIZONTAL * 2} y={chartHeight / 2}>
           <G>
             {pieBackgrounds.map((pie, i) => {
               return (

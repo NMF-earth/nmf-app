@@ -28,9 +28,7 @@ const getEmissionListItem = (item: Emission) => {
 
 const getStartOfMonth = (time) => moment(time).startOf("month").format();
 
-const groupByMonth = groupBy((item: EmissionListItem) =>
-  getStartOfMonth(item.creationDate)
-);
+const groupByMonth = groupBy((item: EmissionListItem) => getStartOfMonth(item.creationDate));
 
 const dateObjMap = map(([date, data, co2value]) => ({
   date: date,
@@ -43,10 +41,7 @@ const filterByMostRecent = (array: [EmissionListItem]) =>
   array.sort((a, b) => +new Date(b.creationDate) - +new Date(a.creationDate));
 
 const getMonthlyPourcentage = (items) =>
-  map(
-    (item) => [...item, sum(map((emission) => emission.co2value, item[1]))],
-    items
-  );
+  map((item) => [...item, sum(map((emission) => emission.co2value, item[1]))], items);
 
 const getEmissions = (state) =>
   pipe(

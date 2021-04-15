@@ -17,8 +17,7 @@ const meatArray = [
   FoodType.whiteMeat,
 ];
 
-const isMeatEmission = (emission) =>
-  includes(emission.emissionModelType, meatArray);
+const isMeatEmission = (emission) => includes(emission.emissionModelType, meatArray);
 
 const getCreationDate = propOr(moment().utc().toISOString(), "creationDate");
 const getDaysElapsedSinceToday = (date) => moment().diff(date, "days");

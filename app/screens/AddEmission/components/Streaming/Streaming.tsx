@@ -47,9 +47,7 @@ export default ({
     setSliderValue(val);
     setDurationSeconds(val);
   };
-  const { hours, minutes } = time.convertMinutesToHoursAnMinutes(
-    sliderValue / 60
-  );
+  const { hours, minutes } = time.convertMinutesToHoursAnMinutes(sliderValue / 60);
   const carbonValue = getInternetUsageCarbonImpact(
     sliderValue,
     streaming[streamingType] * sliderValue,
@@ -73,12 +71,8 @@ export default ({
         <View style={styles.separator} />
       </ScrollView>
       <View style={styles.durationDistanceContainer}>
-        <Text.H3 style={styles.miniHeader}>
-          {t("ADD_EMISSION_SCREEN_DURATION")}
-        </Text.H3>
-        <Text.Primary lightGray>
-          {hours + " hour(s) and " + minutes + " minute(s)."}
-        </Text.Primary>
+        <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_SCREEN_DURATION")}</Text.H3>
+        <Text.Primary lightGray>{hours + " hour(s) and " + minutes + " minute(s)."}</Text.Primary>
       </View>
       <Slider
         minimumTrackTintColor={Colors.green50}
@@ -91,9 +85,7 @@ export default ({
         onSlidingComplete={onSliderValueChange}
       />
       <View style={styles.totalContainer}>
-        <Text.H3 style={styles.miniHeader}>
-          {t("ADD_EMISSION_SCREEN_TOTAL")}
-        </Text.H3>
+        <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_SCREEN_TOTAL")}</Text.H3>
         <Text.H2 blue50>
           <FormattedNumber
             value={carbonValue > 1 ? carbonValue : carbonValue * 1000}

@@ -27,12 +27,7 @@ const ActTabNavigator = () => (
     }}
   >
     {tabs.map((tab) => (
-      <Tab.Screen
-        key={tab}
-        name={tab}
-        component={ActScreen}
-        options={{ tabBarLabel: tab }}
-      />
+      <Tab.Screen key={tab} name={tab} component={ActScreen} options={{ tabBarLabel: tab }} />
     ))}
   </Tab.Navigator>
 );

@@ -47,13 +47,9 @@ const NotificationsScreen = () => {
 
   return (
     <View style={styles.container}>
-      <Text.Primary style={styles.intro}>
-        {t("NOTIFICATIONS_SCREEN_INTRO")}
-      </Text.Primary>
+      <Text.Primary style={styles.intro}>{t("NOTIFICATIONS_SCREEN_INTRO")}</Text.Primary>
       <View style={styles.rowContainer}>
-        <Text.Secondary bold>
-          {t("NOTIFICATIONS_SCREEN_ACTIVATED")}
-        </Text.Secondary>
+        <Text.Secondary bold>{t("NOTIFICATIONS_SCREEN_ACTIVATED")}</Text.Secondary>
         <Switch value={activated} onValueChange={onValueChange} />
       </View>
     </View>

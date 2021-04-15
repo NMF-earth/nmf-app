@@ -5,8 +5,7 @@ import { Emission, EmissionType } from "interfaces";
 import emissions from "../";
 
 describe("Emissions actions should", () => {
-  it("export expected actions", () =>
-    expect(emissions.actions).toMatchSnapshot());
+  it("export expected actions", () => expect(emissions.actions).toMatchSnapshot());
 
   it("be able to create an emission", () => {
     const emission: Emission = {
@@ -60,9 +59,7 @@ describe("Emissions actions should", () => {
       payload: emissionsList,
     };
 
-    expect(emissions.actions.loadEmissionsFromImport(emissionsList)).toEqual(
-      expectedAction
-    );
+    expect(emissions.actions.loadEmissionsFromImport(emissionsList)).toEqual(expectedAction);
   });
 
   it("be able to delete all emissions", () => {

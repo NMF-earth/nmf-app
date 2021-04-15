@@ -94,42 +94,32 @@ describe("getC02ValueFromEmission should return the correct co2 emitted value fo
     expect(calculation.getC02ValueFromEmission(emissionStreaming)).toEqual(
       getInternetUsageCarbonImpact(
         emissionStreaming.value,
-        streaming[emissionStreaming.emissionModelType] *
-          emissionStreaming.value,
+        streaming[emissionStreaming.emissionModelType] * emissionStreaming.value,
         emissionStreaming.location
       )
     );
   });
   it("electricity emission", () => {
     expect(calculation.getC02ValueFromEmission(emissionElectricity)).toEqual(
-      emissionElectricity.value *
-        electricity[emissionElectricity.emissionModelType]
+      emissionElectricity.value * electricity[emissionElectricity.emissionModelType]
     );
   });
   it("custom emission", () => {
     // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
     // @ts-ignore
-    expect(calculation.getC02ValueFromEmission(emissionCustom)).toEqual(
-      emissionCustom.value
-    );
+    expect(calculation.getC02ValueFromEmission(emissionCustom)).toEqual(emissionCustom.value);
   });
 });
 
 describe("getFlightType should return the correct flight type for", () => {
   it("a short flight", () => {
-    expect(calculation.getFlightType(60)).toEqual(
-      TransportType.shortHaulFlight
-    );
+    expect(calculation.getFlightType(60)).toEqual(TransportType.shortHaulFlight);
   });
   it("a medium flight", () => {
-    expect(calculation.getFlightType(4 * 60)).toEqual(
-      TransportType.mediumHaulFlight
-    );
+    expect(calculation.getFlightType(4 * 60)).toEqual(TransportType.mediumHaulFlight);
   });
   it("a long flight", () => {
-    expect(calculation.getFlightType(8 * 60)).toEqual(
-      TransportType.longHaulFlight
-    );
+    expect(calculation.getFlightType(8 * 60)).toEqual(TransportType.longHaulFlight);
   });
 });
 
@@ -141,16 +131,12 @@ describe("getFlightEmissionValue should return the correct emission value for", 
   });
   it("a medium flight", () => {
     expect(calculation.getFlightEmissionValue(4 * 60)).toEqual(
-      (((2255 * 1000) / (3 * 60 + 25) + (4205 * 1000) / (5 * 60 + 45)) / 2) *
-        4 *
-        60
+      (((2255 * 1000) / (3 * 60 + 25) + (4205 * 1000) / (5 * 60 + 45)) / 2) * 4 * 60
     );
   });
   it("a long flight", () => {
     expect(calculation.getFlightEmissionValue(8 * 60)).toEqual(
-      (((5837 * 1000) / (8 * 60 + 15) + (11648 * 1000) / (14 * 60 + 30)) / 2) *
-        8 *
-        60
+      (((5837 * 1000) / (8 * 60 + 15) + (11648 * 1000) / (14 * 60 + 30)) / 2) * 8 * 60
     );
   });
 });
@@ -169,18 +155,16 @@ describe("getLatestEmission should return the latest emission emitted", () => {
   });
 
   it("if several emissions, return the most recent emission", () => {
-    expect(
-      calculation.getLatestEmission([emissionFood, emissionFoodRecent])
-    ).toEqual(emissionFoodRecent);
+    expect(calculation.getLatestEmission([emissionFood, emissionFoodRecent])).toEqual(
+      emissionFoodRecent
+    );
   });
 });
 
 describe("getCarbonIntensityInGramPerKWHromKgPerJoules should convert data from kgCO2/J to gCO2/kWh", () => {
   it("if no emissions", () => {
-    expect(
-      calculation.getCarbonIntensityInGramPerKWHromKgPerJoules(
-        electricity.france
-      )
-    ).toEqual(31);
+    expect(calculation.getCarbonIntensityInGramPerKWHromKgPerJoules(electricity.france)).toEqual(
+      31
+    );
   });
 });
