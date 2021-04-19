@@ -5,6 +5,7 @@ import {
   TransportType,
   PurchaseType,
   FashionType,
+  MealType,
 } from "carbon-footprint";
 import { Appearance, ColorSchemeName, GestureResponderEvent, Linking } from "react-native";
 
@@ -127,7 +128,7 @@ describe("tests for ui.getIconFromModelType", () => {
   });
 
   describe("food type emissions", () => {
-    it("returns md-restaurant if it is food of type redMeat", () => {
+    it("returns md-nutrition if it is food of type redMeat", () => {
       // arrange
       const emissionModelType = FoodType.redMeat;
 
@@ -135,10 +136,10 @@ describe("tests for ui.getIconFromModelType", () => {
       const icon = ui.getIconFromModelType(emissionModelType);
 
       // assert
-      expect(icon).toBe("md-restaurant");
+      expect(icon).toBe("md-nutrition");
     });
 
-    it("returns md-restaurant if it is food of type whiteMeat", () => {
+    it("returns md-nutrition if it is food of type whiteMeat", () => {
       // arrange
       const emissionModelType = FoodType.whiteMeat;
 
@@ -146,10 +147,10 @@ describe("tests for ui.getIconFromModelType", () => {
       const icon = ui.getIconFromModelType(emissionModelType);
 
       // assert
-      expect(icon).toBe("md-restaurant");
+      expect(icon).toBe("md-nutrition");
     });
 
-    it("returns md-restaurant if it is food of type chocolate", () => {
+    it("returns md-nutrition if it is food of type chocolate", () => {
       // arrange
       const emissionModelType = FoodType.chocolate;
 
@@ -157,18 +158,7 @@ describe("tests for ui.getIconFromModelType", () => {
       const icon = ui.getIconFromModelType(emissionModelType);
 
       // assert
-      expect(icon).toBe("md-restaurant");
-    });
-
-    it("returns md-restaurant if it is food of type fish", () => {
-      // arrange
-      const emissionModelType = FoodType.fish;
-
-      // act
-      const icon = ui.getIconFromModelType(emissionModelType);
-
-      // assert
-      expect(icon).toBe("md-restaurant");
+      expect(icon).toBe("md-nutrition");
     });
 
     it("returns md-cafe if it is food of type coffee", () => {
@@ -477,6 +467,50 @@ describe("tests for ui.getTranslationModelType", () => {
     });
   });
 
+  describe("meal type emissions", () => {
+    it("returns UI_HIGH_MEAT if MealType is high meat", () => {
+      const emissionModelType = MealType.highMeat;
+      const translationModelType = ui.getTranslationModelType(emissionModelType);
+
+      expect(translationModelType).toBe("UI_HIGH_MEAT");
+    });
+
+    it("returns UI_MEDIUM_MEAT if MealType is medium meat", () => {
+      const emissionModelType = MealType.mediumMeat;
+      const translationModelType = ui.getTranslationModelType(emissionModelType);
+
+      expect(translationModelType).toBe("UI_MEDIUM_MEAT");
+    });
+
+    it("returns UI_LOW_MEAT if MealType is low meat", () => {
+      const emissionModelType = MealType.lowMeat;
+      const translationModelType = ui.getTranslationModelType(emissionModelType);
+
+      expect(translationModelType).toBe("UI_LOW_MEAT");
+    });
+
+    it("returns UI_PESCETARIAN if MealType is pescetarian", () => {
+      const emissionModelType = MealType.pescetarian;
+      const translationModelType = ui.getTranslationModelType(emissionModelType);
+
+      expect(translationModelType).toBe("UI_PESCETARIAN");
+    });
+
+    it("returns UI_VEGAN if MealType is pescetarian", () => {
+      const emissionModelType = MealType.vegan;
+      const translationModelType = ui.getTranslationModelType(emissionModelType);
+
+      expect(translationModelType).toBe("UI_VEGAN");
+    });
+
+    it("returns UI_VEGETARIAN if MealType is pescetarian", () => {
+      const emissionModelType = MealType.vegetarian;
+      const translationModelType = ui.getTranslationModelType(emissionModelType);
+
+      expect(translationModelType).toBe("UI_VEGETARIAN");
+    });
+  });
+
   describe("food type emissions", () => {
     it("returns UI_RED_MEAT if it is food of type redMeat", () => {
       // arrange
@@ -532,6 +566,8 @@ describe("tests for ui.getTranslationModelType", () => {
       // assert
       expect(translationModelType).toBe("UI_FISH");
     });
+
+    /* TODO: and the rest later... */
   });
 
   describe("transport type emissions", () => {

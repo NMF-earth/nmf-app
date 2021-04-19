@@ -40,7 +40,7 @@ exports[`EmissionsListItem renders correctly if mitigated 1`] = `
       />
       <Ionicons
         color="#4BB377"
-        name="md-restaurant"
+        name="md-nutrition"
         size={22}
         style={
           Object {
@@ -626,7 +626,7 @@ exports[`EmissionsListItem renders correctly with chocolate icon 1`] = `
       />
       <Ionicons
         color="#595D58"
-        name="md-restaurant"
+        name="md-nutrition"
         size={22}
         style={
           Object {
@@ -914,7 +914,7 @@ exports[`EmissionsListItem renders correctly with fish icon 1`] = `
       />
       <Ionicons
         color="#595D58"
-        name="md-restaurant"
+        name="md-nutrition"
         size={22}
         style={
           Object {
@@ -1490,7 +1490,7 @@ exports[`EmissionsListItem renders correctly with redMeat icon 1`] = `
       />
       <Ionicons
         color="#595D58"
-        name="md-restaurant"
+        name="md-nutrition"
         size={22}
         style={
           Object {
@@ -1970,7 +1970,7 @@ exports[`EmissionsListItem renders correctly with whiteMeat icon 1`] = `
       />
       <Ionicons
         color="#595D58"
-        name="md-restaurant"
+        name="md-nutrition"
         size={22}
         style={
           Object {

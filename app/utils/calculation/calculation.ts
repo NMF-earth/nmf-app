@@ -9,6 +9,7 @@ import {
   purchase,
   fashion,
   streaming,
+  meal,
 } from "carbon-footprint";
 
 import { EmissionType, Emission } from "interfaces";
@@ -80,6 +81,7 @@ const getC02ValueFromEmission = (emission: Emission) => {
     ...food,
     ...purchase,
     ...fashion,
+    ...meal,
   };
   return emission.value * model[emission.emissionModelType];
 };

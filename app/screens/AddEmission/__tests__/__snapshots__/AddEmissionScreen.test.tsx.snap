@@ -79,10 +79,16 @@ exports[`AddEmissionScreen renders correctly 1`] = `
               title="Transport"
             />
             <Tag
-              icon="md-restaurant"
+              icon="md-nutrition"
               onPress={[Function]}
               selected={false}
               title="Food"
+            />
+            <Tag
+              icon="md-restaurant"
+              onPress={[Function]}
+              selected={false}
+              title="Meal"
             />
             <Tag
               icon="md-play-circle"

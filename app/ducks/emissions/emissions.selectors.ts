@@ -28,12 +28,15 @@ const isElectricityEmission = (emission) => emission.emissionType === EmissionTy
 
 const isCustomEmission = (emission) => emission.emissionType === EmissionType.custom;
 
+const isMealEmission = (emission) => emission.emissionType === EmissionType.meal;
+
 const isOtherEmission = (emission) =>
   emission.emissionType === EmissionType.custom ||
   emission.emissionType === EmissionType.streaming ||
   emission.emissionType === EmissionType.electricity ||
   emission.emissionType === EmissionType.fashion ||
-  emission.emissionType === EmissionType.purchase;
+  emission.emissionType === EmissionType.purchase ||
+  emission.emissionType === EmissionType.meal;
 
 const getTransportEmissions = pipe(getAllEmissions, filter(isTransportEmission));
 
@@ -46,6 +49,8 @@ const getElectricityEmissions = pipe(getAllEmissions, filter(isElectricityEmissi
 const getPurchaseEmissions = pipe(getAllEmissions, filter(isPurchaseEmission));
 
 const getFashionEmissions = pipe(getAllEmissions, filter(isFashionEmission));
+
+const getMealEmissions = pipe(getAllEmissions, filter(isMealEmission));
 
 const getCustomEmissions = pipe(getAllEmissions, filter(isCustomEmission));
 
@@ -61,6 +66,7 @@ export default {
   getPurchaseEmissions,
   getCustomEmissions,
   getOtherEmissions,
+  getMealEmissions,
   getEmissionById,
   getEmissionsToMitigate,
   getEmissionsMitigated,

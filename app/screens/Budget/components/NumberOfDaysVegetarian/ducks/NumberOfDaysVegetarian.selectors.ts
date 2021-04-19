@@ -1,6 +1,6 @@
 import { pipe, propOr, includes, filter, isEmpty, not } from "ramda";
 import moment from "moment";
-import { FoodType } from "carbon-footprint";
+import { FoodType, MealType } from "carbon-footprint";
 
 import { emissions } from "ducks";
 import { calculation } from "utils";
@@ -15,6 +15,10 @@ const meatArray = [
   FoodType.tuna,
   FoodType.turkey,
   FoodType.whiteMeat,
+  MealType.highMeat,
+  MealType.lowMeat,
+  MealType.mediumMeat,
+  MealType.pescetarian,
 ];
 
 const isMeatEmission = (emission) => includes(emission.emissionModelType, meatArray);

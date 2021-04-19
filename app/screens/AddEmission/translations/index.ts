@@ -38,6 +38,9 @@ interface TranslationKeys {
   ADD_EMISSION_SCREEN_ITEMS: string;
   ADD_EMISSION_SCREEN_FASHION_TYPE: string;
   ADD_EMISSION_SCREEN_FASHION: string;
+  ADD_EMISSION_SCREEN_MEAL: string;
+  ADD_EMISSION_SCREEN_MEAL_TYPE: string;
+  ADD_EMISSION_SCREEN_MEALS: string;
 }
 
 export { en, fr, de, sv, es, pt, da, ru, pl, TranslationKeys };

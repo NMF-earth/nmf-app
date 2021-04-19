@@ -44,6 +44,28 @@ interface TranslationKeys {
   UI_SHOES: string;
   UI_SWEATER: string;
   UI_T_SHIRT: string;
+  UI_HIGH_MEAT: string;
+  UI_MEDIUM_MEAT: string;
+  UI_LOW_MEAT: string;
+  UI_PESCETARIAN: string;
+  UI_VEGAN: string;
+  UI_VEGETARIAN: string;
+  UI_BEANS: string;
+  UI_BEEF: string;
+  UI_CHICKEN: string;
+  UI_FRUIT: string;
+  UI_LAMB: string;
+  UI_LENTILS: string;
+  UI_NUTS: string;
+  UI_PORK: string;
+  UI_POTATOES: string;
+  UI_RICE: string;
+  UI_TOFU: string;
+  UI_TUNA: string;
+  UI_TURKEY: string;
+  UI_VEGETABLES: string;
+  UI_CRYPTO_CURRENCY_POW: string;
+  UI_SINGLE_EDITION_NFT: string;
 }
 
 export { en, fr, de, sv, es, pt, da, ru, pl, TranslationKeys };

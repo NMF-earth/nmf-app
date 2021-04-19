@@ -5,6 +5,7 @@ import {
   ElectricityType,
   FashionType,
   PurchaseType,
+  MealType,
 } from "carbon-footprint";
 
 import { Emission, EmissionType } from "interfaces";
@@ -82,6 +83,15 @@ const emissionFashion: Emission = {
   value: 29,
 };
 
+const emissionMeal: Emission = {
+  id: "8",
+  creationDate: "2020-01-26T11:04:55.334Z",
+  emissionModelType: MealType.highMeat,
+  emissionType: EmissionType.meal,
+  isMitigated: false,
+  value: 20,
+};
+
 describe("if there are emissions", () => {
   beforeEach(() => {
     state = {
@@ -94,6 +104,7 @@ describe("if there are emissions", () => {
         emissionElectricity,
         emissionFashion,
         emissionPurchase,
+        emissionMeal,
       ],
     };
   });
@@ -104,7 +115,7 @@ describe("if there are emissions", () => {
   test("`getEmissionsMitigated` should return mitigated emissions", () =>
     expect(emissions.selectors.getEmissionsMitigated(state)).toEqual([emissionMitigated]));
 
-  test("`getEmissionsToMitigate` should return mitigated emissions", () =>
+  test("`getEmissionsToMitigate` should return emissions to mitigate", () =>
     expect(emissions.selectors.getEmissionsToMitigate(state)).toEqual([
       emissionFood,
       emissionCustom,
@@ -113,6 +124,7 @@ describe("if there are emissions", () => {
       emissionElectricity,
       emissionFashion,
       emissionPurchase,
+      emissionMeal,
     ]));
 
   test("`getCustomEmissions` should return custom emissions", () =>
@@ -130,19 +142,23 @@ describe("if there are emissions", () => {
   test("`getElectricityEmissions` should return electricity emissions", () =>
     expect(emissions.selectors.getElectricityEmissions(state)).toEqual([emissionElectricity]));
 
-  test("`getPurchaseEmissions` should return electricity emissions", () =>
+  test("`getPurchaseEmissions` should return purchase emissions", () =>
     expect(emissions.selectors.getPurchaseEmissions(state)).toEqual([emissionPurchase]));
 
-  test("`getFashionEmissions` should return electricity emissions", () =>
+  test("`getFashionEmissions` should return fashion emissions", () =>
     expect(emissions.selectors.getFashionEmissions(state)).toEqual([emissionFashion]));
 
-  test("`getOtherEmissions` should return streaming and custom emissions", () =>
+  test("`getMealEmissions` should return electricity emissions", () =>
+    expect(emissions.selectors.getMealEmissions(state)).toEqual([emissionMeal]));
+
+  test("`getOtherEmissions` should return other emissions", () =>
     expect(emissions.selectors.getOtherEmissions(state)).toEqual([
       emissionCustom,
       emissionStreaming,
       emissionElectricity,
       emissionFashion,
       emissionPurchase,
+      emissionMeal,
     ]));
 });
 
@@ -182,4 +198,7 @@ describe("if there are no emissions", () => {
 
   test("`getFashionEmissions` should return mitigated no emission", () =>
     expect(emissions.selectors.getFashionEmissions(state)).toEqual([]));
+
+  test("`getMealEmissions` should return mitigated no emission", () =>
+    expect(emissions.selectors.getMealEmissions(state)).toEqual([]));
 });
