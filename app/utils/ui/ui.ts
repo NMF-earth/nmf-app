@@ -6,23 +6,52 @@ import {
   ElectricityType,
   PurchaseType,
   FashionType,
+  MealType,
 } from "carbon-footprint";
 import { contains, __ } from "ramda";
 
-import { EmissionType } from "interfaces";
+import { EmissionType, EmissionModelType } from "interfaces";
 
 import { t } from "../translations";
 
 const isElectricityEmission = contains(__, Object.keys(ElectricityType));
+const isMealEmission = contains(__, Object.keys(MealType));
+const isFoodEmission = contains(__, Object.keys(FoodType));
+const isPurchaseEmission = contains(__, Object.keys(PurchaseType));
+const isFashionEmission = contains(__, Object.keys(FashionType));
 
-const getTranslationModelType = (emissionModelType) => {
-  if (isElectricityEmission(emissionModelType)) {
-    return t("UI_ELECTRICITY");
-  }
-
+const getTranslationModelType = (emissionModelType: EmissionModelType): string => {
   switch (emissionModelType) {
     case EmissionType.custom:
       return t("UI_CUSTOM");
+    case FoodType.beans:
+      return t("UI_BEANS");
+    case FoodType.beef:
+      return t("UI_BEEF");
+    case FoodType.chicken:
+      return t("UI_CHICKEN");
+    case FoodType.fruit:
+      return t("UI_FRUIT");
+    case FoodType.lamb:
+      return t("UI_LAMB");
+    case FoodType.lentils:
+      return t("UI_LENTILS");
+    case FoodType.nuts:
+      return t("UI_NUTS");
+    case FoodType.pork:
+      return t("UI_PORK");
+    case FoodType.potatoes:
+      return t("UI_POTATOES");
+    case FoodType.rice:
+      return t("UI_RICE");
+    case FoodType.tofu:
+      return t("UI_TOFU");
+    case FoodType.tuna:
+      return t("UI_TUNA");
+    case FoodType.turkey:
+      return t("UI_TURKEY");
+    case FoodType.vegetables:
+      return t("UI_VEGETABLES");
     case FoodType.redMeat:
       return t("UI_RED_MEAT");
     case FoodType.whiteMeat:
@@ -78,6 +107,10 @@ const getTranslationModelType = (emissionModelType) => {
       return t("UI_TABLET");
     case PurchaseType.tv:
       return t("UI_TV");
+    case PurchaseType.cryptoCurrencyPoW:
+      return t("UI_CRYPTO_CURRENCY_POW");
+    case PurchaseType.singleEditionNFT:
+      return t("UI_SINGLE_EDITION_NFT");
     case FashionType.coat:
       return t("UI_COAT");
     case FashionType.dress:
@@ -92,27 +125,31 @@ const getTranslationModelType = (emissionModelType) => {
       return t("UI_SWEATER");
     case FashionType.tshirt:
       return t("UI_T_SHIRT");
-    default:
-      return t("UI_CUSTOM");
+    case MealType.highMeat:
+      return t("UI_HIGH_MEAT");
+    case MealType.mediumMeat:
+      return t("UI_MEDIUM_MEAT");
+    case MealType.lowMeat:
+      return t("UI_LOW_MEAT");
+    case MealType.pescetarian:
+      return t("UI_PESCETARIAN");
+    case MealType.vegan:
+      return t("UI_VEGAN");
+    case MealType.vegetarian:
+      return t("UI_VEGETARIAN");
   }
+
+  if (isElectricityEmission(emissionModelType)) {
+    return t("UI_ELECTRICITY");
+  }
+
+  return t("UI_CUSTOM");
 };
 
-const getIconFromModelType = (emissionModelType) => {
-  if (isElectricityEmission(emissionModelType)) {
-    return "md-flash";
-  }
-
+const getIconFromModelType = (emissionModelType: EmissionModelType): string => {
   switch (emissionModelType) {
     case EmissionType.custom:
       return "md-build";
-    case FoodType.redMeat:
-    case FoodType.whiteMeat:
-    case FoodType.chocolate:
-    case FoodType.fish:
-    case FoodType.milk:
-    case FoodType.cheese:
-    case FoodType.eggs:
-      return "md-restaurant";
     case FoodType.coffee:
       return "md-cafe";
     case TransportType.shortHaulFlight:
@@ -135,31 +172,34 @@ const getIconFromModelType = (emissionModelType) => {
     case StreamingType.fullHDVideo:
     case StreamingType.ultraHDVideo:
       return "md-film";
-    case PurchaseType.computer:
-    case PurchaseType.eletricCar:
-    case PurchaseType.fossilFuelCar:
-    case PurchaseType.hybridCar:
-    case PurchaseType.laptop:
-    case PurchaseType.smartphone:
-    case PurchaseType.tablet:
-    case PurchaseType.tv:
-      return "md-card";
-    case FashionType.coat:
-    case FashionType.dress:
-    case FashionType.jeans:
-    case FashionType.shirt:
-    case FashionType.shoes:
-    case FashionType.sweater:
-    case FashionType.tshirt:
-      return "md-shirt";
-    default:
-      return "md-build";
   }
+
+  if (isFoodEmission(emissionModelType)) {
+    return "md-nutrition";
+  }
+
+  if (isElectricityEmission(emissionModelType)) {
+    return "md-flash";
+  }
+
+  if (isMealEmission(emissionModelType)) {
+    return "md-restaurant";
+  }
+
+  if (isPurchaseEmission(emissionModelType)) {
+    return "md-card";
+  }
+
+  if (isFashionEmission(emissionModelType)) {
+    return "md-shirt";
+  }
+
+  return "md-build";
 };
 
-const isDarkModeEnabled = () => Appearance.getColorScheme() === "dark";
+const isDarkModeEnabled = (): boolean => Appearance.getColorScheme() === "dark";
 
-const onHTMLBodyLinkPress = (_: GestureResponderEvent, link: string) => {
+const onHTMLBodyLinkPress = (_: GestureResponderEvent, link: string): void => {
   if (link) {
     Linking.openURL(link);
   }

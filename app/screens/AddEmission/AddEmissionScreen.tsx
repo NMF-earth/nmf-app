@@ -8,6 +8,7 @@ import {
   StreamingType,
   PurchaseType,
   FashionType,
+  MealType,
 } from "carbon-footprint";
 import DateTimePickerModal from "react-native-modal-datetime-picker";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
@@ -28,6 +29,7 @@ import {
   Purchase,
   AddEmissionButton,
   Fashion,
+  Meal,
 } from "./components";
 
 interface Props {
@@ -44,6 +46,7 @@ const DEFAULT_SLIDER_VALUE_ELECTRICITY = 100 * 3.6 * Math.pow(10, 6);
 const DEFAULT_SLIDER_VALUE_STREAMING = 120 * 60;
 const DEFAULT_SLIDER_VALUE_PURCHASE = 1;
 const DEFAULT_SLIDER_VALUE_FASHION = 1;
+const DEFAULT_SLIDER_VALUE_MEAL = 1;
 const DEFAULT_SLIDER_VALUE_CUSTOM = 200;
 const EMISSION_NAME_MAX_LENGTH = 150;
 
@@ -62,6 +65,7 @@ const AddEmissionScreen = ({
   const [foodType, setFoodType] = useState<FoodType>(FoodType.redMeat);
   const [purchaseType, setPurchaseType] = useState<PurchaseType>(PurchaseType.smartphone);
   const [fashionType, setFashionType] = useState<FashionType>(FashionType.coat);
+  const [mealType, setMealType] = useState<MealType>(MealType.mediumMeat);
   const [streamingType, setStreamingType] = useState<StreamingType>(StreamingType.HDVideo);
   const [durationMinutes, setDurationMinutes] = useState<number>(
     DEFAULT_SLIDER_VALUE_TRANSPORT / 1000
@@ -72,6 +76,7 @@ const AddEmissionScreen = ({
   const [foodQuantity, setFoodQuantity] = useState<number>(DEFAULT_SLIDER_VALUE_FOOD);
   const [purchaseQuantity, setPurchaseQuantity] = useState<number>(DEFAULT_SLIDER_VALUE_PURCHASE);
   const [fashionQuantity, setFashionQuantity] = useState<number>(DEFAULT_SLIDER_VALUE_FASHION);
+  const [mealQuantity, setMealQuantity] = useState<number>(DEFAULT_SLIDER_VALUE_MEAL);
 
   const [creationDate, setCreationDate] = useState<Moment>(moment().utc());
 
@@ -153,6 +158,23 @@ const AddEmissionScreen = ({
     return null;
   };
 
+  const renderMeal = () => {
+    if (emissionType === EmissionType.meal) {
+      emissionPayload.value = mealQuantity;
+      emissionPayload.emissionModelType = mealType;
+
+      return (
+        <Meal
+          setMealType={setMealType}
+          mealType={mealType}
+          defaultValueSlider={DEFAULT_SLIDER_VALUE_MEAL}
+          setQuantity={setMealQuantity}
+        />
+      );
+    }
+    return null;
+  };
+
   const renderFashion = () => {
     if (emissionType === EmissionType.fashion) {
       emissionPayload.value = fashionQuantity;
@@ -227,6 +249,9 @@ const AddEmissionScreen = ({
   const onFoodTagPress = useCallback(() => {
     setEmissionType(EmissionType.food);
   }, []);
+  const onMealTagPress = useCallback(() => {
+    setEmissionType(EmissionType.meal);
+  }, []);
   const onStreamingTagPress = useCallback(() => {
     setEmissionType(EmissionType.streaming);
   }, []);
@@ -265,10 +290,16 @@ const AddEmissionScreen = ({
             onPress={onTransportTagPress}
           />
           <Tag
-            icon={"md-restaurant"}
+            icon={"md-nutrition"}
             selected={emissionType === EmissionType.food}
             title={t("ADD_EMISSION_SCREEN_FOOD")}
             onPress={onFoodTagPress}
+          />
+          <Tag
+            icon={"md-restaurant"}
+            selected={emissionType === EmissionType.meal}
+            title={t("ADD_EMISSION_SCREEN_MEAL")}
+            onPress={onMealTagPress}
           />
           <Tag
             icon={"md-play-circle"}
@@ -310,6 +341,7 @@ const AddEmissionScreen = ({
       {renderElectricity()}
       {renderPurchase()}
       {renderFashion()}
+      {renderMeal()}
       {renderCustom()}
 
       <TextInput

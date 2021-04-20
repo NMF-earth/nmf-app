@@ -5,6 +5,7 @@ import {
   ElectricityType,
   PurchaseType,
   FashionType,
+  MealType,
 } from "carbon-footprint";
 
 enum EmissionType {
@@ -14,22 +15,24 @@ enum EmissionType {
   streaming = "streaming",
   electricity = "electricity",
   fashion = "fashion",
+  meal = "meal",
   custom = "custom",
 }
 
-type EmissionModel =
+type EmissionModelType =
   | FoodType
   | TransportType
   | StreamingType
   | ElectricityType
   | PurchaseType
   | FashionType
+  | MealType
   | "custom";
 
 interface EmissionPayload {
   name?: string;
   emissionType: EmissionType;
-  emissionModelType: EmissionModel;
+  emissionModelType: EmissionModelType;
   value: number;
   creationDate: string;
   location?: ElectricityType;
@@ -40,4 +43,4 @@ interface Emission extends EmissionPayload {
   isMitigated: boolean;
 }
 
-export { Emission, EmissionPayload, EmissionType, EmissionModel };
+export { Emission, EmissionPayload, EmissionType, EmissionModelType };

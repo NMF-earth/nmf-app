@@ -5,6 +5,7 @@ import {
   TransportType,
   PurchaseType,
   FashionType,
+  MealType,
 } from "carbon-footprint";
 import { Appearance, ColorSchemeName, GestureResponderEvent, Linking } from "react-native";
 
@@ -100,15 +101,9 @@ describe("tests for ui.isDarkModeEnabled", () => {
 describe("tests for ui.getIconFromModelType", () => {
   describe("electricity type emissions", () => {
     it("returns md-flash if electricity Emission model", () => {
-      // arrange
-      const electricityEmissions = Object.keys(ElectricityType);
-      const emissionModelType =
-        electricityEmissions[Math.floor(Math.random() * electricityEmissions.length)];
-
-      // act
+      const emissionModelType = ElectricityType.argentina;
       const icon = ui.getIconFromModelType(emissionModelType);
 
-      // assert
       expect(icon).toBe("md-flash");
     });
   });
@@ -127,7 +122,7 @@ describe("tests for ui.getIconFromModelType", () => {
   });
 
   describe("food type emissions", () => {
-    it("returns md-restaurant if it is food of type redMeat", () => {
+    it("returns md-nutrition if it is food of type redMeat", () => {
       // arrange
       const emissionModelType = FoodType.redMeat;
 
@@ -135,10 +130,10 @@ describe("tests for ui.getIconFromModelType", () => {
       const icon = ui.getIconFromModelType(emissionModelType);
 
       // assert
-      expect(icon).toBe("md-restaurant");
+      expect(icon).toBe("md-nutrition");
     });
 
-    it("returns md-restaurant if it is food of type whiteMeat", () => {
+    it("returns md-nutrition if it is food of type whiteMeat", () => {
       // arrange
       const emissionModelType = FoodType.whiteMeat;
 
@@ -146,10 +141,10 @@ describe("tests for ui.getIconFromModelType", () => {
       const icon = ui.getIconFromModelType(emissionModelType);
 
       // assert
-      expect(icon).toBe("md-restaurant");
+      expect(icon).toBe("md-nutrition");
     });
 
-    it("returns md-restaurant if it is food of type chocolate", () => {
+    it("returns md-nutrition if it is food of type chocolate", () => {
       // arrange
       const emissionModelType = FoodType.chocolate;
 
@@ -157,18 +152,7 @@ describe("tests for ui.getIconFromModelType", () => {
       const icon = ui.getIconFromModelType(emissionModelType);
 
       // assert
-      expect(icon).toBe("md-restaurant");
-    });
-
-    it("returns md-restaurant if it is food of type fish", () => {
-      // arrange
-      const emissionModelType = FoodType.fish;
-
-      // act
-      const icon = ui.getIconFromModelType(emissionModelType);
-
-      // assert
-      expect(icon).toBe("md-restaurant");
+      expect(icon).toBe("md-nutrition");
     });
 
     it("returns md-cafe if it is food of type coffee", () => {
@@ -429,10 +413,9 @@ describe("tests for ui.getIconFromModelType", () => {
   });
 
   it("returns md-build for any random emission type", () => {
-    // arrange
     const emissionModelType = "someRandomString";
-
-    // act
+    // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
+    // @ts-ignore
     const icon = ui.getIconFromModelType(emissionModelType);
 
     // assert
@@ -451,98 +434,110 @@ describe("tests for ui.getTranslationModelType", () => {
 
   describe("electricity type emissions", () => {
     it("returns UI_ELECTRICITY if electricity Emission model", () => {
-      // arrange
-      const electricityEmissions = Object.keys(ElectricityType);
-      const emissionModelType =
-        electricityEmissions[Math.floor(Math.random() * electricityEmissions.length)];
-
-      // act
+      const emissionModelType = ElectricityType.argentina;
       const translationModelType = ui.getTranslationModelType(emissionModelType);
 
-      // assert
       expect(translationModelType).toBe("UI_ELECTRICITY");
     });
   });
 
   describe("custom type emissions", () => {
     it("returns UI_CUSTOM if custom Emission model", () => {
-      // arrange
       const emissionModelType = EmissionType.custom;
-
-      // act
       const translationModelType = ui.getTranslationModelType(emissionModelType);
 
-      // assert
       expect(translationModelType).toBe("UI_CUSTOM");
+    });
+  });
+
+  describe("meal type emissions", () => {
+    it("returns UI_HIGH_MEAT if MealType is high meat", () => {
+      const emissionModelType = MealType.highMeat;
+      const translationModelType = ui.getTranslationModelType(emissionModelType);
+
+      expect(translationModelType).toBe("UI_HIGH_MEAT");
+    });
+
+    it("returns UI_MEDIUM_MEAT if MealType is medium meat", () => {
+      const emissionModelType = MealType.mediumMeat;
+      const translationModelType = ui.getTranslationModelType(emissionModelType);
+
+      expect(translationModelType).toBe("UI_MEDIUM_MEAT");
+    });
+
+    it("returns UI_LOW_MEAT if MealType is low meat", () => {
+      const emissionModelType = MealType.lowMeat;
+      const translationModelType = ui.getTranslationModelType(emissionModelType);
+
+      expect(translationModelType).toBe("UI_LOW_MEAT");
+    });
+
+    it("returns UI_PESCETARIAN if MealType is pescetarian", () => {
+      const emissionModelType = MealType.pescetarian;
+      const translationModelType = ui.getTranslationModelType(emissionModelType);
+
+      expect(translationModelType).toBe("UI_PESCETARIAN");
+    });
+
+    it("returns UI_VEGAN if MealType is pescetarian", () => {
+      const emissionModelType = MealType.vegan;
+      const translationModelType = ui.getTranslationModelType(emissionModelType);
+
+      expect(translationModelType).toBe("UI_VEGAN");
+    });
+
+    it("returns UI_VEGETARIAN if MealType is pescetarian", () => {
+      const emissionModelType = MealType.vegetarian;
+      const translationModelType = ui.getTranslationModelType(emissionModelType);
+
+      expect(translationModelType).toBe("UI_VEGETARIAN");
     });
   });
 
   describe("food type emissions", () => {
     it("returns UI_RED_MEAT if it is food of type redMeat", () => {
-      // arrange
       const emissionModelType = FoodType.redMeat;
-
-      // act
       const translationModelType = ui.getTranslationModelType(emissionModelType);
 
-      // assert
       expect(translationModelType).toBe("UI_RED_MEAT");
     });
 
     it("returns UI_WHITE_MEAT if it is food of type whiteMeat", () => {
-      // arrange
       const emissionModelType = FoodType.whiteMeat;
-
-      // act
       const translationModelType = ui.getTranslationModelType(emissionModelType);
 
-      // assert
       expect(translationModelType).toBe("UI_WHITE_MEAT");
     });
 
     it("returns UI_CHOCOLATE if it is food of type chocolate", () => {
-      // arrange
       const emissionModelType = FoodType.chocolate;
-
-      // act
       const translationModelType = ui.getTranslationModelType(emissionModelType);
 
-      // assert
       expect(translationModelType).toBe("UI_CHOCOLATE");
     });
 
     it("returns UI_COFFEE if it is food of type coffee", () => {
-      // arrange
       const emissionModelType = FoodType.coffee;
-
-      // act
       const translationModelType = ui.getTranslationModelType(emissionModelType);
 
-      // assert
       expect(translationModelType).toBe("UI_COFFEE");
     });
 
     it("returns UI_FISH if it is food of type fish", () => {
-      // arrange
       const emissionModelType = FoodType.fish;
-
-      // act
       const translationModelType = ui.getTranslationModelType(emissionModelType);
 
-      // assert
       expect(translationModelType).toBe("UI_FISH");
     });
+
+    /* TODO: and the rest later... */
   });
 
   describe("transport type emissions", () => {
     it("returns UI_PLANE if it is transport of type shortHaulFlight", () => {
-      // arrange
       const emissionModelType = TransportType.shortHaulFlight;
-
-      // act
       const translationModelType = ui.getTranslationModelType(emissionModelType);
 
-      // assert
       expect(translationModelType).toBe("UI_PLANE");
     });
 
@@ -674,7 +669,8 @@ describe("tests for ui.getTranslationModelType", () => {
     // arrange
     const emissionModelType = "someRandomString";
 
-    // act
+    // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
+    // @ts-ignore
     const translationModelType = ui.getTranslationModelType(emissionModelType);
 
     // assert

@@ -1,3 +1,3 @@
-import { Emission, EmissionType, EmissionPayload } from "./emission";
+import { Emission, EmissionType, EmissionPayload, EmissionModelType } from "./emission";
 
-export { Emission, EmissionType, EmissionPayload };
+export { Emission, EmissionType, EmissionPayload, EmissionModelType };

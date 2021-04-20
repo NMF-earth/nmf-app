@@ -6,5 +6,16 @@ import Electricity from "./Electricity";
 import AddEmissionButton from "./AddEmissionButton";
 import Purchase from "./Purchase";
 import Fashion from "./Fashion";
+import Meal from "./Meal";
 
-export { Purchase, Food, Electricity, Streaming, Transport, Custom, AddEmissionButton, Fashion };
+export {
+  Meal,
+  Purchase,
+  Food,
+  Electricity,
+  Streaming,
+  Transport,
+  Custom,
+  AddEmissionButton,
+  Fashion,
+};

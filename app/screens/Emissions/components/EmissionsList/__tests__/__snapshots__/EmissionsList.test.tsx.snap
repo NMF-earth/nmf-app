@@ -13,11 +13,11 @@ exports[`EmissionsList renders correctly 1`] = `
             "creationDate": "2020-03-01T12:08:16.623Z",
             "emissionModelType": "beans",
             "emissionType": "food",
-            "iconName": "md-build",
+            "iconName": "md-nutrition",
             "id": "1",
             "isMitigated": false,
             "onPress": [Function],
-            "title": "Custom",
+            "title": "Beans",
             "value": 10,
           },
           Object {
@@ -43,11 +43,11 @@ exports[`EmissionsList renders correctly 1`] = `
             "creationDate": "2020-01-01T12:08:16.623Z",
             "emissionModelType": "beans",
             "emissionType": "food",
-            "iconName": "md-build",
+            "iconName": "md-nutrition",
             "id": "3",
             "isMitigated": false,
             "onPress": [Function],
-            "title": "Custom",
+            "title": "Beans",
             "value": 30,
           },
         ],
@@ -97,11 +97,11 @@ exports[`EmissionsList renders correctly 1`] = `
     >
       <EmissionsListItem
         co2value={20}
-        iconName="md-build"
+        iconName="md-nutrition"
         id="1"
         isMitigated={false}
         onPress={[Function]}
-        title="Custom"
+        title="Beans"
       />
     </View>
     <View
@@ -137,11 +137,11 @@ exports[`EmissionsList renders correctly 1`] = `
     >
       <EmissionsListItem
         co2value={60}
-        iconName="md-build"
+        iconName="md-nutrition"
         id="3"
         isMitigated={false}
         onPress={[Function]}
-        title="Custom"
+        title="Beans"
       />
     </View>
     <View
