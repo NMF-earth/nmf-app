@@ -5,6 +5,7 @@ const fs = require("fs");
 const usedLanguages = ["en", "de", "fr", "sv", "pt", "es", "pl", "ru", "da"];
 // Imports all files
 const toBeImported = {
+  AppStore: "./app-store",
   Act: "../../app/screens/Act/translations",
   Budget: "../../app/screens/Budget/translations",
   Emissions: "../../app/screens/Emissions/translations",
@@ -40,6 +41,7 @@ Object.keys(toBeImported).forEach((key) => {
 const languageObjects = {};
 usedLanguages.forEach((language) => {
   languageObjects[language] = {
+    ...imports.AppStore[language],
     ...imports.Act[language],
     ...imports.Budget[language],
     ...imports.Emissions[language],
