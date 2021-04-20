@@ -148,7 +148,7 @@ describe("if there are emissions", () => {
   test("`getFashionEmissions` should return fashion emissions", () =>
     expect(emissions.selectors.getFashionEmissions(state)).toEqual([emissionFashion]));
 
-  test("`getMealEmissions` should return electricity emissions", () =>
+  test("`getMealEmissions` should return meal emissions", () =>
     expect(emissions.selectors.getMealEmissions(state)).toEqual([emissionMeal]));
 
   test("`getOtherEmissions` should return other emissions", () =>

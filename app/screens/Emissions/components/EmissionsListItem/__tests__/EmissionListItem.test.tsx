@@ -8,6 +8,7 @@ import {
   ElectricityType,
   PurchaseType,
   FashionType,
+  MealType,
 } from "carbon-footprint";
 
 import { ui } from "utils";
@@ -226,6 +227,15 @@ it("EmissionsListItem renders correctly with shirt icon", () => {
   const tree = create(
     <FormattedProvider locale="en">
       <EmissionsListItem {...props} iconName={ui.getIconFromModelType(FashionType.coat)} />
+    </FormattedProvider>
+  ).toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it("EmissionsListItem renders correctly with meal icon", () => {
+  const tree = create(
+    <FormattedProvider locale="en">
+      <EmissionsListItem {...props} iconName={ui.getIconFromModelType(MealType.mediumMeat)} />
     </FormattedProvider>
   ).toJSON();
   expect(tree).toMatchSnapshot();

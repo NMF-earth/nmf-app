@@ -31,7 +31,7 @@ const getFlightType = (duration: number) => {
   return TransportType.longHaulFlight;
 };
 
-const getFlightEmissionValue = (duration: number) => {
+const getFlightEmissionValue = (duration: number): number => {
   switch (getFlightType(duration)) {
     case TransportType.shortHaulFlight: {
       /* Paris -> Toulouse 1h15 AF6122 588 km */
@@ -59,7 +59,7 @@ const getFlightEmissionValue = (duration: number) => {
   }
 };
 
-const getC02ValueFromEmission = (emission: Emission) => {
+const getC02ValueFromEmission = (emission: Emission): number => {
   if (emission.emissionType === EmissionType.custom) {
     return emission.value;
   }
@@ -91,8 +91,8 @@ const getCreationDate: (Emission) => string = prop("creationDate");
 const getLatestEmission = (emissions: Array<Emission>) =>
   isNilOrEmpty(emissions) ? null : reduce(maxBy(getCreationDate), emissions[0], emissions);
 
-const toKWH = (x: number) => (x * 3.6) / Math.pow(10, -6);
-const toKgCO2 = (x: number) => x * 1000;
+const toKWH = (x: number): number => (x * 3.6) / Math.pow(10, -6);
+const toKgCO2 = (x: number): number => x * 1000;
 const getCarbonIntensityInGramPerKWHromKgPerJoules = pipe(toKWH, toKgCO2, Math.round);
 
 export default {

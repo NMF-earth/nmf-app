@@ -10,6 +10,8 @@ import {
   getInternetUsageCarbonImpact,
   FashionType,
   PurchaseType,
+  MealType,
+  meal,
   purchase,
   fashion,
 } from "carbon-footprint";
@@ -63,6 +65,12 @@ const emissionFashion = {
   emissionType: EmissionType.fashion,
 };
 
+const emissionMeal = {
+  ...emissionFood,
+  emissionModelType: MealType.highMeat,
+  emissionType: EmissionType.meal,
+};
+
 const emissionCustom = {
   ...emissionFood,
   emissionModelType: "custom",
@@ -78,6 +86,11 @@ describe("getC02ValueFromEmission should return the correct co2 emitted value fo
   it("transport emission", () => {
     expect(calculation.getC02ValueFromEmission(emissionTransport)).toEqual(
       transport.boat * emissionTransport.value
+    );
+  });
+  it("meal emission", () => {
+    expect(calculation.getC02ValueFromEmission(emissionMeal)).toEqual(
+      meal.highMeat * emissionMeal.value
     );
   });
   it("purchase emission", () => {

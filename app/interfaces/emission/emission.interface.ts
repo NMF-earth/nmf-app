@@ -19,7 +19,7 @@ enum EmissionType {
   custom = "custom",
 }
 
-type EmissionModel =
+type EmissionModelType =
   | FoodType
   | TransportType
   | StreamingType
@@ -32,7 +32,7 @@ type EmissionModel =
 interface EmissionPayload {
   name?: string;
   emissionType: EmissionType;
-  emissionModelType: EmissionModel;
+  emissionModelType: EmissionModelType;
   value: number;
   creationDate: string;
   location?: ElectricityType;
@@ -43,4 +43,4 @@ interface Emission extends EmissionPayload {
   isMitigated: boolean;
 }
 
-export { Emission, EmissionPayload, EmissionType, EmissionModel };
+export { Emission, EmissionPayload, EmissionType, EmissionModelType };

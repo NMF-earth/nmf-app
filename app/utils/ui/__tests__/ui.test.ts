@@ -101,15 +101,9 @@ describe("tests for ui.isDarkModeEnabled", () => {
 describe("tests for ui.getIconFromModelType", () => {
   describe("electricity type emissions", () => {
     it("returns md-flash if electricity Emission model", () => {
-      // arrange
-      const electricityEmissions = Object.keys(ElectricityType);
-      const emissionModelType =
-        electricityEmissions[Math.floor(Math.random() * electricityEmissions.length)];
-
-      // act
+      const emissionModelType = ElectricityType.argentina;
       const icon = ui.getIconFromModelType(emissionModelType);
 
-      // assert
       expect(icon).toBe("md-flash");
     });
   });
@@ -419,10 +413,9 @@ describe("tests for ui.getIconFromModelType", () => {
   });
 
   it("returns md-build for any random emission type", () => {
-    // arrange
     const emissionModelType = "someRandomString";
-
-    // act
+    // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
+    // @ts-ignore
     const icon = ui.getIconFromModelType(emissionModelType);
 
     // assert
@@ -441,28 +434,18 @@ describe("tests for ui.getTranslationModelType", () => {
 
   describe("electricity type emissions", () => {
     it("returns UI_ELECTRICITY if electricity Emission model", () => {
-      // arrange
-      const electricityEmissions = Object.keys(ElectricityType);
-      const emissionModelType =
-        electricityEmissions[Math.floor(Math.random() * electricityEmissions.length)];
-
-      // act
+      const emissionModelType = ElectricityType.argentina;
       const translationModelType = ui.getTranslationModelType(emissionModelType);
 
-      // assert
       expect(translationModelType).toBe("UI_ELECTRICITY");
     });
   });
 
   describe("custom type emissions", () => {
     it("returns UI_CUSTOM if custom Emission model", () => {
-      // arrange
       const emissionModelType = EmissionType.custom;
-
-      // act
       const translationModelType = ui.getTranslationModelType(emissionModelType);
 
-      // assert
       expect(translationModelType).toBe("UI_CUSTOM");
     });
   });
@@ -513,57 +496,37 @@ describe("tests for ui.getTranslationModelType", () => {
 
   describe("food type emissions", () => {
     it("returns UI_RED_MEAT if it is food of type redMeat", () => {
-      // arrange
       const emissionModelType = FoodType.redMeat;
-
-      // act
       const translationModelType = ui.getTranslationModelType(emissionModelType);
 
-      // assert
       expect(translationModelType).toBe("UI_RED_MEAT");
     });
 
     it("returns UI_WHITE_MEAT if it is food of type whiteMeat", () => {
-      // arrange
       const emissionModelType = FoodType.whiteMeat;
-
-      // act
       const translationModelType = ui.getTranslationModelType(emissionModelType);
 
-      // assert
       expect(translationModelType).toBe("UI_WHITE_MEAT");
     });
 
     it("returns UI_CHOCOLATE if it is food of type chocolate", () => {
-      // arrange
       const emissionModelType = FoodType.chocolate;
-
-      // act
       const translationModelType = ui.getTranslationModelType(emissionModelType);
 
-      // assert
       expect(translationModelType).toBe("UI_CHOCOLATE");
     });
 
     it("returns UI_COFFEE if it is food of type coffee", () => {
-      // arrange
       const emissionModelType = FoodType.coffee;
-
-      // act
       const translationModelType = ui.getTranslationModelType(emissionModelType);
 
-      // assert
       expect(translationModelType).toBe("UI_COFFEE");
     });
 
     it("returns UI_FISH if it is food of type fish", () => {
-      // arrange
       const emissionModelType = FoodType.fish;
-
-      // act
       const translationModelType = ui.getTranslationModelType(emissionModelType);
 
-      // assert
       expect(translationModelType).toBe("UI_FISH");
     });
 
@@ -572,13 +535,9 @@ describe("tests for ui.getTranslationModelType", () => {
 
   describe("transport type emissions", () => {
     it("returns UI_PLANE if it is transport of type shortHaulFlight", () => {
-      // arrange
       const emissionModelType = TransportType.shortHaulFlight;
-
-      // act
       const translationModelType = ui.getTranslationModelType(emissionModelType);
 
-      // assert
       expect(translationModelType).toBe("UI_PLANE");
     });
 
@@ -710,7 +669,8 @@ describe("tests for ui.getTranslationModelType", () => {
     // arrange
     const emissionModelType = "someRandomString";
 
-    // act
+    // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
+    // @ts-ignore
     const translationModelType = ui.getTranslationModelType(emissionModelType);
 
     // assert

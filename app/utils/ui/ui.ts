@@ -10,7 +10,7 @@ import {
 } from "carbon-footprint";
 import { contains, __ } from "ramda";
 
-import { EmissionType } from "interfaces";
+import { EmissionType, EmissionModelType } from "interfaces";
 
 import { t } from "../translations";
 
@@ -20,7 +20,7 @@ const isFoodEmission = contains(__, Object.keys(FoodType));
 const isPurchaseEmission = contains(__, Object.keys(PurchaseType));
 const isFashionEmission = contains(__, Object.keys(FashionType));
 
-const getTranslationModelType = (emissionModelType) => {
+const getTranslationModelType = (emissionModelType: EmissionModelType): string => {
   switch (emissionModelType) {
     case EmissionType.custom:
       return t("UI_CUSTOM");
@@ -146,7 +146,7 @@ const getTranslationModelType = (emissionModelType) => {
   return t("UI_CUSTOM");
 };
 
-const getIconFromModelType = (emissionModelType) => {
+const getIconFromModelType = (emissionModelType: EmissionModelType): string => {
   switch (emissionModelType) {
     case EmissionType.custom:
       return "md-build";
@@ -197,9 +197,9 @@ const getIconFromModelType = (emissionModelType) => {
   return "md-build";
 };
 
-const isDarkModeEnabled = () => Appearance.getColorScheme() === "dark";
+const isDarkModeEnabled = (): boolean => Appearance.getColorScheme() === "dark";
 
-const onHTMLBodyLinkPress = (_: GestureResponderEvent, link: string) => {
+const onHTMLBodyLinkPress = (_: GestureResponderEvent, link: string): void => {
   if (link) {
     Linking.openURL(link);
   }
