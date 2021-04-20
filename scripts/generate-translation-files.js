@@ -5,7 +5,6 @@ const paths = [
   "app/screens/Settings/translations/",
   "app/screens/MonthlyBudget/translations/",
   "app/screens/ComingSoon/translations/",
-  "app/screens/Methodology/translations/",
   "app/screens/AddEmission/translations/",
   "app/screens/EmissionItem/translations/",
   "app/screens/Intro/translations/",
@@ -13,6 +12,9 @@ const paths = [
   "app/screens/SupportUs/translations/",
   "app/screens/MyLocation/translations/",
   "app/screens/ActDetail/translations/",
+  "app/screens/Notifications/translations/",
+  "app/screens/InfoModal/translations/",
+  "app/screens/MyData/translations/",
   "app/components/NoEmission/translations/",
   "app/utils/ui/translations/",
 ];

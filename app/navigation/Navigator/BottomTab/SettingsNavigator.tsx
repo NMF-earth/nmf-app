@@ -6,7 +6,7 @@ import AboutScreen from "../../../screens/About";
 import SupportUsScreen from "../../../screens/SupportUs";
 import MyLocationScreen from "../../../screens/MyLocation";
 import NotificationsScreen from "../../../screens/Notifications";
-import MyData from "../../../screens/MyDataScreen";
+import MyData from "../../../screens/MyData";
 import StorybookScreen from "../../../../storybook";
 
 const Stack = createStackNavigator();

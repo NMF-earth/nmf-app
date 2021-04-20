@@ -4,10 +4,8 @@ import * as Act from "../../screens/Act/translations";
 import * as Budget from "../../screens/Budget/translations";
 import * as Emissions from "../../screens/Emissions/translations";
 import * as Settings from "../../screens/Settings/translations";
-import * as Notifications from "../../screens/Notifications/translations";
 import * as MonthlyBudget from "../../screens/MonthlyBudget/translations";
 import * as ComingSoon from "../../screens/ComingSoon/translations";
-import * as InfoModal from "../../screens/InfoModal/translations";
 import * as AddEmission from "../../screens/AddEmission/translations";
 import * as EmissionItem from "../../screens/EmissionItem/translations";
 import * as Intro from "../../screens/Intro/translations";
@@ -15,7 +13,9 @@ import * as About from "../../screens/About/translations";
 import * as SupportUs from "../../screens/SupportUs/translations";
 import * as MyLocation from "../../screens/MyLocation/translations";
 import * as ActDetail from "../../screens/ActDetail/translations";
-import * as MyData from "../../screens/MyDataScreen/translations";
+import * as Notifications from "../../screens/Notifications/translations";
+import * as InfoModal from "../../screens/InfoModal/translations";
+import * as MyData from "../../screens/MyData/translations";
 
 /* COMPONENTS */
 import * as NoEmission from "components/NoEmission/translations";
@@ -24,24 +24,24 @@ import * as NoEmission from "components/NoEmission/translations";
 import * as UI from "utils/ui/translations";
 
 const en = {
-  ...UI.en,
-  ...About.en,
-  ...Notifications.en,
-  ...MonthlyBudget.en,
-  ...NoEmission.en,
   ...Act.en,
   ...Budget.en,
   ...Emissions.en,
   ...Settings.en,
+  ...MonthlyBudget.en,
   ...ComingSoon.en,
-  ...InfoModal.en,
   ...AddEmission.en,
   ...EmissionItem.en,
   ...Intro.en,
+  ...About.en,
   ...SupportUs.en,
   ...MyLocation.en,
   ...ActDetail.en,
+  ...Notifications.en,
+  ...InfoModal.en,
   ...MyData.en,
+  ...NoEmission.en,
+  ...UI.en,
 };
 
 const de = {
