@@ -121,7 +121,11 @@ To place new `.md` files inside `guides` folder or modify existing guide and the
 
 <br />
 
-Same for methodology screen, just run `node scripts/generate-methodology.js` to update `methodology.json` from `methodology.md`.
+For methodology screen, just run `node scripts/generate-methodology.js` to update `methodology.json` from `methodology.md`.
+
+<br />
+
+For emission info screen, just run `node scripts/generate-emission-info.js` to update `emission-info.json` from `assets/emission-info/markdown/*.md`.
 
 <br />
 

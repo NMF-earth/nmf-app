@@ -22,6 +22,7 @@ const props = {
   isMitigated: false,
   title: "170 g of red meat",
   co2value: 2.1,
+  emissionModelType: "redMeat",
   onPress: () => {
     // do nothing.
   },

@@ -17,7 +17,10 @@ exports[`InfoModalScreen renders correctly 1`] = `
           "fontSize": 18,
         }
       }
-      html="<h1>How is your carbon footprint calculated?</h1>
+      onLinkPress={[Function]}
+      source={
+        Object {
+          "html": "<h1>How is your carbon footprint calculated?</h1>
 <p>It's important to say that there is no perfect calculation method because there are too many parameters to take into account, such as the weather which can drastically influence plane fuel consumption and some parameters that we can't predict, like the lifespan of a car for example.</p>
 <p>However, what is important is the order of magnitude in order to compare and reduce our carbon footprint. Alls coefficients used are from <a href=\\"https://static.ducky.eco/calculator_documentation.pdf\\">Ducky</a> and <a href=\\"https://www.bilans-ges.ademe.fr/\\">Ademe</a>.</p>
 <h2>Transport</h2>
@@ -38,8 +41,9 @@ exports[`InfoModalScreen renders correctly 1`] = `
 <p><strong>GHGnetwork</strong> = dataWeight <em>x</em> FactorNetwork <em>x</em> electricity.world;</p>
 <p><strong>GHGdevice</strong> = duration <em>x</em> FactorDevice <em>x</em> electricity[carbonElectricityIntensity];</p>
 <p><em>GHG : greenhouse gases</em></p>
-"
-      onLinkPress={[Function]}
+",
+        }
+      }
     />
   </View>
 </RCTScrollView>

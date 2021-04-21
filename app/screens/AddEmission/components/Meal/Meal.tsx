@@ -11,7 +11,7 @@ import { Colors } from "style";
 import styles from "./Meal.styles";
 
 const MIN_SLIDER_VALUE = 1;
-const MAX_SLIDER_VALUE = 10;
+const MAX_SLIDER_VALUE = 20;
 
 interface Props {
   defaultValueSlider: number;

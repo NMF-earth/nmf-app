@@ -25,15 +25,18 @@ const EmissionsList = ({ emissions, monthlyCarbonBudget }) => {
       ListFooterComponent={renderListFooter}
       renderSectionHeader={({ section: { date, co2value } }) => renderSectionHeader(date, co2value)}
       keyExtractor={({ id }) => id}
-      renderItem={({ item: { id, isMitigated, name, title, co2value, iconName } }) => (
+      renderItem={({
+        item: { id, isMitigated, name, title, co2value, iconName, emissionModelType },
+      }) => (
         <EmissionsListItem
           id={id}
           isMitigated={isMitigated}
           name={name}
-          onPress={() => navigator.openEmissionItem({ id })}
+          onPress={() => navigator.openEmissionItem({ id, emissionModelType })}
           title={title}
           co2value={co2value}
           iconName={iconName}
+          emissionModelType={emissionModelType}
         />
       )}
     />
