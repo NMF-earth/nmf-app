@@ -31,6 +31,7 @@ storiesOf("EmissionsListItem", module)
       <EmissionsListItem
         {...{
           id: "123",
+          emissionModelType: "car",
           isMitigated: boolean("isMitigated", false),
           title: text("title", "170 g of red meats"),
           co2value: number("co2value", 2.1),
@@ -48,6 +49,7 @@ storiesOf("EmissionsListItem", module)
       <EmissionsListItem
         {...{
           id: "123",
+          emissionModelType: "car",
           isMitigated: boolean("isMitigated", false),
           title: text("title", "Bike"),
           co2value: number("co2value", 2.1),

@@ -97,6 +97,7 @@ exports[`EmissionsList renders correctly 1`] = `
     >
       <EmissionsListItem
         co2value={20}
+        emissionModelType="beans"
         iconName="md-nutrition"
         id="1"
         isMitigated={false}
@@ -110,6 +111,7 @@ exports[`EmissionsList renders correctly 1`] = `
     >
       <EmissionsListItem
         co2value={0.0803}
+        emissionModelType="boat"
         iconName="md-boat"
         id="12"
         isMitigated={true}
@@ -137,6 +139,7 @@ exports[`EmissionsList renders correctly 1`] = `
     >
       <EmissionsListItem
         co2value={60}
+        emissionModelType="beans"
         iconName="md-nutrition"
         id="3"
         isMitigated={false}
