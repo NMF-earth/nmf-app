@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from "react";
-import { View, Switch } from "react-native";
+import { View, Switch, Alert } from "react-native";
 import * as Notifications from "expo-notifications";
 import { useDispatch, useSelector } from "react-redux";
 
@@ -37,7 +37,7 @@ const NotificationsScreen = () => {
           await Notifications.cancelAllScheduledNotificationsAsync();
         }
       } catch (e) {
-        console.log(e);
+        Alert.alert("Error", e);
       }
       setActivated(value);
       dispatch(userPreferences.actions.toggleNotifications(value));

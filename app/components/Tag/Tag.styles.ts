@@ -1,32 +1,28 @@
-import { StyleSheet, ViewStyle } from "react-native";
+import { StyleSheet } from "react-native";
 
 import { Colors } from "style";
 
-const container: ViewStyle = {
-  paddingVertical: 6,
-  alignItems: "center",
-  paddingHorizontal: 12,
-  marginRight: 12,
-  borderWidth: 1,
-  borderRadius: 8,
-};
-
 export default StyleSheet.create({
-  containerNotSelected: {
-    ...container,
-    backgroundColor: Colors.green50 + "10",
-    borderColor: Colors.grey100 + 20,
-  },
-  containerSelected: {
-    ...container,
+  container: {
+    flex: 1,
+    flexDirection: "row",
+    justifyContent: "space-between",
+    paddingVertical: 16,
+    paddingHorizontal: 16,
+    marginVertical: 8,
+    alignItems: "center",
     backgroundColor: Colors.green50 + "20",
     borderColor: Colors.green50,
+    borderWidth: 2,
+    borderRadius: 8,
   },
-  containerIcon: {
-    minWidth: 110,
-    paddingVertical: 10,
+  textContainer: {
+    flex: 1,
   },
-  icon: {
-    marginBottom: 2,
+  text: {
+    textTransform: "capitalize",
+  },
+  mainIcon: {
+    marginRight: 16,
   },
 });

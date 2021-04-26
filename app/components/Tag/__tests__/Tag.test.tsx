@@ -9,8 +9,7 @@ let props;
 
 beforeEach(() => {
   props = {
-    selected: false,
-    title: "Transport",
+    text: "Transport",
     onPress: () => {
       // do nothing.
     },
@@ -21,11 +20,6 @@ beforeEach(() => {
 
 it("Tag renders correctly with no icon", () => {
   const tree = create(<Tag {...props} />).toJSON();
-  expect(tree).toMatchSnapshot();
-});
-
-it("Tag renders correctly with no icon and selected", () => {
-  const tree = create(<Tag {...props} selected />).toJSON();
   expect(tree).toMatchSnapshot();
 });
 

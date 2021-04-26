@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import { View, ScrollView } from "react-native";
+import { View } from "react-native";
 import Slider from "@react-native-community/slider";
 import { FormattedNumber } from "react-native-globalize";
 import { transport, TransportType } from "carbon-footprint";
 
-import { Text, Tag } from "components";
-import { t, time, ui, calculation } from "utils";
+import { Text } from "components";
+import { t, time, calculation } from "utils";
 import { Colors } from "style";
 
 import styles from "./Transport.styles";
@@ -18,25 +18,14 @@ const MAX_SLIDER_VALUE_PLANE = 1000;
 
 interface Props {
   defaultValueSlider: number;
-  transportType: string;
-  setTransportType: (arg0: TransportType) => void;
+  emissionModelType: string;
   setDurationMinutes: (arg0: number) => void;
   setDistance: (arg0: number) => void;
 }
 
-const TAGS: Array<TransportType> = [
-  TransportType.train,
-  TransportType.car,
-  TransportType.bus,
-  TransportType.plane,
-  TransportType.boat,
-  TransportType.motorbike,
-];
-
 export default ({
   setDurationMinutes,
-  setTransportType,
-  transportType,
+  emissionModelType,
   setDistance,
   defaultValueSlider,
 }: Props) => {
@@ -71,51 +60,37 @@ export default ({
   };
 
   return (
-    <React.Fragment>
-      <View style={styles.typeContainer}>
-        <Text.H3>{t("ADD_EMISSION_SCREEN_TRANSPORT_TYPE")}</Text.H3>
-      </View>
-      <ScrollView horizontal style={styles.tagContainer}>
-        {TAGS.map((item) => (
-          <Tag
-            key={item}
-            selected={transportType === item}
-            title={ui.getTranslationModelType(item)}
-            onPress={() => setTransportType(item)}
-          />
-        ))}
-        <View style={styles.separator} />
-      </ScrollView>
-      {transportType === TransportType.plane ? renderDuration() : renderDistance()}
+    <>
+      {emissionModelType === TransportType.plane ? renderDuration() : renderDistance()}
       <Slider
         minimumTrackTintColor={Colors.green50}
         maximumTrackTintColor={Colors.grey}
         thumbTintColor={Colors.green50}
         style={styles.slider}
         maximumValue={
-          transportType === TransportType.plane ? MAX_SLIDER_VALUE_PLANE : MAX_SLIDER_VALUE
+          emissionModelType === TransportType.plane ? MAX_SLIDER_VALUE_PLANE : MAX_SLIDER_VALUE
         }
         minimumValue={
-          transportType === TransportType.plane ? MIN_SLIDER_VALUE_PLANE : MIN_SLIDER_VALUE
+          emissionModelType === TransportType.plane ? MIN_SLIDER_VALUE_PLANE : MIN_SLIDER_VALUE
         }
         value={sliderValue}
         onSlidingComplete={onSliderValueChange}
       />
       <View style={styles.totalContainer}>
         <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_SCREEN_TOTAL")}</Text.H3>
-        <Text.H2 style={{ color: Colors.blue50 }}>
+        <Text.H2 darkGray>
           <FormattedNumber
             value={
-              transportType === TransportType.plane
+              emissionModelType === TransportType.plane
                 ? calculation.getFlightEmissionValue(sliderValue) *
                   transport[calculation.getFlightType(sliderValue)]
-                : sliderValue * 1000 * transport[transportType]
+                : sliderValue * 1000 * transport[emissionModelType]
             }
             maximumFractionDigits={2}
           />{" "}
           <Text.Primary>kgCO2eq</Text.Primary>
         </Text.H2>
       </View>
-    </React.Fragment>
+    </>
   );
 };

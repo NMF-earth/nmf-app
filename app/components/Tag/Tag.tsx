@@ -1,5 +1,5 @@
 import React from "react";
-import { TouchableOpacity } from "react-native";
+import { TouchableOpacity, View } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
 import { Colors } from "style";
@@ -8,35 +8,26 @@ import Text from "../Text";
 import styles from "./Tag.styles";
 
 interface Props {
-  selected: boolean;
   icon?: string;
-  title: string;
+  text: string;
   onPress: () => void;
 }
 
 const Tag = (props: Props) => {
-  const { selected, onPress, title, icon } = props;
+  const { text, onPress, icon } = props;
   let iconItem = null;
-  let containterStyle = selected ? styles.containerSelected : styles.containerNotSelected;
 
   if (icon) {
-    containterStyle = { ...containterStyle, ...styles.containerIcon };
-    iconItem = (
-      <Ionicons
-        name={icon}
-        size={30}
-        style={styles.icon}
-        color={selected ? Colors.green50 : Colors.grey70}
-      />
-    );
+    iconItem = <Ionicons name={icon} size={32} style={styles.mainIcon} color={Colors.green50} />;
   }
 
   return (
-    <TouchableOpacity onPress={onPress} style={containterStyle}>
+    <TouchableOpacity onPress={onPress} style={styles.container}>
       {iconItem}
-      <Text.Primary green={selected} darkGray={!selected}>
-        {title}
-      </Text.Primary>
+      <View style={styles.textContainer}>
+        <Text.Primary style={styles.text}>{text}</Text.Primary>
+      </View>
+      <Ionicons name={"chevron-forward"} size={20} color={Colors.green50} />
     </TouchableOpacity>
   );
 };

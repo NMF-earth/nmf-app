@@ -33,7 +33,7 @@ const Electricity = ({
       <View style={styles.container}>
         <Text.H3 style={styles.header}>{t("ADD_EMISSION_SCREEN_ELECTRICITY_CONSUMPTION")}</Text.H3>
         <View style={{ flexDirection: "row" }}>
-          <Text.H2 blue50>
+          <Text.H2 darkGray>
             {Math.round((sliderValue / 3.6) * Math.pow(10, -6))}
             <Text.Primary>{" kWh - "}</Text.Primary>
             <Text.Secondary lightGray>
@@ -54,7 +54,7 @@ const Electricity = ({
       />
       <View style={styles.totalContainer}>
         <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_SCREEN_TOTAL")}</Text.H3>
-        <Text.H2 blue50>
+        <Text.H2 darkGray>
           <FormattedNumber
             value={sliderValue * electricity[electricityCountry]}
             maximumFractionDigits={2}

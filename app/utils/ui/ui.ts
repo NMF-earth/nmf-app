@@ -20,7 +20,28 @@ const isFoodEmission = contains(__, Object.keys(FoodType));
 const isPurchaseEmission = contains(__, Object.keys(PurchaseType));
 const isFashionEmission = contains(__, Object.keys(FashionType));
 
-const getTranslationModelType = (emissionModelType: EmissionModelType): string => {
+const getTranslationEmissionType = (emissionType: EmissionType): string => {
+  switch (emissionType) {
+    case EmissionType.custom:
+      return t("UI_CUSTOM");
+    case EmissionType.electricity:
+      return t("UI_ELECTRICITY");
+    case EmissionType.fashion:
+      return t("UI_FASHION");
+    case EmissionType.food:
+      return t("UI_FOOD");
+    case EmissionType.meal:
+      return t("UI_MEAL");
+    case EmissionType.purchase:
+      return t("UI_PURCHASE");
+    case EmissionType.streaming:
+      return t("UI_STREAMING");
+    case EmissionType.transport:
+      return t("UI_TRANSPORT");
+  }
+};
+
+const getTranslationEmissionModelType = (emissionModelType: EmissionModelType): string => {
   switch (emissionModelType) {
     case EmissionType.custom:
       return t("UI_CUSTOM");
@@ -206,7 +227,8 @@ const onHTMLBodyLinkPress = (_: GestureResponderEvent, link: string): void => {
 };
 
 export default {
-  getTranslationModelType,
+  getTranslationEmissionType,
+  getTranslationEmissionModelType,
   getIconFromModelType,
   isDarkModeEnabled,
   onHTMLBodyLinkPress,

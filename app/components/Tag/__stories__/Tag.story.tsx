@@ -1,13 +1,12 @@
 import React from "react";
 import { View, ViewStyle } from "react-native";
 import { storiesOf } from "@storybook/react-native";
-import { boolean, select, text } from "@storybook/addon-knobs";
+import { select, text } from "@storybook/addon-knobs";
 
 import Tag from "..";
 
 const props = {
-  selected: false,
-  title: "Transport",
+  text: "Transport",
   onPress: () => alert("onPress"),
 };
 
@@ -23,7 +22,7 @@ const container: ViewStyle = { flexDirection: "row", margin: 20 };
 storiesOf("Tag", module)
   .add("no icon", () => (
     <View style={container}>
-      <Tag {...props} title={text("Title", "transport")} selected={boolean("Selected", false)} />
+      <Tag {...props} text={text("Title", "transport")} />
     </View>
   ))
   .add("with Icons", () => {
@@ -31,9 +30,8 @@ storiesOf("Tag", module)
       <View style={container}>
         <Tag
           {...props}
-          title={text("Title", "transport")}
+          text={text("Title", "transport")}
           icon={select("Type of Icon", iconOptions, "md-airplane")}
-          selected={boolean("Selected", false)}
         />
       </View>
     );

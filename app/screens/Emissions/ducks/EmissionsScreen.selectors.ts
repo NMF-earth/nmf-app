@@ -15,7 +15,7 @@ interface EmissionListItem extends Emission {
 const getEmissionListItem = (item: Emission) => {
   const emissionItem: EmissionListItem = {
     ...item,
-    title: ui.getTranslationModelType(item.emissionModelType),
+    title: ui.getTranslationEmissionModelType(item.emissionModelType),
     co2value: calculation.getC02ValueFromEmission(item),
     iconName: ui.getIconFromModelType(item.emissionModelType),
     onPress: () => {

@@ -26,7 +26,7 @@ const EmissionItemScreen = ({ language = "" }: LocalizationContextProps) => {
 
   const emission = useSelector((state) => emissions.selectors.getEmissionById(state, emissionId));
 
-  const { creationDate, emissionModelType, name } = emission || {
+  const { creationDate, emissionModelType, emissionType, name } = emission || {
     creationDate: new Date(),
     emissionModelType: "",
     name: "",
@@ -58,7 +58,9 @@ const EmissionItemScreen = ({ language = "" }: LocalizationContextProps) => {
           <>
             <Text.H3>{t("EMISSION_ITEM_SCREEN_TYPE")}</Text.H3>
             <Text.Primary darkGray style={styles.item}>
-              {ui.getTranslationModelType(emissionModelType)}
+              {ui.getTranslationEmissionType(emissionType)}
+              {" - "}
+              {ui.getTranslationEmissionModelType(emissionModelType)}
             </Text.Primary>
           </>
           <Text.H3>{t("EMISSION_ITEM_SCREEN_QUANTITY")}</Text.H3>

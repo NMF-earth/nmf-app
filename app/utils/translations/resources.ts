@@ -16,6 +16,8 @@ import * as ActDetail from "../../screens/ActDetail/translations";
 import * as Notifications from "../../screens/Notifications/translations";
 import * as InfoModal from "../../screens/InfoModal/translations";
 import * as MyData from "../../screens/MyData/translations";
+import * as CategorySelection from "../../screens/CategorySelection/translations";
+import * as SubCategorySelection from "../../screens/SubCategorySelection/translations";
 
 /* COMPONENTS */
 import * as NoEmission from "components/NoEmission/translations";
@@ -40,6 +42,8 @@ const en = {
   ...Notifications.en,
   ...InfoModal.en,
   ...MyData.en,
+  ...CategorySelection.en,
+  ...SubCategorySelection.en,
   ...NoEmission.en,
   ...UI.en,
 };
@@ -60,6 +64,8 @@ const de = {
   ...Intro.de,
   ...SupportUs.de,
   ...MyLocation.de,
+  ...CategorySelection.de,
+  ...SubCategorySelection.de,
   ...ActDetail.de,
   ...MyData.de,
 };
@@ -83,6 +89,8 @@ const fr = {
   ...MyLocation.fr,
   ...ActDetail.fr,
   ...MyData.fr,
+  ...CategorySelection.fr,
+  ...SubCategorySelection.fr,
 };
 
 const sv = {
@@ -104,6 +112,8 @@ const sv = {
   ...MyLocation.sv,
   ...ActDetail.sv,
   ...MyData.sv,
+  ...CategorySelection.sv,
+  ...SubCategorySelection.sv,
 };
 
 const pt = {
@@ -124,6 +134,8 @@ const pt = {
   ...MyLocation.pt,
   ...ActDetail.pt,
   ...MyData.pt,
+  ...CategorySelection.pt,
+  ...SubCategorySelection.pt,
 };
 
 const es = {
@@ -144,6 +156,8 @@ const es = {
   ...MyLocation.es,
   ...ActDetail.es,
   ...MyData.es,
+  ...CategorySelection.es,
+  ...SubCategorySelection.es,
 };
 
 const ru = {
@@ -164,6 +178,8 @@ const ru = {
   ...MyLocation.ru,
   ...ActDetail.ru,
   ...MyData.ru,
+  ...CategorySelection.ru,
+  ...SubCategorySelection.ru,
 };
 
 const pl = {
@@ -184,6 +200,8 @@ const pl = {
   ...MyLocation.pl,
   ...ActDetail.pl,
   ...MyData.pl,
+  ...CategorySelection.pl,
+  ...SubCategorySelection.pl,
 };
 
 const da = {
@@ -204,6 +222,8 @@ const da = {
   ...MyLocation.da,
   ...ActDetail.da,
   ...MyData.da,
+  ...CategorySelection.da,
+  ...SubCategorySelection.da,
 };
 
 export interface TranslationKeys
@@ -224,6 +244,8 @@ export interface TranslationKeys
     MyLocation.TranslationKeys,
     SupportUs.TranslationKeys,
     MyData.TranslationKeys,
+    CategorySelection.TranslationKeys,
+    SubCategorySelection.TranslationKeys,
     ActDetail.TranslationKeys {}
 
 export { en, de, fr, sv, pt, es, pl, ru, da };

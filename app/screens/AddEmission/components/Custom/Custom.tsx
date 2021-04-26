@@ -21,11 +21,11 @@ export default ({ setCo2eqKilograms, defaultValueSlider }: Props) => {
   setCo2eqKilograms(sliderValue);
 
   return (
-    <React.Fragment>
+    <>
       <View style={styles.container}>
         <Text.H3 style={styles.header}>{t("ADD_EMISSION_SCREEN_QUANTITY_OF_EMISSION")}</Text.H3>
         <View style={{ flexDirection: "row" }}>
-          <Text.H2 blue50>
+          <Text.H2 darkGray>
             {Math.round(sliderValue)}
             <Text.Primary>{" kgCO2eq"}</Text.Primary>
           </Text.H2>
@@ -41,6 +41,6 @@ export default ({ setCo2eqKilograms, defaultValueSlider }: Props) => {
         value={sliderValue}
         onSlidingComplete={setSliderValue}
       />
-    </React.Fragment>
+    </>
   );
 };

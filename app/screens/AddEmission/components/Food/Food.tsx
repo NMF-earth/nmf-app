@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import { View, ScrollView } from "react-native";
+import { View } from "react-native";
 import Slider from "@react-native-community/slider";
 import { FormattedNumber } from "react-native-globalize";
-import { FoodType, food } from "carbon-footprint";
+import { food } from "carbon-footprint";
 
-import { Text, Tag } from "components";
-import { t, ui } from "utils";
+import { Text } from "components";
+import { t } from "utils";
 import { Colors } from "style";
 
 import styles from "./Food.styles";
@@ -15,37 +15,11 @@ const MAX_SLIDER_VALUE = 500;
 
 interface Props {
   defaultValueSlider: number;
-  foodType: string;
-  setFoodType: (arg0: FoodType) => void;
+  emissionModelType: string;
   setQuantity: (arg0: number) => void;
 }
 
-const TAGS: Array<FoodType> = [
-  FoodType.redMeat,
-  FoodType.whiteMeat,
-  FoodType.coffee,
-  FoodType.chocolate,
-  FoodType.fish,
-  FoodType.lamb,
-  FoodType.beef,
-  FoodType.cheese,
-  FoodType.pork,
-  FoodType.turkey,
-  FoodType.chicken,
-  FoodType.tuna,
-  FoodType.eggs,
-  FoodType.potatoes,
-  FoodType.rice,
-  FoodType.nuts,
-  FoodType.beans,
-  FoodType.tofu,
-  FoodType.vegetables,
-  FoodType.milk,
-  FoodType.fruit,
-  FoodType.lentils,
-];
-
-export default ({ setFoodType, foodType, setQuantity, defaultValueSlider }: Props) => {
+export default ({ emissionModelType, setQuantity, defaultValueSlider }: Props) => {
   const [sliderValue, setSliderValue] = useState(defaultValueSlider * 1000);
 
   const onSliderValueChange = (value: number) => {
@@ -56,21 +30,7 @@ export default ({ setFoodType, foodType, setQuantity, defaultValueSlider }: Prop
   };
 
   return (
-    <React.Fragment>
-      <View style={styles.typeContainer}>
-        <Text.H3>{t("ADD_EMISSION_SCREEN_FOOD_TYPE")}</Text.H3>
-      </View>
-      <ScrollView horizontal style={styles.tagContainer}>
-        {TAGS.map((item) => (
-          <Tag
-            key={item}
-            selected={foodType === item}
-            title={ui.getTranslationModelType(item)}
-            onPress={() => setFoodType(item)}
-          />
-        ))}
-        <View style={styles.separator} />
-      </ScrollView>
+    <>
       <View style={styles.durationContainer}>
         <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_SCREEN_QUANTITY")}</Text.H3>
         <Text.Primary lightGray>{Math.round(sliderValue) + " grams"}</Text.Primary>
@@ -87,14 +47,14 @@ export default ({ setFoodType, foodType, setQuantity, defaultValueSlider }: Prop
       />
       <View style={styles.totalContainer}>
         <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_SCREEN_TOTAL")}</Text.H3>
-        <Text.H2 blue50>
+        <Text.H2 darkGray>
           <FormattedNumber
-            value={(sliderValue / 1000) * food[foodType]}
+            value={(sliderValue / 1000) * food[emissionModelType]}
             maximumFractionDigits={2}
           />{" "}
           <Text.Primary>kgCO2eq</Text.Primary>
         </Text.H2>
       </View>
-    </React.Fragment>
+    </>
   );
 };

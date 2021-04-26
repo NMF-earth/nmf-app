@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CategorySelectionScreen renders correctly 1`] = `
+<RCTScrollView
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "flex": 1,
+      "paddingHorizontal": 14,
+    }
+  }
+>
+  <View>
+    <Text.H2
+      style={
+        Object {
+          "paddingBottom": 16,
+          "paddingTop": 20,
+        }
+      }
+    >
+      Select a category
+    </Text.H2>
+    <Tag
+      icon="md-airplane"
+      onPress={[Function]}
+      text="Transport"
+    />
+    <Tag
+      icon="md-nutrition"
+      onPress={[Function]}
+      text="Food"
+    />
+    <Tag
+      icon="md-restaurant"
+      onPress={[Function]}
+      text="Meal"
+    />
+    <Tag
+      icon="md-play-circle"
+      onPress={[Function]}
+      text="Streaming"
+    />
+    <Tag
+      icon="md-card"
+      onPress={[Function]}
+      text="Purchase"
+    />
+    <Tag
+      icon="md-shirt"
+      onPress={[Function]}
+      text="Fashion"
+    />
+    <Tag
+      icon="md-flash"
+      onPress={[Function]}
+      text="Electricity"
+    />
+    <Tag
+      icon="md-build"
+      onPress={[Function]}
+      text="Custom"
+    />
+  </View>
+</RCTScrollView>
+`;
