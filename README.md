@@ -22,7 +22,8 @@
 [![Build Status](https://img.shields.io/static/v1.svg?label=CSL&message=software%20against%20climate%20change&color=green?style=flat&logo=github)](https://github.com/climate-strike/license)
 [![runs with expo](https://img.shields.io/badge/Runs%20with%20Expo-000.svg?style=flat-square&logo=EXPO&labelColor=f3f3f3&logoColor=000)](https://expo.io/)
 
-Repository for the [NMF.earth](https://nmf.earth/) React Native application, built with Expo, Redux Toolkit and Typescript. Design can be found on [Figma](https://www.figma.com/file/YS0Sa7XCzvnu6bpdogTN81/Earth-Design-System?node-id=0%3A1).
+Repository for the [NMF.earth](https://nmf.earth/) React Native application, built with Expo, Redux Toolkit and Typescript. 
+Design can be found on [Figma](https://www.figma.com/community/file/967052407514062912).
 
 <br />
 
