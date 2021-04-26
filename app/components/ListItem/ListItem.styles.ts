@@ -1,16 +1,21 @@
 import { StyleSheet } from "react-native";
 
-const styles = StyleSheet.create({
+import { Colors } from "style";
+
+export default StyleSheet.create({
   container: {
     flexDirection: "row",
     justifyContent: "space-between",
+    alignItems: "center",
+    paddingVertical: 18,
+    flex: 1,
   },
-  text: {
-    paddingVertical: 20,
+  topLine: {
+    borderTopColor: Colors.grey10,
+    borderTopWidth: 1.6,
   },
-  icon: {
-    marginTop: 18,
+  bottomLine: {
+    borderBottomColor: Colors.grey10,
+    borderBottomWidth: 1.6,
   },
 });
-
-export default styles;

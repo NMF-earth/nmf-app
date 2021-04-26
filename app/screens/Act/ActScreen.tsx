@@ -17,8 +17,13 @@ const ActScreen = (props) => {
   const data = filter(getCategory(route.name), Guides) as Guide[];
   const navigator = navigate(navigation);
 
-  const renderItem = ({ item }) => (
-    <ListItem key={item.title} title={item.title} onPress={() => navigator.openActDetails(item)} />
+  const renderItem = ({ item, index }) => (
+    <ListItem
+      key={index}
+      showBottomLine={index != data.length - 1}
+      title={item.title}
+      onPress={() => navigator.openActDetails(item)}
+    />
   );
 
   return (

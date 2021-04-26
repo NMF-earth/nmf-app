@@ -45,6 +45,7 @@ const BottomTabNavigator = (): React.ReactElement => {
           borderTopWidth: 2,
           borderTopColor: Colors.green10,
           paddingBottom: bottom / 2 + 6,
+          paddingTop: 2,
         },
       }}
     >

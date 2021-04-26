@@ -4,11 +4,10 @@ import ExpoConstants from "expo-constants";
 import * as WebBrowser from "expo-web-browser";
 
 import { ImagesAssets } from "constant";
-import { Button, Text, SocialMedia } from "components";
+import { Button, Text, SocialMedia, ListItem } from "components";
 import { t } from "utils";
 import { navigate } from "navigation";
 
-import { SettingsRow } from "./components";
 import styles from "./SettingsScreen.styles";
 import navigationOptions from "./SettingsScreen.navigationOptions";
 
@@ -61,7 +60,12 @@ const SettingsScreen = (props) => {
   return (
     <ScrollView style={styles.container}>
       {rowItems.map((item, index) => (
-        <SettingsRow key={index} onPress={item.onPress} title={item.title} />
+        <ListItem
+          key={index}
+          showBottomLine={index !== rowItems.length - 1}
+          onPress={item.onPress}
+          title={item.title}
+        />
       ))}
       <TouchableWithoutFeedback onPress={() => setSteps(steps + 1)}>
         <View style={styles.logoNMFContainer}>

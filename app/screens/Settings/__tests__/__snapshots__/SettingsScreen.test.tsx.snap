@@ -6,47 +6,268 @@ exports[`SettingsScreen renders correctly 1`] = `
     Object {
       "backgroundColor": "#FFFFFF",
       "flex": 1,
-      "paddingTop": 16,
+      "paddingHorizontal": 14,
     }
   }
 >
   <View>
-    <SettingsRow
+    <TouchableOpacity
       onPress={[Function]}
-      title="About"
-    />
-    <SettingsRow
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "paddingVertical": 18,
+          },
+          Object {
+            "borderBottomColor": "#F0F0F0",
+            "borderBottomWidth": 1.6,
+          },
+        ]
+      }
+    >
+      <Text.Secondary
+        numberOfLines={1}
+      >
+        About
+      </Text.Secondary>
+      <Ionicons
+        color="#9CA6A0"
+        name="ios-chevron-forward-outline"
+        size={14}
+      />
+    </TouchableOpacity>
+    <TouchableOpacity
       onPress={[Function]}
-      title="Import, save and delete data"
-    />
-    <SettingsRow
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "paddingVertical": 18,
+          },
+          Object {
+            "borderBottomColor": "#F0F0F0",
+            "borderBottomWidth": 1.6,
+          },
+        ]
+      }
+    >
+      <Text.Secondary
+        numberOfLines={1}
+      >
+        Import, save and delete data
+      </Text.Secondary>
+      <Ionicons
+        color="#9CA6A0"
+        name="ios-chevron-forward-outline"
+        size={14}
+      />
+    </TouchableOpacity>
+    <TouchableOpacity
       onPress={[Function]}
-      title="Notifications"
-    />
-    <SettingsRow
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "paddingVertical": 18,
+          },
+          Object {
+            "borderBottomColor": "#F0F0F0",
+            "borderBottomWidth": 1.6,
+          },
+        ]
+      }
+    >
+      <Text.Secondary
+        numberOfLines={1}
+      >
+        Notifications
+      </Text.Secondary>
+      <Ionicons
+        color="#9CA6A0"
+        name="ios-chevron-forward-outline"
+        size={14}
+      />
+    </TouchableOpacity>
+    <TouchableOpacity
       onPress={[Function]}
-      title="My Location"
-    />
-    <SettingsRow
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "paddingVertical": 18,
+          },
+          Object {
+            "borderBottomColor": "#F0F0F0",
+            "borderBottomWidth": 1.6,
+          },
+        ]
+      }
+    >
+      <Text.Secondary
+        numberOfLines={1}
+      >
+        My Location
+      </Text.Secondary>
+      <Ionicons
+        color="#9CA6A0"
+        name="ios-chevron-forward-outline"
+        size={14}
+      />
+    </TouchableOpacity>
+    <TouchableOpacity
       onPress={[Function]}
-      title="Support us!"
-    />
-    <SettingsRow
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "paddingVertical": 18,
+          },
+          Object {
+            "borderBottomColor": "#F0F0F0",
+            "borderBottomWidth": 1.6,
+          },
+        ]
+      }
+    >
+      <Text.Secondary
+        numberOfLines={1}
+      >
+        Support us!
+      </Text.Secondary>
+      <Ionicons
+        color="#9CA6A0"
+        name="ios-chevron-forward-outline"
+        size={14}
+      />
+    </TouchableOpacity>
+    <TouchableOpacity
       onPress={[Function]}
-      title="NMF.earth"
-    />
-    <SettingsRow
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "paddingVertical": 18,
+          },
+          Object {
+            "borderBottomColor": "#F0F0F0",
+            "borderBottomWidth": 1.6,
+          },
+        ]
+      }
+    >
+      <Text.Secondary
+        numberOfLines={1}
+      >
+        NMF.earth
+      </Text.Secondary>
+      <Ionicons
+        color="#9CA6A0"
+        name="ios-chevron-forward-outline"
+        size={14}
+      />
+    </TouchableOpacity>
+    <TouchableOpacity
       onPress={[Function]}
-      title="Roadmap"
-    />
-    <SettingsRow
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "paddingVertical": 18,
+          },
+          Object {
+            "borderBottomColor": "#F0F0F0",
+            "borderBottomWidth": 1.6,
+          },
+        ]
+      }
+    >
+      <Text.Secondary
+        numberOfLines={1}
+      >
+        Roadmap
+      </Text.Secondary>
+      <Ionicons
+        color="#9CA6A0"
+        name="ios-chevron-forward-outline"
+        size={14}
+      />
+    </TouchableOpacity>
+    <TouchableOpacity
       onPress={[Function]}
-      title="Feedback"
-    />
-    <SettingsRow
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "paddingVertical": 18,
+          },
+          Object {
+            "borderBottomColor": "#F0F0F0",
+            "borderBottomWidth": 1.6,
+          },
+        ]
+      }
+    >
+      <Text.Secondary
+        numberOfLines={1}
+      >
+        Feedback
+      </Text.Secondary>
+      <Ionicons
+        color="#9CA6A0"
+        name="ios-chevron-forward-outline"
+        size={14}
+      />
+    </TouchableOpacity>
+    <TouchableOpacity
       onPress={[Function]}
-      title="Terms of use"
-    />
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "paddingVertical": 18,
+          },
+        ]
+      }
+    >
+      <Text.Secondary
+        numberOfLines={1}
+      >
+        Terms of use
+      </Text.Secondary>
+      <Ionicons
+        color="#9CA6A0"
+        name="ios-chevron-forward-outline"
+        size={14}
+      />
+    </TouchableOpacity>
     <View
       accessible={true}
       focusable={true}

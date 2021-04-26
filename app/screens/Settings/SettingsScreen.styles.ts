@@ -4,8 +4,7 @@ import { Layout } from "style";
 
 export default StyleSheet.create({
   container: {
-    ...Layout.containerNoPadding,
-    paddingTop: 16,
+    ...Layout.containerWithPadding,
   },
   hiddenBtn: {
     marginTop: 8,
