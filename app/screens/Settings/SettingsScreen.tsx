@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, TouchableWithoutFeedback, ScrollView, Image, Platform } from "react-native";
+import { View, TouchableWithoutFeedback, ScrollView, Image } from "react-native";
 import ExpoConstants from "expo-constants";
 import * as WebBrowser from "expo-web-browser";
 
