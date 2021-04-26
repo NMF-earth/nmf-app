@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SubCategorySelectionScreen renders correctly 1`] = `
+<RCTScrollView
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "flex": 1,
+      "paddingHorizontal": 14,
+    }
+  }
+>
+  <View>
+    <Text.H2
+      style={
+        Object {
+          "paddingBottom": 16,
+          "paddingTop": 20,
+        }
+      }
+    >
+      Select a sub-category
+    </Text.H2>
+    <Tag
+      onPress={[Function]}
+      text="Coat"
+    />
+    <Tag
+      onPress={[Function]}
+      text="Dress"
+    />
+    <Tag
+      onPress={[Function]}
+      text="Jeans"
+    />
+    <Tag
+      onPress={[Function]}
+      text="Shirt"
+    />
+    <Tag
+      onPress={[Function]}
+      text="Shoes"
+    />
+    <Tag
+      onPress={[Function]}
+      text="Sweater"
+    />
+    <Tag
+      onPress={[Function]}
+      text="T-Shirt"
+    />
+  </View>
+</RCTScrollView>
+`;

@@ -26,7 +26,7 @@ const EmissionsScreen = () => {
       <View style={styles.buttonView}>
         <Button.Primary
           fullWidth
-          onPress={() => navigator.openAddEmission()}
+          onPress={() => navigator.openCategorySelection()}
           textType={"Secondary"}
         >
           <Text.Secondary numberOfLines={1} center white bold>

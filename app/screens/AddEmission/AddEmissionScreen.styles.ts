@@ -9,12 +9,16 @@ export default StyleSheet.create({
     backgroundColor: Colors.white,
     alignContent: "flex-start",
   },
-  typeContainer: {
-    paddingBottom: 24,
+  emptyContainer: {
+    height: 16,
   },
   textContainer: {
     ...Layout.containerWithPadding,
     paddingVertical: 12,
+  },
+  text: {
+    marginTop: 4,
+    textTransform: "capitalize",
   },
   dateContainer: {
     paddingTop: 4,

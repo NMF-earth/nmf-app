@@ -14,6 +14,66 @@ import { EmissionType } from "interfaces";
 import ui from "../";
 import * as translationUtils from "../../translations/i18n";
 
+describe("tests for ui.getTranslationEmissionType", () => {
+  beforeEach(() => {
+    jest.spyOn(translationUtils, "t").mockImplementation((key: string): string => key);
+  });
+
+  afterEach(() => {
+    jest.clearAllMocks();
+  });
+
+  describe("electricity type emissions", () => {
+    it("returns UI_ELECTRICITY if electricity type", () => {
+      const translationModelType = ui.getTranslationEmissionType(EmissionType.electricity);
+
+      expect(translationModelType).toBe("UI_ELECTRICITY");
+    });
+
+    it("returns UI_CUSTOM if custom type", () => {
+      const translationModelType = ui.getTranslationEmissionType(EmissionType.custom);
+
+      expect(translationModelType).toBe("UI_CUSTOM");
+    });
+
+    it("returns UI_FASHION if custom type", () => {
+      const translationModelType = ui.getTranslationEmissionType(EmissionType.fashion);
+
+      expect(translationModelType).toBe("UI_FASHION");
+    });
+
+    it("returns UI_Food if food type", () => {
+      const translationModelType = ui.getTranslationEmissionType(EmissionType.food);
+
+      expect(translationModelType).toBe("UI_FOOD");
+    });
+
+    it("returns UI_MEAL if meal type", () => {
+      const translationModelType = ui.getTranslationEmissionType(EmissionType.meal);
+
+      expect(translationModelType).toBe("UI_MEAL");
+    });
+
+    it("returns UI_PURCHASE if purchase type", () => {
+      const translationModelType = ui.getTranslationEmissionType(EmissionType.purchase);
+
+      expect(translationModelType).toBe("UI_PURCHASE");
+    });
+
+    it("returns UI_STREAMING if streaming type", () => {
+      const translationModelType = ui.getTranslationEmissionType(EmissionType.streaming);
+
+      expect(translationModelType).toBe("UI_STREAMING");
+    });
+
+    it("returns UI_TRANSPORT if transport type", () => {
+      const translationModelType = ui.getTranslationEmissionType(EmissionType.transport);
+
+      expect(translationModelType).toBe("UI_TRANSPORT");
+    });
+  });
+});
+
 describe("tests for ui.onHTMLBodyLinkPress", () => {
   beforeEach(() => {
     jest
@@ -423,7 +483,7 @@ describe("tests for ui.getIconFromModelType", () => {
   });
 });
 
-describe("tests for ui.getTranslationModelType", () => {
+describe("tests for ui.getTranslationEmissionModelType", () => {
   beforeEach(() => {
     jest.spyOn(translationUtils, "t").mockImplementation((key: string): string => key);
   });
@@ -435,7 +495,7 @@ describe("tests for ui.getTranslationModelType", () => {
   describe("electricity type emissions", () => {
     it("returns UI_ELECTRICITY if electricity Emission model", () => {
       const emissionModelType = ElectricityType.argentina;
-      const translationModelType = ui.getTranslationModelType(emissionModelType);
+      const translationModelType = ui.getTranslationEmissionModelType(emissionModelType);
 
       expect(translationModelType).toBe("UI_ELECTRICITY");
     });
@@ -444,7 +504,7 @@ describe("tests for ui.getTranslationModelType", () => {
   describe("custom type emissions", () => {
     it("returns UI_CUSTOM if custom Emission model", () => {
       const emissionModelType = EmissionType.custom;
-      const translationModelType = ui.getTranslationModelType(emissionModelType);
+      const translationModelType = ui.getTranslationEmissionModelType(emissionModelType);
 
       expect(translationModelType).toBe("UI_CUSTOM");
     });
@@ -453,42 +513,42 @@ describe("tests for ui.getTranslationModelType", () => {
   describe("meal type emissions", () => {
     it("returns UI_HIGH_MEAT if MealType is high meat", () => {
       const emissionModelType = MealType.highMeat;
-      const translationModelType = ui.getTranslationModelType(emissionModelType);
+      const translationModelType = ui.getTranslationEmissionModelType(emissionModelType);
 
       expect(translationModelType).toBe("UI_HIGH_MEAT");
     });
 
     it("returns UI_MEDIUM_MEAT if MealType is medium meat", () => {
       const emissionModelType = MealType.mediumMeat;
-      const translationModelType = ui.getTranslationModelType(emissionModelType);
+      const translationModelType = ui.getTranslationEmissionModelType(emissionModelType);
 
       expect(translationModelType).toBe("UI_MEDIUM_MEAT");
     });
 
     it("returns UI_LOW_MEAT if MealType is low meat", () => {
       const emissionModelType = MealType.lowMeat;
-      const translationModelType = ui.getTranslationModelType(emissionModelType);
+      const translationModelType = ui.getTranslationEmissionModelType(emissionModelType);
 
       expect(translationModelType).toBe("UI_LOW_MEAT");
     });
 
     it("returns UI_PESCETARIAN if MealType is pescetarian", () => {
       const emissionModelType = MealType.pescetarian;
-      const translationModelType = ui.getTranslationModelType(emissionModelType);
+      const translationModelType = ui.getTranslationEmissionModelType(emissionModelType);
 
       expect(translationModelType).toBe("UI_PESCETARIAN");
     });
 
     it("returns UI_VEGAN if MealType is pescetarian", () => {
       const emissionModelType = MealType.vegan;
-      const translationModelType = ui.getTranslationModelType(emissionModelType);
+      const translationModelType = ui.getTranslationEmissionModelType(emissionModelType);
 
       expect(translationModelType).toBe("UI_VEGAN");
     });
 
     it("returns UI_VEGETARIAN if MealType is pescetarian", () => {
       const emissionModelType = MealType.vegetarian;
-      const translationModelType = ui.getTranslationModelType(emissionModelType);
+      const translationModelType = ui.getTranslationEmissionModelType(emissionModelType);
 
       expect(translationModelType).toBe("UI_VEGETARIAN");
     });
@@ -497,35 +557,35 @@ describe("tests for ui.getTranslationModelType", () => {
   describe("food type emissions", () => {
     it("returns UI_RED_MEAT if it is food of type redMeat", () => {
       const emissionModelType = FoodType.redMeat;
-      const translationModelType = ui.getTranslationModelType(emissionModelType);
+      const translationModelType = ui.getTranslationEmissionModelType(emissionModelType);
 
       expect(translationModelType).toBe("UI_RED_MEAT");
     });
 
     it("returns UI_WHITE_MEAT if it is food of type whiteMeat", () => {
       const emissionModelType = FoodType.whiteMeat;
-      const translationModelType = ui.getTranslationModelType(emissionModelType);
+      const translationModelType = ui.getTranslationEmissionModelType(emissionModelType);
 
       expect(translationModelType).toBe("UI_WHITE_MEAT");
     });
 
     it("returns UI_CHOCOLATE if it is food of type chocolate", () => {
       const emissionModelType = FoodType.chocolate;
-      const translationModelType = ui.getTranslationModelType(emissionModelType);
+      const translationModelType = ui.getTranslationEmissionModelType(emissionModelType);
 
       expect(translationModelType).toBe("UI_CHOCOLATE");
     });
 
     it("returns UI_COFFEE if it is food of type coffee", () => {
       const emissionModelType = FoodType.coffee;
-      const translationModelType = ui.getTranslationModelType(emissionModelType);
+      const translationModelType = ui.getTranslationEmissionModelType(emissionModelType);
 
       expect(translationModelType).toBe("UI_COFFEE");
     });
 
     it("returns UI_FISH if it is food of type fish", () => {
       const emissionModelType = FoodType.fish;
-      const translationModelType = ui.getTranslationModelType(emissionModelType);
+      const translationModelType = ui.getTranslationEmissionModelType(emissionModelType);
 
       expect(translationModelType).toBe("UI_FISH");
     });
@@ -536,7 +596,7 @@ describe("tests for ui.getTranslationModelType", () => {
   describe("transport type emissions", () => {
     it("returns UI_PLANE if it is transport of type shortHaulFlight", () => {
       const emissionModelType = TransportType.shortHaulFlight;
-      const translationModelType = ui.getTranslationModelType(emissionModelType);
+      const translationModelType = ui.getTranslationEmissionModelType(emissionModelType);
 
       expect(translationModelType).toBe("UI_PLANE");
     });
@@ -546,7 +606,7 @@ describe("tests for ui.getTranslationModelType", () => {
       const emissionModelType = TransportType.mediumHaulFlight;
 
       // act
-      const translationModelType = ui.getTranslationModelType(emissionModelType);
+      const translationModelType = ui.getTranslationEmissionModelType(emissionModelType);
 
       // assert
       expect(translationModelType).toBe("UI_PLANE");
@@ -557,7 +617,7 @@ describe("tests for ui.getTranslationModelType", () => {
       const emissionModelType = TransportType.longHaulFlight;
 
       // act
-      const translationModelType = ui.getTranslationModelType(emissionModelType);
+      const translationModelType = ui.getTranslationEmissionModelType(emissionModelType);
 
       // assert
       expect(translationModelType).toBe("UI_PLANE");
@@ -568,7 +628,7 @@ describe("tests for ui.getTranslationModelType", () => {
       const emissionModelType = TransportType.train;
 
       // act
-      const translationModelType = ui.getTranslationModelType(emissionModelType);
+      const translationModelType = ui.getTranslationEmissionModelType(emissionModelType);
 
       // assert
       expect(translationModelType).toBe("UI_TRAIN");
@@ -579,7 +639,7 @@ describe("tests for ui.getTranslationModelType", () => {
       const emissionModelType = TransportType.car;
 
       // act
-      const translationModelType = ui.getTranslationModelType(emissionModelType);
+      const translationModelType = ui.getTranslationEmissionModelType(emissionModelType);
 
       // assert
       expect(translationModelType).toBe("UI_CAR");
@@ -590,7 +650,7 @@ describe("tests for ui.getTranslationModelType", () => {
       const emissionModelType = TransportType.boat;
 
       // act
-      const translationModelType = ui.getTranslationModelType(emissionModelType);
+      const translationModelType = ui.getTranslationEmissionModelType(emissionModelType);
 
       // assert
       expect(translationModelType).toBe("UI_BOAT");
@@ -601,7 +661,7 @@ describe("tests for ui.getTranslationModelType", () => {
       const emissionModelType = TransportType.motorbike;
 
       // act
-      const translationModelType = ui.getTranslationModelType(emissionModelType);
+      const translationModelType = ui.getTranslationEmissionModelType(emissionModelType);
 
       // assert
       expect(translationModelType).toBe("UI_MOTORBIKE");
@@ -612,7 +672,7 @@ describe("tests for ui.getTranslationModelType", () => {
       const emissionModelType = TransportType.bus;
 
       // act
-      const translationModelType = ui.getTranslationModelType(emissionModelType);
+      const translationModelType = ui.getTranslationEmissionModelType(emissionModelType);
 
       // assert
       expect(translationModelType).toBe("UI_BUS");
@@ -625,7 +685,7 @@ describe("tests for ui.getTranslationModelType", () => {
       const emissionModelType = StreamingType.HDVideo;
 
       // act
-      const translationModelType = ui.getTranslationModelType(emissionModelType);
+      const translationModelType = ui.getTranslationEmissionModelType(emissionModelType);
 
       // assert
       expect(translationModelType).toBe("UI_HD_VIDEO");
@@ -636,7 +696,7 @@ describe("tests for ui.getTranslationModelType", () => {
       const emissionModelType = StreamingType.fullHDVideo;
 
       // act
-      const translationModelType = ui.getTranslationModelType(emissionModelType);
+      const translationModelType = ui.getTranslationEmissionModelType(emissionModelType);
 
       // assert
       expect(translationModelType).toBe("UI_FULL_HD_VIDEO");
@@ -647,7 +707,7 @@ describe("tests for ui.getTranslationModelType", () => {
       const emissionModelType = StreamingType.ultraHDVideo;
 
       // act
-      const translationModelType = ui.getTranslationModelType(emissionModelType);
+      const translationModelType = ui.getTranslationEmissionModelType(emissionModelType);
 
       // assert
       expect(translationModelType).toBe("UI_ULTRA_HD_VIDEO");
@@ -658,7 +718,7 @@ describe("tests for ui.getTranslationModelType", () => {
       const emissionModelType = StreamingType.audioMP3;
 
       // act
-      const translationModelType = ui.getTranslationModelType(emissionModelType);
+      const translationModelType = ui.getTranslationEmissionModelType(emissionModelType);
 
       // assert
       expect(translationModelType).toBe("UI_AUDIO");
@@ -671,7 +731,7 @@ describe("tests for ui.getTranslationModelType", () => {
 
     // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
     // @ts-ignore
-    const translationModelType = ui.getTranslationModelType(emissionModelType);
+    const translationModelType = ui.getTranslationEmissionModelType(emissionModelType);
 
     // assert
     expect(translationModelType).toBe("UI_CUSTOM");

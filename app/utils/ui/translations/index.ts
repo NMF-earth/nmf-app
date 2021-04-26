@@ -66,6 +66,12 @@ interface TranslationKeys {
   UI_VEGETABLES: string;
   UI_CRYPTO_CURRENCY_POW: string;
   UI_SINGLE_EDITION_NFT: string;
+  UI_FASHION: string;
+  UI_FOOD: string;
+  UI_MEAL: string;
+  UI_PURCHASE: string;
+  UI_STREAMING: string;
+  UI_TRANSPORT: string;
 }
 
 export { en, fr, de, sv, es, pt, da, ru, pl, TranslationKeys };

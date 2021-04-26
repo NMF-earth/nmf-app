@@ -17,7 +17,7 @@ const navigationOptionsAndroid = ({ route }) => ({
   },
   headerTitle: () =>
     route.params?.emissionModelType ? (
-      <Text.H1>{ui.getTranslationModelType(route.params.emissionModelType)}</Text.H1>
+      <Text.H1>{ui.getTranslationEmissionModelType(route.params.emissionModelType)}</Text.H1>
     ) : (
       <Text.H1>{t("INFO_MODAL_SCREEN_METHODOLOGY")}</Text.H1>
     ),
@@ -31,7 +31,7 @@ const navigationOptionsIOS = ({ navigation, route }) => ({
   },
   headerTitle: () =>
     route.params?.emissionModelType ? (
-      <Text.H1>{ui.getTranslationModelType(route.params.emissionModelType)}</Text.H1>
+      <Text.H1>{ui.getTranslationEmissionModelType(route.params.emissionModelType)}</Text.H1>
     ) : (
       <Text.H1>{t("INFO_MODAL_SCREEN_METHODOLOGY")}</Text.H1>
     ),

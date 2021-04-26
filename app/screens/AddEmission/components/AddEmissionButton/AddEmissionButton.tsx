@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import uuid from "uuid";
+import { StackActions, useNavigation } from "@react-navigation/native";
 
 import { Text, Button } from "components";
 import { emissions } from "ducks";
@@ -11,11 +12,11 @@ import styles from "./AddEmissionButton.styles";
 
 interface Props {
   emissionPayload: EmissionPayload;
-  goBack: () => void;
 }
 
-const AddEmissionButton = ({ goBack, emissionPayload }: Props) => {
+const AddEmissionButton = ({ emissionPayload }: Props) => {
   const dispatch = useDispatch();
+  const navigation = useNavigation();
 
   const addEmission = () => {
     const emission = {
@@ -25,7 +26,8 @@ const AddEmissionButton = ({ goBack, emissionPayload }: Props) => {
     };
 
     dispatch(emissions.actions.createEmission(emission));
-    goBack();
+
+    navigation.dispatch(StackActions.popToTop());
   };
 
   return (

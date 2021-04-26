@@ -20,7 +20,7 @@ exports[`NumberOfDaysVegetarian renders correctly 1`] = `
     }
   >
     <Text.H3
-      blue={true}
+      darkGray={true}
     >
       function () {
         return fn.apply(this, arguments);

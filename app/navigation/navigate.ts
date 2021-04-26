@@ -59,8 +59,18 @@ const openBudget = (navigation) => (props = {}) => {
   navigation.push("Budget", props);
 };
 
+const openCategorySelection = (navigation) => (props = {}) => {
+  navigation.push("CategorySelection", props);
+};
+
+const openSubCategorySelection = (navigation) => (props = {}) => {
+  navigation.push("SubCategorySelection", props);
+};
+
 const navigate = (navigation) => ({
   goBack: navigation.goBack,
+  openCategorySelection: navigateOneTime(openCategorySelection(navigation)),
+  openSubCategorySelection: navigateOneTime(openSubCategorySelection(navigation)),
   openMyData: navigateOneTime(openMyData(navigation)),
   openComingSoon: navigateOneTime(openComingSoon(navigation)),
   openInfoModal: navigateOneTime(openInfoModal(navigation)),

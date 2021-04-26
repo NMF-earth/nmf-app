@@ -1,21 +1,15 @@
 import React, { useCallback, useState } from "react";
 import moment, { Moment } from "moment";
 import { useSelector } from "react-redux";
-import { View, ScrollView, TouchableOpacity } from "react-native";
-import {
-  TransportType,
-  FoodType,
-  StreamingType,
-  PurchaseType,
-  FashionType,
-  MealType,
-} from "carbon-footprint";
+import { View, TouchableOpacity } from "react-native";
+import { TransportType } from "carbon-footprint";
 import DateTimePickerModal from "react-native-modal-datetime-picker";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
+import { useRoute } from "@react-navigation/core";
 
-import { Text, Tag, TextInput } from "components";
+import { Text, TextInput } from "components";
 import { userPreferences } from "ducks";
-import { EmissionType, EmissionPayload } from "interfaces";
+import { EmissionType, EmissionPayload, EmissionModelType } from "interfaces";
 import { calculation, t, withLocalization, LocalizationContextProps, ui, time } from "utils";
 
 import styles from "./AddEmissionScreen.styles";
@@ -32,13 +26,6 @@ import {
   Meal,
 } from "./components";
 
-interface Props {
-  navigation: {
-    push: (screen: string) => void;
-    goBack: () => void;
-  };
-}
-
 /* multiply or divide by 1000 to have kilograms or meters */
 const DEFAULT_SLIDER_VALUE_FOOD = 200 / 1000;
 const DEFAULT_SLIDER_VALUE_TRANSPORT = 150 * 1000;
@@ -50,23 +37,13 @@ const DEFAULT_SLIDER_VALUE_MEAL = 1;
 const DEFAULT_SLIDER_VALUE_CUSTOM = 200;
 const EMISSION_NAME_MAX_LENGTH = 150;
 
-const AddEmissionScreen = ({
-  navigation,
-  locale = "",
-  language = "",
-}: Props & LocalizationContextProps) => {
+const AddEmissionScreen = ({ locale = "", language = "" }: LocalizationContextProps) => {
+  const route = useRoute();
   const location = useSelector(userPreferences.selectors.getLocation);
   const [emissionName, setEmissionName] = useState<string>("");
-  const [emissionType, setEmissionType] = useState<EmissionType>(EmissionType.transport);
-  const [transportType, setTransportType] = useState<TransportType>(TransportType.car);
   const [electricityConsumption, setElectricityConsumption] = useState<number>(
     DEFAULT_SLIDER_VALUE_ELECTRICITY
   );
-  const [foodType, setFoodType] = useState<FoodType>(FoodType.redMeat);
-  const [purchaseType, setPurchaseType] = useState<PurchaseType>(PurchaseType.smartphone);
-  const [fashionType, setFashionType] = useState<FashionType>(FashionType.coat);
-  const [mealType, setMealType] = useState<MealType>(MealType.mediumMeat);
-  const [streamingType, setStreamingType] = useState<StreamingType>(StreamingType.HDVideo);
   const [durationMinutes, setDurationMinutes] = useState<number>(
     DEFAULT_SLIDER_VALUE_TRANSPORT / 1000
   );
@@ -84,6 +61,13 @@ const AddEmissionScreen = ({
   const showDatePicker = useCallback(() => setDatePickerVisibility(true), []);
   const hideDatePicker = useCallback(() => setDatePickerVisibility(false), []);
 
+  // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
+  // @ts-ignore
+  const emissionType: EmissionType = route.params?.emissionType;
+  // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
+  // @ts-ignore
+  const emissionModelType: EmissionModelType = route.params?.emissionModelType;
+
   const handleConfirm = useCallback(
     (date: Date) => {
       hideDatePicker();
@@ -99,17 +83,16 @@ const AddEmissionScreen = ({
     name: "",
     emissionType: emissionType,
     value: 0,
-    emissionModelType: null,
+    emissionModelType,
   };
 
   const renderTransport = () => {
     if (emissionType === EmissionType.transport) {
-      if (transportType === TransportType.plane) {
+      if (emissionModelType === TransportType.plane) {
         emissionPayload.value = calculation.getFlightEmissionValue(durationMinutes);
         emissionPayload.emissionModelType = calculation.getFlightType(durationMinutes);
       } else {
         emissionPayload.value = distance;
-        emissionPayload.emissionModelType = transportType;
       }
 
       return (
@@ -117,8 +100,7 @@ const AddEmissionScreen = ({
           defaultValueSlider={DEFAULT_SLIDER_VALUE_TRANSPORT}
           setDistance={setDistance}
           setDurationMinutes={setDurationMinutes}
-          setTransportType={setTransportType}
-          transportType={transportType}
+          emissionModelType={emissionModelType}
         />
       );
     }
@@ -144,12 +126,10 @@ const AddEmissionScreen = ({
   const renderPurchase = () => {
     if (emissionType === EmissionType.purchase) {
       emissionPayload.value = purchaseQuantity;
-      emissionPayload.emissionModelType = purchaseType;
 
       return (
         <Purchase
-          setPurchaseType={setPurchaseType}
-          purchaseType={purchaseType}
+          emissionModelType={emissionModelType}
           defaultValueSlider={DEFAULT_SLIDER_VALUE_PURCHASE}
           setQuantity={setPurchaseQuantity}
         />
@@ -161,12 +141,10 @@ const AddEmissionScreen = ({
   const renderMeal = () => {
     if (emissionType === EmissionType.meal) {
       emissionPayload.value = mealQuantity;
-      emissionPayload.emissionModelType = mealType;
 
       return (
         <Meal
-          setMealType={setMealType}
-          mealType={mealType}
+          emissionModelType={emissionModelType}
           defaultValueSlider={DEFAULT_SLIDER_VALUE_MEAL}
           setQuantity={setMealQuantity}
         />
@@ -178,12 +156,10 @@ const AddEmissionScreen = ({
   const renderFashion = () => {
     if (emissionType === EmissionType.fashion) {
       emissionPayload.value = fashionQuantity;
-      emissionPayload.emissionModelType = fashionType;
 
       return (
         <Fashion
-          setFashionType={setFashionType}
-          fashionType={fashionType}
+          emissionModelType={emissionModelType}
           defaultValueSlider={DEFAULT_SLIDER_VALUE_FASHION}
           setQuantity={setFashionQuantity}
         />
@@ -195,14 +171,12 @@ const AddEmissionScreen = ({
   const renderFood = () => {
     if (emissionType === EmissionType.food) {
       emissionPayload.value = foodQuantity;
-      emissionPayload.emissionModelType = foodType;
 
       return (
         <Food
           defaultValueSlider={DEFAULT_SLIDER_VALUE_FOOD}
           setQuantity={setFoodQuantity}
-          setFoodType={setFoodType}
-          foodType={foodType}
+          emissionModelType={emissionModelType}
         />
       );
     }
@@ -212,7 +186,6 @@ const AddEmissionScreen = ({
   const renderStreaming = () => {
     if (emissionType === EmissionType.streaming) {
       emissionPayload.value = durationSeconds;
-      emissionPayload.emissionModelType = streamingType;
       emissionPayload.location = location;
 
       return (
@@ -220,8 +193,7 @@ const AddEmissionScreen = ({
           electricityCountry={location}
           defaultValueSlider={DEFAULT_SLIDER_VALUE_STREAMING}
           setDurationSeconds={setDurationSeconds}
-          setStreamingType={setStreamingType}
-          streamingType={streamingType}
+          emissionModelType={emissionModelType}
         />
       );
     }
@@ -243,31 +215,6 @@ const AddEmissionScreen = ({
     return null;
   };
 
-  const onTransportTagPress = useCallback(() => {
-    setEmissionType(EmissionType.transport);
-  }, []);
-  const onFoodTagPress = useCallback(() => {
-    setEmissionType(EmissionType.food);
-  }, []);
-  const onMealTagPress = useCallback(() => {
-    setEmissionType(EmissionType.meal);
-  }, []);
-  const onStreamingTagPress = useCallback(() => {
-    setEmissionType(EmissionType.streaming);
-  }, []);
-  const onElectricityTagPress = useCallback(() => {
-    setEmissionType(EmissionType.electricity);
-  }, []);
-  const onPurchaseTagPress = useCallback(() => {
-    setEmissionType(EmissionType.purchase);
-  }, []);
-  const onFashionTagPress = useCallback(() => {
-    setEmissionType(EmissionType.fashion);
-  }, []);
-  const onCustomTagPress = useCallback(() => {
-    setEmissionType(EmissionType.custom);
-  }, []);
-
   const isDarkModeEnabled = ui.isDarkModeEnabled();
 
   const onChangeEmissionName = useCallback((name: string) => {
@@ -278,62 +225,16 @@ const AddEmissionScreen = ({
 
   return (
     <KeyboardAwareScrollView style={styles.container}>
-      <View style={styles.typeContainer}>
+      {emissionModelType ? (
         <View style={styles.textContainer}>
-          <Text.H3>{t("ADD_EMISSION_SCREEN_EMISSION_TYPE")}</Text.H3>
+          <Text.H2 style={styles.text}>{emissionType}</Text.H2>
+          <Text.Primary lightGray style={styles.text}>
+            {ui.getTranslationEmissionModelType(emissionModelType)}
+          </Text.Primary>
         </View>
-        <ScrollView horizontal style={styles.tagContainer}>
-          <Tag
-            icon={"md-airplane"}
-            selected={emissionType === EmissionType.transport}
-            title={t("ADD_EMISSION_SCREEN_TRANSPORT")}
-            onPress={onTransportTagPress}
-          />
-          <Tag
-            icon={"md-nutrition"}
-            selected={emissionType === EmissionType.food}
-            title={t("ADD_EMISSION_SCREEN_FOOD")}
-            onPress={onFoodTagPress}
-          />
-          <Tag
-            icon={"md-restaurant"}
-            selected={emissionType === EmissionType.meal}
-            title={t("ADD_EMISSION_SCREEN_MEAL")}
-            onPress={onMealTagPress}
-          />
-          <Tag
-            icon={"md-play-circle"}
-            selected={emissionType === EmissionType.streaming}
-            title={t("ADD_EMISSION_SCREEN_STREAMING")}
-            onPress={onStreamingTagPress}
-          />
-          <Tag
-            icon={"md-card"}
-            selected={emissionType === EmissionType.purchase}
-            title={t("ADD_EMISSION_SCREEN_PURCHASE")}
-            onPress={onPurchaseTagPress}
-          />
-          <Tag
-            icon={"md-shirt"}
-            selected={emissionType === EmissionType.fashion}
-            title={t("ADD_EMISSION_SCREEN_FASHION")}
-            onPress={onFashionTagPress}
-          />
-          <Tag
-            icon={"md-flash"}
-            selected={emissionType === EmissionType.electricity}
-            title={t("ADD_EMISSION_SCREEN_ELECTRICITY")}
-            onPress={onElectricityTagPress}
-          />
-          <Tag
-            icon={"md-build"}
-            selected={emissionType === EmissionType.custom}
-            title={t("ADD_EMISSION_SCREEN_CUSTOM")}
-            onPress={onCustomTagPress}
-          />
-          <View style={styles.separator} />
-        </ScrollView>
-      </View>
+      ) : (
+        <View style={styles.emptyContainer} />
+      )}
 
       {renderTransport()}
       {renderFood()}
@@ -367,10 +268,11 @@ const AddEmissionScreen = ({
       <View style={styles.textContainer}>
         <Text.H3>{t("ADD_EMISSION_SCREEN_DATE")}</Text.H3>
         <View style={styles.dateContainer}>
-          <Text.Primary lightGray bold>
-            {creationDate.locale(language).format("dddd Do MMMM YYYY")}
-          </Text.Primary>
-          <TouchableOpacity onPress={showDatePicker}>
+          <TouchableOpacity style={{ flexDirection: "row" }} onPress={showDatePicker}>
+            <Text.Primary lightGray>
+              {creationDate.locale(language).format("dddd Do MMMM YYYY")}
+            </Text.Primary>
+            <Text.Primary lightGray>{" - "}</Text.Primary>
             <Text.Primary bold green>
               {t("ADD_EMISSION_SCREEN_CHANGE")}
             </Text.Primary>
@@ -379,7 +281,6 @@ const AddEmissionScreen = ({
       </View>
 
       <AddEmissionButton
-        goBack={navigation.goBack}
         emissionPayload={{
           ...emissionPayload,
           name: emissionName,

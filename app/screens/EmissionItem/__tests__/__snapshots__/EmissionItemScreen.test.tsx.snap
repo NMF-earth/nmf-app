@@ -38,6 +38,7 @@ exports[`EmissionsScreen renders correctly 1`] = `
         }
       }
     >
+       - 
       Custom
     </Text.Primary>
     <Text.H3>

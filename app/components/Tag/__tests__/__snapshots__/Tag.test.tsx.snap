@@ -6,33 +6,51 @@ exports[`Tag renders correctly with airplane icon 1`] = `
   style={
     Object {
       "alignItems": "center",
-      "backgroundColor": "#4BB37710",
-      "borderColor": "#11171420",
+      "backgroundColor": "#4BB37720",
+      "borderColor": "#4BB377",
       "borderRadius": 8,
-      "borderWidth": 1,
-      "marginRight": 12,
-      "minWidth": 110,
-      "paddingHorizontal": 12,
-      "paddingVertical": 10,
+      "borderWidth": 2,
+      "flex": 1,
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+      "marginVertical": 8,
+      "paddingHorizontal": 16,
+      "paddingVertical": 16,
     }
   }
 >
   <Ionicons
-    color="#595D58"
+    color="#4BB377"
     name="md-airplane"
-    size={30}
+    size={32}
     style={
       Object {
-        "marginBottom": 2,
+        "marginRight": 16,
       }
     }
   />
-  <Text.Primary
-    darkGray={true}
-    green={false}
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
   >
-    Transport
-  </Text.Primary>
+    <Text.Primary
+      style={
+        Object {
+          "textTransform": "capitalize",
+        }
+      }
+    >
+      Transport
+    </Text.Primary>
+  </View>
+  <Ionicons
+    color="#4BB377"
+    name="chevron-forward"
+    size={20}
+  />
 </TouchableOpacity>
 `;
 
@@ -42,46 +60,40 @@ exports[`Tag renders correctly with no icon 1`] = `
   style={
     Object {
       "alignItems": "center",
-      "backgroundColor": "#4BB37710",
-      "borderColor": "#11171420",
-      "borderRadius": 8,
-      "borderWidth": 1,
-      "marginRight": 12,
-      "paddingHorizontal": 12,
-      "paddingVertical": 6,
-    }
-  }
->
-  <Text.Primary
-    darkGray={true}
-    green={false}
-  >
-    Transport
-  </Text.Primary>
-</TouchableOpacity>
-`;
-
-exports[`Tag renders correctly with no icon and selected 1`] = `
-<TouchableOpacity
-  onPress={[Function]}
-  style={
-    Object {
-      "alignItems": "center",
       "backgroundColor": "#4BB37720",
       "borderColor": "#4BB377",
       "borderRadius": 8,
-      "borderWidth": 1,
-      "marginRight": 12,
-      "paddingHorizontal": 12,
-      "paddingVertical": 6,
+      "borderWidth": 2,
+      "flex": 1,
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+      "marginVertical": 8,
+      "paddingHorizontal": 16,
+      "paddingVertical": 16,
     }
   }
 >
-  <Text.Primary
-    darkGray={false}
-    green={true}
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
   >
-    Transport
-  </Text.Primary>
+    <Text.Primary
+      style={
+        Object {
+          "textTransform": "capitalize",
+        }
+      }
+    >
+      Transport
+    </Text.Primary>
+  </View>
+  <Ionicons
+    color="#4BB377"
+    name="chevron-forward"
+    size={20}
+  />
 </TouchableOpacity>
 `;

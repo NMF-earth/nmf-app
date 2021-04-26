@@ -44,254 +44,10 @@ exports[`AddEmissionScreen renders correctly 1`] = `
       <View
         style={
           Object {
-            "paddingBottom": 24,
+            "height": 16,
           }
         }
-      >
-        <View
-          style={
-            Object {
-              "backgroundColor": "#FFFFFF",
-              "flex": 1,
-              "paddingHorizontal": 14,
-              "paddingVertical": 12,
-            }
-          }
-        >
-          <Text.H3>
-            Emission type
-          </Text.H3>
-        </View>
-        <RCTScrollView
-          horizontal={true}
-          style={
-            Object {
-              "flexDirection": "row",
-              "paddingLeft": 14,
-            }
-          }
-        >
-          <View>
-            <Tag
-              icon="md-airplane"
-              onPress={[Function]}
-              selected={true}
-              title="Transport"
-            />
-            <Tag
-              icon="md-nutrition"
-              onPress={[Function]}
-              selected={false}
-              title="Food"
-            />
-            <Tag
-              icon="md-restaurant"
-              onPress={[Function]}
-              selected={false}
-              title="Meal"
-            />
-            <Tag
-              icon="md-play-circle"
-              onPress={[Function]}
-              selected={false}
-              title="Streaming"
-            />
-            <Tag
-              icon="md-card"
-              onPress={[Function]}
-              selected={false}
-              title="Purchase"
-            />
-            <Tag
-              icon="md-shirt"
-              onPress={[Function]}
-              selected={false}
-              title="Fashion"
-            />
-            <Tag
-              icon="md-flash"
-              onPress={[Function]}
-              selected={false}
-              title="Electricity"
-            />
-            <Tag
-              icon="md-build"
-              onPress={[Function]}
-              selected={false}
-              title="Custom"
-            />
-            <View
-              style={
-                Object {
-                  "width": 14,
-                }
-              }
-            />
-          </View>
-        </RCTScrollView>
-      </View>
-      <View
-        style={
-          Object {
-            "backgroundColor": "#FFFFFF",
-            "flex": 1,
-            "paddingBottom": 12,
-            "paddingHorizontal": 14,
-          }
-        }
-      >
-        <Text.H3>
-          Transport type
-        </Text.H3>
-      </View>
-      <RCTScrollView
-        horizontal={true}
-        style={
-          Object {
-            "paddingBottom": 12,
-            "paddingLeft": 14,
-          }
-        }
-      >
-        <View>
-          <Tag
-            onPress={[Function]}
-            selected={false}
-            title="Train"
-          />
-          <Tag
-            onPress={[Function]}
-            selected={true}
-            title="Car"
-          />
-          <Tag
-            onPress={[Function]}
-            selected={false}
-            title="Bus"
-          />
-          <Tag
-            onPress={[Function]}
-            selected={false}
-            title="Plane"
-          />
-          <Tag
-            onPress={[Function]}
-            selected={false}
-            title="Boat"
-          />
-          <Tag
-            onPress={[Function]}
-            selected={false}
-            title="Motorbike"
-          />
-          <View
-            style={
-              Object {
-                "width": 14,
-              }
-            }
-          />
-        </View>
-      </RCTScrollView>
-      <View
-        style={
-          Object {
-            "backgroundColor": "#FFFFFF",
-            "flex": 1,
-            "paddingHorizontal": 14,
-            "paddingVertical": 12,
-          }
-        }
-      >
-        <Text.H3
-          style={
-            Object {
-              "paddingBottom": 12,
-            }
-          }
-        >
-          Distance
-        </Text.H3>
-        <Text.Primary
-          lightGray={true}
-        >
-          150 kilometer(s)
-        </Text.Primary>
-      </View>
-      <RNCSlider
-        disabled={false}
-        enabled={true}
-        inverted={false}
-        maximumTrackTintColor="#CED4DA"
-        maximumValue={1000}
-        minimumTrackTintColor="#4BB377"
-        minimumValue={2}
-        onChange={null}
-        onRNCSliderSlidingComplete={[Function]}
-        onRNCSliderSlidingStart={null}
-        onRNCSliderValueChange={null}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        step={0}
-        style={
-          Array [
-            Object {
-              "height": 40,
-            },
-            Object {
-              "height": 40,
-              "marginHorizontal": 16,
-            },
-          ]
-        }
-        thumbImage={
-          Object {
-            "__packager_asset": true,
-            "height": 1,
-            "scale": 1,
-            "uri": "file://assets/full/path/to/directory/name.type",
-            "width": 1,
-          }
-        }
-        thumbTintColor="#4BB377"
-        value={150}
       />
-      <View
-        style={
-          Object {
-            "backgroundColor": "#FFFFFF",
-            "flex": 1,
-            "paddingHorizontal": 14,
-            "paddingVertical": 12,
-          }
-        }
-      >
-        <Text.H3
-          style={
-            Object {
-              "paddingBottom": 12,
-            }
-          }
-        >
-          Total
-        </Text.H3>
-        <Text.H2
-          style={
-            Object {
-              "color": "#3957D0",
-            }
-          }
-        >
-          <FormattedNumber
-            maximumFractionDigits={2}
-            value={38.550000000000004}
-          />
-           
-          <Text.Primary>
-            kgCO2eq
-          </Text.Primary>
-        </Text.H2>
-      </View>
       <TextInput
         isOptional={true}
         onChangeText={[Function]}
@@ -351,15 +107,24 @@ exports[`AddEmissionScreen renders correctly 1`] = `
             }
           }
         >
-          <Text.Primary
-            bold={true}
-            lightGray={true}
-          >
-            Sunday 7th April 2019
-          </Text.Primary>
           <TouchableOpacity
             onPress={[Function]}
+            style={
+              Object {
+                "flexDirection": "row",
+              }
+            }
           >
+            <Text.Primary
+              lightGray={true}
+            >
+              Sunday 7th April 2019
+            </Text.Primary>
+            <Text.Primary
+              lightGray={true}
+            >
+               - 
+            </Text.Primary>
             <Text.Primary
               bold={true}
               green={true}

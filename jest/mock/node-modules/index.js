@@ -43,5 +43,14 @@ jest.mock("@react-navigation/native", () => {
     useNavigation: () => jest.fn(),
     useRoute: () => jest.fn(),
     createNavigatorFactory: () => jest.fn,
+    StackActions: {
+      popToTop: jest.fn(),
+    },
+  };
+});
+
+jest.mock("@react-navigation/core", () => {
+  return {
+    useRoute: () => jest.fn(),
   };
 });
