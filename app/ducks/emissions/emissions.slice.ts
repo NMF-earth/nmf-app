@@ -11,8 +11,13 @@ const emissions = createSlice({
     createEmission(state, action: PayloadAction<Emission>) {
       state.push(action.payload);
     },
-    deleteEmissionById(state, action: PayloadAction<string>) {
+    deleteEmission(state, action: PayloadAction<string>) {
       return (state = state.filter((item) => item.id !== action.payload));
+    },
+    toggleIsMitigated(state, action: PayloadAction<string>) {
+      return (state = state.map((item) =>
+        item.id === action.payload ? { ...item, isMitigated: !item.isMitigated } : item
+      ));
     },
     deleteAllEmissions() {
       return initialState;
@@ -25,14 +30,16 @@ const emissions = createSlice({
 
 const {
   createEmission,
-  deleteEmissionById,
+  deleteEmission,
+  toggleIsMitigated,
   deleteAllEmissions,
   loadEmissionsFromImport,
 } = emissions.actions;
 
 export const actions = {
   createEmission,
-  deleteEmissionById,
+  deleteEmission,
+  toggleIsMitigated,
   deleteAllEmissions,
   loadEmissionsFromImport,
 };

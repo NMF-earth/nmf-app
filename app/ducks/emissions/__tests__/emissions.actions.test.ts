@@ -27,11 +27,20 @@ describe("Emissions actions should", () => {
 
   it("be able to delete an emission", () => {
     const expectedAction = {
-      type: emissions.actions.deleteEmissionById.toString(),
+      type: emissions.actions.deleteEmission.toString(),
       payload: "123",
     };
 
-    expect(emissions.actions.deleteEmissionById("123")).toEqual(expectedAction);
+    expect(emissions.actions.deleteEmission("123")).toEqual(expectedAction);
+  });
+
+  it("be able to toggle isMitigated property of an emission", () => {
+    const expectedAction = {
+      type: emissions.actions.toggleIsMitigated.toString(),
+      payload: "123",
+    };
+
+    expect(emissions.actions.toggleIsMitigated("123")).toEqual(expectedAction);
   });
 
   it("be able to load emissions", () => {

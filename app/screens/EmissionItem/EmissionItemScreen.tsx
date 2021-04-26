@@ -1,6 +1,6 @@
 import React, { Fragment, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { ScrollView, View } from "react-native";
+import { ScrollView, View, Switch } from "react-native";
 import { isEmpty, pathOr } from "ramda";
 import moment from "moment";
 import "moment/min/locales";
@@ -26,7 +26,7 @@ const EmissionItemScreen = ({ language = "" }: LocalizationContextProps) => {
 
   const emission = useSelector((state) => emissions.selectors.getEmissionById(state, emissionId));
 
-  const { creationDate, emissionModelType, emissionType, name } = emission || {
+  const { creationDate, emissionModelType, emissionType, name, isMitigated } = emission || {
     creationDate: new Date(),
     emissionModelType: "",
     name: "",
@@ -36,7 +36,8 @@ const EmissionItemScreen = ({ language = "" }: LocalizationContextProps) => {
   const day = date.locale(language).format("dddd");
   const monthAndYear = date.locale(language).format("Do MMMM YYYY");
   const co2Emission = calculation.getC02ValueFromEmission(emission || {});
-  const deleteEmission = () => dispatch(emissions.actions.deleteEmissionById(emission.id));
+  const deleteEmission = () => dispatch(emissions.actions.deleteEmission(emission.id));
+  const toggleIsMitigated = () => dispatch(emissions.actions.toggleIsMitigated(emission.id));
 
   useEffect(() => {
     /* Avoid crash right after an emission is deleted */
@@ -50,37 +51,48 @@ const EmissionItemScreen = ({ language = "" }: LocalizationContextProps) => {
           {name.length ? (
             <>
               <Text.H3>{t("EMISSION_ITEM_SCREEN_NAME")}</Text.H3>
-              <Text.Primary darkGray style={styles.item}>
+              <Text.Primary darkGray style={styles.lastItem}>
                 {name}
               </Text.Primary>
             </>
           ) : null}
           <>
             <Text.H3>{t("EMISSION_ITEM_SCREEN_TYPE")}</Text.H3>
-            <Text.Primary darkGray style={styles.item}>
+            <Text.Primary darkGray style={styles.lastItem}>
               {ui.getTranslationEmissionType(emissionType)}
               {" - "}
               {ui.getTranslationEmissionModelType(emissionModelType)}
             </Text.Primary>
           </>
           <Text.H3>{t("EMISSION_ITEM_SCREEN_QUANTITY")}</Text.H3>
-          <Text.Primary darkGray style={styles.item}>
+          <Text.Primary darkGray style={styles.lastItem}>
             <FormattedNumber
               maximumFractionDigits={2}
               value={co2Emission > 1 ? co2Emission : co2Emission * 1000}
             />{" "}
             {co2Emission > 1 ? " kgC02eq" : " gC02eq"}
           </Text.Primary>
+
+          <Text.H3>{t("EMISSION_ITEM_SCREEN_MITIGATED")}</Text.H3>
+          <Text.Primary darkGray style={styles.text}>
+            {isMitigated
+              ? t("EMISSION_ITEM_SCREEN_IS_MITIGATED")
+              : t("EMISSION_ITEM_SCREEN_IS_NOT_MITIGATED")}
+          </Text.Primary>
+          <View style={styles.lastItem}>
+            <Switch value={isMitigated} onValueChange={toggleIsMitigated} />
+          </View>
+
           <Text.H3>{t("EMISSION_ITEM_SCREEN_DATE")}</Text.H3>
           <View style={styles.date}>
-            <Text.Primary darkGray style={[styles.item, styles.day]}>
+            <Text.Primary darkGray style={[styles.lastItem, styles.day]}>
               {day + " "}
             </Text.Primary>
-            <Text.Primary darkGray style={styles.item}>
+            <Text.Primary darkGray style={styles.lastItem}>
               {monthAndYear}
             </Text.Primary>
           </View>
-          <Button.Primary fullWidth onPress={deleteEmission} textType={"Primary"}>
+          <Button.Primary red fullWidth onPress={deleteEmission} textType={"Primary"}>
             <Text.Primary white>{t("EMISSION_ITEM_SCREEN_DELETE_EMISSION")}</Text.Primary>
           </Button.Primary>
         </ScrollView>

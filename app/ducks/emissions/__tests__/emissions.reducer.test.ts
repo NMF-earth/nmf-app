@@ -30,6 +30,23 @@ describe("Emissions reducer should", () => {
     expect(emissions.reducer([emission], action)).toEqual([emission, emission]);
   });
 
+  it("handle toggle isMitigated property of an emission", () => {
+    const emission: Emission = {
+      id: "123",
+      creationDate: "2020-01-26T11:04:55.334Z",
+      emissionType: EmissionType.custom,
+      emissionModelType: FoodType.nuts,
+      value: 200,
+      isMitigated: false,
+    };
+    const action = {
+      type: emissions.actions.toggleIsMitigated.toString(),
+      payload: emission.id,
+    };
+
+    expect(emissions.reducer([emission], action)).toEqual([{ ...emission, isMitigated: true }]);
+  });
+
   it("handle emission delete", () => {
     const emission: Emission = {
       id: "123",
@@ -40,7 +57,7 @@ describe("Emissions reducer should", () => {
       isMitigated: false,
     };
     const action = {
-      type: emissions.actions.deleteEmissionById.toString(),
+      type: emissions.actions.deleteEmission.toString(),
       payload: emission.id,
     };
 

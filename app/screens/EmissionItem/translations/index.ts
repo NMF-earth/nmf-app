@@ -16,6 +16,9 @@ interface TranslationKeys {
   EMISSION_ITEM_SCREEN_DATE: string;
   EMISSION_ITEM_SCREEN_DELETE_EMISSION: string;
   EMISSION_ITEM_SCREEN_NAME: string;
+  EMISSION_ITEM_SCREEN_MITIGATED: string;
+  EMISSION_ITEM_SCREEN_IS_MITIGATED: string;
+  EMISSION_ITEM_SCREEN_IS_NOT_MITIGATED: string;
 }
 
 export { en, fr, de, sv, es, pt, da, ru, pl, TranslationKeys };

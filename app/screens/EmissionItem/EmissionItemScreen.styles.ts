@@ -7,11 +7,18 @@ export default StyleSheet.create({
     ...Layout.containerWithPadding,
     paddingTop: 22,
   },
-  item: {
+  lastItem: {
     paddingTop: 6,
     paddingBottom: 24,
   },
+  text: {
+    paddingTop: 6,
+  },
   date: {
+    flexDirection: "row",
+  },
+  mitigationContainer: {
+    alignItems: "center",
     flexDirection: "row",
   },
   day: {

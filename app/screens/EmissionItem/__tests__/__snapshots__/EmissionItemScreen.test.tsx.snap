@@ -61,6 +61,41 @@ exports[`EmissionsScreen renders correctly 1`] = `
        gC02eq
     </Text.Primary>
     <Text.H3>
+      Mitigation
+    </Text.H3>
+    <Text.Primary
+      darkGray={true}
+      style={
+        Object {
+          "paddingTop": 6,
+        }
+      }
+    >
+      This emission hasn't been mitigated
+    </Text.Primary>
+    <View
+      style={
+        Object {
+          "paddingBottom": 24,
+          "paddingTop": 6,
+        }
+      }
+    >
+      <RCTSwitch
+        accessibilityRole="switch"
+        onChange={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "height": 31,
+            "width": 51,
+          }
+        }
+        value={false}
+      />
+    </View>
+    <Text.H3>
       Date
     </Text.H3>
     <View
@@ -101,6 +136,7 @@ exports[`EmissionsScreen renders correctly 1`] = `
     <Button.Primary
       fullWidth={true}
       onPress={[Function]}
+      red={true}
       textType="Primary"
     >
       <Text.Primary
