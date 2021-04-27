@@ -8,11 +8,12 @@ export default StyleSheet.create({
     paddingTop: 22,
   },
   lastItem: {
-    paddingTop: 6,
+    alignItems: "flex-start",
+    paddingTop: 2,
     paddingBottom: 24,
   },
   text: {
-    paddingTop: 6,
+    paddingTop: 2,
   },
   date: {
     flexDirection: "row",

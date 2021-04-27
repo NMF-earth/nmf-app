@@ -200,8 +200,8 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
           >
             If you wish to respect the Paris agreement (to keep the rise in global average temperature below 2 degrees), set your monthly budget at
             <Text.Secondary
-              blue={true}
               bold={true}
+              darkGray={true}
             >
                166 kg CO2
             </Text.Secondary>

@@ -6,7 +6,7 @@ import { Text, InfoButton } from "components";
 import { t } from "utils";
 import { Colors, ComponentsStyle } from "style";
 
-const emissionsInfoAvailable = [FoodType.chocolate, FoodType.cheese];
+const emissionsInfoAvailable = [FoodType.cheese];
 
 const navigationOptions = (prop) => {
   const emissionModelType = path(["route", "params", "emissionModelType"], prop);

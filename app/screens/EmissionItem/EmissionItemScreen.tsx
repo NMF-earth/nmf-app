@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from "react";
+import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { ScrollView, View, Switch } from "react-native";
 import { isEmpty, pathOr } from "ramda";
@@ -44,60 +44,58 @@ const EmissionItemScreen = ({ language = "" }: LocalizationContextProps) => {
     if (!emission) navigator.goBack();
   }, [navigator, emission]);
 
+  if (isEmpty(emission)) {
+    return null;
+  }
+
   return (
-    <Fragment>
-      {!isEmpty(emission) && (
-        <ScrollView style={styles.container}>
-          {name.length ? (
-            <>
-              <Text.H3>{t("EMISSION_ITEM_SCREEN_NAME")}</Text.H3>
-              <Text.Primary darkGray style={styles.lastItem}>
-                {name}
-              </Text.Primary>
-            </>
-          ) : null}
-          <>
-            <Text.H3>{t("EMISSION_ITEM_SCREEN_TYPE")}</Text.H3>
-            <Text.Primary darkGray style={styles.lastItem}>
-              {ui.getTranslationEmissionType(emissionType)}
-              {" - "}
-              {ui.getTranslationEmissionModelType(emissionModelType)}
-            </Text.Primary>
-          </>
-          <Text.H3>{t("EMISSION_ITEM_SCREEN_QUANTITY")}</Text.H3>
+    <ScrollView style={styles.container}>
+      {name.length ? (
+        <>
+          <Text.H3>{t("EMISSION_ITEM_SCREEN_NAME")}</Text.H3>
           <Text.Primary darkGray style={styles.lastItem}>
-            <FormattedNumber
-              maximumFractionDigits={2}
-              value={co2Emission > 1 ? co2Emission : co2Emission * 1000}
-            />{" "}
-            {co2Emission > 1 ? " kgC02eq" : " gC02eq"}
+            {name}
           </Text.Primary>
+        </>
+      ) : null}
+      <Text.H3>{t("EMISSION_ITEM_SCREEN_TYPE")}</Text.H3>
+      <Text.Primary darkGray style={styles.lastItem}>
+        {ui.getTranslationEmissionType(emissionType)}
+        {" - "}
+        {ui.getTranslationEmissionModelType(emissionModelType)}
+      </Text.Primary>
+      <Text.H3>{t("EMISSION_ITEM_SCREEN_QUANTITY")}</Text.H3>
+      <Text.Primary darkGray style={styles.lastItem}>
+        <FormattedNumber
+          maximumFractionDigits={2}
+          value={co2Emission > 1 ? co2Emission : co2Emission * 1000}
+        />{" "}
+        {co2Emission > 1 ? " kgC02eq" : " gC02eq"}
+      </Text.Primary>
 
-          <Text.H3>{t("EMISSION_ITEM_SCREEN_MITIGATED")}</Text.H3>
-          <Text.Primary darkGray style={styles.text}>
-            {isMitigated
-              ? t("EMISSION_ITEM_SCREEN_IS_MITIGATED")
-              : t("EMISSION_ITEM_SCREEN_IS_NOT_MITIGATED")}
-          </Text.Primary>
-          <View style={styles.lastItem}>
-            <Switch value={isMitigated} onValueChange={toggleIsMitigated} />
-          </View>
+      <Text.H3>{t("EMISSION_ITEM_SCREEN_MITIGATED")}</Text.H3>
+      <Text.Primary darkGray style={styles.text}>
+        {isMitigated
+          ? t("EMISSION_ITEM_SCREEN_IS_MITIGATED")
+          : t("EMISSION_ITEM_SCREEN_IS_NOT_MITIGATED")}
+      </Text.Primary>
+      <View style={styles.lastItem}>
+        <Switch value={isMitigated} onValueChange={toggleIsMitigated} />
+      </View>
 
-          <Text.H3>{t("EMISSION_ITEM_SCREEN_DATE")}</Text.H3>
-          <View style={styles.date}>
-            <Text.Primary darkGray style={[styles.lastItem, styles.day]}>
-              {day + " "}
-            </Text.Primary>
-            <Text.Primary darkGray style={styles.lastItem}>
-              {monthAndYear}
-            </Text.Primary>
-          </View>
-          <Button.Primary red fullWidth onPress={deleteEmission} textType={"Primary"}>
-            <Text.Primary white>{t("EMISSION_ITEM_SCREEN_DELETE_EMISSION")}</Text.Primary>
-          </Button.Primary>
-        </ScrollView>
-      )}
-    </Fragment>
+      <Text.H3>{t("EMISSION_ITEM_SCREEN_DATE")}</Text.H3>
+      <View style={styles.date}>
+        <Text.Primary darkGray style={[styles.lastItem, styles.day]}>
+          {day + " "}
+        </Text.Primary>
+        <Text.Primary darkGray style={styles.lastItem}>
+          {monthAndYear}
+        </Text.Primary>
+      </View>
+      <Button.Primary red fullWidth onPress={deleteEmission} textType={"Primary"}>
+        <Text.Primary white>{t("EMISSION_ITEM_SCREEN_DELETE_EMISSION")}</Text.Primary>
+      </Button.Primary>
+    </ScrollView>
   );
 };
 
