@@ -5,8 +5,5 @@
   "EMISSION_ITEM_SCREEN_PRICE": "Preço",
   "EMISSION_ITEM_SCREEN_QUANTITY": "Quantidade",
   "EMISSION_ITEM_SCREEN_TITLE": "Emissões",
-  "EMISSION_ITEM_SCREEN_TYPE": "Tipo",
-  "EMISSION_ITEM_SCREEN_MITIGATED": "Mitigation",
-  "EMISSION_ITEM_SCREEN_IS_MITIGATED": "This emission has been mitigated",
-  "EMISSION_ITEM_SCREEN_IS_NOT_MITIGATED": "This emission hasn't been mitigated"
+  "EMISSION_ITEM_SCREEN_TYPE": "Tipo"
 }

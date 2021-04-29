@@ -13,7 +13,5 @@
   "ADD_EMISSION_SCREEN_QUANTITY_OF_EMISSION": "Utsläppsmängd",
   "ADD_EMISSION_SCREEN_TEXTINPUT_PLACEHOLDER": "t.ex. burgare, flyg från Paris till Rom...",
   "ADD_EMISSION_SCREEN_TITLE": "Lägg till utsläpp",
-  "ADD_EMISSION_SCREEN_TOTAL": "Totalt",
-  "ADD_EMISSION_SCREEN_ITEMS": "item(s)",
-  "ADD_EMISSION_SCREEN_MEALS": "meal(s)"
+  "ADD_EMISSION_SCREEN_TOTAL": "Totalt"
 }

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { View, TouchableWithoutFeedback, ScrollView, Image } from "react-native";
 import ExpoConstants from "expo-constants";
 import * as WebBrowser from "expo-web-browser";
+import * as Linking from "expo-linking";
 
 import { ImagesAssets } from "constant";
 import { Button, Text, SocialMedia, ListItem } from "components";
@@ -45,6 +46,10 @@ const SettingsScreen = (props) => {
         WebBrowser.openBrowserAsync(
           "https://www.notion.so/notmyfault/cb98dacb015f4a18a7ebac5c0319495b?v=da9ec9ce3096417186dfd229a82aa90e"
         ),
+    },
+    {
+      title: t("SETTINGS_SCREEN_HELP_TRANSLATION"),
+      onPress: () => Linking.openURL("https://poeditor.com/join/project?hash=0MbginCsWp"),
     },
     {
       title: t("SETTINGS_SCREEN_FEEDBACK"),

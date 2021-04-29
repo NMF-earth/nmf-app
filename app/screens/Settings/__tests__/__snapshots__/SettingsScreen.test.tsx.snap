@@ -61,7 +61,7 @@ exports[`SettingsScreen renders correctly 1`] = `
       <Text.Secondary
         numberOfLines={1}
       >
-        Import, save and delete data
+        My data
       </Text.Secondary>
       <Ionicons
         color="#9CA6A0"
@@ -207,6 +207,35 @@ exports[`SettingsScreen renders correctly 1`] = `
         numberOfLines={1}
       >
         Roadmap
+      </Text.Secondary>
+      <Ionicons
+        color="#9CA6A0"
+        name="ios-chevron-forward-outline"
+        size={14}
+      />
+    </TouchableOpacity>
+    <TouchableOpacity
+      onPress={[Function]}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "paddingVertical": 18,
+          },
+          Object {
+            "borderBottomColor": "#F0F0F0",
+            "borderBottomWidth": 1.6,
+          },
+        ]
+      }
+    >
+      <Text.Secondary
+        numberOfLines={1}
+      >
+        Help translation
       </Text.Secondary>
       <Ionicons
         color="#9CA6A0"
