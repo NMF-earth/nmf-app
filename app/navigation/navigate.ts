@@ -67,11 +67,16 @@ const openSubCategorySelection = (navigation) => (props = {}) => {
   navigation.push("SubCategorySelection", props);
 };
 
+const openBarCodeScan = (navigation) => (props = {}) => {
+  navigation.push("BarCodeScan", props);
+};
+
 const navigate = (navigation) => ({
   goBack: navigation.goBack,
   openCategorySelection: navigateOneTime(openCategorySelection(navigation)),
   openSubCategorySelection: navigateOneTime(openSubCategorySelection(navigation)),
   openMyData: navigateOneTime(openMyData(navigation)),
+  openBarCodeScan: navigateOneTime(openBarCodeScan(navigation)),
   openComingSoon: navigateOneTime(openComingSoon(navigation)),
   openInfoModal: navigateOneTime(openInfoModal(navigation)),
   openBudget: navigateOneTime(openBudget(navigation)),

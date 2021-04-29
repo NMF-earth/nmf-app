@@ -33,6 +33,10 @@ const categories = [
     icon: "md-build",
     emissionType: EmissionType.custom,
   },
+  {
+    icon: "barcode-sharp",
+    emissionType: EmissionType.productScanned,
+  },
 ];
 
 export { categories };

@@ -18,6 +18,8 @@ const CategorySelectionScreen = () => {
   const onPress = ({ emissionType }) => {
     if (emissionType === EmissionType.custom || emissionType === EmissionType.electricity) {
       navigator.openAddEmission({ emissionType });
+    } else if (emissionType === EmissionType.productScanned) {
+      navigator.openBarCodeScan({ emissionType });
     } else {
       navigator.openSubCategorySelection({ emissionType });
     }

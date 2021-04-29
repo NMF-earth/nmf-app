@@ -61,6 +61,10 @@ exports[`CategorySelectionScreen renders correctly 1`] = `
       onPress={[Function]}
       text="Custom"
     />
+    <Tag
+      icon="barcode-sharp"
+      onPress={[Function]}
+    />
   </View>
 </RCTScrollView>
 `;

@@ -16,6 +16,7 @@ enum EmissionType {
   electricity = "electricity",
   fashion = "fashion",
   meal = "meal",
+  productScanned = "productScanned",
   custom = "custom",
 }
 

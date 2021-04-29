@@ -38,6 +38,7 @@
     "carbon-footprint": "1.5.4",
     "expo": "40.0.0",
     "expo-asset": "8.2.1",
+    "expo-barcode-scanner": "10.1.2",
     "expo-constants": "9.3.3",
     "expo-document-picker": "9.1.2",
     "expo-file-system": "11.0.2",
