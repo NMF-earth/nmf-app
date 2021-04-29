@@ -61,7 +61,7 @@ exports[`SettingsScreen renders correctly 1`] = `
       <Text.Secondary
         numberOfLines={1}
       >
-        Import, save and delete data
+        My data
       </Text.Secondary>
       <Ionicons
         color="#9CA6A0"

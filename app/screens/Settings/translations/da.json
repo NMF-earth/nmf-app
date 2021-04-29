@@ -2,12 +2,7 @@
   "SETTINGS_SCREEN_TAB_NAME": "Indstillinger",
   "SETTINGS_SCREEN_TITLE": "Indstillinger",
   "SETTINGS_SCREEN_ABOUT": "Om os",
-  "SETTINGS_SCREEN_NOTIFICATIONS": "Notifications",
-  "SETTINGS_SCREEN_MY_LOCATION": "My Location",
   "SETTINGS_SCREEN_SUPPORT_US": "Støt os!",
-  "SETTINGS_SCREEN_ROADMAP": "Roadmap",
-  "SETTINGS_SCREEN_FEEDBACK": "Feedback",
   "SETTINGS_SCREEN_TERMS_OF_USE": "Betingelser for brug",
-  "SETTINGS_SCREEN_APP_VERSION": "Version %{version}",
-  "SETTINGS_SCREEN_IMPORT_SAVE_DELETE_DATA": "Import, save and delete data"
+  "SETTINGS_SCREEN_APP_VERSION": "Version %{version}"
 }

@@ -13,7 +13,5 @@
   "ADD_EMISSION_SCREEN_QUANTITY_OF_EMISSION": "Количество эмиссий",
   "ADD_EMISSION_SCREEN_TEXTINPUT_PLACEHOLDER": "например бургер, полет из Парижа в Рим...",
   "ADD_EMISSION_SCREEN_TITLE": "Добавить эмиссию",
-  "ADD_EMISSION_SCREEN_TOTAL": "Всего",
-  "ADD_EMISSION_SCREEN_ITEMS": "item(s)",
-  "ADD_EMISSION_SCREEN_MEALS": "meal(s)"
+  "ADD_EMISSION_SCREEN_TOTAL": "Всего"
 }

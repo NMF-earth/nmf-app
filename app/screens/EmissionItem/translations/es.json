@@ -1,12 +1,1 @@
-{
-  "EMISSION_ITEM_SCREEN_TITLE": "Emission",
-  "EMISSION_ITEM_SCREEN_TYPE": "Type",
-  "EMISSION_ITEM_SCREEN_QUANTITY": "Quantité",
-  "EMISSION_ITEM_SCREEN_PRICE": "Prix",
-  "EMISSION_ITEM_SCREEN_DATE": "Date",
-  "EMISSION_ITEM_SCREEN_DELETE_EMISSION": "Supprimer émission",
-  "EMISSION_ITEM_SCREEN_NAME": "Nom",
-  "EMISSION_ITEM_SCREEN_MITIGATED": "Mitigation",
-  "EMISSION_ITEM_SCREEN_IS_MITIGATED": "This emission has been mitigated",
-  "EMISSION_ITEM_SCREEN_IS_NOT_MITIGATED": "This emission hasn't been mitigated"
-}
+{}
