@@ -2,8 +2,7 @@
 
 exports[`EmissionsScreen renders correctly 1`] = `
 Array [
-  <RCTSafeAreaView
-    emulateUnlessSupported={true}
+  <View
     style={
       Object {
         "backgroundColor": "#FFFFFF",
@@ -15,7 +14,7 @@ Array [
       emissions={[MockFunction]}
       monthlyCarbonBudget={[MockFunction]}
     />
-  </RCTSafeAreaView>,
+  </View>,
   <View
     style={
       Object {

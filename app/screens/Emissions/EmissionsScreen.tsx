@@ -1,5 +1,5 @@
 import React from "react";
-import { SafeAreaView, View } from "react-native";
+import { View } from "react-native";
 import { useSelector } from "react-redux";
 import { useNavigation } from "@react-navigation/native";
 
@@ -20,9 +20,9 @@ const EmissionsScreen = () => {
 
   return (
     <>
-      <SafeAreaView style={styles.container}>
+      <View style={styles.container}>
         <EmissionsList monthlyCarbonBudget={monthlyCarbonBudget} emissions={emissions} />
-      </SafeAreaView>
+      </View>
       <View style={styles.buttonView}>
         <Button.Primary
           fullWidth

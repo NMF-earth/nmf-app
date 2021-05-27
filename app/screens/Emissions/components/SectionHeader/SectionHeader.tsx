@@ -1,7 +1,9 @@
 import React from "react";
 import { View } from "react-native";
 import moment from "moment";
+// import { useNavigation } from "@react-navigation/native";
 
+// import { navigate } from "navigation";
 import "moment/min/locales";
 import { Text } from "components";
 import { withLocalization, LocalizationContextProps, t } from "utils";
@@ -20,6 +22,8 @@ const SectionHeader = ({
   monthlyCarbonBudget = 1,
   language = "",
 }: Props & LocalizationContextProps) => {
+  // const navigation = useNavigation();
+  // const navigator = navigate(navigation);
   let percentageBudget = 1;
 
   if (monthlyCarbonBudget && co2value) {
@@ -39,6 +43,18 @@ const SectionHeader = ({
           {percentageBudget + " % " + t("EMISSIONS_SCREEN_HEADER_OF_BUDGET")}
         </Text.Secondary>
       )}
+      {/* <TouchableOpacity
+        onPress={() =>
+          navigator.openMonthlyEmissions({
+            date,
+            dateHeader: moment(date).locale(language).format("MMMM YYYY"),
+          })
+        }
+      >
+        <Text.Primary darkGray bold style={styles.text}>
+          {"see all"}
+        </Text.Primary>
+      </TouchableOpacity> */}
     </View>
   );
 };
