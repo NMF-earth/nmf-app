@@ -4,7 +4,7 @@ exports[`renders correctly TextInput 1`] = `
 <View
   style={
     Object {
-      "marginHorizontal": 14,
+      "marginHorizontal": 16,
       "marginTop": 12,
     }
   }
@@ -37,7 +37,7 @@ exports[`renders correctly TextInput 1`] = `
         "borderWidth": 2,
         "height": 40,
         "marginBottom": 8,
-        "paddingHorizontal": 14,
+        "paddingHorizontal": 16,
       }
     }
     underlineColorAndroid="transparent"
@@ -50,7 +50,7 @@ exports[`renders correctly TextInput if optional 1`] = `
 <View
   style={
     Object {
-      "marginHorizontal": 14,
+      "marginHorizontal": 16,
       "marginTop": 12,
     }
   }
@@ -83,7 +83,7 @@ exports[`renders correctly TextInput if optional 1`] = `
         "borderWidth": 2,
         "height": 40,
         "marginBottom": 8,
-        "paddingHorizontal": 14,
+        "paddingHorizontal": 16,
       }
     }
     underlineColorAndroid="transparent"

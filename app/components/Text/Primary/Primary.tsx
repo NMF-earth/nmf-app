@@ -13,13 +13,14 @@ interface Props {
   bold?: boolean;
   white?: boolean;
   green?: boolean;
+  blue?: boolean;
   center?: boolean;
   numberOfLines?: number;
 }
 
 export default function Primary(props: Props): React.ReactElement {
   const customStyle = [styles.default, props.style];
-  const { red, white, green, darkGray, lightGray, bold, children, center } = props;
+  const { red, white, blue, green, darkGray, lightGray, bold, children, center } = props;
 
   if (darkGray) {
     customStyle.push(mainStyle.darkGray);
@@ -47,6 +48,10 @@ export default function Primary(props: Props): React.ReactElement {
 
   if (red) {
     customStyle.push(mainStyle.red);
+  }
+
+  if (blue) {
+    customStyle.push(mainStyle.blue50);
   }
 
   return (

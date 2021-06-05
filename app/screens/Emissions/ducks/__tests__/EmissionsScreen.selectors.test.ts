@@ -3,7 +3,7 @@ import moment from "moment";
 
 import { emissions } from "ducks";
 import { Emission, EmissionType } from "interfaces";
-import { calculation } from "utils";
+import { calculation, ui } from "utils";
 
 import { selectors } from "../";
 
@@ -47,6 +47,17 @@ describe("if there are emissions", () => {
     state = {
       [emissions.namespace]: [emissionNotMitigated, emissionMitigated, emissionNotMitigatedOld],
     };
+  });
+
+  test("`getEmissionListItem` should emission ready to be displayed", () => {
+    expect(JSON.stringify(selectors.getEmissionListItem(emissionNotMitigatedOld))).toEqual(
+      JSON.stringify({
+        ...emissionNotMitigatedOld,
+        title: ui.getTranslationEmissionModelType(emissionNotMitigatedOld.emissionModelType),
+        co2value: calculation.getC02ValueFromEmission(emissionNotMitigatedOld),
+        iconName: ui.getIconFromModelType(emissionNotMitigatedOld.emissionModelType),
+      })
+    );
   });
 
   test("`getEmissions` should return all emissions", () => {

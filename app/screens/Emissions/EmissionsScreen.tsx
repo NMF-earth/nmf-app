@@ -1,10 +1,9 @@
 import React from "react";
-import { SafeAreaView, View } from "react-native";
+import { View } from "react-native";
 import { useSelector } from "react-redux";
 import { useNavigation } from "@react-navigation/native";
 
 import { Text, Button } from "components";
-import { budget } from "ducks";
 import { t } from "utils";
 import { navigate } from "navigation";
 
@@ -13,16 +12,15 @@ import { EmissionsList } from "./components";
 import { selectors } from "./ducks";
 
 const EmissionsScreen = () => {
-  const monthlyCarbonBudget = useSelector(budget.selectors.getMonthlyCarbonBudget);
   const emissions = useSelector(selectors.getEmissions);
   const navigation = useNavigation();
   const navigator = navigate(navigation);
 
   return (
     <>
-      <SafeAreaView style={styles.container}>
-        <EmissionsList monthlyCarbonBudget={monthlyCarbonBudget} emissions={emissions} />
-      </SafeAreaView>
+      <View style={styles.container}>
+        <EmissionsList emissions={emissions} />
+      </View>
       <View style={styles.buttonView}>
         <Button.Primary
           fullWidth

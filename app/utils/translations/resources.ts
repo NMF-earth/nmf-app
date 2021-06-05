@@ -18,6 +18,7 @@ import * as InfoModal from "../../screens/InfoModal/translations";
 import * as MyData from "../../screens/MyData/translations";
 import * as CategorySelection from "../../screens/CategorySelection/translations";
 import * as SubCategorySelection from "../../screens/SubCategorySelection/translations";
+import * as MonthlyEmissions from "../../screens/MonthlyEmissions/translations";
 
 /* COMPONENTS */
 import * as NoEmission from "components/NoEmission/translations";
@@ -44,6 +45,7 @@ const en = {
   ...MyData.en,
   ...CategorySelection.en,
   ...SubCategorySelection.en,
+  ...MonthlyEmissions.en,
   ...NoEmission.en,
   ...UI.en,
 };
@@ -68,6 +70,7 @@ const de = {
   ...SubCategorySelection.de,
   ...ActDetail.de,
   ...MyData.de,
+  ...MonthlyEmissions.de,
 };
 
 const fr = {
@@ -91,6 +94,7 @@ const fr = {
   ...MyData.fr,
   ...CategorySelection.fr,
   ...SubCategorySelection.fr,
+  ...MonthlyEmissions.fr,
 };
 
 const sv = {
@@ -114,6 +118,7 @@ const sv = {
   ...MyData.sv,
   ...CategorySelection.sv,
   ...SubCategorySelection.sv,
+  ...MonthlyEmissions.sv,
 };
 
 const pt = {
@@ -136,6 +141,7 @@ const pt = {
   ...MyData.pt,
   ...CategorySelection.pt,
   ...SubCategorySelection.pt,
+  ...MonthlyEmissions.pt,
 };
 
 const es = {
@@ -158,6 +164,7 @@ const es = {
   ...MyData.es,
   ...CategorySelection.es,
   ...SubCategorySelection.es,
+  ...MonthlyEmissions.es,
 };
 
 const ru = {
@@ -180,6 +187,7 @@ const ru = {
   ...MyData.ru,
   ...CategorySelection.ru,
   ...SubCategorySelection.ru,
+  ...MonthlyEmissions.ru,
 };
 
 const pl = {
@@ -202,6 +210,7 @@ const pl = {
   ...MyData.pl,
   ...CategorySelection.pl,
   ...SubCategorySelection.pl,
+  ...MonthlyEmissions.pl,
 };
 
 const da = {
@@ -224,6 +233,7 @@ const da = {
   ...MyData.da,
   ...CategorySelection.da,
   ...SubCategorySelection.da,
+  ...MonthlyEmissions.da,
 };
 
 export interface TranslationKeys
@@ -246,6 +256,7 @@ export interface TranslationKeys
     MyData.TranslationKeys,
     CategorySelection.TranslationKeys,
     SubCategorySelection.TranslationKeys,
+    MonthlyEmissions.TranslationKeys,
     ActDetail.TranslationKeys {}
 
 export { en, de, fr, sv, pt, es, pl, ru, da };

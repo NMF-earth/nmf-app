@@ -10,8 +10,11 @@ import ListItem from "./ListItem";
 import HTMLImage from "./HTMLImage";
 import InfoButton from "./InfoButton";
 import NoEmission from "./NoEmission";
+import { EmissionListItem, EmissionListItemProps } from "./EmissionListItem";
 
 export {
+  EmissionListItem,
+  EmissionListItemProps,
   HTMLImage,
   ListItem,
   SelectableListItem,

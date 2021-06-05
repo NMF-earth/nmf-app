@@ -11,32 +11,10 @@ exports[`NumberOfDaysVegetarian renders correctly 1`] = `
     }
   }
 >
-  <View
-    style={
-      Object {
-        "flex": 1,
-        "flexDirection": "row",
-      }
-    }
-  >
-    <Text.H3
-      darkGray={true}
-    >
-      function () {
-        return fn.apply(this, arguments);
-      } days
-    </Text.H3>
-    <Text.H3>
-       
-    </Text.H3>
-    <Text.H3>
-      without meat or fish.
-    </Text.H3>
-  </View>
   <Text.H3
     center={true}
   >
-    Well done! 🎉
+    Seems like you haven't eaten any meat nor fish since using the app, good job! 🍾
   </Text.H3>
 </View>
 `;

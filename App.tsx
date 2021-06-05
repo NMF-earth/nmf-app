@@ -17,22 +17,12 @@ import store from "./app/redux/store";
 import SplashScreen from "./app/screens/Splash";
 import { LocalizationContext } from "./app/utils";
 
-const supportedLanguages: string[] = [
-  "en",
-  "fr",
-  "de",
-  "sv",
-  "da",
-  "ru",
-  "pt",
-  "pl",
-];
+const supportedLanguages: string[] = ["en", "fr", "de", "sv", "da", "ru", "pt", "pl"];
 const defaultLanguage = "en";
 const defaultLocale = "en-us";
 
 if (!__DEV__) {
-  const secret =
-    require("./secret.ts").default || require("./secret.example.ts").default;
+  const secret = require("./secret.ts").default || require("./secret.example.ts").default;
 
   /* TODO: change secret.dsn to Constants.manifest.extra.sentryPublicDsn */
   Sentry.init({
