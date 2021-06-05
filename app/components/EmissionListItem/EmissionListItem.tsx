@@ -3,20 +3,31 @@ import { View, TouchableOpacity } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { FormattedNumber } from "react-native-globalize";
 
-import { Text } from "components";
 import { Colors } from "style";
+import { Emission, EmissionType } from "interfaces";
 
-import styles from "./EmissionsListItem.styles";
-import EmissionsListItemProps from "./EmissionsListItemProps";
+import Text from "../Text";
+import styles from "./EmissionListItem.styles";
 
-const EmissionsListItem = ({
+interface EmissionListItemProps extends Partial<Emission> {
+  title: string;
+  co2value: number;
+  iconName: string;
+  onPress: () => void;
+  /* no used in EmissionListItem so optional */
+  emissionType?: EmissionType;
+  value?: number;
+  creationDate?: string;
+}
+
+const EmissionListItem = ({
   isMitigated,
   name = "",
   iconName = "md-car",
   title = "",
   co2value = 0,
   onPress,
-}: EmissionsListItemProps) => (
+}: EmissionListItemProps) => (
   <TouchableOpacity onPress={onPress} style={styles.container}>
     <View style={styles.iconContainer}>
       <View style={isMitigated ? styles.mitigatedCircle : styles.notMitigatedCircle} />
@@ -50,4 +61,4 @@ const EmissionsListItem = ({
   </TouchableOpacity>
 );
 
-export default EmissionsListItem;
+export { EmissionListItem, EmissionListItemProps };

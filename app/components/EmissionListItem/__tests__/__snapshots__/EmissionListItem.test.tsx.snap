@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`EmissionsListItem renders correctly if mitigated 1`] = `
+exports[`EmissionListItem renders correctly if mitigated 1`] = `
 <FormattedProvider
   locale="en"
 >
@@ -21,8 +21,8 @@ exports[`EmissionsListItem renders correctly if mitigated 1`] = `
         Object {
           "alignItems": "center",
           "justifyContent": "center",
-          "marginLeft": 7,
-          "marginRight": 7,
+          "marginLeft": 8,
+          "marginRight": 8,
           "position": "absolute",
         }
       }
@@ -44,7 +44,7 @@ exports[`EmissionsListItem renders correctly if mitigated 1`] = `
         size={22}
         style={
           Object {
-            "marginHorizontal": 14,
+            "marginHorizontal": 16,
           }
         }
       />
@@ -53,7 +53,7 @@ exports[`EmissionsListItem renders correctly if mitigated 1`] = `
       style={
         Object {
           "flex": 1,
-          "marginLeft": 62,
+          "marginLeft": 66,
         }
       }
     >
@@ -98,7 +98,7 @@ exports[`EmissionsListItem renders correctly if mitigated 1`] = `
       size={18}
       style={
         Object {
-          "marginHorizontal": 14,
+          "marginHorizontal": 16,
         }
       }
     />
@@ -106,7 +106,7 @@ exports[`EmissionsListItem renders correctly if mitigated 1`] = `
 </FormattedProvider>
 `;
 
-exports[`EmissionsListItem renders correctly with audio icon 1`] = `
+exports[`EmissionListItem renders correctly with audio icon 1`] = `
 <FormattedProvider
   locale="en"
 >
@@ -127,8 +127,8 @@ exports[`EmissionsListItem renders correctly with audio icon 1`] = `
         Object {
           "alignItems": "center",
           "justifyContent": "center",
-          "marginLeft": 7,
-          "marginRight": 7,
+          "marginLeft": 8,
+          "marginRight": 8,
           "position": "absolute",
         }
       }
@@ -150,7 +150,7 @@ exports[`EmissionsListItem renders correctly with audio icon 1`] = `
         size={22}
         style={
           Object {
-            "marginHorizontal": 14,
+            "marginHorizontal": 16,
           }
         }
       />
@@ -159,7 +159,7 @@ exports[`EmissionsListItem renders correctly with audio icon 1`] = `
       style={
         Object {
           "flex": 1,
-          "marginLeft": 62,
+          "marginLeft": 66,
         }
       }
     >
@@ -194,7 +194,7 @@ exports[`EmissionsListItem renders correctly with audio icon 1`] = `
       size={18}
       style={
         Object {
-          "marginHorizontal": 14,
+          "marginHorizontal": 16,
         }
       }
     />
@@ -202,7 +202,7 @@ exports[`EmissionsListItem renders correctly with audio icon 1`] = `
 </FormattedProvider>
 `;
 
-exports[`EmissionsListItem renders correctly with boat icon 1`] = `
+exports[`EmissionListItem renders correctly with boat icon 1`] = `
 <FormattedProvider
   locale="en"
 >
@@ -223,8 +223,8 @@ exports[`EmissionsListItem renders correctly with boat icon 1`] = `
         Object {
           "alignItems": "center",
           "justifyContent": "center",
-          "marginLeft": 7,
-          "marginRight": 7,
+          "marginLeft": 8,
+          "marginRight": 8,
           "position": "absolute",
         }
       }
@@ -246,7 +246,7 @@ exports[`EmissionsListItem renders correctly with boat icon 1`] = `
         size={22}
         style={
           Object {
-            "marginHorizontal": 14,
+            "marginHorizontal": 16,
           }
         }
       />
@@ -255,7 +255,7 @@ exports[`EmissionsListItem renders correctly with boat icon 1`] = `
       style={
         Object {
           "flex": 1,
-          "marginLeft": 62,
+          "marginLeft": 66,
         }
       }
     >
@@ -290,7 +290,7 @@ exports[`EmissionsListItem renders correctly with boat icon 1`] = `
       size={18}
       style={
         Object {
-          "marginHorizontal": 14,
+          "marginHorizontal": 16,
         }
       }
     />
@@ -298,7 +298,7 @@ exports[`EmissionsListItem renders correctly with boat icon 1`] = `
 </FormattedProvider>
 `;
 
-exports[`EmissionsListItem renders correctly with bus icon 1`] = `
+exports[`EmissionListItem renders correctly with bus icon 1`] = `
 <FormattedProvider
   locale="en"
 >
@@ -319,8 +319,8 @@ exports[`EmissionsListItem renders correctly with bus icon 1`] = `
         Object {
           "alignItems": "center",
           "justifyContent": "center",
-          "marginLeft": 7,
-          "marginRight": 7,
+          "marginLeft": 8,
+          "marginRight": 8,
           "position": "absolute",
         }
       }
@@ -342,7 +342,7 @@ exports[`EmissionsListItem renders correctly with bus icon 1`] = `
         size={22}
         style={
           Object {
-            "marginHorizontal": 14,
+            "marginHorizontal": 16,
           }
         }
       />
@@ -351,7 +351,7 @@ exports[`EmissionsListItem renders correctly with bus icon 1`] = `
       style={
         Object {
           "flex": 1,
-          "marginLeft": 62,
+          "marginLeft": 66,
         }
       }
     >
@@ -386,7 +386,7 @@ exports[`EmissionsListItem renders correctly with bus icon 1`] = `
       size={18}
       style={
         Object {
-          "marginHorizontal": 14,
+          "marginHorizontal": 16,
         }
       }
     />
@@ -394,7 +394,7 @@ exports[`EmissionsListItem renders correctly with bus icon 1`] = `
 </FormattedProvider>
 `;
 
-exports[`EmissionsListItem renders correctly with car icon 1`] = `
+exports[`EmissionListItem renders correctly with car icon 1`] = `
 <FormattedProvider
   locale="en"
 >
@@ -415,8 +415,8 @@ exports[`EmissionsListItem renders correctly with car icon 1`] = `
         Object {
           "alignItems": "center",
           "justifyContent": "center",
-          "marginLeft": 7,
-          "marginRight": 7,
+          "marginLeft": 8,
+          "marginRight": 8,
           "position": "absolute",
         }
       }
@@ -438,7 +438,7 @@ exports[`EmissionsListItem renders correctly with car icon 1`] = `
         size={22}
         style={
           Object {
-            "marginHorizontal": 14,
+            "marginHorizontal": 16,
           }
         }
       />
@@ -447,7 +447,7 @@ exports[`EmissionsListItem renders correctly with car icon 1`] = `
       style={
         Object {
           "flex": 1,
-          "marginLeft": 62,
+          "marginLeft": 66,
         }
       }
     >
@@ -482,7 +482,7 @@ exports[`EmissionsListItem renders correctly with car icon 1`] = `
       size={18}
       style={
         Object {
-          "marginHorizontal": 14,
+          "marginHorizontal": 16,
         }
       }
     />
@@ -490,7 +490,7 @@ exports[`EmissionsListItem renders correctly with car icon 1`] = `
 </FormattedProvider>
 `;
 
-exports[`EmissionsListItem renders correctly with card icon 1`] = `
+exports[`EmissionListItem renders correctly with card icon 1`] = `
 <FormattedProvider
   locale="en"
 >
@@ -511,8 +511,8 @@ exports[`EmissionsListItem renders correctly with card icon 1`] = `
         Object {
           "alignItems": "center",
           "justifyContent": "center",
-          "marginLeft": 7,
-          "marginRight": 7,
+          "marginLeft": 8,
+          "marginRight": 8,
           "position": "absolute",
         }
       }
@@ -534,7 +534,7 @@ exports[`EmissionsListItem renders correctly with card icon 1`] = `
         size={22}
         style={
           Object {
-            "marginHorizontal": 14,
+            "marginHorizontal": 16,
           }
         }
       />
@@ -543,7 +543,7 @@ exports[`EmissionsListItem renders correctly with card icon 1`] = `
       style={
         Object {
           "flex": 1,
-          "marginLeft": 62,
+          "marginLeft": 66,
         }
       }
     >
@@ -578,7 +578,7 @@ exports[`EmissionsListItem renders correctly with card icon 1`] = `
       size={18}
       style={
         Object {
-          "marginHorizontal": 14,
+          "marginHorizontal": 16,
         }
       }
     />
@@ -586,7 +586,7 @@ exports[`EmissionsListItem renders correctly with card icon 1`] = `
 </FormattedProvider>
 `;
 
-exports[`EmissionsListItem renders correctly with chocolate icon 1`] = `
+exports[`EmissionListItem renders correctly with chocolate icon 1`] = `
 <FormattedProvider
   locale="en"
 >
@@ -607,8 +607,8 @@ exports[`EmissionsListItem renders correctly with chocolate icon 1`] = `
         Object {
           "alignItems": "center",
           "justifyContent": "center",
-          "marginLeft": 7,
-          "marginRight": 7,
+          "marginLeft": 8,
+          "marginRight": 8,
           "position": "absolute",
         }
       }
@@ -630,7 +630,7 @@ exports[`EmissionsListItem renders correctly with chocolate icon 1`] = `
         size={22}
         style={
           Object {
-            "marginHorizontal": 14,
+            "marginHorizontal": 16,
           }
         }
       />
@@ -639,7 +639,7 @@ exports[`EmissionsListItem renders correctly with chocolate icon 1`] = `
       style={
         Object {
           "flex": 1,
-          "marginLeft": 62,
+          "marginLeft": 66,
         }
       }
     >
@@ -674,7 +674,7 @@ exports[`EmissionsListItem renders correctly with chocolate icon 1`] = `
       size={18}
       style={
         Object {
-          "marginHorizontal": 14,
+          "marginHorizontal": 16,
         }
       }
     />
@@ -682,7 +682,7 @@ exports[`EmissionsListItem renders correctly with chocolate icon 1`] = `
 </FormattedProvider>
 `;
 
-exports[`EmissionsListItem renders correctly with coffee icon 1`] = `
+exports[`EmissionListItem renders correctly with coffee icon 1`] = `
 <FormattedProvider
   locale="en"
 >
@@ -703,8 +703,8 @@ exports[`EmissionsListItem renders correctly with coffee icon 1`] = `
         Object {
           "alignItems": "center",
           "justifyContent": "center",
-          "marginLeft": 7,
-          "marginRight": 7,
+          "marginLeft": 8,
+          "marginRight": 8,
           "position": "absolute",
         }
       }
@@ -726,7 +726,7 @@ exports[`EmissionsListItem renders correctly with coffee icon 1`] = `
         size={22}
         style={
           Object {
-            "marginHorizontal": 14,
+            "marginHorizontal": 16,
           }
         }
       />
@@ -735,7 +735,7 @@ exports[`EmissionsListItem renders correctly with coffee icon 1`] = `
       style={
         Object {
           "flex": 1,
-          "marginLeft": 62,
+          "marginLeft": 66,
         }
       }
     >
@@ -770,7 +770,7 @@ exports[`EmissionsListItem renders correctly with coffee icon 1`] = `
       size={18}
       style={
         Object {
-          "marginHorizontal": 14,
+          "marginHorizontal": 16,
         }
       }
     />
@@ -778,7 +778,7 @@ exports[`EmissionsListItem renders correctly with coffee icon 1`] = `
 </FormattedProvider>
 `;
 
-exports[`EmissionsListItem renders correctly with electricity icon 1`] = `
+exports[`EmissionListItem renders correctly with electricity icon 1`] = `
 <FormattedProvider
   locale="en"
 >
@@ -799,8 +799,8 @@ exports[`EmissionsListItem renders correctly with electricity icon 1`] = `
         Object {
           "alignItems": "center",
           "justifyContent": "center",
-          "marginLeft": 7,
-          "marginRight": 7,
+          "marginLeft": 8,
+          "marginRight": 8,
           "position": "absolute",
         }
       }
@@ -822,7 +822,7 @@ exports[`EmissionsListItem renders correctly with electricity icon 1`] = `
         size={22}
         style={
           Object {
-            "marginHorizontal": 14,
+            "marginHorizontal": 16,
           }
         }
       />
@@ -831,7 +831,7 @@ exports[`EmissionsListItem renders correctly with electricity icon 1`] = `
       style={
         Object {
           "flex": 1,
-          "marginLeft": 62,
+          "marginLeft": 66,
         }
       }
     >
@@ -866,7 +866,7 @@ exports[`EmissionsListItem renders correctly with electricity icon 1`] = `
       size={18}
       style={
         Object {
-          "marginHorizontal": 14,
+          "marginHorizontal": 16,
         }
       }
     />
@@ -874,7 +874,7 @@ exports[`EmissionsListItem renders correctly with electricity icon 1`] = `
 </FormattedProvider>
 `;
 
-exports[`EmissionsListItem renders correctly with fish icon 1`] = `
+exports[`EmissionListItem renders correctly with fish icon 1`] = `
 <FormattedProvider
   locale="en"
 >
@@ -895,8 +895,8 @@ exports[`EmissionsListItem renders correctly with fish icon 1`] = `
         Object {
           "alignItems": "center",
           "justifyContent": "center",
-          "marginLeft": 7,
-          "marginRight": 7,
+          "marginLeft": 8,
+          "marginRight": 8,
           "position": "absolute",
         }
       }
@@ -918,7 +918,7 @@ exports[`EmissionsListItem renders correctly with fish icon 1`] = `
         size={22}
         style={
           Object {
-            "marginHorizontal": 14,
+            "marginHorizontal": 16,
           }
         }
       />
@@ -927,7 +927,7 @@ exports[`EmissionsListItem renders correctly with fish icon 1`] = `
       style={
         Object {
           "flex": 1,
-          "marginLeft": 62,
+          "marginLeft": 66,
         }
       }
     >
@@ -962,7 +962,7 @@ exports[`EmissionsListItem renders correctly with fish icon 1`] = `
       size={18}
       style={
         Object {
-          "marginHorizontal": 14,
+          "marginHorizontal": 16,
         }
       }
     />
@@ -970,7 +970,7 @@ exports[`EmissionsListItem renders correctly with fish icon 1`] = `
 </FormattedProvider>
 `;
 
-exports[`EmissionsListItem renders correctly with full hd video icon 1`] = `
+exports[`EmissionListItem renders correctly with full hd video icon 1`] = `
 <FormattedProvider
   locale="en"
 >
@@ -991,8 +991,8 @@ exports[`EmissionsListItem renders correctly with full hd video icon 1`] = `
         Object {
           "alignItems": "center",
           "justifyContent": "center",
-          "marginLeft": 7,
-          "marginRight": 7,
+          "marginLeft": 8,
+          "marginRight": 8,
           "position": "absolute",
         }
       }
@@ -1014,7 +1014,7 @@ exports[`EmissionsListItem renders correctly with full hd video icon 1`] = `
         size={22}
         style={
           Object {
-            "marginHorizontal": 14,
+            "marginHorizontal": 16,
           }
         }
       />
@@ -1023,7 +1023,7 @@ exports[`EmissionsListItem renders correctly with full hd video icon 1`] = `
       style={
         Object {
           "flex": 1,
-          "marginLeft": 62,
+          "marginLeft": 66,
         }
       }
     >
@@ -1058,7 +1058,7 @@ exports[`EmissionsListItem renders correctly with full hd video icon 1`] = `
       size={18}
       style={
         Object {
-          "marginHorizontal": 14,
+          "marginHorizontal": 16,
         }
       }
     />
@@ -1066,7 +1066,7 @@ exports[`EmissionsListItem renders correctly with full hd video icon 1`] = `
 </FormattedProvider>
 `;
 
-exports[`EmissionsListItem renders correctly with hd video icon 1`] = `
+exports[`EmissionListItem renders correctly with hd video icon 1`] = `
 <FormattedProvider
   locale="en"
 >
@@ -1087,8 +1087,8 @@ exports[`EmissionsListItem renders correctly with hd video icon 1`] = `
         Object {
           "alignItems": "center",
           "justifyContent": "center",
-          "marginLeft": 7,
-          "marginRight": 7,
+          "marginLeft": 8,
+          "marginRight": 8,
           "position": "absolute",
         }
       }
@@ -1110,7 +1110,7 @@ exports[`EmissionsListItem renders correctly with hd video icon 1`] = `
         size={22}
         style={
           Object {
-            "marginHorizontal": 14,
+            "marginHorizontal": 16,
           }
         }
       />
@@ -1119,7 +1119,7 @@ exports[`EmissionsListItem renders correctly with hd video icon 1`] = `
       style={
         Object {
           "flex": 1,
-          "marginLeft": 62,
+          "marginLeft": 66,
         }
       }
     >
@@ -1154,7 +1154,7 @@ exports[`EmissionsListItem renders correctly with hd video icon 1`] = `
       size={18}
       style={
         Object {
-          "marginHorizontal": 14,
+          "marginHorizontal": 16,
         }
       }
     />
@@ -1162,7 +1162,7 @@ exports[`EmissionsListItem renders correctly with hd video icon 1`] = `
 </FormattedProvider>
 `;
 
-exports[`EmissionsListItem renders correctly with longHaulFlight icon 1`] = `
+exports[`EmissionListItem renders correctly with longHaulFlight icon 1`] = `
 <FormattedProvider
   locale="en"
 >
@@ -1183,8 +1183,8 @@ exports[`EmissionsListItem renders correctly with longHaulFlight icon 1`] = `
         Object {
           "alignItems": "center",
           "justifyContent": "center",
-          "marginLeft": 7,
-          "marginRight": 7,
+          "marginLeft": 8,
+          "marginRight": 8,
           "position": "absolute",
         }
       }
@@ -1206,7 +1206,7 @@ exports[`EmissionsListItem renders correctly with longHaulFlight icon 1`] = `
         size={22}
         style={
           Object {
-            "marginHorizontal": 14,
+            "marginHorizontal": 16,
           }
         }
       />
@@ -1215,7 +1215,7 @@ exports[`EmissionsListItem renders correctly with longHaulFlight icon 1`] = `
       style={
         Object {
           "flex": 1,
-          "marginLeft": 62,
+          "marginLeft": 66,
         }
       }
     >
@@ -1250,7 +1250,7 @@ exports[`EmissionsListItem renders correctly with longHaulFlight icon 1`] = `
       size={18}
       style={
         Object {
-          "marginHorizontal": 14,
+          "marginHorizontal": 16,
         }
       }
     />
@@ -1258,7 +1258,7 @@ exports[`EmissionsListItem renders correctly with longHaulFlight icon 1`] = `
 </FormattedProvider>
 `;
 
-exports[`EmissionsListItem renders correctly with meal icon 1`] = `
+exports[`EmissionListItem renders correctly with meal icon 1`] = `
 <FormattedProvider
   locale="en"
 >
@@ -1279,8 +1279,8 @@ exports[`EmissionsListItem renders correctly with meal icon 1`] = `
         Object {
           "alignItems": "center",
           "justifyContent": "center",
-          "marginLeft": 7,
-          "marginRight": 7,
+          "marginLeft": 8,
+          "marginRight": 8,
           "position": "absolute",
         }
       }
@@ -1302,7 +1302,7 @@ exports[`EmissionsListItem renders correctly with meal icon 1`] = `
         size={22}
         style={
           Object {
-            "marginHorizontal": 14,
+            "marginHorizontal": 16,
           }
         }
       />
@@ -1311,7 +1311,7 @@ exports[`EmissionsListItem renders correctly with meal icon 1`] = `
       style={
         Object {
           "flex": 1,
-          "marginLeft": 62,
+          "marginLeft": 66,
         }
       }
     >
@@ -1346,7 +1346,7 @@ exports[`EmissionsListItem renders correctly with meal icon 1`] = `
       size={18}
       style={
         Object {
-          "marginHorizontal": 14,
+          "marginHorizontal": 16,
         }
       }
     />
@@ -1354,7 +1354,7 @@ exports[`EmissionsListItem renders correctly with meal icon 1`] = `
 </FormattedProvider>
 `;
 
-exports[`EmissionsListItem renders correctly with mediumHaulFlight icon 1`] = `
+exports[`EmissionListItem renders correctly with mediumHaulFlight icon 1`] = `
 <FormattedProvider
   locale="en"
 >
@@ -1375,8 +1375,8 @@ exports[`EmissionsListItem renders correctly with mediumHaulFlight icon 1`] = `
         Object {
           "alignItems": "center",
           "justifyContent": "center",
-          "marginLeft": 7,
-          "marginRight": 7,
+          "marginLeft": 8,
+          "marginRight": 8,
           "position": "absolute",
         }
       }
@@ -1398,7 +1398,7 @@ exports[`EmissionsListItem renders correctly with mediumHaulFlight icon 1`] = `
         size={22}
         style={
           Object {
-            "marginHorizontal": 14,
+            "marginHorizontal": 16,
           }
         }
       />
@@ -1407,7 +1407,7 @@ exports[`EmissionsListItem renders correctly with mediumHaulFlight icon 1`] = `
       style={
         Object {
           "flex": 1,
-          "marginLeft": 62,
+          "marginLeft": 66,
         }
       }
     >
@@ -1442,7 +1442,7 @@ exports[`EmissionsListItem renders correctly with mediumHaulFlight icon 1`] = `
       size={18}
       style={
         Object {
-          "marginHorizontal": 14,
+          "marginHorizontal": 16,
         }
       }
     />
@@ -1450,7 +1450,7 @@ exports[`EmissionsListItem renders correctly with mediumHaulFlight icon 1`] = `
 </FormattedProvider>
 `;
 
-exports[`EmissionsListItem renders correctly with motorbike icon 1`] = `
+exports[`EmissionListItem renders correctly with motorbike icon 1`] = `
 <FormattedProvider
   locale="en"
 >
@@ -1471,8 +1471,8 @@ exports[`EmissionsListItem renders correctly with motorbike icon 1`] = `
         Object {
           "alignItems": "center",
           "justifyContent": "center",
-          "marginLeft": 7,
-          "marginRight": 7,
+          "marginLeft": 8,
+          "marginRight": 8,
           "position": "absolute",
         }
       }
@@ -1494,7 +1494,7 @@ exports[`EmissionsListItem renders correctly with motorbike icon 1`] = `
         size={22}
         style={
           Object {
-            "marginHorizontal": 14,
+            "marginHorizontal": 16,
           }
         }
       />
@@ -1503,7 +1503,7 @@ exports[`EmissionsListItem renders correctly with motorbike icon 1`] = `
       style={
         Object {
           "flex": 1,
-          "marginLeft": 62,
+          "marginLeft": 66,
         }
       }
     >
@@ -1538,7 +1538,7 @@ exports[`EmissionsListItem renders correctly with motorbike icon 1`] = `
       size={18}
       style={
         Object {
-          "marginHorizontal": 14,
+          "marginHorizontal": 16,
         }
       }
     />
@@ -1546,7 +1546,7 @@ exports[`EmissionsListItem renders correctly with motorbike icon 1`] = `
 </FormattedProvider>
 `;
 
-exports[`EmissionsListItem renders correctly with redMeat icon 1`] = `
+exports[`EmissionListItem renders correctly with redMeat icon 1`] = `
 <FormattedProvider
   locale="en"
 >
@@ -1567,8 +1567,8 @@ exports[`EmissionsListItem renders correctly with redMeat icon 1`] = `
         Object {
           "alignItems": "center",
           "justifyContent": "center",
-          "marginLeft": 7,
-          "marginRight": 7,
+          "marginLeft": 8,
+          "marginRight": 8,
           "position": "absolute",
         }
       }
@@ -1590,7 +1590,7 @@ exports[`EmissionsListItem renders correctly with redMeat icon 1`] = `
         size={22}
         style={
           Object {
-            "marginHorizontal": 14,
+            "marginHorizontal": 16,
           }
         }
       />
@@ -1599,7 +1599,7 @@ exports[`EmissionsListItem renders correctly with redMeat icon 1`] = `
       style={
         Object {
           "flex": 1,
-          "marginLeft": 62,
+          "marginLeft": 66,
         }
       }
     >
@@ -1634,7 +1634,7 @@ exports[`EmissionsListItem renders correctly with redMeat icon 1`] = `
       size={18}
       style={
         Object {
-          "marginHorizontal": 14,
+          "marginHorizontal": 16,
         }
       }
     />
@@ -1642,7 +1642,7 @@ exports[`EmissionsListItem renders correctly with redMeat icon 1`] = `
 </FormattedProvider>
 `;
 
-exports[`EmissionsListItem renders correctly with shirt icon 1`] = `
+exports[`EmissionListItem renders correctly with shirt icon 1`] = `
 <FormattedProvider
   locale="en"
 >
@@ -1663,8 +1663,8 @@ exports[`EmissionsListItem renders correctly with shirt icon 1`] = `
         Object {
           "alignItems": "center",
           "justifyContent": "center",
-          "marginLeft": 7,
-          "marginRight": 7,
+          "marginLeft": 8,
+          "marginRight": 8,
           "position": "absolute",
         }
       }
@@ -1686,7 +1686,7 @@ exports[`EmissionsListItem renders correctly with shirt icon 1`] = `
         size={22}
         style={
           Object {
-            "marginHorizontal": 14,
+            "marginHorizontal": 16,
           }
         }
       />
@@ -1695,7 +1695,7 @@ exports[`EmissionsListItem renders correctly with shirt icon 1`] = `
       style={
         Object {
           "flex": 1,
-          "marginLeft": 62,
+          "marginLeft": 66,
         }
       }
     >
@@ -1730,7 +1730,7 @@ exports[`EmissionsListItem renders correctly with shirt icon 1`] = `
       size={18}
       style={
         Object {
-          "marginHorizontal": 14,
+          "marginHorizontal": 16,
         }
       }
     />
@@ -1738,7 +1738,7 @@ exports[`EmissionsListItem renders correctly with shirt icon 1`] = `
 </FormattedProvider>
 `;
 
-exports[`EmissionsListItem renders correctly with shortHaulFlight icon 1`] = `
+exports[`EmissionListItem renders correctly with shortHaulFlight icon 1`] = `
 <FormattedProvider
   locale="en"
 >
@@ -1759,8 +1759,8 @@ exports[`EmissionsListItem renders correctly with shortHaulFlight icon 1`] = `
         Object {
           "alignItems": "center",
           "justifyContent": "center",
-          "marginLeft": 7,
-          "marginRight": 7,
+          "marginLeft": 8,
+          "marginRight": 8,
           "position": "absolute",
         }
       }
@@ -1782,7 +1782,7 @@ exports[`EmissionsListItem renders correctly with shortHaulFlight icon 1`] = `
         size={22}
         style={
           Object {
-            "marginHorizontal": 14,
+            "marginHorizontal": 16,
           }
         }
       />
@@ -1791,7 +1791,7 @@ exports[`EmissionsListItem renders correctly with shortHaulFlight icon 1`] = `
       style={
         Object {
           "flex": 1,
-          "marginLeft": 62,
+          "marginLeft": 66,
         }
       }
     >
@@ -1826,7 +1826,7 @@ exports[`EmissionsListItem renders correctly with shortHaulFlight icon 1`] = `
       size={18}
       style={
         Object {
-          "marginHorizontal": 14,
+          "marginHorizontal": 16,
         }
       }
     />
@@ -1834,7 +1834,7 @@ exports[`EmissionsListItem renders correctly with shortHaulFlight icon 1`] = `
 </FormattedProvider>
 `;
 
-exports[`EmissionsListItem renders correctly with train icon 1`] = `
+exports[`EmissionListItem renders correctly with train icon 1`] = `
 <FormattedProvider
   locale="en"
 >
@@ -1855,8 +1855,8 @@ exports[`EmissionsListItem renders correctly with train icon 1`] = `
         Object {
           "alignItems": "center",
           "justifyContent": "center",
-          "marginLeft": 7,
-          "marginRight": 7,
+          "marginLeft": 8,
+          "marginRight": 8,
           "position": "absolute",
         }
       }
@@ -1878,7 +1878,7 @@ exports[`EmissionsListItem renders correctly with train icon 1`] = `
         size={22}
         style={
           Object {
-            "marginHorizontal": 14,
+            "marginHorizontal": 16,
           }
         }
       />
@@ -1887,7 +1887,7 @@ exports[`EmissionsListItem renders correctly with train icon 1`] = `
       style={
         Object {
           "flex": 1,
-          "marginLeft": 62,
+          "marginLeft": 66,
         }
       }
     >
@@ -1922,7 +1922,7 @@ exports[`EmissionsListItem renders correctly with train icon 1`] = `
       size={18}
       style={
         Object {
-          "marginHorizontal": 14,
+          "marginHorizontal": 16,
         }
       }
     />
@@ -1930,7 +1930,7 @@ exports[`EmissionsListItem renders correctly with train icon 1`] = `
 </FormattedProvider>
 `;
 
-exports[`EmissionsListItem renders correctly with ultra hd video icon 1`] = `
+exports[`EmissionListItem renders correctly with ultra hd video icon 1`] = `
 <FormattedProvider
   locale="en"
 >
@@ -1951,8 +1951,8 @@ exports[`EmissionsListItem renders correctly with ultra hd video icon 1`] = `
         Object {
           "alignItems": "center",
           "justifyContent": "center",
-          "marginLeft": 7,
-          "marginRight": 7,
+          "marginLeft": 8,
+          "marginRight": 8,
           "position": "absolute",
         }
       }
@@ -1974,7 +1974,7 @@ exports[`EmissionsListItem renders correctly with ultra hd video icon 1`] = `
         size={22}
         style={
           Object {
-            "marginHorizontal": 14,
+            "marginHorizontal": 16,
           }
         }
       />
@@ -1983,7 +1983,7 @@ exports[`EmissionsListItem renders correctly with ultra hd video icon 1`] = `
       style={
         Object {
           "flex": 1,
-          "marginLeft": 62,
+          "marginLeft": 66,
         }
       }
     >
@@ -2018,7 +2018,7 @@ exports[`EmissionsListItem renders correctly with ultra hd video icon 1`] = `
       size={18}
       style={
         Object {
-          "marginHorizontal": 14,
+          "marginHorizontal": 16,
         }
       }
     />
@@ -2026,7 +2026,7 @@ exports[`EmissionsListItem renders correctly with ultra hd video icon 1`] = `
 </FormattedProvider>
 `;
 
-exports[`EmissionsListItem renders correctly with whiteMeat icon 1`] = `
+exports[`EmissionListItem renders correctly with whiteMeat icon 1`] = `
 <FormattedProvider
   locale="en"
 >
@@ -2047,8 +2047,8 @@ exports[`EmissionsListItem renders correctly with whiteMeat icon 1`] = `
         Object {
           "alignItems": "center",
           "justifyContent": "center",
-          "marginLeft": 7,
-          "marginRight": 7,
+          "marginLeft": 8,
+          "marginRight": 8,
           "position": "absolute",
         }
       }
@@ -2070,7 +2070,7 @@ exports[`EmissionsListItem renders correctly with whiteMeat icon 1`] = `
         size={22}
         style={
           Object {
-            "marginHorizontal": 14,
+            "marginHorizontal": 16,
           }
         }
       />
@@ -2079,7 +2079,7 @@ exports[`EmissionsListItem renders correctly with whiteMeat icon 1`] = `
       style={
         Object {
           "flex": 1,
-          "marginLeft": 62,
+          "marginLeft": 66,
         }
       }
     >
@@ -2114,7 +2114,7 @@ exports[`EmissionsListItem renders correctly with whiteMeat icon 1`] = `
       size={18}
       style={
         Object {
-          "marginHorizontal": 14,
+          "marginHorizontal": 16,
         }
       }
     />

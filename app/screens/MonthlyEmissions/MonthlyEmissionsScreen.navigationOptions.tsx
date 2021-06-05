@@ -11,7 +11,7 @@ const navigationOptions = ({ route }) => ({
   headerBackTitleVisible: false,
   headerTintColor: Colors.grey100,
   headerTitle: () => (
-    <Text.Primary style={Layout.androidNavTitle}>{route?.params?.dateHeader}</Text.Primary>
+    <Text.H3 style={Layout.androidNavTitle}>{route?.params?.monthAndYear}</Text.H3>
   ),
 });
 

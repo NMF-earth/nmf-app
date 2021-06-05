@@ -124,6 +124,11 @@ it("renders correctly Primary red", () => {
   expect(tree).toMatchSnapshot();
 });
 
+it("renders correctly Primary blue", () => {
+  const tree = create(<Text.Primary blue>test</Text.Primary>).toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
 /* Primary Tests */
 
 it("renders correctly Secondary", () => {
@@ -168,6 +173,11 @@ it("renders correctly Secondary lightWeightText", () => {
 
 it("renders correctly Secondary red", () => {
   const tree = create(<Text.Secondary red>test</Text.Secondary>).toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it("renders correctly Secondary orange", () => {
+  const tree = create(<Text.Secondary orange>test</Text.Secondary>).toJSON();
   expect(tree).toMatchSnapshot();
 });
 

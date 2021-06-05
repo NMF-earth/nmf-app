@@ -91,7 +91,7 @@ exports[`AddEmissionScreen renders correctly 1`] = `
           Object {
             "backgroundColor": "#FFFFFF",
             "flex": 1,
-            "paddingHorizontal": 14,
+            "paddingHorizontal": 16,
             "paddingVertical": 12,
           }
         }
@@ -138,7 +138,7 @@ exports[`AddEmissionScreen renders correctly 1`] = `
         onPress={[Function]}
         style={
           Object {
-            "margin": 14,
+            "margin": 16,
           }
         }
         textType="Primary"

@@ -6,7 +6,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
     Object {
       "backgroundColor": "#FFFFFF",
       "flex": 1,
-      "paddingHorizontal": 14,
+      "paddingHorizontal": 16,
     }
   }
 >
@@ -214,9 +214,9 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
     style={
       Object {
         "bottom": 20,
-        "left": 14,
+        "left": 16,
         "position": "absolute",
-        "right": 14,
+        "right": 16,
       }
     }
   >

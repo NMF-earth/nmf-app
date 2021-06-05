@@ -2,7 +2,13 @@ import { Dimensions } from "react-native";
 
 const width = Dimensions.get("window").width;
 const height = Dimensions.get("window").height;
-const PADDING_HORIZONTAL = 14;
+
+const SPACING = {
+  SIMPLE: 8,
+  DOUBLE: 16,
+  TRIPLE: 24,
+};
+const PADDING_HORIZONTAL = SPACING.DOUBLE;
 
 const isSmallDevice = width < 375;
 
@@ -11,4 +17,4 @@ const screen = {
   height,
 };
 
-export { screen, isSmallDevice, PADDING_HORIZONTAL };
+export { screen, isSmallDevice, PADDING_HORIZONTAL, SPACING };

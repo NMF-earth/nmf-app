@@ -6,27 +6,12 @@ exports[`EmissionsScreen renders correctly 1`] = `
     Object {
       "backgroundColor": "#FFFFFF",
       "flex": 1,
-      "paddingHorizontal": 14,
+      "paddingHorizontal": 16,
       "paddingTop": 22,
     }
   }
 >
   <View>
-    <Text.H3>
-      Name
-    </Text.H3>
-    <Text.Primary
-      darkGray={true}
-      style={
-        Object {
-          "alignItems": "flex-start",
-          "paddingBottom": 24,
-          "paddingTop": 2,
-        }
-      }
-    >
-      mockConstructor
-    </Text.Primary>
     <Text.H3>
       Type
     </Text.H3>
@@ -124,7 +109,7 @@ exports[`EmissionsScreen renders correctly 1`] = `
           ]
         }
       >
-        Invalid date 
+        Saturday 
       </Text.Primary>
       <Text.Primary
         darkGray={true}
@@ -136,7 +121,7 @@ exports[`EmissionsScreen renders correctly 1`] = `
           }
         }
       >
-        Invalid date
+        5th June 2021
       </Text.Primary>
     </View>
     <Button.Primary

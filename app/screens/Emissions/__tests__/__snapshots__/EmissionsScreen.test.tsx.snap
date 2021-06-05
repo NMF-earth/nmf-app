@@ -10,19 +10,16 @@ Array [
       }
     }
   >
-    <EmissionsList
-      emissions={[MockFunction]}
-      monthlyCarbonBudget={[MockFunction]}
-    />
+    <EmissionsList />
   </View>,
   <View
     style={
       Object {
-        "bottom": 14,
+        "bottom": 16,
         "flexDirection": "row",
-        "left": 14,
+        "left": 16,
         "position": "absolute",
-        "right": 14,
+        "right": 16,
       }
     }
   >
