@@ -18,7 +18,11 @@ const SupportUsScreen = () => (
       {t("SUPPORT_US_SCREEN_TITLE_CONSIDER_DONATE")}
     </Text.Primary>
     <Text.Primary style={styles.paragraph}>{t("SUPPORT_US_SCREEN_PLATFORM")}</Text.Primary>
-    <Text.Link url="https://ko-fi.com/pierrebresson" style={styles.paragraph}>
+    <Text.Link
+      url="https://ko-fi.com/pierrebresson"
+      style={styles.paragraph}
+      accessibilityHint="Pierre Bresson Ko-Fi profile link"
+    >
       Ko-fi
     </Text.Link>
     <View style={styles.separator} />

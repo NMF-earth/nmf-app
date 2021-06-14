@@ -18,6 +18,7 @@ type Props = {
   black?: boolean;
   red?: boolean;
   onPress: () => void;
+  accessibilityHint?: string;
 };
 
 interface ButtonFactory {
@@ -26,7 +27,7 @@ interface ButtonFactory {
 
 const buttonFactory: ButtonFactory = (type) => (props) => {
   const customStyle = [mainStyle.default, styles[type].default, props.style];
-  const { fullWidth, children, textType, black, red, onPress } = props;
+  const { fullWidth, children, textType, black, red, onPress, accessibilityHint } = props;
 
   if (fullWidth) {
     customStyle.push(mainStyle.fullWidth);
@@ -46,7 +47,12 @@ const buttonFactory: ButtonFactory = (type) => (props) => {
   };
 
   return (
-    <TouchableOpacity onPress={onPress} {...props} style={[customStyle, additionalStyle]}>
+    <TouchableOpacity
+      onPress={onPress}
+      {...props}
+      style={[customStyle, additionalStyle]}
+      accessibilityHint={accessibilityHint}
+    >
       {children}
     </TouchableOpacity>
   );

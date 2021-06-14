@@ -7,9 +7,10 @@ import styles from "./StickersImage.styles";
 
 interface Prop {
   sticker: "restaurant" | "bike" | "earth";
+  accessibilityLabel?: string;
 }
 
-const StickersImage = ({ sticker }: Prop) => {
+const StickersImage = ({ sticker, accessibilityLabel }: Prop) => {
   let source = ImagesAssets.stickers.earth;
 
   if (sticker === "restaurant") {
@@ -20,7 +21,13 @@ const StickersImage = ({ sticker }: Prop) => {
 
   return (
     <View style={styles.container}>
-      <Image style={styles.image} resizeMode="contain" source={source} />
+      <Image
+        style={styles.image}
+        resizeMode="contain"
+        source={source}
+        accessible
+        accessibilityLabel={accessibilityLabel}
+      />
     </View>
   );
 };

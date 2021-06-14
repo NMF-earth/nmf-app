@@ -52,6 +52,7 @@ exports[`SupportUsScreen renders correctly 1`] = `
       You can do so on Ko-fi.
     </Text.Primary>
     <Text.Link
+      accessibilityHint="Pierre Bresson Ko-Fi profile link"
       style={
         Object {
           "paddingVertical": 10,

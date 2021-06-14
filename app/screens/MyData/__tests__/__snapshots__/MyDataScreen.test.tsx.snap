@@ -22,6 +22,7 @@ exports[`MyDataScreen renders correctly 1`] = `
       With NMF.earth, you own your data. It means that we don't save your data on any server and therefore that no one but you can access it. No security problem, your data never leaves your phone. However, it also means that you are in charge of saving your data in case you loose your phone for example. To do so, use the export button below to get your data and save it where ever you want to. When you want to import old data, just press the import button but be careful because it will also delete your old data.
     </Text.Primary>
     <Button.Primary
+      accessibilityHint="Press to export your data"
       onPress={[Function]}
       style={
         Object {
@@ -40,6 +41,7 @@ exports[`MyDataScreen renders correctly 1`] = `
       </Text.Primary>
     </Button.Primary>
     <Button.Secondary
+      accessibilityHint="Press to import data"
       onPress={[Function]}
       style={
         Object {
@@ -58,6 +60,7 @@ exports[`MyDataScreen renders correctly 1`] = `
       </Text.Primary>
     </Button.Secondary>
     <Button.Primary
+      accessibilityHint="Press to delete all your data"
       onPress={[Function]}
       red={true}
       style={

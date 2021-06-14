@@ -12,6 +12,7 @@ exports[`AboutScreen renders correctly 1`] = `
 >
   <View>
     <StickersImage
+      accessibilityLabel="Happy earth image"
       sticker="earth"
     />
     <Text.Primary
@@ -88,6 +89,7 @@ exports[`AboutScreen renders correctly 1`] = `
         Can be found on 
       </Text.Primary>
       <Text.Link
+        accessibilityHint="NMF GitHub repository link"
         url="https://github.com/NMF-earth/nmf-app"
       >
         Github

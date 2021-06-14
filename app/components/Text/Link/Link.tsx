@@ -10,6 +10,7 @@ interface Props {
   children: React.ReactNode;
   center?: boolean;
   url: string;
+  accessibilityHint?: string;
 }
 
 export default function Link(props: Props): React.ReactElement {

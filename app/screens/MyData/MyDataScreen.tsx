@@ -100,17 +100,33 @@ const MyDataScreen = () => {
   return (
     <ScrollView style={styles.container}>
       <Text.Primary style={styles.paragraph}>{t("MY_DATA_SCREEN_BODY")}</Text.Primary>
-      <Button.Primary style={styles.button} textType={"Primary"} onPress={onExport}>
+      <Button.Primary
+        style={styles.button}
+        textType={"Primary"}
+        onPress={onExport}
+        accessibilityHint="Press to export your data"
+      >
         <Text.Primary numberOfLines={1} center white bold>
           {t("MY_DATA_SCREEN_EXPORT_MY_DATA")}
         </Text.Primary>
       </Button.Primary>
-      <Button.Secondary style={styles.button} textType={"Primary"} onPress={onImport}>
+      <Button.Secondary
+        style={styles.button}
+        textType={"Primary"}
+        onPress={onImport}
+        accessibilityHint="Press to import data"
+      >
         <Text.Primary numberOfLines={1} center green bold>
           {t("MY_DATA_SCREEN_IMPORT_DATA")}
         </Text.Primary>
       </Button.Secondary>
-      <Button.Primary red style={styles.button} textType={"Primary"} onPress={onDelete}>
+      <Button.Primary
+        red
+        style={styles.button}
+        textType={"Primary"}
+        onPress={onDelete}
+        accessibilityHint="Press to delete all your data"
+      >
         <Text.Primary numberOfLines={1} center white bold>
           {t("MY_DATA_SCREEN_DELETE_ALL_MY_DATA")}
         </Text.Primary>

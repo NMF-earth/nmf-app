@@ -9,6 +9,7 @@ exports[`renders correctly StickersImage with bike image 1`] = `
   }
 >
   <Image
+    accessible={true}
     resizeMode="contain"
     source={1}
     style={
@@ -33,6 +34,7 @@ exports[`renders correctly StickersImage with earth image 1`] = `
   }
 >
   <Image
+    accessible={true}
     resizeMode="contain"
     source={1}
     style={
@@ -57,6 +59,7 @@ exports[`renders correctly StickersImage with restaurant image 1`] = `
   }
 >
   <Image
+    accessible={true}
     resizeMode="contain"
     source={1}
     style={

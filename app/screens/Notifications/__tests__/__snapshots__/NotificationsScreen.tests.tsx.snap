@@ -35,6 +35,8 @@ exports[`NotificationsScreen renders correctly 1`] = `
       Activated
     </Text.Secondary>
     <RCTSwitch
+      accessibilityHint="Press to toggle notifications"
+      accessibilityLabel="Notifications switch"
       accessibilityRole="switch"
       onChange={[Function]}
       onResponderTerminationRequest={[Function]}

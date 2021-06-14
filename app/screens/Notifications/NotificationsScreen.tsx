@@ -50,7 +50,12 @@ const NotificationsScreen = () => {
       <Text.Primary style={styles.intro}>{t("NOTIFICATIONS_SCREEN_INTRO")}</Text.Primary>
       <View style={styles.rowContainer}>
         <Text.Secondary bold>{t("NOTIFICATIONS_SCREEN_ACTIVATED")}</Text.Secondary>
-        <Switch value={activated} onValueChange={onValueChange} />
+        <Switch
+          value={activated}
+          onValueChange={onValueChange}
+          accessibilityLabel="Notifications switch"
+          accessibilityHint="Press to toggle notifications"
+        />
       </View>
     </View>
   );
