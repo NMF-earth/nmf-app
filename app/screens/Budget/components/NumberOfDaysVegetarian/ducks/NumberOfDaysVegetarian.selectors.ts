@@ -26,8 +26,8 @@ const isMeatEmission = (emission) => includes(emission.emissionModelType, meatAr
 const getCreationDate = propOr(moment().utc().toISOString(), "creationDate");
 const getDaysElapsedSinceToday = (date) => moment().diff(date, "days");
 
-const getFoodEmissions = emissions.selectors.getFoodEmissions;
-const getMeatEmissions = pipe(getFoodEmissions, filter(isMeatEmission));
+const getEatableEmissions = emissions.selectors.getEatableEmissions;
+const getMeatEmissions = pipe(getEatableEmissions, filter(isMeatEmission));
 const isAnyMeatEmissionSaved = pipe(getMeatEmissions, isEmpty, not);
 
 const getLatestEmission = calculation.getLatestEmission;
