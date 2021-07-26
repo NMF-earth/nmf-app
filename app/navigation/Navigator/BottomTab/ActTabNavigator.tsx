@@ -1,5 +1,5 @@
 import React from "react";
-import { TouchableOpacity, View } from "react-native";
+import { StyleSheet, TouchableOpacity, View } from "react-native";
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
 
 import { Text } from "components";
@@ -13,17 +13,26 @@ const Tab = createMaterialTopTabNavigator();
 
 const tabs = Object.keys(GuideCategory);
 
+const styles = StyleSheet.create({
+  tabBar: {
+    flexDirection: "row",
+    paddingTop: 10,
+    paddingLeft: 10,
+    backgroundColor: Colors.white,
+  },
+  tab: {
+    paddingHorizontal: 20,
+    paddingVertical: 5,
+    borderRadius: 13,
+    fontFamily: Font.FontWeight.Bold,
+    textTransform: "capitalize",
+  },
+});
+
 /* TODO: write tests for TopTabBar function */
 function TopTabBar({ state, navigation }) {
   return (
-    <View
-      style={{
-        flexDirection: "row",
-        paddingTop: 10,
-        paddingLeft: 10,
-        backgroundColor: Colors.white,
-      }}
-    >
+    <View style={styles.tabBar}>
       {tabs.map((tab, index) => {
         const label = tab;
         const isFocused = state.index === index;
@@ -37,15 +46,13 @@ function TopTabBar({ state, navigation }) {
         return (
           <TouchableOpacity key={label} onPress={onPress}>
             <Text.Secondary
-              style={{
-                paddingHorizontal: 20,
-                paddingVertical: 5,
-                borderRadius: 13,
-                fontFamily: Font.FontWeight.Bold,
-                textTransform: "capitalize",
-                color: isFocused ? Colors.black : Colors.grey40,
-                backgroundColor: isFocused ? Colors.green10 : Colors.white,
-              }}
+              style={[
+                styles.tab,
+                {
+                  color: isFocused ? Colors.black : Colors.grey40,
+                  backgroundColor: isFocused ? Colors.green10 : Colors.white,
+                },
+              ]}
             >
               {label}
             </Text.Secondary>
