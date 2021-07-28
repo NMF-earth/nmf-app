@@ -22,6 +22,7 @@ interface TranslationKeys {
   SETTINGS_SCREEN_SAVE_IMPORT_DATA: string;
   SETTINGS_SCREEN_IMPORT_SAVE_DELETE_DATA: string;
   SETTINGS_SCREEN_HELP_TRANSLATION: string;
+  SETTINGS_SCREEN_LANGUAGES: string;
 }
 
 export { en, fr, de, sv, es, pt, da, ru, pl, TranslationKeys };

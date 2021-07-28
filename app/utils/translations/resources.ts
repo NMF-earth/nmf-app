@@ -19,6 +19,7 @@ import * as MyData from "../../screens/MyData/translations";
 import * as CategorySelection from "../../screens/CategorySelection/translations";
 import * as SubCategorySelection from "../../screens/SubCategorySelection/translations";
 import * as MonthlyEmissions from "../../screens/MonthlyEmissions/translations";
+import * as Languages from "../../screens/Languages/translations";
 
 /* COMPONENTS */
 import * as NoEmission from "components/NoEmission/translations";
@@ -48,6 +49,7 @@ const en = {
   ...MonthlyEmissions.en,
   ...NoEmission.en,
   ...UI.en,
+  ...Languages.en,
 };
 
 const de = {
@@ -71,6 +73,7 @@ const de = {
   ...ActDetail.de,
   ...MyData.de,
   ...MonthlyEmissions.de,
+  ...Languages.de,
 };
 
 const fr = {
@@ -95,6 +98,7 @@ const fr = {
   ...CategorySelection.fr,
   ...SubCategorySelection.fr,
   ...MonthlyEmissions.fr,
+  ...Languages.fr,
 };
 
 const sv = {
@@ -119,6 +123,7 @@ const sv = {
   ...CategorySelection.sv,
   ...SubCategorySelection.sv,
   ...MonthlyEmissions.sv,
+  ...Languages.sv,
 };
 
 const pt = {
@@ -142,6 +147,7 @@ const pt = {
   ...CategorySelection.pt,
   ...SubCategorySelection.pt,
   ...MonthlyEmissions.pt,
+  ...Languages.pt,
 };
 
 const es = {
@@ -165,6 +171,7 @@ const es = {
   ...CategorySelection.es,
   ...SubCategorySelection.es,
   ...MonthlyEmissions.es,
+  ...Languages.es,
 };
 
 const ru = {
@@ -188,6 +195,7 @@ const ru = {
   ...CategorySelection.ru,
   ...SubCategorySelection.ru,
   ...MonthlyEmissions.ru,
+  ...Languages.ru,
 };
 
 const pl = {
@@ -211,6 +219,7 @@ const pl = {
   ...CategorySelection.pl,
   ...SubCategorySelection.pl,
   ...MonthlyEmissions.pl,
+  ...Languages.pl,
 };
 
 const da = {
@@ -234,6 +243,7 @@ const da = {
   ...CategorySelection.da,
   ...SubCategorySelection.da,
   ...MonthlyEmissions.da,
+  ...Languages.da,
 };
 
 export interface TranslationKeys
@@ -257,6 +267,7 @@ export interface TranslationKeys
     CategorySelection.TranslationKeys,
     SubCategorySelection.TranslationKeys,
     MonthlyEmissions.TranslationKeys,
-    ActDetail.TranslationKeys {}
+    ActDetail.TranslationKeys,
+    Languages.TranslationKeys {}
 
 export { en, de, fr, sv, pt, es, pl, ru, da };
