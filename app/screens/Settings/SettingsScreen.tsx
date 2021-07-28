@@ -33,6 +33,10 @@ const SettingsScreen = (props) => {
       onPress: navigator.openMyLocation,
     },
     {
+      title: t("SETTINGS_SCREEN_LANGUAGES"),
+      onPress: navigator.openLanguages,
+    },
+    {
       title: t("SETTINGS_SCREEN_SUPPORT_US"),
       onPress: navigator.openSupportUs,
     },
