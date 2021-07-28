@@ -40,7 +40,7 @@ const LanguagesScreen = () => {
 
   return (
     <View style={styles.container}>
-      <ScrollView style={styles.scrollContainer}>
+      <ScrollView>
         {Object.keys(SupportedLanguages).map((lang: string) => (
           <Language
             key={lang}
