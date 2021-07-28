@@ -71,6 +71,10 @@ const openMonthlyEmissions = (navigation) => (props = {}) => {
   navigation.push("MonthlyEmissions", props);
 };
 
+const openLanguages = (navigation) => (props = {}) => {
+  navigation.push("Languages", props);
+};
+
 const navigate = (navigation) => ({
   goBack: navigation.goBack,
   openMonthlyEmissions: navigateOneTime(openMonthlyEmissions(navigation)),
@@ -89,6 +93,7 @@ const navigate = (navigation) => ({
   openNotifications: navigateOneTime(openNotifications(navigation)),
   openSupportUs: navigateOneTime(openSupportUs(navigation)),
   openStorybook: navigateOneTime(openStorybook(navigation)),
+  openLanguages: navigateOneTime(openLanguages(navigation)),
 });
 
 export default navigate;
