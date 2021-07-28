@@ -1,5 +1,7 @@
 import { ElectricityType } from "carbon-footprint";
+import { locale } from "expo-localization";
 
+import SupportedLanguages from "../../../screens/Languages/SupportedLanguages";
 import userPreferences from "../";
 
 describe("userPreferences reducer should", () => {
@@ -10,6 +12,9 @@ describe("userPreferences reducer should", () => {
       acceptedTermsOfUseVersion: 0,
       activatedNotifications: false,
       location: ElectricityType.world,
+      language: Object.keys(SupportedLanguages).includes(locale.substr(0, 2))
+        ? locale.substr(0, 2)
+        : "en",
     });
   });
 
@@ -25,6 +30,9 @@ describe("userPreferences reducer should", () => {
       acceptedTermsOfUseVersion: 2,
       activatedNotifications: false,
       location: ElectricityType.world,
+      language: Object.keys(SupportedLanguages).includes(locale.substr(0, 2))
+        ? locale.substr(0, 2)
+        : "en",
     });
   });
 
@@ -38,6 +46,9 @@ describe("userPreferences reducer should", () => {
       acceptedTermsOfUseVersion: 0,
       activatedNotifications: false,
       location: ElectricityType.belgium,
+      language: Object.keys(SupportedLanguages).includes(locale.substr(0, 2))
+        ? locale.substr(0, 2)
+        : "en",
     });
   });
 
@@ -51,6 +62,23 @@ describe("userPreferences reducer should", () => {
       acceptedTermsOfUseVersion: 0,
       activatedNotifications: true,
       location: ElectricityType.world,
+      language: Object.keys(SupportedLanguages).includes(locale.substr(0, 2))
+        ? locale.substr(0, 2)
+        : "en",
+    });
+  });
+
+  it("handle language change", () => {
+    const expectedAction = {
+      type: userPreferences.actions.changeLanguage.toString(),
+      payload: "fr",
+    };
+
+    expect(userPreferences.reducer(undefined, expectedAction)).toEqual({
+      acceptedTermsOfUseVersion: 0,
+      activatedNotifications: false,
+      location: ElectricityType.world,
+      language: "fr",
     });
   });
 });
