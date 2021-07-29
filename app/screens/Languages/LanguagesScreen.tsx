@@ -1,9 +1,10 @@
-import React, { useCallback } from "react";
+import React, { useCallback, useContext } from "react";
 import { View, ScrollView } from "react-native";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 
 import { SelectableListItem } from "components";
 import { userPreferences } from "ducks";
+import { LocalizationContext } from "utils";
 
 import SupportedLanguages from "./SupportedLanguages";
 import navigationOptions from "./LanguagesScreen.navigationOptions";
@@ -30,12 +31,13 @@ const Language: React.FC<{
 
 const LanguagesScreen = () => {
   const dispatch = useDispatch();
-  const language = useSelector(userPreferences.selectors.getLanguage);
+  const { language, setLanguage } = useContext(LocalizationContext);
   const onPress = useCallback(
     (lang: string) => {
       dispatch(userPreferences.actions.changeLanguage(lang));
+      setLanguage(lang);
     },
-    [dispatch]
+    [dispatch, setLanguage]
   );
 
   return (
