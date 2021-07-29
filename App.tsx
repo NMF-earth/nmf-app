@@ -96,7 +96,7 @@ const App: React.FC<{}> = () => {
 
   return (
     <SafeAreaProvider>
-      <StatusBar />
+      <StatusBar style="dark" />
       {body}
     </SafeAreaProvider>
   );

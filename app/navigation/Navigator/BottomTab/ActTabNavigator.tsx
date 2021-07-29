@@ -21,11 +21,13 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.white,
   },
   tab: {
+    paddingVertical: 8,
     paddingHorizontal: 20,
-    paddingVertical: 5,
-    borderRadius: 13,
     fontFamily: Font.FontWeight.Bold,
     textTransform: "capitalize",
+  },
+  tabView: {
+    borderRadius: 10,
   },
 });
 
@@ -44,13 +46,21 @@ function TopTabBar({ state, navigation }) {
         };
 
         return (
-          <TouchableOpacity key={label} onPress={onPress}>
+          <TouchableOpacity
+            style={[
+              styles.tabView,
+              {
+                backgroundColor: isFocused ? Colors.green10 : Colors.white,
+              },
+            ]}
+            key={label}
+            onPress={onPress}
+          >
             <Text.Secondary
               style={[
                 styles.tab,
                 {
                   color: isFocused ? Colors.black : Colors.grey40,
-                  backgroundColor: isFocused ? Colors.green10 : Colors.white,
                 },
               ]}
             >
