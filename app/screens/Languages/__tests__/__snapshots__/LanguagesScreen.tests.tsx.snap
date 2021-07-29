@@ -1,0 +1,182 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LanguageScreen renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "flex": 1,
+      "paddingHorizontal": 16,
+    }
+  }
+>
+  <RCTScrollView>
+    <View>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={true}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          English
+        </Text.Primary>
+        <Ionicons
+          color="#4BB377"
+          name="md-checkmark"
+          size={26}
+          style={
+            Object {
+              "marginTop": 18,
+            }
+          }
+        />
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          Français
+        </Text.Primary>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          Deutsche
+        </Text.Primary>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          Slovenščina
+        </Text.Primary>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          Pусский
+        </Text.Primary>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          Português
+        </Text.Primary>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          Polskie
+        </Text.Primary>
+      </TouchableOpacity>
+    </View>
+  </RCTScrollView>
+</View>
+`;
