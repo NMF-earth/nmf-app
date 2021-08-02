@@ -18,7 +18,7 @@ import SplashScreen from "./app/screens/Splash";
 import { LocalizationContext } from "./app/utils";
 
 const supportedLanguages: string[] = ["en", "fr", "de", "sv", "da", "ru", "pt", "pl", "zh"];
-const defaultLanguage = "zh";
+const defaultLanguage = "en";
 const defaultLocale = "en-us";
 
 if (!__DEV__) {
