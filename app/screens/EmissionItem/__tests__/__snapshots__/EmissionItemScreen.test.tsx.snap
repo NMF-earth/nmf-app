@@ -121,7 +121,7 @@ exports[`EmissionsScreen renders correctly 1`] = `
           }
         }
       >
-        19th July 2021
+        2nd August 2021
       </Text.Primary>
     </View>
     <Button.Primary

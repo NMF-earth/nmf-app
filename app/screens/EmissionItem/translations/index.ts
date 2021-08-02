@@ -7,6 +7,7 @@ import pt from "./pt.json";
 import da from "./da.json";
 import ru from "./ru.json";
 import pl from "./pl.json";
+import zh from "./zh.json";
 
 interface TranslationKeys {
   EMISSION_ITEM_SCREEN_TITLE: string;
@@ -21,4 +22,4 @@ interface TranslationKeys {
   EMISSION_ITEM_SCREEN_IS_NOT_MITIGATED: string;
 }
 
-export { en, fr, de, sv, es, pt, da, ru, pl, TranslationKeys };
+export { en, fr, de, sv, es, pt, da, ru, pl, zh, TranslationKeys };
