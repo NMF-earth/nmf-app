@@ -10,10 +10,10 @@ exports[`Chart renders correctly 1`] = `
 >
   <Svg
     height={375}
-    width={694}
+    width={686}
   >
     <G
-      x={347}
+      x={343}
       y={187.5}
     >
       <G>

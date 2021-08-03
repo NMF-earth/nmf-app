@@ -1,3 +1,4 @@
+/* eslint-disable  @typescript-eslint/explicit-module-boundary-types */
 import throttle from "lodash.throttle";
 
 const navigateOneTime = (navigate) => throttle(navigate, 1000, { trailing: false });
@@ -67,8 +68,13 @@ const openSubCategorySelection = (navigation) => (props = {}) => {
   navigation.push("SubCategorySelection", props);
 };
 
+const openMonthlyEmissions = (navigation) => (props = {}) => {
+  navigation.push("MonthlyEmissions", props);
+};
+
 const navigate = (navigation) => ({
   goBack: navigation.goBack,
+  openMonthlyEmissions: navigateOneTime(openMonthlyEmissions(navigation)),
   openCategorySelection: navigateOneTime(openCategorySelection(navigation)),
   openSubCategorySelection: navigateOneTime(openSubCategorySelection(navigation)),
   openMyData: navigateOneTime(openMyData(navigation)),

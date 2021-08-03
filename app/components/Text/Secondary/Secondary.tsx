@@ -10,6 +10,7 @@ interface Props {
   darkGray?: boolean;
   lightGray?: boolean;
   red?: boolean;
+  orange?: boolean;
   bold?: boolean;
   white?: boolean;
   green?: boolean;
@@ -23,6 +24,7 @@ export default function Secondary(props: Props): React.ReactElement {
   const customStyle = [styles.default, props.style];
   const {
     blue,
+    orange,
     white,
     green,
     darkGray,
@@ -68,6 +70,10 @@ export default function Secondary(props: Props): React.ReactElement {
 
   if (red) {
     customStyle.push(mainStyle.red);
+  }
+
+  if (orange) {
+    customStyle.push(mainStyle.orange);
   }
 
   return (

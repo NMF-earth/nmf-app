@@ -86,16 +86,14 @@ exports[`EmissionsList renders correctly 1`] = `
       style={null}
     >
       <SectionHeader
-        co2value={20.0803}
         date="2020-03-01T00:00:00+00:00"
-        monthlyCarbonBudget={24}
       />
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <EmissionsListItem
+      <EmissionListItem
         co2value={20}
         emissionModelType="beans"
         iconName="md-nutrition"
@@ -109,7 +107,7 @@ exports[`EmissionsList renders correctly 1`] = `
       onLayout={[Function]}
       style={null}
     >
-      <EmissionsListItem
+      <EmissionListItem
         co2value={0.0803}
         emissionModelType="boat"
         iconName="md-boat"
@@ -128,16 +126,14 @@ exports[`EmissionsList renders correctly 1`] = `
       style={null}
     >
       <SectionHeader
-        co2value={60}
         date="2020-01-01T00:00:00+00:00"
-        monthlyCarbonBudget={24}
       />
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <EmissionsListItem
+      <EmissionListItem
         co2value={60}
         emissionModelType="beans"
         iconName="md-nutrition"

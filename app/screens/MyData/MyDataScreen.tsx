@@ -8,11 +8,12 @@ import { useSelector, useDispatch } from "react-redux";
 import { Text, Button } from "components";
 import { t } from "utils";
 import { emissions as emissionsDucks, budget, userPreferences } from "ducks";
+import { NavStatelessComponent } from "interfaces";
 
 import styles from "./MyDataScreen.styles";
 import navigationOptions from "./MyDataScreen.navigationOptions";
 
-const MyDataScreen = () => {
+const MyDataScreen: NavStatelessComponent = () => {
   const dispatch = useDispatch();
   const emissions = useSelector(emissionsDucks.selectors.getAllEmissions);
   const monthlyCarbonBudget = useSelector(budget.selectors.getMonthlyCarbonBudget);
@@ -119,6 +120,6 @@ const MyDataScreen = () => {
   );
 };
 
-MyDataScreen.navigationOptions = navigationOptions;
+MyDataScreen.navigationOptions = navigationOptions();
 
 export default MyDataScreen;

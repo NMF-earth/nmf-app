@@ -23,12 +23,12 @@ interface Props {
   setDistance: (arg0: number) => void;
 }
 
-export default ({
+const Transport: React.FC<Props> = ({
   setDurationMinutes,
   emissionModelType,
   setDistance,
   defaultValueSlider,
-}: Props) => {
+}) => {
   const [sliderValue, setSliderValue] = useState(defaultValueSlider / 1000);
 
   const onSliderValueChange = (value: number) => {
@@ -94,3 +94,5 @@ export default ({
     </>
   );
 };
+
+export default Transport;

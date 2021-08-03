@@ -17,7 +17,7 @@ jest.mock("react-redux", () => {
 
   return {
     useDispatch: () => jest.fn(),
-    useSelector: () => jest.fn(),
+    useSelector: jest.fn(),
     connect: () => (component) => component,
     Provider: createMock("Provider"),
   };
@@ -40,7 +40,7 @@ jest.mock("react-native-globalize", () => {
 
 jest.mock("@react-navigation/native", () => {
   return {
-    useNavigation: () => jest.fn(),
+    useNavigation: () => ({ goBack: jest.fn() }),
     useRoute: () => jest.fn(),
     createNavigatorFactory: () => jest.fn,
     StackActions: {

@@ -5,7 +5,7 @@ category: digital
 
 # Install an ad blocker
 
-All modern browser like Firefox, Safari, Chrome... let users the posibility to install add-ons, also name plugins or extensions.
+All modern browser like Firefox, Safari, Chrome... let users the possibility to install add-ons, also name plugins or extensions.
 
 In order to not get ads or to see less ads, you can install the following browser extensions :
 

@@ -3,16 +3,8 @@ import { create } from "react-test-renderer";
 
 import BudgetScreen from "../BudgetScreen";
 
-const props = {
-  navigation: {
-    push: () => {
-      // do nothing.
-    },
-  },
-};
-
 it("BudgetScreen renders correctly", () => {
-  const tree = create(<BudgetScreen {...props} />).toJSON();
+  const tree = create(<BudgetScreen />).toJSON();
   expect(tree).toMatchSnapshot();
 });
 

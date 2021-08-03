@@ -9,7 +9,7 @@ interface Prop {
   sticker: "restaurant" | "bike" | "earth";
 }
 
-const StickersImage = ({ sticker }: Prop) => {
+const StickersImage: React.FC<Prop> = ({ sticker }) => {
   let source = ImagesAssets.stickers.earth;
 
   if (sticker === "restaurant") {

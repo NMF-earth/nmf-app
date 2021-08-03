@@ -1,3 +1,4 @@
+/* eslint-disable  @typescript-eslint/explicit-module-boundary-types */
 import { map, pipe, groupBy, toPairs, sum } from "ramda";
 import moment from "moment";
 
@@ -32,7 +33,7 @@ const groupByMonth = groupBy((item: EmissionListItem) => getStartOfMonth(item.cr
 
 const dateObjMap = map(([date, data, co2value]) => ({
   date: date,
-  data: data,
+  data: data.slice(0, 3),
   co2value: co2value,
 }));
 

@@ -9,7 +9,7 @@ import { navigate } from "navigation";
 
 import styles from "./InfoButton.styles";
 
-const InfoButton = () => {
+const InfoButton: React.FC = () => {
   const navigation = useNavigation();
   const navigator = navigate(navigation);
 
