@@ -61,10 +61,10 @@ const AddEmissionScreen = ({ locale = "", language = "" }: LocalizationContextPr
   const showDatePicker = useCallback(() => setDatePickerVisibility(true), []);
   const hideDatePicker = useCallback(() => setDatePickerVisibility(false), []);
 
-  // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
   const emissionType: EmissionType = route.params?.emissionType;
-  // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
   const emissionModelType: EmissionModelType = route.params?.emissionModelType;
 

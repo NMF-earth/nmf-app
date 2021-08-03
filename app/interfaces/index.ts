@@ -1,3 +1,4 @@
 import { Emission, EmissionType, EmissionPayload, EmissionModelType } from "./emission";
+import NavStatelessComponent from "./navigation";
 
-export { Emission, EmissionType, EmissionPayload, EmissionModelType };
+export { NavStatelessComponent, Emission, EmissionType, EmissionPayload, EmissionModelType };

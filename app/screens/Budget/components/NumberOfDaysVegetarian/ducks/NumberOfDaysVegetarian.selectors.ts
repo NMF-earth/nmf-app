@@ -1,3 +1,4 @@
+/* eslint-disable  @typescript-eslint/explicit-module-boundary-types */
 import { pipe, propOr, includes, filter, isEmpty, not } from "ramda";
 import moment from "moment";
 import { FoodType, MealType } from "carbon-footprint";

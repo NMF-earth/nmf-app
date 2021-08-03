@@ -36,7 +36,7 @@ storiesOf("EmissionListItem", module)
           isMitigated: boolean("isMitigated", false),
           title: text("title", "170 g of red meats"),
           co2value: number("co2value", 2.1),
-          // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
+          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
           // @ts-ignore
           iconName: ui.getIconFromModelType(value),
           onPress: () => alert(value),
@@ -54,7 +54,7 @@ storiesOf("EmissionListItem", module)
           isMitigated: boolean("isMitigated", false),
           title: text("title", "Boat"),
           co2value: number("co2value", 2.1),
-          // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
+          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
           // @ts-ignore
           iconName: ui.getIconFromModelType(transportValue),
           onPress: () => alert(transportValue),

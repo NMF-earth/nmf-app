@@ -3,7 +3,7 @@ import { ScrollView } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
 import { navigate } from "navigation";
-import { EmissionType } from "interfaces";
+import { EmissionType, NavStatelessComponent } from "interfaces";
 import { Text, Tag } from "components";
 import { t, ui } from "utils";
 
@@ -11,7 +11,7 @@ import { categories } from "./categoryList";
 import navigationOptions from "./CategorySelectionScreen.navigationOptions";
 import styles from "./CategorySelectionScreen.styles";
 
-const CategorySelectionScreen = () => {
+const CategorySelectionScreen: NavStatelessComponent = () => {
   const navigation = useNavigation();
   const navigator = navigate(navigation);
 
@@ -38,6 +38,6 @@ const CategorySelectionScreen = () => {
   );
 };
 
-CategorySelectionScreen.navigationOptions = navigationOptions;
+CategorySelectionScreen.navigationOptions = navigationOptions();
 
 export default CategorySelectionScreen;

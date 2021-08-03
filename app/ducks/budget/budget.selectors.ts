@@ -1,3 +1,4 @@
+/* eslint-disable  @typescript-eslint/explicit-module-boundary-types */
 import { pathOr } from "ramda";
 
 import { namespace } from "./budget.slice";

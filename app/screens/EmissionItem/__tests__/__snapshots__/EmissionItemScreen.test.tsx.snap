@@ -109,7 +109,7 @@ exports[`EmissionsScreen renders correctly 1`] = `
           ]
         }
       >
-        Friday 
+        Tuesday 
       </Text.Primary>
       <Text.Primary
         darkGray={true}
@@ -121,7 +121,7 @@ exports[`EmissionsScreen renders correctly 1`] = `
           }
         }
       >
-        30th July 2021
+        3rd August 2021
       </Text.Primary>
     </View>
     <Button.Primary

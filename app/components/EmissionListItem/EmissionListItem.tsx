@@ -20,14 +20,14 @@ interface EmissionListItemProps extends Partial<Emission> {
   creationDate?: string;
 }
 
-const EmissionListItem = ({
+const EmissionListItem: React.FC<EmissionListItemProps> = ({
   isMitigated,
   name = "",
   iconName = "md-car",
   title = "",
   co2value = 0,
   onPress,
-}: EmissionListItemProps) => (
+}) => (
   <TouchableOpacity onPress={onPress} style={styles.container}>
     <View style={styles.iconContainer}>
       <View style={isMitigated ? styles.mitigatedCircle : styles.notMitigatedCircle} />

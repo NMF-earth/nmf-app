@@ -6,12 +6,12 @@ import { t } from "utils";
 
 import styles from "./PeriodBudget.styles";
 
-interface Prop {
+interface Props {
   period: string;
   periodEmissionsBudget: number;
 }
 
-const PeriodBudget = ({ periodEmissionsBudget = 0, period = "" }: Prop) => {
+const PeriodBudget: React.FC<Props> = ({ periodEmissionsBudget = 0, period = "" }) => {
   let budget = periodEmissionsBudget.toString();
   let units = " kg";
   if (periodEmissionsBudget > 999) {

@@ -3,11 +3,12 @@ import { ScrollView, View } from "react-native";
 
 import { Text, StickersImage } from "components";
 import { t } from "utils";
+import { NavStatelessComponent } from "interfaces";
 
 import styles from "./SupportUsScreen.styles";
 import navigationOptions from "./SupportUsScreen.navigationOptions";
 
-const SupportUsScreen = () => (
+const SupportUsScreen: NavStatelessComponent = () => (
   <ScrollView style={styles.container}>
     <StickersImage sticker="restaurant" />
     <Text.H2 style={styles.title}>{t("SUPPORT_US_SCREEN_WHY_DONATE_TITLE")}</Text.H2>
@@ -25,6 +26,6 @@ const SupportUsScreen = () => (
   </ScrollView>
 );
 
-SupportUsScreen.navigationOptions = navigationOptions;
+SupportUsScreen.navigationOptions = navigationOptions();
 
 export default SupportUsScreen;
