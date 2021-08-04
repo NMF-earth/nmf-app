@@ -33,10 +33,6 @@ const SettingsScreen = (props) => {
       onPress: navigator.openMyLocation,
     },
     {
-      title: t("SETTINGS_SCREEN_LANGUAGES"),
-      onPress: navigator.openLanguages,
-    },
-    {
       title: t("SETTINGS_SCREEN_SUPPORT_US"),
       onPress: navigator.openSupportUs,
     },
@@ -64,6 +60,14 @@ const SettingsScreen = (props) => {
       onPress: () => WebBrowser.openBrowserAsync("http://nmf.earth/terms-of-use.pdf"),
     },
   ];
+
+  if (__DEV__) {
+    rowItems.push({
+      title: t("SETTINGS_SCREEN_LANGUAGES"),
+      onPress: navigator.openLanguages,
+    });
+  }
+
   const [steps, setSteps] = useState(0);
 
   return (
