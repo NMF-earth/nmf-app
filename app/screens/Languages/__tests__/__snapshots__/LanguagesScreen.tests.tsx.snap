@@ -107,7 +107,7 @@ exports[`LanguageScreen renders correctly 1`] = `
             }
           }
         >
-          Slovenščina
+          Språk
         </Text.Primary>
       </TouchableOpacity>
       <TouchableOpacity
@@ -174,6 +174,50 @@ exports[`LanguageScreen renders correctly 1`] = `
           }
         >
           Polskie
+        </Text.Primary>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          Dansk
+        </Text.Primary>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          中文（简体）
         </Text.Primary>
       </TouchableOpacity>
     </View>
