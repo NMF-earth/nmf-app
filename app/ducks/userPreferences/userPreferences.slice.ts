@@ -1,16 +1,13 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { ElectricityType } from "carbon-footprint";
-import { locale } from "expo-localization";
 
-import SupportedLanguages from "../../screens/Languages/SupportedLanguages";
+import { currentLanguage } from "utils";
 
 const initialState = {
   acceptedTermsOfUseVersion: 0,
   activatedNotifications: false,
   location: ElectricityType.world,
-  language: Object.keys(SupportedLanguages).includes(locale.substr(0, 2))
-    ? locale.substr(0, 2)
-    : "en",
+  language: currentLanguage,
 };
 
 const userPreferences = createSlice({

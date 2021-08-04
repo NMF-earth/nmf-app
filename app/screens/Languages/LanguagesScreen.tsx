@@ -4,9 +4,8 @@ import { useDispatch } from "react-redux";
 
 import { SelectableListItem } from "components";
 import { userPreferences } from "ducks";
-import { LocalizationContext } from "utils";
+import { LocalizationContext, supportedLanguages } from "utils";
 
-import SupportedLanguages from "./SupportedLanguages";
 import navigationOptions from "./LanguagesScreen.navigationOptions";
 import styles from "./LanguagesScreen.styles";
 
@@ -23,7 +22,7 @@ const Language: React.FC<{
     <SelectableListItem
       key={language}
       selected={selectedLanguage === language}
-      title={SupportedLanguages[language]}
+      title={supportedLanguages[language]}
       onPress={onClickLanguage}
     />
   );
@@ -43,7 +42,7 @@ const LanguagesScreen = () => {
   return (
     <View style={styles.container}>
       <ScrollView>
-        {Object.keys(SupportedLanguages).map((lang: string) => (
+        {Object.keys(supportedLanguages).map((lang: string) => (
           <Language
             key={lang}
             selectedLanguage={language}

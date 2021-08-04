@@ -1,8 +1,8 @@
 import { pathOr } from "ramda";
 import { ElectricityType } from "carbon-footprint";
-import { locale } from "expo-localization";
 
-import SupportedLanguages from "../../screens/Languages/SupportedLanguages";
+import { currentLanguage } from "utils";
+
 import { namespace } from "./userPreferences.slice";
 
 const getAcceptedTermsOfUseVersion = (state) =>
@@ -13,12 +13,7 @@ const getLocation = (state) => pathOr(ElectricityType.world, [namespace, "locati
 const getActivateNotifications = (state) =>
   pathOr(false, [namespace, "activatedNotifications"], state);
 
-const getLanguage = (state) =>
-  pathOr(
-    Object.keys(SupportedLanguages).includes(locale.substr(0, 2)) ? locale.substr(0, 2) : "en",
-    [namespace, "language"],
-    state
-  );
+const getLanguage = (state) => pathOr(currentLanguage, [namespace, "language"], state);
 
 export default {
   getAcceptedTermsOfUseVersion,
