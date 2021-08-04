@@ -5,15 +5,13 @@ on: [push, pull_request]
 jobs:
   build:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [12.x]
-
     steps:
       - uses: actions/checkout@v2
       - uses: borales/actions-yarn@v2.0.0
         with:
           cmd: install
+          node-version: '12'
       - uses: borales/actions-yarn@v2.0.0
         with:
           cmd: ci
+          node-version: '12'
