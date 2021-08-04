@@ -68,7 +68,7 @@ const App: React.FC<{}> = () => {
       .catch((error) => {
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-ignore
-        Sentry.captureException(error)
+        Sentry.captureException(error);
       });
   }, []);
 
