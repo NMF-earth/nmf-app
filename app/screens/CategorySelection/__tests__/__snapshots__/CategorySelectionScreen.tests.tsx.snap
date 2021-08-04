@@ -6,7 +6,7 @@ exports[`CategorySelectionScreen renders correctly 1`] = `
     Object {
       "backgroundColor": "#FFFFFF",
       "flex": 1,
-      "paddingHorizontal": 14,
+      "paddingHorizontal": 16,
     }
   }
 >
@@ -22,11 +22,6 @@ exports[`CategorySelectionScreen renders correctly 1`] = `
       Select a category
     </Text.H2>
     <Tag
-      icon="md-airplane"
-      onPress={[Function]}
-      text="Transport"
-    />
-    <Tag
       icon="md-nutrition"
       onPress={[Function]}
       text="Food"
@@ -35,6 +30,11 @@ exports[`CategorySelectionScreen renders correctly 1`] = `
       icon="md-restaurant"
       onPress={[Function]}
       text="Meal"
+    />
+    <Tag
+      icon="md-airplane"
+      onPress={[Function]}
+      text="Transport"
     />
     <Tag
       icon="md-play-circle"
@@ -57,13 +57,21 @@ exports[`CategorySelectionScreen renders correctly 1`] = `
       text="Electricity"
     />
     <Tag
+      icon="barcode-sharp"
+      onPress={[Function]}
+      text="Scan product"
+    />
+    <Tag
       icon="md-build"
       onPress={[Function]}
       text="Custom"
     />
-    <Tag
-      icon="barcode-sharp"
-      onPress={[Function]}
+    <View
+      style={
+        Object {
+          "height": 10,
+        }
+      }
     />
   </View>
 </RCTScrollView>

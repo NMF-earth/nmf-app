@@ -6,6 +6,9 @@ export default StyleSheet.create({
   red: {
     color: Colors.red50,
   },
+  orange: {
+    color: Colors.apricot,
+  },
   darkGray: {
     color: Colors.grey70,
   },

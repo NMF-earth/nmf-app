@@ -10,7 +10,7 @@ import { t } from "utils";
 import styles from "./IntroScreen.styles";
 import { Preferences } from "../../constant";
 
-const IntroScreen = () => {
+const IntroScreen: React.FC = () => {
   const dispatch = useDispatch();
 
   const onPress = () => {

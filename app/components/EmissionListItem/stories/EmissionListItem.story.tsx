@@ -1,10 +1,11 @@
 import React from "react";
 import { storiesOf } from "@storybook/react-native";
 import { text, boolean, number, select } from "@storybook/addon-knobs";
+import { FoodType, TransportType } from "carbon-footprint";
 
 import { ui } from "utils";
 
-import EmissionsListItem from "..";
+import { EmissionListItem } from "..";
 
 const foodOptions = {
   whiteMeat: "whiteMeat",
@@ -24,18 +25,18 @@ const transportOptions = {
   train: "train",
 };
 
-storiesOf("EmissionsListItem", module)
+storiesOf("EmissionListItem", module)
   .add("Emission by food", () => {
     const value = select("Type of Food", foodOptions, "coffee");
     return (
-      <EmissionsListItem
+      <EmissionListItem
         {...{
           id: "123",
-          emissionModelType: "car",
+          emissionModelType: FoodType.redMeat,
           isMitigated: boolean("isMitigated", false),
           title: text("title", "170 g of red meats"),
           co2value: number("co2value", 2.1),
-          // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
+          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
           // @ts-ignore
           iconName: ui.getIconFromModelType(value),
           onPress: () => alert(value),
@@ -46,14 +47,14 @@ storiesOf("EmissionsListItem", module)
   .add("Emission by transport", () => {
     const transportValue = select("Type of Transport", transportOptions, "bike");
     return (
-      <EmissionsListItem
+      <EmissionListItem
         {...{
           id: "123",
-          emissionModelType: "car",
+          emissionModelType: TransportType.boat,
           isMitigated: boolean("isMitigated", false),
-          title: text("title", "Bike"),
+          title: text("title", "Boat"),
           co2value: number("co2value", 2.1),
-          // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
+          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
           // @ts-ignore
           iconName: ui.getIconFromModelType(transportValue),
           onPress: () => alert(transportValue),

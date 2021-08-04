@@ -72,6 +72,7 @@ interface TranslationKeys {
   UI_PURCHASE: string;
   UI_STREAMING: string;
   UI_TRANSPORT: string;
+  UI_SCAN_PRODUCT: string;
 }
 
 export { en, fr, de, sv, es, pt, da, ru, pl, TranslationKeys };

@@ -3,6 +3,7 @@ import { StyleSheet, View } from "react-native";
 import { BarCodeScanner } from "expo-barcode-scanner";
 
 import { Text, Button } from "components";
+import { NavStatelessComponent } from "interfaces";
 
 import styles from "./BarCodeScanScreen.styles";
 import navigationOptions from "./BarCodeScanScreen.navigationOptions";
@@ -10,7 +11,7 @@ import navigationOptions from "./BarCodeScanScreen.navigationOptions";
 // https://world.openfoodfacts.org/api/v0/product/7622300336738
 // product > ecoscore_data > agribalyse > co2_total
 
-const BarCodeScanScreen = () => {
+const BarCodeScanScreen: NavStatelessComponent = () => {
   const [hasPermission, setHasPermission] = useState(null);
   const [scanned, setScanned] = useState(false);
 
@@ -49,6 +50,6 @@ const BarCodeScanScreen = () => {
   );
 };
 
-BarCodeScanScreen.navigationOptions = navigationOptions;
+BarCodeScanScreen.navigationOptions = navigationOptions();
 
 export default BarCodeScanScreen;

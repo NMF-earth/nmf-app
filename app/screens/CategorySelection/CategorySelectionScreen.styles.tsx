@@ -10,6 +10,9 @@ const styles = StyleSheet.create({
     paddingTop: 20,
     paddingBottom: 16,
   },
+  separator: {
+    height: 10,
+  },
 });
 
 export default styles;

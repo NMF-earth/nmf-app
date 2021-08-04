@@ -8,7 +8,7 @@ import { t } from "utils";
 import styles from "./NumberOfDaysVegetarian.styles";
 import { selectors } from "./ducks";
 
-const NumberOfDaysVegetarian = () => {
+const NumberOfDaysVegetarian: React.FC = () => {
   const isAnyMeatEmissionSaved = useSelector(selectors.isAnyMeatEmissionSaved);
   const daysWithoutEatingMeat = useSelector(selectors.getDaysWithoutEatingMeat);
 

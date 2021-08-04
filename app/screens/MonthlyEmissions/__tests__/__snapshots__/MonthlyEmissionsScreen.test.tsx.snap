@@ -1,0 +1,163 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MonthlyEmissions /> render 1`] = `
+<RCTScrollView
+  ListHeaderComponent={
+    <View
+      style={
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "borderBottomColor": "#DCF0E5",
+          "borderBottomWidth": 2,
+          "elevation": 0,
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "paddingHorizontal": 16,
+          "paddingVertical": 16,
+          "shadowColor": "transparent",
+          "shadowOffset": Object {
+            "height": 0,
+            "width": 0,
+          },
+          "shadowRadius": 0,
+        }
+      }
+    >
+      <Text.Primary
+        bold={true}
+        darkGray={true}
+      >
+        20.08 kgCO2eq
+      </Text.Primary>
+      <Text.Secondary
+        green={true}
+        orange={false}
+      >
+        10 % of budget
+      </Text.Secondary>
+    </View>
+  }
+  data={
+    Array [
+      Object {
+        "co2value": 20,
+        "creationDate": "2020-03-01T12:08:16.623Z",
+        "emissionModelType": "beans",
+        "emissionType": "food",
+        "iconName": "md-nutrition",
+        "id": "1",
+        "isMitigated": false,
+        "onPress": [Function],
+        "title": "Beans",
+        "value": 10,
+      },
+      Object {
+        "co2value": 0.0803,
+        "creationDate": "2020-03-01T12:08:16.623Z",
+        "emissionModelType": "boat",
+        "emissionType": "transport",
+        "iconName": "md-boat",
+        "id": "12",
+        "isMitigated": true,
+        "onPress": [Function],
+        "title": "Boat",
+        "value": 100,
+      },
+    ]
+  }
+  disableVirtualization={false}
+  getItem={[Function]}
+  getItemCount={[Function]}
+  horizontal={false}
+  initialNumToRender={10}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={10}
+  onContentSizeChange={[Function]}
+  onEndReachedThreshold={2}
+  onLayout={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={false}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={Array []}
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+    }
+  }
+  updateCellsBatchingPeriod={50}
+  viewabilityConfigCallbackPairs={Array []}
+  windowSize={21}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderBottomColor": "#DCF0E5",
+            "borderBottomWidth": 2,
+            "elevation": 0,
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "paddingHorizontal": 16,
+            "paddingVertical": 16,
+            "shadowColor": "transparent",
+            "shadowOffset": Object {
+              "height": 0,
+              "width": 0,
+            },
+            "shadowRadius": 0,
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          darkGray={true}
+        >
+          20.08 kgCO2eq
+        </Text.Primary>
+        <Text.Secondary
+          green={true}
+          orange={false}
+        >
+          10 % of budget
+        </Text.Secondary>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <EmissionListItem
+        co2value={20}
+        emissionModelType="beans"
+        iconName="md-nutrition"
+        id="1"
+        isMitigated={false}
+        onPress={[Function]}
+        title="Beans"
+      />
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <EmissionListItem
+        co2value={0.0803}
+        emissionModelType="boat"
+        iconName="md-boat"
+        id="12"
+        isMitigated={true}
+        onPress={[Function]}
+        title="Boat"
+      />
+    </View>
+  </View>
+</RCTScrollView>
+`;

@@ -7,6 +7,7 @@ import AddEmissionScreen from "../../../screens/AddEmission";
 import CategorySelectionScreen from "../../../screens/CategorySelection";
 import SubCategorySelectionScreen from "../../../screens/SubCategorySelection";
 import BarCodeScan from "../../../screens/BarCodeScan";
+import MonthlyEmissionsScreen from "../../../screens/MonthlyEmissions";
 
 const Stack = createStackNavigator();
 
@@ -41,6 +42,11 @@ const EmissionsNavigator = (): React.ReactElement => (
       name="SubCategorySelection"
       options={SubCategorySelectionScreen.navigationOptions}
       component={SubCategorySelectionScreen}
+    />
+    <Stack.Screen
+      name="MonthlyEmissions"
+      options={MonthlyEmissionsScreen.navigationOptions}
+      component={MonthlyEmissionsScreen}
     />
   </Stack.Navigator>
 );

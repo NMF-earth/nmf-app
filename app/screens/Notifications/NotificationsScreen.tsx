@@ -3,6 +3,7 @@ import { View, Switch, Alert } from "react-native";
 import * as Notifications from "expo-notifications";
 import { useDispatch, useSelector } from "react-redux";
 
+import { NavStatelessComponent } from "interfaces";
 import { Text } from "components";
 import { userPreferences } from "ducks";
 import { t } from "utils";
@@ -10,7 +11,7 @@ import { t } from "utils";
 import navigationOptions from "./NotificationsScreen.navigationOptions";
 import styles from "./NotificationsScreen.styles";
 
-const NotificationsScreen = () => {
+const NotificationsScreen: NavStatelessComponent = () => {
   const dispatch = useDispatch();
   const [activated, setActivated] = useState(
     useSelector(userPreferences.selectors.getActivateNotifications)
@@ -56,6 +57,6 @@ const NotificationsScreen = () => {
   );
 };
 
-NotificationsScreen.navigationOptions = navigationOptions;
+NotificationsScreen.navigationOptions = navigationOptions();
 
 export default NotificationsScreen;

@@ -20,12 +20,12 @@ interface Props {
   setDurationSeconds: (arg0: number) => void;
 }
 
-export default ({
+const Streaming: React.FC<Props> = ({
   electricityCountry,
   setDurationSeconds,
   emissionModelType,
   defaultValueSlider,
-}: Props) => {
+}) => {
   const [sliderValue, setSliderValue] = useState(defaultValueSlider);
 
   const onSliderValueChange = (value: number) => {
@@ -69,3 +69,5 @@ export default ({
     </>
   );
 };
+
+export default Streaming;

@@ -41,7 +41,9 @@ const EmissionItemScreen = ({ language = "" }: LocalizationContextProps) => {
 
   useEffect(() => {
     /* Avoid crash right after an emission is deleted */
-    if (!emission) navigator.goBack();
+    if (!emission) {
+      navigator.goBack();
+    }
   }, [navigator, emission]);
 
   if (isEmpty(emission)) {

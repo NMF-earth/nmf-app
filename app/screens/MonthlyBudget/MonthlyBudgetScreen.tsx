@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { View, ScrollView } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 import Slider from "@react-native-community/slider";
 import { Ionicons } from "@expo/vector-icons";
 import * as WebBrowser from "expo-web-browser";
@@ -10,6 +11,7 @@ import { budget } from "ducks";
 import { t } from "utils";
 import { Colors } from "style";
 import { navigate } from "navigation";
+import { NavStatelessComponent } from "interfaces";
 
 import styles from "./MonthlyBudgetScreen.styles";
 import navigationOptions from "./MonthlyBudgetScreen.navigationOptions";
@@ -35,7 +37,8 @@ const CountryExample = (translation, index) => (
   </Text.Secondary>
 );
 
-const MonthlyBudgetScreen = ({ navigation }) => {
+const MonthlyBudgetScreen: NavStatelessComponent = () => {
+  const navigation = useNavigation();
   const monthlyBudget = useSelector(budget.selectors.getMonthlyCarbonBudget);
   const navigator = navigate(navigation);
 
@@ -103,6 +106,6 @@ const MonthlyBudgetScreen = ({ navigation }) => {
   );
 };
 
-MonthlyBudgetScreen.navigationOptions = navigationOptions;
+MonthlyBudgetScreen.navigationOptions = navigationOptions();
 
 export default MonthlyBudgetScreen;

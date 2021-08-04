@@ -1,3 +1,4 @@
+/* eslint-disable  @typescript-eslint/explicit-module-boundary-types */
 import { pipe, propOr, includes, filter, isEmpty, not } from "ramda";
 import moment from "moment";
 import { FoodType, MealType } from "carbon-footprint";
@@ -26,8 +27,8 @@ const isMeatEmission = (emission) => includes(emission.emissionModelType, meatAr
 const getCreationDate = propOr(moment().utc().toISOString(), "creationDate");
 const getDaysElapsedSinceToday = (date) => moment().diff(date, "days");
 
-const getFoodEmissions = emissions.selectors.getFoodEmissions;
-const getMeatEmissions = pipe(getFoodEmissions, filter(isMeatEmission));
+const getEatableEmissions = emissions.selectors.getEatableEmissions;
+const getMeatEmissions = pipe(getEatableEmissions, filter(isMeatEmission));
 const isAnyMeatEmissionSaved = pipe(getMeatEmissions, isEmpty, not);
 
 const getLatestEmission = calculation.getLatestEmission;

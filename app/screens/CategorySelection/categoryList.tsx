@@ -2,16 +2,16 @@ import { EmissionType } from "interfaces";
 
 const categories = [
   {
-    icon: "md-airplane",
-    emissionType: EmissionType.transport,
-  },
-  {
     icon: "md-nutrition",
     emissionType: EmissionType.food,
   },
   {
     icon: "md-restaurant",
     emissionType: EmissionType.meal,
+  },
+  {
+    icon: "md-airplane",
+    emissionType: EmissionType.transport,
   },
   {
     icon: "md-play-circle",
@@ -30,12 +30,12 @@ const categories = [
     emissionType: EmissionType.electricity,
   },
   {
-    icon: "md-build",
-    emissionType: EmissionType.custom,
-  },
-  {
     icon: "barcode-sharp",
     emissionType: EmissionType.productScanned,
+  },
+  {
+    icon: "md-build",
+    emissionType: EmissionType.custom,
   },
 ];
 

@@ -1,24 +1,22 @@
 import React from "react";
 import { ScrollView } from "react-native";
 import { useSelector } from "react-redux";
+import { useNavigation } from "@react-navigation/native";
 
 import { Text, Button } from "components";
 import { t } from "utils";
 import { navigate } from "navigation";
+import { NavStatelessComponent } from "interfaces";
 
 import styles from "./BudgetScreen.styles";
 import { NumberOfDaysVegetarian, ProgressChart } from "./components";
 import { selectors } from "./ducks";
 import navigationOptions from "./BudgetScreen.navigationOptions";
 
-interface Props {
-  navigation: {
-    push: (screen: string) => void;
-  };
-}
+const BudgetScreen: NavStatelessComponent = () => {
+  const navigation = useNavigation();
+  const navigator = navigate(navigation);
 
-const BudgetScreen = (props: Props) => {
-  const navigator = navigate(props.navigation);
   const monthlyCarbonBudget = useSelector(selectors.getMonthlyCarbonBudget);
   const totalCurrentMonthEmissions = useSelector(selectors.getCurrentMonthAllCarbonValue);
   const transportCurrentMonthEmissions = useSelector(selectors.getCurrentMonthTransportCarbonValue);
@@ -62,6 +60,6 @@ const BudgetScreen = (props: Props) => {
   );
 };
 
-BudgetScreen.navigationOptions = navigationOptions;
+BudgetScreen.navigationOptions = navigationOptions();
 
 export default BudgetScreen;

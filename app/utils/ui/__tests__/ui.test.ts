@@ -474,7 +474,7 @@ describe("tests for ui.getIconFromModelType", () => {
 
   it("returns md-build for any random emission type", () => {
     const emissionModelType = "someRandomString";
-    // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
     const icon = ui.getIconFromModelType(emissionModelType);
 
@@ -729,7 +729,7 @@ describe("tests for ui.getTranslationEmissionModelType", () => {
     // arrange
     const emissionModelType = "someRandomString";
 
-    // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
     const translationModelType = ui.getTranslationEmissionModelType(emissionModelType);
 

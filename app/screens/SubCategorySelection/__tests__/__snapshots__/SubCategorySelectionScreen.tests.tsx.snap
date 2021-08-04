@@ -6,7 +6,7 @@ exports[`SubCategorySelectionScreen renders correctly 1`] = `
     Object {
       "backgroundColor": "#FFFFFF",
       "flex": 1,
-      "paddingHorizontal": 14,
+      "paddingHorizontal": 16,
     }
   }
 >

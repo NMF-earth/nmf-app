@@ -14,7 +14,7 @@ interface Props {
   showBottomLine?: boolean;
 }
 
-const ListItem = ({ title, onPress, showTopLine, showBottomLine }: Props) => {
+const ListItem: React.FC<Props> = ({ title, onPress, showTopLine, showBottomLine }) => {
   const containerStyle: StyleProp<ViewStyle> = [styles.container];
 
   if (showTopLine) {

@@ -61,5 +61,6 @@
   "UI_MEAL": "Meal",
   "UI_PURCHASE": "Purchase",
   "UI_STREAMING": "Streaming",
-  "UI_TRANSPORT": "Transport"
+  "UI_TRANSPORT": "Transport",
+  "UI_SCAN_PRODUCT": "Scan product"
 }

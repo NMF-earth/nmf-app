@@ -17,22 +17,12 @@ import store from "./app/redux/store";
 import SplashScreen from "./app/screens/Splash";
 import { LocalizationContext } from "./app/utils";
 
-const supportedLanguages: string[] = [
-  "en",
-  "fr",
-  "de",
-  "sv",
-  "da",
-  "ru",
-  "pt",
-  "pl",
-];
+const supportedLanguages: string[] = ["en", "fr", "de", "sv", "da", "ru", "pt", "pl"];
 const defaultLanguage = "en";
 const defaultLocale = "en-us";
 
 if (!__DEV__) {
-  const secret =
-    require("./secret.ts").default || require("./secret.example.ts").default;
+  const secret = require("./secret.ts").default || require("./secret.example.ts").default;
 
   /* TODO: change secret.dsn to Constants.manifest.extra.sentryPublicDsn */
   Sentry.init({
@@ -42,6 +32,8 @@ if (!__DEV__) {
   });
 
   /* TODO: set Constants.manifest.revisionId with expo */
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   Sentry.setRelease(Constants.manifest.revisionId);
 }
 
@@ -73,7 +65,11 @@ const App: React.FC<{}> = () => {
       .then(() => {
         setReady(true);
       })
-      .catch((error) => Sentry.captureException(error));
+      .catch((error) => {
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
+        Sentry.captureException(error);
+      });
   }, []);
 
   // callback to get splashScreen animation completion
@@ -106,7 +102,7 @@ const App: React.FC<{}> = () => {
 
   return (
     <SafeAreaProvider>
-      <StatusBar />
+      <StatusBar style="dark" />
       {body}
     </SafeAreaProvider>
   );
