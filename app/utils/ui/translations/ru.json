@@ -1,9 +1,9 @@
 {
-  "UI_TRAIN": "Поезд",
-  "UI_CAR": "Машина",
-  "UI_PLANE": "Самолет",
-  "UI_BOAT": "Судно",
-  "UI_BUS": "Автобус",
-  "UI_MOTORBIKE": "Мотоцикл",
-  "UI_CUSTOM": "Настраиваемое"
+	"UI_TRAIN": "Поезд",
+	"UI_CAR": "Машина",
+	"UI_PLANE": "Самолет",
+	"UI_BOAT": "Судно",
+	"UI_BUS": "Автобус",
+	"UI_MOTORBIKE": "Мотоцикл",
+	"UI_CUSTOM": "Настраиваемое"
 }

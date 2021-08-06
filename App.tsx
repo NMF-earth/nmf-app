@@ -17,7 +17,7 @@ import store from "./app/redux/store";
 import SplashScreen from "./app/screens/Splash";
 import { LocalizationContext } from "./app/utils";
 
-const supportedLanguages: string[] = ["en", "fr", "de", "sv", "da", "ru", "pt", "pl"];
+const supportedLanguages: string[] = ["en", "fr", "de", "sv", "da", "ru", "pt", "pl", "zh"];
 const defaultLanguage = "en";
 const defaultLocale = "en-us";
 

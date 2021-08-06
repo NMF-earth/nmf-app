@@ -7,6 +7,7 @@ import pt from "./pt.json";
 import da from "./da.json";
 import ru from "./ru.json";
 import pl from "./pl.json";
+import zh from "./zh.json";
 
 interface TranslationKeys {
   UI_TRAIN: string;
@@ -74,4 +75,4 @@ interface TranslationKeys {
   UI_TRANSPORT: string;
 }
 
-export { en, fr, de, sv, es, pt, da, ru, pl, TranslationKeys };
+export { en, fr, de, sv, es, pt, da, ru, pl, zh, TranslationKeys };
