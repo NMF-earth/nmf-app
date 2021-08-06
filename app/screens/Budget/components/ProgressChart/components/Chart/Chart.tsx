@@ -29,17 +29,17 @@ const dirtyFactor = getDirtyFactor(Layout.screen.width);
 
 const ringWidth = chartWidth / dirtyFactor;
 
-interface Prop {
+interface Props {
   totalEmissionsPercentage: number;
   transportEmissionsPercentage: number;
   foodEmissionsPercentage: number;
 }
 
-const Chart = ({
+const Chart: React.FC<Props> = ({
   totalEmissionsPercentage,
   transportEmissionsPercentage,
   foodEmissionsPercentage,
-}: Prop) => {
+}) => {
   const data = {
     values: [foodEmissionsPercentage, transportEmissionsPercentage, totalEmissionsPercentage],
     colors: [Colors.green50, Colors.yellow50, Colors.apricot],

@@ -19,7 +19,7 @@ interface Props {
   setQuantity: (arg0: number) => void;
 }
 
-export default ({ emissionModelType, setQuantity, defaultValueSlider }: Props) => {
+const Food: React.FC<Props> = ({ emissionModelType, setQuantity, defaultValueSlider }) => {
   const [sliderValue, setSliderValue] = useState(defaultValueSlider * 1000);
 
   const onSliderValueChange = (value: number) => {
@@ -58,3 +58,5 @@ export default ({ emissionModelType, setQuantity, defaultValueSlider }: Props) =
     </>
   );
 };
+
+export default Food;

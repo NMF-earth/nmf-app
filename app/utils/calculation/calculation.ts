@@ -16,7 +16,7 @@ import { EmissionType, Emission } from "interfaces";
 
 const isNilOrEmpty = either(isNil, isEmpty);
 
-const getFlightType = (duration: number) => {
+const getFlightType = (duration: number): TransportType => {
   /* Below 3 hours */
   if (duration < 180) {
     return TransportType.shortHaulFlight;
@@ -88,7 +88,7 @@ const getC02ValueFromEmission = (emission: Emission): number => {
 
 const getCreationDate: (Emission) => string = prop("creationDate");
 
-const getLatestEmission = (emissions: Array<Emission>) =>
+const getLatestEmission = (emissions: Array<Emission>): Emission =>
   isNilOrEmpty(emissions) ? null : reduce(maxBy(getCreationDate), emissions[0], emissions);
 
 const toKWH = (x: number): number => (x * 3.6) / Math.pow(10, -6);

@@ -1,3 +1,5 @@
+/* eslint-disable  @typescript-eslint/explicit-module-boundary-types */
+/* eslint-disable  @typescript-eslint/no-explicit-any */
 import React from "react";
 import { SectionList, View } from "react-native";
 import { useNavigation } from "@react-navigation/native";
@@ -8,7 +10,11 @@ import { navigate } from "navigation";
 import SectionHeader from "../SectionHeader";
 import styles from "./EmissionsList.styles";
 
-const EmissionsList = ({ emissions }) => {
+interface Props {
+  emissions: any;
+}
+
+const EmissionsList: React.FC<Props> = ({ emissions }) => {
   const navigation = useNavigation();
   const navigator = navigate(navigation);
 

@@ -11,7 +11,7 @@ interface Props {
   color: string;
 }
 
-const LegendItem = ({ name = "", value = 0, color = "" }: Props) => {
+const LegendItem: React.FC<Props> = ({ name = "", value = 0, color = "" }) => {
   if (value === 0) {
     return null;
   }

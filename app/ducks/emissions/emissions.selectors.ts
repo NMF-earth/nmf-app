@@ -1,3 +1,4 @@
+/* eslint-disable  @typescript-eslint/explicit-module-boundary-types */
 import { filter, propEq, find, pathOr, pipe } from "ramda";
 
 import { EmissionType } from "interfaces";

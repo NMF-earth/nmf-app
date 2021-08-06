@@ -238,7 +238,7 @@ it("renders correctly Link", () => {
 it("open links", () => {
   const spy = jest.spyOn(WebBrowser, "openBrowserAsync");
   const root = create(<Text.Link url="http://nmf.earth">test</Text.Link>).root;
-  // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
   const btn = root.findByType("TouchableOpacity");
   btn.props.onPress();

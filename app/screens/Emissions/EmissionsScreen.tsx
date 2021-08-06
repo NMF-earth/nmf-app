@@ -11,10 +11,11 @@ import styles from "./EmissionsScreen.styles";
 import { EmissionsList } from "./components";
 import { selectors } from "./ducks";
 
-const EmissionsScreen = () => {
-  const emissions = useSelector(selectors.getEmissions);
+const EmissionsScreen: React.FC = () => {
   const navigation = useNavigation();
   const navigator = navigate(navigation);
+
+  const emissions = useSelector(selectors.getEmissions);
 
   return (
     <>

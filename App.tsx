@@ -32,6 +32,8 @@ if (!__DEV__) {
   });
 
   /* TODO: set Constants.manifest.revisionId with expo */
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   Sentry.setRelease(Constants.manifest.revisionId);
 }
 
@@ -63,7 +65,11 @@ const App: React.FC<{}> = () => {
       .then(() => {
         setReady(true);
       })
-      .catch((error) => Sentry.captureException(error));
+      .catch((error) => {
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
+        Sentry.captureException(error);
+      });
   }, []);
 
   // callback to get splashScreen animation completion
@@ -96,7 +102,7 @@ const App: React.FC<{}> = () => {
 
   return (
     <SafeAreaProvider>
-      <StatusBar />
+      <StatusBar style="dark" />
       {body}
     </SafeAreaProvider>
   );

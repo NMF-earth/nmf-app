@@ -14,7 +14,7 @@ interface Props {
   emissionPayload: EmissionPayload;
 }
 
-const AddEmissionButton = ({ emissionPayload }: Props) => {
+const AddEmissionButton: React.FC<Props> = ({ emissionPayload }) => {
   const dispatch = useDispatch();
   const navigation = useNavigation();
 

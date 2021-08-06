@@ -8,6 +8,7 @@ import { navigate } from "navigation";
 import { EmissionListItem, EmissionListItemProps, Text } from "components";
 import { budget } from "ducks";
 import { t } from "utils";
+import { NavStatelessComponent } from "interfaces";
 
 import { selectors } from "./ducks";
 import styles from "./MonthlyEmissionsScreen.styles";
@@ -16,11 +17,11 @@ import navigationOptions from "./MonthlyEmissionsScreen.navigationOptions";
 const getCO2value = map(propOr(0, "co2value"));
 const getAmountCO2 = pipe(getCO2value, sum);
 
-const MonthlyEmissions = () => {
+const MonthlyEmissions: NavStatelessComponent = () => {
   const route = useRoute();
   const monthlyCarbonBudget = useSelector(budget.selectors.getMonthlyCarbonBudget);
 
-  // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
   const date = route.params?.date;
   const emissions: Array<EmissionListItemProps> = useSelector((state) =>
@@ -77,6 +78,8 @@ const MonthlyEmissions = () => {
   );
 };
 
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 MonthlyEmissions.navigationOptions = navigationOptions;
 
 export default MonthlyEmissions;

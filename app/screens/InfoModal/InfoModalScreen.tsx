@@ -1,15 +1,21 @@
 import React from "react";
 import { ScrollView } from "react-native";
+import { useRoute } from "@react-navigation/native";
 import HTML from "react-native-render-html";
 
 import { ui } from "utils";
+import { NavStatelessComponent } from "interfaces";
 
 import styles from "./InfoModalScreen.styles";
 import navigationOptions from "./InfoModal.navigationOptions";
 import methodology from "../../../assets/methodology/methodology.json";
 import emissionInfo from "../../../assets/emission-info/emission-info.json";
 
-const InfoModalScreen = ({ route }) => {
+const InfoModalScreen: NavStatelessComponent = () => {
+  const route = useRoute();
+
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   const emissionModelType = route?.params?.emissionModelType;
   let html: string;
 
@@ -28,6 +34,8 @@ const InfoModalScreen = ({ route }) => {
   );
 };
 
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 InfoModalScreen.navigationOptions = navigationOptions;
 
 export default InfoModalScreen;

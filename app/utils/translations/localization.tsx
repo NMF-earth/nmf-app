@@ -1,3 +1,7 @@
+/* eslint-disable  @typescript-eslint/explicit-module-boundary-types */
+/* eslint-disable  @typescript-eslint/ban-types */
+/* eslint-disable  @typescript-eslint/ban-ts-comment */
+
 import React from "react";
 
 /* leave optional or ts complains */
@@ -21,7 +25,6 @@ const LocalizationContext = React.createContext({
 
 const withLocalization = <P extends object>(Component: React.ComponentType<P>) => {
   return class extends React.Component<P> {
-    // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
     // @ts-ignore
     static navigationOptions = Component.navigationOptions;
 

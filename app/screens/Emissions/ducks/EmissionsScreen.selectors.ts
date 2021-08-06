@@ -1,3 +1,4 @@
+/* eslint-disable  @typescript-eslint/explicit-module-boundary-types */
 import { map, pipe, groupBy, toPairs, sum } from "ramda";
 import moment from "moment";
 

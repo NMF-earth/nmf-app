@@ -30,7 +30,7 @@ test("renders correctly SocialMedia", () => {
 
 test("should open link", () => {
   const root = create(<SocialMedia />).root;
-  // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
   const icons = root.findAllByType("TouchableOpacity");
   icons.map((item) => item.props.onPress());

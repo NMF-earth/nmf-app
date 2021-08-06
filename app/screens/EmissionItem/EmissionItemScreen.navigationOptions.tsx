@@ -1,6 +1,8 @@
+/* eslint-disable  @typescript-eslint/explicit-module-boundary-types */
 import React from "react";
 import { path, includes } from "ramda";
 import { FoodType } from "carbon-footprint";
+import { StackNavigationOptions } from "@react-navigation/stack";
 
 import { Text, InfoButton } from "components";
 import { t } from "utils";
@@ -8,7 +10,7 @@ import { Colors, ComponentsStyle } from "style";
 
 const emissionsInfoAvailable = [FoodType.cheese];
 
-const navigationOptions = (prop) => {
+const navigationOptions = (prop): StackNavigationOptions => {
   const emissionModelType = path(["route", "params", "emissionModelType"], prop);
   const showInfoButton = includes(emissionModelType, emissionsInfoAvailable);
 
