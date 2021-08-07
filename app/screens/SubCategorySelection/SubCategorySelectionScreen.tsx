@@ -2,7 +2,7 @@ import React from "react";
 import { ScrollView } from "react-native";
 import { useNavigation, useRoute } from "@react-navigation/native";
 
-import { EmissionType, EmissionModelType } from "interfaces";
+import { EmissionType, EmissionModelType, NavStatelessComponent } from "interfaces";
 import { Text, Tag } from "components";
 import { t, ui } from "utils";
 import { navigate } from "navigation";
@@ -38,13 +38,13 @@ const getSubCategory = (emissionType): Array<EmissionModelType> => {
   }
 };
 
-const SubCategorySelectionScreen = () => {
+const SubCategorySelectionScreen: NavStatelessComponent = () => {
   const route = useRoute();
 
   const navigation = useNavigation();
   const navigator = navigate(navigation);
 
-  // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
   const emissionType = route.params?.emissionType;
 
@@ -68,6 +68,6 @@ const SubCategorySelectionScreen = () => {
   );
 };
 
-SubCategorySelectionScreen.navigationOptions = navigationOptions;
+SubCategorySelectionScreen.navigationOptions = navigationOptions();
 
 export default SubCategorySelectionScreen;

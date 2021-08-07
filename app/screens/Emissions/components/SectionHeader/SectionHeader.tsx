@@ -14,7 +14,7 @@ interface Props {
   date: Date;
 }
 
-const SectionHeader = ({ date, language = "" }: Props & LocalizationContextProps) => {
+const SectionHeader: React.FC<Props & LocalizationContextProps> = ({ date, language = "" }) => {
   const navigation = useNavigation();
   const navigator = navigate(navigation);
 

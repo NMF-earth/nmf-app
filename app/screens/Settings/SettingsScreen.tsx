@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { View, TouchableWithoutFeedback, ScrollView, Image } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 import ExpoConstants from "expo-constants";
 import * as WebBrowser from "expo-web-browser";
 import * as Linking from "expo-linking";
@@ -8,12 +9,14 @@ import { ImagesAssets } from "constant";
 import { Button, Text, SocialMedia, ListItem } from "components";
 import { t } from "utils";
 import { navigate } from "navigation";
+import { NavStatelessComponent } from "interfaces";
 
 import styles from "./SettingsScreen.styles";
 import navigationOptions from "./SettingsScreen.navigationOptions";
 
-const SettingsScreen = (props) => {
-  const navigator = navigate(props.navigation);
+const SettingsScreen: NavStatelessComponent = () => {
+  const navigation = useNavigation();
+  const navigator = navigate(navigation);
 
   const rowItems = [
     {
@@ -123,6 +126,6 @@ const SettingsScreen = (props) => {
   );
 };
 
-SettingsScreen.navigationOptions = navigationOptions;
+SettingsScreen.navigationOptions = navigationOptions();
 
 export default SettingsScreen;

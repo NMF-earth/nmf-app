@@ -11,7 +11,7 @@ In Europe, only [30 % of the plastic is recycled](https://www.europarl.europa.eu
 
 # Zero Waste
 
-To avoid plastic and single use objects in our daily life, you can try, if you have the time and the money, to transition to a zero waste lifestyle, gradually. A british agency has made a really nice [survival kit](https://useless.london/kit) if you want to get some inspiration.
+To avoid plastic and single use objects in our daily life, you can try, if you have the time and the money, to transition to a zero waste lifestyle, gradually. A British agency has made a really nice [survival kit](https://useless.london/kit) if you want to get some inspiration.
 
 Beside that, a good way to decrease your impact on the planet is buy more second hand goods: from computers, phones to clothing, you can purchase anything second hand; or even better, fix, reuse or upgrade what you already have.
 
@@ -19,10 +19,10 @@ Beside that, a good way to decrease your impact on the planet is buy more second
 
 # Do it yourself
 
-A lot of products you buy at the supermarket like yogurt, soap or even deodorants are not so complicated to make yourself. For example, you can make [tawashi](https://wiki.lowtechlab.org/wiki/Tawashi) (scrubbing brush) with old piece of clothes. Futhermore, it's always satisfying and entertaining to do something yourself!
+A lot of products you buy at the supermarket like yogurt, soap or even deodorants are not so complicated to make yourself. For example, you can make [tawashi](https://wiki.lowtechlab.org/wiki/Tawashi) (scrubbing brush) with old piece of clothes. Furthermore, it's always satisfying and entertaining to do something yourself!
 
 You can have a look to the amazing [Low Tech Lab](https://wiki.lowtechlab.org/wiki/Accueil) for more inspiration.
 
-## Disclamer
+## Disclaimer
 
-Shifting towards a more sustainable lifestyle is a long process and works better on the long run when it's done step by step. What's the point to change all your routines if it's give up in 6 months? Unfortunately, our capitalist society is not given us the neccessary resources (time, money, education... ) to be more friendly with the environment. So take your time and don't be too hard on yourself 😉
+Shifting towards a more sustainable lifestyle is a long process and works better on the long run when it's done step by step. What's the point to change all your routines if it's give up in 6 months? Unfortunately, our capitalist society is not given us the necessary resources (time, money, education... ) to be more friendly with the environment. So take your time and don't be too hard on yourself 😉

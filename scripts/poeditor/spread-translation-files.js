@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const fs = require("fs");
-const usedLanguages = ["en", "de", "fr", "sv", "pt", "es", "pl", "ru", "da"];
+const usedLanguages = ["en", "de", "fr", "sv", "pt", "es", "pl", "ru", "da", "zh"];
 const relPrefix = "../../";
 const translationDirs = [
   "app/screens/Act/translations",

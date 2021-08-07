@@ -1,11 +1,11 @@
 {
-  "UI_TRAIN": "Tog",
-  "UI_CAR": "Bil",
-  "UI_PLANE": "Fly",
-  "UI_BOAT": "Båd",
-  "UI_BUS": "Bus",
-  "UI_MOTORBIKE": "Motorcykel",
-  "UI_RED_MEAT": "Rødt kød",
-  "UI_WHITE_MEAT": "Hvidt kød",
-  "UI_FISH": "Fisk"
+	"UI_TRAIN": "Tog",
+	"UI_CAR": "Bil",
+	"UI_PLANE": "Fly",
+	"UI_BOAT": "Båd",
+	"UI_BUS": "Bus",
+	"UI_MOTORBIKE": "Motorcykel",
+	"UI_RED_MEAT": "Rødt kød",
+	"UI_WHITE_MEAT": "Hvidt kød",
+	"UI_FISH": "Fisk"
 }

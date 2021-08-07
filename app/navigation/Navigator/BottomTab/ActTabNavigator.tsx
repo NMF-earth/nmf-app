@@ -5,6 +5,7 @@ import { createMaterialTopTabNavigator } from "@react-navigation/material-top-ta
 import { Text } from "components";
 import { t } from "utils";
 import { ComponentsStyle, Colors, Font } from "style";
+import { NavStatelessComponent } from "interfaces";
 
 import { GuideCategory } from "../../../types/guide";
 import ActScreen from "../../../screens/Act";
@@ -21,16 +22,18 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.white,
   },
   tab: {
+    paddingVertical: 8,
     paddingHorizontal: 20,
-    paddingVertical: 5,
-    borderRadius: 13,
     fontFamily: Font.FontWeight.Bold,
     textTransform: "capitalize",
+  },
+  tabView: {
+    borderRadius: 10,
   },
 });
 
 /* TODO: write tests for TopTabBar function */
-function TopTabBar({ state, navigation }) {
+const TopTabBar = ({ state, navigation }) => {
   return (
     <View style={styles.tabBar}>
       {tabs.map((tab, index) => {
@@ -44,13 +47,21 @@ function TopTabBar({ state, navigation }) {
         };
 
         return (
-          <TouchableOpacity key={label} onPress={onPress}>
+          <TouchableOpacity
+            style={[
+              styles.tabView,
+              {
+                backgroundColor: isFocused ? Colors.green10 : Colors.white,
+              },
+            ]}
+            key={label}
+            onPress={onPress}
+          >
             <Text.Secondary
               style={[
                 styles.tab,
                 {
                   color: isFocused ? Colors.black : Colors.grey40,
-                  backgroundColor: isFocused ? Colors.green10 : Colors.white,
                 },
               ]}
             >
@@ -61,9 +72,9 @@ function TopTabBar({ state, navigation }) {
       })}
     </View>
   );
-}
+};
 
-const ActTabNavigator = () => (
+const ActTabNavigator: NavStatelessComponent = () => (
   <Tab.Navigator tabBar={(props) => <TopTabBar {...props} />}>
     {tabs.map((tab) => (
       <Tab.Screen key={tab} name={tab} component={ActScreen} options={{ tabBarLabel: tab }} />
@@ -80,6 +91,6 @@ const navigationOptions = () => ({
   headerTitle: () => <Text.H1>{t("ACT_SCREEN_TITLE")}</Text.H1>,
 });
 
-ActTabNavigator.navigationOptions = navigationOptions;
+ActTabNavigator.navigationOptions = navigationOptions();
 
 export default ActTabNavigator;

@@ -16,7 +16,7 @@ interface Props {
   setCo2eqKilograms: (arg0: number) => void;
 }
 
-export default ({ setCo2eqKilograms, defaultValueSlider }: Props) => {
+const Custom: React.FC<Props> = ({ setCo2eqKilograms, defaultValueSlider }) => {
   const [sliderValue, setSliderValue] = useState(defaultValueSlider);
   setCo2eqKilograms(sliderValue);
 
@@ -44,3 +44,5 @@ export default ({ setCo2eqKilograms, defaultValueSlider }: Props) => {
     </>
   );
 };
+
+export default Custom;

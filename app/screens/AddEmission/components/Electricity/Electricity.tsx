@@ -20,11 +20,11 @@ interface Props {
   setElectricityConsumption: (arg0: number) => void;
 }
 
-const Electricity = ({
+const Electricity: React.FC<Props> = ({
   electricityCountry,
   setElectricityConsumption,
   defaultValueSlider,
-}: Props) => {
+}) => {
   const [sliderValue, setSliderValue] = useState(defaultValueSlider);
   setElectricityConsumption(sliderValue);
 

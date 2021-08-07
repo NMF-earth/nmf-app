@@ -22,8 +22,6 @@ it("if incorrect input, convertMinutesToHoursAnMinutes should return default val
 
   expect(time.convertMinutesToHoursAnMinutes(-10)).toEqual(defaultValue);
 
-  expect(time.convertMinutesToHoursAnMinutes("test")).toEqual(defaultValue);
-
   expect(time.convertMinutesToHoursAnMinutes(null)).toEqual(defaultValue);
 
   expect(time.convertMinutesToHoursAnMinutes(undefined)).toEqual(defaultValue);

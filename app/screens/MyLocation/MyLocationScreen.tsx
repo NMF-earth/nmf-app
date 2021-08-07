@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Text, SelectableListItem } from "components";
 import { userPreferences } from "ducks";
 import { t, calculation } from "utils";
+import { NavStatelessComponent } from "interfaces";
 
 import navigationOptions from "./MyLocationScreen.navigationOptions";
 import styles from "./MyLocationScreen.styles";
@@ -29,7 +30,7 @@ const Country: React.FC<{
   );
 };
 
-const MyLocationScreen = () => {
+const MyLocationScreen: NavStatelessComponent = () => {
   const dispatch = useDispatch();
   const location = useSelector(userPreferences.selectors.getLocation);
 
@@ -70,6 +71,6 @@ const MyLocationScreen = () => {
   );
 };
 
-MyLocationScreen.navigationOptions = navigationOptions;
+MyLocationScreen.navigationOptions = navigationOptions();
 
 export default MyLocationScreen;

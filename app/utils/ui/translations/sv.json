@@ -1,14 +1,14 @@
 {
-  "UI_TRAIN": "Tåg",
-  "UI_CAR": "Bil",
-  "UI_PLANE": "Flyg",
-  "UI_BOAT": "Båt",
-  "UI_BUS": "Buss",
-  "UI_MOTORBIKE": "MC",
-  "UI_RED_MEAT": "Rött kött",
-  "UI_WHITE_MEAT": "Vitt kött",
-  "UI_CHOCOLATE": "Choklad",
-  "UI_COFFEE": "Kaffe",
-  "UI_FISH": "Fisk",
-  "UI_CUSTOM": "Annat"
+	"UI_TRAIN": "Tåg",
+	"UI_CAR": "Bil",
+	"UI_PLANE": "Flyg",
+	"UI_BOAT": "Båt",
+	"UI_BUS": "Buss",
+	"UI_MOTORBIKE": "MC",
+	"UI_RED_MEAT": "Rött kött",
+	"UI_WHITE_MEAT": "Vitt kött",
+	"UI_CHOCOLATE": "Choklad",
+	"UI_COFFEE": "Kaffe",
+	"UI_FISH": "Fisk",
+	"UI_CUSTOM": "Annat"
 }

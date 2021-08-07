@@ -13,7 +13,7 @@ interface Props {
   onPress: () => void;
 }
 
-const SelectableListItem = ({ selected, title, onPress }: Props) => {
+const SelectableListItem: React.FC<Props> = ({ selected, title, onPress }) => {
   return (
     <TouchableOpacity onPress={onPress} style={styles.container}>
       <Text.Primary bold numberOfLines={1} green={selected} style={styles.text}>

@@ -1,0 +1,14 @@
+{
+  "MY_DATA_SCREEN_TITLE": "我的资料",
+  "MY_DATA_SCREEN_BODY": "使用 NMF.earth之后，您将拥有自己的数据。这意味着我们不会将您的数据保存于任何服务器上，因此除了您之外没有人可以访问它。您的数据永远不会离开您的手机，所以没有任何安全问题。但是，这也意味着您将负责保存数据，以防您丢失手机。为此，请使用下面的导出按钮来获取您的数据并将其保存在您想要的任何位置。当您想导入旧数据时，只需按导入按钮，因为它也会删除您的旧数据所以请小心使用。",
+  "MY_DATA_SCREEN_EXPORT_MY_DATA": "导出我的资料",
+  "MY_DATA_SCREEN_IMPORT_DATA": "导入资料",
+  "MY_DATA_SCREEN_DELETE_ALL_MY_DATA": "删除我的资料",
+  "MY_DATA_SCREEN_ALERT_CONFIRM": "确认",
+  "MY_DATA_SCREEN_ALERT_CONFIRM_IMPORT": "这个行为会取代现今的记录",
+  "MY_DATA_SCREEN_ALERT_CONFIRM_DELETE": "这个行为会删除您的记录",
+  "MY_DATA_SCREEN_CANCEL": "取消",
+  "MY_DATA_SCREEN_OK": "确认",
+  "MY_DATA_SCREEN_DELETE_SUCCESSFUL": "已删除您的排放量。",
+  "MY_DATA_SCREEN_GENERIC_ERROR": "哎呀, 出错了。"
+}

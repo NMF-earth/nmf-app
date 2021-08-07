@@ -1,3 +1,4 @@
+/* eslint-disable  @typescript-eslint/explicit-module-boundary-types */
 import { filter, map, pipe } from "ramda";
 import moment from "moment";
 

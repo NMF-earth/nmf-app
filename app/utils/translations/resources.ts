@@ -246,6 +246,29 @@ const da = {
   ...Languages.da,
 };
 
+const zh = {
+  ...UI.zh,
+  ...About.zh,
+  ...Notifications.zh,
+  ...MonthlyBudget.zh,
+  ...NoEmission.zh,
+  ...Act.zh,
+  ...Budget.zh,
+  ...Emissions.zh,
+  ...Settings.zh,
+  ...InfoModal.zh,
+  ...AddEmission.zh,
+  ...EmissionItem.zh,
+  ...Intro.zh,
+  ...SupportUs.zh,
+  ...MyLocation.zh,
+  ...ActDetail.zh,
+  ...MyData.zh,
+  ...CategorySelection.zh,
+  ...SubCategorySelection.zh,
+  ...MonthlyEmissions.zh,
+};
+
 export interface TranslationKeys
   extends UI.TranslationKeys,
     MonthlyBudget.TranslationKeys,
@@ -270,4 +293,4 @@ export interface TranslationKeys
     ActDetail.TranslationKeys,
     Languages.TranslationKeys {}
 
-export { en, de, fr, sv, pt, es, pl, ru, da };
+export { en, de, fr, sv, pt, es, pl, ru, da, zh };
