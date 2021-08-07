@@ -107,7 +107,7 @@ exports[`LanguageScreen renders correctly 1`] = `
             }
           }
         >
-          Språk
+          Svenska
         </Text.Primary>
       </TouchableOpacity>
       <TouchableOpacity

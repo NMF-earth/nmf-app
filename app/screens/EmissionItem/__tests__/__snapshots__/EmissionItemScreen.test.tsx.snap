@@ -109,7 +109,7 @@ exports[`EmissionsScreen renders correctly 1`] = `
           ]
         }
       >
-        Wednesday 
+        Saturday 
       </Text.Primary>
       <Text.Primary
         darkGray={true}
