@@ -63,6 +63,14 @@ const SettingsScreen: NavStatelessComponent = () => {
       onPress: () => WebBrowser.openBrowserAsync("http://nmf.earth/terms-of-use.pdf"),
     },
   ];
+
+  if (__DEV__) {
+    rowItems.push({
+      title: t("SETTINGS_SCREEN_LANGUAGES"),
+      onPress: navigator.openLanguages,
+    });
+  }
+
   const [steps, setSteps] = useState(0);
 
   return (

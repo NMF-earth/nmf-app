@@ -1,5 +1,7 @@
 import { ElectricityType } from "carbon-footprint";
 
+import { supportedLanguages } from "utils";
+
 import userPreferences from "../";
 
 let state;
@@ -8,6 +10,7 @@ const initialState = {
   acceptedTermsOfUseVersion: 3,
   activatedNotifications: false,
   location: ElectricityType.world,
+  language: supportedLanguages.en,
 };
 
 describe("userPreferences selector should", () => {
@@ -29,4 +32,7 @@ describe("userPreferences selector should", () => {
     expect(userPreferences.selectors.getActivateNotifications(state)).toEqual(
       initialState.activatedNotifications
     ));
+
+  test("return current language", () =>
+    expect(userPreferences.selectors.getLanguage(state)).toEqual(initialState.language));
 });

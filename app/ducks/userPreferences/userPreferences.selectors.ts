@@ -2,6 +2,8 @@
 import { pathOr } from "ramda";
 import { ElectricityType } from "carbon-footprint";
 
+import { currentLanguage } from "utils";
+
 import { namespace } from "./userPreferences.slice";
 
 const getAcceptedTermsOfUseVersion = (state) =>
@@ -12,8 +14,11 @@ const getLocation = (state) => pathOr(ElectricityType.world, [namespace, "locati
 const getActivateNotifications = (state) =>
   pathOr(false, [namespace, "activatedNotifications"], state);
 
+const getLanguage = (state) => pathOr(currentLanguage, [namespace, "language"], state);
+
 export default {
   getAcceptedTermsOfUseVersion,
   getActivateNotifications,
   getLocation,
+  getLanguage,
 };
