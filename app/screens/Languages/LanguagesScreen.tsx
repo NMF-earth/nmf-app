@@ -5,6 +5,7 @@ import { useDispatch } from "react-redux";
 import { SelectableListItem } from "components";
 import { userPreferences } from "ducks";
 import { LocalizationContext, supportedLanguages } from "utils";
+import { NavStatelessComponent } from "interfaces";
 
 import navigationOptions from "./LanguagesScreen.navigationOptions";
 import styles from "./LanguagesScreen.styles";
@@ -28,7 +29,7 @@ const Language: React.FC<{
   );
 };
 
-const LanguagesScreen = () => {
+const LanguagesScreen: NavStatelessComponent = () => {
   const dispatch = useDispatch();
   const { language, setLanguage } = useContext(LocalizationContext);
   const onPress = useCallback(
@@ -55,6 +56,6 @@ const LanguagesScreen = () => {
   );
 };
 
-LanguagesScreen.navigationOptions = navigationOptions;
+LanguagesScreen.navigationOptions = navigationOptions();
 
 export default LanguagesScreen;
