@@ -12,6 +12,7 @@ const supportedLanguages = {
   pl: "Polskie",
   da: "Dansk",
   zh: "中文（简体）",
+  ms: "Bahasa Melayu",
 };
 
 const currentLanguage = Object.keys(supportedLanguages).includes(locale.substr(0, 2))

@@ -26,9 +26,9 @@ const CategorySelectionScreen: NavStatelessComponent = () => {
   return (
     <ScrollView style={styles.container}>
       <Text.H2 style={styles.info}>{t("CATEGORY_SELECTION_SCREEN_SELECT_CATEGORY")}</Text.H2>
-      {categories.map((category) => (
+      {categories.map((category, index) => (
         <Tag
-          key={ui.getTranslationEmissionType(category.emissionType)}
+          key={index}
           icon={category.icon}
           text={ui.getTranslationEmissionType(category.emissionType)}
           onPress={() => onPress(category)}

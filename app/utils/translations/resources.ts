@@ -269,6 +269,29 @@ const zh = {
   ...MonthlyEmissions.zh,
 };
 
+const ms = {
+  ...UI.ms,
+  ...About.ms,
+  ...Notifications.ms,
+  ...MonthlyBudget.ms,
+  ...NoEmission.ms,
+  ...Act.ms,
+  ...Budget.ms,
+  ...Emissions.ms,
+  ...Settings.ms,
+  ...InfoModal.ms,
+  ...AddEmission.ms,
+  ...EmissionItem.ms,
+  ...Intro.ms,
+  ...SupportUs.ms,
+  ...MyLocation.ms,
+  ...ActDetail.ms,
+  ...MyData.ms,
+  ...CategorySelection.ms,
+  ...SubCategorySelection.ms,
+  ...MonthlyEmissions.ms,
+};
+
 export interface TranslationKeys
   extends UI.TranslationKeys,
     MonthlyBudget.TranslationKeys,
@@ -293,4 +316,4 @@ export interface TranslationKeys
     ActDetail.TranslationKeys,
     Languages.TranslationKeys {}
 
-export { en, de, fr, sv, pt, es, pl, ru, da, zh };
+export { en, de, fr, sv, pt, es, pl, ru, da, zh, ms };

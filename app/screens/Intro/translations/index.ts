@@ -8,6 +8,7 @@ import da from "./da.json";
 import ru from "./ru.json";
 import pl from "./pl.json";
 import zh from "./zh.json";
+import ms from "./ms.json";
 
 interface TranslationKeys {
   INTRO_SCREEN_WELCOME: string;
@@ -16,4 +17,4 @@ interface TranslationKeys {
   INTRO_SCREEN_I_AGREE: string;
 }
 
-export { en, fr, de, sv, es, pt, da, ru, pl, zh, TranslationKeys };
+export { en, fr, de, sv, es, pt, da, ru, pl, zh, ms, TranslationKeys };

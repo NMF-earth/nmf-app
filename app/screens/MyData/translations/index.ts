@@ -8,6 +8,7 @@ import da from "./da.json";
 import ru from "./ru.json";
 import pl from "./pl.json";
 import zh from "./zh.json";
+import ms from "./ms.json";
 
 interface TranslationKeys {
   MY_DATA_SCREEN_TITLE: string;
@@ -24,4 +25,4 @@ interface TranslationKeys {
   MY_DATA_SCREEN_GENERIC_ERROR: string;
 }
 
-export { en, fr, de, sv, es, pt, da, ru, pl, zh, TranslationKeys };
+export { en, fr, de, sv, es, pt, da, ru, pl, zh, ms, TranslationKeys };

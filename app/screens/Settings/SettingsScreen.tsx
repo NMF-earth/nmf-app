@@ -13,6 +13,9 @@ import { NavStatelessComponent } from "interfaces";
 
 import styles from "./SettingsScreen.styles";
 import navigationOptions from "./SettingsScreen.navigationOptions";
+import quotes from "../../../assets/quotes/quotes.json";
+
+const quoteIndex = Math.floor(Math.random() * Math.floor(quotes.length));
 
 const SettingsScreen: NavStatelessComponent = () => {
   const navigation = useNavigation();
@@ -94,6 +97,16 @@ const SettingsScreen: NavStatelessComponent = () => {
         })}
       </Text.Tertiary>
       <SocialMedia />
+      {!__DEV__ && (
+        <View style={styles.textContainer}>
+          <Text.Secondary darkGray center style={styles.quote}>
+            {quotes[quoteIndex].quote}
+          </Text.Secondary>
+          <Text.Primary bold center style={styles.author}>
+            {quotes[quoteIndex].author}
+          </Text.Primary>
+        </View>
+      )}
 
       {steps > 4 ? (
         <View>

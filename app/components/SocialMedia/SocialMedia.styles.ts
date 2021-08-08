@@ -5,7 +5,6 @@ export default StyleSheet.create({
     flexDirection: "row",
     justifyContent: "center",
     flex: 1,
-    paddingTop: 20,
   },
   box: {
     flex: 1,

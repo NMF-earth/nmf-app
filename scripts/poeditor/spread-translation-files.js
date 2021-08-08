@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const fs = require("fs");
-const usedLanguages = ["en", "de", "fr", "sv", "pt", "es", "pl", "ru", "da", "zh"];
+const usedLanguages = ["en", "de", "fr", "sv", "pt", "es", "pl", "ru", "da", "zh", "my"];
 const relPrefix = "../../";
 const translationDirs = [
   "app/screens/Act/translations",
@@ -19,6 +19,7 @@ const translationDirs = [
   "app/screens/ActDetail/translations",
   "app/screens/Notifications/translations",
   "app/screens/MonthlyEmissions/translations",
+  "app/screens/Languages/translations",
   "app/components/NoEmission/translations",
   "app/utils/ui/translations",
 ];

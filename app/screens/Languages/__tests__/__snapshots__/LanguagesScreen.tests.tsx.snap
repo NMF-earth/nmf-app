@@ -220,6 +220,28 @@ exports[`LanguageScreen renders correctly 1`] = `
           中文（简体）
         </Text.Primary>
       </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          Bahasa Melayu
+        </Text.Primary>
+      </TouchableOpacity>
     </View>
   </RCTScrollView>
 </View>
