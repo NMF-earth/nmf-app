@@ -35,7 +35,7 @@
     "@react-navigation/native": "5.7.5",
     "@react-navigation/stack": "5.12.8",
     "@reduxjs/toolkit": "1.5.1",
-    "carbon-footprint": "1.5.4",
+    "carbon-footprint": "1.6.0",
     "expo": "42.0.0",
     "expo-application": "3.2.0",
     "expo-asset": "8.3.3",

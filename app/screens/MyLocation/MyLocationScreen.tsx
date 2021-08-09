@@ -58,14 +58,16 @@ const MyLocationScreen: NavStatelessComponent = () => {
         </Text.Primary>
       </View>
       <ScrollView style={styles.scrollContainer}>
-        {Object.keys(ElectricityType).map((country: ElectricityType) => (
-          <Country
-            key={country}
-            selectedCountry={location}
-            country={country}
-            onSelectCountry={onPress}
-          />
-        ))}
+        {Object.keys(ElectricityType)
+          .filter((item) => item != "danmark")
+          .map((country: ElectricityType) => (
+            <Country
+              key={country}
+              selectedCountry={location}
+              country={country}
+              onSelectCountry={onPress}
+            />
+          ))}
       </ScrollView>
     </View>
   );

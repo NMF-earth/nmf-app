@@ -177,7 +177,7 @@ describe("getLatestEmission should return the latest emission emitted", () => {
 describe("getCarbonIntensityInGramPerKWHromKgPerJoules should convert data from kgCO2/J to gCO2/kWh", () => {
   it("if no emissions", () => {
     expect(calculation.getCarbonIntensityInGramPerKWHromKgPerJoules(electricity.france)).toEqual(
-      31
+      35
     );
   });
 });
