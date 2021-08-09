@@ -20,6 +20,10 @@ const supportedLanguages: string[] = ["en", "fr", "de", "sv", "da", "ru", "pt", 
 const defaultLanguage = "en";
 const defaultLocale = "en-us";
 
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+const release = Constants.manifest.revisionId || "0.0.0";
+
 if (!__DEV__) {
   const secret = require("./secret.ts").default || require("./secret.example.ts").default;
 
@@ -28,12 +32,8 @@ if (!__DEV__) {
     dsn: secret.dsn,
     enableInExpoDevelopment: false,
     debug: true,
+    release,
   });
-
-  /* TODO: set Constants.manifest.revisionId with expo */
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  // @ts-ignore
-  Sentry.setRelease(Constants.manifest.revisionId);
 }
 
 const App: React.FC = () => {
