@@ -6,7 +6,7 @@ import * as Sharing from "expo-sharing";
 import { useSelector, useDispatch } from "react-redux";
 
 import { Text, Button } from "components";
-import { t } from "utils";
+import { t, platform } from "utils";
 import { emissions as emissionsDucks, budget, userPreferences } from "ducks";
 import { NavStatelessComponent } from "interfaces";
 
@@ -50,7 +50,8 @@ const MyDataScreen: NavStatelessComponent = () => {
 
           if (file.type === "success") {
             try {
-              const data = JSON.parse(await FileSystem.readAsStringAsync(file.uri));
+              const uri = platform.isAndroid ? "file://" : "" + file.uri;
+              const data = JSON.parse(await FileSystem.readAsStringAsync(uri));
               const {
                 budget: { monthlyCarbonBudget },
                 emissions,
