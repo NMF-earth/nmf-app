@@ -50,8 +50,8 @@ const MyDataScreen: NavStatelessComponent = () => {
 
           if (file.type === "success") {
             try {
-              const uri = platform.isAndroid ? "file://" : "" + file.uri;
-              const data = JSON.parse(await FileSystem.readAsStringAsync(uri));
+              const uriPrefix = platform.isAndroid ? "file://" : "";
+              const data = JSON.parse(await FileSystem.readAsStringAsync(uriPrefix + file.uri));
               const {
                 budget: { monthlyCarbonBudget },
                 emissions,
