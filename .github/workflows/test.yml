@@ -10,9 +10,8 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 12.x
+      - run: yarn install
       - uses: borales/actions-yarn@v2.0.0
         with:
-          cmd: install
-      - uses: borales/actions-yarn@v2.0.0
-        with:
+          node-version: 12.x
           cmd: ci
