@@ -132,9 +132,9 @@ For emission info screen, just run `node scripts/generate-emission-info.js` to u
 
 ## 🗣 Translations
 
-You can help us with translate the app with our online tool [POEditor](https://poeditor.com/join/project/0MbginCsWp).
+You can help us with translate the app with our online tool [POEditor](https://poeditor.com/join/project/0MbginCsWp). Any help is appreciate and no coding skills are needed 🤗
 
-So far the app supports English, French, German, Swedish, Danish, Russian, Portugal, Polish.
+The app supports fully or partially the following languages : English, French, German, Swedish, Danish, Russian, Portugal, Polish, Chinese and Malaysian.
 
 <br />
 

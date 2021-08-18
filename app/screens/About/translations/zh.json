@@ -1,0 +1,14 @@
+{
+	"ABOUT_SCREEN_TITLE": "有关",
+	"ABOUT_SCREEN_INTRO": "我们是一个关注人类对地球影响的小团队。我们也不是一家以增长或利润为驱动来向投资者支付股息的初创公司。您可以查看我们关于独立黑客的公开数据。如果你想帮助这个项目，你可以加入我们的团队。或者您可以向周围谈论我们的项目，在应用商店给我们的应用程序 5 星，然后发送反馈给我们。这将对我们有很大帮助。谢谢 ✌️",
+	"ABOUT_SCREEN_CARE_HEADER": "我们关心您",
+	"ABOUT_SCREEN_PRIVACY": "设计隐私",
+	"ABOUT_SCREEN_ETHIC": "设计准则",
+	"ABOUT_SCREEN_OPEN_SOURCE": "100% 开源软件",
+	"ABOUT_SCREEN_PRIVACY_BODY": "应用程序中提供的所有数据绝不会出售或共享给任何公司, 我们也不会跟踪您在应用程序中的任何行为 ",
+	"ABOUT_SCREEN_ETHIC_BODY": "\n我们不会利用无尽通知, 自动播放等心理因素来阻止用户离开 ",
+	"ABOUT_SCREEN_OPEN_SOURCE_BODY": "每个人都可以在应用程序添加内容、验证排放量并修改任何不正确的信息",
+	"ABOUT_SCREEN_LIBRARIES_AND_CONTRIBUTORS": "软件库与贡献者",
+	"ABOUT_SCREEN_CAN_BE_FOUND": "请参见 ",
+	"ABOUT_SCREEN_GITHUB": "Github"
+}

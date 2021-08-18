@@ -6,13 +6,14 @@ import * as Sharing from "expo-sharing";
 import { useSelector, useDispatch } from "react-redux";
 
 import { Text, Button } from "components";
-import { t } from "utils";
+import { t, platform } from "utils";
 import { emissions as emissionsDucks, budget, userPreferences } from "ducks";
+import { NavStatelessComponent } from "interfaces";
 
 import styles from "./MyDataScreen.styles";
 import navigationOptions from "./MyDataScreen.navigationOptions";
 
-const MyDataScreen = () => {
+const MyDataScreen: NavStatelessComponent = () => {
   const dispatch = useDispatch();
   const emissions = useSelector(emissionsDucks.selectors.getAllEmissions);
   const monthlyCarbonBudget = useSelector(budget.selectors.getMonthlyCarbonBudget);
@@ -49,7 +50,8 @@ const MyDataScreen = () => {
 
           if (file.type === "success") {
             try {
-              const data = JSON.parse(await FileSystem.readAsStringAsync(file.uri));
+              const uriPrefix = platform.isAndroid ? "file://" : "";
+              const data = JSON.parse(await FileSystem.readAsStringAsync(uriPrefix + file.uri));
               const {
                 budget: { monthlyCarbonBudget },
                 emissions,
@@ -119,6 +121,6 @@ const MyDataScreen = () => {
   );
 };
 
-MyDataScreen.navigationOptions = navigationOptions;
+MyDataScreen.navigationOptions = navigationOptions();
 
 export default MyDataScreen;

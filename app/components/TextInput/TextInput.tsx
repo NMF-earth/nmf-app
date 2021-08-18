@@ -7,14 +7,14 @@ import { Colors } from "style";
 import Text from "../Text";
 import styles from "./TextInput.styles";
 
-interface Prop {
+interface Props {
   isOptional: boolean;
   placeholder?: string;
   title: string;
   value: string;
   onChangeText: (text: string) => void;
 }
-const TextInput = ({ isOptional, onChangeText, value, placeholder, title }: Prop) => {
+const TextInput: React.FC<Props> = ({ isOptional, onChangeText, value, placeholder, title }) => {
   const [isVisible, setIsVisible] = useState(isOptional ? false : true);
 
   return (

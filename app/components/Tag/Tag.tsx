@@ -13,8 +13,7 @@ interface Props {
   onPress: () => void;
 }
 
-const Tag = (props: Props) => {
-  const { text, onPress, icon } = props;
+const Tag: React.FC<Props> = ({ text, onPress, icon }) => {
   let iconItem = null;
 
   if (icon) {

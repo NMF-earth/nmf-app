@@ -19,6 +19,8 @@ import * as MyData from "../../screens/MyData/translations";
 import * as CategorySelection from "../../screens/CategorySelection/translations";
 import * as SubCategorySelection from "../../screens/SubCategorySelection/translations";
 import * as BarCodeScan from "../../screens/BarCodeScan/translations";
+import * as MonthlyEmissions from "../../screens/MonthlyEmissions/translations";
+import * as Languages from "../../screens/Languages/translations";
 
 /* COMPONENTS */
 import * as NoEmission from "components/NoEmission/translations";
@@ -46,6 +48,8 @@ const en = {
   ...CategorySelection.en,
   ...SubCategorySelection.en,
   ...BarCodeScan.en,
+  ...MonthlyEmissions.en,
+  ...Languages.en,
   ...NoEmission.en,
   ...UI.en,
 };
@@ -71,6 +75,8 @@ const de = {
   ...ActDetail.de,
   ...MyData.de,
   ...BarCodeScan.de,
+  ...MonthlyEmissions.de,
+  ...Languages.de,
 };
 
 const fr = {
@@ -95,6 +101,8 @@ const fr = {
   ...CategorySelection.fr,
   ...SubCategorySelection.fr,
   ...BarCodeScan.fr,
+  ...MonthlyEmissions.fr,
+  ...Languages.fr,
 };
 
 const sv = {
@@ -119,6 +127,8 @@ const sv = {
   ...CategorySelection.sv,
   ...SubCategorySelection.sv,
   ...BarCodeScan.sv,
+  ...MonthlyEmissions.sv,
+  ...Languages.sv,
 };
 
 const pt = {
@@ -142,6 +152,8 @@ const pt = {
   ...CategorySelection.pt,
   ...SubCategorySelection.pt,
   ...BarCodeScan.pt,
+  ...MonthlyEmissions.pt,
+  ...Languages.pt,
 };
 
 const es = {
@@ -165,6 +177,8 @@ const es = {
   ...CategorySelection.es,
   ...SubCategorySelection.es,
   ...BarCodeScan.es,
+  ...MonthlyEmissions.es,
+  ...Languages.es,
 };
 
 const ru = {
@@ -188,6 +202,8 @@ const ru = {
   ...CategorySelection.ru,
   ...SubCategorySelection.ru,
   ...BarCodeScan.ru,
+  ...MonthlyEmissions.ru,
+  ...Languages.ru,
 };
 
 const pl = {
@@ -211,6 +227,8 @@ const pl = {
   ...CategorySelection.pl,
   ...SubCategorySelection.pl,
   ...BarCodeScan.pl,
+  ...MonthlyEmissions.pl,
+  ...Languages.pl,
 };
 
 const da = {
@@ -234,6 +252,58 @@ const da = {
   ...CategorySelection.da,
   ...SubCategorySelection.da,
   ...BarCodeScan.da,
+  ...MonthlyEmissions.da,
+  ...Languages.da,
+};
+
+const zh = {
+  ...UI.zh,
+  ...About.zh,
+  ...Notifications.zh,
+  ...MonthlyBudget.zh,
+  ...NoEmission.zh,
+  ...Act.zh,
+  ...Budget.zh,
+  ...Emissions.zh,
+  ...Settings.zh,
+  ...InfoModal.zh,
+  ...AddEmission.zh,
+  ...EmissionItem.zh,
+  ...Intro.zh,
+  ...SupportUs.zh,
+  ...MyLocation.zh,
+  ...ActDetail.zh,
+  ...MyData.zh,
+  ...CategorySelection.zh,
+  ...SubCategorySelection.zh,
+  ...BarCodeScan.zh,
+  ...MonthlyEmissions.zh,
+  ...Languages.zh,
+};
+
+const ms = {
+  ...UI.ms,
+  ...About.ms,
+  ...Notifications.ms,
+  ...MonthlyBudget.ms,
+  ...NoEmission.ms,
+  ...Act.ms,
+  ...Budget.ms,
+  ...Emissions.ms,
+  ...Settings.ms,
+  ...InfoModal.ms,
+  ...AddEmission.ms,
+  ...EmissionItem.ms,
+  ...Intro.ms,
+  ...SupportUs.ms,
+  ...MyLocation.ms,
+  ...ActDetail.ms,
+  ...MyData.ms,
+  ...CategorySelection.ms,
+  ...SubCategorySelection.ms,
+  ...BarCodeScan.ms,
+  ...MonthlyEmissions.ms,
+  ...Languages.ms,
 };
 
 export interface TranslationKeys
@@ -257,6 +327,8 @@ export interface TranslationKeys
     CategorySelection.TranslationKeys,
     SubCategorySelection.TranslationKeys,
     BarCodeScan.TranslationKeys,
-    ActDetail.TranslationKeys {}
+    MonthlyEmissions.TranslationKeys,
+    ActDetail.TranslationKeys,
+    Languages.TranslationKeys {}
 
-export { en, de, fr, sv, pt, es, pl, ru, da };
+export { en, de, fr, sv, pt, es, pl, ru, da, zh, ms };

@@ -322,6 +322,27 @@ exports[`renders correctly Primary 1`] = `
 </Text>
 `;
 
+exports[`renders correctly Primary blue 1`] = `
+<Text
+  blue={true}
+  style={
+    Array [
+      Object {
+        "color": "#111714",
+        "fontFamily": "Inter-Medium",
+        "fontSize": 18,
+      },
+      undefined,
+      Object {
+        "color": "#3957D0",
+      },
+    ]
+  }
+>
+  test
+</Text>
+`;
+
 exports[`renders correctly Primary bold 1`] = `
 <Text
   bold={true}
@@ -604,6 +625,27 @@ exports[`renders correctly Secondary lightWeightText 1`] = `
       undefined,
       Object {
         "fontFamily": "Inter-Light-BETA",
+      },
+    ]
+  }
+>
+  test
+</Text>
+`;
+
+exports[`renders correctly Secondary orange 1`] = `
+<Text
+  orange={true}
+  style={
+    Array [
+      Object {
+        "color": "#111714",
+        "fontFamily": "Inter-Medium",
+        "fontSize": 16,
+      },
+      undefined,
+      Object {
+        "color": "#EB9276",
       },
     ]
   }

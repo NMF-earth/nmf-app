@@ -1,6 +1,7 @@
 import React from "react";
 import { View } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+import { StackNavigationOptions } from "@react-navigation/stack";
 
 import { Layout } from "constant";
 import { platform } from "utils";
@@ -9,7 +10,7 @@ import { navigate } from "navigation";
 
 const iconStyle = { paddingRight: Layout.PADDING_HORIZONTAL };
 
-const navigationOptionsAndroid = () => ({
+const navigationOptionsAndroid = (): StackNavigationOptions => ({
   ...ComponentsStyle.transitionBetweenScreenPresets,
   headerStyle: {
     ...ComponentsStyle.header,
@@ -18,7 +19,7 @@ const navigationOptionsAndroid = () => ({
   headerRight: () => null,
 });
 
-const navigationOptionsIOS = ({ navigation }) => ({
+const navigationOptionsIOS = ({ navigation }): StackNavigationOptions => ({
   headerStyle: {
     ...ComponentsStyle.header,
     borderBottomWidth: 0,

@@ -118,7 +118,7 @@ describe("getC02ValueFromEmission should return the correct co2 emitted value fo
     );
   });
   it("custom emission", () => {
-    // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
     expect(calculation.getC02ValueFromEmission(emissionCustom)).toEqual(emissionCustom.value);
   });
@@ -177,7 +177,7 @@ describe("getLatestEmission should return the latest emission emitted", () => {
 describe("getCarbonIntensityInGramPerKWHromKgPerJoules should convert data from kgCO2/J to gCO2/kWh", () => {
   it("if no emissions", () => {
     expect(calculation.getCarbonIntensityInGramPerKWHromKgPerJoules(electricity.france)).toEqual(
-      31
+      35
     );
   });
 });

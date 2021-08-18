@@ -12,7 +12,7 @@ exports[`ProgressChart renders correctly 1`] = `
       "marginHorizontal": 0,
       "marginVertical": 24,
       "paddingBottom": 14,
-      "paddingHorizontal": 14,
+      "paddingHorizontal": 16,
       "paddingTop": 10,
     }
   }

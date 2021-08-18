@@ -22,7 +22,7 @@ const socialMedia = [
   },
 ];
 
-const SocialMedia = () => (
+const SocialMedia: React.FC = () => (
   <View style={styles.container}>
     <View style={styles.box}>
       {socialMedia.map((item, index) => (

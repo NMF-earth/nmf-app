@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: "row",
     justifyContent: "space-between",
-    paddingVertical: 10,
+    paddingVertical: Layout.SPACING.DOUBLE,
     paddingHorizontal: Layout.PADDING_HORIZONTAL,
     backgroundColor: Colors.white,
     ...ComponentsStyle.header,

@@ -10,7 +10,7 @@ import StickersImage from "../StickersImage";
 import Button from "../Button";
 import styles from "./NoEmission.styles";
 
-export default function NoEmission() {
+const NoEmission: React.FC = () => {
   const navigation = useNavigation();
   const navigator = navigate(navigation);
 
@@ -36,4 +36,6 @@ export default function NoEmission() {
       </View>
     </ScrollView>
   );
-}
+};
+
+export default NoEmission;

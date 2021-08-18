@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { View } from "react-native";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { StatusBar } from "expo-status-bar";
@@ -14,38 +14,29 @@ import { enableScreens } from "react-native-screens";
 
 import AppNavigator from "./app/navigation/Navigator/AppNavigator";
 import store from "./app/redux/store";
-import SplashScreen from "./app/screens/Splash";
 import { LocalizationContext } from "./app/utils";
 
-const supportedLanguages: string[] = [
-  "en",
-  "fr",
-  "de",
-  "sv",
-  "da",
-  "ru",
-  "pt",
-  "pl",
-];
+const supportedLanguages: string[] = ["en", "fr", "de", "sv", "da", "ru", "pt", "pl", "zh", "my"];
 const defaultLanguage = "en";
 const defaultLocale = "en-us";
 
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+const release = Constants.manifest.revisionId || "0.0.0";
+
 if (!__DEV__) {
-  const secret =
-    require("./secret.ts").default || require("./secret.example.ts").default;
+  const secret = require("./secret.ts").default || require("./secret.example.ts").default;
 
   /* TODO: change secret.dsn to Constants.manifest.extra.sentryPublicDsn */
   Sentry.init({
     dsn: secret.dsn,
     enableInExpoDevelopment: false,
     debug: true,
+    release,
   });
-
-  /* TODO: set Constants.manifest.revisionId with expo */
-  Sentry.setRelease(Constants.manifest.revisionId);
 }
 
-const App: React.FC<{}> = () => {
+const App: React.FC = () => {
   enableScreens();
 
   let lang = localeExpo.substring(0, 2);
@@ -55,7 +46,6 @@ const App: React.FC<{}> = () => {
   }
 
   const [ready, setReady] = useState(false);
-  const [splashAnimation, setSplashAnimation] = useState(__DEV__); // to track splashScreen animation
   const [language, setLanguage] = useState(lang);
   const [locale, setLocale] = useState(localeExpo);
 
@@ -73,17 +63,16 @@ const App: React.FC<{}> = () => {
       .then(() => {
         setReady(true);
       })
-      .catch((error) => Sentry.captureException(error));
+      .catch((error) => {
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
+        Sentry.captureException(error);
+      });
   }, []);
 
-  // callback to get splashScreen animation completion
-  const screenAnimationComplete = useCallback((animation) => {
-    setSplashAnimation(animation);
-  }, []);
+  let body = <View />;
 
-  let body = <SplashScreen screenAnimationComplete={screenAnimationComplete} />;
-
-  if (ready && splashAnimation) {
+  if (ready) {
     body = (
       <Provider store={store}>
         <FormattedProvider locale={language || defaultLanguage}>
@@ -100,13 +89,11 @@ const App: React.FC<{}> = () => {
         </FormattedProvider>
       </Provider>
     );
-  } else if (__DEV__) {
-    body = <View />;
   }
 
   return (
     <SafeAreaProvider>
-      <StatusBar />
+      <StatusBar style="dark" />
       {body}
     </SafeAreaProvider>
   );

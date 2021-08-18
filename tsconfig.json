@@ -18,6 +18,7 @@
       "navigation/*": ["app/navigation/*"], 
       "style/*": ["app/style/*"], 
       "utils/*": ["app/utils/*"],
-    },
-  }
+    }
+  },
+  "extends": "expo/tsconfig.base"
 }

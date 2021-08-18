@@ -1,3 +1,4 @@
+/* eslint-disable  @typescript-eslint/explicit-module-boundary-types */
 import throttle from "lodash.throttle";
 
 const navigateOneTime = (navigate) => throttle(navigate, 1000, { trailing: false });
@@ -71,8 +72,17 @@ const openBarCodeScan = (navigation) => (props = {}) => {
   navigation.push("BarCodeScan", props);
 };
 
+const openMonthlyEmissions = (navigation) => (props = {}) => {
+  navigation.push("MonthlyEmissions", props);
+};
+
+const openLanguages = (navigation) => (props = {}) => {
+  navigation.push("Languages", props);
+};
+
 const navigate = (navigation) => ({
   goBack: navigation.goBack,
+  openMonthlyEmissions: navigateOneTime(openMonthlyEmissions(navigation)),
   openCategorySelection: navigateOneTime(openCategorySelection(navigation)),
   openSubCategorySelection: navigateOneTime(openSubCategorySelection(navigation)),
   openMyData: navigateOneTime(openMyData(navigation)),
@@ -89,6 +99,7 @@ const navigate = (navigation) => ({
   openNotifications: navigateOneTime(openNotifications(navigation)),
   openSupportUs: navigateOneTime(openSupportUs(navigation)),
   openStorybook: navigateOneTime(openStorybook(navigation)),
+  openLanguages: navigateOneTime(openLanguages(navigation)),
 });
 
 export default navigate;

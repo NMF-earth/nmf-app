@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Text, SelectableListItem } from "components";
 import { userPreferences } from "ducks";
 import { t, calculation } from "utils";
+import { NavStatelessComponent } from "interfaces";
 
 import navigationOptions from "./MyLocationScreen.navigationOptions";
 import styles from "./MyLocationScreen.styles";
@@ -29,7 +30,7 @@ const Country: React.FC<{
   );
 };
 
-const MyLocationScreen = () => {
+const MyLocationScreen: NavStatelessComponent = () => {
   const dispatch = useDispatch();
   const location = useSelector(userPreferences.selectors.getLocation);
 
@@ -57,19 +58,21 @@ const MyLocationScreen = () => {
         </Text.Primary>
       </View>
       <ScrollView style={styles.scrollContainer}>
-        {Object.keys(ElectricityType).map((country: ElectricityType) => (
-          <Country
-            key={country}
-            selectedCountry={location}
-            country={country}
-            onSelectCountry={onPress}
-          />
-        ))}
+        {Object.keys(ElectricityType)
+          .filter((item) => item != "danmark")
+          .map((country: ElectricityType) => (
+            <Country
+              key={country}
+              selectedCountry={location}
+              country={country}
+              onSelectCountry={onPress}
+            />
+          ))}
       </ScrollView>
     </View>
   );
 };
 
-MyLocationScreen.navigationOptions = navigationOptions;
+MyLocationScreen.navigationOptions = navigationOptions();
 
 export default MyLocationScreen;

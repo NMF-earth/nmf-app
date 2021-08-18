@@ -6,7 +6,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
     Object {
       "backgroundColor": "#FFFFFF",
       "flex": 1,
-      "paddingHorizontal": 14,
+      "paddingHorizontal": 16,
     }
   }
 >
@@ -328,7 +328,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
             }
           }
         >
-          DANMARK
+          DENMARK
         </Text.Primary>
       </TouchableOpacity>
       <TouchableOpacity
@@ -857,6 +857,138 @@ exports[`MyLocationScreen renders correctly 1`] = `
           }
         >
           AUSTRALIA
+        </Text.Primary>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          RUSSIA
+        </Text.Primary>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          INDIA
+        </Text.Primary>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          NIGERIA
+        </Text.Primary>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          CANADA
+        </Text.Primary>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          ICELAND
+        </Text.Primary>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            Object {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          ISRAEL
         </Text.Primary>
       </TouchableOpacity>
     </View>

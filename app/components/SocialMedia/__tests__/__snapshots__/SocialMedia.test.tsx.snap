@@ -7,7 +7,6 @@ exports[`renders correctly SocialMedia 1`] = `
       "flex": 1,
       "flexDirection": "row",
       "justifyContent": "center",
-      "paddingTop": 20,
     }
   }
 >

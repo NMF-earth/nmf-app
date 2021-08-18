@@ -151,6 +151,13 @@ describe("if there are emissions", () => {
   test("`getMealEmissions` should return meal emissions", () =>
     expect(emissions.selectors.getMealEmissions(state)).toEqual([emissionMeal]));
 
+  test("`getEatableEmissions` should return meal & food emissions", () =>
+    expect(emissions.selectors.getEatableEmissions(state)).toEqual([
+      emissionMitigated,
+      emissionFood,
+      emissionMeal,
+    ]));
+
   test("`getOtherEmissions` should return other emissions", () =>
     expect(emissions.selectors.getOtherEmissions(state)).toEqual([
       emissionCustom,
@@ -201,4 +208,7 @@ describe("if there are no emissions", () => {
 
   test("`getMealEmissions` should return mitigated no emission", () =>
     expect(emissions.selectors.getMealEmissions(state)).toEqual([]));
+
+  test("`getEatableEmissions` should return mitigated no emission", () =>
+    expect(emissions.selectors.getEatableEmissions(state)).toEqual([]));
 });

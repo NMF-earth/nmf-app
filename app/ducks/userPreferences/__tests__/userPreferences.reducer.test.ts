@@ -1,5 +1,7 @@
 import { ElectricityType } from "carbon-footprint";
 
+import { currentLanguage } from "utils";
+
 import userPreferences from "../";
 
 describe("userPreferences reducer should", () => {
@@ -10,6 +12,7 @@ describe("userPreferences reducer should", () => {
       acceptedTermsOfUseVersion: 0,
       activatedNotifications: false,
       location: ElectricityType.world,
+      language: currentLanguage,
     });
   });
 
@@ -25,6 +28,7 @@ describe("userPreferences reducer should", () => {
       acceptedTermsOfUseVersion: 2,
       activatedNotifications: false,
       location: ElectricityType.world,
+      language: currentLanguage,
     });
   });
 
@@ -38,6 +42,7 @@ describe("userPreferences reducer should", () => {
       acceptedTermsOfUseVersion: 0,
       activatedNotifications: false,
       location: ElectricityType.belgium,
+      language: currentLanguage,
     });
   });
 
@@ -51,6 +56,21 @@ describe("userPreferences reducer should", () => {
       acceptedTermsOfUseVersion: 0,
       activatedNotifications: true,
       location: ElectricityType.world,
+      language: currentLanguage,
+    });
+  });
+
+  it("handle language change", () => {
+    const expectedAction = {
+      type: userPreferences.actions.changeLanguage.toString(),
+      payload: "fr",
+    };
+
+    expect(userPreferences.reducer(undefined, expectedAction)).toEqual({
+      acceptedTermsOfUseVersion: 0,
+      activatedNotifications: false,
+      location: ElectricityType.world,
+      language: "fr",
     });
   });
 });

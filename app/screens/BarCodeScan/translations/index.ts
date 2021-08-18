@@ -7,9 +7,11 @@ import pt from "./pt.json";
 import da from "./da.json";
 import ru from "./ru.json";
 import pl from "./pl.json";
+import zh from "./zh.json";
+import ms from "./ms.json";
 
 interface TranslationKeys {
   BAR_CODE_SCAN_SCREEN_TITLE: string;
 }
 
-export { en, fr, de, sv, es, pt, da, ru, pl, TranslationKeys };
+export { en, fr, de, sv, es, pt, da, ru, pl, zh, ms, TranslationKeys };

@@ -1,10 +1,13 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { ElectricityType } from "carbon-footprint";
 
+import { currentLanguage } from "utils";
+
 const initialState = {
   acceptedTermsOfUseVersion: 0,
   activatedNotifications: false,
   location: ElectricityType.world,
+  language: currentLanguage,
 };
 
 const userPreferences = createSlice({
@@ -20,15 +23,24 @@ const userPreferences = createSlice({
     updateLocation(state, action: PayloadAction<ElectricityType>) {
       state.location = action.payload;
     },
+    changeLanguage(state, action: PayloadAction<string>) {
+      state.language = action.payload;
+    },
   },
 });
 
-const { acceptTermsOfUse, updateLocation, toggleNotifications } = userPreferences.actions;
+const {
+  acceptTermsOfUse,
+  updateLocation,
+  toggleNotifications,
+  changeLanguage,
+} = userPreferences.actions;
 
 export const actions = {
   acceptTermsOfUse,
   updateLocation,
   toggleNotifications,
+  changeLanguage,
 };
 
 export const namespace = userPreferences.name;

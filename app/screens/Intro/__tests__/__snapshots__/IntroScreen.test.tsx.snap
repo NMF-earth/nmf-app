@@ -8,7 +8,7 @@ exports[`renders correctly ComingSoon 1`] = `
       "backgroundColor": "#FFFFFF",
       "flex": 1,
       "justifyContent": "space-between",
-      "paddingHorizontal": 14,
+      "paddingHorizontal": 16,
     }
   }
 >
@@ -28,7 +28,7 @@ exports[`renders correctly ComingSoon 1`] = `
       Object {
         "alignItems": "center",
         "flex": 2,
-        "paddingHorizontal": 14,
+        "paddingHorizontal": 16,
       }
     }
   >
@@ -64,9 +64,9 @@ exports[`renders correctly ComingSoon 1`] = `
     <View
       style={
         Object {
-          "bottom": 14,
+          "bottom": 16,
           "left": 0,
-          "marginHorizontal": 14,
+          "marginHorizontal": 16,
           "position": "absolute",
           "right": 0,
         }
