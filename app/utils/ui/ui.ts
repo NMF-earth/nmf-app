@@ -38,6 +38,10 @@ const getTranslationEmissionType = (emissionType: EmissionType): string => {
       return t("UI_STREAMING");
     case EmissionType.transport:
       return t("UI_TRANSPORT");
+    case EmissionType.productScanned:
+      return t("UI_SCAN_PRODUCT");
+    default:
+      return "";
   }
 };
 
@@ -45,6 +49,8 @@ const getTranslationEmissionModelType = (emissionModelType: EmissionModelType): 
   switch (emissionModelType) {
     case EmissionType.custom:
       return t("UI_CUSTOM");
+    case EmissionType.productScanned:
+      return t("UI_SCAN_PRODUCT");
     case FoodType.beans:
       return t("UI_BEANS");
     case FoodType.beef:
@@ -171,6 +177,8 @@ const getIconFromModelType = (emissionModelType: EmissionModelType): string => {
   switch (emissionModelType) {
     case EmissionType.custom:
       return "md-build";
+    case EmissionType.productScanned:
+      return "barcode-sharp";
     case FoodType.coffee:
       return "md-cafe";
     case TransportType.shortHaulFlight:

@@ -28,6 +28,7 @@ type EmissionModelType =
   | PurchaseType
   | FashionType
   | MealType
+  | "productScanned"
   | "custom";
 
 interface EmissionPayload {
