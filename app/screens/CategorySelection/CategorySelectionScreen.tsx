@@ -1,5 +1,5 @@
 import React from "react";
-import { ScrollView } from "react-native";
+import { ScrollView, View } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
 import { navigate } from "navigation";
@@ -18,6 +18,8 @@ const CategorySelectionScreen: NavStatelessComponent = () => {
   const onPress = ({ emissionType }) => {
     if (emissionType === EmissionType.custom || emissionType === EmissionType.electricity) {
       navigator.openAddEmission({ emissionType });
+    } else if (emissionType === EmissionType.productScanned) {
+      navigator.openBarCodeScan({ emissionType });
     } else {
       navigator.openSubCategorySelection({ emissionType });
     }
@@ -34,6 +36,7 @@ const CategorySelectionScreen: NavStatelessComponent = () => {
           onPress={() => onPress(category)}
         />
       ))}
+      <View style={styles.separator}></View>
     </ScrollView>
   );
 };

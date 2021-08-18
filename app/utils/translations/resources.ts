@@ -18,6 +18,7 @@ import * as InfoModal from "../../screens/InfoModal/translations";
 import * as MyData from "../../screens/MyData/translations";
 import * as CategorySelection from "../../screens/CategorySelection/translations";
 import * as SubCategorySelection from "../../screens/SubCategorySelection/translations";
+import * as BarCodeScan from "../../screens/BarCodeScan/translations";
 import * as MonthlyEmissions from "../../screens/MonthlyEmissions/translations";
 import * as Languages from "../../screens/Languages/translations";
 
@@ -46,10 +47,11 @@ const en = {
   ...MyData.en,
   ...CategorySelection.en,
   ...SubCategorySelection.en,
+  ...BarCodeScan.en,
   ...MonthlyEmissions.en,
+  ...Languages.en,
   ...NoEmission.en,
   ...UI.en,
-  ...Languages.en,
 };
 
 const de = {
@@ -72,6 +74,7 @@ const de = {
   ...SubCategorySelection.de,
   ...ActDetail.de,
   ...MyData.de,
+  ...BarCodeScan.de,
   ...MonthlyEmissions.de,
   ...Languages.de,
 };
@@ -97,6 +100,7 @@ const fr = {
   ...MyData.fr,
   ...CategorySelection.fr,
   ...SubCategorySelection.fr,
+  ...BarCodeScan.fr,
   ...MonthlyEmissions.fr,
   ...Languages.fr,
 };
@@ -122,6 +126,7 @@ const sv = {
   ...MyData.sv,
   ...CategorySelection.sv,
   ...SubCategorySelection.sv,
+  ...BarCodeScan.sv,
   ...MonthlyEmissions.sv,
   ...Languages.sv,
 };
@@ -146,6 +151,7 @@ const pt = {
   ...MyData.pt,
   ...CategorySelection.pt,
   ...SubCategorySelection.pt,
+  ...BarCodeScan.pt,
   ...MonthlyEmissions.pt,
   ...Languages.pt,
 };
@@ -170,6 +176,7 @@ const es = {
   ...MyData.es,
   ...CategorySelection.es,
   ...SubCategorySelection.es,
+  ...BarCodeScan.es,
   ...MonthlyEmissions.es,
   ...Languages.es,
 };
@@ -194,6 +201,7 @@ const ru = {
   ...MyData.ru,
   ...CategorySelection.ru,
   ...SubCategorySelection.ru,
+  ...BarCodeScan.ru,
   ...MonthlyEmissions.ru,
   ...Languages.ru,
 };
@@ -218,6 +226,7 @@ const pl = {
   ...MyData.pl,
   ...CategorySelection.pl,
   ...SubCategorySelection.pl,
+  ...BarCodeScan.pl,
   ...MonthlyEmissions.pl,
   ...Languages.pl,
 };
@@ -242,6 +251,7 @@ const da = {
   ...MyData.da,
   ...CategorySelection.da,
   ...SubCategorySelection.da,
+  ...BarCodeScan.da,
   ...MonthlyEmissions.da,
   ...Languages.da,
 };
@@ -266,7 +276,9 @@ const zh = {
   ...MyData.zh,
   ...CategorySelection.zh,
   ...SubCategorySelection.zh,
+  ...BarCodeScan.zh,
   ...MonthlyEmissions.zh,
+  ...Languages.zh,
 };
 
 const ms = {
@@ -289,7 +301,9 @@ const ms = {
   ...MyData.ms,
   ...CategorySelection.ms,
   ...SubCategorySelection.ms,
+  ...BarCodeScan.ms,
   ...MonthlyEmissions.ms,
+  ...Languages.ms,
 };
 
 export interface TranslationKeys
@@ -312,6 +326,7 @@ export interface TranslationKeys
     MyData.TranslationKeys,
     CategorySelection.TranslationKeys,
     SubCategorySelection.TranslationKeys,
+    BarCodeScan.TranslationKeys,
     MonthlyEmissions.TranslationKeys,
     ActDetail.TranslationKeys,
     Languages.TranslationKeys {}

@@ -2282,9 +2282,9 @@
     react-native-iphone-x-helper "^1.3.0"
 
 "@react-navigation/core@^5.12.4":
-  version "5.16.0"
-  resolved "https://registry.yarnpkg.com/@react-navigation/core/-/core-5.16.0.tgz#93f96661df146180415e9c852f4d604884877e63"
-  integrity sha512-dy/sfO2Tl41r3vB2uUXTh6d9HY7Q2i43CxfqsU4fnGw5QRmp+7LaMidhGYOoH1wJ50IMWoBC2TdAr0x+5iluHg==
+  version "5.16.1"
+  resolved "https://registry.yarnpkg.com/@react-navigation/core/-/core-5.16.1.tgz#e0d308bd9bbd930114ce55c4151806b6d7907f69"
+  integrity sha512-3AToC7vPNeSNcHFLd1h71L6u34hfXoRAS1CxF9Fc4uC8uOrVqcNvphpeFbE0O9Bw6Zpl0BnMFl7E5gaL3KGzNA==
   dependencies:
     "@react-navigation/routers" "^5.7.4"
     escape-string-regexp "^4.0.0"
@@ -4902,15 +4902,15 @@ browserslist@4.7.0:
     node-releases "^1.1.29"
 
 browserslist@^4.12.0, browserslist@^4.16.6, browserslist@^4.16.7:
-  version "4.16.7"
-  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.16.7.tgz#108b0d1ef33c4af1b587c54f390e7041178e4335"
-  integrity sha512-7I4qVwqZltJ7j37wObBe3SoTz+nS8APaNcrBOlgoirb6/HbEU2XxW/LpUDTCngM6iauwFqmRTuOMfyKnFGY5JA==
+  version "4.16.8"
+  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.16.8.tgz#cb868b0b554f137ba6e33de0ecff2eda403c4fb0"
+  integrity sha512-sc2m9ohR/49sWEbPj14ZSSZqp+kbi16aLao42Hmn3Z8FpjuMaq2xCA2l4zl9ITfyzvnvyE0hcg62YkIGKxgaNQ==
   dependencies:
-    caniuse-lite "^1.0.30001248"
-    colorette "^1.2.2"
-    electron-to-chromium "^1.3.793"
+    caniuse-lite "^1.0.30001251"
+    colorette "^1.3.0"
+    electron-to-chromium "^1.3.811"
     escalade "^3.1.1"
-    node-releases "^1.1.73"
+    node-releases "^1.1.75"
 
 bser@2.1.1:
   version "2.1.1"
@@ -5090,7 +5090,7 @@ can-use-dom@^0.1.0:
   resolved "https://registry.yarnpkg.com/can-use-dom/-/can-use-dom-0.1.0.tgz#22cc4a34a0abc43950f42c6411024a3f6366b45a"
   integrity sha1-IsxKNKCrxDlQ9CxkEQJKP2NmtFo=
 
-caniuse-lite@^1.0.30000989, caniuse-lite@^1.0.30001109, caniuse-lite@^1.0.30001248:
+caniuse-lite@^1.0.30000989, caniuse-lite@^1.0.30001109, caniuse-lite@^1.0.30001251:
   version "1.0.30001251"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001251.tgz#6853a606ec50893115db660f82c094d18f096d85"
   integrity sha512-HOe1r+9VkU4TFmnU70z+r7OLmtR+/chB1rdcJUeQlAinjEeb0cKL20tlAtOagNZhbrtLnCvV19B4FmF1rgzl6A==
@@ -5429,7 +5429,7 @@ color@^3.1.2, color@^3.1.3:
     color-convert "^1.9.3"
     color-string "^1.6.0"
 
-colorette@^1.0.7, colorette@^1.2.1, colorette@^1.2.2:
+colorette@^1.0.7, colorette@^1.2.1, colorette@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/colorette/-/colorette-1.3.0.tgz#ff45d2f0edb244069d3b772adeb04fed38d0a0af"
   integrity sha512-ecORCqbSFP7Wm8Y6lyqMJjexBQqXSF7SSeaTyGGphogUjBlFP9m9o08wy86HL2uB7fMTxtOUzLMk7ogKcxMg1w==
@@ -5637,17 +5637,17 @@ copy-to-clipboard@^3.0.8:
     toggle-selection "^1.0.6"
 
 core-js-compat@^3.14.0, core-js-compat@^3.16.0, core-js-compat@^3.8.0:
-  version "3.16.1"
-  resolved "https://registry.yarnpkg.com/core-js-compat/-/core-js-compat-3.16.1.tgz#c44b7caa2dcb94b673a98f27eee1c8312f55bc2d"
-  integrity sha512-NHXQXvRbd4nxp9TEmooTJLUf94ySUG6+DSsscBpTftN1lQLQ4LjnWvc7AoIo4UjDsFF3hB8Uh5LLCRRdaiT5MQ==
+  version "3.16.2"
+  resolved "https://registry.yarnpkg.com/core-js-compat/-/core-js-compat-3.16.2.tgz#442ef1d933ca6fc80859bd5a1db7a3ba716aaf56"
+  integrity sha512-4lUshXtBXsdmp8cDWh6KKiHUg40AjiuPD3bOWkNVsr1xkAhpUqCjaZ8lB1bKx9Gb5fXcbRbFJ4f4qpRIRTuJqQ==
   dependencies:
     browserslist "^4.16.7"
     semver "7.0.0"
 
 core-js-pure@^3.0.1:
-  version "3.16.1"
-  resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.16.1.tgz#b997df2669c957a5b29f06e95813a171f993592e"
-  integrity sha512-TyofCdMzx0KMhi84mVRS8rL1XsRk2SPUNz2azmth53iRN0/08Uim9fdhQTaZTG1LqaXHYVci4RDHka6WrXfnvg==
+  version "3.16.2"
+  resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.16.2.tgz#0ef4b79cabafb251ea86eb7d139b42bd98c533e8"
+  integrity sha512-oxKe64UH049mJqrKkynWp6Vu0Rlm/BTXO/bJZuN2mmR3RtOFNepLlSWDd1eo16PzHpQAoNG97rLU1V/YxesJjw==
 
 core-js@^1.0.0:
   version "1.2.7"
@@ -5660,9 +5660,9 @@ core-js@^2.4.0, core-js@^2.4.1:
   integrity sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ==
 
 core-js@^3.0.1, core-js@^3.0.4:
-  version "3.16.1"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.16.1.tgz#f4485ce5c9f3c6a7cb18fa80488e08d362097249"
-  integrity sha512-AAkP8i35EbefU+JddyWi12AWE9f2N/qr/pwnDtWz4nyUIBGMJPX99ANFFRSw6FefM374lDujdtLDyhN2A/btHw==
+  version "3.16.2"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.16.2.tgz#3f485822889c7fc48ef463e35be5cc2a4a01a1f4"
+  integrity sha512-P0KPukO6OjMpjBtHSceAZEWlDD1M2Cpzpg6dBbrjFqFhBHe/BwhxaP820xKOjRn/lZRQirrCusIpLS/n2sgXLQ==
 
 core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
@@ -6306,10 +6306,10 @@ ejs@^2.6.1:
   resolved "https://registry.yarnpkg.com/ejs/-/ejs-2.7.4.tgz#48661287573dcc53e366c7a1ae52c3a120eec9ba"
   integrity sha512-7vmuyh5+kuUyJKePhQfRQBhXV5Ce+RnaeeQArKu1EAMpL3WbgMt5WG6uQZpEVvYSSsxMXRKOewtDk9RaTKXRlA==
 
-electron-to-chromium@^1.3.247, electron-to-chromium@^1.3.793:
-  version "1.3.806"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.806.tgz#21502100f11aead6c501d1cd7f2504f16c936642"
-  integrity sha512-AH/otJLAAecgyrYp0XK1DPiGVWcOgwPeJBOLeuFQ5l//vhQhwC9u6d+GijClqJAmsHG4XDue81ndSQPohUu0xA==
+electron-to-chromium@^1.3.247, electron-to-chromium@^1.3.811:
+  version "1.3.811"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.811.tgz#df5a7b18267a0b8b6ffed0dde63b9fb701f777f8"
+  integrity sha512-hv3kgf6YSd+jQ7J+7Kdm44yux/1vxcAwfGV/6M6Nq4E9zJ3Bml/P2+vULCvqLS6Lh9knBCQ7iEMvyeDiGe5EbA==
 
 element-resize-detector@^1.2.1:
   version "1.2.3"
@@ -6898,6 +6898,14 @@ expo-asset@8.3.3, expo-asset@~8.3.2:
     md5-file "^3.2.3"
     path-browserify "^1.0.0"
     url-parse "^1.4.4"
+
+expo-barcode-scanner@10.2.2:
+  version "10.2.2"
+  resolved "https://registry.yarnpkg.com/expo-barcode-scanner/-/expo-barcode-scanner-10.2.2.tgz#506256ce4aafae5b17da77dceeb52831de20971b"
+  integrity sha512-FWGyNB88kntUV1ckpEcCiq8iepu9EJO/cK0bDnp42ieydBhKlTPXH/d/3ipBFbE+Ia7MNfddjzmzbDCadJukcg==
+  dependencies:
+    "@expo/config-plugins" "^3.0.0"
+    expo-modules-core "~0.2.0"
 
 expo-constants@11.0.1, expo-constants@~11.0.1:
   version "11.0.1"
@@ -7789,6 +7797,14 @@ get-stream@^5.0.0:
   dependencies:
     pump "^3.0.0"
 
+get-symbol-description@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/get-symbol-description/-/get-symbol-description-1.0.0.tgz#7fdb81c900101fbd564dd5f1a30af5aadc1e58d6"
+  integrity sha512-2EmdH1YvIQiZpltCNgkuiUnyukzxM/R6NDJX31Ke3BG1Nq5b0S2PhX59UKi9vZpPDQVdqn+1IcaAwnzTT5vCjw==
+  dependencies:
+    call-bind "^1.0.2"
+    get-intrinsic "^1.1.1"
+
 get-value@^2.0.3, get-value@^2.0.6:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/get-value/-/get-value-2.0.6.tgz#dc15ca1c672387ca76bd37ac0a395ba2042a2c28"
@@ -8624,9 +8640,9 @@ is-ci@^2.0.0:
     ci-info "^2.0.0"
 
 is-core-module@^2.2.0:
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/is-core-module/-/is-core-module-2.5.0.tgz#f754843617c70bfd29b7bd87327400cda5c18491"
-  integrity sha512-TXCMSDsEHMEEZ6eCA8rwRDbLu55MRGmrctljsBX/2v1d9/GzqHOxW5c5oPSgrUt2vBFXebu9rGqckXGPWOlYpg==
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/is-core-module/-/is-core-module-2.6.0.tgz#d7553b2526fe59b92ba3e40c8df757ec8a709e19"
+  integrity sha512-wShG8vs60jKfPWpF2KZRaAtvt3a20OAn7+IJ6hLPECpSABLcKtFKTTI4ZtH5QcBruBHlq+WsdHWyz0BCZW7svQ==
   dependencies:
     has "^1.0.3"
 
@@ -10719,10 +10735,10 @@ node-notifier@^6.0.0:
     shellwords "^0.1.1"
     which "^1.3.1"
 
-node-releases@^1.1.29, node-releases@^1.1.73:
-  version "1.1.74"
-  resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-1.1.74.tgz#e5866488080ebaa70a93b91144ccde06f3c3463e"
-  integrity sha512-caJBVempXZPepZoZAPCWRTNxYQ+xtG/KAi4ozTA5A+nJ7IU+kLQCbqaUjb5Rwy14M9upBWiQ4NutcmW04LJSRw==
+node-releases@^1.1.29, node-releases@^1.1.75:
+  version "1.1.75"
+  resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-1.1.75.tgz#6dd8c876b9897a1b8e5a02de26afa79bb54ebbfe"
+  integrity sha512-Qe5OUajvqrqDSy6wrWFmMwfJ0jVgwiw4T3KqmbTcZ62qW0gQkheXYhcFM1+lOVcGUoRxcEcfyvFMAnDgaF1VWw==
 
 node-stream-zip@^1.9.1:
   version "1.14.0"
@@ -11966,9 +11982,9 @@ react-dev-utils@^9.0.0:
     text-table "0.2.0"
 
 react-devtools-core@^4.6.0:
-  version "4.15.0"
-  resolved "https://registry.yarnpkg.com/react-devtools-core/-/react-devtools-core-4.15.0.tgz#c0fa2a0a1c966bef2705d52aacee3f143cfac092"
-  integrity sha512-Y1NwrWSKRg4TtwcES2upzXFDmccAW9jrGQG2D8EGQrZhK+0hmuhgFnSdKpFc3z04CSeDT5t83RMXcmX5TkR1dA==
+  version "4.16.0"
+  resolved "https://registry.yarnpkg.com/react-devtools-core/-/react-devtools-core-4.16.0.tgz#c640ab15b98d077bc47f10f84fc8ed3633f537bd"
+  integrity sha512-fqyVbp+wVVey6O4uVBk5s3J/vTiPludp7lulr6a8asTBm7DIA0vLBbjmAOLCnOlkWcgdy4mjsqOgNCbu8uICWw==
   dependencies:
     shell-quote "^1.6.1"
     ws "^7"
@@ -13768,13 +13784,13 @@ symbol-tree@^3.2.2:
   integrity sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==
 
 symbol.prototype.description@^1.0.0:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/symbol.prototype.description/-/symbol.prototype.description-1.0.4.tgz#c30edd3fe8c040d941cf7dc15842be15adf66855"
-  integrity sha512-fZkHwJ8ZNRVRzF/+/2OtygyyH06CjC0YZAQRHu9jKKw8RXlJpbizEHvGRUu22Qkg182wJk1ugb5Aovcv3UPrww==
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/symbol.prototype.description/-/symbol.prototype.description-1.0.5.tgz#d30e01263b6020fbbd2d2884a6276ce4d49ab568"
+  integrity sha512-x738iXRYsrAt9WBhRCVG5BtIC3B7CUkFwbHW2zOvGtwM33s7JjrCDyq8V0zgMYVb5ymsL8+qkzzpANH63CPQaQ==
   dependencies:
     call-bind "^1.0.2"
-    es-abstract "^1.18.0-next.2"
-    has-symbols "^1.0.1"
+    get-symbol-description "^1.0.0"
+    has-symbols "^1.0.2"
     object.getownpropertydescriptors "^2.1.2"
 
 table@^5.2.3:

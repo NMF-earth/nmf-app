@@ -16,6 +16,7 @@ enum EmissionType {
   electricity = "electricity",
   fashion = "fashion",
   meal = "meal",
+  productScanned = "productScanned",
   custom = "custom",
 }
 
@@ -27,6 +28,7 @@ type EmissionModelType =
   | PurchaseType
   | FashionType
   | MealType
+  | "productScanned"
   | "custom";
 
 interface EmissionPayload {
