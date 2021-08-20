@@ -60,6 +60,7 @@
 	"ADD_EMISSION_SCREEN_PICKER_MODAL_HEADER_TEXT": "Выберите дату",
 	"ADD_EMISSION_SCREEN_QUANTITY": "Количество",
 	"ADD_EMISSION_SCREEN_QUANTITY_OF_EMISSION": "Количество эмиссий",
+	"ADD_EMISSION_SCREEN_TAB_NAME":"Добавить эмиссию",
 	"ADD_EMISSION_SCREEN_TEXTINPUT_PLACEHOLDER": "например бургер, полет из Парижа в Рим...",
 	"ADD_EMISSION_SCREEN_TITLE": "Добавить эмиссию",
 	"ADD_EMISSION_SCREEN_TOTAL": "Всего",
