@@ -162,7 +162,7 @@ Run `expo build:ios -t archive` to build for the [App Store Connect](https://app
 
 ### 👨‍💻 Contribute ❤️
 
-More than 25 developers have contribute to the app, thanks a lot to [them](https://github.com/NMF-earth/nmf-app/graphs/contributors)!
+More than 30 developers have contribute to the app, thanks a lot to [them](https://github.com/NMF-earth/nmf-app/graphs/contributors)!
 
 Have a look to [contributing.md](https://github.com/NotMyFaultEarth/nmf-app/blob/main/contributing.md) if you want to contribute!
 

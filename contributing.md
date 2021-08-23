@@ -12,6 +12,10 @@ We love your input, whether it's:
 - Proposing improvement / new features
 - Becoming a maintainer
 
+### Translations fix
+
+Please fix translations on [POEditor](https://poeditor.com/join/project/0MbginCsWp) to avoid sync issues.
+
 ### Pull Requests
 
 We welcome pull requests to change the codebase.
