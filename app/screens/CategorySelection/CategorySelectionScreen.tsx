@@ -11,6 +11,15 @@ import { categories } from "./categoryList";
 import navigationOptions from "./CategorySelectionScreen.navigationOptions";
 import styles from "./CategorySelectionScreen.styles";
 
+// TODO: to be removed once scanned products emissions are released
+let cleanedCategories = categories.filter(
+  (item) => item.emissionType !== EmissionType.productScanned
+);
+
+if (__DEV__) {
+  cleanedCategories = categories;
+}
+
 const CategorySelectionScreen: NavStatelessComponent = () => {
   const navigation = useNavigation();
   const navigator = navigate(navigation);
@@ -28,7 +37,7 @@ const CategorySelectionScreen: NavStatelessComponent = () => {
   return (
     <ScrollView style={styles.container}>
       <Text.H2 style={styles.info}>{t("CATEGORY_SELECTION_SCREEN_SELECT_CATEGORY")}</Text.H2>
-      {categories.map((category, index) => (
+      {cleanedCategories.map((category, index) => (
         <Tag
           key={index}
           icon={category.icon}
