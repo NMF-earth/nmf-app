@@ -10,6 +10,7 @@ import ActNavigator from "./BottomTab/ActNavigator";
 import BudgetNavigator from "./BottomTab/BudgetNavigator";
 import EmissionsNavigator from "./BottomTab/EmissionsNavigator";
 import SettingsNavigator from "./BottomTab/SettingsNavigator";
+import AddEmissionNavigator from "./BottomTab/AddEmissionNavigator";
 
 const BottomTab = createBottomTabNavigator();
 
@@ -31,6 +32,11 @@ const ActOptions = {
 const SettingsOptions = {
   tabBarLabel: t("SETTINGS_SCREEN_TAB_NAME"),
   tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name={"md-options"} />,
+};
+
+const AddEmissionOptions = {
+  tabBarLabel: t("ADD_EMISSION_SCREEN_TAB_NAME"),
+  tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name={"md-add-circle"} />,
 };
 
 const BottomTabNavigator = (): React.ReactElement => {
@@ -57,6 +63,11 @@ const BottomTabNavigator = (): React.ReactElement => {
         name="EmissionsNavigator"
         options={EmissionsOptions}
         component={EmissionsNavigator}
+      />
+      <BottomTab.Screen
+        name="AddEmissionNavigator"
+        options={AddEmissionOptions}
+        component={AddEmissionNavigator}
       />
       <BottomTab.Screen name="Act" options={ActOptions} component={ActNavigator} />
       <BottomTab.Screen

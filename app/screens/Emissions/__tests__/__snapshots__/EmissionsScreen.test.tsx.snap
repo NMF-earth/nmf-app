@@ -1,42 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`EmissionsScreen renders correctly 1`] = `
-Array [
-  <View
-    style={
-      Object {
-        "backgroundColor": "#FFFFFF",
-        "flex": 1,
-      }
+<View
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "flex": 1,
     }
-  >
-    <EmissionsList />
-  </View>,
-  <View
-    style={
-      Object {
-        "bottom": 16,
-        "flexDirection": "row",
-        "left": 16,
-        "position": "absolute",
-        "right": 16,
-      }
-    }
-  >
-    <Button.Primary
-      fullWidth={true}
-      onPress={[Function]}
-      textType="Secondary"
-    >
-      <Text.Secondary
-        bold={true}
-        center={true}
-        numberOfLines={1}
-        white={true}
-      >
-        Add emission
-      </Text.Secondary>
-    </Button.Primary>
-  </View>,
-]
+  }
+>
+  <EmissionsList />
+</View>
 `;

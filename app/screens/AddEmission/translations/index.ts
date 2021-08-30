@@ -11,6 +11,7 @@ import zh from "./zh.json";
 import ms from "./ms.json";
 
 interface TranslationKeys {
+  ADD_EMISSION_SCREEN_TAB_NAME: string;
   ADD_EMISSION_SCREEN_TITLE: string;
   ADD_EMISSION_SCREEN_ELECTRICITY_CONSUMPTION: string;
   ADD_EMISSION_SCREEN_DURATION: string;
