@@ -10,7 +10,6 @@ import navigationOptions from "./EmissionsScreen.navigationOptions";
 
 const Emissions: NavStatelessComponent = () => {
   const emissions = useSelector(selectors.getEmissions);
-  console.log("🚀 ~ file: index.tsx ~ line 13 ~ emissions", emissions);
 
   if (emissions?.length) {
     return <EmissionsScreen emissions={emissions} />;
