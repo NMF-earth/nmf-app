@@ -1,3 +1,3 @@
-import EmissionsList from "./EmissionsList";
+import SectionHeader from "./SectionHeader";
 
-export { EmissionsList };
+export { SectionHeader };

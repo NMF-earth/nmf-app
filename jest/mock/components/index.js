@@ -19,7 +19,6 @@ jest.mock(
 jest.mock("../../../app/screens/Budget/components/ProgressChart/components/Chart", () => "Chart");
 
 /* Emissions Screen */
-jest.mock("../../../app/screens/Emissions/components/EmissionsList", () => "EmissionsList");
 jest.mock("../../../app/screens/Emissions/components/SectionHeader", () => "SectionHeader");
 
 /* Shared Components */

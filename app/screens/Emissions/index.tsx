@@ -2,18 +2,18 @@ import React from "react";
 import { useSelector } from "react-redux";
 
 import { NoEmission } from "components";
-import { emissions } from "ducks";
 import { NavStatelessComponent } from "interfaces";
 
+import { selectors } from "./ducks";
 import EmissionsScreen from "./EmissionsScreen";
 import navigationOptions from "./EmissionsScreen.navigationOptions";
 
 const Emissions: NavStatelessComponent = () => {
-  const emissionsToMitigate = useSelector(emissions.selectors.getEmissionsToMitigate);
-  const emissionsMitigated = useSelector(emissions.selectors.getEmissionsMitigated);
+  const emissions = useSelector(selectors.getEmissions);
+  console.log("🚀 ~ file: index.tsx ~ line 13 ~ emissions", emissions);
 
-  if (emissionsToMitigate.length || emissionsMitigated.length) {
-    return <EmissionsScreen />;
+  if (emissions?.length) {
+    return <EmissionsScreen emissions={emissions} />;
   }
 
   return <NoEmission />;

@@ -8,6 +8,14 @@ const openComingSoon = (navigation) => (props = {}) => {
   navigation.navigate("ComingSoon", props);
 };
 
+const openCategorySelection = (navigation) => (props = {}) => {
+  navigation.navigate("CategorySelection", props);
+};
+
+const openEmissions = (navigation) => (props = {}) => {
+  navigation.navigate("Emissions", props);
+};
+
 const openInfoModal = (navigation) => (props = {}) => {
   navigation.navigate("InfoModal", {
     screen: "InfoModal",
@@ -60,10 +68,6 @@ const openBudget = (navigation) => (props = {}) => {
   navigation.push("Budget", props);
 };
 
-const openCategorySelection = (navigation) => (props = {}) => {
-  navigation.push("CategorySelection", props);
-};
-
 const openSubCategorySelection = (navigation) => (props = {}) => {
   navigation.push("SubCategorySelection", props);
 };
@@ -100,6 +104,7 @@ const navigate = (navigation) => ({
   openSupportUs: navigateOneTime(openSupportUs(navigation)),
   openStorybook: navigateOneTime(openStorybook(navigation)),
   openLanguages: navigateOneTime(openLanguages(navigation)),
+  openEmissions: navigateOneTime(openEmissions(navigation)),
 });
 
 export default navigate;

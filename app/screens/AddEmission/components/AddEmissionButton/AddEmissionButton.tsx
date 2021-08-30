@@ -7,6 +7,7 @@ import { Text, Button } from "components";
 import { emissions } from "ducks";
 import { EmissionPayload } from "interfaces";
 import { t } from "utils";
+import { navigate } from "navigation";
 
 import styles from "./AddEmissionButton.styles";
 
@@ -17,6 +18,7 @@ interface Props {
 const AddEmissionButton: React.FC<Props> = ({ emissionPayload }) => {
   const dispatch = useDispatch();
   const navigation = useNavigation();
+  const navigator = navigate(navigation);
 
   const addEmission = () => {
     const emission = {
@@ -28,6 +30,7 @@ const AddEmissionButton: React.FC<Props> = ({ emissionPayload }) => {
     dispatch(emissions.actions.createEmission(emission));
 
     navigation.dispatch(StackActions.popToTop());
+    navigator.openEmissions();
   };
 
   return (
