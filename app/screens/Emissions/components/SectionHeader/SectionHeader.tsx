@@ -1,12 +1,14 @@
 import React from "react";
-import { View, TouchableOpacity } from "react-native";
+import { TouchableOpacity } from "react-native";
 import moment from "moment";
 import { useNavigation } from "@react-navigation/native";
+import { Ionicons } from "@expo/vector-icons";
 
+import { Colors } from "style";
 import { navigate } from "navigation";
 import "moment/min/locales";
 import { Text } from "components";
-import { withLocalization, LocalizationContextProps, t } from "utils";
+import { withLocalization, LocalizationContextProps } from "utils";
 
 import styles from "./SectionHeader.styles";
 
@@ -17,25 +19,24 @@ interface Props {
 const SectionHeader: React.FC<Props & LocalizationContextProps> = ({ date, language = "" }) => {
   const navigation = useNavigation();
   const navigator = navigate(navigation);
+  const onPress = () =>
+    navigator.openMonthlyEmissions({
+      date,
+      monthAndYear: moment(date).locale(language).format("MMMM YYYY"),
+    });
 
   return (
-    <View style={styles.container}>
-      <Text.Primary darkGray bold style={styles.text}>
+    <TouchableOpacity onPress={onPress} style={styles.container}>
+      <Text.Primary blue bold style={styles.text}>
         {moment(date).locale(language).format("MMMM YYYY")}
       </Text.Primary>
-      <TouchableOpacity
-        onPress={() =>
-          navigator.openMonthlyEmissions({
-            date,
-            monthAndYear: moment(date).locale(language).format("MMMM YYYY"),
-          })
-        }
-      >
-        <Text.Secondary blue style={styles.text}>
-          {t("EMISSIONS_SCREEN_MORE_INFO")}
-        </Text.Secondary>
-      </TouchableOpacity>
-    </View>
+      <Ionicons
+        name={"ios-chevron-forward-outline"}
+        size={24}
+        style={styles.icon}
+        color={Colors.blue50}
+      />
+    </TouchableOpacity>
   );
 };
 

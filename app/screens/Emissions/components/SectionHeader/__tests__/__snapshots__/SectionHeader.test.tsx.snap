@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SectionHeader should render when co2value equals 0 1`] = `
-<View
+<TouchableOpacity
+  onPress={[Function]}
   style={
     Object {
       "backgroundColor": "#FFFFFF",
@@ -22,8 +23,8 @@ exports[`SectionHeader should render when co2value equals 0 1`] = `
   }
 >
   <Text.Primary
+    blue={true}
     bold={true}
-    darkGray={true}
     style={
       Object {
         "textTransform": "capitalize",
@@ -32,25 +33,18 @@ exports[`SectionHeader should render when co2value equals 0 1`] = `
   >
     December 2020
   </Text.Primary>
-  <TouchableOpacity
-    onPress={[Function]}
-  >
-    <Text.Secondary
-      blue={true}
-      style={
-        Object {
-          "textTransform": "capitalize",
-        }
-      }
-    >
-      More Info
-    </Text.Secondary>
-  </TouchableOpacity>
-</View>
+  <Ionicons
+    color="#3957D0"
+    name="ios-chevron-forward-outline"
+    size={24}
+    style={Object {}}
+  />
+</TouchableOpacity>
 `;
 
 exports[`SectionHeader should render when monthlyCarbonBudget and co2value equals 0 1`] = `
-<View
+<TouchableOpacity
+  onPress={[Function]}
   style={
     Object {
       "backgroundColor": "#FFFFFF",
@@ -71,8 +65,8 @@ exports[`SectionHeader should render when monthlyCarbonBudget and co2value equal
   }
 >
   <Text.Primary
+    blue={true}
     bold={true}
-    darkGray={true}
     style={
       Object {
         "textTransform": "capitalize",
@@ -81,25 +75,18 @@ exports[`SectionHeader should render when monthlyCarbonBudget and co2value equal
   >
     December 2020
   </Text.Primary>
-  <TouchableOpacity
-    onPress={[Function]}
-  >
-    <Text.Secondary
-      blue={true}
-      style={
-        Object {
-          "textTransform": "capitalize",
-        }
-      }
-    >
-      More Info
-    </Text.Secondary>
-  </TouchableOpacity>
-</View>
+  <Ionicons
+    color="#3957D0"
+    name="ios-chevron-forward-outline"
+    size={24}
+    style={Object {}}
+  />
+</TouchableOpacity>
 `;
 
 exports[`SectionHeader should render when monthlyCarbonBudget equals 0 1`] = `
-<View
+<TouchableOpacity
+  onPress={[Function]}
   style={
     Object {
       "backgroundColor": "#FFFFFF",
@@ -120,8 +107,8 @@ exports[`SectionHeader should render when monthlyCarbonBudget equals 0 1`] = `
   }
 >
   <Text.Primary
+    blue={true}
     bold={true}
-    darkGray={true}
     style={
       Object {
         "textTransform": "capitalize",
@@ -130,25 +117,18 @@ exports[`SectionHeader should render when monthlyCarbonBudget equals 0 1`] = `
   >
     December 2020
   </Text.Primary>
-  <TouchableOpacity
-    onPress={[Function]}
-  >
-    <Text.Secondary
-      blue={true}
-      style={
-        Object {
-          "textTransform": "capitalize",
-        }
-      }
-    >
-      More Info
-    </Text.Secondary>
-  </TouchableOpacity>
-</View>
+  <Ionicons
+    color="#3957D0"
+    name="ios-chevron-forward-outline"
+    size={24}
+    style={Object {}}
+  />
+</TouchableOpacity>
 `;
 
 exports[`SectionHeader should render when user has budget below 1% 1`] = `
-<View
+<TouchableOpacity
+  onPress={[Function]}
   style={
     Object {
       "backgroundColor": "#FFFFFF",
@@ -169,8 +149,8 @@ exports[`SectionHeader should render when user has budget below 1% 1`] = `
   }
 >
   <Text.Primary
+    blue={true}
     bold={true}
-    darkGray={true}
     style={
       Object {
         "textTransform": "capitalize",
@@ -179,25 +159,18 @@ exports[`SectionHeader should render when user has budget below 1% 1`] = `
   >
     December 2020
   </Text.Primary>
-  <TouchableOpacity
-    onPress={[Function]}
-  >
-    <Text.Secondary
-      blue={true}
-      style={
-        Object {
-          "textTransform": "capitalize",
-        }
-      }
-    >
-      More Info
-    </Text.Secondary>
-  </TouchableOpacity>
-</View>
+  <Ionicons
+    color="#3957D0"
+    name="ios-chevron-forward-outline"
+    size={24}
+    style={Object {}}
+  />
+</TouchableOpacity>
 `;
 
 exports[`SectionHeader should render when user is below budget 1`] = `
-<View
+<TouchableOpacity
+  onPress={[Function]}
   style={
     Object {
       "backgroundColor": "#FFFFFF",
@@ -218,8 +191,8 @@ exports[`SectionHeader should render when user is below budget 1`] = `
   }
 >
   <Text.Primary
+    blue={true}
     bold={true}
-    darkGray={true}
     style={
       Object {
         "textTransform": "capitalize",
@@ -228,25 +201,18 @@ exports[`SectionHeader should render when user is below budget 1`] = `
   >
     December 2020
   </Text.Primary>
-  <TouchableOpacity
-    onPress={[Function]}
-  >
-    <Text.Secondary
-      blue={true}
-      style={
-        Object {
-          "textTransform": "capitalize",
-        }
-      }
-    >
-      More Info
-    </Text.Secondary>
-  </TouchableOpacity>
-</View>
+  <Ionicons
+    color="#3957D0"
+    name="ios-chevron-forward-outline"
+    size={24}
+    style={Object {}}
+  />
+</TouchableOpacity>
 `;
 
 exports[`SectionHeader should render when user is over budget 1`] = `
-<View
+<TouchableOpacity
+  onPress={[Function]}
   style={
     Object {
       "backgroundColor": "#FFFFFF",
@@ -267,8 +233,8 @@ exports[`SectionHeader should render when user is over budget 1`] = `
   }
 >
   <Text.Primary
+    blue={true}
     bold={true}
-    darkGray={true}
     style={
       Object {
         "textTransform": "capitalize",
@@ -277,19 +243,11 @@ exports[`SectionHeader should render when user is over budget 1`] = `
   >
     December 2020
   </Text.Primary>
-  <TouchableOpacity
-    onPress={[Function]}
-  >
-    <Text.Secondary
-      blue={true}
-      style={
-        Object {
-          "textTransform": "capitalize",
-        }
-      }
-    >
-      More Info
-    </Text.Secondary>
-  </TouchableOpacity>
-</View>
+  <Ionicons
+    color="#3957D0"
+    name="ios-chevron-forward-outline"
+    size={24}
+    style={Object {}}
+  />
+</TouchableOpacity>
 `;

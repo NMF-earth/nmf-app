@@ -15,6 +15,9 @@ const styles = StyleSheet.create({
   text: {
     textTransform: "capitalize",
   },
+  icon: {
+    // marginHorizontal: Layout.PADDING_HORIZONTAL,
+  },
 });
 
 export default styles;
