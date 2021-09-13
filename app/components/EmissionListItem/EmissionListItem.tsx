@@ -56,7 +56,7 @@ const EmissionListItem: React.FC<EmissionListItemProps> = ({
       name={"ios-chevron-forward-outline"}
       size={18}
       style={styles.icon}
-      color={Colors.grey100}
+      color={Colors.grey70}
     />
   </TouchableOpacity>
 );
