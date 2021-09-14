@@ -40,6 +40,7 @@ const App: React.FC = () => {
   enableScreens();
 
   let lang = localeExpo.substring(0, 2);
+  let localeChineseSimplified;
 
   if (!includes(lang, supportedLanguages)) {
     lang = defaultLanguage;
@@ -47,7 +48,14 @@ const App: React.FC = () => {
 
   const [ready, setReady] = useState(false);
   const [language, setLanguage] = useState(lang);
-  const [locale, setLocale] = useState(localeExpo);
+
+  if (lang === "zh") {
+    localeChineseSimplified = "zh-cn";
+  }
+
+  const [locale, setLocale] = useState(
+    localeChineseSimplified ? localeChineseSimplified : localeExpo
+  );
 
   useEffect(() => {
     Promise.all([
