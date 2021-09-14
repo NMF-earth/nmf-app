@@ -16,19 +16,21 @@ interface Props {
   date: Date;
 }
 
-const SectionHeader: React.FC<Props & LocalizationContextProps> = ({ date, language = "" }) => {
+const SectionHeader: React.FC<Props & LocalizationContextProps> = ({ date, locale = "" }) => {
   const navigation = useNavigation();
   const navigator = navigate(navigation);
+
+  const monthAndYear = moment(date).locale(locale).format("MMMM YYYY");
   const onPress = () =>
     navigator.openMonthlyEmissions({
       date,
-      monthAndYear: moment(date).locale(language).format("MMMM YYYY"),
+      monthAndYear,
     });
 
   return (
     <TouchableOpacity onPress={onPress} style={styles.container}>
       <Text.Primary blue bold style={styles.text}>
-        {moment(date).locale(language).format("MMMM YYYY")}
+        {monthAndYear}
       </Text.Primary>
       <Ionicons
         name={"ios-chevron-forward-outline"}

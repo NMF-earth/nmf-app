@@ -43,6 +43,7 @@ const BottomTabNavigator = (): React.ReactElement => {
   const { bottom } = useSafeAreaInsets();
   return (
     <BottomTab.Navigator
+      initialRouteName={"EmissionsNavigator"}
       tabBarOptions={{
         activeTintColor: Colors.green50,
         inactiveTintColor: Colors.grey40,

@@ -15,7 +15,7 @@ import { navigate } from "navigation";
 import styles from "./EmissionItemScreen.styles";
 import navigationOptions from "./EmissionItemScreen.navigationOptions";
 
-const EmissionItemScreen = ({ language = "" }: LocalizationContextProps) => {
+const EmissionItemScreen = ({ locale = "" }: LocalizationContextProps) => {
   const navigation = useNavigation();
   const navigator = navigate(navigation);
 
@@ -33,8 +33,8 @@ const EmissionItemScreen = ({ language = "" }: LocalizationContextProps) => {
   };
 
   const date = moment(creationDate, "YYYY-MM-DDTHH:mm:ss.sssZ");
-  const day = date.locale(language).format("dddd");
-  const monthAndYear = date.locale(language).format("Do MMMM YYYY");
+  const day = date.locale(locale).format("dddd");
+  const monthAndYear = date.locale(locale).format("Do MMMM YYYY");
   const co2Emission = calculation.getC02ValueFromEmission(emission || {});
   const deleteEmission = () => dispatch(emissions.actions.deleteEmission(emission.id));
   const toggleIsMitigated = () => dispatch(emissions.actions.toggleIsMitigated(emission.id));

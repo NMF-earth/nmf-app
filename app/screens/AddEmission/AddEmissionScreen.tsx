@@ -270,7 +270,7 @@ const AddEmissionScreen = ({ locale = "", language = "" }: LocalizationContextPr
         <View style={styles.dateContainer}>
           <TouchableOpacity style={{ flexDirection: "row" }} onPress={showDatePicker}>
             <Text.Primary lightGray>
-              {creationDate.locale(language).format("dddd Do MMMM YYYY")}
+              {creationDate.locale(locale).format("dddd Do MMMM YYYY")}
             </Text.Primary>
             <Text.Primary lightGray>{" - "}</Text.Primary>
             <Text.Primary bold green>
