@@ -7,7 +7,7 @@ import * as Linking from "expo-linking";
 
 import { ImagesAssets } from "constant";
 import { Button, Text, SocialMedia, ListItem } from "components";
-import { t } from "utils";
+import { t, platform } from "utils";
 import { navigate } from "navigation";
 import { NavStatelessComponent } from "interfaces";
 
@@ -75,6 +75,8 @@ const SettingsScreen: NavStatelessComponent = () => {
   }
 
   const [steps, setSteps] = useState(0);
+  const { version, ios, android } = ExpoConstants.manifest;
+  const buildNumber = platform.isIOS ? ios.buildNumber : android.versionCode;
 
   return (
     <ScrollView style={styles.container}>
@@ -91,12 +93,13 @@ const SettingsScreen: NavStatelessComponent = () => {
           <Image style={styles.logoNMF} resizeMode="contain" source={ImagesAssets.logos.nmf} />
         </View>
       </TouchableWithoutFeedback>
+
       <Text.Tertiary bold lightGray style={styles.appVersionTitle}>
-        {t("SETTINGS_SCREEN_APP_VERSION", {
-          version: ExpoConstants.manifest.version,
-        })}
+        {t("SETTINGS_SCREEN_APP_VERSION", { version }) + "-" + buildNumber}
       </Text.Tertiary>
+
       <SocialMedia />
+
       {!__DEV__ && (
         <View style={styles.textContainer}>
           <Text.Secondary darkGray center style={styles.quote}>

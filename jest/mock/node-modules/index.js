@@ -54,3 +54,14 @@ jest.mock("@react-navigation/core", () => {
     useRoute: () => jest.fn(),
   };
 });
+
+jest.mock("expo-constants", () => {
+  return {
+    manifest: {
+      version: "0.0.1",
+      ios: {
+        buildNumber: 42,
+      },
+    },
+  };
+});

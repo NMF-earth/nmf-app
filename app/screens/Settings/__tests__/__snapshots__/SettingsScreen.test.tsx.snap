@@ -363,7 +363,7 @@ exports[`SettingsScreen renders correctly 1`] = `
         }
       }
     >
-      Version [missing %{version} value]
+      Version 0.0.1-42
     </Text.Tertiary>
     <SocialMedia />
   </View>
