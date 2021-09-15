@@ -26,7 +26,7 @@ const NoEmission: React.FC = () => {
         <Button.Primary
           fullWidth
           style={styles.button}
-          onPress={() => navigator.openCategorySelection()}
+          onPress={() => navigator.openAddEmissionNavigator()}
           textType={"Primary"}
         >
           <Text.Primary bold white>

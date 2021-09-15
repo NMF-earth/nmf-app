@@ -8,8 +8,8 @@ const openComingSoon = (navigation) => (props = {}) => {
   navigation.navigate("ComingSoon", props);
 };
 
-const openCategorySelection = (navigation) => (props = {}) => {
-  navigation.navigate("CategorySelection", props);
+const openAddEmissionNavigator = (navigation) => (props = {}) => {
+  navigation.navigate("AddEmissionNavigator", props);
 };
 
 const openEmissions = (navigation) => (props = {}) => {
@@ -87,7 +87,7 @@ const openLanguages = (navigation) => (props = {}) => {
 const navigate = (navigation) => ({
   goBack: navigation.goBack,
   openMonthlyEmissions: navigateOneTime(openMonthlyEmissions(navigation)),
-  openCategorySelection: navigateOneTime(openCategorySelection(navigation)),
+  openAddEmissionNavigator: navigateOneTime(openAddEmissionNavigator(navigation)),
   openSubCategorySelection: navigateOneTime(openSubCategorySelection(navigation)),
   openMyData: navigateOneTime(openMyData(navigation)),
   openBarCodeScan: navigateOneTime(openBarCodeScan(navigation)),
