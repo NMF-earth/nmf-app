@@ -9,6 +9,7 @@ import {
   LocalizationContextProps,
   supportedLanguages,
   currentLanguage,
+  getLocaleForMoment,
 } from "./translations";
 
 export {
@@ -22,4 +23,5 @@ export {
   LocalizationContextProps,
   supportedLanguages,
   currentLanguage,
+  getLocaleForMoment,
 };

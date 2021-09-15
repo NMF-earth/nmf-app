@@ -4,7 +4,7 @@ import "moment/min/locales";
 import { View } from "react-native";
 
 import { Text } from "components";
-import { withLocalization, LocalizationContextProps } from "utils";
+import { withLocalization, LocalizationContextProps, getLocaleForMoment } from "utils";
 
 import styles from "./ProgressChart.styles";
 import { Legend, Chart, PeriodBudget } from "./components";
@@ -25,7 +25,7 @@ const ProgressChart = ({
   otherEmissions = 0,
   monthlyEmissionsBudget = 0,
   isMonth = false,
-  locale = "",
+  language = "",
 }: Props & LocalizationContextProps) => {
   if (!monthlyEmissionsBudget) {
     return null;
@@ -41,7 +41,7 @@ const ProgressChart = ({
     foodEmissions / periodEmissionsBudget > 1 ? 1 : foodEmissions / periodEmissionsBudget;
 
   const period = moment()
-    .locale(locale)
+    .locale(getLocaleForMoment(language))
     .format(isMonth ? "MMMM" : "YYYY");
 
   return (

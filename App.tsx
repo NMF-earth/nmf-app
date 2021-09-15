@@ -12,9 +12,10 @@ import * as Sentry from "sentry-expo";
 import { Provider } from "react-redux";
 import { enableScreens } from "react-native-screens";
 
+import { LocalizationContext } from "utils";
+
 import AppNavigator from "./app/navigation/Navigator/AppNavigator";
 import store from "./app/redux/store";
-import { LocalizationContext } from "./app/utils";
 
 const supportedLanguages: string[] = ["en", "fr", "de", "sv", "da", "ru", "pt", "pl", "zh", "my"];
 const defaultLanguage = "en";
@@ -40,7 +41,6 @@ const App: React.FC = () => {
   enableScreens();
 
   let lang = localeExpo.substring(0, 2);
-  let localeChineseSimplified;
 
   if (!includes(lang, supportedLanguages)) {
     lang = defaultLanguage;
@@ -49,13 +49,7 @@ const App: React.FC = () => {
   const [ready, setReady] = useState(false);
   const [language, setLanguage] = useState(lang);
 
-  if (lang === "zh") {
-    localeChineseSimplified = "zh-cn";
-  }
-
-  const [locale, setLocale] = useState(
-    localeChineseSimplified ? localeChineseSimplified : localeExpo
-  );
+  const [locale, setLocale] = useState(localeExpo);
 
   useEffect(() => {
     Promise.all([

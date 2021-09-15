@@ -10,7 +10,15 @@ import { useRoute } from "@react-navigation/core";
 import { Text, TextInput } from "components";
 import { userPreferences } from "ducks";
 import { EmissionType, EmissionPayload, EmissionModelType } from "interfaces";
-import { calculation, t, withLocalization, LocalizationContextProps, ui, time } from "utils";
+import {
+  calculation,
+  t,
+  withLocalization,
+  LocalizationContextProps,
+  ui,
+  time,
+  getLocaleForMoment,
+} from "utils";
 
 import styles from "./AddEmissionScreen.styles";
 import navigationOptions from "./AddEmissionScreen.navigationOptions";
@@ -270,7 +278,7 @@ const AddEmissionScreen = ({ locale = "", language = "" }: LocalizationContextPr
         <View style={styles.dateContainer}>
           <TouchableOpacity style={{ flexDirection: "row" }} onPress={showDatePicker}>
             <Text.Primary lightGray>
-              {creationDate.locale(locale).format("dddd Do MMMM YYYY")}
+              {creationDate.locale(getLocaleForMoment(language)).format("dddd Do MMMM YYYY")}
             </Text.Primary>
             <Text.Primary lightGray>{" - "}</Text.Primary>
             <Text.Primary bold green>

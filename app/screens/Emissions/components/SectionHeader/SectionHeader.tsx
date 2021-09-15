@@ -8,7 +8,7 @@ import { Colors } from "style";
 import { navigate } from "navigation";
 import "moment/min/locales";
 import { Text } from "components";
-import { withLocalization, LocalizationContextProps } from "utils";
+import { withLocalization, LocalizationContextProps, getLocaleForMoment } from "utils";
 
 import styles from "./SectionHeader.styles";
 
@@ -16,11 +16,11 @@ interface Props {
   date: Date;
 }
 
-const SectionHeader: React.FC<Props & LocalizationContextProps> = ({ date, locale = "" }) => {
+const SectionHeader: React.FC<Props & LocalizationContextProps> = ({ date, language = "" }) => {
   const navigation = useNavigation();
   const navigator = navigate(navigation);
 
-  const monthAndYear = moment(date).locale(locale).format("MMMM YYYY");
+  const monthAndYear = moment(date).locale(getLocaleForMoment(language)).format("MMMM YYYY");
   const onPress = () =>
     navigator.openMonthlyEmissions({
       date,

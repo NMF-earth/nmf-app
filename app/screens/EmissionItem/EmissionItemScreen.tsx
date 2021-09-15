@@ -9,13 +9,20 @@ import { useNavigation, useRoute } from "@react-navigation/native";
 
 import { Text, Button } from "components";
 import { emissions } from "ducks";
-import { calculation, ui, t, withLocalization, LocalizationContextProps } from "utils";
+import {
+  calculation,
+  ui,
+  t,
+  withLocalization,
+  LocalizationContextProps,
+  getLocaleForMoment,
+} from "utils";
 import { navigate } from "navigation";
 
 import styles from "./EmissionItemScreen.styles";
 import navigationOptions from "./EmissionItemScreen.navigationOptions";
 
-const EmissionItemScreen = ({ locale = "" }: LocalizationContextProps) => {
+const EmissionItemScreen = ({ language = "" }: LocalizationContextProps) => {
   const navigation = useNavigation();
   const navigator = navigate(navigation);
 
@@ -33,8 +40,8 @@ const EmissionItemScreen = ({ locale = "" }: LocalizationContextProps) => {
   };
 
   const date = moment(creationDate, "YYYY-MM-DDTHH:mm:ss.sssZ");
-  const day = date.locale(locale).format("dddd");
-  const monthAndYear = date.locale(locale).format("Do MMMM YYYY");
+  const day = date.locale(getLocaleForMoment(language)).format("dddd");
+  const monthAndYear = date.locale(getLocaleForMoment(language)).format("Do MMMM YYYY");
   const co2Emission = calculation.getC02ValueFromEmission(emission || {});
   const deleteEmission = () => dispatch(emissions.actions.deleteEmission(emission.id));
   const toggleIsMitigated = () => dispatch(emissions.actions.toggleIsMitigated(emission.id));
