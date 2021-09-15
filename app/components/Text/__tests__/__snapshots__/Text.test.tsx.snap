@@ -305,6 +305,23 @@ exports[`renders correctly Link 1`] = `
 </TouchableOpacity>
 `;
 
+exports[`renders correctly NavHeader 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "color": "#111714",
+        "fontFamily": "Inter-Bold",
+        "fontSize": 20,
+      },
+      undefined,
+    ]
+  }
+>
+  test
+</Text>
+`;
+
 exports[`renders correctly Primary 1`] = `
 <Text
   style={

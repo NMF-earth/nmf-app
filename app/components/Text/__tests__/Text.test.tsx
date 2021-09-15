@@ -6,6 +6,13 @@ import Text from "../";
 
 jest.unmock("../");
 
+/* NavHeader Tests */
+
+it("renders correctly NavHeader", () => {
+  const tree = create(<Text.Header>test</Text.Header>).toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
 /* H1 Tests */
 
 it("renders correctly H1", () => {

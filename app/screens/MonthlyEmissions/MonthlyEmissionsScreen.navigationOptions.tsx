@@ -12,7 +12,9 @@ const navigationOptions = ({ route }) => ({
   headerBackTitleVisible: false,
   headerTintColor: Colors.grey100,
   headerTitle: () => (
-    <Text.H3 style={Layout.androidNavTitle}>{route?.params?.monthAndYear}</Text.H3>
+    <Text.Header style={[Layout.androidNavTitle, { textTransform: "capitalize" }]}>
+      {route?.params?.monthAndYear}
+    </Text.Header>
   ),
 });
 

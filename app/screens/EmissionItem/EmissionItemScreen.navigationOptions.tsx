@@ -22,7 +22,7 @@ const navigationOptions = (prop): StackNavigationOptions => {
     headerTintColor: Colors.grey100,
     headerBackTitleVisible: false,
     headerRight: () => (showInfoButton ? <InfoButton /> : null),
-    headerTitle: () => <Text.H1>{t("EMISSION_ITEM_SCREEN_TITLE")}</Text.H1>,
+    headerTitle: () => <Text.Header>{t("EMISSION_ITEM_SCREEN_TITLE")}</Text.Header>,
   };
 };
 

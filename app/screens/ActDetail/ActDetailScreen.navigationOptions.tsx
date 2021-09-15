@@ -12,7 +12,7 @@ const navigationOptions = (): StackNavigationOptions => ({
   },
   headerTintColor: Colors.grey100,
   headerBackTitleVisible: false,
-  headerTitle: () => <Text.H1>{t("ACT_DETAIL_SCREEN_TITLE")}</Text.H1>,
+  headerTitle: () => <Text.Header>{t("ACT_DETAIL_SCREEN_TITLE")}</Text.Header>,
 });
 
 export default navigationOptions;

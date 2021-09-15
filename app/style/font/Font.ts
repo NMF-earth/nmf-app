@@ -8,6 +8,7 @@ const FontWeight = {
 };
 
 const FontSizeNormalDevice = {
+  Header: 20,
   H1: 28,
   H2: 26,
   H3: 22,
@@ -17,6 +18,7 @@ const FontSizeNormalDevice = {
 };
 
 const FontSizeSmallDevice = {
+  Header: 18,
   H1: 22,
   H2: 20,
   H3: 18,
