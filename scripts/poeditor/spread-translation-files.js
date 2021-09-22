@@ -1,28 +1,34 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const fs = require("fs");
-const usedLanguages = ["en", "de", "fr", "sv", "pt", "es", "pl", "ru", "da", "zh", "my"];
+const R = require("ramda");
+
+const usedLanguages = ["en", "de", "fr", "sv", "pt", "es", "pl", "ru", "da", "zh", "ms"];
 const relPrefix = "../../";
 const translationDirs = [
-  "app/screens/Act/translations",
-  "app/screens/Budget/translations",
-  "app/screens/Emissions/translations",
-  "app/screens/Settings/translations",
-  "app/screens/MonthlyBudget/translations",
-  "app/screens/ComingSoon/translations",
-  "app/screens/InfoModal/translations",
-  "app/screens/AddEmission/translations",
-  "app/screens/EmissionItem/translations",
-  "app/screens/Intro/translations",
-  "app/screens/About/translations",
-  "app/screens/SupportUs/translations",
-  "app/screens/MyLocation/translations",
-  "app/screens/ActDetail/translations",
-  "app/screens/Notifications/translations",
-  "app/screens/MonthlyEmissions/translations",
-  "app/screens/Languages/translations",
-  "app/components/NoEmission/translations",
-  "app/utils/ui/translations",
+  { path: "app/screens/Act/translations", prefix: "ACT_SCREEN" },
+  { path: "app/screens/Budget/translations", prefix: "BUDGET_SCREEN" },
+  { path: "app/screens/Emissions/translations", prefix: "EMISSIONS_SCREEN" },
+  { path: "app/screens/Settings/translations", prefix: "SETTINGS_SCREEN" },
+  { path: "app/screens/MonthlyBudget/translations", prefix: "MONTHLY_BUDGET_SCREEN" },
+  { path: "app/screens/ComingSoon/translations", prefix: "COMING_SOON_SCREEN" },
+  { path: "app/screens/InfoModal/translations", prefix: "INFO_MODAL_SCREEN" },
+  { path: "app/screens/AddEmission/translations", prefix: "ADD_EMISSION_SCREEN" },
+  { path: "app/screens/EmissionItem/translations", prefix: "EMISSION_ITEM_SCREEN" },
+  { path: "app/screens/Intro/translations", prefix: "INTRO_SCREEN" },
+  { path: "app/screens/About/translations", prefix: "ABOUT_SCREEN" },
+  { path: "app/screens/SupportUs/translations", prefix: "SUPPORT_US_SCREEN" },
+  { path: "app/screens/MyLocation/translations", prefix: "MY_LOCATION_SCREEN" },
+  { path: "app/screens/ActDetail/translations", prefix: "ACT_DETAIL_SCREEN" },
+  { path: "app/screens/Notifications/translations", prefix: "NOTIFICATIONS_SCREEN" },
+  { path: "app/screens/MonthlyEmissions/translations", prefix: "MONTHLY_EMISSIONS_SCREEN" },
+  { path: "app/screens/Languages/translations", prefix: "LANGUAGES_SCREEN" },
+  { path: "app/components/NoEmission/translations", prefix: "NO_EMISSION_COMPONENT" },
+  { path: "app/utils/ui/translations", prefix: "UI" },
 ];
+
+function removeEmpty(obj) {
+  return Object.fromEntries(Object.entries(obj).filter(([_, v]) => v != null));
+}
 
 /**
  * Quickly reads JSON files
@@ -34,29 +40,26 @@ const getJSONfrom = (path) => JSON.parse(JSON.stringify(require(path)));
 usedLanguages.forEach((lang) => {
   console.group(lang.toUpperCase() + ":");
   // Get reference JSON file with the source-of-truth content that'll be copied across other translation files
-  const ref = getJSONfrom(`./${lang}.json`);
+  const reference = getJSONfrom(`./${lang}.json`);
+  const ref = R.pickBy(R.identity, reference);
+
   // Browse all the translation dirs and make necessary changes in the corresponding files
-  translationDirs.forEach((translationDir) => {
+  translationDirs.forEach(({ path, prefix }) => {
     // Select the file that matchs the current language
-    const relPath = `${relPrefix + translationDir}/${lang}.json`;
-    const path = `${translationDir}/${lang}.json`;
+    const relPath = `${relPrefix + path}/${lang}.json`;
+    const pathToWrite = `${path}/${lang}.json`;
     // Get its content
     const file = getJSONfrom(relPath);
-    const keys = Object.keys(file);
+
+    let keys = Object.keys(ref);
+    keys = keys.filter((item) => item.startsWith(prefix));
+
     // Change content
-    keys.forEach((key) => {
-      if (ref[key]) {
-        // File is modified only if the ref JSON has data (in case it's incomplete)
-        return (file[key] = ref[key]);
-      } else {
-        return console.warn(
-          `⚠ Reference doesn't have property '${key}' (from: '${translationDir}')`
-        );
-      }
-    });
+    keys.forEach((key) => (file[key] = ref[key]));
+
     // Merge changes to the file
-    fs.writeFileSync(path, JSON.stringify(file, null, "\t"));
-    console.log("✔", translationDir);
+    fs.writeFileSync(pathToWrite, JSON.stringify(file, null, "\t"));
+    console.log("✔", path);
   });
   console.groupEnd();
 });

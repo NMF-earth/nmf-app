@@ -1,1 +1,6 @@
-{}
+{
+	"NO_EMISSION_COMPONENT_TITLE": "Hola 👋",
+	"NO_EMISSION_COMPONENT_THANKS": "¡Gracias por unirte a nuestra lucha contra el cambio climático!",
+	"NO_EMISSION_COMPONENT_START_USING_APP": "Para empezar a rastrear tus emisiones CO2, toca el botón de abajo",
+	"NO_EMISSION_COMPONENT_ADD_FIRST_EMISSION": "Añadir mi primera emisión"
+}

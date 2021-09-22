@@ -90,7 +90,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
           >
             Average monthly emissions per capita in a sample of countries 
             <Ionicons
-              color="#4BB377"
+              color="#3957D0"
               name="md-information-circle"
               onPress={[Function]}
               size={26}
@@ -199,12 +199,12 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
             center={true}
           >
             If you wish to respect the Paris agreement (to keep the rise in global average temperature below 2 degrees), set your monthly budget at
-            <Text.Secondary
-              bold={true}
-              darkGray={true}
-            >
-               166 kg CO2
-            </Text.Secondary>
+            <Ionicons
+              color="#3957D0"
+              name="md-information-circle"
+              onPress={[Function]}
+              size={26}
+            />
           </Text.Secondary>
         </View>
       </View>

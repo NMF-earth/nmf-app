@@ -17,7 +17,19 @@ import { LocalizationContext } from "utils";
 import AppNavigator from "./app/navigation/Navigator/AppNavigator";
 import store from "./app/redux/store";
 
-const supportedLanguages: string[] = ["en", "fr", "de", "sv", "da", "ru", "pt", "pl", "zh", "my"];
+const supportedLanguages: string[] = [
+  "en",
+  "fr",
+  "de",
+  "sv",
+  "da",
+  "ru",
+  "pt",
+  "pl",
+  "zh",
+  "my",
+  "es",
+];
 const defaultLanguage = "en";
 const defaultLocale = "en-us";
 

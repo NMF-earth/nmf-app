@@ -1,1 +1,7 @@
-{}
+{
+	"SUPPORT_US_SCREEN_TITLE": "Apóyanos!",
+	"SUPPORT_US_SCREEN_WHY_DONATE_TITLE": "Por qué deberías considerar apoyarnos",
+	"SUPPORT_US_SCREEN_WHY_DONATE_CONTENT": "NMF.earth no es para lucrarse, hemos conseguido una pequeña cantidad de dinero en Kickstarter y seguimos trabajando mucho en el proyecto incluso si no es sostenible financieramente. Por otro lado, tenemos muchos costos como servidores, nombres de dominio, licencias de software, cuenta de desarrollo de apple, etc.",
+	"SUPPORT_US_SCREEN_TITLE_CONSIDER_DONATE": "Si te gusta este proyecto, por favor considera donar una pequeña cantidad para poder mantener el proyecto! Y como todo es transparente con nosotros, podrán ver cómo usaremos tu donación dando un vistazo al reporte de fin de año.",
+	"SUPPORT_US_SCREEN_PLATFORM": "Puedes hacerlo en Ko-fi."
+}

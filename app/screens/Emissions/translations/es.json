@@ -1,1 +1,6 @@
-{}
+{
+	"EMISSIONS_SCREEN_TAB_NAME": "Emisiones",
+	"EMISSIONS_SCREEN_TITLE": "Emisiones",
+	"EMISSIONS_SCREEN_ADD_EMISSION": "Añadir emisión",
+	"EMISSIONS_SCREEN_HEADER_OF_BUDGET": "de presupuesto"
+}

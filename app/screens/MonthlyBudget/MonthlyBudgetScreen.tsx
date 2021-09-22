@@ -37,6 +37,13 @@ const CountryExample = (translation, index) => (
   </Text.Secondary>
 );
 
+const onPressInfoWorldEmission = () =>
+  WebBrowser.openBrowserAsync(
+    "https://en.wikipedia.org/wiki/List_of_countries_by_carbon_dioxide_emissions_per_capita"
+  );
+const onPressInfoParisAgreement = () =>
+  WebBrowser.openBrowserAsync("https://en.wikipedia.org/wiki/Under2_Coalition");
+
 const MonthlyBudgetScreen: NavStatelessComponent = () => {
   const navigation = useNavigation();
   const monthlyBudget = useSelector(budget.selectors.getMonthlyCarbonBudget);
@@ -44,11 +51,6 @@ const MonthlyBudgetScreen: NavStatelessComponent = () => {
 
   const [sliderValue, setSliderValue] = useState(monthlyBudget);
   const dispatch = useDispatch();
-
-  const onPressInfo = () =>
-    WebBrowser.openBrowserAsync(
-      "https://en.wikipedia.org/wiki/List_of_countries_by_carbon_dioxide_emissions_per_capita"
-    );
 
   const onPressSaveBudget = () => {
     dispatch(budget.actions.setMonthlyCarbonBudget(Math.round(sliderValue)));
@@ -79,8 +81,8 @@ const MonthlyBudgetScreen: NavStatelessComponent = () => {
               <Ionicons
                 name="md-information-circle"
                 size={26}
-                color={Colors.green50}
-                onPress={onPressInfo}
+                color={Colors.blue50}
+                onPress={onPressInfoWorldEmission}
               />
             </Text.Primary>
           </View>
@@ -88,9 +90,12 @@ const MonthlyBudgetScreen: NavStatelessComponent = () => {
           <View style={styles.parisAgreement}>
             <Text.Secondary center>
               {t("MONTHLY_BUDGET_SCREEN_PARIS_AGREEMENT")}
-              <Text.Secondary bold darkGray>
-                {" 166 kg CO2"}
-              </Text.Secondary>
+              <Ionicons
+                name="md-information-circle"
+                size={26}
+                color={Colors.blue50}
+                onPress={onPressInfoParisAgreement}
+              />
             </Text.Secondary>
           </View>
         </View>

@@ -1,1 +1,7 @@
-{}
+{
+	"NOTIFICATIONS_SCREEN_TITLE": "Notificaciones",
+	"NOTIFICATIONS_SCREEN_INTRO": "Recibe una notificación los domingo a las 9 p.m para recordarte añadir tus emisiones semanales.",
+	"NOTIFICATIONS_SCREEN_ACTIVATED": "Activado",
+	"NOTIFICATIONS_SCREEN_NOTIFICATION_TITLE": "Emisiones Semanales 🗓",
+	"NOTIFICATIONS_SCREEN_NOTIFICATION_BODY": "Aquí está un recordatorio amistoso de añadir tus emisiones para esta semana."
+}
