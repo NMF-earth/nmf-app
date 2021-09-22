@@ -14,6 +14,14 @@
 
 <br />
 
+<p align="center">
+  <a href="https://www.figma.com/community/file/967052407514062912">
+    <img alt="figma" src="https://github.com/NotMyFaultEarth/nmf-app/blob/main/figma.png" />
+  </a>
+</p>
+
+<br />
+
 ![screenshots](https://github.com/NotMyFaultEarth/nmf-app/blob/main/app-preview.png)
 
 ![](https://github.com/NMF-earth/nmf-app/workflows/Test%20CI/badge.svg)
