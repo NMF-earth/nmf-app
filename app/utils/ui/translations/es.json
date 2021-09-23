@@ -61,6 +61,5 @@
 	"UI_MEAL": "Comida",
 	"UI_PURCHASE": "Compra",
 	"UI_STREAMING": "Streaming",
-	"UI_TRANSPORT": "Transporte",
-	"UI_SCAN_PRODUCT": ""
+	"UI_TRANSPORT": "Transporte"
 }

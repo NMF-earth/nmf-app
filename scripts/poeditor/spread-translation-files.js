@@ -26,10 +26,6 @@ const translationDirs = [
   { path: "app/utils/ui/translations", prefix: "UI" },
 ];
 
-function removeEmpty(obj) {
-  return Object.fromEntries(Object.entries(obj).filter(([_, v]) => v != null));
-}
-
 /**
  * Quickly reads JSON files
  * @param  {string} path Path to the JSON
@@ -48,6 +44,7 @@ usedLanguages.forEach((lang) => {
     // Select the file that matchs the current language
     const relPath = `${relPrefix + path}/${lang}.json`;
     const pathToWrite = `${path}/${lang}.json`;
+
     // Get its content
     const file = getJSONfrom(relPath);
 
@@ -57,8 +54,11 @@ usedLanguages.forEach((lang) => {
     // Change content
     keys.forEach((key) => (file[key] = ref[key]));
 
+    // remove keys with empty values
+    const fileCleaned = R.pickBy(R.identity, file);
+
     // Merge changes to the file
-    fs.writeFileSync(pathToWrite, JSON.stringify(file, null, "\t"));
+    fs.writeFileSync(pathToWrite, JSON.stringify(fileCleaned, null, "\t"));
     console.log("✔", path);
   });
   console.groupEnd();
