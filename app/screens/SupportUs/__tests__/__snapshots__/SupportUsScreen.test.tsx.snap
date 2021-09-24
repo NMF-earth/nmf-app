@@ -40,7 +40,7 @@ exports[`SupportUsScreen renders correctly 1`] = `
         }
       }
     >
-      If you like this project, please consider donating a small amount to help us keep going! And since everything is transparent with us, you will be able to see how we used your donation by looking at end of the year report.
+      If you like this project, please consider donating a small amount to help us keep going!
     </Text.Primary>
     <Text.Primary
       style={
@@ -59,7 +59,7 @@ exports[`SupportUsScreen renders correctly 1`] = `
       }
       url="https://ko-fi.com/pierrebresson"
     >
-      Ko-fi
+      Pierre Bresson - Ko-fi
     </Text.Link>
     <View
       style={

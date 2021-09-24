@@ -20,7 +20,7 @@ const SupportUsScreen: NavStatelessComponent = () => (
     </Text.Primary>
     <Text.Primary style={styles.paragraph}>{t("SUPPORT_US_SCREEN_PLATFORM")}</Text.Primary>
     <Text.Link url="https://ko-fi.com/pierrebresson" style={styles.paragraph}>
-      Ko-fi
+      Pierre Bresson - Ko-fi
     </Text.Link>
     <View style={styles.separator} />
   </ScrollView>

@@ -1,14 +1,14 @@
 {
-	"ABOUT_SCREEN_TITLE": "Acerca de",
-	"ABOUT_SCREEN_INTRO": "Somos un pequeño equipo preocupado por el impacto del ser humano en el planeta. No somos un startup motivados por las ganancias para pagar a inversores de dividendos. Somos transparentes y puedes ver nuestras cifras en Indie Hackers. Puedes unirte a nuestro equipo si quieres ayudar al proyecto. O simplemente hablar a tus conocidos sobre nuestro proyecto, danos 5 estrellas en la tienda y envíanos tu feedback, nos ayudaría mucho. Gracias ✌️",
-	"ABOUT_SCREEN_CARE_HEADER": "Nos preocupamos por ti",
-	"ABOUT_SCREEN_PRIVACY": "Privacidad por diseño",
-	"ABOUT_SCREEN_ETHIC": "Ética por diseño",
-	"ABOUT_SCREEN_OPEN_SOURCE": "100% Código Libre",
-	"ABOUT_SCREEN_PRIVACY_BODY": "Todos los datos ingresados a la app nunca serán vendidos ni compartidos a ninguna compañía y no mantenemos registro de lo que haces en la app ",
-	"ABOUT_SCREEN_ETHIC_BODY": "No explotamos vulnerabilidades psicológicas como feeds infinitos o reproducción automática para evitar que los usuarios salgan de la app ",
-	"ABOUT_SCREEN_OPEN_SOURCE_BODY": "Todos debería ser capaces de añadir contenido a la app, verificar modelos de emisión y corregir cualquier información errónea",
-	"ABOUT_SCREEN_LIBRARIES_AND_CONTRIBUTORS": "Librerías y contribuidores",
-	"ABOUT_SCREEN_CAN_BE_FOUND": "Pueden ser encontrados en ",
-	"ABOUT_SCREEN_GITHUB": "Github"
+  "ABOUT_SCREEN_TITLE": "Acerca de",
+  "ABOUT_SCREEN_INTRO": "Somos un pequeño equipo preocupado por el impacto del ser humano en el planeta. No somos un startup motivados por las ganancias para pagar a inversores de dividendos. Puedes unirte a nuestro equipo si quieres ayudar al proyecto. O simplemente hablar a tus conocidos sobre nuestro proyecto, danos 5 estrellas en la tienda y envíanos tu feedback, nos ayudaría mucho. Gracias ✌️",
+  "ABOUT_SCREEN_CARE_HEADER": "Nos preocupamos por ti",
+  "ABOUT_SCREEN_PRIVACY": "Privacidad por diseño",
+  "ABOUT_SCREEN_ETHIC": "Ética por diseño",
+  "ABOUT_SCREEN_OPEN_SOURCE": "100% Código Libre",
+  "ABOUT_SCREEN_PRIVACY_BODY": "Todos los datos ingresados a la app nunca serán vendidos ni compartidos a ninguna compañía y no mantenemos registro de lo que haces en la app ",
+  "ABOUT_SCREEN_ETHIC_BODY": "No explotamos vulnerabilidades psicológicas como feeds infinitos o reproducción automática para evitar que los usuarios salgan de la app ",
+  "ABOUT_SCREEN_OPEN_SOURCE_BODY": "Todos debería ser capaces de añadir contenido a la app, verificar modelos de emisión y corregir cualquier información errónea",
+  "ABOUT_SCREEN_LIBRARIES_AND_CONTRIBUTORS": "Librerías y contribuidores",
+  "ABOUT_SCREEN_CAN_BE_FOUND": "Pueden ser encontrados en ",
+  "ABOUT_SCREEN_GITHUB": "Github"
 }

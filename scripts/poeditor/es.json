@@ -87,7 +87,7 @@
   "INTRO_SCREEN_TERMS_OF_USE": "Leer términos de uso",
   "INTRO_SCREEN_I_AGREE": "Acepto",
   "ABOUT_SCREEN_TITLE": "Acerca de",
-  "ABOUT_SCREEN_INTRO": "Somos un pequeño equipo preocupado por el impacto del ser humano en el planeta. No somos un startup motivados por las ganancias para pagar a inversores de dividendos. Somos transparentes y puedes ver nuestras cifras en Indie Hackers. Puedes unirte a nuestro equipo si quieres ayudar al proyecto. O simplemente hablar a tus conocidos sobre nuestro proyecto, danos 5 estrellas en la tienda y envíanos tu feedback, nos ayudaría mucho. Gracias ✌️",
+  "ABOUT_SCREEN_INTRO": "Somos un pequeño equipo preocupado por el impacto del ser humano en el planeta. No somos un startup motivados por las ganancias para pagar a inversores de dividendos. Puedes unirte a nuestro equipo si quieres ayudar al proyecto. O simplemente hablar a tus conocidos sobre nuestro proyecto, danos 5 estrellas en la tienda y envíanos tu feedback, nos ayudaría mucho. Gracias ✌️",
   "ABOUT_SCREEN_CARE_HEADER": "Nos preocupamos por ti",
   "ABOUT_SCREEN_PRIVACY": "Privacidad por diseño",
   "ABOUT_SCREEN_ETHIC": "Ética por diseño",
@@ -101,7 +101,7 @@
   "SUPPORT_US_SCREEN_TITLE": "Apóyanos!",
   "SUPPORT_US_SCREEN_WHY_DONATE_TITLE": "Por qué deberías considerar apoyarnos",
   "SUPPORT_US_SCREEN_WHY_DONATE_CONTENT": "NMF.earth no es para lucrarse, hemos conseguido una pequeña cantidad de dinero en Kickstarter y seguimos trabajando mucho en el proyecto incluso si no es sostenible financieramente. Por otro lado, tenemos muchos costos como servidores, nombres de dominio, licencias de software, cuenta de desarrollo de apple, etc.",
-  "SUPPORT_US_SCREEN_TITLE_CONSIDER_DONATE": "Si te gusta este proyecto, por favor considera donar una pequeña cantidad para poder mantener el proyecto! Y como todo es transparente con nosotros, podrán ver cómo usaremos tu donación dando un vistazo al reporte de fin de año.",
+  "SUPPORT_US_SCREEN_TITLE_CONSIDER_DONATE": "Si te gusta este proyecto, por favor considera donar una pequeña cantidad para poder mantener el proyecto!",
   "SUPPORT_US_SCREEN_PLATFORM": "Puedes hacerlo en Ko-fi.",
   "MY_LOCATION_SCREEN_TITLE": "Ubicación",
   "MY_LOCATION_SCREEN_INTRO": "Por favor selecciona un país para poder mejorar los cálculos de emisiones para streaming y electricidad.",
@@ -191,11 +191,5 @@
   "UI_MEAL": "Comida",
   "UI_PURCHASE": "Compra",
   "UI_STREAMING": "Streaming",
-  "UI_TRANSPORT": "Transporte",
-  "SETTINGS_SCREEN_LANGUAGES": "",
-  "ADD_EMISSION_SCREEN_TAB_NAME": "",
-  "MONTHLY_EMISSIONS_SCREEN_OF_BUDGET": "",
-  "LANGUAGES_SCREEN_TITLE": "",
-  "SETTINGS_SCREEN_HELP_TRANSLATION": "",
-  "UI_SCAN_PRODUCT": ""
+  "UI_TRANSPORT": "Transporte"
 }
