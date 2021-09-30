@@ -7,24 +7,30 @@ import styles from "./LegendItem.styles";
 
 interface Props {
   name: string;
-  value: number;
-  color: string;
+  amount: number;
+  totalAmount: number;
 }
 
-const LegendItem: React.FC<Props> = ({ name = "", value = 0, color = "" }) => {
-  if (value === 0) {
+const LegendItem: React.FC<Props> = ({ name = "", amount = 0, totalAmount = 0 }) => {
+  if (amount === 0 || totalAmount === 0) {
     return null;
+  }
+
+  let showPercentage = true;
+  let unitAmount = " kg - ";
+
+  const percentage = Math.round((amount / totalAmount) * 100);
+
+  if (totalAmount == amount || !percentage) {
+    showPercentage = false;
+    unitAmount = " kg";
   }
 
   return (
     <View style={styles.container}>
-      <View style={styles.coloredDotView}>
-        <View style={[{ backgroundColor: color }, styles.coloredDot]} />
-      </View>
-      <View>
-        <Text.Secondary bold>{name}</Text.Secondary>
-        <Text.Secondary lightGray>{value + " kg"}</Text.Secondary>
-      </View>
+      <Text.Secondary>{name + " : "}</Text.Secondary>
+      <Text.Secondary lightGray>{amount + unitAmount}</Text.Secondary>
+      {showPercentage && <Text.Secondary lightGray>{percentage + " %"}</Text.Secondary>}
     </View>
   );
 };

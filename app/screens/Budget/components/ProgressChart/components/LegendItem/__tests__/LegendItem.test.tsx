@@ -5,8 +5,8 @@ import LegendItem from "../LegendItem";
 
 const props = {
   name: "Food",
-  value: 10,
-  color: "red",
+  amount: 60,
+  totalAmount: 100,
 };
 
 jest.unmock("../LegendItem");
@@ -16,7 +16,12 @@ it("LegendItem renders correctly", () => {
   expect(tree).toMatchSnapshot();
 });
 
+it("LegendItem should not render % if percentage is 0", () => {
+  const tree = create(<LegendItem {...props} amount={0.01} />).toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
 it("LegendItem should not render if value is 0", () => {
-  const tree = create(<LegendItem {...props} value={0} />).toJSON();
+  const tree = create(<LegendItem {...props} amount={0} />).toJSON();
   expect(tree).toBeNull();
 });

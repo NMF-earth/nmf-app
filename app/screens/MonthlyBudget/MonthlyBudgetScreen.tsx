@@ -16,7 +16,7 @@ import { NavStatelessComponent } from "interfaces";
 import styles from "./MonthlyBudgetScreen.styles";
 import navigationOptions from "./MonthlyBudgetScreen.navigationOptions";
 
-const MIN_MONTHLY_CARBON_BUDGET = 0;
+const MIN_MONTHLY_CARBON_BUDGET = 10;
 const MAX_MONTHLY_CARBON_BUDGET = 1000;
 
 const translationMontlyBudgetCountries = [

@@ -1,11 +1,11 @@
 import {
   FoodType,
+  MealType,
   TransportType,
   StreamingType,
-  ElectricityType,
-  FashionType,
   PurchaseType,
-  MealType,
+  FashionType,
+  ElectricityType,
 } from "carbon-footprint";
 
 import { Emission, EmissionType } from "interfaces";
@@ -92,6 +92,15 @@ const emissionMeal: Emission = {
   value: 20,
 };
 
+const emissionProductScanned: Emission = {
+  id: "9",
+  creationDate: "2020-01-29T11:04:55.334Z",
+  emissionModelType: "productScanned",
+  emissionType: EmissionType.productScanned,
+  isMitigated: false,
+  value: 100,
+};
+
 describe("if there are emissions", () => {
   beforeEach(() => {
     state = {
@@ -105,6 +114,7 @@ describe("if there are emissions", () => {
         emissionFashion,
         emissionPurchase,
         emissionMeal,
+        emissionProductScanned,
       ],
     };
   });
@@ -125,6 +135,7 @@ describe("if there are emissions", () => {
       emissionFashion,
       emissionPurchase,
       emissionMeal,
+      emissionProductScanned,
     ]));
 
   test("`getCustomEmissions` should return custom emissions", () =>
@@ -158,15 +169,8 @@ describe("if there are emissions", () => {
       emissionMeal,
     ]));
 
-  test("`getOtherEmissions` should return other emissions", () =>
-    expect(emissions.selectors.getOtherEmissions(state)).toEqual([
-      emissionCustom,
-      emissionStreaming,
-      emissionElectricity,
-      emissionFashion,
-      emissionPurchase,
-      emissionMeal,
-    ]));
+  test("`getProductScanned` should return product scanned emissions", () =>
+    expect(emissions.selectors.getProductScanned(state)).toEqual([emissionProductScanned]));
 });
 
 describe("if there are no emissions", () => {
@@ -208,6 +212,9 @@ describe("if there are no emissions", () => {
 
   test("`getMealEmissions` should return mitigated no emission", () =>
     expect(emissions.selectors.getMealEmissions(state)).toEqual([]));
+
+  test("`getProductScanned` should return mitigated no emission", () =>
+    expect(emissions.selectors.getProductScanned(state)).toEqual([]));
 
   test("`getEatableEmissions` should return mitigated no emission", () =>
     expect(emissions.selectors.getEatableEmissions(state)).toEqual([]));

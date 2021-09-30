@@ -27,7 +27,7 @@ const supportedLanguages: string[] = [
   "pt",
   "pl",
   "zh",
-  "my",
+  "ms",
   "es",
 ];
 const defaultLanguage = "en";

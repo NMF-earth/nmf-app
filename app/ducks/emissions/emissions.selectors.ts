@@ -31,6 +31,9 @@ const isCustomEmission = (emission) => emission.emissionType === EmissionType.cu
 
 const isMealEmission = (emission) => emission.emissionType === EmissionType.meal;
 
+const isProductScannedEmission = (emission) =>
+  emission.emissionType === EmissionType.productScanned;
+
 const isEatableEmission = (emission) =>
   emission.emissionType === EmissionType.meal || emission.emissionType === EmissionType.food;
 
@@ -60,6 +63,8 @@ const getEatableEmissions = pipe(getAllEmissions, filter(isEatableEmission));
 
 const getCustomEmissions = pipe(getAllEmissions, filter(isCustomEmission));
 
+const getProductScanned = pipe(getAllEmissions, filter(isProductScannedEmission));
+
 const getOtherEmissions = pipe(getAllEmissions, filter(isOtherEmission));
 
 export default {
@@ -71,6 +76,7 @@ export default {
   getFashionEmissions,
   getPurchaseEmissions,
   getCustomEmissions,
+  getProductScanned,
   getOtherEmissions,
   getMealEmissions,
   getEatableEmissions,

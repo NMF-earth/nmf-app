@@ -24,4 +24,7 @@ export default StyleSheet.create({
   header: {
     textTransform: "capitalize",
   },
+  subHeader: {
+    paddingTop: 20,
+  },
 });

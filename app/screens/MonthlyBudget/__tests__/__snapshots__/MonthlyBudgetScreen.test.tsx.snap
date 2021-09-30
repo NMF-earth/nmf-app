@@ -34,7 +34,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
         maximumTrackTintColor="#CED4DA"
         maximumValue={1000}
         minimumTrackTintColor="#4BB377"
-        minimumValue={0}
+        minimumValue={10}
         onChange={null}
         onRNCSliderSlidingComplete={[Function]}
         onRNCSliderSlidingStart={null}
@@ -198,7 +198,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
           <Text.Secondary
             center={true}
           >
-            If you wish to respect the Paris agreement (to keep the rise in global average temperature below 2 degrees), set your monthly budget at
+            If you wish to respect the Paris agreement (to keep the rise in global average temperature below 2 degrees), set your monthly budget at 167 kgCO2eq
             <Ionicons
               color="#3957D0"
               name="md-information-circle"

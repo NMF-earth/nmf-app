@@ -18,15 +18,36 @@ const BudgetScreen: NavStatelessComponent = () => {
   const navigator = navigate(navigation);
 
   const monthlyCarbonBudget = useSelector(selectors.getMonthlyCarbonBudget);
-  const totalCurrentMonthEmissions = useSelector(selectors.getCurrentMonthAllCarbonValue);
-  const transportCurrentMonthEmissions = useSelector(selectors.getCurrentMonthTransportCarbonValue);
-  const foodCurrentMonthEmissions = useSelector(selectors.getCurrentMonthFoodCarbonValue);
-  const otherCurrentMonthEmissions = useSelector(selectors.getCurrentMonthOtherCarbonValue);
 
-  const totalCurrentYearEmissions = useSelector(selectors.getCurrentYearAllCarbonValue);
-  const transportCurrentYearEmissions = useSelector(selectors.getCurrentMonthTransportCarbonValue);
+  const foodCurrentMonthEmissions = useSelector(selectors.getCurrentMonthFoodCarbonValue);
+  const mealCurrentMonthEmissions = useSelector(selectors.getCurrentMonthMealCarbonValue);
+  const transportCurrentMonthEmissions = useSelector(selectors.getCurrentMonthTransportCarbonValue);
+  const streamingCurrentMonthEmissions = useSelector(selectors.getCurrentMonthStreamingCarbonValue);
+  const purchaseCurrentMonthEmissions = useSelector(selectors.getCurrentMonthPurchaseCarbonValue);
+  const fashionCurrentMonthEmissions = useSelector(selectors.getCurrentMonthFashionCarbonValue);
+  const electricityCurrentMonthEmissions = useSelector(
+    selectors.getCurrentMonthElectricityCarbonValue
+  );
+  const productScannedCurrentMonthEmissions = useSelector(
+    selectors.getCurrentMonthProductScannedCarbonValue
+  );
+  const customCurrentMonthEmissions = useSelector(selectors.getCurrentMonthCustomCarbonValue);
+  const totalCurrentMonthEmissions = useSelector(selectors.getCurrentMonthAllCarbonValue);
+
   const foodCurrentYearEmissions = useSelector(selectors.getCurrentYearFoodCarbonValue);
-  const otherCurrentYearEmissions = useSelector(selectors.getCurrentYearOtherCarbonValue);
+  const mealCurrentYearEmissions = useSelector(selectors.getCurrentYearMealCarbonValue);
+  const transportCurrentYearEmissions = useSelector(selectors.getCurrentYearTransportCarbonValue);
+  const streamingCurrentYearEmissions = useSelector(selectors.getCurrentYearStreamingCarbonValue);
+  const purchaseCurrentYearEmissions = useSelector(selectors.getCurrentYearPurchaseCarbonValue);
+  const fashionCurrentYearEmissions = useSelector(selectors.getCurrentYearFashionCarbonValue);
+  const electricityCurrentYearEmissions = useSelector(
+    selectors.getCurrentYearElectricityCarbonValue
+  );
+  const productScannedCurrentYearEmissions = useSelector(
+    selectors.getCurrentYearProductScannedCarbonValue
+  );
+  const customCurrentYearEmissions = useSelector(selectors.getCurrentYearCustomCarbonValue);
+  const totalCurrentYearEmissions = useSelector(selectors.getCurrentYearAllCarbonValue);
 
   return (
     <ScrollView style={styles.container}>
@@ -34,8 +55,14 @@ const BudgetScreen: NavStatelessComponent = () => {
         isMonth
         totalEmissions={totalCurrentMonthEmissions}
         foodEmissions={foodCurrentMonthEmissions}
+        mealEmissions={mealCurrentMonthEmissions}
         transportEmissions={transportCurrentMonthEmissions}
-        otherEmissions={otherCurrentMonthEmissions}
+        streamingEmissions={streamingCurrentMonthEmissions}
+        purchaseEmissions={purchaseCurrentMonthEmissions}
+        fashionEmissions={fashionCurrentMonthEmissions}
+        electricityEmissions={electricityCurrentMonthEmissions}
+        productScannedEmissions={productScannedCurrentMonthEmissions}
+        customEmissions={customCurrentMonthEmissions}
         monthlyEmissionsBudget={monthlyCarbonBudget}
       />
       <Button.Primary
@@ -52,8 +79,14 @@ const BudgetScreen: NavStatelessComponent = () => {
       <ProgressChart
         totalEmissions={totalCurrentYearEmissions}
         foodEmissions={foodCurrentYearEmissions}
+        mealEmissions={mealCurrentYearEmissions}
         transportEmissions={transportCurrentYearEmissions}
-        otherEmissions={otherCurrentYearEmissions}
+        streamingEmissions={streamingCurrentYearEmissions}
+        purchaseEmissions={purchaseCurrentYearEmissions}
+        fashionEmissions={fashionCurrentYearEmissions}
+        electricityEmissions={electricityCurrentYearEmissions}
+        productScannedEmissions={productScannedCurrentYearEmissions}
+        customEmissions={customCurrentYearEmissions}
         monthlyEmissionsBudget={monthlyCarbonBudget}
       />
     </ScrollView>

@@ -10,42 +10,39 @@ exports[`LegendItem renders correctly 1`] = `
     }
   }
 >
-  <View
-    style={
-      Object {
-        "alignSelf": "center",
-        "height": "100%",
-        "marginHorizontal": 6,
-        "width": 16,
-      }
-    }
+  <Text.Secondary>
+    Food : 
+  </Text.Secondary>
+  <Text.Secondary
+    lightGray={true}
   >
-    <View
-      style={
-        Array [
-          Object {
-            "backgroundColor": "red",
-          },
-          Object {
-            "borderRadius": 10,
-            "height": 18,
-            "width": 18,
-          },
-        ]
-      }
-    />
-  </View>
-  <View>
-    <Text.Secondary
-      bold={true}
-    >
-      Food
-    </Text.Secondary>
-    <Text.Secondary
-      lightGray={true}
-    >
-      10 kg
-    </Text.Secondary>
-  </View>
+    60 kg - 
+  </Text.Secondary>
+  <Text.Secondary
+    lightGray={true}
+  >
+    60 %
+  </Text.Secondary>
+</View>
+`;
+
+exports[`LegendItem should not render % if percentage is 0 1`] = `
+<View
+  style={
+    Object {
+      "flexDirection": "row",
+      "justifyContent": "center",
+      "paddingTop": 10,
+    }
+  }
+>
+  <Text.Secondary>
+    Food : 
+  </Text.Secondary>
+  <Text.Secondary
+    lightGray={true}
+  >
+    0.01 kg
+  </Text.Secondary>
 </View>
 `;

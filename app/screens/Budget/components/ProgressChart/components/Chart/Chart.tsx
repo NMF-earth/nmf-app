@@ -31,18 +31,12 @@ const ringWidth = chartWidth / dirtyFactor;
 
 interface Props {
   totalEmissionsPercentage: number;
-  transportEmissionsPercentage: number;
-  foodEmissionsPercentage: number;
 }
 
-const Chart: React.FC<Props> = ({
-  totalEmissionsPercentage,
-  transportEmissionsPercentage,
-  foodEmissionsPercentage,
-}) => {
+const Chart: React.FC<Props> = ({ totalEmissionsPercentage }) => {
   const data = {
-    values: [foodEmissionsPercentage, transportEmissionsPercentage, totalEmissionsPercentage],
-    colors: [Colors.green50, Colors.yellow50, Colors.apricot],
+    values: [totalEmissionsPercentage],
+    colors: [Colors.apricot],
   };
 
   const pies = data.values.map((pieData, i) => {
