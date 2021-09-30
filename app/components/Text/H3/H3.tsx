@@ -14,7 +14,7 @@ interface Props {
   center?: boolean;
 }
 
-export default function H1(props: Props): React.ReactElement {
+export default function H3(props: Props): React.ReactElement {
   const customStyle = [styles.default, props.style];
   const { darkGray, lightGray, green, blue, center } = props;
 
@@ -41,4 +41,4 @@ export default function H1(props: Props): React.ReactElement {
   return <Text {...props} style={customStyle} />;
 }
 
-H1.displayName = "H3";
+H3.displayName = "H3";
