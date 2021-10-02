@@ -48,6 +48,10 @@ const openMyLocation = (navigation) => (props = {}) => {
   navigation.push("MyLocation", props);
 };
 
+const openFaq = (navigation) => (props = {}) => {
+  navigation.push("Faq", props);
+};
+
 const openNotifications = (navigation) => (props = {}) => {
   navigation.push("Notifications", props);
 };
@@ -100,6 +104,7 @@ const navigate = (navigation) => ({
   openEmissionItem: navigateOneTime(openEmissionItem(navigation)),
   openAbout: navigateOneTime(openAbout(navigation)),
   openMyLocation: navigateOneTime(openMyLocation(navigation)),
+  openFaq: navigateOneTime(openFaq(navigation)),
   openNotifications: navigateOneTime(openNotifications(navigation)),
   openSupportUs: navigateOneTime(openSupportUs(navigation)),
   openStorybook: navigateOneTime(openStorybook(navigation)),
