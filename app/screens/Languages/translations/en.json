@@ -1,3 +1,6 @@
 {
-	"LANGUAGES_SCREEN_TITLE": "Languages"
+	"LANGUAGES_SCREEN_TITLE": "Languages",
+	"FAQ_SCREEN_TITLE": "FAQ",
+	"FAQ_SCREEN_HOW_ACCURATE_CARBON_EMISSIONS": "How accurate are my carbon emissions?",
+	"FAQ_SCREEN_WHY_ENTER_MANUALLY_EMISSIONS": "Why do i have to enter manually my emissions?"
 }

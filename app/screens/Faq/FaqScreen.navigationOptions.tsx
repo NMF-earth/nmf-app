@@ -3,14 +3,20 @@ import { StackNavigationOptions } from "@react-navigation/stack";
 
 import { Text } from "components";
 import { t } from "utils";
-import { Layout, ComponentsStyle } from "style";
+import { Layout, ComponentsStyle, Colors } from "style";
 
 const navigationOptions = (): StackNavigationOptions => ({
+  ...ComponentsStyle.transitionBetweenScreenPresets,
+
   headerStyle: {
     ...ComponentsStyle.header,
   },
-  headerBackTitle: null,
-  headerTitle: () => <Text.H1 style={Layout.androidNavTitle}>{t("SETTINGS_SCREEN_TITLE")}</Text.H1>,
+  headerTintColor: Colors.grey100,
+
+  headerBackTitleVisible: false,
+  headerTitle: () => (
+    <Text.Header style={Layout.androidNavTitle}>{t("FAQ_SCREEN_TITLE")}</Text.Header>
+  ),
 });
 
 export default navigationOptions;

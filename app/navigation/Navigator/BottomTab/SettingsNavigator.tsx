@@ -43,7 +43,7 @@ const SettingsNavigator = (): React.ReactElement => (
       options={LanguagesScreen.navigationOptions}
       component={LanguagesScreen}
     />
-    <Stack.Screen name="Faq" component={FaqScreen} />
+    <Stack.Screen name="Faq" component={FaqScreen} options={FaqScreen.navigationOptions} />
   </Stack.Navigator>
 );
 

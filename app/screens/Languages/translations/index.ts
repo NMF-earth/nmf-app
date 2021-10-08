@@ -12,6 +12,9 @@ import ms from "./ms.json";
 
 interface TranslationKeys {
   LANGUAGES_SCREEN_TITLE: string;
+  FAQ_SCREEN_TITLE: string;
+  FAQ_SCREEN_HOW_ACCURATE_CARBON_EMISSIONS: string;
+  FAQ_SCREEN_WHY_ENTER_MANUALLY_EMISSIONS: string;
 }
 
 export { en, fr, de, sv, es, pt, da, ru, pl, zh, ms, TranslationKeys };

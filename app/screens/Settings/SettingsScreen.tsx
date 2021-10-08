@@ -67,7 +67,7 @@ const SettingsScreen: NavStatelessComponent = () => {
     },
     {
       title: t("SETTINGS_SCREEN_FAQ"),
-      onPress: () => navigator.openFaq,
+      onPress: navigator.openFaq,
     },
   ];
 

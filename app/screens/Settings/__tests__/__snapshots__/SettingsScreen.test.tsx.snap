@@ -322,7 +322,7 @@ exports[`SettingsScreen renders correctly 1`] = `
       <Text.Secondary
         numberOfLines={1}
       >
-        [missing "mock.SETTINGS_SCREEN_FAQ" translation]
+        FAQ
       </Text.Secondary>
       <Ionicons
         color="#9CA6A0"

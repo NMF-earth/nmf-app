@@ -1,3 +1,99 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`FaqScreen renders correctly 1`] = `<View />`;
+exports[`FaqScreen renders correctly 1`] = `
+<RCTScrollView
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "flex": 1,
+      "paddingHorizontal": 16,
+    }
+  }
+>
+  <View>
+    <View
+      style={
+        Object {
+          "marginTop": 18,
+        }
+      }
+    >
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "alignContent": "center",
+            "borderColor": "#E7F3EB",
+            "borderRadius": 10,
+            "borderWidth": 1.5,
+            "flexDirection": "row",
+            "padding": 16,
+          }
+        }
+      >
+        <Ionicons
+          color="#3957D0"
+          name="ios-chevron-up-outline"
+          size={22}
+          style={
+            Object {
+              "paddingRight": 13,
+              "paddingTop": 10,
+            }
+          }
+        />
+        <Text.Primary
+          bold={true}
+        >
+          Why do i have to enter manually my emissions?
+        </Text.Primary>
+      </TouchableOpacity>
+    </View>
+    <View
+      style={
+        Object {
+          "marginTop": 18,
+        }
+      }
+    >
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          Object {
+            "alignContent": "center",
+            "borderColor": "#E7F3EB",
+            "borderRadius": 10,
+            "borderWidth": 1.5,
+            "flexDirection": "row",
+            "padding": 16,
+          }
+        }
+      >
+        <Ionicons
+          color="#3957D0"
+          name="ios-chevron-up-outline"
+          size={22}
+          style={
+            Object {
+              "paddingRight": 13,
+              "paddingTop": 10,
+            }
+          }
+        />
+        <Text.Primary
+          bold={true}
+        >
+          How accurate are my carbon emissions?
+        </Text.Primary>
+      </TouchableOpacity>
+    </View>
+    <View
+      style={
+        Object {
+          "height": 30,
+        }
+      }
+    />
+  </View>
+</RCTScrollView>
+`;
