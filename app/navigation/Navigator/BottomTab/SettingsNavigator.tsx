@@ -9,6 +9,7 @@ import NotificationsScreen from "../../../screens/Notifications";
 import MyData from "../../../screens/MyData";
 import StorybookScreen from "../../../../storybook";
 import LanguagesScreen from "../../../screens/Languages/LanguagesScreen";
+import FaqScreen from "../../../screens/Faq/FaqScreen";
 
 const Stack = createStackNavigator();
 
@@ -42,6 +43,7 @@ const SettingsNavigator = (): React.ReactElement => (
       options={LanguagesScreen.navigationOptions}
       component={LanguagesScreen}
     />
+    <Stack.Screen name="Faq" component={FaqScreen} />
   </Stack.Navigator>
 );
 

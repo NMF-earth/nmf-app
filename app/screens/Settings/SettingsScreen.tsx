@@ -65,6 +65,10 @@ const SettingsScreen: NavStatelessComponent = () => {
       title: t("SETTINGS_SCREEN_TERMS_OF_USE"),
       onPress: () => WebBrowser.openBrowserAsync("http://nmf.earth/terms-of-use.pdf"),
     },
+    {
+      title: t("SETTINGS_SCREEN_FAQ"),
+      onPress: () => navigator.openFaq,
+    },
   ];
 
   if (__DEV__) {

@@ -84,6 +84,10 @@ const openLanguages = (navigation) => (props = {}) => {
   navigation.push("Languages", props);
 };
 
+const openFaq = (navigation) => (props = {}) => {
+  navigation.push("Faq", props);
+};
+
 const navigate = (navigation) => ({
   goBack: navigation.goBack,
   openMonthlyEmissions: navigateOneTime(openMonthlyEmissions(navigation)),
@@ -105,6 +109,7 @@ const navigate = (navigation) => ({
   openStorybook: navigateOneTime(openStorybook(navigation)),
   openLanguages: navigateOneTime(openLanguages(navigation)),
   openEmissions: navigateOneTime(openEmissions(navigation)),
+  openFaq: navigateOneTime(openFaq(navigation)),
 });
 
 export default navigate;
