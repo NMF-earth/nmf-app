@@ -9,12 +9,12 @@ interface Props {
   children: React.ReactNode;
   darkGray?: boolean;
   lightGray?: boolean;
-  green?: boolean;
+  primary?: boolean;
 }
 
 export default function H1(props: Props): React.ReactElement {
   const customStyle = [styles.default, props.style];
-  const { darkGray, lightGray, green } = props;
+  const { darkGray, lightGray, primary } = props;
 
   if (darkGray) {
     customStyle.push(mainStyle.darkGray);
@@ -24,8 +24,8 @@ export default function H1(props: Props): React.ReactElement {
     customStyle.push(mainStyle.lightGray);
   }
 
-  if (green) {
-    customStyle.push(mainStyle.green);
+  if (primary) {
+    customStyle.push(mainStyle.primary);
   }
 
   return <Text {...props} style={customStyle} />;

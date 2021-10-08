@@ -8,29 +8,39 @@ interface Props {
   style?: StyleProp<TextStyle>;
   children: React.ReactNode;
   darkGray?: boolean;
+  black70?: boolean;
+  black?: boolean;
   lightGray?: boolean;
-  blue50?: boolean;
-  green?: boolean;
+  secondary?: boolean;
+  primary?: boolean;
 }
 
 export default function H2(props: Props): React.ReactElement {
   const customStyle = [styles.default, props.style];
-  const { darkGray, lightGray, blue50, green } = props;
+  const { darkGray, lightGray, secondary, primary, black, black70 } = props;
 
   if (darkGray) {
     customStyle.push(mainStyle.darkGray);
+  }
+
+  if (black) {
+    customStyle.push(mainStyle.black);
+  }
+
+  if (black70) {
+    customStyle.push(mainStyle.black70);
   }
 
   if (lightGray) {
     customStyle.push(mainStyle.lightGray);
   }
 
-  if (green) {
-    customStyle.push(mainStyle.green);
+  if (primary) {
+    customStyle.push(mainStyle.primary);
   }
 
-  if (blue50) {
-    customStyle.push(mainStyle.blue50);
+  if (secondary) {
+    customStyle.push(mainStyle.secondary);
   }
 
   return <Text {...props} style={customStyle} />;

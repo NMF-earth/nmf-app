@@ -13,8 +13,8 @@ interface Props {
   orange?: boolean;
   bold?: boolean;
   white?: boolean;
-  green?: boolean;
-  blue?: boolean;
+  primary?: boolean;
+  secondary?: boolean;
   center?: boolean;
   lightWeightText?: boolean;
   numberOfLines?: number;
@@ -23,10 +23,10 @@ interface Props {
 export default function Secondary(props: Props): React.ReactElement {
   const customStyle = [styles.default, props.style];
   const {
-    blue,
+    secondary,
     orange,
     white,
-    green,
+    primary,
     darkGray,
     lightGray,
     red,
@@ -44,16 +44,16 @@ export default function Secondary(props: Props): React.ReactElement {
     customStyle.push(mainStyle.lightGray);
   }
 
-  if (green) {
-    customStyle.push(mainStyle.green);
+  if (primary) {
+    customStyle.push(mainStyle.primary);
   }
 
   if (white) {
     customStyle.push(mainStyle.white);
   }
 
-  if (blue) {
-    customStyle.push(mainStyle.blue50);
+  if (secondary) {
+    customStyle.push(mainStyle.secondary);
   }
 
   if (bold) {

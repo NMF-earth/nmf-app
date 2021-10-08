@@ -15,14 +15,23 @@ export default StyleSheet.create({
   lightGray: {
     color: Colors.grey40,
   },
-  green: {
-    color: Colors.green50,
+  primary: {
+    color: Colors.primary,
   },
   white: {
     color: Colors.white,
   },
-  blue50: {
-    color: Colors.blue50,
+  secondary: {
+    color: Colors.secondary,
+  },
+  black70: {
+    color: Colors.black70,
+  },
+  black60: {
+    color: Colors.black60,
+  },
+  black: {
+    color: Colors.black,
   },
   bold: {
     fontFamily: Font.FontWeight.Bold,

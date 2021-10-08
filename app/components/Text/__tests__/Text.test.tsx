@@ -30,8 +30,8 @@ it("renders correctly H1 lightGray", () => {
   expect(tree).toMatchSnapshot();
 });
 
-it("renders correctly H1 green", () => {
-  const tree = create(<Text.H1 green>test</Text.H1>).toJSON();
+it("renders correctly H1 primary", () => {
+  const tree = create(<Text.H1 primary>test</Text.H1>).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
@@ -47,8 +47,8 @@ it("renders correctly H2 darkGray", () => {
   expect(tree).toMatchSnapshot();
 });
 
-it("renders correctly H2 blue50", () => {
-  const tree = create(<Text.H2 blue50>test</Text.H2>).toJSON();
+it("renders correctly H2 secondary", () => {
+  const tree = create(<Text.H2 secondary>test</Text.H2>).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
@@ -57,8 +57,13 @@ it("renders correctly H2 lightGray", () => {
   expect(tree).toMatchSnapshot();
 });
 
-it("renders correctly H2 green", () => {
-  const tree = create(<Text.H2 green>test</Text.H2>).toJSON();
+it("renders correctly H2 primary", () => {
+  const tree = create(<Text.H2 primary>test</Text.H2>).toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it("renders correctly H2 black70", () => {
+  const tree = create(<Text.H2 black70>test</Text.H2>).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
@@ -79,8 +84,8 @@ it("renders correctly H3 lightGray", () => {
   expect(tree).toMatchSnapshot();
 });
 
-it("renders correctly H3 green", () => {
-  const tree = create(<Text.H3 green>test</Text.H3>).toJSON();
+it("renders correctly H3 primary", () => {
+  const tree = create(<Text.H3 primary>test</Text.H3>).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
@@ -107,7 +112,7 @@ it("renders correctly Primary lightGray", () => {
 });
 
 it("renders correctly Primary green", () => {
-  const tree = create(<Text.Primary green>test</Text.Primary>).toJSON();
+  const tree = create(<Text.Primary primary>test</Text.Primary>).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
@@ -132,7 +137,7 @@ it("renders correctly Primary red", () => {
 });
 
 it("renders correctly Primary blue", () => {
-  const tree = create(<Text.Primary blue>test</Text.Primary>).toJSON();
+  const tree = create(<Text.Primary secondary>test</Text.Primary>).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
@@ -153,8 +158,8 @@ it("renders correctly Secondary lightGray", () => {
   expect(tree).toMatchSnapshot();
 });
 
-it("renders correctly Secondary green", () => {
-  const tree = create(<Text.Secondary green>test</Text.Secondary>).toJSON();
+it("renders correctly Secondary color", () => {
+  const tree = create(<Text.Secondary secondary>test</Text.Secondary>).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
@@ -205,8 +210,8 @@ it("renders correctly Tertiary lightGray", () => {
   expect(tree).toMatchSnapshot();
 });
 
-it("renders correctly Tertiary green", () => {
-  const tree = create(<Text.Tertiary green>test</Text.Tertiary>).toJSON();
+it("renders correctly Tertiary primary", () => {
+  const tree = create(<Text.Tertiary primary>test</Text.Tertiary>).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
