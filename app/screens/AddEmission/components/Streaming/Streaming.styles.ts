@@ -17,6 +17,11 @@ export default StyleSheet.create({
     paddingLeft: ConstantsLayout.PADDING_HORIZONTAL,
     paddingBottom: VERTICAL_PADDING_BETWEEN_ITEMS,
   },
+  rowContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    alignContent: "center",
+  },
   durationDistanceContainer: {
     ...Layout.containerWithPadding,
     ...separationContainers,

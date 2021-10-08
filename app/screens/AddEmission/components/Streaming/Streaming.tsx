@@ -44,7 +44,16 @@ const Streaming: React.FC<Props> = ({
     <>
       <View style={styles.durationDistanceContainer}>
         <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_SCREEN_DURATION")}</Text.H3>
-        <Text.Primary lightGray>{hours + " hour(s) and " + minutes + " minute(s)."}</Text.Primary>
+        <View style={styles.rowContainer}>
+          <Text.Primary black70 bold>
+            {hours}
+          </Text.Primary>
+          <Text.Primary black70>{" hour(s) and "}</Text.Primary>
+          <Text.Primary black70 bold>
+            {+minutes}
+          </Text.Primary>
+          <Text.Primary black70>{" minute(s)."}</Text.Primary>
+        </View>
       </View>
       <Slider
         minimumTrackTintColor={Colors.green50}
@@ -58,13 +67,15 @@ const Streaming: React.FC<Props> = ({
       />
       <View style={styles.totalContainer}>
         <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_SCREEN_TOTAL")}</Text.H3>
-        <Text.H2 darkGray>
-          <FormattedNumber
-            value={carbonValue > 1 ? carbonValue : carbonValue * 1000}
-            maximumFractionDigits={2}
-          />{" "}
-          <Text.Primary>{carbonValue > 1 ? "kgCO2eq" : "gCO2eq"}</Text.Primary>
-        </Text.H2>
+        <View style={styles.rowContainer}>
+          <Text.H3 black70>
+            <FormattedNumber
+              value={carbonValue > 1 ? carbonValue : carbonValue * 1000}
+              maximumFractionDigits={2}
+            />{" "}
+          </Text.H3>
+          <Text.Primary black70>{carbonValue > 1 ? "kgCO2eq" : "gCO2eq"}</Text.Primary>
+        </View>
       </View>
     </>
   );

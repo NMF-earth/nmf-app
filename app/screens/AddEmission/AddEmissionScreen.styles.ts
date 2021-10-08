@@ -4,6 +4,14 @@ import { Layout as ConstantsLayout } from "constant";
 import { Colors, Layout } from "style";
 
 export default StyleSheet.create({
+  rowContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    alignContent: "center",
+  },
+  dateSeparator: {
+    marginRight: 8,
+  },
   container: {
     flex: 1,
     backgroundColor: Colors.white,

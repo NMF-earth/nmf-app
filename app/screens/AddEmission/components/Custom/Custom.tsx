@@ -24,11 +24,11 @@ const Custom: React.FC<Props> = ({ setCo2eqKilograms, defaultValueSlider }) => {
     <>
       <View style={styles.container}>
         <Text.H3 style={styles.header}>{t("ADD_EMISSION_SCREEN_QUANTITY_OF_EMISSION")}</Text.H3>
-        <View style={{ flexDirection: "row" }}>
-          <Text.H2 darkGray>
+        <View style={styles.rowContainer}>
+          <Text.H3 black70 bold>
             {Math.round(sliderValue)}
-            <Text.Primary>{" kgCO2eq"}</Text.Primary>
-          </Text.H2>
+          </Text.H3>
+          <Text.Primary black70>{" kgCO2eq"}</Text.Primary>
         </View>
       </View>
       <Slider

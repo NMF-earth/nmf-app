@@ -32,7 +32,12 @@ const Purchase: React.FC<Props> = ({ emissionModelType, setQuantity, defaultValu
     <>
       <View style={styles.durationContainer}>
         <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_SCREEN_QUANTITY")}</Text.H3>
-        <Text.Primary lightGray>{sliderValue + " " + t("ADD_EMISSION_SCREEN_ITEMS")}</Text.Primary>
+        <View style={styles.rowContainer}>
+          <Text.Primary black70 bold>
+            {sliderValue + " "}
+          </Text.Primary>
+          <Text.Primary black70>{t("ADD_EMISSION_SCREEN_ITEMS")}</Text.Primary>
+        </View>
       </View>
       <Slider
         minimumTrackTintColor={Colors.green50}
@@ -46,13 +51,15 @@ const Purchase: React.FC<Props> = ({ emissionModelType, setQuantity, defaultValu
       />
       <View style={styles.totalContainer}>
         <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_SCREEN_TOTAL")}</Text.H3>
-        <Text.H2 darkGray>
-          <FormattedNumber
-            value={sliderValue * purchase[emissionModelType]}
-            maximumFractionDigits={2}
-          />{" "}
-          <Text.Primary>kgCO2eq</Text.Primary>
-        </Text.H2>
+        <View style={styles.rowContainer}>
+          <Text.H3 black70>
+            <FormattedNumber
+              value={sliderValue * purchase[emissionModelType]}
+              maximumFractionDigits={2}
+            />{" "}
+          </Text.H3>
+          <Text.Primary black70>kgCO2eq</Text.Primary>
+        </View>
       </View>
     </>
   );

@@ -12,6 +12,11 @@ export default StyleSheet.create({
   header: {
     paddingBottom: VERTICAL_PADDING_BETWEEN_ITEMS,
   },
+  rowContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    alignContent: "center",
+  },
   slider: {
     height: 40,
     marginHorizontal: 16,

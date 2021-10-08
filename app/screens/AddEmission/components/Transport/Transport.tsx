@@ -44,8 +44,10 @@ const Transport: React.FC<Props> = ({
 
     return (
       <View style={styles.durationDistanceContainer}>
-        <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_SCREEN_DURATION")}</Text.H3>
-        <Text.Primary lightGray>{hours + " hour(s) and " + minutes + " minute(s)."}</Text.Primary>
+        <Text.H3 black style={styles.miniHeader}>
+          {t("ADD_EMISSION_SCREEN_DURATION")}
+        </Text.H3>
+        <Text.Primary black70>{hours + " hour(s) and " + minutes + " minute(s)."}</Text.Primary>
       </View>
     );
   };
@@ -53,8 +55,15 @@ const Transport: React.FC<Props> = ({
   const renderDistance = () => {
     return (
       <View style={styles.durationDistanceContainer}>
-        <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_SCREEN_DISTANCE")}</Text.H3>
-        <Text.Primary lightGray>{Math.round(sliderValue) + " kilometer(s)"}</Text.Primary>
+        <Text.H3 black style={styles.miniHeader}>
+          {t("ADD_EMISSION_SCREEN_DISTANCE")}
+        </Text.H3>
+        <View style={styles.rowContainer}>
+          <Text.Primary black70 bold>
+            {Math.round(sliderValue)}
+          </Text.Primary>
+          <Text.Primary black70> kilometer(s)</Text.Primary>
+        </View>
       </View>
     );
   };
@@ -78,18 +87,20 @@ const Transport: React.FC<Props> = ({
       />
       <View style={styles.totalContainer}>
         <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_SCREEN_TOTAL")}</Text.H3>
-        <Text.H2 darkGray>
-          <FormattedNumber
-            value={
-              emissionModelType === TransportType.plane
-                ? calculation.getFlightEmissionValue(sliderValue) *
-                  transport[calculation.getFlightType(sliderValue)]
-                : sliderValue * 1000 * transport[emissionModelType]
-            }
-            maximumFractionDigits={2}
-          />{" "}
-          <Text.Primary>kgCO2eq</Text.Primary>
-        </Text.H2>
+        <View style={styles.rowContainer}>
+          <Text.H3 black70>
+            <FormattedNumber
+              value={
+                emissionModelType === TransportType.plane
+                  ? calculation.getFlightEmissionValue(sliderValue) *
+                    transport[calculation.getFlightType(sliderValue)]
+                  : sliderValue * 1000 * transport[emissionModelType]
+              }
+              maximumFractionDigits={2}
+            />{" "}
+          </Text.H3>
+          <Text.Primary black70>kgCO2eq</Text.Primary>
+        </View>
       </View>
     </>
   );

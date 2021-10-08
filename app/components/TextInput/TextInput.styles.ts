@@ -12,7 +12,7 @@ export default StyleSheet.create({
     marginBottom: 8,
     paddingHorizontal: Layout.PADDING_HORIZONTAL,
     height: 40,
-    borderColor: Colors.grey,
+    borderColor: Colors.black60,
     borderWidth: 2,
     borderRadius: 20,
   },

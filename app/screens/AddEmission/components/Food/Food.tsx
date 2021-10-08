@@ -33,7 +33,12 @@ const Food: React.FC<Props> = ({ emissionModelType, setQuantity, defaultValueSli
     <>
       <View style={styles.durationContainer}>
         <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_SCREEN_QUANTITY")}</Text.H3>
-        <Text.Primary lightGray>{Math.round(sliderValue) + " grams"}</Text.Primary>
+        <View style={styles.rowContainer}>
+          <Text.Primary black70 bold>
+            {Math.round(sliderValue)}{" "}
+          </Text.Primary>
+          <Text.Primary black70>grams</Text.Primary>
+        </View>
       </View>
       <Slider
         minimumTrackTintColor={Colors.green50}
@@ -47,13 +52,15 @@ const Food: React.FC<Props> = ({ emissionModelType, setQuantity, defaultValueSli
       />
       <View style={styles.totalContainer}>
         <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_SCREEN_TOTAL")}</Text.H3>
-        <Text.H2 darkGray>
-          <FormattedNumber
-            value={(sliderValue / 1000) * food[emissionModelType]}
-            maximumFractionDigits={2}
-          />{" "}
-          <Text.Primary>kgCO2eq</Text.Primary>
-        </Text.H2>
+        <View style={styles.rowContainer}>
+          <Text.H3 darkGray>
+            <FormattedNumber
+              value={(sliderValue / 1000) * food[emissionModelType]}
+              maximumFractionDigits={2}
+            />{" "}
+          </Text.H3>
+          <Text.Primary black70>kgCO2eq</Text.Primary>
+        </View>
       </View>
     </>
   );

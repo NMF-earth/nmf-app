@@ -35,4 +35,8 @@ export default StyleSheet.create({
   separator: {
     ...Layout.separator,
   },
+  rowContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+  },
 });

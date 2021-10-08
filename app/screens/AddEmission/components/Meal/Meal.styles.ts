@@ -13,6 +13,11 @@ export default StyleSheet.create({
     paddingBottom: VERTICAL_PADDING_BETWEEN_ITEMS,
     ...Layout.containerWithPadding,
   },
+  rowContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    alignContent: "center",
+  },
   tagContainer: {
     paddingLeft: ConstantsLayout.PADDING_HORIZONTAL,
     paddingBottom: VERTICAL_PADDING_BETWEEN_ITEMS,

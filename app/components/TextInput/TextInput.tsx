@@ -25,9 +25,9 @@ const TextInput: React.FC<Props> = ({ isOptional, onChangeText, value, placehold
         style={styles.containerOptionalTitle}
       >
         {isOptional && (
-          <Ionicons name={"md-add-circle"} size={24} color={Colors.green50} style={styles.icon} />
+          <Ionicons name={"md-add-circle"} size={24} color={Colors.primary} style={styles.icon} />
         )}
-        <Text.H3 green={isOptional}>{title}</Text.H3>
+        <Text.H3 primary={isOptional}>{title}</Text.H3>
       </TouchableOpacity>
       {isVisible && (
         <TextInputRN
