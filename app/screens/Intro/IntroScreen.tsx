@@ -33,11 +33,12 @@ const IntroScreen: React.FC = () => {
           <Text.Tertiary green>{t("INTRO_SCREEN_TERMS_OF_USE")}</Text.Tertiary>
         </TouchableOpacity>
         <View style={styles.buttonView}>
-          <Button.Primary fullWidth onPress={onPress} textType={"Primary"}>
-            <Text.Primary white center bold>
-              {t("INTRO_SCREEN_I_AGREE")}
-            </Text.Primary>
-          </Button.Primary>
+          <Button.Primary
+            text={t("INTRO_SCREEN_I_AGREE")}
+            fullWidth
+            onPress={onPress}
+            textType={"Primary"}
+          />
         </View>
       </View>
     </SafeAreaView>

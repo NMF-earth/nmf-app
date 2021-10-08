@@ -34,11 +34,12 @@ const AddEmissionButton: React.FC<Props> = ({ emissionPayload }) => {
   };
 
   return (
-    <Button.Primary onPress={addEmission} textType={"Primary"} style={styles.button}>
-      <Text.Primary white center bold>
-        {t("ADD_EMISSION_SCREEN_ADD_THIS_EMISSION")}
-      </Text.Primary>
-    </Button.Primary>
+    <Button.Primary
+      onPress={addEmission}
+      textType={"Primary"}
+      style={styles.button}
+      text={t("ADD_EMISSION_SCREEN_ADD_THIS_EMISSION")}
+    />
   );
 };
 

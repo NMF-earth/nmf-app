@@ -1,7 +1,9 @@
 import React from "react";
 import { TouchableOpacity, StyleProp, ViewStyle } from "react-native";
+import { Ionicons } from "@expo/vector-icons";
 
-import { Font } from "style";
+import { Colors, Font } from "style";
+import { Text } from "components";
 
 import styles from "./Button.styles";
 import mainStyle from "./styles";
@@ -12,11 +14,13 @@ type ButtonType = "Primary" | "Secondary";
 
 type Props = {
   style?: StyleProp<ViewStyle>;
-  children: React.ReactNode;
+  children?: React.ReactNode;
   fullWidth?: boolean;
   textType: ButtonType;
   black?: boolean;
   red?: boolean;
+  text?: string;
+  icon?: string;
   onPress: () => void;
 };
 
@@ -25,8 +29,11 @@ interface ButtonFactory {
 }
 
 const buttonFactory: ButtonFactory = (type) => (props) => {
+  let iconItem = null;
+  let textItem = null;
+
   const customStyle = [mainStyle.default, styles[type].default, props.style];
-  const { fullWidth, children, textType, black, red, onPress } = props;
+  const { fullWidth, children, textType, black, red, onPress, icon, text } = props;
 
   if (fullWidth) {
     customStyle.push(mainStyle.fullWidth);
@@ -45,8 +52,24 @@ const buttonFactory: ButtonFactory = (type) => (props) => {
     borderRadius: PADDING_VERTICAL * 2 + Font.FontSize[textType],
   };
 
+  if (icon) {
+    iconItem = <Ionicons name={icon} size={24} style={mainStyle.mainIcon} color={Colors.white} />;
+  }
+
+  if (text) {
+    textItem = (
+      <Text.Primary bold center white>
+        {text}
+      </Text.Primary>
+    );
+  }
+
   return (
     <TouchableOpacity onPress={onPress} {...props} style={[customStyle, additionalStyle]}>
+      {iconItem}
+
+      {textItem}
+
       {children}
     </TouchableOpacity>
   );

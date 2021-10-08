@@ -41,13 +41,11 @@ const BudgetScreen: NavStatelessComponent = () => {
       <Button.Primary
         style={styles.monthlyBudgetButton}
         fullWidth
+        icon="calendar"
+        text={t("BUDGET_SCREEN_SET_MONTHLY_BUDGET")}
         textType={"Primary"}
         onPress={() => navigator.openMontlyBudget()}
-      >
-        <Text.Primary bold center white>
-          {t("BUDGET_SCREEN_SET_MONTHLY_BUDGET")}
-        </Text.Primary>
-      </Button.Primary>
+      />
       <NumberOfDaysVegetarian />
       <ProgressChart
         totalEmissions={totalCurrentYearEmissions}

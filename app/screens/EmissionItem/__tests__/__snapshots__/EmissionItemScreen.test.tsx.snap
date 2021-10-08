@@ -127,16 +127,12 @@ exports[`EmissionsScreen renders correctly 1`] = `
     </View>
     <Button.Primary
       fullWidth={true}
+      icon="trash"
       onPress={[Function]}
       red={true}
+      text="Delete emission"
       textType="Primary"
-    >
-      <Text.Primary
-        white={true}
-      >
-        Delete emission
-      </Text.Primary>
-    </Button.Primary>
+    />
   </View>
 </RCTScrollView>
 `;

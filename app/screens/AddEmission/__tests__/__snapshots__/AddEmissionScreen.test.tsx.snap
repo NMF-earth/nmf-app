@@ -141,16 +141,9 @@ exports[`AddEmissionScreen renders correctly 1`] = `
             "margin": 16,
           }
         }
+        text="Add this emission"
         textType="Primary"
-      >
-        <Text.Primary
-          bold={true}
-          center={true}
-          white={true}
-        >
-          Add this emission
-        </Text.Primary>
-      </Button.Primary>
+      />
     </View>
   </RCTScrollView>
 </FormattedProvider>

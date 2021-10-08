@@ -16,22 +16,16 @@ exports[`BudgetScreen renders correctly 1`] = `
     />
     <Button.Primary
       fullWidth={true}
+      icon="calendar"
       onPress={[Function]}
       style={
         Object {
           "marginVertical": 6,
         }
       }
+      text="Set monthly budget"
       textType="Primary"
-    >
-      <Text.Primary
-        bold={true}
-        center={true}
-        white={true}
-      >
-        Set monthly budget
-      </Text.Primary>
-    </Button.Primary>
+    />
     <NumberOfDaysVegetarian />
     <ProgressChart />
   </View>

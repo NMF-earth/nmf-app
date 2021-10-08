@@ -5,6 +5,12 @@ import { Colors } from "style";
 export default StyleSheet.create({
   default: {
     paddingHorizontal: 36,
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  mainIcon: {
+    marginRight: 8,
   },
   black: {
     backgroundColor: Colors.grey100,

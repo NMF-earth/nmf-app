@@ -75,16 +75,9 @@ exports[`renders correctly ComingSoon 1`] = `
       <Button.Primary
         fullWidth={true}
         onPress={[Function]}
+        text="I agree"
         textType="Primary"
-      >
-        <Text.Primary
-          bold={true}
-          center={true}
-          white={true}
-        >
-          I agree
-        </Text.Primary>
-      </Button.Primary>
+      />
     </View>
   </View>
 </RCTSafeAreaView>
