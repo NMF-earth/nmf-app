@@ -111,26 +111,37 @@ exports[`AddEmissionScreen renders correctly 1`] = `
             onPress={[Function]}
             style={
               Object {
+                "alignContent": "center",
+                "alignItems": "center",
                 "flexDirection": "row",
               }
             }
           >
+            <Ionicons
+              color="#3957D0"
+              name="calendar"
+              size={20}
+              style={
+                Object {
+                  "marginRight": 8,
+                }
+              }
+            />
             <Text.Primary
-              lightGray={true}
+              darkGray={true}
+              style={
+                Object {
+                  "marginRight": 8,
+                }
+              }
             >
               Sunday 7th April 2019
             </Text.Primary>
-            <Text.Primary
-              lightGray={true}
-            >
-               - 
-            </Text.Primary>
-            <Text.Primary
-              bold={true}
-              green={true}
-            >
-              Change
-            </Text.Primary>
+            <Ionicons
+              color="#4BB377"
+              name="create"
+              size={24}
+            />
           </TouchableOpacity>
         </View>
       </View>

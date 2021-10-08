@@ -12,6 +12,14 @@ export default StyleSheet.create({
   emptyContainer: {
     height: 16,
   },
+  rowContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    alignContent: "center",
+  },
+  dateSeparator: {
+    marginRight: 8,
+  },
   textContainer: {
     ...Layout.containerWithPadding,
     paddingVertical: 12,
