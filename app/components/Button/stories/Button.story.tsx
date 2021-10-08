@@ -48,7 +48,7 @@ storiesOf("Button", module)
   .add("Secondary", () => (
     <View style={container}>
       <Button.Secondary onPress={onPressFake} textType={"Secondary"}>
-        <Text.Secondary center green>
+        <Text.Secondary center secondary>
           {text("Title", DEFAULT_TEXT)}
         </Text.Secondary>
       </Button.Secondary>

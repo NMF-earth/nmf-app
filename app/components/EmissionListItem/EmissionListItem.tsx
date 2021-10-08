@@ -47,7 +47,7 @@ const EmissionListItem: React.FC<EmissionListItemProps> = ({
         {isMitigated && (
           <>
             <Text.Tertiary lightGray>{" • "}</Text.Tertiary>
-            <Text.Tertiary green>{"Offset"}</Text.Tertiary>
+            <Text.Tertiary primary>{"Offset"}</Text.Tertiary>
           </>
         )}
       </View>

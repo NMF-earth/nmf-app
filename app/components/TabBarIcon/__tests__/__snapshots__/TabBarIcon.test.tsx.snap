@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <Ionicons
-  color="#9CA6A0"
+  color="#6f6f6f"
   name="ios-information-circle"
   size={26}
 />

@@ -56,7 +56,7 @@ exports[`renders correctly ComingSoon 1`] = `
       onPress={[Function]}
     >
       <Text.Tertiary
-        green={true}
+        primary={true}
       >
         Read terms of use
       </Text.Tertiary>

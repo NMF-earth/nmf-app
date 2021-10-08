@@ -71,7 +71,7 @@ const MonthlyBudgetScreen: NavStatelessComponent = () => {
           value={sliderValue}
           onSlidingComplete={setSliderValue}
         />
-        <Text.Primary lightGray>{Math.round(sliderValue) + " kg CO2eq"}</Text.Primary>
+        <Text.Primary secondary>{Math.round(sliderValue) + " kg CO2eq"}</Text.Primary>
         <View style={styles.worldBudgetContainer}>
           <View style={styles.worldExampleTitle}>
             <Text.Primary bold>
@@ -88,7 +88,7 @@ const MonthlyBudgetScreen: NavStatelessComponent = () => {
           <View style={styles.parisAgreement}>
             <Text.Secondary center>
               {t("MONTHLY_BUDGET_SCREEN_PARIS_AGREEMENT")}
-              <Text.Secondary bold darkGray>
+              <Text.Secondary bold primary>
                 {" 166 kg CO2"}
               </Text.Secondary>
             </Text.Secondary>

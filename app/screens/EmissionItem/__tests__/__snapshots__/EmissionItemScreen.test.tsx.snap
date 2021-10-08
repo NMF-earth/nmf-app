@@ -16,7 +16,7 @@ exports[`EmissionsScreen renders correctly 1`] = `
       Type
     </Text.H3>
     <Text.Primary
-      darkGray={true}
+      black70={true}
       style={
         Object {
           "alignItems": "flex-start",
@@ -33,7 +33,7 @@ exports[`EmissionsScreen renders correctly 1`] = `
       Quantity
     </Text.H3>
     <Text.Primary
-      darkGray={true}
+      black70={true}
       style={
         Object {
           "alignItems": "flex-start",
@@ -53,7 +53,7 @@ exports[`EmissionsScreen renders correctly 1`] = `
       Mitigation
     </Text.H3>
     <Text.Primary
-      darkGray={true}
+      black70={true}
       style={
         Object {
           "paddingTop": 2,
@@ -96,7 +96,7 @@ exports[`EmissionsScreen renders correctly 1`] = `
       }
     >
       <Text.Primary
-        darkGray={true}
+        black70={true}
         style={
           Array [
             Object {
@@ -129,8 +129,25 @@ exports[`EmissionsScreen renders correctly 1`] = `
       fullWidth={true}
       onPress={[Function]}
       red={true}
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+        }
+      }
       textType="Primary"
     >
+      <Ionicons
+        color="#FFFFFF"
+        name="trash"
+        size={26}
+        style={
+          Object {
+            "marginRight": 9.3,
+          }
+        }
+      />
       <Text.Primary
         white={true}
       >

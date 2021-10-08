@@ -108,7 +108,7 @@ const MyDataScreen: NavStatelessComponent = () => {
         </Text.Primary>
       </Button.Primary>
       <Button.Secondary style={styles.button} textType={"Primary"} onPress={onImport}>
-        <Text.Primary numberOfLines={1} center green bold>
+        <Text.Primary numberOfLines={1} center primary bold>
           {t("MY_DATA_SCREEN_IMPORT_DATA")}
         </Text.Primary>
       </Button.Secondary>

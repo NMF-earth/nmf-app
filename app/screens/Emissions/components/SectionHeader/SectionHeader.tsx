@@ -29,14 +29,14 @@ const SectionHeader: React.FC<Props & LocalizationContextProps> = ({ date, langu
 
   return (
     <TouchableOpacity onPress={onPress} style={styles.container}>
-      <Text.Primary blue bold style={styles.text}>
+      <Text.Primary secondary bold style={styles.text}>
         {monthAndYear}
       </Text.Primary>
       <Ionicons
         name={"ios-chevron-forward-outline"}
         size={24}
         style={styles.icon}
-        color={Colors.blue50}
+        color={Colors.secondary}
       />
     </TouchableOpacity>
   );

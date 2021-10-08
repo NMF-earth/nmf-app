@@ -7,6 +7,11 @@ export default StyleSheet.create({
     ...Layout.containerWithPadding,
     paddingTop: 22,
   },
+  rowContainer: {
+    alignItems: "center",
+    justifyContent: "center",
+    flexDirection: "row",
+  },
   lastItem: {
     alignItems: "flex-start",
     paddingTop: 2,

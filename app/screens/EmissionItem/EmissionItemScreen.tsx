@@ -6,7 +6,9 @@ import moment from "moment";
 import "moment/min/locales";
 import { FormattedNumber } from "react-native-globalize";
 import { useNavigation, useRoute } from "@react-navigation/native";
+import { Ionicons } from "@expo/vector-icons";
 
+import { Colors } from "style";
 import { Text, Button } from "components";
 import { emissions } from "ducks";
 import {
@@ -62,19 +64,19 @@ const EmissionItemScreen = ({ language = "" }: LocalizationContextProps) => {
       {name.length ? (
         <>
           <Text.H3>{t("EMISSION_ITEM_SCREEN_NAME")}</Text.H3>
-          <Text.Primary darkGray style={styles.lastItem}>
+          <Text.Primary black70 style={styles.lastItem}>
             {name}
           </Text.Primary>
         </>
       ) : null}
       <Text.H3>{t("EMISSION_ITEM_SCREEN_TYPE")}</Text.H3>
-      <Text.Primary darkGray style={styles.lastItem}>
+      <Text.Primary black70 style={styles.lastItem}>
         {ui.getTranslationEmissionType(emissionType)}
         {" - "}
         {ui.getTranslationEmissionModelType(emissionModelType)}
       </Text.Primary>
       <Text.H3>{t("EMISSION_ITEM_SCREEN_QUANTITY")}</Text.H3>
-      <Text.Primary darkGray style={styles.lastItem}>
+      <Text.Primary black70 style={styles.lastItem}>
         <FormattedNumber
           maximumFractionDigits={2}
           value={co2Emission > 1 ? co2Emission : co2Emission * 1000}
@@ -83,7 +85,7 @@ const EmissionItemScreen = ({ language = "" }: LocalizationContextProps) => {
       </Text.Primary>
 
       <Text.H3>{t("EMISSION_ITEM_SCREEN_MITIGATED")}</Text.H3>
-      <Text.Primary darkGray style={styles.text}>
+      <Text.Primary black70 style={styles.text}>
         {isMitigated
           ? t("EMISSION_ITEM_SCREEN_IS_MITIGATED")
           : t("EMISSION_ITEM_SCREEN_IS_NOT_MITIGATED")}
@@ -94,7 +96,7 @@ const EmissionItemScreen = ({ language = "" }: LocalizationContextProps) => {
 
       <Text.H3>{t("EMISSION_ITEM_SCREEN_DATE")}</Text.H3>
       <View style={styles.date}>
-        <Text.Primary darkGray style={[styles.lastItem, styles.day]}>
+        <Text.Primary black70 style={[styles.lastItem, styles.day]}>
           {day + " "}
         </Text.Primary>
         <Text.Primary darkGray style={styles.lastItem}>

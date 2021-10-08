@@ -17,7 +17,7 @@ const Tag: React.FC<Props> = ({ text, onPress, icon }) => {
   let iconItem = null;
 
   if (icon) {
-    iconItem = <Ionicons name={icon} size={32} style={styles.mainIcon} color={Colors.green50} />;
+    iconItem = <Ionicons name={icon} size={32} style={styles.mainIcon} color={Colors.primary} />;
   }
 
   return (
@@ -26,7 +26,7 @@ const Tag: React.FC<Props> = ({ text, onPress, icon }) => {
       <View style={styles.textContainer}>
         <Text.Primary style={styles.text}>{text}</Text.Primary>
       </View>
-      <Ionicons name={"chevron-forward"} size={20} color={Colors.green50} />
+      <Ionicons name={"chevron-forward"} size={20} color={Colors.primary} />
     </TouchableOpacity>
   );
 };

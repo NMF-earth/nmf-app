@@ -51,8 +51,8 @@ exports[`MyDataScreen renders correctly 1`] = `
       <Text.Primary
         bold={true}
         center={true}
-        green={true}
         numberOfLines={1}
+        primary={true}
       >
         Import data
       </Text.Primary>

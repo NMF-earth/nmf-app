@@ -31,7 +31,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
         disabled={false}
         enabled={true}
         inverted={false}
-        maximumTrackTintColor="#CED4DA"
+        maximumTrackTintColor="#F9F9F9"
         maximumValue={1000}
         minimumTrackTintColor="#4BB377"
         minimumValue={0}
@@ -65,7 +65,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
         value={0}
       />
       <Text.Primary
-        lightGray={true}
+        secondary={true}
       >
         NaN kg CO2eq
       </Text.Primary>
@@ -201,7 +201,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
             If you wish to respect the Paris agreement (to keep the rise in global average temperature below 2 degrees), set your monthly budget at
             <Text.Secondary
               bold={true}
-              darkGray={true}
+              primary={true}
             >
                166 kg CO2
             </Text.Secondary>

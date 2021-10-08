@@ -23,8 +23,8 @@ exports[`LanguageScreen renders correctly 1`] = `
       >
         <Text.Primary
           bold={true}
-          green={true}
           numberOfLines={1}
+          primary={true}
           style={
             Object {
               "paddingVertical": 20,
@@ -55,8 +55,8 @@ exports[`LanguageScreen renders correctly 1`] = `
       >
         <Text.Primary
           bold={true}
-          green={false}
           numberOfLines={1}
+          primary={false}
           style={
             Object {
               "paddingVertical": 20,
@@ -77,8 +77,8 @@ exports[`LanguageScreen renders correctly 1`] = `
       >
         <Text.Primary
           bold={true}
-          green={false}
           numberOfLines={1}
+          primary={false}
           style={
             Object {
               "paddingVertical": 20,
@@ -99,8 +99,8 @@ exports[`LanguageScreen renders correctly 1`] = `
       >
         <Text.Primary
           bold={true}
-          green={false}
           numberOfLines={1}
+          primary={false}
           style={
             Object {
               "paddingVertical": 20,
@@ -121,8 +121,8 @@ exports[`LanguageScreen renders correctly 1`] = `
       >
         <Text.Primary
           bold={true}
-          green={false}
           numberOfLines={1}
+          primary={false}
           style={
             Object {
               "paddingVertical": 20,
@@ -143,8 +143,8 @@ exports[`LanguageScreen renders correctly 1`] = `
       >
         <Text.Primary
           bold={true}
-          green={false}
           numberOfLines={1}
+          primary={false}
           style={
             Object {
               "paddingVertical": 20,
@@ -165,8 +165,8 @@ exports[`LanguageScreen renders correctly 1`] = `
       >
         <Text.Primary
           bold={true}
-          green={false}
           numberOfLines={1}
+          primary={false}
           style={
             Object {
               "paddingVertical": 20,
@@ -187,8 +187,8 @@ exports[`LanguageScreen renders correctly 1`] = `
       >
         <Text.Primary
           bold={true}
-          green={false}
           numberOfLines={1}
+          primary={false}
           style={
             Object {
               "paddingVertical": 20,
@@ -209,8 +209,8 @@ exports[`LanguageScreen renders correctly 1`] = `
       >
         <Text.Primary
           bold={true}
-          green={false}
           numberOfLines={1}
+          primary={false}
           style={
             Object {
               "paddingVertical": 20,
@@ -231,8 +231,8 @@ exports[`LanguageScreen renders correctly 1`] = `
       >
         <Text.Primary
           bold={true}
-          green={false}
           numberOfLines={1}
+          primary={false}
           style={
             Object {
               "paddingVertical": 20,

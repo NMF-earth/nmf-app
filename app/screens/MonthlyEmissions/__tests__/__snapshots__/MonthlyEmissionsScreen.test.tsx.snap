@@ -30,8 +30,8 @@ exports[`<MonthlyEmissions /> render 1`] = `
         20.08 kgCO2eq
       </Text.Primary>
       <Text.Secondary
-        green={true}
         orange={false}
+        primary={true}
       >
         10 % of budget
       </Text.Secondary>
@@ -123,8 +123,8 @@ exports[`<MonthlyEmissions /> render 1`] = `
           20.08 kgCO2eq
         </Text.Primary>
         <Text.Secondary
-          green={true}
           orange={false}
+          primary={true}
         >
           10 % of budget
         </Text.Secondary>

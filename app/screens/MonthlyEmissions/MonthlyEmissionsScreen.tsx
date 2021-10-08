@@ -47,7 +47,7 @@ const MonthlyEmissions: NavStatelessComponent = () => {
         {`${co2value.toFixed(2)} kgCO2eq`}
       </Text.Primary>
       {percentageBudget && (
-        <Text.Secondary orange={percentageBudget > 100} green={percentageBudget < 100}>
+        <Text.Secondary orange={percentageBudget > 100} primary={percentageBudget < 100}>
           {percentageBudget + " % " + t("MONTHLY_EMISSIONS_SCREEN_OF_BUDGET")}
         </Text.Secondary>
       )}

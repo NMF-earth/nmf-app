@@ -10,7 +10,7 @@ exports[`renders correctly Primary Button with Secondary font 1`] = `
           "paddingHorizontal": 36,
         },
         Object {
-          "backgroundColor": "#4BB377",
+          "backgroundColor": "#0F853B",
         },
         undefined,
       ],
@@ -38,9 +38,7 @@ exports[`renders correctly Secondary Button with Secondary font 1`] = `
           "paddingHorizontal": 36,
         },
         Object {
-          "backgroundColor": "#FFFFFF",
-          "borderColor": "#4BB377",
-          "borderWidth": 2.5,
+          "backgroundColor": "#3957D0",
         },
         undefined,
       ],
@@ -69,7 +67,7 @@ exports[`renders correctly full width Primary Button with Primary font 1`] = `
           "paddingHorizontal": 36,
         },
         Object {
-          "backgroundColor": "#4BB377",
+          "backgroundColor": "#0F853B",
         },
         undefined,
         Object {
@@ -104,7 +102,7 @@ exports[`renders correctly full width Primary Button with black color 1`] = `
           "paddingHorizontal": 36,
         },
         Object {
-          "backgroundColor": "#4BB377",
+          "backgroundColor": "#0F853B",
         },
         undefined,
         Object {
@@ -142,7 +140,7 @@ exports[`renders correctly full width Primary Button with red color 1`] = `
           "paddingHorizontal": 36,
         },
         Object {
-          "backgroundColor": "#4BB377",
+          "backgroundColor": "#0F853B",
         },
         undefined,
         Object {
@@ -179,9 +177,7 @@ exports[`renders correctly full width Secondary Button with Primary font 1`] = `
           "paddingHorizontal": 36,
         },
         Object {
-          "backgroundColor": "#FFFFFF",
-          "borderColor": "#4BB377",
-          "borderWidth": 2.5,
+          "backgroundColor": "#3957D0",
         },
         undefined,
         Object {

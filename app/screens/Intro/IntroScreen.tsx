@@ -30,7 +30,7 @@ const IntroScreen: React.FC = () => {
         <TouchableOpacity
           onPress={() => WebBrowser.openBrowserAsync("http://nmf.earth/terms-of-use.pdf")}
         >
-          <Text.Tertiary green>{t("INTRO_SCREEN_TERMS_OF_USE")}</Text.Tertiary>
+          <Text.Tertiary primary>{t("INTRO_SCREEN_TERMS_OF_USE")}</Text.Tertiary>
         </TouchableOpacity>
         <View style={styles.buttonView}>
           <Button.Primary fullWidth onPress={onPress} textType={"Primary"}>

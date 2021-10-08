@@ -48,12 +48,12 @@ const MyLocationScreen: NavStatelessComponent = () => {
         <Text.Primary style={styles.carbonIntensity}>
           {t("MY_LOCATION_SCREEN_MY_CARBON_INTENSITY")}
         </Text.Primary>
-        <Text.Primary bold green style={styles.carbonIntensity}>
+        <Text.Primary bold primary style={styles.carbonIntensity}>
           {calculation.getCarbonIntensityInGramPerKWHromKgPerJoules(
             electricity[ElectricityType[location]]
           )}
         </Text.Primary>
-        <Text.Primary bold green style={styles.carbonIntensity}>
+        <Text.Primary bold primary style={styles.carbonIntensity}>
           {" gCO₂eq/kWh"}
         </Text.Primary>
       </View>
