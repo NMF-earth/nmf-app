@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ClickableTag tests should render correctly 1`] = `
+<TouchableOpacity
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
+        "alignSelf": "center",
+        "borderRadius": 6,
+        "borderWidth": 1.5,
+        "paddingHorizontal": 10,
+        "paddingVertical": 4,
+      },
+      Object {
+        "backgroundColor": "#F0F0F0",
+        "borderColor": "#9CA6A0",
+      },
+    ]
+  }
+>
+  <Text.Secondary
+    bold={true}
+    darkGray={true}
+    green={false}
+  >
+    Monday
+  </Text.Secondary>
+</TouchableOpacity>
+`;
