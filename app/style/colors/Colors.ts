@@ -13,4 +13,6 @@ export default {
   apricot: "#EB9276",
   yellow50: "#F3AE45",
   black: "#000000",
+  black70: "#575757",
+  primary10: "#E7F3EB",
 };
