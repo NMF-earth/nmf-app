@@ -5,6 +5,7 @@ import SettingsScreen from "../../../screens/Settings";
 import AboutScreen from "../../../screens/About";
 import SupportUsScreen from "../../../screens/SupportUs";
 import MyLocationScreen from "../../../screens/MyLocation";
+import FaqScreen from "../../../screens/Faq";
 import NotificationsScreen from "../../../screens/Notifications";
 import MyData from "../../../screens/MyData";
 import StorybookScreen from "../../../../storybook";
@@ -30,6 +31,7 @@ const SettingsNavigator = (): React.ReactElement => (
       options={MyLocationScreen.navigationOptions}
       component={MyLocationScreen}
     />
+    <Stack.Screen name="Faq" options={FaqScreen.navigationOptions} component={FaqScreen} />
     <Stack.Screen
       name="Notifications"
       options={NotificationsScreen.navigationOptions}

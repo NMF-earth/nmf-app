@@ -1,0 +1,128 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Accordion renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#E7F3EB",
+          "borderRadius": 10,
+          "borderWidth": 1.5,
+          "marginTop": 16,
+        },
+        Object {
+          "marginTop": 0,
+        },
+      ]
+    }
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "padding": 16,
+        }
+      }
+    >
+      <Ionicons
+        name="chevron-up"
+        size={22}
+        style={
+          Object {
+            "color": "#3957D0",
+          }
+        }
+      />
+      <Text.H3
+        style={
+          Object {
+            "color": "#000000",
+            "flex": 1,
+            "fontSize": 16,
+            "marginLeft": 8,
+          }
+        }
+      >
+        Test title 1
+      </Text.H3>
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#E7F3EB",
+          "borderRadius": 10,
+          "borderWidth": 1.5,
+          "marginTop": 16,
+        },
+        false,
+      ]
+    }
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "padding": 16,
+        }
+      }
+    >
+      <Ionicons
+        name="chevron-up"
+        size={22}
+        style={
+          Object {
+            "color": "#3957D0",
+          }
+        }
+      />
+      <Text.H3
+        style={
+          Object {
+            "color": "#000000",
+            "flex": 1,
+            "fontSize": 16,
+            "marginLeft": 8,
+          }
+        }
+      >
+        Test title 2
+      </Text.H3>
+    </View>
+  </View>
+</View>
+`;

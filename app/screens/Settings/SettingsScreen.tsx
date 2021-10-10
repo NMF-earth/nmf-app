@@ -39,6 +39,10 @@ const SettingsScreen: NavStatelessComponent = () => {
       onPress: navigator.openMyLocation,
     },
     {
+      title: t("SETTINGS_SCREEN_FAQ"),
+      onPress: navigator.openFaq,
+    },
+    {
       title: t("SETTINGS_SCREEN_SUPPORT_US"),
       onPress: navigator.openSupportUs,
     },
