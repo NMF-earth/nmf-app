@@ -24,6 +24,7 @@ const toBeImported = {
   MyData: "../../app/screens/MyData/translations",
   MonthlyEmissions: "../../app/screens/MonthlyEmissions/translations",
   Languages: "../../app/screens/Languages/translations",
+  Faq: "../../app/components/Faq/translations",
   UI: "../../app/utils/ui/translations",
   NoEmission: "../../app/components/NoEmission/translations",
 };
@@ -62,8 +63,9 @@ usedLanguages.forEach((language) => {
     ...imports.MyData[language],
     ...imports.MonthlyEmissions[language],
     ...imports.Languages[language],
-    ...imports.NoEmission[language],
+    ...imports.FAQ[language],
     ...imports.UI[language],
+    ...imports.NoEmission[language],
   };
 });
 

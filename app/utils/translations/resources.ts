@@ -21,6 +21,7 @@ import * as SubCategorySelection from "../../screens/SubCategorySelection/transl
 import * as BarCodeScan from "../../screens/BarCodeScan/translations";
 import * as MonthlyEmissions from "../../screens/MonthlyEmissions/translations";
 import * as Languages from "../../screens/Languages/translations";
+import * as Faq from "../../screens/Faq/translations";
 
 /* COMPONENTS */
 import * as NoEmission from "components/NoEmission/translations";
@@ -50,6 +51,7 @@ const en = {
   ...BarCodeScan.en,
   ...MonthlyEmissions.en,
   ...Languages.en,
+  ...Faq.en,
   ...NoEmission.en,
   ...UI.en,
 };
@@ -78,6 +80,7 @@ const de = {
   ...BarCodeScan.de,
   ...MonthlyEmissions.de,
   ...Languages.de,
+  ...Faq.de,
 };
 
 const fr = {
@@ -104,6 +107,7 @@ const fr = {
   ...BarCodeScan.fr,
   ...MonthlyEmissions.fr,
   ...Languages.fr,
+  ...Faq.fr,
 };
 
 const sv = {
@@ -130,6 +134,7 @@ const sv = {
   ...BarCodeScan.sv,
   ...MonthlyEmissions.sv,
   ...Languages.sv,
+  ...Faq.sv,
 };
 
 const pt = {
@@ -156,6 +161,7 @@ const pt = {
   ...BarCodeScan.pt,
   ...MonthlyEmissions.pt,
   ...Languages.pt,
+  ...Faq.pt,
 };
 
 const es = {
@@ -182,6 +188,7 @@ const es = {
   ...BarCodeScan.es,
   ...MonthlyEmissions.es,
   ...Languages.es,
+  ...Faq.es,
 };
 
 const ru = {
@@ -208,6 +215,7 @@ const ru = {
   ...BarCodeScan.ru,
   ...MonthlyEmissions.ru,
   ...Languages.ru,
+  ...Faq.ru,
 };
 
 const pl = {
@@ -234,6 +242,7 @@ const pl = {
   ...BarCodeScan.pl,
   ...MonthlyEmissions.pl,
   ...Languages.pl,
+  ...Faq.pl,
 };
 
 const da = {
@@ -260,6 +269,7 @@ const da = {
   ...BarCodeScan.da,
   ...MonthlyEmissions.da,
   ...Languages.da,
+  ...Faq.da,
 };
 
 const zh = {
@@ -286,6 +296,7 @@ const zh = {
   ...BarCodeScan.zh,
   ...MonthlyEmissions.zh,
   ...Languages.zh,
+  ...Faq.zh,
 };
 
 const ms = {
@@ -312,6 +323,7 @@ const ms = {
   ...BarCodeScan.ms,
   ...MonthlyEmissions.ms,
   ...Languages.ms,
+  ...Faq.ms,
 };
 
 export interface TranslationKeys
@@ -337,6 +349,7 @@ export interface TranslationKeys
     BarCodeScan.TranslationKeys,
     MonthlyEmissions.TranslationKeys,
     ActDetail.TranslationKeys,
-    Languages.TranslationKeys {}
+    Languages.TranslationKeys,
+    Faq.TranslationKeys {}
 
 export { en, de, fr, sv, pt, es, pl, ru, da, zh, ms };
