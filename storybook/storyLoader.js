@@ -6,6 +6,7 @@
 function loadStories() {
   require("../app/components/Accordion/stories/Accordion.story");
   require("../app/components/Button/stories/Button.story");
+  require("../app/components/ClickableTag/stories/ClickableTag.story");
   require("../app/components/EmissionListItem/stories/EmissionListItem.story");
   require("../app/components/ListItem/stories/ListItem.story");
   require("../app/components/NoEmission/stories/NoEmission.story");
@@ -19,6 +20,7 @@ function loadStories() {
 const stories = [
   "../app/components/Accordion/stories/Accordion.story",
   "../app/components/Button/stories/Button.story",
+  "../app/components/ClickableTag/stories/ClickableTag.story",
   "../app/components/EmissionListItem/stories/EmissionListItem.story",
   "../app/components/ListItem/stories/ListItem.story",
   "../app/components/NoEmission/stories/NoEmission.story",
