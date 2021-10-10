@@ -8,6 +8,7 @@ const initialState = {
   activatedNotifications: false,
   location: ElectricityType.world,
   language: currentLanguage,
+  timesStarted: 0,
 };
 
 const userPreferences = createSlice({
@@ -26,6 +27,9 @@ const userPreferences = createSlice({
     changeLanguage(state, action: PayloadAction<string>) {
       state.language = action.payload;
     },
+    incrementTimesStarted(state) {
+      state.timesStarted += 1;
+    },
   },
 });
 
@@ -34,6 +38,7 @@ const {
   updateLocation,
   toggleNotifications,
   changeLanguage,
+  incrementTimesStarted,
 } = userPreferences.actions;
 
 export const actions = {
@@ -41,6 +46,7 @@ export const actions = {
   updateLocation,
   toggleNotifications,
   changeLanguage,
+  incrementTimesStarted,
 };
 
 export const namespace = userPreferences.name;

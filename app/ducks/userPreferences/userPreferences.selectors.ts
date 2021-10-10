@@ -16,9 +16,12 @@ const getActivateNotifications = (state) =>
 
 const getLanguage = (state) => pathOr(currentLanguage, [namespace, "language"], state);
 
+const getTimesStarted = (state) => pathOr(0, [namespace, "timesStarted"], state);
+
 export default {
   getAcceptedTermsOfUseVersion,
   getActivateNotifications,
   getLocation,
   getLanguage,
+  getTimesStarted,
 };

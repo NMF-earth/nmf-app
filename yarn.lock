@@ -7029,6 +7029,11 @@ expo-status-bar@1.0.4:
   resolved "https://registry.yarnpkg.com/expo-status-bar/-/expo-status-bar-1.0.4.tgz#d8a4c4418b5868c1606969b12bdee85b6fa7d8a4"
   integrity sha512-s7nc496D/Zn1NGiMJ5wu6HyIdXxbgGtmZZtbHm7rpbcmLdf28GmMSNHDx7M0t00BMhky7VAurTCUo+BJs8ugsw==
 
+expo-store-review@~4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/expo-store-review/-/expo-store-review-4.1.0.tgz#42a9f21ad3114f0c48d8d428182dd0b8e2f2ad76"
+  integrity sha512-vIrgr26MykIyEhqf8UpqxBjO5VzSM7mpBATOLZswphQnWyAD0nL5XmVnba9kOJkFkNzzW4ur0W7/+j2nGeYO6Q==
+
 expo-structured-headers@~1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/expo-structured-headers/-/expo-structured-headers-1.1.1.tgz#95e28ff8686a2c06fe6ad1decdbb94cc44716683"
@@ -14547,8 +14552,10 @@ watchpack@^1.7.4:
   resolved "https://registry.yarnpkg.com/watchpack/-/watchpack-1.7.5.tgz#1267e6c55e0b9b5be44c2023aed5437a2c26c453"
   integrity sha512-9P3MWk6SrKjHsGkLT2KHXdQ/9SNkyoJbabxnKOoJepsvJjJG8uYTR3yTPxPQvNDI3w4Nz1xnE0TLHK4RIVe/MQ==
   dependencies:
+    chokidar "^3.4.1"
     graceful-fs "^4.1.2"
     neo-async "^2.5.0"
+    watchpack-chokidar2 "^2.0.1"
   optionalDependencies:
     chokidar "^3.4.1"
     watchpack-chokidar2 "^2.0.1"
