@@ -24,8 +24,6 @@ const StoreReviewChecker = ({ children }: Props): React.ReactElement => {
 
   useEffect(() => {
     if (hasAcceptedTermsOfUseVersion) {
-      console.log("ALLLOU");
-
       dispatch(userPreferences.actions.incrementTimesStarted());
     }
   }, [dispatch, hasAcceptedTermsOfUseVersion]);
@@ -33,7 +31,6 @@ const StoreReviewChecker = ({ children }: Props): React.ReactElement => {
   useEffect(() => {
     const checkForReview = async () => {
       if (prevTimesStarted === 3 && timesStarted === 4 && (await StoreReview.hasAction())) {
-        console.log("IHUUU");
         await StoreReview.requestReview();
       }
     };
