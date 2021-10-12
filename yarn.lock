@@ -7029,7 +7029,7 @@ expo-status-bar@1.0.4:
   resolved "https://registry.yarnpkg.com/expo-status-bar/-/expo-status-bar-1.0.4.tgz#d8a4c4418b5868c1606969b12bdee85b6fa7d8a4"
   integrity sha512-s7nc496D/Zn1NGiMJ5wu6HyIdXxbgGtmZZtbHm7rpbcmLdf28GmMSNHDx7M0t00BMhky7VAurTCUo+BJs8ugsw==
 
-expo-store-review@~4.1.0:
+expo-store-review@4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/expo-store-review/-/expo-store-review-4.1.0.tgz#42a9f21ad3114f0c48d8d428182dd0b8e2f2ad76"
   integrity sha512-vIrgr26MykIyEhqf8UpqxBjO5VzSM7mpBATOLZswphQnWyAD0nL5XmVnba9kOJkFkNzzW4ur0W7/+j2nGeYO6Q==
