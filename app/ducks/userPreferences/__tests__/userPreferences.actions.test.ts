@@ -32,4 +32,11 @@ describe("userPreferences actions should", () => {
     };
     expect(userPreferences.actions.toggleNotifications(true)).toEqual(expectedAction);
   });
+
+  it("be able to increment the number of times app has started", () => {
+    const expectedAction = {
+      type: userPreferences.actions.incrementTimesStarted.toString(),
+    };
+    expect(userPreferences.actions.incrementTimesStarted()).toEqual(expectedAction);
+  });
 });

@@ -51,6 +51,7 @@
     "expo-notifications": "0.12.3",
     "expo-sharing": "9.2.1",
     "expo-status-bar": "1.0.4",
+    "expo-store-review": "4.1.0",
     "expo-updates": "0.8.2",
     "expo-web-browser": "9.2.0",
     "i18n-js": "3.5.1",

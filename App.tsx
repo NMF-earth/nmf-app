@@ -13,6 +13,7 @@ import { Provider } from "react-redux";
 import { enableScreens } from "react-native-screens";
 
 import { LocalizationContext } from "utils";
+import StoreReviewChecker from "components/StoreReviewChecker";
 
 import AppNavigator from "./app/navigation/Navigator/AppNavigator";
 import store from "./app/redux/store";
@@ -98,7 +99,9 @@ const App: React.FC = () => {
               setLanguage: setLanguage,
             }}
           >
-            <AppNavigator />
+            <StoreReviewChecker>
+              <AppNavigator />
+            </StoreReviewChecker>
           </LocalizationContext.Provider>
         </FormattedProvider>
       </Provider>

@@ -11,6 +11,7 @@ const initialState = {
   activatedNotifications: false,
   location: ElectricityType.world,
   language: supportedLanguages.en,
+  timesStarted: 4,
 };
 
 describe("userPreferences selector should", () => {
@@ -35,4 +36,7 @@ describe("userPreferences selector should", () => {
 
   test("return current language", () =>
     expect(userPreferences.selectors.getLanguage(state)).toEqual(initialState.language));
+
+  test("return current timesStarted", () =>
+    expect(userPreferences.selectors.getTimesStarted(state)).toEqual(initialState.timesStarted));
 });

@@ -13,6 +13,7 @@ describe("userPreferences reducer should", () => {
       activatedNotifications: false,
       location: ElectricityType.world,
       language: currentLanguage,
+      timesStarted: 0,
     });
   });
 
@@ -29,6 +30,7 @@ describe("userPreferences reducer should", () => {
       activatedNotifications: false,
       location: ElectricityType.world,
       language: currentLanguage,
+      timesStarted: 0,
     });
   });
 
@@ -43,6 +45,7 @@ describe("userPreferences reducer should", () => {
       activatedNotifications: false,
       location: ElectricityType.belgium,
       language: currentLanguage,
+      timesStarted: 0,
     });
   });
 
@@ -57,6 +60,7 @@ describe("userPreferences reducer should", () => {
       activatedNotifications: true,
       location: ElectricityType.world,
       language: currentLanguage,
+      timesStarted: 0,
     });
   });
 
@@ -71,6 +75,21 @@ describe("userPreferences reducer should", () => {
       activatedNotifications: false,
       location: ElectricityType.world,
       language: "fr",
+      timesStarted: 0,
+    });
+  });
+
+  it("handle increment of the number of times app has started", () => {
+    const expectedAction = {
+      type: userPreferences.actions.incrementTimesStarted.toString(),
+    };
+
+    expect(userPreferences.reducer(undefined, expectedAction)).toEqual({
+      acceptedTermsOfUseVersion: 0,
+      activatedNotifications: false,
+      location: ElectricityType.world,
+      language: currentLanguage,
+      timesStarted: 1,
     });
   });
 });
