@@ -36,9 +36,12 @@ const BarCodeScanScreen: NavStatelessComponent = () => {
       .then((json) => {
         if (json["status_verbose"] === "product found") {
           // TODO: Add Localised Name So It's In The Correct Language
-          navigator.openBarCodeProduct({
+          navigator.openAddEmissionBarCode({
             co2: json["product"]["ecoscore_data"]["agribalyse"]["co2_total"],
             name: json["product"]["ecoscore_data"]["agribalyse"]["name_en"],
+            nutriscore_grade: json["product"]["nutriscore_grade"],
+            nova_group: json["product"]["nova_group"],
+            ecoscore_grade: json["product"]["ecoscore_grade"],
           });
         } else {
           throw "Item Not Found";
