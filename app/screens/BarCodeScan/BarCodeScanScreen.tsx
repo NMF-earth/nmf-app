@@ -17,6 +17,7 @@ const BarCodeScanScreen: NavStatelessComponent = () => {
   const [hasPermission, setHasPermission] = useState(null);
   const [scanned, setScanned] = useState(false);
   const [isFetchingData, setIsFetchingData] = useState(false);
+  const [error, setError] = useState(false);
 
   const navigation = useNavigation();
   const navigator = navigate(navigation);
@@ -29,6 +30,7 @@ const BarCodeScanScreen: NavStatelessComponent = () => {
   }, []);
 
   const handleBarCodeScanned = ({ data }) => {
+    setError(false);
     setScanned(true);
     setIsFetchingData(true);
 
@@ -52,7 +54,7 @@ const BarCodeScanScreen: NavStatelessComponent = () => {
       .catch((error) => {
         // TODO: Handle Error Incase The Data Cant Be Found
         setIsFetchingData(false);
-        console.error(error);
+        setError(true);
       });
   };
 
@@ -64,32 +66,58 @@ const BarCodeScanScreen: NavStatelessComponent = () => {
     return <Text.Primary>No access to camera</Text.Primary>;
   }
 
-  if (!isFetchingData) {
-    return (
-      <View style={styles.container}>
-        <Text.H2 style={styles.info}>Scan product barcode</Text.H2>
-        <BarCodeScanner
-          style={styles.scanner}
-          onBarCodeScanned={scanned ? undefined : handleBarCodeScanned}
-        />
-        {scanned && (
-          <Button.Primary
-            style={styles.scanAgain}
-            textType={"Primary"}
-            onPress={() => setScanned(false)}
-          >
-            <Text.Primary bold center white>
-              {"Tap to Scan Again"}
-            </Text.Primary>
-          </Button.Primary>
-        )}
-      </View>
-    );
+  if (!error) {
+    if (!isFetchingData) {
+      return (
+        <View style={styles.container}>
+          <Text.H2 style={styles.info}>Scan product barcode</Text.H2>
+          <BarCodeScanner
+            style={styles.scanner}
+            onBarCodeScanned={scanned ? undefined : handleBarCodeScanned}
+          />
+          {scanned && (
+            <Button.Primary
+              style={styles.scanAgain}
+              textType={"Primary"}
+              onPress={() => setScanned(false)}
+            >
+              <Text.Primary bold center white>
+                {"Tap to Scan Again"}
+              </Text.Primary>
+            </Button.Primary>
+          )}
+        </View>
+      );
+    } else {
+      return (
+        <View style={[styles.container, styles.centeredContainer]}>
+          <Text.H2 style={styles.info}>Reading product barcode</Text.H2>
+          <ActivityIndicator style={styles.loading} size="large" color="#0F853B" />
+        </View>
+      );
+    }
   } else {
     return (
-      <View style={[styles.container, styles.loadingContainer]}>
-        <Text.H2 style={styles.info}>Reading product barcode</Text.H2>
-        <ActivityIndicator style={styles.loading} size="large" color="#0F853B" />
+      <View style={[styles.container]}>
+        <View style={[styles.container, styles.centeredContainer]}>
+          <Text.H2 style={styles.centeredText}>Something went wrong</Text.H2>
+          <Text.Primary style={styles.centeredText}>
+            Make sure you have internet and try again.
+          </Text.Primary>
+        </View>
+        <Button.Primary
+          style={styles.scanAgain}
+          textType={"Secondary"}
+          onPress={() => {
+            setError(false);
+            setIsFetchingData(false);
+            setScanned(false);
+          }}
+        >
+          <Text.Primary bold center white>
+            {"Try Again"}
+          </Text.Primary>
+        </Button.Primary>
       </View>
     );
   }

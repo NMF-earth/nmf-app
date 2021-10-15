@@ -24,8 +24,11 @@ export default StyleSheet.create({
   loading: {
     alignSelf: "center",
   },
-  loadingContainer: {
+  centeredContainer: {
     justifyContent: "center",
     alignContent: "center",
+  },
+  centeredText: {
+    textAlign: "center",
   },
 });
