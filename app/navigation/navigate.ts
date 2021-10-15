@@ -80,6 +80,10 @@ const openBarCodeScan = (navigation) => (props = {}) => {
   navigation.push("BarCodeScan", props);
 };
 
+const openBarCodeProduct = (navigation) => (props = {}) => {
+  navigation.push("BarCodeProduct", props);
+};
+
 const openMonthlyEmissions = (navigation) => (props = {}) => {
   navigation.push("MonthlyEmissions", props);
 };
@@ -95,6 +99,7 @@ const navigate = (navigation) => ({
   openSubCategorySelection: navigateOneTime(openSubCategorySelection(navigation)),
   openMyData: navigateOneTime(openMyData(navigation)),
   openBarCodeScan: navigateOneTime(openBarCodeScan(navigation)),
+  openBarCodeProduct: navigateOneTime(openBarCodeProduct(navigation)),
   openComingSoon: navigateOneTime(openComingSoon(navigation)),
   openInfoModal: navigateOneTime(openInfoModal(navigation)),
   openBudget: navigateOneTime(openBudget(navigation)),

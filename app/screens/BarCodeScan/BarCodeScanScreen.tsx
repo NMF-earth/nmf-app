@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
+import { useNavigation } from "@react-navigation/native";
 import { StyleSheet, View } from "react-native";
 import { BarCodeScanner } from "expo-barcode-scanner";
 
+import { navigate } from "navigation";
 import { Text, Button } from "components";
 import { NavStatelessComponent } from "interfaces";
 
@@ -15,6 +17,9 @@ const BarCodeScanScreen: NavStatelessComponent = () => {
   const [hasPermission, setHasPermission] = useState(null);
   const [scanned, setScanned] = useState(false);
 
+  const navigation = useNavigation();
+  const navigator = navigate(navigation);
+
   useEffect(() => {
     (async () => {
       const { status } = await BarCodeScanner.requestPermissionsAsync();
@@ -24,7 +29,25 @@ const BarCodeScanScreen: NavStatelessComponent = () => {
 
   const handleBarCodeScanned = ({ data }) => {
     setScanned(true);
-    alert(`Bar code with data ${data} has been scanned!`);
+    // TODO: Add A Loading Screen
+
+    fetch(`https://world.openfoodfacts.org/api/v0/product/${data}`)
+      .then((response) => response.json())
+      .then((json) => {
+        if (json["status_verbose"] === "product found") {
+          // TODO: Add Localised Name So It's In The Correct Language
+          navigator.openBarCodeProduct({
+            co2: json["product"]["ecoscore_data"]["agribalyse"]["co2_total"],
+            name: json["product"]["ecoscore_data"]["agribalyse"]["name_en"],
+          });
+        } else {
+          throw "Item Not Found";
+        }
+      })
+      .catch((error) => {
+        // TODO: Handle Error Incase The Data Cant Be Found
+        console.error(error);
+      });
   };
 
   if (hasPermission === null) {
