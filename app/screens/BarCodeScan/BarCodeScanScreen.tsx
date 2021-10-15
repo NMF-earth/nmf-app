@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigation } from "@react-navigation/native";
-import { StyleSheet, View } from "react-native";
+import { ActivityIndicator, StyleSheet, View } from "react-native";
 import { BarCodeScanner } from "expo-barcode-scanner";
 
 import { navigate } from "navigation";
@@ -16,6 +16,7 @@ import navigationOptions from "./BarCodeScanScreen.navigationOptions";
 const BarCodeScanScreen: NavStatelessComponent = () => {
   const [hasPermission, setHasPermission] = useState(null);
   const [scanned, setScanned] = useState(false);
+  const [isFetchingData, setIsFetchingData] = useState(false);
 
   const navigation = useNavigation();
   const navigator = navigate(navigation);
@@ -29,7 +30,7 @@ const BarCodeScanScreen: NavStatelessComponent = () => {
 
   const handleBarCodeScanned = ({ data }) => {
     setScanned(true);
-    // TODO: Add A Loading Screen
+    setIsFetchingData(true);
 
     fetch(`https://world.openfoodfacts.org/api/v0/product/${data}`)
       .then((response) => response.json())
@@ -46,9 +47,11 @@ const BarCodeScanScreen: NavStatelessComponent = () => {
         } else {
           throw "Item Not Found";
         }
+        setIsFetchingData(false);
       })
       .catch((error) => {
         // TODO: Handle Error Incase The Data Cant Be Found
+        setIsFetchingData(false);
         console.error(error);
       });
   };
@@ -61,26 +64,35 @@ const BarCodeScanScreen: NavStatelessComponent = () => {
     return <Text.Primary>No access to camera</Text.Primary>;
   }
 
-  return (
-    <View style={styles.container}>
-      <Text.H2 style={styles.info}>Scan product barcode</Text.H2>
-      <BarCodeScanner
-        style={styles.scanner}
-        onBarCodeScanned={scanned ? undefined : handleBarCodeScanned}
-      />
-      {scanned && (
-        <Button.Primary
-          style={styles.scanAgain}
-          textType={"Primary"}
-          onPress={() => setScanned(false)}
-        >
-          <Text.Primary bold center white>
-            {"Tap to Scan Again"}
-          </Text.Primary>
-        </Button.Primary>
-      )}
-    </View>
-  );
+  if (!isFetchingData) {
+    return (
+      <View style={styles.container}>
+        <Text.H2 style={styles.info}>Scan product barcode</Text.H2>
+        <BarCodeScanner
+          style={styles.scanner}
+          onBarCodeScanned={scanned ? undefined : handleBarCodeScanned}
+        />
+        {scanned && (
+          <Button.Primary
+            style={styles.scanAgain}
+            textType={"Primary"}
+            onPress={() => setScanned(false)}
+          >
+            <Text.Primary bold center white>
+              {"Tap to Scan Again"}
+            </Text.Primary>
+          </Button.Primary>
+        )}
+      </View>
+    );
+  } else {
+    return (
+      <View style={[styles.container, styles.loadingContainer]}>
+        <Text.H2 style={styles.info}>Reading product barcode</Text.H2>
+        <ActivityIndicator style={styles.loading} size="large" color="#0F853B" />
+      </View>
+    );
+  }
 };
 
 BarCodeScanScreen.navigationOptions = navigationOptions();
