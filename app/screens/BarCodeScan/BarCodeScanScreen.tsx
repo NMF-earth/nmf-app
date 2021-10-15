@@ -37,13 +37,20 @@ const BarCodeScanScreen: NavStatelessComponent = () => {
 
   return (
     <View style={styles.container}>
+      <Text.H2 style={styles.info}>Scan product barcode</Text.H2>
       <BarCodeScanner
+        style={styles.scanner}
         onBarCodeScanned={scanned ? undefined : handleBarCodeScanned}
-        style={StyleSheet.absoluteFillObject}
       />
       {scanned && (
-        <Button.Primary textType={"Primary"} onPress={() => setScanned(false)}>
-          <Text.Primary>{"Tap to Scan Again"}</Text.Primary>
+        <Button.Primary
+          style={styles.scanAgain}
+          textType={"Primary"}
+          onPress={() => setScanned(false)}
+        >
+          <Text.Primary bold center white>
+            {"Tap to Scan Again"}
+          </Text.Primary>
         </Button.Primary>
       )}
     </View>
