@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useNavigation } from "@react-navigation/native";
-import { ActivityIndicator, StyleSheet, View } from "react-native";
+import { ActivityIndicator, View } from "react-native";
 import { BarCodeScanner } from "expo-barcode-scanner";
 
+import { t } from "utils";
 import { navigate } from "navigation";
 import { Text, Button } from "components";
 import { NavStatelessComponent } from "interfaces";
@@ -38,21 +39,24 @@ const BarCodeScanScreen: NavStatelessComponent = () => {
       .then((response) => response.json())
       .then((json) => {
         if (json["status_verbose"] === "product found") {
-          // TODO: Add Localised Name So It's In The Correct Language
-          navigator.openAddEmissionBarCode({
-            co2: json["product"]["ecoscore_data"]["agribalyse"]["co2_total"],
-            name: json["product"]["ecoscore_data"]["agribalyse"]["name_en"],
-            nutriscore_grade: json["product"]["nutriscore_grade"],
-            nova_group: json["product"]["nova_group"],
-            ecoscore_grade: json["product"]["ecoscore_grade"],
-          });
+          // TODO: Add Localised Name To The product_name (ex. product_name_fr) So It's In The Correct Language
+          try {
+            navigator.openAddEmissionBarCode({
+              co2: json["product"]["ecoscore_data"]["agribalyse"]["co2_total"],
+              name: json["product"]["product_name"],
+              nutriscore_grade: json["product"]["nutriscore_grade"],
+              nova_group: json["product"]["nova_group"],
+              ecoscore_grade: json["product"]["ecoscore_grade"],
+            });
+          } catch (error) {
+            console.warn(error);
+          }
         } else {
           throw "Item Not Found";
         }
         setIsFetchingData(false);
       })
-      .catch((error) => {
-        // TODO: Handle Error Incase The Data Cant Be Found
+      .catch(() => {
         setIsFetchingData(false);
         setError(true);
       });
@@ -82,7 +86,7 @@ const BarCodeScanScreen: NavStatelessComponent = () => {
               onPress={() => setScanned(false)}
             >
               <Text.Primary bold center white>
-                {"Tap to Scan Again"}
+                {t("BAR_CODE_SCAN_SCREEN_SCAN_AGAIN")}
               </Text.Primary>
             </Button.Primary>
           )}
@@ -91,7 +95,7 @@ const BarCodeScanScreen: NavStatelessComponent = () => {
     } else {
       return (
         <View style={[styles.container, styles.centeredContainer]}>
-          <Text.H2 style={styles.info}>Reading product barcode</Text.H2>
+          <Text.H2 style={styles.info}>{t("BAR_CODE_SCAN_READING_BARCODE")}</Text.H2>
           <ActivityIndicator style={styles.loading} size="large" color="#0F853B" />
         </View>
       );
@@ -100,9 +104,9 @@ const BarCodeScanScreen: NavStatelessComponent = () => {
     return (
       <View style={[styles.container]}>
         <View style={[styles.container, styles.centeredContainer]}>
-          <Text.H2 style={styles.centeredText}>Something went wrong</Text.H2>
+          <Text.H2 style={styles.centeredText}>{t("BAR_CODE_SCAN_ERROR_TITLE")}</Text.H2>
           <Text.Primary style={styles.centeredText}>
-            Make sure you have internet and try again.
+            {t("BAR_CODE_SCAN_ERROR_MESSAGE")}
           </Text.Primary>
         </View>
         <Button.Primary
@@ -115,7 +119,7 @@ const BarCodeScanScreen: NavStatelessComponent = () => {
           }}
         >
           <Text.Primary bold center white>
-            {"Try Again"}
+            {t("BAR_CODE_SCAN_TRY_AGAIN")}
           </Text.Primary>
         </Button.Primary>
       </View>
