@@ -118,6 +118,27 @@ exports[`renders correctly H2 blue50 1`] = `
 </Text>
 `;
 
+exports[`renders correctly H2 center 1`] = `
+<Text
+  center={true}
+  style={
+    Array [
+      Object {
+        "color": "#111714",
+        "fontFamily": "Inter-Bold",
+        "fontSize": 26,
+      },
+      undefined,
+      Object {
+        "textAlign": "center",
+      },
+    ]
+  }
+>
+  test
+</Text>
+`;
+
 exports[`renders correctly H2 darkGray 1`] = `
 <Text
   darkGray={true}

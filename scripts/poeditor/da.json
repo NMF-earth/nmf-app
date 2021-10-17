@@ -88,10 +88,6 @@
 	"ACT_DETAIL_SCREEN_TITLE": "Handling",
 	"MONTHLY_EMISSIONS_SCREEN_OF_BUDGET": "af budgettet",
 	"LANGUAGES_SCREEN_TITLE": "Sprog",
-	"NO_EMISSION_COMPONENT_ADD_FIRST_EMISSION": "Tilføj mit første forbrug",
-	"NO_EMISSION_COMPONENT_START_USING_APP": "Tryk på knappen herunder for at tracke dit CO2 forbrug",
-	"NO_EMISSION_COMPONENT_THANKS": "Tak fordi du har sluttet dig til vores kamp mod klimaforandringerne!",
-	"NO_EMISSION_COMPONENT_TITLE": "Hej 👋",
 	"UI_TRAIN": "Tog",
 	"UI_CAR": "Bil",
 	"UI_PLANE": "Fly",
@@ -100,5 +96,9 @@
 	"UI_MOTORBIKE": "Motorcykel",
 	"UI_RED_MEAT": "Rødt kød",
 	"UI_WHITE_MEAT": "Hvidt kød",
-	"UI_FISH": "Fisk"
+	"UI_FISH": "Fisk",
+	"NO_EMISSION_COMPONENT_ADD_FIRST_EMISSION": "Tilføj mit første forbrug",
+	"NO_EMISSION_COMPONENT_START_USING_APP": "Tryk på knappen herunder for at tracke dit CO2 forbrug",
+	"NO_EMISSION_COMPONENT_THANKS": "Tak fordi du har sluttet dig til vores kamp mod klimaforandringerne!",
+	"NO_EMISSION_COMPONENT_TITLE": "Hej 👋"
 }

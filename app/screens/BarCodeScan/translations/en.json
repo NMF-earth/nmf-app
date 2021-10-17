@@ -1,8 +1,11 @@
 {
   "BAR_CODE_SCAN_SCREEN_TITLE": "Scan barcode",
-  "BAR_CODE_SCAN_SCREEN_SCAN_AGAIN": "Tap to Scan Again",
-  "BAR_CODE_SCAN_READING_BARCODE": "Reading product barcode",
-  "BAR_CODE_SCAN_ERROR_TITLE": "Something went wrong",
-  "BAR_CODE_SCAN_ERROR_MESSAGE": "Make sure you have internet and try again.",
-  "BAR_CODE_SCAN_TRY_AGAIN": "Try Again"
+  "BAR_CODE_SCAN_SCREEN_LOADING": "Loading",
+  "BAR_CODE_SCAN_SCREEN_ERROR_TITLE": "Something went wrong",
+  "BAR_CODE_SCAN_SCREEN_ERROR_MESSAGE": "Make sure you have internet and try again.",
+  "BAR_CODE_SCAN_SCREEN_TRY_AGAIN": "Try Again",
+  "BAR_CODE_SCAN_SCREEN_CAMERA_PERMISSION_ASK": "Requesting for camera permission",
+  "BAR_CODE_SCAN_SCREEN_SCAN_PRODUCT": "Scan product barcode",
+  "BAR_CODE_SCAN_SCREEN_NO_CARBON_DATA_TITLE": "No carbon data on this product",
+  "BAR_CODE_SCAN_SCREEN_NO_CARBON_DATA_MESSAGE": "Unfortunately, Open Food Fact has no carbon footprint data on this product. Try another one!"
 }

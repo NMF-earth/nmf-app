@@ -11,6 +11,7 @@ import HTMLImage from "./HTMLImage";
 import InfoButton from "./InfoButton";
 import NoEmission from "./NoEmission";
 import { EmissionListItem, EmissionListItemProps } from "./EmissionListItem";
+import PermissionsRequest from "./PermissionsRequest";
 
 export {
   EmissionListItem,
@@ -27,4 +28,5 @@ export {
   TextInput,
   InfoButton,
   NoEmission,
+  PermissionsRequest,
 };

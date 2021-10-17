@@ -108,10 +108,6 @@
 	"NOTIFICATIONS_SCREEN_NOTIFICATION_TITLE": "Emisiones Semanales 🗓",
 	"NOTIFICATIONS_SCREEN_NOTIFICATION_BODY": "Aquí está un recordatorio amistoso de añadir tus emisiones para esta semana.",
 	"INFO_MODAL_SCREEN_METHODOLOGY": "Metodología",
-	"NO_EMISSION_COMPONENT_TITLE": "Hola 👋",
-	"NO_EMISSION_COMPONENT_THANKS": "¡Gracias por unirte a nuestra lucha contra el cambio climático!",
-	"NO_EMISSION_COMPONENT_START_USING_APP": "Para empezar a rastrear tus emisiones CO2, toca el botón de abajo",
-	"NO_EMISSION_COMPONENT_ADD_FIRST_EMISSION": "Añadir mi primera emisión",
 	"UI_TRAIN": "Tren",
 	"UI_CAR": "Auto",
 	"UI_PLANE": "Avión",
@@ -174,5 +170,9 @@
 	"UI_MEAL": "Comida",
 	"UI_PURCHASE": "Compra",
 	"UI_STREAMING": "Streaming",
-	"UI_TRANSPORT": "Transporte"
+	"UI_TRANSPORT": "Transporte",
+	"NO_EMISSION_COMPONENT_TITLE": "Hola 👋",
+	"NO_EMISSION_COMPONENT_THANKS": "¡Gracias por unirte a nuestra lucha contra el cambio climático!",
+	"NO_EMISSION_COMPONENT_START_USING_APP": "Para empezar a rastrear tus emisiones CO2, toca el botón de abajo",
+	"NO_EMISSION_COMPONENT_ADD_FIRST_EMISSION": "Añadir mi primera emisión"
 }

@@ -94,10 +94,6 @@
 	"SUPPORT_US_SCREEN_WHY_DONATE_TITLE": "Varför du kan överväga att stödja oss",
 	"MONTHLY_EMISSIONS_SCREEN_OF_BUDGET": "av budget",
 	"LANGUAGES_SCREEN_TITLE": "Språk",
-	"NO_EMISSION_COMPONENT_ADD_FIRST_EMISSION": "Lägg till mitt första utsläpp",
-	"NO_EMISSION_COMPONENT_START_USING_APP": "För att börja följa dina koldioxidutsläpp, tryck på knappen nedan",
-	"NO_EMISSION_COMPONENT_THANKS": "Tack för att du förenar dig i kampen mot klimatförändringar!",
-	"NO_EMISSION_COMPONENT_TITLE": "Hallå där 👋",
 	"UI_TRAIN": "Tåg",
 	"UI_CAR": "Bil",
 	"UI_PLANE": "Flyg",
@@ -109,5 +105,9 @@
 	"UI_CHOCOLATE": "Choklad",
 	"UI_COFFEE": "Kaffe",
 	"UI_FISH": "Fisk",
-	"UI_CUSTOM": "Annat"
+	"UI_CUSTOM": "Annat",
+	"NO_EMISSION_COMPONENT_ADD_FIRST_EMISSION": "Lägg till mitt första utsläpp",
+	"NO_EMISSION_COMPONENT_START_USING_APP": "För att börja följa dina koldioxidutsläpp, tryck på knappen nedan",
+	"NO_EMISSION_COMPONENT_THANKS": "Tack för att du förenar dig i kampen mot klimatförändringar!",
+	"NO_EMISSION_COMPONENT_TITLE": "Hallå där 👋"
 }

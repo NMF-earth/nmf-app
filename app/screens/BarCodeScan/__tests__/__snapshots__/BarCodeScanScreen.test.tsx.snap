@@ -1,7 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`BarCodeScanScreen renders correctly 1`] = `
-<Text.Primary>
-  Requesting for camera permission
-</Text.Primary>
+<View
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "flex": 1,
+      "paddingHorizontal": 16,
+    }
+  }
+/>
 `;

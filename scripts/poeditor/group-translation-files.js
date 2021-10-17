@@ -24,9 +24,10 @@ const toBeImported = {
   MyData: "../../app/screens/MyData/translations",
   MonthlyEmissions: "../../app/screens/MonthlyEmissions/translations",
   Languages: "../../app/screens/Languages/translations",
-  Faq: "../../app/components/Faq/translations",
+  Faq: "../../app/screens/Faq/translations",
   UI: "../../app/utils/ui/translations",
   NoEmission: "../../app/components/NoEmission/translations",
+  PermissionsRequest: "../../app/components/PermissionsRequest/translations",
 };
 // eslint-disable-next-line prefer-const
 let imports = {};
@@ -63,9 +64,10 @@ usedLanguages.forEach((language) => {
     ...imports.MyData[language],
     ...imports.MonthlyEmissions[language],
     ...imports.Languages[language],
-    ...imports.FAQ[language],
+    ...imports.Faq[language],
     ...imports.UI[language],
     ...imports.NoEmission[language],
+    ...imports.PermissionsRequest[language],
   };
 });
 

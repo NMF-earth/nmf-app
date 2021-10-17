@@ -11,11 +11,12 @@ interface Props {
   lightGray?: boolean;
   blue50?: boolean;
   green?: boolean;
+  center?: boolean;
 }
 
 export default function H2(props: Props): React.ReactElement {
   const customStyle = [styles.default, props.style];
-  const { darkGray, lightGray, blue50, green } = props;
+  const { darkGray, lightGray, blue50, green, center } = props;
 
   if (darkGray) {
     customStyle.push(mainStyle.darkGray);
@@ -31,6 +32,10 @@ export default function H2(props: Props): React.ReactElement {
 
   if (blue50) {
     customStyle.push(mainStyle.blue50);
+  }
+
+  if (center) {
+    customStyle.push(mainStyle.center);
   }
 
   return <Text {...props} style={customStyle} />;

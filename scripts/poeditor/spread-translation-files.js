@@ -24,6 +24,10 @@ const translationDirs = [
   { path: "app/screens/Languages/translations", prefix: "LANGUAGES_SCREEN" },
   { path: "app/screens/Faq/translations", prefix: "FAQ_SCREEN" },
   { path: "app/components/NoEmission/translations", prefix: "NO_EMISSION_COMPONENT" },
+  {
+    path: "app/components/PermissionsRequest/translations",
+    prefix: "PERMISSIONS_REQUEST_COMPONENT",
+  },
   { path: "app/utils/ui/translations", prefix: "UI" },
 ];
 

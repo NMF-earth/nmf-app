@@ -62,6 +62,11 @@ it("renders correctly H2 green", () => {
   expect(tree).toMatchSnapshot();
 });
 
+it("renders correctly H2 center", () => {
+  const tree = create(<Text.H2 center>test</Text.H2>).toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
 /* H3 Tests */
 
 it("renders correctly H3", () => {

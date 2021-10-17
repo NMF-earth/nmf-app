@@ -22,11 +22,6 @@ exports[`CategorySelectionScreen renders correctly 1`] = `
       Select a category
     </Text.H2>
     <Tag
-      icon="md-nutrition"
-      onPress={[Function]}
-      text="Food"
-    />
-    <Tag
       icon="md-restaurant"
       onPress={[Function]}
       text="Meal"
@@ -35,6 +30,11 @@ exports[`CategorySelectionScreen renders correctly 1`] = `
       icon="md-airplane"
       onPress={[Function]}
       text="Transport"
+    />
+    <Tag
+      icon="barcode-sharp"
+      onPress={[Function]}
+      text="Scan product"
     />
     <Tag
       icon="md-play-circle"
@@ -57,9 +57,9 @@ exports[`CategorySelectionScreen renders correctly 1`] = `
       text="Electricity"
     />
     <Tag
-      icon="barcode-sharp"
+      icon="md-nutrition"
       onPress={[Function]}
-      text="Scan product"
+      text="Food"
     />
     <Tag
       icon="md-build"

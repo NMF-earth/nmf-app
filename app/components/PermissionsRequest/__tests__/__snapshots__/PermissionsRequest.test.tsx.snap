@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly PermissionsRequest if camera 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "flex": 1,
+      "paddingHorizontal": 16,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "flex": 1,
+          "paddingHorizontal": 16,
+        },
+        Object {
+          "alignContent": "center",
+          "justifyContent": "center",
+        },
+      ]
+    }
+  >
+    <Text.H2
+      center={true}
+    >
+      No access to camera
+    </Text.H2>
+    <Text.Primary
+      center={true}
+    >
+      Please give NMF.earth app access to camera in your phone settings to use this feature.
+    </Text.Primary>
+  </View>
+  <Button.Secondary
+    onPress={[Function]}
+    style={
+      Object {
+        "marginBottom": 20,
+        "marginTop": 20,
+      }
+    }
+    textType="Primary"
+  >
+    <Text.Primary
+      bold={true}
+      center={true}
+      green={true}
+    >
+      Open settings
+    </Text.Primary>
+  </Button.Secondary>
+</View>
+`;
+
+exports[`renders correctly PermissionsRequest if notification 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "flex": 1,
+      "paddingHorizontal": 16,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "flex": 1,
+          "paddingHorizontal": 16,
+        },
+        Object {
+          "alignContent": "center",
+          "justifyContent": "center",
+        },
+      ]
+    }
+  >
+    <Text.H2
+      center={true}
+    >
+      
+    </Text.H2>
+    <Text.Primary
+      center={true}
+    >
+      
+    </Text.Primary>
+  </View>
+  <Button.Secondary
+    onPress={[Function]}
+    style={
+      Object {
+        "marginBottom": 20,
+        "marginTop": 20,
+      }
+    }
+    textType="Primary"
+  >
+    <Text.Primary
+      bold={true}
+      center={true}
+      green={true}
+    >
+      Open settings
+    </Text.Primary>
+  </Button.Secondary>
+</View>
+`;

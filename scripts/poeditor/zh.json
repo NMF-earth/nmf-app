@@ -128,10 +128,6 @@
 	"MY_DATA_SCREEN_GENERIC_ERROR": "哎呀, 出错了。",
 	"MONTHLY_EMISSIONS_SCREEN_OF_BUDGET": "的预算",
 	"LANGUAGES_SCREEN_TITLE": "语言",
-	"NO_EMISSION_COMPONENT_TITLE": "您好  👋",
-	"NO_EMISSION_COMPONENT_THANKS": "感谢您与我们一起对抗气候变化!",
-	"NO_EMISSION_COMPONENT_START_USING_APP": "请按下面的按钮以开始追踪您的二氧化碳排放量",
-	"NO_EMISSION_COMPONENT_ADD_FIRST_EMISSION": "添加您的第一个排放量",
 	"UI_TRAIN": "火车",
 	"UI_CAR": "汽车",
 	"UI_PLANE": "飞机",
@@ -194,5 +190,9 @@
 	"UI_MEAL": "餐点",
 	"UI_PURCHASE": "购买",
 	"UI_STREAMING": "实况",
-	"UI_TRANSPORT": "交通"
+	"UI_TRANSPORT": "交通",
+	"NO_EMISSION_COMPONENT_TITLE": "您好  👋",
+	"NO_EMISSION_COMPONENT_THANKS": "感谢您与我们一起对抗气候变化!",
+	"NO_EMISSION_COMPONENT_START_USING_APP": "请按下面的按钮以开始追踪您的二氧化碳排放量",
+	"NO_EMISSION_COMPONENT_ADD_FIRST_EMISSION": "添加您的第一个排放量"
 }

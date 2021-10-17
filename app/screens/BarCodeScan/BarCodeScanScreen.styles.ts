@@ -5,16 +5,14 @@ import { Layout as ConstantLayout } from "constant";
 
 export default StyleSheet.create({
   container: Layout.containerWithPadding,
-  // TODO: Rename These Classes To More Descriptive And Accurate Names...
-  info: {
-    textAlign: "center",
+  scanProductText: {
     paddingTop: 20,
     paddingBottom: 20,
   },
   scanner: {
     alignSelf: "center",
     width: ConstantLayout.screen.width - 30,
-    height: ConstantLayout.screen.height - ConstantLayout.screen.width,
+    height: ConstantLayout.screen.height - ConstantLayout.screen.height / 2,
     paddingBottom: 20,
   },
   scanAgain: {
@@ -23,12 +21,10 @@ export default StyleSheet.create({
   },
   loading: {
     alignSelf: "center",
+    paddingBottom: 20,
   },
   centeredContainer: {
     justifyContent: "center",
     alignContent: "center",
-  },
-  centeredText: {
-    textAlign: "center",
   },
 });

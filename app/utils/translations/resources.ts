@@ -25,6 +25,7 @@ import * as Faq from "../../screens/Faq/translations";
 
 /* COMPONENTS */
 import * as NoEmission from "components/NoEmission/translations";
+import * as PermissionsRequest from "components/PermissionsRequest/translations";
 
 /* UTILS */
 import * as UI from "utils/ui/translations";
@@ -53,6 +54,7 @@ const en = {
   ...Languages.en,
   ...Faq.en,
   ...NoEmission.en,
+  ...PermissionsRequest.en,
   ...UI.en,
 };
 
@@ -61,6 +63,7 @@ const de = {
   ...About.de,
   ...MonthlyBudget.de,
   ...NoEmission.de,
+  ...PermissionsRequest.de,
   ...Act.de,
   ...Budget.de,
   ...Emissions.de,
@@ -89,6 +92,7 @@ const fr = {
   ...Notifications.fr,
   ...MonthlyBudget.fr,
   ...NoEmission.fr,
+  ...PermissionsRequest.fr,
   ...Act.fr,
   ...Budget.fr,
   ...Emissions.fr,
@@ -116,6 +120,7 @@ const sv = {
   ...Notifications.sv,
   ...MonthlyBudget.sv,
   ...NoEmission.sv,
+  ...PermissionsRequest.sv,
   ...Act.sv,
   ...Budget.sv,
   ...Emissions.sv,
@@ -143,6 +148,7 @@ const pt = {
   ...Notifications.pt,
   ...MonthlyBudget.pt,
   ...NoEmission.pt,
+  ...PermissionsRequest.pt,
   ...Act.pt,
   ...Budget.pt,
   ...Emissions.pt,
@@ -170,6 +176,7 @@ const es = {
   ...Notifications.es,
   ...MonthlyBudget.es,
   ...NoEmission.es,
+  ...PermissionsRequest.es,
   ...Act.es,
   ...Budget.es,
   ...Emissions.es,
@@ -197,6 +204,7 @@ const ru = {
   ...Notifications.ru,
   ...MonthlyBudget.ru,
   ...NoEmission.ru,
+  ...PermissionsRequest.ru,
   ...Act.ru,
   ...Budget.ru,
   ...Emissions.ru,
@@ -224,6 +232,7 @@ const pl = {
   ...Notifications.pl,
   ...MonthlyBudget.pl,
   ...NoEmission.pl,
+  ...PermissionsRequest.pl,
   ...Act.pl,
   ...Budget.pl,
   ...Emissions.pl,
@@ -251,6 +260,7 @@ const da = {
   ...Notifications.da,
   ...MonthlyBudget.da,
   ...NoEmission.da,
+  ...PermissionsRequest.da,
   ...Act.da,
   ...Budget.da,
   ...Emissions.da,
@@ -278,6 +288,7 @@ const zh = {
   ...Notifications.zh,
   ...MonthlyBudget.zh,
   ...NoEmission.zh,
+  ...PermissionsRequest.zh,
   ...Act.zh,
   ...Budget.zh,
   ...Emissions.zh,
@@ -305,6 +316,7 @@ const ms = {
   ...Notifications.ms,
   ...MonthlyBudget.ms,
   ...NoEmission.ms,
+  ...PermissionsRequest.ms,
   ...Act.ms,
   ...Budget.ms,
   ...Emissions.ms,
@@ -330,6 +342,7 @@ export interface TranslationKeys
   extends UI.TranslationKeys,
     MonthlyBudget.TranslationKeys,
     NoEmission.TranslationKeys,
+    PermissionsRequest.TranslationKeys,
     Act.TranslationKeys,
     Budget.TranslationKeys,
     Emissions.TranslationKeys,

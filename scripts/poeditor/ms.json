@@ -129,10 +129,6 @@
 	"MY_DATA_SCREEN_GENERIC_ERROR": "Something went wrong.",
 	"MONTHLY_EMISSIONS_SCREEN_OF_BUDGET": "of budget",
 	"LANGUAGES_SCREEN_TITLE": "Languages",
-	"NO_EMISSION_COMPONENT_TITLE": "Hai sana 👋",
-	"NO_EMISSION_COMPONENT_THANKS": "Terima kasih atas penyertaan perjuangan menentang perubahan iklim!",
-	"NO_EMISSION_COMPONENT_START_USING_APP": "Ketik butang di bawah untuk mula menjejaki pelepasan CO2.",
-	"NO_EMISSION_COMPONENT_ADD_FIRST_EMISSION": "Tambah rekod pelepasan pertama",
 	"UI_TRAIN": "Kereta Api",
 	"UI_CAR": "Kereta",
 	"UI_PLANE": "Kapal Terbang",
@@ -195,5 +191,9 @@
 	"UI_MEAL": "Makanan",
 	"UI_PURCHASE": "Pembelian",
 	"UI_STREAMING": "Penstriman",
-	"UI_TRANSPORT": "Pengangkutan"
+	"UI_TRANSPORT": "Pengangkutan",
+	"NO_EMISSION_COMPONENT_TITLE": "Hai sana 👋",
+	"NO_EMISSION_COMPONENT_THANKS": "Terima kasih atas penyertaan perjuangan menentang perubahan iklim!",
+	"NO_EMISSION_COMPONENT_START_USING_APP": "Ketik butang di bawah untuk mula menjejaki pelepasan CO2.",
+	"NO_EMISSION_COMPONENT_ADD_FIRST_EMISSION": "Tambah rekod pelepasan pertama"
 }

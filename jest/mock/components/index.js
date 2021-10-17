@@ -22,6 +22,7 @@ jest.mock("../../../app/screens/Budget/components/ProgressChart/components/Chart
 jest.mock("../../../app/screens/Emissions/components/SectionHeader", () => "SectionHeader");
 
 /* Shared Components */
+jest.mock("../../../app/components/PermissionsRequest", () => "PermissionsRequest");
 jest.mock("../../../app/components/StickersImage", () => "StickersImage");
 jest.mock("../../../app/components/TextInput", () => "TextInput");
 jest.mock("../../../app/components/SocialMedia", () => "SocialMedia");

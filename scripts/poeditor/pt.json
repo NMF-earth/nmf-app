@@ -101,10 +101,6 @@
 	"ACT_DETAIL_SCREEN_TITLE": "Atos",
 	"MONTHLY_EMISSIONS_SCREEN_OF_BUDGET": "um orçamento",
 	"LANGUAGES_SCREEN_TITLE": "Línguas",
-	"NO_EMISSION_COMPONENT_ADD_FIRST_EMISSION": "Marque a primeira emissão",
-	"NO_EMISSION_COMPONENT_START_USING_APP": "Para começar, adicionar uma primeira emissão de carbono, tocando no botão abaixo.",
-	"NO_EMISSION_COMPONENT_THANKS": "Obrigado de se juntar a nós para lutar contra o aquecimento climático",
-	"NO_EMISSION_COMPONENT_TITLE": "Bom dia 👋",
 	"UI_TRAIN": "Comboio",
 	"UI_CAR": "Automóvel",
 	"UI_PLANE": "Avião",
@@ -124,5 +120,9 @@
 	"UI_ELECTRICITY": "Eletricidade",
 	"UI_MILK": "Leite",
 	"UI_CHEESE": "Queijo",
-	"UI_EGGS": "Ovos"
+	"UI_EGGS": "Ovos",
+	"NO_EMISSION_COMPONENT_ADD_FIRST_EMISSION": "Marque a primeira emissão",
+	"NO_EMISSION_COMPONENT_START_USING_APP": "Para começar, adicionar uma primeira emissão de carbono, tocando no botão abaixo.",
+	"NO_EMISSION_COMPONENT_THANKS": "Obrigado de se juntar a nós para lutar contra o aquecimento climático",
+	"NO_EMISSION_COMPONENT_TITLE": "Bom dia 👋"
 }
