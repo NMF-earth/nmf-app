@@ -12,6 +12,11 @@ import ms from "./ms.json";
 
 interface TranslationKeys {
   BAR_CODE_SCAN_SCREEN_TITLE: string;
+  BAR_CODE_SCAN_SCREEN_SCAN_AGAIN: string;
+  BAR_CODE_SCAN_READING_BARCODE: string;
+  BAR_CODE_SCAN_ERROR_TITLE: string;
+  BAR_CODE_SCAN_ERROR_MESSAGE: string;
+  BAR_CODE_SCAN_TRY_AGAIN: string;
 }
 
 export { en, fr, de, sv, es, pt, da, ru, pl, zh, ms, TranslationKeys };

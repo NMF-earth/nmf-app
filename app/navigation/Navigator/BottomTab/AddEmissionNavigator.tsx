@@ -4,6 +4,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import AddEmissionScreen from "../../../screens/AddEmission";
 import CategorySelectionScreen from "../../../screens/CategorySelection";
 import SubCategorySelectionScreen from "../../../screens/SubCategorySelection";
+import BarCodeScanScreen from "../../../screens/BarCodeScan";
 
 const Stack = createStackNavigator();
 
@@ -23,6 +24,11 @@ const AddEmissionNavigator = (): React.ReactElement => (
       name="AddEmission"
       options={AddEmissionScreen.navigationOptions}
       component={AddEmissionScreen}
+    />
+    <Stack.Screen
+      name="BarCodeScan"
+      options={BarCodeScanScreen.navigationOptions}
+      component={BarCodeScanScreen}
     />
   </Stack.Navigator>
 );
