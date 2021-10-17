@@ -3,8 +3,9 @@ import { useNavigation } from "@react-navigation/native";
 import { ActivityIndicator, View } from "react-native";
 import { BarCodeScanner } from "expo-barcode-scanner";
 import { is, path, pathOr } from "ramda";
+import ExpoConstants from "expo-constants";
 
-import { t, withLocalization, LocalizationContextProps } from "utils";
+import { t, withLocalization, LocalizationContextProps, platform } from "utils";
 import { navigate } from "navigation";
 import { Text, Button, PermissionsRequest } from "components";
 import { Colors } from "style";
@@ -12,9 +13,7 @@ import { Colors } from "style";
 import styles from "./BarCodeScanScreen.styles";
 import navigationOptions from "./BarCodeScanScreen.navigationOptions";
 
-// https://world.openfoodfacts.org/api/v0/product/7622300336738
-// https://world.openfoodfacts.org/api/v0/product/7622300336738.data
-// product > ecoscore_data > agribalyse > co2_total
+/* more info on the http request at https://world.openfoodfacts.org/api/v0/product/7622300336738.data */
 
 const isNumber = is(Number);
 const getCO2eq = pathOr("", ["ecoscore_data", "agribalyse", "co2_total"]);
@@ -32,6 +31,10 @@ const BarCodeScanScreen = ({ language = "" }: LocalizationContextProps) => {
 
   const navigation = useNavigation();
   const navigator = navigate(navigation);
+
+  const { version, ios, android } = ExpoConstants.manifest;
+  const buildNumber = platform.isIOS ? ios.buildNumber : android.versionCode;
+  const platformType = platform.isIOS ? "iOS" : "Android";
 
   useEffect(() => {
     (async () => {
@@ -51,7 +54,17 @@ const BarCodeScanScreen = ({ language = "" }: LocalizationContextProps) => {
     setScanned(true);
     setIsFetchingData(true);
 
-    fetch(`https://world.openfoodfacts.org/api/v0/product/${data}`)
+    const headers = new Headers({
+      Accept: "application/json",
+      "Content-Type": "application/json",
+      "User-Agent":
+        "NMF.earth - " + platformType + " - Version " + version + "-" + `${buildNumber}`,
+    });
+
+    fetch(`https://world.openfoodfacts.org/api/v0/product/${data}`, {
+      method: "GET",
+      headers: headers,
+    })
       .then((response) => response.json())
       .then(({ product, status_verbose }) => {
         if (status_verbose === "product found") {
@@ -62,15 +75,16 @@ const BarCodeScanScreen = ({ language = "" }: LocalizationContextProps) => {
           const nutriscoreGrade = getNutriscoreGrade(product);
           const novaGroup = getNovaGroup(product);
           const ecoScore = getEcoScore(product);
+          const navParams = {
+            co2eq,
+            name,
+            nutriscoreGrade,
+            novaGroup,
+            ecoScore,
+          };
 
           if (isNumber(co2eq)) {
-            navigator.openAddEmissionBarCode({
-              co2eq,
-              name,
-              nutriscoreGrade,
-              novaGroup,
-              ecoScore,
-            });
+            navigator.openAddEmissionBarCode(navParams);
           } else {
             setHasCarbonData(false);
           }
@@ -143,15 +157,17 @@ const BarCodeScanScreen = ({ language = "" }: LocalizationContextProps) => {
           style={styles.scanner}
           onBarCodeScanned={scanned ? undefined : handleBarCodeScanned}
         />
-        {/* <Button.Secondary
-          style={styles.scanAgain}
-          textType={"Primary"}
-          onPress={() => handleBarCodeScanned({ data: 7622300336738 })}
-        >
-          <Text.Primary bold center green>
-            {"No camera access test"}
-          </Text.Primary>
-        </Button.Secondary> */}
+        {__DEV__ ? (
+          <Button.Secondary
+            style={styles.scanAgain}
+            textType={"Primary"}
+            onPress={() => handleBarCodeScanned({ data: 7622300336738 })}
+          >
+            <Text.Primary bold center green>
+              {"No camera access test"}
+            </Text.Primary>
+          </Button.Secondary>
+        ) : null}
       </View>
     );
   }
