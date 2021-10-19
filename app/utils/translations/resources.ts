@@ -15,6 +15,7 @@ import * as MyLocation from "../../screens/MyLocation/translations";
 import * as ActDetail from "../../screens/ActDetail/translations";
 import * as Notifications from "../../screens/Notifications/translations";
 import * as InfoModal from "../../screens/InfoModal/translations";
+import * as Periodicity from "../../screens/Periodicity/translations";
 import * as MyData from "../../screens/MyData/translations";
 import * as CategorySelection from "../../screens/CategorySelection/translations";
 import * as SubCategorySelection from "../../screens/SubCategorySelection/translations";
@@ -55,6 +56,7 @@ const en = {
   ...Faq.en,
   ...NoEmission.en,
   ...PermissionsRequest.en,
+  ...Periodicity.en,
   ...UI.en,
 };
 
@@ -83,6 +85,7 @@ const de = {
   ...BarCodeScan.de,
   ...MonthlyEmissions.de,
   ...Languages.de,
+  ...Periodicity.de,
   ...Faq.de,
 };
 
@@ -111,6 +114,7 @@ const fr = {
   ...BarCodeScan.fr,
   ...MonthlyEmissions.fr,
   ...Languages.fr,
+  ...Periodicity.fr,
   ...Faq.fr,
 };
 
@@ -139,6 +143,7 @@ const sv = {
   ...BarCodeScan.sv,
   ...MonthlyEmissions.sv,
   ...Languages.sv,
+  ...Periodicity.sv,
   ...Faq.sv,
 };
 
@@ -167,6 +172,7 @@ const pt = {
   ...BarCodeScan.pt,
   ...MonthlyEmissions.pt,
   ...Languages.pt,
+  ...Periodicity.pt,
   ...Faq.pt,
 };
 
@@ -195,6 +201,7 @@ const es = {
   ...BarCodeScan.es,
   ...MonthlyEmissions.es,
   ...Languages.es,
+  ...Periodicity.es,
   ...Faq.es,
 };
 
@@ -223,6 +230,7 @@ const ru = {
   ...BarCodeScan.ru,
   ...MonthlyEmissions.ru,
   ...Languages.ru,
+  ...Periodicity.ru,
   ...Faq.ru,
 };
 
@@ -251,6 +259,7 @@ const pl = {
   ...BarCodeScan.pl,
   ...MonthlyEmissions.pl,
   ...Languages.pl,
+  ...Periodicity.pl,
   ...Faq.pl,
 };
 
@@ -279,6 +288,7 @@ const da = {
   ...BarCodeScan.da,
   ...MonthlyEmissions.da,
   ...Languages.da,
+  ...Periodicity.da,
   ...Faq.da,
 };
 
@@ -307,6 +317,7 @@ const zh = {
   ...BarCodeScan.zh,
   ...MonthlyEmissions.zh,
   ...Languages.zh,
+  ...Periodicity.zh,
   ...Faq.zh,
 };
 
@@ -335,6 +346,7 @@ const ms = {
   ...BarCodeScan.ms,
   ...MonthlyEmissions.ms,
   ...Languages.ms,
+  ...Periodicity.ms,
   ...Faq.ms,
 };
 
@@ -363,6 +375,7 @@ export interface TranslationKeys
     MonthlyEmissions.TranslationKeys,
     ActDetail.TranslationKeys,
     Languages.TranslationKeys,
+    Periodicity.TranslationKeys,
     Faq.TranslationKeys {}
 
 export { en, de, fr, sv, pt, es, pl, ru, da, zh, ms };

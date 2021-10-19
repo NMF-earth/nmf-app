@@ -9,12 +9,14 @@ type Props = {
   text: string;
   isSelected: boolean;
   onPress: () => void;
+  touchableStyle?: StyleProp<ViewStyle>;
 };
 
-const ClickableTag = ({ text, isSelected, onPress }: Props): ReactElement => {
+const ClickableTag = ({ text, isSelected, onPress, touchableStyle }: Props): ReactElement => {
   const containerStyle: StyleProp<ViewStyle> = [
     styles.default,
     isSelected ? styles.selected : styles.unselected,
+    touchableStyle,
   ];
 
   const textColor = { darkGray: !isSelected, green: isSelected };
