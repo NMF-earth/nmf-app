@@ -24,7 +24,7 @@ const openInfoModal = (navigation) => (props = {}) => {
 };
 
 const openPeriodicityModal = (navigation) => (props = {}) => {
-  navigation.push("PeriodicityModal", props);
+  navigation.navigate("PeriodicityModal", { screen: "PeriodicityModal", params: props });
 };
 
 /* push */

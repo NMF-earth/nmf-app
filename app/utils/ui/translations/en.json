@@ -1,4 +1,11 @@
 {
+	"UI_MONDAY": "Monday",
+	"UI_TUESDAY": "Tuesday",
+	"UI_WEDNESDAY": "Wednesday",
+	"UI_THURSDAY": "Thursday",
+	"UI_FRIDAY": "Friday",
+	"UI_SATURDAY": "Saturday",
+	"UI_SUNDAY": "Sunday",
 	"UI_TRAIN": "Train",
 	"UI_CAR": "Car",
 	"UI_PLANE": "Plane",

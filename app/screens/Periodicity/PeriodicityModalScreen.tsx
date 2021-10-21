@@ -3,9 +3,9 @@ import { ScrollView, View } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
 import { NavStatelessComponent, PeriodicityType } from "interfaces";
-import { TranslationKeys } from "screens/Periodicity/translations";
 import { Button, Text } from "components";
 import ClickableTag from "components/ClickableTag";
+import { TranslationKeys } from "utils/translations/resources";
 import { t } from "utils";
 
 import styles from "./PeriodicityModalScreen.styles";
@@ -48,7 +48,6 @@ const PeriodicityModalScreen: NavStatelessComponent = () => {
               setPeriodType(PeriodicityType.monthly);
             }}
             text={t("PERIODICITY_MODAL_SCREEN_MONTHLY")}
-            touchableStyle={styles.tag}
           />
 
           <ClickableTag
@@ -57,7 +56,6 @@ const PeriodicityModalScreen: NavStatelessComponent = () => {
               setPeriodType(PeriodicityType.weekly);
             }}
             text={t("PERIODICITY_MODAL_SCREEN_WEEKLY")}
-            touchableStyle={styles.tag}
           />
         </View>
       </View>
@@ -74,7 +72,6 @@ const PeriodicityModalScreen: NavStatelessComponent = () => {
                     onWeekdaySelected(dayIndex);
                   }}
                   text={t(nameKey)}
-                  touchableStyle={styles.tag}
                 />
               );
             })}
@@ -82,7 +79,7 @@ const PeriodicityModalScreen: NavStatelessComponent = () => {
         </View>
       )}
       <View style={styles.tagSection}>
-        <Text.H3>{t("PERIODICITY_MODAL_SCREEN_OCCURENES")}</Text.H3>
+        <Text.H3>{t("PERIODICITY_MODAL_SCREEN_OCCURRENCES")}</Text.H3>
         <View style={styles.tagsContainer}>
           {TIMES_LIST.map((_, index) => (
             <ClickableTag
@@ -91,8 +88,9 @@ const PeriodicityModalScreen: NavStatelessComponent = () => {
               onPress={() => {
                 setTimes(index + 1);
               }}
-              text={`${index + 1} ${t(`PERIODICITY_MODAL_SCREEN_TIME${index > 0 ? "S" : ""}`)}`}
-              touchableStyle={styles.tag}
+              text={`${index + 1} ${
+                index > 0 ? t("PERIODICITY_MODAL_SCREEN_TIMES") : t("PERIODICITY_MODAL_SCREEN_TIME")
+              }`}
             />
           ))}
         </View>
@@ -117,13 +115,13 @@ const WEEK_DAYS_LIST: {
   dayIndex: number;
   nameKey: keyof TranslationKeys;
 }[] = [
-  { dayIndex: 2, nameKey: "MONDAY" },
-  { dayIndex: 3, nameKey: "TUESDAY" },
-  { dayIndex: 4, nameKey: "WEDNESDAY" },
-  { dayIndex: 5, nameKey: "THURSDAY" },
-  { dayIndex: 6, nameKey: "FRIDAY" },
-  { dayIndex: 0, nameKey: "SATURDAY" },
-  { dayIndex: 1, nameKey: "SUNDAY" },
+  { dayIndex: 2, nameKey: "UI_MONDAY" },
+  { dayIndex: 3, nameKey: "UI_TUESDAY" },
+  { dayIndex: 4, nameKey: "UI_WEDNESDAY" },
+  { dayIndex: 5, nameKey: "UI_THURSDAY" },
+  { dayIndex: 6, nameKey: "UI_FRIDAY" },
+  { dayIndex: 0, nameKey: "UI_SATURDAY" },
+  { dayIndex: 1, nameKey: "UI_SUNDAY" },
 ];
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
