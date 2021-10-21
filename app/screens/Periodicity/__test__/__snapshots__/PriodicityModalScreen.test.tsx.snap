@@ -38,6 +38,7 @@ exports[`InfoModalScreen renders correctly 1`] = `
                 "alignSelf": "center",
                 "borderRadius": 6,
                 "borderWidth": 1.5,
+                "margin": 6,
                 "paddingHorizontal": 10,
                 "paddingVertical": 4,
               },
@@ -45,9 +46,7 @@ exports[`InfoModalScreen renders correctly 1`] = `
                 "backgroundColor": "#F0F0F0",
                 "borderColor": "#9CA6A0",
               },
-              Object {
-                "margin": 6,
-              },
+              undefined,
             ]
           }
         >
@@ -67,6 +66,7 @@ exports[`InfoModalScreen renders correctly 1`] = `
                 "alignSelf": "center",
                 "borderRadius": 6,
                 "borderWidth": 1.5,
+                "margin": 6,
                 "paddingHorizontal": 10,
                 "paddingVertical": 4,
               },
@@ -74,9 +74,7 @@ exports[`InfoModalScreen renders correctly 1`] = `
                 "backgroundColor": "#F0F0F0",
                 "borderColor": "#9CA6A0",
               },
-              Object {
-                "margin": 6,
-              },
+              undefined,
             ]
           }
         >
@@ -117,6 +115,7 @@ exports[`InfoModalScreen renders correctly 1`] = `
                 "alignSelf": "center",
                 "borderRadius": 6,
                 "borderWidth": 1.5,
+                "margin": 6,
                 "paddingHorizontal": 10,
                 "paddingVertical": 4,
               },
@@ -124,9 +123,7 @@ exports[`InfoModalScreen renders correctly 1`] = `
                 "backgroundColor": "#F0F0F0",
                 "borderColor": "#9CA6A0",
               },
-              Object {
-                "margin": 6,
-              },
+              undefined,
             ]
           }
         >
@@ -146,6 +143,7 @@ exports[`InfoModalScreen renders correctly 1`] = `
                 "alignSelf": "center",
                 "borderRadius": 6,
                 "borderWidth": 1.5,
+                "margin": 6,
                 "paddingHorizontal": 10,
                 "paddingVertical": 4,
               },
@@ -153,9 +151,7 @@ exports[`InfoModalScreen renders correctly 1`] = `
                 "backgroundColor": "#F0F0F0",
                 "borderColor": "#9CA6A0",
               },
-              Object {
-                "margin": 6,
-              },
+              undefined,
             ]
           }
         >
@@ -175,6 +171,7 @@ exports[`InfoModalScreen renders correctly 1`] = `
                 "alignSelf": "center",
                 "borderRadius": 6,
                 "borderWidth": 1.5,
+                "margin": 6,
                 "paddingHorizontal": 10,
                 "paddingVertical": 4,
               },
@@ -182,9 +179,7 @@ exports[`InfoModalScreen renders correctly 1`] = `
                 "backgroundColor": "#F0F0F0",
                 "borderColor": "#9CA6A0",
               },
-              Object {
-                "margin": 6,
-              },
+              undefined,
             ]
           }
         >
