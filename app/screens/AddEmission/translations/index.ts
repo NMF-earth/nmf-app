@@ -28,6 +28,8 @@ interface TranslationKeys {
   ADD_EMISSION_SCREEN_PICKER_MODAL_CANCEL: string;
   ADD_EMISSION_SCREEN_ITEMS: string;
   ADD_EMISSION_SCREEN_MEALS: string;
+  ADD_EMISSION_SCREEN_PERIODICITY: string;
+  ADD_EMISSION_SCREEN_NON_RECURRING: string;
 }
 
 export { en, fr, de, sv, es, pt, da, ru, pl, zh, ms, TranslationKeys };

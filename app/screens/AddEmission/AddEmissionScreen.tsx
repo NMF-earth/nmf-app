@@ -6,7 +6,9 @@ import { TransportType } from "carbon-footprint";
 import DateTimePickerModal from "react-native-modal-datetime-picker";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 import { useRoute } from "@react-navigation/core";
+import { useNavigation } from "@react-navigation/native";
 
+import { navigate } from "navigation";
 import { Text, TextInput, TextButton } from "components";
 import { userPreferences } from "ducks";
 import { EmissionType, EmissionPayload, EmissionModelType } from "interfaces";
@@ -47,6 +49,8 @@ const EMISSION_NAME_MAX_LENGTH = 150;
 
 const AddEmissionScreen = ({ locale = "", language = "" }: LocalizationContextProps) => {
   const route = useRoute();
+  const navigation = useNavigation();
+  const navigator = navigate(navigation);
   const location = useSelector(userPreferences.selectors.getLocation);
   const [emissionName, setEmissionName] = useState<string>("");
   const [electricityConsumption, setElectricityConsumption] = useState<number>(
@@ -275,7 +279,7 @@ const AddEmissionScreen = ({ locale = "", language = "" }: LocalizationContextPr
 
       <View style={styles.textContainer}>
         <Text.H3>{t("ADD_EMISSION_SCREEN_DATE")}</Text.H3>
-        <View style={styles.dateContainer}>
+        <View style={styles.textButtonContainer}>
           <TextButton
             onPress={showDatePicker}
             iconLeft={"calendar"}
@@ -283,6 +287,19 @@ const AddEmissionScreen = ({ locale = "", language = "" }: LocalizationContextPr
           />
         </View>
       </View>
+
+      {__DEV__ && (
+        <View style={styles.textContainer}>
+          <Text.H3>{t("ADD_EMISSION_SCREEN_PERIODICITY")}</Text.H3>
+          <View style={styles.textButtonContainer}>
+            <TextButton
+              onPress={() => navigator.openPeriodicityModal()}
+              iconLeft={"repeat"}
+              text={t("ADD_EMISSION_SCREEN_NON_RECURRING")}
+            />
+          </View>
+        </View>
+      )}
 
       <AddEmissionButton
         emissionPayload={{

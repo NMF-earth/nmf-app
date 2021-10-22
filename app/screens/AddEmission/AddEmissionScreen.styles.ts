@@ -20,7 +20,7 @@ export default StyleSheet.create({
     marginTop: 4,
     textTransform: "capitalize",
   },
-  dateContainer: {
+  textButtonContainer: {
     paddingTop: 10,
     paddingBottom: 4,
     flexDirection: "column",

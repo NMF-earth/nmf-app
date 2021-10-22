@@ -115,6 +115,35 @@ exports[`AddEmissionScreen renders correctly 1`] = `
           />
         </View>
       </View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "flex": 1,
+            "paddingHorizontal": 16,
+            "paddingVertical": 12,
+          }
+        }
+      >
+        <Text.H3>
+          Periodicity
+        </Text.H3>
+        <View
+          style={
+            Object {
+              "flexDirection": "column",
+              "paddingBottom": 4,
+              "paddingTop": 10,
+            }
+          }
+        >
+          <TextButton
+            iconLeft="repeat"
+            onPress={[Function]}
+            text="Non-recurring"
+          />
+        </View>
+      </View>
       <Button.Primary
         onPress={[Function]}
         style={
