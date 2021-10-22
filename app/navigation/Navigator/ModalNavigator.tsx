@@ -3,13 +3,14 @@ import { createStackNavigator } from "@react-navigation/stack";
 
 import ComingSoonScreen from "../../screens/ComingSoon";
 import PeriodicityModalScreen from "../../screens/Periodicity";
+import InfoModalScreen from "../../screens/InfoModal";
 
 const Stack = createStackNavigator();
 
 const ModalNavigator = (): React.ReactElement => (
   <Stack.Navigator>
     <Stack.Screen
-      name="ComingSoon"
+      name="ComingSoonModal"
       options={ComingSoonScreen.navigationOptions}
       component={ComingSoonScreen}
     />
@@ -17,6 +18,11 @@ const ModalNavigator = (): React.ReactElement => (
       name="PeriodicityModal"
       options={PeriodicityModalScreen.navigationOptions}
       component={PeriodicityModalScreen}
+    />
+    <Stack.Screen
+      name="InfoModal"
+      options={InfoModalScreen.navigationOptions}
+      component={InfoModalScreen}
     />
   </Stack.Navigator>
 );

@@ -9,6 +9,8 @@ type Props = {
   children: React.ReactElement;
 };
 
+const NB_OF_STARTS_BEFORE_ASK_RATING = 6;
+
 const StoreReviewChecker = ({ children }: Props): React.ReactElement => {
   const dispatch = useDispatch();
   const timesStarted = useSelector(userPreferences.selectors.getTimesStarted);
@@ -30,7 +32,11 @@ const StoreReviewChecker = ({ children }: Props): React.ReactElement => {
 
   useEffect(() => {
     const checkForReview = async () => {
-      if (prevTimesStarted === 3 && timesStarted === 4 && (await StoreReview.hasAction())) {
+      if (
+        prevTimesStarted === NB_OF_STARTS_BEFORE_ASK_RATING - 1 &&
+        timesStarted === NB_OF_STARTS_BEFORE_ASK_RATING &&
+        (await StoreReview.hasAction())
+      ) {
         await StoreReview.requestReview();
       }
     };

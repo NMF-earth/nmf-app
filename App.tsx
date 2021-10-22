@@ -99,9 +99,13 @@ const App: React.FC = () => {
               setLanguage: setLanguage,
             }}
           >
-            <StoreReviewChecker>
+            {__DEV__ ? (
               <AppNavigator />
-            </StoreReviewChecker>
+            ) : (
+              <StoreReviewChecker>
+                <AppNavigator />
+              </StoreReviewChecker>
+            )}
           </LocalizationContext.Provider>
         </FormattedProvider>
       </Provider>

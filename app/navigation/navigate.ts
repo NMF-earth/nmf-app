@@ -4,9 +4,6 @@ import throttle from "lodash.throttle";
 const navigateOneTime = (navigate) => throttle(navigate, 1000, { trailing: false });
 
 /* navigate */
-const openComingSoon = (navigation) => (props = {}) => {
-  navigation.navigate("ComingSoon", props);
-};
 
 const openAddEmissionNavigator = (navigation) => (props = {}) => {
   navigation.navigate("AddEmissionNavigator", props);
@@ -16,18 +13,31 @@ const openEmissions = (navigation) => (props = {}) => {
   navigation.navigate("Emissions", props);
 };
 
+/* navigate - modal */
+
 const openInfoModal = (navigation) => (props = {}) => {
-  navigation.navigate("InfoModal", {
+  navigation.navigate("ModalNavigator", {
     screen: "InfoModal",
     params: props,
   });
 };
 
 const openPeriodicityModal = (navigation) => (props = {}) => {
-  navigation.navigate("PeriodicityModal", { screen: "PeriodicityModal", params: props });
+  navigation.navigate("ModalNavigator", {
+    screen: "PeriodicityModal",
+    params: props,
+  });
+};
+
+const openComingSoonModal = (navigation) => (props = {}) => {
+  navigation.navigate("ModalNavigator", {
+    screen: "ComingSoonModal",
+    params: props,
+  });
 };
 
 /* push */
+
 const openMontlyBudget = (navigation) => (props = {}) => {
   navigation.push("MonthlyBudget", props);
 };
@@ -104,7 +114,7 @@ const navigate = (navigation) => ({
   openMyData: navigateOneTime(openMyData(navigation)),
   openBarCodeScan: navigateOneTime(openBarCodeScan(navigation)),
   openAddEmissionBarCode: navigateOneTime(openAddEmissionBarCode(navigation)),
-  openComingSoon: navigateOneTime(openComingSoon(navigation)),
+  openComingSoonModal: navigateOneTime(openComingSoonModal(navigation)),
   openInfoModal: navigateOneTime(openInfoModal(navigation)),
   openPeriodicityModal: navigateOneTime(openPeriodicityModal(navigation)),
   openBudget: navigateOneTime(openBudget(navigation)),
