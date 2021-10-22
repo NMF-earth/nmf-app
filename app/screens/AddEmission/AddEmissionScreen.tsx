@@ -1,13 +1,13 @@
 import React, { useCallback, useState } from "react";
 import moment, { Moment } from "moment";
 import { useSelector } from "react-redux";
-import { View, TouchableOpacity } from "react-native";
+import { View } from "react-native";
 import { TransportType } from "carbon-footprint";
 import DateTimePickerModal from "react-native-modal-datetime-picker";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 import { useRoute } from "@react-navigation/core";
 
-import { Text, TextInput } from "components";
+import { Text, TextInput, TextButton } from "components";
 import { userPreferences } from "ducks";
 import { EmissionType, EmissionPayload, EmissionModelType } from "interfaces";
 import {
@@ -276,15 +276,11 @@ const AddEmissionScreen = ({ locale = "", language = "" }: LocalizationContextPr
       <View style={styles.textContainer}>
         <Text.H3>{t("ADD_EMISSION_SCREEN_DATE")}</Text.H3>
         <View style={styles.dateContainer}>
-          <TouchableOpacity style={{ flexDirection: "row" }} onPress={showDatePicker}>
-            <Text.Primary lightGray>
-              {creationDate.locale(getLocaleForMoment(language)).format("dddd Do MMMM YYYY")}
-            </Text.Primary>
-            <Text.Primary lightGray>{" - "}</Text.Primary>
-            <Text.Primary bold green>
-              {t("ADD_EMISSION_SCREEN_CHANGE")}
-            </Text.Primary>
-          </TouchableOpacity>
+          <TextButton
+            onPress={showDatePicker}
+            iconLeft={"calendar"}
+            text={creationDate.locale(getLocaleForMoment(language)).format("dddd Do MMMM YYYY")}
+          />
         </View>
       </View>
 

@@ -21,7 +21,8 @@ export default StyleSheet.create({
     textTransform: "capitalize",
   },
   dateContainer: {
-    paddingTop: 4,
+    paddingTop: 10,
+    paddingBottom: 4,
     flexDirection: "column",
   },
   tagContainer: {

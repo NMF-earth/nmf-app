@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextButton renders correctly with camera icon 1`] = `
+<TouchableOpacity
+  onPress={[Function]}
+  style={
+    Object {
+      "alignContent": "center",
+      "alignItems": "center",
+      "flexDirection": "row",
+    }
+  }
+>
+  <Ionicons
+    color="#3957D0"
+    name="camera"
+    size={20}
+  />
+  <Text.Primary
+    darkGray={true}
+    style={
+      Object {
+        "marginHorizontal": 8,
+      }
+    }
+  >
+    some text
+  </Text.Primary>
+  <Ionicons
+    color="#4BB377"
+    name="create"
+    size={20}
+  />
+</TouchableOpacity>
+`;
+
+exports[`TextButton renders correctly with repeat icon 1`] = `
+<TouchableOpacity
+  onPress={[Function]}
+  style={
+    Object {
+      "alignContent": "center",
+      "alignItems": "center",
+      "flexDirection": "row",
+    }
+  }
+>
+  <Ionicons
+    color="#3957D0"
+    name="repeat"
+    size={20}
+  />
+  <Text.Primary
+    darkGray={true}
+    style={
+      Object {
+        "marginHorizontal": 8,
+      }
+    }
+  >
+    some text
+  </Text.Primary>
+  <Ionicons
+    color="#4BB377"
+    name="create"
+    size={20}
+  />
+</TouchableOpacity>
+`;

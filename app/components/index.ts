@@ -12,6 +12,7 @@ import InfoButton from "./InfoButton";
 import NoEmission from "./NoEmission";
 import { EmissionListItem, EmissionListItemProps } from "./EmissionListItem";
 import PermissionsRequest from "./PermissionsRequest";
+import TextButton from "./TextButton";
 
 export {
   EmissionListItem,
@@ -29,4 +30,5 @@ export {
   InfoButton,
   NoEmission,
   PermissionsRequest,
+  TextButton,
 };

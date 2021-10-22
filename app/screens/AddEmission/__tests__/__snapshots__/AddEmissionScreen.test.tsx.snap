@@ -103,35 +103,16 @@ exports[`AddEmissionScreen renders correctly 1`] = `
           style={
             Object {
               "flexDirection": "column",
-              "paddingTop": 4,
+              "paddingBottom": 4,
+              "paddingTop": 10,
             }
           }
         >
-          <TouchableOpacity
+          <TextButton
+            iconLeft="calendar"
             onPress={[Function]}
-            style={
-              Object {
-                "flexDirection": "row",
-              }
-            }
-          >
-            <Text.Primary
-              lightGray={true}
-            >
-              Sunday 7th April 2019
-            </Text.Primary>
-            <Text.Primary
-              lightGray={true}
-            >
-               - 
-            </Text.Primary>
-            <Text.Primary
-              bold={true}
-              green={true}
-            >
-              Change
-            </Text.Primary>
-          </TouchableOpacity>
+            text="Sunday 7th April 2019"
+          />
         </View>
       </View>
       <Button.Primary
