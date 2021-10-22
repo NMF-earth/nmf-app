@@ -23,6 +23,10 @@ const openInfoModal = (navigation) => (props = {}) => {
   });
 };
 
+const openPeriodicityModal = (navigation) => (props = {}) => {
+  navigation.navigate("PeriodicityModal", { screen: "PeriodicityModal", params: props });
+};
+
 /* push */
 const openMontlyBudget = (navigation) => (props = {}) => {
   navigation.push("MonthlyBudget", props);
@@ -102,6 +106,7 @@ const navigate = (navigation) => ({
   openAddEmissionBarCode: navigateOneTime(openAddEmissionBarCode(navigation)),
   openComingSoon: navigateOneTime(openComingSoon(navigation)),
   openInfoModal: navigateOneTime(openInfoModal(navigation)),
+  openPeriodicityModal: navigateOneTime(openPeriodicityModal(navigation)),
   openBudget: navigateOneTime(openBudget(navigation)),
   openMontlyBudget: navigateOneTime(openMontlyBudget(navigation)),
   openAddEmission: navigateOneTime(openAddEmission(navigation)),

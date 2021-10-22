@@ -1,0 +1,10 @@
+{
+  "PERIODICITY_MODAL_SCREEN_TITLE": "Periodicity",
+  "PERIODICITY_MODAL_SCREEN_OFTEN": "How often this emission happens?",
+  "PERIODICITY_MODAL_SCREEN_WEEKLY": "Weekly",
+  "PERIODICITY_MODAL_SCREEN_MONTHLY": "Monthly",
+  "PERIODICITY_MODAL_SCREEN_DAYS": "Which days is this emission repeat?",
+  "PERIODICITY_MODAL_SCREEN_OCCURRENCES": "Occurences?",
+  "PERIODICITY_MODAL_SCREEN_TIME": "time",
+  "PERIODICITY_MODAL_SCREEN_TIMES": "times"
+}

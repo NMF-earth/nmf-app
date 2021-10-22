@@ -8,6 +8,7 @@ export default StyleSheet.create({
     paddingHorizontal: 10,
     paddingVertical: 4,
     borderRadius: 6,
+    margin: 6,
     borderWidth: 1.5,
   },
   selected: {

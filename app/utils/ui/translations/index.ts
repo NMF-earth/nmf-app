@@ -75,6 +75,13 @@ interface TranslationKeys {
   UI_STREAMING: string;
   UI_TRANSPORT: string;
   UI_SCAN_PRODUCT: string;
+  UI_MONDAY: string;
+  UI_TUESDAY: string;
+  UI_WEDNESDAY: string;
+  UI_THURSDAY: string;
+  UI_FRIDAY: string;
+  UI_SATURDAY: string;
+  UI_SUNDAY: string;
 }
 
 export { en, fr, de, sv, es, pt, da, ru, pl, zh, ms, TranslationKeys };
