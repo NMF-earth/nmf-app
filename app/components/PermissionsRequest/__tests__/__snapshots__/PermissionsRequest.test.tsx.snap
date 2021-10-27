@@ -85,12 +85,12 @@ exports[`renders correctly PermissionsRequest if notification 1`] = `
     <Text.H2
       center={true}
     >
-      
+      No permission to send notifications
     </Text.H2>
     <Text.Primary
       center={true}
     >
-      
+      Please give NMF.earth app permission to send you notifications in your phone settings to use this feature.
     </Text.Primary>
   </View>
   <Button.Secondary

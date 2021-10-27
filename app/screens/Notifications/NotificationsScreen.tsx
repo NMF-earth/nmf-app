@@ -1,10 +1,10 @@
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useState, useEffect } from "react";
 import { View, Switch, Alert, Linking } from "react-native";
 import * as Notifications from "expo-notifications";
 import { useDispatch, useSelector } from "react-redux";
 
 import { NavStatelessComponent } from "interfaces";
-import { Text } from "components";
+import { PermissionsRequest, Text } from "components";
 import { userPreferences } from "ducks";
 import { t } from "utils";
 
@@ -29,30 +29,45 @@ const NotificationsScreen: NavStatelessComponent = () => {
   const [activated, setActivated] = useState(
     useSelector(userPreferences.selectors.getActivateNotifications)
   );
+  const [hasPermission, setHasPermission] = useState(null);
 
   const onValueChange = useCallback(
     async (value: boolean) => {
       try {
-        const permission = await Notifications.requestPermissionsAsync();
+        if (!hasPermission) {
+          Linking.openSettings();
+          return;
+        }
 
-        if (permission.granted && value) {
+        if (value) {
           await Notifications.scheduleNotificationAsync(notification);
         } else {
           await Notifications.cancelAllScheduledNotificationsAsync();
-
-          if (!permission.granted) {
-            Linking.openSettings();
-          }
         }
 
-        setActivated(permission.granted && value);
-        dispatch(userPreferences.actions.toggleNotifications(permission.granted && value));
+        setActivated(value);
+        dispatch(userPreferences.actions.toggleNotifications(value));
       } catch (e) {
         Alert.alert("Error", e);
       }
     },
-    [dispatch]
+    [dispatch, hasPermission]
   );
+
+  useEffect(() => {
+    (async () => {
+      const { status } = await Notifications.requestPermissionsAsync();
+      setHasPermission(status === "granted");
+    })();
+  }, []);
+
+  if (hasPermission === null) {
+    return <View style={styles.container} />;
+  }
+
+  if (!hasPermission) {
+    return <PermissionsRequest type="notification" />;
+  }
 
   return (
     <View style={styles.container}>

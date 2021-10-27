@@ -217,6 +217,6 @@
 	"PERMISSIONS_REQUEST_COMPONENT_OPEN_SETTINGS": "Open settings",
 	"PERMISSIONS_REQUEST_COMPONENT_CAMERA_TITLE": "No access to camera",
 	"PERMISSIONS_REQUEST_COMPONENT_CAMERA_SUBTITLE": "Please give NMF.earth app access to camera in your phone settings to use this feature.",
-	"PERMISSIONS_REQUEST_COMPONENT_NOTIFICATION_TITLE": "",
-	"PERMISSIONS_REQUEST_COMPONENT_NOTIFICATION_SUBTITLE": ""
+	"PERMISSIONS_REQUEST_COMPONENT_NOTIFICATION_TITLE": "No permission to send notifications",
+	"PERMISSIONS_REQUEST_COMPONENT_NOTIFICATION_SUBTITLE": "Please give NMF.earth app permission to send you notifications in your phone settings to use this feature."
 }
