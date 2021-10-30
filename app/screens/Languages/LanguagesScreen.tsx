@@ -1,6 +1,7 @@
 import React, { useCallback, useContext } from "react";
 import { View, ScrollView } from "react-native";
 import { useDispatch } from "react-redux";
+import i18n from "i18n-js";
 
 import { SelectableListItem } from "components";
 import { userPreferences } from "ducks";
@@ -36,6 +37,7 @@ const LanguagesScreen: NavStatelessComponent = () => {
     (lang: string) => {
       dispatch(userPreferences.actions.changeLanguage(lang));
       setLanguage(lang);
+      i18n.locale = lang;
     },
     [dispatch, setLanguage]
   );
