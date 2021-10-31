@@ -44,7 +44,7 @@
     "expo-constants": "11.0.1",
     "expo-device": "3.3.0",
     "expo-document-picker": "9.2.4",
-    "expo-file-system": "11.0.2",
+    "expo-file-system": "13.0.3",
     "expo-font": "9.2.1",
     "expo-linking": "2.3.1",
     "expo-localization": "10.2.0",
