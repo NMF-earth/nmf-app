@@ -4,7 +4,7 @@
     "slug": "not-my-fault-earth",
     "privacy": "public",
     "platforms": ["ios", "android"],
-    "version": "0.8.0",
+    "version": "0.9.0",
     "orientation": "portrait",
     "splash": {
       "image": "./assets/images/splash.png",
@@ -19,13 +19,13 @@
       "icon": "./assets/images/ios.icon.png",
       "bundleIdentifier": "nmf.earth",
       "supportsTablet": true,
-      "buildNumber": "33"
+      "buildNumber": "34"
     },
     "android": {
       "icon": "./assets/images/android.icon.png",
       "useNextNotificationsApi": true,
       "package": "nmf.earth",
-      "versionCode": 33
+      "versionCode": 34
     },
     "userInterfaceStyle": "automatic",
     "hooks": {
