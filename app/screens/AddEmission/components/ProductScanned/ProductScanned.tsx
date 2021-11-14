@@ -20,7 +20,7 @@ const ProductScanned: React.FC<Props> = ({ setCo2eqKilograms, productCarbonFootp
   const [sliderValue, setSliderValue] = useState(1.4);
   const emissionAmount =
     productCarbonFootprint < 1
-      ? Math.round(sliderValue) * productCarbonFootprint
+      ? Math.round(Math.round(sliderValue) * productCarbonFootprint * 1000) / 1000
       : Math.round(Math.round(sliderValue) * productCarbonFootprint * 10) / 10;
 
   setCo2eqKilograms(emissionAmount);
