@@ -17,7 +17,7 @@ interface Props {
 }
 
 const ProductScanned: React.FC<Props> = ({ setCo2eqKilograms, productCarbonFootprint }) => {
-  const [sliderValue, setSliderValue] = useState(MIN_SLIDER_VALUE);
+  const [sliderValue, setSliderValue] = useState(1.4);
   const emissionAmount =
     productCarbonFootprint < 1
       ? Math.round(sliderValue) * productCarbonFootprint

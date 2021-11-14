@@ -92,6 +92,7 @@ const BarCodeScanScreen = ({ language = "" }: LocalizationContextProps) => {
           if (isNumber(productCarbonFootprint)) {
             navigator.openAddEmission(navParams);
           } else {
+            setScanned(false);
             setHasCarbonData(false);
             setNutriscoreGrade(nutriscoreGrade);
             setNovaGroup(novaGroup);
@@ -99,13 +100,16 @@ const BarCodeScanScreen = ({ language = "" }: LocalizationContextProps) => {
           }
         } else {
           setHasCarbonData(false);
+          setScanned(false);
         }
 
         setIsFetchingData(false);
+        setScanned(false);
       })
       .catch(() => {
         setIsFetchingData(false);
         setError(true);
+        setScanned(false);
       });
   };
 
