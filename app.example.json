@@ -19,13 +19,13 @@
       "icon": "./assets/images/ios.icon.png",
       "bundleIdentifier": "nmf.earth",
       "supportsTablet": true,
-      "buildNumber": "38"
+      "buildNumber": "39"
     },
     "android": {
       "icon": "./assets/images/android.icon.png",
       "useNextNotificationsApi": true,
       "package": "nmf.earth",
-      "versionCode": 38
+      "versionCode": 39
     },
     "userInterfaceStyle": "automatic",
     "hooks": {

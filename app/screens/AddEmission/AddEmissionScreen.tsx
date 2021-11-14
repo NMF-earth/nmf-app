@@ -267,14 +267,26 @@ const AddEmissionScreen = ({ locale = "", language = "" }: LocalizationContextPr
 
   return (
     <KeyboardAwareScrollView style={styles.container}>
-      {emissionType == EmissionType.productScanned ? (
+      {emissionType == EmissionType.productScanned && !!name && (
         <View style={styles.textContainer}>
           <Text.H2 style={styles.text}>{t("ADD_EMISSION_SCREEN_NAME")}</Text.H2>
           <Text.Primary lightGray style={styles.text}>
             {name}
           </Text.Primary>
         </View>
-      ) : (
+      )}
+
+      {emissionType == EmissionType.productScanned && !name && (
+        <TextInput
+          isOptional
+          placeholder={t("ADD_EMISSION_SCREEN_TEXTINPUT_PLACEHOLDER")}
+          title={t("ADD_EMISSION_SCREEN_NAME_EMISSION")}
+          onChangeText={onChangeEmissionName}
+          value={emissionName}
+        />
+      )}
+
+      {emissionType != EmissionType.productScanned && (
         <View style={styles.textContainer}>
           <Text.H2 style={styles.text}>{ui.getTranslationEmissionType(emissionType)}</Text.H2>
           <Text.Primary lightGray style={styles.text}>
@@ -299,15 +311,7 @@ const AddEmissionScreen = ({ locale = "", language = "" }: LocalizationContextPr
           novaGroup={novaGroup}
           ecoScore={ecoScore}
         />
-      ) : (
-        <TextInput
-          isOptional
-          placeholder={t("ADD_EMISSION_SCREEN_TEXTINPUT_PLACEHOLDER")}
-          title={t("ADD_EMISSION_SCREEN_NAME_EMISSION")}
-          onChangeText={onChangeEmissionName}
-          value={emissionName}
-        />
-      )}
+      ) : null}
 
       <DateTimePickerModal
         headerTextIOS={t("ADD_EMISSION_SCREEN_PICKER_MODAL_HEADER_TEXT")}

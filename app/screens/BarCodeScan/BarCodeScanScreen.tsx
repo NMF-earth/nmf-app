@@ -72,8 +72,9 @@ const BarCodeScanScreen = ({ language = "" }: LocalizationContextProps) => {
       .then((response) => response.json())
       .then(({ product, status_verbose }) => {
         if (status_verbose === "product found") {
+          console.log(data);
           let name = getName(product);
-          name = path(["product", "product_name_" + language], product) || name;
+          name = path(["product_name_" + language], product) || name;
 
           const productCarbonFootprint = parseFloat(getCO2eq(product));
           const nutriscoreGrade = getNutriscoreGrade(product);

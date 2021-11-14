@@ -73,13 +73,6 @@ exports[`AddEmissionScreen renders correctly 1`] = `
           Custom
         </Text.Primary>
       </View>
-      <TextInput
-        isOptional={true}
-        onChangeText={[Function]}
-        placeholder="e.g burger, flight from Paris to Rome…"
-        title="Name this emission "
-        value=""
-      />
       <Modal
         animationType="none"
         hardwareAccelerated={false}
