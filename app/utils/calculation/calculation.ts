@@ -60,7 +60,10 @@ const getFlightEmissionValue = (duration: number): number => {
 };
 
 const getC02ValueFromEmission = (emission: Emission): number => {
-  if (emission.emissionType === EmissionType.custom) {
+  if (
+    emission.emissionType === EmissionType.custom ||
+    emission.emissionType === EmissionType.productScanned
+  ) {
     return emission.value;
   }
 

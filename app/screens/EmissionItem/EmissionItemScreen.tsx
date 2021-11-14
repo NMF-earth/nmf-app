@@ -18,6 +18,7 @@ import {
   getLocaleForMoment,
 } from "utils";
 import { navigate } from "navigation";
+import { EmissionType } from "interfaces";
 
 import styles from "./EmissionItemScreen.styles";
 import navigationOptions from "./EmissionItemScreen.navigationOptions";
@@ -68,11 +69,17 @@ const EmissionItemScreen = ({ language = "" }: LocalizationContextProps) => {
         </>
       ) : null}
       <Text.H3>{t("EMISSION_ITEM_SCREEN_TYPE")}</Text.H3>
-      <Text.Primary darkGray style={styles.lastItem}>
-        {ui.getTranslationEmissionType(emissionType)}
-        {" - "}
-        {ui.getTranslationEmissionModelType(emissionModelType)}
-      </Text.Primary>
+      {emissionType == EmissionType.custom || emissionType == EmissionType.productScanned ? (
+        <Text.Primary darkGray style={styles.lastItem}>
+          {ui.getTranslationEmissionType(emissionType)}
+        </Text.Primary>
+      ) : (
+        <Text.Primary darkGray style={styles.lastItem}>
+          {ui.getTranslationEmissionType(emissionType)}
+          {" - "}
+          {ui.getTranslationEmissionModelType(emissionModelType)}
+        </Text.Primary>
+      )}
       <Text.H3>{t("EMISSION_ITEM_SCREEN_QUANTITY")}</Text.H3>
       <Text.Primary darkGray style={styles.lastItem}>
         <FormattedNumber

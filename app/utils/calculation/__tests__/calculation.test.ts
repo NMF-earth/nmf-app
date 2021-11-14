@@ -29,51 +29,57 @@ const emissionFood: Emission = {
   value: 10,
 };
 
-const emissionFoodRecent = {
+const emissionFoodRecent: Emission = {
   ...emissionFood,
   creationDate: "2020-03-27T11:04:55.334Z",
 };
 
-const emissionTransport = {
+const emissionTransport: Emission = {
   ...emissionFood,
   emissionModelType: TransportType.boat,
   emissionType: EmissionType.transport,
 };
 
-const emissionStreaming = {
+const emissionStreaming: Emission = {
   ...emissionFood,
   emissionModelType: StreamingType.HDVideo,
   emissionType: EmissionType.streaming,
   location: ElectricityType.argentina,
 };
 
-const emissionElectricity = {
+const emissionElectricity: Emission = {
   ...emissionFood,
   emissionModelType: ElectricityType.france,
   emissionType: EmissionType.electricity,
 };
 
-const emissionPurchase = {
+const emissionPurchase: Emission = {
   ...emissionFood,
   emissionModelType: PurchaseType.computer,
   emissionType: EmissionType.purchase,
 };
 
-const emissionFashion = {
+const emissionFashion: Emission = {
   ...emissionFood,
   emissionModelType: FashionType.coat,
   emissionType: EmissionType.fashion,
 };
 
-const emissionMeal = {
+const emissionMeal: Emission = {
   ...emissionFood,
   emissionModelType: MealType.highMeat,
   emissionType: EmissionType.meal,
 };
 
-const emissionCustom = {
+const emissionCustom: Emission = {
   ...emissionFood,
   emissionModelType: "custom",
+  emissionType: EmissionType.custom,
+};
+
+const emissionProductScanned: Emission = {
+  ...emissionFood,
+  emissionModelType: "productScanned",
   emissionType: EmissionType.custom,
 };
 
@@ -118,9 +124,12 @@ describe("getC02ValueFromEmission should return the correct co2 emitted value fo
     );
   });
   it("custom emission", () => {
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-ignore
     expect(calculation.getC02ValueFromEmission(emissionCustom)).toEqual(emissionCustom.value);
+  });
+  it("product scanned emission", () => {
+    expect(calculation.getC02ValueFromEmission(emissionProductScanned)).toEqual(
+      emissionProductScanned.value
+    );
   });
 });
 

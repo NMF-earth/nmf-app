@@ -44,10 +44,35 @@ exports[`AddEmissionScreen renders correctly 1`] = `
       <View
         style={
           Object {
-            "height": 16,
+            "backgroundColor": "#FFFFFF",
+            "flex": 1,
+            "paddingHorizontal": 16,
+            "paddingVertical": 12,
           }
         }
-      />
+      >
+        <Text.H2
+          style={
+            Object {
+              "marginTop": 4,
+              "textTransform": "capitalize",
+            }
+          }
+        >
+          
+        </Text.H2>
+        <Text.Primary
+          lightGray={true}
+          style={
+            Object {
+              "marginTop": 4,
+              "textTransform": "capitalize",
+            }
+          }
+        >
+          Custom
+        </Text.Primary>
+      </View>
       <TextInput
         isOptional={true}
         onChangeText={[Function]}

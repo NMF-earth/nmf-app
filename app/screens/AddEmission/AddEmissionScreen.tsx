@@ -34,6 +34,7 @@ import {
   AddEmissionButton,
   Fashion,
   Meal,
+  ProductScanned,
 } from "./components";
 
 /* multiply or divide by 1000 to have kilograms or meters */
@@ -79,6 +80,14 @@ const AddEmissionScreen = ({ locale = "", language = "" }: LocalizationContextPr
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
   const emissionModelType: EmissionModelType = route.params?.emissionModelType;
+
+  // if it's a product scanned
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
+  const productCarbonFootprint = route.params?.productCarbonFootprint;
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
+  const name = route.params?.name;
 
   const handleConfirm = useCallback(
     (date: Date) => {
@@ -215,11 +224,26 @@ const AddEmissionScreen = ({ locale = "", language = "" }: LocalizationContextPr
   const renderCustom = () => {
     if (emissionType === EmissionType.custom) {
       emissionPayload.value = co2eqKilograms;
-      emissionPayload.emissionModelType = "custom";
+      emissionPayload.emissionModelType = EmissionType.custom as EmissionModelType;
 
       return (
         <Custom
           defaultValueSlider={DEFAULT_SLIDER_VALUE_CUSTOM}
+          setCo2eqKilograms={setCo2eqKilograms}
+        />
+      );
+    }
+    return null;
+  };
+
+  const renderProductScanned = () => {
+    if (emissionType === EmissionType.productScanned) {
+      emissionPayload.value = co2eqKilograms;
+      emissionPayload.emissionModelType = EmissionType.productScanned as EmissionModelType;
+
+      return (
+        <ProductScanned
+          productCarbonFootprint={productCarbonFootprint}
           setCo2eqKilograms={setCo2eqKilograms}
         />
       );
@@ -237,15 +261,20 @@ const AddEmissionScreen = ({ locale = "", language = "" }: LocalizationContextPr
 
   return (
     <KeyboardAwareScrollView style={styles.container}>
-      {emissionModelType ? (
+      {emissionType == EmissionType.productScanned ? (
         <View style={styles.textContainer}>
-          <Text.H2 style={styles.text}>{emissionType}</Text.H2>
+          <Text.H2 style={styles.text}>{t("ADD_EMISSION_SCREEN_NAME")}</Text.H2>
+          <Text.Primary lightGray style={styles.text}>
+            {name}
+          </Text.Primary>
+        </View>
+      ) : (
+        <View style={styles.textContainer}>
+          <Text.H2 style={styles.text}>{ui.getTranslationEmissionType(emissionType)}</Text.H2>
           <Text.Primary lightGray style={styles.text}>
             {ui.getTranslationEmissionModelType(emissionModelType)}
           </Text.Primary>
         </View>
-      ) : (
-        <View style={styles.emptyContainer} />
       )}
 
       {renderTransport()}
@@ -256,14 +285,17 @@ const AddEmissionScreen = ({ locale = "", language = "" }: LocalizationContextPr
       {renderFashion()}
       {renderMeal()}
       {renderCustom()}
+      {renderProductScanned()}
 
-      <TextInput
-        isOptional
-        placeholder={t("ADD_EMISSION_SCREEN_TEXTINPUT_PLACEHOLDER")}
-        title={t("ADD_EMISSION_SCREEN_NAME_EMISSION")}
-        onChangeText={onChangeEmissionName}
-        value={emissionName}
-      />
+      {emissionType == EmissionType.productScanned ? null : (
+        <TextInput
+          isOptional
+          placeholder={t("ADD_EMISSION_SCREEN_TEXTINPUT_PLACEHOLDER")}
+          title={t("ADD_EMISSION_SCREEN_NAME_EMISSION")}
+          onChangeText={onChangeEmissionName}
+          value={emissionName}
+        />
+      )}
 
       <DateTimePickerModal
         headerTextIOS={t("ADD_EMISSION_SCREEN_PICKER_MODAL_HEADER_TEXT")}
@@ -304,7 +336,7 @@ const AddEmissionScreen = ({ locale = "", language = "" }: LocalizationContextPr
       <AddEmissionButton
         emissionPayload={{
           ...emissionPayload,
-          name: emissionName,
+          name: emissionName || name,
           creationDate: creationDate.toISOString(),
         }}
       />

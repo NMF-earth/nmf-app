@@ -5,6 +5,7 @@ import { BarCodeScanner } from "expo-barcode-scanner";
 import { is, path, pathOr } from "ramda";
 import ExpoConstants from "expo-constants";
 
+import { EmissionType } from "interfaces";
 import { t, withLocalization, LocalizationContextProps, platform } from "utils";
 import { navigate } from "navigation";
 import { Text, Button, PermissionsRequest } from "components";
@@ -71,25 +72,27 @@ const BarCodeScanScreen = ({ language = "" }: LocalizationContextProps) => {
           let name = getName(product);
           name = path(["product", "product_name_" + language], product) || name;
 
-          const co2eq = parseFloat(getCO2eq(product));
+          const productCarbonFootprint = parseFloat(getCO2eq(product));
           const nutriscoreGrade = getNutriscoreGrade(product);
           const novaGroup = getNovaGroup(product);
           const ecoScore = getEcoScore(product);
           const navParams = {
-            co2eq,
+            productCarbonFootprint,
             name,
             nutriscoreGrade,
             novaGroup,
             ecoScore,
+            emissionType: EmissionType.productScanned,
+            emissionModelType: "productScanned",
           };
 
-          if (isNumber(co2eq)) {
-            navigator.openAddEmissionBarCode(navParams);
+          if (isNumber(productCarbonFootprint)) {
+            navigator.openAddEmission(navParams);
           } else {
             setHasCarbonData(false);
           }
         } else {
-          throw "Item Not Found";
+          setHasCarbonData(false);
         }
 
         setIsFetchingData(false);

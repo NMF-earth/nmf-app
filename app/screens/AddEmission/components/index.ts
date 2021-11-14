@@ -7,9 +7,11 @@ import AddEmissionButton from "./AddEmissionButton";
 import Purchase from "./Purchase";
 import Fashion from "./Fashion";
 import Meal from "./Meal";
+import ProductScanned from "./ProductScanned";
 
 export {
   Meal,
+  ProductScanned,
   Purchase,
   Food,
   Electricity,
