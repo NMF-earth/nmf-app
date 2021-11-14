@@ -71,7 +71,7 @@ const ProgressChart = ({
         productScannedEmissions={productScannedEmissions}
         customEmissions={customEmissions}
       />
-      <PeriodBudget period={period.toLowerCase()} periodEmissionsBudget={periodEmissionsBudget} />
+      <PeriodBudget period={period} periodEmissionsBudget={periodEmissionsBudget} />
     </View>
   );
 };
