@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigation } from "@react-navigation/native";
 import { ActivityIndicator, View } from "react-native";
 import { BarCodeScanner } from "expo-barcode-scanner";
-import { is, path, pathOr } from "ramda";
+import { is, path, pathOr, both, complement, equals } from "ramda";
 import ExpoConstants from "expo-constants";
 
 import { EmissionType } from "interfaces";
@@ -16,7 +16,7 @@ import navigationOptions from "./BarCodeScanScreen.navigationOptions";
 
 /* more info on the http request at https://world.openfoodfacts.org/api/v0/product/7622300336738.data */
 
-const isNumber = is(Number);
+const isValidNumber = both(is(Number), complement(equals(NaN)));
 const getCO2eq = pathOr("", ["ecoscore_data", "agribalyse", "co2_total"]);
 const getNutriscoreGrade = pathOr("", ["nutriscore_grade"]);
 const getNovaGroup = pathOr(0, ["nova_group"]);
@@ -89,7 +89,7 @@ const BarCodeScanScreen = ({ language = "" }: LocalizationContextProps) => {
             emissionModelType: "productScanned",
           };
 
-          if (isNumber(productCarbonFootprint)) {
+          if (isValidNumber(productCarbonFootprint)) {
             navigator.openAddEmission(navParams);
           } else {
             setScanned(false);
