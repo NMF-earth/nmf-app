@@ -325,3 +325,6 @@ app.json
 # Expo
 .expo
 __generated__
+
+# Temporary files
+.temp
