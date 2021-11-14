@@ -29,6 +29,7 @@ jest.mock("../../../app/components/SocialMedia", () => "SocialMedia");
 jest.mock("../../../app/components/Tag", () => "Tag");
 jest.mock("../../../app/components/TextButton", () => "TextButton");
 jest.mock("../../../app/components/NoEmission", () => "NoEmission");
+jest.mock("../../../app/components/OpenFoodFacts", () => "OpenFoodFacts");
 jest.mock("../../../app/components/Text", () => require("./Text.mock").default);
 jest.mock("../../../app/components/Button", () => require("./Button.mock").default);
 jest.mock(

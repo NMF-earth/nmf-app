@@ -35,6 +35,12 @@ Design can be found on [Figma](https://www.figma.com/community/file/967052407514
 
 <br />
 
+### 📊 Data source
+
+Carbon data comes from NMF's [carbon footprint repo](https://github.com/NMF-earth/carbon-footprint) while barcode product scanned data comes from [Open Food Facts](https://world.openfoodfacts.org/) api.
+
+<br />
+
 ### 📦 Getting started
 
 Installing Dependencies:

@@ -13,8 +13,10 @@ import NoEmission from "./NoEmission";
 import { EmissionListItem, EmissionListItemProps } from "./EmissionListItem";
 import PermissionsRequest from "./PermissionsRequest";
 import TextButton from "./TextButton";
+import OpenFoodFacts from "./OpenFoodFacts";
 
 export {
+  OpenFoodFacts,
   EmissionListItem,
   EmissionListItemProps,
   HTMLImage,

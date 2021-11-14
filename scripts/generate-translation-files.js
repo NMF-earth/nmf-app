@@ -19,6 +19,7 @@ const paths = [
   "app/screens/Languages/translations/",
   "app/screens/Faq/translations/",
   "app/components/NoEmission/translations/",
+  "app/components/OpenFoodFacts/translations/",
   "app/utils/ui/translations/",
 ];
 

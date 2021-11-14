@@ -27,6 +27,7 @@ import * as Faq from "../../screens/Faq/translations";
 /* COMPONENTS */
 import * as NoEmission from "components/NoEmission/translations";
 import * as PermissionsRequest from "components/PermissionsRequest/translations";
+import * as OpenFoodFacts from "components/OpenFoodFacts/translations";
 
 /* UTILS */
 import * as UI from "utils/ui/translations";
@@ -56,6 +57,7 @@ const en = {
   ...Faq.en,
   ...NoEmission.en,
   ...PermissionsRequest.en,
+  ...OpenFoodFacts.en,
   ...Periodicity.en,
   ...UI.en,
 };
@@ -66,6 +68,7 @@ const de = {
   ...MonthlyBudget.de,
   ...NoEmission.de,
   ...PermissionsRequest.de,
+  ...OpenFoodFacts.de,
   ...Act.de,
   ...Budget.de,
   ...Emissions.de,
@@ -96,6 +99,7 @@ const fr = {
   ...MonthlyBudget.fr,
   ...NoEmission.fr,
   ...PermissionsRequest.fr,
+  ...OpenFoodFacts.fr,
   ...Act.fr,
   ...Budget.fr,
   ...Emissions.fr,
@@ -125,6 +129,7 @@ const sv = {
   ...MonthlyBudget.sv,
   ...NoEmission.sv,
   ...PermissionsRequest.sv,
+  ...OpenFoodFacts.sv,
   ...Act.sv,
   ...Budget.sv,
   ...Emissions.sv,
@@ -154,6 +159,7 @@ const pt = {
   ...MonthlyBudget.pt,
   ...NoEmission.pt,
   ...PermissionsRequest.pt,
+  ...OpenFoodFacts.pt,
   ...Act.pt,
   ...Budget.pt,
   ...Emissions.pt,
@@ -183,6 +189,7 @@ const es = {
   ...MonthlyBudget.es,
   ...NoEmission.es,
   ...PermissionsRequest.es,
+  ...OpenFoodFacts.es,
   ...Act.es,
   ...Budget.es,
   ...Emissions.es,
@@ -212,6 +219,7 @@ const ru = {
   ...MonthlyBudget.ru,
   ...NoEmission.ru,
   ...PermissionsRequest.ru,
+  ...OpenFoodFacts.ru,
   ...Act.ru,
   ...Budget.ru,
   ...Emissions.ru,
@@ -241,6 +249,7 @@ const pl = {
   ...MonthlyBudget.pl,
   ...NoEmission.pl,
   ...PermissionsRequest.pl,
+  ...OpenFoodFacts.pl,
   ...Act.pl,
   ...Budget.pl,
   ...Emissions.pl,
@@ -270,6 +279,7 @@ const da = {
   ...MonthlyBudget.da,
   ...NoEmission.da,
   ...PermissionsRequest.da,
+  ...OpenFoodFacts.da,
   ...Act.da,
   ...Budget.da,
   ...Emissions.da,
@@ -299,6 +309,7 @@ const zh = {
   ...MonthlyBudget.zh,
   ...NoEmission.zh,
   ...PermissionsRequest.zh,
+  ...OpenFoodFacts.zh,
   ...Act.zh,
   ...Budget.zh,
   ...Emissions.zh,
@@ -328,6 +339,7 @@ const ms = {
   ...MonthlyBudget.ms,
   ...NoEmission.ms,
   ...PermissionsRequest.ms,
+  ...OpenFoodFacts.ms,
   ...Act.ms,
   ...Budget.ms,
   ...Emissions.ms,
@@ -355,6 +367,7 @@ export interface TranslationKeys
     MonthlyBudget.TranslationKeys,
     NoEmission.TranslationKeys,
     PermissionsRequest.TranslationKeys,
+    OpenFoodFacts.TranslationKeys,
     Act.TranslationKeys,
     Budget.TranslationKeys,
     Emissions.TranslationKeys,

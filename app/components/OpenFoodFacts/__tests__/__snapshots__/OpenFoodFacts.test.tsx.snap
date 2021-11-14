@@ -1,0 +1,256 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<OpenFoodFacts /> render correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignContent": "center",
+      "paddingHorizontal": 16,
+      "paddingVertical": 28,
+    }
+  }
+>
+  <Text.Link
+    center={true}
+    url="https://world.openfoodfacts.org/"
+  >
+    Data from OPEN FOOD FACTS
+  </Text.Link>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "maxHeight": 60,
+        "paddingTop": 14,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <Image
+        resizeMode="contain"
+        source={1}
+        style={
+          Object {
+            "alignSelf": "center",
+            "maxHeight": 60,
+            "width": "100%",
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <Image
+        resizeMode="contain"
+        source={1}
+        style={
+          Object {
+            "alignSelf": "center",
+            "maxHeight": 60,
+            "width": "100%",
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <Image
+        resizeMode="contain"
+        source={1}
+        style={
+          Object {
+            "alignSelf": "center",
+            "maxHeight": 60,
+            "width": "100%",
+          }
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<OpenFoodFacts /> render nothing if bad data passed 1`] = `
+<View
+  style={
+    Object {
+      "alignContent": "center",
+      "paddingHorizontal": 16,
+      "paddingVertical": 28,
+    }
+  }
+>
+  <Text.Link
+    center={true}
+    url="https://world.openfoodfacts.org/"
+  >
+    Data from OPEN FOOD FACTS
+  </Text.Link>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "maxHeight": 60,
+        "paddingTop": 14,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <Image
+        resizeMode="contain"
+        source={1}
+        style={
+          Object {
+            "alignSelf": "center",
+            "maxHeight": 60,
+            "width": "100%",
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <Image
+        resizeMode="contain"
+        source={1}
+        style={
+          Object {
+            "alignSelf": "center",
+            "maxHeight": 60,
+            "width": "100%",
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <Image
+        resizeMode="contain"
+        source={1}
+        style={
+          Object {
+            "alignSelf": "center",
+            "maxHeight": 60,
+            "width": "100%",
+          }
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<OpenFoodFacts /> render nothing if no data passed 1`] = `
+<View
+  style={
+    Object {
+      "alignContent": "center",
+      "paddingHorizontal": 16,
+      "paddingVertical": 28,
+    }
+  }
+>
+  <Text.Link
+    center={true}
+    url="https://world.openfoodfacts.org/"
+  >
+    Data from OPEN FOOD FACTS
+  </Text.Link>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "maxHeight": 60,
+        "paddingTop": 14,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <Image
+        resizeMode="contain"
+        style={
+          Object {
+            "alignSelf": "center",
+            "maxHeight": 60,
+            "width": "100%",
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <Image
+        resizeMode="contain"
+        style={
+          Object {
+            "alignSelf": "center",
+            "maxHeight": 60,
+            "width": "100%",
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <Image
+        resizeMode="contain"
+        style={
+          Object {
+            "alignSelf": "center",
+            "maxHeight": 60,
+            "width": "100%",
+          }
+        }
+      />
+    </View>
+  </View>
+</View>
+`;

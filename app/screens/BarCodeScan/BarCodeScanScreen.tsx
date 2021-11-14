@@ -8,7 +8,7 @@ import ExpoConstants from "expo-constants";
 import { EmissionType } from "interfaces";
 import { t, withLocalization, LocalizationContextProps, platform } from "utils";
 import { navigate } from "navigation";
-import { Text, Button, PermissionsRequest } from "components";
+import { Text, Button, PermissionsRequest, OpenFoodFacts } from "components";
 import { Colors } from "style";
 
 import styles from "./BarCodeScanScreen.styles";
@@ -18,9 +18,9 @@ import navigationOptions from "./BarCodeScanScreen.navigationOptions";
 
 const isNumber = is(Number);
 const getCO2eq = pathOr("", ["ecoscore_data", "agribalyse", "co2_total"]);
-const getNutriscoreGrade = path(["nutriscore_grade"]);
-const getNovaGroup = path(["nova_group"]);
-const getEcoScore = path(["ecoscore_grade"]);
+const getNutriscoreGrade = pathOr("", ["nutriscore_grade"]);
+const getNovaGroup = pathOr(0, ["nova_group"]);
+const getEcoScore = pathOr("", ["ecoscore_grade"]);
 const getName = path(["product_name"]);
 
 const BarCodeScanScreen = ({ language = "" }: LocalizationContextProps) => {
@@ -29,6 +29,9 @@ const BarCodeScanScreen = ({ language = "" }: LocalizationContextProps) => {
   const [hasCarbonData, setHasCarbonData] = useState(true);
   const [isFetchingData, setIsFetchingData] = useState(false);
   const [error, setError] = useState(false);
+  const [nutriscoreGrade, setNutriscoreGrade] = useState("");
+  const [novaGroup, setNovaGroup] = useState(0);
+  const [ecoScore, setEcoScore] = useState("");
 
   const navigation = useNavigation();
   const navigator = navigate(navigation);
@@ -90,6 +93,9 @@ const BarCodeScanScreen = ({ language = "" }: LocalizationContextProps) => {
             navigator.openAddEmission(navParams);
           } else {
             setHasCarbonData(false);
+            setNutriscoreGrade(nutriscoreGrade);
+            setNovaGroup(novaGroup);
+            setEcoScore(ecoScore);
           }
         } else {
           setHasCarbonData(false);
@@ -133,6 +139,11 @@ const BarCodeScanScreen = ({ language = "" }: LocalizationContextProps) => {
         <View style={[styles.container, styles.centeredContainer]}>
           <Text.H2 center>{t("BAR_CODE_SCAN_SCREEN_NO_CARBON_DATA_TITLE")}</Text.H2>
           <Text.Primary center>{t("BAR_CODE_SCAN_SCREEN_NO_CARBON_DATA_MESSAGE")}</Text.Primary>
+          <OpenFoodFacts
+            nutriscoreGrade={nutriscoreGrade}
+            novaGroup={novaGroup}
+            ecoScore={ecoScore}
+          />
         </View>
         <Button.Secondary style={styles.scanAgain} textType={"Primary"} onPress={onPressTryAgain}>
           <Text.Primary bold center green>

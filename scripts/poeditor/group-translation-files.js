@@ -28,6 +28,7 @@ const toBeImported = {
   UI: "../../app/utils/ui/translations",
   NoEmission: "../../app/components/NoEmission/translations",
   PermissionsRequest: "../../app/components/PermissionsRequest/translations",
+  OpenFoodFacts: "../../app/components/OpenFoodFacts/translations",
 };
 // eslint-disable-next-line prefer-const
 let imports = {};
@@ -68,6 +69,7 @@ usedLanguages.forEach((language) => {
     ...imports.UI[language],
     ...imports.NoEmission[language],
     ...imports.PermissionsRequest[language],
+    ...imports.OpenFoodFacts[language],
   };
 });
 

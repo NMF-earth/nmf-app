@@ -7,9 +7,10 @@ import DateTimePickerModal from "react-native-modal-datetime-picker";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 import { useRoute } from "@react-navigation/core";
 import { useNavigation } from "@react-navigation/native";
+import { pathOr } from "ramda";
 
 import { navigate } from "navigation";
-import { Text, TextInput, TextButton } from "components";
+import { Text, TextInput, TextButton, OpenFoodFacts } from "components";
 import { userPreferences } from "ducks";
 import { EmissionType, EmissionPayload, EmissionModelType } from "interfaces";
 import {
@@ -48,6 +49,12 @@ const DEFAULT_SLIDER_VALUE_MEAL = 1;
 const DEFAULT_SLIDER_VALUE_CUSTOM = 200;
 const EMISSION_NAME_MAX_LENGTH = 150;
 
+const getProductCarbonFootprint = pathOr(0, ["params", "productCarbonFootprint"]);
+const getName = pathOr("", ["params", "name"]);
+const getNutriscoreGrade = pathOr("", ["params", "nutriscoreGrade"]);
+const getNovaGroup = pathOr(-1, ["params", "novaGroup"]);
+const getEcoScore = pathOr("", ["params", "ecoScore"]);
+
 const AddEmissionScreen = ({ locale = "", language = "" }: LocalizationContextProps) => {
   const route = useRoute();
   const navigation = useNavigation();
@@ -82,12 +89,11 @@ const AddEmissionScreen = ({ locale = "", language = "" }: LocalizationContextPr
   const emissionModelType: EmissionModelType = route.params?.emissionModelType;
 
   // if it's a product scanned
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  // @ts-ignore
-  const productCarbonFootprint = route.params?.productCarbonFootprint;
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  // @ts-ignore
-  const name = route.params?.name;
+  const productCarbonFootprint = getProductCarbonFootprint(route);
+  const name: string = getName(route);
+  const nutriscoreGrade: string = getNutriscoreGrade(route);
+  const novaGroup: number = getNovaGroup(route);
+  const ecoScore: string = getEcoScore(route);
 
   const handleConfirm = useCallback(
     (date: Date) => {
@@ -287,7 +293,13 @@ const AddEmissionScreen = ({ locale = "", language = "" }: LocalizationContextPr
       {renderCustom()}
       {renderProductScanned()}
 
-      {emissionType == EmissionType.productScanned ? null : (
+      {emissionType == EmissionType.productScanned ? (
+        <OpenFoodFacts
+          nutriscoreGrade={nutriscoreGrade}
+          novaGroup={novaGroup}
+          ecoScore={ecoScore}
+        />
+      ) : (
         <TextInput
           isOptional
           placeholder={t("ADD_EMISSION_SCREEN_TEXTINPUT_PLACEHOLDER")}
