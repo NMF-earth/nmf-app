@@ -220,7 +220,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
       }
     }
   >
-    <Button.Primary
+    <Button.Secondary
       fullWidth={true}
       icon="save"
       onPress={[Function]}

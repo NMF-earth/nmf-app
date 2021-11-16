@@ -101,7 +101,7 @@ const MonthlyBudgetScreen: NavStatelessComponent = () => {
         </View>
       </ScrollView>
       <View style={styles.buttonContainer}>
-        <Button.Primary
+        <Button.Secondary
           fullWidth
           icon={"save"}
           onPress={onPressSaveBudget}
