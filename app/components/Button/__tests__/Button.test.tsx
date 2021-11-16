@@ -2,7 +2,6 @@ import React from "react";
 import { create } from "react-test-renderer";
 
 import Button from "../";
-import Text from "../../Text";
 
 jest.unmock("../");
 
@@ -12,58 +11,57 @@ const foo = () => {
 
 /* Primary Button Tests */
 
-it("renders correctly full width Primary Button with Primary font", () => {
-  const tree = create(
-    <Button.Primary fullWidth onPress={foo} textType={"Primary"}>
-      <Text.Primary>test</Text.Primary>
-    </Button.Primary>
-  ).toJSON();
+it("renders correctly Primary Button", () => {
+  const tree = create(<Button.Primary onPress={foo} text={"Primary"} />).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
-it("renders correctly full width Primary Button with black color", () => {
-  const tree = create(
-    <Button.Primary black fullWidth onPress={foo} textType={"Primary"}>
-      <Text.Primary>test</Text.Primary>
-    </Button.Primary>
-  ).toJSON();
+it("renders correctly fullwidth Primary Button", () => {
+  const tree = create(<Button.Primary fullWidth onPress={foo} text={"Primary"} />).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
-it("renders correctly full width Primary Button with red color", () => {
+it("renders correctly fullwidth Primary Button with icon", () => {
   const tree = create(
-    <Button.Primary red fullWidth onPress={foo} textType={"Primary"}>
-      <Text.Primary>test</Text.Primary>
-    </Button.Primary>
-  ).toJSON();
-  expect(tree).toMatchSnapshot();
-});
-
-it("renders correctly Primary Button with Secondary font", () => {
-  const tree = create(
-    <Button.Primary onPress={foo} textType={"Secondary"}>
-      <Text.Secondary>test</Text.Secondary>
-    </Button.Primary>
+    <Button.Primary icon={"calendar"} fullWidth onPress={foo} text={"Primary"} />
   ).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
 /* Secondary Button Tests */
 
-it("renders correctly full width Secondary Button with Primary font", () => {
+it("renders correctly Secondary Button", () => {
+  const tree = create(<Button.Secondary onPress={foo} text={"Primary"} />).toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it("renders correctly fullwidth Secondary Button", () => {
+  const tree = create(<Button.Secondary fullWidth onPress={foo} text={"Primary"} />).toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it("renders correctly fullwidth Secondary Button with icon", () => {
   const tree = create(
-    <Button.Secondary fullWidth onPress={foo} textType={"Primary"}>
-      <Text.Primary>test</Text.Primary>
-    </Button.Secondary>
+    <Button.Primary icon={"calendar"} fullWidth onPress={foo} text={"Primary"} />
   ).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
-it("renders correctly Secondary Button with Secondary font", () => {
+/* Secondary Button Tests */
+
+it("renders correctly Danger Button", () => {
+  const tree = create(<Button.Danger onPress={foo} text={"Primary"} />).toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it("renders correctly fullwidth Danger Button", () => {
+  const tree = create(<Button.Secondary fullWidth onPress={foo} text={"Primary"} />).toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it("renders correctly fullwidth Danger Button with icon", () => {
   const tree = create(
-    <Button.Secondary onPress={foo} textType={"Secondary"}>
-      <Text.Secondary>test</Text.Secondary>
-    </Button.Secondary>
+    <Button.Primary icon={"calendar"} fullWidth onPress={foo} text={"Primary"} />
   ).toJSON();
   expect(tree).toMatchSnapshot();
 });

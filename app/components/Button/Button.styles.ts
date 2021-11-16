@@ -10,10 +10,14 @@ const Primary = StyleSheet.create({
 
 const Secondary = StyleSheet.create({
   default: {
-    backgroundColor: Colors.white,
-    borderColor: Colors.green50,
-    borderWidth: 2.5,
+    backgroundColor: Colors.blue50,
   },
 });
 
-export default { Primary, Secondary };
+const Danger = StyleSheet.create({
+  default: {
+    backgroundColor: Colors.red50,
+  },
+});
+
+export default { Primary, Secondary, Danger };

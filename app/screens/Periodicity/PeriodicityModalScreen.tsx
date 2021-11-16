@@ -98,11 +98,11 @@ const PeriodicityModalScreen: NavStatelessComponent = () => {
 
       {!hideConfirm && (
         <View style={styles.confirmBtnContainer}>
-          <Button.Primary fullWidth onPress={onConfirm} textType={"Primary"}>
-            <Text.Primary white center bold>
-              {t("ADD_EMISSION_SCREEN_PICKER_MODAL_CONFIRM")}
-            </Text.Primary>
-          </Button.Primary>
+          <Button.Primary
+            fullWidth
+            onPress={onConfirm}
+            text={t("ADD_EMISSION_SCREEN_PICKER_MODAL_CONFIRM")}
+          />
         </View>
       )}
     </ScrollView>

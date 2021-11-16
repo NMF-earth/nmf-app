@@ -73,6 +73,63 @@ exports[`FaqScreen renders correctly 1`] = `
               }
             }
           >
+            Why do I have to enter manually my emissions?
+          </Text.H3>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#FFFFFF",
+              "borderColor": "#E7F3EB",
+              "borderRadius": 10,
+              "borderWidth": 1.5,
+              "marginTop": 16,
+            },
+            false,
+          ]
+        }
+      >
+        <View
+          accessible={true}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "padding": 16,
+            }
+          }
+        >
+          <Ionicons
+            name="chevron-up"
+            size={22}
+            style={
+              Object {
+                "color": "#3957D0",
+              }
+            }
+          />
+          <Text.H3
+            style={
+              Object {
+                "color": "#000000",
+                "flex": 1,
+                "fontSize": 16,
+                "marginLeft": 8,
+              }
+            }
+          >
             How accurate are my carbon emissions?
           </Text.H3>
         </View>
@@ -130,7 +187,121 @@ exports[`FaqScreen renders correctly 1`] = `
               }
             }
           >
-            Why do I have to enter manually my emissions?
+            What is your goal?
+          </Text.H3>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#FFFFFF",
+              "borderColor": "#E7F3EB",
+              "borderRadius": 10,
+              "borderWidth": 1.5,
+              "marginTop": 16,
+            },
+            false,
+          ]
+        }
+      >
+        <View
+          accessible={true}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "padding": 16,
+            }
+          }
+        >
+          <Ionicons
+            name="chevron-up"
+            size={22}
+            style={
+              Object {
+                "color": "#3957D0",
+              }
+            }
+          />
+          <Text.H3
+            style={
+              Object {
+                "color": "#000000",
+                "flex": 1,
+                "fontSize": 16,
+                "marginLeft": 8,
+              }
+            }
+          >
+            Are you a startup?
+          </Text.H3>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#FFFFFF",
+              "borderColor": "#E7F3EB",
+              "borderRadius": 10,
+              "borderWidth": 1.5,
+              "marginTop": 16,
+            },
+            false,
+          ]
+        }
+      >
+        <View
+          accessible={true}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "padding": 16,
+            }
+          }
+        >
+          <Ionicons
+            name="chevron-up"
+            size={22}
+            style={
+              Object {
+                "color": "#3957D0",
+              }
+            }
+          />
+          <Text.H3
+            style={
+              Object {
+                "color": "#000000",
+                "flex": 1,
+                "fontSize": 16,
+                "marginLeft": 8,
+              }
+            }
+          >
+            Are you a business?
           </Text.H3>
         </View>
       </View>

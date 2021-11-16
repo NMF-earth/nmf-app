@@ -25,14 +25,11 @@ const NoEmission: React.FC = () => {
         </Text.Primary>
         <Button.Primary
           fullWidth
+          icon={"add"}
           style={styles.button}
           onPress={() => navigator.openAddEmissionNavigator()}
-          textType={"Primary"}
-        >
-          <Text.Primary bold white>
-            {t("NO_EMISSION_COMPONENT_ADD_FIRST_EMISSION")}
-          </Text.Primary>
-        </Button.Primary>
+          text={t("NO_EMISSION_COMPONENT_ADD_FIRST_EMISSION")}
+        />
       </View>
     </ScrollView>
   );

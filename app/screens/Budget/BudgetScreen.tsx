@@ -3,7 +3,7 @@ import { ScrollView } from "react-native";
 import { useSelector } from "react-redux";
 import { useNavigation } from "@react-navigation/native";
 
-import { Text, Button } from "components";
+import { Button } from "components";
 import { t } from "utils";
 import { navigate } from "navigation";
 import { NavStatelessComponent } from "interfaces";
@@ -66,15 +66,12 @@ const BudgetScreen: NavStatelessComponent = () => {
         monthlyEmissionsBudget={monthlyCarbonBudget}
       />
       <Button.Primary
+        icon={"calendar"}
         style={styles.monthlyBudgetButton}
         fullWidth
-        textType={"Primary"}
+        text={t("BUDGET_SCREEN_SET_MONTHLY_BUDGET")}
         onPress={() => navigator.openMontlyBudget()}
-      >
-        <Text.Primary bold center white>
-          {t("BUDGET_SCREEN_SET_MONTHLY_BUDGET")}
-        </Text.Primary>
-      </Button.Primary>
+      />
       <NumberOfDaysVegetarian />
       <ProgressChart
         totalEmissions={totalCurrentYearEmissions}

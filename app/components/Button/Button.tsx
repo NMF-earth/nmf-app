@@ -1,23 +1,23 @@
 import React from "react";
 import { TouchableOpacity, StyleProp, ViewStyle } from "react-native";
+import { Ionicons } from "@expo/vector-icons";
 
-import { Font } from "style";
+import { Colors } from "style";
 
+import Text from "../Text";
 import styles from "./Button.styles";
 import mainStyle from "./styles";
 
 const PADDING_VERTICAL = 12;
 
-type ButtonType = "Primary" | "Secondary";
+type ButtonType = "Primary" | "Secondary" | "Danger";
 
 type Props = {
   style?: StyleProp<ViewStyle>;
-  children: React.ReactNode;
   fullWidth?: boolean;
-  textType: ButtonType;
-  black?: boolean;
-  red?: boolean;
   onPress: () => void;
+  text: string;
+  icon?: string;
 };
 
 interface ButtonFactory {
@@ -25,34 +25,34 @@ interface ButtonFactory {
 }
 
 const buttonFactory: ButtonFactory = (type) => (props) => {
-  const customStyle = [mainStyle.default, styles[type].default, props.style];
-  const { fullWidth, children, textType, black, red, onPress } = props;
+  const style = [mainStyle.default, styles[type].default, props.style];
+  const { fullWidth, onPress, text, icon } = props;
+  let iconItem = null;
 
   if (fullWidth) {
-    customStyle.push(mainStyle.fullWidth);
+    style.push(mainStyle.fullWidth);
   }
 
-  if (black) {
-    customStyle.push(mainStyle.black);
-  }
-
-  if (red) {
-    customStyle.push(mainStyle.red);
+  if (icon) {
+    iconItem = <Ionicons name={icon} size={24} style={mainStyle.mainIcon} color={Colors.white} />;
   }
 
   const additionalStyle = {
     paddingVertical: PADDING_VERTICAL,
-    borderRadius: PADDING_VERTICAL * 2 + Font.FontSize[textType],
+    borderRadius: PADDING_VERTICAL * 2,
   };
-
   return (
-    <TouchableOpacity onPress={onPress} {...props} style={[customStyle, additionalStyle]}>
-      {children}
+    <TouchableOpacity onPress={onPress} {...props} style={[style, additionalStyle]}>
+      <Text.Primary bold center white>
+        {text}
+      </Text.Primary>
+      {iconItem}
     </TouchableOpacity>
   );
 };
 
 const Primary = buttonFactory("Primary");
 const Secondary = buttonFactory("Secondary");
+const Danger = buttonFactory("Danger");
 
-export default { Primary, Secondary };
+export default { Primary, Secondary, Danger };

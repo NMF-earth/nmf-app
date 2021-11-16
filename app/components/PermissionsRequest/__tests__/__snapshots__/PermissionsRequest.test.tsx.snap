@@ -37,6 +37,7 @@ exports[`renders correctly PermissionsRequest if camera 1`] = `
     </Text.Primary>
   </View>
   <Button.Secondary
+    icon="settings"
     onPress={[Function]}
     style={
       Object {
@@ -44,16 +45,8 @@ exports[`renders correctly PermissionsRequest if camera 1`] = `
         "marginTop": 20,
       }
     }
-    textType="Primary"
-  >
-    <Text.Primary
-      bold={true}
-      center={true}
-      green={true}
-    >
-      Open settings
-    </Text.Primary>
-  </Button.Secondary>
+    text="Open settings"
+  />
 </View>
 `;
 
@@ -94,6 +87,7 @@ exports[`renders correctly PermissionsRequest if notification 1`] = `
     </Text.Primary>
   </View>
   <Button.Secondary
+    icon="settings"
     onPress={[Function]}
     style={
       Object {
@@ -101,15 +95,7 @@ exports[`renders correctly PermissionsRequest if notification 1`] = `
         "marginTop": 20,
       }
     }
-    textType="Primary"
-  >
-    <Text.Primary
-      bold={true}
-      center={true}
-      green={true}
-    >
-      Open settings
-    </Text.Primary>
-  </Button.Secondary>
+    text="Open settings"
+  />
 </View>
 `;

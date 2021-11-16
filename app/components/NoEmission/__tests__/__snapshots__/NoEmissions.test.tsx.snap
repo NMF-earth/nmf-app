@@ -53,21 +53,15 @@ exports[`renders correctly NoEmission 1`] = `
       </Text.Primary>
       <Button.Primary
         fullWidth={true}
+        icon="add"
         onPress={[Function]}
         style={
           Object {
             "marginVertical": 20,
           }
         }
-        textType="Primary"
-      >
-        <Text.Primary
-          bold={true}
-          white={true}
-        >
-          Add my first emission
-        </Text.Primary>
-      </Button.Primary>
+        text="Add my first emission"
+      />
     </View>
   </View>
 </RCTScrollView>

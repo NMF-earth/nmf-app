@@ -221,17 +221,11 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
     }
   >
     <Button.Primary
+      fullWidth={true}
+      icon="save"
       onPress={[Function]}
-      textType="Primary"
-    >
-      <Text.Primary
-        bold={true}
-        center={true}
-        white={true}
-      >
-        Save
-      </Text.Primary>
-    </Button.Primary>
+      text="Save"
+    />
   </View>
 </View>
 `;

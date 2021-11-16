@@ -43,6 +43,10 @@ const SettingsScreen: NavStatelessComponent = () => {
       onPress: navigator.openSupportUs,
     },
     {
+      title: t("SETTINGS_SCREEN_FAQ"),
+      onPress: navigator.openFaq,
+    },
+    {
       title: "NMF.earth",
       onPress: () => WebBrowser.openBrowserAsync("http://nmf.earth"),
     },
@@ -71,10 +75,6 @@ const SettingsScreen: NavStatelessComponent = () => {
     rowItems.push({
       title: t("SETTINGS_SCREEN_LANGUAGES"),
       onPress: navigator.openLanguages,
-    });
-    rowItems.push({
-      title: t("SETTINGS_SCREEN_FAQ"),
-      onPress: navigator.openFaq,
     });
   }
 
@@ -118,28 +118,21 @@ const SettingsScreen: NavStatelessComponent = () => {
       {steps > 4 ? (
         <View>
           <Button.Primary
+            fullWidth
             style={styles.hiddenBtn}
-            textType={"Primary"}
+            text={"Open Storybook"}
             onPress={navigator.openStorybook}
-          >
-            <Text.Primary white center>
-              Open Storybook
-            </Text.Primary>
-          </Button.Primary>
-          <Button.Primary
-            black
+          />
+          <Button.Danger
+            fullWidth
             style={styles.hiddenBtn}
-            textType={"Primary"}
+            text={"Crash test"}
             onPress={() => {
               const date = new Date();
               const timestamp = date.getTime();
               throw new Error("Developer error test: " + timestamp);
             }}
-          >
-            <Text.Primary white center>
-              Crash test
-            </Text.Primary>
-          </Button.Primary>
+          />
         </View>
       ) : null}
     </ScrollView>

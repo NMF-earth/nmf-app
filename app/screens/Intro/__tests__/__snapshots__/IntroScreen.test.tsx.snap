@@ -74,17 +74,10 @@ exports[`renders correctly ComingSoon 1`] = `
     >
       <Button.Primary
         fullWidth={true}
+        icon="checkmark"
         onPress={[Function]}
-        textType="Primary"
-      >
-        <Text.Primary
-          bold={true}
-          center={true}
-          white={true}
-        >
-          I agree
-        </Text.Primary>
-      </Button.Primary>
+        text="I agree"
+      />
     </View>
   </View>
 </RCTSafeAreaView>

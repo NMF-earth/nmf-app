@@ -129,11 +129,13 @@ const BarCodeScanScreen = ({ language = "" }: LocalizationContextProps) => {
           <Text.H2 center>{t("BAR_CODE_SCAN_SCREEN_ERROR_TITLE")}</Text.H2>
           <Text.Primary center>{t("BAR_CODE_SCAN_SCREEN_ERROR_MESSAGE")}</Text.Primary>
         </View>
-        <Button.Secondary style={styles.scanAgain} textType={"Primary"} onPress={onPressTryAgain}>
-          <Text.Primary bold center green>
-            {t("BAR_CODE_SCAN_SCREEN_TRY_AGAIN")}
-          </Text.Primary>
-        </Button.Secondary>
+        <Button.Secondary
+          fullWidth
+          icon={"refresh"}
+          style={styles.scanAgain}
+          text={t("BAR_CODE_SCAN_SCREEN_TRY_AGAIN")}
+          onPress={onPressTryAgain}
+        />
       </View>
     );
   }
@@ -150,11 +152,13 @@ const BarCodeScanScreen = ({ language = "" }: LocalizationContextProps) => {
             ecoScore={ecoScore}
           />
         </View>
-        <Button.Secondary style={styles.scanAgain} textType={"Primary"} onPress={onPressTryAgain}>
-          <Text.Primary bold center green>
-            {t("BAR_CODE_SCAN_SCREEN_TRY_AGAIN")}
-          </Text.Primary>
-        </Button.Secondary>
+        <Button.Secondary
+          fullWidth
+          icon={"refresh"}
+          style={styles.scanAgain}
+          text={t("BAR_CODE_SCAN_SCREEN_TRY_AGAIN")}
+          onPress={onPressTryAgain}
+        />
       </View>
     );
   }
@@ -178,14 +182,11 @@ const BarCodeScanScreen = ({ language = "" }: LocalizationContextProps) => {
         />
         {__DEV__ ? (
           <Button.Secondary
+            fullWidth
             style={styles.scanAgain}
-            textType={"Primary"}
+            text={"Mock scan"}
             onPress={() => handleBarCodeScanned({ data: 7622300336738 })}
-          >
-            <Text.Primary bold center green>
-              {"No camera access test"}
-            </Text.Primary>
-          </Button.Secondary>
+          />
         ) : null}
       </View>
     );

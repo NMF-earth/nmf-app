@@ -34,11 +34,12 @@ const PermissionsRequest: React.FC<Props> = ({ type }) => {
         <Text.H2 center>{title}</Text.H2>
         <Text.Primary center>{subTitle}</Text.Primary>
       </View>
-      <Button.Secondary style={styles.button} textType={"Primary"} onPress={onPress}>
-        <Text.Primary bold center green>
-          {t("PERMISSIONS_REQUEST_COMPONENT_OPEN_SETTINGS")}
-        </Text.Primary>
-      </Button.Secondary>
+      <Button.Secondary
+        icon={"settings"}
+        style={styles.button}
+        text={t("PERMISSIONS_REQUEST_COMPONENT_OPEN_SETTINGS")}
+        onPress={onPress}
+      />
     </View>
   );
 };

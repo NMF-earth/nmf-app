@@ -25,7 +25,8 @@ exports[`<OpenFoodFacts /> render correctly 1`] = `
       }
     }
   >
-    <View
+    <TouchableOpacity
+      onPress={[Function]}
       style={
         Object {
           "flex": 1,
@@ -43,8 +44,9 @@ exports[`<OpenFoodFacts /> render correctly 1`] = `
           }
         }
       />
-    </View>
-    <View
+    </TouchableOpacity>
+    <TouchableOpacity
+      onPress={[Function]}
       style={
         Object {
           "flex": 1,
@@ -62,8 +64,9 @@ exports[`<OpenFoodFacts /> render correctly 1`] = `
           }
         }
       />
-    </View>
-    <View
+    </TouchableOpacity>
+    <TouchableOpacity
+      onPress={[Function]}
       style={
         Object {
           "flex": 1,
@@ -81,7 +84,7 @@ exports[`<OpenFoodFacts /> render correctly 1`] = `
           }
         }
       />
-    </View>
+    </TouchableOpacity>
   </View>
 </View>
 `;
@@ -111,7 +114,8 @@ exports[`<OpenFoodFacts /> render nothing if bad data passed 1`] = `
       }
     }
   >
-    <View
+    <TouchableOpacity
+      onPress={[Function]}
       style={
         Object {
           "flex": 1,
@@ -129,8 +133,9 @@ exports[`<OpenFoodFacts /> render nothing if bad data passed 1`] = `
           }
         }
       />
-    </View>
-    <View
+    </TouchableOpacity>
+    <TouchableOpacity
+      onPress={[Function]}
       style={
         Object {
           "flex": 1,
@@ -148,8 +153,9 @@ exports[`<OpenFoodFacts /> render nothing if bad data passed 1`] = `
           }
         }
       />
-    </View>
-    <View
+    </TouchableOpacity>
+    <TouchableOpacity
+      onPress={[Function]}
       style={
         Object {
           "flex": 1,
@@ -167,7 +173,7 @@ exports[`<OpenFoodFacts /> render nothing if bad data passed 1`] = `
           }
         }
       />
-    </View>
+    </TouchableOpacity>
   </View>
 </View>
 `;
@@ -197,7 +203,8 @@ exports[`<OpenFoodFacts /> render nothing if no data passed 1`] = `
       }
     }
   >
-    <View
+    <TouchableOpacity
+      onPress={[Function]}
       style={
         Object {
           "flex": 1,
@@ -214,8 +221,9 @@ exports[`<OpenFoodFacts /> render nothing if no data passed 1`] = `
           }
         }
       />
-    </View>
-    <View
+    </TouchableOpacity>
+    <TouchableOpacity
+      onPress={[Function]}
       style={
         Object {
           "flex": 1,
@@ -232,8 +240,9 @@ exports[`<OpenFoodFacts /> render nothing if no data passed 1`] = `
           }
         }
       />
-    </View>
-    <View
+    </TouchableOpacity>
+    <TouchableOpacity
+      onPress={[Function]}
       style={
         Object {
           "flex": 1,
@@ -250,7 +259,7 @@ exports[`<OpenFoodFacts /> render nothing if no data passed 1`] = `
           }
         }
       />
-    </View>
+    </TouchableOpacity>
   </View>
 </View>
 `;

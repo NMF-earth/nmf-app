@@ -4,7 +4,6 @@ import { storiesOf } from "@storybook/react-native";
 import { text, boolean } from "@storybook/addon-knobs";
 
 import Button from "..";
-import Text from "../../Text";
 
 const DEFAULT_TEXT = "Fake button";
 const onPressFake = () => {
@@ -19,38 +18,25 @@ storiesOf("Button", module)
       <Button.Primary
         fullWidth={boolean("FullWidth", false)}
         onPress={onPressFake}
-        textType={"Primary"}
-      >
-        <Text.Primary center white>
-          {text("Title", DEFAULT_TEXT)}
-        </Text.Primary>
-      </Button.Primary>
-    </View>
-  ))
-  .add("Primary Black", () => (
-    <View style={container}>
-      <Button.Primary onPress={onPressFake} black textType={"Primary"}>
-        <Text.Primary center white>
-          {text("Title", DEFAULT_TEXT)}
-        </Text.Primary>
-      </Button.Primary>
-    </View>
-  ))
-  .add("Primary Red", () => (
-    <View style={container}>
-      <Button.Primary onPress={onPressFake} red textType={"Primary"}>
-        <Text.Primary center white>
-          {text("Title", DEFAULT_TEXT)}
-        </Text.Primary>
-      </Button.Primary>
+        text={text("Title", DEFAULT_TEXT)}
+      />
     </View>
   ))
   .add("Secondary", () => (
     <View style={container}>
-      <Button.Secondary onPress={onPressFake} textType={"Secondary"}>
-        <Text.Secondary center green>
-          {text("Title", DEFAULT_TEXT)}
-        </Text.Secondary>
-      </Button.Secondary>
+      <Button.Secondary
+        fullWidth={boolean("FullWidth", false)}
+        onPress={onPressFake}
+        text={text("Title", DEFAULT_TEXT)}
+      />
+    </View>
+  ))
+  .add("Danger", () => (
+    <View style={container}>
+      <Button.Danger
+        fullWidth={boolean("FullWidth", false)}
+        onPress={onPressFake}
+        text={text("Title", DEFAULT_TEXT)}
+      />
     </View>
   ));

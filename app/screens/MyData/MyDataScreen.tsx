@@ -102,21 +102,27 @@ const MyDataScreen: NavStatelessComponent = () => {
   return (
     <ScrollView style={styles.container}>
       <Text.Primary style={styles.paragraph}>{t("MY_DATA_SCREEN_BODY")}</Text.Primary>
-      <Button.Primary style={styles.button} textType={"Primary"} onPress={onExport}>
-        <Text.Primary numberOfLines={1} center white bold>
-          {t("MY_DATA_SCREEN_EXPORT_MY_DATA")}
-        </Text.Primary>
-      </Button.Primary>
-      <Button.Secondary style={styles.button} textType={"Primary"} onPress={onImport}>
-        <Text.Primary numberOfLines={1} center green bold>
-          {t("MY_DATA_SCREEN_IMPORT_DATA")}
-        </Text.Primary>
-      </Button.Secondary>
-      <Button.Primary red style={styles.button} textType={"Primary"} onPress={onDelete}>
-        <Text.Primary numberOfLines={1} center white bold>
-          {t("MY_DATA_SCREEN_DELETE_ALL_MY_DATA")}
-        </Text.Primary>
-      </Button.Primary>
+      <Button.Primary
+        fullWidth
+        icon={"cloud-upload"}
+        style={styles.button}
+        text={t("MY_DATA_SCREEN_EXPORT_MY_DATA")}
+        onPress={onExport}
+      />
+      <Button.Secondary
+        fullWidth
+        icon={"cloud-download"}
+        style={styles.button}
+        text={t("MY_DATA_SCREEN_IMPORT_DATA")}
+        onPress={onImport}
+      />
+      <Button.Danger
+        fullWidth
+        icon={"trash"}
+        style={styles.button}
+        text={t("MY_DATA_SCREEN_DELETE_ALL_MY_DATA")}
+        onPress={onDelete}
+      />
     </ScrollView>
   );
 };

@@ -1,7 +1,7 @@
 import { StyleSheet } from "react-native";
 
 import { platform } from "utils";
-import { Colors, Layout } from "style";
+import { Font, Layout, Colors } from "style";
 
 export default StyleSheet.create({
   container: {
@@ -23,8 +23,11 @@ export default StyleSheet.create({
   },
   header: {
     textTransform: "capitalize",
+    paddingBottom: 20,
   },
-  subHeader: {
-    paddingTop: 20,
+  textPourcentage: {
+    color: Colors.grey100,
+    fontFamily: Font.FontWeight.Medium,
+    fontSize: Font.FontSize.H3,
   },
 });

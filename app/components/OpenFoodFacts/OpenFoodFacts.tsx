@@ -1,5 +1,6 @@
 import React from "react";
-import { View, Image } from "react-native";
+import { View, Image, TouchableOpacity } from "react-native";
+import * as WebBrowser from "expo-web-browser";
 
 import { ImagesAssets } from "constant";
 import { t } from "utils";
@@ -16,9 +17,15 @@ interface Props {
 
 const OpenFoodFacts: React.FC<Props> = ({ ecoScore, novaGroup, nutriscoreGrade }: Props) => {
   const imageSources = [
-    ImagesAssets.nutriscore[getImageRef(nutriscoreGrade)],
-    ImagesAssets.nova[getImageRef(novaGroup)],
-    ImagesAssets.ecoscore[getImageRef(ecoScore)],
+    {
+      url: "https://world.openfoodfacts.org/nutriscore",
+      src: ImagesAssets.nutriscore[getImageRef(nutriscoreGrade)],
+    },
+    { url: "https://world.openfoodfacts.org/nova", src: ImagesAssets.nova[getImageRef(novaGroup)] },
+    {
+      url: "https://world.openfoodfacts.org/eco-score-the-environmental-impact-of-food-products",
+      src: ImagesAssets.ecoscore[getImageRef(ecoScore)],
+    },
   ];
 
   return (
@@ -27,10 +34,14 @@ const OpenFoodFacts: React.FC<Props> = ({ ecoScore, novaGroup, nutriscoreGrade }
         {t("OPEN_FOOD_FACTS_COMPONENT_DATA_FROM")}
       </Text.Link>
       <View style={styles.mainImageContainer}>
-        {imageSources.map((src, index) => (
-          <View key={index} style={styles.imageContainer}>
+        {imageSources.map(({ src, url }, index) => (
+          <TouchableOpacity
+            key={index}
+            style={styles.imageContainer}
+            onPress={() => WebBrowser.openBrowserAsync(url)}
+          >
             <Image style={styles.image} resizeMode="contain" source={src} />
-          </View>
+          </TouchableOpacity>
         ))}
       </View>
     </View>

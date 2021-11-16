@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import uuid from "uuid";
 import { StackActions, useNavigation } from "@react-navigation/native";
 
-import { Text, Button } from "components";
+import { Button } from "components";
 import { emissions } from "ducks";
 import { EmissionPayload } from "interfaces";
 import { t } from "utils";
@@ -34,11 +34,11 @@ const AddEmissionButton: React.FC<Props> = ({ emissionPayload }) => {
   };
 
   return (
-    <Button.Primary onPress={addEmission} textType={"Primary"} style={styles.button}>
-      <Text.Primary white center bold>
-        {t("ADD_EMISSION_SCREEN_ADD_THIS_EMISSION")}
-      </Text.Primary>
-    </Button.Primary>
+    <Button.Primary
+      onPress={addEmission}
+      text={t("ADD_EMISSION_SCREEN_ADD_THIS_EMISSION")}
+      style={styles.button}
+    />
   );
 };
 

@@ -16,7 +16,6 @@ jest.mock(
   "../../../app/screens/Budget/components/ProgressChart/components/PeriodBudget",
   () => "PeriodBudget"
 );
-jest.mock("../../../app/screens/Budget/components/ProgressChart/components/Chart", () => "Chart");
 
 /* Emissions Screen */
 jest.mock("../../../app/screens/Emissions/components/SectionHeader", () => "SectionHeader");

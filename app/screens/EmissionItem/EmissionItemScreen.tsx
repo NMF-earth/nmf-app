@@ -108,9 +108,12 @@ const EmissionItemScreen = ({ language = "" }: LocalizationContextProps) => {
           {monthAndYear}
         </Text.Primary>
       </View>
-      <Button.Primary red fullWidth onPress={deleteEmission} textType={"Primary"}>
-        <Text.Primary white>{t("EMISSION_ITEM_SCREEN_DELETE_EMISSION")}</Text.Primary>
-      </Button.Primary>
+      <Button.Danger
+        fullWidth
+        icon={"trash"}
+        onPress={deleteEmission}
+        text={t("EMISSION_ITEM_SCREEN_DELETE_EMISSION")}
+      />
     </ScrollView>
   );
 };

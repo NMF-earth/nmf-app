@@ -26,12 +26,12 @@ const categories = [
     emissionType: EmissionType.fashion,
   },
   {
-    icon: "md-flash",
-    emissionType: EmissionType.electricity,
-  },
-  {
     icon: "md-nutrition",
     emissionType: EmissionType.food,
+  },
+  {
+    icon: "md-flash",
+    emissionType: EmissionType.electricity,
   },
   {
     icon: "md-build",

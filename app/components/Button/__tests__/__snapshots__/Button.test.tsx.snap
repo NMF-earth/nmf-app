@@ -1,174 +1,111 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly Primary Button with Secondary font 1`] = `
+exports[`renders correctly Danger Button 1`] = `
 <TouchableOpacity
   onPress={[Function]}
   style={
     Array [
       Array [
-        Object {
-          "paddingHorizontal": 36,
-        },
-        Object {
-          "backgroundColor": "#4BB377",
-        },
-        undefined,
-      ],
-      Object {
-        "borderRadius": 40,
-        "paddingVertical": 12,
-      },
-    ]
-  }
-  textType="Secondary"
->
-  <Text.Secondary>
-    test
-  </Text.Secondary>
-</TouchableOpacity>
-`;
-
-exports[`renders correctly Secondary Button with Secondary font 1`] = `
-<TouchableOpacity
-  onPress={[Function]}
-  style={
-    Array [
-      Array [
-        Object {
-          "paddingHorizontal": 36,
-        },
-        Object {
-          "backgroundColor": "#FFFFFF",
-          "borderColor": "#4BB377",
-          "borderWidth": 2.5,
-        },
-        undefined,
-      ],
-      Object {
-        "borderRadius": 40,
-        "paddingVertical": 12,
-      },
-    ]
-  }
-  textType="Secondary"
->
-  <Text.Secondary>
-    test
-  </Text.Secondary>
-</TouchableOpacity>
-`;
-
-exports[`renders correctly full width Primary Button with Primary font 1`] = `
-<TouchableOpacity
-  fullWidth={true}
-  onPress={[Function]}
-  style={
-    Array [
-      Array [
-        Object {
-          "paddingHorizontal": 36,
-        },
-        Object {
-          "backgroundColor": "#4BB377",
-        },
-        undefined,
         Object {
           "alignItems": "center",
-          "paddingHorizontal": 0,
-          "width": "100%",
-        },
-      ],
-      Object {
-        "borderRadius": 42,
-        "paddingVertical": 12,
-      },
-    ]
-  }
-  textType="Primary"
->
-  <Text.Primary>
-    test
-  </Text.Primary>
-</TouchableOpacity>
-`;
-
-exports[`renders correctly full width Primary Button with black color 1`] = `
-<TouchableOpacity
-  black={true}
-  fullWidth={true}
-  onPress={[Function]}
-  style={
-    Array [
-      Array [
-        Object {
+          "flexDirection": "row",
+          "justifyContent": "center",
           "paddingHorizontal": 36,
-        },
-        Object {
-          "backgroundColor": "#4BB377",
-        },
-        undefined,
-        Object {
-          "alignItems": "center",
-          "paddingHorizontal": 0,
-          "width": "100%",
-        },
-        Object {
-          "backgroundColor": "#111714",
-        },
-      ],
-      Object {
-        "borderRadius": 42,
-        "paddingVertical": 12,
-      },
-    ]
-  }
-  textType="Primary"
->
-  <Text.Primary>
-    test
-  </Text.Primary>
-</TouchableOpacity>
-`;
-
-exports[`renders correctly full width Primary Button with red color 1`] = `
-<TouchableOpacity
-  fullWidth={true}
-  onPress={[Function]}
-  red={true}
-  style={
-    Array [
-      Array [
-        Object {
-          "paddingHorizontal": 36,
-        },
-        Object {
-          "backgroundColor": "#4BB377",
-        },
-        undefined,
-        Object {
-          "alignItems": "center",
-          "paddingHorizontal": 0,
-          "width": "100%",
         },
         Object {
           "backgroundColor": "#FA4646",
         },
+        undefined,
       ],
       Object {
-        "borderRadius": 42,
+        "borderRadius": 24,
         "paddingVertical": 12,
       },
     ]
   }
-  textType="Primary"
+  text="Primary"
 >
-  <Text.Primary>
-    test
+  <Text.Primary
+    bold={true}
+    center={true}
+    white={true}
+  >
+    Primary
   </Text.Primary>
 </TouchableOpacity>
 `;
 
-exports[`renders correctly full width Secondary Button with Primary font 1`] = `
+exports[`renders correctly Primary Button 1`] = `
+<TouchableOpacity
+  onPress={[Function]}
+  style={
+    Array [
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 36,
+        },
+        Object {
+          "backgroundColor": "#4BB377",
+        },
+        undefined,
+      ],
+      Object {
+        "borderRadius": 24,
+        "paddingVertical": 12,
+      },
+    ]
+  }
+  text="Primary"
+>
+  <Text.Primary
+    bold={true}
+    center={true}
+    white={true}
+  >
+    Primary
+  </Text.Primary>
+</TouchableOpacity>
+`;
+
+exports[`renders correctly Secondary Button 1`] = `
+<TouchableOpacity
+  onPress={[Function]}
+  style={
+    Array [
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 36,
+        },
+        Object {
+          "backgroundColor": "#3957D0",
+        },
+        undefined,
+      ],
+      Object {
+        "borderRadius": 24,
+        "paddingVertical": 12,
+      },
+    ]
+  }
+  text="Primary"
+>
+  <Text.Primary
+    bold={true}
+    center={true}
+    white={true}
+  >
+    Primary
+  </Text.Primary>
+</TouchableOpacity>
+`;
+
+exports[`renders correctly fullwidth Danger Button 1`] = `
 <TouchableOpacity
   fullWidth={true}
   onPress={[Function]}
@@ -176,12 +113,13 @@ exports[`renders correctly full width Secondary Button with Primary font 1`] = `
     Array [
       Array [
         Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
           "paddingHorizontal": 36,
         },
         Object {
-          "backgroundColor": "#FFFFFF",
-          "borderColor": "#4BB377",
-          "borderWidth": 2.5,
+          "backgroundColor": "#3957D0",
         },
         undefined,
         Object {
@@ -191,15 +129,257 @@ exports[`renders correctly full width Secondary Button with Primary font 1`] = `
         },
       ],
       Object {
-        "borderRadius": 42,
+        "borderRadius": 24,
         "paddingVertical": 12,
       },
     ]
   }
-  textType="Primary"
+  text="Primary"
 >
-  <Text.Primary>
-    test
+  <Text.Primary
+    bold={true}
+    center={true}
+    white={true}
+  >
+    Primary
   </Text.Primary>
+</TouchableOpacity>
+`;
+
+exports[`renders correctly fullwidth Danger Button with icon 1`] = `
+<TouchableOpacity
+  fullWidth={true}
+  icon="calendar"
+  onPress={[Function]}
+  style={
+    Array [
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 36,
+        },
+        Object {
+          "backgroundColor": "#4BB377",
+        },
+        undefined,
+        Object {
+          "alignItems": "center",
+          "paddingHorizontal": 0,
+          "width": "100%",
+        },
+      ],
+      Object {
+        "borderRadius": 24,
+        "paddingVertical": 12,
+      },
+    ]
+  }
+  text="Primary"
+>
+  <Text.Primary
+    bold={true}
+    center={true}
+    white={true}
+  >
+    Primary
+  </Text.Primary>
+  <Ionicons
+    color="#FFFFFF"
+    name="calendar"
+    size={24}
+    style={
+      Object {
+        "marginHorizontal": 10,
+      }
+    }
+  />
+</TouchableOpacity>
+`;
+
+exports[`renders correctly fullwidth Primary Button 1`] = `
+<TouchableOpacity
+  fullWidth={true}
+  onPress={[Function]}
+  style={
+    Array [
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 36,
+        },
+        Object {
+          "backgroundColor": "#4BB377",
+        },
+        undefined,
+        Object {
+          "alignItems": "center",
+          "paddingHorizontal": 0,
+          "width": "100%",
+        },
+      ],
+      Object {
+        "borderRadius": 24,
+        "paddingVertical": 12,
+      },
+    ]
+  }
+  text="Primary"
+>
+  <Text.Primary
+    bold={true}
+    center={true}
+    white={true}
+  >
+    Primary
+  </Text.Primary>
+</TouchableOpacity>
+`;
+
+exports[`renders correctly fullwidth Primary Button with icon 1`] = `
+<TouchableOpacity
+  fullWidth={true}
+  icon="calendar"
+  onPress={[Function]}
+  style={
+    Array [
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 36,
+        },
+        Object {
+          "backgroundColor": "#4BB377",
+        },
+        undefined,
+        Object {
+          "alignItems": "center",
+          "paddingHorizontal": 0,
+          "width": "100%",
+        },
+      ],
+      Object {
+        "borderRadius": 24,
+        "paddingVertical": 12,
+      },
+    ]
+  }
+  text="Primary"
+>
+  <Text.Primary
+    bold={true}
+    center={true}
+    white={true}
+  >
+    Primary
+  </Text.Primary>
+  <Ionicons
+    color="#FFFFFF"
+    name="calendar"
+    size={24}
+    style={
+      Object {
+        "marginHorizontal": 10,
+      }
+    }
+  />
+</TouchableOpacity>
+`;
+
+exports[`renders correctly fullwidth Secondary Button 1`] = `
+<TouchableOpacity
+  fullWidth={true}
+  onPress={[Function]}
+  style={
+    Array [
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 36,
+        },
+        Object {
+          "backgroundColor": "#3957D0",
+        },
+        undefined,
+        Object {
+          "alignItems": "center",
+          "paddingHorizontal": 0,
+          "width": "100%",
+        },
+      ],
+      Object {
+        "borderRadius": 24,
+        "paddingVertical": 12,
+      },
+    ]
+  }
+  text="Primary"
+>
+  <Text.Primary
+    bold={true}
+    center={true}
+    white={true}
+  >
+    Primary
+  </Text.Primary>
+</TouchableOpacity>
+`;
+
+exports[`renders correctly fullwidth Secondary Button with icon 1`] = `
+<TouchableOpacity
+  fullWidth={true}
+  icon="calendar"
+  onPress={[Function]}
+  style={
+    Array [
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingHorizontal": 36,
+        },
+        Object {
+          "backgroundColor": "#4BB377",
+        },
+        undefined,
+        Object {
+          "alignItems": "center",
+          "paddingHorizontal": 0,
+          "width": "100%",
+        },
+      ],
+      Object {
+        "borderRadius": 24,
+        "paddingVertical": 12,
+      },
+    ]
+  }
+  text="Primary"
+>
+  <Text.Primary
+    bold={true}
+    center={true}
+    white={true}
+  >
+    Primary
+  </Text.Primary>
+  <Ionicons
+    color="#FFFFFF"
+    name="calendar"
+    size={24}
+    style={
+      Object {
+        "marginHorizontal": 10,
+      }
+    }
+  />
 </TouchableOpacity>
 `;

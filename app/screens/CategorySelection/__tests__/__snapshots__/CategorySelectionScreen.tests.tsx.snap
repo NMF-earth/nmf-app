@@ -52,14 +52,14 @@ exports[`CategorySelectionScreen renders correctly 1`] = `
       text="Fashion"
     />
     <Tag
-      icon="md-flash"
-      onPress={[Function]}
-      text="Electricity"
-    />
-    <Tag
       icon="md-nutrition"
       onPress={[Function]}
       text="Food"
+    />
+    <Tag
+      icon="md-flash"
+      onPress={[Function]}
+      text="Electricity"
     />
     <Tag
       icon="md-build"
