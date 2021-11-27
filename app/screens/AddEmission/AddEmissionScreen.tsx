@@ -313,6 +313,16 @@ const AddEmissionScreen = ({ locale = "", language = "" }: LocalizationContextPr
         />
       ) : null}
 
+      {emissionType != EmissionType.productScanned && (
+        <TextInput
+          isOptional
+          placeholder={t("ADD_EMISSION_SCREEN_TEXTINPUT_PLACEHOLDER")}
+          title={t("ADD_EMISSION_SCREEN_NAME_EMISSION")}
+          onChangeText={onChangeEmissionName}
+          value={emissionName}
+        />
+      )}
+
       <DateTimePickerModal
         headerTextIOS={t("ADD_EMISSION_SCREEN_PICKER_MODAL_HEADER_TEXT")}
         confirmTextIOS={t("ADD_EMISSION_SCREEN_PICKER_MODAL_CONFIRM")}
