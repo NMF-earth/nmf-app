@@ -19,13 +19,8 @@ interface TranslationKeys {
   PERIODICITY_MODAL_SCREEN_OCCURRENCES: string;
   PERIODICITY_MODAL_SCREEN_TIMES: string;
   PERIODICITY_MODAL_SCREEN_TIME: string;
-  MONDAY: string;
-  TUESDAY: string;
-  WEDNESDAY: string;
-  THURSDAY: string;
-  FRIDAY: string;
-  SATURDAY: string;
-  SUNDAY: string;
+  PERIODICITY_MODAL_SCREEN_COMFIRM: string;
+  PERIODICITY_MODAL_SCREEN_CANCEL_NO_PERIODICITY: string;
 }
 
 export { en, fr, de, sv, es, pt, da, ru, pl, zh, ms, TranslationKeys };
