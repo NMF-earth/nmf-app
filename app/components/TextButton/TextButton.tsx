@@ -1,5 +1,5 @@
 import React from "react";
-import { TouchableOpacity } from "react-native";
+import { TouchableOpacity, View } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
 import { Colors } from "style";
@@ -18,11 +18,17 @@ const iconSize = 20;
 const TextButton: React.FC<Props> = ({ onPress, iconLeft, text }) => {
   return (
     <TouchableOpacity style={styles.container} onPress={onPress}>
-      <Ionicons color={Colors.blue50} name={iconLeft} size={iconSize} />
-      <Text.Primary darkGray style={styles.text}>
-        {text}
-      </Text.Primary>
-      <Ionicons name="create" size={iconSize} color={Colors.green50} />
+      <View style={{ width: iconSize + 10 }}>
+        <Ionicons color={Colors.blue50} name={iconLeft} size={iconSize} />
+      </View>
+      <View style={styles.textContainer}>
+        <Text.Primary darkGray style={styles.text}>
+          {text}
+        </Text.Primary>
+      </View>
+      <View style={{ width: iconSize + 10 }}>
+        <Ionicons name="create" size={iconSize} color={Colors.green50} />
+      </View>
     </TouchableOpacity>
   );
 };

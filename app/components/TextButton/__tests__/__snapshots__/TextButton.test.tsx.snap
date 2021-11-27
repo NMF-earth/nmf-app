@@ -7,30 +7,55 @@ exports[`TextButton renders correctly with camera icon 1`] = `
     Object {
       "alignContent": "center",
       "alignItems": "center",
+      "flex": 1,
       "flexDirection": "row",
     }
   }
 >
-  <Ionicons
-    color="#3957D0"
-    name="camera"
-    size={20}
-  />
-  <Text.Primary
-    darkGray={true}
+  <View
     style={
       Object {
-        "marginHorizontal": 8,
+        "width": 30,
       }
     }
   >
-    some text
-  </Text.Primary>
-  <Ionicons
-    color="#4BB377"
-    name="create"
-    size={20}
-  />
+    <Ionicons
+      color="#3957D0"
+      name="camera"
+      size={20}
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <Text.Primary
+      darkGray={true}
+      style={
+        Object {
+          "marginHorizontal": 8,
+        }
+      }
+    >
+      some text
+    </Text.Primary>
+  </View>
+  <View
+    style={
+      Object {
+        "width": 30,
+      }
+    }
+  >
+    <Ionicons
+      color="#4BB377"
+      name="create"
+      size={20}
+    />
+  </View>
 </TouchableOpacity>
 `;
 
@@ -41,29 +66,54 @@ exports[`TextButton renders correctly with repeat icon 1`] = `
     Object {
       "alignContent": "center",
       "alignItems": "center",
+      "flex": 1,
       "flexDirection": "row",
     }
   }
 >
-  <Ionicons
-    color="#3957D0"
-    name="repeat"
-    size={20}
-  />
-  <Text.Primary
-    darkGray={true}
+  <View
     style={
       Object {
-        "marginHorizontal": 8,
+        "width": 30,
       }
     }
   >
-    some text
-  </Text.Primary>
-  <Ionicons
-    color="#4BB377"
-    name="create"
-    size={20}
-  />
+    <Ionicons
+      color="#3957D0"
+      name="repeat"
+      size={20}
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <Text.Primary
+      darkGray={true}
+      style={
+        Object {
+          "marginHorizontal": 8,
+        }
+      }
+    >
+      some text
+    </Text.Primary>
+  </View>
+  <View
+    style={
+      Object {
+        "width": 30,
+      }
+    }
+  >
+    <Ionicons
+      color="#4BB377"
+      name="create"
+      size={20}
+    />
+  </View>
 </TouchableOpacity>
 `;

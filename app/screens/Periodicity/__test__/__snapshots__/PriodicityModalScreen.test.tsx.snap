@@ -43,8 +43,8 @@ exports[`InfoModalScreen renders correctly 1`] = `
                 "paddingVertical": 4,
               },
               Object {
-                "backgroundColor": "#F0F0F0",
-                "borderColor": "#9CA6A0",
+                "backgroundColor": "#DCF0E5",
+                "borderColor": "#4BB377",
               },
               undefined,
             ]
@@ -52,8 +52,8 @@ exports[`InfoModalScreen renders correctly 1`] = `
         >
           <Text.Secondary
             bold={true}
-            darkGray={true}
-            green={false}
+            darkGray={false}
+            green={true}
           >
             Monthly
           </Text.Secondary>

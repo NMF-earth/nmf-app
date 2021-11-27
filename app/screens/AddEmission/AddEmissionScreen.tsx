@@ -7,12 +7,12 @@ import DateTimePickerModal from "react-native-modal-datetime-picker";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 import { useRoute } from "@react-navigation/core";
 import { useNavigation } from "@react-navigation/native";
-import { pathOr } from "ramda";
+import { pathOr, join } from "ramda";
 
 import { navigate } from "navigation";
 import { Text, TextInput, TextButton, OpenFoodFacts } from "components";
 import { userPreferences } from "ducks";
-import { EmissionType, EmissionPayload, EmissionModelType } from "interfaces";
+import { EmissionType, EmissionPayload, EmissionModelType, PeriodicityType } from "interfaces";
 import {
   calculation,
   t,
@@ -37,6 +37,7 @@ import {
   Meal,
   ProductScanned,
 } from "./components";
+import { WEEK_DAYS_LIST } from "../Periodicity/PeriodicityModalScreen";
 
 /* multiply or divide by 1000 to have kilograms or meters */
 const DEFAULT_SLIDER_VALUE_FOOD = 200 / 1000;
@@ -54,6 +55,9 @@ const getName = pathOr("", ["params", "name"]);
 const getNutriscoreGrade = pathOr("", ["params", "nutriscoreGrade"]);
 const getNovaGroup = pathOr(-1, ["params", "novaGroup"]);
 const getEcoScore = pathOr("", ["params", "ecoScore"]);
+const getPeriodType = pathOr(PeriodicityType.monthly, ["params", "periodType"]);
+const getPeriodWeekDays = pathOr([], ["params", "periodWeekDays"]);
+const getPeriodTimes = pathOr(0, ["params", "periodTimes"]);
 
 const AddEmissionScreen = ({ locale = "", language = "" }: LocalizationContextProps) => {
   const route = useRoute();
@@ -94,6 +98,35 @@ const AddEmissionScreen = ({ locale = "", language = "" }: LocalizationContextPr
   const nutriscoreGrade: string = getNutriscoreGrade(route);
   const novaGroup: number = getNovaGroup(route);
   const ecoScore: string = getEcoScore(route);
+
+  const periodType: PeriodicityType = getPeriodType(route);
+  const periodWeekDays: Array<number> = getPeriodWeekDays(route);
+  const periodTimes: number = getPeriodTimes(route);
+
+  let periodicityText = t("ADD_EMISSION_SCREEN_NON_RECURRING");
+  if (periodTimes) {
+    if (periodTimes > 1) {
+      periodicityText = periodTimes + " " + t("ADD_EMISSION_SCREEN_TIMES");
+    } else {
+      periodicityText = periodTimes + " " + t("ADD_EMISSION_SCREEN_TIME");
+    }
+
+    periodicityText = periodicityText + " - ";
+
+    if (periodType == PeriodicityType.monthly) {
+      periodicityText = periodicityText + t("ADD_EMISSION_SCREEN_MONTHLY");
+    } else {
+      periodicityText = periodicityText + t("ADD_EMISSION_SCREEN_WEEKLY");
+    }
+
+    if (periodWeekDays.length) {
+      periodicityText = periodicityText + " - ";
+      const daysToDisplay = WEEK_DAYS_LIST.filter((item) =>
+        periodWeekDays.includes(item.dayIndex)
+      ).map((item) => t(item.nameKey));
+      periodicityText = periodicityText + join(", ", daysToDisplay);
+    }
+  }
 
   const handleConfirm = useCallback(
     (date: Date) => {
@@ -335,25 +368,33 @@ const AddEmissionScreen = ({ locale = "", language = "" }: LocalizationContextPr
         onCancel={hideDatePicker}
       />
 
-      <View style={styles.textContainer}>
-        <Text.H3>{t("ADD_EMISSION_SCREEN_DATE")}</Text.H3>
-        <View style={styles.textButtonContainer}>
-          <TextButton
-            onPress={showDatePicker}
-            iconLeft={"calendar"}
-            text={creationDate.locale(getLocaleForMoment(language)).format("dddd Do MMMM YYYY")}
-          />
+      {!periodTimes ? (
+        <View style={styles.textContainer}>
+          <Text.H3>{t("ADD_EMISSION_SCREEN_DATE")}</Text.H3>
+          <View style={styles.textButtonContainer}>
+            <TextButton
+              onPress={showDatePicker}
+              iconLeft={"calendar"}
+              text={creationDate.locale(getLocaleForMoment(language)).format("dddd Do MMMM YYYY")}
+            />
+          </View>
         </View>
-      </View>
+      ) : null}
 
       {__DEV__ && (
         <View style={styles.textContainer}>
           <Text.H3>{t("ADD_EMISSION_SCREEN_PERIODICITY")}</Text.H3>
           <View style={styles.textButtonContainer}>
             <TextButton
-              onPress={() => navigator.openPeriodicityModal()}
+              onPress={() =>
+                navigator.openPeriodicityModal({
+                  periodType,
+                  periodWeekDays,
+                  periodTimes,
+                })
+              }
               iconLeft={"repeat"}
-              text={t("ADD_EMISSION_SCREEN_NON_RECURRING")}
+              text={periodicityText}
             />
           </View>
         </View>
