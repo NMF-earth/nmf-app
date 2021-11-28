@@ -1,4 +1,4 @@
-import { isEmpty, prop, reduce, maxBy, either, isNil, pipe } from "ramda";
+import { isEmpty, prop, reduce, maxBy, either, isNil, pipe, join } from "ramda";
 import {
   transport,
   TransportType,
@@ -12,7 +12,10 @@ import {
   meal,
 } from "carbon-footprint";
 
-import { EmissionType, Emission } from "interfaces";
+import { EmissionType, Emission, RecurringEmission, PeriodicityType, WeekDays } from "interfaces";
+import { WEEK_DAYS } from "constant/weekDays";
+
+import { t } from "../translations";
 
 const isNilOrEmpty = either(isNil, isEmpty);
 
@@ -59,7 +62,7 @@ const getFlightEmissionValue = (duration: number): number => {
   }
 };
 
-const getC02ValueFromEmission = (emission: Emission): number => {
+const getC02ValueFromEmission = (emission: Emission | RecurringEmission): number => {
   if (
     emission.emissionType === EmissionType.custom ||
     emission.emissionType === EmissionType.productScanned
@@ -98,10 +101,46 @@ const toKWH = (x: number): number => (x * 3.6) / Math.pow(10, -6);
 const toKgCO2 = (x: number): number => x * 1000;
 const getCarbonIntensityInGramPerKWHromKgPerJoules = pipe(toKWH, toKgCO2, Math.round);
 
+const getPeriodicityText = ({
+  times = 0,
+  periodType = PeriodicityType.monthly,
+  weekDays = [],
+}: {
+  times: number;
+  periodType: PeriodicityType;
+  weekDays: Array<WeekDays>;
+}): string => {
+  let periodicityText = "";
+  if (times) {
+    if (periodType == PeriodicityType.monthly) {
+      periodicityText = t("UI_MONTHLY");
+    } else {
+      periodicityText = t("UI_WEEKLY");
+    }
+    periodicityText = periodicityText + " - ";
+
+    if (times > 1) {
+      periodicityText = periodicityText + times + " " + t("UI_TIMES");
+    } else {
+      periodicityText = periodicityText + times + " " + t("UI_TIME");
+    }
+
+    if (weekDays.length) {
+      periodicityText = periodicityText + " " + t("UI_EVERY") + " ";
+      const daysToDisplay = WEEK_DAYS.filter((item) =>
+        weekDays.includes(item.dayIndex)
+      ).map((item) => t(item.nameKey));
+      periodicityText = periodicityText + join(", ", daysToDisplay);
+    }
+  }
+  return periodicityText;
+};
+
 export default {
   getLatestEmission,
   getC02ValueFromEmission,
   getFlightType,
   getFlightEmissionValue,
   getCarbonIntensityInGramPerKWHromKgPerJoules,
+  getPeriodicityText,
 };

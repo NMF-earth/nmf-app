@@ -1,10 +1,5 @@
-import {
-  Emission,
-  EmissionType,
-  EmissionPayload,
-  EmissionModelType,
-  PeriodicityType,
-} from "./emission";
+import { Emission, EmissionType, EmissionPayload, EmissionModelType } from "./emission";
+import { RecurringEmission, PeriodicityType, WeekDays } from "./recurringEmission";
 import NavStatelessComponent from "./navigation";
 
 export {
@@ -13,5 +8,7 @@ export {
   EmissionType,
   EmissionPayload,
   EmissionModelType,
+  RecurringEmission,
   PeriodicityType,
+  WeekDays,
 };

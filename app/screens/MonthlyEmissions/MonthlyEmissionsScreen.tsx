@@ -67,7 +67,7 @@ const MonthlyEmissions: NavStatelessComponent = () => {
           id={id}
           isMitigated={isMitigated}
           name={name}
-          onPress={() => navigator.openEmissionItem({ id, emissionModelType })}
+          onPress={() => navigator.openEmissionItem({ id })}
           title={title}
           co2value={co2value}
           iconName={iconName}

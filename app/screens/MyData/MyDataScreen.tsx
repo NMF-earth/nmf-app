@@ -7,7 +7,12 @@ import { useSelector, useDispatch } from "react-redux";
 
 import { Text, Button } from "components";
 import { t, platform } from "utils";
-import { emissions as emissionsDucks, budget, userPreferences } from "ducks";
+import {
+  emissions as emissionsDucks,
+  budget,
+  userPreferences,
+  recurringEmissions as recurringEmissionsDucks,
+} from "ducks";
 import { NavStatelessComponent } from "interfaces";
 
 import styles from "./MyDataScreen.styles";
@@ -16,6 +21,9 @@ import navigationOptions from "./MyDataScreen.navigationOptions";
 const MyDataScreen: NavStatelessComponent = () => {
   const dispatch = useDispatch();
   const emissions = useSelector(emissionsDucks.selectors.getAllEmissions);
+  const recurringEmissions = useSelector(
+    recurringEmissionsDucks.selectors.getAllRecurringEmissions
+  );
   const monthlyCarbonBudget = useSelector(budget.selectors.getMonthlyCarbonBudget);
   const location = useSelector(userPreferences.selectors.getLocation);
 
@@ -30,6 +38,7 @@ const MyDataScreen: NavStatelessComponent = () => {
         text: t("MY_DATA_SCREEN_OK"),
         onPress: () => {
           dispatch(emissionsDucks.actions.deleteAllEmissions());
+          dispatch(recurringEmissionsDucks.actions.deleteAllRecurringEmissions());
           Alert.alert(t("MY_DATA_SCREEN_DELETE_SUCCESSFUL"));
         },
       },
@@ -55,15 +64,21 @@ const MyDataScreen: NavStatelessComponent = () => {
               const {
                 budget: { monthlyCarbonBudget },
                 emissions,
+                recurringEmissions,
                 userPreferences: { location },
               } = data;
 
               if (monthlyCarbonBudget && location && emissions) {
                 dispatch(budget.actions.setMonthlyCarbonBudget(monthlyCarbonBudget));
                 dispatch(emissionsDucks.actions.loadEmissionsFromImport(emissions));
+                dispatch(
+                  recurringEmissionsDucks.actions.loadRecurringEmissionsFromImport(
+                    recurringEmissions
+                  )
+                );
                 dispatch(userPreferences.actions.updateLocation(location));
               } else {
-                throw `monthlyCarbonBudget :${!!monthlyCarbonBudget}, location: ${!!location}, emissions: ${!!emissions}`;
+                throw `monthlyCarbonBudget :${!!monthlyCarbonBudget}, location: ${!!location}, emissions: ${!!emissions}, recurringEmissions: ${!!recurringEmissions}`;
               }
             } catch (error) {
               Alert.alert(
@@ -80,6 +95,7 @@ const MyDataScreen: NavStatelessComponent = () => {
   const onExport = async () => {
     const data = JSON.stringify({
       emissions,
+      recurringEmissions,
       budget: {
         monthlyCarbonBudget,
       },

@@ -8,39 +8,21 @@ jest.unmock("../SectionHeader");
 describe("SectionHeader", () => {
   const date = new Date("2020-12-24T03:24:00");
 
-  it("should render when user is over budget", () => {
+  it("should render when date", () => {
     const tree = create(<SectionHeader date={date} />).toJSON();
 
     expect(tree).toMatchSnapshot();
   });
 
-  it("should render when user is below budget", () => {
-    const tree = create(<SectionHeader date={date} />).toJSON();
+  it("should render when title", () => {
+    const tree = create(<SectionHeader title={"some title"} />).toJSON();
 
     expect(tree).toMatchSnapshot();
   });
 
-  it("should render when user has budget below 1%", () => {
-    const tree = create(<SectionHeader date={date} />).toJSON();
+  it("should not render if no props", () => {
+    const tree = create(<SectionHeader />).toJSON();
 
-    expect(tree).toMatchSnapshot();
-  });
-
-  it("should render when co2value equals 0", () => {
-    const tree = create(<SectionHeader date={date} />).toJSON();
-
-    expect(tree).toMatchSnapshot();
-  });
-
-  it("should render when monthlyCarbonBudget equals 0", () => {
-    const tree = create(<SectionHeader date={date} />).toJSON();
-
-    expect(tree).toMatchSnapshot();
-  });
-
-  it("should render when monthlyCarbonBudget and co2value equals 0", () => {
-    const tree = create(<SectionHeader date={date} />).toJSON();
-
-    expect(tree).toMatchSnapshot();
+    expect(tree).toBeNull();
   });
 });

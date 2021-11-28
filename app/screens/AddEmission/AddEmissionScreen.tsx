@@ -7,12 +7,18 @@ import DateTimePickerModal from "react-native-modal-datetime-picker";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 import { useRoute } from "@react-navigation/core";
 import { useNavigation } from "@react-navigation/native";
-import { pathOr, join } from "ramda";
+import { pathOr } from "ramda";
 
 import { navigate } from "navigation";
 import { Text, TextInput, TextButton, OpenFoodFacts } from "components";
 import { userPreferences } from "ducks";
-import { EmissionType, EmissionPayload, EmissionModelType, PeriodicityType } from "interfaces";
+import {
+  EmissionType,
+  EmissionPayload,
+  EmissionModelType,
+  PeriodicityType,
+  WeekDays,
+} from "interfaces";
 import {
   calculation,
   t,
@@ -37,7 +43,6 @@ import {
   Meal,
   ProductScanned,
 } from "./components";
-import { WEEK_DAYS_LIST } from "../Periodicity/PeriodicityModalScreen";
 
 /* multiply or divide by 1000 to have kilograms or meters */
 const DEFAULT_SLIDER_VALUE_FOOD = 200 / 1000;
@@ -100,32 +105,17 @@ const AddEmissionScreen = ({ locale = "", language = "" }: LocalizationContextPr
   const ecoScore: string = getEcoScore(route);
 
   const periodType: PeriodicityType = getPeriodType(route);
-  const periodWeekDays: Array<number> = getPeriodWeekDays(route);
+  const periodWeekDays: Array<WeekDays> = getPeriodWeekDays(route);
   const periodTimes: number = getPeriodTimes(route);
 
   let periodicityText = t("ADD_EMISSION_SCREEN_NON_RECURRING");
+
   if (periodTimes) {
-    if (periodTimes > 1) {
-      periodicityText = periodTimes + " " + t("ADD_EMISSION_SCREEN_TIMES");
-    } else {
-      periodicityText = periodTimes + " " + t("ADD_EMISSION_SCREEN_TIME");
-    }
-
-    periodicityText = periodicityText + " - ";
-
-    if (periodType == PeriodicityType.monthly) {
-      periodicityText = periodicityText + t("ADD_EMISSION_SCREEN_MONTHLY");
-    } else {
-      periodicityText = periodicityText + t("ADD_EMISSION_SCREEN_WEEKLY");
-    }
-
-    if (periodWeekDays.length) {
-      periodicityText = periodicityText + " - ";
-      const daysToDisplay = WEEK_DAYS_LIST.filter((item) =>
-        periodWeekDays.includes(item.dayIndex)
-      ).map((item) => t(item.nameKey));
-      periodicityText = periodicityText + join(", ", daysToDisplay);
-    }
+    periodicityText = calculation.getPeriodicityText({
+      times: periodTimes,
+      periodType,
+      weekDays: periodWeekDays,
+    });
   }
 
   const handleConfirm = useCallback(
@@ -406,6 +396,9 @@ const AddEmissionScreen = ({ locale = "", language = "" }: LocalizationContextPr
           name: emissionName || name,
           creationDate: creationDate.toISOString(),
         }}
+        periodType={periodType}
+        periodWeekDays={periodWeekDays}
+        periodTimes={periodTimes}
       />
     </KeyboardAwareScrollView>
   );

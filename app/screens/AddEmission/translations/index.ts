@@ -31,10 +31,6 @@ interface TranslationKeys {
   ADD_EMISSION_SCREEN_PERIODICITY: string;
   ADD_EMISSION_SCREEN_NON_RECURRING: string;
   ADD_EMISSION_SCREEN_NAME: string;
-  ADD_EMISSION_SCREEN_TIMES: string;
-  ADD_EMISSION_SCREEN_TIME: string;
-  ADD_EMISSION_SCREEN_WEEKLY: string;
-  ADD_EMISSION_SCREEN_MONTHLY: string;
 }
 
 export { en, fr, de, sv, es, pt, da, ru, pl, zh, ms, TranslationKeys };

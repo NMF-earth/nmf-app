@@ -4,12 +4,14 @@ import { Ionicons } from "@expo/vector-icons";
 import { FormattedNumber } from "react-native-globalize";
 
 import { Colors } from "style";
-import { Emission, EmissionType } from "interfaces";
+import { RecurringEmission, Emission, EmissionType } from "interfaces";
 
 import Text from "../Text";
 import styles from "./EmissionListItem.styles";
 
-interface EmissionListItemProps extends Partial<Emission> {
+interface AnyEmission extends RecurringEmission, Emission {}
+
+interface EmissionListItemProps extends Partial<AnyEmission> {
   title: string;
   co2value: number;
   iconName: string;
@@ -18,6 +20,7 @@ interface EmissionListItemProps extends Partial<Emission> {
   emissionType?: EmissionType;
   value?: number;
   creationDate?: string;
+  times?: number;
 }
 
 const EmissionListItem: React.FC<EmissionListItemProps> = ({

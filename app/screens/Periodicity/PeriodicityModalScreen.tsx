@@ -7,8 +7,8 @@ import { useRoute } from "@react-navigation/core";
 import { NavStatelessComponent, PeriodicityType } from "interfaces";
 import { Button, Text } from "components";
 import ClickableTag from "components/ClickableTag";
-import { TranslationKeys } from "utils/translations/resources";
 import { t } from "utils";
+import { WEEK_DAYS } from "constant/weekDays";
 
 import styles from "./PeriodicityModalScreen.styles";
 
@@ -81,7 +81,7 @@ export const PeriodicityModalScreen: NavStatelessComponent = () => {
         <View style={styles.tagSection}>
           <Text.H3>{t("PERIODICITY_MODAL_SCREEN_DAYS")}</Text.H3>
           <View style={styles.tagsContainer}>
-            {WEEK_DAYS_LIST.map(({ dayIndex, nameKey }) => {
+            {WEEK_DAYS.map(({ dayIndex, nameKey }) => {
               return (
                 <ClickableTag
                   key={dayIndex}
@@ -106,9 +106,7 @@ export const PeriodicityModalScreen: NavStatelessComponent = () => {
               onPress={() => {
                 setTimes(index + 1);
               }}
-              text={`${index + 1} ${
-                index > 0 ? t("PERIODICITY_MODAL_SCREEN_TIMES") : t("PERIODICITY_MODAL_SCREEN_TIME")
-              }`}
+              text={`${index + 1} ${index > 0 ? t("UI_TIMES") : t("UI_TIME")}`}
             />
           ))}
         </View>
@@ -134,16 +132,3 @@ export const PeriodicityModalScreen: NavStatelessComponent = () => {
 };
 
 const TIMES_LIST = new Array(3).fill(null);
-
-export const WEEK_DAYS_LIST: {
-  dayIndex: number;
-  nameKey: keyof TranslationKeys;
-}[] = [
-  { dayIndex: 1, nameKey: "UI_SUNDAY" },
-  { dayIndex: 2, nameKey: "UI_MONDAY" },
-  { dayIndex: 3, nameKey: "UI_TUESDAY" },
-  { dayIndex: 4, nameKey: "UI_WEDNESDAY" },
-  { dayIndex: 5, nameKey: "UI_THURSDAY" },
-  { dayIndex: 6, nameKey: "UI_FRIDAY" },
-  { dayIndex: 7, nameKey: "UI_SATURDAY" },
-];

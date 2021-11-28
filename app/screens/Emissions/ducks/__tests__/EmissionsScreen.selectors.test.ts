@@ -66,7 +66,6 @@ describe("if there are emissions", () => {
         {
           date: getStartOfMonth(emissionNotMitigatedOld.creationDate),
           data: [selectors.getEmissionListItem(emissionNotMitigatedOld)],
-          co2value: calculation.getC02ValueFromEmission(emissionNotMitigatedOld),
         },
         {
           date: getStartOfMonth(emissionMitigated.creationDate),
@@ -74,9 +73,6 @@ describe("if there are emissions", () => {
             selectors.getEmissionListItem(emissionNotMitigated),
             selectors.getEmissionListItem(emissionMitigated),
           ],
-          co2value:
-            calculation.getC02ValueFromEmission(emissionNotMitigated) +
-            calculation.getC02ValueFromEmission(emissionMitigated),
         },
       ])
     );

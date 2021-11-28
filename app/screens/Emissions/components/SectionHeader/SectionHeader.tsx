@@ -13,24 +13,44 @@ import { withLocalization, LocalizationContextProps, getLocaleForMoment } from "
 import styles from "./SectionHeader.styles";
 
 interface Props {
-  date: Date;
+  date?: Date;
+  title?: string;
 }
 
-const SectionHeader: React.FC<Props & LocalizationContextProps> = ({ date, language = "" }) => {
+const SectionHeader: React.FC<Props & LocalizationContextProps> = ({
+  title,
+  date,
+  language = "",
+}) => {
   const navigation = useNavigation();
   const navigator = navigate(navigation);
+  let headerText;
+  let onPress = () => onPress;
 
-  const monthAndYear = moment(date).locale(getLocaleForMoment(language)).format("MMMM YYYY");
-  const onPress = () =>
-    navigator.openMonthlyEmissions({
-      date,
-      monthAndYear,
-    });
+  if (!date && !title) {
+    return null;
+  }
+
+  if (date) {
+    const monthAndYear = moment(date).locale(getLocaleForMoment(language)).format("MMMM YYYY");
+
+    headerText = monthAndYear;
+    onPress = () =>
+      navigator.openMonthlyEmissions({
+        date,
+        monthAndYear,
+      });
+  }
+
+  if (title) {
+    headerText = title;
+    onPress = () => navigator.openRecurringEmissions();
+  }
 
   return (
     <TouchableOpacity onPress={onPress} style={styles.container}>
       <Text.Primary blue bold style={styles.text}>
-        {monthAndYear}
+        {headerText}
       </Text.Primary>
       <Ionicons
         name={"ios-chevron-forward-outline"}

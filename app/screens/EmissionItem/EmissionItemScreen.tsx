@@ -8,7 +8,7 @@ import { FormattedNumber } from "react-native-globalize";
 import { useNavigation, useRoute } from "@react-navigation/native";
 
 import { Text, Button } from "components";
-import { emissions } from "ducks";
+import { emissions, recurringEmissions } from "ducks";
 import {
   calculation,
   ui,
@@ -29,12 +29,30 @@ const EmissionItemScreen = ({ language = "" }: LocalizationContextProps) => {
 
   const route = useRoute();
   const emissionId = pathOr("", ["params", "id"], route);
+  const isRecurringEmission = pathOr(false, ["params", "isRecurringEmission"], route);
 
   const dispatch = useDispatch();
 
-  const emission = useSelector((state) => emissions.selectors.getEmissionById(state, emissionId));
+  let emission = useSelector((state) => emissions.selectors.getEmissionById(state, emissionId));
 
-  const { creationDate, emissionModelType, emissionType, name, isMitigated } = emission || {
+  const recurringEmission = useSelector((state) =>
+    recurringEmissions.selectors.getRecurringEmissionById(state, emissionId)
+  );
+
+  if (isRecurringEmission) {
+    emission = recurringEmission;
+  }
+
+  const {
+    creationDate,
+    emissionModelType,
+    emissionType,
+    name,
+    isMitigated,
+    weekDays,
+    periodType,
+    times,
+  } = emission || {
     creationDate: new Date(),
     emissionModelType: "",
     name: "",
@@ -44,7 +62,13 @@ const EmissionItemScreen = ({ language = "" }: LocalizationContextProps) => {
   const day = date.locale(getLocaleForMoment(language)).format("dddd");
   const monthAndYear = date.locale(getLocaleForMoment(language)).format("Do MMMM YYYY");
   const co2Emission = calculation.getC02ValueFromEmission(emission || {});
-  const deleteEmission = () => dispatch(emissions.actions.deleteEmission(emission.id));
+  const deleteEmission = () => {
+    if (isRecurringEmission) {
+      dispatch(recurringEmissions.actions.deleteRecurringEmission(recurringEmission.id));
+    } else {
+      dispatch(emissions.actions.deleteEmission(emission.id));
+    }
+  };
   const toggleIsMitigated = () => dispatch(emissions.actions.toggleIsMitigated(emission.id));
 
   useEffect(() => {
@@ -63,25 +87,25 @@ const EmissionItemScreen = ({ language = "" }: LocalizationContextProps) => {
       {name.length ? (
         <>
           <Text.H3>{t("EMISSION_ITEM_SCREEN_NAME")}</Text.H3>
-          <Text.Primary darkGray style={styles.lastItem}>
+          <Text.Primary darkGray style={styles.item}>
             {name}
           </Text.Primary>
         </>
       ) : null}
       <Text.H3>{t("EMISSION_ITEM_SCREEN_TYPE")}</Text.H3>
       {emissionType == EmissionType.custom || emissionType == EmissionType.productScanned ? (
-        <Text.Primary darkGray style={styles.lastItem}>
+        <Text.Primary darkGray style={styles.item}>
           {ui.getTranslationEmissionType(emissionType)}
         </Text.Primary>
       ) : (
-        <Text.Primary darkGray style={styles.lastItem}>
+        <Text.Primary darkGray style={styles.item}>
           {ui.getTranslationEmissionType(emissionType)}
           {" - "}
           {ui.getTranslationEmissionModelType(emissionModelType)}
         </Text.Primary>
       )}
       <Text.H3>{t("EMISSION_ITEM_SCREEN_QUANTITY")}</Text.H3>
-      <Text.Primary darkGray style={styles.lastItem}>
+      <Text.Primary darkGray style={styles.item}>
         <FormattedNumber
           maximumFractionDigits={2}
           value={co2Emission > 1 ? co2Emission : co2Emission * 1000}
@@ -89,30 +113,42 @@ const EmissionItemScreen = ({ language = "" }: LocalizationContextProps) => {
         {co2Emission > 1 ? " kgC02eq" : " gC02eq"}
       </Text.Primary>
 
-      <Text.H3>{t("EMISSION_ITEM_SCREEN_MITIGATED")}</Text.H3>
-      <Text.Primary darkGray style={styles.text}>
-        {isMitigated
-          ? t("EMISSION_ITEM_SCREEN_IS_MITIGATED")
-          : t("EMISSION_ITEM_SCREEN_IS_NOT_MITIGATED")}
-      </Text.Primary>
-      <View style={styles.lastItem}>
-        <Switch value={isMitigated} onValueChange={toggleIsMitigated} />
-      </View>
+      {!isRecurringEmission && (
+        <>
+          <Text.H3>{t("EMISSION_ITEM_SCREEN_MITIGATED")}</Text.H3>
+          <Text.Primary darkGray style={styles.text}>
+            {isMitigated
+              ? t("EMISSION_ITEM_SCREEN_IS_MITIGATED")
+              : t("EMISSION_ITEM_SCREEN_IS_NOT_MITIGATED")}
+          </Text.Primary>
+          <View style={styles.item}>
+            <Switch value={isMitigated} onValueChange={toggleIsMitigated} />
+          </View>
+        </>
+      )}
 
       <Text.H3>{t("EMISSION_ITEM_SCREEN_DATE")}</Text.H3>
       <View style={styles.date}>
-        <Text.Primary darkGray style={[styles.lastItem, styles.day]}>
+        <Text.Primary darkGray style={[styles.item, styles.day]}>
           {day + " "}
         </Text.Primary>
-        <Text.Primary darkGray style={styles.lastItem}>
+        <Text.Primary darkGray style={styles.item}>
           {monthAndYear}
         </Text.Primary>
       </View>
+
+      <Text.H3>{t("EMISSION_ITEM_SCREEN_PERIODICITY")}</Text.H3>
+      <View style={styles.item}>
+        <Text.Primary darkGray style={styles.item}>
+          {calculation.getPeriodicityText({ times, periodType, weekDays })}
+        </Text.Primary>
+      </View>
+
       <Button.Danger
         fullWidth
         icon={"trash"}
         onPress={deleteEmission}
-        text={t("EMISSION_ITEM_SCREEN_DELETE_EMISSION")}
+        text={t("EMISSION_ITEM_SCREEN_DELETE")}
       />
     </ScrollView>
   );

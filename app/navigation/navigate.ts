@@ -102,8 +102,13 @@ const openLanguages = (navigation) => (props = {}) => {
   navigation.push("Languages", props);
 };
 
+const openRecurringEmissions = (navigation) => (props = {}) => {
+  navigation.push("RecurringEmissions", props);
+};
+
 const navigate = (navigation) => ({
   goBack: navigation.goBack,
+  openRecurringEmissions: navigateOneTime(openRecurringEmissions(navigation)),
   openMonthlyEmissions: navigateOneTime(openMonthlyEmissions(navigation)),
   openAddEmissionNavigator: navigateOneTime(openAddEmissionNavigator(navigation)),
   openSubCategorySelection: navigateOneTime(openSubCategorySelection(navigation)),

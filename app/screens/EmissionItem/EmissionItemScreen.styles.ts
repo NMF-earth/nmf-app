@@ -7,7 +7,7 @@ export default StyleSheet.create({
     ...Layout.containerWithPadding,
     paddingTop: 22,
   },
-  lastItem: {
+  item: {
     alignItems: "flex-start",
     paddingTop: 2,
     paddingBottom: 24,

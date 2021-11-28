@@ -12,31 +12,33 @@ import styles from "./EmissionsScreen.styles";
 
 interface Props {
   emissions: any;
+  recurringEmissions: any;
 }
 
-const EmissionsScreen: React.FC<Props> = ({ emissions }) => {
+const EmissionsScreen: React.FC<Props> = ({ emissions, recurringEmissions }) => {
   const navigation = useNavigation();
   const navigator = navigate(navigation);
+  const sections = [recurringEmissions, ...emissions];
 
   const renderListFooter = () => <View style={styles.separator} />;
-  const renderSectionHeader = (date) => <SectionHeader date={date} />;
+  const renderSectionHeader = (date, title) => <SectionHeader title={title} date={date} />;
 
   return (
     <SectionList<EmissionListItemProps>
       style={styles.container}
-      sections={emissions}
+      sections={sections}
       stickySectionHeadersEnabled
       ListFooterComponent={renderListFooter}
-      renderSectionHeader={({ section: { date } }) => renderSectionHeader(date)}
+      renderSectionHeader={({ section: { date, title } }) => renderSectionHeader(date, title)}
       keyExtractor={({ id }) => id}
       renderItem={({
-        item: { id, isMitigated, name, title, co2value, iconName, emissionModelType },
+        item: { id, isMitigated, name, title, co2value, iconName, emissionModelType, times },
       }) => (
         <EmissionListItem
           id={id}
           isMitigated={isMitigated}
           name={name}
-          onPress={() => navigator.openEmissionItem({ id, emissionModelType })}
+          onPress={() => navigator.openEmissionItem({ id, isRecurringEmission: !!times })}
           title={title}
           co2value={co2value}
           iconName={iconName}

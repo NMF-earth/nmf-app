@@ -4,6 +4,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import EmissionItemScreen from "../../../screens/EmissionItem";
 import EmissionsScreen from "../../../screens/Emissions";
 import MonthlyEmissionsScreen from "../../../screens/MonthlyEmissions";
+import RecurringEmissionsScreen from "../../../screens/RecurringEmissions";
 
 const Stack = createStackNavigator();
 
@@ -23,6 +24,11 @@ const EmissionsNavigator = (): React.ReactElement => (
       name="MonthlyEmissions"
       options={MonthlyEmissionsScreen.navigationOptions}
       component={MonthlyEmissionsScreen}
+    />
+    <Stack.Screen
+      name="RecurringEmissions"
+      options={RecurringEmissionsScreen.navigationOptions}
+      component={RecurringEmissionsScreen}
     />
   </Stack.Navigator>
 );

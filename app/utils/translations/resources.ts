@@ -23,6 +23,7 @@ import * as BarCodeScan from "../../screens/BarCodeScan/translations";
 import * as MonthlyEmissions from "../../screens/MonthlyEmissions/translations";
 import * as Languages from "../../screens/Languages/translations";
 import * as Faq from "../../screens/Faq/translations";
+import * as RecurringEmissions from "../../screens/RecurringEmissions/translations";
 
 /* COMPONENTS */
 import * as NoEmission from "components/NoEmission/translations";
@@ -55,6 +56,7 @@ const en = {
   ...MonthlyEmissions.en,
   ...Languages.en,
   ...Faq.en,
+  ...RecurringEmissions.en,
   ...NoEmission.en,
   ...PermissionsRequest.en,
   ...OpenFoodFacts.en,
@@ -90,6 +92,7 @@ const de = {
   ...Languages.de,
   ...Periodicity.de,
   ...Faq.de,
+  ...RecurringEmissions.de,
 };
 
 const fr = {
@@ -120,6 +123,7 @@ const fr = {
   ...Languages.fr,
   ...Periodicity.fr,
   ...Faq.fr,
+  ...RecurringEmissions.fr,
 };
 
 const sv = {
@@ -150,6 +154,7 @@ const sv = {
   ...Languages.sv,
   ...Periodicity.sv,
   ...Faq.sv,
+  ...RecurringEmissions.sv,
 };
 
 const pt = {
@@ -180,6 +185,7 @@ const pt = {
   ...Languages.pt,
   ...Periodicity.pt,
   ...Faq.pt,
+  ...RecurringEmissions.pt,
 };
 
 const es = {
@@ -210,6 +216,7 @@ const es = {
   ...Languages.es,
   ...Periodicity.es,
   ...Faq.es,
+  ...RecurringEmissions.es,
 };
 
 const ru = {
@@ -240,6 +247,7 @@ const ru = {
   ...Languages.ru,
   ...Periodicity.ru,
   ...Faq.ru,
+  ...RecurringEmissions.ru,
 };
 
 const pl = {
@@ -270,6 +278,7 @@ const pl = {
   ...Languages.pl,
   ...Periodicity.pl,
   ...Faq.pl,
+  ...RecurringEmissions.pl,
 };
 
 const da = {
@@ -300,6 +309,7 @@ const da = {
   ...Languages.da,
   ...Periodicity.da,
   ...Faq.da,
+  ...RecurringEmissions.da,
 };
 
 const zh = {
@@ -330,6 +340,7 @@ const zh = {
   ...Languages.zh,
   ...Periodicity.zh,
   ...Faq.zh,
+  ...RecurringEmissions.zh,
 };
 
 const ms = {
@@ -360,6 +371,7 @@ const ms = {
   ...Languages.ms,
   ...Periodicity.ms,
   ...Faq.ms,
+  ...RecurringEmissions.ms,
 };
 
 export interface TranslationKeys
@@ -389,6 +401,7 @@ export interface TranslationKeys
     ActDetail.TranslationKeys,
     Languages.TranslationKeys,
     Periodicity.TranslationKeys,
-    Faq.TranslationKeys {}
+    Faq.TranslationKeys,
+    RecurringEmissions.TranslationKeys {}
 
 export { en, de, fr, sv, pt, es, pl, ru, da, zh, ms };

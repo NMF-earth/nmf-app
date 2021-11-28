@@ -45,9 +45,4 @@ interface Emission extends EmissionPayload {
   isMitigated: boolean;
 }
 
-enum PeriodicityType {
-  weekly = "weekly",
-  monthly = "monthly",
-}
-
-export { Emission, EmissionPayload, EmissionType, EmissionModelType, PeriodicityType };
+export { Emission, EmissionPayload, EmissionType, EmissionModelType };

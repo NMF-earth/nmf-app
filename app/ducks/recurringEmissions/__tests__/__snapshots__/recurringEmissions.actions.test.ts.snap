@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Emissions actions should export expected actions 1`] = `
+Object {
+  "createRecurringEmission": [Function],
+  "deleteAllRecurringEmissions": [Function],
+  "deleteRecurringEmission": [Function],
+  "loadRecurringEmissionsFromImport": [Function],
+}
+`;

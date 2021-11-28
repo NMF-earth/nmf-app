@@ -4,8 +4,14 @@ import uuid from "uuid";
 import { StackActions, useNavigation } from "@react-navigation/native";
 
 import { Button } from "components";
-import { emissions } from "ducks";
-import { EmissionPayload } from "interfaces";
+import { emissions, recurringEmissions } from "ducks";
+import {
+  EmissionPayload,
+  Emission,
+  RecurringEmission,
+  PeriodicityType,
+  WeekDays,
+} from "interfaces";
 import { t } from "utils";
 import { navigate } from "navigation";
 
@@ -13,21 +19,41 @@ import styles from "./AddEmissionButton.styles";
 
 interface Props {
   emissionPayload: EmissionPayload;
+  periodType: PeriodicityType;
+  periodWeekDays: Array<WeekDays>;
+  periodTimes: number;
 }
 
-const AddEmissionButton: React.FC<Props> = ({ emissionPayload }) => {
+const AddEmissionButton: React.FC<Props> = ({
+  emissionPayload,
+  periodType,
+  periodWeekDays,
+  periodTimes,
+}) => {
   const dispatch = useDispatch();
   const navigation = useNavigation();
   const navigator = navigate(navigation);
 
   const addEmission = () => {
-    const emission = {
-      ...emissionPayload,
-      id: uuid(),
-      isMitigated: false,
-    };
+    if (periodTimes) {
+      const newRecurringEmission: RecurringEmission = {
+        ...emissionPayload,
+        id: uuid(),
+        periodType,
+        weekDays: periodWeekDays,
+        times: periodTimes,
+      };
 
-    dispatch(emissions.actions.createEmission(emission));
+      dispatch(recurringEmissions.actions.createRecurringEmission(newRecurringEmission));
+    } else {
+      const emission: Emission = {
+        ...emissionPayload,
+        id: uuid(),
+        isMitigated: false,
+      };
+
+      dispatch(emissions.actions.createEmission(emission));
+    }
 
     navigation.dispatch(StackActions.popToTop());
     navigator.openEmissions();

@@ -6,7 +6,25 @@ exports[`EmissionsScreen renders correctly 1`] = `
   data={
     Array [
       Object {
-        "co2value": 20.0803,
+        "data": Array [
+          Object {
+            "co2value": 0.0803,
+            "creationDate": "2020-03-01T12:08:16.623Z",
+            "emissionModelType": "boat",
+            "emissionType": "transport",
+            "iconName": "md-boat",
+            "id": "4",
+            "onPress": [Function],
+            "periodType": "monthly",
+            "times": 1,
+            "title": "Boat",
+            "value": 100,
+            "weekDays": Array [],
+          },
+        ],
+        "title": "Recurring emissions",
+      },
+      Object {
         "data": Array [
           Object {
             "co2value": 20,
@@ -14,7 +32,7 @@ exports[`EmissionsScreen renders correctly 1`] = `
             "emissionModelType": "beans",
             "emissionType": "food",
             "iconName": "md-nutrition",
-            "id": "1",
+            "id": "2",
             "isMitigated": false,
             "onPress": [Function],
             "title": "Beans",
@@ -26,7 +44,7 @@ exports[`EmissionsScreen renders correctly 1`] = `
             "emissionModelType": "boat",
             "emissionType": "transport",
             "iconName": "md-boat",
-            "id": "12",
+            "id": "3",
             "isMitigated": true,
             "onPress": [Function],
             "title": "Boat",
@@ -36,7 +54,6 @@ exports[`EmissionsScreen renders correctly 1`] = `
         "date": "2020-03-01T00:00:00+00:00",
       },
       Object {
-        "co2value": 60,
         "data": Array [
           Object {
             "co2value": 60,
@@ -44,7 +61,7 @@ exports[`EmissionsScreen renders correctly 1`] = `
             "emissionModelType": "beans",
             "emissionType": "food",
             "iconName": "md-nutrition",
-            "id": "3",
+            "id": "1",
             "isMitigated": false,
             "onPress": [Function],
             "title": "Beans",
@@ -74,7 +91,8 @@ exports[`EmissionsScreen renders correctly 1`] = `
   stickyHeaderIndices={
     Array [
       0,
-      4,
+      3,
+      7,
     ]
   }
   style={
@@ -92,6 +110,31 @@ exports[`EmissionsScreen renders correctly 1`] = `
       style={null}
     >
       <SectionHeader
+        title="Recurring emissions"
+      />
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <EmissionListItem
+        co2value={0.0803}
+        emissionModelType="boat"
+        iconName="md-boat"
+        id="4"
+        onPress={[Function]}
+        title="Boat"
+      />
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    />
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <SectionHeader
         date="2020-03-01T00:00:00+00:00"
       />
     </View>
@@ -103,7 +146,7 @@ exports[`EmissionsScreen renders correctly 1`] = `
         co2value={20}
         emissionModelType="beans"
         iconName="md-nutrition"
-        id="1"
+        id="2"
         isMitigated={false}
         onPress={[Function]}
         title="Beans"
@@ -117,7 +160,7 @@ exports[`EmissionsScreen renders correctly 1`] = `
         co2value={0.0803}
         emissionModelType="boat"
         iconName="md-boat"
-        id="12"
+        id="3"
         isMitigated={true}
         onPress={[Function]}
         title="Boat"
@@ -143,7 +186,7 @@ exports[`EmissionsScreen renders correctly 1`] = `
         co2value={60}
         emissionModelType="beans"
         iconName="md-nutrition"
-        id="3"
+        id="1"
         isMitigated={false}
         onPress={[Function]}
         title="Beans"
@@ -171,7 +214,14 @@ exports[`EmissionsScreen renders correctly 1`] = `
 exports[`EmissionsScreen renders correctly if no emissions 1`] = `
 <RCTScrollView
   ListFooterComponent={[Function]}
-  data={Array []}
+  data={
+    Array [
+      Object {
+        "data": Array [],
+        "title": null,
+      },
+    ]
+  }
   disableVirtualization={false}
   getItem={[Function]}
   getItemCount={[Function]}
@@ -188,7 +238,11 @@ exports[`EmissionsScreen renders correctly if no emissions 1`] = `
   onScrollEndDrag={[Function]}
   renderItem={[Function]}
   scrollEventThrottle={50}
-  stickyHeaderIndices={Array []}
+  stickyHeaderIndices={
+    Array [
+      0,
+    ]
+  }
   style={
     Object {
       "backgroundColor": "#FFFFFF",
@@ -199,6 +253,18 @@ exports[`EmissionsScreen renders correctly if no emissions 1`] = `
   windowSize={21}
 >
   <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <SectionHeader
+        title={null}
+      />
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    />
     <View
       onLayout={[Function]}
     >

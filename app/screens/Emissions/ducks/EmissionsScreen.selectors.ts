@@ -1,8 +1,8 @@
 /* eslint-disable  @typescript-eslint/explicit-module-boundary-types */
-import { map, pipe, groupBy, toPairs, sum } from "ramda";
+import { map, pipe, groupBy, toPairs } from "ramda";
 import moment from "moment";
 
-import { emissions } from "ducks";
+import { emissions, recurringEmissions } from "ducks";
 import { Emission } from "interfaces";
 import { calculation, ui } from "utils";
 
@@ -19,9 +19,7 @@ const getEmissionListItem = (item: Emission) => {
     title: ui.getTranslationEmissionModelType(item.emissionModelType),
     co2value: calculation.getC02ValueFromEmission(item),
     iconName: ui.getIconFromModelType(item.emissionModelType),
-    onPress: () => {
-      // do nothing.
-    },
+    onPress: () => null,
   };
 
   return emissionItem;
@@ -31,18 +29,16 @@ const getStartOfMonth = (time) => moment(time).startOf("month").format();
 
 const groupByMonth = groupBy((item: EmissionListItem) => getStartOfMonth(item.creationDate));
 
-const dateObjMap = map(([date, data, co2value]) => ({
+const getLatest = (data = []) => data.slice(0, 3);
+
+const dateObjMap = map(([date, data]) => ({
   date: date,
-  data: data.slice(0, 3),
-  co2value: co2value,
+  data: getLatest(data),
 }));
 
 /* moment().utc().toISOString() gives "YYYY-MM-DDTHH:mm:ss.sssZ" */
 const filterByMostRecent = (array: [EmissionListItem]) =>
   array.sort((a, b) => +new Date(b.creationDate) - +new Date(a.creationDate));
-
-const getMonthlyPourcentage = (items) =>
-  map((item) => [...item, sum(map((emission) => emission.co2value, item[1]))], items);
 
 const getEmissions = (state) =>
   pipe(
@@ -51,11 +47,19 @@ const getEmissions = (state) =>
     filterByMostRecent,
     groupByMonth,
     toPairs,
-    getMonthlyPourcentage,
     dateObjMap
+  )(state);
+
+const getRecurringEmisions = (state) =>
+  pipe(
+    recurringEmissions.selectors.getAllRecurringEmissions,
+    map(getEmissionListItem),
+    filterByMostRecent,
+    getLatest
   )(state);
 
 export default {
   getEmissions,
   getEmissionListItem,
+  getRecurringEmisions,
 };

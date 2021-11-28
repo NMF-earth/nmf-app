@@ -13,6 +13,7 @@ const emissionsInfoAvailable = [FoodType.cheese];
 const navigationOptions = (prop): StackNavigationOptions => {
   const emissionModelType = path(["route", "params", "emissionModelType"], prop);
   const showInfoButton = includes(emissionModelType, emissionsInfoAvailable);
+  const isRecurringEmission = path(["route", "params", "isRecurringEmission"], prop);
 
   return {
     ...ComponentsStyle.transitionBetweenScreenPresets,
@@ -22,7 +23,13 @@ const navigationOptions = (prop): StackNavigationOptions => {
     headerTintColor: Colors.grey100,
     headerBackTitleVisible: false,
     headerRight: () => (showInfoButton ? <InfoButton /> : null),
-    headerTitle: () => <Text.Header>{t("EMISSION_ITEM_SCREEN_TITLE")}</Text.Header>,
+    headerTitle: () => (
+      <Text.Header>
+        {isRecurringEmission
+          ? t("EMISSION_ITEM_SCREEN_RECURRING_EMISSION")
+          : t("EMISSION_ITEM_SCREEN_EMISSION")}
+      </Text.Header>
+    ),
   };
 };
 

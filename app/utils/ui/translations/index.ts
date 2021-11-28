@@ -82,6 +82,11 @@ interface TranslationKeys {
   UI_FRIDAY: string;
   UI_SATURDAY: string;
   UI_SUNDAY: string;
+  UI_TIME: string;
+  UI_TIMES: string;
+  UI_WEEKLY: string;
+  UI_MONTHLY: string;
+  UI_EVERY: string;
 }
 
 export { en, fr, de, sv, es, pt, da, ru, pl, zh, ms, TranslationKeys };
