@@ -137,12 +137,16 @@ const EmissionItemScreen = ({ language = "" }: LocalizationContextProps) => {
         </Text.Primary>
       </View>
 
-      <Text.H3>{t("EMISSION_ITEM_SCREEN_PERIODICITY")}</Text.H3>
-      <View style={styles.item}>
-        <Text.Primary darkGray style={styles.item}>
-          {calculation.getPeriodicityText({ times, periodType, weekDays })}
-        </Text.Primary>
-      </View>
+      {isRecurringEmission && (
+        <>
+          <Text.H3>{t("EMISSION_ITEM_SCREEN_PERIODICITY")}</Text.H3>
+          <View style={styles.item}>
+            <Text.Primary darkGray style={styles.item}>
+              {calculation.getPeriodicityText({ times, periodType, weekDays })}
+            </Text.Primary>
+          </View>
+        </>
+      )}
 
       <Button.Danger
         fullWidth

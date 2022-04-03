@@ -125,31 +125,6 @@ exports[`EmissionsScreen renders correctly 1`] = `
         21st February 2021
       </Text.Primary>
     </View>
-    <Text.H3>
-      Periodicity
-    </Text.H3>
-    <View
-      style={
-        Object {
-          "alignItems": "flex-start",
-          "paddingBottom": 24,
-          "paddingTop": 2,
-        }
-      }
-    >
-      <Text.Primary
-        darkGray={true}
-        style={
-          Object {
-            "alignItems": "flex-start",
-            "paddingBottom": 24,
-            "paddingTop": 2,
-          }
-        }
-      >
-        
-      </Text.Primary>
-    </View>
     <Button.Danger
       fullWidth={true}
       icon="trash"

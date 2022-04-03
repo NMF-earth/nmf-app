@@ -64,6 +64,25 @@ it("EmissionsScreen renders correctly", () => {
   expect(tree).toMatchSnapshot();
 });
 
+it("EmissionsScreen renders correctly if only normal emissions", () => {
+  const props = {
+    emissions: selectors.getEmissions(state),
+  };
+  const tree = create(<EmissionsScreen {...props} />).toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it("EmissionsScreen renders correctly if only recurring emissions", () => {
+  const props = {
+    recurringEmissions: {
+      data: selectors.getRecurringEmisions(state),
+      title: t("EMISSIONS_SCREEN_RECURRING_EMISSIONS"),
+    },
+  };
+  const tree = create(<EmissionsScreen {...props} />).toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
 it("EmissionsScreen renders correctly if no emissions", () => {
   const tree = create(
     <EmissionsScreen emissions={[]} recurringEmissions={{ title: null, data: [] }} />

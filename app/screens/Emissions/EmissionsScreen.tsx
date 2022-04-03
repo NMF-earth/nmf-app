@@ -3,6 +3,7 @@
 import React from "react";
 import { SectionList, View } from "react-native";
 import { useNavigation } from "@react-navigation/native";
+import { filter } from "ramda";
 
 import { EmissionListItem, EmissionListItemProps } from "components";
 import { navigate } from "navigation";
@@ -11,14 +12,14 @@ import { SectionHeader } from "./components";
 import styles from "./EmissionsScreen.styles";
 
 interface Props {
-  emissions: any;
-  recurringEmissions: any;
+  emissions?: any;
+  recurringEmissions?: any;
 }
 
-const EmissionsScreen: React.FC<Props> = ({ emissions, recurringEmissions }) => {
+const EmissionsScreen: React.FC<Props> = ({ emissions = [], recurringEmissions }) => {
   const navigation = useNavigation();
   const navigator = navigate(navigation);
-  const sections = [recurringEmissions, ...emissions];
+  const sections = filter((item) => !!item, [recurringEmissions, ...emissions]);
 
   const renderListFooter = () => <View style={styles.separator} />;
   const renderSectionHeader = (date, title) => <SectionHeader title={title} date={date} />;

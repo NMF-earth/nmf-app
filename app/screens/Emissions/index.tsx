@@ -17,11 +17,21 @@ const Emissions: NavStatelessComponent = () => {
     data: recurringEmissions,
   };
 
-  if (emissions?.length || recurringEmissions?.length) {
+  if (!emissions?.length && !recurringEmissions?.length) {
+    return <NoEmission />;
+  }
+
+  if (emissions?.length && recurringEmissions?.length) {
     return <EmissionsScreen emissions={emissions} recurringEmissions={recurringEmissionsData} />;
   }
 
-  return <NoEmission />;
+  if (!emissions?.length && recurringEmissions?.length) {
+    return <EmissionsScreen recurringEmissions={recurringEmissionsData} />;
+  }
+
+  if (emissions?.length && !recurringEmissions?.length) {
+    return <EmissionsScreen emissions={emissions} />;
+  }
 };
 
 Emissions.navigationOptions = navigationOptions();
