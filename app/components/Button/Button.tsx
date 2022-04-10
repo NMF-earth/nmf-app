@@ -17,7 +17,7 @@ type Props = {
   fullWidth?: boolean;
   onPress: () => void;
   text: string;
-  icon?: string;
+  icon?: keyof typeof Ionicons.glyphMap;
 };
 
 interface ButtonFactory {

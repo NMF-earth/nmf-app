@@ -8,7 +8,7 @@ import Text from "../Text";
 import styles from "./Tag.styles";
 
 interface Props {
-  icon?: string;
+  icon?: keyof typeof Ionicons.glyphMap;
   text: string;
   onPress: () => void;
 }

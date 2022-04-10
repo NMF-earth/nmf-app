@@ -14,7 +14,7 @@ interface AnyEmission extends RecurringEmission, Emission {}
 interface EmissionListItemProps extends Partial<AnyEmission> {
   title: string;
   co2value: number;
-  iconName: string;
+  iconName: keyof typeof Ionicons.glyphMap;
   onPress: () => void;
   /* no used in EmissionListItem so optional */
   emissionType?: EmissionType;

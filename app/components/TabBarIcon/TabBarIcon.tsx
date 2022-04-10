@@ -4,7 +4,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { Colors } from "style";
 
 interface Props {
-  name: string;
+  name: keyof typeof Ionicons.glyphMap;
   focused: boolean;
 }
 
