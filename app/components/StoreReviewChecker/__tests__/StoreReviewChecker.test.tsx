@@ -13,6 +13,8 @@ describe("StoreReviewChecker tests", () => {
 
   it("should render children correctly", () => {
     const tree = create(<StoreReviewChecker>{children}</StoreReviewChecker>).toJSON();
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
     expect(tree.type).toBe(children.type.displayName);
   });
 });

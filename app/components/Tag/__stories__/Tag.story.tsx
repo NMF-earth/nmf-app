@@ -2,6 +2,7 @@ import React from "react";
 import { View, ViewStyle } from "react-native";
 import { storiesOf } from "@storybook/react-native";
 import { select, text } from "@storybook/addon-knobs";
+import { Ionicons } from "@expo/vector-icons";
 
 import Tag from "..";
 
@@ -10,7 +11,13 @@ const props = {
   onPress: () => alert("onPress"),
 };
 
-const iconOptions = {
+const iconOptions: {
+  airplane: keyof typeof Ionicons.glyphMap;
+  restaurant: keyof typeof Ionicons.glyphMap;
+  build: keyof typeof Ionicons.glyphMap;
+  circle: keyof typeof Ionicons.glyphMap;
+  flash: keyof typeof Ionicons.glyphMap;
+} = {
   airplane: "md-airplane",
   restaurant: "md-restaurant",
   build: "md-build",

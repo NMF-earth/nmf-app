@@ -3,6 +3,7 @@ import { ScrollView, View } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { pathOr } from "ramda";
 import { useRoute } from "@react-navigation/core";
+import { StackNavigationProp } from "@react-navigation/stack";
 
 import { NavStatelessComponent, PeriodicityType } from "interfaces";
 import { Button, Text } from "components";
@@ -11,6 +12,14 @@ import { t } from "utils";
 import { WEEK_DAYS } from "constant/weekDays";
 
 import styles from "./PeriodicityModalScreen.styles";
+
+type AddEmissionParams = {
+  AddEmission: {
+    periodType: PeriodicityType;
+    periodWeekDays: Array<number>;
+    periodTimes: number;
+  };
+};
 
 const DEFAULT_VALUES = {
   periodType: PeriodicityType.monthly,
@@ -24,7 +33,7 @@ const getTimes = pathOr(DEFAULT_VALUES.periodTimes, ["params", "periodTimes"]);
 
 export const PeriodicityModalScreen: NavStatelessComponent = () => {
   const route = useRoute();
-  const navigation = useNavigation();
+  const navigation = useNavigation<StackNavigationProp<AddEmissionParams>>();
 
   const [periodType, setPeriodType] = useState<PeriodicityType>(getPeriodType(route));
   const [weekDays, setWeekdays] = useState<number[]>(getWeekDays(route));
@@ -37,6 +46,7 @@ export const PeriodicityModalScreen: NavStatelessComponent = () => {
   }
 
   function onConfirm() {
+    //TODO: fix me
     navigation.navigate("AddEmission", {
       periodType,
       periodWeekDays: periodType === PeriodicityType.weekly ? weekDays : null,
@@ -45,6 +55,7 @@ export const PeriodicityModalScreen: NavStatelessComponent = () => {
   }
 
   function onCancel() {
+    //TODO: fix me
     navigation.navigate("AddEmission", {
       periodType: DEFAULT_VALUES.periodType,
       periodWeekDays: DEFAULT_VALUES.weekDays,

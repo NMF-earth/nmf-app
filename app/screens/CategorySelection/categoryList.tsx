@@ -1,6 +1,8 @@
+import { Ionicons } from "@expo/vector-icons";
+
 import { EmissionType } from "interfaces";
 
-const categories = [
+const categories: { icon: keyof typeof Ionicons.glyphMap; emissionType: EmissionType }[] = [
   {
     icon: "md-restaurant",
     emissionType: EmissionType.meal,

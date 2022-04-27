@@ -9,6 +9,7 @@ import {
   MealType,
 } from "carbon-footprint";
 import { contains, __ } from "ramda";
+import { Ionicons } from "@expo/vector-icons";
 
 import { EmissionType, EmissionModelType } from "interfaces";
 
@@ -173,7 +174,9 @@ const getTranslationEmissionModelType = (emissionModelType: EmissionModelType): 
   return t("UI_CUSTOM");
 };
 
-const getIconFromModelType = (emissionModelType: EmissionModelType): string => {
+const getIconFromModelType = (
+  emissionModelType: EmissionModelType
+): keyof typeof Ionicons.glyphMap => {
   switch (emissionModelType) {
     case EmissionType.custom:
       return "md-build";

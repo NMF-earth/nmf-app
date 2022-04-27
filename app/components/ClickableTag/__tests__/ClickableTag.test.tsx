@@ -19,6 +19,8 @@ describe("ClickableTag tests", () => {
 
   it("given onPress should be called", () => {
     const element = create(<ClickableTag {...props} />).toJSON();
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
     element.props.onPress();
 
     expect(mockOnPress).toBeCalled();

@@ -127,9 +127,9 @@ const getPeriodicityText = ({
 
     if (weekDays.length) {
       periodicityText = periodicityText + " " + t("UI_EVERY") + " ";
-      const daysToDisplay = WEEK_DAYS.filter((item) =>
-        weekDays.includes(item.dayIndex)
-      ).map((item) => t(item.nameKey));
+      const daysToDisplay = WEEK_DAYS.filter((item) => weekDays.includes(item.dayIndex)).map(
+        (item) => t(item.nameKey)
+      );
       periodicityText = periodicityText + join(", ", daysToDisplay);
     }
   }
