@@ -26,10 +26,8 @@ exports[`renders correctly TextInput 1`] = `
     </Text.H3>
   </TouchableOpacity>
   <TextInput
-    allowFontScaling={true}
     onChangeText={[Function]}
     placeholder="placeholder"
-    rejectResponderTermination={true}
     style={
       Object {
         "borderColor": "#CED4DA",
@@ -40,7 +38,6 @@ exports[`renders correctly TextInput 1`] = `
         "paddingHorizontal": 16,
       }
     }
-    underlineColorAndroid="transparent"
     value="value"
   />
 </View>
@@ -72,10 +69,8 @@ exports[`renders correctly TextInput if optional 1`] = `
     </Text.H3>
   </TouchableOpacity>
   <TextInput
-    allowFontScaling={true}
     onChangeText={[Function]}
     placeholder="placeholder"
-    rejectResponderTermination={true}
     style={
       Object {
         "borderColor": "#CED4DA",
@@ -86,7 +81,6 @@ exports[`renders correctly TextInput if optional 1`] = `
         "paddingHorizontal": 16,
       }
     }
-    underlineColorAndroid="transparent"
     value="value"
   />
 </View>

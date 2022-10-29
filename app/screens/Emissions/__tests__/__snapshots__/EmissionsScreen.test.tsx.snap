@@ -72,16 +72,12 @@ exports[`EmissionsScreen renders correctly 1`] = `
       },
     ]
   }
-  disableVirtualization={false}
   getItem={[Function]}
   getItemCount={[Function]}
-  horizontal={false}
-  initialNumToRender={10}
   keyExtractor={[Function]}
-  maxToRenderPerBatch={10}
   onContentSizeChange={[Function]}
-  onEndReachedThreshold={2}
   onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
   onMomentumScrollEnd={[Function]}
   onScroll={[Function]}
   onScrollBeginDrag={[Function]}
@@ -101,8 +97,6 @@ exports[`EmissionsScreen renders correctly 1`] = `
       "flex": 1,
     }
   }
-  updateCellsBatchingPeriod={50}
-  windowSize={21}
 >
   <View>
     <View
@@ -222,16 +216,12 @@ exports[`EmissionsScreen renders correctly if no emissions 1`] = `
       },
     ]
   }
-  disableVirtualization={false}
   getItem={[Function]}
   getItemCount={[Function]}
-  horizontal={false}
-  initialNumToRender={10}
   keyExtractor={[Function]}
-  maxToRenderPerBatch={10}
   onContentSizeChange={[Function]}
-  onEndReachedThreshold={2}
   onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
   onMomentumScrollEnd={[Function]}
   onScroll={[Function]}
   onScrollBeginDrag={[Function]}
@@ -249,8 +239,6 @@ exports[`EmissionsScreen renders correctly if no emissions 1`] = `
       "flex": 1,
     }
   }
-  updateCellsBatchingPeriod={50}
-  windowSize={21}
 >
   <View>
     <View
@@ -333,16 +321,12 @@ exports[`EmissionsScreen renders correctly if only normal emissions 1`] = `
       },
     ]
   }
-  disableVirtualization={false}
   getItem={[Function]}
   getItemCount={[Function]}
-  horizontal={false}
-  initialNumToRender={10}
   keyExtractor={[Function]}
-  maxToRenderPerBatch={10}
   onContentSizeChange={[Function]}
-  onEndReachedThreshold={2}
   onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
   onMomentumScrollEnd={[Function]}
   onScroll={[Function]}
   onScrollBeginDrag={[Function]}
@@ -361,8 +345,6 @@ exports[`EmissionsScreen renders correctly if only normal emissions 1`] = `
       "flex": 1,
     }
   }
-  updateCellsBatchingPeriod={50}
-  windowSize={21}
 >
   <View>
     <View
@@ -472,16 +454,12 @@ exports[`EmissionsScreen renders correctly if only recurring emissions 1`] = `
       },
     ]
   }
-  disableVirtualization={false}
   getItem={[Function]}
   getItemCount={[Function]}
-  horizontal={false}
-  initialNumToRender={10}
   keyExtractor={[Function]}
-  maxToRenderPerBatch={10}
   onContentSizeChange={[Function]}
-  onEndReachedThreshold={2}
   onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
   onMomentumScrollEnd={[Function]}
   onScroll={[Function]}
   onScrollBeginDrag={[Function]}
@@ -499,8 +477,6 @@ exports[`EmissionsScreen renders correctly if only recurring emissions 1`] = `
       "flex": 1,
     }
   }
-  updateCellsBatchingPeriod={50}
-  windowSize={21}
 >
   <View>
     <View

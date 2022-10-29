@@ -58,9 +58,7 @@ exports[`AddEmissionScreen renders correctly 1`] = `
               "textTransform": "capitalize",
             }
           }
-        >
-          
-        </Text.H2>
+        />
         <Text.Primary
           lightGray={true}
           style={
@@ -85,32 +83,7 @@ exports[`AddEmissionScreen renders correctly 1`] = `
         hardwareAccelerated={false}
         transparent={true}
         visible={false}
-      >
-        <View
-          accessible={true}
-          focusable={true}
-          onClick={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
-          style={
-            Object {
-              "backgroundColor": "black",
-              "bottom": 0,
-              "height": 1334,
-              "left": 0,
-              "opacity": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-              "width": 750,
-            }
-          }
-        />
-      </Modal>
+      />
       <View
         style={
           Object {

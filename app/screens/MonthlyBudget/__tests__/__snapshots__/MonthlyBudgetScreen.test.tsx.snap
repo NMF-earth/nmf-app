@@ -36,6 +36,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
         minimumTrackTintColor="#4BB377"
         minimumValue={10}
         onChange={null}
+        onRNCSliderAccessibilityAction={null}
         onRNCSliderSlidingComplete={[Function]}
         onRNCSliderSlidingStart={null}
         onRNCSliderValueChange={null}
@@ -52,15 +53,8 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
             },
           ]
         }
-        thumbImage={
-          Object {
-            "__packager_asset": true,
-            "height": 1,
-            "scale": 1,
-            "uri": "file://assets/full/path/to/directory/name.type",
-            "width": 1,
-          }
-        }
+        tapToSeek={false}
+        thumbImage={null}
         thumbTintColor="#4BB377"
         value={0}
       />
