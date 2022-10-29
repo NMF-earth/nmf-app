@@ -7,6 +7,7 @@ import { GlobalizeProvider } from "react-native-globalize";
 import { locale as localeExpo } from "expo-localization";
 import { includes } from "ramda";
 import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
+// eslint-disable-next-line import/no-named-as-default
 import Constants from "expo-constants";
 import * as Sentry from "sentry-expo";
 import { Provider } from "react-redux";

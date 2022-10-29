@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
+/* eslint-disable no-undef */
 jest.mock("react-native-svg", () => {
   // eslint-disable-next-line @typescript-eslint/no-var-requires
   const svg = require("./react-native-svg.mock");
