@@ -1,6 +1,6 @@
-import React from "react";
-import { storiesOf } from "@storybook/react-native";
+// import React from "react";
+// import { storiesOf } from "@storybook/react-native";
 
-import SocialMedia from "..";
+// import SocialMedia from "..";
 
-storiesOf("SocialMedia", module).add("basic list", () => <SocialMedia />);
+// storiesOf("SocialMedia", module).add("basic list", () => <SocialMedia />);

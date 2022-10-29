@@ -15,6 +15,7 @@ import { enableScreens } from "react-native-screens";
 import { LocalizationContext } from "utils";
 import StoreReviewChecker from "components/StoreReviewChecker";
 
+import { loadGlobalize } from "./Globalize";
 import AppNavigator from "./app/navigation/Navigator/AppNavigator";
 import store from "./app/redux/store";
 
@@ -34,11 +35,14 @@ const supportedLanguages: string[] = [
 const defaultLanguage = "en";
 const defaultLocale = "en-us";
 
+loadGlobalize();
+
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 const release = Constants.manifest.revisionId || "0.0.0";
 
 if (!__DEV__) {
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
   const secret = require("./secret.ts").default || require("./secret.example.ts").default;
 
   /* TODO: change secret.dsn to Constants.manifest.extra.sentryPublicDsn */

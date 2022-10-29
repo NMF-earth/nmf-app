@@ -17,7 +17,14 @@ const Tag: React.FC<Props> = ({ text, onPress, icon }) => {
   let iconItem = null;
 
   if (icon) {
-    iconItem = <Ionicons name={icon} size={32} style={styles.mainIcon} color={Colors.green50} />;
+    iconItem = (
+      <Ionicons
+        name={icon as keyof typeof Ionicons.glyphMap}
+        size={32}
+        style={styles.mainIcon}
+        color={Colors.green50}
+      />
+    );
   }
 
   return (

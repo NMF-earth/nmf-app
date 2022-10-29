@@ -34,7 +34,14 @@ const buttonFactory: ButtonFactory = (type) => (props) => {
   }
 
   if (icon) {
-    iconItem = <Ionicons name={icon} size={24} style={mainStyle.mainIcon} color={Colors.white} />;
+    iconItem = (
+      <Ionicons
+        name={icon as keyof typeof Ionicons.glyphMap}
+        size={24}
+        style={mainStyle.mainIcon}
+        color={Colors.white}
+      />
+    );
   }
 
   const additionalStyle = {
