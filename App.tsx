@@ -16,7 +16,7 @@ import { enableScreens } from "react-native-screens";
 import { LocalizationContext } from "utils";
 import StoreReviewChecker from "components/StoreReviewChecker";
 
-import { loadGlobalize } from "./Globalize";
+import { loadGlobalize } from "./i18";
 import AppNavigator from "./app/navigation/Navigator/AppNavigator";
 import store from "./app/redux/store";
 
