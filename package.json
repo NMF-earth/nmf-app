@@ -64,7 +64,7 @@
     "react-native-collapsible": "1.5.2",
     "react-native-gesture-handler": "2.5.0",
     "react-native-globalize": "4.5.1",
-    "react-native-keyboard-aware-scroll-view": "0.9.3",
+    "react-native-keyboard-aware-scroll-view": "0.9.5",
     "react-native-modal-datetime-picker": "8.5.4",
     "react-native-progress": "5.0.0",
     "react-native-reanimated": "2.9.1",
