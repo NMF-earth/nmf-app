@@ -33,7 +33,7 @@ jest.mock("react-native-globalize", () => {
   const createMock = require("../../utils").createMock;
 
   return {
-    FormattedProvider: createMock("FormattedProvider"),
+    GlobalizeProvider: createMock("GlobalizeProvider"),
     FormattedNumber: createMock("FormattedNumber"),
   };
 });

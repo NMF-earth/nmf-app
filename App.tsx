@@ -3,7 +3,7 @@ import { View } from "react-native";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { StatusBar } from "expo-status-bar";
 import * as Font from "expo-font";
-import { FormattedProvider } from "react-native-globalize";
+import { GlobalizeProvider } from "react-native-globalize";
 import { locale as localeExpo } from "expo-localization";
 import { includes } from "ramda";
 import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
@@ -94,7 +94,7 @@ const App: React.FC = () => {
   if (ready) {
     body = (
       <Provider store={store}>
-        <FormattedProvider locale={language || defaultLanguage}>
+        <GlobalizeProvider locale={language || defaultLanguage}>
           <LocalizationContext.Provider
             value={{
               locale: locale || defaultLocale,
@@ -111,7 +111,7 @@ const App: React.FC = () => {
               </StoreReviewChecker>
             )}
           </LocalizationContext.Provider>
-        </FormattedProvider>
+        </GlobalizeProvider>
       </Provider>
     );
   }

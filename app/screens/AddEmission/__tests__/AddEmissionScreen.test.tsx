@@ -1,6 +1,6 @@
 import React from "react";
 import { create } from "react-test-renderer";
-import { FormattedProvider } from "react-native-globalize";
+import { GlobalizeProvider } from "react-native-globalize";
 
 import AddEmissionScreen from "../AddEmissionScreen";
 
@@ -16,9 +16,9 @@ afterAll(() => {
 
 it("AddEmissionScreen renders correctly", () => {
   const tree = create(
-    <FormattedProvider locale="en">
+    <GlobalizeProvider locale="en">
       <AddEmissionScreen />
-    </FormattedProvider>
+    </GlobalizeProvider>
   ).toJSON();
   expect(tree).toMatchSnapshot();
 });
