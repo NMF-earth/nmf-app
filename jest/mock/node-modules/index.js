@@ -31,6 +31,14 @@ jest.mock("react-native-render-html", () => {
   return createMock("HTML");
 });
 
+jest.mock("react-native-keyboard-aware-scroll-view", () => {
+  const createMock = require("../../utils").createMock;
+
+  return {
+    KeyboardAwareScrollView: createMock("KeyboardAwareScrollView"),
+  };
+});
+
 jest.mock("react-native-globalize", () => {
   const createMock = require("../../utils").createMock;
 
