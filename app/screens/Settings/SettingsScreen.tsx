@@ -88,7 +88,7 @@ const SettingsScreen: NavStatelessComponent = () => {
         <ListItem
           key={index}
           showBottomLine={index !== rowItems.length - 1}
-          onPress={item.onPress}
+          onPress={() => item.onPress()}
           title={item.title}
         />
       ))}

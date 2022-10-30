@@ -1,1 +1,5 @@
-{}
+{
+	"PERMISSIONS_REQUEST_COMPONENT_OPEN_SETTINGS": "Ouvrir les paramètres",
+	"PERMISSIONS_REQUEST_COMPONENT_CAMERA_TITLE": "Pas d'accès à la caméra",
+	"PERMISSIONS_REQUEST_COMPONENT_CAMERA_SUBTITLE": "Pour utiliser cette fonction, veuillez donner à NMF.earth l'accès à la caméra, dans les paramètres du smartphone."
+}
