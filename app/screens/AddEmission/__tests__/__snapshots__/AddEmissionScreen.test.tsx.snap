@@ -1,35 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`AddEmissionScreen renders correctly 1`] = `
-<FormattedProvider
+<GlobalizeProvider
   locale="en"
 >
-  <RCTScrollView
-    automaticallyAdjustContentInsets={false}
-    contentInset={
-      Object {
-        "bottom": 0,
-      }
-    }
-    enableAutomaticScroll={true}
-    enableOnAndroid={false}
-    enableResetScrollToCoords={true}
-    extraHeight={75}
-    extraScrollHeight={0}
-    getScrollResponder={[Function]}
-    handleOnScroll={[Function]}
-    keyboardDismissMode="interactive"
-    keyboardOpeningTime={250}
-    keyboardSpace={0}
-    onScroll={[Function]}
-    resetKeyboardSpace={[Function]}
-    scrollEventThrottle={1}
-    scrollForExtraHeightOnAndroid={[Function]}
-    scrollIntoView={[Function]}
-    scrollToEnd={[Function]}
-    scrollToFocusedInput={[Function]}
-    scrollToPosition={[Function]}
-    showsVerticalScrollIndicator={true}
+  <KeyboardAwareScrollView
     style={
       Object {
         "alignContent": "flex-start",
@@ -37,148 +12,117 @@ exports[`AddEmissionScreen renders correctly 1`] = `
         "flex": 1,
       }
     }
-    update={[Function]}
-    viewIsInsideTabBar={false}
   >
-    <View>
-      <View
+    <View
+      style={
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "flex": 1,
+          "paddingHorizontal": 16,
+          "paddingVertical": 12,
+        }
+      }
+    >
+      <Text.H2
         style={
           Object {
-            "backgroundColor": "#FFFFFF",
-            "flex": 1,
-            "paddingHorizontal": 16,
-            "paddingVertical": 12,
+            "marginTop": 4,
+            "textTransform": "capitalize",
           }
         }
-      >
-        <Text.H2
-          style={
-            Object {
-              "marginTop": 4,
-              "textTransform": "capitalize",
-            }
-          }
-        >
-          
-        </Text.H2>
-        <Text.Primary
-          lightGray={true}
-          style={
-            Object {
-              "marginTop": 4,
-              "textTransform": "capitalize",
-            }
-          }
-        >
-          Custom
-        </Text.Primary>
-      </View>
-      <TextInput
-        isOptional={true}
-        onChangeText={[Function]}
-        placeholder="e.g burger, flight from Paris to Rome…"
-        title="Name this emission "
-        value=""
       />
-      <Modal
-        animationType="none"
-        hardwareAccelerated={false}
-        transparent={true}
-        visible={false}
-      >
-        <View
-          accessible={true}
-          focusable={true}
-          onClick={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
-          style={
-            Object {
-              "backgroundColor": "black",
-              "bottom": 0,
-              "height": 1334,
-              "left": 0,
-              "opacity": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-              "width": 750,
-            }
-          }
-        />
-      </Modal>
-      <View
+      <Text.Primary
+        lightGray={true}
         style={
           Object {
-            "backgroundColor": "#FFFFFF",
-            "flex": 1,
-            "paddingHorizontal": 16,
-            "paddingVertical": 12,
+            "marginTop": 4,
+            "textTransform": "capitalize",
           }
         }
       >
-        <Text.H3>
-          Date
-        </Text.H3>
-        <View
-          style={
-            Object {
-              "flexDirection": "column",
-              "paddingBottom": 4,
-              "paddingTop": 10,
-            }
-          }
-        >
-          <TextButton
-            iconLeft="calendar"
-            onPress={[Function]}
-            text="Sunday 7th April 2019"
-          />
-        </View>
-      </View>
-      <View
-        style={
-          Object {
-            "backgroundColor": "#FFFFFF",
-            "flex": 1,
-            "paddingHorizontal": 16,
-            "paddingVertical": 12,
-          }
-        }
-      >
-        <Text.H3>
-          Periodicity
-        </Text.H3>
-        <View
-          style={
-            Object {
-              "flexDirection": "column",
-              "paddingBottom": 4,
-              "paddingTop": 10,
-            }
-          }
-        >
-          <TextButton
-            iconLeft="repeat"
-            onPress={[Function]}
-            text="Non-recurring"
-          />
-        </View>
-      </View>
-      <Button.Primary
-        onPress={[Function]}
-        style={
-          Object {
-            "margin": 16,
-          }
-        }
-        text="Add this emission"
-      />
+        Custom
+      </Text.Primary>
     </View>
-  </RCTScrollView>
-</FormattedProvider>
+    <TextInput
+      isOptional={true}
+      onChangeText={[Function]}
+      placeholder="e.g burger, flight from Paris to Rome…"
+      title="Name this emission "
+      value=""
+    />
+    <Modal
+      animationType="none"
+      hardwareAccelerated={false}
+      transparent={true}
+      visible={false}
+    />
+    <View
+      style={
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "flex": 1,
+          "paddingHorizontal": 16,
+          "paddingVertical": 12,
+        }
+      }
+    >
+      <Text.H3>
+        Date
+      </Text.H3>
+      <View
+        style={
+          Object {
+            "flexDirection": "column",
+            "paddingBottom": 4,
+            "paddingTop": 10,
+          }
+        }
+      >
+        <TextButton
+          iconLeft="calendar"
+          onPress={[Function]}
+          text="Sunday 7th April 2019"
+        />
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "flex": 1,
+          "paddingHorizontal": 16,
+          "paddingVertical": 12,
+        }
+      }
+    >
+      <Text.H3>
+        Periodicity
+      </Text.H3>
+      <View
+        style={
+          Object {
+            "flexDirection": "column",
+            "paddingBottom": 4,
+            "paddingTop": 10,
+          }
+        }
+      >
+        <TextButton
+          iconLeft="repeat"
+          onPress={[Function]}
+          text="Non-recurring"
+        />
+      </View>
+    </View>
+    <Button.Primary
+      onPress={[Function]}
+      style={
+        Object {
+          "margin": 16,
+        }
+      }
+      text="Add this emission"
+    />
+  </KeyboardAwareScrollView>
+</GlobalizeProvider>
 `;

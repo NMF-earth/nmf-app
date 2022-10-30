@@ -33,6 +33,7 @@ const NotificationsScreen: NavStatelessComponent = () => {
 
   const onValueChange = useCallback(
     async (value: boolean) => {
+      console.log(value);
       try {
         if (!hasPermission) {
           Linking.openSettings();

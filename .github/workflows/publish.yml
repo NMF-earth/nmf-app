@@ -2,23 +2,28 @@ name: Expo Publish
 on:
   push:
     tags:
-      - 'v*'
+      - "v*"
 jobs:
   publish:
-    name: Install and publish
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
+      - name: 🏗 Setup repo
+        uses: actions/checkout@v2
+
+      - name: 🏗 Setup Node
+        uses: actions/setup-node@v2
         with:
-          node-version: 12.x
-      - uses: expo/expo-github-action@v5
+          node-version: 16.x
+          cache: yarn
+
+      - name: 🏗 Setup Expo
+        uses: expo/expo-github-action@v7
         with:
-          expo-username: ${{ secrets.EXPO_CLI_USERNAME }}
-          expo-password: ${{ secrets.EXPO_CLI_PASSWORD }}
-      - run: yarn install
-      - run: node scripts/generate-ci-config.js
-        env: 
-          SENTRY_DSN: ${{ secrets.DSN }}
-          SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
-      - run: expo publish
+          expo-version: latest
+          token: ${{ secrets.EXPO_TOKEN }}
+
+      - name: 📦 Install dependencies
+        run: yarn install
+
+      - name: 🚀 Publish app
+        run: expo publish --non-interactive

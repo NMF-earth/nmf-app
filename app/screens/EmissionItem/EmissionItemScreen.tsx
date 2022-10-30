@@ -69,7 +69,9 @@ const EmissionItemScreen = ({ language = "" }: LocalizationContextProps) => {
       dispatch(emissions.actions.deleteEmission(emission.id));
     }
   };
-  const toggleIsMitigated = () => dispatch(emissions.actions.toggleIsMitigated(emission.id));
+  const toggleIsMitigated = () => {
+    dispatch(emissions.actions.toggleIsMitigated(emission.id));
+  };
 
   useEffect(() => {
     /* Avoid crash right after an emission is deleted */

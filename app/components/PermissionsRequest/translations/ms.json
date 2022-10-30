@@ -1,1 +1,5 @@
-{}
+{
+	"PERMISSIONS_REQUEST_COMPONENT_OPEN_SETTINGS": "Buka pengaturan",
+	"PERMISSIONS_REQUEST_COMPONENT_CAMERA_TITLE": "Tidak ada akses ke kamera",
+	"PERMISSIONS_REQUEST_COMPONENT_CAMERA_SUBTITLE": "Tolong beri akses aplikasi NMF.earth ke kamera di pengaturan ponsel Anda untuk menggunakan fitur ini."
+}

@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
+/* eslint-disable no-undef */
 jest.mock("react-native-svg", () => {
   // eslint-disable-next-line @typescript-eslint/no-var-requires
   const svg = require("./react-native-svg.mock");
@@ -29,11 +31,19 @@ jest.mock("react-native-render-html", () => {
   return createMock("HTML");
 });
 
+jest.mock("react-native-keyboard-aware-scroll-view", () => {
+  const createMock = require("../../utils").createMock;
+
+  return {
+    KeyboardAwareScrollView: createMock("KeyboardAwareScrollView"),
+  };
+});
+
 jest.mock("react-native-globalize", () => {
   const createMock = require("../../utils").createMock;
 
   return {
-    FormattedProvider: createMock("FormattedProvider"),
+    GlobalizeProvider: createMock("GlobalizeProvider"),
     FormattedNumber: createMock("FormattedNumber"),
   };
 });

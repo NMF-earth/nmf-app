@@ -93,7 +93,7 @@ describe("tests for ui.onHTMLBodyLinkPress", () => {
     ui.onHTMLBodyLinkPress({} as GestureResponderEvent, link);
 
     // assert
-    expect(Linking.openURL).toBeCalledWith(link);
+    expect(Linking.openURL).toHaveBeenCalledWith(link);
   });
 
   it("does not invoke openURL, if the link is undefined", () => {
@@ -104,7 +104,7 @@ describe("tests for ui.onHTMLBodyLinkPress", () => {
     ui.onHTMLBodyLinkPress({} as GestureResponderEvent, link);
 
     // assert
-    expect(Linking.openURL).not.toBeCalled();
+    expect(Linking.openURL).not.toHaveBeenCalled();
   });
 
   it("does not invoke openURL, if the link is null", () => {
@@ -115,7 +115,7 @@ describe("tests for ui.onHTMLBodyLinkPress", () => {
     ui.onHTMLBodyLinkPress({} as GestureResponderEvent, link);
 
     // assert
-    expect(Linking.openURL).not.toBeCalled();
+    expect(Linking.openURL).not.toHaveBeenCalled();
   });
 
   it("does not invoke openURL, if the link is empty string", () => {
@@ -126,7 +126,7 @@ describe("tests for ui.onHTMLBodyLinkPress", () => {
     ui.onHTMLBodyLinkPress({} as GestureResponderEvent, link);
 
     // assert
-    expect(Linking.openURL).not.toBeCalled();
+    expect(Linking.openURL).not.toHaveBeenCalled();
   });
 });
 

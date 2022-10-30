@@ -3,10 +3,11 @@ import { View } from "react-native";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { StatusBar } from "expo-status-bar";
 import * as Font from "expo-font";
-import { FormattedProvider } from "react-native-globalize";
+import { GlobalizeProvider } from "react-native-globalize";
 import { locale as localeExpo } from "expo-localization";
 import { includes } from "ramda";
 import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
+// eslint-disable-next-line import/no-named-as-default
 import Constants from "expo-constants";
 import * as Sentry from "sentry-expo";
 import { Provider } from "react-redux";
@@ -15,6 +16,7 @@ import { enableScreens } from "react-native-screens";
 import { LocalizationContext } from "utils";
 import StoreReviewChecker from "components/StoreReviewChecker";
 
+import { loadGlobalize } from "./i18";
 import AppNavigator from "./app/navigation/Navigator/AppNavigator";
 import store from "./app/redux/store";
 
@@ -34,11 +36,14 @@ const supportedLanguages: string[] = [
 const defaultLanguage = "en";
 const defaultLocale = "en-us";
 
+loadGlobalize();
+
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 const release = Constants.manifest.revisionId || "0.0.0";
 
 if (!__DEV__) {
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
   const secret = require("./secret.ts").default || require("./secret.example.ts").default;
 
   /* TODO: change secret.dsn to Constants.manifest.extra.sentryPublicDsn */
@@ -90,7 +95,7 @@ const App: React.FC = () => {
   if (ready) {
     body = (
       <Provider store={store}>
-        <FormattedProvider locale={language || defaultLanguage}>
+        <GlobalizeProvider locale={language || defaultLanguage}>
           <LocalizationContext.Provider
             value={{
               locale: locale || defaultLocale,
@@ -107,7 +112,7 @@ const App: React.FC = () => {
               </StoreReviewChecker>
             )}
           </LocalizationContext.Provider>
-        </FormattedProvider>
+        </GlobalizeProvider>
       </Provider>
     );
   }

@@ -37,19 +37,25 @@ export const PeriodicityModalScreen: NavStatelessComponent = () => {
   }
 
   function onConfirm() {
-    navigation.navigate("AddEmission", {
-      periodType,
-      periodWeekDays: periodType === PeriodicityType.weekly ? weekDays : null,
-      periodTimes,
-    });
+    navigation.navigate(
+      "AddEmission" as never,
+      {
+        periodType,
+        periodWeekDays: periodType === PeriodicityType.weekly ? weekDays : null,
+        periodTimes,
+      } as never
+    );
   }
 
   function onCancel() {
-    navigation.navigate("AddEmission", {
-      periodType: DEFAULT_VALUES.periodType,
-      periodWeekDays: DEFAULT_VALUES.weekDays,
-      periodTimes: DEFAULT_VALUES.periodTimes,
-    });
+    navigation.navigate(
+      "AddEmission" as never,
+      {
+        periodType: DEFAULT_VALUES.periodType,
+        periodWeekDays: DEFAULT_VALUES.weekDays,
+        periodTimes: DEFAULT_VALUES.periodTimes,
+      } as never
+    );
   }
 
   const hideConfirm =

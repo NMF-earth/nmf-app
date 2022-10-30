@@ -10,7 +10,7 @@ const AppStack = createStackNavigator();
 const App = (): React.ReactElement => {
   return (
     <NavigationContainer>
-      <AppStack.Navigator mode="modal">
+      <AppStack.Navigator screenOptions={{ presentation: "modal" }}>
         <AppStack.Screen
           name="AppStack"
           options={{ headerShown: false }}

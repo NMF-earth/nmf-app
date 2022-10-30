@@ -1,14 +1,14 @@
 {
-  "ABOUT_SCREEN_TITLE": "Perihal",
-  "ABOUT_SCREEN_INTRO": "Kami adalah pasukan kecil yang peka terhadap kesan manusia di planet ini. Kami bukan syarikat permulaan yang didorong oleh pertumbuhan atau faedah untuk bayaran dividen kepada pelabur. Anda boleh menyertai pasukan kami sekiranya anda ingin membantu projek ini. Harap sebarkan projek ini kepada orang di sekitar anda, beri kami 5 bintang di App Store dan hantarkan maklum balas anda mengenai aplikasi untuk membantu kami. Terima kasih ✌️",
-  "ABOUT_SCREEN_CARE_HEADER": "Kami ambil berat terhadap anda",
-  "ABOUT_SCREEN_PRIVACY": "Privasi dengan reka bentuk",
-  "ABOUT_SCREEN_ETHIC": "Etik dengan reka bentuk",
-  "ABOUT_SCREEN_OPEN_SOURCE": "100% Sumber terbuka",
-  "ABOUT_SCREEN_PRIVACY_BODY": "Semua data yang disediakan dalam aplikasi ini tidak akan dijual kepada atau dengan mana-mana syarikat dan kami tidak menjejak apa yang anda lakukan dalam aplikasi ini ",
-  "ABOUT_SCREEN_ETHIC_BODY": "Kami tidak mengeksploitasi kerentanan psikologi seperti suapan tanpa asas atau permainan automatik untuk mengelakkan pengguna keluar ",
-  "ABOUT_SCREEN_OPEN_SOURCE_BODY": "Sesiapa pun boleh menambah kandungan ke dalam aplikasi ini, mengesahkan model pelepasan dan betulkan segala maklumat yang tidak betul",
-  "ABOUT_SCREEN_LIBRARIES_AND_CONTRIBUTORS": "Perpustakaan & penyumbang",
-  "ABOUT_SCREEN_CAN_BE_FOUND": "Boleh didapati di ",
-  "ABOUT_SCREEN_GITHUB": "Github"
+	"ABOUT_SCREEN_TITLE": "Tentang",
+	"ABOUT_SCREEN_INTRO": "Kami adalah tim kecil yang peduli dengan dampak manusia di planet ini. Kami bukan startup yang didorong oleh pertumbuhan atau keuntungan untuk membayar dividen kepada investor. Kami transparan dan Anda dapat melihat angka kami di Indie Hacker. Anda dapat bergabung dengan tim kami jika Anda ingin membantu proyek ini. Atau hanya berbicara di sekitar Anda tentang proyek kami, beri kami 5 bintang di toko dan kirimkan umpan balik Anda pada aplikasi akan banyak membantu kami. Terima kasih ️",
+	"ABOUT_SCREEN_CARE_HEADER": "Kami peduli padamu",
+	"ABOUT_SCREEN_PRIVACY": "Privasi berdasarkan desain",
+	"ABOUT_SCREEN_ETHIC": "Etika dengan desain",
+	"ABOUT_SCREEN_OPEN_SOURCE": "100% sumber terbuka",
+	"ABOUT_SCREEN_PRIVACY_BODY": "Semua data yang disediakan di aplikasi tidak akan pernah dijual atau dibagikan ke perusahaan mana pun dan kami tidak melacak apa yang Anda lakukan di aplikasi ",
+	"ABOUT_SCREEN_ETHIC_BODY": "Kami tidak mengeksploitasi kerentanan psikologis seperti umpan tanpa dasar atau putar otomatis untuk mencegah pengguna keluar ",
+	"ABOUT_SCREEN_OPEN_SOURCE_BODY": "Semua orang akan dapat menambahkan konten ke aplikasi, memverifikasi model emisi, dan memperbaiki informasi yang salah",
+	"ABOUT_SCREEN_LIBRARIES_AND_CONTRIBUTORS": "Perpustakaan & kontributor",
+	"ABOUT_SCREEN_CAN_BE_FOUND": "Dapat ditemukan di ",
+	"ABOUT_SCREEN_GITHUB": "Github"
 }
