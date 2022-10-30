@@ -35,6 +35,7 @@ const SettingsOptions = {
 };
 
 const AddEmissionOptions = {
+  showLabel: false,
   tabBarLabel: t("ADD_EMISSION_SCREEN_TAB_NAME"),
   tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name={"md-add-circle"} />,
 };
@@ -44,10 +45,11 @@ const BottomTabNavigator = (): React.ReactElement => {
   return (
     <BottomTab.Navigator
       initialRouteName={"EmissionsNavigator"}
-      tabBarOptions={{
-        activeTintColor: Colors.green50,
-        inactiveTintColor: Colors.grey40,
-        style: {
+      screenOptions={{
+        headerShown: false,
+        tabBarActiveTintColor: Colors.green50,
+        tabBarInactiveTintColor: Colors.grey40,
+        tabBarBadgeStyle: {
           backgroundColor: Colors.white,
           borderTopWidth: 2,
           borderTopColor: Colors.green10,
