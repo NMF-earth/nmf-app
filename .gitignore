@@ -318,10 +318,6 @@ package-lock.json
 # dotenv environment variables file
 .env
 
-# hidden files with tokens
-secret.ts
-app.json
-
 # Expo
 .expo
 __generated__

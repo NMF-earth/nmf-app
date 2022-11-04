@@ -100,6 +100,7 @@
     "babel-loader": "8.1.0",
     "babel-plugin-module-resolver": "4.0.0",
     "babel-preset-expo": "9.2.0",
+    "dotenv": "16.0.3",
     "eslint": "8.26.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-import-resolver-typescript": "3.5.2",

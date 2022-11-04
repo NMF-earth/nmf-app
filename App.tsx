@@ -43,12 +43,9 @@ loadGlobalize();
 const release = Constants.manifest.revisionId || "0.0.0";
 
 if (!__DEV__) {
-  // eslint-disable-next-line @typescript-eslint/no-var-requires
-  const secret = require("./secret.ts").default || require("./secret.example.ts").default;
-
   /* TODO: change secret.dsn to Constants.manifest.extra.sentryPublicDsn */
   Sentry.init({
-    dsn: secret.dsn,
+    dsn: process.env.SENTRY_DSN,
     enableInExpoDevelopment: false,
     debug: true,
     release,

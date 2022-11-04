@@ -170,7 +170,9 @@ Any tag starting with `v` will runs expo publish. During this step `app.example.
 
 ### 🏗 Build
 
-Run `expo build:ios -t archive` to build for the [App Store Connect](https://appstoreconnect.apple.com) and `expo build:android -t app-bundle` for the [Google Play Console](https://play.google.com/console/developers).
+First you need to configure `SENTRY_AUTH_TOKEN` and `SENTRY_DSN` secrets on [expo.dev](https://expo.dev/accounts/%5Baccount%5D/settings/secrets) and then define `projectId` in `app.config.js`. Then run `npm install dotenv` and place your secrets inside `.env` file that you need to create with `SENTRY_AUTH_TOKEN` and `SENTRY_DSN`, like in `.env.example`.
+
+Run `eas build -p ios` to build for the [App Store Connect](https://appstoreconnect.apple.com) and `eas build -p android` for the [Google Play Console](https://play.google.com/console/developers).
 
 <br />
 
