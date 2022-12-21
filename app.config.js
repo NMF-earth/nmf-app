@@ -23,7 +23,7 @@ module.exports = () => {
     assetBundlePatterns: ["**/*"],
     extra: {
       eas: {
-        projectId: "9e1873d6-966a-49a3-83bc-10254ac6fb27",
+        projectId: "c91dff00-8f67-4f76-945d-d7c53f00b460",
       },
     },
     ios: {
