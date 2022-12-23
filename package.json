@@ -8,7 +8,7 @@
     "web": "expo start --web",
     "eject": "expo eject",
     "test:watch": "jest --watchAll",
-    "test": "TZ=GMT jest",
+    "test": "jest",
     "test:win": "bin/test.cmd",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx ./app",
     "lint:fix": "eslint --ext .js,.jsx,.ts,.tsx ./app --fix",
@@ -22,7 +22,8 @@
     "preset": "jest-expo",
     "collectCoverageFrom": [
       "app/**/*.(js|jsx|ts|tsx)"
-    ]
+    ],
+    "globalSetup": "./global-setup.js"
   },
   "dependencies": {
     "@expo/vector-icons": "13.0.0",
