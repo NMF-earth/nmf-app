@@ -12,6 +12,7 @@ const initialState = {
   location: ElectricityType.world,
   language: supportedLanguages.en,
   timesStarted: 4,
+  useMetricUnits: true,
 };
 
 describe("userPreferences selector should", () => {
@@ -39,4 +40,9 @@ describe("userPreferences selector should", () => {
 
   test("return current timesStarted", () =>
     expect(userPreferences.selectors.getTimesStarted(state)).toEqual(initialState.timesStarted));
+
+  test("return current units", () => 
+    expect(userPreferences.selectors.getUseMetricUnits(state)).toEqual(
+      initialState.useMetricUnits
+    ));
 });

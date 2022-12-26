@@ -1,5 +1,5 @@
 /* eslint-disable  @typescript-eslint/explicit-module-boundary-types */
-import { pathOr } from "ramda";
+import { path, pathOr } from "ramda";
 import { ElectricityType } from "carbon-footprint";
 
 import { currentLanguage } from "utils";
@@ -18,10 +18,13 @@ const getLanguage = (state) => pathOr(currentLanguage, [namespace, "language"], 
 
 const getTimesStarted = (state) => pathOr(0, [namespace, "timesStarted"], state);
 
+const getUseMetricUnits = (state) => pathOr(true, [namespace, "useMetricUnits"], state);
+
 export default {
   getAcceptedTermsOfUseVersion,
   getActivateNotifications,
   getLocation,
   getLanguage,
   getTimesStarted,
+  getUseMetricUnits,
 };

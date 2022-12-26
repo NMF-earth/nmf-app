@@ -40,6 +40,52 @@ exports[`SettingsScreen renders correctly 1`] = `
         size={14}
       />
     </TouchableOpacity>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "paddingVertical": 18,
+          },
+          Object {
+            "borderBottomColor": "#F0F0F0",
+            "borderBottomWidth": 1.6,
+          },
+        ]
+      }
+    >
+      <Text.Secondary
+        numberOfLines={1}
+      >
+        Metric units
+      </Text.Secondary>
+      <RCTSwitch
+        accessibilityRole="switch"
+        collapsable={false}
+        handlerTag={1}
+        handlerType="NativeViewGestureHandler"
+        onChange={[Function]}
+        onGestureHandlerEvent={[Function]}
+        onGestureHandlerStateChange={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            Object {
+              "height": 31,
+              "width": 51,
+            },
+            Object {
+              "height": 18,
+            },
+          ]
+        }
+        value={false}
+      />
+    </View>
     <TouchableOpacity
       onPress={[Function]}
       style={
@@ -119,7 +165,7 @@ exports[`SettingsScreen renders correctly 1`] = `
       <Text.Secondary
         numberOfLines={1}
       >
-        My Location
+        My location
       </Text.Secondary>
       <Ionicons
         color="#9CA6A0"

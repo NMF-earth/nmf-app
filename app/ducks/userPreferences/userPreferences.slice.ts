@@ -9,6 +9,7 @@ const initialState = {
   location: ElectricityType.world,
   language: currentLanguage,
   timesStarted: 0,
+  useMetricUnits: true,
 };
 
 const userPreferences = createSlice({
@@ -30,6 +31,9 @@ const userPreferences = createSlice({
     incrementTimesStarted(state) {
       state.timesStarted += 1;
     },
+    toggleUnits(state, action: PayloadAction<boolean>) {
+      state.useMetricUnits = action.payload;
+    },
   },
 });
 
@@ -39,6 +43,7 @@ const {
   toggleNotifications,
   changeLanguage,
   incrementTimesStarted,
+  toggleUnits,
 } = userPreferences.actions;
 
 export const actions = {
@@ -47,6 +52,7 @@ export const actions = {
   toggleNotifications,
   changeLanguage,
   incrementTimesStarted,
+  toggleUnits,
 };
 
 export const namespace = userPreferences.name;

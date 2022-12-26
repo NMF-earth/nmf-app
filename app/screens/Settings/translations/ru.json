@@ -1,5 +1,6 @@
 {
 	"SETTINGS_SCREEN_ABOUT": "О приложении",
+	"SETTINGS_SCREEN_UNITS": "Метрические единицы",
 	"SETTINGS_SCREEN_APP_VERSION": "Версия %{version}",
 	"SETTINGS_SCREEN_FEEDBACK": "Отзыв",
 	"SETTINGS_SCREEN_ROADMAP": "Карта разработки",
