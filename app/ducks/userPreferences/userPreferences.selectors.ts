@@ -1,5 +1,5 @@
 /* eslint-disable  @typescript-eslint/explicit-module-boundary-types */
-import { path, pathOr } from "ramda";
+import { pathOr } from "ramda";
 import { ElectricityType } from "carbon-footprint";
 
 import { currentLanguage } from "utils";
