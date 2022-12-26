@@ -7,6 +7,7 @@ import TextInput from "./TextInput";
 import StickersImage from "./StickersImage";
 import SelectableListItem from "./SelectableListItem";
 import ListItem from "./ListItem";
+import ListItemSwitch from "./ListItemSwitch"
 import HTMLImage from "./HTMLImage";
 import InfoButton from "./InfoButton";
 import NoEmission from "./NoEmission";
@@ -21,6 +22,7 @@ export {
   EmissionListItemProps,
   HTMLImage,
   ListItem,
+  ListItemSwitch,
   SelectableListItem,
   StickersImage,
   SocialMedia,

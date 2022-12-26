@@ -1,5 +1,6 @@
 {
 	"SETTINGS_SCREEN_ABOUT": "O nas",
+	"SETTINGS_SCREEN_UNITS": "Jednostki metryczne",
 	"SETTINGS_SCREEN_APP_VERSION": "Wersja %{version}",
 	"SETTINGS_SCREEN_FEEDBACK": "Opinie",
 	"SETTINGS_SCREEN_ROADMAP": "Plan działania",
