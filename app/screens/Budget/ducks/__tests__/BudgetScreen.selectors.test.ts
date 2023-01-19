@@ -209,60 +209,134 @@ describe("if there are emissions", () => {
 
   test("`getCurrentMonthAllCarbonValue` should return CO2 value from today's emission", () =>
     expect(selectors.getCurrentMonthAllCarbonValue(state)).toEqual(
-      Math.round(calculation.getC02ValueFromEmission(emissionFood)) +
-        Math.round(calculation.getC02ValueFromEmission(emissionMeal)) +
-        Math.round(calculation.getC02ValueFromEmission(emissionTransport)) +
-        Math.round(calculation.getC02ValueFromEmission(emissionStreaming)) +
-        Math.round(calculation.getC02ValueFromEmission(emissionPurchase)) +
-        Math.round(calculation.getC02ValueFromEmission(emissionFashion)) +
-        Math.round(calculation.getC02ValueFromEmission(emissionElectricity)) +
-        Math.round(calculation.getC02ValueFromEmission(emissionProductScanned)) +
-        Math.round(calculation.getC02ValueFromEmission(emissionCustom))
+      moment().month() == 0
+        ? Math.round(
+            calculation.getC02ValueFromEmission(emissionFood) +
+              calculation.getC02ValueFromEmission(emissionFoodYear)
+          ) +
+            Math.round(
+              calculation.getC02ValueFromEmission(emissionMeal) +
+                calculation.getC02ValueFromEmission(emissionMealYear)
+            ) +
+            Math.round(
+              calculation.getC02ValueFromEmission(emissionTransport) +
+                calculation.getC02ValueFromEmission(emissionTransportYear)
+            ) +
+            Math.round(
+              calculation.getC02ValueFromEmission(emissionStreaming) +
+                calculation.getC02ValueFromEmission(emissionStreamingYear)
+            ) +
+            Math.round(
+              calculation.getC02ValueFromEmission(emissionPurchase) +
+                calculation.getC02ValueFromEmission(emissionPurchaseYear)
+            ) +
+            Math.round(
+              calculation.getC02ValueFromEmission(emissionFashion) +
+                calculation.getC02ValueFromEmission(emissionFashionYear)
+            ) +
+            Math.round(
+              calculation.getC02ValueFromEmission(emissionElectricity) +
+                calculation.getC02ValueFromEmission(emissionElectricityYear)
+            ) +
+            Math.round(
+              calculation.getC02ValueFromEmission(emissionProductScanned) +
+                calculation.getC02ValueFromEmission(emissionProductScannedYear)
+            ) +
+            Math.round(
+              calculation.getC02ValueFromEmission(emissionCustom) +
+                calculation.getC02ValueFromEmission(emissionCustomYear)
+            )
+        : Math.round(calculation.getC02ValueFromEmission(emissionFood)) +
+            Math.round(calculation.getC02ValueFromEmission(emissionMeal)) +
+            Math.round(calculation.getC02ValueFromEmission(emissionTransport)) +
+            Math.round(calculation.getC02ValueFromEmission(emissionStreaming)) +
+            Math.round(calculation.getC02ValueFromEmission(emissionPurchase)) +
+            Math.round(calculation.getC02ValueFromEmission(emissionFashion)) +
+            Math.round(calculation.getC02ValueFromEmission(emissionElectricity)) +
+            Math.round(calculation.getC02ValueFromEmission(emissionProductScanned)) +
+            Math.round(calculation.getC02ValueFromEmission(emissionCustom))
     ));
 
   test("`getCurrentMonthFoodCarbonValue` should return CO2 value from today's emission", () =>
     expect(selectors.getCurrentMonthFoodCarbonValue(state)).toEqual(
-      Math.round(calculation.getC02ValueFromEmission(emissionFood))
+      moment().month() == 0
+        ? Math.round(
+            calculation.getC02ValueFromEmission(emissionFood) +
+              calculation.getC02ValueFromEmission(emissionFoodYear)
+          )
+        : Math.round(calculation.getC02ValueFromEmission(emissionFood))
     ));
 
   test("`getCurrentMonthMealCarbonValue` should return CO2 value from today's emission", () =>
     expect(selectors.getCurrentMonthMealCarbonValue(state)).toEqual(
-      Math.round(calculation.getC02ValueFromEmission(emissionMeal))
+      moment().month() == 0
+        ? Math.round(
+            calculation.getC02ValueFromEmission(emissionMeal) +
+              calculation.getC02ValueFromEmission(emissionMealYear)
+          )
+        : Math.round(calculation.getC02ValueFromEmission(emissionMeal))
     ));
 
   test("`getCurrentMonthTransportCarbonValue` should return CO2 values from today's emission", () =>
     expect(selectors.getCurrentMonthTransportCarbonValue(state)).toEqual(
-      Math.round(calculation.getC02ValueFromEmission(emissionTransport))
+      moment().month() == 0
+        ? Math.round(
+            calculation.getC02ValueFromEmission(emissionTransport) +
+              calculation.getC02ValueFromEmission(emissionTransportYear)
+          )
+        : Math.round(calculation.getC02ValueFromEmission(emissionTransport))
     ));
 
   test("`getCurrentMonthStreamingCarbonValue` should return CO2 value from today's emission", () =>
     expect(selectors.getCurrentMonthStreamingCarbonValue(state)).toEqual(
-      Math.round(calculation.getC02ValueFromEmission(emissionStreaming))
+      moment().month() == 0
+        ? Math.round(
+            calculation.getC02ValueFromEmission(emissionStreaming) +
+              calculation.getC02ValueFromEmission(emissionStreamingYear)
+          )
+        : Math.round(calculation.getC02ValueFromEmission(emissionStreaming))
     ));
 
   test("`getCurrentMonthPurchaseCarbonValue` should return CO2 value from today's emission", () =>
     expect(selectors.getCurrentMonthPurchaseCarbonValue(state)).toEqual(
-      calculation.getC02ValueFromEmission(emissionPurchase)
+      moment().month() == 0
+        ? calculation.getC02ValueFromEmission(emissionPurchase) +
+            calculation.getC02ValueFromEmission(emissionPurchaseYear)
+        : calculation.getC02ValueFromEmission(emissionPurchase)
     ));
 
   test("`getCurrentMonthFashionCarbonValue` should return CO2 value from today's emission", () =>
     expect(selectors.getCurrentMonthFashionCarbonValue(state)).toEqual(
-      calculation.getC02ValueFromEmission(emissionFashion)
+      moment().month() == 0
+        ? calculation.getC02ValueFromEmission(emissionFashion) +
+            calculation.getC02ValueFromEmission(emissionFashionYear)
+        : calculation.getC02ValueFromEmission(emissionFashion)
     ));
 
   test("`getCurrentMonthElectricityCarbonValue` should return CO2 value from today's emission", () =>
     expect(selectors.getCurrentMonthElectricityCarbonValue(state)).toEqual(
-      Math.round(calculation.getC02ValueFromEmission(emissionElectricity))
+      moment().month() == 0
+        ? Math.round(
+            calculation.getC02ValueFromEmission(emissionElectricity) +
+              calculation.getC02ValueFromEmission(emissionElectricityYear)
+          )
+        : Math.round(calculation.getC02ValueFromEmission(emissionElectricity))
     ));
 
   test("`getCurrentMonthProductScannedCarbonValue` should return CO2 value from today's emission", () =>
     expect(selectors.getCurrentMonthProductScannedCarbonValue(state)).toEqual(
-      calculation.getC02ValueFromEmission(emissionProductScanned)
+      moment().month() == 0
+        ? calculation.getC02ValueFromEmission(emissionProductScanned) +
+            calculation.getC02ValueFromEmission(emissionProductScannedYear)
+        : calculation.getC02ValueFromEmission(emissionProductScanned)
     ));
 
   test("`getCurrentMonthCustomCarbonValue` should return CO2 value from today's emission", () =>
     expect(selectors.getCurrentMonthCustomCarbonValue(state)).toEqual(
-      calculation.getC02ValueFromEmission(emissionCustom)
+      moment().month() == 0
+        ? calculation.getC02ValueFromEmission(emissionCustom) +
+            calculation.getC02ValueFromEmission(emissionCustomYear)
+        : calculation.getC02ValueFromEmission(emissionCustom)
     ));
 
   // last year
