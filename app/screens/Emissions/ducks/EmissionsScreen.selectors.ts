@@ -1,5 +1,5 @@
 /* eslint-disable  @typescript-eslint/explicit-module-boundary-types */
-import { map, pipe, groupBy, toPairs, slice } from "ramda";
+import { map, pipe, groupBy, toPairs, slice, sort } from "ramda";
 import moment from "moment";
 
 import { emissions, recurringEmissions } from "ducks";
@@ -38,7 +38,7 @@ const dateObjMap = map(([date, data]) => ({
 
 /* moment().utc().toISOString() gives "YYYY-MM-DDTHH:mm:ss.sssZ" */
 const filterByMostRecent = (array: [EmissionListItem]) =>
-  array.sort((a, b) => +new Date(b.creationDate) - +new Date(a.creationDate));
+  sort((a, b) => +new Date(b.creationDate) - +new Date(a.creationDate), array);
 
 const getEmissions = (state) =>
   pipe(
