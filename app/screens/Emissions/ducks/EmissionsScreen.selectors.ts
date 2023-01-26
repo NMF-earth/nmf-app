@@ -1,5 +1,5 @@
 /* eslint-disable  @typescript-eslint/explicit-module-boundary-types */
-import { map, pipe, groupBy, toPairs } from "ramda";
+import { map, pipe, groupBy, toPairs, slice } from "ramda";
 import moment from "moment";
 
 import { emissions, recurringEmissions } from "ducks";
@@ -29,7 +29,7 @@ const getStartOfMonth = (time) => moment(time).startOf("month").format();
 
 const groupByMonth = groupBy((item: EmissionListItem) => getStartOfMonth(item.creationDate));
 
-const getLatest = (data = []) => data.slice(0, 3);
+const getLatest = (data = []) => slice(0, 3, data);
 
 const dateObjMap = map(([date, data]) => ({
   date: date,
