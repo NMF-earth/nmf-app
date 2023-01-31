@@ -136,6 +136,27 @@ const getPeriodicityText = ({
   return periodicityText;
 };
 
+enum MeasureType { mass = "mass", length = "length", }
+
+const getImperialMetricValue = (metricValue: number, useMetricUnits: boolean, measureType: MeasureType): number => {
+  
+  if (useMetricUnits) {
+    return metricValue;
+
+  } else {
+    if (measureType === MeasureType.mass) {
+      /* kg -> lbs */
+      return metricValue * 2.205;
+
+    } else if (measureType === MeasureType.length) {
+      /* km -> miles
+      note: deviates from NMF.earth's standard of using meters as a reference */
+      return metricValue / 1.609;
+    }
+  }
+
+}
+
 export default {
   getLatestEmission,
   getC02ValueFromEmission,
@@ -143,4 +164,6 @@ export default {
   getFlightEmissionValue,
   getCarbonIntensityInGramPerKWHromKgPerJoules,
   getPeriodicityText,
+  MeasureType,
+  getImperialMetricValue,
 };

@@ -1,9 +1,12 @@
 import React, { useState } from "react";
+import { useSelector } from "react-redux";
 import { View } from "react-native";
 import Slider from "@react-native-community/slider";
+import { FormattedNumber } from "react-native-globalize";
 
 import { Text } from "components";
-import { t } from "utils";
+import { userPreferences } from "ducks";
+import { t, calculation } from "utils";
 import { Colors } from "style";
 
 import styles from "./ProductScanned.styles";
@@ -18,12 +21,20 @@ interface Props {
 
 const ProductScanned: React.FC<Props> = ({ setCo2eqKilograms, productCarbonFootprint }) => {
   const [sliderValue, setSliderValue] = useState(1.4);
+
   const emissionAmount =
     productCarbonFootprint < 1
       ? Math.round(Math.round(sliderValue) * productCarbonFootprint * 1000) / 1000
       : Math.round(Math.round(sliderValue) * productCarbonFootprint * 10) / 10;
 
-  setCo2eqKilograms(emissionAmount);
+  const onSliderValueChange = (value: number) => {
+    setSliderValue(value);
+    setCo2eqKilograms(emissionAmount);;
+  };
+
+  const useMetricUnits = useSelector(userPreferences.selectors.getUseMetricUnits);
+  const MeasureType = calculation.MeasureType;
+  const getImperialMetricValue = calculation.getImperialMetricValue;
 
   if (!productCarbonFootprint) {
     return;
@@ -38,10 +49,16 @@ const ProductScanned: React.FC<Props> = ({ setCo2eqKilograms, productCarbonFootp
             {Math.round(sliderValue) + " "}
             <Text.Primary>{t("ADD_EMISSION_SCREEN_ITEMS") + " - "}</Text.Primary>
           </Text.H2>
-
           <Text.H2 darkGray>
-            {emissionAmount}
-            <Text.Primary>{" kgCO2eq"}</Text.Primary>
+            <FormattedNumber
+              value={getImperialMetricValue(
+                emissionAmount, 
+                useMetricUnits,
+                MeasureType.mass)
+              }
+              maximumFractionDigits={1}
+            />{" "}
+            <Text.Primary>{useMetricUnits ? "kgCO2eq" : "lbsCO2eq"}</Text.Primary>
           </Text.H2>
         </View>
       </View>
@@ -53,7 +70,7 @@ const ProductScanned: React.FC<Props> = ({ setCo2eqKilograms, productCarbonFootp
         maximumValue={MAX_SLIDER_VALUE}
         minimumValue={MIN_SLIDER_VALUE}
         value={sliderValue}
-        onSlidingComplete={setSliderValue}
+        onSlidingComplete={onSliderValueChange}
       />
     </>
   );

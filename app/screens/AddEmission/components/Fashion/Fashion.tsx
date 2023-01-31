@@ -1,11 +1,13 @@
 import React, { useState } from "react";
+import { useSelector } from "react-redux";
 import { View } from "react-native";
 import Slider from "@react-native-community/slider";
 import { FormattedNumber } from "react-native-globalize";
 import { fashion } from "carbon-footprint";
 
 import { Text } from "components";
-import { t } from "utils";
+import { userPreferences } from "ducks";
+import { t, calculation } from "utils";
 import { Colors } from "style";
 
 import styles from "./Fashion.styles";
@@ -28,6 +30,10 @@ const Fashion: React.FC<Props> = ({ emissionModelType, setQuantity, defaultValue
     setQuantity(val);
   };
 
+  const useMetricUnits = useSelector(userPreferences.selectors.getUseMetricUnits);
+  const MeasureType = calculation.MeasureType;
+  const getImperialMetricValue = calculation.getImperialMetricValue;
+
   return (
     <>
       <View style={styles.durationContainer}>
@@ -48,10 +54,14 @@ const Fashion: React.FC<Props> = ({ emissionModelType, setQuantity, defaultValue
         <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_SCREEN_TOTAL")}</Text.H3>
         <Text.H2 darkGray>
           <FormattedNumber
-            value={sliderValue * fashion[emissionModelType]}
+            value={getImperialMetricValue(
+              sliderValue * fashion[emissionModelType], 
+              useMetricUnits,
+              MeasureType.mass)
+            }
             maximumFractionDigits={2}
           />{" "}
-          <Text.Primary>kgCO2eq</Text.Primary>
+          <Text.Primary>{useMetricUnits ? "kgCO2eq" : "lbsCO2eq"}</Text.Primary>
         </Text.H2>
       </View>
     </>
