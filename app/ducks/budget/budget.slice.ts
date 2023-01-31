@@ -4,7 +4,7 @@ const initialState = {
   monthlyCarbonBudget: 167,
 };
 
-const emissions = createSlice({
+const budget = createSlice({
   name: "budget",
   initialState,
   reducers: {
@@ -14,10 +14,10 @@ const emissions = createSlice({
   },
 });
 
-const { setMonthlyCarbonBudget } = emissions.actions;
+const { setMonthlyCarbonBudget } = budget.actions;
 
 export const actions = { setMonthlyCarbonBudget };
 
-export const namespace = emissions.name;
+export const namespace = budget.name;
 
-export const reducer = emissions.reducer;
+export const reducer = budget.reducer;
