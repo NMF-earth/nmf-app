@@ -19,6 +19,7 @@ import {
 import { Emission, EmissionType } from "interfaces";
 
 import calculation from "../";
+import { MeasureType } from "../../../types/measureType";
 
 const emissionFood: Emission = {
   id: "123",
@@ -81,6 +82,36 @@ const emissionProductScanned: Emission = {
   ...emissionFood,
   emissionModelType: "productScanned",
   emissionType: EmissionType.custom,
+};
+
+const imperialMetricBaseline: number[] = [
+  0.02,
+  0.4,
+  0.454,
+  0.9,
+  1,
+  1.1,
+  7,
+  62,
+  150,
+  777,
+  1000,
+  1258,
+  13573,
+];
+
+const unitsBasline: {
+  toGrams: number[];
+  toKilograms: number[];
+  toTonnes: number[];
+  toOunces: number[];
+  toPounds: number[];
+} = {
+  toGrams: [0.02, 0.4, 0.9, 1],
+  toKilograms: [1.1, 7, 62, 150, 777, 1000],
+  toTonnes: [1258, 13573],
+  toOunces: [0.02, 0.4, 0.454],
+  toPounds: [0.9, 7, 777, 1258],
 };
 
 describe("getC02ValueFromEmission should return the correct co2 emitted value for", () => {
@@ -188,5 +219,93 @@ describe("getCarbonIntensityInGramPerKWHromKgPerJoules should convert data from 
     expect(calculation.getCarbonIntensityInGramPerKWHromKgPerJoules(electricity.france)).toEqual(
       35
     );
+  });
+});
+
+describe("getImperialMetricValue should return the correct measurement value", () => {
+  for (const value of imperialMetricBaseline) {
+    it("for a mass value in metric", () => {
+      expect(calculation.getImperialMetricValue(value, true, MeasureType.mass)).toEqual(value);
+    });
+
+    it("for a length value in metric", () => {
+      expect(calculation.getImperialMetricValue(value, true, MeasureType.length)).toEqual(value);
+    });
+
+    it("for a mass value in Imperial", () => {
+      expect(calculation.getImperialMetricValue(value, false, MeasureType.mass)).toEqual(
+        value * 2.205
+      );
+    });
+
+    it("for a length value in Imperial", () => {
+      expect(calculation.getImperialMetricValue(value, false, MeasureType.length)).toEqual(
+        value / 1.609
+      );
+    });
+  }
+});
+
+describe("getDisplayUnitsValue should convert the given kilogram value to", () => {
+  it("grams", () => {
+    for (const kgValue of unitsBasline.toGrams) {
+      expect(calculation.getDisplayUnitsValue(kgValue, true)).toEqual(kgValue * 1000);
+    }
+  });
+
+  it("kilograms", () => {
+    for (const kgValue of unitsBasline.toKilograms) {
+      expect(calculation.getDisplayUnitsValue(kgValue, true)).toEqual(kgValue);
+    }
+  });
+
+  it("tonnes", () => {
+    for (const kgValue of unitsBasline.toTonnes) {
+      expect(calculation.getDisplayUnitsValue(kgValue, true)).toEqual(kgValue / 1000);
+    }
+  });
+
+  it("ounces", () => {
+    for (const kgValue of unitsBasline.toOunces) {
+      expect(calculation.getDisplayUnitsValue(kgValue, false)).toEqual(kgValue * 2.205 * 16);
+    }
+  });
+
+  it("pounds", () => {
+    for (const kgValue of unitsBasline.toPounds) {
+      expect(calculation.getDisplayUnitsValue(kgValue, false)).toEqual(kgValue * 2.205);
+    }
+  });
+});
+
+describe("getDisplayUnits should return the correct unit symbol given a kilogram value that should be converted to", () => {
+  it("grams", () => {
+    for (const kgValue of unitsBasline.toGrams) {
+      expect(calculation.getDisplayUnits(kgValue, true)).toEqual("g");
+    }
+  });
+
+  it("kilograms", () => {
+    for (const kgValue of unitsBasline.toKilograms) {
+      expect(calculation.getDisplayUnits(kgValue, true)).toEqual("kg");
+    }
+  });
+
+  it("tonnes", () => {
+    for (const kgValue of unitsBasline.toTonnes) {
+      expect(calculation.getDisplayUnits(kgValue, true)).toEqual("t");
+    }
+  });
+
+  it("ounces", () => {
+    for (const kgValue of unitsBasline.toOunces) {
+      expect(calculation.getDisplayUnits(kgValue, false)).toEqual("oz");
+    }
+  });
+
+  it("pounds", () => {
+    for (const kgValue of unitsBasline.toPounds) {
+      expect(calculation.getDisplayUnits(kgValue, false)).toEqual("lb");
+    }
   });
 });
