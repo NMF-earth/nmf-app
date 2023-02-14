@@ -78,9 +78,12 @@ exports[`SettingsScreen renders correctly 1`] = `
               "height": 31,
               "width": 51,
             },
-            Object {
-              "height": 18,
-            },
+            Array [
+              Object {
+                "height": 18,
+                "paddingVertical": 9,
+              },
+            ],
           ]
         }
         value={false}

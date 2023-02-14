@@ -43,9 +43,12 @@ exports[`<ListItemSwitch /> ListItem renders correctly with both topLine and bot
           "height": 31,
           "width": 51,
         },
-        Object {
-          "height": 18,
-        },
+        Array [
+          Object {
+            "height": 18,
+            "paddingVertical": 9,
+          },
+        ],
       ]
     }
     value={true}
@@ -92,9 +95,12 @@ exports[`<ListItemSwitch /> ListItem renders correctly with bottomLine 1`] = `
           "height": 31,
           "width": 51,
         },
-        Object {
-          "height": 18,
-        },
+        Array [
+          Object {
+            "height": 18,
+            "paddingVertical": 9,
+          },
+        ],
       ]
     }
     value={true}
@@ -141,9 +147,12 @@ exports[`<ListItemSwitch /> ListItem renders correctly with topLine 1`] = `
           "height": 31,
           "width": 51,
         },
-        Object {
-          "height": 18,
-        },
+        Array [
+          Object {
+            "height": 18,
+            "paddingVertical": 9,
+          },
+        ],
       ]
     }
     value={true}
@@ -186,9 +195,12 @@ exports[`<ListItemSwitch /> render 1`] = `
           "height": 31,
           "width": 51,
         },
-        Object {
-          "height": 18,
-        },
+        Array [
+          Object {
+            "height": 18,
+            "paddingVertical": 9,
+          },
+        ],
       ]
     }
     value={true}

@@ -13,7 +13,13 @@ interface Props {
   showBottomLine?: boolean;
 }
 
-const ListItemSwitch: React.FC<Props> = ({ title, value, onChange, showTopLine, showBottomLine }) => {
+const ListItemSwitch: React.FC<Props> = ({
+  title,
+  value,
+  onChange,
+  showTopLine,
+  showBottomLine,
+}) => {
   const containerStyle: StyleProp<ViewStyle> = [styles.container];
   const switchStyle: StyleProp<ViewStyle> = [styles.switch];
 
@@ -28,11 +34,7 @@ const ListItemSwitch: React.FC<Props> = ({ title, value, onChange, showTopLine, 
   return (
     <View style={containerStyle}>
       <Text.Secondary numberOfLines={1}>{title}</Text.Secondary>
-      <Switch
-        style={switchStyle}
-        value={value}
-        onChange={onChange}
-      />
+      <Switch style={switchStyle} value={value} onChange={onChange} />
     </View>
   );
 };
