@@ -29,12 +29,12 @@ const ProductScanned: React.FC<Props> = ({ setCo2eqKilograms, productCarbonFootp
 
   const onSliderValueChange = (value: number) => {
     setSliderValue(value);
-    setCo2eqKilograms(emissionAmount);;
+    setCo2eqKilograms(emissionAmount);
   };
 
   const useMetricUnits = useSelector(userPreferences.selectors.getUseMetricUnits);
-  const MeasureType = calculation.MeasureType;
-  const getImperialMetricValue = calculation.getImperialMetricValue;
+  const getDisplayUnitsValue = calculation.getDisplayUnitsValue;
+  const getDisplayUnits = calculation.getDisplayUnits;
 
   if (!productCarbonFootprint) {
     return;
@@ -51,14 +51,10 @@ const ProductScanned: React.FC<Props> = ({ setCo2eqKilograms, productCarbonFootp
           </Text.H2>
           <Text.H2 darkGray>
             <FormattedNumber
-              value={getImperialMetricValue(
-                emissionAmount, 
-                useMetricUnits,
-                MeasureType.mass)
-              }
+              value={getDisplayUnitsValue(emissionAmount, useMetricUnits)}
               maximumFractionDigits={1}
             />{" "}
-            <Text.Primary>{useMetricUnits ? "kgCO2eq" : "lbsCO2eq"}</Text.Primary>
+            <Text.Primary>{getDisplayUnits(emissionAmount, useMetricUnits) + "CO2eq"}</Text.Primary>
           </Text.H2>
         </View>
       </View>

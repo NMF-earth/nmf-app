@@ -36,8 +36,8 @@ const Electricity: React.FC<Props> = ({
   };
 
   const useMetricUnits = useSelector(userPreferences.selectors.getUseMetricUnits);
-  const MeasureType = calculation.MeasureType;
-  const getImperialMetricValue = calculation.getImperialMetricValue;
+  const getDisplayUnitsValue = calculation.getDisplayUnitsValue;
+  const getDisplayUnits = calculation.getDisplayUnits;
 
   return (
     <>
@@ -67,14 +67,16 @@ const Electricity: React.FC<Props> = ({
         <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_SCREEN_TOTAL")}</Text.H3>
         <Text.H2 darkGray>
           <FormattedNumber
-            value={getImperialMetricValue(
-              sliderValue * electricity[electricityCountry], 
-              useMetricUnits,
-              MeasureType.mass)
-            }
+            value={getDisplayUnitsValue(
+              sliderValue * electricity[electricityCountry],
+              useMetricUnits
+            )}
             maximumFractionDigits={2}
           />{" "}
-          <Text.Primary>{useMetricUnits ? "kgCO2eq" : "lbsCO2eq"}</Text.Primary>
+          <Text.Primary>
+            {getDisplayUnits(sliderValue * electricity[electricityCountry], useMetricUnits) +
+              "CO2eq"}
+          </Text.Primary>
         </Text.H2>
       </View>
     </>

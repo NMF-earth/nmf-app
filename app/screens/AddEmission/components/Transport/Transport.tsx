@@ -11,6 +11,7 @@ import { t, time, calculation } from "utils";
 import { Colors } from "style";
 
 import styles from "./Transport.styles";
+import { MeasureType } from "../../../../types/measureType";
 
 const MIN_SLIDER_VALUE = 2;
 const MAX_SLIDER_VALUE = 1000;
@@ -42,8 +43,9 @@ const Transport: React.FC<Props> = ({
   };
 
   const useMetricUnits = useSelector(userPreferences.selectors.getUseMetricUnits);
-  const MeasureType = calculation.MeasureType;
   const getImperialMetricValue = calculation.getImperialMetricValue;
+  const getDisplayUnitsValue = calculation.getDisplayUnitsValue;
+  const getDisplayUnits = calculation.getDisplayUnits;
 
   const renderDuration = () => {
     const { hours, minutes } = time.convertMinutesToHoursAnMinutes(sliderValue);
@@ -60,14 +62,14 @@ const Transport: React.FC<Props> = ({
     return (
       <View style={styles.durationDistanceContainer}>
         <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_SCREEN_DISTANCE")}</Text.H3>
-        <Text.Primary lightGray>{
-          Math.round(getImperialMetricValue(sliderValue, useMetricUnits, MeasureType.length)) 
-            + (useMetricUnits ? " kilometer(s)" : " miles(s)")
-        }</Text.Primary>
+        <Text.Primary lightGray>
+          {Math.round(getImperialMetricValue(sliderValue, useMetricUnits, MeasureType.length)) +
+            (useMetricUnits ? " kilometer(s)" : " mile(s)")}
+        </Text.Primary>
       </View>
     );
   };
-  
+
   return (
     <>
       {emissionModelType === TransportType.plane ? renderDuration() : renderDistance()}
@@ -89,17 +91,24 @@ const Transport: React.FC<Props> = ({
         <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_SCREEN_TOTAL")}</Text.H3>
         <Text.H2 darkGray>
           <FormattedNumber
-            value={getImperialMetricValue(
-              (emissionModelType === TransportType.plane
+            value={getDisplayUnitsValue(
+              emissionModelType === TransportType.plane
                 ? calculation.getFlightEmissionValue(sliderValue) *
-                  transport[calculation.getFlightType(sliderValue)]
-                : sliderValue * 1000 * transport[emissionModelType]),
-              useMetricUnits,
-              MeasureType.mass)    
-            }
+                    transport[calculation.getFlightType(sliderValue)]
+                : sliderValue * 1000 * transport[emissionModelType],
+              useMetricUnits
+            )}
             maximumFractionDigits={2}
           />{" "}
-          <Text.Primary>{useMetricUnits ? " kgCO2eq" : " lbsCO2eq"}</Text.Primary>
+          <Text.Primary>
+            {getDisplayUnits(
+              emissionModelType === TransportType.plane
+                ? calculation.getFlightEmissionValue(sliderValue) *
+                    transport[calculation.getFlightType(sliderValue)]
+                : sliderValue * 1000 * transport[emissionModelType],
+              useMetricUnits
+            ) + "CO2eq"}
+          </Text.Primary>
         </Text.H2>
       </View>
     </>

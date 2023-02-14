@@ -11,7 +11,8 @@ export default StyleSheet.create({
     flex: 1,
   },
   switch: {
-    height: 18
+    paddingVertical: 9,
+    height: 18,
   },
   topLine: {
     borderTopColor: Colors.grey10,

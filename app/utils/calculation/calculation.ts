@@ -16,6 +16,7 @@ import { EmissionType, Emission, RecurringEmission, PeriodicityType, WeekDays } 
 import { WEEK_DAYS } from "constant/weekDays";
 
 import { t } from "../translations";
+import { MeasureType } from "../../types/measureType";
 
 const isNilOrEmpty = either(isNil, isEmpty);
 
@@ -136,26 +137,54 @@ const getPeriodicityText = ({
   return periodicityText;
 };
 
-enum MeasureType { mass = "mass", length = "length", }
-
-const getImperialMetricValue = (metricValue: number, useMetricUnits: boolean, measureType: MeasureType): number => {
-  
+const getImperialMetricValue = (
+  metricValue: number,
+  useMetricUnits: boolean,
+  measureType: MeasureType
+): number => {
   if (useMetricUnits) {
     return metricValue;
-
   } else {
     if (measureType === MeasureType.mass) {
       /* kg -> lbs */
       return metricValue * 2.205;
-
     } else if (measureType === MeasureType.length) {
       /* km -> miles
       note: deviates from NMF.earth's standard of using meters as a reference */
       return metricValue / 1.609;
     }
   }
+};
 
-}
+const getDisplayUnitsValue = (kgValue: number, useMetricUnits: boolean): number => {
+  if (kgValue <= 1 && useMetricUnits) {
+    return kgValue * 1000;
+  } else if (kgValue > 1 && kgValue <= 1000 && useMetricUnits) {
+    return kgValue;
+  } else if (kgValue > 1000 && useMetricUnits) {
+    return kgValue / 1000;
+  } else if (kgValue <= 0.454 && !useMetricUnits) {
+    return getImperialMetricValue(kgValue, useMetricUnits, MeasureType.mass) * 16;
+  } else {
+    /*if (kgValue > 0.454 && !useMetricUnits)*/
+    return getImperialMetricValue(kgValue, useMetricUnits, MeasureType.mass);
+  }
+};
+
+const getDisplayUnits = (kgValue: number, useMetricUnits: boolean): string => {
+  if (kgValue <= 1 && useMetricUnits) {
+    return "g";
+  } else if (kgValue > 1 && kgValue <= 1000 && useMetricUnits) {
+    return "kg";
+  } else if (kgValue > 1000 && useMetricUnits) {
+    return "t";
+  } else if (kgValue <= 0.454 && !useMetricUnits) {
+    return "oz";
+  } else {
+    /*if (kgValue > 0.454 && !useMetricUnits)*/
+    return "lb";
+  }
+};
 
 export default {
   getLatestEmission,
@@ -164,6 +193,7 @@ export default {
   getFlightEmissionValue,
   getCarbonIntensityInGramPerKWHromKgPerJoules,
   getPeriodicityText,
-  MeasureType,
   getImperialMetricValue,
+  getDisplayUnitsValue,
+  getDisplayUnits,
 };

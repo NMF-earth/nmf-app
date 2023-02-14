@@ -43,28 +43,8 @@ const Streaming: React.FC<Props> = ({
   );
 
   const useMetricUnits = useSelector(userPreferences.selectors.getUseMetricUnits);
-  const MeasureType = calculation.MeasureType;
-  const getImperialMetricValue = calculation.getImperialMetricValue;
-
-  const displayCarbonValue = (() => {
-    if (carbonValue > 1 && useMetricUnits) {
-      return carbonValue;
-    } else if (carbonValue <= 1 && useMetricUnits) {
-      return carbonValue * 1000;
-    } else  {
-      return getImperialMetricValue(carbonValue, useMetricUnits, MeasureType.mass);
-    } 
-  })();
-
-  const displayUnits = (() => {
-    if (carbonValue > 1 && useMetricUnits) {
-      return "kgCO2eq";
-    } else if (carbonValue <= 1 && useMetricUnits) {
-      return "gCO2eq";
-    } else  {
-      return "lbsCO2eq";
-    } 
-  })();
+  const getDisplayUnitsValue = calculation.getDisplayUnitsValue;
+  const getDisplayUnits = calculation.getDisplayUnits;
 
   return (
     <>
@@ -86,10 +66,10 @@ const Streaming: React.FC<Props> = ({
         <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_SCREEN_TOTAL")}</Text.H3>
         <Text.H2 darkGray>
           <FormattedNumber
-            value={displayCarbonValue}
+            value={getDisplayUnitsValue(carbonValue, useMetricUnits)}
             maximumFractionDigits={2}
           />{" "}
-          <Text.Primary>{displayUnits}</Text.Primary>
+          <Text.Primary>{getDisplayUnits(carbonValue, useMetricUnits) + "CO2eq"}</Text.Primary>
         </Text.H2>
       </View>
     </>

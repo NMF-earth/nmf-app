@@ -15,7 +15,7 @@ interface Props {
 
 const ListItemSwitch: React.FC<Props> = ({ title, value, onChange, showTopLine, showBottomLine }) => {
   const containerStyle: StyleProp<ViewStyle> = [styles.container];
-  const switchStyle: StyleProp<ViewStyle> = styles.switch;
+  const switchStyle: StyleProp<ViewStyle> = [styles.switch];
 
   if (showTopLine) {
     containerStyle.push(styles.topLine);

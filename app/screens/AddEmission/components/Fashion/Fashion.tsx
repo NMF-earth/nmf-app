@@ -31,8 +31,8 @@ const Fashion: React.FC<Props> = ({ emissionModelType, setQuantity, defaultValue
   };
 
   const useMetricUnits = useSelector(userPreferences.selectors.getUseMetricUnits);
-  const MeasureType = calculation.MeasureType;
-  const getImperialMetricValue = calculation.getImperialMetricValue;
+  const getDisplayUnitsValue = calculation.getDisplayUnitsValue;
+  const getDisplayUnits = calculation.getDisplayUnits;
 
   return (
     <>
@@ -54,14 +54,12 @@ const Fashion: React.FC<Props> = ({ emissionModelType, setQuantity, defaultValue
         <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_SCREEN_TOTAL")}</Text.H3>
         <Text.H2 darkGray>
           <FormattedNumber
-            value={getImperialMetricValue(
-              sliderValue * fashion[emissionModelType], 
-              useMetricUnits,
-              MeasureType.mass)
-            }
+            value={getDisplayUnitsValue(sliderValue * fashion[emissionModelType], useMetricUnits)}
             maximumFractionDigits={2}
           />{" "}
-          <Text.Primary>{useMetricUnits ? "kgCO2eq" : "lbsCO2eq"}</Text.Primary>
+          <Text.Primary>
+            {getDisplayUnits(sliderValue * fashion[emissionModelType], useMetricUnits) + "CO2eq"}
+          </Text.Primary>
         </Text.H2>
       </View>
     </>

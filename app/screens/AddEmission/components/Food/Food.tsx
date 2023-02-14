@@ -32,20 +32,20 @@ const Food: React.FC<Props> = ({ emissionModelType, setQuantity, defaultValueSli
   };
 
   const useMetricUnits = useSelector(userPreferences.selectors.getUseMetricUnits);
-  const MeasureType = calculation.MeasureType;
-  const getImperialMetricValue = calculation.getImperialMetricValue;
+  const getDisplayUnitsValue = calculation.getDisplayUnitsValue;
+  const getDisplayUnits = calculation.getDisplayUnits;
 
   return (
     <>
       <View style={styles.durationContainer}>
         <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_SCREEN_QUANTITY")}</Text.H3>
-        <Text.Primary lightGray>{
-          Math.round(getImperialMetricValue(
-            sliderValue, 
-            useMetricUnits, 
-            MeasureType.mass
-          )) / (useMetricUnits ? 1 : 1000) + (useMetricUnits ? " grams" : " pounds")
-        }</Text.Primary>
+        <Text.Primary lightGray>
+          {(useMetricUnits
+            ? getDisplayUnitsValue(sliderValue / 1000, useMetricUnits)
+            : getDisplayUnitsValue(sliderValue / 1000, useMetricUnits).toFixed(1)) +
+            " " +
+            getDisplayUnits(sliderValue / 1000, useMetricUnits)}
+        </Text.Primary>
       </View>
       <Slider
         minimumTrackTintColor={Colors.green50}
@@ -61,14 +61,16 @@ const Food: React.FC<Props> = ({ emissionModelType, setQuantity, defaultValueSli
         <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_SCREEN_TOTAL")}</Text.H3>
         <Text.H2 darkGray>
           <FormattedNumber
-            value={getImperialMetricValue(
-              (sliderValue / 1000) * food[emissionModelType], 
-              useMetricUnits,
-              MeasureType.mass)
-            }
+            value={getDisplayUnitsValue(
+              (sliderValue / 1000) * food[emissionModelType],
+              useMetricUnits
+            )}
             maximumFractionDigits={2}
           />{" "}
-          <Text.Primary>{useMetricUnits ? "kgCO2eq" : "lbsCO2eq"}</Text.Primary>
+          <Text.Primary>
+            {getDisplayUnits((sliderValue / 1000) * food[emissionModelType], useMetricUnits) +
+              "CO2eq"}
+          </Text.Primary>
         </Text.H2>
       </View>
     </>

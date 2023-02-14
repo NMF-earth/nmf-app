@@ -10,7 +10,6 @@ import { Colors } from "style";
 
 import styles from "./Custom.styles";
 
-
 const MIN_SLIDER_VALUE = 1;
 const MAX_SLIDER_VALUE = 1000;
 
@@ -28,8 +27,8 @@ const Custom: React.FC<Props> = ({ setCo2eqKilograms, defaultValueSlider }) => {
   };
 
   const useMetricUnits = useSelector(userPreferences.selectors.getUseMetricUnits);
-  const MeasureType = calculation.MeasureType;
-  const getImperialMetricValue = calculation.getImperialMetricValue;
+  const getDisplayUnitsValue = calculation.getDisplayUnitsValue;
+  const getDisplayUnits = calculation.getDisplayUnits;
 
   return (
     <>
@@ -37,12 +36,10 @@ const Custom: React.FC<Props> = ({ setCo2eqKilograms, defaultValueSlider }) => {
         <Text.H3 style={styles.header}>{t("ADD_EMISSION_SCREEN_QUANTITY_OF_EMISSION")}</Text.H3>
         <View style={{ flexDirection: "row" }}>
           <Text.H2 darkGray>
-            {Math.round(getImperialMetricValue(
-              sliderValue, 
-              useMetricUnits,
-              MeasureType.mass))
-            }
-            <Text.Primary>{useMetricUnits ? " kgCO2eq" : " lbsCO2eq"}</Text.Primary>
+            {Math.round(getDisplayUnitsValue(sliderValue, useMetricUnits))}
+            <Text.Primary>
+              {" " + getDisplayUnits(sliderValue, useMetricUnits) + "CO2eq"}
+            </Text.Primary>
           </Text.H2>
         </View>
       </View>
