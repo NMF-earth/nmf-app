@@ -7,8 +7,8 @@ import * as WebBrowser from "expo-web-browser";
 import { useDispatch, useSelector } from "react-redux";
 
 import { Text, Button } from "components";
-import { budget } from "ducks";
-import { t } from "utils";
+import { budget, userPreferences } from "ducks";
+import { t, calculation } from "utils";
 import { Colors } from "style";
 import { navigate } from "navigation";
 import { NavStatelessComponent } from "interfaces";
@@ -57,6 +57,10 @@ const MonthlyBudgetScreen: NavStatelessComponent = () => {
     navigator.goBack();
   };
 
+  const useMetricUnits = useSelector(userPreferences.selectors.getUseMetricUnits);
+  const getDisplayUnitsValue = calculation.getDisplayUnitsValue;
+  const getDisplayUnits = calculation.getDisplayUnits;
+
   return (
     <View style={styles.container}>
       <ScrollView>
@@ -73,7 +77,11 @@ const MonthlyBudgetScreen: NavStatelessComponent = () => {
           value={sliderValue}
           onSlidingComplete={setSliderValue}
         />
-        <Text.Primary lightGray>{Math.round(sliderValue) + " kg CO2eq"}</Text.Primary>
+        <Text.Primary lightGray>
+          {Math.round(getDisplayUnitsValue(sliderValue, useMetricUnits))}{" "}
+          {getDisplayUnits(sliderValue, useMetricUnits)}
+          {"CO2eq"}
+        </Text.Primary>
         <View style={styles.worldBudgetContainer}>
           <View style={styles.worldExampleTitle}>
             <Text.Primary bold>
