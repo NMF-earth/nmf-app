@@ -61,7 +61,10 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
       <Text.Primary
         lightGray={true}
       >
-        NaN kg CO2eq
+        NaN
+         
+        lb
+        CO2eq
       </Text.Primary>
       <View
         style={
