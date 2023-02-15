@@ -1,0 +1,16 @@
+{
+	"GRAMS_SYMBOL": "g",
+	"GRAMS_FULL": "gram",
+	"KILOGRAMS_SYMBOL": "kg",
+	"KILOGRAMS_FULL": "kilogram",
+	"TONNES_SYMBOL": "t",
+	"TONNES_FULL": "ton",
+	"OUNCES_SYMBOL": "oz",
+	"OUNCES_FULL": "ons",
+	"POUNDS_SYMBOL": "lb",
+	"POUNDS_FULL": "pon",
+	"KILOMETERS_SYMBOL": "km",
+	"KILOMETERS_FULL": "kilometer(s)",
+	"MILES_SYMBOL": "mi",
+	"MILES_FULL": "mil"
+}

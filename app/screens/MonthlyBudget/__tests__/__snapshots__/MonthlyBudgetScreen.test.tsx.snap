@@ -61,7 +61,9 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
       <Text.Primary
         lightGray={true}
       >
-        NaN
+        <FormattedNumber
+          value={NaN}
+        />
          
         lb
         CO2eq
@@ -102,7 +104,12 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
             }
           }
         >
-          Luxembourg : 3.5 tons
+          Luxembourg : 
+          <FormattedNumber
+            value={7718}
+          />
+           
+          lb
         </Text.Secondary>
         <Text.Secondary
           center={true}
@@ -112,7 +119,12 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
             }
           }
         >
-          United States : 1.5 tons
+          United States : 
+          <FormattedNumber
+            value={3308}
+          />
+           
+          lb
         </Text.Secondary>
         <Text.Secondary
           center={true}
@@ -122,7 +134,12 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
             }
           }
         >
-          Japan : 900 kg
+          Japan : 
+          <FormattedNumber
+            value={1985}
+          />
+           
+          lb
         </Text.Secondary>
         <Text.Secondary
           center={true}
@@ -132,7 +149,12 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
             }
           }
         >
-          Sweden : 595 kg
+          Sweden : 
+          <FormattedNumber
+            value={1312}
+          />
+           
+          lb
         </Text.Secondary>
         <Text.Secondary
           center={true}
@@ -142,7 +164,12 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
             }
           }
         >
-          France : 575 kg
+          France : 
+          <FormattedNumber
+            value={1268}
+          />
+           
+          lb
         </Text.Secondary>
         <Text.Secondary
           center={true}
@@ -152,7 +179,12 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
             }
           }
         >
-          China : 522 kg
+          China : 
+          <FormattedNumber
+            value={1151}
+          />
+           
+          lb
         </Text.Secondary>
         <Text.Secondary
           center={true}
@@ -162,7 +194,12 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
             }
           }
         >
-          Brazil : 208 kg
+          Brazil : 
+          <FormattedNumber
+            value={459}
+          />
+           
+          lb
         </Text.Secondary>
         <Text.Secondary
           center={true}
@@ -172,7 +209,12 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
             }
           }
         >
-          India : 139 kg
+          India : 
+          <FormattedNumber
+            value={306}
+          />
+           
+          lb
         </Text.Secondary>
         <Text.Secondary
           center={true}
@@ -182,7 +224,12 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
             }
           }
         >
-          Ethiopia : 8.3 kg
+          Ethiopia : 
+          <FormattedNumber
+            value={18}
+          />
+           
+          lb
         </Text.Secondary>
         <View
           style={
@@ -195,7 +242,11 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
           <Text.Secondary
             center={true}
           >
-            If you wish to respect the Paris agreement (to keep the rise in global average temperature below 2 degrees), set your monthly budget at 167 kgCO2eq
+            If you wish to respect the Paris agreement (to keep the rise in global average temperature below 2 degrees), set your monthly budget at
+             
+            368
+             
+            lbCO2eq
             <Ionicons
               color="#3957D0"
               name="md-information-circle"

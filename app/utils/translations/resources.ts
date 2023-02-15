@@ -32,6 +32,7 @@ import * as OpenFoodFacts from "components/OpenFoodFacts/translations";
 
 /* UTILS */
 import * as UI from "utils/ui/translations";
+import * as Calculation from "utils/calculation/translations";
 
 const en = {
   ...Act.en,
@@ -62,10 +63,12 @@ const en = {
   ...OpenFoodFacts.en,
   ...Periodicity.en,
   ...UI.en,
+  ...Calculation.en,
 };
 
 const de = {
   ...UI.de,
+  ...Calculation.de,
   ...About.de,
   ...MonthlyBudget.de,
   ...NoEmission.de,
@@ -97,6 +100,7 @@ const de = {
 
 const fr = {
   ...UI.fr,
+  ...Calculation.fr,
   ...About.fr,
   ...Notifications.fr,
   ...MonthlyBudget.fr,
@@ -128,6 +132,7 @@ const fr = {
 
 const sv = {
   ...UI.sv,
+  ...Calculation.sv,
   ...About.sv,
   ...Notifications.sv,
   ...MonthlyBudget.sv,
@@ -159,6 +164,7 @@ const sv = {
 
 const pt = {
   ...UI.pt,
+  ...Calculation.pt,
   ...About.pt,
   ...Notifications.pt,
   ...MonthlyBudget.pt,
@@ -190,6 +196,7 @@ const pt = {
 
 const es = {
   ...UI.es,
+  ...Calculation.es,
   ...About.es,
   ...Notifications.es,
   ...MonthlyBudget.es,
@@ -221,6 +228,7 @@ const es = {
 
 const ru = {
   ...UI.ru,
+  ...Calculation.ru,
   ...About.ru,
   ...Notifications.ru,
   ...MonthlyBudget.ru,
@@ -252,6 +260,7 @@ const ru = {
 
 const pl = {
   ...UI.pl,
+  ...Calculation.pl,
   ...About.pl,
   ...Notifications.pl,
   ...MonthlyBudget.pl,
@@ -283,6 +292,7 @@ const pl = {
 
 const da = {
   ...UI.da,
+  ...Calculation.da,
   ...About.da,
   ...Notifications.da,
   ...MonthlyBudget.da,
@@ -314,6 +324,7 @@ const da = {
 
 const zh = {
   ...UI.zh,
+  ...Calculation.zh,
   ...About.zh,
   ...Notifications.zh,
   ...MonthlyBudget.zh,
@@ -345,6 +356,7 @@ const zh = {
 
 const ms = {
   ...UI.ms,
+  ...Calculation.ms,
   ...About.ms,
   ...Notifications.ms,
   ...MonthlyBudget.ms,
@@ -376,6 +388,7 @@ const ms = {
 
 export interface TranslationKeys
   extends UI.TranslationKeys,
+    Calculation.TranslationKeys,
     MonthlyBudget.TranslationKeys,
     NoEmission.TranslationKeys,
     PermissionsRequest.TranslationKeys,

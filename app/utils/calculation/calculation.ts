@@ -171,18 +171,18 @@ const getDisplayUnitsValue = (kgValue: number, useMetricUnits: boolean): number 
   }
 };
 
-const getDisplayUnits = (kgValue: number, useMetricUnits: boolean): string => {
+const getDisplayUnits = (kgValue: number, useMetricUnits: boolean, useSymbol = true): string => {
   if (kgValue <= 1 && useMetricUnits) {
-    return "g";
+    return useSymbol ? t("GRAMS_SYMBOL") : t("GRAMS_FULL");
   } else if (kgValue > 1 && kgValue <= 1000 && useMetricUnits) {
-    return "kg";
+    return useSymbol ? t("KILOGRAMS_SYMBOL") : t("KILOGRAMS_FULL");
   } else if (kgValue > 1000 && useMetricUnits) {
-    return "t";
+    return useSymbol ? t("TONNES_SYMBOL") : t("TONNES_FULL");
   } else if (kgValue <= 0.454 && !useMetricUnits) {
-    return "oz";
+    return useSymbol ? t("OUNCES_SYMBOL") : t("OUNCES_FULL");
   } else {
     /*if (kgValue > 0.454 && !useMetricUnits)*/
-    return "lb";
+    return useSymbol ? t("POUNDS_SYMBOL") : t("POUNDS_FULL");
   }
 };
 

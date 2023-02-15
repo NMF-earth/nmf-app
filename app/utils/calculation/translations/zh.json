@@ -1,0 +1,16 @@
+{
+	"GRAMS_SYMBOL": "克",
+	"GRAMS_FULL": "克",
+	"KILOGRAMS_SYMBOL": "公斤",
+	"KILOGRAMS_FULL": "公斤",
+	"TONNES_SYMBOL": "吨",
+	"TONNES_FULL": "吨",
+	"OUNCES_SYMBOL": "盎司",
+	"OUNCES_FULL": "盎司",
+	"POUNDS_SYMBOL": "磅",
+	"POUNDS_FULL": "磅",
+	"KILOMETERS_SYMBOL": "公里",
+	"KILOMETERS_FULL": "公里",
+	"MILES_SYMBOL": "英里",
+	"MILES_FULL": "英里"
+}

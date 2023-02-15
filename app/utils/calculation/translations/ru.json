@@ -1,0 +1,16 @@
+{
+	"GRAMS_SYMBOL": "г",
+	"GRAMS_FULL": "грамм(а)",
+	"KILOGRAMS_SYMBOL": "кг",
+	"KILOGRAMS_FULL": "килограмм(а)",
+	"TONNES_SYMBOL": "т",
+	"TONNES_FULL": "тонна/ы",
+	"OUNCES_SYMBOL": "oz",
+	"OUNCES_FULL": "унция/и",
+	"POUNDS_SYMBOL": "фунт",
+	"POUNDS_FULL": "фунт",
+	"KILOMETERS_SYMBOL": "км",
+	"KILOMETERS_FULL": "километр(а)",
+	"MILES_SYMBOL": "ми",
+	"MILES_FULL": "миля/и"
+}
