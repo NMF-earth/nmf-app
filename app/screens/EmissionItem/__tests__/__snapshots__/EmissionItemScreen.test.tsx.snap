@@ -46,7 +46,7 @@ exports[`EmissionsScreen renders correctly 1`] = `
         value={NaN}
       />
        
-       gC02eq
+      lbC02eq
     </Text.Primary>
     <Text.H3>
       Mitigation

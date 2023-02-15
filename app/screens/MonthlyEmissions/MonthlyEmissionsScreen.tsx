@@ -6,8 +6,8 @@ import { map, pipe, propOr, sum } from "ramda";
 
 import { navigate } from "navigation";
 import { EmissionListItem, EmissionListItemProps, Text } from "components";
-import { budget } from "ducks";
-import { t } from "utils";
+import { budget, userPreferences } from "ducks";
+import { t, calculation } from "utils";
 import { NavStatelessComponent } from "interfaces";
 
 import { selectors } from "./ducks";
@@ -41,10 +41,17 @@ const MonthlyEmissions: NavStatelessComponent = () => {
     }
   }
 
+  const useMetricUnits = useSelector(userPreferences.selectors.getUseMetricUnits);
+  const getDisplayUnitsValue = calculation.getDisplayUnitsValue;
+  const getDisplayUnits = calculation.getDisplayUnits;
+
   const renderHeader = () => (
     <View style={styles.containerHeader}>
       <Text.Primary darkGray bold>
-        {`${co2value.toFixed(2)} kgCO2eq`}
+        {`${getDisplayUnitsValue(co2value, useMetricUnits).toFixed(2)} ${getDisplayUnits(
+          co2value,
+          useMetricUnits
+        )}CO2eq`}
       </Text.Primary>
       {percentageBudget && (
         <Text.Secondary orange={percentageBudget > 100} green={percentageBudget < 100}>

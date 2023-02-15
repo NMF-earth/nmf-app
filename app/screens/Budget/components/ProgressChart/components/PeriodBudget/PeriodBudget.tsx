@@ -1,8 +1,11 @@
 import React from "react";
 import { View } from "react-native";
+import { useSelector } from "react-redux";
+import { FormattedNumber } from "react-native-globalize";
 
 import { Text } from "components";
-import { t } from "utils";
+import { userPreferences } from "ducks";
+import { calculation, t } from "utils";
 
 import styles from "./PeriodBudget.styles";
 
@@ -12,12 +15,9 @@ interface Props {
 }
 
 const PeriodBudget: React.FC<Props> = ({ periodEmissionsBudget = 0, period = "" }) => {
-  let budget = periodEmissionsBudget.toString();
-  let units = " kg";
-  if (periodEmissionsBudget > 999) {
-    budget = (periodEmissionsBudget / 1000).toFixed(2);
-    units = " ton(s)";
-  }
+  const useMetricUnits = useSelector(userPreferences.selectors.getUseMetricUnits);
+  const getDisplayUnitsValue = calculation.getDisplayUnitsValue;
+  const getDisplayUnits = calculation.getDisplayUnits;
 
   return (
     <View style={styles.container}>
@@ -26,7 +26,15 @@ const PeriodBudget: React.FC<Props> = ({ periodEmissionsBudget = 0, period = "" 
         {period}
         {" : "}
         <Text.Secondary lightGray center>
-          {budget + units}
+          <FormattedNumber
+            maximumFractionDigits={periodEmissionsBudget > 1000 && useMetricUnits ? 2 : 0}
+            value={getDisplayUnitsValue(periodEmissionsBudget, useMetricUnits)}
+          />{" "}
+          {getDisplayUnits(
+            periodEmissionsBudget,
+            useMetricUnits,
+            !(periodEmissionsBudget > 1000 && useMetricUnits)
+          )}
         </Text.Secondary>
       </Text.Secondary>
     </View>

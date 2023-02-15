@@ -16,7 +16,12 @@ exports[`LegendItem renders correctly 1`] = `
   <Text.Secondary
     lightGray={true}
   >
-    60 kg - 
+    <FormattedNumber
+      maximumFractionDigits={1}
+      value={132.3}
+    />
+     
+     lb - 
   </Text.Secondary>
   <Text.Secondary
     lightGray={true}
@@ -42,7 +47,12 @@ exports[`LegendItem should not render % if percentage is 0 1`] = `
   <Text.Secondary
     lightGray={true}
   >
-    0.01 kg
+    <FormattedNumber
+      maximumFractionDigits={1}
+      value={0.3528}
+    />
+     
+     oz
   </Text.Secondary>
 </View>
 `;
