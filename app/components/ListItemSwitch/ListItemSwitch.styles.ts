@@ -7,12 +7,10 @@ export default StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    paddingVertical: 18,
     flex: 1,
   },
-  switch: {
-    paddingVertical: 9,
-    height: 18,
+  text: {
+    paddingVertical: 18,
   },
   topLine: {
     borderTopColor: Colors.grey10,

@@ -9,7 +9,6 @@ exports[`<ListItemSwitch /> ListItem renders correctly with both topLine and bot
         "flex": 1,
         "flexDirection": "row",
         "justifyContent": "space-between",
-        "paddingVertical": 18,
       },
       Object {
         "borderTopColor": "#F0F0F0",
@@ -23,7 +22,11 @@ exports[`<ListItemSwitch /> ListItem renders correctly with both topLine and bot
   }
 >
   <Text.Secondary
-    numberOfLines={1}
+    style={
+      Object {
+        "paddingVertical": 18,
+      }
+    }
   >
     Germany
   </Text.Secondary>
@@ -38,18 +41,10 @@ exports[`<ListItemSwitch /> ListItem renders correctly with both topLine and bot
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Array [
-        Object {
-          "height": 31,
-          "width": 51,
-        },
-        Array [
-          Object {
-            "height": 18,
-            "paddingVertical": 9,
-          },
-        ],
-      ]
+      Object {
+        "height": 31,
+        "width": 51,
+      }
     }
     value={true}
   />
@@ -65,7 +60,6 @@ exports[`<ListItemSwitch /> ListItem renders correctly with bottomLine 1`] = `
         "flex": 1,
         "flexDirection": "row",
         "justifyContent": "space-between",
-        "paddingVertical": 18,
       },
       Object {
         "borderBottomColor": "#F0F0F0",
@@ -75,7 +69,11 @@ exports[`<ListItemSwitch /> ListItem renders correctly with bottomLine 1`] = `
   }
 >
   <Text.Secondary
-    numberOfLines={1}
+    style={
+      Object {
+        "paddingVertical": 18,
+      }
+    }
   >
     Germany
   </Text.Secondary>
@@ -90,18 +88,10 @@ exports[`<ListItemSwitch /> ListItem renders correctly with bottomLine 1`] = `
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Array [
-        Object {
-          "height": 31,
-          "width": 51,
-        },
-        Array [
-          Object {
-            "height": 18,
-            "paddingVertical": 9,
-          },
-        ],
-      ]
+      Object {
+        "height": 31,
+        "width": 51,
+      }
     }
     value={true}
   />
@@ -117,7 +107,6 @@ exports[`<ListItemSwitch /> ListItem renders correctly with topLine 1`] = `
         "flex": 1,
         "flexDirection": "row",
         "justifyContent": "space-between",
-        "paddingVertical": 18,
       },
       Object {
         "borderTopColor": "#F0F0F0",
@@ -127,7 +116,11 @@ exports[`<ListItemSwitch /> ListItem renders correctly with topLine 1`] = `
   }
 >
   <Text.Secondary
-    numberOfLines={1}
+    style={
+      Object {
+        "paddingVertical": 18,
+      }
+    }
   >
     Germany
   </Text.Secondary>
@@ -142,18 +135,10 @@ exports[`<ListItemSwitch /> ListItem renders correctly with topLine 1`] = `
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Array [
-        Object {
-          "height": 31,
-          "width": 51,
-        },
-        Array [
-          Object {
-            "height": 18,
-            "paddingVertical": 9,
-          },
-        ],
-      ]
+      Object {
+        "height": 31,
+        "width": 51,
+      }
     }
     value={true}
   />
@@ -169,13 +154,16 @@ exports[`<ListItemSwitch /> render 1`] = `
         "flex": 1,
         "flexDirection": "row",
         "justifyContent": "space-between",
-        "paddingVertical": 18,
       },
     ]
   }
 >
   <Text.Secondary
-    numberOfLines={1}
+    style={
+      Object {
+        "paddingVertical": 18,
+      }
+    }
   >
     Germany
   </Text.Secondary>
@@ -190,18 +178,10 @@ exports[`<ListItemSwitch /> render 1`] = `
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Array [
-        Object {
-          "height": 31,
-          "width": 51,
-        },
-        Array [
-          Object {
-            "height": 18,
-            "paddingVertical": 9,
-          },
-        ],
-      ]
+      Object {
+        "height": 31,
+        "width": 51,
+      }
     }
     value={true}
   />

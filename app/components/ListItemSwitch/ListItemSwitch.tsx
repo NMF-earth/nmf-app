@@ -21,8 +21,6 @@ const ListItemSwitch: React.FC<Props> = ({
   showBottomLine,
 }) => {
   const containerStyle: StyleProp<ViewStyle> = [styles.container];
-  const switchStyle: StyleProp<ViewStyle> = [styles.switch];
-
   if (showTopLine) {
     containerStyle.push(styles.topLine);
   }
@@ -33,8 +31,8 @@ const ListItemSwitch: React.FC<Props> = ({
 
   return (
     <View style={containerStyle}>
-      <Text.Secondary numberOfLines={1}>{title}</Text.Secondary>
-      <Switch style={switchStyle} value={value} onChange={onChange} />
+      <Text.Secondary style={styles.text}>{title}</Text.Secondary>
+      <Switch value={value} onChange={onChange} />
     </View>
   );
 };

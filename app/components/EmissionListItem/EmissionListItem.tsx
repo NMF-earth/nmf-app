@@ -59,7 +59,7 @@ const EmissionListItem: React.FC<EmissionListItemProps> = ({
               maximumFractionDigits={displayValue >= 1 ? 2 : 4}
               value={displayValue}
             />
-            {" " + getDisplayUnits(co2value, useMetricUnits)}CO2
+            {" " + getDisplayUnits(co2value, useMetricUnits)}CO2eq
           </Text.Tertiary>
           {isMitigated && (
             <>

@@ -43,7 +43,8 @@ const CountryExample = (translation, kgCarbonValue, index) => {
       <FormattedNumber
         value={Math.round(getDisplayUnitsValue(kgCarbonValue, useMetricUnits))}
       />{" "}
-      {getDisplayUnits(kgCarbonValue, useMetricUnits, !(kgCarbonValue > 1000 && useMetricUnits))}
+      {getDisplayUnits(kgCarbonValue, useMetricUnits)}
+      {"CO2eq"}
     </Text.Secondary>
   );
 };

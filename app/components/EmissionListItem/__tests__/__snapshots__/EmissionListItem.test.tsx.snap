@@ -76,10 +76,10 @@ exports[`EmissionListItem renders correctly if mitigated 1`] = `
         >
           <FormattedNumber
             maximumFractionDigits={2}
-            value={4.6305000000000005}
+            value={2.1}
           />
-           lb
-          CO2
+           kg
+          CO2eq
         </Text.Tertiary>
         <Text.Tertiary
           lightGray={true}
@@ -183,10 +183,10 @@ exports[`EmissionListItem renders correctly with audio icon 1`] = `
         >
           <FormattedNumber
             maximumFractionDigits={2}
-            value={4.6305000000000005}
+            value={2.1}
           />
-           lb
-          CO2
+           kg
+          CO2eq
         </Text.Tertiary>
       </View>
     </View>
@@ -280,10 +280,10 @@ exports[`EmissionListItem renders correctly with boat icon 1`] = `
         >
           <FormattedNumber
             maximumFractionDigits={2}
-            value={4.6305000000000005}
+            value={2.1}
           />
-           lb
-          CO2
+           kg
+          CO2eq
         </Text.Tertiary>
       </View>
     </View>
@@ -377,10 +377,10 @@ exports[`EmissionListItem renders correctly with bus icon 1`] = `
         >
           <FormattedNumber
             maximumFractionDigits={2}
-            value={4.6305000000000005}
+            value={2.1}
           />
-           lb
-          CO2
+           kg
+          CO2eq
         </Text.Tertiary>
       </View>
     </View>
@@ -474,10 +474,10 @@ exports[`EmissionListItem renders correctly with car icon 1`] = `
         >
           <FormattedNumber
             maximumFractionDigits={2}
-            value={4.6305000000000005}
+            value={2.1}
           />
-           lb
-          CO2
+           kg
+          CO2eq
         </Text.Tertiary>
       </View>
     </View>
@@ -571,10 +571,10 @@ exports[`EmissionListItem renders correctly with card icon 1`] = `
         >
           <FormattedNumber
             maximumFractionDigits={2}
-            value={4.6305000000000005}
+            value={2.1}
           />
-           lb
-          CO2
+           kg
+          CO2eq
         </Text.Tertiary>
       </View>
     </View>
@@ -668,10 +668,10 @@ exports[`EmissionListItem renders correctly with chocolate icon 1`] = `
         >
           <FormattedNumber
             maximumFractionDigits={2}
-            value={4.6305000000000005}
+            value={2.1}
           />
-           lb
-          CO2
+           kg
+          CO2eq
         </Text.Tertiary>
       </View>
     </View>
@@ -765,10 +765,10 @@ exports[`EmissionListItem renders correctly with coffee icon 1`] = `
         >
           <FormattedNumber
             maximumFractionDigits={2}
-            value={4.6305000000000005}
+            value={2.1}
           />
-           lb
-          CO2
+           kg
+          CO2eq
         </Text.Tertiary>
       </View>
     </View>
@@ -862,10 +862,10 @@ exports[`EmissionListItem renders correctly with electricity icon 1`] = `
         >
           <FormattedNumber
             maximumFractionDigits={2}
-            value={4.6305000000000005}
+            value={2.1}
           />
-           lb
-          CO2
+           kg
+          CO2eq
         </Text.Tertiary>
       </View>
     </View>
@@ -959,10 +959,10 @@ exports[`EmissionListItem renders correctly with fish icon 1`] = `
         >
           <FormattedNumber
             maximumFractionDigits={2}
-            value={4.6305000000000005}
+            value={2.1}
           />
-           lb
-          CO2
+           kg
+          CO2eq
         </Text.Tertiary>
       </View>
     </View>
@@ -1056,10 +1056,10 @@ exports[`EmissionListItem renders correctly with full hd video icon 1`] = `
         >
           <FormattedNumber
             maximumFractionDigits={2}
-            value={4.6305000000000005}
+            value={2.1}
           />
-           lb
-          CO2
+           kg
+          CO2eq
         </Text.Tertiary>
       </View>
     </View>
@@ -1153,10 +1153,10 @@ exports[`EmissionListItem renders correctly with hd video icon 1`] = `
         >
           <FormattedNumber
             maximumFractionDigits={2}
-            value={4.6305000000000005}
+            value={2.1}
           />
-           lb
-          CO2
+           kg
+          CO2eq
         </Text.Tertiary>
       </View>
     </View>
@@ -1250,10 +1250,10 @@ exports[`EmissionListItem renders correctly with longHaulFlight icon 1`] = `
         >
           <FormattedNumber
             maximumFractionDigits={2}
-            value={4.6305000000000005}
+            value={2.1}
           />
-           lb
-          CO2
+           kg
+          CO2eq
         </Text.Tertiary>
       </View>
     </View>
@@ -1347,10 +1347,10 @@ exports[`EmissionListItem renders correctly with meal icon 1`] = `
         >
           <FormattedNumber
             maximumFractionDigits={2}
-            value={4.6305000000000005}
+            value={2.1}
           />
-           lb
-          CO2
+           kg
+          CO2eq
         </Text.Tertiary>
       </View>
     </View>
@@ -1444,10 +1444,10 @@ exports[`EmissionListItem renders correctly with mediumHaulFlight icon 1`] = `
         >
           <FormattedNumber
             maximumFractionDigits={2}
-            value={4.6305000000000005}
+            value={2.1}
           />
-           lb
-          CO2
+           kg
+          CO2eq
         </Text.Tertiary>
       </View>
     </View>
@@ -1541,10 +1541,10 @@ exports[`EmissionListItem renders correctly with motorbike icon 1`] = `
         >
           <FormattedNumber
             maximumFractionDigits={2}
-            value={4.6305000000000005}
+            value={2.1}
           />
-           lb
-          CO2
+           kg
+          CO2eq
         </Text.Tertiary>
       </View>
     </View>
@@ -1638,10 +1638,10 @@ exports[`EmissionListItem renders correctly with redMeat icon 1`] = `
         >
           <FormattedNumber
             maximumFractionDigits={2}
-            value={4.6305000000000005}
+            value={2.1}
           />
-           lb
-          CO2
+           kg
+          CO2eq
         </Text.Tertiary>
       </View>
     </View>
@@ -1735,10 +1735,10 @@ exports[`EmissionListItem renders correctly with shirt icon 1`] = `
         >
           <FormattedNumber
             maximumFractionDigits={2}
-            value={4.6305000000000005}
+            value={2.1}
           />
-           lb
-          CO2
+           kg
+          CO2eq
         </Text.Tertiary>
       </View>
     </View>
@@ -1832,10 +1832,10 @@ exports[`EmissionListItem renders correctly with shortHaulFlight icon 1`] = `
         >
           <FormattedNumber
             maximumFractionDigits={2}
-            value={4.6305000000000005}
+            value={2.1}
           />
-           lb
-          CO2
+           kg
+          CO2eq
         </Text.Tertiary>
       </View>
     </View>
@@ -1929,10 +1929,10 @@ exports[`EmissionListItem renders correctly with train icon 1`] = `
         >
           <FormattedNumber
             maximumFractionDigits={2}
-            value={4.6305000000000005}
+            value={2.1}
           />
-           lb
-          CO2
+           kg
+          CO2eq
         </Text.Tertiary>
       </View>
     </View>
@@ -2026,10 +2026,10 @@ exports[`EmissionListItem renders correctly with ultra hd video icon 1`] = `
         >
           <FormattedNumber
             maximumFractionDigits={2}
-            value={4.6305000000000005}
+            value={2.1}
           />
-           lb
-          CO2
+           kg
+          CO2eq
         </Text.Tertiary>
       </View>
     </View>
@@ -2123,10 +2123,10 @@ exports[`EmissionListItem renders correctly with whiteMeat icon 1`] = `
         >
           <FormattedNumber
             maximumFractionDigits={2}
-            value={4.6305000000000005}
+            value={2.1}
           />
-           lb
-          CO2
+           kg
+          CO2eq
         </Text.Tertiary>
       </View>
     </View>

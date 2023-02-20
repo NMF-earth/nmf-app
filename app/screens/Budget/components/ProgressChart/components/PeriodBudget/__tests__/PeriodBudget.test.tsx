@@ -1,5 +1,8 @@
 import React from "react";
 import { create } from "react-test-renderer";
+import * as reactRedux from "react-redux";
+
+import { userPreferences } from "ducks";
 
 import PeriodBudget from "../PeriodBudget";
 
@@ -9,6 +12,12 @@ const props = {
 };
 
 jest.unmock("../PeriodBudget");
+
+const useSelectorMock = jest.spyOn(reactRedux, "useSelector");
+
+beforeEach(() => {
+  useSelectorMock.mockImplementation(userPreferences.selectors.getUseMetricUnits);
+});
 
 it("PeriodBudget renders correctly", () => {
   const tree = create(<PeriodBudget {...props} />).toJSON();

@@ -33,6 +33,10 @@ const EmissionItemScreen = ({ language = "" }: LocalizationContextProps) => {
 
   const dispatch = useDispatch();
 
+  const useMetricUnits = useSelector(userPreferences.selectors.getUseMetricUnits);
+  const getDisplayUnitsValue = calculation.getDisplayUnitsValue;
+  const getDisplayUnits = calculation.getDisplayUnits;
+
   let emission = useSelector((state) => emissions.selectors.getEmissionById(state, emissionId));
 
   const recurringEmission = useSelector((state) =>
@@ -72,10 +76,6 @@ const EmissionItemScreen = ({ language = "" }: LocalizationContextProps) => {
   const toggleIsMitigated = () => {
     dispatch(emissions.actions.toggleIsMitigated(emission.id));
   };
-
-  const useMetricUnits = useSelector(userPreferences.selectors.getUseMetricUnits);
-  const getDisplayUnitsValue = calculation.getDisplayUnitsValue;
-  const getDisplayUnits = calculation.getDisplayUnits;
 
   useEffect(() => {
     /* Avoid crash right after an emission is deleted */

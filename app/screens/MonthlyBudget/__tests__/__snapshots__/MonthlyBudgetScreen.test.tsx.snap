@@ -110,6 +110,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
           />
            
           lb
+          CO2eq
         </Text.Secondary>
         <Text.Secondary
           center={true}
@@ -125,6 +126,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
           />
            
           lb
+          CO2eq
         </Text.Secondary>
         <Text.Secondary
           center={true}
@@ -140,6 +142,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
           />
            
           lb
+          CO2eq
         </Text.Secondary>
         <Text.Secondary
           center={true}
@@ -155,6 +158,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
           />
            
           lb
+          CO2eq
         </Text.Secondary>
         <Text.Secondary
           center={true}
@@ -170,6 +174,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
           />
            
           lb
+          CO2eq
         </Text.Secondary>
         <Text.Secondary
           center={true}
@@ -185,6 +190,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
           />
            
           lb
+          CO2eq
         </Text.Secondary>
         <Text.Secondary
           center={true}
@@ -200,6 +206,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
           />
            
           lb
+          CO2eq
         </Text.Secondary>
         <Text.Secondary
           center={true}
@@ -215,6 +222,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
           />
            
           lb
+          CO2eq
         </Text.Secondary>
         <Text.Secondary
           center={true}
@@ -230,6 +238,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
           />
            
           lb
+          CO2eq
         </Text.Secondary>
         <View
           style={

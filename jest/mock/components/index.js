@@ -21,6 +21,8 @@ jest.mock(
 jest.mock("../../../app/screens/Emissions/components/SectionHeader", () => "SectionHeader");
 
 /* Shared Components */
+jest.mock("../../../app/components/ListItem", () => "ListItem");
+jest.mock("../../../app/components/ListItemSwitch", () => "ListItemSwitch");
 jest.mock("../../../app/components/PermissionsRequest", () => "PermissionsRequest");
 jest.mock("../../../app/components/StickersImage", () => "StickersImage");
 jest.mock("../../../app/components/TextInput", () => "TextInput");

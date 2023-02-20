@@ -157,32 +157,40 @@ const getImperialMetricValue = (
 };
 
 const getDisplayUnitsValue = (kgValue: number, useMetricUnits: boolean): number => {
-  if (kgValue <= 1 && useMetricUnits) {
-    return kgValue * 1000;
-  } else if (kgValue > 1 && kgValue <= 1000 && useMetricUnits) {
-    return kgValue;
-  } else if (kgValue > 1000 && useMetricUnits) {
-    return kgValue / 1000;
-  } else if (kgValue <= 0.454 && !useMetricUnits) {
-    return getImperialMetricValue(kgValue, useMetricUnits, MeasureType.mass) * 16;
+  if (useMetricUnits) {
+    if (kgValue <= 1) {
+      return kgValue * 1000;
+    } else if (kgValue > 1 && kgValue <= 1000) {
+      return kgValue;
+    } else {
+      return kgValue / 1000;
+    }
   } else {
-    /*if (kgValue > 0.454 && !useMetricUnits)*/
-    return getImperialMetricValue(kgValue, useMetricUnits, MeasureType.mass);
+    if (kgValue <= 0.454) {
+      return getImperialMetricValue(kgValue, useMetricUnits, MeasureType.mass) * 16;
+    } else {
+      return getImperialMetricValue(kgValue, useMetricUnits, MeasureType.mass);
+    }
   }
 };
 
 const getDisplayUnits = (kgValue: number, useMetricUnits: boolean, useSymbol = true): string => {
-  if (kgValue <= 1 && useMetricUnits) {
-    return useSymbol ? t("GRAMS_SYMBOL") : t("GRAMS_FULL");
-  } else if (kgValue > 1 && kgValue <= 1000 && useMetricUnits) {
-    return useSymbol ? t("KILOGRAMS_SYMBOL") : t("KILOGRAMS_FULL");
-  } else if (kgValue > 1000 && useMetricUnits) {
-    return useSymbol ? t("TONNES_SYMBOL") : t("TONNES_FULL");
-  } else if (kgValue <= 0.454 && !useMetricUnits) {
-    return useSymbol ? t("OUNCES_SYMBOL") : t("OUNCES_FULL");
+  const suffix = useSymbol ? "_SYMBOL" : "_FULL";
+
+  if (useMetricUnits) {
+    if (kgValue <= 1) {
+      return t(`GRAMS${suffix}`);
+    } else if (kgValue > 1 && kgValue <= 1000) {
+      return t(`KILOGRAMS${suffix}`);
+    } else {
+      return t(`TONNES${suffix}`);
+    }
   } else {
-    /*if (kgValue > 0.454 && !useMetricUnits)*/
-    return useSymbol ? t("POUNDS_SYMBOL") : t("POUNDS_FULL");
+    if (kgValue <= 0.454) {
+      return t(`OUNCES${suffix}`);
+    } else {
+      return t(`POUNDS${suffix}`);
+    }
   }
 };
 

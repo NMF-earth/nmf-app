@@ -4,7 +4,7 @@ import { create } from "react-test-renderer";
 import { FoodType, TransportType } from "carbon-footprint";
 import * as reactRedux from "react-redux";
 
-import { emissions } from "ducks";
+import { emissions, userPreferences } from "ducks";
 import { Emission, EmissionType } from "interfaces";
 
 import { selectors } from "../ducks";
@@ -46,6 +46,7 @@ describe("<MonthlyEmissions />", () => {
 
   beforeEach(() => {
     useSelectorMock.mockClear();
+    useSelectorMock.mockImplementation(userPreferences.selectors.getUseMetricUnits);
   });
 
   test("render", () => {

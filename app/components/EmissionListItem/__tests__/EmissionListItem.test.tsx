@@ -1,6 +1,7 @@
 import React from "react";
 import { create } from "react-test-renderer";
 import { GlobalizeProvider } from "react-native-globalize";
+import * as reactRedux from "react-redux";
 import {
   FoodType,
   TransportType,
@@ -11,6 +12,7 @@ import {
   MealType,
 } from "carbon-footprint";
 
+import { userPreferences } from "ducks";
 import { ui } from "utils";
 import { EmissionModelType } from "interfaces";
 
@@ -28,6 +30,12 @@ const props = {
     // do nothing.
   },
 };
+
+const useSelectorMock = jest.spyOn(reactRedux, "useSelector");
+
+beforeEach(() => {
+  useSelectorMock.mockImplementation(userPreferences.selectors.getUseMetricUnits);
+});
 
 it("EmissionListItem renders correctly if mitigated", () => {
   const tree = create(

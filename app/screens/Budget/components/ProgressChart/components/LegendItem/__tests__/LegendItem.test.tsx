@@ -1,5 +1,8 @@
 import React from "react";
 import { create } from "react-test-renderer";
+import * as reactRedux from "react-redux";
+
+import { userPreferences } from "ducks";
 
 import LegendItem from "../LegendItem";
 
@@ -10,6 +13,12 @@ const props = {
 };
 
 jest.unmock("../LegendItem");
+
+const useSelectorMock = jest.spyOn(reactRedux, "useSelector");
+
+beforeEach(() => {
+  useSelectorMock.mockImplementation(userPreferences.selectors.getUseMetricUnits);
+});
 
 it("LegendItem renders correctly", () => {
   const tree = create(<LegendItem {...props} />).toJSON();
