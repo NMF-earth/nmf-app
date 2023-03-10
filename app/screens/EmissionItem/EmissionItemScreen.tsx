@@ -8,7 +8,7 @@ import { FormattedNumber } from "react-native-globalize";
 import { useNavigation, useRoute } from "@react-navigation/native";
 
 import { Text, Button } from "components";
-import { emissions, recurringEmissions } from "ducks";
+import { emissions, recurringEmissions, userPreferences } from "ducks";
 import {
   calculation,
   ui,
@@ -32,6 +32,10 @@ const EmissionItemScreen = ({ language = "" }: LocalizationContextProps) => {
   const isRecurringEmission = pathOr(false, ["params", "isRecurringEmission"], route);
 
   const dispatch = useDispatch();
+
+  const useMetricUnits = useSelector(userPreferences.selectors.getUseMetricUnits);
+  const getDisplayUnitsValue = calculation.getDisplayUnitsValue;
+  const getDisplayUnits = calculation.getDisplayUnits;
 
   let emission = useSelector((state) => emissions.selectors.getEmissionById(state, emissionId));
 
@@ -110,9 +114,9 @@ const EmissionItemScreen = ({ language = "" }: LocalizationContextProps) => {
       <Text.Primary darkGray style={styles.item}>
         <FormattedNumber
           maximumFractionDigits={2}
-          value={co2Emission > 1 ? co2Emission : co2Emission * 1000}
+          value={getDisplayUnitsValue(co2Emission, useMetricUnits)}
         />{" "}
-        {co2Emission > 1 ? " kgC02eq" : " gC02eq"}
+        {`${getDisplayUnits(co2Emission, useMetricUnits)}C02eq`}
       </Text.Primary>
 
       {!isRecurringEmission && (

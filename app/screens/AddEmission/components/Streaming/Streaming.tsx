@@ -1,11 +1,13 @@
 import React, { useState } from "react";
+import { useSelector } from "react-redux";
 import { View } from "react-native";
 import Slider from "@react-native-community/slider";
 import { FormattedNumber } from "react-native-globalize";
 import { streaming, getInternetUsageCarbonImpact, ElectricityType } from "carbon-footprint";
 
 import { Text } from "components";
-import { t, time } from "utils";
+import { userPreferences } from "ducks";
+import { t, time, calculation } from "utils";
 import { Colors } from "style";
 
 import styles from "./Streaming.styles";
@@ -40,6 +42,10 @@ const Streaming: React.FC<Props> = ({
     electricityCountry
   );
 
+  const useMetricUnits = useSelector(userPreferences.selectors.getUseMetricUnits);
+  const getDisplayUnitsValue = calculation.getDisplayUnitsValue;
+  const getDisplayUnits = calculation.getDisplayUnits;
+
   return (
     <>
       <View style={styles.durationDistanceContainer}>
@@ -60,10 +66,10 @@ const Streaming: React.FC<Props> = ({
         <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_SCREEN_TOTAL")}</Text.H3>
         <Text.H2 darkGray>
           <FormattedNumber
-            value={carbonValue > 1 ? carbonValue : carbonValue * 1000}
+            value={getDisplayUnitsValue(carbonValue, useMetricUnits)}
             maximumFractionDigits={2}
           />{" "}
-          <Text.Primary>{carbonValue > 1 ? "kgCO2eq" : "gCO2eq"}</Text.Primary>
+          <Text.Primary>{getDisplayUnits(carbonValue, useMetricUnits) + "CO2eq"}</Text.Primary>
         </Text.H2>
       </View>
     </>

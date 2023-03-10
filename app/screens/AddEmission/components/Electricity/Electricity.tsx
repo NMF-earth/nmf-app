@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import { toUpper } from "ramda";
+import { useSelector } from "react-redux";
 import { View } from "react-native";
 import Slider from "@react-native-community/slider";
 import { FormattedNumber } from "react-native-globalize";
 import { electricity, ElectricityType } from "carbon-footprint";
 
 import { Text } from "components";
-import { t } from "utils";
+import { userPreferences } from "ducks";
+import { t, calculation } from "utils";
 import { Colors } from "style";
 
 import styles from "./Electricity.styles";
@@ -26,7 +28,16 @@ const Electricity: React.FC<Props> = ({
   defaultValueSlider,
 }) => {
   const [sliderValue, setSliderValue] = useState(defaultValueSlider);
-  setElectricityConsumption(sliderValue);
+
+  const onSliderValueChange = (value: number) => {
+    const val = Math.round(value);
+    setSliderValue(val);
+    setElectricityConsumption(val);
+  };
+
+  const useMetricUnits = useSelector(userPreferences.selectors.getUseMetricUnits);
+  const getDisplayUnitsValue = calculation.getDisplayUnitsValue;
+  const getDisplayUnits = calculation.getDisplayUnits;
 
   return (
     <>
@@ -50,16 +61,22 @@ const Electricity: React.FC<Props> = ({
         maximumValue={MAX_SLIDER_VALUE}
         minimumValue={MIN_SLIDER_VALUE}
         value={sliderValue}
-        onSlidingComplete={setSliderValue}
+        onSlidingComplete={onSliderValueChange}
       />
       <View style={styles.totalContainer}>
         <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_SCREEN_TOTAL")}</Text.H3>
         <Text.H2 darkGray>
           <FormattedNumber
-            value={sliderValue * electricity[electricityCountry]}
+            value={getDisplayUnitsValue(
+              sliderValue * electricity[electricityCountry],
+              useMetricUnits
+            )}
             maximumFractionDigits={2}
           />{" "}
-          <Text.Primary>kgCO2eq</Text.Primary>
+          <Text.Primary>
+            {getDisplayUnits(sliderValue * electricity[electricityCountry], useMetricUnits) +
+              "CO2eq"}
+          </Text.Primary>
         </Text.H2>
       </View>
     </>

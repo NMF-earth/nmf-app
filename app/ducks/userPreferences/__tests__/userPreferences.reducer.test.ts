@@ -14,6 +14,7 @@ describe("userPreferences reducer should", () => {
       location: ElectricityType.world,
       language: currentLanguage,
       timesStarted: 0,
+      useMetricUnits: true,
     });
   });
 
@@ -31,6 +32,7 @@ describe("userPreferences reducer should", () => {
       location: ElectricityType.world,
       language: currentLanguage,
       timesStarted: 0,
+      useMetricUnits: true,
     });
   });
 
@@ -46,6 +48,7 @@ describe("userPreferences reducer should", () => {
       location: ElectricityType.belgium,
       language: currentLanguage,
       timesStarted: 0,
+      useMetricUnits: true,
     });
   });
 
@@ -61,6 +64,7 @@ describe("userPreferences reducer should", () => {
       location: ElectricityType.world,
       language: currentLanguage,
       timesStarted: 0,
+      useMetricUnits: true,
     });
   });
 
@@ -76,6 +80,7 @@ describe("userPreferences reducer should", () => {
       location: ElectricityType.world,
       language: "fr",
       timesStarted: 0,
+      useMetricUnits: true,
     });
   });
 
@@ -90,6 +95,23 @@ describe("userPreferences reducer should", () => {
       location: ElectricityType.world,
       language: currentLanguage,
       timesStarted: 1,
+      useMetricUnits: true,
     });
   });
+
+  it("handle units change", () => {
+    const expectedAction = {
+      type: userPreferences.actions.toggleUnits.toString(),
+      payload: false
+    };
+
+    expect(userPreferences.reducer(undefined, expectedAction)).toEqual({
+      acceptedTermsOfUseVersion: 0,
+      activatedNotifications: false,
+      location: ElectricityType.world,
+      language: currentLanguage,
+      timesStarted: 0,
+      useMetricUnits: false,
+    });
+  })
 });

@@ -21,7 +21,12 @@ exports[`PeriodBudget renders correctly 1`] = `
       center={true}
       lightGray={true}
     >
-      760 kg
+      <FormattedNumber
+        maximumFractionDigits={0}
+        value={760}
+      />
+       
+      kg
     </Text.Secondary>
   </Text.Secondary>
 </View>
@@ -48,7 +53,12 @@ exports[`PeriodBudget renders correctly if tons 1`] = `
       center={true}
       lightGray={true}
     >
-      760 kg
+      <FormattedNumber
+        maximumFractionDigits={0}
+        value={760}
+      />
+       
+      kg
     </Text.Secondary>
   </Text.Secondary>
 </View>

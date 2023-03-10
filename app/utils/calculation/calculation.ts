@@ -16,6 +16,7 @@ import { EmissionType, Emission, RecurringEmission, PeriodicityType, WeekDays } 
 import { WEEK_DAYS } from "constant/weekDays";
 
 import { t } from "../translations";
+import { MeasureType } from "../../types/measureType";
 
 const isNilOrEmpty = either(isNil, isEmpty);
 
@@ -136,6 +137,63 @@ const getPeriodicityText = ({
   return periodicityText;
 };
 
+const getImperialMetricValue = (
+  metricValue: number,
+  useMetricUnits: boolean,
+  measureType: MeasureType
+): number => {
+  if (useMetricUnits) {
+    return metricValue;
+  } else {
+    if (measureType === MeasureType.mass) {
+      /* kg -> lbs */
+      return metricValue * 2.205;
+    } else if (measureType === MeasureType.length) {
+      /* km -> miles
+      note: deviates from NMF.earth's standard of using meters as a reference */
+      return metricValue / 1.609;
+    }
+  }
+};
+
+const getDisplayUnitsValue = (kgValue: number, useMetricUnits: boolean): number => {
+  if (useMetricUnits) {
+    if (kgValue <= 1) {
+      return kgValue * 1000;
+    } else if (kgValue > 1 && kgValue <= 1000) {
+      return kgValue;
+    } else {
+      return kgValue / 1000;
+    }
+  } else {
+    if (kgValue <= 0.454) {
+      return getImperialMetricValue(kgValue, useMetricUnits, MeasureType.mass) * 16;
+    } else {
+      return getImperialMetricValue(kgValue, useMetricUnits, MeasureType.mass);
+    }
+  }
+};
+
+const getDisplayUnits = (kgValue: number, useMetricUnits: boolean, useSymbol = true): string => {
+  const suffix = useSymbol ? "_SYMBOL" : "_FULL";
+
+  if (useMetricUnits) {
+    if (kgValue <= 1) {
+      return t(`GRAMS${suffix}`);
+    } else if (kgValue > 1 && kgValue <= 1000) {
+      return t(`KILOGRAMS${suffix}`);
+    } else {
+      return t(`TONNES${suffix}`);
+    }
+  } else {
+    if (kgValue <= 0.454) {
+      return t(`OUNCES${suffix}`);
+    } else {
+      return t(`POUNDS${suffix}`);
+    }
+  }
+};
+
 export default {
   getLatestEmission,
   getC02ValueFromEmission,
@@ -143,4 +201,7 @@ export default {
   getFlightEmissionValue,
   getCarbonIntensityInGramPerKWHromKgPerJoules,
   getPeriodicityText,
+  getImperialMetricValue,
+  getDisplayUnitsValue,
+  getDisplayUnits,
 };

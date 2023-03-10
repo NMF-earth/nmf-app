@@ -1,0 +1,189 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ListItemSwitch /> ListItem renders correctly with both topLine and bottomLine 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+      },
+      Object {
+        "borderTopColor": "#F0F0F0",
+        "borderTopWidth": 1.6,
+      },
+      Object {
+        "borderBottomColor": "#F0F0F0",
+        "borderBottomWidth": 1.6,
+      },
+    ]
+  }
+>
+  <Text.Secondary
+    style={
+      Object {
+        "paddingVertical": 18,
+      }
+    }
+  >
+    Germany
+  </Text.Secondary>
+  <RCTSwitch
+    accessibilityRole="switch"
+    collapsable={false}
+    handlerTag={4}
+    handlerType="NativeViewGestureHandler"
+    onChange={[Function]}
+    onGestureHandlerEvent={[Function]}
+    onGestureHandlerStateChange={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "height": 31,
+        "width": 51,
+      }
+    }
+    value={true}
+  />
+</View>
+`;
+
+exports[`<ListItemSwitch /> ListItem renders correctly with bottomLine 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+      },
+      Object {
+        "borderBottomColor": "#F0F0F0",
+        "borderBottomWidth": 1.6,
+      },
+    ]
+  }
+>
+  <Text.Secondary
+    style={
+      Object {
+        "paddingVertical": 18,
+      }
+    }
+  >
+    Germany
+  </Text.Secondary>
+  <RCTSwitch
+    accessibilityRole="switch"
+    collapsable={false}
+    handlerTag={3}
+    handlerType="NativeViewGestureHandler"
+    onChange={[Function]}
+    onGestureHandlerEvent={[Function]}
+    onGestureHandlerStateChange={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "height": 31,
+        "width": 51,
+      }
+    }
+    value={true}
+  />
+</View>
+`;
+
+exports[`<ListItemSwitch /> ListItem renders correctly with topLine 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+      },
+      Object {
+        "borderTopColor": "#F0F0F0",
+        "borderTopWidth": 1.6,
+      },
+    ]
+  }
+>
+  <Text.Secondary
+    style={
+      Object {
+        "paddingVertical": 18,
+      }
+    }
+  >
+    Germany
+  </Text.Secondary>
+  <RCTSwitch
+    accessibilityRole="switch"
+    collapsable={false}
+    handlerTag={2}
+    handlerType="NativeViewGestureHandler"
+    onChange={[Function]}
+    onGestureHandlerEvent={[Function]}
+    onGestureHandlerStateChange={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "height": 31,
+        "width": 51,
+      }
+    }
+    value={true}
+  />
+</View>
+`;
+
+exports[`<ListItemSwitch /> render 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+      },
+    ]
+  }
+>
+  <Text.Secondary
+    style={
+      Object {
+        "paddingVertical": 18,
+      }
+    }
+  >
+    Germany
+  </Text.Secondary>
+  <RCTSwitch
+    accessibilityRole="switch"
+    collapsable={false}
+    handlerTag={1}
+    handlerType="NativeViewGestureHandler"
+    onChange={[Function]}
+    onGestureHandlerEvent={[Function]}
+    onGestureHandlerStateChange={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "height": 31,
+        "width": 51,
+      }
+    }
+    value={true}
+  />
+</View>
+`;

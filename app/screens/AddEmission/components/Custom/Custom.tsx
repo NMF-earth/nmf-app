@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import { useSelector } from "react-redux";
 import { View } from "react-native";
 import Slider from "@react-native-community/slider";
 
 import { Text } from "components";
-import { t } from "utils";
+import { userPreferences } from "ducks";
+import { t, calculation } from "utils";
 import { Colors } from "style";
 
 import styles from "./Custom.styles";
@@ -18,7 +20,15 @@ interface Props {
 
 const Custom: React.FC<Props> = ({ setCo2eqKilograms, defaultValueSlider }) => {
   const [sliderValue, setSliderValue] = useState(defaultValueSlider);
-  setCo2eqKilograms(sliderValue);
+
+  const onSliderValueChange = (value: number) => {
+    setSliderValue(value);
+    setCo2eqKilograms(value);
+  };
+
+  const useMetricUnits = useSelector(userPreferences.selectors.getUseMetricUnits);
+  const getDisplayUnitsValue = calculation.getDisplayUnitsValue;
+  const getDisplayUnits = calculation.getDisplayUnits;
 
   return (
     <>
@@ -26,8 +36,10 @@ const Custom: React.FC<Props> = ({ setCo2eqKilograms, defaultValueSlider }) => {
         <Text.H3 style={styles.header}>{t("ADD_EMISSION_SCREEN_QUANTITY_OF_EMISSION")}</Text.H3>
         <View style={{ flexDirection: "row" }}>
           <Text.H2 darkGray>
-            {Math.round(sliderValue)}
-            <Text.Primary>{" kgCO2eq"}</Text.Primary>
+            {Math.round(getDisplayUnitsValue(sliderValue, useMetricUnits))}
+            <Text.Primary>
+              {" " + getDisplayUnits(sliderValue, useMetricUnits) + "CO2eq"}
+            </Text.Primary>
           </Text.H2>
         </View>
       </View>
@@ -39,7 +51,7 @@ const Custom: React.FC<Props> = ({ setCo2eqKilograms, defaultValueSlider }) => {
         maximumValue={MAX_SLIDER_VALUE}
         minimumValue={MIN_SLIDER_VALUE}
         value={sliderValue}
-        onSlidingComplete={setSliderValue}
+        onSlidingComplete={onSliderValueChange}
       />
     </>
   );

@@ -1,11 +1,13 @@
 import React, { useState } from "react";
+import { useSelector } from "react-redux";
 import { View } from "react-native";
 import Slider from "@react-native-community/slider";
 import { FormattedNumber } from "react-native-globalize";
 import { meal } from "carbon-footprint";
 
 import { Text } from "components";
-import { t } from "utils";
+import { userPreferences } from "ducks";
+import { t, calculation } from "utils";
 import { Colors } from "style";
 
 import styles from "./Meal.styles";
@@ -28,6 +30,10 @@ const Meal: React.FC<Props> = ({ emissionModelType, setQuantity, defaultValueSli
     setQuantity(val);
   };
 
+  const useMetricUnits = useSelector(userPreferences.selectors.getUseMetricUnits);
+  const getDisplayUnitsValue = calculation.getDisplayUnitsValue;
+  const getDisplayUnits = calculation.getDisplayUnits;
+
   return (
     <>
       <View style={styles.durationContainer}>
@@ -48,10 +54,12 @@ const Meal: React.FC<Props> = ({ emissionModelType, setQuantity, defaultValueSli
         <Text.H3 style={styles.miniHeader}>{t("ADD_EMISSION_SCREEN_TOTAL")}</Text.H3>
         <Text.H2 darkGray>
           <FormattedNumber
-            value={sliderValue * meal[emissionModelType]}
+            value={getDisplayUnitsValue(sliderValue * meal[emissionModelType], useMetricUnits)}
             maximumFractionDigits={2}
           />{" "}
-          <Text.Primary>kgCO2eq</Text.Primary>
+          <Text.Primary>
+            {getDisplayUnits(sliderValue * meal[emissionModelType], useMetricUnits) + "CO2eq"}
+          </Text.Primary>
         </Text.H2>
       </View>
     </>

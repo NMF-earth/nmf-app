@@ -6,6 +6,7 @@ Object {
   "changeLanguage": [Function],
   "incrementTimesStarted": [Function],
   "toggleNotifications": [Function],
+  "toggleUnits": [Function],
   "updateLocation": [Function],
 }
 `;

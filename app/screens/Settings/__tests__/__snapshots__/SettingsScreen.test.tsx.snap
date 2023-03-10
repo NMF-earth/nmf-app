@@ -11,350 +11,71 @@ exports[`SettingsScreen renders correctly 1`] = `
   }
 >
   <View>
-    <TouchableOpacity
+    <ListItem
       onPress={[Function]}
-      style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "flex": 1,
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-            "paddingVertical": 18,
-          },
-          Object {
-            "borderBottomColor": "#F0F0F0",
-            "borderBottomWidth": 1.6,
-          },
-        ]
-      }
-    >
-      <Text.Secondary
-        numberOfLines={1}
-      >
-        About
-      </Text.Secondary>
-      <Ionicons
-        color="#9CA6A0"
-        name="ios-chevron-forward-outline"
-        size={14}
-      />
-    </TouchableOpacity>
-    <TouchableOpacity
+      showBottomLine={true}
+      title="About"
+    />
+    <ListItemSwitch
+      onChange={[Function]}
+      showBottomLine={true}
+      title="Metric units"
+    />
+    <ListItem
       onPress={[Function]}
-      style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "flex": 1,
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-            "paddingVertical": 18,
-          },
-          Object {
-            "borderBottomColor": "#F0F0F0",
-            "borderBottomWidth": 1.6,
-          },
-        ]
-      }
-    >
-      <Text.Secondary
-        numberOfLines={1}
-      >
-        My data
-      </Text.Secondary>
-      <Ionicons
-        color="#9CA6A0"
-        name="ios-chevron-forward-outline"
-        size={14}
-      />
-    </TouchableOpacity>
-    <TouchableOpacity
+      showBottomLine={true}
+      title="My data"
+    />
+    <ListItem
       onPress={[Function]}
-      style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "flex": 1,
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-            "paddingVertical": 18,
-          },
-          Object {
-            "borderBottomColor": "#F0F0F0",
-            "borderBottomWidth": 1.6,
-          },
-        ]
-      }
-    >
-      <Text.Secondary
-        numberOfLines={1}
-      >
-        Notifications
-      </Text.Secondary>
-      <Ionicons
-        color="#9CA6A0"
-        name="ios-chevron-forward-outline"
-        size={14}
-      />
-    </TouchableOpacity>
-    <TouchableOpacity
+      showBottomLine={true}
+      title="Notifications"
+    />
+    <ListItem
       onPress={[Function]}
-      style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "flex": 1,
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-            "paddingVertical": 18,
-          },
-          Object {
-            "borderBottomColor": "#F0F0F0",
-            "borderBottomWidth": 1.6,
-          },
-        ]
-      }
-    >
-      <Text.Secondary
-        numberOfLines={1}
-      >
-        My Location
-      </Text.Secondary>
-      <Ionicons
-        color="#9CA6A0"
-        name="ios-chevron-forward-outline"
-        size={14}
-      />
-    </TouchableOpacity>
-    <TouchableOpacity
+      showBottomLine={true}
+      title="My location"
+    />
+    <ListItem
       onPress={[Function]}
-      style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "flex": 1,
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-            "paddingVertical": 18,
-          },
-          Object {
-            "borderBottomColor": "#F0F0F0",
-            "borderBottomWidth": 1.6,
-          },
-        ]
-      }
-    >
-      <Text.Secondary
-        numberOfLines={1}
-      >
-        Support us!
-      </Text.Secondary>
-      <Ionicons
-        color="#9CA6A0"
-        name="ios-chevron-forward-outline"
-        size={14}
-      />
-    </TouchableOpacity>
-    <TouchableOpacity
+      showBottomLine={true}
+      title="Support us!"
+    />
+    <ListItem
       onPress={[Function]}
-      style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "flex": 1,
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-            "paddingVertical": 18,
-          },
-          Object {
-            "borderBottomColor": "#F0F0F0",
-            "borderBottomWidth": 1.6,
-          },
-        ]
-      }
-    >
-      <Text.Secondary
-        numberOfLines={1}
-      >
-        FAQ
-      </Text.Secondary>
-      <Ionicons
-        color="#9CA6A0"
-        name="ios-chevron-forward-outline"
-        size={14}
-      />
-    </TouchableOpacity>
-    <TouchableOpacity
+      showBottomLine={true}
+      title="FAQ"
+    />
+    <ListItem
       onPress={[Function]}
-      style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "flex": 1,
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-            "paddingVertical": 18,
-          },
-          Object {
-            "borderBottomColor": "#F0F0F0",
-            "borderBottomWidth": 1.6,
-          },
-        ]
-      }
-    >
-      <Text.Secondary
-        numberOfLines={1}
-      >
-        NMF.earth
-      </Text.Secondary>
-      <Ionicons
-        color="#9CA6A0"
-        name="ios-chevron-forward-outline"
-        size={14}
-      />
-    </TouchableOpacity>
-    <TouchableOpacity
+      showBottomLine={true}
+      title="NMF.earth"
+    />
+    <ListItem
       onPress={[Function]}
-      style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "flex": 1,
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-            "paddingVertical": 18,
-          },
-          Object {
-            "borderBottomColor": "#F0F0F0",
-            "borderBottomWidth": 1.6,
-          },
-        ]
-      }
-    >
-      <Text.Secondary
-        numberOfLines={1}
-      >
-        Roadmap
-      </Text.Secondary>
-      <Ionicons
-        color="#9CA6A0"
-        name="ios-chevron-forward-outline"
-        size={14}
-      />
-    </TouchableOpacity>
-    <TouchableOpacity
+      showBottomLine={true}
+      title="Roadmap"
+    />
+    <ListItem
       onPress={[Function]}
-      style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "flex": 1,
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-            "paddingVertical": 18,
-          },
-          Object {
-            "borderBottomColor": "#F0F0F0",
-            "borderBottomWidth": 1.6,
-          },
-        ]
-      }
-    >
-      <Text.Secondary
-        numberOfLines={1}
-      >
-        Help translation
-      </Text.Secondary>
-      <Ionicons
-        color="#9CA6A0"
-        name="ios-chevron-forward-outline"
-        size={14}
-      />
-    </TouchableOpacity>
-    <TouchableOpacity
+      showBottomLine={true}
+      title="Help translation"
+    />
+    <ListItem
       onPress={[Function]}
-      style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "flex": 1,
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-            "paddingVertical": 18,
-          },
-          Object {
-            "borderBottomColor": "#F0F0F0",
-            "borderBottomWidth": 1.6,
-          },
-        ]
-      }
-    >
-      <Text.Secondary
-        numberOfLines={1}
-      >
-        Feedback
-      </Text.Secondary>
-      <Ionicons
-        color="#9CA6A0"
-        name="ios-chevron-forward-outline"
-        size={14}
-      />
-    </TouchableOpacity>
-    <TouchableOpacity
+      showBottomLine={true}
+      title="Feedback"
+    />
+    <ListItem
       onPress={[Function]}
-      style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "flex": 1,
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-            "paddingVertical": 18,
-          },
-          Object {
-            "borderBottomColor": "#F0F0F0",
-            "borderBottomWidth": 1.6,
-          },
-        ]
-      }
-    >
-      <Text.Secondary
-        numberOfLines={1}
-      >
-        Terms of use
-      </Text.Secondary>
-      <Ionicons
-        color="#9CA6A0"
-        name="ios-chevron-forward-outline"
-        size={14}
-      />
-    </TouchableOpacity>
-    <TouchableOpacity
+      showBottomLine={true}
+      title="Terms of use"
+    />
+    <ListItem
       onPress={[Function]}
-      style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "flex": 1,
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-            "paddingVertical": 18,
-          },
-        ]
-      }
-    >
-      <Text.Secondary
-        numberOfLines={1}
-      >
-        Languages
-      </Text.Secondary>
-      <Ionicons
-        color="#9CA6A0"
-        name="ios-chevron-forward-outline"
-        size={14}
-      />
-    </TouchableOpacity>
+      showBottomLine={false}
+      title="Languages"
+    />
     <View
       accessible={true}
       focusable={true}

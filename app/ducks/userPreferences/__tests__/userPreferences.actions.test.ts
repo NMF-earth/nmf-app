@@ -39,4 +39,12 @@ describe("userPreferences actions should", () => {
     };
     expect(userPreferences.actions.incrementTimesStarted()).toEqual(expectedAction);
   });
+
+  it("be able to toggle units", () => {
+    const expectedAction = {
+      type: userPreferences.actions.toggleUnits.toString(),
+      payload: false,
+    };
+    expect(userPreferences.actions.toggleUnits(false)).toEqual(expectedAction);
+  })
 });
