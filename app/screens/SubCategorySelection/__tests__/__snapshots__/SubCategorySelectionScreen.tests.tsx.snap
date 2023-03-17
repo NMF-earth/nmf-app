@@ -3,7 +3,7 @@
 exports[`SubCategorySelectionScreen renders correctly 1`] = `
 <RCTScrollView
   style={
-    Object {
+    {
       "backgroundColor": "#FFFFFF",
       "flex": 1,
       "paddingHorizontal": 16,
@@ -13,7 +13,7 @@ exports[`SubCategorySelectionScreen renders correctly 1`] = `
   <View>
     <Text.H2
       style={
-        Object {
+        {
           "paddingBottom": 16,
           "paddingTop": 20,
         }

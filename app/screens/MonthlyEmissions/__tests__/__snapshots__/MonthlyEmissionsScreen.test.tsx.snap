@@ -5,7 +5,7 @@ exports[`<MonthlyEmissions /> render 1`] = `
   ListHeaderComponent={
     <View
       style={
-        Object {
+        {
           "backgroundColor": "#FFFFFF",
           "borderBottomColor": "#DCF0E5",
           "borderBottomWidth": 2,
@@ -15,7 +15,7 @@ exports[`<MonthlyEmissions /> render 1`] = `
           "paddingHorizontal": 16,
           "paddingVertical": 16,
           "shadowColor": "transparent",
-          "shadowOffset": Object {
+          "shadowOffset": {
             "height": 0,
             "width": 0,
           },
@@ -38,8 +38,8 @@ exports[`<MonthlyEmissions /> render 1`] = `
     </View>
   }
   data={
-    Array [
-      Object {
+    [
+      {
         "co2value": 20,
         "creationDate": "2020-03-01T12:08:16.623Z",
         "emissionModelType": "beans",
@@ -51,7 +51,7 @@ exports[`<MonthlyEmissions /> render 1`] = `
         "title": "Beans",
         "value": 10,
       },
-      Object {
+      {
         "co2value": 0.0803,
         "creationDate": "2020-03-01T12:08:16.623Z",
         "emissionModelType": "boat",
@@ -78,13 +78,13 @@ exports[`<MonthlyEmissions /> render 1`] = `
   removeClippedSubviews={false}
   renderItem={[Function]}
   scrollEventThrottle={50}
-  stickyHeaderIndices={Array []}
+  stickyHeaderIndices={[]}
   style={
-    Object {
+    {
       "backgroundColor": "#FFFFFF",
     }
   }
-  viewabilityConfigCallbackPairs={Array []}
+  viewabilityConfigCallbackPairs={[]}
 >
   <View>
     <View
@@ -92,7 +92,7 @@ exports[`<MonthlyEmissions /> render 1`] = `
     >
       <View
         style={
-          Object {
+          {
             "backgroundColor": "#FFFFFF",
             "borderBottomColor": "#DCF0E5",
             "borderBottomWidth": 2,
@@ -102,7 +102,7 @@ exports[`<MonthlyEmissions /> render 1`] = `
             "paddingHorizontal": 16,
             "paddingVertical": 16,
             "shadowColor": "transparent",
-            "shadowOffset": Object {
+            "shadowOffset": {
               "height": 0,
               "width": 0,
             },
@@ -125,6 +125,7 @@ exports[`<MonthlyEmissions /> render 1`] = `
       </View>
     </View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -139,6 +140,7 @@ exports[`<MonthlyEmissions /> render 1`] = `
       />
     </View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >

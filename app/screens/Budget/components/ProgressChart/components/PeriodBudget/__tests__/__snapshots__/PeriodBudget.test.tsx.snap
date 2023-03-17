@@ -3,7 +3,7 @@
 exports[`PeriodBudget renders correctly 1`] = `
 <View
   style={
-    Object {
+    {
       "flex": 1,
       "paddingBottom": 16,
       "paddingTop": 12,
@@ -35,7 +35,7 @@ exports[`PeriodBudget renders correctly 1`] = `
 exports[`PeriodBudget renders correctly if tons 1`] = `
 <View
   style={
-    Object {
+    {
       "flex": 1,
       "paddingBottom": 16,
       "paddingTop": 12,

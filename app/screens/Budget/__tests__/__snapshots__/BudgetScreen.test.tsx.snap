@@ -3,7 +3,7 @@
 exports[`BudgetScreen renders correctly 1`] = `
 <RCTScrollView
   style={
-    Object {
+    {
       "backgroundColor": "#FFFFFF",
       "flex": 1,
       "paddingHorizontal": 16,
@@ -19,7 +19,7 @@ exports[`BudgetScreen renders correctly 1`] = `
       icon="calendar"
       onPress={[Function]}
       style={
-        Object {
+        {
           "marginVertical": 6,
         }
       }

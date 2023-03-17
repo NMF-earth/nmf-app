@@ -1,3 +1,5 @@
+import { PermissionStatus } from "expo-barcode-scanner";
+
 /* eslint-disable @typescript-eslint/no-var-requires */
 /* eslint-disable no-undef */
 jest.mock("react-native-svg", () => {
@@ -73,5 +75,23 @@ jest.mock("expo-constants", () => {
         buildNumber: 42,
       },
     },
+  };
+});
+
+jest.mock("expo-barcode-scanner", () => {
+  return {
+    BarCodeScanner: {
+      requestPermissionsAsync: () => ({
+        status: "denied",
+      }),
+    },
+  };
+});
+
+jest.mock("expo-notifications", () => {
+  return {
+    requestPermissionsAsync: () => ({
+      status: "denied",
+    }),
   };
 });

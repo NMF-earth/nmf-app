@@ -4,19 +4,19 @@ exports[`<ListItem /> ListItem renders correctly both topLine and bottomLine 1`]
 <TouchableOpacity
   onPress={[Function]}
   style={
-    Array [
-      Object {
+    [
+      {
         "alignItems": "center",
         "flex": 1,
         "flexDirection": "row",
         "justifyContent": "space-between",
         "paddingVertical": 18,
       },
-      Object {
+      {
         "borderTopColor": "#F0F0F0",
         "borderTopWidth": 1.6,
       },
-      Object {
+      {
         "borderBottomColor": "#F0F0F0",
         "borderBottomWidth": 1.6,
       },
@@ -40,15 +40,15 @@ exports[`<ListItem /> ListItem renders correctly wtesth bottomLine 1`] = `
 <TouchableOpacity
   onPress={[Function]}
   style={
-    Array [
-      Object {
+    [
+      {
         "alignItems": "center",
         "flex": 1,
         "flexDirection": "row",
         "justifyContent": "space-between",
         "paddingVertical": 18,
       },
-      Object {
+      {
         "borderBottomColor": "#F0F0F0",
         "borderBottomWidth": 1.6,
       },
@@ -72,15 +72,15 @@ exports[`<ListItem /> ListItem renders correctly wtesth topLine 1`] = `
 <TouchableOpacity
   onPress={[Function]}
   style={
-    Array [
-      Object {
+    [
+      {
         "alignItems": "center",
         "flex": 1,
         "flexDirection": "row",
         "justifyContent": "space-between",
         "paddingVertical": 18,
       },
-      Object {
+      {
         "borderTopColor": "#F0F0F0",
         "borderTopWidth": 1.6,
       },
@@ -104,8 +104,8 @@ exports[`<ListItem /> render 1`] = `
 <TouchableOpacity
   onPress={[Function]}
   style={
-    Array [
-      Object {
+    [
+      {
         "alignItems": "center",
         "flex": 1,
         "flexDirection": "row",

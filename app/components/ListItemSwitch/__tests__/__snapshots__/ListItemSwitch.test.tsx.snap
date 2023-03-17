@@ -3,18 +3,18 @@
 exports[`<ListItemSwitch /> ListItem renders correctly with both topLine and bottomLine 1`] = `
 <View
   style={
-    Array [
-      Object {
+    [
+      {
         "alignItems": "center",
         "flex": 1,
         "flexDirection": "row",
         "justifyContent": "space-between",
       },
-      Object {
+      {
         "borderTopColor": "#F0F0F0",
         "borderTopWidth": 1.6,
       },
-      Object {
+      {
         "borderBottomColor": "#F0F0F0",
         "borderBottomWidth": 1.6,
       },
@@ -23,7 +23,7 @@ exports[`<ListItemSwitch /> ListItem renders correctly with both topLine and bot
 >
   <Text.Secondary
     style={
-      Object {
+      {
         "paddingVertical": 18,
       }
     }
@@ -41,7 +41,7 @@ exports[`<ListItemSwitch /> ListItem renders correctly with both topLine and bot
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Object {
+      {
         "height": 31,
         "width": 51,
       }
@@ -54,14 +54,14 @@ exports[`<ListItemSwitch /> ListItem renders correctly with both topLine and bot
 exports[`<ListItemSwitch /> ListItem renders correctly with bottomLine 1`] = `
 <View
   style={
-    Array [
-      Object {
+    [
+      {
         "alignItems": "center",
         "flex": 1,
         "flexDirection": "row",
         "justifyContent": "space-between",
       },
-      Object {
+      {
         "borderBottomColor": "#F0F0F0",
         "borderBottomWidth": 1.6,
       },
@@ -70,7 +70,7 @@ exports[`<ListItemSwitch /> ListItem renders correctly with bottomLine 1`] = `
 >
   <Text.Secondary
     style={
-      Object {
+      {
         "paddingVertical": 18,
       }
     }
@@ -88,7 +88,7 @@ exports[`<ListItemSwitch /> ListItem renders correctly with bottomLine 1`] = `
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Object {
+      {
         "height": 31,
         "width": 51,
       }
@@ -101,14 +101,14 @@ exports[`<ListItemSwitch /> ListItem renders correctly with bottomLine 1`] = `
 exports[`<ListItemSwitch /> ListItem renders correctly with topLine 1`] = `
 <View
   style={
-    Array [
-      Object {
+    [
+      {
         "alignItems": "center",
         "flex": 1,
         "flexDirection": "row",
         "justifyContent": "space-between",
       },
-      Object {
+      {
         "borderTopColor": "#F0F0F0",
         "borderTopWidth": 1.6,
       },
@@ -117,7 +117,7 @@ exports[`<ListItemSwitch /> ListItem renders correctly with topLine 1`] = `
 >
   <Text.Secondary
     style={
-      Object {
+      {
         "paddingVertical": 18,
       }
     }
@@ -135,7 +135,7 @@ exports[`<ListItemSwitch /> ListItem renders correctly with topLine 1`] = `
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Object {
+      {
         "height": 31,
         "width": 51,
       }
@@ -148,8 +148,8 @@ exports[`<ListItemSwitch /> ListItem renders correctly with topLine 1`] = `
 exports[`<ListItemSwitch /> render 1`] = `
 <View
   style={
-    Array [
-      Object {
+    [
+      {
         "alignItems": "center",
         "flex": 1,
         "flexDirection": "row",
@@ -160,7 +160,7 @@ exports[`<ListItemSwitch /> render 1`] = `
 >
   <Text.Secondary
     style={
-      Object {
+      {
         "paddingVertical": 18,
       }
     }
@@ -178,7 +178,7 @@ exports[`<ListItemSwitch /> render 1`] = `
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Object {
+      {
         "height": 31,
         "width": 51,
       }

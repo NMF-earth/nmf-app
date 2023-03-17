@@ -3,7 +3,7 @@
 exports[`MyLocationScreen renders correctly 1`] = `
 <View
   style={
-    Object {
+    {
       "backgroundColor": "#FFFFFF",
       "flex": 1,
       "paddingHorizontal": 16,
@@ -12,7 +12,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
 >
   <Text.Primary
     style={
-      Object {
+      {
         "paddingTop": 30,
       }
     }
@@ -21,14 +21,14 @@ exports[`MyLocationScreen renders correctly 1`] = `
   </Text.Primary>
   <View
     style={
-      Object {
+      {
         "flexDirection": "row",
       }
     }
   >
     <Text.Primary
       style={
-        Object {
+        {
           "paddingVertical": 20,
         }
       }
@@ -39,7 +39,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
       bold={true}
       green={true}
       style={
-        Object {
+        {
           "paddingVertical": 20,
         }
       }
@@ -50,7 +50,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
       bold={true}
       green={true}
       style={
-        Object {
+        {
           "paddingVertical": 20,
         }
       }
@@ -60,7 +60,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
   </View>
   <RCTScrollView
     style={
-      Object {
+      {
         "borderTopColor": "#DCF0E5",
         "borderTopWidth": 2,
       }
@@ -70,7 +70,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
       <TouchableOpacity
         onPress={[Function]}
         style={
-          Object {
+          {
             "flexDirection": "row",
             "justifyContent": "space-between",
           }
@@ -81,7 +81,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
           green={false}
           numberOfLines={1}
           style={
-            Object {
+            {
               "paddingVertical": 20,
             }
           }
@@ -92,7 +92,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
       <TouchableOpacity
         onPress={[Function]}
         style={
-          Object {
+          {
             "flexDirection": "row",
             "justifyContent": "space-between",
           }
@@ -103,7 +103,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
           green={false}
           numberOfLines={1}
           style={
-            Object {
+            {
               "paddingVertical": 20,
             }
           }
@@ -114,7 +114,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
       <TouchableOpacity
         onPress={[Function]}
         style={
-          Object {
+          {
             "flexDirection": "row",
             "justifyContent": "space-between",
           }
@@ -125,7 +125,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
           green={false}
           numberOfLines={1}
           style={
-            Object {
+            {
               "paddingVertical": 20,
             }
           }
@@ -136,7 +136,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
       <TouchableOpacity
         onPress={[Function]}
         style={
-          Object {
+          {
             "flexDirection": "row",
             "justifyContent": "space-between",
           }
@@ -147,7 +147,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
           green={false}
           numberOfLines={1}
           style={
-            Object {
+            {
               "paddingVertical": 20,
             }
           }
@@ -158,7 +158,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
       <TouchableOpacity
         onPress={[Function]}
         style={
-          Object {
+          {
             "flexDirection": "row",
             "justifyContent": "space-between",
           }
@@ -169,7 +169,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
           green={false}
           numberOfLines={1}
           style={
-            Object {
+            {
               "paddingVertical": 20,
             }
           }
@@ -180,7 +180,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
       <TouchableOpacity
         onPress={[Function]}
         style={
-          Object {
+          {
             "flexDirection": "row",
             "justifyContent": "space-between",
           }
@@ -191,7 +191,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
           green={false}
           numberOfLines={1}
           style={
-            Object {
+            {
               "paddingVertical": 20,
             }
           }
@@ -202,7 +202,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
       <TouchableOpacity
         onPress={[Function]}
         style={
-          Object {
+          {
             "flexDirection": "row",
             "justifyContent": "space-between",
           }
@@ -213,7 +213,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
           green={false}
           numberOfLines={1}
           style={
-            Object {
+            {
               "paddingVertical": 20,
             }
           }
@@ -224,7 +224,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
       <TouchableOpacity
         onPress={[Function]}
         style={
-          Object {
+          {
             "flexDirection": "row",
             "justifyContent": "space-between",
           }
@@ -235,7 +235,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
           green={false}
           numberOfLines={1}
           style={
-            Object {
+            {
               "paddingVertical": 20,
             }
           }
@@ -246,7 +246,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
       <TouchableOpacity
         onPress={[Function]}
         style={
-          Object {
+          {
             "flexDirection": "row",
             "justifyContent": "space-between",
           }
@@ -257,7 +257,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
           green={false}
           numberOfLines={1}
           style={
-            Object {
+            {
               "paddingVertical": 20,
             }
           }
@@ -268,7 +268,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
       <TouchableOpacity
         onPress={[Function]}
         style={
-          Object {
+          {
             "flexDirection": "row",
             "justifyContent": "space-between",
           }
@@ -279,7 +279,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
           green={false}
           numberOfLines={1}
           style={
-            Object {
+            {
               "paddingVertical": 20,
             }
           }
@@ -290,7 +290,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
       <TouchableOpacity
         onPress={[Function]}
         style={
-          Object {
+          {
             "flexDirection": "row",
             "justifyContent": "space-between",
           }
@@ -301,7 +301,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
           green={false}
           numberOfLines={1}
           style={
-            Object {
+            {
               "paddingVertical": 20,
             }
           }
@@ -312,7 +312,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
       <TouchableOpacity
         onPress={[Function]}
         style={
-          Object {
+          {
             "flexDirection": "row",
             "justifyContent": "space-between",
           }
@@ -323,7 +323,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
           green={false}
           numberOfLines={1}
           style={
-            Object {
+            {
               "paddingVertical": 20,
             }
           }
@@ -334,7 +334,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
       <TouchableOpacity
         onPress={[Function]}
         style={
-          Object {
+          {
             "flexDirection": "row",
             "justifyContent": "space-between",
           }
@@ -345,7 +345,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
           green={false}
           numberOfLines={1}
           style={
-            Object {
+            {
               "paddingVertical": 20,
             }
           }
@@ -356,7 +356,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
       <TouchableOpacity
         onPress={[Function]}
         style={
-          Object {
+          {
             "flexDirection": "row",
             "justifyContent": "space-between",
           }
@@ -367,7 +367,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
           green={false}
           numberOfLines={1}
           style={
-            Object {
+            {
               "paddingVertical": 20,
             }
           }
@@ -378,7 +378,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
       <TouchableOpacity
         onPress={[Function]}
         style={
-          Object {
+          {
             "flexDirection": "row",
             "justifyContent": "space-between",
           }
@@ -389,7 +389,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
           green={false}
           numberOfLines={1}
           style={
-            Object {
+            {
               "paddingVertical": 20,
             }
           }
@@ -400,7 +400,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
       <TouchableOpacity
         onPress={[Function]}
         style={
-          Object {
+          {
             "flexDirection": "row",
             "justifyContent": "space-between",
           }
@@ -411,7 +411,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
           green={false}
           numberOfLines={1}
           style={
-            Object {
+            {
               "paddingVertical": 20,
             }
           }
@@ -422,7 +422,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
       <TouchableOpacity
         onPress={[Function]}
         style={
-          Object {
+          {
             "flexDirection": "row",
             "justifyContent": "space-between",
           }
@@ -433,7 +433,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
           green={false}
           numberOfLines={1}
           style={
-            Object {
+            {
               "paddingVertical": 20,
             }
           }
@@ -444,7 +444,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
       <TouchableOpacity
         onPress={[Function]}
         style={
-          Object {
+          {
             "flexDirection": "row",
             "justifyContent": "space-between",
           }
@@ -455,7 +455,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
           green={false}
           numberOfLines={1}
           style={
-            Object {
+            {
               "paddingVertical": 20,
             }
           }
@@ -466,7 +466,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
       <TouchableOpacity
         onPress={[Function]}
         style={
-          Object {
+          {
             "flexDirection": "row",
             "justifyContent": "space-between",
           }
@@ -477,7 +477,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
           green={false}
           numberOfLines={1}
           style={
-            Object {
+            {
               "paddingVertical": 20,
             }
           }
@@ -488,7 +488,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
       <TouchableOpacity
         onPress={[Function]}
         style={
-          Object {
+          {
             "flexDirection": "row",
             "justifyContent": "space-between",
           }
@@ -499,7 +499,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
           green={false}
           numberOfLines={1}
           style={
-            Object {
+            {
               "paddingVertical": 20,
             }
           }
@@ -510,7 +510,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
       <TouchableOpacity
         onPress={[Function]}
         style={
-          Object {
+          {
             "flexDirection": "row",
             "justifyContent": "space-between",
           }
@@ -521,7 +521,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
           green={false}
           numberOfLines={1}
           style={
-            Object {
+            {
               "paddingVertical": 20,
             }
           }
@@ -532,7 +532,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
       <TouchableOpacity
         onPress={[Function]}
         style={
-          Object {
+          {
             "flexDirection": "row",
             "justifyContent": "space-between",
           }
@@ -543,7 +543,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
           green={false}
           numberOfLines={1}
           style={
-            Object {
+            {
               "paddingVertical": 20,
             }
           }
@@ -554,7 +554,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
       <TouchableOpacity
         onPress={[Function]}
         style={
-          Object {
+          {
             "flexDirection": "row",
             "justifyContent": "space-between",
           }
@@ -565,7 +565,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
           green={false}
           numberOfLines={1}
           style={
-            Object {
+            {
               "paddingVertical": 20,
             }
           }
@@ -576,7 +576,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
       <TouchableOpacity
         onPress={[Function]}
         style={
-          Object {
+          {
             "flexDirection": "row",
             "justifyContent": "space-between",
           }
@@ -587,7 +587,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
           green={false}
           numberOfLines={1}
           style={
-            Object {
+            {
               "paddingVertical": 20,
             }
           }
@@ -598,7 +598,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
       <TouchableOpacity
         onPress={[Function]}
         style={
-          Object {
+          {
             "flexDirection": "row",
             "justifyContent": "space-between",
           }
@@ -609,7 +609,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
           green={false}
           numberOfLines={1}
           style={
-            Object {
+            {
               "paddingVertical": 20,
             }
           }
@@ -620,7 +620,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
       <TouchableOpacity
         onPress={[Function]}
         style={
-          Object {
+          {
             "flexDirection": "row",
             "justifyContent": "space-between",
           }
@@ -631,7 +631,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
           green={false}
           numberOfLines={1}
           style={
-            Object {
+            {
               "paddingVertical": 20,
             }
           }
@@ -642,7 +642,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
       <TouchableOpacity
         onPress={[Function]}
         style={
-          Object {
+          {
             "flexDirection": "row",
             "justifyContent": "space-between",
           }
@@ -653,7 +653,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
           green={false}
           numberOfLines={1}
           style={
-            Object {
+            {
               "paddingVertical": 20,
             }
           }
@@ -664,7 +664,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
       <TouchableOpacity
         onPress={[Function]}
         style={
-          Object {
+          {
             "flexDirection": "row",
             "justifyContent": "space-between",
           }
@@ -675,7 +675,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
           green={false}
           numberOfLines={1}
           style={
-            Object {
+            {
               "paddingVertical": 20,
             }
           }
@@ -686,7 +686,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
       <TouchableOpacity
         onPress={[Function]}
         style={
-          Object {
+          {
             "flexDirection": "row",
             "justifyContent": "space-between",
           }
@@ -697,7 +697,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
           green={false}
           numberOfLines={1}
           style={
-            Object {
+            {
               "paddingVertical": 20,
             }
           }
@@ -708,7 +708,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
       <TouchableOpacity
         onPress={[Function]}
         style={
-          Object {
+          {
             "flexDirection": "row",
             "justifyContent": "space-between",
           }
@@ -719,7 +719,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
           green={false}
           numberOfLines={1}
           style={
-            Object {
+            {
               "paddingVertical": 20,
             }
           }
@@ -730,7 +730,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
       <TouchableOpacity
         onPress={[Function]}
         style={
-          Object {
+          {
             "flexDirection": "row",
             "justifyContent": "space-between",
           }
@@ -741,7 +741,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
           green={false}
           numberOfLines={1}
           style={
-            Object {
+            {
               "paddingVertical": 20,
             }
           }
@@ -752,7 +752,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
       <TouchableOpacity
         onPress={[Function]}
         style={
-          Object {
+          {
             "flexDirection": "row",
             "justifyContent": "space-between",
           }
@@ -763,7 +763,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
           green={false}
           numberOfLines={1}
           style={
-            Object {
+            {
               "paddingVertical": 20,
             }
           }
@@ -774,7 +774,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
       <TouchableOpacity
         onPress={[Function]}
         style={
-          Object {
+          {
             "flexDirection": "row",
             "justifyContent": "space-between",
           }
@@ -785,7 +785,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
           green={false}
           numberOfLines={1}
           style={
-            Object {
+            {
               "paddingVertical": 20,
             }
           }
@@ -796,7 +796,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
       <TouchableOpacity
         onPress={[Function]}
         style={
-          Object {
+          {
             "flexDirection": "row",
             "justifyContent": "space-between",
           }
@@ -807,7 +807,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
           green={false}
           numberOfLines={1}
           style={
-            Object {
+            {
               "paddingVertical": 20,
             }
           }
@@ -818,7 +818,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
       <TouchableOpacity
         onPress={[Function]}
         style={
-          Object {
+          {
             "flexDirection": "row",
             "justifyContent": "space-between",
           }
@@ -829,7 +829,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
           green={false}
           numberOfLines={1}
           style={
-            Object {
+            {
               "paddingVertical": 20,
             }
           }
@@ -840,7 +840,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
       <TouchableOpacity
         onPress={[Function]}
         style={
-          Object {
+          {
             "flexDirection": "row",
             "justifyContent": "space-between",
           }
@@ -851,7 +851,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
           green={false}
           numberOfLines={1}
           style={
-            Object {
+            {
               "paddingVertical": 20,
             }
           }
@@ -862,7 +862,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
       <TouchableOpacity
         onPress={[Function]}
         style={
-          Object {
+          {
             "flexDirection": "row",
             "justifyContent": "space-between",
           }
@@ -873,7 +873,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
           green={false}
           numberOfLines={1}
           style={
-            Object {
+            {
               "paddingVertical": 20,
             }
           }
@@ -884,7 +884,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
       <TouchableOpacity
         onPress={[Function]}
         style={
-          Object {
+          {
             "flexDirection": "row",
             "justifyContent": "space-between",
           }
@@ -895,7 +895,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
           green={false}
           numberOfLines={1}
           style={
-            Object {
+            {
               "paddingVertical": 20,
             }
           }
@@ -906,7 +906,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
       <TouchableOpacity
         onPress={[Function]}
         style={
-          Object {
+          {
             "flexDirection": "row",
             "justifyContent": "space-between",
           }
@@ -917,7 +917,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
           green={false}
           numberOfLines={1}
           style={
-            Object {
+            {
               "paddingVertical": 20,
             }
           }
@@ -928,7 +928,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
       <TouchableOpacity
         onPress={[Function]}
         style={
-          Object {
+          {
             "flexDirection": "row",
             "justifyContent": "space-between",
           }
@@ -939,7 +939,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
           green={false}
           numberOfLines={1}
           style={
-            Object {
+            {
               "paddingVertical": 20,
             }
           }
@@ -950,7 +950,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
       <TouchableOpacity
         onPress={[Function]}
         style={
-          Object {
+          {
             "flexDirection": "row",
             "justifyContent": "space-between",
           }
@@ -961,7 +961,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
           green={false}
           numberOfLines={1}
           style={
-            Object {
+            {
               "paddingVertical": 20,
             }
           }
@@ -972,7 +972,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
       <TouchableOpacity
         onPress={[Function]}
         style={
-          Object {
+          {
             "flexDirection": "row",
             "justifyContent": "space-between",
           }
@@ -983,7 +983,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
           green={false}
           numberOfLines={1}
           style={
-            Object {
+            {
               "paddingVertical": 20,
             }
           }

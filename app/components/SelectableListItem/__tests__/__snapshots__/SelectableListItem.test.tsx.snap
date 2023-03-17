@@ -4,7 +4,7 @@ exports[`<SelectableListItem /> render 1`] = `
 <TouchableOpacity
   onPress={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
       "justifyContent": "space-between",
     }
@@ -15,7 +15,7 @@ exports[`<SelectableListItem /> render 1`] = `
     green={true}
     numberOfLines={1}
     style={
-      Object {
+      {
         "paddingVertical": 20,
       }
     }
@@ -27,7 +27,7 @@ exports[`<SelectableListItem /> render 1`] = `
     name="md-checkmark"
     size={26}
     style={
-      Object {
+      {
         "marginTop": 18,
       }
     }
@@ -39,7 +39,7 @@ exports[`<SelectableListItem /> render if not selected 1`] = `
 <TouchableOpacity
   onPress={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
       "justifyContent": "space-between",
     }
@@ -50,7 +50,7 @@ exports[`<SelectableListItem /> render if not selected 1`] = `
     green={true}
     numberOfLines={1}
     style={
-      Object {
+      {
         "paddingVertical": 20,
       }
     }
@@ -62,7 +62,7 @@ exports[`<SelectableListItem /> render if not selected 1`] = `
     name="md-checkmark"
     size={26}
     style={
-      Object {
+      {
         "marginTop": 18,
       }
     }

@@ -3,7 +3,7 @@
 exports[`MonthlyBudgetScreen renders correctly 1`] = `
 <View
   style={
-    Object {
+    {
       "backgroundColor": "#FFFFFF",
       "flex": 1,
       "paddingHorizontal": 16,
@@ -14,7 +14,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
     <View>
       <View
         style={
-          Object {
+          {
             "flexDirection": "row",
             "flexWrap": "wrap",
             "paddingTop": 26,
@@ -29,8 +29,8 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
       </View>
       <RNCSlider
         disabled={false}
-        enabled={true}
         inverted={false}
+        lowerLimit={-9007199254740991}
         maximumTrackTintColor="#CED4DA"
         maximumValue={1000}
         minimumTrackTintColor="#4BB377"
@@ -44,18 +44,18 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
         onStartShouldSetResponder={[Function]}
         step={0}
         style={
-          Array [
-            Object {
-              "height": 40,
-            },
-            Object {
+          [
+            {
               "marginTop": 14,
+            },
+            {
+              "height": 40,
             },
           ]
         }
         tapToSeek={false}
-        thumbImage={null}
         thumbTintColor="#4BB377"
+        upperLimit={9007199254740991}
         value={0}
       />
       <Text.Primary
@@ -70,7 +70,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
       </Text.Primary>
       <View
         style={
-          Object {
+          {
             "flex": 1,
             "marginVertical": 20,
           }
@@ -78,7 +78,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
       >
         <View
           style={
-            Object {
+            {
               "flex": 1,
               "marginBottom": 16,
             }
@@ -99,7 +99,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
         <Text.Secondary
           center={true}
           style={
-            Object {
+            {
               "marginBottom": 6,
             }
           }
@@ -115,7 +115,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
         <Text.Secondary
           center={true}
           style={
-            Object {
+            {
               "marginBottom": 6,
             }
           }
@@ -131,7 +131,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
         <Text.Secondary
           center={true}
           style={
-            Object {
+            {
               "marginBottom": 6,
             }
           }
@@ -147,7 +147,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
         <Text.Secondary
           center={true}
           style={
-            Object {
+            {
               "marginBottom": 6,
             }
           }
@@ -163,7 +163,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
         <Text.Secondary
           center={true}
           style={
-            Object {
+            {
               "marginBottom": 6,
             }
           }
@@ -179,7 +179,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
         <Text.Secondary
           center={true}
           style={
-            Object {
+            {
               "marginBottom": 6,
             }
           }
@@ -195,7 +195,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
         <Text.Secondary
           center={true}
           style={
-            Object {
+            {
               "marginBottom": 6,
             }
           }
@@ -211,7 +211,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
         <Text.Secondary
           center={true}
           style={
-            Object {
+            {
               "marginBottom": 6,
             }
           }
@@ -227,7 +227,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
         <Text.Secondary
           center={true}
           style={
-            Object {
+            {
               "marginBottom": 6,
             }
           }
@@ -242,7 +242,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
         </Text.Secondary>
         <View
           style={
-            Object {
+            {
               "marginBottom": 80,
               "marginTop": 16,
             }
@@ -269,7 +269,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
   </RCTScrollView>
   <View
     style={
-      Object {
+      {
         "bottom": 20,
         "left": 16,
         "position": "absolute",

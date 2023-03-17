@@ -3,7 +3,7 @@
 exports[`AboutScreen renders correctly 1`] = `
 <RCTScrollView
   style={
-    Object {
+    {
       "backgroundColor": "#FFFFFF",
       "flex": 1,
       "paddingHorizontal": 16,
@@ -16,7 +16,7 @@ exports[`AboutScreen renders correctly 1`] = `
     />
     <Text.Primary
       style={
-        Object {
+        {
           "paddingVertical": 26,
         }
       }
@@ -25,7 +25,7 @@ exports[`AboutScreen renders correctly 1`] = `
     </Text.Primary>
     <Text.H2
       style={
-        Object {
+        {
           "paddingVertical": 26,
         }
       }
@@ -34,7 +34,7 @@ exports[`AboutScreen renders correctly 1`] = `
     </Text.H2>
     <Text.H3
       style={
-        Object {
+        {
           "paddingVertical": 12,
         }
       }
@@ -46,7 +46,7 @@ exports[`AboutScreen renders correctly 1`] = `
     </Text.Primary>
     <Text.H3
       style={
-        Object {
+        {
           "paddingVertical": 12,
         }
       }
@@ -58,7 +58,7 @@ exports[`AboutScreen renders correctly 1`] = `
     </Text.Primary>
     <Text.H3
       style={
-        Object {
+        {
           "paddingVertical": 12,
         }
       }
@@ -70,7 +70,7 @@ exports[`AboutScreen renders correctly 1`] = `
     </Text.Primary>
     <Text.H2
       style={
-        Object {
+        {
           "paddingVertical": 26,
         }
       }
@@ -79,7 +79,7 @@ exports[`AboutScreen renders correctly 1`] = `
     </Text.H2>
     <View
       style={
-        Object {
+        {
           "flexDirection": "row",
         }
       }
@@ -95,7 +95,7 @@ exports[`AboutScreen renders correctly 1`] = `
     </View>
     <View
       style={
-        Object {
+        {
           "height": 30,
         }
       }

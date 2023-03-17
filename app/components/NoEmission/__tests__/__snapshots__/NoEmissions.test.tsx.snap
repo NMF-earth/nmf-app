@@ -3,7 +3,7 @@
 exports[`renders correctly NoEmission 1`] = `
 <RCTScrollView
   style={
-    Object {
+    {
       "backgroundColor": "#FFFFFF",
       "flex": 1,
       "paddingHorizontal": 16,
@@ -16,7 +16,7 @@ exports[`renders correctly NoEmission 1`] = `
     />
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "flex": 1,
         }
@@ -24,7 +24,7 @@ exports[`renders correctly NoEmission 1`] = `
     >
       <Text.H1
         style={
-          Object {
+          {
             "paddingVertical": 14,
           }
         }
@@ -33,7 +33,7 @@ exports[`renders correctly NoEmission 1`] = `
       </Text.H1>
       <Text.Primary
         style={
-          Object {
+          {
             "paddingVertical": 4,
             "textAlign": "center",
           }
@@ -43,7 +43,7 @@ exports[`renders correctly NoEmission 1`] = `
       </Text.Primary>
       <Text.Primary
         style={
-          Object {
+          {
             "paddingVertical": 4,
             "textAlign": "center",
           }
@@ -56,7 +56,7 @@ exports[`renders correctly NoEmission 1`] = `
         icon="add"
         onPress={[Function]}
         style={
-          Object {
+          {
             "marginVertical": 20,
           }
         }

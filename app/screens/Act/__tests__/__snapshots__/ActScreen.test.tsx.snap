@@ -7,7 +7,7 @@ exports[`ActScreen renders correctly 1`] = `
       center={true}
       lightGray={true}
       style={
-        Object {
+        {
           "paddingTop": 10,
         }
       }
@@ -15,7 +15,7 @@ exports[`ActScreen renders correctly 1`] = `
       More coming soon! Stay tuned ✌️
     </Text.Tertiary>
   }
-  data={Array []}
+  data={[]}
   getItem={[Function]}
   getItemCount={[Function]}
   keyExtractor={[Function]}
@@ -29,15 +29,15 @@ exports[`ActScreen renders correctly 1`] = `
   removeClippedSubviews={false}
   renderItem={[Function]}
   scrollEventThrottle={50}
-  stickyHeaderIndices={Array []}
+  stickyHeaderIndices={[]}
   style={
-    Object {
+    {
       "backgroundColor": "#FFFFFF",
       "flex": 1,
       "paddingHorizontal": 16,
     }
   }
-  viewabilityConfigCallbackPairs={Array []}
+  viewabilityConfigCallbackPairs={[]}
 >
   <View>
     <View
@@ -47,7 +47,7 @@ exports[`ActScreen renders correctly 1`] = `
         center={true}
         lightGray={true}
         style={
-          Object {
+          {
             "paddingTop": 10,
           }
         }
