@@ -7,7 +7,7 @@ exports[`EmissionListItem renders correctly if mitigated 1`] = `
   <TouchableOpacity
     onPress={[Function]}
     style={
-      Object {
+      {
         "alignItems": "center",
         "flex": 1,
         "flexDirection": "row",
@@ -18,7 +18,7 @@ exports[`EmissionListItem renders correctly if mitigated 1`] = `
   >
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "justifyContent": "center",
           "marginLeft": 8,
@@ -29,7 +29,7 @@ exports[`EmissionListItem renders correctly if mitigated 1`] = `
     >
       <View
         style={
-          Object {
+          {
             "backgroundColor": "#DCF0E5",
             "borderRadius": 17,
             "height": 34,
@@ -43,7 +43,7 @@ exports[`EmissionListItem renders correctly if mitigated 1`] = `
         name="md-nutrition"
         size={22}
         style={
-          Object {
+          {
             "marginHorizontal": 16,
           }
         }
@@ -51,7 +51,7 @@ exports[`EmissionListItem renders correctly if mitigated 1`] = `
     </View>
     <View
       style={
-        Object {
+        {
           "flex": 1,
           "marginLeft": 66,
         }
@@ -64,7 +64,7 @@ exports[`EmissionListItem renders correctly if mitigated 1`] = `
       </Text.Primary>
       <View
         style={
-          Object {
+          {
             "flexDirection": "row",
             "marginVertical": 2,
           }
@@ -98,7 +98,7 @@ exports[`EmissionListItem renders correctly if mitigated 1`] = `
       name="ios-chevron-forward-outline"
       size={18}
       style={
-        Object {
+        {
           "marginHorizontal": 16,
         }
       }
@@ -114,7 +114,7 @@ exports[`EmissionListItem renders correctly with audio icon 1`] = `
   <TouchableOpacity
     onPress={[Function]}
     style={
-      Object {
+      {
         "alignItems": "center",
         "flex": 1,
         "flexDirection": "row",
@@ -125,7 +125,7 @@ exports[`EmissionListItem renders correctly with audio icon 1`] = `
   >
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "justifyContent": "center",
           "marginLeft": 8,
@@ -136,7 +136,7 @@ exports[`EmissionListItem renders correctly with audio icon 1`] = `
     >
       <View
         style={
-          Object {
+          {
             "backgroundColor": "#CED4DA60",
             "borderRadius": 17,
             "height": 34,
@@ -150,7 +150,7 @@ exports[`EmissionListItem renders correctly with audio icon 1`] = `
         name="md-musical-note"
         size={22}
         style={
-          Object {
+          {
             "marginHorizontal": 16,
           }
         }
@@ -158,7 +158,7 @@ exports[`EmissionListItem renders correctly with audio icon 1`] = `
     </View>
     <View
       style={
-        Object {
+        {
           "flex": 1,
           "marginLeft": 66,
         }
@@ -171,7 +171,7 @@ exports[`EmissionListItem renders correctly with audio icon 1`] = `
       </Text.Primary>
       <View
         style={
-          Object {
+          {
             "flexDirection": "row",
             "marginVertical": 2,
           }
@@ -195,7 +195,7 @@ exports[`EmissionListItem renders correctly with audio icon 1`] = `
       name="ios-chevron-forward-outline"
       size={18}
       style={
-        Object {
+        {
           "marginHorizontal": 16,
         }
       }
@@ -211,7 +211,7 @@ exports[`EmissionListItem renders correctly with boat icon 1`] = `
   <TouchableOpacity
     onPress={[Function]}
     style={
-      Object {
+      {
         "alignItems": "center",
         "flex": 1,
         "flexDirection": "row",
@@ -222,7 +222,7 @@ exports[`EmissionListItem renders correctly with boat icon 1`] = `
   >
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "justifyContent": "center",
           "marginLeft": 8,
@@ -233,7 +233,7 @@ exports[`EmissionListItem renders correctly with boat icon 1`] = `
     >
       <View
         style={
-          Object {
+          {
             "backgroundColor": "#CED4DA60",
             "borderRadius": 17,
             "height": 34,
@@ -247,7 +247,7 @@ exports[`EmissionListItem renders correctly with boat icon 1`] = `
         name="md-boat"
         size={22}
         style={
-          Object {
+          {
             "marginHorizontal": 16,
           }
         }
@@ -255,7 +255,7 @@ exports[`EmissionListItem renders correctly with boat icon 1`] = `
     </View>
     <View
       style={
-        Object {
+        {
           "flex": 1,
           "marginLeft": 66,
         }
@@ -268,7 +268,7 @@ exports[`EmissionListItem renders correctly with boat icon 1`] = `
       </Text.Primary>
       <View
         style={
-          Object {
+          {
             "flexDirection": "row",
             "marginVertical": 2,
           }
@@ -292,7 +292,7 @@ exports[`EmissionListItem renders correctly with boat icon 1`] = `
       name="ios-chevron-forward-outline"
       size={18}
       style={
-        Object {
+        {
           "marginHorizontal": 16,
         }
       }
@@ -308,7 +308,7 @@ exports[`EmissionListItem renders correctly with bus icon 1`] = `
   <TouchableOpacity
     onPress={[Function]}
     style={
-      Object {
+      {
         "alignItems": "center",
         "flex": 1,
         "flexDirection": "row",
@@ -319,7 +319,7 @@ exports[`EmissionListItem renders correctly with bus icon 1`] = `
   >
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "justifyContent": "center",
           "marginLeft": 8,
@@ -330,7 +330,7 @@ exports[`EmissionListItem renders correctly with bus icon 1`] = `
     >
       <View
         style={
-          Object {
+          {
             "backgroundColor": "#CED4DA60",
             "borderRadius": 17,
             "height": 34,
@@ -344,7 +344,7 @@ exports[`EmissionListItem renders correctly with bus icon 1`] = `
         name="md-bus"
         size={22}
         style={
-          Object {
+          {
             "marginHorizontal": 16,
           }
         }
@@ -352,7 +352,7 @@ exports[`EmissionListItem renders correctly with bus icon 1`] = `
     </View>
     <View
       style={
-        Object {
+        {
           "flex": 1,
           "marginLeft": 66,
         }
@@ -365,7 +365,7 @@ exports[`EmissionListItem renders correctly with bus icon 1`] = `
       </Text.Primary>
       <View
         style={
-          Object {
+          {
             "flexDirection": "row",
             "marginVertical": 2,
           }
@@ -389,7 +389,7 @@ exports[`EmissionListItem renders correctly with bus icon 1`] = `
       name="ios-chevron-forward-outline"
       size={18}
       style={
-        Object {
+        {
           "marginHorizontal": 16,
         }
       }
@@ -405,7 +405,7 @@ exports[`EmissionListItem renders correctly with car icon 1`] = `
   <TouchableOpacity
     onPress={[Function]}
     style={
-      Object {
+      {
         "alignItems": "center",
         "flex": 1,
         "flexDirection": "row",
@@ -416,7 +416,7 @@ exports[`EmissionListItem renders correctly with car icon 1`] = `
   >
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "justifyContent": "center",
           "marginLeft": 8,
@@ -427,7 +427,7 @@ exports[`EmissionListItem renders correctly with car icon 1`] = `
     >
       <View
         style={
-          Object {
+          {
             "backgroundColor": "#CED4DA60",
             "borderRadius": 17,
             "height": 34,
@@ -441,7 +441,7 @@ exports[`EmissionListItem renders correctly with car icon 1`] = `
         name="md-car"
         size={22}
         style={
-          Object {
+          {
             "marginHorizontal": 16,
           }
         }
@@ -449,7 +449,7 @@ exports[`EmissionListItem renders correctly with car icon 1`] = `
     </View>
     <View
       style={
-        Object {
+        {
           "flex": 1,
           "marginLeft": 66,
         }
@@ -462,7 +462,7 @@ exports[`EmissionListItem renders correctly with car icon 1`] = `
       </Text.Primary>
       <View
         style={
-          Object {
+          {
             "flexDirection": "row",
             "marginVertical": 2,
           }
@@ -486,7 +486,7 @@ exports[`EmissionListItem renders correctly with car icon 1`] = `
       name="ios-chevron-forward-outline"
       size={18}
       style={
-        Object {
+        {
           "marginHorizontal": 16,
         }
       }
@@ -502,7 +502,7 @@ exports[`EmissionListItem renders correctly with card icon 1`] = `
   <TouchableOpacity
     onPress={[Function]}
     style={
-      Object {
+      {
         "alignItems": "center",
         "flex": 1,
         "flexDirection": "row",
@@ -513,7 +513,7 @@ exports[`EmissionListItem renders correctly with card icon 1`] = `
   >
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "justifyContent": "center",
           "marginLeft": 8,
@@ -524,7 +524,7 @@ exports[`EmissionListItem renders correctly with card icon 1`] = `
     >
       <View
         style={
-          Object {
+          {
             "backgroundColor": "#CED4DA60",
             "borderRadius": 17,
             "height": 34,
@@ -538,7 +538,7 @@ exports[`EmissionListItem renders correctly with card icon 1`] = `
         name="md-card"
         size={22}
         style={
-          Object {
+          {
             "marginHorizontal": 16,
           }
         }
@@ -546,7 +546,7 @@ exports[`EmissionListItem renders correctly with card icon 1`] = `
     </View>
     <View
       style={
-        Object {
+        {
           "flex": 1,
           "marginLeft": 66,
         }
@@ -559,7 +559,7 @@ exports[`EmissionListItem renders correctly with card icon 1`] = `
       </Text.Primary>
       <View
         style={
-          Object {
+          {
             "flexDirection": "row",
             "marginVertical": 2,
           }
@@ -583,7 +583,7 @@ exports[`EmissionListItem renders correctly with card icon 1`] = `
       name="ios-chevron-forward-outline"
       size={18}
       style={
-        Object {
+        {
           "marginHorizontal": 16,
         }
       }
@@ -599,7 +599,7 @@ exports[`EmissionListItem renders correctly with chocolate icon 1`] = `
   <TouchableOpacity
     onPress={[Function]}
     style={
-      Object {
+      {
         "alignItems": "center",
         "flex": 1,
         "flexDirection": "row",
@@ -610,7 +610,7 @@ exports[`EmissionListItem renders correctly with chocolate icon 1`] = `
   >
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "justifyContent": "center",
           "marginLeft": 8,
@@ -621,7 +621,7 @@ exports[`EmissionListItem renders correctly with chocolate icon 1`] = `
     >
       <View
         style={
-          Object {
+          {
             "backgroundColor": "#CED4DA60",
             "borderRadius": 17,
             "height": 34,
@@ -635,7 +635,7 @@ exports[`EmissionListItem renders correctly with chocolate icon 1`] = `
         name="md-nutrition"
         size={22}
         style={
-          Object {
+          {
             "marginHorizontal": 16,
           }
         }
@@ -643,7 +643,7 @@ exports[`EmissionListItem renders correctly with chocolate icon 1`] = `
     </View>
     <View
       style={
-        Object {
+        {
           "flex": 1,
           "marginLeft": 66,
         }
@@ -656,7 +656,7 @@ exports[`EmissionListItem renders correctly with chocolate icon 1`] = `
       </Text.Primary>
       <View
         style={
-          Object {
+          {
             "flexDirection": "row",
             "marginVertical": 2,
           }
@@ -680,7 +680,7 @@ exports[`EmissionListItem renders correctly with chocolate icon 1`] = `
       name="ios-chevron-forward-outline"
       size={18}
       style={
-        Object {
+        {
           "marginHorizontal": 16,
         }
       }
@@ -696,7 +696,7 @@ exports[`EmissionListItem renders correctly with coffee icon 1`] = `
   <TouchableOpacity
     onPress={[Function]}
     style={
-      Object {
+      {
         "alignItems": "center",
         "flex": 1,
         "flexDirection": "row",
@@ -707,7 +707,7 @@ exports[`EmissionListItem renders correctly with coffee icon 1`] = `
   >
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "justifyContent": "center",
           "marginLeft": 8,
@@ -718,7 +718,7 @@ exports[`EmissionListItem renders correctly with coffee icon 1`] = `
     >
       <View
         style={
-          Object {
+          {
             "backgroundColor": "#CED4DA60",
             "borderRadius": 17,
             "height": 34,
@@ -732,7 +732,7 @@ exports[`EmissionListItem renders correctly with coffee icon 1`] = `
         name="md-cafe"
         size={22}
         style={
-          Object {
+          {
             "marginHorizontal": 16,
           }
         }
@@ -740,7 +740,7 @@ exports[`EmissionListItem renders correctly with coffee icon 1`] = `
     </View>
     <View
       style={
-        Object {
+        {
           "flex": 1,
           "marginLeft": 66,
         }
@@ -753,7 +753,7 @@ exports[`EmissionListItem renders correctly with coffee icon 1`] = `
       </Text.Primary>
       <View
         style={
-          Object {
+          {
             "flexDirection": "row",
             "marginVertical": 2,
           }
@@ -777,7 +777,7 @@ exports[`EmissionListItem renders correctly with coffee icon 1`] = `
       name="ios-chevron-forward-outline"
       size={18}
       style={
-        Object {
+        {
           "marginHorizontal": 16,
         }
       }
@@ -793,7 +793,7 @@ exports[`EmissionListItem renders correctly with electricity icon 1`] = `
   <TouchableOpacity
     onPress={[Function]}
     style={
-      Object {
+      {
         "alignItems": "center",
         "flex": 1,
         "flexDirection": "row",
@@ -804,7 +804,7 @@ exports[`EmissionListItem renders correctly with electricity icon 1`] = `
   >
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "justifyContent": "center",
           "marginLeft": 8,
@@ -815,7 +815,7 @@ exports[`EmissionListItem renders correctly with electricity icon 1`] = `
     >
       <View
         style={
-          Object {
+          {
             "backgroundColor": "#CED4DA60",
             "borderRadius": 17,
             "height": 34,
@@ -829,7 +829,7 @@ exports[`EmissionListItem renders correctly with electricity icon 1`] = `
         name="md-flash"
         size={22}
         style={
-          Object {
+          {
             "marginHorizontal": 16,
           }
         }
@@ -837,7 +837,7 @@ exports[`EmissionListItem renders correctly with electricity icon 1`] = `
     </View>
     <View
       style={
-        Object {
+        {
           "flex": 1,
           "marginLeft": 66,
         }
@@ -850,7 +850,7 @@ exports[`EmissionListItem renders correctly with electricity icon 1`] = `
       </Text.Primary>
       <View
         style={
-          Object {
+          {
             "flexDirection": "row",
             "marginVertical": 2,
           }
@@ -874,7 +874,7 @@ exports[`EmissionListItem renders correctly with electricity icon 1`] = `
       name="ios-chevron-forward-outline"
       size={18}
       style={
-        Object {
+        {
           "marginHorizontal": 16,
         }
       }
@@ -890,7 +890,7 @@ exports[`EmissionListItem renders correctly with fish icon 1`] = `
   <TouchableOpacity
     onPress={[Function]}
     style={
-      Object {
+      {
         "alignItems": "center",
         "flex": 1,
         "flexDirection": "row",
@@ -901,7 +901,7 @@ exports[`EmissionListItem renders correctly with fish icon 1`] = `
   >
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "justifyContent": "center",
           "marginLeft": 8,
@@ -912,7 +912,7 @@ exports[`EmissionListItem renders correctly with fish icon 1`] = `
     >
       <View
         style={
-          Object {
+          {
             "backgroundColor": "#CED4DA60",
             "borderRadius": 17,
             "height": 34,
@@ -926,7 +926,7 @@ exports[`EmissionListItem renders correctly with fish icon 1`] = `
         name="md-nutrition"
         size={22}
         style={
-          Object {
+          {
             "marginHorizontal": 16,
           }
         }
@@ -934,7 +934,7 @@ exports[`EmissionListItem renders correctly with fish icon 1`] = `
     </View>
     <View
       style={
-        Object {
+        {
           "flex": 1,
           "marginLeft": 66,
         }
@@ -947,7 +947,7 @@ exports[`EmissionListItem renders correctly with fish icon 1`] = `
       </Text.Primary>
       <View
         style={
-          Object {
+          {
             "flexDirection": "row",
             "marginVertical": 2,
           }
@@ -971,7 +971,7 @@ exports[`EmissionListItem renders correctly with fish icon 1`] = `
       name="ios-chevron-forward-outline"
       size={18}
       style={
-        Object {
+        {
           "marginHorizontal": 16,
         }
       }
@@ -987,7 +987,7 @@ exports[`EmissionListItem renders correctly with full hd video icon 1`] = `
   <TouchableOpacity
     onPress={[Function]}
     style={
-      Object {
+      {
         "alignItems": "center",
         "flex": 1,
         "flexDirection": "row",
@@ -998,7 +998,7 @@ exports[`EmissionListItem renders correctly with full hd video icon 1`] = `
   >
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "justifyContent": "center",
           "marginLeft": 8,
@@ -1009,7 +1009,7 @@ exports[`EmissionListItem renders correctly with full hd video icon 1`] = `
     >
       <View
         style={
-          Object {
+          {
             "backgroundColor": "#CED4DA60",
             "borderRadius": 17,
             "height": 34,
@@ -1023,7 +1023,7 @@ exports[`EmissionListItem renders correctly with full hd video icon 1`] = `
         name="md-film"
         size={22}
         style={
-          Object {
+          {
             "marginHorizontal": 16,
           }
         }
@@ -1031,7 +1031,7 @@ exports[`EmissionListItem renders correctly with full hd video icon 1`] = `
     </View>
     <View
       style={
-        Object {
+        {
           "flex": 1,
           "marginLeft": 66,
         }
@@ -1044,7 +1044,7 @@ exports[`EmissionListItem renders correctly with full hd video icon 1`] = `
       </Text.Primary>
       <View
         style={
-          Object {
+          {
             "flexDirection": "row",
             "marginVertical": 2,
           }
@@ -1068,7 +1068,7 @@ exports[`EmissionListItem renders correctly with full hd video icon 1`] = `
       name="ios-chevron-forward-outline"
       size={18}
       style={
-        Object {
+        {
           "marginHorizontal": 16,
         }
       }
@@ -1084,7 +1084,7 @@ exports[`EmissionListItem renders correctly with hd video icon 1`] = `
   <TouchableOpacity
     onPress={[Function]}
     style={
-      Object {
+      {
         "alignItems": "center",
         "flex": 1,
         "flexDirection": "row",
@@ -1095,7 +1095,7 @@ exports[`EmissionListItem renders correctly with hd video icon 1`] = `
   >
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "justifyContent": "center",
           "marginLeft": 8,
@@ -1106,7 +1106,7 @@ exports[`EmissionListItem renders correctly with hd video icon 1`] = `
     >
       <View
         style={
-          Object {
+          {
             "backgroundColor": "#CED4DA60",
             "borderRadius": 17,
             "height": 34,
@@ -1120,7 +1120,7 @@ exports[`EmissionListItem renders correctly with hd video icon 1`] = `
         name="md-film"
         size={22}
         style={
-          Object {
+          {
             "marginHorizontal": 16,
           }
         }
@@ -1128,7 +1128,7 @@ exports[`EmissionListItem renders correctly with hd video icon 1`] = `
     </View>
     <View
       style={
-        Object {
+        {
           "flex": 1,
           "marginLeft": 66,
         }
@@ -1141,7 +1141,7 @@ exports[`EmissionListItem renders correctly with hd video icon 1`] = `
       </Text.Primary>
       <View
         style={
-          Object {
+          {
             "flexDirection": "row",
             "marginVertical": 2,
           }
@@ -1165,7 +1165,7 @@ exports[`EmissionListItem renders correctly with hd video icon 1`] = `
       name="ios-chevron-forward-outline"
       size={18}
       style={
-        Object {
+        {
           "marginHorizontal": 16,
         }
       }
@@ -1181,7 +1181,7 @@ exports[`EmissionListItem renders correctly with longHaulFlight icon 1`] = `
   <TouchableOpacity
     onPress={[Function]}
     style={
-      Object {
+      {
         "alignItems": "center",
         "flex": 1,
         "flexDirection": "row",
@@ -1192,7 +1192,7 @@ exports[`EmissionListItem renders correctly with longHaulFlight icon 1`] = `
   >
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "justifyContent": "center",
           "marginLeft": 8,
@@ -1203,7 +1203,7 @@ exports[`EmissionListItem renders correctly with longHaulFlight icon 1`] = `
     >
       <View
         style={
-          Object {
+          {
             "backgroundColor": "#CED4DA60",
             "borderRadius": 17,
             "height": 34,
@@ -1217,7 +1217,7 @@ exports[`EmissionListItem renders correctly with longHaulFlight icon 1`] = `
         name="md-airplane"
         size={22}
         style={
-          Object {
+          {
             "marginHorizontal": 16,
           }
         }
@@ -1225,7 +1225,7 @@ exports[`EmissionListItem renders correctly with longHaulFlight icon 1`] = `
     </View>
     <View
       style={
-        Object {
+        {
           "flex": 1,
           "marginLeft": 66,
         }
@@ -1238,7 +1238,7 @@ exports[`EmissionListItem renders correctly with longHaulFlight icon 1`] = `
       </Text.Primary>
       <View
         style={
-          Object {
+          {
             "flexDirection": "row",
             "marginVertical": 2,
           }
@@ -1262,7 +1262,7 @@ exports[`EmissionListItem renders correctly with longHaulFlight icon 1`] = `
       name="ios-chevron-forward-outline"
       size={18}
       style={
-        Object {
+        {
           "marginHorizontal": 16,
         }
       }
@@ -1278,7 +1278,7 @@ exports[`EmissionListItem renders correctly with meal icon 1`] = `
   <TouchableOpacity
     onPress={[Function]}
     style={
-      Object {
+      {
         "alignItems": "center",
         "flex": 1,
         "flexDirection": "row",
@@ -1289,7 +1289,7 @@ exports[`EmissionListItem renders correctly with meal icon 1`] = `
   >
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "justifyContent": "center",
           "marginLeft": 8,
@@ -1300,7 +1300,7 @@ exports[`EmissionListItem renders correctly with meal icon 1`] = `
     >
       <View
         style={
-          Object {
+          {
             "backgroundColor": "#CED4DA60",
             "borderRadius": 17,
             "height": 34,
@@ -1314,7 +1314,7 @@ exports[`EmissionListItem renders correctly with meal icon 1`] = `
         name="md-restaurant"
         size={22}
         style={
-          Object {
+          {
             "marginHorizontal": 16,
           }
         }
@@ -1322,7 +1322,7 @@ exports[`EmissionListItem renders correctly with meal icon 1`] = `
     </View>
     <View
       style={
-        Object {
+        {
           "flex": 1,
           "marginLeft": 66,
         }
@@ -1335,7 +1335,7 @@ exports[`EmissionListItem renders correctly with meal icon 1`] = `
       </Text.Primary>
       <View
         style={
-          Object {
+          {
             "flexDirection": "row",
             "marginVertical": 2,
           }
@@ -1359,7 +1359,7 @@ exports[`EmissionListItem renders correctly with meal icon 1`] = `
       name="ios-chevron-forward-outline"
       size={18}
       style={
-        Object {
+        {
           "marginHorizontal": 16,
         }
       }
@@ -1375,7 +1375,7 @@ exports[`EmissionListItem renders correctly with mediumHaulFlight icon 1`] = `
   <TouchableOpacity
     onPress={[Function]}
     style={
-      Object {
+      {
         "alignItems": "center",
         "flex": 1,
         "flexDirection": "row",
@@ -1386,7 +1386,7 @@ exports[`EmissionListItem renders correctly with mediumHaulFlight icon 1`] = `
   >
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "justifyContent": "center",
           "marginLeft": 8,
@@ -1397,7 +1397,7 @@ exports[`EmissionListItem renders correctly with mediumHaulFlight icon 1`] = `
     >
       <View
         style={
-          Object {
+          {
             "backgroundColor": "#CED4DA60",
             "borderRadius": 17,
             "height": 34,
@@ -1411,7 +1411,7 @@ exports[`EmissionListItem renders correctly with mediumHaulFlight icon 1`] = `
         name="md-airplane"
         size={22}
         style={
-          Object {
+          {
             "marginHorizontal": 16,
           }
         }
@@ -1419,7 +1419,7 @@ exports[`EmissionListItem renders correctly with mediumHaulFlight icon 1`] = `
     </View>
     <View
       style={
-        Object {
+        {
           "flex": 1,
           "marginLeft": 66,
         }
@@ -1432,7 +1432,7 @@ exports[`EmissionListItem renders correctly with mediumHaulFlight icon 1`] = `
       </Text.Primary>
       <View
         style={
-          Object {
+          {
             "flexDirection": "row",
             "marginVertical": 2,
           }
@@ -1456,7 +1456,7 @@ exports[`EmissionListItem renders correctly with mediumHaulFlight icon 1`] = `
       name="ios-chevron-forward-outline"
       size={18}
       style={
-        Object {
+        {
           "marginHorizontal": 16,
         }
       }
@@ -1472,7 +1472,7 @@ exports[`EmissionListItem renders correctly with motorbike icon 1`] = `
   <TouchableOpacity
     onPress={[Function]}
     style={
-      Object {
+      {
         "alignItems": "center",
         "flex": 1,
         "flexDirection": "row",
@@ -1483,7 +1483,7 @@ exports[`EmissionListItem renders correctly with motorbike icon 1`] = `
   >
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "justifyContent": "center",
           "marginLeft": 8,
@@ -1494,7 +1494,7 @@ exports[`EmissionListItem renders correctly with motorbike icon 1`] = `
     >
       <View
         style={
-          Object {
+          {
             "backgroundColor": "#CED4DA60",
             "borderRadius": 17,
             "height": 34,
@@ -1508,7 +1508,7 @@ exports[`EmissionListItem renders correctly with motorbike icon 1`] = `
         name="md-bicycle"
         size={22}
         style={
-          Object {
+          {
             "marginHorizontal": 16,
           }
         }
@@ -1516,7 +1516,7 @@ exports[`EmissionListItem renders correctly with motorbike icon 1`] = `
     </View>
     <View
       style={
-        Object {
+        {
           "flex": 1,
           "marginLeft": 66,
         }
@@ -1529,7 +1529,7 @@ exports[`EmissionListItem renders correctly with motorbike icon 1`] = `
       </Text.Primary>
       <View
         style={
-          Object {
+          {
             "flexDirection": "row",
             "marginVertical": 2,
           }
@@ -1553,7 +1553,7 @@ exports[`EmissionListItem renders correctly with motorbike icon 1`] = `
       name="ios-chevron-forward-outline"
       size={18}
       style={
-        Object {
+        {
           "marginHorizontal": 16,
         }
       }
@@ -1569,7 +1569,7 @@ exports[`EmissionListItem renders correctly with redMeat icon 1`] = `
   <TouchableOpacity
     onPress={[Function]}
     style={
-      Object {
+      {
         "alignItems": "center",
         "flex": 1,
         "flexDirection": "row",
@@ -1580,7 +1580,7 @@ exports[`EmissionListItem renders correctly with redMeat icon 1`] = `
   >
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "justifyContent": "center",
           "marginLeft": 8,
@@ -1591,7 +1591,7 @@ exports[`EmissionListItem renders correctly with redMeat icon 1`] = `
     >
       <View
         style={
-          Object {
+          {
             "backgroundColor": "#CED4DA60",
             "borderRadius": 17,
             "height": 34,
@@ -1605,7 +1605,7 @@ exports[`EmissionListItem renders correctly with redMeat icon 1`] = `
         name="md-nutrition"
         size={22}
         style={
-          Object {
+          {
             "marginHorizontal": 16,
           }
         }
@@ -1613,7 +1613,7 @@ exports[`EmissionListItem renders correctly with redMeat icon 1`] = `
     </View>
     <View
       style={
-        Object {
+        {
           "flex": 1,
           "marginLeft": 66,
         }
@@ -1626,7 +1626,7 @@ exports[`EmissionListItem renders correctly with redMeat icon 1`] = `
       </Text.Primary>
       <View
         style={
-          Object {
+          {
             "flexDirection": "row",
             "marginVertical": 2,
           }
@@ -1650,7 +1650,7 @@ exports[`EmissionListItem renders correctly with redMeat icon 1`] = `
       name="ios-chevron-forward-outline"
       size={18}
       style={
-        Object {
+        {
           "marginHorizontal": 16,
         }
       }
@@ -1666,7 +1666,7 @@ exports[`EmissionListItem renders correctly with shirt icon 1`] = `
   <TouchableOpacity
     onPress={[Function]}
     style={
-      Object {
+      {
         "alignItems": "center",
         "flex": 1,
         "flexDirection": "row",
@@ -1677,7 +1677,7 @@ exports[`EmissionListItem renders correctly with shirt icon 1`] = `
   >
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "justifyContent": "center",
           "marginLeft": 8,
@@ -1688,7 +1688,7 @@ exports[`EmissionListItem renders correctly with shirt icon 1`] = `
     >
       <View
         style={
-          Object {
+          {
             "backgroundColor": "#CED4DA60",
             "borderRadius": 17,
             "height": 34,
@@ -1702,7 +1702,7 @@ exports[`EmissionListItem renders correctly with shirt icon 1`] = `
         name="md-shirt"
         size={22}
         style={
-          Object {
+          {
             "marginHorizontal": 16,
           }
         }
@@ -1710,7 +1710,7 @@ exports[`EmissionListItem renders correctly with shirt icon 1`] = `
     </View>
     <View
       style={
-        Object {
+        {
           "flex": 1,
           "marginLeft": 66,
         }
@@ -1723,7 +1723,7 @@ exports[`EmissionListItem renders correctly with shirt icon 1`] = `
       </Text.Primary>
       <View
         style={
-          Object {
+          {
             "flexDirection": "row",
             "marginVertical": 2,
           }
@@ -1747,7 +1747,7 @@ exports[`EmissionListItem renders correctly with shirt icon 1`] = `
       name="ios-chevron-forward-outline"
       size={18}
       style={
-        Object {
+        {
           "marginHorizontal": 16,
         }
       }
@@ -1763,7 +1763,7 @@ exports[`EmissionListItem renders correctly with shortHaulFlight icon 1`] = `
   <TouchableOpacity
     onPress={[Function]}
     style={
-      Object {
+      {
         "alignItems": "center",
         "flex": 1,
         "flexDirection": "row",
@@ -1774,7 +1774,7 @@ exports[`EmissionListItem renders correctly with shortHaulFlight icon 1`] = `
   >
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "justifyContent": "center",
           "marginLeft": 8,
@@ -1785,7 +1785,7 @@ exports[`EmissionListItem renders correctly with shortHaulFlight icon 1`] = `
     >
       <View
         style={
-          Object {
+          {
             "backgroundColor": "#CED4DA60",
             "borderRadius": 17,
             "height": 34,
@@ -1799,7 +1799,7 @@ exports[`EmissionListItem renders correctly with shortHaulFlight icon 1`] = `
         name="md-airplane"
         size={22}
         style={
-          Object {
+          {
             "marginHorizontal": 16,
           }
         }
@@ -1807,7 +1807,7 @@ exports[`EmissionListItem renders correctly with shortHaulFlight icon 1`] = `
     </View>
     <View
       style={
-        Object {
+        {
           "flex": 1,
           "marginLeft": 66,
         }
@@ -1820,7 +1820,7 @@ exports[`EmissionListItem renders correctly with shortHaulFlight icon 1`] = `
       </Text.Primary>
       <View
         style={
-          Object {
+          {
             "flexDirection": "row",
             "marginVertical": 2,
           }
@@ -1844,7 +1844,7 @@ exports[`EmissionListItem renders correctly with shortHaulFlight icon 1`] = `
       name="ios-chevron-forward-outline"
       size={18}
       style={
-        Object {
+        {
           "marginHorizontal": 16,
         }
       }
@@ -1860,7 +1860,7 @@ exports[`EmissionListItem renders correctly with train icon 1`] = `
   <TouchableOpacity
     onPress={[Function]}
     style={
-      Object {
+      {
         "alignItems": "center",
         "flex": 1,
         "flexDirection": "row",
@@ -1871,7 +1871,7 @@ exports[`EmissionListItem renders correctly with train icon 1`] = `
   >
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "justifyContent": "center",
           "marginLeft": 8,
@@ -1882,7 +1882,7 @@ exports[`EmissionListItem renders correctly with train icon 1`] = `
     >
       <View
         style={
-          Object {
+          {
             "backgroundColor": "#CED4DA60",
             "borderRadius": 17,
             "height": 34,
@@ -1896,7 +1896,7 @@ exports[`EmissionListItem renders correctly with train icon 1`] = `
         name="md-train"
         size={22}
         style={
-          Object {
+          {
             "marginHorizontal": 16,
           }
         }
@@ -1904,7 +1904,7 @@ exports[`EmissionListItem renders correctly with train icon 1`] = `
     </View>
     <View
       style={
-        Object {
+        {
           "flex": 1,
           "marginLeft": 66,
         }
@@ -1917,7 +1917,7 @@ exports[`EmissionListItem renders correctly with train icon 1`] = `
       </Text.Primary>
       <View
         style={
-          Object {
+          {
             "flexDirection": "row",
             "marginVertical": 2,
           }
@@ -1941,7 +1941,7 @@ exports[`EmissionListItem renders correctly with train icon 1`] = `
       name="ios-chevron-forward-outline"
       size={18}
       style={
-        Object {
+        {
           "marginHorizontal": 16,
         }
       }
@@ -1957,7 +1957,7 @@ exports[`EmissionListItem renders correctly with ultra hd video icon 1`] = `
   <TouchableOpacity
     onPress={[Function]}
     style={
-      Object {
+      {
         "alignItems": "center",
         "flex": 1,
         "flexDirection": "row",
@@ -1968,7 +1968,7 @@ exports[`EmissionListItem renders correctly with ultra hd video icon 1`] = `
   >
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "justifyContent": "center",
           "marginLeft": 8,
@@ -1979,7 +1979,7 @@ exports[`EmissionListItem renders correctly with ultra hd video icon 1`] = `
     >
       <View
         style={
-          Object {
+          {
             "backgroundColor": "#CED4DA60",
             "borderRadius": 17,
             "height": 34,
@@ -1993,7 +1993,7 @@ exports[`EmissionListItem renders correctly with ultra hd video icon 1`] = `
         name="md-film"
         size={22}
         style={
-          Object {
+          {
             "marginHorizontal": 16,
           }
         }
@@ -2001,7 +2001,7 @@ exports[`EmissionListItem renders correctly with ultra hd video icon 1`] = `
     </View>
     <View
       style={
-        Object {
+        {
           "flex": 1,
           "marginLeft": 66,
         }
@@ -2014,7 +2014,7 @@ exports[`EmissionListItem renders correctly with ultra hd video icon 1`] = `
       </Text.Primary>
       <View
         style={
-          Object {
+          {
             "flexDirection": "row",
             "marginVertical": 2,
           }
@@ -2038,7 +2038,7 @@ exports[`EmissionListItem renders correctly with ultra hd video icon 1`] = `
       name="ios-chevron-forward-outline"
       size={18}
       style={
-        Object {
+        {
           "marginHorizontal": 16,
         }
       }
@@ -2054,7 +2054,7 @@ exports[`EmissionListItem renders correctly with whiteMeat icon 1`] = `
   <TouchableOpacity
     onPress={[Function]}
     style={
-      Object {
+      {
         "alignItems": "center",
         "flex": 1,
         "flexDirection": "row",
@@ -2065,7 +2065,7 @@ exports[`EmissionListItem renders correctly with whiteMeat icon 1`] = `
   >
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "justifyContent": "center",
           "marginLeft": 8,
@@ -2076,7 +2076,7 @@ exports[`EmissionListItem renders correctly with whiteMeat icon 1`] = `
     >
       <View
         style={
-          Object {
+          {
             "backgroundColor": "#CED4DA60",
             "borderRadius": 17,
             "height": 34,
@@ -2090,7 +2090,7 @@ exports[`EmissionListItem renders correctly with whiteMeat icon 1`] = `
         name="md-nutrition"
         size={22}
         style={
-          Object {
+          {
             "marginHorizontal": 16,
           }
         }
@@ -2098,7 +2098,7 @@ exports[`EmissionListItem renders correctly with whiteMeat icon 1`] = `
     </View>
     <View
       style={
-        Object {
+        {
           "flex": 1,
           "marginLeft": 66,
         }
@@ -2111,7 +2111,7 @@ exports[`EmissionListItem renders correctly with whiteMeat icon 1`] = `
       </Text.Primary>
       <View
         style={
-          Object {
+          {
             "flexDirection": "row",
             "marginVertical": 2,
           }
@@ -2135,7 +2135,7 @@ exports[`EmissionListItem renders correctly with whiteMeat icon 1`] = `
       name="ios-chevron-forward-outline"
       size={18}
       style={
-        Object {
+        {
           "marginHorizontal": 16,
         }
       }

@@ -3,7 +3,7 @@
 exports[`ComingSoonScreen renders correctly 1`] = `
 <RCTScrollView
   style={
-    Object {
+    {
       "backgroundColor": "#FFFFFF",
       "flex": 1,
       "paddingHorizontal": 16,
@@ -16,7 +16,7 @@ exports[`ComingSoonScreen renders correctly 1`] = `
     />
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "flex": 1,
           "marginTop": 22,
@@ -25,7 +25,7 @@ exports[`ComingSoonScreen renders correctly 1`] = `
     >
       <Text.Primary
         style={
-          Object {
+          {
             "paddingVertical": 10,
             "textAlign": "center",
           }
@@ -35,7 +35,7 @@ exports[`ComingSoonScreen renders correctly 1`] = `
       </Text.Primary>
       <Text.Primary
         style={
-          Object {
+          {
             "paddingVertical": 10,
             "textAlign": "center",
           }

@@ -75,3 +75,21 @@ jest.mock("expo-constants", () => {
     },
   };
 });
+
+jest.mock("expo-barcode-scanner", () => {
+  return {
+    BarCodeScanner: {
+      requestPermissionsAsync: () => ({
+        status: "denied",
+      }),
+    },
+  };
+});
+
+jest.mock("expo-notifications", () => {
+  return {
+    requestPermissionsAsync: () => ({
+      status: "denied",
+    }),
+  };
+});

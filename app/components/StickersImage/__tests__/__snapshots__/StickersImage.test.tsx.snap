@@ -3,7 +3,7 @@
 exports[`renders correctly StickersImage with bike image 1`] = `
 <View
   style={
-    Object {
+    {
       "flex": 1,
     }
   }
@@ -12,7 +12,7 @@ exports[`renders correctly StickersImage with bike image 1`] = `
     resizeMode="contain"
     source={1}
     style={
-      Object {
+      {
         "alignSelf": "center",
         "height": 650,
         "marginVertical": 20,
@@ -27,7 +27,7 @@ exports[`renders correctly StickersImage with bike image 1`] = `
 exports[`renders correctly StickersImage with earth image 1`] = `
 <View
   style={
-    Object {
+    {
       "flex": 1,
     }
   }
@@ -36,7 +36,7 @@ exports[`renders correctly StickersImage with earth image 1`] = `
     resizeMode="contain"
     source={1}
     style={
-      Object {
+      {
         "alignSelf": "center",
         "height": 650,
         "marginVertical": 20,
@@ -51,7 +51,7 @@ exports[`renders correctly StickersImage with earth image 1`] = `
 exports[`renders correctly StickersImage with restaurant image 1`] = `
 <View
   style={
-    Object {
+    {
       "flex": 1,
     }
   }
@@ -60,7 +60,7 @@ exports[`renders correctly StickersImage with restaurant image 1`] = `
     resizeMode="contain"
     source={1}
     style={
-      Object {
+      {
         "alignSelf": "center",
         "height": 650,
         "marginVertical": 20,

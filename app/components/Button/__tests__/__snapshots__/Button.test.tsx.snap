@@ -4,20 +4,20 @@ exports[`renders correctly Danger Button 1`] = `
 <TouchableOpacity
   onPress={[Function]}
   style={
-    Array [
-      Array [
-        Object {
+    [
+      [
+        {
           "alignItems": "center",
           "flexDirection": "row",
           "justifyContent": "center",
           "paddingHorizontal": 36,
         },
-        Object {
+        {
           "backgroundColor": "#FA4646",
         },
         undefined,
       ],
-      Object {
+      {
         "borderRadius": 24,
         "paddingVertical": 12,
       },
@@ -39,20 +39,20 @@ exports[`renders correctly Primary Button 1`] = `
 <TouchableOpacity
   onPress={[Function]}
   style={
-    Array [
-      Array [
-        Object {
+    [
+      [
+        {
           "alignItems": "center",
           "flexDirection": "row",
           "justifyContent": "center",
           "paddingHorizontal": 36,
         },
-        Object {
+        {
           "backgroundColor": "#4BB377",
         },
         undefined,
       ],
-      Object {
+      {
         "borderRadius": 24,
         "paddingVertical": 12,
       },
@@ -74,20 +74,20 @@ exports[`renders correctly Secondary Button 1`] = `
 <TouchableOpacity
   onPress={[Function]}
   style={
-    Array [
-      Array [
-        Object {
+    [
+      [
+        {
           "alignItems": "center",
           "flexDirection": "row",
           "justifyContent": "center",
           "paddingHorizontal": 36,
         },
-        Object {
+        {
           "backgroundColor": "#3957D0",
         },
         undefined,
       ],
-      Object {
+      {
         "borderRadius": 24,
         "paddingVertical": 12,
       },
@@ -110,25 +110,25 @@ exports[`renders correctly fullwidth Danger Button 1`] = `
   fullWidth={true}
   onPress={[Function]}
   style={
-    Array [
-      Array [
-        Object {
+    [
+      [
+        {
           "alignItems": "center",
           "flexDirection": "row",
           "justifyContent": "center",
           "paddingHorizontal": 36,
         },
-        Object {
+        {
           "backgroundColor": "#3957D0",
         },
         undefined,
-        Object {
+        {
           "alignItems": "center",
           "paddingHorizontal": 0,
           "width": "100%",
         },
       ],
-      Object {
+      {
         "borderRadius": 24,
         "paddingVertical": 12,
       },
@@ -152,25 +152,25 @@ exports[`renders correctly fullwidth Danger Button with icon 1`] = `
   icon="calendar"
   onPress={[Function]}
   style={
-    Array [
-      Array [
-        Object {
+    [
+      [
+        {
           "alignItems": "center",
           "flexDirection": "row",
           "justifyContent": "center",
           "paddingHorizontal": 36,
         },
-        Object {
+        {
           "backgroundColor": "#4BB377",
         },
         undefined,
-        Object {
+        {
           "alignItems": "center",
           "paddingHorizontal": 0,
           "width": "100%",
         },
       ],
-      Object {
+      {
         "borderRadius": 24,
         "paddingVertical": 12,
       },
@@ -190,7 +190,7 @@ exports[`renders correctly fullwidth Danger Button with icon 1`] = `
     name="calendar"
     size={24}
     style={
-      Object {
+      {
         "marginHorizontal": 10,
       }
     }
@@ -203,25 +203,25 @@ exports[`renders correctly fullwidth Primary Button 1`] = `
   fullWidth={true}
   onPress={[Function]}
   style={
-    Array [
-      Array [
-        Object {
+    [
+      [
+        {
           "alignItems": "center",
           "flexDirection": "row",
           "justifyContent": "center",
           "paddingHorizontal": 36,
         },
-        Object {
+        {
           "backgroundColor": "#4BB377",
         },
         undefined,
-        Object {
+        {
           "alignItems": "center",
           "paddingHorizontal": 0,
           "width": "100%",
         },
       ],
-      Object {
+      {
         "borderRadius": 24,
         "paddingVertical": 12,
       },
@@ -245,25 +245,25 @@ exports[`renders correctly fullwidth Primary Button with icon 1`] = `
   icon="calendar"
   onPress={[Function]}
   style={
-    Array [
-      Array [
-        Object {
+    [
+      [
+        {
           "alignItems": "center",
           "flexDirection": "row",
           "justifyContent": "center",
           "paddingHorizontal": 36,
         },
-        Object {
+        {
           "backgroundColor": "#4BB377",
         },
         undefined,
-        Object {
+        {
           "alignItems": "center",
           "paddingHorizontal": 0,
           "width": "100%",
         },
       ],
-      Object {
+      {
         "borderRadius": 24,
         "paddingVertical": 12,
       },
@@ -283,7 +283,7 @@ exports[`renders correctly fullwidth Primary Button with icon 1`] = `
     name="calendar"
     size={24}
     style={
-      Object {
+      {
         "marginHorizontal": 10,
       }
     }
@@ -296,25 +296,25 @@ exports[`renders correctly fullwidth Secondary Button 1`] = `
   fullWidth={true}
   onPress={[Function]}
   style={
-    Array [
-      Array [
-        Object {
+    [
+      [
+        {
           "alignItems": "center",
           "flexDirection": "row",
           "justifyContent": "center",
           "paddingHorizontal": 36,
         },
-        Object {
+        {
           "backgroundColor": "#3957D0",
         },
         undefined,
-        Object {
+        {
           "alignItems": "center",
           "paddingHorizontal": 0,
           "width": "100%",
         },
       ],
-      Object {
+      {
         "borderRadius": 24,
         "paddingVertical": 12,
       },
@@ -338,25 +338,25 @@ exports[`renders correctly fullwidth Secondary Button with icon 1`] = `
   icon="calendar"
   onPress={[Function]}
   style={
-    Array [
-      Array [
-        Object {
+    [
+      [
+        {
           "alignItems": "center",
           "flexDirection": "row",
           "justifyContent": "center",
           "paddingHorizontal": 36,
         },
-        Object {
+        {
           "backgroundColor": "#4BB377",
         },
         undefined,
-        Object {
+        {
           "alignItems": "center",
           "paddingHorizontal": 0,
           "width": "100%",
         },
       ],
-      Object {
+      {
         "borderRadius": 24,
         "paddingVertical": 12,
       },
@@ -376,7 +376,7 @@ exports[`renders correctly fullwidth Secondary Button with icon 1`] = `
     name="calendar"
     size={24}
     style={
-      Object {
+      {
         "marginHorizontal": 10,
       }
     }

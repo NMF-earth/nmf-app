@@ -3,7 +3,7 @@
 exports[`SettingsScreen renders correctly 1`] = `
 <RCTScrollView
   style={
-    Object {
+    {
       "backgroundColor": "#FFFFFF",
       "flex": 1,
       "paddingHorizontal": 16,
@@ -77,6 +77,15 @@ exports[`SettingsScreen renders correctly 1`] = `
       title="Languages"
     />
     <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
       accessible={true}
       focusable={true}
       onClick={[Function]}
@@ -87,7 +96,7 @@ exports[`SettingsScreen renders correctly 1`] = `
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
       style={
-        Object {
+        {
           "alignItems": "center",
           "flex": 1,
         }
@@ -97,7 +106,7 @@ exports[`SettingsScreen renders correctly 1`] = `
         resizeMode="contain"
         source={1}
         style={
-          Object {
+          {
             "width": "50%",
           }
         }
@@ -107,7 +116,7 @@ exports[`SettingsScreen renders correctly 1`] = `
       bold={true}
       lightGray={true}
       style={
-        Object {
+        {
           "marginBottom": 24,
           "textAlign": "center",
         }

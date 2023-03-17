@@ -4,7 +4,7 @@ exports[`Tag renders correctly with airplane icon 1`] = `
 <TouchableOpacity
   onPress={[Function]}
   style={
-    Object {
+    {
       "alignItems": "center",
       "backgroundColor": "#4BB37720",
       "borderColor": "#4BB377",
@@ -24,21 +24,21 @@ exports[`Tag renders correctly with airplane icon 1`] = `
     name="md-airplane"
     size={32}
     style={
-      Object {
+      {
         "marginRight": 16,
       }
     }
   />
   <View
     style={
-      Object {
+      {
         "flex": 1,
       }
     }
   >
     <Text.Primary
       style={
-        Object {
+        {
           "textTransform": "capitalize",
         }
       }
@@ -58,7 +58,7 @@ exports[`Tag renders correctly with no icon 1`] = `
 <TouchableOpacity
   onPress={[Function]}
   style={
-    Object {
+    {
       "alignItems": "center",
       "backgroundColor": "#4BB37720",
       "borderColor": "#4BB377",
@@ -75,14 +75,14 @@ exports[`Tag renders correctly with no icon 1`] = `
 >
   <View
     style={
-      Object {
+      {
         "flex": 1,
       }
     }
   >
     <Text.Primary
       style={
-        Object {
+        {
           "textTransform": "capitalize",
         }
       }

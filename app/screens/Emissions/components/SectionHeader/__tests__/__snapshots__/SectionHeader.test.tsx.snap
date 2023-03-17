@@ -4,7 +4,7 @@ exports[`SectionHeader should render when date 1`] = `
 <TouchableOpacity
   onPress={[Function]}
   style={
-    Object {
+    {
       "backgroundColor": "#FFFFFF",
       "borderBottomColor": "#DCF0E5",
       "borderBottomWidth": 2,
@@ -14,7 +14,7 @@ exports[`SectionHeader should render when date 1`] = `
       "paddingHorizontal": 16,
       "paddingVertical": 16,
       "shadowColor": "transparent",
-      "shadowOffset": Object {
+      "shadowOffset": {
         "height": 0,
         "width": 0,
       },
@@ -26,7 +26,7 @@ exports[`SectionHeader should render when date 1`] = `
     blue={true}
     bold={true}
     style={
-      Object {
+      {
         "textTransform": "capitalize",
       }
     }
@@ -37,7 +37,7 @@ exports[`SectionHeader should render when date 1`] = `
     color="#3957D0"
     name="ios-chevron-forward-outline"
     size={24}
-    style={Object {}}
+    style={{}}
   />
 </TouchableOpacity>
 `;
@@ -46,7 +46,7 @@ exports[`SectionHeader should render when title 1`] = `
 <TouchableOpacity
   onPress={[Function]}
   style={
-    Object {
+    {
       "backgroundColor": "#FFFFFF",
       "borderBottomColor": "#DCF0E5",
       "borderBottomWidth": 2,
@@ -56,7 +56,7 @@ exports[`SectionHeader should render when title 1`] = `
       "paddingHorizontal": 16,
       "paddingVertical": 16,
       "shadowColor": "transparent",
-      "shadowOffset": Object {
+      "shadowOffset": {
         "height": 0,
         "width": 0,
       },
@@ -68,7 +68,7 @@ exports[`SectionHeader should render when title 1`] = `
     blue={true}
     bold={true}
     style={
-      Object {
+      {
         "textTransform": "capitalize",
       }
     }
@@ -79,7 +79,7 @@ exports[`SectionHeader should render when title 1`] = `
     color="#3957D0"
     name="ios-chevron-forward-outline"
     size={24}
-    style={Object {}}
+    style={{}}
   />
 </TouchableOpacity>
 `;

@@ -347,7 +347,6 @@ const AddEmissionScreen = ({ locale = "", language = "" }: LocalizationContextPr
       )}
 
       <DateTimePickerModal
-        headerTextIOS={t("ADD_EMISSION_SCREEN_PICKER_MODAL_HEADER_TEXT")}
         confirmTextIOS={t("ADD_EMISSION_SCREEN_PICKER_MODAL_CONFIRM")}
         cancelTextIOS={t("ADD_EMISSION_SCREEN_PICKER_MODAL_CANCEL")}
         locale={locale}

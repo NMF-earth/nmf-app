@@ -3,7 +3,7 @@
 exports[`renders correctly TextInput 1`] = `
 <View
   style={
-    Object {
+    {
       "marginHorizontal": 16,
       "marginTop": 12,
     }
@@ -13,7 +13,7 @@ exports[`renders correctly TextInput 1`] = `
     activeOpacity={1}
     onPress={[Function]}
     style={
-      Object {
+      {
         "flexDirection": "row",
         "marginBottom": 14,
       }
@@ -29,7 +29,7 @@ exports[`renders correctly TextInput 1`] = `
     onChangeText={[Function]}
     placeholder="placeholder"
     style={
-      Object {
+      {
         "borderColor": "#CED4DA",
         "borderRadius": 20,
         "borderWidth": 2,
@@ -46,7 +46,7 @@ exports[`renders correctly TextInput 1`] = `
 exports[`renders correctly TextInput if optional 1`] = `
 <View
   style={
-    Object {
+    {
       "marginHorizontal": 16,
       "marginTop": 12,
     }
@@ -56,7 +56,7 @@ exports[`renders correctly TextInput if optional 1`] = `
     activeOpacity={1}
     onPress={[Function]}
     style={
-      Object {
+      {
         "flexDirection": "row",
         "marginBottom": 14,
       }
@@ -72,7 +72,7 @@ exports[`renders correctly TextInput if optional 1`] = `
     onChangeText={[Function]}
     placeholder="placeholder"
     style={
-      Object {
+      {
         "borderColor": "#CED4DA",
         "borderRadius": 20,
         "borderWidth": 2,

@@ -3,7 +3,7 @@
 exports[`LegendItem renders correctly 1`] = `
 <View
   style={
-    Object {
+    {
       "flexDirection": "row",
       "justifyContent": "center",
       "paddingTop": 10,
@@ -34,7 +34,7 @@ exports[`LegendItem renders correctly 1`] = `
 exports[`LegendItem should not render % if percentage is 0 1`] = `
 <View
   style={
-    Object {
+    {
       "flexDirection": "row",
       "justifyContent": "center",
       "paddingTop": 10,

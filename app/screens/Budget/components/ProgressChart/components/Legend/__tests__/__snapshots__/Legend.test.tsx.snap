@@ -3,7 +3,7 @@
 exports[`Legend renders correctly 1`] = `
 <View
   style={
-    Object {
+    {
       "justifyContent": "space-between",
       "paddingVertical": 20,
     }

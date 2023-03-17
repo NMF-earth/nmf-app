@@ -6,7 +6,7 @@ exports[`AddEmissionScreen renders correctly 1`] = `
 >
   <KeyboardAwareScrollView
     style={
-      Object {
+      {
         "alignContent": "flex-start",
         "backgroundColor": "#FFFFFF",
         "flex": 1,
@@ -15,7 +15,7 @@ exports[`AddEmissionScreen renders correctly 1`] = `
   >
     <View
       style={
-        Object {
+        {
           "backgroundColor": "#FFFFFF",
           "flex": 1,
           "paddingHorizontal": 16,
@@ -25,7 +25,7 @@ exports[`AddEmissionScreen renders correctly 1`] = `
     >
       <Text.H2
         style={
-          Object {
+          {
             "marginTop": 4,
             "textTransform": "capitalize",
           }
@@ -34,7 +34,7 @@ exports[`AddEmissionScreen renders correctly 1`] = `
       <Text.Primary
         lightGray={true}
         style={
-          Object {
+          {
             "marginTop": 4,
             "textTransform": "capitalize",
           }
@@ -53,12 +53,14 @@ exports[`AddEmissionScreen renders correctly 1`] = `
     <Modal
       animationType="none"
       hardwareAccelerated={false}
+      isVisible={false}
+      onHide={[Function]}
       transparent={true}
       visible={false}
     />
     <View
       style={
-        Object {
+        {
           "backgroundColor": "#FFFFFF",
           "flex": 1,
           "paddingHorizontal": 16,
@@ -71,7 +73,7 @@ exports[`AddEmissionScreen renders correctly 1`] = `
       </Text.H3>
       <View
         style={
-          Object {
+          {
             "flexDirection": "column",
             "paddingBottom": 4,
             "paddingTop": 10,
@@ -87,7 +89,7 @@ exports[`AddEmissionScreen renders correctly 1`] = `
     </View>
     <View
       style={
-        Object {
+        {
           "backgroundColor": "#FFFFFF",
           "flex": 1,
           "paddingHorizontal": 16,
@@ -100,7 +102,7 @@ exports[`AddEmissionScreen renders correctly 1`] = `
       </Text.H3>
       <View
         style={
-          Object {
+          {
             "flexDirection": "column",
             "paddingBottom": 4,
             "paddingTop": 10,
@@ -117,7 +119,7 @@ exports[`AddEmissionScreen renders correctly 1`] = `
     <Button.Primary
       onPress={[Function]}
       style={
-        Object {
+        {
           "margin": 16,
         }
       }

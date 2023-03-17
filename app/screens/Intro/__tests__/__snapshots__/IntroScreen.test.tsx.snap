@@ -2,9 +2,8 @@
 
 exports[`renders correctly ComingSoon 1`] = `
 <RCTSafeAreaView
-  emulateUnlessSupported={true}
   style={
-    Object {
+    {
       "backgroundColor": "#FFFFFF",
       "flex": 1,
       "justifyContent": "space-between",
@@ -14,7 +13,7 @@ exports[`renders correctly ComingSoon 1`] = `
 >
   <View
     style={
-      Object {
+      {
         "flex": 2,
       }
     }
@@ -25,7 +24,7 @@ exports[`renders correctly ComingSoon 1`] = `
   </View>
   <View
     style={
-      Object {
+      {
         "alignItems": "center",
         "flex": 2,
         "paddingHorizontal": 16,
@@ -34,7 +33,7 @@ exports[`renders correctly ComingSoon 1`] = `
   >
     <Text.H3
       style={
-        Object {
+        {
           "paddingVertical": 10,
           "textAlign": "center",
         }
@@ -44,7 +43,7 @@ exports[`renders correctly ComingSoon 1`] = `
     </Text.H3>
     <Text.Tertiary
       style={
-        Object {
+        {
           "paddingVertical": 10,
           "textAlign": "center",
         }
@@ -63,7 +62,7 @@ exports[`renders correctly ComingSoon 1`] = `
     </TouchableOpacity>
     <View
       style={
-        Object {
+        {
           "bottom": 16,
           "left": 0,
           "marginHorizontal": 16,

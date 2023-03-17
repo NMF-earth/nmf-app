@@ -3,7 +3,7 @@
 exports[`MyDataScreen renders correctly 1`] = `
 <RCTScrollView
   style={
-    Object {
+    {
       "backgroundColor": "#FFFFFF",
       "flex": 1,
       "paddingHorizontal": 16,
@@ -13,7 +13,7 @@ exports[`MyDataScreen renders correctly 1`] = `
   <View>
     <Text.Primary
       style={
-        Object {
+        {
           "marginTop": 12,
           "paddingVertical": 10,
         }
@@ -26,7 +26,7 @@ exports[`MyDataScreen renders correctly 1`] = `
       icon="cloud-upload"
       onPress={[Function]}
       style={
-        Object {
+        {
           "marginTop": 20,
         }
       }
@@ -37,7 +37,7 @@ exports[`MyDataScreen renders correctly 1`] = `
       icon="cloud-download"
       onPress={[Function]}
       style={
-        Object {
+        {
           "marginTop": 20,
         }
       }
@@ -48,7 +48,7 @@ exports[`MyDataScreen renders correctly 1`] = `
       icon="trash"
       onPress={[Function]}
       style={
-        Object {
+        {
           "marginTop": 20,
         }
       }

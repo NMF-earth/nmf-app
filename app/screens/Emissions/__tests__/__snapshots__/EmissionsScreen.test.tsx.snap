@@ -4,10 +4,10 @@ exports[`EmissionsScreen renders correctly 1`] = `
 <RCTScrollView
   ListFooterComponent={[Function]}
   data={
-    Array [
-      Object {
-        "data": Array [
-          Object {
+    [
+      {
+        "data": [
+          {
             "co2value": 0.0803,
             "creationDate": "2020-03-01T12:08:16.623Z",
             "emissionModelType": "boat",
@@ -19,14 +19,14 @@ exports[`EmissionsScreen renders correctly 1`] = `
             "times": 1,
             "title": "Boat",
             "value": 100,
-            "weekDays": Array [],
+            "weekDays": [],
           },
         ],
         "title": "Recurring emissions",
       },
-      Object {
-        "data": Array [
-          Object {
+      {
+        "data": [
+          {
             "co2value": 20,
             "creationDate": "2020-03-01T12:08:16.623Z",
             "emissionModelType": "beans",
@@ -38,7 +38,7 @@ exports[`EmissionsScreen renders correctly 1`] = `
             "title": "Beans",
             "value": 10,
           },
-          Object {
+          {
             "co2value": 0.0803,
             "creationDate": "2020-03-01T12:08:16.623Z",
             "emissionModelType": "boat",
@@ -53,9 +53,9 @@ exports[`EmissionsScreen renders correctly 1`] = `
         ],
         "date": "2020-03-01T00:00:00+00:00",
       },
-      Object {
-        "data": Array [
-          Object {
+      {
+        "data": [
+          {
             "co2value": 60,
             "creationDate": "2020-01-01T12:08:16.623Z",
             "emissionModelType": "beans",
@@ -85,14 +85,14 @@ exports[`EmissionsScreen renders correctly 1`] = `
   renderItem={[Function]}
   scrollEventThrottle={50}
   stickyHeaderIndices={
-    Array [
+    [
       0,
       3,
       7,
     ]
   }
   style={
-    Object {
+    {
       "backgroundColor": "#FFFFFF",
       "flex": 1,
     }
@@ -100,6 +100,7 @@ exports[`EmissionsScreen renders correctly 1`] = `
 >
   <View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -108,6 +109,7 @@ exports[`EmissionsScreen renders correctly 1`] = `
       />
     </View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -121,10 +123,12 @@ exports[`EmissionsScreen renders correctly 1`] = `
       />
     </View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     />
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -133,6 +137,7 @@ exports[`EmissionsScreen renders correctly 1`] = `
       />
     </View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -147,6 +152,7 @@ exports[`EmissionsScreen renders correctly 1`] = `
       />
     </View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -161,10 +167,12 @@ exports[`EmissionsScreen renders correctly 1`] = `
       />
     </View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     />
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -173,6 +181,7 @@ exports[`EmissionsScreen renders correctly 1`] = `
       />
     </View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -187,6 +196,7 @@ exports[`EmissionsScreen renders correctly 1`] = `
       />
     </View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     />
@@ -195,7 +205,7 @@ exports[`EmissionsScreen renders correctly 1`] = `
     >
       <View
         style={
-          Object {
+          {
             "height": 100,
           }
         }
@@ -209,9 +219,9 @@ exports[`EmissionsScreen renders correctly if no emissions 1`] = `
 <RCTScrollView
   ListFooterComponent={[Function]}
   data={
-    Array [
-      Object {
-        "data": Array [],
+    [
+      {
+        "data": [],
         "title": null,
       },
     ]
@@ -229,12 +239,12 @@ exports[`EmissionsScreen renders correctly if no emissions 1`] = `
   renderItem={[Function]}
   scrollEventThrottle={50}
   stickyHeaderIndices={
-    Array [
+    [
       0,
     ]
   }
   style={
-    Object {
+    {
       "backgroundColor": "#FFFFFF",
       "flex": 1,
     }
@@ -242,6 +252,7 @@ exports[`EmissionsScreen renders correctly if no emissions 1`] = `
 >
   <View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -250,6 +261,7 @@ exports[`EmissionsScreen renders correctly if no emissions 1`] = `
       />
     </View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     />
@@ -258,7 +270,7 @@ exports[`EmissionsScreen renders correctly if no emissions 1`] = `
     >
       <View
         style={
-          Object {
+          {
             "height": 100,
           }
         }
@@ -272,10 +284,10 @@ exports[`EmissionsScreen renders correctly if only normal emissions 1`] = `
 <RCTScrollView
   ListFooterComponent={[Function]}
   data={
-    Array [
-      Object {
-        "data": Array [
-          Object {
+    [
+      {
+        "data": [
+          {
             "co2value": 20,
             "creationDate": "2020-03-01T12:08:16.623Z",
             "emissionModelType": "beans",
@@ -287,7 +299,7 @@ exports[`EmissionsScreen renders correctly if only normal emissions 1`] = `
             "title": "Beans",
             "value": 10,
           },
-          Object {
+          {
             "co2value": 0.0803,
             "creationDate": "2020-03-01T12:08:16.623Z",
             "emissionModelType": "boat",
@@ -302,9 +314,9 @@ exports[`EmissionsScreen renders correctly if only normal emissions 1`] = `
         ],
         "date": "2020-03-01T00:00:00+00:00",
       },
-      Object {
-        "data": Array [
-          Object {
+      {
+        "data": [
+          {
             "co2value": 60,
             "creationDate": "2020-01-01T12:08:16.623Z",
             "emissionModelType": "beans",
@@ -334,13 +346,13 @@ exports[`EmissionsScreen renders correctly if only normal emissions 1`] = `
   renderItem={[Function]}
   scrollEventThrottle={50}
   stickyHeaderIndices={
-    Array [
+    [
       0,
       4,
     ]
   }
   style={
-    Object {
+    {
       "backgroundColor": "#FFFFFF",
       "flex": 1,
     }
@@ -348,6 +360,7 @@ exports[`EmissionsScreen renders correctly if only normal emissions 1`] = `
 >
   <View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -356,6 +369,7 @@ exports[`EmissionsScreen renders correctly if only normal emissions 1`] = `
       />
     </View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -370,6 +384,7 @@ exports[`EmissionsScreen renders correctly if only normal emissions 1`] = `
       />
     </View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -384,10 +399,12 @@ exports[`EmissionsScreen renders correctly if only normal emissions 1`] = `
       />
     </View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     />
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -396,6 +413,7 @@ exports[`EmissionsScreen renders correctly if only normal emissions 1`] = `
       />
     </View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -410,6 +428,7 @@ exports[`EmissionsScreen renders correctly if only normal emissions 1`] = `
       />
     </View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     />
@@ -418,7 +437,7 @@ exports[`EmissionsScreen renders correctly if only normal emissions 1`] = `
     >
       <View
         style={
-          Object {
+          {
             "height": 100,
           }
         }
@@ -432,10 +451,10 @@ exports[`EmissionsScreen renders correctly if only recurring emissions 1`] = `
 <RCTScrollView
   ListFooterComponent={[Function]}
   data={
-    Array [
-      Object {
-        "data": Array [
-          Object {
+    [
+      {
+        "data": [
+          {
             "co2value": 0.0803,
             "creationDate": "2020-03-01T12:08:16.623Z",
             "emissionModelType": "boat",
@@ -447,7 +466,7 @@ exports[`EmissionsScreen renders correctly if only recurring emissions 1`] = `
             "times": 1,
             "title": "Boat",
             "value": 100,
-            "weekDays": Array [],
+            "weekDays": [],
           },
         ],
         "title": "Recurring emissions",
@@ -467,12 +486,12 @@ exports[`EmissionsScreen renders correctly if only recurring emissions 1`] = `
   renderItem={[Function]}
   scrollEventThrottle={50}
   stickyHeaderIndices={
-    Array [
+    [
       0,
     ]
   }
   style={
-    Object {
+    {
       "backgroundColor": "#FFFFFF",
       "flex": 1,
     }
@@ -480,6 +499,7 @@ exports[`EmissionsScreen renders correctly if only recurring emissions 1`] = `
 >
   <View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -488,6 +508,7 @@ exports[`EmissionsScreen renders correctly if only recurring emissions 1`] = `
       />
     </View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -501,6 +522,7 @@ exports[`EmissionsScreen renders correctly if only recurring emissions 1`] = `
       />
     </View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     />
@@ -509,7 +531,7 @@ exports[`EmissionsScreen renders correctly if only recurring emissions 1`] = `
     >
       <View
         style={
-          Object {
+          {
             "height": 100,
           }
         }
