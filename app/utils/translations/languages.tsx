@@ -14,6 +14,7 @@ const supportedLanguages = {
   zh: "中文（简体）",
   ms: "Bahasa Melayu",
   es: "Español",
+  it: "Italiano",
 };
 
 const currentLanguage = Object.keys(supportedLanguages).includes(locale.substr(0, 2))
