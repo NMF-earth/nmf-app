@@ -15,8 +15,9 @@ import {
   purchase,
   fashion,
 } from "carbon-footprint";
+import { join } from "ramda";
 
-import { Emission, EmissionType } from "interfaces";
+import { Emission, EmissionType, PeriodicityType, WeekDays } from "interfaces";
 
 import calculation from "../";
 import { t } from "../../translations";
@@ -314,4 +315,33 @@ describe("getDisplayUnits should return the correct units given a kilogram value
       expect(calculation.getDisplayUnits(kgValue, false, false)).toEqual(t("POUNDS_FULL"));
     }
   });
+});
+
+
+
+describe("getPeriodicityText should return the correct periodicity text", () => {
+  it("for an undefined time period", () => {
+    expect(calculation.getPeriodicityText({times: undefined,
+      periodType : PeriodicityType.monthly,
+      weekDays : [], })).toEqual("");
+  }
+  );
+  it ("one time, on a montly basis, on a wednesday", () => {
+    expect(calculation.getPeriodicityText({times: 1, periodType : PeriodicityType.monthly, weekDays : [WeekDays.wednesday]})).toEqual( join( " ", [t("UI_MONTHLY"), "- 1", t("UI_TIME"), t("UI_EVERY"), t("UI_WEDNESDAY")]));
+  });
+
+  it ("one time, on a montly basis, on a wednesday and a friday", () => {
+    expect(calculation.getPeriodicityText({times: 1, periodType : PeriodicityType.monthly, weekDays : [WeekDays.wednesday, WeekDays.friday]})).toEqual(join( " ", [t("UI_MONTHLY"), "- 1", t("UI_TIME"), t("UI_EVERY"), join(", ", [t("UI_WEDNESDAY"), t("UI_FRIDAY")])]));
+  }
+  );
+
+  it ("two times, on a montly basis, on a wednesday and a friday", () => {
+    expect(calculation.getPeriodicityText({times: 2, periodType : PeriodicityType.monthly, weekDays : [WeekDays.wednesday, WeekDays.friday]})).toEqual(join( " ", [t("UI_MONTHLY"), "- 2", t("UI_TIMES"), t("UI_EVERY"), join(", ", [t("UI_WEDNESDAY"), t("UI_FRIDAY")])]));
+  }
+  );
+
+  it ("two times, on a weekly basis, on a wednesday and a friday", () => {
+    expect(calculation.getPeriodicityText({times: 2, periodType : PeriodicityType.weekly, weekDays : [WeekDays.wednesday, WeekDays.friday]})).toEqual(join( " ", [t("UI_WEEKLY"), "- 2", t("UI_TIMES"), t("UI_EVERY"), join(", ", [t("UI_WEDNESDAY"), t("UI_FRIDAY")])]));
+  }
+  );
 });
