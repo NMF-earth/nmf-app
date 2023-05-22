@@ -83,7 +83,7 @@ const emissionCustom: Emission = {
 const emissionProductScanned: Emission = {
   ...emissionFood,
   emissionModelType: "productScanned",
-  emissionType: EmissionType.custom,
+  emissionType: EmissionType.productScanned,
 };
 
 const imperialMetricBaseline: number[] = [
@@ -170,8 +170,14 @@ describe("getFlightType should return the correct flight type for", () => {
   it("a short flight", () => {
     expect(calculation.getFlightType(60)).toEqual(TransportType.shortHaulFlight);
   });
+  it("a boundary medium flight", () => {
+    expect(calculation.getFlightType(3*60)).toEqual(TransportType.mediumHaulFlight);
+  });
   it("a medium flight", () => {
     expect(calculation.getFlightType(4 * 60)).toEqual(TransportType.mediumHaulFlight);
+  });
+  it("a boundary long flight", () => {
+    expect(calculation.getFlightType(6 * 60)).toEqual(TransportType.longHaulFlight);
   });
   it("a long flight", () => {
     expect(calculation.getFlightType(8 * 60)).toEqual(TransportType.longHaulFlight);
@@ -342,6 +348,10 @@ describe("getPeriodicityText should return the correct periodicity text", () => 
 
   it ("two times, on a weekly basis, on a wednesday and a friday", () => {
     expect(calculation.getPeriodicityText({times: 2, periodType : PeriodicityType.weekly, weekDays : [WeekDays.wednesday, WeekDays.friday]})).toEqual(join( " ", [t("UI_WEEKLY"), "- 2", t("UI_TIMES"), t("UI_EVERY"), join(", ", [t("UI_WEDNESDAY"), t("UI_FRIDAY")])]));
+  }
+  );
+  it("three times, on a weekly basis, on no specific days", () => {
+    expect(calculation.getPeriodicityText({times: 3, periodType : PeriodicityType.weekly, weekDays : []})).toEqual(join( " ", [t("UI_WEEKLY"), "- 3", t("UI_TIMES")]));
   }
   );
 });

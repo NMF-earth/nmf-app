@@ -148,7 +148,7 @@ const getImperialMetricValue = (
     if (measureType === MeasureType.mass) {
       /* kg -> lbs */
       return metricValue * 2.205;
-    } else if (measureType === MeasureType.length) {
+    } else { // measureType === MeasureType.length
       /* km -> miles
       note: deviates from NMF.earth's standard of using meters as a reference */
       return metricValue / 1.609;
@@ -160,7 +160,7 @@ const getDisplayUnitsValue = (kgValue: number, useMetricUnits: boolean): number 
   if (useMetricUnits) {
     if (kgValue <= 1) {
       return kgValue * 1000;
-    } else if (kgValue > 1 && kgValue <= 1000) {
+    } else if ( kgValue <= 1000) {
       return kgValue;
     } else {
       return kgValue / 1000;
@@ -180,7 +180,7 @@ const getDisplayUnits = (kgValue: number, useMetricUnits: boolean, useSymbol = t
   if (useMetricUnits) {
     if (kgValue <= 1) {
       return t(`GRAMS${suffix}`);
-    } else if (kgValue > 1 && kgValue <= 1000) {
+    } else if (kgValue <= 1000) {
       return t(`KILOGRAMS${suffix}`);
     } else {
       return t(`TONNES${suffix}`);

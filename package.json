@@ -84,6 +84,8 @@
   },
   "devDependencies": {
     "@babel/core": "7.20.12",
+    "@stryker-mutator/core": "^6.4.2",
+    "@stryker-mutator/jest-runner": "^6.4.2",
     "@types/i18n-js": "3.0.2",
     "@types/jest": "29.2.0",
     "@types/node": "18.11.7",
