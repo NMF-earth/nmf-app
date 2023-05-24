@@ -1,0 +1,17 @@
+{
+    "SETTINGS_SCREEN_TAB_NAME": "Impostazioni",
+    "SETTINGS_SCREEN_TITLE": "Impostazioni",
+    "SETTINGS_SCREEN_ABOUT": "A riguardo",
+    "SETTINGS_SCREEN_UNITS": "Unità di misura",
+    "SETTINGS_SCREEN_NOTIFICATIONS": "Notifiche",
+    "SETTINGS_SCREEN_MY_LOCATION": "La mia posizione",
+    "SETTINGS_SCREEN_FAQ": "FAQ",
+    "SETTINGS_SCREEN_SUPPORT_US": "Supportaci!",
+    "SETTINGS_SCREEN_ROADMAP": "Roadmap",
+    "SETTINGS_SCREEN_FEEDBACK": "Feedback",
+    "SETTINGS_SCREEN_TERMS_OF_USE": "Termini di utilizzo",
+    "SETTINGS_SCREEN_APP_VERSION": "Versione %{version}",
+    "SETTINGS_SCREEN_IMPORT_SAVE_DELETE_DATA": "I miei dati",
+    "SETTINGS_SCREEN_HELP_TRANSLATION": "Aiuta a tradurre",
+    "SETTINGS_SCREEN_LANGUAGES": "Lingue"
+}

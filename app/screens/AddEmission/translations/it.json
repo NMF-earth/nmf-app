@@ -1,0 +1,21 @@
+{
+    "ADD_EMISSION_SCREEN_TAB_NAME": "Aggiungi",
+    "ADD_EMISSION_SCREEN_TITLE": "Aggiungi emissione",
+    "ADD_EMISSION_SCREEN_ELECTRICITY_CONSUMPTION": "Consumo elettrico",
+    "ADD_EMISSION_SCREEN_DURATION": "Durata",
+    "ADD_EMISSION_SCREEN_DISTANCE": "Distanza",
+    "ADD_EMISSION_SCREEN_TOTAL": "Totale",
+    "ADD_EMISSION_SCREEN_QUANTITY": "Quantità",
+    "ADD_EMISSION_SCREEN_QUANTITY_OF_EMISSION": "Quantità di emissione",
+    "ADD_EMISSION_SCREEN_ADD_THIS_EMISSION": "Aggiungi questa emissione",
+    "ADD_EMISSION_SCREEN_TEXTINPUT_PLACEHOLDER": "es. panino, volo da Roma a Parigi...",
+    "ADD_EMISSION_SCREEN_NAME_EMISSION": "Dai un nome a questa emissione",
+    "ADD_EMISSION_SCREEN_DATE": "Data",
+    "ADD_EMISSION_SCREEN_PICKER_MODAL_CONFIRM": "Conferma",
+    "ADD_EMISSION_SCREEN_PICKER_MODAL_CANCEL": "Annulla",
+    "ADD_EMISSION_SCREEN_ITEMS": "elementi",
+    "ADD_EMISSION_SCREEN_MEALS": "pasto/i",
+    "ADD_EMISSION_SCREEN_PERIODICITY": "Periodicità",
+    "ADD_EMISSION_SCREEN_NON_RECURRING": "Non ricorrente",
+    "ADD_EMISSION_SCREEN_NAME": "Nome"
+}

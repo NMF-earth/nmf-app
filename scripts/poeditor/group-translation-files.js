@@ -2,7 +2,7 @@
 const fs = require("fs");
 
 // Languages
-const usedLanguages = ["en", "de", "fr", "sv", "pt", "es", "pl", "ru", "da", "zh", "ms"];
+const usedLanguages = ["en", "de", "fr", "sv", "pt", "es", "pl", "ru", "da", "zh", "ms", "it"];
 // Imports all files
 const toBeImported = {
   AppStore: "./app-store",
