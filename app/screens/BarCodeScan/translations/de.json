@@ -1,1 +1,11 @@
-{}
+{
+  "BAR_CODE_SCAN_SCREEN_TITLE": "Barcode scannen",
+  "BAR_CODE_SCAN_SCREEN_LOADING": "Laden...",
+  "BAR_CODE_SCAN_SCREEN_ERROR_TITLE": "Etwas ging schief",
+  "BAR_CODE_SCAN_SCREEN_ERROR_MESSAGE": "Prüfe deine Internetverbindung und versuche erneut.",
+  "BAR_CODE_SCAN_SCREEN_TRY_AGAIN": "Erneut versuchen",
+  "BAR_CODE_SCAN_SCREEN_CAMERA_PERMISSION_ASK": "Kamerazugriff anfragen",
+  "BAR_CODE_SCAN_SCREEN_SCAN_PRODUCT": "Scanne den Barcode eines Produkts",
+  "BAR_CODE_SCAN_SCREEN_NO_CARBON_DATA_TITLE": "Keine CO2-Daten zu diesem Produkt",
+  "BAR_CODE_SCAN_SCREEN_NO_CARBON_DATA_MESSAGE": "Leider hat Open Food Fact keine Daten zum CO2-Fußabdruck dieses Produkts. Versuchen Sie ein anderes!"
+}

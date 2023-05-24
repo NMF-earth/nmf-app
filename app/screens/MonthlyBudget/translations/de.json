@@ -1,4 +1,6 @@
 {
+	"MONTHLY_BUDGET_SCREEN_TITLE": "Monatliches Budget",
+	"MONTHLY_BUDGET_SCREEN_SLIDE_TO_SET": "Schiebe, um dein Budget einzustellen",
 	"MONTHLY_BUDGET_SCREEN_SAVE": "Speichern",
 	"MONTHLY_BUDGET_SCREEN_CARBON_EMISSIONS_WORLD": "Durchschnittliche monatliche Emissionen pro Hauptstadt für einige Länder ",
 	"MONTHLY_BUDGET_SCREEN_LUXEMBOURG": "Luxemburg : ",
@@ -10,4 +12,5 @@
 	"MONTHLY_BUDGET_SCREEN_BRAZIL": "Brasilien : ",
 	"MONTHLY_BUDGET_SCREEN_INDIA": "Indien : ",
 	"MONTHLY_BUDGET_SCREEN_ETHIOPIA": "Äthiopien : "
+	"MONTHLY_BUDGET_SCREEN_PARIS_AGREEMENT": "Wenn du das Pariser Abkommen einhalten möchtest (um den Anstieg der globalen Durchschnittstemperatur unter 2 Grad zu halten), setze dein monatliches Budget auf"
 }
