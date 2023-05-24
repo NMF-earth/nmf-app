@@ -9,6 +9,7 @@ import ru from "./ru.json";
 import pl from "./pl.json";
 import zh from "./zh.json";
 import ms from "./ms.json";
+import it from "./it.json";
 
 interface TranslationKeys {
   PERIODICITY_MODAL_SCREEN_TITLE: string;
@@ -21,4 +22,4 @@ interface TranslationKeys {
   PERIODICITY_MODAL_SCREEN_CANCEL_NO_PERIODICITY: string;
 }
 
-export { en, fr, de, sv, es, pt, da, ru, pl, zh, ms, TranslationKeys };
+export { en, fr, de, sv, es, pt, da, ru, pl, zh, ms, it, TranslationKeys };

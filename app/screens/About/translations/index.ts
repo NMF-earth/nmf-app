@@ -9,6 +9,7 @@ import ru from "./ru.json";
 import pl from "./pl.json";
 import zh from "./zh.json";
 import ms from "./ms.json";
+import it from "./it.json";
 
 interface TranslationKeys {
   ABOUT_SCREEN_TITLE: string;
@@ -25,4 +26,4 @@ interface TranslationKeys {
   ABOUT_SCREEN_GITHUB: string;
 }
 
-export { en, fr, de, sv, es, pt, da, ru, pl, zh, ms, TranslationKeys };
+export { en, fr, de, sv, es, pt, da, ru, pl, zh, ms, it, TranslationKeys };
