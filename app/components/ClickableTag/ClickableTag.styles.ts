@@ -12,11 +12,11 @@ export default StyleSheet.create({
     borderWidth: 1.5,
   },
   selected: {
-    backgroundColor: Colors.green10,
-    borderColor: Colors.green50,
+    backgroundColor: Colors.primary10,
+    borderColor: Colors.primary,
   },
   unselected: {
     backgroundColor: Colors.grey10,
-    borderColor: Colors.grey40,
+    borderColor: Colors.black50,
   },
 });

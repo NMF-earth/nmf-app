@@ -4,19 +4,19 @@ import { Colors } from "style";
 
 const Primary = StyleSheet.create({
   default: {
-    backgroundColor: Colors.green50,
+    backgroundColor: Colors.primary,
   },
 });
 
 const Secondary = StyleSheet.create({
   default: {
-    backgroundColor: Colors.blue50,
+    backgroundColor: Colors.secondary,
   },
 });
 
 const Danger = StyleSheet.create({
   default: {
-    backgroundColor: Colors.red50,
+    backgroundColor: Colors.danger,
   },
 });
 

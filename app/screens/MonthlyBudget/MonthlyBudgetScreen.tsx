@@ -80,9 +80,9 @@ const MonthlyBudgetScreen: NavStatelessComponent = () => {
           <Text.Primary bold>{t("MONTHLY_BUDGET_SCREEN_SLIDE_TO_SET")}</Text.Primary>
         </View>
         <Slider
-          minimumTrackTintColor={Colors.green50}
+          minimumTrackTintColor={Colors.primary}
           maximumTrackTintColor={Colors.grey}
-          thumbTintColor={Colors.green50}
+          thumbTintColor={Colors.primary}
           style={styles.slider}
           maximumValue={MAX_MONTHLY_CARBON_BUDGET}
           minimumValue={MIN_MONTHLY_CARBON_BUDGET}
@@ -101,7 +101,7 @@ const MonthlyBudgetScreen: NavStatelessComponent = () => {
               <Ionicons
                 name="md-information-circle"
                 size={26}
-                color={Colors.blue50}
+                color={Colors.secondary}
                 onPress={onPressInfoWorldEmission}
               />
             </Text.Primary>
@@ -117,7 +117,7 @@ const MonthlyBudgetScreen: NavStatelessComponent = () => {
               <Ionicons
                 name="md-information-circle"
                 size={26}
-                color={Colors.blue50}
+                color={Colors.secondary}
                 onPress={onPressInfoParisAgreement}
               />
             </Text.Secondary>

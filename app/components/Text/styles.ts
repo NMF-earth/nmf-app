@@ -4,25 +4,25 @@ import { Colors, Font } from "style";
 
 export default StyleSheet.create({
   red: {
-    color: Colors.red50,
+    color: Colors.danger,
   },
   orange: {
-    color: Colors.apricot,
+    color: Colors.warning,
   },
   darkGray: {
     color: Colors.grey70,
   },
   lightGray: {
-    color: Colors.grey40,
+    color: Colors.black50,
   },
   green: {
-    color: Colors.green50,
+    color: Colors.primary,
   },
   white: {
     color: Colors.white,
   },
   blue50: {
-    color: Colors.blue50,
+    color: Colors.secondary,
   },
   bold: {
     fontFamily: Font.FontWeight.Bold,

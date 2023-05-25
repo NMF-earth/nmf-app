@@ -13,7 +13,7 @@ export default function TabBarIcon(props: Props): ReactElement {
     <Ionicons
       name={props.name as keyof typeof Ionicons.glyphMap}
       size={26}
-      color={props.focused ? Colors.green50 : Colors.grey40}
+      color={props.focused ? Colors.primary : Colors.black50}
     />
   );
 }

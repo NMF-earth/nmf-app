@@ -53,9 +53,9 @@ const Streaming: React.FC<Props> = ({
         <Text.Primary lightGray>{hours + " hour(s) and " + minutes + " minute(s)."}</Text.Primary>
       </View>
       <Slider
-        minimumTrackTintColor={Colors.green50}
+        minimumTrackTintColor={Colors.primary}
         maximumTrackTintColor={Colors.grey}
-        thumbTintColor={Colors.green50}
+        thumbTintColor={Colors.primary}
         style={styles.slider}
         maximumValue={MAX_SLIDER_VALUE}
         minimumValue={MIN_SLIDER_VALUE}
