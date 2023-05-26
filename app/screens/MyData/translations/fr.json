@@ -1,1 +1,14 @@
-{}
+{
+  "MY_DATA_SCREEN_TITLE": "Mes données",
+  "MY_DATA_SCREEN_BODY": "Chez NMF.earth, vos données vous appartiennent. Cela signifie que nous ne stockons pas vos données sur un serveur et que personne d'autre que vous ne peut donc y avoir accès. Pas de problème de sécurité, vos données ne quittent jamais votre téléphone. Par conséquent, vous êtes responsables de la sauvegarde de vos données, par exemple si vous perdriez votre téléphone. Pour ce faire, utilisez le bouton Exporter ci-dessous pour récupérer vos données et les enregistrer où vous le souhaitez. Pour importer d'anciennes données, il suffit d'appuyer sur le bouton d'importation, mais faites attention, car cela effacera aussi vos données précédentes.",
+  "MY_DATA_SCREEN_EXPORT_MY_DATA": "Exporter mes données",
+  "MY_DATA_SCREEN_IMPORT_DATA": "Importer des données",
+  "MY_DATA_SCREEN_DELETE_ALL_MY_DATA": "Effacer toutes mes données",
+  "MY_DATA_SCREEN_ALERT_CONFIRM": "Confirmer",
+  "MY_DATA_SCREEN_ALERT_CONFIRM_IMPORT": "Cette action va écraser toutes les données actuelles !",
+  "MY_DATA_SCREEN_ALERT_CONFIRM_DELETE": "Cette action va supprimer toutes les données !",
+  "MY_DATA_SCREEN_CANCEL": "Annuler",
+  "MY_DATA_SCREEN_OK": "OK",
+  "MY_DATA_SCREEN_DELETE_SUCCESSFUL": "Nous avons réussi à supprimer vos émissions",
+  "MY_DATA_SCREEN_GENERIC_ERROR": "Quelque chose s'est mal passé"
+}

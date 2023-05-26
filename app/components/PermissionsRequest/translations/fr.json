@@ -1,5 +1,7 @@
 {
 	"PERMISSIONS_REQUEST_COMPONENT_OPEN_SETTINGS": "Ouvrir les paramètres",
 	"PERMISSIONS_REQUEST_COMPONENT_CAMERA_TITLE": "Pas d'accès à la caméra",
-	"PERMISSIONS_REQUEST_COMPONENT_CAMERA_SUBTITLE": "Pour utiliser cette fonction, veuillez donner à NMF.earth l'accès à la caméra, dans les paramètres du smartphone."
+	"PERMISSIONS_REQUEST_COMPONENT_CAMERA_SUBTITLE": "Pour utiliser cette fonction, veuillez donner à NMF.earth l'accès à la caméra, dans les paramètres de votre téléphone.",
+	"PERMISSIONS_REQUEST_COMPONENT_NOTIFICATION_TITLE": "Pas d'autorisation d'envoyer des notifications",
+	"PERMISSIONS_REQUEST_COMPONENT_NOTIFICATION_SUBTITLE": "Pour utiliser cette fonction, veuillez autoriser l'application NMF.earth à vous envoyer des notifications dans les paramètres de votre téléphone."
 }
