@@ -43,8 +43,8 @@ exports[`InfoModalScreen renders correctly 1`] = `
                 "paddingVertical": 4,
               },
               {
-                "backgroundColor": "#DCF0E5",
-                "borderColor": "#4BB377",
+                "backgroundColor": "#E7F3EB",
+                "borderColor": "#0F853B",
               },
               undefined,
             ]
@@ -72,7 +72,7 @@ exports[`InfoModalScreen renders correctly 1`] = `
               },
               {
                 "backgroundColor": "#F0F0F0",
-                "borderColor": "#9CA6A0",
+                "borderColor": "#878787",
               },
               undefined,
             ]
@@ -121,7 +121,7 @@ exports[`InfoModalScreen renders correctly 1`] = `
               },
               {
                 "backgroundColor": "#F0F0F0",
-                "borderColor": "#9CA6A0",
+                "borderColor": "#878787",
               },
               undefined,
             ]
@@ -149,7 +149,7 @@ exports[`InfoModalScreen renders correctly 1`] = `
               },
               {
                 "backgroundColor": "#F0F0F0",
-                "borderColor": "#9CA6A0",
+                "borderColor": "#878787",
               },
               undefined,
             ]
@@ -177,7 +177,7 @@ exports[`InfoModalScreen renders correctly 1`] = `
               },
               {
                 "backgroundColor": "#F0F0F0",
-                "borderColor": "#9CA6A0",
+                "borderColor": "#878787",
               },
               undefined,
             ]

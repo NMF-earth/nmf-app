@@ -10,7 +10,8 @@ import pl from "react-native-globalize/locale-data/pl";
 import zh from "react-native-globalize/locale-data/zh";
 import ms from "react-native-globalize/locale-data/ms";
 import es from "react-native-globalize/locale-data/es";
+import it from "react-native-globalize/locale-data/it";
 
 export const loadGlobalize = () => {
-  loadCldr(en, fr, de, sv, da, ru, pt, pl, zh, ms, es);
+  loadCldr(en, fr, de, sv, da, ru, pt, pl, zh, ms, es, it);
 };

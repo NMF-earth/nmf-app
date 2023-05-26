@@ -23,7 +23,7 @@ exports[`<SelectableListItem /> render 1`] = `
     France
   </Text.Primary>
   <Ionicons
-    color="#4BB377"
+    color="#0F853B"
     name="md-checkmark"
     size={26}
     style={
@@ -58,7 +58,7 @@ exports[`<SelectableListItem /> render if not selected 1`] = `
     France
   </Text.Primary>
   <Ionicons
-    color="#4BB377"
+    color="#0F853B"
     name="md-checkmark"
     size={26}
     style={

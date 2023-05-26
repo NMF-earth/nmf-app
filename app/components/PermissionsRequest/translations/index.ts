@@ -9,6 +9,7 @@ import ru from "./ru.json";
 import pl from "./pl.json";
 import zh from "./zh.json";
 import ms from "./ms.json";
+import it from "./it.json";
 
 interface TranslationKeys {
   PERMISSIONS_REQUEST_COMPONENT_OPEN_SETTINGS: string;
@@ -18,4 +19,4 @@ interface TranslationKeys {
   PERMISSIONS_REQUEST_COMPONENT_NOTIFICATION_SUBTITLE: string;
 }
 
-export { en, fr, de, sv, es, pt, da, ru, pl, zh, ms, TranslationKeys };
+export { en, fr, de, sv, es, pt, da, ru, pl, zh, ms, it, TranslationKeys };

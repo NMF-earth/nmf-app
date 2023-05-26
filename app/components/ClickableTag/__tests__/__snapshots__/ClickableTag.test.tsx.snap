@@ -15,7 +15,7 @@ exports[`ClickableTag tests should render correctly 1`] = `
       },
       {
         "backgroundColor": "#F0F0F0",
-        "borderColor": "#9CA6A0",
+        "borderColor": "#878787",
       },
       undefined,
     ]

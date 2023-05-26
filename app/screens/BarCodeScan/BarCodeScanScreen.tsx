@@ -165,7 +165,7 @@ const BarCodeScanScreen = ({ language = "" }: LocalizationContextProps) => {
   if (isFetchingData) {
     return (
       <View style={[styles.container, styles.centeredContainer]}>
-        <ActivityIndicator style={styles.loading} size="large" color={Colors.green50} />
+        <ActivityIndicator style={styles.loading} size="large" color={Colors.primary} />
         <Text.H2 center>{t("BAR_CODE_SCAN_SCREEN_LOADING")}</Text.H2>
       </View>
     );

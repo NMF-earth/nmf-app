@@ -1,0 +1,7 @@
+{
+    "PERMISSIONS_REQUEST_COMPONENT_OPEN_SETTINGS": "Apri impostazioni",
+    "PERMISSIONS_REQUEST_COMPONENT_CAMERA_TITLE": "Nessun accesso alla fotocamera",
+    "PERMISSIONS_REQUEST_COMPONENT_CAMERA_SUBTITLE": "Per favore dai a NMF.earth l'accesso alla fotocamera nelle impostazioni del tuo telefono per usare questa funzione.",
+    "PERMISSIONS_REQUEST_COMPONENT_NOTIFICATION_TITLE": "Nessun permesso per inviare le notifiche",
+    "PERMISSIONS_REQUEST_COMPONENT_NOTIFICATION_SUBTITLE": "Per favore dai a NMF.earth il permesso per inviarti le notifiche nelle impostazioni del tuo telefono."
+}

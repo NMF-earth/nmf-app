@@ -48,7 +48,7 @@ const EmissionListItem: React.FC<EmissionListItemProps> = ({
           name={iconName as keyof typeof Ionicons.glyphMap}
           size={22}
           style={styles.icon}
-          color={isMitigated ? Colors.green50 : Colors.grey70}
+          color={isMitigated ? Colors.primary : Colors.grey70}
         />
       </View>
       <View style={styles.textContainer}>

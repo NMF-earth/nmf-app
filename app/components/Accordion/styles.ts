@@ -20,7 +20,7 @@ export const itemStyles = StyleSheet.create({
     marginTop: 0,
   },
   icon: {
-    color: Colors.blue50,
+    color: Colors.secondary,
   },
   titleContainer: {
     padding: 16,

@@ -54,9 +54,9 @@ const Electricity: React.FC<Props> = ({
         </View>
       </View>
       <Slider
-        minimumTrackTintColor={Colors.green50}
+        minimumTrackTintColor={Colors.primary}
         maximumTrackTintColor={Colors.grey}
-        thumbTintColor={Colors.green50}
+        thumbTintColor={Colors.primary}
         style={styles.slider}
         maximumValue={MAX_SLIDER_VALUE}
         minimumValue={MIN_SLIDER_VALUE}

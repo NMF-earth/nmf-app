@@ -13,7 +13,7 @@ exports[`renders correctly Danger Button 1`] = `
           "paddingHorizontal": 36,
         },
         {
-          "backgroundColor": "#FA4646",
+          "backgroundColor": "#E70000",
         },
         undefined,
       ],
@@ -48,7 +48,7 @@ exports[`renders correctly Primary Button 1`] = `
           "paddingHorizontal": 36,
         },
         {
-          "backgroundColor": "#4BB377",
+          "backgroundColor": "#0F853B",
         },
         undefined,
       ],
@@ -161,7 +161,7 @@ exports[`renders correctly fullwidth Danger Button with icon 1`] = `
           "paddingHorizontal": 36,
         },
         {
-          "backgroundColor": "#4BB377",
+          "backgroundColor": "#0F853B",
         },
         undefined,
         {
@@ -212,7 +212,7 @@ exports[`renders correctly fullwidth Primary Button 1`] = `
           "paddingHorizontal": 36,
         },
         {
-          "backgroundColor": "#4BB377",
+          "backgroundColor": "#0F853B",
         },
         undefined,
         {
@@ -254,7 +254,7 @@ exports[`renders correctly fullwidth Primary Button with icon 1`] = `
           "paddingHorizontal": 36,
         },
         {
-          "backgroundColor": "#4BB377",
+          "backgroundColor": "#0F853B",
         },
         undefined,
         {
@@ -347,7 +347,7 @@ exports[`renders correctly fullwidth Secondary Button with icon 1`] = `
           "paddingHorizontal": 36,
         },
         {
-          "backgroundColor": "#4BB377",
+          "backgroundColor": "#0F853B",
         },
         undefined,
         {

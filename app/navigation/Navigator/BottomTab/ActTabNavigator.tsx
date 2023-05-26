@@ -51,7 +51,7 @@ const TopTabBar = ({ state, navigation }) => {
             style={[
               styles.tabView,
               {
-                backgroundColor: isFocused ? Colors.green10 : Colors.white,
+                backgroundColor: isFocused ? Colors.primary10 : Colors.white,
               },
             ]}
             key={label}
@@ -61,7 +61,7 @@ const TopTabBar = ({ state, navigation }) => {
               style={[
                 styles.tab,
                 {
-                  color: isFocused ? Colors.black : Colors.grey40,
+                  color: isFocused ? Colors.black : Colors.black50,
                 },
               ]}
             >

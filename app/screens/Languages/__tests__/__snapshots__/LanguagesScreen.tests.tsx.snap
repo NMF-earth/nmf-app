@@ -34,7 +34,7 @@ exports[`LanguageScreen renders correctly 1`] = `
           English
         </Text.Primary>
         <Ionicons
-          color="#4BB377"
+          color="#0F853B"
           name="md-checkmark"
           size={26}
           style={
@@ -262,6 +262,28 @@ exports[`LanguageScreen renders correctly 1`] = `
           }
         >
           Español
+        </Text.Primary>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            {
+              "paddingVertical": 20,
+            }
+          }
+        >
+          Italiano
         </Text.Primary>
       </TouchableOpacity>
     </View>

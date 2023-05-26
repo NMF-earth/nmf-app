@@ -1,0 +1,16 @@
+{
+    "EMISSION_ITEM_SCREEN_EMISSION": "Emissione",
+    "EMISSION_ITEM_SCREEN_RECURRING_EMISSION": "Emissione ricorrente",
+    "EMISSION_ITEM_SCREEN_TYPE": "Tipo",
+    "EMISSION_ITEM_SCREEN_QUANTITY": "Quantità",
+    "EMISSION_ITEM_SCREEN_PRICE": "Prezzo",
+    "EMISSION_ITEM_SCREEN_DATE": "Data",
+    "EMISSION_ITEM_SCREEN_DELETE": "Elimina",
+    "EMISSION_ITEM_SCREEN_NAME": "Nome",
+    "EMISSION_ITEM_SCREEN_MITIGATED": "Migrazione",
+    "EMISSION_ITEM_SCREEN_IS_MITIGATED": "Questa emissione è stata migrata",
+    "EMISSION_ITEM_SCREEN_IS_NOT_MITIGATED": "Questa emissione non è stata migrata",
+    "EMISSION_ITEM_SCREEN_PERIODICITY": "Periodicità",
+	"EMISSION_ITEM_SCREEN_TITLE": "Emissione",
+    "EMISSION_ITEM_SCREEN_DELETE_EMISSION": "Elimina emissione"
+}

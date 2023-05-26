@@ -6,7 +6,7 @@ exports[`SectionHeader should render when date 1`] = `
   style={
     {
       "backgroundColor": "#FFFFFF",
-      "borderBottomColor": "#DCF0E5",
+      "borderBottomColor": "#E7F3EB",
       "borderBottomWidth": 2,
       "elevation": 0,
       "flexDirection": "row",
@@ -48,7 +48,7 @@ exports[`SectionHeader should render when title 1`] = `
   style={
     {
       "backgroundColor": "#FFFFFF",
-      "borderBottomColor": "#DCF0E5",
+      "borderBottomColor": "#E7F3EB",
       "borderBottomWidth": 2,
       "elevation": 0,
       "flexDirection": "row",

@@ -32,6 +32,7 @@ const supportedLanguages: string[] = [
   "zh",
   "ms",
   "es",
+  "it",
 ];
 const defaultLanguage = "en";
 const defaultLocale = "en-us";
