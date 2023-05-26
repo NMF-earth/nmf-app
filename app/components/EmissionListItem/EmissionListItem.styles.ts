@@ -40,7 +40,7 @@ export default StyleSheet.create({
   },
   mitigatedCircle: {
     ...iconBackground,
-    backgroundColor: Colors.green10,
+    backgroundColor: Colors.primary10,
   },
   notMitigatedCircle: {
     ...iconBackground,

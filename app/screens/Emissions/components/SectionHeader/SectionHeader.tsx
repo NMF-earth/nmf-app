@@ -56,7 +56,7 @@ const SectionHeader: React.FC<Props & LocalizationContextProps> = ({
         name={"ios-chevron-forward-outline"}
         size={24}
         style={styles.icon}
-        color={Colors.blue50}
+        color={Colors.secondary}
       />
     </TouchableOpacity>
   );

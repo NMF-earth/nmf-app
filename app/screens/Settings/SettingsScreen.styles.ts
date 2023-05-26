@@ -31,7 +31,7 @@ export default StyleSheet.create({
   author: {
     paddingTop: 10,
     paddingBottom: 30,
-    color: Colors.green50,
+    color: Colors.primary,
     fontWeight: "bold",
   },
 });

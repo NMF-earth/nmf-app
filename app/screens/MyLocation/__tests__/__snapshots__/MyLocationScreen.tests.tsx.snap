@@ -61,7 +61,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
   <RCTScrollView
     style={
       {
-        "borderTopColor": "#DCF0E5",
+        "borderTopColor": "#E7F3EB",
         "borderTopWidth": 2,
       }
     }

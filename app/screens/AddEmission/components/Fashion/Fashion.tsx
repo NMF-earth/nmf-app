@@ -41,9 +41,9 @@ const Fashion: React.FC<Props> = ({ emissionModelType, setQuantity, defaultValue
         <Text.Primary lightGray>{sliderValue + " " + t("ADD_EMISSION_SCREEN_ITEMS")}</Text.Primary>
       </View>
       <Slider
-        minimumTrackTintColor={Colors.green50}
+        minimumTrackTintColor={Colors.primary}
         maximumTrackTintColor={Colors.grey}
-        thumbTintColor={Colors.green50}
+        thumbTintColor={Colors.primary}
         style={styles.slider}
         maximumValue={MAX_SLIDER_VALUE}
         minimumValue={MIN_SLIDER_VALUE}

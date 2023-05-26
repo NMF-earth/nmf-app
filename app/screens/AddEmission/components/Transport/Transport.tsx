@@ -74,9 +74,9 @@ const Transport: React.FC<Props> = ({
     <>
       {emissionModelType === TransportType.plane ? renderDuration() : renderDistance()}
       <Slider
-        minimumTrackTintColor={Colors.green50}
+        minimumTrackTintColor={Colors.primary}
         maximumTrackTintColor={Colors.grey}
-        thumbTintColor={Colors.green50}
+        thumbTintColor={Colors.primary}
         style={styles.slider}
         maximumValue={
           emissionModelType === TransportType.plane ? MAX_SLIDER_VALUE_PLANE : MAX_SLIDER_VALUE

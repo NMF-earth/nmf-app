@@ -29,7 +29,7 @@ exports[`<ListItem /> ListItem renders correctly both topLine and bottomLine 1`]
     France
   </Text.Secondary>
   <Ionicons
-    color="#9CA6A0"
+    color="#878787"
     name="ios-chevron-forward-outline"
     size={14}
   />
@@ -61,7 +61,7 @@ exports[`<ListItem /> ListItem renders correctly wtesth bottomLine 1`] = `
     France
   </Text.Secondary>
   <Ionicons
-    color="#9CA6A0"
+    color="#878787"
     name="ios-chevron-forward-outline"
     size={14}
   />
@@ -93,7 +93,7 @@ exports[`<ListItem /> ListItem renders correctly wtesth topLine 1`] = `
     France
   </Text.Secondary>
   <Ionicons
-    color="#9CA6A0"
+    color="#878787"
     name="ios-chevron-forward-outline"
     size={14}
   />
@@ -121,7 +121,7 @@ exports[`<ListItem /> render 1`] = `
     France
   </Text.Secondary>
   <Ionicons
-    color="#9CA6A0"
+    color="#878787"
     name="ios-chevron-forward-outline"
     size={14}
   />

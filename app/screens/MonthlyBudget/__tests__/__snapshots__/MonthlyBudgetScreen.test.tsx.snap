@@ -31,9 +31,9 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
         disabled={false}
         inverted={false}
         lowerLimit={-9007199254740991}
-        maximumTrackTintColor="#CED4DA"
+        maximumTrackTintColor="#F9F9F9"
         maximumValue={1000}
-        minimumTrackTintColor="#4BB377"
+        minimumTrackTintColor="#0F853B"
         minimumValue={10}
         onChange={null}
         onRNCSliderAccessibilityAction={null}
@@ -54,7 +54,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
           ]
         }
         tapToSeek={false}
-        thumbTintColor="#4BB377"
+        thumbTintColor="#0F853B"
         upperLimit={9007199254740991}
         value={0}
       />

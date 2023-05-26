@@ -50,7 +50,7 @@ exports[`renders correctly H1 green 1`] = `
       },
       undefined,
       {
-        "color": "#4BB377",
+        "color": "#0F853B",
       },
     ]
   }
@@ -71,7 +71,7 @@ exports[`renders correctly H1 lightGray 1`] = `
       },
       undefined,
       {
-        "color": "#9CA6A0",
+        "color": "#878787",
       },
     ]
   }
@@ -172,7 +172,7 @@ exports[`renders correctly H2 green 1`] = `
       },
       undefined,
       {
-        "color": "#4BB377",
+        "color": "#0F853B",
       },
     ]
   }
@@ -193,7 +193,7 @@ exports[`renders correctly H2 lightGray 1`] = `
       },
       undefined,
       {
-        "color": "#9CA6A0",
+        "color": "#878787",
       },
     ]
   }
@@ -273,7 +273,7 @@ exports[`renders correctly H3 green 1`] = `
       },
       undefined,
       {
-        "color": "#4BB377",
+        "color": "#0F853B",
       },
     ]
   }
@@ -294,7 +294,7 @@ exports[`renders correctly H3 lightGray 1`] = `
       },
       undefined,
       {
-        "color": "#9CA6A0",
+        "color": "#878787",
       },
     ]
   }
@@ -311,7 +311,7 @@ exports[`renders correctly Link 1`] = `
     style={
       [
         {
-          "color": "#4BB377",
+          "color": "#0F853B",
           "fontFamily": "Inter-Medium",
           "fontSize": 18,
           "textDecorationLine": "underline",
@@ -456,7 +456,7 @@ exports[`renders correctly Primary green 1`] = `
       },
       undefined,
       {
-        "color": "#4BB377",
+        "color": "#0F853B",
       },
     ]
   }
@@ -477,7 +477,7 @@ exports[`renders correctly Primary lightGray 1`] = `
       },
       undefined,
       {
-        "color": "#9CA6A0",
+        "color": "#878787",
       },
     ]
   }
@@ -498,7 +498,7 @@ exports[`renders correctly Primary red 1`] = `
       },
       undefined,
       {
-        "color": "#FA4646",
+        "color": "#E70000",
       },
     ]
   }
@@ -620,7 +620,7 @@ exports[`renders correctly Secondary green 1`] = `
       },
       undefined,
       {
-        "color": "#4BB377",
+        "color": "#0F853B",
       },
     ]
   }
@@ -641,7 +641,7 @@ exports[`renders correctly Secondary lightGray 1`] = `
       },
       undefined,
       {
-        "color": "#9CA6A0",
+        "color": "#878787",
       },
     ]
   }
@@ -683,7 +683,7 @@ exports[`renders correctly Secondary orange 1`] = `
       },
       undefined,
       {
-        "color": "#EB9276",
+        "color": "#D68100",
       },
     ]
   }
@@ -704,7 +704,7 @@ exports[`renders correctly Secondary red 1`] = `
       },
       undefined,
       {
-        "color": "#FA4646",
+        "color": "#E70000",
       },
     ]
   }
@@ -826,7 +826,7 @@ exports[`renders correctly Tertiary green 1`] = `
       },
       undefined,
       {
-        "color": "#4BB377",
+        "color": "#0F853B",
       },
     ]
   }
@@ -847,7 +847,7 @@ exports[`renders correctly Tertiary lightGray 1`] = `
       },
       undefined,
       {
-        "color": "#9CA6A0",
+        "color": "#878787",
       },
     ]
   }
@@ -889,7 +889,7 @@ exports[`renders correctly Tertiary red 1`] = `
       },
       undefined,
       {
-        "color": "#FA4646",
+        "color": "#E70000",
       },
     ]
   }

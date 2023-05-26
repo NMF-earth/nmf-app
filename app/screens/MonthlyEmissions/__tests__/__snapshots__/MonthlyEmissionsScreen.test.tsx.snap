@@ -7,7 +7,7 @@ exports[`<MonthlyEmissions /> render 1`] = `
       style={
         {
           "backgroundColor": "#FFFFFF",
-          "borderBottomColor": "#DCF0E5",
+          "borderBottomColor": "#E7F3EB",
           "borderBottomWidth": 2,
           "elevation": 0,
           "flexDirection": "row",
@@ -94,7 +94,7 @@ exports[`<MonthlyEmissions /> render 1`] = `
         style={
           {
             "backgroundColor": "#FFFFFF",
-            "borderBottomColor": "#DCF0E5",
+            "borderBottomColor": "#E7F3EB",
             "borderBottomWidth": 2,
             "elevation": 0,
             "flexDirection": "row",
