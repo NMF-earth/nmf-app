@@ -148,7 +148,7 @@ For emission info screen, just run `node scripts/generate-emission-info.js` to u
 
 You can help us with translate the app with our online tool [POEditor](https://poeditor.com/join/project/0MbginCsWp). Any help is appreciate and no coding skills are needed 🤗
 
-The app supports fully or partially the following languages : English, French, German, Swedish, Danish, Russian, Portuguese, Spanish, Polish, Chinese and Malaysian.
+The app supports fully or partially the following languages : English, French, German, Swedish, Danish, Russian, Portuguese, Spanish, Polish, Chinese, Italian and Malaysian.
 
 <br />
 
@@ -178,7 +178,7 @@ Run `eas build -p ios` to build for the [App Store Connect](https://appstoreconn
 
 ### 👨‍💻 Contribute ❤️
 
-More than 30 developers have contribute to the app, thanks a lot to [them](https://github.com/NMF-earth/nmf-app/graphs/contributors)!
+More than 40 developers have contribute to the app, thanks a lot to [them](https://github.com/NMF-earth/nmf-app/graphs/contributors)!
 
 Have a look to [contributing.md](https://github.com/NotMyFaultEarth/nmf-app/blob/main/contributing.md) if you want to contribute!
 
