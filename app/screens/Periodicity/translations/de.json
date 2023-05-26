@@ -1,1 +1,10 @@
-{}
+{
+  "PERIODICITY_MODAL_SCREEN_TITLE": "Wiederholung",
+  "PERIODICITY_MODAL_SCREEN_OFTEN": "Wie oft geschieht diese Emission?",
+  "PERIODICITY_MODAL_SCREEN_WEEKLY": "Wöchentlich",
+  "PERIODICITY_MODAL_SCREEN_MONTHLY": "Monatlich",
+  "PERIODICITY_MODAL_SCREEN_DAYS": "An welchen Tagen geschieht diese Emission?",
+  "PERIODICITY_MODAL_SCREEN_OCCURRENCES": "Häufigkeit",
+  "PERIODICITY_MODAL_SCREEN_COMFIRM": "Bestätigen",
+  "PERIODICITY_MODAL_SCREEN_CANCEL_NO_PERIODICITY": "Abbrechen - Kein wiederholte Emission"
+}

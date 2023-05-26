@@ -1,1 +1,7 @@
-{}
+{
+	"NOTIFICATIONS_SCREEN_TITLE": "Benachrichtigungen",
+	"NOTIFICATIONS_SCREEN_INTRO": "Lasse dich jeden Sonntag um 21 Uhr daran erinnern, deine wöchentlichen Emissionen zu ergänzen.",
+	"NOTIFICATIONS_SCREEN_ACTIVATED": "Aktiviert",
+	"NOTIFICATIONS_SCREEN_NOTIFICATION_TITLE": "Wöchentliche Emissionen 🗓",
+	"NOTIFICATIONS_SCREEN_NOTIFICATION_BODY": "Dies ist eine freundliche Erinnerung, deine Emissionen für diese Woche zu ergänzen."
+}
