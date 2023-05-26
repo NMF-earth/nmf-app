@@ -51,7 +51,7 @@ exports[`TextButton renders correctly with camera icon 1`] = `
     }
   >
     <Ionicons
-      color="#4BB377"
+      color="#0F853B"
       name="create"
       size={20}
     />
@@ -110,7 +110,7 @@ exports[`TextButton renders correctly with repeat icon 1`] = `
     }
   >
     <Ionicons
-      color="#4BB377"
+      color="#0F853B"
       name="create"
       size={20}
     />

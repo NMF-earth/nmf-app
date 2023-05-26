@@ -78,7 +78,7 @@ const SettingsScreen: NavStatelessComponent = () => {
     },
     {
       title: t("SETTINGS_SCREEN_FEEDBACK"),
-      onPress: () => WebBrowser.openBrowserAsync("https://nmf-earth.typeform.com/to/w0nNSk"),
+      onPress: () => WebBrowser.openBrowserAsync("https://forms.gle/6eXztW8tMJAorJsR6"),
     },
     {
       title: t("SETTINGS_SCREEN_TERMS_OF_USE"),

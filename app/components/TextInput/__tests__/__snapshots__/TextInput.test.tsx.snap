@@ -30,7 +30,7 @@ exports[`renders correctly TextInput 1`] = `
     placeholder="placeholder"
     style={
       {
-        "borderColor": "#CED4DA",
+        "borderColor": "#F9F9F9",
         "borderRadius": 20,
         "borderWidth": 2,
         "height": 40,
@@ -73,7 +73,7 @@ exports[`renders correctly TextInput if optional 1`] = `
     placeholder="placeholder"
     style={
       {
-        "borderColor": "#CED4DA",
+        "borderColor": "#F9F9F9",
         "borderRadius": 20,
         "borderWidth": 2,
         "height": 40,

@@ -84,7 +84,7 @@ exports[`FaqScreen renders correctly 1`] = `
           <Text.H3
             style={
               {
-                "color": "#000000",
+                "color": "#0F0F0F",
                 "flex": 1,
                 "fontSize": 16,
                 "marginLeft": 8,
@@ -159,7 +159,7 @@ exports[`FaqScreen renders correctly 1`] = `
           <Text.H3
             style={
               {
-                "color": "#000000",
+                "color": "#0F0F0F",
                 "flex": 1,
                 "fontSize": 16,
                 "marginLeft": 8,
@@ -234,7 +234,7 @@ exports[`FaqScreen renders correctly 1`] = `
           <Text.H3
             style={
               {
-                "color": "#000000",
+                "color": "#0F0F0F",
                 "flex": 1,
                 "fontSize": 16,
                 "marginLeft": 8,
@@ -309,7 +309,7 @@ exports[`FaqScreen renders correctly 1`] = `
           <Text.H3
             style={
               {
-                "color": "#000000",
+                "color": "#0F0F0F",
                 "flex": 1,
                 "fontSize": 16,
                 "marginLeft": 8,
@@ -384,7 +384,7 @@ exports[`FaqScreen renders correctly 1`] = `
           <Text.H3
             style={
               {
-                "color": "#000000",
+                "color": "#0F0F0F",
                 "flex": 1,
                 "fontSize": 16,
                 "marginLeft": 8,

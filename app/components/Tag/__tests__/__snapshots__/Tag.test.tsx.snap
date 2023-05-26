@@ -6,8 +6,8 @@ exports[`Tag renders correctly with airplane icon 1`] = `
   style={
     {
       "alignItems": "center",
-      "backgroundColor": "#4BB37720",
-      "borderColor": "#4BB377",
+      "backgroundColor": "#0F853B20",
+      "borderColor": "#0F853B",
       "borderRadius": 8,
       "borderWidth": 2,
       "flex": 1,
@@ -20,7 +20,7 @@ exports[`Tag renders correctly with airplane icon 1`] = `
   }
 >
   <Ionicons
-    color="#4BB377"
+    color="#0F853B"
     name="md-airplane"
     size={32}
     style={
@@ -47,7 +47,7 @@ exports[`Tag renders correctly with airplane icon 1`] = `
     </Text.Primary>
   </View>
   <Ionicons
-    color="#4BB377"
+    color="#0F853B"
     name="chevron-forward"
     size={20}
   />
@@ -60,8 +60,8 @@ exports[`Tag renders correctly with no icon 1`] = `
   style={
     {
       "alignItems": "center",
-      "backgroundColor": "#4BB37720",
-      "borderColor": "#4BB377",
+      "backgroundColor": "#0F853B20",
+      "borderColor": "#0F853B",
       "borderRadius": 8,
       "borderWidth": 2,
       "flex": 1,
@@ -91,7 +91,7 @@ exports[`Tag renders correctly with no icon 1`] = `
     </Text.Primary>
   </View>
   <Ionicons
-    color="#4BB377"
+    color="#0F853B"
     name="chevron-forward"
     size={20}
   />

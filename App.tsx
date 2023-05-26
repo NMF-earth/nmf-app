@@ -58,8 +58,6 @@ const App: React.FC = () => {
 
   let lang = localeExpo.substring(0, 2);
 
-  console.log(lang);
-
   if (!includes(lang, supportedLanguages)) {
     lang = defaultLanguage;
   }
