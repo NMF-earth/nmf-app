@@ -50,7 +50,7 @@
   "MONTHLY_BUDGET_SCREEN_TITLE": "Budget Mensuel",
   "MONTHLY_BUDGET_SCREEN_SLIDE_TO_SET": "Faire glisser pour choisir votre budget",
   "MONTHLY_BUDGET_SCREEN_SAVE": "Enregistrer",
-  "MONTHLY_BUDGET_SCREEN_CARBON_EMISSIONS_WORLD": "Emissions moyenne de CO2 par habitant dans certains pays ",
+  "MONTHLY_BUDGET_SCREEN_CARBON_EMISSIONS_WORLD": "Émissions moyenne de CO2 par habitant dans certains pays ",
   "MONTHLY_BUDGET_SCREEN_LUXEMBOURG": "Luxembourg : 3,5 tons",
   "MONTHLY_BUDGET_SCREEN_UNITED_STATES": "États-Unis: 1,5 tons",
   "MONTHLY_BUDGET_SCREEN_JAPAN": "Japon : 900 kg",
@@ -120,7 +120,7 @@
   "NOTIFICATIONS_SCREEN_TITLE": "Notifications",
   "NOTIFICATIONS_SCREEN_INTRO": "Recevoir une notification tous les dimanches à 21h pour vous rappeler d'ajouter vos émissions.",
   "NOTIFICATIONS_SCREEN_ACTIVATED": "Activé",
-  "NOTIFICATIONS_SCREEN_NOTIFICATION_TITLE": "Emissions de la semaine 🗓",
+  "NOTIFICATIONS_SCREEN_NOTIFICATION_TITLE": "Émissions de la semaine 🗓",
   "NOTIFICATIONS_SCREEN_NOTIFICATION_BODY": "N'oubliez pas d'ajouter vos émissions pour cette semaine.",
   "INFO_MODAL_SCREEN_METHODOLOGY": "Methodologie",
   "MY_DATA_SCREEN_TITLE": "Mes données",
@@ -215,5 +215,7 @@
   "NO_EMISSION_COMPONENT_ADD_FIRST_EMISSION": "Ajouter ma première émission",
   "PERMISSIONS_REQUEST_COMPONENT_OPEN_SETTINGS": "Ouvrir les paramètres",
   "PERMISSIONS_REQUEST_COMPONENT_CAMERA_TITLE": "Pas d'accès à la caméra",
-  "PERMISSIONS_REQUEST_COMPONENT_CAMERA_SUBTITLE": "Pour utiliser cette fonction, veuillez donner à NMF.earth l'accès à la caméra, dans les paramètres du smartphone."
+  "PERMISSIONS_REQUEST_COMPONENT_CAMERA_SUBTITLE": "Pour utiliser cette fonction, veuillez donner à NMF.earth l'accès à la caméra, dans les paramètres du smartphone.",
+  "PERMISSIONS_REQUEST_COMPONENT_NOTIFICATION_TITLE" : "Pas d'autorisation d'envoyer des notifications",
+  "PERMISSIONS_REQUEST_COMPONENT_NOTIFICATION_SUBTITLE" : "Veuillez autoriser l'application NMF.earth à vous envoyer des notifications dans les paramètres de votre smartphone afin de pouvoir utiliser cette fonction."
 }
