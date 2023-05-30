@@ -1,1 +1,11 @@
-{}
+{
+  "BAR_CODE_SCAN_SCREEN_TITLE": "Scanner le code-barres",
+  "BAR_CODE_SCAN_SCREEN_LOADING": "Chargement de données",
+  "BAR_CODE_SCAN_SCREEN_ERROR_TITLE": "Quelque chose n'a pas fonctionné",
+  "BAR_CODE_SCAN_SCREEN_ERROR_MESSAGE": "Assurez-vous d'avoir accès à Internet et réessayez",
+  "BAR_CODE_SCAN_SCREEN_TRY_AGAIN": "Réessayez s'il vous plaît.",
+  "BAR_CODE_SCAN_SCREEN_CAMERA_PERMISSION_ASK": "Demande d'autorisation pour la caméra",
+  "BAR_CODE_SCAN_SCREEN_SCAN_PRODUCT": "Scanner le code-barres d'un produit",
+  "BAR_CODE_SCAN_SCREEN_NO_CARBON_DATA_TITLE": "Aucune donnée carbone sur ce produit",
+  "BAR_CODE_SCAN_SCREEN_NO_CARBON_DATA_MESSAGE": "Malheureusement, Open Food Fact n'a pas de données sur l'empreinte carbone de ce produit. Essayez-en un autre !"
+}

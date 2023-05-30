@@ -1,1 +1,10 @@
-{}
+{
+  "PERIODICITY_MODAL_SCREEN_TITLE": "Périodicité",
+  "PERIODICITY_MODAL_SCREEN_OFTEN": "Combien de fois cette émission se produit-elle?",
+  "PERIODICITY_MODAL_SCREEN_WEEKLY": "Hebdomadaire",
+  "PERIODICITY_MODAL_SCREEN_MONTHLY": "Mensuel",
+  "PERIODICITY_MODAL_SCREEN_DAYS": "Quels sont les jours où cette émission se répète?",
+  "PERIODICITY_MODAL_SCREEN_OCCURRENCES": "Occurences?",
+  "PERIODICITY_MODAL_SCREEN_COMFIRM": "Confirmer",
+  "PERIODICITY_MODAL_SCREEN_CANCEL_NO_PERIODICITY": "Annuler - pas de périodicité"
+}
