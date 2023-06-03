@@ -91,7 +91,7 @@ exports[`FaqScreen renders correctly 1`] = `
               }
             }
           >
-            Why do I have to enter manually my emissions?
+            Are you a startup?
           </Text.H3>
         </View>
       </View>
@@ -166,7 +166,7 @@ exports[`FaqScreen renders correctly 1`] = `
               }
             }
           >
-            How accurate are my carbon emissions?
+            Are you collecting my data?
           </Text.H3>
         </View>
       </View>
@@ -316,7 +316,7 @@ exports[`FaqScreen renders correctly 1`] = `
               }
             }
           >
-            Are you a startup?
+            How are you different?
           </Text.H3>
         </View>
       </View>
@@ -391,7 +391,232 @@ exports[`FaqScreen renders correctly 1`] = `
               }
             }
           >
-            Are you a business?
+            Is everyone doing greenwashing?
+          </Text.H3>
+        </View>
+      </View>
+      <View
+        style={
+          [
+            {
+              "backgroundColor": "#FFFFFF",
+              "borderColor": "#E7F3EB",
+              "borderRadius": 10,
+              "borderWidth": 1.5,
+              "marginTop": 16,
+            },
+            false,
+          ]
+        }
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "padding": 16,
+            }
+          }
+        >
+          <Ionicons
+            name="chevron-up"
+            size={22}
+            style={
+              {
+                "color": "#3957D0",
+              }
+            }
+          />
+          <Text.H3
+            style={
+              {
+                "color": "#0F0F0F",
+                "flex": 1,
+                "fontSize": 16,
+                "marginLeft": 8,
+              }
+            }
+          >
+            Why NMF?
+          </Text.H3>
+        </View>
+      </View>
+      <View
+        style={
+          [
+            {
+              "backgroundColor": "#FFFFFF",
+              "borderColor": "#E7F3EB",
+              "borderRadius": 10,
+              "borderWidth": 1.5,
+              "marginTop": 16,
+            },
+            false,
+          ]
+        }
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "padding": 16,
+            }
+          }
+        >
+          <Ionicons
+            name="chevron-up"
+            size={22}
+            style={
+              {
+                "color": "#3957D0",
+              }
+            }
+          />
+          <Text.H3
+            style={
+              {
+                "color": "#0F0F0F",
+                "flex": 1,
+                "fontSize": 16,
+                "marginLeft": 8,
+              }
+            }
+          >
+            Why do I have to enter manually my emissions?
+          </Text.H3>
+        </View>
+      </View>
+      <View
+        style={
+          [
+            {
+              "backgroundColor": "#FFFFFF",
+              "borderColor": "#E7F3EB",
+              "borderRadius": 10,
+              "borderWidth": 1.5,
+              "marginTop": 16,
+            },
+            false,
+          ]
+        }
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "padding": 16,
+            }
+          }
+        >
+          <Ionicons
+            name="chevron-up"
+            size={22}
+            style={
+              {
+                "color": "#3957D0",
+              }
+            }
+          />
+          <Text.H3
+            style={
+              {
+                "color": "#0F0F0F",
+                "flex": 1,
+                "fontSize": 16,
+                "marginLeft": 8,
+              }
+            }
+          >
+            Why do you encourage people to be vegetarian / vegan / flexitarian ?
           </Text.H3>
         </View>
       </View>
