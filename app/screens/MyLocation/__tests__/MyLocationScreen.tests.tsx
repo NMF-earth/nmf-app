@@ -1,9 +1,8 @@
 /* eslint-disable  @typescript-eslint/explicit-module-boundary-types */
 import React from "react";
 import { create } from "react-test-renderer";
-import { render, fireEvent, screen, waitFor } from "@testing-library/react-native";
+import { render, fireEvent, screen } from "@testing-library/react-native";
 import { ElectricityType } from "carbon-footprint";
-import * as reactRedux from "react-redux";
 
 import MyLocationScreen from "../MyLocationScreen";
 
