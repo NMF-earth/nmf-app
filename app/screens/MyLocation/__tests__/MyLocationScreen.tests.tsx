@@ -1,6 +1,9 @@
 /* eslint-disable  @typescript-eslint/explicit-module-boundary-types */
 import React from "react";
 import { create } from "react-test-renderer";
+import { render, fireEvent, screen, waitFor } from "@testing-library/react-native";
+import { ElectricityType } from "carbon-footprint";
+import * as reactRedux from "react-redux";
 
 import MyLocationScreen from "../MyLocationScreen";
 
@@ -9,4 +12,28 @@ import MyLocationScreen from "../MyLocationScreen";
 it("MyLocationScreen renders correctly", () => {
   const tree = create(<MyLocationScreen />).toJSON();
   expect(tree).toMatchSnapshot();
+});
+
+it("Change current location to ireland", () => {
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
+  const useSelectorMock = jest.spyOn(require("react-redux"), "useSelector");
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
+  const useDispatchMock = jest.spyOn(require("react-redux"), "useDispatch");
+
+  useSelectorMock.mockReturnValue(ElectricityType.france);
+
+  const dummyDispatch = jest.fn();
+  useDispatchMock.mockReturnValue(dummyDispatch);
+
+  render(<MyLocationScreen />);
+  fireEvent.press(screen.root.findByProps({ title: ElectricityType.ireland.toUpperCase() }));
+
+  expect(dummyDispatch).toHaveBeenCalled();
+
+  useSelectorMock.mockReturnValue(ElectricityType.ireland);
+
+  expect(screen.root.findByProps({ title: ElectricityType.ireland.toUpperCase() })).toBeTruthy();
+
+  useSelectorMock.mockRestore();
+  useDispatchMock.mockRestore();
 });
