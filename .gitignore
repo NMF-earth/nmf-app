@@ -321,8 +321,3 @@ package-lock.json
 # Expo
 .expo
 __generated__
-
-# Temporary files
-.temp
-# stryker temp files
-.stryker-tmp
