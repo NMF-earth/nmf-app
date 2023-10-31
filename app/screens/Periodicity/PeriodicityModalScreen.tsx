@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { ScrollView, View } from "react-native";
-import { useNavigation } from "@react-navigation/native";
+import { CommonActions, useNavigation } from "@react-navigation/native";
 import { pathOr } from "ramda";
 import { useRoute } from "@react-navigation/core";
 
@@ -37,24 +37,30 @@ export const PeriodicityModalScreen: NavStatelessComponent = () => {
   }
 
   function onConfirm() {
-    navigation.navigate(
-      "AddEmission" as never,
-      {
-        periodType,
-        periodWeekDays: periodType === PeriodicityType.weekly ? weekDays : null,
-        periodTimes,
-      } as never
+    navigation.dispatch(
+      CommonActions.navigate({
+        name: "AddEmission",
+        params: {
+          periodType: periodType,
+          periodWeekDays: periodType === PeriodicityType.weekly ? weekDays : null,
+          periodTimes: periodTimes,
+        },
+        merge: true
+      })
     );
   }
 
   function onCancel() {
-    navigation.navigate(
-      "AddEmission" as never,
-      {
-        periodType: DEFAULT_VALUES.periodType,
-        periodWeekDays: DEFAULT_VALUES.weekDays,
-        periodTimes: DEFAULT_VALUES.periodTimes,
-      } as never
+    navigation.dispatch(
+      CommonActions.navigate({
+        name: "AddEmission",
+        params: {
+          periodType: DEFAULT_VALUES.periodType,
+          periodWeekDays: DEFAULT_VALUES.weekDays,
+          periodTimes: DEFAULT_VALUES.periodTimes,
+        },
+        merge: true
+      })
     );
   }
 

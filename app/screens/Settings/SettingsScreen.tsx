@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { View, TouchableWithoutFeedback, ScrollView, Image } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import ExpoConstants from "expo-constants";
+import Constants from "expo-constants";
 import * as WebBrowser from "expo-web-browser";
 import * as Linking from "expo-linking";
-import { useDispatch , useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 import { ImagesAssets } from "constant";
 import { Button, Text, SocialMedia, ListItem, ListItemSwitch } from "components";
@@ -37,9 +37,11 @@ const SettingsScreen: NavStatelessComponent = () => {
       isSwitchItem: true,
       title: t("SETTINGS_SCREEN_UNITS"),
       value: useSelector(userPreferences.selectors.getUseMetricUnits),
-      get onChange() {return () => {
-        dispatch(userPreferences.actions.toggleUnits(!this.value))
-      }}
+      get onChange() {
+        return () => {
+          dispatch(userPreferences.actions.toggleUnits(!this.value))
+        }
+      }
     },
     {
       title: t("SETTINGS_SCREEN_IMPORT_SAVE_DELETE_DATA"),
@@ -94,8 +96,8 @@ const SettingsScreen: NavStatelessComponent = () => {
   }
 
   const [steps, setSteps] = useState(0);
-  const { version, ios, android } = ExpoConstants.manifest;
-  const buildNumber = platform.isIOS ? ios.buildNumber : android.versionCode; 
+  const { version, ios, android } = Constants.expoConfig;
+  const buildNumber = platform.isIOS ? ios.buildNumber : android.versionCode;
 
   return (
     <ScrollView style={styles.container}>
