@@ -53,6 +53,7 @@ const DEFAULT_SLIDER_VALUE_PURCHASE = 1;
 const DEFAULT_SLIDER_VALUE_FASHION = 1;
 const DEFAULT_SLIDER_VALUE_MEAL = 1;
 const DEFAULT_SLIDER_VALUE_CUSTOM = 200;
+const DEFAULT_SLIDER_VALUE_SCANNED = 1;
 const EMISSION_NAME_MAX_LENGTH = 150;
 
 const getProductCarbonFootprint = pathOr(0, ["params", "productCarbonFootprint"]);
@@ -78,6 +79,7 @@ const AddEmissionScreen = ({ locale = "", language = "" }: LocalizationContextPr
   );
   const [durationSeconds, setDurationSeconds] = useState<number>(DEFAULT_SLIDER_VALUE_STREAMING);
   const [co2eqKilograms, setCo2eqKilograms] = useState<number>(DEFAULT_SLIDER_VALUE_CUSTOM);
+  const [productScannedQuantity, setProductScannedQuantity] = useState<number>(DEFAULT_SLIDER_VALUE_SCANNED);
   const [distance, setDistance] = useState<number>(DEFAULT_SLIDER_VALUE_TRANSPORT);
   const [foodQuantity, setFoodQuantity] = useState<number>(DEFAULT_SLIDER_VALUE_FOOD);
   const [purchaseQuantity, setPurchaseQuantity] = useState<number>(DEFAULT_SLIDER_VALUE_PURCHASE);
@@ -267,13 +269,14 @@ const AddEmissionScreen = ({ locale = "", language = "" }: LocalizationContextPr
 
   const renderProductScanned = () => {
     if (emissionType === EmissionType.productScanned) {
-      emissionPayload.value = co2eqKilograms;
+      emissionPayload.value = productScannedQuantity * productCarbonFootprint;
       emissionPayload.emissionModelType = EmissionType.productScanned as EmissionModelType;
 
       return (
         <ProductScanned
           productCarbonFootprint={productCarbonFootprint}
-          setCo2eqKilograms={setCo2eqKilograms}
+          defaultValueSlider={DEFAULT_SLIDER_VALUE_SCANNED}
+          setProductScannedQuantity={setProductScannedQuantity}
         />
       );
     }
