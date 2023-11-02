@@ -3,7 +3,7 @@ import { useNavigation } from "@react-navigation/native";
 import { ActivityIndicator, View } from "react-native";
 import { BarCodeScanner } from "expo-barcode-scanner";
 import { is, path, pathOr, both, complement, equals } from "ramda";
-import ExpoConstants from "expo-constants";
+import constants from "expo-constants";
 
 import { EmissionType } from "interfaces";
 import { t, withLocalization, LocalizationContextProps, platform } from "utils";
@@ -36,7 +36,7 @@ const BarCodeScanScreen = ({ language = "" }: LocalizationContextProps) => {
   const navigation = useNavigation();
   const navigator = navigate(navigation);
 
-  const { version, ios, android } = ExpoConstants.manifest;
+  const { version, ios, android } = constants.expoConfig;
   const buildNumber = platform.isIOS ? ios.buildNumber : android.versionCode;
   const platformType = platform.isIOS ? "iOS" : "Android";
 

@@ -88,6 +88,7 @@ exports[`<MonthlyEmissions /> render 1`] = `
 >
   <View>
     <View
+      collapsable={false}
       onLayout={[Function]}
     >
       <View

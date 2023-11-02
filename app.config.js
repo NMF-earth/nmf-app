@@ -6,7 +6,8 @@ const buildNumber = 50;
 module.exports = () => {
   return {
     name: "NMF.earth",
-    plugins: ["sentry-expo"],
+    plugins: ["sentry-expo",
+              "expo-localization"],
     slug: "not-my-fault-earth",
     privacy: "public",
     platforms: ["ios", "android"],
@@ -21,11 +22,6 @@ module.exports = () => {
       fallbackToCacheTimeout: 0,
     },
     assetBundlePatterns: ["**/*"],
-    extra: {
-      eas: {
-        projectId: "9e1873d6-966a-49a3-83bc-10254ac6fb27",
-      },
-    },
     ios: {
       icon: "./assets/images/ios.icon.png",
       bundleIdentifier: "nmf.earth",

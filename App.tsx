@@ -7,8 +7,7 @@ import { GlobalizeProvider } from "react-native-globalize";
 import { locale as localeExpo } from "expo-localization";
 import { includes } from "ramda";
 import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
-// eslint-disable-next-line import/no-named-as-default
-import Constants from "expo-constants";
+import ExpoClientConfig from "expo-constants";
 import * as Sentry from "sentry-expo";
 import { Provider } from "react-redux";
 import { enableScreens } from "react-native-screens";
@@ -41,7 +40,7 @@ loadGlobalize();
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-const release = Constants.manifest.revisionId || "0.0.0";
+const release = ExpoClientConfig.revisionId || "0.0.0";
 
 if (!__DEV__) {
   /* TODO: change secret.dsn to Constants.manifest.extra.sentryPublicDsn */

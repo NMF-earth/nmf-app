@@ -4,7 +4,7 @@ import { useNavigation } from "@react-navigation/native";
 import ExpoConstants from "expo-constants";
 import * as WebBrowser from "expo-web-browser";
 import * as Linking from "expo-linking";
-import { useDispatch , useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 import { ImagesAssets } from "constant";
 import { Button, Text, SocialMedia, ListItem, ListItemSwitch } from "components";
@@ -17,16 +17,12 @@ import styles from "./SettingsScreen.styles";
 import navigationOptions from "./SettingsScreen.navigationOptions";
 import quotes from "../../../assets/quotes/quotes.json";
 
-
-
-
 const quoteIndex = Math.floor(Math.random() * Math.floor(quotes.length));
 
 const SettingsScreen: NavStatelessComponent = () => {
   const navigation = useNavigation();
   const navigator = navigate(navigation);
   const dispatch = useDispatch();
-
 
   const rowItems = [
     {
@@ -37,9 +33,11 @@ const SettingsScreen: NavStatelessComponent = () => {
       isSwitchItem: true,
       title: t("SETTINGS_SCREEN_UNITS"),
       value: useSelector(userPreferences.selectors.getUseMetricUnits),
-      get onChange() {return () => {
-        dispatch(userPreferences.actions.toggleUnits(!this.value))
-      }}
+      get onChange() {
+        return () => {
+          dispatch(userPreferences.actions.toggleUnits(!this.value))
+        }
+      }
     },
     {
       title: t("SETTINGS_SCREEN_IMPORT_SAVE_DELETE_DATA"),
@@ -94,8 +92,8 @@ const SettingsScreen: NavStatelessComponent = () => {
   }
 
   const [steps, setSteps] = useState(0);
-  const { version, ios, android } = ExpoConstants.manifest;
-  const buildNumber = platform.isIOS ? ios.buildNumber : android.versionCode; 
+  const { version, ios, android } = ExpoConstants.expoConfig;
+  const buildNumber = platform.isIOS ? ios.buildNumber : android.versionCode;
 
   return (
     <ScrollView style={styles.container}>
