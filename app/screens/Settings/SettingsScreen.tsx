@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { View, TouchableWithoutFeedback, ScrollView, Image } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import Constants from "expo-constants";
+import ExpoConstants from "expo-constants";
 import * as WebBrowser from "expo-web-browser";
 import * as Linking from "expo-linking";
 import { useDispatch, useSelector } from "react-redux";
@@ -17,16 +17,12 @@ import styles from "./SettingsScreen.styles";
 import navigationOptions from "./SettingsScreen.navigationOptions";
 import quotes from "../../../assets/quotes/quotes.json";
 
-
-
-
 const quoteIndex = Math.floor(Math.random() * Math.floor(quotes.length));
 
 const SettingsScreen: NavStatelessComponent = () => {
   const navigation = useNavigation();
   const navigator = navigate(navigation);
   const dispatch = useDispatch();
-
 
   const rowItems = [
     {
@@ -96,7 +92,7 @@ const SettingsScreen: NavStatelessComponent = () => {
   }
 
   const [steps, setSteps] = useState(0);
-  const { version, ios, android } = Constants.expoConfig;
+  const { version, ios, android } = ExpoConstants.expoConfig;
   const buildNumber = platform.isIOS ? ios.buildNumber : android.versionCode;
 
   return (
