@@ -64,8 +64,7 @@ $ yarn ios | yarn android
 Copy the 2 files that contain secrets and replace them with yours
 
 ```bash
-$ cp app.example.json app.json
-$ cp secret.example.ts secret.ts
+$ cp .env.example .env
 ```
 
 <br />
