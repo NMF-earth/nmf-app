@@ -2,7 +2,7 @@
 const fs = require("fs");
 const R = require("ramda");
 
-const usedLanguages = ["en", "de", "fr", "sv", "pt", "es", "pl", "ru", "da", "zh", "ms", "it"];
+const usedLanguages = ["ar", "en", "de", "fr", "sv", "pt", "es", "pl", "ru", "da", "zh", "ms", "it"];
 const relPrefix = "../../";
 const translationDirs = [
   { path: "app/screens/Act/translations", prefix: "ACT_SCREEN" },

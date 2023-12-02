@@ -1,0 +1,7 @@
+{
+	"PERMISSIONS_REQUEST_COMPONENT_OPEN_SETTINGS": "أفتح الإعدادات",
+	"PERMISSIONS_REQUEST_COMPONENT_CAMERA_TITLE": "لا يمكن الوصول إلى الكاميرا",
+	"PERMISSIONS_REQUEST_COMPONENT_CAMERA_SUBTITLE": "يرجى منح تطبيق NMF.earth حق الوصول إلى الكاميرا في إعدادات هاتفك لاستخدام هذه الميزة.",
+	"PERMISSIONS_REQUEST_COMPONENT_NOTIFICATION_TITLE": "لا يوجد إذن لإرسال الإخطارات",
+	"PERMISSIONS_REQUEST_COMPONENT_NOTIFICATION_SUBTITLE": "يرجى منح تطبيق NMF.earth الإذن لإرسال إشعارات إليك في إعدادات هاتفك لاستخدام هذه الميزة."
+}

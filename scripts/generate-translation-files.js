@@ -18,9 +18,10 @@ const paths = [
   "app/screens/MonthlyEmissions/translations/",
   "app/screens/Languages/translations/",
   "app/screens/Faq/translations/",
-  "app/screens/RecurringEmissions/translations",
+  "app/screens/RecurringEmissions/translations/",
   "app/components/NoEmission/translations/",
   "app/components/OpenFoodFacts/translations/",
+  "app/components/PermissionsRequest/translations/",
   "app/utils/ui/translations/",
 ];
 
