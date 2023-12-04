@@ -1,0 +1,247 @@
+{
+	"ACT_SCREEN_TAB_NAME": "يمثل",
+	"ACT_SCREEN_TITLE": "الدليل المستدام",
+	"ACT_SCREEN_HABITS": "العادات",
+	"ACT_SCREEN_FOOD": "طعام",
+	"ACT_SCREEN_KITCHEN": "مطبخ",
+	"ACT_SCREEN_TECHNOLOGY": "تكنولوجيا",
+	"BUDGET_SCREEN_TAB_NAME": "ميزانية",
+	"BUDGET_SCREEN_TITLE": "ميزانية الكربون",
+	"BUDGET_SCREEN_PROGRESS_CHART_LEGEND_ITEM_TOTAL": "المجموع",
+	"BUDGET_SCREEN_PROGRESS_CHART_LEGEND_ITEM_FOOD": "طعام",
+	"BUDGET_SCREEN_PROGRESS_CHART_LEGEND_ITEM_MEAL": "وجبة",
+	"BUDGET_SCREEN_PROGRESS_CHART_LEGEND_ITEM_TRANSPORT": "ينقل",
+	"BUDGET_SCREEN_PROGRESS_CHART_LEGEND_ITEM_STREAMING": "تدفق",
+	"BUDGET_SCREEN_PROGRESS_CHART_LEGEND_ITEM_PURCHASE": "شراء",
+	"BUDGET_SCREEN_PROGRESS_CHART_LEGEND_ITEM_FASHION": "موضة",
+	"BUDGET_SCREEN_PROGRESS_CHART_LEGEND_ITEM_ELECTRICITY": "كهرباء",
+	"BUDGET_SCREEN_PROGRESS_CHART_LEGEND_ITEM_PRODUCT_SCANNED": "تم مسح المنتج",
+	"BUDGET_SCREEN_PROGRESS_CHART_LEGEND_ITEM_CUSTOM": "مخصص",
+	"BUDGET_SCREEN_PROGRESS_CHART_LEGEND_PERIOD_BUDGET": "ميزانية ",
+	"BUDGET_SCREEN_SET_MONTHLY_BUDGET": "تحديد الميزانية الشهرية",
+	"BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_RECENT_MEAT": "أوه لا، لقد أكلت مؤخرًا اللحوم أو الأسماك 🥺",
+	"BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_NICE_START": "هذه بداية جميلة! 👌",
+	"BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_WELL_DONE": "أحسنت! 🎉",
+	"BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_NO_MEAT_SO_FAR": "يبدو أنك لم تأكل أي لحم أو سمك منذ استخدام التطبيق، عمل جيد! 🍾",
+	"BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_DAYS": "أيام",
+	"BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_WITHOUT_MEAT": "بدون لحم أو سمك.",
+	"EMISSIONS_SCREEN_TAB_NAME": "الانبعاثات",
+	"EMISSIONS_SCREEN_TITLE": "الانبعاثات",
+	"EMISSIONS_SCREEN_ADD_EMISSION": "إضافة الانبعاثات",
+	"EMISSIONS_SCREEN_HEADER_OF_BUDGET": "من الميزانية",
+	"EMISSIONS_SCREEN_RECURRING_EMISSIONS": "الانبعاثات المتكررة",
+	"SETTINGS_SCREEN_TAB_NAME": "إعدادات",
+	"SETTINGS_SCREEN_TITLE": "إعدادات",
+	"SETTINGS_SCREEN_ABOUT": "عن",
+	"SETTINGS_SCREEN_UNITS": "الوحدات المترية",
+	"SETTINGS_SCREEN_NOTIFICATIONS": "إشعارات",
+	"SETTINGS_SCREEN_MY_LOCATION": "موقعي",
+	"SETTINGS_SCREEN_FAQ": "التعليمات",
+	"SETTINGS_SCREEN_SUPPORT_US": "ادعمنا!",
+	"SETTINGS_SCREEN_ROADMAP": "خريطة الطريق",
+	"SETTINGS_SCREEN_FEEDBACK": "تعليق",
+	"SETTINGS_SCREEN_TERMS_OF_USE": "شروط الاستخدام",
+	"SETTINGS_SCREEN_APP_VERSION": "الإصدار %{الإصدار}",
+	"SETTINGS_SCREEN_IMPORT_SAVE_DELETE_DATA": "بياناتي",
+	"SETTINGS_SCREEN_HELP_TRANSLATION": "مساعدة في الترجمة",
+	"SETTINGS_SCREEN_LANGUAGES": "اللغات",
+	"MONTHLY_BUDGET_SCREEN_TITLE": "الميزانية الشهرية",
+	"MONTHLY_BUDGET_SCREEN_SLIDE_TO_SET": "قم بالتمرير لتعيين ميزانيتك",
+	"MONTHLY_BUDGET_SCREEN_SAVE": "يحفظ",
+	"MONTHLY_BUDGET_SCREEN_CARBON_EMISSIONS_WORLD": "متوسط الانبعاثات الشهرية للفرد في عينة من البلدان ",
+	"MONTHLY_BUDGET_SCREEN_LUXEMBOURG": "لوكسمبورغ : ",
+	"MONTHLY_BUDGET_SCREEN_UNITED_STATES": "الولايات المتحدة : ",
+	"MONTHLY_BUDGET_SCREEN_JAPAN": "اليابان : ",
+	"MONTHLY_BUDGET_SCREEN_SWEDEN": "السويد : ",
+	"MONTHLY_BUDGET_SCREEN_FRANCE": "فرنسا : ",
+	"MONTHLY_BUDGET_SCREEN_CHINA": "الصين : ",
+	"MONTHLY_BUDGET_SCREEN_BRAZIL": "البرازيل : ",
+	"MONTHLY_BUDGET_SCREEN_INDIA": "الهند : ",
+	"MONTHLY_BUDGET_SCREEN_ETHIOPIA": "إثيوبيا : ",
+	"MONTHLY_BUDGET_SCREEN_PARIS_AGREEMENT": "إذا كنت ترغب في احترام اتفاقية باريس (للحفاظ على ارتفاع متوسط درجة الحرارة العالمية أقل من درجتين)، فحدد ميزانيتك الشهرية على",
+	"COMING_SOON_SCREEN_TITLE": "قريباً!",
+	"COMING_SOON_SCREEN_UNDER_DEVELOPMENT": "هذه الميزة قيد التطوير وستكون متاحة قريبًا.",
+	"COMING_SOON_SCREEN_START_FOLLOW_US": "في هذه الأثناء، تابعونا على وسائل التواصل الاجتماعي!",
+	"ADD_EMISSION_SCREEN_TAB_NAME": "يضيف",
+	"ADD_EMISSION_SCREEN_TITLE": "إضافة الانبعاثات",
+	"ADD_EMISSION_SCREEN_ELECTRICITY_CONSUMPTION": "استهلاك الكهرباء",
+	"ADD_EMISSION_SCREEN_DURATION": "مدة",
+	"ADD_EMISSION_SCREEN_DISTANCE": "مسافة",
+	"ADD_EMISSION_SCREEN_TOTAL": "المجموع",
+	"ADD_EMISSION_SCREEN_QUANTITY": "كمية",
+	"ADD_EMISSION_SCREEN_QUANTITY_OF_EMISSION": "كمية الانبعاثات",
+	"ADD_EMISSION_SCREEN_ADD_THIS_EMISSION": "أضف هذا الانبعاث",
+	"ADD_EMISSION_SCREEN_TEXTINPUT_PLACEHOLDER": "على سبيل المثال، برجر، رحلة طيران من باريس إلى روما...",
+	"ADD_EMISSION_SCREEN_NAME_EMISSION": "اسم هذا الانبعاث ",
+	"ADD_EMISSION_SCREEN_DATE": "تاريخ",
+	"ADD_EMISSION_SCREEN_PICKER_MODAL_CONFIRM": "يتأكد",
+	"ADD_EMISSION_SCREEN_PICKER_MODAL_CANCEL": "يلغي",
+	"ADD_EMISSION_SCREEN_ITEMS": "أغراض)",
+	"ADD_EMISSION_SCREEN_MEALS": "وجبات)",
+	"ADD_EMISSION_SCREEN_PERIODICITY": "الدورية",
+	"ADD_EMISSION_SCREEN_NON_RECURRING": "غير متكررة",
+	"ADD_EMISSION_SCREEN_NAME": "اسم",
+	"EMISSION_ITEM_SCREEN_EMISSION": "انبعاث",
+	"EMISSION_ITEM_SCREEN_RECURRING_EMISSION": "الانبعاث المتكرر",
+	"EMISSION_ITEM_SCREEN_TYPE": "يكتب",
+	"EMISSION_ITEM_SCREEN_QUANTITY": "كمية",
+	"EMISSION_ITEM_SCREEN_PRICE": "سعر",
+	"EMISSION_ITEM_SCREEN_DATE": "تاريخ",
+	"EMISSION_ITEM_SCREEN_DELETE": "يمسح",
+	"EMISSION_ITEM_SCREEN_NAME": "اسم",
+	"EMISSION_ITEM_SCREEN_MITIGATED": "تخفيف",
+	"EMISSION_ITEM_SCREEN_IS_MITIGATED": "وقد تم تخفيف هذا الانبعاث",
+	"EMISSION_ITEM_SCREEN_IS_NOT_MITIGATED": "ولم يتم تخفيف هذا الانبعاث",
+	"EMISSION_ITEM_SCREEN_PERIODICITY": "الدورية",
+	"EMISSION_ITEM_SCREEN_TITLE": "انبعاث",
+	"EMISSION_ITEM_SCREEN_DELETE_EMISSION": "حذف الانبعاث",
+	"INTRO_SCREEN_WELCOME": "مرحبًا بك في NMF.earth 🌱",
+	"INTRO_SCREEN_CONTINUE_AND_ACCEPT_TERMS_OF_USE": "من خلال المتابعة، فإنك توافق على شروط الاستخدام الخاصة بنا.",
+	"INTRO_SCREEN_TERMS_OF_USE": "اقرأ شروط الاستخدام",
+	"INTRO_SCREEN_I_AGREE": "أنا موافق",
+	"ABOUT_SCREEN_TITLE": "عن",
+	"ABOUT_SCREEN_INTRO": "نحن فريق صغير مهتم بالتأثير البشري على الكوكب. نحن لسنا شركة ناشئة مدفوعة بالنمو أو الربح لدفع الأرباح للمستثمرين. نحن نتحلى بالشفافية ويمكنك إلقاء نظرة على أرقامنا على Indie Hackers. يمكنك الانضمام إلى فريقنا إذا كنت تريد مساعدة المشروع. أو ببساطة تحدث من حولك عن مشروعنا، أعطنا 5 نجوم في المتجر وأرسل لنا تعليقاتك على التطبيق ستساعدنا كثيرًا. شكرا لك ✌️",
+	"ABOUT_SCREEN_CARE_HEADER": "نحن نهتم بك",
+	"ABOUT_SCREEN_PRIVACY": "الخصوصية حسب التصميم",
+	"ABOUT_SCREEN_ETHIC": "الأخلاق حسب التصميم",
+	"ABOUT_SCREEN_OPEN_SOURCE": "100% مفتوح المصدر",
+	"ABOUT_SCREEN_PRIVACY_BODY": "لن يتم أبدًا بيع أو مشاركة جميع البيانات المقدمة في التطبيق إلى أي شركة ولا نتتبع ما تفعله في التطبيق ",
+	"ABOUT_SCREEN_ETHIC_BODY": "نحن لا نستغل نقاط الضعف النفسية مثل الخلاصات التي لا نهاية لها أو التشغيل التلقائي لمنع المستخدمين من المغادرة ",
+	"ABOUT_SCREEN_OPEN_SOURCE_BODY": "سيتمكن الجميع من إضافة محتوى إلى التطبيق والتحقق من نماذج الانبعاثات وإصلاح أي معلومات غير صحيحة",
+	"ABOUT_SCREEN_LIBRARIES_AND_CONTRIBUTORS": "المكتبات والمساهمين",
+	"ABOUT_SCREEN_CAN_BE_FOUND": "يمكن العثور عليها على ",
+	"ABOUT_SCREEN_GITHUB": "جيثب",
+	"SUPPORT_US_SCREEN_TITLE": "ادعمنا!",
+	"SUPPORT_US_SCREEN_WHY_DONATE_TITLE": "لماذا يجب أن تفكر في دعمنا",
+	"SUPPORT_US_SCREEN_WHY_DONATE_CONTENT": "NMF.earth ليس من أجل الربح، لقد قمنا فقط بجمع مبلغ صغير على Kickstarter ونواصل العمل كثيرًا على المشروع حتى لو لم يكن مستدامًا ماليًا. بالإضافة إلى ذلك، لدينا العديد من التكاليف مثل الخوادم واسم النطاق وتراخيص البرامج وحساب مطور Apple وما إلى ذلك.",
+	"SUPPORT_US_SCREEN_TITLE_CONSIDER_DONATE": "إذا أعجبك هذا المشروع، يرجى التفكير في التبرع بمبلغ صغير لمساعدتنا على الاستمرار!",
+	"SUPPORT_US_SCREEN_PLATFORM": "يمكنك القيام بذلك على Ko-fi.",
+	"MY_LOCATION_SCREEN_TITLE": "موقع",
+	"MY_LOCATION_SCREEN_INTRO": "يرجى تحديد بلد لتحسين حسابات الانبعاثات للبث والكهرباء.",
+	"MY_LOCATION_SCREEN_MY_CARBON_INTENSITY": "كثافة الكربون : ",
+	"ACT_DETAIL_SCREEN_TITLE": "يمثل",
+	"NOTIFICATIONS_SCREEN_TITLE": "إشعارات",
+	"NOTIFICATIONS_SCREEN_INTRO": "احصل على إشعار كل يوم أحد الساعة 9 مساءً لتذكيرك بإضافة انبعاثاتك الأسبوعية.",
+	"NOTIFICATIONS_SCREEN_ACTIVATED": "مفعل",
+	"NOTIFICATIONS_SCREEN_NOTIFICATION_TITLE": "الانبعاثات الأسبوعية 🗓",
+	"NOTIFICATIONS_SCREEN_NOTIFICATION_BODY": "إليك تذكير لطيف لإضافة انبعاثاتك لهذا الأسبوع.",
+	"INFO_MODAL_SCREEN_METHODOLOGY": "المنهجية",
+	"MY_DATA_SCREEN_TITLE": "My Data",
+	"MY_DATA_SCREEN_BODY": "With NMF.earth, you own your data. It means that we don't save your data on any server and therefore that no one but you can access it. No security problem, your data never leaves your phone. However, it also means that you are in charge of saving your data in case you loose your phone for example. To do so, use the export button below to get your data and save it where ever you want to. When you want to import old data, just press the import button but be careful because it will also delete your old data.",
+	"MY_DATA_SCREEN_EXPORT_MY_DATA": "Export my data",
+	"MY_DATA_SCREEN_IMPORT_DATA": "Import data",
+	"MY_DATA_SCREEN_DELETE_ALL_MY_DATA": "Delete all my data",
+	"MY_DATA_SCREEN_ALERT_CONFIRM": "Confirm",
+	"MY_DATA_SCREEN_ALERT_CONFIRM_IMPORT": "This action will replace current data",
+	"MY_DATA_SCREEN_ALERT_CONFIRM_DELETE": "This action will delete all your data",
+	"MY_DATA_SCREEN_CANCEL": "Cancel",
+	"MY_DATA_SCREEN_OK": "Ok",
+	"MY_DATA_SCREEN_DELETE_SUCCESSFUL": "We have successully deleted your emissions.",
+	"MY_DATA_SCREEN_GENERIC_ERROR": "Something went wrong.",
+	"MONTHLY_EMISSIONS_SCREEN_OF_BUDGET": "من الميزانية",
+	"LANGUAGES_SCREEN_TITLE": "اللغات",
+	"FAQ_SCREEN_TITLE": "التعليمات",
+	"FAQ_SCREEN_ENTER_MANUALLY_QUESTION": "لماذا يتعين علي إدخال انبعاثاتي يدويًا؟",
+	"FAQ_SCREEN_ENTER_MANUALLY_ANSWER": "نحن نعمل على إضافة الانبعاثات المتكررة ولكننا لن نذهب إلى أبعد من ذلك، مما يعني أنك لن تتمكن من حساب بصمتك الكربونية تلقائيًا من نفقاتك على سبيل المثال. إنه أمر مزعج حسب التصميم، كتذكير لطيف بالتلوث والاستهلاك الأقل.",
+	"FAQ_SCREEN_GOAL_QUESTION": "ما هو هدفك؟",
+	"FAQ_SCREEN_GOAL_ANSWER": "يختفي! على عكس صناعة التكنولوجيا، نأمل أن تتوقف عن استخدام تطبيقنا بعد مرور بعض الوقت. الهدف الوحيد لـ NMF.earth هو مساعدة أي شخص على فهم البصمة الكربونية وتقليلها. وبمجرد الانتهاء من ذلك، فإننا نشجعك على الاستمرار في هذا المسار، دون مدخلاتنا.  ",
+	"FAQ_SCREEN_STARTUP_QUESTION": "هل أنت شركة ناشئة؟",
+	"FAQ_SCREEN_STARTUP_ANSWER": "لا، وNMF.earth لن يكون كذلك أبدًا، فهو مجرد مشروع جانبي مفتوح المصدر، وليس حتى شركة. الشركات الناشئة، بحكم تعريفها، هي شركات تبحث عن النمو المتسارع. المشكلة هي أن النمو المتسارع هو السبب وراء الانحباس الحراري العالمي.",
+	"FAQ_SCREEN_DATA_QUESTION": "هل تقوم بجمع بياناتي؟",
+	"FAQ_SCREEN_DATA_ANSWER": "لا، نحن لا نتتبع ما تفعله في التطبيق، بل نقوم فقط بجمع بيانات الأعطال حتى نتمكن من إصلاح الأخطاء. احصل على فنجان من القهوة واقرأ كودنا مفتوح المصدر، وسترى أننا لا نتتبع أي شيء مما تفعله، لا شيء على الإطلاق.",
+	"FAQ_SCREEN_VEGAN_QUESTION": "لماذا تشجع الناس على أن يكونوا نباتيين / نباتيين / مرنين؟",
+	"FAQ_SCREEN_VEGAN_ANSWER": "تولد تربية الحيوانات الصناعية الكثير من انبعاثات ثاني أكسيد الكربون، ولكن ليس هذا فحسب، بل إنها أيضًا فظيعة. يتم كل يوم نقل ما يقرب من 160 مليون حيوان من حيوانات المزرعة في جميع أنحاء العالم إلى المسلخ. ربما يكون الأمر على ما يرام بالنسبة لك، ولكن ليس بالنسبة لنا.",
+	"FAQ_SCREEN_NMF_QUESTION": "لماذا نمف؟",
+	"FAQ_SCREEN_NMF_ANSWER": "NMF هو اختصار لـ Not My Fault (؟)، وهو عبارة عن دعوة مفتوحة للتشكيك في أسلوب حياتنا الحديث ومشاركتنا في الإبادة البيئية الحالية.",
+	"FAQ_SCREEN_DIFFERENT_QUESTION": "كيف حالك مختلفة؟",
+	"FAQ_SCREEN_DIFFERENT_ANSWER": "نحن لا نتتبع نشاطك داخل التطبيق، ولسنا شركة، لذا لا نحاول الحصول على أموال منك، NMF.earth هو مجرد مشروع مفتوح المصدر أنشأه ناشط مناخي عشوائي حول العالم. كما أننا لا نستغل نقاط الضعف النفسية، مثل الخلاصات التي لا نهاية لها أو التشغيل التلقائي لمنعك من مغادرة التطبيق. نظرًا لأننا لا نتتبعك، فإننا نقدر حقًا أي تعليقات يمكنك تقديمها لنا. نريد أن نأخذ الوقت الكافي لفهم ما تحتاجه وما الذي يجب تحسينه لك. أنت إنسان، ولست سلسلة من الأرقام والإحصائيات على الشاشة.",
+	"FAQ_SCREEN_GREEN_WASHING_QUESTION": "هل يقوم الجميع بالغسيل الأخضر؟",
+	"FAQ_SCREEN_GREEN_WASHING_ANSWER": "نعم تقريبا. يجب علينا جميعًا أن نتعاون من أجل مكافحة تغير المناخ، لذا ضع في اعتبارك أن أي شيء غير مفتوح المصدر يعني العمل كالمعتاد. إذا رأيت أن بعض المنظمات لا تشارك كل شيء، فهذا يعني أن اهتمام هذه المنظمة يحفزه الربح الجشع والبقاء، ولا يساعد في التخفيف من تغير المناخ وتعزيز أنماط الحياة المستدامة. نحن لا نبيع أي شيء وكل ما نقوم به مفتوح للجميع بنسبة 100%.",
+	"RECURRING_EMISSIONS_SCREEN_TITLE": "الانبعاثات المتكررة",
+	"UI_MONDAY": "الاثنين",
+	"UI_TUESDAY": "يوم الثلاثاء",
+	"UI_WEDNESDAY": "الأربعاء",
+	"UI_THURSDAY": "يوم الخميس",
+	"UI_FRIDAY": "جمعة",
+	"UI_SATURDAY": "السبت",
+	"UI_SUNDAY": "الأحد",
+	"UI_TRAIN": "يدرب",
+	"UI_CAR": "سيارة",
+	"UI_PLANE": "طائرة",
+	"UI_BOAT": "قارب",
+	"UI_BUS": "حافلة",
+	"UI_MOTORBIKE": "دراجات نارية",
+	"UI_RED_MEAT": "لحم أحمر",
+	"UI_WHITE_MEAT": "اللحوم البيضاء",
+	"UI_CHOCOLATE": "شوكولاتة",
+	"UI_COFFEE": "قهوة",
+	"UI_FISH": "سمكة",
+	"UI_CUSTOM": "مخصص",
+	"UI_HD_VIDEO": "فيديو - عالي الدقة",
+	"UI_AUDIO": "الصوت - MP3",
+	"UI_FULL_HD_VIDEO": "الفيديو - FullHD/1080p",
+	"UI_ULTRA_HD_VIDEO": "فيديو - الترا اتش دي/4 كيه",
+	"UI_ELECTRICITY": "كهرباء",
+	"UI_MILK": "لبن",
+	"UI_CHEESE": "جبنه",
+	"UI_EGGS": "بيض",
+	"UI_COMPUTER": "حاسوب",
+	"UI_ELECTRIC_CAR": "سيارة كهربائية",
+	"UI_FOSSIL_FUEL_CAR": "سيارة تعمل بالوقود الأحفوري",
+	"UI_HYBRID_CAR": "سيارة هجينة",
+	"UI_LAPTOP": "حاسوب محمول",
+	"UI_SMARTPHONE": "هاتف ذكي",
+	"UI_TABLET": "لوح",
+	"UI_TV": "التلفاز",
+	"UI_COAT": "معطف",
+	"UI_DRESS": "فستان",
+	"UI_JEANS": "جينز",
+	"UI_SHIRT": "قميص",
+	"UI_SHOES": "أحذية",
+	"UI_SWEATER": "سترة",
+	"UI_T_SHIRT": "تي شيرت",
+	"UI_HIGH_MEAT": "اللحوم عالية",
+	"UI_MEDIUM_MEAT": "لحم متوسط",
+	"UI_LOW_MEAT": "اللحوم قليلة",
+	"UI_PESCETARIAN": "بيسكيتاريان",
+	"UI_VEGAN": "نباتي",
+	"UI_VEGETARIAN": "نباتي",
+	"UI_BEANS": "فول",
+	"UI_BEEF": "لحم",
+	"UI_CHICKEN": "فرخة",
+	"UI_FRUIT": "فاكهة",
+	"UI_LAMB": "حمَل",
+	"UI_LENTILS": "عدس",
+	"UI_NUTS": "المكسرات",
+	"UI_PORK": "لحم خنزير",
+	"UI_POTATOES": "بطاطا",
+	"UI_RICE": "أرز",
+	"UI_TOFU": "التوفو",
+	"UI_TUNA": "تونة",
+	"UI_TURKEY": "ديك رومى",
+	"UI_VEGETABLES": "خضروات",
+	"UI_CRYPTO_CURRENCY_POW": "معاملة العملة المشفرة",
+	"UI_SINGLE_EDITION_NFT": "طبعة واحدة NFT",
+	"UI_FASHION": "موضة",
+	"UI_FOOD": "طعام",
+	"UI_MEAL": "وجبة",
+	"UI_PURCHASE": "شراء",
+	"UI_STREAMING": "تدفق",
+	"UI_TRANSPORT": "ينقل",
+	"UI_SCAN_PRODUCT": "مسح المنتج",
+	"UI_TIME": "وقت",
+	"UI_TIMES": "مرات",
+	"UI_WEEKLY": "أسبوعي",
+	"UI_MONTHLY": "شهريا",
+	"UI_EVERY": "كل",
+	"NO_EMISSION_COMPONENT_TITLE": "مرحبًا 👋",
+	"NO_EMISSION_COMPONENT_THANKS": "شكرًا لانضمامك إلى معركتنا ضد تغير المناخ!",
+	"NO_EMISSION_COMPONENT_START_USING_APP": "لبدء تتبع انبعاثات ثاني أكسيد الكربون لديك، اضغط على الزر أدناه",
+	"NO_EMISSION_COMPONENT_ADD_FIRST_EMISSION": "أضف انبعاثي الأول",
+	"PERMISSIONS_REQUEST_COMPONENT_OPEN_SETTINGS": "أفتح الإعدادات",
+	"PERMISSIONS_REQUEST_COMPONENT_CAMERA_TITLE": "لا يمكن الوصول إلى الكاميرا",
+	"PERMISSIONS_REQUEST_COMPONENT_CAMERA_SUBTITLE": "يرجى منح تطبيق NMF.earth حق الوصول إلى الكاميرا في إعدادات هاتفك لاستخدام هذه الميزة.",
+	"PERMISSIONS_REQUEST_COMPONENT_NOTIFICATION_TITLE": "لا يوجد إذن لإرسال الإخطارات",
+	"PERMISSIONS_REQUEST_COMPONENT_NOTIFICATION_SUBTITLE": "يرجى منح تطبيق NMF.earth الإذن لإرسال إشعارات إليك في إعدادات هاتفك لاستخدام هذه الميزة.",
+	"OPEN_FOOD_FACTS_COMPONENT_DATA_FROM": "بيانات من حقائق الغذاء المفتوحة"
+}

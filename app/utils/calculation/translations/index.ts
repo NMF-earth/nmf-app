@@ -10,22 +10,23 @@ import pl from "./pl.json";
 import zh from "./zh.json";
 import ms from "./ms.json";
 import it from "./it.json";
+import ar from "./ar.json";
 
 interface TranslationKeys {
-  GRAMS_SYMBOL: string;
-  GRAMS_FULL: string;
-  KILOGRAMS_SYMBOL: string;
-  KILOGRAMS_FULL: string;
-  TONNES_SYMBOL: string;
-  TONNES_FULL: string;
-  OUNCES_SYMBOL: string;
-  OUNCES_FULL: string;
-  POUNDS_SYMBOL: string;
-  POUNDS_FULL: string;
-  KILOMETERS_SYMBOL: string;
-  KILOMETERS_FULL: string;
-  MILES_SYMBOL: string;
-  MILES_FULL: string;
+  CALCULATION_GRAMS_SYMBOL: string;
+  CALCULATION_GRAMS_FULL: string;
+  CALCULATION_KILOGRAMS_SYMBOL: string;
+  CALCULATION_KILOGRAMS_FULL: string;
+  CALCULATION_TONNES_SYMBOL: string;
+  CALCULATION_TONNES_FULL: string;
+  CALCULATION_OUNCES_SYMBOL: string;
+  CALCULATION_OUNCES_FULL: string;
+  CALCULATION_POUNDS_SYMBOL: string;
+  CALCULATION_POUNDS_FULL: string;
+  CALCULATION_KILOMETERS_SYMBOL: string;
+  CALCULATION_KILOMETERS_FULL: string;
+  CALCULATION_MILES_SYMBOL: string;
+  CALCULATION_MILES_FULL: string;
 }
 
-export { en, fr, de, sv, es, pt, da, ru, pl, zh, ms, it, TranslationKeys };
+export { en, fr, de, sv, es, pt, da, ru, pl, zh, ms, it, ar, TranslationKeys };

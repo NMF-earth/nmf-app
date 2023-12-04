@@ -15,10 +15,11 @@ const supportedLanguages = {
   ms: "Bahasa Melayu",
   es: "Español",
   it: "Italiano",
+  ar: "عربي",
 };
 
-const currentLanguage = Object.keys(supportedLanguages).includes(locale.substr(0, 2))
-  ? locale.substr(0, 2)
+const currentLanguage = Object.keys(supportedLanguages).includes(locale.substring(0, 2))
+  ? locale.substring(0, 2)
   : supportedLanguages[0];
 
 export { supportedLanguages, currentLanguage };

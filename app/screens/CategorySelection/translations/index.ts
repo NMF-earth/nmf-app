@@ -10,10 +10,11 @@ import pl from "./pl.json";
 import zh from "./zh.json";
 import ms from "./ms.json";
 import it from "./it.json";
+import ar from "./ar.json";
 
 interface TranslationKeys {
   CATEGORY_SELECTION_SCREEN_TITLE: string;
   CATEGORY_SELECTION_SCREEN_SELECT_CATEGORY: string;
 }
 
-export { en, fr, de, sv, es, pt, da, ru, pl, zh, ms, it, TranslationKeys };
+export { en, fr, de, sv, es, pt, da, ru, pl, zh, ms, it, ar, TranslationKeys };

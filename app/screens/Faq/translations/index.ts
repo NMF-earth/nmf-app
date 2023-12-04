@@ -10,6 +10,7 @@ import pl from "./pl.json";
 import zh from "./zh.json";
 import ms from "./ms.json";
 import it from "./it.json";
+import ar from "./ar.json";
 
 interface TranslationKeys {
   FAQ_SCREEN_TITLE: string;
@@ -31,4 +32,4 @@ interface TranslationKeys {
   FAQ_SCREEN_GREEN_WASHING_ANSWER: string;
 }
 
-export { en, fr, de, sv, es, pt, da, ru, pl, zh, ms, it, TranslationKeys };
+export { en, fr, de, sv, es, pt, da, ru, pl, zh, ms, it, ar, TranslationKeys };

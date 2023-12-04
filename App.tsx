@@ -32,6 +32,7 @@ const supportedLanguages: string[] = [
   "ms",
   "es",
   "it",
+  "ar",
 ];
 const defaultLanguage = "en";
 const defaultLocale = "en-us";
@@ -56,7 +57,7 @@ const App: React.FC = () => {
   enableScreens();
 
   let lang = localeExpo.substring(0, 2);
-
+  
   if (!includes(lang, supportedLanguages)) {
     lang = defaultLanguage;
   }

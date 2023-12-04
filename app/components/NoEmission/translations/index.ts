@@ -10,6 +10,7 @@ import pl from "./pl.json";
 import zh from "./zh.json";
 import ms from "./ms.json";
 import it from "./it.json";
+import ar from "./ar.json";
 
 interface TranslationKeys {
   NO_EMISSION_COMPONENT_TITLE: string;
@@ -18,4 +19,4 @@ interface TranslationKeys {
   NO_EMISSION_COMPONENT_ADD_FIRST_EMISSION: string;
 }
 
-export { en, fr, de, sv, es, pt, da, ru, pl, zh, ms, it, TranslationKeys };
+export { en, fr, de, sv, es, pt, da, ru, pl, zh, ms, it, ar, TranslationKeys };

@@ -1,0 +1,22 @@
+{
+	"BUDGET_SCREEN_TAB_NAME": "ميزانية",
+	"BUDGET_SCREEN_TITLE": "ميزانية الكربون",
+	"BUDGET_SCREEN_PROGRESS_CHART_LEGEND_ITEM_TOTAL": "المجموع",
+	"BUDGET_SCREEN_PROGRESS_CHART_LEGEND_ITEM_FOOD": "طعام",
+	"BUDGET_SCREEN_PROGRESS_CHART_LEGEND_ITEM_MEAL": "وجبة",
+	"BUDGET_SCREEN_PROGRESS_CHART_LEGEND_ITEM_TRANSPORT": "ينقل",
+	"BUDGET_SCREEN_PROGRESS_CHART_LEGEND_ITEM_STREAMING": "تدفق",
+	"BUDGET_SCREEN_PROGRESS_CHART_LEGEND_ITEM_PURCHASE": "شراء",
+	"BUDGET_SCREEN_PROGRESS_CHART_LEGEND_ITEM_FASHION": "موضة",
+	"BUDGET_SCREEN_PROGRESS_CHART_LEGEND_ITEM_ELECTRICITY": "كهرباء",
+	"BUDGET_SCREEN_PROGRESS_CHART_LEGEND_ITEM_PRODUCT_SCANNED": "تم مسح المنتج",
+	"BUDGET_SCREEN_PROGRESS_CHART_LEGEND_ITEM_CUSTOM": "مخصص",
+	"BUDGET_SCREEN_PROGRESS_CHART_LEGEND_PERIOD_BUDGET": "ميزانية ",
+	"BUDGET_SCREEN_SET_MONTHLY_BUDGET": "تحديد الميزانية الشهرية",
+	"BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_RECENT_MEAT": "أوه لا، لقد أكلت مؤخرًا اللحوم أو الأسماك 🥺",
+	"BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_NICE_START": "هذه بداية جميلة! 👌",
+	"BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_WELL_DONE": "أحسنت! 🎉",
+	"BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_NO_MEAT_SO_FAR": "يبدو أنك لم تأكل أي لحم أو سمك منذ استخدام التطبيق، عمل جيد! 🍾",
+	"BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_DAYS": "أيام",
+	"BUDGET_SCREEN_NUMBER_OF_DAYS_VEGETARIAN_WITHOUT_MEAT": "بدون لحم أو سمك."
+}
