@@ -282,36 +282,36 @@ describe("getDisplayUnitsValue should convert the given kilogram value to", () =
 describe("getDisplayUnits should return the correct units given a kilogram value that should be converted to", () => {
   it("grams", () => {
     for (const kgValue of unitsBasline.toGrams) {
-      expect(calculation.getDisplayUnits(kgValue, true)).toEqual(t("GRAMS_SYMBOL"));
-      expect(calculation.getDisplayUnits(kgValue, true, false)).toEqual(t("GRAMS_FULL"));
+      expect(calculation.getDisplayUnits(kgValue, true)).toEqual(t("CALCULATION_GRAMS_SYMBOL"));
+      expect(calculation.getDisplayUnits(kgValue, true, false)).toEqual(t("CALCULATION_GRAMS_FULL"));
     }
   });
 
   it("kilograms", () => {
     for (const kgValue of unitsBasline.toKilograms) {
-      expect(calculation.getDisplayUnits(kgValue, true)).toEqual(t("KILOGRAMS_SYMBOL"));
-      expect(calculation.getDisplayUnits(kgValue, true, false)).toEqual(t("KILOGRAMS_FULL"));
+      expect(calculation.getDisplayUnits(kgValue, true)).toEqual(t("CALCULATION_KILOGRAMS_SYMBOL"));
+      expect(calculation.getDisplayUnits(kgValue, true, false)).toEqual(t("CALCULATION_KILOGRAMS_FULL"));
     }
   });
 
   it("tonnes", () => {
     for (const kgValue of unitsBasline.toTonnes) {
-      expect(calculation.getDisplayUnits(kgValue, true)).toEqual(t("TONNES_SYMBOL"));
-      expect(calculation.getDisplayUnits(kgValue, true, false)).toEqual(t("TONNES_FULL"));
+      expect(calculation.getDisplayUnits(kgValue, true)).toEqual(t("CALCULATION_TONNES_SYMBOL"));
+      expect(calculation.getDisplayUnits(kgValue, true, false)).toEqual(t("CALCULATION_TONNES_FULL"));
     }
   });
 
   it("ounces", () => {
     for (const kgValue of unitsBasline.toOunces) {
-      expect(calculation.getDisplayUnits(kgValue, false)).toEqual(t("OUNCES_SYMBOL"));
-      expect(calculation.getDisplayUnits(kgValue, false, false)).toEqual(t("OUNCES_FULL"));
+      expect(calculation.getDisplayUnits(kgValue, false)).toEqual(t("CALCULATION_OUNCES_SYMBOL"));
+      expect(calculation.getDisplayUnits(kgValue, false, false)).toEqual(t("CALCULATION_OUNCES_FULL"));
     }
   });
 
   it("pounds", () => {
     for (const kgValue of unitsBasline.toPounds) {
-      expect(calculation.getDisplayUnits(kgValue, false)).toEqual(t("POUNDS_SYMBOL"));
-      expect(calculation.getDisplayUnits(kgValue, false, false)).toEqual(t("POUNDS_FULL"));
+      expect(calculation.getDisplayUnits(kgValue, false)).toEqual(t("CALCULATION_POUNDS_SYMBOL"));
+      expect(calculation.getDisplayUnits(kgValue, false, false)).toEqual(t("CALCULATION_POUNDS_FULL"));
     }
   });
 });
