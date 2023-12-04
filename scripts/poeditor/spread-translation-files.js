@@ -23,14 +23,15 @@ const translationDirs = [
   { path: "app/screens/MonthlyEmissions/translations", prefix: "MONTHLY_EMISSIONS_SCREEN" },
   { path: "app/screens/Languages/translations", prefix: "LANGUAGES_SCREEN" },
   { path: "app/screens/Faq/translations", prefix: "FAQ_SCREEN" },
+  { path: "app/screens/Periodicity/translations", prefix: "PERIODICITY_MODAL_SCREEN" },
+  { path: "app/screens/SubCategorySelection/translations", prefix: "SUB_CATEGORY_SELECTION_SCREEN" },
+  { path: "app/screens/BarCodeScan/translations", prefix: "BAR_CODE_SCAN_SCREEN" },
   { path: "app/screens/RecurringEmissions/translations", prefix: "RECURRING_EMISSIONS_SCREEN" },
   { path: "app/components/NoEmission/translations", prefix: "NO_EMISSION_COMPONENT" },
   { path: "app/components/OpenFoodFacts/translations", prefix: "OPEN_FOOD_FACTS_COMPONENT" },
-  {
-    path: "app/components/PermissionsRequest/translations",
-    prefix: "PERMISSIONS_REQUEST_COMPONENT",
-  },
+  { path: "app/components/PermissionsRequest/translations", prefix: "PERMISSIONS_REQUEST_COMPONENT" },
   { path: "app/utils/ui/translations", prefix: "UI" },
+  { path: "app/utils/calculation/translations", prefix: "CALCULATION" },
 ];
 
 /**

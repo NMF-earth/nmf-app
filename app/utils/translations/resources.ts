@@ -418,6 +418,38 @@ const it = {
   ...RecurringEmissions.it,
 };
 
+const ar = {
+  ...UI.ar,
+  ...Calculation.ar,
+  ...About.ar,
+  ...Notifications.ar,
+  ...MonthlyBudget.ar,
+  ...NoEmission.ar,
+  ...PermissionsRequest.ar,
+  ...OpenFoodFacts.ar,
+  ...Act.ar,
+  ...Budget.ar,
+  ...Emissions.ar,
+  ...Settings.ar,
+  ...ComingSoon.ar,
+  ...InfoModal.ar,
+  ...AddEmission.ar,
+  ...EmissionItem.ar,
+  ...Intro.ar,
+  ...SupportUs.ar,
+  ...MyLocation.ar,
+  ...ActDetail.ar,
+  ...MyData.ar,
+  ...CategorySelection.ar,
+  ...SubCategorySelection.ar,
+  ...BarCodeScan.ar,
+  ...MonthlyEmissions.ar,
+  ...Languages.ar,
+  ...Periodicity.ar,
+  ...Faq.ar,
+  ...RecurringEmissions.ar,
+};
+
 export interface TranslationKeys
   extends UI.TranslationKeys,
     Calculation.TranslationKeys,
@@ -449,4 +481,4 @@ export interface TranslationKeys
     Faq.TranslationKeys,
     RecurringEmissions.TranslationKeys {}
 
-export { en, de, fr, sv, pt, es, pl, ru, da, zh, ms, it };
+export { en, de, fr, sv, pt, es, pl, ru, da, zh, ms, it, ar };

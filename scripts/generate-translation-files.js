@@ -18,11 +18,15 @@ const paths = [
   "app/screens/MonthlyEmissions/translations/",
   "app/screens/Languages/translations/",
   "app/screens/Faq/translations/",
+  "app/screens/BarCodeScan/translations/",
   "app/screens/RecurringEmissions/translations/",
+  "app/screens/SubCategorySelection/translations/",
+  "app/screens/Periodicity/translations/",
   "app/components/NoEmission/translations/",
   "app/components/OpenFoodFacts/translations/",
   "app/components/PermissionsRequest/translations/",
   "app/utils/ui/translations/",
+  "app/utils/calculation/translations/"
 ];
 
 const englishFile = "en.json";

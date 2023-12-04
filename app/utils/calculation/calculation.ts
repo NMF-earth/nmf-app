@@ -179,17 +179,17 @@ const getDisplayUnits = (kgValue: number, useMetricUnits: boolean, useSymbol = t
 
   if (useMetricUnits) {
     if (kgValue <= 1) {
-      return t(`GRAMS${suffix}`);
+      return t(`CALCULATION_GRAMS${suffix}`);
     } else if (kgValue > 1 && kgValue <= 1000) {
-      return t(`KILOGRAMS${suffix}`);
+      return t(`CALCULATION_KILOGRAMS${suffix}`);
     } else {
-      return t(`TONNES${suffix}`);
+      return t(`CALCULATION_TONNES${suffix}`);
     }
   } else {
     if (kgValue <= 0.454) {
-      return t(`OUNCES${suffix}`);
+      return t(`CALCULATION_OUNCES${suffix}`);
     } else {
-      return t(`POUNDS${suffix}`);
+      return t(`CALCULATION_POUNDS${suffix}`);
     }
   }
 };

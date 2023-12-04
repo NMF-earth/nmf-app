@@ -10,6 +10,7 @@ import pl from "./pl.json";
 import zh from "./zh.json";
 import ms from "./ms.json";
 import it from "./it.json";
+import ar from "./ar.json";
 
 interface TranslationKeys {
   NOTIFICATIONS_SCREEN_TITLE: string;
@@ -19,4 +20,4 @@ interface TranslationKeys {
   NOTIFICATIONS_SCREEN_NOTIFICATION_BODY: string;
 }
 
-export { en, fr, de, sv, es, pt, da, ru, pl, zh, ms, it, TranslationKeys };
+export { en, fr, de, sv, es, pt, da, ru, pl, zh, ms, it, ar, TranslationKeys };
