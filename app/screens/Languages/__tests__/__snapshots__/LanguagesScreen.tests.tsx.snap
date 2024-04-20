@@ -173,7 +173,7 @@ exports[`LanguageScreen renders correctly 1`] = `
             }
           }
         >
-          Polskie
+          Polski
         </Text.Primary>
       </TouchableOpacity>
       <TouchableOpacity

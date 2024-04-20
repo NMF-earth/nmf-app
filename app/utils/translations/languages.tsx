@@ -9,7 +9,7 @@ const supportedLanguages = {
   sv: "Svenska",
   ru: "Pусский",
   pt: "Português",
-  pl: "Polskie",
+  pl: "Polski",
   da: "Dansk",
   zh: "中文（简体）",
   ms: "Bahasa Melayu",
