@@ -24,13 +24,14 @@ exports[`<SelectableListItem /> render 1`] = `
   </Text.Primary>
   <Ionicons
     color="#0F853B"
-    name="md-checkmark"
+    name="checkmark"
     size={26}
     style={
       {
         "marginTop": 18,
       }
     }
+    suppressHighlighting={true}
   />
 </TouchableOpacity>
 `;
@@ -59,13 +60,14 @@ exports[`<SelectableListItem /> render if not selected 1`] = `
   </Text.Primary>
   <Ionicons
     color="#0F853B"
-    name="md-checkmark"
+    name="checkmark"
     size={26}
     style={
       {
         "marginTop": 18,
       }
     }
+    suppressHighlighting={true}
   />
 </TouchableOpacity>
 `;

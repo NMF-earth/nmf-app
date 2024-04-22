@@ -29,7 +29,8 @@ const navigationOptionsIOS = ({ navigation }): StackNavigationOptions => ({
   headerRight: () => (
     <View style={iconStyle}>
       <Ionicons
-        name="md-close"
+        suppressHighlighting={true}
+        name="close"
         size={32}
         color={Colors.grey100}
         onPress={() => {

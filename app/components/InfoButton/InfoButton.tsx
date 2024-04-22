@@ -21,7 +21,8 @@ const InfoButton: React.FC = () => {
 
   return (
     <Ionicons
-      name="md-information-circle"
+      suppressHighlighting={true}
+      name="information-circle"
       size={26}
       style={styles.infoIcon}
       onPress={() => navigator.openInfoModal({ emissionModelType })}

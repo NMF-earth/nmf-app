@@ -194,6 +194,7 @@ exports[`renders correctly fullwidth Danger Button with icon 1`] = `
         "marginHorizontal": 10,
       }
     }
+    suppressHighlighting={true}
   />
 </TouchableOpacity>
 `;
@@ -287,6 +288,7 @@ exports[`renders correctly fullwidth Primary Button with icon 1`] = `
         "marginHorizontal": 10,
       }
     }
+    suppressHighlighting={true}
   />
 </TouchableOpacity>
 `;
@@ -380,6 +382,7 @@ exports[`renders correctly fullwidth Secondary Button with icon 1`] = `
         "marginHorizontal": 10,
       }
     }
+    suppressHighlighting={true}
   />
 </TouchableOpacity>
 `;

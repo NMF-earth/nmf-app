@@ -19,7 +19,7 @@ const TextButton: React.FC<Props> = ({ onPress, iconLeft, text }) => {
   return (
     <TouchableOpacity style={styles.container} onPress={onPress}>
       <View style={{ width: iconSize + 10 }}>
-        <Ionicons color={Colors.secondary} name={iconLeft} size={iconSize} />
+        <Ionicons suppressHighlighting={true} color={Colors.secondary} name={iconLeft} size={iconSize} />
       </View>
       <View style={styles.textContainer}>
         <Text.Primary darkGray style={styles.text}>
@@ -27,7 +27,7 @@ const TextButton: React.FC<Props> = ({ onPress, iconLeft, text }) => {
         </Text.Primary>
       </View>
       <View style={{ width: iconSize + 10 }}>
-        <Ionicons name="create" size={iconSize} color={Colors.primary} />
+        <Ionicons suppressHighlighting={true} name="create" size={iconSize} color={Colors.primary} />
       </View>
     </TouchableOpacity>
   );

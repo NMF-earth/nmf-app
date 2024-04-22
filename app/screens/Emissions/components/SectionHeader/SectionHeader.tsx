@@ -53,7 +53,8 @@ const SectionHeader: React.FC<Props & LocalizationContextProps> = ({
         {headerText}
       </Text.Primary>
       <Ionicons
-        name={"ios-chevron-forward-outline"}
+        suppressHighlighting={true}
+        name={"chevron-forward-outline"}
         size={24}
         style={styles.icon}
         color={Colors.secondary}

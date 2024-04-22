@@ -160,16 +160,16 @@ describe("tests for ui.isDarkModeEnabled", () => {
 
 describe("tests for ui.getIconFromModelType", () => {
   describe("electricity type emissions", () => {
-    it("returns md-flash if electricity Emission model", () => {
+    it("returns flash if electricity Emission model", () => {
       const emissionModelType = ElectricityType.argentina;
       const icon = ui.getIconFromModelType(emissionModelType);
 
-      expect(icon).toBe("md-flash");
+      expect(icon).toBe("flash");
     });
   });
 
   describe("custom type emissions", () => {
-    it("returns md-build if custom Emission model", () => {
+    it("returns build if custom Emission model", () => {
       // arrange
       const emissionModelType = EmissionType.custom;
 
@@ -177,12 +177,12 @@ describe("tests for ui.getIconFromModelType", () => {
       const icon = ui.getIconFromModelType(emissionModelType);
 
       // assert
-      expect(icon).toBe("md-build");
+      expect(icon).toBe("build");
     });
   });
 
   describe("food type emissions", () => {
-    it("returns md-nutrition if it is food of type redMeat", () => {
+    it("returns nutrition if it is food of type redMeat", () => {
       // arrange
       const emissionModelType = FoodType.redMeat;
 
@@ -190,10 +190,10 @@ describe("tests for ui.getIconFromModelType", () => {
       const icon = ui.getIconFromModelType(emissionModelType);
 
       // assert
-      expect(icon).toBe("md-nutrition");
+      expect(icon).toBe("nutrition");
     });
 
-    it("returns md-nutrition if it is food of type whiteMeat", () => {
+    it("returns nutrition if it is food of type whiteMeat", () => {
       // arrange
       const emissionModelType = FoodType.whiteMeat;
 
@@ -201,10 +201,10 @@ describe("tests for ui.getIconFromModelType", () => {
       const icon = ui.getIconFromModelType(emissionModelType);
 
       // assert
-      expect(icon).toBe("md-nutrition");
+      expect(icon).toBe("nutrition");
     });
 
-    it("returns md-nutrition if it is food of type chocolate", () => {
+    it("returns nutrition if it is food of type chocolate", () => {
       // arrange
       const emissionModelType = FoodType.chocolate;
 
@@ -212,10 +212,10 @@ describe("tests for ui.getIconFromModelType", () => {
       const icon = ui.getIconFromModelType(emissionModelType);
 
       // assert
-      expect(icon).toBe("md-nutrition");
+      expect(icon).toBe("nutrition");
     });
 
-    it("returns md-cafe if it is food of type coffee", () => {
+    it("returns cafe if it is food of type coffee", () => {
       // arrange
       const emissionModelType = FoodType.coffee;
 
@@ -223,12 +223,12 @@ describe("tests for ui.getIconFromModelType", () => {
       const icon = ui.getIconFromModelType(emissionModelType);
 
       // assert
-      expect(icon).toBe("md-cafe");
+      expect(icon).toBe("cafe");
     });
   });
 
   describe("transport type emissions", () => {
-    it("returns md-airplane if it is transport of type shortHaulFlight", () => {
+    it("returns airplane if it is transport of type shortHaulFlight", () => {
       // arrange
       const emissionModelType = TransportType.shortHaulFlight;
 
@@ -236,10 +236,10 @@ describe("tests for ui.getIconFromModelType", () => {
       const icon = ui.getIconFromModelType(emissionModelType);
 
       // assert
-      expect(icon).toBe("md-airplane");
+      expect(icon).toBe("airplane");
     });
 
-    it("returns md-airplane if it is transport of type mediumHaulFlight", () => {
+    it("returns airplane if it is transport of type mediumHaulFlight", () => {
       // arrange
       const emissionModelType = TransportType.mediumHaulFlight;
 
@@ -247,10 +247,10 @@ describe("tests for ui.getIconFromModelType", () => {
       const icon = ui.getIconFromModelType(emissionModelType);
 
       // assert
-      expect(icon).toBe("md-airplane");
+      expect(icon).toBe("airplane");
     });
 
-    it("returns md-airplane if it is transport of type longHaulFlight", () => {
+    it("returns airplane if it is transport of type longHaulFlight", () => {
       // arrange
       const emissionModelType = TransportType.longHaulFlight;
 
@@ -258,10 +258,10 @@ describe("tests for ui.getIconFromModelType", () => {
       const icon = ui.getIconFromModelType(emissionModelType);
 
       // assert
-      expect(icon).toBe("md-airplane");
+      expect(icon).toBe("airplane");
     });
 
-    it("returns md-train if it is transport of type train", () => {
+    it("returns train if it is transport of type train", () => {
       // arrange
       const emissionModelType = TransportType.train;
 
@@ -269,10 +269,10 @@ describe("tests for ui.getIconFromModelType", () => {
       const icon = ui.getIconFromModelType(emissionModelType);
 
       // assert
-      expect(icon).toBe("md-train");
+      expect(icon).toBe("train");
     });
 
-    it("returns md-car if it is transport of type car", () => {
+    it("returns car if it is transport of type car", () => {
       // arrange
       const emissionModelType = TransportType.car;
 
@@ -280,10 +280,10 @@ describe("tests for ui.getIconFromModelType", () => {
       const icon = ui.getIconFromModelType(emissionModelType);
 
       // assert
-      expect(icon).toBe("md-car");
+      expect(icon).toBe("car");
     });
 
-    it("returns md-boat if it is transport of type boat", () => {
+    it("returns boat if it is transport of type boat", () => {
       // arrange
       const emissionModelType = TransportType.boat;
 
@@ -291,10 +291,10 @@ describe("tests for ui.getIconFromModelType", () => {
       const icon = ui.getIconFromModelType(emissionModelType);
 
       // assert
-      expect(icon).toBe("md-boat");
+      expect(icon).toBe("boat");
     });
 
-    it("returns md-motorbike if it is transport of type motorbike", () => {
+    it("returns motorbike if it is transport of type motorbike", () => {
       // arrange
       const emissionModelType = TransportType.motorbike;
 
@@ -302,10 +302,10 @@ describe("tests for ui.getIconFromModelType", () => {
       const icon = ui.getIconFromModelType(emissionModelType);
 
       // assert
-      expect(icon).toBe("md-bicycle");
+      expect(icon).toBe("bicycle");
     });
 
-    it("returns md-bus if it is transport of type bus", () => {
+    it("returns bus if it is transport of type bus", () => {
       // arrange
       const emissionModelType = TransportType.bus;
 
@@ -313,12 +313,12 @@ describe("tests for ui.getIconFromModelType", () => {
       const icon = ui.getIconFromModelType(emissionModelType);
 
       // assert
-      expect(icon).toBe("md-bus");
+      expect(icon).toBe("bus");
     });
   });
 
   describe("streaming emission type", () => {
-    it("returns md-film for HDVideo", () => {
+    it("returns film for HDVideo", () => {
       // arrange
       const emissionModelType = StreamingType.HDVideo;
 
@@ -326,10 +326,10 @@ describe("tests for ui.getIconFromModelType", () => {
       const icon = ui.getIconFromModelType(emissionModelType);
 
       // assert
-      expect(icon).toBe("md-film");
+      expect(icon).toBe("film");
     });
 
-    it("returns md-film for fullHDVideo", () => {
+    it("returns film for fullHDVideo", () => {
       // arrange
       const emissionModelType = StreamingType.fullHDVideo;
 
@@ -337,10 +337,10 @@ describe("tests for ui.getIconFromModelType", () => {
       const icon = ui.getIconFromModelType(emissionModelType);
 
       // assert
-      expect(icon).toBe("md-film");
+      expect(icon).toBe("film");
     });
 
-    it("returns md-film for ultraHDVideo", () => {
+    it("returns film for ultraHDVideo", () => {
       // arrange
       const emissionModelType = StreamingType.ultraHDVideo;
 
@@ -348,10 +348,10 @@ describe("tests for ui.getIconFromModelType", () => {
       const icon = ui.getIconFromModelType(emissionModelType);
 
       // assert
-      expect(icon).toBe("md-film");
+      expect(icon).toBe("film");
     });
 
-    it("returns md-musical-note for audioMP3", () => {
+    it("returns musical-note for audioMP3", () => {
       // arrange
       const emissionModelType = StreamingType.audioMP3;
 
@@ -359,127 +359,127 @@ describe("tests for ui.getIconFromModelType", () => {
       const icon = ui.getIconFromModelType(emissionModelType);
 
       // assert
-      expect(icon).toBe("md-musical-note");
+      expect(icon).toBe("musical-note");
     });
   });
 
   describe("purchase emission type", () => {
-    it("returns md-card for computer", () => {
+    it("returns card for computer", () => {
       const emissionModelType = PurchaseType.computer;
       const icon = ui.getIconFromModelType(emissionModelType);
 
-      expect(icon).toBe("md-card");
+      expect(icon).toBe("card");
     });
 
-    it("returns md-card for eletricCar", () => {
+    it("returns card for eletricCar", () => {
       const emissionModelType = PurchaseType.eletricCar;
       const icon = ui.getIconFromModelType(emissionModelType);
 
-      expect(icon).toBe("md-card");
+      expect(icon).toBe("card");
     });
 
-    it("returns md-card for fossilFuelCar", () => {
+    it("returns card for fossilFuelCar", () => {
       const emissionModelType = PurchaseType.fossilFuelCar;
       const icon = ui.getIconFromModelType(emissionModelType);
 
-      expect(icon).toBe("md-card");
+      expect(icon).toBe("card");
     });
 
-    it("returns md-card for hybridCar", () => {
+    it("returns card for hybridCar", () => {
       const emissionModelType = PurchaseType.hybridCar;
       const icon = ui.getIconFromModelType(emissionModelType);
 
-      expect(icon).toBe("md-card");
+      expect(icon).toBe("card");
     });
 
-    it("returns md-card for laptop", () => {
+    it("returns card for laptop", () => {
       const emissionModelType = PurchaseType.laptop;
       const icon = ui.getIconFromModelType(emissionModelType);
 
-      expect(icon).toBe("md-card");
+      expect(icon).toBe("card");
     });
 
-    it("returns md-card for smartphone", () => {
+    it("returns card for smartphone", () => {
       const emissionModelType = PurchaseType.smartphone;
       const icon = ui.getIconFromModelType(emissionModelType);
 
-      expect(icon).toBe("md-card");
+      expect(icon).toBe("card");
     });
 
-    it("returns md-card for tablet", () => {
+    it("returns card for tablet", () => {
       const emissionModelType = PurchaseType.tablet;
       const icon = ui.getIconFromModelType(emissionModelType);
 
-      expect(icon).toBe("md-card");
+      expect(icon).toBe("card");
     });
 
-    it("returns md-card for tv", () => {
+    it("returns card for tv", () => {
       const emissionModelType = PurchaseType.tv;
       const icon = ui.getIconFromModelType(emissionModelType);
 
-      expect(icon).toBe("md-card");
+      expect(icon).toBe("card");
     });
   });
 
   describe("fashion emission type", () => {
-    it("returns md-shirt for coat", () => {
+    it("returns shirt for coat", () => {
       const emissionModelType = FashionType.coat;
       const icon = ui.getIconFromModelType(emissionModelType);
 
-      expect(icon).toBe("md-shirt");
+      expect(icon).toBe("shirt");
     });
 
-    it("returns md-shirt for dress", () => {
+    it("returns shirt for dress", () => {
       const emissionModelType = FashionType.dress;
       const icon = ui.getIconFromModelType(emissionModelType);
 
-      expect(icon).toBe("md-shirt");
+      expect(icon).toBe("shirt");
     });
 
-    it("returns md-shirt for jeans", () => {
+    it("returns shirt for jeans", () => {
       const emissionModelType = FashionType.jeans;
       const icon = ui.getIconFromModelType(emissionModelType);
 
-      expect(icon).toBe("md-shirt");
+      expect(icon).toBe("shirt");
     });
 
-    it("returns md-shirt for shirt", () => {
+    it("returns shirt for shirt", () => {
       const emissionModelType = FashionType.shirt;
       const icon = ui.getIconFromModelType(emissionModelType);
 
-      expect(icon).toBe("md-shirt");
+      expect(icon).toBe("shirt");
     });
 
-    it("returns md-shirt for shoes", () => {
+    it("returns shirt for shoes", () => {
       const emissionModelType = FashionType.shoes;
       const icon = ui.getIconFromModelType(emissionModelType);
 
-      expect(icon).toBe("md-shirt");
+      expect(icon).toBe("shirt");
     });
 
-    it("returns md-shirt for sweater", () => {
+    it("returns shirt for sweater", () => {
       const emissionModelType = FashionType.sweater;
       const icon = ui.getIconFromModelType(emissionModelType);
 
-      expect(icon).toBe("md-shirt");
+      expect(icon).toBe("shirt");
     });
 
-    it("returns md-shirt for tshirt", () => {
+    it("returns shirt for tshirt", () => {
       const emissionModelType = FashionType.tshirt;
       const icon = ui.getIconFromModelType(emissionModelType);
 
-      expect(icon).toBe("md-shirt");
+      expect(icon).toBe("shirt");
     });
   });
 
-  it("returns md-build for any random emission type", () => {
+  it("returns build for any random emission type", () => {
     const emissionModelType = "someRandomString";
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
     const icon = ui.getIconFromModelType(emissionModelType);
 
     // assert
-    expect(icon).toBe("md-build");
+    expect(icon).toBe("build");
   });
 });
 

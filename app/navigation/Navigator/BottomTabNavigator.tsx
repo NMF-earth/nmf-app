@@ -16,28 +16,28 @@ const BottomTab = createBottomTabNavigator();
 
 const BudgetOptions = {
   tabBarLabel: t("BUDGET_SCREEN_TAB_NAME"),
-  tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name={"md-calculator"} />,
+  tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name={"calculator"} />,
 };
 
 const EmissionsOptions = {
   tabBarLabel: t("EMISSIONS_SCREEN_TAB_NAME"),
-  tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name={"md-stats-chart-sharp"} />,
+  tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name={"stats-chart-sharp"} />,
 };
 
 const ActOptions = {
   tabBarLabel: t("ACT_SCREEN_TAB_NAME"),
-  tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name={"md-hand-left-sharp"} />,
+  tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name={"hand-left-sharp"} />,
 };
 
 const SettingsOptions = {
   tabBarLabel: t("SETTINGS_SCREEN_TAB_NAME"),
-  tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name={"md-options"} />,
+  tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name={"options"} />,
 };
 
 const AddEmissionOptions = {
   showLabel: false,
   tabBarLabel: t("ADD_EMISSION_SCREEN_TAB_NAME"),
-  tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name={"md-add-circle"} />,
+  tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name={"add-circle"} />,
 };
 
 const BottomTabNavigator = (): React.ReactElement => {

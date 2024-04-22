@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <Ionicons
-  name="md-information-circle"
+  name="information-circle"
   onPress={[Function]}
   size={26}
   style={
@@ -11,5 +11,6 @@ exports[`renders correctly 1`] = `
       "marginRight": 16,
     }
   }
+  suppressHighlighting={true}
 />
 `;

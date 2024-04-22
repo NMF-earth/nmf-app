@@ -99,7 +99,8 @@ const MonthlyBudgetScreen: NavStatelessComponent = () => {
             <Text.Primary bold>
               {t("MONTHLY_BUDGET_SCREEN_CARBON_EMISSIONS_WORLD")}
               <Ionicons
-                name="md-information-circle"
+                suppressHighlighting={true}
+                name="information-circle"
                 size={26}
                 color={Colors.secondary}
                 onPress={onPressInfoWorldEmission}
@@ -115,10 +116,12 @@ const MonthlyBudgetScreen: NavStatelessComponent = () => {
               {Math.round(getDisplayUnitsValue(167, useMetricUnits))}{" "}
               {getDisplayUnits(167, useMetricUnits) + "CO2eq"}
               <Ionicons
-                name="md-information-circle"
+                suppressHighlighting={true}
+                name="information-circle"
                 size={26}
                 color={Colors.secondary}
                 onPress={onPressInfoParisAgreement}
+                activeOpacity={Colors.danger}
               />
             </Text.Secondary>
           </View>

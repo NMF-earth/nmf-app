@@ -20,7 +20,7 @@ interface AccordionProps {
 const Item: FC<ItemProps> = ({ title, children, isFirst, isOpen, onTitlePress }) => (
   <View style={[itemStyles.container, isFirst && itemStyles.firstContainer]}>
     <Pressable style={itemStyles.titleContainer} onPress={onTitlePress}>
-      <Ionicons name={isOpen ? "chevron-down" : "chevron-up"} size={22} style={itemStyles.icon} />
+      <Ionicons suppressHighlighting={true} name={isOpen ? "chevron-down" : "chevron-up"} size={22} style={itemStyles.icon} />
 
       <Text.H3 style={itemStyles.titleText}>{title}</Text.H3>
     </Pressable>

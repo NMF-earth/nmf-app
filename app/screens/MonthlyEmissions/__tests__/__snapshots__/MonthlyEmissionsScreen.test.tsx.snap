@@ -44,7 +44,7 @@ exports[`<MonthlyEmissions /> render 1`] = `
         "creationDate": "2020-03-01T12:08:16.623Z",
         "emissionModelType": "beans",
         "emissionType": "food",
-        "iconName": "md-nutrition",
+        "iconName": "nutrition",
         "id": "1",
         "isMitigated": false,
         "onPress": [Function],
@@ -56,7 +56,7 @@ exports[`<MonthlyEmissions /> render 1`] = `
         "creationDate": "2020-03-01T12:08:16.623Z",
         "emissionModelType": "boat",
         "emissionType": "transport",
-        "iconName": "md-boat",
+        "iconName": "boat",
         "id": "12",
         "isMitigated": true,
         "onPress": [Function],
@@ -133,7 +133,7 @@ exports[`<MonthlyEmissions /> render 1`] = `
       <EmissionListItem
         co2value={20}
         emissionModelType="beans"
-        iconName="md-nutrition"
+        iconName="nutrition"
         id="1"
         isMitigated={false}
         onPress={[Function]}
@@ -148,7 +148,7 @@ exports[`<MonthlyEmissions /> render 1`] = `
       <EmissionListItem
         co2value={0.0803}
         emissionModelType="boat"
-        iconName="md-boat"
+        iconName="boat"
         id="12"
         isMitigated={true}
         onPress={[Function]}

@@ -40,13 +40,14 @@ exports[`EmissionListItem renders correctly if mitigated 1`] = `
       />
       <Ionicons
         color="#0F853B"
-        name="md-nutrition"
+        name="nutrition"
         size={22}
         style={
           {
             "marginHorizontal": 16,
           }
         }
+        suppressHighlighting={true}
       />
     </View>
     <View
@@ -95,13 +96,14 @@ exports[`EmissionListItem renders correctly if mitigated 1`] = `
     </View>
     <Ionicons
       color="#595D58"
-      name="ios-chevron-forward-outline"
+      name="chevron-forward-outline"
       size={18}
       style={
         {
           "marginHorizontal": 16,
         }
       }
+      suppressHighlighting={true}
     />
   </TouchableOpacity>
 </GlobalizeProvider>
@@ -147,13 +149,14 @@ exports[`EmissionListItem renders correctly with audio icon 1`] = `
       />
       <Ionicons
         color="#595D58"
-        name="md-musical-note"
+        name="musical-note"
         size={22}
         style={
           {
             "marginHorizontal": 16,
           }
         }
+        suppressHighlighting={true}
       />
     </View>
     <View
@@ -192,13 +195,14 @@ exports[`EmissionListItem renders correctly with audio icon 1`] = `
     </View>
     <Ionicons
       color="#595D58"
-      name="ios-chevron-forward-outline"
+      name="chevron-forward-outline"
       size={18}
       style={
         {
           "marginHorizontal": 16,
         }
       }
+      suppressHighlighting={true}
     />
   </TouchableOpacity>
 </GlobalizeProvider>
@@ -244,13 +248,14 @@ exports[`EmissionListItem renders correctly with boat icon 1`] = `
       />
       <Ionicons
         color="#595D58"
-        name="md-boat"
+        name="boat"
         size={22}
         style={
           {
             "marginHorizontal": 16,
           }
         }
+        suppressHighlighting={true}
       />
     </View>
     <View
@@ -289,13 +294,14 @@ exports[`EmissionListItem renders correctly with boat icon 1`] = `
     </View>
     <Ionicons
       color="#595D58"
-      name="ios-chevron-forward-outline"
+      name="chevron-forward-outline"
       size={18}
       style={
         {
           "marginHorizontal": 16,
         }
       }
+      suppressHighlighting={true}
     />
   </TouchableOpacity>
 </GlobalizeProvider>
@@ -341,13 +347,14 @@ exports[`EmissionListItem renders correctly with bus icon 1`] = `
       />
       <Ionicons
         color="#595D58"
-        name="md-bus"
+        name="bus"
         size={22}
         style={
           {
             "marginHorizontal": 16,
           }
         }
+        suppressHighlighting={true}
       />
     </View>
     <View
@@ -386,13 +393,14 @@ exports[`EmissionListItem renders correctly with bus icon 1`] = `
     </View>
     <Ionicons
       color="#595D58"
-      name="ios-chevron-forward-outline"
+      name="chevron-forward-outline"
       size={18}
       style={
         {
           "marginHorizontal": 16,
         }
       }
+      suppressHighlighting={true}
     />
   </TouchableOpacity>
 </GlobalizeProvider>
@@ -438,13 +446,14 @@ exports[`EmissionListItem renders correctly with car icon 1`] = `
       />
       <Ionicons
         color="#595D58"
-        name="md-car"
+        name="car"
         size={22}
         style={
           {
             "marginHorizontal": 16,
           }
         }
+        suppressHighlighting={true}
       />
     </View>
     <View
@@ -483,13 +492,14 @@ exports[`EmissionListItem renders correctly with car icon 1`] = `
     </View>
     <Ionicons
       color="#595D58"
-      name="ios-chevron-forward-outline"
+      name="chevron-forward-outline"
       size={18}
       style={
         {
           "marginHorizontal": 16,
         }
       }
+      suppressHighlighting={true}
     />
   </TouchableOpacity>
 </GlobalizeProvider>
@@ -535,13 +545,14 @@ exports[`EmissionListItem renders correctly with card icon 1`] = `
       />
       <Ionicons
         color="#595D58"
-        name="md-card"
+        name="card"
         size={22}
         style={
           {
             "marginHorizontal": 16,
           }
         }
+        suppressHighlighting={true}
       />
     </View>
     <View
@@ -580,13 +591,14 @@ exports[`EmissionListItem renders correctly with card icon 1`] = `
     </View>
     <Ionicons
       color="#595D58"
-      name="ios-chevron-forward-outline"
+      name="chevron-forward-outline"
       size={18}
       style={
         {
           "marginHorizontal": 16,
         }
       }
+      suppressHighlighting={true}
     />
   </TouchableOpacity>
 </GlobalizeProvider>
@@ -632,13 +644,14 @@ exports[`EmissionListItem renders correctly with chocolate icon 1`] = `
       />
       <Ionicons
         color="#595D58"
-        name="md-nutrition"
+        name="nutrition"
         size={22}
         style={
           {
             "marginHorizontal": 16,
           }
         }
+        suppressHighlighting={true}
       />
     </View>
     <View
@@ -677,13 +690,14 @@ exports[`EmissionListItem renders correctly with chocolate icon 1`] = `
     </View>
     <Ionicons
       color="#595D58"
-      name="ios-chevron-forward-outline"
+      name="chevron-forward-outline"
       size={18}
       style={
         {
           "marginHorizontal": 16,
         }
       }
+      suppressHighlighting={true}
     />
   </TouchableOpacity>
 </GlobalizeProvider>
@@ -729,13 +743,14 @@ exports[`EmissionListItem renders correctly with coffee icon 1`] = `
       />
       <Ionicons
         color="#595D58"
-        name="md-cafe"
+        name="cafe"
         size={22}
         style={
           {
             "marginHorizontal": 16,
           }
         }
+        suppressHighlighting={true}
       />
     </View>
     <View
@@ -774,13 +789,14 @@ exports[`EmissionListItem renders correctly with coffee icon 1`] = `
     </View>
     <Ionicons
       color="#595D58"
-      name="ios-chevron-forward-outline"
+      name="chevron-forward-outline"
       size={18}
       style={
         {
           "marginHorizontal": 16,
         }
       }
+      suppressHighlighting={true}
     />
   </TouchableOpacity>
 </GlobalizeProvider>
@@ -826,13 +842,14 @@ exports[`EmissionListItem renders correctly with electricity icon 1`] = `
       />
       <Ionicons
         color="#595D58"
-        name="md-flash"
+        name="flash"
         size={22}
         style={
           {
             "marginHorizontal": 16,
           }
         }
+        suppressHighlighting={true}
       />
     </View>
     <View
@@ -871,13 +888,14 @@ exports[`EmissionListItem renders correctly with electricity icon 1`] = `
     </View>
     <Ionicons
       color="#595D58"
-      name="ios-chevron-forward-outline"
+      name="chevron-forward-outline"
       size={18}
       style={
         {
           "marginHorizontal": 16,
         }
       }
+      suppressHighlighting={true}
     />
   </TouchableOpacity>
 </GlobalizeProvider>
@@ -923,13 +941,14 @@ exports[`EmissionListItem renders correctly with fish icon 1`] = `
       />
       <Ionicons
         color="#595D58"
-        name="md-nutrition"
+        name="nutrition"
         size={22}
         style={
           {
             "marginHorizontal": 16,
           }
         }
+        suppressHighlighting={true}
       />
     </View>
     <View
@@ -968,13 +987,14 @@ exports[`EmissionListItem renders correctly with fish icon 1`] = `
     </View>
     <Ionicons
       color="#595D58"
-      name="ios-chevron-forward-outline"
+      name="chevron-forward-outline"
       size={18}
       style={
         {
           "marginHorizontal": 16,
         }
       }
+      suppressHighlighting={true}
     />
   </TouchableOpacity>
 </GlobalizeProvider>
@@ -1020,13 +1040,14 @@ exports[`EmissionListItem renders correctly with full hd video icon 1`] = `
       />
       <Ionicons
         color="#595D58"
-        name="md-film"
+        name="film"
         size={22}
         style={
           {
             "marginHorizontal": 16,
           }
         }
+        suppressHighlighting={true}
       />
     </View>
     <View
@@ -1065,13 +1086,14 @@ exports[`EmissionListItem renders correctly with full hd video icon 1`] = `
     </View>
     <Ionicons
       color="#595D58"
-      name="ios-chevron-forward-outline"
+      name="chevron-forward-outline"
       size={18}
       style={
         {
           "marginHorizontal": 16,
         }
       }
+      suppressHighlighting={true}
     />
   </TouchableOpacity>
 </GlobalizeProvider>
@@ -1117,13 +1139,14 @@ exports[`EmissionListItem renders correctly with hd video icon 1`] = `
       />
       <Ionicons
         color="#595D58"
-        name="md-film"
+        name="film"
         size={22}
         style={
           {
             "marginHorizontal": 16,
           }
         }
+        suppressHighlighting={true}
       />
     </View>
     <View
@@ -1162,13 +1185,14 @@ exports[`EmissionListItem renders correctly with hd video icon 1`] = `
     </View>
     <Ionicons
       color="#595D58"
-      name="ios-chevron-forward-outline"
+      name="chevron-forward-outline"
       size={18}
       style={
         {
           "marginHorizontal": 16,
         }
       }
+      suppressHighlighting={true}
     />
   </TouchableOpacity>
 </GlobalizeProvider>
@@ -1214,13 +1238,14 @@ exports[`EmissionListItem renders correctly with longHaulFlight icon 1`] = `
       />
       <Ionicons
         color="#595D58"
-        name="md-airplane"
+        name="airplane"
         size={22}
         style={
           {
             "marginHorizontal": 16,
           }
         }
+        suppressHighlighting={true}
       />
     </View>
     <View
@@ -1259,13 +1284,14 @@ exports[`EmissionListItem renders correctly with longHaulFlight icon 1`] = `
     </View>
     <Ionicons
       color="#595D58"
-      name="ios-chevron-forward-outline"
+      name="chevron-forward-outline"
       size={18}
       style={
         {
           "marginHorizontal": 16,
         }
       }
+      suppressHighlighting={true}
     />
   </TouchableOpacity>
 </GlobalizeProvider>
@@ -1311,13 +1337,14 @@ exports[`EmissionListItem renders correctly with meal icon 1`] = `
       />
       <Ionicons
         color="#595D58"
-        name="md-restaurant"
+        name="restaurant"
         size={22}
         style={
           {
             "marginHorizontal": 16,
           }
         }
+        suppressHighlighting={true}
       />
     </View>
     <View
@@ -1356,13 +1383,14 @@ exports[`EmissionListItem renders correctly with meal icon 1`] = `
     </View>
     <Ionicons
       color="#595D58"
-      name="ios-chevron-forward-outline"
+      name="chevron-forward-outline"
       size={18}
       style={
         {
           "marginHorizontal": 16,
         }
       }
+      suppressHighlighting={true}
     />
   </TouchableOpacity>
 </GlobalizeProvider>
@@ -1408,13 +1436,14 @@ exports[`EmissionListItem renders correctly with mediumHaulFlight icon 1`] = `
       />
       <Ionicons
         color="#595D58"
-        name="md-airplane"
+        name="airplane"
         size={22}
         style={
           {
             "marginHorizontal": 16,
           }
         }
+        suppressHighlighting={true}
       />
     </View>
     <View
@@ -1453,13 +1482,14 @@ exports[`EmissionListItem renders correctly with mediumHaulFlight icon 1`] = `
     </View>
     <Ionicons
       color="#595D58"
-      name="ios-chevron-forward-outline"
+      name="chevron-forward-outline"
       size={18}
       style={
         {
           "marginHorizontal": 16,
         }
       }
+      suppressHighlighting={true}
     />
   </TouchableOpacity>
 </GlobalizeProvider>
@@ -1505,13 +1535,14 @@ exports[`EmissionListItem renders correctly with motorbike icon 1`] = `
       />
       <Ionicons
         color="#595D58"
-        name="md-bicycle"
+        name="bicycle"
         size={22}
         style={
           {
             "marginHorizontal": 16,
           }
         }
+        suppressHighlighting={true}
       />
     </View>
     <View
@@ -1550,13 +1581,14 @@ exports[`EmissionListItem renders correctly with motorbike icon 1`] = `
     </View>
     <Ionicons
       color="#595D58"
-      name="ios-chevron-forward-outline"
+      name="chevron-forward-outline"
       size={18}
       style={
         {
           "marginHorizontal": 16,
         }
       }
+      suppressHighlighting={true}
     />
   </TouchableOpacity>
 </GlobalizeProvider>
@@ -1602,13 +1634,14 @@ exports[`EmissionListItem renders correctly with redMeat icon 1`] = `
       />
       <Ionicons
         color="#595D58"
-        name="md-nutrition"
+        name="nutrition"
         size={22}
         style={
           {
             "marginHorizontal": 16,
           }
         }
+        suppressHighlighting={true}
       />
     </View>
     <View
@@ -1647,13 +1680,14 @@ exports[`EmissionListItem renders correctly with redMeat icon 1`] = `
     </View>
     <Ionicons
       color="#595D58"
-      name="ios-chevron-forward-outline"
+      name="chevron-forward-outline"
       size={18}
       style={
         {
           "marginHorizontal": 16,
         }
       }
+      suppressHighlighting={true}
     />
   </TouchableOpacity>
 </GlobalizeProvider>
@@ -1699,13 +1733,14 @@ exports[`EmissionListItem renders correctly with shirt icon 1`] = `
       />
       <Ionicons
         color="#595D58"
-        name="md-shirt"
+        name="shirt"
         size={22}
         style={
           {
             "marginHorizontal": 16,
           }
         }
+        suppressHighlighting={true}
       />
     </View>
     <View
@@ -1744,13 +1779,14 @@ exports[`EmissionListItem renders correctly with shirt icon 1`] = `
     </View>
     <Ionicons
       color="#595D58"
-      name="ios-chevron-forward-outline"
+      name="chevron-forward-outline"
       size={18}
       style={
         {
           "marginHorizontal": 16,
         }
       }
+      suppressHighlighting={true}
     />
   </TouchableOpacity>
 </GlobalizeProvider>
@@ -1796,13 +1832,14 @@ exports[`EmissionListItem renders correctly with shortHaulFlight icon 1`] = `
       />
       <Ionicons
         color="#595D58"
-        name="md-airplane"
+        name="airplane"
         size={22}
         style={
           {
             "marginHorizontal": 16,
           }
         }
+        suppressHighlighting={true}
       />
     </View>
     <View
@@ -1841,13 +1878,14 @@ exports[`EmissionListItem renders correctly with shortHaulFlight icon 1`] = `
     </View>
     <Ionicons
       color="#595D58"
-      name="ios-chevron-forward-outline"
+      name="chevron-forward-outline"
       size={18}
       style={
         {
           "marginHorizontal": 16,
         }
       }
+      suppressHighlighting={true}
     />
   </TouchableOpacity>
 </GlobalizeProvider>
@@ -1893,13 +1931,14 @@ exports[`EmissionListItem renders correctly with train icon 1`] = `
       />
       <Ionicons
         color="#595D58"
-        name="md-train"
+        name="train"
         size={22}
         style={
           {
             "marginHorizontal": 16,
           }
         }
+        suppressHighlighting={true}
       />
     </View>
     <View
@@ -1938,13 +1977,14 @@ exports[`EmissionListItem renders correctly with train icon 1`] = `
     </View>
     <Ionicons
       color="#595D58"
-      name="ios-chevron-forward-outline"
+      name="chevron-forward-outline"
       size={18}
       style={
         {
           "marginHorizontal": 16,
         }
       }
+      suppressHighlighting={true}
     />
   </TouchableOpacity>
 </GlobalizeProvider>
@@ -1990,13 +2030,14 @@ exports[`EmissionListItem renders correctly with ultra hd video icon 1`] = `
       />
       <Ionicons
         color="#595D58"
-        name="md-film"
+        name="film"
         size={22}
         style={
           {
             "marginHorizontal": 16,
           }
         }
+        suppressHighlighting={true}
       />
     </View>
     <View
@@ -2035,13 +2076,14 @@ exports[`EmissionListItem renders correctly with ultra hd video icon 1`] = `
     </View>
     <Ionicons
       color="#595D58"
-      name="ios-chevron-forward-outline"
+      name="chevron-forward-outline"
       size={18}
       style={
         {
           "marginHorizontal": 16,
         }
       }
+      suppressHighlighting={true}
     />
   </TouchableOpacity>
 </GlobalizeProvider>
@@ -2087,13 +2129,14 @@ exports[`EmissionListItem renders correctly with whiteMeat icon 1`] = `
       />
       <Ionicons
         color="#595D58"
-        name="md-nutrition"
+        name="nutrition"
         size={22}
         style={
           {
             "marginHorizontal": 16,
           }
         }
+        suppressHighlighting={true}
       />
     </View>
     <View
@@ -2132,13 +2175,14 @@ exports[`EmissionListItem renders correctly with whiteMeat icon 1`] = `
     </View>
     <Ionicons
       color="#595D58"
-      name="ios-chevron-forward-outline"
+      name="chevron-forward-outline"
       size={18}
       style={
         {
           "marginHorizontal": 16,
         }
       }
+      suppressHighlighting={true}
     />
   </TouchableOpacity>
 </GlobalizeProvider>

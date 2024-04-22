@@ -11,11 +11,11 @@
 // };
 
 // const iconOptions = {
-//   airplane: "md-airplane",
-//   restaurant: "md-restaurant",
-//   build: "md-build",
-//   circle: "md-play-circle",
-//   flash: "md-flash",
+//   airplane: "airplane",
+//   restaurant: "restaurant",
+//   build: "build",
+//   circle: "play-circle",
+//   flash: "flash",
 // };
 // const container: ViewStyle = { flexDirection: "row", margin: 20 };
 
@@ -31,7 +31,7 @@
 //         <Tag
 //           {...props}
 //           text={text("Title", "transport")}
-//           icon={select("Type of Icon", iconOptions, "md-airplane")}
+//           icon={select("Type of Icon", iconOptions, "airplane")}
 //         />
 //       </View>
 //     );

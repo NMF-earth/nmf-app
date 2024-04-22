@@ -26,6 +26,6 @@ it("Tag renders correctly with no icon", () => {
 /* WITH ICON */
 
 it("Tag renders correctly with airplane icon", () => {
-  const tree = create(<Tag {...props} icon="md-airplane" />).toJSON();
+  const tree = create(<Tag {...props} icon="airplane" />).toJSON();
   expect(tree).toMatchSnapshot();
 });

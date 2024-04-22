@@ -80,6 +80,7 @@ exports[`FaqScreen renders correctly 1`] = `
                 "color": "#3957D0",
               }
             }
+            suppressHighlighting={true}
           />
           <Text.H3
             style={
@@ -155,6 +156,7 @@ exports[`FaqScreen renders correctly 1`] = `
                 "color": "#3957D0",
               }
             }
+            suppressHighlighting={true}
           />
           <Text.H3
             style={
@@ -230,6 +232,7 @@ exports[`FaqScreen renders correctly 1`] = `
                 "color": "#3957D0",
               }
             }
+            suppressHighlighting={true}
           />
           <Text.H3
             style={
@@ -305,6 +308,7 @@ exports[`FaqScreen renders correctly 1`] = `
                 "color": "#3957D0",
               }
             }
+            suppressHighlighting={true}
           />
           <Text.H3
             style={
@@ -380,6 +384,7 @@ exports[`FaqScreen renders correctly 1`] = `
                 "color": "#3957D0",
               }
             }
+            suppressHighlighting={true}
           />
           <Text.H3
             style={
@@ -455,6 +460,7 @@ exports[`FaqScreen renders correctly 1`] = `
                 "color": "#3957D0",
               }
             }
+            suppressHighlighting={true}
           />
           <Text.H3
             style={
@@ -530,6 +536,7 @@ exports[`FaqScreen renders correctly 1`] = `
                 "color": "#3957D0",
               }
             }
+            suppressHighlighting={true}
           />
           <Text.H3
             style={
@@ -605,6 +612,7 @@ exports[`FaqScreen renders correctly 1`] = `
                 "color": "#3957D0",
               }
             }
+            suppressHighlighting={true}
           />
           <Text.H3
             style={

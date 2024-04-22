@@ -176,54 +176,54 @@ const getTranslationEmissionModelType = (emissionModelType: EmissionModelType): 
 const getIconFromModelType = (emissionModelType: EmissionModelType): string => {
   switch (emissionModelType) {
     case EmissionType.custom:
-      return "md-build";
+      return "build";
     case EmissionType.productScanned:
       return "barcode-sharp";
     case FoodType.coffee:
-      return "md-cafe";
+      return "cafe";
     case TransportType.shortHaulFlight:
     case TransportType.mediumHaulFlight:
     case TransportType.longHaulFlight:
-      return "md-airplane";
+      return "airplane";
     case TransportType.train:
-      return "md-train";
+      return "train";
     case TransportType.car:
-      return "md-car";
+      return "car";
     case TransportType.boat:
-      return "md-boat";
+      return "boat";
     case TransportType.motorbike:
-      return "md-bicycle";
+      return "bicycle";
     case TransportType.bus:
-      return "md-bus";
+      return "bus";
     case StreamingType.audioMP3:
-      return "md-musical-note";
+      return "musical-note";
     case StreamingType.HDVideo:
     case StreamingType.fullHDVideo:
     case StreamingType.ultraHDVideo:
-      return "md-film";
+      return "film";
   }
 
   if (isFoodEmission(emissionModelType)) {
-    return "md-nutrition";
+    return "nutrition";
   }
 
   if (isElectricityEmission(emissionModelType)) {
-    return "md-flash";
+    return "flash";
   }
 
   if (isMealEmission(emissionModelType)) {
-    return "md-restaurant";
+    return "restaurant";
   }
 
   if (isPurchaseEmission(emissionModelType)) {
-    return "md-card";
+    return "card";
   }
 
   if (isFashionEmission(emissionModelType)) {
-    return "md-shirt";
+    return "shirt";
   }
 
-  return "md-build";
+  return "build";
 };
 
 const isDarkModeEnabled = (): boolean => Appearance.getColorScheme() === "dark";

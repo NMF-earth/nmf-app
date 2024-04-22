@@ -29,7 +29,7 @@ interface EmissionListItemProps extends Partial<AnyEmission> {
 const EmissionListItem: React.FC<EmissionListItemProps> = ({
   isMitigated,
   name = "",
-  iconName = "md-car",
+  iconName = "car",
   title = "",
   co2value = 0,
   onPress,
@@ -45,6 +45,7 @@ const EmissionListItem: React.FC<EmissionListItemProps> = ({
       <View style={styles.iconContainer}>
         <View style={isMitigated ? styles.mitigatedCircle : styles.notMitigatedCircle} />
         <Ionicons
+          suppressHighlighting={true}
           name={iconName as keyof typeof Ionicons.glyphMap}
           size={22}
           style={styles.icon}
@@ -70,7 +71,8 @@ const EmissionListItem: React.FC<EmissionListItemProps> = ({
         </View>
       </View>
       <Ionicons
-        name={"ios-chevron-forward-outline"}
+        suppressHighlighting={true}
+        name={"chevron-forward-outline"}
         size={18}
         style={styles.icon}
         color={Colors.grey70}

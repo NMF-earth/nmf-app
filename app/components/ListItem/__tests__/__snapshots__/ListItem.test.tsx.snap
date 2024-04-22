@@ -30,8 +30,9 @@ exports[`<ListItem /> ListItem renders correctly both topLine and bottomLine 1`]
   </Text.Secondary>
   <Ionicons
     color="#878787"
-    name="ios-chevron-forward-outline"
+    name="chevron-forward-outline"
     size={14}
+    suppressHighlighting={true}
   />
 </TouchableOpacity>
 `;
@@ -62,8 +63,9 @@ exports[`<ListItem /> ListItem renders correctly wtesth bottomLine 1`] = `
   </Text.Secondary>
   <Ionicons
     color="#878787"
-    name="ios-chevron-forward-outline"
+    name="chevron-forward-outline"
     size={14}
+    suppressHighlighting={true}
   />
 </TouchableOpacity>
 `;
@@ -94,8 +96,9 @@ exports[`<ListItem /> ListItem renders correctly wtesth topLine 1`] = `
   </Text.Secondary>
   <Ionicons
     color="#878787"
-    name="ios-chevron-forward-outline"
+    name="chevron-forward-outline"
     size={14}
+    suppressHighlighting={true}
   />
 </TouchableOpacity>
 `;
@@ -122,8 +125,9 @@ exports[`<ListItem /> render 1`] = `
   </Text.Secondary>
   <Ionicons
     color="#878787"
-    name="ios-chevron-forward-outline"
+    name="chevron-forward-outline"
     size={14}
+    suppressHighlighting={true}
   />
 </TouchableOpacity>
 `;
