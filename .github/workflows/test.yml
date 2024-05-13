@@ -16,7 +16,7 @@ jobs:
 
       - uses: actions/checkout@v3
       - name: Measure Checkout
-        uses: green-coding-solutions/eco-ci-energy-estimation@v3 # use hash or @vX here (See note below)
+        uses: green-coding-solutions/eco-ci-energy-estimation@v3
         with:
           task: get-measurement
           label: 'checkout repository'
@@ -26,14 +26,14 @@ jobs:
         with:
           node-version: 16
       - name: Measure setup node
-        uses: green-coding-solutions/eco-ci-energy-estimation@v3 # use hash or @vX here (See note below)
+        uses: green-coding-solutions/eco-ci-energy-estimation@v3
         with:
           task: get-measurement
           label: 'setup node'
         continue-on-error: true
       - run: yarn install
       - name: Measure yarn Install
-        uses: green-coding-solutions/eco-ci-energy-estimation@v3 # use hash or @vX here (See note below)
+        uses: green-coding-solutions/eco-ci-energy-estimation@v3
         with:
           task: get-measurement
           label: 'yarn install'
@@ -42,7 +42,7 @@ jobs:
         with:
           cmd: ci
       - name: Measure yarn CI
-        uses: green-coding-solutions/eco-ci-energy-estimation@v3 # use hash or @vX here (See note below)
+        uses: green-coding-solutions/eco-ci-energy-estimation@v3
         with:
           task: get-measurement
           label: 'yarn ci'
