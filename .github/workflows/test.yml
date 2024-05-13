@@ -7,8 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write # this allows to show table and charts in PRs
-      packages: write # this allows Eco-CI to create a python packages cache
-      contents: read # this allows Eco-CI to read the python packages cache
     steps:
       - name: Initialize Energy Estimation
         uses: green-coding-solutions/eco-ci-energy-estimation@v3
