@@ -11,7 +11,7 @@ jobs:
       contents: read # this allows Eco-CI to read the python packages cache
     steps:
       - name: Initialize Energy Estimation
-        uses: green-coding-solutions/eco-ci-energy-estimation@v3 # use hash or @vX here (See note below)
+        uses: green-coding-solutions/eco-ci-energy-estimation@v3
         with:
           task: start-measurement
         continue-on-error: true
@@ -22,8 +22,7 @@ jobs:
         with:
           task: get-measurement
           label: 'checkout repository'
-        continue-on-error: true # recommended setting for production. See notes below.
-
+        continue-on-error: true
 
       - uses: actions/setup-node@v3
         with:
@@ -33,16 +32,14 @@ jobs:
         with:
           task: get-measurement
           label: 'setup node'
-        continue-on-error: true # recommended setting for production. See notes below.
-
+        continue-on-error: true
       - run: yarn install
       - name: Measure yarn Install
         uses: green-coding-solutions/eco-ci-energy-estimation@v3 # use hash or @vX here (See note below)
         with:
           task: get-measurement
           label: 'yarn install'
-        continue-on-error: true # recommended setting for production. See notes below.
-
+        continue-on-error: true
       - uses: borales/actions-yarn@v3.0.0
         with:
           cmd: ci
@@ -51,8 +48,7 @@ jobs:
         with:
           task: get-measurement
           label: 'yarn ci'
-        continue-on-error: true # recommended setting for production. See notes below.
-
+        continue-on-error: true
       - name: Display results
         uses: green-coding-solutions/eco-ci-energy-estimation@v3
         with:
@@ -60,8 +56,7 @@ jobs:
           pr-comment: true # will put a nice graphical table view in the PR comment
           show-carbon: true # will show the carbon values additional to energy
           send-data: true # set this to false if you do not want to use historical data view on https://metrics.green-coding.io/ci-index.html
-        continue-on-error: true # recommended setting for production. See notes below.
-
+        continue-on-error: true
 
 # publish.yml
 # name: Expo Publish
