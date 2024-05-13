@@ -1,6 +1,15 @@
 name: Run CI
 
-on: [push, pull_request]
+on:
+  push:
+    branches: [ "main" ]
+    paths-ignore:
+      - '**.md'
+      - '.vscode/*'
+  pull_request:
+    paths-ignore:
+      - '**.md'
+      - '.vscode/*'
 
 jobs:
   build:
