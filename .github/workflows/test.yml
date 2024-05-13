@@ -20,7 +20,7 @@ jobs:
         with:
           task: get-measurement
           label: 'checkout repository'
-        # continue-on-error: true # recommended setting for production. See notes below.
+        continue-on-error: true # recommended setting for production. See notes below.
 
 
       - uses: actions/setup-node@v3
@@ -31,7 +31,7 @@ jobs:
         with:
           task: get-measurement
           label: 'setup node'
-        # continue-on-error: true # recommended setting for production. See notes below.
+        continue-on-error: true # recommended setting for production. See notes below.
 
       - run: yarn install
       - name: Measure yarn Install
@@ -39,7 +39,7 @@ jobs:
         with:
           task: get-measurement
           label: 'yarn install'
-        # continue-on-error: true # recommended setting for production. See notes below.
+        continue-on-error: true # recommended setting for production. See notes below.
 
       - uses: borales/actions-yarn@v3.0.0
         with:
@@ -49,7 +49,7 @@ jobs:
         with:
           task: get-measurement
           label: 'yarn ci'
-        # continue-on-error: true # recommended setting for production. See notes below.
+        continue-on-error: true # recommended setting for production. See notes below.
 
       - name: Display results
         uses: green-coding-solutions/eco-ci-energy-estimation@v3
@@ -58,7 +58,7 @@ jobs:
           pr-comment: true # will put a nice graphical table view in the PR comment
           show-carbon: true # will show the carbon values additional to energy
           send-data: true # set this to false if you do not want to use historical data view on https://metrics.green-coding.io/ci-index.html
-        # continue-on-error: true # recommended setting for production. See notes below.
+        continue-on-error: true # recommended setting for production. See notes below.
 
 
 # publish.yml
