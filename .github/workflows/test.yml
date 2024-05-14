@@ -5,15 +5,56 @@ on: [push, pull_request]
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write # this allows to show table and charts in PRs
     steps:
+      - name: Initialize Energy Estimation
+        uses: green-coding-solutions/eco-ci-energy-estimation@v3
+        with:
+          task: start-measurement
+        continue-on-error: true
+
       - uses: actions/checkout@v3
+      - name: Measure Checkout
+        uses: green-coding-solutions/eco-ci-energy-estimation@v3
+        with:
+          task: get-measurement
+          label: 'checkout repository'
+        continue-on-error: true
+
       - uses: actions/setup-node@v3
         with:
           node-version: 16
+      - name: Measure setup node
+        uses: green-coding-solutions/eco-ci-energy-estimation@v3
+        with:
+          task: get-measurement
+          label: 'setup node'
+        continue-on-error: true
       - run: yarn install
+      - name: Measure yarn Install
+        uses: green-coding-solutions/eco-ci-energy-estimation@v3
+        with:
+          task: get-measurement
+          label: 'yarn install'
+        continue-on-error: true
       - uses: borales/actions-yarn@v3.0.0
         with:
           cmd: ci
+      - name: Measure yarn CI
+        uses: green-coding-solutions/eco-ci-energy-estimation@v3
+        with:
+          task: get-measurement
+          label: 'yarn ci'
+        continue-on-error: true
+      - name: Display results
+        uses: green-coding-solutions/eco-ci-energy-estimation@v3
+        with:
+          task: display-results
+          pr-comment: true # will put a nice graphical table view in the PR comment
+          show-carbon: true # will show the carbon values additional to energy
+          send-data: true # set this to false if you do not want to use historical data view on https://metrics.green-coding.io/ci-index.html
+        continue-on-error: true
 
 # publish.yml
 # name: Expo Publish
