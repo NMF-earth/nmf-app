@@ -61,12 +61,6 @@ For starting the app on a specific OS:
 $ yarn ios | yarn android
 ```
 
-Copy the 2 files that contain secrets and replace them with yours
-
-```bash
-$ cp .env.example .env
-```
-
 <br />
 
 ### 👩🏾‍💻 Development

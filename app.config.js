@@ -1,7 +1,7 @@
 //TODO: check if this import is needed, since secrets are in eas, it might not be the case
 import "dotenv/config";
 
-const buildNumber = 50;
+const buildNumber = 51;
 
 module.exports = () => {
   return {
@@ -11,7 +11,7 @@ module.exports = () => {
     slug: "not-my-fault-earth",
     privacy: "public",
     platforms: ["ios", "android"],
-    version: "0.10.0",
+    version: "0.10.1",
     orientation: "portrait",
     splash: {
       image: "./assets/images/splash.png",
@@ -40,10 +40,14 @@ module.exports = () => {
           config: {
             organization: "nmf",
             project: "nmf-earth",
-            authToken: process.env.SENTRY_AUTH_TOKEN,
           },
         },
       ],
     },
+    extra: {
+      eas: {
+        projectId: "9e1873d6-966a-49a3-83bc-10254ac6fb27"
+      }
+    }
   };
 };
