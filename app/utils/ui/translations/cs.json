@@ -267,18 +267,4 @@
     "BAR_CODE_SCAN_SCREEN_NO_CARBON_DATA_MESSAGE": "Bohužel, Open Food Fact nemá žádné údaje o uhlíkové stopě tohoto produktu. Zkuste jiný!",
     "SUB_CATEGORY_SELECTION_SCREEN_TITLE": "Přidejte emise",
     "SUB_CATEGORY_SELECTION_SCREEN_SELECT_SUB_CATEGORY": "Vyberte podkategorii",
-    "CALCULATION_GRAMS_SYMBOL": "g",
-    "CALCULATION_GRAMS_FULL": "gram(y)",
-    "CALCULATION_KILOGRAMS_SYMBOL": "kg",
-    "CALCULATION_KILOGRAMS_FULL": "kilogram(y)",
-    "CALCULATION_TONNES_SYMBOL": "t",
-    "CALCULATION_TONNES_FULL": "tuna(y)",
-    "CALCULATION_OUNCES_SYMBOL": "oz",
-    "CALCULATION_OUNCES_FULL": "unce(í)",
-    "CALCULATION_POUNDS_SYMBOL": "lb",
-    "CALCULATION_POUNDS_FULL": "libra(y)",
-    "CALCULATION_KILOMETERS_SYMBOL": "km",
-    "CALCULATION_KILOMETERS_FULL": "kilometr(y)",
-    "CALCULATION_MILES_SYMBOL": "mi",
-    "CALCULATION_MILES_FULL": "míle"
 }
