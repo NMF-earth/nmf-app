@@ -6,6 +6,7 @@ const supportedLanguages = {
   en: "English",
   fr: "Français",
   de: "Deutsche",
+  cs: "Čeština",
   sv: "Svenska",
   ru: "Pусский",
   pt: "Português",
