@@ -130,6 +130,38 @@ const fr = {
   ...RecurringEmissions.fr,
 };
 
+const cs = {
+  ...UI.cs,
+  ...Calculation.cs,
+  ...About.cs,
+  ...Notifications.cs,
+  ...MonthlyBudget.cs,
+  ...NoEmission.cs,
+  ...PermissionsRequest.cs,
+  ...OpenFoodFacts.cs,
+  ...Act.cs,
+  ...Budget.cs,
+  ...Emissions.cs,
+  ...Settings.cs,
+  ...ComingSoon.cs,
+  ...InfoModal.cs,
+  ...AddEmission.cs,
+  ...EmissionItem.cs,
+  ...Intro.cs,
+  ...SupportUs.cs,
+  ...MyLocation.cs,
+  ...ActDetail.cs,
+  ...MyData.cs,
+  ...CategorySelection.cs,
+  ...SubCategorySelection.cs,
+  ...BarCodeScan.cs,
+  ...MonthlyEmissions.cs,
+  ...Languages.cs,
+  ...Periodicity.cs,
+  ...Faq.cs,
+  ...RecurringEmissions.cs,
+};
+
 const sv = {
   ...UI.sv,
   ...Calculation.sv,
@@ -481,4 +513,4 @@ export interface TranslationKeys
     Faq.TranslationKeys,
     RecurringEmissions.TranslationKeys {}
 
-export { en, de, fr, sv, pt, es, pl, ru, da, zh, ms, it, ar };
+export { en, de, fr, sv, pt, es, pl, ru, da, zh, ms, it, ar, cs };
