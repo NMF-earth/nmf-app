@@ -1,6 +1,7 @@
 import en from "./en.json";
 import fr from "./fr.json";
 import de from "./de.json";
+import cs from "./cs.json";
 import sv from "./sv.json";
 import es from "./es.json";
 import pt from "./pt.json";
@@ -23,4 +24,4 @@ interface TranslationKeys {
   PERIODICITY_MODAL_SCREEN_CANCEL_NO_PERIODICITY: string;
 }
 
-export { en, fr, de, sv, es, pt, da, ru, pl, zh, ms, it, ar, TranslationKeys };
+export { en, fr, de, cs, sv, es, pt, da, ru, pl, zh, ms, it, ar, TranslationKeys };
