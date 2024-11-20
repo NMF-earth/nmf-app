@@ -23,6 +23,7 @@ const supportedLanguages: string[] = [
   "en",
   "fr",
   "de",
+  "cs",
   "sv",
   "da",
   "ru",
