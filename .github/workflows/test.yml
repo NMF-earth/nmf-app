@@ -33,7 +33,7 @@ jobs:
 
       - uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 18
       - name: Measure setup node
         uses: green-coding-solutions/eco-ci-energy-estimation@v3
         with:
