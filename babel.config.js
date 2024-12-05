@@ -21,5 +21,12 @@ module.exports = function (api) {
         },
       ],
     ],
+    overrides: [{
+      "plugins": [
+        ["@babel/plugin-transform-private-methods", {
+        "loose": true
+      }]
+      ]
+    }]
   };
 };

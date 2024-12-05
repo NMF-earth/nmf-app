@@ -1,0 +1,19 @@
+{
+    "FAQ_SCREEN_TITLE": "Časté dotazy",
+    "FAQ_SCREEN_ENTER_MANUALLY_QUESTION": "Proč musím své emise zadávat ručně?",
+    "FAQ_SCREEN_ENTER_MANUALLY_ANSWER": "Pracujeme na přidávání opakujících se emisí, ale nebudeme dělat víc, což znamená, že například nebudete moci automaticky vypočítat svou uhlíkovou stopu z vašich výdajů. Je to otravné svým designem, jako laskavá připomínka toho, abyste méně znečišťovali a spotřebovávali.",
+    "FAQ_SCREEN_GOAL_QUESTION": "jaký je tvůj cíl?",
+    "FAQ_SCREEN_GOAL_ANSWER": "Zmizet! Na rozdíl od technického průmyslu doufáme, že naši aplikaci po nějaké době přestanete používat. Jediným cílem NMF.earth je pomoci komukoli pochopit a snížit jeho uhlíkovou stopu. Jakmile se to podaří, doporučujeme vám pokračovat v této cestě bez našeho přičinění.  ",
+    "FAQ_SCREEN_STARTUP_QUESTION": "Jste startup?",
+    "FAQ_SCREEN_STARTUP_ANSWER": "Ne a NMF.earth nikdy nebude, je to prostě open-source vedlejší projekt, dokonce ani společnost. Startupy jsou z definice společnosti, které hledají exponenciální růst. Problém je v tom, že exponenciální růst je důvodem, proč máme globální oteplování.",
+    "FAQ_SCREEN_DATA_QUESTION": "Sbíráte moje data?",
+    "FAQ_SCREEN_DATA_ANSWER": "Ne, nesledujeme, co v aplikaci děláte, shromažďujeme pouze data o selhání, abychom mohli opravit chyby. Vezměte si šálek kávy a přečtěte si náš open-source kód, uvidíte, že nesledujeme nic z toho, co děláte, absolutně nic.",
+    "FAQ_SCREEN_VEGAN_QUESTION": "Proč povzbuzuješ lidi, aby byli vegetariáni / vegani / flexitariáni?",
+    "FAQ_SCREEN_VEGAN_ANSWER": "Průmyslový chov zvířat produkuje spoustu emisí CO2, ale nejen to, je to také strašné. Každý den je na jatkách přepraveno přibližně 160 milionů hospodářských zvířat po celém světě. Možná je to v pořádku pro vás, ale ne pro nás.",
+    "FAQ_SCREEN_NMF_QUESTION": "Proč NMF?",
+    "FAQ_SCREEN_NMF_ANSWER": "NMF je zkratka pro Not My Fault (Není Moje Chyba), otevřenou výzvu ke zpochybnění našeho moderního životního stylu a naší účasti na současné ekocidě.",
+    "FAQ_SCREEN_DIFFERENT_QUESTION": "V čem jste jiní?",
+    "FAQ_SCREEN_DIFFERENT_ANSWER": "Nesledujeme vaši aktivitu v aplikaci, nejsme společnost, takže se od vás nesnažíme dostat peníze, NMF.earth je pouze open-source projekt vytvořený náhodným klimatickým aktivistou z celého světa. Nevyužíváme ani psychologická zranitelnost, jako jsou bezedné zdroje nebo automatické přehrávání, abychom vám zabránili opustit aplikaci. Protože vás nesledujeme, velmi si vážíme jakékoli zpětné vazby, kterou nám můžete poskytnout. Chceme si udělat čas na to, abychom pochopili, co potřebujete a co pro vás zlepšit. Jste lidská bytost, ne řada čísel a statistik na obrazovce.",
+    "FAQ_SCREEN_GREEN_WASHING_QUESTION": "Dělají všichni greenwashing?",
+    "FAQ_SCREEN_GREEN_WASHING_ANSWER": "Ano, skoro. Všichni bychom měli spolupracovat v boji proti změně klimatu, takže mějte na paměti, že cokoli, co není open source, znamená byznys jako obvykle. Pokud vidíte, že některá organizace nesdílí všechno, znamená to, že zájem této organizace je motivován chamtivými zisky a přežitím, nikoli pomocí zmírňovat změnu klimatu a podporovat udržitelný životní styl. Nic neprodáváme a vše, co děláme, je 100% otevřené pro každého."
+}

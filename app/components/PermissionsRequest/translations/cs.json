@@ -1,0 +1,7 @@
+{
+    "PERMISSIONS_REQUEST_COMPONENT_OPEN_SETTINGS": "Otevřete nastavení",
+    "PERMISSIONS_REQUEST_COMPONENT_CAMERA_TITLE": "Žádný přístup ke kameře",
+    "PERMISSIONS_REQUEST_COMPONENT_CAMERA_SUBTITLE": "Chcete-li tuto funkci používat, dejte aplikaci NMF.earth v nastavení telefonu přístup k fotoaparátu.",
+    "PERMISSIONS_REQUEST_COMPONENT_NOTIFICATION_TITLE": "Nemáte oprávnění odesílat upozornění",
+    "PERMISSIONS_REQUEST_COMPONENT_NOTIFICATION_SUBTITLE": "Chcete-li tuto funkci používat, dejte aplikaci NMF.earth oprávnění k zasílání upozornění v nastavení telefonu."
+}

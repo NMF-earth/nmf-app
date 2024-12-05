@@ -1,0 +1,11 @@
+{
+    "BAR_CODE_SCAN_SCREEN_TITLE": "Naskenujte čárový kód",
+    "BAR_CODE_SCAN_SCREEN_LOADING": "Načítání",
+    "BAR_CODE_SCAN_SCREEN_ERROR_TITLE": "Něco se pokazilo",
+    "BAR_CODE_SCAN_SCREEN_ERROR_MESSAGE": "Ujistěte se, že máte internet a zkuste to znovu.",
+    "BAR_CODE_SCAN_SCREEN_TRY_AGAIN": "Zkuste to znovu",
+    "BAR_CODE_SCAN_SCREEN_CAMERA_PERMISSION_ASK": "Žádost o povolení fotoaparátu",
+    "BAR_CODE_SCAN_SCREEN_SCAN_PRODUCT": "Naskenujte čárový kód produktu",
+    "BAR_CODE_SCAN_SCREEN_NO_CARBON_DATA_TITLE": "U tohoto produktu nejsou žádné údaje o uhlíku",
+    "BAR_CODE_SCAN_SCREEN_NO_CARBON_DATA_MESSAGE": "Bohužel, Open Food Facts nemá žádné údaje o uhlíkové stopě tohoto produktu. Zkuste jiný!"
+ }

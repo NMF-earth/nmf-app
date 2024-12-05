@@ -11,9 +11,10 @@ import zh from "./zh.json";
 import ms from "./ms.json";
 import it from "./it.json";
 import ar from "./ar.json";
+import cs from "./cs.json";
 
 interface TranslationKeys {
   ACT_DETAIL_SCREEN_TITLE: string;
 }
 
-export { en, fr, de, sv, es, pt, da, ru, pl, zh, ms, it, ar, TranslationKeys };
+export { en, fr, de, sv, es, pt, da, ru, pl, zh, ms, it, ar, cs, TranslationKeys };

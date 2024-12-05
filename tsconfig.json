@@ -20,5 +20,6 @@
       "utils/*": ["app/utils/*"],
     }
   },
-  "extends": "expo/tsconfig.base"
+  "extends": "expo/tsconfig.base",
+  "exclude": ["app/**/*.test.tsx"]
 }

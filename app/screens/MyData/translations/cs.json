@@ -1,0 +1,14 @@
+{
+    "MY_DATA_SCREEN_TITLE": "Moje data",
+    "MY_DATA_SCREEN_BODY": "S NMF.earth vlastníte svá data. Znamená to, že vaše data neukládáme na žádný server, a tudíž k nim nikdo kromě vás nemá přístup. Žádný problém se zabezpečením, vaše data nikdy neopustí váš telefon. Znamená to však také, že máte na starosti záchranu svých dat v případě, že například ztratíte telefon. Chcete-li to provést, použijte tlačítko exportovat níže, abyste získali svá data a uložili je, kamkoli budete chtít. Chcete-li importovat stará data, stačí stisknout tlačítko importovat, ale buďte opatrní, protože to také odstraní vaše stará data.",
+    "MY_DATA_SCREEN_EXPORT_MY_DATA": "Exportovat moje data",
+    "MY_DATA_SCREEN_IMPORT_DATA": "Importovat data",
+    "MY_DATA_SCREEN_DELETE_ALL_MY_DATA": "Smazat všechna moje data",
+    "MY_DATA_SCREEN_ALERT_CONFIRM": "Potvrdit",
+    "MY_DATA_SCREEN_ALERT_CONFIRM_IMPORT": "Tato akce nahradí aktuální data",
+    "MY_DATA_SCREEN_ALERT_CONFIRM_DELETE": "Tato akce smaže všechna vaše data",
+    "MY_DATA_SCREEN_CANCEL": "Zrušit",
+    "MY_DATA_SCREEN_OK": "OK",
+    "MY_DATA_SCREEN_DELETE_SUCCESSFUL": "Vaše emise jsme úspěšně smazali.",
+    "MY_DATA_SCREEN_GENERIC_ERROR": "Něco se pokazilo."
+  }

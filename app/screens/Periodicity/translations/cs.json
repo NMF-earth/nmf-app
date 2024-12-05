@@ -1,0 +1,10 @@
+{
+    "PERIODICITY_MODAL_SCREEN_TITLE": "Periodicita",
+    "PERIODICITY_MODAL_SCREEN_OFTEN": "Jak často k této emisi dochází?",
+    "PERIODICITY_MODAL_SCREEN_WEEKLY": "Týdně",
+    "PERIODICITY_MODAL_SCREEN_MONTHLY": "Měsíčně",
+    "PERIODICITY_MODAL_SCREEN_DAYS": "Ve kterých dnech se tato emise opakuje?",
+    "PERIODICITY_MODAL_SCREEN_OCCURRENCES": "Výskyty?",
+    "PERIODICITY_MODAL_SCREEN_COMFIRM": "Potvrdit",
+    "PERIODICITY_MODAL_SCREEN_CANCEL_NO_PERIODICITY": "Zrušit - Bez periodicity"
+   }

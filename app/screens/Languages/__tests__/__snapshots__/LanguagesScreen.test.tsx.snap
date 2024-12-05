@@ -108,6 +108,28 @@ exports[`LanguageScreen renders correctly 1`] = `
             }
           }
         >
+          Čeština
+        </Text.Primary>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={[Function]}
+        style={
+          {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text.Primary
+          bold={true}
+          green={false}
+          numberOfLines={1}
+          style={
+            {
+              "paddingVertical": 20,
+            }
+          }
+        >
           Svenska
         </Text.Primary>
       </TouchableOpacity>

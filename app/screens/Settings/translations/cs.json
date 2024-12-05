@@ -1,0 +1,17 @@
+{
+    "SETTINGS_SCREEN_TAB_NAME": "Nastavení",
+    "SETTINGS_SCREEN_TITLE": "Nastavení",
+    "SETTINGS_SCREEN_ABOUT": "O nás",
+    "SETTINGS_SCREEN_NOTIFICATIONS": "Oznámení",
+    "SETTINGS_SCREEN_MY_LOCATION": "Moje poloha",
+    "SETTINGS_SCREEN_FAQ": "FAQ",
+    "SETTINGS_SCREEN_SUPPORT_US": "Podpořte nás!",
+    "SETTINGS_SCREEN_ROADMAP": "Plány vývoje",
+    "SETTINGS_SCREEN_FEEDBACK": "Zpětná vazba",
+    "SETTINGS_SCREEN_TERMS_OF_USE": "Podmínky použití",
+    "SETTINGS_SCREEN_APP_VERSION": "Verze %{version}",
+    "SETTINGS_SCREEN_IMPORT_SAVE_DELETE_DATA": "Moje data",
+    "SETTINGS_SCREEN_HELP_TRANSLATION": "Pomoc s překladem",
+    "SETTINGS_SCREEN_LANGUAGES": "Jazyky",
+    "SETTINGS_SCREEN_UNITS": "Metrické jednotky"
+  }
