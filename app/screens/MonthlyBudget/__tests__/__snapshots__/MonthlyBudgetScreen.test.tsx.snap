@@ -27,37 +27,116 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
           Slide to set your budget
         </Text.Primary>
       </View>
-      <RNCSlider
-        disabled={false}
-        inverted={false}
-        lowerLimit={-9007199254740991}
-        maximumTrackTintColor="#F9F9F9"
-        maximumValue={1000}
-        minimumTrackTintColor="#0F853B"
-        minimumValue={10}
-        onChange={null}
-        onRNCSliderAccessibilityAction={null}
-        onRNCSliderSlidingComplete={[Function]}
-        onRNCSliderSlidingStart={null}
-        onRNCSliderValueChange={null}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        step={0}
+      <View
+        onLayout={[Function]}
         style={
           [
             {
-              "marginTop": 14,
+              "defaultIndicatorIdle": {
+                "backgroundColor": "#C0C0C0",
+                "height": 10,
+                "width": 2,
+              },
+              "defaultIndicatorMarked": {
+                "backgroundColor": "#CCCCCC",
+                "height": 20,
+                "width": 5,
+              },
+              "defaultSlider": {},
+              "defaultSlideriOS": {
+                "height": 40,
+              },
+              "sliderMainContainer": {
+                "width": "100%",
+                "zIndex": 1,
+              },
+              "stepIndicatorElement": {
+                "alignContent": "center",
+                "alignItems": "center",
+              },
+              "stepNumber": {
+                "alignItems": "center",
+                "marginTop": 20,
+                "position": "absolute",
+              },
+              "stepsIndicator": {
+                "flex": 1,
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+                "top": 10,
+                "zIndex": 2,
+              },
+              "thumbImage": {
+                "alignContent": "center",
+                "alignItems": "center",
+                "position": "absolute",
+              },
+              "thumbImageContainer": {
+                "alignContent": "center",
+                "alignItems": "center",
+                "justifyContent": "center",
+                "position": "absolute",
+                "zIndex": 3,
+              },
+              "trackMarkContainer": {
+                "alignContent": "center",
+                "alignItems": "center",
+                "alignSelf": "center",
+                "justifyContent": "center",
+                "position": "absolute",
+                "zIndex": 3,
+              },
             },
+            [
+              {
+                "marginTop": 14,
+              },
+              {
+                "height": 40,
+              },
+            ],
             {
-              "height": 40,
+              "justifyContent": "center",
             },
           ]
         }
-        tapToSeek={false}
-        thumbTintColor="#0F853B"
-        upperLimit={9007199254740991}
-        value={0}
-      />
+      >
+        <RNCSlider
+          disabled={false}
+          inverted={false}
+          lowerLimit={-9007199254740991}
+          maximumTrackTintColor="#F9F9F9"
+          maximumValue={1000}
+          minimumTrackTintColor="#0F853B"
+          minimumValue={10}
+          onChange={[Function]}
+          onRNCSliderAccessibilityAction={null}
+          onRNCSliderSlidingComplete={[Function]}
+          onRNCSliderSlidingStart={null}
+          onRNCSliderValueChange={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          step={0}
+          style={
+            [
+              {
+                "width": 0,
+                "zIndex": 1,
+              },
+              {
+                "height": 40,
+              },
+              {
+                "alignContent": "center",
+                "alignItems": "center",
+              },
+            ]
+          }
+          tapToSeek={false}
+          thumbTintColor="#0F853B"
+          upperLimit={9007199254740991}
+        />
+      </View>
       <Text.Primary
         lightGray={true}
       >

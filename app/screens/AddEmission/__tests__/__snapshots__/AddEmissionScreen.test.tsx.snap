@@ -50,14 +50,6 @@ exports[`AddEmissionScreen renders correctly 1`] = `
       title="Name this emission "
       value=""
     />
-    <Modal
-      animationType="none"
-      hardwareAccelerated={false}
-      isVisible={false}
-      onHide={[Function]}
-      transparent={true}
-      visible={false}
-    />
     <View
       style={
         {
