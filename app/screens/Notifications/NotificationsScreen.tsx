@@ -41,7 +41,8 @@ const NotificationsScreen: NavStatelessComponent = () => {
         }
 
         if (value) {
-          await Notifications.scheduleNotificationAsync(notification);
+          // TODO: fix
+          // await Notifications.scheduleNotificationAsync(notification);
         } else {
           await Notifications.cancelAllScheduledNotificationsAsync();
         }

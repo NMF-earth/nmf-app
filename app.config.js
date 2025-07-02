@@ -6,8 +6,19 @@ const buildNumber = 51;
 module.exports = () => {
   return {
     name: "NMF.earth",
-    plugins: ["sentry-expo",
-              "expo-localization"],
+    plugins: [
+      "expo-localization",
+      "expo-asset",
+      "expo-font",
+      [ "expo-camera",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera",
+          "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone",
+          "recordAudioAndroid": true
+        }
+      ]
+    ],
+    newArchEnabled: true,
     slug: "not-my-fault-earth",
     privacy: "public",
     platforms: ["ios", "android"],
@@ -22,7 +33,9 @@ module.exports = () => {
       fallbackToCacheTimeout: 0,
     },
     assetBundlePatterns: ["**/*"],
+    jsEngine: "hermes",
     ios: {
+      jsEngine: "jsc",
       icon: "./assets/images/ios.icon.png",
       bundleIdentifier: "nmf.earth",
       supportsTablet: true,

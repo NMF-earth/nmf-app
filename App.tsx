@@ -8,7 +8,6 @@ import { locale as localeExpo } from "expo-localization";
 import { includes } from "ramda";
 import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
 import ExpoClientConfig from "expo-constants";
-import * as Sentry from "sentry-expo";
 import { Provider } from "react-redux";
 import { enableScreens } from "react-native-screens";
 
@@ -18,6 +17,23 @@ import StoreReviewChecker from "components/StoreReviewChecker";
 import { loadGlobalize } from "./i18";
 import AppNavigator from "./app/navigation/Navigator/AppNavigator";
 import store from "./app/redux/store";
+import * as Sentry from '@sentry/react-native';
+
+Sentry.init({
+  dsn: 'https://cccb51ebcb7a465a8b8c56621b68c2cb@o326365.ingest.us.sentry.io/1833935',
+
+  // Adds more context data to events (IP address, cookies, user, etc.)
+  // For more information, visit: https://docs.sentry.io/platforms/react-native/data-management/data-collected/
+  sendDefaultPii: true,
+
+  // Configure Session Replay
+  replaysSessionSampleRate: 0.1,
+  replaysOnErrorSampleRate: 1,
+  integrations: [Sentry.mobileReplayIntegration(), Sentry.feedbackIntegration()],
+
+  // uncomment the line below to enable Spotlight (https://spotlightjs.com)
+  // spotlight: __DEV__,
+});
 
 const supportedLanguages: string[] = [
   "en",
@@ -48,7 +64,6 @@ if (!__DEV__) {
   /* TODO: change secret.dsn to Constants.manifest.extra.sentryPublicDsn */
   Sentry.init({
     dsn: process.env.SENTRY_DSN,
-    enableInExpoDevelopment: false,
     debug: true,
     release,
   });

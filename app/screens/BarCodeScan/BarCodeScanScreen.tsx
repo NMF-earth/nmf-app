@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigation } from "@react-navigation/native";
 import { ActivityIndicator, View } from "react-native";
-import { BarCodeScanner } from "expo-barcode-scanner";
+import { CameraView, CameraType, useCameraPermissions } from "expo-camera";
 import { is, path, pathOr, both, complement, equals } from "ramda";
 import constants from "expo-constants";
 
@@ -39,10 +39,12 @@ const BarCodeScanScreen = ({ language = "" }: LocalizationContextProps) => {
   const { version, ios, android } = constants.expoConfig;
   const buildNumber = platform.isIOS ? ios.buildNumber : android.versionCode;
   const platformType = platform.isIOS ? "iOS" : "Android";
+  // TODO:
+  const [permission, requestPermission] = useCameraPermissions();
 
   useEffect(() => {
     (async () => {
-      const { status } = await BarCodeScanner.requestPermissionsAsync();
+      const { status } = await requestPermission();
       setHasPermission(status === "granted");
     })();
   }, []);
@@ -113,11 +115,11 @@ const BarCodeScanScreen = ({ language = "" }: LocalizationContextProps) => {
       });
   };
 
-  if (hasPermission === null) {
+  if (permission === null) {
     return <View style={styles.container}></View>;
   }
 
-  if (!hasPermission) {
+  if (!permission) {
     return <PermissionsRequest type="camera" />;
   }
 
@@ -175,9 +177,9 @@ const BarCodeScanScreen = ({ language = "" }: LocalizationContextProps) => {
         <Text.H2 center style={styles.scanProductText}>
           {t("BAR_CODE_SCAN_SCREEN_SCAN_PRODUCT")}
         </Text.H2>
-        <BarCodeScanner
+        <CameraView
           style={styles.scanner}
-          onBarCodeScanned={scanned ? undefined : handleBarCodeScanned}
+          // onBarCodeScanned={scanned ? undefined : handleBarCodeScanned}
         />
         {__DEV__ ? (
           <Button.Secondary
