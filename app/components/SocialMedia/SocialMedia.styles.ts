@@ -9,8 +9,9 @@ export default StyleSheet.create({
   box: {
     flex: 1,
     flexDirection: "row",
-    justifyContent: "space-between",
+    justifyContent: "center",
     maxWidth: 200,
+    gap: 40,
     paddingBottom: 50,
   },
 });
