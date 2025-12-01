@@ -35,7 +35,11 @@ exports[`<OpenFoodFacts /> render correctly 1`] = `
     >
       <Image
         resizeMode="contain"
-        source={1}
+        source={
+          {
+            "testUri": "../../../assets/images/open-food-fact/nutriscore-a.png",
+          }
+        }
         style={
           {
             "alignSelf": "center",
@@ -55,7 +59,11 @@ exports[`<OpenFoodFacts /> render correctly 1`] = `
     >
       <Image
         resizeMode="contain"
-        source={1}
+        source={
+          {
+            "testUri": "../../../assets/images/open-food-fact/nova-unknown.png",
+          }
+        }
         style={
           {
             "alignSelf": "center",
@@ -75,7 +83,11 @@ exports[`<OpenFoodFacts /> render correctly 1`] = `
     >
       <Image
         resizeMode="contain"
-        source={1}
+        source={
+          {
+            "testUri": "../../../assets/images/open-food-fact/ecoscore-a.png",
+          }
+        }
         style={
           {
             "alignSelf": "center",
@@ -124,7 +136,11 @@ exports[`<OpenFoodFacts /> render nothing if bad data passed 1`] = `
     >
       <Image
         resizeMode="contain"
-        source={1}
+        source={
+          {
+            "testUri": "../../../assets/images/open-food-fact/nutriscore-unknown.png",
+          }
+        }
         style={
           {
             "alignSelf": "center",
@@ -144,7 +160,11 @@ exports[`<OpenFoodFacts /> render nothing if bad data passed 1`] = `
     >
       <Image
         resizeMode="contain"
-        source={1}
+        source={
+          {
+            "testUri": "../../../assets/images/open-food-fact/nova-unknown.png",
+          }
+        }
         style={
           {
             "alignSelf": "center",
@@ -164,7 +184,11 @@ exports[`<OpenFoodFacts /> render nothing if bad data passed 1`] = `
     >
       <Image
         resizeMode="contain"
-        source={1}
+        source={
+          {
+            "testUri": "../../../assets/images/open-food-fact/ecoscore-unknown.png",
+          }
+        }
         style={
           {
             "alignSelf": "center",

@@ -104,7 +104,11 @@ exports[`SettingsScreen renders correctly 1`] = `
     >
       <Image
         resizeMode="contain"
-        source={1}
+        source={
+          {
+            "testUri": "../../../assets/images/logos/nmf.png",
+          }
+        }
         style={
           {
             "width": "50%",
