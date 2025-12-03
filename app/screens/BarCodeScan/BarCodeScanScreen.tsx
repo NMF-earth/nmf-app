@@ -45,7 +45,7 @@ const BarCodeScanScreen = ({ language = "" }: LocalizationContextProps) => {
     (async () => {
       await requestPermission();
     })();
-  }, []);
+  }, [requestPermission]);
 
   const onPressTryAgain = () => {
     setError(false);
