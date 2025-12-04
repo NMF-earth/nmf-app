@@ -10,7 +10,10 @@ import navigationOptions from "./FaqScreen.navigationOptions";
 
 const FaqScreen: NavStatelessComponent = () => {
   return (
-    <ScrollView style={styles.container}>
+    <ScrollView
+      style={styles.container}
+      contentContainerStyle={styles.contentContainer}
+    >
       <Accordion>
         {content.map((content, index) => (
           <Accordion.Item key={index} title={content.title}>
