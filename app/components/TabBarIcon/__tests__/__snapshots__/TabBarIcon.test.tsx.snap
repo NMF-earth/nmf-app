@@ -5,6 +5,5 @@ exports[`renders correctly 1`] = `
   color="#878787"
   name="ios-information-circle"
   size={26}
-  suppressHighlighting={true}
 />
 `;
