@@ -20,7 +20,7 @@ const SelectableListItem: React.FC<Props> = ({ selected, title, onPress }) => {
         {title}
       </Text.Primary>
       {selected && (
-        <Ionicons suppressHighlighting={true} name={"checkmark"} size={26} style={styles.icon} color={Colors.primary} />
+        <Ionicons name={"checkmark"} size={26} style={styles.icon} color={Colors.primary} />
       )}
     </TouchableOpacity>
   );
