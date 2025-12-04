@@ -38,36 +38,8 @@ exports[`FaqScreen renders correctly 1`] = `
           ]
         }
       >
-        <View
-          accessibilityState={
-            {
-              "busy": undefined,
-              "checked": undefined,
-              "disabled": undefined,
-              "expanded": undefined,
-              "selected": undefined,
-            }
-          }
-          accessibilityValue={
-            {
-              "max": undefined,
-              "min": undefined,
-              "now": undefined,
-              "text": undefined,
-            }
-          }
-          accessible={true}
-          collapsable={false}
-          focusable={true}
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
+        <TouchableOpacity
+          onPress={[Function]}
           style={
             {
               "alignItems": "center",
@@ -84,7 +56,6 @@ exports[`FaqScreen renders correctly 1`] = `
                 "color": "#3957D0",
               }
             }
-            suppressHighlighting={true}
           />
           <Text.H3
             style={
@@ -98,7 +69,7 @@ exports[`FaqScreen renders correctly 1`] = `
           >
             Are you a startup?
           </Text.H3>
-        </View>
+        </TouchableOpacity>
       </View>
       <View
         style={
@@ -114,36 +85,8 @@ exports[`FaqScreen renders correctly 1`] = `
           ]
         }
       >
-        <View
-          accessibilityState={
-            {
-              "busy": undefined,
-              "checked": undefined,
-              "disabled": undefined,
-              "expanded": undefined,
-              "selected": undefined,
-            }
-          }
-          accessibilityValue={
-            {
-              "max": undefined,
-              "min": undefined,
-              "now": undefined,
-              "text": undefined,
-            }
-          }
-          accessible={true}
-          collapsable={false}
-          focusable={true}
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
+        <TouchableOpacity
+          onPress={[Function]}
           style={
             {
               "alignItems": "center",
@@ -160,7 +103,6 @@ exports[`FaqScreen renders correctly 1`] = `
                 "color": "#3957D0",
               }
             }
-            suppressHighlighting={true}
           />
           <Text.H3
             style={
@@ -174,7 +116,7 @@ exports[`FaqScreen renders correctly 1`] = `
           >
             Are you collecting my data?
           </Text.H3>
-        </View>
+        </TouchableOpacity>
       </View>
       <View
         style={
@@ -190,36 +132,8 @@ exports[`FaqScreen renders correctly 1`] = `
           ]
         }
       >
-        <View
-          accessibilityState={
-            {
-              "busy": undefined,
-              "checked": undefined,
-              "disabled": undefined,
-              "expanded": undefined,
-              "selected": undefined,
-            }
-          }
-          accessibilityValue={
-            {
-              "max": undefined,
-              "min": undefined,
-              "now": undefined,
-              "text": undefined,
-            }
-          }
-          accessible={true}
-          collapsable={false}
-          focusable={true}
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
+        <TouchableOpacity
+          onPress={[Function]}
           style={
             {
               "alignItems": "center",
@@ -236,7 +150,6 @@ exports[`FaqScreen renders correctly 1`] = `
                 "color": "#3957D0",
               }
             }
-            suppressHighlighting={true}
           />
           <Text.H3
             style={
@@ -250,7 +163,7 @@ exports[`FaqScreen renders correctly 1`] = `
           >
             What is your goal?
           </Text.H3>
-        </View>
+        </TouchableOpacity>
       </View>
       <View
         style={
@@ -266,36 +179,8 @@ exports[`FaqScreen renders correctly 1`] = `
           ]
         }
       >
-        <View
-          accessibilityState={
-            {
-              "busy": undefined,
-              "checked": undefined,
-              "disabled": undefined,
-              "expanded": undefined,
-              "selected": undefined,
-            }
-          }
-          accessibilityValue={
-            {
-              "max": undefined,
-              "min": undefined,
-              "now": undefined,
-              "text": undefined,
-            }
-          }
-          accessible={true}
-          collapsable={false}
-          focusable={true}
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
+        <TouchableOpacity
+          onPress={[Function]}
           style={
             {
               "alignItems": "center",
@@ -312,7 +197,6 @@ exports[`FaqScreen renders correctly 1`] = `
                 "color": "#3957D0",
               }
             }
-            suppressHighlighting={true}
           />
           <Text.H3
             style={
@@ -326,7 +210,7 @@ exports[`FaqScreen renders correctly 1`] = `
           >
             How are you different?
           </Text.H3>
-        </View>
+        </TouchableOpacity>
       </View>
       <View
         style={
@@ -342,36 +226,8 @@ exports[`FaqScreen renders correctly 1`] = `
           ]
         }
       >
-        <View
-          accessibilityState={
-            {
-              "busy": undefined,
-              "checked": undefined,
-              "disabled": undefined,
-              "expanded": undefined,
-              "selected": undefined,
-            }
-          }
-          accessibilityValue={
-            {
-              "max": undefined,
-              "min": undefined,
-              "now": undefined,
-              "text": undefined,
-            }
-          }
-          accessible={true}
-          collapsable={false}
-          focusable={true}
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
+        <TouchableOpacity
+          onPress={[Function]}
           style={
             {
               "alignItems": "center",
@@ -388,7 +244,6 @@ exports[`FaqScreen renders correctly 1`] = `
                 "color": "#3957D0",
               }
             }
-            suppressHighlighting={true}
           />
           <Text.H3
             style={
@@ -402,7 +257,7 @@ exports[`FaqScreen renders correctly 1`] = `
           >
             Is everyone doing greenwashing?
           </Text.H3>
-        </View>
+        </TouchableOpacity>
       </View>
       <View
         style={
@@ -418,36 +273,8 @@ exports[`FaqScreen renders correctly 1`] = `
           ]
         }
       >
-        <View
-          accessibilityState={
-            {
-              "busy": undefined,
-              "checked": undefined,
-              "disabled": undefined,
-              "expanded": undefined,
-              "selected": undefined,
-            }
-          }
-          accessibilityValue={
-            {
-              "max": undefined,
-              "min": undefined,
-              "now": undefined,
-              "text": undefined,
-            }
-          }
-          accessible={true}
-          collapsable={false}
-          focusable={true}
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
+        <TouchableOpacity
+          onPress={[Function]}
           style={
             {
               "alignItems": "center",
@@ -464,7 +291,6 @@ exports[`FaqScreen renders correctly 1`] = `
                 "color": "#3957D0",
               }
             }
-            suppressHighlighting={true}
           />
           <Text.H3
             style={
@@ -478,7 +304,7 @@ exports[`FaqScreen renders correctly 1`] = `
           >
             Why NMF?
           </Text.H3>
-        </View>
+        </TouchableOpacity>
       </View>
       <View
         style={
@@ -494,36 +320,8 @@ exports[`FaqScreen renders correctly 1`] = `
           ]
         }
       >
-        <View
-          accessibilityState={
-            {
-              "busy": undefined,
-              "checked": undefined,
-              "disabled": undefined,
-              "expanded": undefined,
-              "selected": undefined,
-            }
-          }
-          accessibilityValue={
-            {
-              "max": undefined,
-              "min": undefined,
-              "now": undefined,
-              "text": undefined,
-            }
-          }
-          accessible={true}
-          collapsable={false}
-          focusable={true}
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
+        <TouchableOpacity
+          onPress={[Function]}
           style={
             {
               "alignItems": "center",
@@ -540,7 +338,6 @@ exports[`FaqScreen renders correctly 1`] = `
                 "color": "#3957D0",
               }
             }
-            suppressHighlighting={true}
           />
           <Text.H3
             style={
@@ -554,7 +351,7 @@ exports[`FaqScreen renders correctly 1`] = `
           >
             Why do I have to enter manually my emissions?
           </Text.H3>
-        </View>
+        </TouchableOpacity>
       </View>
       <View
         style={
@@ -570,36 +367,8 @@ exports[`FaqScreen renders correctly 1`] = `
           ]
         }
       >
-        <View
-          accessibilityState={
-            {
-              "busy": undefined,
-              "checked": undefined,
-              "disabled": undefined,
-              "expanded": undefined,
-              "selected": undefined,
-            }
-          }
-          accessibilityValue={
-            {
-              "max": undefined,
-              "min": undefined,
-              "now": undefined,
-              "text": undefined,
-            }
-          }
-          accessible={true}
-          collapsable={false}
-          focusable={true}
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
+        <TouchableOpacity
+          onPress={[Function]}
           style={
             {
               "alignItems": "center",
@@ -616,7 +385,6 @@ exports[`FaqScreen renders correctly 1`] = `
                 "color": "#3957D0",
               }
             }
-            suppressHighlighting={true}
           />
           <Text.H3
             style={
@@ -630,7 +398,7 @@ exports[`FaqScreen renders correctly 1`] = `
           >
             Why do you encourage people to be vegetarian / vegan / flexitarian ?
           </Text.H3>
-        </View>
+        </TouchableOpacity>
       </View>
     </View>
   </View>
