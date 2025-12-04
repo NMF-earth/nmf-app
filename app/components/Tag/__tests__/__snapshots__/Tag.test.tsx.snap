@@ -28,7 +28,6 @@ exports[`Tag renders correctly with airplane icon 1`] = `
         "marginRight": 16,
       }
     }
-    suppressHighlighting={true}
   />
   <View
     style={
@@ -51,7 +50,6 @@ exports[`Tag renders correctly with airplane icon 1`] = `
     color="#0F853B"
     name="chevron-forward"
     size={20}
-    suppressHighlighting={true}
   />
 </TouchableOpacity>
 `;
@@ -96,7 +94,6 @@ exports[`Tag renders correctly with no icon 1`] = `
     color="#0F853B"
     name="chevron-forward"
     size={20}
-    suppressHighlighting={true}
   />
 </TouchableOpacity>
 `;

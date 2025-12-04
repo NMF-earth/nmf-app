@@ -1,4 +1,5 @@
 import React from "react";
+import { TouchableOpacity } from "react-native";
 import { useSelector } from "react-redux";
 import { pathOr } from "ramda";
 import { Ionicons } from "@expo/vector-icons";
@@ -20,13 +21,9 @@ const InfoButton: React.FC = () => {
     useSelector((state) => emissions.selectors.getEmissionById(state, emissionId)) || {};
 
   return (
-    <Ionicons
-      suppressHighlighting={true}
-      name="information-circle"
-      size={26}
-      style={styles.infoIcon}
-      onPress={() => navigator.openInfoModal({ emissionModelType })}
-    />
+    <TouchableOpacity onPress={() => navigator.openInfoModal({ emissionModelType })}>
+      <Ionicons name="information-circle" size={26} style={styles.infoIcon} />
+    </TouchableOpacity>
   );
 };
 

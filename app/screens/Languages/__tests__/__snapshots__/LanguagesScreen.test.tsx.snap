@@ -42,7 +42,6 @@ exports[`LanguageScreen renders correctly 1`] = `
               "marginTop": 18,
             }
           }
-          suppressHighlighting={true}
         />
       </TouchableOpacity>
       <TouchableOpacity

@@ -19,7 +19,6 @@ const Tag: React.FC<Props> = ({ text, onPress, icon }) => {
   if (icon) {
     iconItem = (
       <Ionicons
-        suppressHighlighting={true}
         name={icon as keyof typeof Ionicons.glyphMap}
         size={32}
         style={styles.mainIcon}
@@ -34,7 +33,7 @@ const Tag: React.FC<Props> = ({ text, onPress, icon }) => {
       <View style={styles.textContainer}>
         <Text.Primary style={styles.text}>{text}</Text.Primary>
       </View>
-      <Ionicons suppressHighlighting={true} name={"chevron-forward"} size={20} color={Colors.primary} />
+      <Ionicons name={"chevron-forward"} size={20} color={Colors.primary} />
     </TouchableOpacity>
   );
 };

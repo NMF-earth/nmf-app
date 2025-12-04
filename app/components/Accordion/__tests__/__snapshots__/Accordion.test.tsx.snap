@@ -24,36 +24,8 @@ exports[`Accordion renders correctly 1`] = `
       ]
     }
   >
-    <View
-      accessibilityState={
-        {
-          "busy": undefined,
-          "checked": undefined,
-          "disabled": undefined,
-          "expanded": undefined,
-          "selected": undefined,
-        }
-      }
-      accessibilityValue={
-        {
-          "max": undefined,
-          "min": undefined,
-          "now": undefined,
-          "text": undefined,
-        }
-      }
-      accessible={true}
-      collapsable={false}
-      focusable={true}
-      onBlur={[Function]}
-      onClick={[Function]}
-      onFocus={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
+    <TouchableOpacity
+      onPress={[Function]}
       style={
         {
           "alignItems": "center",
@@ -70,7 +42,6 @@ exports[`Accordion renders correctly 1`] = `
             "color": "#3957D0",
           }
         }
-        suppressHighlighting={true}
       />
       <Text.H3
         style={
@@ -84,7 +55,7 @@ exports[`Accordion renders correctly 1`] = `
       >
         Test title 1
       </Text.H3>
-    </View>
+    </TouchableOpacity>
   </View>
   <View
     style={
@@ -100,36 +71,8 @@ exports[`Accordion renders correctly 1`] = `
       ]
     }
   >
-    <View
-      accessibilityState={
-        {
-          "busy": undefined,
-          "checked": undefined,
-          "disabled": undefined,
-          "expanded": undefined,
-          "selected": undefined,
-        }
-      }
-      accessibilityValue={
-        {
-          "max": undefined,
-          "min": undefined,
-          "now": undefined,
-          "text": undefined,
-        }
-      }
-      accessible={true}
-      collapsable={false}
-      focusable={true}
-      onBlur={[Function]}
-      onClick={[Function]}
-      onFocus={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
+    <TouchableOpacity
+      onPress={[Function]}
       style={
         {
           "alignItems": "center",
@@ -146,7 +89,6 @@ exports[`Accordion renders correctly 1`] = `
             "color": "#3957D0",
           }
         }
-        suppressHighlighting={true}
       />
       <Text.H3
         style={
@@ -160,7 +102,7 @@ exports[`Accordion renders correctly 1`] = `
       >
         Test title 2
       </Text.H3>
-    </View>
+    </TouchableOpacity>
   </View>
 </View>
 `;

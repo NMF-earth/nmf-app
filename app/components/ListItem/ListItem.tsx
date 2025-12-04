@@ -28,7 +28,7 @@ const ListItem: React.FC<Props> = ({ title, onPress, showTopLine, showBottomLine
   return (
     <TouchableOpacity onPress={onPress} style={containerStyle}>
       <Text.Secondary numberOfLines={1}>{title}</Text.Secondary>
-      <Ionicons suppressHighlighting={true} name={"chevron-forward-outline"} size={14} color={Colors.black50} />
+      <Ionicons name={"chevron-forward-outline"} size={14} color={Colors.black50} />
     </TouchableOpacity>
   );
 };

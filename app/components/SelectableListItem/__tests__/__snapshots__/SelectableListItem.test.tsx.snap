@@ -31,7 +31,6 @@ exports[`<SelectableListItem /> render 1`] = `
         "marginTop": 18,
       }
     }
-    suppressHighlighting={true}
   />
 </TouchableOpacity>
 `;
@@ -67,7 +66,6 @@ exports[`<SelectableListItem /> render if not selected 1`] = `
         "marginTop": 18,
       }
     }
-    suppressHighlighting={true}
   />
 </TouchableOpacity>
 `;

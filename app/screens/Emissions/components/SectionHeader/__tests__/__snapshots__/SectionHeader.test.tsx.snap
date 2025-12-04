@@ -38,7 +38,6 @@ exports[`SectionHeader should render when date 1`] = `
     name="chevron-forward-outline"
     size={24}
     style={{}}
-    suppressHighlighting={true}
   />
 </TouchableOpacity>
 `;
@@ -81,7 +80,6 @@ exports[`SectionHeader should render when title 1`] = `
     name="chevron-forward-outline"
     size={24}
     style={{}}
-    suppressHighlighting={true}
   />
 </TouchableOpacity>
 `;

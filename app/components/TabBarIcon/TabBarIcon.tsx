@@ -11,7 +11,6 @@ interface Props {
 export default function TabBarIcon(props: Props): ReactElement {
   return (
     <Ionicons
-      suppressHighlighting={true}
       name={props.name as keyof typeof Ionicons.glyphMap}
       size={26}
       color={props.focused ? Colors.primary : Colors.black50}

@@ -12,7 +12,7 @@ import { RecurringEmission, Emission, EmissionType } from "interfaces";
 import Text from "../Text";
 import styles from "./EmissionListItem.styles";
 
-interface AnyEmission extends RecurringEmission, Emission {}
+interface AnyEmission extends RecurringEmission, Emission { }
 
 interface EmissionListItemProps extends Partial<AnyEmission> {
   title: string;
@@ -45,7 +45,6 @@ const EmissionListItem: React.FC<EmissionListItemProps> = ({
       <View style={styles.iconContainer}>
         <View style={isMitigated ? styles.mitigatedCircle : styles.notMitigatedCircle} />
         <Ionicons
-          suppressHighlighting={true}
           name={iconName as keyof typeof Ionicons.glyphMap}
           size={22}
           style={styles.icon}
@@ -71,7 +70,6 @@ const EmissionListItem: React.FC<EmissionListItemProps> = ({
         </View>
       </View>
       <Ionicons
-        suppressHighlighting={true}
         name={"chevron-forward-outline"}
         size={18}
         style={styles.icon}

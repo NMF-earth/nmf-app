@@ -111,13 +111,15 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
             bold={true}
           >
             Average monthly emissions per capita in a sample of countries 
-            <Ionicons
-              color="#3957D0"
-              name="information-circle"
+            <TouchableOpacity
               onPress={[Function]}
-              size={26}
-              suppressHighlighting={true}
-            />
+            >
+              <Ionicons
+                color="#3957D0"
+                name="information-circle"
+                size={26}
+              />
+            </TouchableOpacity>
           </Text.Primary>
         </View>
         <Text.Secondary
@@ -280,14 +282,15 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
             368
              
             lbCO2eq
-            <Ionicons
-              activeOpacity="#E70000"
-              color="#3957D0"
-              name="information-circle"
+            <TouchableOpacity
               onPress={[Function]}
-              size={26}
-              suppressHighlighting={true}
-            />
+            >
+              <Ionicons
+                color="#3957D0"
+                name="information-circle"
+                size={26}
+              />
+            </TouchableOpacity>
           </Text.Secondary>
         </View>
       </View>
