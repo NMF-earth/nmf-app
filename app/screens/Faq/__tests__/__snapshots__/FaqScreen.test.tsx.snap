@@ -2,11 +2,15 @@
 
 exports[`FaqScreen renders correctly 1`] = `
 <RCTScrollView
+  contentContainerStyle={
+    {
+      "paddingHorizontal": 16,
+      "paddingVertical": 24,
+    }
+  }
   style={
     {
       "backgroundColor": "#FFFFFF",
-      "paddingHorizontal": 16,
-      "paddingVertical": 24,
     }
   }
 >

@@ -5,6 +5,8 @@ import { Colors } from "style";
 const styles = StyleSheet.create({
   container: {
     backgroundColor: Colors.white,
+  },
+  contentContainer: {
     paddingHorizontal: 16,
     paddingVertical: 24,
   },
