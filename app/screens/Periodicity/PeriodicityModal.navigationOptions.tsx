@@ -1,5 +1,5 @@
 import React from "react";
-import { View } from "react-native";
+import { TouchableOpacity } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { StackNavigationOptions } from "@react-navigation/stack";
 
@@ -28,15 +28,9 @@ const navigationOptionsIOS = ({ navigation }): StackNavigationOptions => ({
   headerTitle: () => <Text.H1>{t("PERIODICITY_MODAL_SCREEN_TITLE")}</Text.H1>,
   headerLeft: () => null,
   headerRight: () => (
-    <View style={iconStyle}>
-      <Ionicons
-        suppressHighlighting={true}
-        name="close"
-        size={32}
-        color={Colors.grey100}
-        onPress={() => navigate(navigation).goBack()}
-      />
-    </View>
+    <TouchableOpacity style={iconStyle} onPress={() => navigate(navigation).goBack()}>
+      <Ionicons name="close" size={32} color={Colors.grey100} />
+    </TouchableOpacity>
   ),
 });
 
