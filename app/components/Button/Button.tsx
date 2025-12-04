@@ -36,7 +36,6 @@ const buttonFactory: ButtonFactory = (type) => (props) => {
   if (icon) {
     iconItem = (
       <Ionicons
-        suppressHighlighting={true}
         name={icon as keyof typeof Ionicons.glyphMap}
         size={24}
         style={mainStyle.mainIcon}
