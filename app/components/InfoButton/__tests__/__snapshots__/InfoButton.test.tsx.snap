@@ -1,16 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<Ionicons
-  name="information-circle"
+<TouchableOpacity
   onPress={[Function]}
-  size={26}
-  style={
-    {
-      "color": "#3957D0",
-      "marginRight": 16,
+>
+  <Ionicons
+    name="information-circle"
+    size={26}
+    style={
+      {
+        "color": "#3957D0",
+        "marginRight": 16,
+      }
     }
-  }
-  suppressHighlighting={true}
-/>
+  />
+</TouchableOpacity>
 `;
