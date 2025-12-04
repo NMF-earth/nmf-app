@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, ScrollView } from "react-native";
+import { View, ScrollView, TouchableOpacity } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import Slider from "@react-native-community/slider";
 import { Ionicons } from "@expo/vector-icons";
@@ -98,13 +98,13 @@ const MonthlyBudgetScreen: NavStatelessComponent = () => {
           <View style={styles.worldExampleTitle}>
             <Text.Primary bold>
               {t("MONTHLY_BUDGET_SCREEN_CARBON_EMISSIONS_WORLD")}
-              <Ionicons
-                suppressHighlighting={true}
-                name="information-circle"
-                size={26}
-                color={Colors.secondary}
-                onPress={onPressInfoWorldEmission}
-              />
+              <TouchableOpacity onPress={onPressInfoWorldEmission}>
+                <Ionicons
+                  name="information-circle"
+                  size={26}
+                  color={Colors.secondary}
+                />
+              </TouchableOpacity>
             </Text.Primary>
           </View>
           {translationMonthlyBudgetCountries.map((countryArr, idx) =>
@@ -115,14 +115,13 @@ const MonthlyBudgetScreen: NavStatelessComponent = () => {
               {t("MONTHLY_BUDGET_SCREEN_PARIS_AGREEMENT")}{" "}
               {Math.round(getDisplayUnitsValue(167, useMetricUnits))}{" "}
               {getDisplayUnits(167, useMetricUnits) + "CO2eq"}
-              <Ionicons
-                suppressHighlighting={true}
-                name="information-circle"
-                size={26}
-                color={Colors.secondary}
-                onPress={onPressInfoParisAgreement}
-                activeOpacity={Colors.danger}
-              />
+              <TouchableOpacity onPress={onPressInfoParisAgreement}>
+                <Ionicons
+                  name="information-circle"
+                  size={26}
+                  color={Colors.secondary}
+                />
+              </TouchableOpacity>
             </Text.Secondary>
           </View>
         </View>
