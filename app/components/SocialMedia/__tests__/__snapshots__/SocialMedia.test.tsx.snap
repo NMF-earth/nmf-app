@@ -15,7 +15,8 @@ exports[`renders correctly SocialMedia 1`] = `
       {
         "flex": 1,
         "flexDirection": "row",
-        "justifyContent": "space-between",
+        "gap": 40,
+        "justifyContent": "center",
         "maxWidth": 200,
         "paddingBottom": 50,
       }
@@ -35,16 +36,7 @@ exports[`renders correctly SocialMedia 1`] = `
     >
       <View
         color="#595D58"
-        name="mastodon"
-        size={32}
-      />
-    </TouchableOpacity>
-    <TouchableOpacity
-      onPress={[Function]}
-    >
-      <View
-        color="#595D58"
-        name="medium-m"
+        name="globe"
         size={32}
       />
     </TouchableOpacity>

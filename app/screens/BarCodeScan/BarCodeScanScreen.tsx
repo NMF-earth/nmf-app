@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigation } from "@react-navigation/native";
 import { ActivityIndicator, View } from "react-native";
-import { CameraView, CameraType, useCameraPermissions } from "expo-camera";
+import { CameraView, useCameraPermissions } from "expo-camera";
 import { is, path, pathOr, both, complement, equals } from "ramda";
 import constants from "expo-constants";
 
@@ -24,7 +24,7 @@ const getEcoScore = pathOr("", ["ecoscore_grade"]);
 const getName = path(["product_name"]);
 
 const BarCodeScanScreen = ({ language = "" }: LocalizationContextProps) => {
-  const [hasPermission, setHasPermission] = useState(null);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [scanned, setScanned] = useState(false);
   const [hasCarbonData, setHasCarbonData] = useState(true);
   const [isFetchingData, setIsFetchingData] = useState(false);
@@ -39,15 +39,13 @@ const BarCodeScanScreen = ({ language = "" }: LocalizationContextProps) => {
   const { version, ios, android } = constants.expoConfig;
   const buildNumber = platform.isIOS ? ios.buildNumber : android.versionCode;
   const platformType = platform.isIOS ? "iOS" : "Android";
-  // TODO:
   const [permission, requestPermission] = useCameraPermissions();
 
   useEffect(() => {
     (async () => {
-      const { status } = await requestPermission();
-      setHasPermission(status === "granted");
+      await requestPermission();
     })();
-  }, []);
+  }, [requestPermission]);
 
   const onPressTryAgain = () => {
     setError(false);
@@ -119,7 +117,7 @@ const BarCodeScanScreen = ({ language = "" }: LocalizationContextProps) => {
     return <View style={styles.container}></View>;
   }
 
-  if (!permission) {
+  if (!permission.granted) {
     return <PermissionsRequest type="camera" />;
   }
 
@@ -179,7 +177,8 @@ const BarCodeScanScreen = ({ language = "" }: LocalizationContextProps) => {
         </Text.H2>
         <CameraView
           style={styles.scanner}
-          // onBarCodeScanned={scanned ? undefined : handleBarCodeScanned}
+        // FIXME: Add onBarCodeScanned
+        // onBarCodeScanned={scanned ? undefined : handleBarCodeScanned}
         />
         {__DEV__ ? (
           <Button.Secondary

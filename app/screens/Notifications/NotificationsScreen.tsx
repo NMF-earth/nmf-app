@@ -11,16 +11,16 @@ import { t } from "utils";
 import navigationOptions from "./NotificationsScreen.navigationOptions";
 import styles from "./NotificationsScreen.styles";
 
-const notification = {
+const notification: Notifications.NotificationRequestInput = {
   content: {
     title: t("NOTIFICATIONS_SCREEN_NOTIFICATION_TITLE"),
     body: t("NOTIFICATIONS_SCREEN_NOTIFICATION_BODY"),
   },
   trigger: {
+    type: Notifications.SchedulableTriggerInputTypes.WEEKLY,
     weekday: 1,
     hour: 21,
     minute: 0,
-    repeats: true,
   },
 };
 
@@ -41,8 +41,7 @@ const NotificationsScreen: NavStatelessComponent = () => {
         }
 
         if (value) {
-          // TODO: fix
-          // await Notifications.scheduleNotificationAsync(notification);
+          await Notifications.scheduleNotificationAsync(notification);
         } else {
           await Notifications.cancelAllScheduledNotificationsAsync();
         }
