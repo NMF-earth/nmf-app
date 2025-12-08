@@ -1,5 +1,5 @@
 import React from "react";
-import { create } from "react-test-renderer";
+import { render } from "@testing-library/react-native";
 
 import ClickableTag from "..";
 
@@ -12,17 +12,15 @@ describe("ClickableTag tests", () => {
   };
 
   it("should render correctly", () => {
-    const element = create(<ClickableTag {...props} />).toJSON();
+    const element = render(<ClickableTag {...props} />).toJSON();
 
     expect(element).toMatchSnapshot();
   });
 
-  // TODO: fix this
-  // eslint-disable-next-line jest/no-commented-out-tests
-  // it("given onPress should be called", () => {
-  //   const element = create(<ClickableTag {...props} />).toJSON();
-  //   element.props.onPress();
+  it("given onPress should be called", () => {
+    const element = render(<ClickableTag {...props} />).toJSON() as { props: { onPress: () => void } };
+    element.props.onPress();
 
-  //   expect(mockOnPress).toHaveBeenCalled();
-  // });
+    expect(mockOnPress).toHaveBeenCalled();
+  });
 });

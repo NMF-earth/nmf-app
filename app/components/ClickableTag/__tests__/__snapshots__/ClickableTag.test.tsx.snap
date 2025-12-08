@@ -1,32 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ClickableTag tests should render correctly 1`] = `
-<TouchableOpacity
+<ClickableTag
+  isSelected={false}
   onPress={[Function]}
-  style={
-    [
-      {
-        "alignSelf": "center",
-        "borderRadius": 6,
-        "borderWidth": 1.5,
-        "margin": 6,
-        "paddingHorizontal": 10,
-        "paddingVertical": 4,
-      },
-      {
-        "backgroundColor": "#F0F0F0",
-        "borderColor": "#878787",
-      },
-      undefined,
-    ]
-  }
->
-  <Text.Secondary
-    bold={true}
-    darkGray={true}
-    green={false}
-  >
-    Monday
-  </Text.Secondary>
-</TouchableOpacity>
+  text="Monday"
+/>
 `;
