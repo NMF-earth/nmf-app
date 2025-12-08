@@ -1,5 +1,5 @@
 import React from "react";
-import { create } from "react-test-renderer";
+import { render } from "@testing-library/react-native";
 import { FoodType, TransportType } from "carbon-footprint";
 
 import { emissions, recurringEmissions } from "ducks";
@@ -60,7 +60,7 @@ it("EmissionsScreen renders correctly", () => {
       title: t("EMISSIONS_SCREEN_RECURRING_EMISSIONS"),
     },
   };
-  const tree = create(<EmissionsScreen {...props} />).toJSON();
+  const tree = render(<EmissionsScreen {...props} />).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
@@ -68,7 +68,7 @@ it("EmissionsScreen renders correctly if only normal emissions", () => {
   const props = {
     emissions: selectors.getEmissions(state),
   };
-  const tree = create(<EmissionsScreen {...props} />).toJSON();
+  const tree = render(<EmissionsScreen {...props} />).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
@@ -79,12 +79,12 @@ it("EmissionsScreen renders correctly if only recurring emissions", () => {
       title: t("EMISSIONS_SCREEN_RECURRING_EMISSIONS"),
     },
   };
-  const tree = create(<EmissionsScreen {...props} />).toJSON();
+  const tree = render(<EmissionsScreen {...props} />).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
 it("EmissionsScreen renders correctly if no emissions", () => {
-  const tree = create(
+  const tree = render(
     <EmissionsScreen emissions={[]} recurringEmissions={{ title: null, data: [] }} />
   ).toJSON();
   expect(tree).toMatchSnapshot();

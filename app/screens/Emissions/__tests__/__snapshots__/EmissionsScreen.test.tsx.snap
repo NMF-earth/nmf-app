@@ -1,9 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`EmissionsScreen renders correctly 1`] = `
-<RCTScrollView
+<SectionList
   ListFooterComponent={[Function]}
-  data={
+  keyExtractor={[Function]}
+  ref={null}
+  renderItem={[Function]}
+  renderSectionHeader={[Function]}
+  sections={
     [
       {
         "data": [
@@ -72,153 +76,24 @@ exports[`EmissionsScreen renders correctly 1`] = `
       },
     ]
   }
-  getItem={[Function]}
-  getItemCount={[Function]}
-  keyExtractor={[Function]}
-  onContentSizeChange={[Function]}
-  onLayout={[Function]}
-  onMomentumScrollBegin={[Function]}
-  onMomentumScrollEnd={[Function]}
-  onScroll={[Function]}
-  onScrollBeginDrag={[Function]}
-  onScrollEndDrag={[Function]}
-  renderItem={[Function]}
-  scrollEventThrottle={0.0001}
-  stickyHeaderIndices={
-    [
-      0,
-      3,
-      7,
-    ]
-  }
+  stickySectionHeadersEnabled={true}
   style={
     {
       "backgroundColor": "#FFFFFF",
       "flex": 1,
     }
   }
->
-  <View>
-    <View
-      onFocusCapture={[Function]}
-      onLayout={[Function]}
-      style={null}
-    >
-      <SectionHeader
-        title="Recurring emissions"
-      />
-    </View>
-    <View
-      onFocusCapture={[Function]}
-      onLayout={[Function]}
-      style={null}
-    >
-      <EmissionListItem
-        co2value={0.0803}
-        emissionModelType="boat"
-        iconName="boat"
-        id="4"
-        onPress={[Function]}
-        title="Boat"
-      />
-    </View>
-    <View
-      onFocusCapture={[Function]}
-      onLayout={[Function]}
-      style={null}
-    />
-    <View
-      onFocusCapture={[Function]}
-      onLayout={[Function]}
-      style={null}
-    >
-      <SectionHeader
-        date="2020-03-01T00:00:00+00:00"
-      />
-    </View>
-    <View
-      onFocusCapture={[Function]}
-      onLayout={[Function]}
-      style={null}
-    >
-      <EmissionListItem
-        co2value={20}
-        emissionModelType="beans"
-        iconName="nutrition"
-        id="2"
-        isMitigated={false}
-        onPress={[Function]}
-        title="Beans"
-      />
-    </View>
-    <View
-      onFocusCapture={[Function]}
-      onLayout={[Function]}
-      style={null}
-    >
-      <EmissionListItem
-        co2value={0.0803}
-        emissionModelType="boat"
-        iconName="boat"
-        id="3"
-        isMitigated={true}
-        onPress={[Function]}
-        title="Boat"
-      />
-    </View>
-    <View
-      onFocusCapture={[Function]}
-      onLayout={[Function]}
-      style={null}
-    />
-    <View
-      onFocusCapture={[Function]}
-      onLayout={[Function]}
-      style={null}
-    >
-      <SectionHeader
-        date="2020-01-01T00:00:00+00:00"
-      />
-    </View>
-    <View
-      onFocusCapture={[Function]}
-      onLayout={[Function]}
-      style={null}
-    >
-      <EmissionListItem
-        co2value={60}
-        emissionModelType="beans"
-        iconName="nutrition"
-        id="1"
-        isMitigated={false}
-        onPress={[Function]}
-        title="Beans"
-      />
-    </View>
-    <View
-      onFocusCapture={[Function]}
-      onLayout={[Function]}
-      style={null}
-    />
-    <View
-      onLayout={[Function]}
-    >
-      <View
-        style={
-          {
-            "height": 100,
-          }
-        }
-      />
-    </View>
-  </View>
-</RCTScrollView>
+/>
 `;
 
 exports[`EmissionsScreen renders correctly if no emissions 1`] = `
-<RCTScrollView
+<SectionList
   ListFooterComponent={[Function]}
-  data={
+  keyExtractor={[Function]}
+  ref={null}
+  renderItem={[Function]}
+  renderSectionHeader={[Function]}
+  sections={
     [
       {
         "data": [],
@@ -226,64 +101,24 @@ exports[`EmissionsScreen renders correctly if no emissions 1`] = `
       },
     ]
   }
-  getItem={[Function]}
-  getItemCount={[Function]}
-  keyExtractor={[Function]}
-  onContentSizeChange={[Function]}
-  onLayout={[Function]}
-  onMomentumScrollBegin={[Function]}
-  onMomentumScrollEnd={[Function]}
-  onScroll={[Function]}
-  onScrollBeginDrag={[Function]}
-  onScrollEndDrag={[Function]}
-  renderItem={[Function]}
-  scrollEventThrottle={0.0001}
-  stickyHeaderIndices={
-    [
-      0,
-    ]
-  }
+  stickySectionHeadersEnabled={true}
   style={
     {
       "backgroundColor": "#FFFFFF",
       "flex": 1,
     }
   }
->
-  <View>
-    <View
-      onFocusCapture={[Function]}
-      onLayout={[Function]}
-      style={null}
-    >
-      <SectionHeader
-        title={null}
-      />
-    </View>
-    <View
-      onFocusCapture={[Function]}
-      onLayout={[Function]}
-      style={null}
-    />
-    <View
-      onLayout={[Function]}
-    >
-      <View
-        style={
-          {
-            "height": 100,
-          }
-        }
-      />
-    </View>
-  </View>
-</RCTScrollView>
+/>
 `;
 
 exports[`EmissionsScreen renders correctly if only normal emissions 1`] = `
-<RCTScrollView
+<SectionList
   ListFooterComponent={[Function]}
-  data={
+  keyExtractor={[Function]}
+  ref={null}
+  renderItem={[Function]}
+  renderSectionHeader={[Function]}
+  sections={
     [
       {
         "data": [
@@ -333,124 +168,24 @@ exports[`EmissionsScreen renders correctly if only normal emissions 1`] = `
       },
     ]
   }
-  getItem={[Function]}
-  getItemCount={[Function]}
-  keyExtractor={[Function]}
-  onContentSizeChange={[Function]}
-  onLayout={[Function]}
-  onMomentumScrollBegin={[Function]}
-  onMomentumScrollEnd={[Function]}
-  onScroll={[Function]}
-  onScrollBeginDrag={[Function]}
-  onScrollEndDrag={[Function]}
-  renderItem={[Function]}
-  scrollEventThrottle={0.0001}
-  stickyHeaderIndices={
-    [
-      0,
-      4,
-    ]
-  }
+  stickySectionHeadersEnabled={true}
   style={
     {
       "backgroundColor": "#FFFFFF",
       "flex": 1,
     }
   }
->
-  <View>
-    <View
-      onFocusCapture={[Function]}
-      onLayout={[Function]}
-      style={null}
-    >
-      <SectionHeader
-        date="2020-03-01T00:00:00+00:00"
-      />
-    </View>
-    <View
-      onFocusCapture={[Function]}
-      onLayout={[Function]}
-      style={null}
-    >
-      <EmissionListItem
-        co2value={20}
-        emissionModelType="beans"
-        iconName="nutrition"
-        id="2"
-        isMitigated={false}
-        onPress={[Function]}
-        title="Beans"
-      />
-    </View>
-    <View
-      onFocusCapture={[Function]}
-      onLayout={[Function]}
-      style={null}
-    >
-      <EmissionListItem
-        co2value={0.0803}
-        emissionModelType="boat"
-        iconName="boat"
-        id="3"
-        isMitigated={true}
-        onPress={[Function]}
-        title="Boat"
-      />
-    </View>
-    <View
-      onFocusCapture={[Function]}
-      onLayout={[Function]}
-      style={null}
-    />
-    <View
-      onFocusCapture={[Function]}
-      onLayout={[Function]}
-      style={null}
-    >
-      <SectionHeader
-        date="2020-01-01T00:00:00+00:00"
-      />
-    </View>
-    <View
-      onFocusCapture={[Function]}
-      onLayout={[Function]}
-      style={null}
-    >
-      <EmissionListItem
-        co2value={60}
-        emissionModelType="beans"
-        iconName="nutrition"
-        id="1"
-        isMitigated={false}
-        onPress={[Function]}
-        title="Beans"
-      />
-    </View>
-    <View
-      onFocusCapture={[Function]}
-      onLayout={[Function]}
-      style={null}
-    />
-    <View
-      onLayout={[Function]}
-    >
-      <View
-        style={
-          {
-            "height": 100,
-          }
-        }
-      />
-    </View>
-  </View>
-</RCTScrollView>
+/>
 `;
 
 exports[`EmissionsScreen renders correctly if only recurring emissions 1`] = `
-<RCTScrollView
+<SectionList
   ListFooterComponent={[Function]}
-  data={
+  keyExtractor={[Function]}
+  ref={null}
+  renderItem={[Function]}
+  renderSectionHeader={[Function]}
+  sections={
     [
       {
         "data": [
@@ -473,70 +208,12 @@ exports[`EmissionsScreen renders correctly if only recurring emissions 1`] = `
       },
     ]
   }
-  getItem={[Function]}
-  getItemCount={[Function]}
-  keyExtractor={[Function]}
-  onContentSizeChange={[Function]}
-  onLayout={[Function]}
-  onMomentumScrollBegin={[Function]}
-  onMomentumScrollEnd={[Function]}
-  onScroll={[Function]}
-  onScrollBeginDrag={[Function]}
-  onScrollEndDrag={[Function]}
-  renderItem={[Function]}
-  scrollEventThrottle={0.0001}
-  stickyHeaderIndices={
-    [
-      0,
-    ]
-  }
+  stickySectionHeadersEnabled={true}
   style={
     {
       "backgroundColor": "#FFFFFF",
       "flex": 1,
     }
   }
->
-  <View>
-    <View
-      onFocusCapture={[Function]}
-      onLayout={[Function]}
-      style={null}
-    >
-      <SectionHeader
-        title="Recurring emissions"
-      />
-    </View>
-    <View
-      onFocusCapture={[Function]}
-      onLayout={[Function]}
-      style={null}
-    >
-      <EmissionListItem
-        co2value={0.0803}
-        emissionModelType="boat"
-        iconName="boat"
-        id="4"
-        onPress={[Function]}
-        title="Boat"
-      />
-    </View>
-    <View
-      onFocusCapture={[Function]}
-      onLayout={[Function]}
-      style={null}
-    />
-    <View
-      onLayout={[Function]}
-    >
-      <View
-        style={
-          {
-            "height": 100,
-          }
-        }
-      />
-    </View>
-  </View>
-</RCTScrollView>
+/>
 `;
