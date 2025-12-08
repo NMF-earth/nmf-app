@@ -1,10 +1,10 @@
 import React from "react";
-import { create } from "react-test-renderer";
+import { render } from "@testing-library/react-native";
 
 import FaqScreen from "../FaqScreen";
 
 it("FaqScreen renders correctly", () => {
-  const tree = create(<FaqScreen />).toJSON();
+  const tree = render(<FaqScreen />).toJSON();
 
   expect(tree).toMatchSnapshot();
 });

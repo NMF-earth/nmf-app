@@ -1,5 +1,6 @@
 import React from "react";
-import { SafeAreaView, View, TouchableOpacity } from "react-native";
+import { View, TouchableOpacity } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 import * as WebBrowser from "expo-web-browser";
 import { useDispatch } from "react-redux";
 

@@ -1,406 +1,77 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`FaqScreen renders correctly 1`] = `
-<RCTScrollView
+<ScrollView
   contentContainerStyle={
     {
       "paddingHorizontal": 16,
       "paddingVertical": 24,
     }
   }
+  ref={null}
   style={
     {
       "backgroundColor": "#FFFFFF",
     }
   }
 >
-  <View>
-    <View
-      style={
-        {
-          "flex": 1,
-        }
-      }
+  <Accordion>
+    <AccordionItem
+      title="Are you a startup?"
     >
-      <View
-        style={
-          [
-            {
-              "backgroundColor": "#FFFFFF",
-              "borderColor": "#E7F3EB",
-              "borderRadius": 10,
-              "borderWidth": 1.5,
-              "marginTop": 16,
-            },
-            {
-              "marginTop": 0,
-            },
-          ]
-        }
-      >
-        <TouchableOpacity
-          onPress={[Function]}
-          style={
-            {
-              "alignItems": "center",
-              "flexDirection": "row",
-              "padding": 16,
-            }
-          }
-        >
-          <Ionicons
-            name="chevron-up"
-            size={22}
-            style={
-              {
-                "color": "#3957D0",
-              }
-            }
-          />
-          <Text.H3
-            style={
-              {
-                "color": "#0F0F0F",
-                "flex": 1,
-                "fontSize": 16,
-                "marginLeft": 8,
-              }
-            }
-          >
-            Are you a startup?
-          </Text.H3>
-        </TouchableOpacity>
-      </View>
-      <View
-        style={
-          [
-            {
-              "backgroundColor": "#FFFFFF",
-              "borderColor": "#E7F3EB",
-              "borderRadius": 10,
-              "borderWidth": 1.5,
-              "marginTop": 16,
-            },
-            false,
-          ]
-        }
-      >
-        <TouchableOpacity
-          onPress={[Function]}
-          style={
-            {
-              "alignItems": "center",
-              "flexDirection": "row",
-              "padding": 16,
-            }
-          }
-        >
-          <Ionicons
-            name="chevron-up"
-            size={22}
-            style={
-              {
-                "color": "#3957D0",
-              }
-            }
-          />
-          <Text.H3
-            style={
-              {
-                "color": "#0F0F0F",
-                "flex": 1,
-                "fontSize": 16,
-                "marginLeft": 8,
-              }
-            }
-          >
-            Are you collecting my data?
-          </Text.H3>
-        </TouchableOpacity>
-      </View>
-      <View
-        style={
-          [
-            {
-              "backgroundColor": "#FFFFFF",
-              "borderColor": "#E7F3EB",
-              "borderRadius": 10,
-              "borderWidth": 1.5,
-              "marginTop": 16,
-            },
-            false,
-          ]
-        }
-      >
-        <TouchableOpacity
-          onPress={[Function]}
-          style={
-            {
-              "alignItems": "center",
-              "flexDirection": "row",
-              "padding": 16,
-            }
-          }
-        >
-          <Ionicons
-            name="chevron-up"
-            size={22}
-            style={
-              {
-                "color": "#3957D0",
-              }
-            }
-          />
-          <Text.H3
-            style={
-              {
-                "color": "#0F0F0F",
-                "flex": 1,
-                "fontSize": 16,
-                "marginLeft": 8,
-              }
-            }
-          >
-            What is your goal?
-          </Text.H3>
-        </TouchableOpacity>
-      </View>
-      <View
-        style={
-          [
-            {
-              "backgroundColor": "#FFFFFF",
-              "borderColor": "#E7F3EB",
-              "borderRadius": 10,
-              "borderWidth": 1.5,
-              "marginTop": 16,
-            },
-            false,
-          ]
-        }
-      >
-        <TouchableOpacity
-          onPress={[Function]}
-          style={
-            {
-              "alignItems": "center",
-              "flexDirection": "row",
-              "padding": 16,
-            }
-          }
-        >
-          <Ionicons
-            name="chevron-up"
-            size={22}
-            style={
-              {
-                "color": "#3957D0",
-              }
-            }
-          />
-          <Text.H3
-            style={
-              {
-                "color": "#0F0F0F",
-                "flex": 1,
-                "fontSize": 16,
-                "marginLeft": 8,
-              }
-            }
-          >
-            How are you different?
-          </Text.H3>
-        </TouchableOpacity>
-      </View>
-      <View
-        style={
-          [
-            {
-              "backgroundColor": "#FFFFFF",
-              "borderColor": "#E7F3EB",
-              "borderRadius": 10,
-              "borderWidth": 1.5,
-              "marginTop": 16,
-            },
-            false,
-          ]
-        }
-      >
-        <TouchableOpacity
-          onPress={[Function]}
-          style={
-            {
-              "alignItems": "center",
-              "flexDirection": "row",
-              "padding": 16,
-            }
-          }
-        >
-          <Ionicons
-            name="chevron-up"
-            size={22}
-            style={
-              {
-                "color": "#3957D0",
-              }
-            }
-          />
-          <Text.H3
-            style={
-              {
-                "color": "#0F0F0F",
-                "flex": 1,
-                "fontSize": 16,
-                "marginLeft": 8,
-              }
-            }
-          >
-            Is everyone doing greenwashing?
-          </Text.H3>
-        </TouchableOpacity>
-      </View>
-      <View
-        style={
-          [
-            {
-              "backgroundColor": "#FFFFFF",
-              "borderColor": "#E7F3EB",
-              "borderRadius": 10,
-              "borderWidth": 1.5,
-              "marginTop": 16,
-            },
-            false,
-          ]
-        }
-      >
-        <TouchableOpacity
-          onPress={[Function]}
-          style={
-            {
-              "alignItems": "center",
-              "flexDirection": "row",
-              "padding": 16,
-            }
-          }
-        >
-          <Ionicons
-            name="chevron-up"
-            size={22}
-            style={
-              {
-                "color": "#3957D0",
-              }
-            }
-          />
-          <Text.H3
-            style={
-              {
-                "color": "#0F0F0F",
-                "flex": 1,
-                "fontSize": 16,
-                "marginLeft": 8,
-              }
-            }
-          >
-            Why NMF?
-          </Text.H3>
-        </TouchableOpacity>
-      </View>
-      <View
-        style={
-          [
-            {
-              "backgroundColor": "#FFFFFF",
-              "borderColor": "#E7F3EB",
-              "borderRadius": 10,
-              "borderWidth": 1.5,
-              "marginTop": 16,
-            },
-            false,
-          ]
-        }
-      >
-        <TouchableOpacity
-          onPress={[Function]}
-          style={
-            {
-              "alignItems": "center",
-              "flexDirection": "row",
-              "padding": 16,
-            }
-          }
-        >
-          <Ionicons
-            name="chevron-up"
-            size={22}
-            style={
-              {
-                "color": "#3957D0",
-              }
-            }
-          />
-          <Text.H3
-            style={
-              {
-                "color": "#0F0F0F",
-                "flex": 1,
-                "fontSize": 16,
-                "marginLeft": 8,
-              }
-            }
-          >
-            Why do I have to enter manually my emissions?
-          </Text.H3>
-        </TouchableOpacity>
-      </View>
-      <View
-        style={
-          [
-            {
-              "backgroundColor": "#FFFFFF",
-              "borderColor": "#E7F3EB",
-              "borderRadius": 10,
-              "borderWidth": 1.5,
-              "marginTop": 16,
-            },
-            false,
-          ]
-        }
-      >
-        <TouchableOpacity
-          onPress={[Function]}
-          style={
-            {
-              "alignItems": "center",
-              "flexDirection": "row",
-              "padding": 16,
-            }
-          }
-        >
-          <Ionicons
-            name="chevron-up"
-            size={22}
-            style={
-              {
-                "color": "#3957D0",
-              }
-            }
-          />
-          <Text.H3
-            style={
-              {
-                "color": "#0F0F0F",
-                "flex": 1,
-                "fontSize": 16,
-                "marginLeft": 8,
-              }
-            }
-          >
-            Why do you encourage people to be vegetarian / vegan / flexitarian ?
-          </Text.H3>
-        </TouchableOpacity>
-      </View>
-    </View>
-  </View>
-</RCTScrollView>
+      <Text>
+        No, and NMF.earth will never be one, it's simply an open-source side project, not even a company. Startups are, by definition, companies looking for exponential growth. The problem is that exponential growth is the reason why we have global warming.
+      </Text>
+    </AccordionItem>
+    <AccordionItem
+      title="Are you collecting my data?"
+    >
+      <Text>
+        No, we don't track what you do in the app, we only collect crash data to be able to fix bugs. Grab a cup of coffee and read our open-source code, you will see that we don’t track anything of what you do, absolutely nothing.
+      </Text>
+    </AccordionItem>
+    <AccordionItem
+      title="What is your goal?"
+    >
+      <Text>
+        Disappear! Contrary to the tech industry, we hope you will stop using our app after some time. The only goal of NMF.earth is to help anyone understand and reduce its carbon footprint. Once it's done, we encourage you to continue in this path, without our input.  
+      </Text>
+    </AccordionItem>
+    <AccordionItem
+      title="How are you different?"
+    >
+      <Text>
+        We do not track your in-app activity, we are not a company so we are not trying to get money from you, NMF.earth is just an open-source project made by random climate activist around the world. We also don't exploit psychological vulnerabilities, like bottomless feeds or auto-play to keep you from leaving the app. Since we don’t track you, we really appreciate any feedback you can provide us. We want to take the time to understand what you need and what to improve for you. You're are a human being, not a series of numbers and statistics on a screen.
+      </Text>
+    </AccordionItem>
+    <AccordionItem
+      title="Is everyone doing greenwashing?"
+    >
+      <Text>
+        Yes, almost. We should all collaborate in order to fight climate change so keep in mind that anything not open-source means business as usual. If you see that some organisation don't share everything, it means this organisation interest is motivated by greedy profits and survival, not helping mitigate climate change and promote sustainable lifestyles. We are not selling anything and everything we do is 100% open to everyone.
+      </Text>
+    </AccordionItem>
+    <AccordionItem
+      title="Why NMF?"
+    >
+      <Text>
+        NMF is a shortcut for Not My Fault (?), an open invitation to question our modern lifestyle and our participation in the current ecocide.
+      </Text>
+    </AccordionItem>
+    <AccordionItem
+      title="Why do I have to enter manually my emissions?"
+    >
+      <Text>
+        We are working on adding recurrent emissions but we won't go further than that, meaning you won't be able to get your carbon footprint automatically calculated from your expenses for example. It's annoying by design, as a kind reminder to pollute and consume less.
+      </Text>
+    </AccordionItem>
+    <AccordionItem
+      title="Why do you encourage people to be vegetarian / vegan / flexitarian ?"
+    >
+      <Text>
+        Industrial farming of animals generates a lot of CO2 emissions but not only, it's also horrible. Each day approximately 160 million farm animals throughout the world are transported to a slaughterhouse. Maybe it's okay for you, but not for us.
+      </Text>
+    </AccordionItem>
+  </Accordion>
+</ScrollView>
 `;
