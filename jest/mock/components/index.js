@@ -37,7 +37,6 @@ jest.mock("../../../app/components/OpenFoodFacts", () => "OpenFoodFacts");
 jest.mock("../../../app/components/HTMLImage", () => "HTMLImage");
 jest.mock("../../../app/components/TabBarIcon", () => "TabBarIcon");
 jest.mock("../../../app/components/SelectableListItem", () => "SelectableListItem");
-jest.mock("../../../app/components/InfoButton", () => "InfoButton");
 jest.mock("../../../app/components/Accordion", () => {
   const React = require("react");
   const Accordion = (props) => React.createElement("Accordion", props, props.children);
