@@ -1,6 +1,6 @@
 import "react-native";
 import React from "react";
-import { create } from "react-test-renderer";
+import { render } from "@testing-library/react-native";
 
 import ListItemSwitch from "../ListItemSwitch";
 
@@ -12,24 +12,24 @@ describe("<ListItemSwitch />", () => {
       // do nothing.
     },
   };
-  const wrapper = create(<ListItemSwitch {...props} />);
 
   test("render", () => {
-    expect(wrapper).toMatchSnapshot();
+    const wrapper = render(<ListItemSwitch {...props} />);
+    expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   test("ListItem renders correctly with topLine", () => {
-    const tree = create(<ListItemSwitch showTopLine {...props} />).toJSON();
+    const tree = render(<ListItemSwitch showTopLine {...props} />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 
   test("ListItem renders correctly with bottomLine", () => {
-    const tree = create(<ListItemSwitch showBottomLine {...props} />).toJSON();
+    const tree = render(<ListItemSwitch showBottomLine {...props} />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 
   test("ListItem renders correctly with both topLine and bottomLine", () => {
-    const tree = create(<ListItemSwitch showBottomLine showTopLine {...props} />).toJSON();
+    const tree = render(<ListItemSwitch showBottomLine showTopLine {...props} />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

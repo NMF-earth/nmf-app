@@ -2,6 +2,7 @@
 
 exports[`<ListItemSwitch /> ListItem renders correctly with both topLine and bottomLine 1`] = `
 <View
+  ref={null}
   style={
     [
       {
@@ -21,7 +22,7 @@ exports[`<ListItemSwitch /> ListItem renders correctly with both topLine and bot
     ]
   }
 >
-  <Text.Secondary
+  <RCTText
     style={
       {
         "paddingVertical": 18,
@@ -29,23 +30,9 @@ exports[`<ListItemSwitch /> ListItem renders correctly with both topLine and bot
     }
   >
     Germany
-  </Text.Secondary>
-  <RCTSwitch
-    accessibilityRole="switch"
-    collapsable={false}
-    handlerTag={4}
-    handlerType="NativeViewGestureHandler"
+  </RCTText>
+  <Switch
     onChange={[Function]}
-    onGestureHandlerEvent={[Function]}
-    onGestureHandlerStateChange={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    style={
-      {
-        "height": 31,
-        "width": 51,
-      }
-    }
     value={true}
   />
 </View>
@@ -53,6 +40,7 @@ exports[`<ListItemSwitch /> ListItem renders correctly with both topLine and bot
 
 exports[`<ListItemSwitch /> ListItem renders correctly with bottomLine 1`] = `
 <View
+  ref={null}
   style={
     [
       {
@@ -68,7 +56,7 @@ exports[`<ListItemSwitch /> ListItem renders correctly with bottomLine 1`] = `
     ]
   }
 >
-  <Text.Secondary
+  <RCTText
     style={
       {
         "paddingVertical": 18,
@@ -76,23 +64,9 @@ exports[`<ListItemSwitch /> ListItem renders correctly with bottomLine 1`] = `
     }
   >
     Germany
-  </Text.Secondary>
-  <RCTSwitch
-    accessibilityRole="switch"
-    collapsable={false}
-    handlerTag={3}
-    handlerType="NativeViewGestureHandler"
+  </RCTText>
+  <Switch
     onChange={[Function]}
-    onGestureHandlerEvent={[Function]}
-    onGestureHandlerStateChange={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    style={
-      {
-        "height": 31,
-        "width": 51,
-      }
-    }
     value={true}
   />
 </View>
@@ -100,6 +74,7 @@ exports[`<ListItemSwitch /> ListItem renders correctly with bottomLine 1`] = `
 
 exports[`<ListItemSwitch /> ListItem renders correctly with topLine 1`] = `
 <View
+  ref={null}
   style={
     [
       {
@@ -115,7 +90,7 @@ exports[`<ListItemSwitch /> ListItem renders correctly with topLine 1`] = `
     ]
   }
 >
-  <Text.Secondary
+  <RCTText
     style={
       {
         "paddingVertical": 18,
@@ -123,23 +98,9 @@ exports[`<ListItemSwitch /> ListItem renders correctly with topLine 1`] = `
     }
   >
     Germany
-  </Text.Secondary>
-  <RCTSwitch
-    accessibilityRole="switch"
-    collapsable={false}
-    handlerTag={2}
-    handlerType="NativeViewGestureHandler"
+  </RCTText>
+  <Switch
     onChange={[Function]}
-    onGestureHandlerEvent={[Function]}
-    onGestureHandlerStateChange={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    style={
-      {
-        "height": 31,
-        "width": 51,
-      }
-    }
     value={true}
   />
 </View>
@@ -147,6 +108,7 @@ exports[`<ListItemSwitch /> ListItem renders correctly with topLine 1`] = `
 
 exports[`<ListItemSwitch /> render 1`] = `
 <View
+  ref={null}
   style={
     [
       {
@@ -158,7 +120,7 @@ exports[`<ListItemSwitch /> render 1`] = `
     ]
   }
 >
-  <Text.Secondary
+  <RCTText
     style={
       {
         "paddingVertical": 18,
@@ -166,23 +128,9 @@ exports[`<ListItemSwitch /> render 1`] = `
     }
   >
     Germany
-  </Text.Secondary>
-  <RCTSwitch
-    accessibilityRole="switch"
-    collapsable={false}
-    handlerTag={1}
-    handlerType="NativeViewGestureHandler"
+  </RCTText>
+  <Switch
     onChange={[Function]}
-    onGestureHandlerEvent={[Function]}
-    onGestureHandlerStateChange={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    style={
-      {
-        "height": 31,
-        "width": 51,
-      }
-    }
     value={true}
   />
 </View>
