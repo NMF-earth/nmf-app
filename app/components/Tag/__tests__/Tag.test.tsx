@@ -1,31 +1,33 @@
 import React from "react";
-import { create } from "react-test-renderer";
+import { render } from "@testing-library/react-native";
 
 import Tag from "../Tag";
 
-jest.unmock("../Tag.tsx");
+interface TagProps {
+  onPress: () => void;
+  text: string;
+  icon?: string;
+}
 
-let props;
+let props: TagProps;
 
 beforeEach(() => {
   props = {
+    onPress: jest.fn(),
     text: "Transport",
-    onPress: () => {
-      // do nothing.
-    },
   };
 });
 
 /* TEXT ONLY */
 
 it("Tag renders correctly with no icon", () => {
-  const tree = create(<Tag {...props} />).toJSON();
+  const tree = render(<Tag {...props} />).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
 /* WITH ICON */
 
 it("Tag renders correctly with airplane icon", () => {
-  const tree = create(<Tag {...props} icon="airplane" />).toJSON();
+  const tree = render(<Tag {...props} icon="airplane" />).toJSON();
   expect(tree).toMatchSnapshot();
 });
