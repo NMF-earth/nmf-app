@@ -1,10 +1,10 @@
 import React from "react";
-import { create } from "react-test-renderer";
+import { render } from "@testing-library/react-native";
 
 import BudgetScreen from "../BudgetScreen";
 
 it("BudgetScreen renders correctly", () => {
-  const tree = create(<BudgetScreen />).toJSON();
+  const tree = render(<BudgetScreen />).toJSON();
   expect(tree).toMatchSnapshot();
 });
 

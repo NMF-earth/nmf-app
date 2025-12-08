@@ -2,6 +2,7 @@
 
 exports[`PeriodBudget renders correctly 1`] = `
 <View
+  ref={null}
   style={
     {
       "flex": 1,
@@ -10,14 +11,14 @@ exports[`PeriodBudget renders correctly 1`] = `
     }
   }
 >
-  <Text.Secondary
+  <RCTText
     bold={true}
     center={true}
   >
     Budget for 
     this month
      : 
-    <Text.Secondary
+    <RCTText
       center={true}
       lightGray={true}
     >
@@ -27,13 +28,14 @@ exports[`PeriodBudget renders correctly 1`] = `
       />
        
       kg
-    </Text.Secondary>
-  </Text.Secondary>
+    </RCTText>
+  </RCTText>
 </View>
 `;
 
 exports[`PeriodBudget renders correctly if tons 1`] = `
 <View
+  ref={null}
   style={
     {
       "flex": 1,
@@ -42,14 +44,14 @@ exports[`PeriodBudget renders correctly if tons 1`] = `
     }
   }
 >
-  <Text.Secondary
+  <RCTText
     bold={true}
     center={true}
   >
     Budget for 
     this month
      : 
-    <Text.Secondary
+    <RCTText
       center={true}
       lightGray={true}
     >
@@ -59,7 +61,7 @@ exports[`PeriodBudget renders correctly if tons 1`] = `
       />
        
       kg
-    </Text.Secondary>
-  </Text.Secondary>
+    </RCTText>
+  </RCTText>
 </View>
 `;

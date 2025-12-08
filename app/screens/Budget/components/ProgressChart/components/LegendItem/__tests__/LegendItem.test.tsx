@@ -1,5 +1,5 @@
 import React from "react";
-import { create } from "react-test-renderer";
+import { render } from "@testing-library/react-native";
 import * as reactRedux from "react-redux";
 
 import { userPreferences } from "ducks";
@@ -21,16 +21,16 @@ beforeEach(() => {
 });
 
 it("LegendItem renders correctly", () => {
-  const tree = create(<LegendItem {...props} />).toJSON();
+  const tree = render(<LegendItem {...props} />).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
 it("LegendItem should not render % if percentage is 0", () => {
-  const tree = create(<LegendItem {...props} amount={0.01} />).toJSON();
+  const tree = render(<LegendItem {...props} amount={0.01} />).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
 it("LegendItem should not render if value is 0", () => {
-  const tree = create(<LegendItem {...props} amount={0} />).toJSON();
-  expect(tree).toBeNull();
+  const tree = render(<LegendItem {...props} amount={0} />).toJSON();
+  expect(tree).toBeUndefined();
 });

@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`BudgetScreen renders correctly 1`] = `
-<RCTScrollView
+<ScrollView
+  ref={null}
   style={
     {
       "backgroundColor": "#FFFFFF",
@@ -10,23 +11,21 @@ exports[`BudgetScreen renders correctly 1`] = `
     }
   }
 >
-  <View>
-    <ProgressChart
-      isMonth={true}
-    />
-    <Button.Primary
-      fullWidth={true}
-      icon="calendar"
-      onPress={[Function]}
-      style={
-        {
-          "marginVertical": 6,
-        }
+  <ProgressChart
+    isMonth={true}
+  />
+  <Button.Primary
+    fullWidth={true}
+    icon="calendar"
+    onPress={[Function]}
+    style={
+      {
+        "marginVertical": 6,
       }
-      text="Set monthly budget"
-    />
-    <NumberOfDaysVegetarian />
-    <ProgressChart />
-  </View>
-</RCTScrollView>
+    }
+    text="Set monthly budget"
+  />
+  <NumberOfDaysVegetarian />
+  <ProgressChart />
+</ScrollView>
 `;

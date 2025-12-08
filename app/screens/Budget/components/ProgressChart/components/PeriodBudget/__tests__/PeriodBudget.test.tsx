@@ -1,5 +1,5 @@
 import React from "react";
-import { create } from "react-test-renderer";
+import { render } from "@testing-library/react-native";
 import * as reactRedux from "react-redux";
 
 import { userPreferences } from "ducks";
@@ -20,11 +20,11 @@ beforeEach(() => {
 });
 
 it("PeriodBudget renders correctly", () => {
-  const tree = create(<PeriodBudget {...props} />).toJSON();
+  const tree = render(<PeriodBudget {...props} />).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
 it("PeriodBudget renders correctly if tons", () => {
-  const tree = create(<PeriodBudget periodEmissionsBudget={14340} {...props} />).toJSON();
+  const tree = render(<PeriodBudget periodEmissionsBudget={14340} {...props} />).toJSON();
   expect(tree).toMatchSnapshot();
 });
