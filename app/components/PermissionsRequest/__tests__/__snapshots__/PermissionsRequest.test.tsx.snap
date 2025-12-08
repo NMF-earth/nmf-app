@@ -2,6 +2,7 @@
 
 exports[`renders correctly PermissionsRequest if camera 1`] = `
 <View
+  ref={null}
   style={
     {
       "backgroundColor": "#FFFFFF",
@@ -11,6 +12,7 @@ exports[`renders correctly PermissionsRequest if camera 1`] = `
   }
 >
   <View
+    ref={null}
     style={
       [
         {
@@ -25,16 +27,16 @@ exports[`renders correctly PermissionsRequest if camera 1`] = `
       ]
     }
   >
-    <Text.H2
+    <RCTText
       center={true}
     >
       No access to camera
-    </Text.H2>
-    <Text.Primary
+    </RCTText>
+    <RCTText
       center={true}
     >
       Please give NMF.earth app access to camera in your phone settings to use this feature.
-    </Text.Primary>
+    </RCTText>
   </View>
   <Button.Secondary
     icon="settings"
@@ -52,6 +54,7 @@ exports[`renders correctly PermissionsRequest if camera 1`] = `
 
 exports[`renders correctly PermissionsRequest if notification 1`] = `
 <View
+  ref={null}
   style={
     {
       "backgroundColor": "#FFFFFF",
@@ -61,6 +64,7 @@ exports[`renders correctly PermissionsRequest if notification 1`] = `
   }
 >
   <View
+    ref={null}
     style={
       [
         {
@@ -75,16 +79,16 @@ exports[`renders correctly PermissionsRequest if notification 1`] = `
       ]
     }
   >
-    <Text.H2
+    <RCTText
       center={true}
     >
       No permission to send notifications
-    </Text.H2>
-    <Text.Primary
+    </RCTText>
+    <RCTText
       center={true}
     >
       Please give NMF.earth app permission to send you notifications in your phone settings to use this feature.
-    </Text.Primary>
+    </RCTText>
   </View>
   <Button.Secondary
     icon="settings"
