@@ -1,8 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TextButton renders correctly with camera icon 1`] = `
+exports[`TextButton renders correctly with calendar icon 1`] = `
 <TouchableOpacity
   onPress={[Function]}
+  ref={null}
   style={
     {
       "alignContent": "center",
@@ -13,6 +14,7 @@ exports[`TextButton renders correctly with camera icon 1`] = `
   }
 >
   <View
+    ref={null}
     style={
       {
         "width": 30,
@@ -21,18 +23,19 @@ exports[`TextButton renders correctly with camera icon 1`] = `
   >
     <Ionicons
       color="#3957D0"
-      name="camera"
+      name="calendar"
       size={20}
     />
   </View>
   <View
+    ref={null}
     style={
       {
         "flex": 1,
       }
     }
   >
-    <Text.Primary
+    <RCTText
       darkGray={true}
       style={
         {
@@ -41,9 +44,10 @@ exports[`TextButton renders correctly with camera icon 1`] = `
       }
     >
       some text
-    </Text.Primary>
+    </RCTText>
   </View>
   <View
+    ref={null}
     style={
       {
         "width": 30,
@@ -62,6 +66,7 @@ exports[`TextButton renders correctly with camera icon 1`] = `
 exports[`TextButton renders correctly with repeat icon 1`] = `
 <TouchableOpacity
   onPress={[Function]}
+  ref={null}
   style={
     {
       "alignContent": "center",
@@ -72,6 +77,7 @@ exports[`TextButton renders correctly with repeat icon 1`] = `
   }
 >
   <View
+    ref={null}
     style={
       {
         "width": 30,
@@ -85,13 +91,14 @@ exports[`TextButton renders correctly with repeat icon 1`] = `
     />
   </View>
   <View
+    ref={null}
     style={
       {
         "flex": 1,
       }
     }
   >
-    <Text.Primary
+    <RCTText
       darkGray={true}
       style={
         {
@@ -100,9 +107,10 @@ exports[`TextButton renders correctly with repeat icon 1`] = `
       }
     >
       some text
-    </Text.Primary>
+    </RCTText>
   </View>
   <View
+    ref={null}
     style={
       {
         "width": 30,
