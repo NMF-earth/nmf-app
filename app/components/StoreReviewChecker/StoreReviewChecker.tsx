@@ -17,7 +17,7 @@ const StoreReviewChecker = ({ children }: Props): React.ReactElement => {
   const hasAcceptedTermsOfUseVersion =
     Preferences.currentTermsOfUseVersion ===
     useSelector(userPreferences.selectors.getAcceptedTermsOfUseVersion);
-  const timesStartedRef = useRef<number>();
+  const timesStartedRef = useRef<number>(0);
 
   useEffect(() => {
     timesStartedRef.current = timesStarted;

@@ -1,5 +1,5 @@
 import React from "react";
-import { create } from "react-test-renderer";
+import { render } from "@testing-library/react-native";
 import { View } from "react-native";
 
 import StoreReviewChecker from "..";
@@ -7,14 +7,15 @@ import StoreReviewChecker from "..";
 describe("StoreReviewChecker tests", () => {
   const children = <View />;
   it("should render correctly", () => {
-    const tree = create(<StoreReviewChecker>{children}</StoreReviewChecker>).toJSON();
+    const tree = render(<StoreReviewChecker>{children}</StoreReviewChecker>).toJSON();
     expect(tree).toMatchSnapshot();
   });
 
-  // TODO: fix this
-  // eslint-disable-next-line jest/no-commented-out-tests
-  // it("should render children correctly", () => {
-  //   const tree = create(<StoreReviewChecker>{children}</StoreReviewChecker>).toJSON();
-  //   expect(tree.type).toBe(children.type.displayName);
-  // });
+  it("should render children correctly", () => {
+    const tree = render(<StoreReviewChecker>{children}</StoreReviewChecker>).toJSON() as {
+      children: Array<{ type: string }>;
+    };
+    // Children are passed through - first child should be the View
+    expect(tree.children[0].type).toBe("View");
+  });
 });
