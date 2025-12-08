@@ -14,6 +14,7 @@ exports[`AddEmissionScreen renders correctly 1`] = `
     }
   >
     <View
+      ref={null}
       style={
         {
           "backgroundColor": "#FFFFFF",
@@ -23,7 +24,7 @@ exports[`AddEmissionScreen renders correctly 1`] = `
         }
       }
     >
-      <Text.H2
+      <RCTText
         style={
           {
             "marginTop": 4,
@@ -31,7 +32,7 @@ exports[`AddEmissionScreen renders correctly 1`] = `
           }
         }
       />
-      <Text.Primary
+      <RCTText
         lightGray={true}
         style={
           {
@@ -41,7 +42,7 @@ exports[`AddEmissionScreen renders correctly 1`] = `
         }
       >
         Custom
-      </Text.Primary>
+      </RCTText>
     </View>
     <TextInput
       isOptional={true}
@@ -50,7 +51,18 @@ exports[`AddEmissionScreen renders correctly 1`] = `
       title="Name this emission "
       value=""
     />
+    <DateTimePickerModal
+      cancelTextIOS="Cancel"
+      confirmTextIOS="Confirm"
+      isDarkModeEnabled={false}
+      isVisible={false}
+      locale="en_GB"
+      mode="date"
+      onCancel={[Function]}
+      onConfirm={[Function]}
+    />
     <View
+      ref={null}
       style={
         {
           "backgroundColor": "#FFFFFF",
@@ -60,10 +72,11 @@ exports[`AddEmissionScreen renders correctly 1`] = `
         }
       }
     >
-      <Text.H3>
+      <RCTText>
         Date
-      </Text.H3>
+      </RCTText>
       <View
+        ref={null}
         style={
           {
             "flexDirection": "column",
@@ -80,6 +93,7 @@ exports[`AddEmissionScreen renders correctly 1`] = `
       </View>
     </View>
     <View
+      ref={null}
       style={
         {
           "backgroundColor": "#FFFFFF",
@@ -89,10 +103,11 @@ exports[`AddEmissionScreen renders correctly 1`] = `
         }
       }
     >
-      <Text.H3>
+      <RCTText>
         Periodicity
-      </Text.H3>
+      </RCTText>
       <View
+        ref={null}
         style={
           {
             "flexDirection": "column",
