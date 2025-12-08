@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CategorySelectionScreen renders correctly 1`] = `
-<RCTScrollView
+<ScrollView
+  ref={null}
   style={
     {
       "backgroundColor": "#FFFFFF",
@@ -10,69 +11,68 @@ exports[`CategorySelectionScreen renders correctly 1`] = `
     }
   }
 >
-  <View>
-    <Text.H2
-      style={
-        {
-          "paddingBottom": 16,
-          "paddingTop": 20,
-        }
+  <RCTText
+    style={
+      {
+        "paddingBottom": 16,
+        "paddingTop": 20,
       }
-    >
-      Select a category
-    </Text.H2>
-    <Tag
-      icon="restaurant"
-      onPress={[Function]}
-      text="Meal"
-    />
-    <Tag
-      icon="airplane"
-      onPress={[Function]}
-      text="Transport"
-    />
-    <Tag
-      icon="barcode-sharp"
-      onPress={[Function]}
-      text="Scan product"
-    />
-    <Tag
-      icon="play-circle"
-      onPress={[Function]}
-      text="Streaming"
-    />
-    <Tag
-      icon="card"
-      onPress={[Function]}
-      text="Purchase"
-    />
-    <Tag
-      icon="shirt"
-      onPress={[Function]}
-      text="Fashion"
-    />
-    <Tag
-      icon="nutrition"
-      onPress={[Function]}
-      text="Food"
-    />
-    <Tag
-      icon="flash"
-      onPress={[Function]}
-      text="Electricity"
-    />
-    <Tag
-      icon="build"
-      onPress={[Function]}
-      text="Custom"
-    />
-    <View
-      style={
-        {
-          "height": 10,
-        }
+    }
+  >
+    Select a category
+  </RCTText>
+  <Tag
+    icon="restaurant"
+    onPress={[Function]}
+    text="Meal"
+  />
+  <Tag
+    icon="airplane"
+    onPress={[Function]}
+    text="Transport"
+  />
+  <Tag
+    icon="barcode-sharp"
+    onPress={[Function]}
+    text="Scan product"
+  />
+  <Tag
+    icon="play-circle"
+    onPress={[Function]}
+    text="Streaming"
+  />
+  <Tag
+    icon="card"
+    onPress={[Function]}
+    text="Purchase"
+  />
+  <Tag
+    icon="shirt"
+    onPress={[Function]}
+    text="Fashion"
+  />
+  <Tag
+    icon="nutrition"
+    onPress={[Function]}
+    text="Food"
+  />
+  <Tag
+    icon="flash"
+    onPress={[Function]}
+    text="Electricity"
+  />
+  <Tag
+    icon="build"
+    onPress={[Function]}
+    text="Custom"
+  />
+  <View
+    ref={null}
+    style={
+      {
+        "height": 10,
       }
-    />
-  </View>
-</RCTScrollView>
+    }
+  />
+</ScrollView>
 `;

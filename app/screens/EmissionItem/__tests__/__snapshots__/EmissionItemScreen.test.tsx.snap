@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`EmissionsScreen renders correctly 1`] = `
-<RCTScrollView
+<ScrollView
+  ref={null}
   style={
     {
       "backgroundColor": "#FFFFFF",
@@ -11,125 +12,116 @@ exports[`EmissionsScreen renders correctly 1`] = `
     }
   }
 >
-  <View>
-    <Text.H3>
-      Type
-    </Text.H3>
-    <Text.Primary
+  <RCTText>
+    Type
+  </RCTText>
+  <RCTText
+    darkGray={true}
+    style={
+      {
+        "alignItems": "flex-start",
+        "paddingBottom": 24,
+        "paddingTop": 2,
+      }
+    }
+  >
+     - 
+    Custom
+  </RCTText>
+  <RCTText>
+    Quantity
+  </RCTText>
+  <RCTText
+    darkGray={true}
+    style={
+      {
+        "alignItems": "flex-start",
+        "paddingBottom": 24,
+        "paddingTop": 2,
+      }
+    }
+  >
+    <FormattedNumber
+      maximumFractionDigits={2}
+      value={NaN}
+    />
+     
+    tC02eq
+  </RCTText>
+  <RCTText>
+    Mitigation
+  </RCTText>
+  <RCTText
+    darkGray={true}
+    style={
+      {
+        "paddingTop": 2,
+      }
+    }
+  >
+    This emission hasn't been mitigated
+  </RCTText>
+  <View
+    ref={null}
+    style={
+      {
+        "alignItems": "flex-start",
+        "paddingBottom": 24,
+        "paddingTop": 2,
+      }
+    }
+  >
+    <Switch
+      onValueChange={[Function]}
+      ref={null}
+    />
+  </View>
+  <RCTText>
+    Date
+  </RCTText>
+  <View
+    ref={null}
+    style={
+      {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <RCTText
       darkGray={true}
       style={
-        {
-          "alignItems": "flex-start",
-          "paddingBottom": 24,
-          "paddingTop": 2,
-        }
-      }
-    >
-       - 
-      Custom
-    </Text.Primary>
-    <Text.H3>
-      Quantity
-    </Text.H3>
-    <Text.Primary
-      darkGray={true}
-      style={
-        {
-          "alignItems": "flex-start",
-          "paddingBottom": 24,
-          "paddingTop": 2,
-        }
-      }
-    >
-      <FormattedNumber
-        maximumFractionDigits={2}
-        value={NaN}
-      />
-       
-      tC02eq
-    </Text.Primary>
-    <Text.H3>
-      Mitigation
-    </Text.H3>
-    <Text.Primary
-      darkGray={true}
-      style={
-        {
-          "paddingTop": 2,
-        }
-      }
-    >
-      This emission hasn't been mitigated
-    </Text.Primary>
-    <View
-      style={
-        {
-          "alignItems": "flex-start",
-          "paddingBottom": 24,
-          "paddingTop": 2,
-        }
-      }
-    >
-      <RCTSwitch
-        accessibilityRole="switch"
-        onChange={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          {
-            "height": 31,
-            "width": 51,
-          }
-        }
-        value={false}
-      />
-    </View>
-    <Text.H3>
-      Date
-    </Text.H3>
-    <View
-      style={
-        {
-          "flexDirection": "row",
-        }
-      }
-    >
-      <Text.Primary
-        darkGray={true}
-        style={
-          [
-            {
-              "alignItems": "flex-start",
-              "paddingBottom": 24,
-              "paddingTop": 2,
-            },
-            {
-              "textTransform": "capitalize",
-            },
-          ]
-        }
-      >
-        Sunday 
-      </Text.Primary>
-      <Text.Primary
-        darkGray={true}
-        style={
+        [
           {
             "alignItems": "flex-start",
             "paddingBottom": 24,
             "paddingTop": 2,
-          }
+          },
+          {
+            "textTransform": "capitalize",
+          },
+        ]
+      }
+    >
+      Sunday 
+    </RCTText>
+    <RCTText
+      darkGray={true}
+      style={
+        {
+          "alignItems": "flex-start",
+          "paddingBottom": 24,
+          "paddingTop": 2,
         }
-      >
-        21st February 2021
-      </Text.Primary>
-    </View>
-    <Button.Danger
-      fullWidth={true}
-      icon="trash"
-      onPress={[Function]}
-      text="Delete"
-    />
+      }
+    >
+      21st February 2021
+    </RCTText>
   </View>
-</RCTScrollView>
+  <Button.Danger
+    fullWidth={true}
+    icon="trash"
+    onPress={[Function]}
+    text="Delete"
+  />
+</ScrollView>
 `;
