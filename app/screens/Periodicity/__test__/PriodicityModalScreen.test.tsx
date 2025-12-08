@@ -1,9 +1,9 @@
 import React from "react";
-import { create } from "react-test-renderer";
+import { render } from "@testing-library/react-native";
 
 import { PeriodicityModalScreen } from "../PeriodicityModalScreen";
 
 it("InfoModalScreen renders correctly", () => {
-  const tree = create(<PeriodicityModalScreen />).toJSON();
+  const tree = render(<PeriodicityModalScreen />).toJSON();
   expect(tree).toMatchSnapshot();
 });

@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`InfoModalScreen renders correctly 1`] = `
-<RCTScrollView
+<ScrollView
+  ref={null}
   style={
     {
       "backgroundColor": "#FFFFFF",
@@ -10,189 +11,76 @@ exports[`InfoModalScreen renders correctly 1`] = `
     }
   }
 >
-  <View>
+  <View
+    ref={null}
+    style={
+      {
+        "marginVertical": 5,
+      }
+    }
+  >
+    <RCTText>
+      How often this emission happens?
+    </RCTText>
     <View
+      ref={null}
       style={
         {
+          "flexDirection": "row",
+          "flexWrap": "wrap",
           "marginVertical": 5,
         }
       }
     >
-      <Text.H3>
-        How often this emission happens?
-      </Text.H3>
-      <View
-        style={
-          {
-            "flexDirection": "row",
-            "flexWrap": "wrap",
-            "marginVertical": 5,
-          }
-        }
-      >
-        <TouchableOpacity
-          onPress={[Function]}
-          style={
-            [
-              {
-                "alignSelf": "center",
-                "borderRadius": 6,
-                "borderWidth": 1.5,
-                "margin": 6,
-                "paddingHorizontal": 10,
-                "paddingVertical": 4,
-              },
-              {
-                "backgroundColor": "#E7F3EB",
-                "borderColor": "#0F853B",
-              },
-              undefined,
-            ]
-          }
-        >
-          <Text.Secondary
-            bold={true}
-            darkGray={false}
-            green={true}
-          >
-            Monthly
-          </Text.Secondary>
-        </TouchableOpacity>
-        <TouchableOpacity
-          onPress={[Function]}
-          style={
-            [
-              {
-                "alignSelf": "center",
-                "borderRadius": 6,
-                "borderWidth": 1.5,
-                "margin": 6,
-                "paddingHorizontal": 10,
-                "paddingVertical": 4,
-              },
-              {
-                "backgroundColor": "#F0F0F0",
-                "borderColor": "#878787",
-              },
-              undefined,
-            ]
-          }
-        >
-          <Text.Secondary
-            bold={true}
-            darkGray={true}
-            green={false}
-          >
-            Weekly
-          </Text.Secondary>
-        </TouchableOpacity>
-      </View>
-    </View>
-    <View
-      style={
-        {
-          "marginVertical": 5,
-        }
-      }
-    >
-      <Text.H3>
-        Occurences?
-      </Text.H3>
-      <View
-        style={
-          {
-            "flexDirection": "row",
-            "flexWrap": "wrap",
-            "marginVertical": 5,
-          }
-        }
-      >
-        <TouchableOpacity
-          onPress={[Function]}
-          style={
-            [
-              {
-                "alignSelf": "center",
-                "borderRadius": 6,
-                "borderWidth": 1.5,
-                "margin": 6,
-                "paddingHorizontal": 10,
-                "paddingVertical": 4,
-              },
-              {
-                "backgroundColor": "#F0F0F0",
-                "borderColor": "#878787",
-              },
-              undefined,
-            ]
-          }
-        >
-          <Text.Secondary
-            bold={true}
-            darkGray={true}
-            green={false}
-          >
-            1 time
-          </Text.Secondary>
-        </TouchableOpacity>
-        <TouchableOpacity
-          onPress={[Function]}
-          style={
-            [
-              {
-                "alignSelf": "center",
-                "borderRadius": 6,
-                "borderWidth": 1.5,
-                "margin": 6,
-                "paddingHorizontal": 10,
-                "paddingVertical": 4,
-              },
-              {
-                "backgroundColor": "#F0F0F0",
-                "borderColor": "#878787",
-              },
-              undefined,
-            ]
-          }
-        >
-          <Text.Secondary
-            bold={true}
-            darkGray={true}
-            green={false}
-          >
-            2 times
-          </Text.Secondary>
-        </TouchableOpacity>
-        <TouchableOpacity
-          onPress={[Function]}
-          style={
-            [
-              {
-                "alignSelf": "center",
-                "borderRadius": 6,
-                "borderWidth": 1.5,
-                "margin": 6,
-                "paddingHorizontal": 10,
-                "paddingVertical": 4,
-              },
-              {
-                "backgroundColor": "#F0F0F0",
-                "borderColor": "#878787",
-              },
-              undefined,
-            ]
-          }
-        >
-          <Text.Secondary
-            bold={true}
-            darkGray={true}
-            green={false}
-          >
-            3 times
-          </Text.Secondary>
-        </TouchableOpacity>
-      </View>
+      <ClickableTag
+        isSelected={true}
+        onPress={[Function]}
+        text="Monthly"
+      />
+      <ClickableTag
+        isSelected={false}
+        onPress={[Function]}
+        text="Weekly"
+      />
     </View>
   </View>
-</RCTScrollView>
+  <View
+    ref={null}
+    style={
+      {
+        "marginVertical": 5,
+      }
+    }
+  >
+    <RCTText>
+      Occurences?
+    </RCTText>
+    <View
+      ref={null}
+      style={
+        {
+          "flexDirection": "row",
+          "flexWrap": "wrap",
+          "marginVertical": 5,
+        }
+      }
+    >
+      <ClickableTag
+        isSelected={false}
+        onPress={[Function]}
+        text="1 time"
+      />
+      <ClickableTag
+        isSelected={false}
+        onPress={[Function]}
+        text="2 times"
+      />
+      <ClickableTag
+        isSelected={false}
+        onPress={[Function]}
+        text="3 times"
+      />
+    </View>
+  </View>
+</ScrollView>
 `;

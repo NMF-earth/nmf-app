@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MyDataScreen renders correctly 1`] = `
-<RCTScrollView
+<ScrollView
+  ref={null}
   style={
     {
       "backgroundColor": "#FFFFFF",
@@ -10,50 +11,48 @@ exports[`MyDataScreen renders correctly 1`] = `
     }
   }
 >
-  <View>
-    <Text.Primary
-      style={
-        {
-          "marginTop": 12,
-          "paddingVertical": 10,
-        }
+  <RCTText
+    style={
+      {
+        "marginTop": 12,
+        "paddingVertical": 10,
       }
-    >
-      With NMF.earth, you own your data. It means that we don't save your data on any server and therefore that no one but you can access it. No security problem, your data never leaves your phone. However, it also means that you are in charge of saving your data in case you loose your phone for example. To do so, use the export button below to get your data and save it where ever you want to. When you want to import old data, just press the import button but be careful because it will also delete your old data.
-    </Text.Primary>
-    <Button.Primary
-      fullWidth={true}
-      icon="cloud-upload"
-      onPress={[Function]}
-      style={
-        {
-          "marginTop": 20,
-        }
+    }
+  >
+    With NMF.earth, you own your data. It means that we don't save your data on any server and therefore that no one but you can access it. No security problem, your data never leaves your phone. However, it also means that you are in charge of saving your data in case you loose your phone for example. To do so, use the export button below to get your data and save it where ever you want to. When you want to import old data, just press the import button but be careful because it will also delete your old data.
+  </RCTText>
+  <Button.Primary
+    fullWidth={true}
+    icon="cloud-upload"
+    onPress={[Function]}
+    style={
+      {
+        "marginTop": 20,
       }
-      text="Export my data"
-    />
-    <Button.Secondary
-      fullWidth={true}
-      icon="cloud-download"
-      onPress={[Function]}
-      style={
-        {
-          "marginTop": 20,
-        }
+    }
+    text="Export my data"
+  />
+  <Button.Secondary
+    fullWidth={true}
+    icon="cloud-download"
+    onPress={[Function]}
+    style={
+      {
+        "marginTop": 20,
       }
-      text="Import data"
-    />
-    <Button.Danger
-      fullWidth={true}
-      icon="trash"
-      onPress={[Function]}
-      style={
-        {
-          "marginTop": 20,
-        }
+    }
+    text="Import data"
+  />
+  <Button.Danger
+    fullWidth={true}
+    icon="trash"
+    onPress={[Function]}
+    style={
+      {
+        "marginTop": 20,
       }
-      text="Delete all my data"
-    />
-  </View>
-</RCTScrollView>
+    }
+    text="Delete all my data"
+  />
+</ScrollView>
 `;

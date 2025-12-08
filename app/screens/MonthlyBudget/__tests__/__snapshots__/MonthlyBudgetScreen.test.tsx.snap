@@ -2,6 +2,7 @@
 
 exports[`MonthlyBudgetScreen renders correctly 1`] = `
 <View
+  ref={null}
   style={
     {
       "backgroundColor": "#FFFFFF",
@@ -10,293 +11,301 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
     }
   }
 >
-  <RCTScrollView>
-    <View>
-      <View
-        style={
-          {
-            "flexDirection": "row",
-            "flexWrap": "wrap",
-            "paddingTop": 26,
-          }
+  <ScrollView
+    ref={null}
+  >
+    <View
+      ref={null}
+      style={
+        {
+          "flexDirection": "row",
+          "flexWrap": "wrap",
+          "paddingTop": 26,
         }
+      }
+    >
+      <RCTText
+        bold={true}
       >
-        <Text.Primary
-          bold={true}
-        >
-          Slide to set your budget
-        </Text.Primary>
-      </View>
-      <View
-        onLayout={[Function]}
+        Slide to set your budget
+      </RCTText>
+    </View>
+    <View
+      onLayout={[Function]}
+      ref={null}
+      style={
+        [
+          [
+            {
+              "height": 40,
+            },
+            {
+              "marginTop": 14,
+            },
+          ],
+          {
+            "justifyContent": "center",
+          },
+        ]
+      }
+    >
+      <RNCSlider
+        disabled={false}
+        inverted={false}
+        lowerLimit={-9007199254740991}
+        maximumTrackTintColor="#F9F9F9"
+        maximumValue={1000}
+        minimumTrackTintColor="#0F853B"
+        minimumValue={10}
+        onChange={[Function]}
+        onRNCSliderAccessibilityAction={null}
+        onRNCSliderSlidingComplete={[Function]}
+        onRNCSliderSlidingStart={null}
+        onRNCSliderValueChange={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        step={0}
         style={
           [
-            [
-              {
-                "marginTop": 14,
-              },
-              {
-                "height": 40,
-              },
-            ],
             {
-              "justifyContent": "center",
+              "width": 0,
+              "zIndex": 1,
+            },
+            {
+              "height": 40,
+            },
+            {
+              "alignContent": "center",
+              "alignItems": "center",
             },
           ]
         }
-      >
-        <RNCSlider
-          disabled={false}
-          inverted={false}
-          lowerLimit={-9007199254740991}
-          maximumTrackTintColor="#F9F9F9"
-          maximumValue={1000}
-          minimumTrackTintColor="#0F853B"
-          minimumValue={10}
-          onChange={[Function]}
-          onRNCSliderAccessibilityAction={null}
-          onRNCSliderSlidingComplete={[Function]}
-          onRNCSliderSlidingStart={null}
-          onRNCSliderValueChange={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
-          step={0}
-          style={
-            [
-              {
-                "width": 0,
-                "zIndex": 1,
-              },
-              {
-                "height": 40,
-              },
-              {
-                "alignContent": "center",
-                "alignItems": "center",
-              },
-            ]
+        tapToSeek={false}
+        thumbTintColor="#0F853B"
+        upperLimit={9007199254740991}
+      />
+    </View>
+    <RCTText
+      lightGray={true}
+    >
+      <FormattedNumber
+        value={NaN}
+      />
+       
+      lb
+      CO2eq
+    </RCTText>
+    <View
+      ref={null}
+      style={
+        {
+          "flex": 1,
+          "marginVertical": 20,
+        }
+      }
+    >
+      <View
+        ref={null}
+        style={
+          {
+            "flex": 1,
+            "marginBottom": 16,
           }
-          tapToSeek={false}
-          thumbTintColor="#0F853B"
-          upperLimit={9007199254740991}
-        />
-      </View>
-      <Text.Primary
-        lightGray={true}
+        }
       >
+        <RCTText
+          bold={true}
+        >
+          Average monthly emissions per capita in a sample of countries 
+          <TouchableOpacity
+            onPress={[Function]}
+            ref={null}
+          >
+            <Ionicons
+              color="#3957D0"
+              name="information-circle"
+              size={26}
+            />
+          </TouchableOpacity>
+        </RCTText>
+      </View>
+      <RCTText
+        center={true}
+        style={
+          {
+            "marginBottom": 6,
+          }
+        }
+      >
+        Luxembourg : 
         <FormattedNumber
-          value={NaN}
+          value={7718}
         />
          
         lb
         CO2eq
-      </Text.Primary>
-      <View
+      </RCTText>
+      <RCTText
+        center={true}
         style={
           {
-            "flex": 1,
-            "marginVertical": 20,
+            "marginBottom": 6,
           }
         }
       >
-        <View
-          style={
-            {
-              "flex": 1,
-              "marginBottom": 16,
-            }
+        United States : 
+        <FormattedNumber
+          value={3308}
+        />
+         
+        lb
+        CO2eq
+      </RCTText>
+      <RCTText
+        center={true}
+        style={
+          {
+            "marginBottom": 6,
           }
+        }
+      >
+        Japan : 
+        <FormattedNumber
+          value={1985}
+        />
+         
+        lb
+        CO2eq
+      </RCTText>
+      <RCTText
+        center={true}
+        style={
+          {
+            "marginBottom": 6,
+          }
+        }
+      >
+        Sweden : 
+        <FormattedNumber
+          value={1312}
+        />
+         
+        lb
+        CO2eq
+      </RCTText>
+      <RCTText
+        center={true}
+        style={
+          {
+            "marginBottom": 6,
+          }
+        }
+      >
+        France : 
+        <FormattedNumber
+          value={1268}
+        />
+         
+        lb
+        CO2eq
+      </RCTText>
+      <RCTText
+        center={true}
+        style={
+          {
+            "marginBottom": 6,
+          }
+        }
+      >
+        China : 
+        <FormattedNumber
+          value={1151}
+        />
+         
+        lb
+        CO2eq
+      </RCTText>
+      <RCTText
+        center={true}
+        style={
+          {
+            "marginBottom": 6,
+          }
+        }
+      >
+        Brazil : 
+        <FormattedNumber
+          value={459}
+        />
+         
+        lb
+        CO2eq
+      </RCTText>
+      <RCTText
+        center={true}
+        style={
+          {
+            "marginBottom": 6,
+          }
+        }
+      >
+        India : 
+        <FormattedNumber
+          value={306}
+        />
+         
+        lb
+        CO2eq
+      </RCTText>
+      <RCTText
+        center={true}
+        style={
+          {
+            "marginBottom": 6,
+          }
+        }
+      >
+        Ethiopia : 
+        <FormattedNumber
+          value={18}
+        />
+         
+        lb
+        CO2eq
+      </RCTText>
+      <View
+        ref={null}
+        style={
+          {
+            "marginBottom": 80,
+            "marginTop": 16,
+          }
+        }
+      >
+        <RCTText
+          center={true}
         >
-          <Text.Primary
-            bold={true}
+          If you wish to respect the Paris agreement (to keep the rise in global average temperature below 2 degrees), set your monthly budget at
+           
+          368
+           
+          lbCO2eq
+          <TouchableOpacity
+            onPress={[Function]}
+            ref={null}
           >
-            Average monthly emissions per capita in a sample of countries 
-            <TouchableOpacity
-              onPress={[Function]}
-            >
-              <Ionicons
-                color="#3957D0"
-                name="information-circle"
-                size={26}
-              />
-            </TouchableOpacity>
-          </Text.Primary>
-        </View>
-        <Text.Secondary
-          center={true}
-          style={
-            {
-              "marginBottom": 6,
-            }
-          }
-        >
-          Luxembourg : 
-          <FormattedNumber
-            value={7718}
-          />
-           
-          lb
-          CO2eq
-        </Text.Secondary>
-        <Text.Secondary
-          center={true}
-          style={
-            {
-              "marginBottom": 6,
-            }
-          }
-        >
-          United States : 
-          <FormattedNumber
-            value={3308}
-          />
-           
-          lb
-          CO2eq
-        </Text.Secondary>
-        <Text.Secondary
-          center={true}
-          style={
-            {
-              "marginBottom": 6,
-            }
-          }
-        >
-          Japan : 
-          <FormattedNumber
-            value={1985}
-          />
-           
-          lb
-          CO2eq
-        </Text.Secondary>
-        <Text.Secondary
-          center={true}
-          style={
-            {
-              "marginBottom": 6,
-            }
-          }
-        >
-          Sweden : 
-          <FormattedNumber
-            value={1312}
-          />
-           
-          lb
-          CO2eq
-        </Text.Secondary>
-        <Text.Secondary
-          center={true}
-          style={
-            {
-              "marginBottom": 6,
-            }
-          }
-        >
-          France : 
-          <FormattedNumber
-            value={1268}
-          />
-           
-          lb
-          CO2eq
-        </Text.Secondary>
-        <Text.Secondary
-          center={true}
-          style={
-            {
-              "marginBottom": 6,
-            }
-          }
-        >
-          China : 
-          <FormattedNumber
-            value={1151}
-          />
-           
-          lb
-          CO2eq
-        </Text.Secondary>
-        <Text.Secondary
-          center={true}
-          style={
-            {
-              "marginBottom": 6,
-            }
-          }
-        >
-          Brazil : 
-          <FormattedNumber
-            value={459}
-          />
-           
-          lb
-          CO2eq
-        </Text.Secondary>
-        <Text.Secondary
-          center={true}
-          style={
-            {
-              "marginBottom": 6,
-            }
-          }
-        >
-          India : 
-          <FormattedNumber
-            value={306}
-          />
-           
-          lb
-          CO2eq
-        </Text.Secondary>
-        <Text.Secondary
-          center={true}
-          style={
-            {
-              "marginBottom": 6,
-            }
-          }
-        >
-          Ethiopia : 
-          <FormattedNumber
-            value={18}
-          />
-           
-          lb
-          CO2eq
-        </Text.Secondary>
-        <View
-          style={
-            {
-              "marginBottom": 80,
-              "marginTop": 16,
-            }
-          }
-        >
-          <Text.Secondary
-            center={true}
-          >
-            If you wish to respect the Paris agreement (to keep the rise in global average temperature below 2 degrees), set your monthly budget at
-             
-            368
-             
-            lbCO2eq
-            <TouchableOpacity
-              onPress={[Function]}
-            >
-              <Ionicons
-                color="#3957D0"
-                name="information-circle"
-                size={26}
-              />
-            </TouchableOpacity>
-          </Text.Secondary>
-        </View>
+            <Ionicons
+              color="#3957D0"
+              name="information-circle"
+              size={26}
+            />
+          </TouchableOpacity>
+        </RCTText>
       </View>
     </View>
-  </RCTScrollView>
+  </ScrollView>
   <View
+    ref={null}
     style={
       {
         "bottom": 20,

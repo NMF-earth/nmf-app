@@ -1,11 +1,11 @@
 import React from "react";
-import { create } from "react-test-renderer";
+import { render } from "@testing-library/react-native";
 
 import LanguagesScreen from "../LanguagesScreen";
 
 // jest.unmock("../");
 
 it("LanguageScreen renders correctly", () => {
-  const tree = create(<LanguagesScreen />).toJSON();
+  const tree = render(<LanguagesScreen />).toJSON();
   expect(tree).toMatchSnapshot();
 });

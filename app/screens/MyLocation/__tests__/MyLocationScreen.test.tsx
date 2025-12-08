@@ -1,12 +1,12 @@
 /* eslint-disable  @typescript-eslint/explicit-module-boundary-types */
 import React from "react";
-import { create } from "react-test-renderer";
+import { render } from "@testing-library/react-native";
 
 import MyLocationScreen from "../MyLocationScreen";
 
 // jest.unmock("../");
 
 it("MyLocationScreen renders correctly", () => {
-  const tree = create(<MyLocationScreen />).toJSON();
+  const tree = render(<MyLocationScreen />).toJSON();
   expect(tree).toMatchSnapshot();
 });
