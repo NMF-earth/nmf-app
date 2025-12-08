@@ -6,6 +6,7 @@ exports[`EmissionListItem renders correctly if mitigated 1`] = `
 >
   <TouchableOpacity
     onPress={[Function]}
+    ref={null}
     style={
       {
         "alignItems": "center",
@@ -17,6 +18,7 @@ exports[`EmissionListItem renders correctly if mitigated 1`] = `
     }
   >
     <View
+      ref={null}
       style={
         {
           "alignItems": "center",
@@ -28,6 +30,7 @@ exports[`EmissionListItem renders correctly if mitigated 1`] = `
       }
     >
       <View
+        ref={null}
         style={
           {
             "backgroundColor": "#E7F3EB",
@@ -50,6 +53,7 @@ exports[`EmissionListItem renders correctly if mitigated 1`] = `
       />
     </View>
     <View
+      ref={null}
       style={
         {
           "flex": 1,
@@ -57,12 +61,13 @@ exports[`EmissionListItem renders correctly if mitigated 1`] = `
         }
       }
     >
-      <Text.Primary
+      <RCTText
         numberOfLines={1}
       >
         170 g of red meat
-      </Text.Primary>
+      </RCTText>
       <View
+        ref={null}
         style={
           {
             "flexDirection": "row",
@@ -70,7 +75,7 @@ exports[`EmissionListItem renders correctly if mitigated 1`] = `
           }
         }
       >
-        <Text.Tertiary
+        <RCTText
           lightGray={true}
           numberOfLines={1}
         >
@@ -80,17 +85,17 @@ exports[`EmissionListItem renders correctly if mitigated 1`] = `
           />
            kg
           CO2eq
-        </Text.Tertiary>
-        <Text.Tertiary
+        </RCTText>
+        <RCTText
           lightGray={true}
         >
            • 
-        </Text.Tertiary>
-        <Text.Tertiary
+        </RCTText>
+        <RCTText
           green={true}
         >
           Offset
-        </Text.Tertiary>
+        </RCTText>
       </View>
     </View>
     <Ionicons
@@ -113,6 +118,7 @@ exports[`EmissionListItem renders correctly with audio icon 1`] = `
 >
   <TouchableOpacity
     onPress={[Function]}
+    ref={null}
     style={
       {
         "alignItems": "center",
@@ -124,6 +130,7 @@ exports[`EmissionListItem renders correctly with audio icon 1`] = `
     }
   >
     <View
+      ref={null}
       style={
         {
           "alignItems": "center",
@@ -135,6 +142,7 @@ exports[`EmissionListItem renders correctly with audio icon 1`] = `
       }
     >
       <View
+        ref={null}
         style={
           {
             "backgroundColor": "#F9F9F960",
@@ -157,6 +165,7 @@ exports[`EmissionListItem renders correctly with audio icon 1`] = `
       />
     </View>
     <View
+      ref={null}
       style={
         {
           "flex": 1,
@@ -164,12 +173,13 @@ exports[`EmissionListItem renders correctly with audio icon 1`] = `
         }
       }
     >
-      <Text.Primary
+      <RCTText
         numberOfLines={1}
       >
         170 g of red meat
-      </Text.Primary>
+      </RCTText>
       <View
+        ref={null}
         style={
           {
             "flexDirection": "row",
@@ -177,7 +187,7 @@ exports[`EmissionListItem renders correctly with audio icon 1`] = `
           }
         }
       >
-        <Text.Tertiary
+        <RCTText
           lightGray={true}
           numberOfLines={1}
         >
@@ -187,7 +197,7 @@ exports[`EmissionListItem renders correctly with audio icon 1`] = `
           />
            kg
           CO2eq
-        </Text.Tertiary>
+        </RCTText>
       </View>
     </View>
     <Ionicons
@@ -210,6 +220,7 @@ exports[`EmissionListItem renders correctly with boat icon 1`] = `
 >
   <TouchableOpacity
     onPress={[Function]}
+    ref={null}
     style={
       {
         "alignItems": "center",
@@ -221,6 +232,7 @@ exports[`EmissionListItem renders correctly with boat icon 1`] = `
     }
   >
     <View
+      ref={null}
       style={
         {
           "alignItems": "center",
@@ -232,6 +244,7 @@ exports[`EmissionListItem renders correctly with boat icon 1`] = `
       }
     >
       <View
+        ref={null}
         style={
           {
             "backgroundColor": "#F9F9F960",
@@ -254,6 +267,7 @@ exports[`EmissionListItem renders correctly with boat icon 1`] = `
       />
     </View>
     <View
+      ref={null}
       style={
         {
           "flex": 1,
@@ -261,12 +275,13 @@ exports[`EmissionListItem renders correctly with boat icon 1`] = `
         }
       }
     >
-      <Text.Primary
+      <RCTText
         numberOfLines={1}
       >
         170 g of red meat
-      </Text.Primary>
+      </RCTText>
       <View
+        ref={null}
         style={
           {
             "flexDirection": "row",
@@ -274,7 +289,7 @@ exports[`EmissionListItem renders correctly with boat icon 1`] = `
           }
         }
       >
-        <Text.Tertiary
+        <RCTText
           lightGray={true}
           numberOfLines={1}
         >
@@ -284,7 +299,7 @@ exports[`EmissionListItem renders correctly with boat icon 1`] = `
           />
            kg
           CO2eq
-        </Text.Tertiary>
+        </RCTText>
       </View>
     </View>
     <Ionicons
@@ -307,6 +322,7 @@ exports[`EmissionListItem renders correctly with bus icon 1`] = `
 >
   <TouchableOpacity
     onPress={[Function]}
+    ref={null}
     style={
       {
         "alignItems": "center",
@@ -318,6 +334,7 @@ exports[`EmissionListItem renders correctly with bus icon 1`] = `
     }
   >
     <View
+      ref={null}
       style={
         {
           "alignItems": "center",
@@ -329,6 +346,7 @@ exports[`EmissionListItem renders correctly with bus icon 1`] = `
       }
     >
       <View
+        ref={null}
         style={
           {
             "backgroundColor": "#F9F9F960",
@@ -351,6 +369,7 @@ exports[`EmissionListItem renders correctly with bus icon 1`] = `
       />
     </View>
     <View
+      ref={null}
       style={
         {
           "flex": 1,
@@ -358,12 +377,13 @@ exports[`EmissionListItem renders correctly with bus icon 1`] = `
         }
       }
     >
-      <Text.Primary
+      <RCTText
         numberOfLines={1}
       >
         170 g of red meat
-      </Text.Primary>
+      </RCTText>
       <View
+        ref={null}
         style={
           {
             "flexDirection": "row",
@@ -371,7 +391,7 @@ exports[`EmissionListItem renders correctly with bus icon 1`] = `
           }
         }
       >
-        <Text.Tertiary
+        <RCTText
           lightGray={true}
           numberOfLines={1}
         >
@@ -381,7 +401,7 @@ exports[`EmissionListItem renders correctly with bus icon 1`] = `
           />
            kg
           CO2eq
-        </Text.Tertiary>
+        </RCTText>
       </View>
     </View>
     <Ionicons
@@ -404,6 +424,7 @@ exports[`EmissionListItem renders correctly with car icon 1`] = `
 >
   <TouchableOpacity
     onPress={[Function]}
+    ref={null}
     style={
       {
         "alignItems": "center",
@@ -415,6 +436,7 @@ exports[`EmissionListItem renders correctly with car icon 1`] = `
     }
   >
     <View
+      ref={null}
       style={
         {
           "alignItems": "center",
@@ -426,6 +448,7 @@ exports[`EmissionListItem renders correctly with car icon 1`] = `
       }
     >
       <View
+        ref={null}
         style={
           {
             "backgroundColor": "#F9F9F960",
@@ -448,6 +471,7 @@ exports[`EmissionListItem renders correctly with car icon 1`] = `
       />
     </View>
     <View
+      ref={null}
       style={
         {
           "flex": 1,
@@ -455,12 +479,13 @@ exports[`EmissionListItem renders correctly with car icon 1`] = `
         }
       }
     >
-      <Text.Primary
+      <RCTText
         numberOfLines={1}
       >
         170 g of red meat
-      </Text.Primary>
+      </RCTText>
       <View
+        ref={null}
         style={
           {
             "flexDirection": "row",
@@ -468,7 +493,7 @@ exports[`EmissionListItem renders correctly with car icon 1`] = `
           }
         }
       >
-        <Text.Tertiary
+        <RCTText
           lightGray={true}
           numberOfLines={1}
         >
@@ -478,7 +503,7 @@ exports[`EmissionListItem renders correctly with car icon 1`] = `
           />
            kg
           CO2eq
-        </Text.Tertiary>
+        </RCTText>
       </View>
     </View>
     <Ionicons
@@ -501,6 +526,7 @@ exports[`EmissionListItem renders correctly with card icon 1`] = `
 >
   <TouchableOpacity
     onPress={[Function]}
+    ref={null}
     style={
       {
         "alignItems": "center",
@@ -512,6 +538,7 @@ exports[`EmissionListItem renders correctly with card icon 1`] = `
     }
   >
     <View
+      ref={null}
       style={
         {
           "alignItems": "center",
@@ -523,6 +550,7 @@ exports[`EmissionListItem renders correctly with card icon 1`] = `
       }
     >
       <View
+        ref={null}
         style={
           {
             "backgroundColor": "#F9F9F960",
@@ -545,6 +573,7 @@ exports[`EmissionListItem renders correctly with card icon 1`] = `
       />
     </View>
     <View
+      ref={null}
       style={
         {
           "flex": 1,
@@ -552,12 +581,13 @@ exports[`EmissionListItem renders correctly with card icon 1`] = `
         }
       }
     >
-      <Text.Primary
+      <RCTText
         numberOfLines={1}
       >
         170 g of red meat
-      </Text.Primary>
+      </RCTText>
       <View
+        ref={null}
         style={
           {
             "flexDirection": "row",
@@ -565,7 +595,7 @@ exports[`EmissionListItem renders correctly with card icon 1`] = `
           }
         }
       >
-        <Text.Tertiary
+        <RCTText
           lightGray={true}
           numberOfLines={1}
         >
@@ -575,7 +605,7 @@ exports[`EmissionListItem renders correctly with card icon 1`] = `
           />
            kg
           CO2eq
-        </Text.Tertiary>
+        </RCTText>
       </View>
     </View>
     <Ionicons
@@ -598,6 +628,7 @@ exports[`EmissionListItem renders correctly with chocolate icon 1`] = `
 >
   <TouchableOpacity
     onPress={[Function]}
+    ref={null}
     style={
       {
         "alignItems": "center",
@@ -609,6 +640,7 @@ exports[`EmissionListItem renders correctly with chocolate icon 1`] = `
     }
   >
     <View
+      ref={null}
       style={
         {
           "alignItems": "center",
@@ -620,6 +652,7 @@ exports[`EmissionListItem renders correctly with chocolate icon 1`] = `
       }
     >
       <View
+        ref={null}
         style={
           {
             "backgroundColor": "#F9F9F960",
@@ -642,6 +675,7 @@ exports[`EmissionListItem renders correctly with chocolate icon 1`] = `
       />
     </View>
     <View
+      ref={null}
       style={
         {
           "flex": 1,
@@ -649,12 +683,13 @@ exports[`EmissionListItem renders correctly with chocolate icon 1`] = `
         }
       }
     >
-      <Text.Primary
+      <RCTText
         numberOfLines={1}
       >
         170 g of red meat
-      </Text.Primary>
+      </RCTText>
       <View
+        ref={null}
         style={
           {
             "flexDirection": "row",
@@ -662,7 +697,7 @@ exports[`EmissionListItem renders correctly with chocolate icon 1`] = `
           }
         }
       >
-        <Text.Tertiary
+        <RCTText
           lightGray={true}
           numberOfLines={1}
         >
@@ -672,7 +707,7 @@ exports[`EmissionListItem renders correctly with chocolate icon 1`] = `
           />
            kg
           CO2eq
-        </Text.Tertiary>
+        </RCTText>
       </View>
     </View>
     <Ionicons
@@ -695,6 +730,7 @@ exports[`EmissionListItem renders correctly with coffee icon 1`] = `
 >
   <TouchableOpacity
     onPress={[Function]}
+    ref={null}
     style={
       {
         "alignItems": "center",
@@ -706,6 +742,7 @@ exports[`EmissionListItem renders correctly with coffee icon 1`] = `
     }
   >
     <View
+      ref={null}
       style={
         {
           "alignItems": "center",
@@ -717,6 +754,7 @@ exports[`EmissionListItem renders correctly with coffee icon 1`] = `
       }
     >
       <View
+        ref={null}
         style={
           {
             "backgroundColor": "#F9F9F960",
@@ -739,6 +777,7 @@ exports[`EmissionListItem renders correctly with coffee icon 1`] = `
       />
     </View>
     <View
+      ref={null}
       style={
         {
           "flex": 1,
@@ -746,12 +785,13 @@ exports[`EmissionListItem renders correctly with coffee icon 1`] = `
         }
       }
     >
-      <Text.Primary
+      <RCTText
         numberOfLines={1}
       >
         170 g of red meat
-      </Text.Primary>
+      </RCTText>
       <View
+        ref={null}
         style={
           {
             "flexDirection": "row",
@@ -759,7 +799,7 @@ exports[`EmissionListItem renders correctly with coffee icon 1`] = `
           }
         }
       >
-        <Text.Tertiary
+        <RCTText
           lightGray={true}
           numberOfLines={1}
         >
@@ -769,7 +809,7 @@ exports[`EmissionListItem renders correctly with coffee icon 1`] = `
           />
            kg
           CO2eq
-        </Text.Tertiary>
+        </RCTText>
       </View>
     </View>
     <Ionicons
@@ -792,6 +832,7 @@ exports[`EmissionListItem renders correctly with electricity icon 1`] = `
 >
   <TouchableOpacity
     onPress={[Function]}
+    ref={null}
     style={
       {
         "alignItems": "center",
@@ -803,6 +844,7 @@ exports[`EmissionListItem renders correctly with electricity icon 1`] = `
     }
   >
     <View
+      ref={null}
       style={
         {
           "alignItems": "center",
@@ -814,6 +856,7 @@ exports[`EmissionListItem renders correctly with electricity icon 1`] = `
       }
     >
       <View
+        ref={null}
         style={
           {
             "backgroundColor": "#F9F9F960",
@@ -836,6 +879,7 @@ exports[`EmissionListItem renders correctly with electricity icon 1`] = `
       />
     </View>
     <View
+      ref={null}
       style={
         {
           "flex": 1,
@@ -843,12 +887,13 @@ exports[`EmissionListItem renders correctly with electricity icon 1`] = `
         }
       }
     >
-      <Text.Primary
+      <RCTText
         numberOfLines={1}
       >
         170 g of red meat
-      </Text.Primary>
+      </RCTText>
       <View
+        ref={null}
         style={
           {
             "flexDirection": "row",
@@ -856,7 +901,7 @@ exports[`EmissionListItem renders correctly with electricity icon 1`] = `
           }
         }
       >
-        <Text.Tertiary
+        <RCTText
           lightGray={true}
           numberOfLines={1}
         >
@@ -866,7 +911,7 @@ exports[`EmissionListItem renders correctly with electricity icon 1`] = `
           />
            kg
           CO2eq
-        </Text.Tertiary>
+        </RCTText>
       </View>
     </View>
     <Ionicons
@@ -889,6 +934,7 @@ exports[`EmissionListItem renders correctly with fish icon 1`] = `
 >
   <TouchableOpacity
     onPress={[Function]}
+    ref={null}
     style={
       {
         "alignItems": "center",
@@ -900,6 +946,7 @@ exports[`EmissionListItem renders correctly with fish icon 1`] = `
     }
   >
     <View
+      ref={null}
       style={
         {
           "alignItems": "center",
@@ -911,6 +958,7 @@ exports[`EmissionListItem renders correctly with fish icon 1`] = `
       }
     >
       <View
+        ref={null}
         style={
           {
             "backgroundColor": "#F9F9F960",
@@ -933,6 +981,7 @@ exports[`EmissionListItem renders correctly with fish icon 1`] = `
       />
     </View>
     <View
+      ref={null}
       style={
         {
           "flex": 1,
@@ -940,12 +989,13 @@ exports[`EmissionListItem renders correctly with fish icon 1`] = `
         }
       }
     >
-      <Text.Primary
+      <RCTText
         numberOfLines={1}
       >
         170 g of red meat
-      </Text.Primary>
+      </RCTText>
       <View
+        ref={null}
         style={
           {
             "flexDirection": "row",
@@ -953,7 +1003,7 @@ exports[`EmissionListItem renders correctly with fish icon 1`] = `
           }
         }
       >
-        <Text.Tertiary
+        <RCTText
           lightGray={true}
           numberOfLines={1}
         >
@@ -963,7 +1013,7 @@ exports[`EmissionListItem renders correctly with fish icon 1`] = `
           />
            kg
           CO2eq
-        </Text.Tertiary>
+        </RCTText>
       </View>
     </View>
     <Ionicons
@@ -986,6 +1036,7 @@ exports[`EmissionListItem renders correctly with full hd video icon 1`] = `
 >
   <TouchableOpacity
     onPress={[Function]}
+    ref={null}
     style={
       {
         "alignItems": "center",
@@ -997,6 +1048,7 @@ exports[`EmissionListItem renders correctly with full hd video icon 1`] = `
     }
   >
     <View
+      ref={null}
       style={
         {
           "alignItems": "center",
@@ -1008,6 +1060,7 @@ exports[`EmissionListItem renders correctly with full hd video icon 1`] = `
       }
     >
       <View
+        ref={null}
         style={
           {
             "backgroundColor": "#F9F9F960",
@@ -1030,6 +1083,7 @@ exports[`EmissionListItem renders correctly with full hd video icon 1`] = `
       />
     </View>
     <View
+      ref={null}
       style={
         {
           "flex": 1,
@@ -1037,12 +1091,13 @@ exports[`EmissionListItem renders correctly with full hd video icon 1`] = `
         }
       }
     >
-      <Text.Primary
+      <RCTText
         numberOfLines={1}
       >
         170 g of red meat
-      </Text.Primary>
+      </RCTText>
       <View
+        ref={null}
         style={
           {
             "flexDirection": "row",
@@ -1050,7 +1105,7 @@ exports[`EmissionListItem renders correctly with full hd video icon 1`] = `
           }
         }
       >
-        <Text.Tertiary
+        <RCTText
           lightGray={true}
           numberOfLines={1}
         >
@@ -1060,7 +1115,7 @@ exports[`EmissionListItem renders correctly with full hd video icon 1`] = `
           />
            kg
           CO2eq
-        </Text.Tertiary>
+        </RCTText>
       </View>
     </View>
     <Ionicons
@@ -1083,6 +1138,7 @@ exports[`EmissionListItem renders correctly with hd video icon 1`] = `
 >
   <TouchableOpacity
     onPress={[Function]}
+    ref={null}
     style={
       {
         "alignItems": "center",
@@ -1094,6 +1150,7 @@ exports[`EmissionListItem renders correctly with hd video icon 1`] = `
     }
   >
     <View
+      ref={null}
       style={
         {
           "alignItems": "center",
@@ -1105,6 +1162,7 @@ exports[`EmissionListItem renders correctly with hd video icon 1`] = `
       }
     >
       <View
+        ref={null}
         style={
           {
             "backgroundColor": "#F9F9F960",
@@ -1127,6 +1185,7 @@ exports[`EmissionListItem renders correctly with hd video icon 1`] = `
       />
     </View>
     <View
+      ref={null}
       style={
         {
           "flex": 1,
@@ -1134,12 +1193,13 @@ exports[`EmissionListItem renders correctly with hd video icon 1`] = `
         }
       }
     >
-      <Text.Primary
+      <RCTText
         numberOfLines={1}
       >
         170 g of red meat
-      </Text.Primary>
+      </RCTText>
       <View
+        ref={null}
         style={
           {
             "flexDirection": "row",
@@ -1147,7 +1207,7 @@ exports[`EmissionListItem renders correctly with hd video icon 1`] = `
           }
         }
       >
-        <Text.Tertiary
+        <RCTText
           lightGray={true}
           numberOfLines={1}
         >
@@ -1157,7 +1217,7 @@ exports[`EmissionListItem renders correctly with hd video icon 1`] = `
           />
            kg
           CO2eq
-        </Text.Tertiary>
+        </RCTText>
       </View>
     </View>
     <Ionicons
@@ -1180,6 +1240,7 @@ exports[`EmissionListItem renders correctly with longHaulFlight icon 1`] = `
 >
   <TouchableOpacity
     onPress={[Function]}
+    ref={null}
     style={
       {
         "alignItems": "center",
@@ -1191,6 +1252,7 @@ exports[`EmissionListItem renders correctly with longHaulFlight icon 1`] = `
     }
   >
     <View
+      ref={null}
       style={
         {
           "alignItems": "center",
@@ -1202,6 +1264,7 @@ exports[`EmissionListItem renders correctly with longHaulFlight icon 1`] = `
       }
     >
       <View
+        ref={null}
         style={
           {
             "backgroundColor": "#F9F9F960",
@@ -1224,6 +1287,7 @@ exports[`EmissionListItem renders correctly with longHaulFlight icon 1`] = `
       />
     </View>
     <View
+      ref={null}
       style={
         {
           "flex": 1,
@@ -1231,12 +1295,13 @@ exports[`EmissionListItem renders correctly with longHaulFlight icon 1`] = `
         }
       }
     >
-      <Text.Primary
+      <RCTText
         numberOfLines={1}
       >
         170 g of red meat
-      </Text.Primary>
+      </RCTText>
       <View
+        ref={null}
         style={
           {
             "flexDirection": "row",
@@ -1244,7 +1309,7 @@ exports[`EmissionListItem renders correctly with longHaulFlight icon 1`] = `
           }
         }
       >
-        <Text.Tertiary
+        <RCTText
           lightGray={true}
           numberOfLines={1}
         >
@@ -1254,7 +1319,7 @@ exports[`EmissionListItem renders correctly with longHaulFlight icon 1`] = `
           />
            kg
           CO2eq
-        </Text.Tertiary>
+        </RCTText>
       </View>
     </View>
     <Ionicons
@@ -1277,6 +1342,7 @@ exports[`EmissionListItem renders correctly with meal icon 1`] = `
 >
   <TouchableOpacity
     onPress={[Function]}
+    ref={null}
     style={
       {
         "alignItems": "center",
@@ -1288,6 +1354,7 @@ exports[`EmissionListItem renders correctly with meal icon 1`] = `
     }
   >
     <View
+      ref={null}
       style={
         {
           "alignItems": "center",
@@ -1299,6 +1366,7 @@ exports[`EmissionListItem renders correctly with meal icon 1`] = `
       }
     >
       <View
+        ref={null}
         style={
           {
             "backgroundColor": "#F9F9F960",
@@ -1321,6 +1389,7 @@ exports[`EmissionListItem renders correctly with meal icon 1`] = `
       />
     </View>
     <View
+      ref={null}
       style={
         {
           "flex": 1,
@@ -1328,12 +1397,13 @@ exports[`EmissionListItem renders correctly with meal icon 1`] = `
         }
       }
     >
-      <Text.Primary
+      <RCTText
         numberOfLines={1}
       >
         170 g of red meat
-      </Text.Primary>
+      </RCTText>
       <View
+        ref={null}
         style={
           {
             "flexDirection": "row",
@@ -1341,7 +1411,7 @@ exports[`EmissionListItem renders correctly with meal icon 1`] = `
           }
         }
       >
-        <Text.Tertiary
+        <RCTText
           lightGray={true}
           numberOfLines={1}
         >
@@ -1351,7 +1421,7 @@ exports[`EmissionListItem renders correctly with meal icon 1`] = `
           />
            kg
           CO2eq
-        </Text.Tertiary>
+        </RCTText>
       </View>
     </View>
     <Ionicons
@@ -1374,6 +1444,7 @@ exports[`EmissionListItem renders correctly with mediumHaulFlight icon 1`] = `
 >
   <TouchableOpacity
     onPress={[Function]}
+    ref={null}
     style={
       {
         "alignItems": "center",
@@ -1385,6 +1456,7 @@ exports[`EmissionListItem renders correctly with mediumHaulFlight icon 1`] = `
     }
   >
     <View
+      ref={null}
       style={
         {
           "alignItems": "center",
@@ -1396,6 +1468,7 @@ exports[`EmissionListItem renders correctly with mediumHaulFlight icon 1`] = `
       }
     >
       <View
+        ref={null}
         style={
           {
             "backgroundColor": "#F9F9F960",
@@ -1418,6 +1491,7 @@ exports[`EmissionListItem renders correctly with mediumHaulFlight icon 1`] = `
       />
     </View>
     <View
+      ref={null}
       style={
         {
           "flex": 1,
@@ -1425,12 +1499,13 @@ exports[`EmissionListItem renders correctly with mediumHaulFlight icon 1`] = `
         }
       }
     >
-      <Text.Primary
+      <RCTText
         numberOfLines={1}
       >
         170 g of red meat
-      </Text.Primary>
+      </RCTText>
       <View
+        ref={null}
         style={
           {
             "flexDirection": "row",
@@ -1438,7 +1513,7 @@ exports[`EmissionListItem renders correctly with mediumHaulFlight icon 1`] = `
           }
         }
       >
-        <Text.Tertiary
+        <RCTText
           lightGray={true}
           numberOfLines={1}
         >
@@ -1448,7 +1523,7 @@ exports[`EmissionListItem renders correctly with mediumHaulFlight icon 1`] = `
           />
            kg
           CO2eq
-        </Text.Tertiary>
+        </RCTText>
       </View>
     </View>
     <Ionicons
@@ -1471,6 +1546,7 @@ exports[`EmissionListItem renders correctly with motorbike icon 1`] = `
 >
   <TouchableOpacity
     onPress={[Function]}
+    ref={null}
     style={
       {
         "alignItems": "center",
@@ -1482,6 +1558,7 @@ exports[`EmissionListItem renders correctly with motorbike icon 1`] = `
     }
   >
     <View
+      ref={null}
       style={
         {
           "alignItems": "center",
@@ -1493,6 +1570,7 @@ exports[`EmissionListItem renders correctly with motorbike icon 1`] = `
       }
     >
       <View
+        ref={null}
         style={
           {
             "backgroundColor": "#F9F9F960",
@@ -1515,6 +1593,7 @@ exports[`EmissionListItem renders correctly with motorbike icon 1`] = `
       />
     </View>
     <View
+      ref={null}
       style={
         {
           "flex": 1,
@@ -1522,12 +1601,13 @@ exports[`EmissionListItem renders correctly with motorbike icon 1`] = `
         }
       }
     >
-      <Text.Primary
+      <RCTText
         numberOfLines={1}
       >
         170 g of red meat
-      </Text.Primary>
+      </RCTText>
       <View
+        ref={null}
         style={
           {
             "flexDirection": "row",
@@ -1535,7 +1615,7 @@ exports[`EmissionListItem renders correctly with motorbike icon 1`] = `
           }
         }
       >
-        <Text.Tertiary
+        <RCTText
           lightGray={true}
           numberOfLines={1}
         >
@@ -1545,7 +1625,7 @@ exports[`EmissionListItem renders correctly with motorbike icon 1`] = `
           />
            kg
           CO2eq
-        </Text.Tertiary>
+        </RCTText>
       </View>
     </View>
     <Ionicons
@@ -1568,6 +1648,7 @@ exports[`EmissionListItem renders correctly with redMeat icon 1`] = `
 >
   <TouchableOpacity
     onPress={[Function]}
+    ref={null}
     style={
       {
         "alignItems": "center",
@@ -1579,6 +1660,7 @@ exports[`EmissionListItem renders correctly with redMeat icon 1`] = `
     }
   >
     <View
+      ref={null}
       style={
         {
           "alignItems": "center",
@@ -1590,6 +1672,7 @@ exports[`EmissionListItem renders correctly with redMeat icon 1`] = `
       }
     >
       <View
+        ref={null}
         style={
           {
             "backgroundColor": "#F9F9F960",
@@ -1612,6 +1695,7 @@ exports[`EmissionListItem renders correctly with redMeat icon 1`] = `
       />
     </View>
     <View
+      ref={null}
       style={
         {
           "flex": 1,
@@ -1619,12 +1703,13 @@ exports[`EmissionListItem renders correctly with redMeat icon 1`] = `
         }
       }
     >
-      <Text.Primary
+      <RCTText
         numberOfLines={1}
       >
         170 g of red meat
-      </Text.Primary>
+      </RCTText>
       <View
+        ref={null}
         style={
           {
             "flexDirection": "row",
@@ -1632,7 +1717,7 @@ exports[`EmissionListItem renders correctly with redMeat icon 1`] = `
           }
         }
       >
-        <Text.Tertiary
+        <RCTText
           lightGray={true}
           numberOfLines={1}
         >
@@ -1642,7 +1727,7 @@ exports[`EmissionListItem renders correctly with redMeat icon 1`] = `
           />
            kg
           CO2eq
-        </Text.Tertiary>
+        </RCTText>
       </View>
     </View>
     <Ionicons
@@ -1665,6 +1750,7 @@ exports[`EmissionListItem renders correctly with shirt icon 1`] = `
 >
   <TouchableOpacity
     onPress={[Function]}
+    ref={null}
     style={
       {
         "alignItems": "center",
@@ -1676,6 +1762,7 @@ exports[`EmissionListItem renders correctly with shirt icon 1`] = `
     }
   >
     <View
+      ref={null}
       style={
         {
           "alignItems": "center",
@@ -1687,6 +1774,7 @@ exports[`EmissionListItem renders correctly with shirt icon 1`] = `
       }
     >
       <View
+        ref={null}
         style={
           {
             "backgroundColor": "#F9F9F960",
@@ -1709,6 +1797,7 @@ exports[`EmissionListItem renders correctly with shirt icon 1`] = `
       />
     </View>
     <View
+      ref={null}
       style={
         {
           "flex": 1,
@@ -1716,12 +1805,13 @@ exports[`EmissionListItem renders correctly with shirt icon 1`] = `
         }
       }
     >
-      <Text.Primary
+      <RCTText
         numberOfLines={1}
       >
         170 g of red meat
-      </Text.Primary>
+      </RCTText>
       <View
+        ref={null}
         style={
           {
             "flexDirection": "row",
@@ -1729,7 +1819,7 @@ exports[`EmissionListItem renders correctly with shirt icon 1`] = `
           }
         }
       >
-        <Text.Tertiary
+        <RCTText
           lightGray={true}
           numberOfLines={1}
         >
@@ -1739,7 +1829,7 @@ exports[`EmissionListItem renders correctly with shirt icon 1`] = `
           />
            kg
           CO2eq
-        </Text.Tertiary>
+        </RCTText>
       </View>
     </View>
     <Ionicons
@@ -1762,6 +1852,7 @@ exports[`EmissionListItem renders correctly with shortHaulFlight icon 1`] = `
 >
   <TouchableOpacity
     onPress={[Function]}
+    ref={null}
     style={
       {
         "alignItems": "center",
@@ -1773,6 +1864,7 @@ exports[`EmissionListItem renders correctly with shortHaulFlight icon 1`] = `
     }
   >
     <View
+      ref={null}
       style={
         {
           "alignItems": "center",
@@ -1784,6 +1876,7 @@ exports[`EmissionListItem renders correctly with shortHaulFlight icon 1`] = `
       }
     >
       <View
+        ref={null}
         style={
           {
             "backgroundColor": "#F9F9F960",
@@ -1806,6 +1899,7 @@ exports[`EmissionListItem renders correctly with shortHaulFlight icon 1`] = `
       />
     </View>
     <View
+      ref={null}
       style={
         {
           "flex": 1,
@@ -1813,12 +1907,13 @@ exports[`EmissionListItem renders correctly with shortHaulFlight icon 1`] = `
         }
       }
     >
-      <Text.Primary
+      <RCTText
         numberOfLines={1}
       >
         170 g of red meat
-      </Text.Primary>
+      </RCTText>
       <View
+        ref={null}
         style={
           {
             "flexDirection": "row",
@@ -1826,7 +1921,7 @@ exports[`EmissionListItem renders correctly with shortHaulFlight icon 1`] = `
           }
         }
       >
-        <Text.Tertiary
+        <RCTText
           lightGray={true}
           numberOfLines={1}
         >
@@ -1836,7 +1931,7 @@ exports[`EmissionListItem renders correctly with shortHaulFlight icon 1`] = `
           />
            kg
           CO2eq
-        </Text.Tertiary>
+        </RCTText>
       </View>
     </View>
     <Ionicons
@@ -1859,6 +1954,7 @@ exports[`EmissionListItem renders correctly with train icon 1`] = `
 >
   <TouchableOpacity
     onPress={[Function]}
+    ref={null}
     style={
       {
         "alignItems": "center",
@@ -1870,6 +1966,7 @@ exports[`EmissionListItem renders correctly with train icon 1`] = `
     }
   >
     <View
+      ref={null}
       style={
         {
           "alignItems": "center",
@@ -1881,6 +1978,7 @@ exports[`EmissionListItem renders correctly with train icon 1`] = `
       }
     >
       <View
+        ref={null}
         style={
           {
             "backgroundColor": "#F9F9F960",
@@ -1903,6 +2001,7 @@ exports[`EmissionListItem renders correctly with train icon 1`] = `
       />
     </View>
     <View
+      ref={null}
       style={
         {
           "flex": 1,
@@ -1910,12 +2009,13 @@ exports[`EmissionListItem renders correctly with train icon 1`] = `
         }
       }
     >
-      <Text.Primary
+      <RCTText
         numberOfLines={1}
       >
         170 g of red meat
-      </Text.Primary>
+      </RCTText>
       <View
+        ref={null}
         style={
           {
             "flexDirection": "row",
@@ -1923,7 +2023,7 @@ exports[`EmissionListItem renders correctly with train icon 1`] = `
           }
         }
       >
-        <Text.Tertiary
+        <RCTText
           lightGray={true}
           numberOfLines={1}
         >
@@ -1933,7 +2033,7 @@ exports[`EmissionListItem renders correctly with train icon 1`] = `
           />
            kg
           CO2eq
-        </Text.Tertiary>
+        </RCTText>
       </View>
     </View>
     <Ionicons
@@ -1956,6 +2056,7 @@ exports[`EmissionListItem renders correctly with ultra hd video icon 1`] = `
 >
   <TouchableOpacity
     onPress={[Function]}
+    ref={null}
     style={
       {
         "alignItems": "center",
@@ -1967,6 +2068,7 @@ exports[`EmissionListItem renders correctly with ultra hd video icon 1`] = `
     }
   >
     <View
+      ref={null}
       style={
         {
           "alignItems": "center",
@@ -1978,6 +2080,7 @@ exports[`EmissionListItem renders correctly with ultra hd video icon 1`] = `
       }
     >
       <View
+        ref={null}
         style={
           {
             "backgroundColor": "#F9F9F960",
@@ -2000,6 +2103,7 @@ exports[`EmissionListItem renders correctly with ultra hd video icon 1`] = `
       />
     </View>
     <View
+      ref={null}
       style={
         {
           "flex": 1,
@@ -2007,12 +2111,13 @@ exports[`EmissionListItem renders correctly with ultra hd video icon 1`] = `
         }
       }
     >
-      <Text.Primary
+      <RCTText
         numberOfLines={1}
       >
         170 g of red meat
-      </Text.Primary>
+      </RCTText>
       <View
+        ref={null}
         style={
           {
             "flexDirection": "row",
@@ -2020,7 +2125,7 @@ exports[`EmissionListItem renders correctly with ultra hd video icon 1`] = `
           }
         }
       >
-        <Text.Tertiary
+        <RCTText
           lightGray={true}
           numberOfLines={1}
         >
@@ -2030,7 +2135,7 @@ exports[`EmissionListItem renders correctly with ultra hd video icon 1`] = `
           />
            kg
           CO2eq
-        </Text.Tertiary>
+        </RCTText>
       </View>
     </View>
     <Ionicons
@@ -2053,6 +2158,7 @@ exports[`EmissionListItem renders correctly with whiteMeat icon 1`] = `
 >
   <TouchableOpacity
     onPress={[Function]}
+    ref={null}
     style={
       {
         "alignItems": "center",
@@ -2064,6 +2170,7 @@ exports[`EmissionListItem renders correctly with whiteMeat icon 1`] = `
     }
   >
     <View
+      ref={null}
       style={
         {
           "alignItems": "center",
@@ -2075,6 +2182,7 @@ exports[`EmissionListItem renders correctly with whiteMeat icon 1`] = `
       }
     >
       <View
+        ref={null}
         style={
           {
             "backgroundColor": "#F9F9F960",
@@ -2097,6 +2205,7 @@ exports[`EmissionListItem renders correctly with whiteMeat icon 1`] = `
       />
     </View>
     <View
+      ref={null}
       style={
         {
           "flex": 1,
@@ -2104,12 +2213,13 @@ exports[`EmissionListItem renders correctly with whiteMeat icon 1`] = `
         }
       }
     >
-      <Text.Primary
+      <RCTText
         numberOfLines={1}
       >
         170 g of red meat
-      </Text.Primary>
+      </RCTText>
       <View
+        ref={null}
         style={
           {
             "flexDirection": "row",
@@ -2117,7 +2227,7 @@ exports[`EmissionListItem renders correctly with whiteMeat icon 1`] = `
           }
         }
       >
-        <Text.Tertiary
+        <RCTText
           lightGray={true}
           numberOfLines={1}
         >
@@ -2127,7 +2237,7 @@ exports[`EmissionListItem renders correctly with whiteMeat icon 1`] = `
           />
            kg
           CO2eq
-        </Text.Tertiary>
+        </RCTText>
       </View>
     </View>
     <Ionicons

@@ -1,5 +1,5 @@
 import React from "react";
-import { create } from "react-test-renderer";
+import { render } from "@testing-library/react-native";
 import { GlobalizeProvider } from "react-native-globalize";
 import * as reactRedux from "react-redux";
 import {
@@ -38,7 +38,7 @@ beforeEach(() => {
 });
 
 it("EmissionListItem renders correctly if mitigated", () => {
-  const tree = create(
+  const tree = render(
     <GlobalizeProvider locale="en">
       <EmissionListItem
         {...props}
@@ -51,7 +51,7 @@ it("EmissionListItem renders correctly if mitigated", () => {
 });
 
 it("EmissionListItem renders correctly with redMeat icon", () => {
-  const tree = create(
+  const tree = render(
     <GlobalizeProvider locale="en">
       <EmissionListItem {...props} iconName={ui.getIconFromModelType(FoodType.redMeat)} />
     </GlobalizeProvider>
@@ -60,7 +60,7 @@ it("EmissionListItem renders correctly with redMeat icon", () => {
 });
 
 it("EmissionListItem renders correctly with whiteMeat icon", () => {
-  const tree = create(
+  const tree = render(
     <GlobalizeProvider locale="en">
       <EmissionListItem {...props} iconName={ui.getIconFromModelType(FoodType.whiteMeat)} />
     </GlobalizeProvider>
@@ -69,7 +69,7 @@ it("EmissionListItem renders correctly with whiteMeat icon", () => {
 });
 
 it("EmissionListItem renders correctly with chocolate icon", () => {
-  const tree = create(
+  const tree = render(
     <GlobalizeProvider locale="en">
       <EmissionListItem {...props} iconName={ui.getIconFromModelType(FoodType.chocolate)} />
     </GlobalizeProvider>
@@ -78,7 +78,7 @@ it("EmissionListItem renders correctly with chocolate icon", () => {
 });
 
 it("EmissionListItem renders correctly with coffee icon", () => {
-  const tree = create(
+  const tree = render(
     <GlobalizeProvider locale="en">
       <EmissionListItem {...props} iconName={ui.getIconFromModelType(FoodType.coffee)} />
     </GlobalizeProvider>
@@ -87,7 +87,7 @@ it("EmissionListItem renders correctly with coffee icon", () => {
 });
 
 it("EmissionListItem renders correctly with fish icon", () => {
-  const tree = create(
+  const tree = render(
     <GlobalizeProvider locale="en">
       <EmissionListItem {...props} iconName={ui.getIconFromModelType(FoodType.fish)} />
     </GlobalizeProvider>
@@ -96,7 +96,7 @@ it("EmissionListItem renders correctly with fish icon", () => {
 });
 
 it("EmissionListItem renders correctly with boat icon", () => {
-  const tree = create(
+  const tree = render(
     <GlobalizeProvider locale="en">
       <EmissionListItem {...props} iconName={ui.getIconFromModelType(TransportType.boat)} />
     </GlobalizeProvider>
@@ -105,7 +105,7 @@ it("EmissionListItem renders correctly with boat icon", () => {
 });
 
 it("EmissionListItem renders correctly with bus icon", () => {
-  const tree = create(
+  const tree = render(
     <GlobalizeProvider locale="en">
       <EmissionListItem {...props} iconName={ui.getIconFromModelType(TransportType.bus)} />
     </GlobalizeProvider>
@@ -114,7 +114,7 @@ it("EmissionListItem renders correctly with bus icon", () => {
 });
 
 it("EmissionListItem renders correctly with car icon", () => {
-  const tree = create(
+  const tree = render(
     <GlobalizeProvider locale="en">
       <EmissionListItem {...props} iconName={ui.getIconFromModelType(TransportType.car)} />
     </GlobalizeProvider>
@@ -123,7 +123,7 @@ it("EmissionListItem renders correctly with car icon", () => {
 });
 
 it("EmissionListItem renders correctly with longHaulFlight icon", () => {
-  const tree = create(
+  const tree = render(
     <GlobalizeProvider locale="en">
       <EmissionListItem
         {...props}
@@ -135,7 +135,7 @@ it("EmissionListItem renders correctly with longHaulFlight icon", () => {
 });
 
 it("EmissionListItem renders correctly with mediumHaulFlight icon", () => {
-  const tree = create(
+  const tree = render(
     <GlobalizeProvider locale="en">
       <EmissionListItem
         {...props}
@@ -147,7 +147,7 @@ it("EmissionListItem renders correctly with mediumHaulFlight icon", () => {
 });
 
 it("EmissionListItem renders correctly with motorbike icon", () => {
-  const tree = create(
+  const tree = render(
     <GlobalizeProvider locale="en">
       <EmissionListItem {...props} iconName={ui.getIconFromModelType(TransportType.motorbike)} />
     </GlobalizeProvider>
@@ -156,7 +156,7 @@ it("EmissionListItem renders correctly with motorbike icon", () => {
 });
 
 it("EmissionListItem renders correctly with shortHaulFlight icon", () => {
-  const tree = create(
+  const tree = render(
     <GlobalizeProvider locale="en">
       <EmissionListItem
         {...props}
@@ -168,7 +168,7 @@ it("EmissionListItem renders correctly with shortHaulFlight icon", () => {
 });
 
 it("EmissionListItem renders correctly with train icon", () => {
-  const tree = create(
+  const tree = render(
     <GlobalizeProvider locale="en">
       <EmissionListItem {...props} iconName={ui.getIconFromModelType(TransportType.train)} />
     </GlobalizeProvider>
@@ -177,7 +177,7 @@ it("EmissionListItem renders correctly with train icon", () => {
 });
 
 it("EmissionListItem renders correctly with hd video icon", () => {
-  const tree = create(
+  const tree = render(
     <GlobalizeProvider locale="en">
       <EmissionListItem {...props} iconName={ui.getIconFromModelType(StreamingType.HDVideo)} />
     </GlobalizeProvider>
@@ -186,7 +186,7 @@ it("EmissionListItem renders correctly with hd video icon", () => {
 });
 
 it("EmissionListItem renders correctly with audio icon", () => {
-  const tree = create(
+  const tree = render(
     <GlobalizeProvider locale="en">
       <EmissionListItem {...props} iconName={ui.getIconFromModelType(StreamingType.audioMP3)} />
     </GlobalizeProvider>
@@ -195,7 +195,7 @@ it("EmissionListItem renders correctly with audio icon", () => {
 });
 
 it("EmissionListItem renders correctly with full hd video icon", () => {
-  const tree = create(
+  const tree = render(
     <GlobalizeProvider locale="en">
       <EmissionListItem {...props} iconName={ui.getIconFromModelType(StreamingType.fullHDVideo)} />
     </GlobalizeProvider>
@@ -204,7 +204,7 @@ it("EmissionListItem renders correctly with full hd video icon", () => {
 });
 
 it("EmissionListItem renders correctly with ultra hd video icon", () => {
-  const tree = create(
+  const tree = render(
     <GlobalizeProvider locale="en">
       <EmissionListItem {...props} iconName={ui.getIconFromModelType(StreamingType.ultraHDVideo)} />
     </GlobalizeProvider>
@@ -213,7 +213,7 @@ it("EmissionListItem renders correctly with ultra hd video icon", () => {
 });
 
 it("EmissionListItem renders correctly with electricity icon", () => {
-  const tree = create(
+  const tree = render(
     <GlobalizeProvider locale="en">
       <EmissionListItem {...props} iconName={ui.getIconFromModelType(ElectricityType.europe)} />
     </GlobalizeProvider>
@@ -222,7 +222,7 @@ it("EmissionListItem renders correctly with electricity icon", () => {
 });
 
 it("EmissionListItem renders correctly with card icon", () => {
-  const tree = create(
+  const tree = render(
     <GlobalizeProvider locale="en">
       <EmissionListItem {...props} iconName={ui.getIconFromModelType(PurchaseType.computer)} />
     </GlobalizeProvider>
@@ -231,7 +231,7 @@ it("EmissionListItem renders correctly with card icon", () => {
 });
 
 it("EmissionListItem renders correctly with shirt icon", () => {
-  const tree = create(
+  const tree = render(
     <GlobalizeProvider locale="en">
       <EmissionListItem {...props} iconName={ui.getIconFromModelType(FashionType.coat)} />
     </GlobalizeProvider>
@@ -240,7 +240,7 @@ it("EmissionListItem renders correctly with shirt icon", () => {
 });
 
 it("EmissionListItem renders correctly with meal icon", () => {
-  const tree = create(
+  const tree = render(
     <GlobalizeProvider locale="en">
       <EmissionListItem {...props} iconName={ui.getIconFromModelType(MealType.mediumMeat)} />
     </GlobalizeProvider>
