@@ -1,4 +1,4 @@
-import * as Localization from "expo-localization";
+import { getLocales } from "expo-localization";
 import i18n from "i18n-js";
 
 import { en, de, fr, sv, ru, pl, pt, da, zh, ms, es, it, ar, cs, TranslationKeys } from "./resources";
@@ -8,7 +8,7 @@ i18n.fallbacks = true;
 i18n.translations = { en, de, fr, sv, ru, pl, pt, da, zh, ms, es, it, ar, cs };
 
 // Test locales quickly by overriding this value
-i18n.locale = Localization.locale;
+i18n.locale = getLocales()[0].languageTag;
 
 /*
  * Pass a translation key and receive a translated string, optionally passing a template value.
