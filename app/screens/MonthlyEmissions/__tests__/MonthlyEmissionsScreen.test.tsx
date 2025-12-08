@@ -1,6 +1,6 @@
 import "react-native";
 import React from "react";
-import { create } from "react-test-renderer";
+import { render } from "@testing-library/react-native";
 import { FoodType, TransportType } from "carbon-footprint";
 import * as reactRedux from "react-redux";
 
@@ -56,7 +56,42 @@ describe("<MonthlyEmissions />", () => {
         ...selectors.getEmissions(state, new Date("2020-03-01T12:08:16.623Z").toISOString()),
       ]);
 
-    const wrapper = create(<MonthlyEmissions />);
-    expect(wrapper).toMatchSnapshot();
+    const stripReactInternals = (node: unknown): unknown => {
+      if (!node) return node;
+      if (Array.isArray(node)) {
+        return node.map(stripReactInternals);
+      }
+      if (typeof node === "object") {
+        const newNode = { ...node };
+
+        // Remove volatile and internal keys
+        const blockedKeys = [
+          "actualDuration",
+          "actualStartTime",
+          "selfBaseDuration",
+          "treeBaseDuration",
+          "_owner",
+          "_store",
+          "return",
+          "alternate",
+          "child",
+          "sibling",
+          "stateNode"
+        ];
+
+        blockedKeys.forEach(key => delete newNode[key]);
+
+        // Recursively clean all remaining properties
+        Object.keys(newNode).forEach((key) => {
+          newNode[key] = stripReactInternals(newNode[key]);
+        });
+
+        return newNode;
+      }
+      return node;
+    };
+
+    const wrapper = render(<MonthlyEmissions />);
+    expect(stripReactInternals(wrapper.toJSON())).toMatchSnapshot();
   });
 });

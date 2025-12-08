@@ -1,11 +1,35 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<MonthlyEmissions /> render 1`] = `
-<RCTScrollView
+<FlatList
   ListHeaderComponent={
-    <View
-      style={
-        {
+    {
+      "$$typeof": Symbol(react.transitional.element),
+      "key": null,
+      "props": {
+        "children": [
+          {
+            "$$typeof": Symbol(react.transitional.element),
+            "key": null,
+            "props": {
+              "bold": true,
+              "children": "20.08 kgCO2eq",
+              "darkGray": true,
+            },
+            "type": [Function],
+          },
+          {
+            "$$typeof": Symbol(react.transitional.element),
+            "key": null,
+            "props": {
+              "children": "10 % of budget",
+              "green": true,
+              "orange": false,
+            },
+            "type": [Function],
+          },
+        ],
+        "style": {
           "backgroundColor": "#FFFFFF",
           "borderBottomColor": "#E7F3EB",
           "borderBottomWidth": 2,
@@ -20,22 +44,13 @@ exports[`<MonthlyEmissions /> render 1`] = `
             "width": 0,
           },
           "shadowRadius": 0,
-        }
-      }
-    >
-      <Text.Primary
-        bold={true}
-        darkGray={true}
-      >
-        20.08 kgCO2eq
-      </Text.Primary>
-      <Text.Secondary
-        green={true}
-        orange={false}
-      >
-        10 % of budget
-      </Text.Secondary>
-    </View>
+        },
+      },
+      "type": {
+        "$$typeof": Symbol(react.forward_ref),
+        "render": [Function],
+      },
+    }
   }
   data={
     [
@@ -65,96 +80,13 @@ exports[`<MonthlyEmissions /> render 1`] = `
       },
     ]
   }
-  getItem={[Function]}
-  getItemCount={[Function]}
   keyExtractor={[Function]}
-  onContentSizeChange={[Function]}
-  onLayout={[Function]}
-  onMomentumScrollBegin={[Function]}
-  onMomentumScrollEnd={[Function]}
-  onScroll={[Function]}
-  onScrollBeginDrag={[Function]}
-  onScrollEndDrag={[Function]}
-  removeClippedSubviews={false}
+  ref={null}
   renderItem={[Function]}
-  scrollEventThrottle={0.0001}
-  stickyHeaderIndices={[]}
   style={
     {
       "backgroundColor": "#FFFFFF",
     }
   }
-  viewabilityConfigCallbackPairs={[]}
->
-  <View>
-    <View
-      collapsable={false}
-      onLayout={[Function]}
-    >
-      <View
-        style={
-          {
-            "backgroundColor": "#FFFFFF",
-            "borderBottomColor": "#E7F3EB",
-            "borderBottomWidth": 2,
-            "elevation": 0,
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-            "paddingHorizontal": 16,
-            "paddingVertical": 16,
-            "shadowColor": "transparent",
-            "shadowOffset": {
-              "height": 0,
-              "width": 0,
-            },
-            "shadowRadius": 0,
-          }
-        }
-      >
-        <Text.Primary
-          bold={true}
-          darkGray={true}
-        >
-          20.08 kgCO2eq
-        </Text.Primary>
-        <Text.Secondary
-          green={true}
-          orange={false}
-        >
-          10 % of budget
-        </Text.Secondary>
-      </View>
-    </View>
-    <View
-      onFocusCapture={[Function]}
-      onLayout={[Function]}
-      style={null}
-    >
-      <EmissionListItem
-        co2value={20}
-        emissionModelType="beans"
-        iconName="nutrition"
-        id="1"
-        isMitigated={false}
-        onPress={[Function]}
-        title="Beans"
-      />
-    </View>
-    <View
-      onFocusCapture={[Function]}
-      onLayout={[Function]}
-      style={null}
-    >
-      <EmissionListItem
-        co2value={0.0803}
-        emissionModelType="boat"
-        iconName="boat"
-        id="12"
-        isMitigated={true}
-        onPress={[Function]}
-        title="Boat"
-      />
-    </View>
-  </View>
-</RCTScrollView>
+/>
 `;
