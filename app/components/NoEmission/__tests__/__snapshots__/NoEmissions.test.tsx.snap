@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly NoEmission 1`] = `
-<RCTScrollView
+<ScrollView
+  ref={null}
   style={
     {
       "backgroundColor": "#FFFFFF",
@@ -10,59 +11,58 @@ exports[`renders correctly NoEmission 1`] = `
     }
   }
 >
-  <View>
-    <StickersImage
-      sticker="earth"
-    />
-    <View
+  <StickersImage
+    sticker="earth"
+  />
+  <View
+    ref={null}
+    style={
+      {
+        "alignItems": "center",
+        "flex": 1,
+      }
+    }
+  >
+    <RCTText
       style={
         {
-          "alignItems": "center",
-          "flex": 1,
+          "paddingVertical": 14,
         }
       }
     >
-      <Text.H1
-        style={
-          {
-            "paddingVertical": 14,
-          }
+      Hi there 👋
+    </RCTText>
+    <RCTText
+      style={
+        {
+          "paddingVertical": 4,
+          "textAlign": "center",
         }
-      >
-        Hi there 👋
-      </Text.H1>
-      <Text.Primary
-        style={
-          {
-            "paddingVertical": 4,
-            "textAlign": "center",
-          }
+      }
+    >
+      Thanks for joining our fight against climate change!
+    </RCTText>
+    <RCTText
+      style={
+        {
+          "paddingVertical": 4,
+          "textAlign": "center",
         }
-      >
-        Thanks for joining our fight against climate change!
-      </Text.Primary>
-      <Text.Primary
-        style={
-          {
-            "paddingVertical": 4,
-            "textAlign": "center",
-          }
+      }
+    >
+      To start tracking your CO2 emissions, tap the button below
+    </RCTText>
+    <Button.Primary
+      fullWidth={true}
+      icon="add"
+      onPress={[Function]}
+      style={
+        {
+          "marginVertical": 20,
         }
-      >
-        To start tracking your CO2 emissions, tap the button below
-      </Text.Primary>
-      <Button.Primary
-        fullWidth={true}
-        icon="add"
-        onPress={[Function]}
-        style={
-          {
-            "marginVertical": 20,
-          }
-        }
-        text="Add my first emission"
-      />
-    </View>
+      }
+      text="Add my first emission"
+    />
   </View>
-</RCTScrollView>
+</ScrollView>
 `;
