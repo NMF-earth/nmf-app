@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SettingsScreen renders correctly 1`] = `
-<RCTScrollView
+<ScrollView
+  ref={null}
   style={
     {
       "backgroundColor": "#FFFFFF",
@@ -10,91 +11,77 @@ exports[`SettingsScreen renders correctly 1`] = `
     }
   }
 >
-  <View>
-    <ListItem
-      onPress={[Function]}
-      showBottomLine={true}
-      title="About"
-    />
-    <ListItemSwitch
-      onChange={[Function]}
-      showBottomLine={true}
-      title="Metric units"
-    />
-    <ListItem
-      onPress={[Function]}
-      showBottomLine={true}
-      title="My data"
-    />
-    <ListItem
-      onPress={[Function]}
-      showBottomLine={true}
-      title="Notifications"
-    />
-    <ListItem
-      onPress={[Function]}
-      showBottomLine={true}
-      title="My location"
-    />
-    <ListItem
-      onPress={[Function]}
-      showBottomLine={true}
-      title="Support us!"
-    />
-    <ListItem
-      onPress={[Function]}
-      showBottomLine={true}
-      title="FAQ"
-    />
-    <ListItem
-      onPress={[Function]}
-      showBottomLine={true}
-      title="NMF.earth"
-    />
-    <ListItem
-      onPress={[Function]}
-      showBottomLine={true}
-      title="Roadmap"
-    />
-    <ListItem
-      onPress={[Function]}
-      showBottomLine={true}
-      title="Help translation"
-    />
-    <ListItem
-      onPress={[Function]}
-      showBottomLine={true}
-      title="Feedback"
-    />
-    <ListItem
-      onPress={[Function]}
-      showBottomLine={true}
-      title="Terms of use"
-    />
-    <ListItem
-      onPress={[Function]}
-      showBottomLine={false}
-      title="Languages"
-    />
+  <ListItem
+    onPress={[Function]}
+    showBottomLine={true}
+    title="About"
+  />
+  <ListItemSwitch
+    onChange={[Function]}
+    showBottomLine={true}
+    title="Metric units"
+  />
+  <ListItem
+    onPress={[Function]}
+    showBottomLine={true}
+    title="My data"
+  />
+  <ListItem
+    onPress={[Function]}
+    showBottomLine={true}
+    title="Notifications"
+  />
+  <ListItem
+    onPress={[Function]}
+    showBottomLine={true}
+    title="My location"
+  />
+  <ListItem
+    onPress={[Function]}
+    showBottomLine={true}
+    title="Support us!"
+  />
+  <ListItem
+    onPress={[Function]}
+    showBottomLine={true}
+    title="FAQ"
+  />
+  <ListItem
+    onPress={[Function]}
+    showBottomLine={true}
+    title="NMF.earth"
+  />
+  <ListItem
+    onPress={[Function]}
+    showBottomLine={true}
+    title="Roadmap"
+  />
+  <ListItem
+    onPress={[Function]}
+    showBottomLine={true}
+    title="Help translation"
+  />
+  <ListItem
+    onPress={[Function]}
+    showBottomLine={true}
+    title="Feedback"
+  />
+  <ListItem
+    onPress={[Function]}
+    showBottomLine={true}
+    title="Terms of use"
+  />
+  <ListItem
+    onPress={[Function]}
+    showBottomLine={false}
+    title="Languages"
+  />
+  <TouchableWithoutFeedback
+    onPress={[Function]}
+    ref={null}
+  >
     <View
-      accessibilityState={
-        {
-          "busy": undefined,
-          "checked": undefined,
-          "disabled": undefined,
-          "expanded": undefined,
-          "selected": undefined,
-        }
-      }
-      accessible={true}
-      focusable={true}
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
+      ref={null}
       style={
         {
           "alignItems": "center",
@@ -103,6 +90,7 @@ exports[`SettingsScreen renders correctly 1`] = `
       }
     >
       <Image
+        ref={null}
         resizeMode="contain"
         source={
           {
@@ -116,19 +104,19 @@ exports[`SettingsScreen renders correctly 1`] = `
         }
       />
     </View>
-    <Text.Tertiary
-      bold={true}
-      lightGray={true}
-      style={
-        {
-          "marginBottom": 24,
-          "textAlign": "center",
-        }
+  </TouchableWithoutFeedback>
+  <RCTText
+    bold={true}
+    lightGray={true}
+    style={
+      {
+        "marginBottom": 24,
+        "textAlign": "center",
       }
-    >
-      Version 0.0.1-42
-    </Text.Tertiary>
-    <SocialMedia />
-  </View>
-</RCTScrollView>
+    }
+  >
+    Version 0.0.1-42
+  </RCTText>
+  <SocialMedia />
+</ScrollView>
 `;

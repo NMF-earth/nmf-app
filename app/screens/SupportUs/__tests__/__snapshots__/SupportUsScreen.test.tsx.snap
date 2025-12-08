@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SupportUsScreen renders correctly 1`] = `
-<RCTScrollView
+<ScrollView
+  ref={null}
   style={
     {
       "backgroundColor": "#FFFFFF",
@@ -10,64 +11,63 @@ exports[`SupportUsScreen renders correctly 1`] = `
     }
   }
 >
-  <View>
-    <StickersImage
-      sticker="restaurant"
-    />
-    <Text.H2
-      style={
-        {
-          "paddingBottom": 4,
-          "paddingTop": 14,
-        }
+  <StickersImage
+    sticker="restaurant"
+  />
+  <RCTText
+    style={
+      {
+        "paddingBottom": 4,
+        "paddingTop": 14,
       }
-    >
-      Why you should consider supporting us
-    </Text.H2>
-    <Text.Primary
-      style={
-        {
-          "paddingVertical": 10,
-        }
+    }
+  >
+    Why you should consider supporting us
+  </RCTText>
+  <RCTText
+    style={
+      {
+        "paddingVertical": 10,
       }
-    >
-      NMF.earth is not for profit, we have only raised a small amount on Kickstarter and we keep working a lot on the project even if it's not financially sustainable. Besides that, we have many costs such as servers, domain name, softwares licences, apple developer account etc.
-    </Text.Primary>
-    <Text.Primary
-      style={
-        {
-          "paddingVertical": 10,
-        }
+    }
+  >
+    NMF.earth is not for profit, we have only raised a small amount on Kickstarter and we keep working a lot on the project even if it's not financially sustainable. Besides that, we have many costs such as servers, domain name, softwares licences, apple developer account etc.
+  </RCTText>
+  <RCTText
+    style={
+      {
+        "paddingVertical": 10,
       }
-    >
-      If you like this project, please consider donating a small amount to help us keep going!
-    </Text.Primary>
-    <Text.Primary
-      style={
-        {
-          "paddingVertical": 10,
-        }
+    }
+  >
+    If you like this project, please consider donating a small amount to help us keep going!
+  </RCTText>
+  <RCTText
+    style={
+      {
+        "paddingVertical": 10,
       }
-    >
-      You can do so on Ko-fi.
-    </Text.Primary>
-    <Text.Link
-      style={
-        {
-          "paddingVertical": 10,
-        }
+    }
+  >
+    You can do so on Ko-fi.
+  </RCTText>
+  <RCTText
+    style={
+      {
+        "paddingVertical": 10,
       }
-      url="https://ko-fi.com/pierrebresson"
-    >
-      Pierre Bresson - Ko-fi
-    </Text.Link>
-    <View
-      style={
-        {
-          "height": 30,
-        }
+    }
+    url="https://ko-fi.com/pierrebresson"
+  >
+    Pierre Bresson - Ko-fi
+  </RCTText>
+  <View
+    ref={null}
+    style={
+      {
+        "height": 30,
       }
-    />
-  </View>
-</RCTScrollView>
+    }
+  />
+</ScrollView>
 `;

@@ -1,9 +1,9 @@
 import React from "react";
-import { create } from "react-test-renderer";
+import { render } from "@testing-library/react-native";
 
 import SubCategorySelectionScreen from "../SubCategorySelectionScreen";
 
 it("SubCategorySelectionScreen renders correctly", () => {
-  const tree = create(<SubCategorySelectionScreen />).toJSON();
+  const tree = render(<SubCategorySelectionScreen />).toJSON();
   expect(tree).toMatchSnapshot();
 });

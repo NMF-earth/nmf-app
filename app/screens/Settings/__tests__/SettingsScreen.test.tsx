@@ -1,5 +1,5 @@
 import React from "react";
-import { create } from "react-test-renderer";
+import { render } from "@testing-library/react-native";
 import constants from "expo-constants";
 
 import SettingsScreen from "../SettingsScreen";
@@ -9,16 +9,16 @@ beforeAll(() => {
     version: "0.0.1",
     name: "name",
     slug: "slug",
-    ios:{
-      buildNumber:"42"
+    ios: {
+      buildNumber: "42"
     },
-    android:{
-      versionCode:42
+    android: {
+      versionCode: 42
     }
   };
 });
 
 it("SettingsScreen renders correctly", () => {
-  const tree = create(<SettingsScreen />).toJSON();
+  const tree = render(<SettingsScreen />).toJSON();
   expect(tree).toMatchSnapshot();
 });
