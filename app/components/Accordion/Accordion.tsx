@@ -49,7 +49,7 @@ const Accordion: FC<AccordionProps> & { Item: typeof Item } = ({ children }) => 
   return (
     <View style={styles.container}>
       {Children.map(children, (child, index) =>
-        cloneElement(child as ReactElement, {
+        cloneElement(child as ReactElement<ItemProps>, {
           isFirst: index === 0,
           isOpen: index === openIndex,
           onTitlePress: () => {
