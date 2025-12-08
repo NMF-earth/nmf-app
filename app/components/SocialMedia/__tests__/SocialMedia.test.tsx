@@ -1,5 +1,5 @@
 import React from "react";
-import { create } from "react-test-renderer";
+import { render, fireEvent } from "@testing-library/react-native";
 import * as Linking from "expo-linking";
 
 import SocialMedia from "..";
@@ -14,25 +14,18 @@ jest.mock("@expo/vector-icons", () => {
   };
 });
 
-beforeEach(() => {
-  jest.spyOn(Linking, "openURL").mockImplementation((url: string) => {
-    if (url) {
-      return Promise.resolve(true);
-    }
-    Promise.reject(false);
-  });
-});
+jest.mock("expo-linking");
 
-test("renders correctly SocialMedia", () => {
-  const tree = create(<SocialMedia />);
+it("renders correctly SocialMedia", () => {
+  const tree = render(<SocialMedia />).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
 test("should open link", () => {
-  const root = create(<SocialMedia />).root;
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  // @ts-ignore
-  const icons = root.findAllByType("TouchableOpacity");
-  icons.map((item) => item.props.onPress());
+  const { getAllByTestId } = render(<SocialMedia />);
+
+  const icons = getAllByTestId("social-media-button");
+  icons.forEach((item) => fireEvent.press(item));
+
   expect(Linking.openURL).toHaveBeenCalledTimes(icons.length);
 });

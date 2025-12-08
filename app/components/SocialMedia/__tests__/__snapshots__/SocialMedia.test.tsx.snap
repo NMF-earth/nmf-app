@@ -2,6 +2,7 @@
 
 exports[`renders correctly SocialMedia 1`] = `
 <View
+  ref={null}
   style={
     {
       "flex": 1,
@@ -11,6 +12,7 @@ exports[`renders correctly SocialMedia 1`] = `
   }
 >
   <View
+    ref={null}
     style={
       {
         "flex": 1,
@@ -24,19 +26,25 @@ exports[`renders correctly SocialMedia 1`] = `
   >
     <TouchableOpacity
       onPress={[Function]}
+      ref={null}
+      testID="social-media-button"
     >
       <View
         color="#595D58"
         name="github"
+        ref={null}
         size={32}
       />
     </TouchableOpacity>
     <TouchableOpacity
       onPress={[Function]}
+      ref={null}
+      testID="social-media-button"
     >
       <View
         color="#595D58"
         name="globe"
+        ref={null}
         size={32}
       />
     </TouchableOpacity>

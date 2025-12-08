@@ -22,7 +22,7 @@ const SocialMedia: React.FC = () => (
   <View style={styles.container}>
     <View style={styles.box}>
       {socialMedia.map((item, index) => (
-        <TouchableOpacity key={index} onPress={() => Linking.openURL(item.url)}>
+        <TouchableOpacity key={index} onPress={() => Linking.openURL(item.url)} testID="social-media-button">
           <FontAwesome5 name={item.iconName} size={32} color={Colors.grey70} />
         </TouchableOpacity>
       ))}
