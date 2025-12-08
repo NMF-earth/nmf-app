@@ -3,6 +3,7 @@
 exports[`<SelectableListItem /> render 1`] = `
 <TouchableOpacity
   onPress={[Function]}
+  ref={null}
   style={
     {
       "flexDirection": "row",
@@ -10,7 +11,7 @@ exports[`<SelectableListItem /> render 1`] = `
     }
   }
 >
-  <Text.Primary
+  <RCTText
     bold={true}
     green={true}
     numberOfLines={1}
@@ -21,7 +22,7 @@ exports[`<SelectableListItem /> render 1`] = `
     }
   >
     France
-  </Text.Primary>
+  </RCTText>
   <Ionicons
     color="#0F853B"
     name="checkmark"
@@ -38,6 +39,7 @@ exports[`<SelectableListItem /> render 1`] = `
 exports[`<SelectableListItem /> render if not selected 1`] = `
 <TouchableOpacity
   onPress={[Function]}
+  ref={null}
   style={
     {
       "flexDirection": "row",
@@ -45,9 +47,9 @@ exports[`<SelectableListItem /> render if not selected 1`] = `
     }
   }
 >
-  <Text.Primary
+  <RCTText
     bold={true}
-    green={true}
+    green={false}
     numberOfLines={1}
     style={
       {
@@ -56,16 +58,6 @@ exports[`<SelectableListItem /> render if not selected 1`] = `
     }
   >
     France
-  </Text.Primary>
-  <Ionicons
-    color="#0F853B"
-    name="checkmark"
-    size={26}
-    style={
-      {
-        "marginTop": 18,
-      }
-    }
-  />
+  </RCTText>
 </TouchableOpacity>
 `;
