@@ -1,6 +1,6 @@
 import "react-native";
 import React from "react";
-import { create } from "react-test-renderer";
+import { render } from "@testing-library/react-native";
 
 import ListItem from "../ListItem";
 
@@ -11,24 +11,24 @@ describe("<ListItem />", () => {
       // do nothing.
     },
   };
-  const wrapper = create(<ListItem {...props} />);
 
   test("render", () => {
-    expect(wrapper).toMatchSnapshot();
+    const wrapper = render(<ListItem {...props} />);
+    expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   test("ListItem renders correctly wtesth topLine", () => {
-    const tree = create(<ListItem showTopLine {...props} />).toJSON();
+    const tree = render(<ListItem showTopLine {...props} />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 
   test("ListItem renders correctly wtesth bottomLine", () => {
-    const tree = create(<ListItem showBottomLine {...props} />).toJSON();
+    const tree = render(<ListItem showBottomLine {...props} />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 
   test("ListItem renders correctly both topLine and bottomLine", () => {
-    const tree = create(<ListItem showBottomLine showTopLine {...props} />).toJSON();
+    const tree = render(<ListItem showBottomLine showTopLine {...props} />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

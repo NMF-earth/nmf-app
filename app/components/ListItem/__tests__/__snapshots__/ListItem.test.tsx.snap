@@ -3,6 +3,7 @@
 exports[`<ListItem /> ListItem renders correctly both topLine and bottomLine 1`] = `
 <TouchableOpacity
   onPress={[Function]}
+  ref={null}
   style={
     [
       {
@@ -23,11 +24,11 @@ exports[`<ListItem /> ListItem renders correctly both topLine and bottomLine 1`]
     ]
   }
 >
-  <Text.Secondary
+  <RCTText
     numberOfLines={1}
   >
     France
-  </Text.Secondary>
+  </RCTText>
   <Ionicons
     color="#878787"
     name="chevron-forward-outline"
@@ -39,6 +40,7 @@ exports[`<ListItem /> ListItem renders correctly both topLine and bottomLine 1`]
 exports[`<ListItem /> ListItem renders correctly wtesth bottomLine 1`] = `
 <TouchableOpacity
   onPress={[Function]}
+  ref={null}
   style={
     [
       {
@@ -55,11 +57,11 @@ exports[`<ListItem /> ListItem renders correctly wtesth bottomLine 1`] = `
     ]
   }
 >
-  <Text.Secondary
+  <RCTText
     numberOfLines={1}
   >
     France
-  </Text.Secondary>
+  </RCTText>
   <Ionicons
     color="#878787"
     name="chevron-forward-outline"
@@ -71,6 +73,7 @@ exports[`<ListItem /> ListItem renders correctly wtesth bottomLine 1`] = `
 exports[`<ListItem /> ListItem renders correctly wtesth topLine 1`] = `
 <TouchableOpacity
   onPress={[Function]}
+  ref={null}
   style={
     [
       {
@@ -87,11 +90,11 @@ exports[`<ListItem /> ListItem renders correctly wtesth topLine 1`] = `
     ]
   }
 >
-  <Text.Secondary
+  <RCTText
     numberOfLines={1}
   >
     France
-  </Text.Secondary>
+  </RCTText>
   <Ionicons
     color="#878787"
     name="chevron-forward-outline"
@@ -103,6 +106,7 @@ exports[`<ListItem /> ListItem renders correctly wtesth topLine 1`] = `
 exports[`<ListItem /> render 1`] = `
 <TouchableOpacity
   onPress={[Function]}
+  ref={null}
   style={
     [
       {
@@ -115,11 +119,11 @@ exports[`<ListItem /> render 1`] = `
     ]
   }
 >
-  <Text.Secondary
+  <RCTText
     numberOfLines={1}
   >
     France
-  </Text.Secondary>
+  </RCTText>
   <Ionicons
     color="#878787"
     name="chevron-forward-outline"
