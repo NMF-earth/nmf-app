@@ -3,6 +3,7 @@
 exports[`renders correctly Danger Button 1`] = `
 <TouchableOpacity
   onPress={[Function]}
+  ref={null}
   style={
     [
       [
@@ -25,19 +26,21 @@ exports[`renders correctly Danger Button 1`] = `
   }
   text="Primary"
 >
-  <Text.Primary
+  <RCTText
     bold={true}
     center={true}
+    testID="Primary"
     white={true}
   >
     Primary
-  </Text.Primary>
+  </RCTText>
 </TouchableOpacity>
 `;
 
 exports[`renders correctly Primary Button 1`] = `
 <TouchableOpacity
   onPress={[Function]}
+  ref={null}
   style={
     [
       [
@@ -60,19 +63,21 @@ exports[`renders correctly Primary Button 1`] = `
   }
   text="Primary"
 >
-  <Text.Primary
+  <RCTText
     bold={true}
     center={true}
+    testID="Primary"
     white={true}
   >
     Primary
-  </Text.Primary>
+  </RCTText>
 </TouchableOpacity>
 `;
 
 exports[`renders correctly Secondary Button 1`] = `
 <TouchableOpacity
   onPress={[Function]}
+  ref={null}
   style={
     [
       [
@@ -95,13 +100,14 @@ exports[`renders correctly Secondary Button 1`] = `
   }
   text="Primary"
 >
-  <Text.Primary
+  <RCTText
     bold={true}
     center={true}
+    testID="Primary"
     white={true}
   >
     Primary
-  </Text.Primary>
+  </RCTText>
 </TouchableOpacity>
 `;
 
@@ -109,6 +115,7 @@ exports[`renders correctly fullwidth Danger Button 1`] = `
 <TouchableOpacity
   fullWidth={true}
   onPress={[Function]}
+  ref={null}
   style={
     [
       [
@@ -136,13 +143,14 @@ exports[`renders correctly fullwidth Danger Button 1`] = `
   }
   text="Primary"
 >
-  <Text.Primary
+  <RCTText
     bold={true}
     center={true}
+    testID="Primary"
     white={true}
   >
     Primary
-  </Text.Primary>
+  </RCTText>
 </TouchableOpacity>
 `;
 
@@ -151,6 +159,7 @@ exports[`renders correctly fullwidth Danger Button with icon 1`] = `
   fullWidth={true}
   icon="calendar"
   onPress={[Function]}
+  ref={null}
   style={
     [
       [
@@ -178,13 +187,14 @@ exports[`renders correctly fullwidth Danger Button with icon 1`] = `
   }
   text="Primary"
 >
-  <Text.Primary
+  <RCTText
     bold={true}
     center={true}
+    testID="Primary"
     white={true}
   >
     Primary
-  </Text.Primary>
+  </RCTText>
   <Ionicons
     color="#FFFFFF"
     name="calendar"
@@ -202,6 +212,7 @@ exports[`renders correctly fullwidth Primary Button 1`] = `
 <TouchableOpacity
   fullWidth={true}
   onPress={[Function]}
+  ref={null}
   style={
     [
       [
@@ -229,13 +240,14 @@ exports[`renders correctly fullwidth Primary Button 1`] = `
   }
   text="Primary"
 >
-  <Text.Primary
+  <RCTText
     bold={true}
     center={true}
+    testID="Primary"
     white={true}
   >
     Primary
-  </Text.Primary>
+  </RCTText>
 </TouchableOpacity>
 `;
 
@@ -244,6 +256,7 @@ exports[`renders correctly fullwidth Primary Button with icon 1`] = `
   fullWidth={true}
   icon="calendar"
   onPress={[Function]}
+  ref={null}
   style={
     [
       [
@@ -271,13 +284,14 @@ exports[`renders correctly fullwidth Primary Button with icon 1`] = `
   }
   text="Primary"
 >
-  <Text.Primary
+  <RCTText
     bold={true}
     center={true}
+    testID="Primary"
     white={true}
   >
     Primary
-  </Text.Primary>
+  </RCTText>
   <Ionicons
     color="#FFFFFF"
     name="calendar"
@@ -295,6 +309,7 @@ exports[`renders correctly fullwidth Secondary Button 1`] = `
 <TouchableOpacity
   fullWidth={true}
   onPress={[Function]}
+  ref={null}
   style={
     [
       [
@@ -322,13 +337,14 @@ exports[`renders correctly fullwidth Secondary Button 1`] = `
   }
   text="Primary"
 >
-  <Text.Primary
+  <RCTText
     bold={true}
     center={true}
+    testID="Primary"
     white={true}
   >
     Primary
-  </Text.Primary>
+  </RCTText>
 </TouchableOpacity>
 `;
 
@@ -337,6 +353,7 @@ exports[`renders correctly fullwidth Secondary Button with icon 1`] = `
   fullWidth={true}
   icon="calendar"
   onPress={[Function]}
+  ref={null}
   style={
     [
       [
@@ -364,13 +381,14 @@ exports[`renders correctly fullwidth Secondary Button with icon 1`] = `
   }
   text="Primary"
 >
-  <Text.Primary
+  <RCTText
     bold={true}
     center={true}
+    testID="Primary"
     white={true}
   >
     Primary
-  </Text.Primary>
+  </RCTText>
   <Ionicons
     color="#FFFFFF"
     name="calendar"

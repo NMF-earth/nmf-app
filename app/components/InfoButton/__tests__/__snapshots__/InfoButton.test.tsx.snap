@@ -3,6 +3,7 @@
 exports[`renders correctly 1`] = `
 <TouchableOpacity
   onPress={[Function]}
+  ref={null}
 >
   <Ionicons
     name="information-circle"

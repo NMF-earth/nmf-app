@@ -1,9 +1,9 @@
 import React from "react";
-import { create } from "react-test-renderer";
+import { render } from "@testing-library/react-native";
 
 import Intro from "..";
 
 test("renders correctly ComingSoon", () => {
-  const tree = create(<Intro />).toJSON();
+  const tree = render(<Intro />).toJSON();
   expect(tree).toMatchSnapshot();
 });

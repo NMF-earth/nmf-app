@@ -2,6 +2,7 @@
 
 exports[`renders correctly StickersImage with bike image 1`] = `
 <View
+  ref={null}
   style={
     {
       "flex": 1,
@@ -9,6 +10,7 @@ exports[`renders correctly StickersImage with bike image 1`] = `
   }
 >
   <Image
+    ref={null}
     resizeMode="contain"
     source={
       {
@@ -18,7 +20,7 @@ exports[`renders correctly StickersImage with bike image 1`] = `
     style={
       {
         "alignSelf": "center",
-        "height": 650,
+        "height": 275,
         "marginVertical": 20,
         "maxWidth": 320,
         "width": "100%",
@@ -30,6 +32,7 @@ exports[`renders correctly StickersImage with bike image 1`] = `
 
 exports[`renders correctly StickersImage with earth image 1`] = `
 <View
+  ref={null}
   style={
     {
       "flex": 1,
@@ -37,6 +40,7 @@ exports[`renders correctly StickersImage with earth image 1`] = `
   }
 >
   <Image
+    ref={null}
     resizeMode="contain"
     source={
       {
@@ -46,7 +50,7 @@ exports[`renders correctly StickersImage with earth image 1`] = `
     style={
       {
         "alignSelf": "center",
-        "height": 650,
+        "height": 275,
         "marginVertical": 20,
         "maxWidth": 320,
         "width": "100%",
@@ -58,6 +62,7 @@ exports[`renders correctly StickersImage with earth image 1`] = `
 
 exports[`renders correctly StickersImage with restaurant image 1`] = `
 <View
+  ref={null}
   style={
     {
       "flex": 1,
@@ -65,6 +70,7 @@ exports[`renders correctly StickersImage with restaurant image 1`] = `
   }
 >
   <Image
+    ref={null}
     resizeMode="contain"
     source={
       {
@@ -74,7 +80,7 @@ exports[`renders correctly StickersImage with restaurant image 1`] = `
     style={
       {
         "alignSelf": "center",
-        "height": 650,
+        "height": 275,
         "marginVertical": 20,
         "maxWidth": 320,
         "width": "100%",

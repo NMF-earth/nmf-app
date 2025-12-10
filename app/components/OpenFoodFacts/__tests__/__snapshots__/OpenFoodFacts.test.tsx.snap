@@ -2,6 +2,7 @@
 
 exports[`<OpenFoodFacts /> render correctly 1`] = `
 <View
+  ref={null}
   style={
     {
       "alignContent": "center",
@@ -10,13 +11,15 @@ exports[`<OpenFoodFacts /> render correctly 1`] = `
     }
   }
 >
-  <Text.Link
+  <RCTText
     center={true}
+    testID="Link"
     url="https://world.openfoodfacts.org/"
   >
     Data from OPEN FOOD FACTS
-  </Text.Link>
+  </RCTText>
   <View
+    ref={null}
     style={
       {
         "flexDirection": "row",
@@ -27,6 +30,7 @@ exports[`<OpenFoodFacts /> render correctly 1`] = `
   >
     <TouchableOpacity
       onPress={[Function]}
+      ref={null}
       style={
         {
           "flex": 1,
@@ -34,6 +38,7 @@ exports[`<OpenFoodFacts /> render correctly 1`] = `
       }
     >
       <Image
+        ref={null}
         resizeMode="contain"
         source={
           {
@@ -51,6 +56,7 @@ exports[`<OpenFoodFacts /> render correctly 1`] = `
     </TouchableOpacity>
     <TouchableOpacity
       onPress={[Function]}
+      ref={null}
       style={
         {
           "flex": 1,
@@ -58,6 +64,7 @@ exports[`<OpenFoodFacts /> render correctly 1`] = `
       }
     >
       <Image
+        ref={null}
         resizeMode="contain"
         source={
           {
@@ -75,6 +82,7 @@ exports[`<OpenFoodFacts /> render correctly 1`] = `
     </TouchableOpacity>
     <TouchableOpacity
       onPress={[Function]}
+      ref={null}
       style={
         {
           "flex": 1,
@@ -82,6 +90,7 @@ exports[`<OpenFoodFacts /> render correctly 1`] = `
       }
     >
       <Image
+        ref={null}
         resizeMode="contain"
         source={
           {
@@ -103,6 +112,7 @@ exports[`<OpenFoodFacts /> render correctly 1`] = `
 
 exports[`<OpenFoodFacts /> render nothing if bad data passed 1`] = `
 <View
+  ref={null}
   style={
     {
       "alignContent": "center",
@@ -111,13 +121,15 @@ exports[`<OpenFoodFacts /> render nothing if bad data passed 1`] = `
     }
   }
 >
-  <Text.Link
+  <RCTText
     center={true}
+    testID="Link"
     url="https://world.openfoodfacts.org/"
   >
     Data from OPEN FOOD FACTS
-  </Text.Link>
+  </RCTText>
   <View
+    ref={null}
     style={
       {
         "flexDirection": "row",
@@ -128,6 +140,7 @@ exports[`<OpenFoodFacts /> render nothing if bad data passed 1`] = `
   >
     <TouchableOpacity
       onPress={[Function]}
+      ref={null}
       style={
         {
           "flex": 1,
@@ -135,6 +148,7 @@ exports[`<OpenFoodFacts /> render nothing if bad data passed 1`] = `
       }
     >
       <Image
+        ref={null}
         resizeMode="contain"
         source={
           {
@@ -152,6 +166,7 @@ exports[`<OpenFoodFacts /> render nothing if bad data passed 1`] = `
     </TouchableOpacity>
     <TouchableOpacity
       onPress={[Function]}
+      ref={null}
       style={
         {
           "flex": 1,
@@ -159,6 +174,7 @@ exports[`<OpenFoodFacts /> render nothing if bad data passed 1`] = `
       }
     >
       <Image
+        ref={null}
         resizeMode="contain"
         source={
           {
@@ -176,6 +192,7 @@ exports[`<OpenFoodFacts /> render nothing if bad data passed 1`] = `
     </TouchableOpacity>
     <TouchableOpacity
       onPress={[Function]}
+      ref={null}
       style={
         {
           "flex": 1,
@@ -183,6 +200,7 @@ exports[`<OpenFoodFacts /> render nothing if bad data passed 1`] = `
       }
     >
       <Image
+        ref={null}
         resizeMode="contain"
         source={
           {
@@ -204,6 +222,7 @@ exports[`<OpenFoodFacts /> render nothing if bad data passed 1`] = `
 
 exports[`<OpenFoodFacts /> render nothing if no data passed 1`] = `
 <View
+  ref={null}
   style={
     {
       "alignContent": "center",
@@ -212,13 +231,15 @@ exports[`<OpenFoodFacts /> render nothing if no data passed 1`] = `
     }
   }
 >
-  <Text.Link
+  <RCTText
     center={true}
+    testID="Link"
     url="https://world.openfoodfacts.org/"
   >
     Data from OPEN FOOD FACTS
-  </Text.Link>
+  </RCTText>
   <View
+    ref={null}
     style={
       {
         "flexDirection": "row",
@@ -229,6 +250,7 @@ exports[`<OpenFoodFacts /> render nothing if no data passed 1`] = `
   >
     <TouchableOpacity
       onPress={[Function]}
+      ref={null}
       style={
         {
           "flex": 1,
@@ -236,6 +258,7 @@ exports[`<OpenFoodFacts /> render nothing if no data passed 1`] = `
       }
     >
       <Image
+        ref={null}
         resizeMode="contain"
         style={
           {
@@ -248,6 +271,7 @@ exports[`<OpenFoodFacts /> render nothing if no data passed 1`] = `
     </TouchableOpacity>
     <TouchableOpacity
       onPress={[Function]}
+      ref={null}
       style={
         {
           "flex": 1,
@@ -255,6 +279,7 @@ exports[`<OpenFoodFacts /> render nothing if no data passed 1`] = `
       }
     >
       <Image
+        ref={null}
         resizeMode="contain"
         style={
           {
@@ -267,6 +292,7 @@ exports[`<OpenFoodFacts /> render nothing if no data passed 1`] = `
     </TouchableOpacity>
     <TouchableOpacity
       onPress={[Function]}
+      ref={null}
       style={
         {
           "flex": 1,
@@ -274,6 +300,7 @@ exports[`<OpenFoodFacts /> render nothing if no data passed 1`] = `
       }
     >
       <Image
+        ref={null}
         resizeMode="contain"
         style={
           {

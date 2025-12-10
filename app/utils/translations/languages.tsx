@@ -1,4 +1,4 @@
-import { locale } from "expo-localization";
+import { getLocales } from "expo-localization";
 
 const supportedLanguages = {
   // Key-value pairs
@@ -19,6 +19,7 @@ const supportedLanguages = {
   ar: "عربي",
 };
 
+const locale = getLocales()[0].languageTag;
 const currentLanguage = Object.keys(supportedLanguages).includes(locale.substring(0, 2))
   ? locale.substring(0, 2)
   : supportedLanguages[0];

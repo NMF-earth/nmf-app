@@ -1,9 +1,9 @@
 import React from "react";
-import { create } from "react-test-renderer";
+import { render } from "@testing-library/react-native";
 
 import ComingSoonScreen from "../ComingSoonScreen";
 
 it("ComingSoonScreen renders correctly", () => {
-  const tree = create(<ComingSoonScreen />).toJSON();
+  const tree = render(<ComingSoonScreen />).toJSON();
   expect(tree).toMatchSnapshot();
 });

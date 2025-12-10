@@ -1,5 +1,5 @@
 import React from "react";
-import { create } from "react-test-renderer";
+import { render } from "@testing-library/react-native";
 
 import Legend from "../Legend";
 
@@ -19,6 +19,6 @@ const props = {
 jest.unmock("../Legend");
 
 it("Legend renders correctly", () => {
-  const tree = create(<Legend {...props} />).toJSON();
+  const tree = render(<Legend {...props} />).toJSON();
   expect(tree).toMatchSnapshot();
 });

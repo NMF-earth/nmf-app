@@ -10,7 +10,8 @@ module.exports = () => {
       "expo-localization",
       "expo-asset",
       "expo-font",
-      [ "expo-camera",
+      "expo-web-browser",
+      ["expo-camera",
         {
           "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera",
           "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone",
@@ -35,7 +36,6 @@ module.exports = () => {
     assetBundlePatterns: ["**/*"],
     jsEngine: "hermes",
     ios: {
-      jsEngine: "jsc",
       icon: "./assets/images/ios.icon.png",
       bundleIdentifier: "nmf.earth",
       supportsTablet: true,

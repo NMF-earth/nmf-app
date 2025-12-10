@@ -1,9 +1,9 @@
 import React from "react";
-import { create } from "react-test-renderer";
+import { render } from "@testing-library/react-native";
 
 import AboutScreen from "../AboutScreen";
 
 it("AboutScreen renders correctly", () => {
-  const tree = create(<AboutScreen />).toJSON();
+  const tree = render(<AboutScreen />).toJSON();
   expect(tree).toMatchSnapshot();
 });

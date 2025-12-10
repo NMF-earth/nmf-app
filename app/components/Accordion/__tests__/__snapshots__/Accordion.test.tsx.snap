@@ -2,6 +2,7 @@
 
 exports[`Accordion renders correctly 1`] = `
 <View
+  ref={null}
   style={
     {
       "flex": 1,
@@ -9,6 +10,7 @@ exports[`Accordion renders correctly 1`] = `
   }
 >
   <View
+    ref={null}
     style={
       [
         {
@@ -26,6 +28,7 @@ exports[`Accordion renders correctly 1`] = `
   >
     <TouchableOpacity
       onPress={[Function]}
+      ref={null}
       style={
         {
           "alignItems": "center",
@@ -43,7 +46,7 @@ exports[`Accordion renders correctly 1`] = `
           }
         }
       />
-      <Text.H3
+      <RCTText
         style={
           {
             "color": "#0F0F0F",
@@ -52,12 +55,14 @@ exports[`Accordion renders correctly 1`] = `
             "marginLeft": 8,
           }
         }
+        testID="H3"
       >
         Test title 1
-      </Text.H3>
+      </RCTText>
     </TouchableOpacity>
   </View>
   <View
+    ref={null}
     style={
       [
         {
@@ -73,6 +78,7 @@ exports[`Accordion renders correctly 1`] = `
   >
     <TouchableOpacity
       onPress={[Function]}
+      ref={null}
       style={
         {
           "alignItems": "center",
@@ -90,7 +96,7 @@ exports[`Accordion renders correctly 1`] = `
           }
         }
       />
-      <Text.H3
+      <RCTText
         style={
           {
             "color": "#0F0F0F",
@@ -99,9 +105,10 @@ exports[`Accordion renders correctly 1`] = `
             "marginLeft": 8,
           }
         }
+        testID="H3"
       >
         Test title 2
-      </Text.H3>
+      </RCTText>
     </TouchableOpacity>
   </View>
 </View>

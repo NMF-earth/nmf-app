@@ -1,12 +1,12 @@
 import React from "react";
 import { ScrollView, Alert } from "react-native";
 import * as DocumentPicker from "expo-document-picker";
-import * as FileSystem from "expo-file-system";
+import { File, Paths } from "expo-file-system";
 import * as Sharing from "expo-sharing";
 import { useSelector, useDispatch } from "react-redux";
 
 import { Text, Button } from "components";
-import { t, platform } from "utils";
+import { t } from "utils";
 import {
   emissions as emissionsDucks,
   budget,
@@ -55,12 +55,13 @@ const MyDataScreen: NavStatelessComponent = () => {
       {
         text: t("MY_DATA_SCREEN_OK"),
         onPress: async () => {
-          const file = await DocumentPicker.getDocumentAsync({});
+          const result = await DocumentPicker.getDocumentAsync({});
 
-          if (!file.canceled) {
+          if (!result.canceled) {
             try {
-              const uriPrefix = platform.isAndroid ? "file://" : "";
-              const data = JSON.parse(await FileSystem.readAsStringAsync(uriPrefix + file.assets[0].uri));
+              const pickedFile = new File(result.assets[0].uri);
+              const content = await pickedFile.text();
+              const data = JSON.parse(content);
               const {
                 budget: { monthlyCarbonBudget },
                 emissions,
@@ -105,11 +106,14 @@ const MyDataScreen: NavStatelessComponent = () => {
     });
 
     try {
-      FileSystem.writeAsStringAsync(FileSystem.cacheDirectory + "my-data-nmf-earth.json", data, {
-        encoding: FileSystem.EncodingType.UTF8,
-      }).then(() => {
-        Sharing.shareAsync(FileSystem.cacheDirectory + "my-data-nmf-earth.json");
-      });
+      const exportFile = new File(Paths.cache, "my-data-nmf-earth.json");
+      // Delete existing file if it exists to avoid "already exists" error
+      if (exportFile.exists) {
+        exportFile.delete();
+      }
+      exportFile.create();
+      exportFile.write(data);
+      await Sharing.shareAsync(exportFile.uri);
     } catch (error) {
       Alert.alert(t("MY_DATA_SCREEN_GENERIC_ERROR"), error.message);
     }

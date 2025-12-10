@@ -1,35 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ActScreen renders correctly 1`] = `
-<RCTScrollView
+<FlatList
   ListFooterComponent={
-    <Text.Tertiary
-      center={true}
-      lightGray={true}
-      style={
-        {
+    {
+      "$$typeof": Symbol(react.transitional.element),
+      "key": null,
+      "props": {
+        "center": true,
+        "children": "More coming soon! Stay tuned ✌️",
+        "lightGray": true,
+        "style": {
           "paddingTop": 10,
-        }
-      }
-    >
-      More coming soon! Stay tuned ✌️
-    </Text.Tertiary>
+        },
+      },
+      "type": [Function],
+    }
   }
   data={[]}
-  getItem={[Function]}
-  getItemCount={[Function]}
   keyExtractor={[Function]}
-  onContentSizeChange={[Function]}
-  onLayout={[Function]}
-  onMomentumScrollBegin={[Function]}
-  onMomentumScrollEnd={[Function]}
-  onScroll={[Function]}
-  onScrollBeginDrag={[Function]}
-  onScrollEndDrag={[Function]}
-  removeClippedSubviews={false}
+  ref={null}
   renderItem={[Function]}
-  scrollEventThrottle={0.0001}
-  stickyHeaderIndices={[]}
   style={
     {
       "backgroundColor": "#FFFFFF",
@@ -37,24 +28,5 @@ exports[`ActScreen renders correctly 1`] = `
       "paddingHorizontal": 16,
     }
   }
-  viewabilityConfigCallbackPairs={[]}
->
-  <View>
-    <View
-      onLayout={[Function]}
-    >
-      <Text.Tertiary
-        center={true}
-        lightGray={true}
-        style={
-          {
-            "paddingTop": 10,
-          }
-        }
-      >
-        More coming soon! Stay tuned ✌️
-      </Text.Tertiary>
-    </View>
-  </View>
-</RCTScrollView>
+/>
 `;

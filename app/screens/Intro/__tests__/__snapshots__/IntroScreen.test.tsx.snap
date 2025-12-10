@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly ComingSoon 1`] = `
-<RCTSafeAreaView
+<SafeAreaView
+  ref={null}
   style={
     {
       "backgroundColor": "#FFFFFF",
@@ -12,6 +13,7 @@ exports[`renders correctly ComingSoon 1`] = `
   }
 >
   <View
+    ref={null}
     style={
       {
         "flex": 2,
@@ -23,6 +25,7 @@ exports[`renders correctly ComingSoon 1`] = `
     />
   </View>
   <View
+    ref={null}
     style={
       {
         "alignItems": "center",
@@ -31,36 +34,41 @@ exports[`renders correctly ComingSoon 1`] = `
       }
     }
   >
-    <Text.H3
+    <RCTText
       style={
         {
           "paddingVertical": 10,
           "textAlign": "center",
         }
       }
+      testID="H3"
     >
       Welcome to NMF.earth 🌱
-    </Text.H3>
-    <Text.Tertiary
+    </RCTText>
+    <RCTText
       style={
         {
           "paddingVertical": 10,
           "textAlign": "center",
         }
       }
+      testID="Tertiary"
     >
       By proceeding, you are agreeing to our terms of use.
-    </Text.Tertiary>
+    </RCTText>
     <TouchableOpacity
       onPress={[Function]}
+      ref={null}
     >
-      <Text.Tertiary
+      <RCTText
         green={true}
+        testID="Tertiary"
       >
         Read terms of use
-      </Text.Tertiary>
+      </RCTText>
     </TouchableOpacity>
     <View
+      ref={null}
       style={
         {
           "bottom": 16,
@@ -79,5 +87,5 @@ exports[`renders correctly ComingSoon 1`] = `
       />
     </View>
   </View>
-</RCTSafeAreaView>
+</SafeAreaView>
 `;

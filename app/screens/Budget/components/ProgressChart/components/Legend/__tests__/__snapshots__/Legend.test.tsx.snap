@@ -2,6 +2,7 @@
 
 exports[`Legend renders correctly 1`] = `
 <View
+  ref={null}
   style={
     {
       "justifyContent": "space-between",

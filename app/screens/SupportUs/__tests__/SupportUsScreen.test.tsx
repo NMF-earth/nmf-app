@@ -1,9 +1,9 @@
 import React from "react";
-import { create } from "react-test-renderer";
+import { render } from "@testing-library/react-native";
 
 import SupportUsScreen from "../SupportUsScreen";
 
 it("SupportUsScreen renders correctly", () => {
-  const tree = create(<SupportUsScreen />).toJSON();
+  const tree = render(<SupportUsScreen />).toJSON();
   expect(tree).toMatchSnapshot();
 });

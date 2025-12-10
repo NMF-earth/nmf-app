@@ -1,3 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`StoreReviewChecker tests should render correctly 1`] = `<View />`;
+exports[`StoreReviewChecker tests should render correctly 1`] = `
+<StoreReviewChecker>
+  <View
+    ref={null}
+  />
+</StoreReviewChecker>
+`;

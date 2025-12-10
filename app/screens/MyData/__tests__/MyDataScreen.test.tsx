@@ -1,9 +1,9 @@
 import React from "react";
-import { create } from "react-test-renderer";
+import { render } from "@testing-library/react-native";
 
 import MyDataScreen from "../MyDataScreen";
 
 it("MyDataScreen renders correctly", () => {
-  const tree = create(<MyDataScreen />).toJSON();
+  const tree = render(<MyDataScreen />).toJSON();
   expect(tree).toMatchSnapshot();
 });

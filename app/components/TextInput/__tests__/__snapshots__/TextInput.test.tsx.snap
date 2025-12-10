@@ -2,6 +2,7 @@
 
 exports[`renders correctly TextInput 1`] = `
 <View
+  ref={null}
   style={
     {
       "marginHorizontal": 16,
@@ -12,6 +13,7 @@ exports[`renders correctly TextInput 1`] = `
   <TouchableOpacity
     activeOpacity={1}
     onPress={[Function]}
+    ref={null}
     style={
       {
         "flexDirection": "row",
@@ -19,15 +21,17 @@ exports[`renders correctly TextInput 1`] = `
       }
     }
   >
-    <Text.H3
+    <RCTText
       green={false}
+      testID="H3"
     >
       title
-    </Text.H3>
+    </RCTText>
   </TouchableOpacity>
   <TextInput
     onChangeText={[Function]}
     placeholder="placeholder"
+    ref={null}
     style={
       {
         "borderColor": "#F9F9F9",
@@ -45,6 +49,7 @@ exports[`renders correctly TextInput 1`] = `
 
 exports[`renders correctly TextInput if optional 1`] = `
 <View
+  ref={null}
   style={
     {
       "marginHorizontal": 16,
@@ -55,6 +60,7 @@ exports[`renders correctly TextInput if optional 1`] = `
   <TouchableOpacity
     activeOpacity={1}
     onPress={[Function]}
+    ref={null}
     style={
       {
         "flexDirection": "row",
@@ -62,15 +68,17 @@ exports[`renders correctly TextInput if optional 1`] = `
       }
     }
   >
-    <Text.H3
+    <RCTText
       green={false}
+      testID="H3"
     >
       title
-    </Text.H3>
+    </RCTText>
   </TouchableOpacity>
   <TextInput
     onChangeText={[Function]}
     placeholder="placeholder"
+    ref={null}
     style={
       {
         "borderColor": "#F9F9F9",

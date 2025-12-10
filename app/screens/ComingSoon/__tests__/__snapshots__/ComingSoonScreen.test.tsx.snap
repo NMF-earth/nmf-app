@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ComingSoonScreen renders correctly 1`] = `
-<RCTScrollView
+<ScrollView
+  ref={null}
   style={
     {
       "backgroundColor": "#FFFFFF",
@@ -10,41 +11,42 @@ exports[`ComingSoonScreen renders correctly 1`] = `
     }
   }
 >
-  <View>
-    <StickersImage
-      sticker="bike"
-    />
-    <View
+  <StickersImage
+    sticker="bike"
+  />
+  <View
+    ref={null}
+    style={
+      {
+        "alignItems": "center",
+        "flex": 1,
+        "marginTop": 22,
+      }
+    }
+  >
+    <RCTText
       style={
         {
-          "alignItems": "center",
-          "flex": 1,
-          "marginTop": 22,
+          "paddingVertical": 10,
+          "textAlign": "center",
         }
       }
+      testID="Primary"
     >
-      <Text.Primary
-        style={
-          {
-            "paddingVertical": 10,
-            "textAlign": "center",
-          }
+      This feature is under development and will be available soon.
+    </RCTText>
+    <RCTText
+      style={
+        {
+          "paddingVertical": 10,
+          "textAlign": "center",
         }
-      >
-        This feature is under development and will be available soon.
-      </Text.Primary>
-      <Text.Primary
-        style={
-          {
-            "paddingVertical": 10,
-            "textAlign": "center",
-          }
-        }
-      >
-        In the mean time, follow us on social media!
-      </Text.Primary>
-    </View>
-    <SocialMedia />
+      }
+      testID="Primary"
+    >
+      In the mean time, follow us on social media!
+    </RCTText>
   </View>
-</RCTScrollView>
+  <SocialMedia />
+</ScrollView>
 `;

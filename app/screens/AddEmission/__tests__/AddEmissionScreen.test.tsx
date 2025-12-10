@@ -1,5 +1,5 @@
 import React from "react";
-import { create } from "react-test-renderer";
+import { render } from "@testing-library/react-native";
 import { GlobalizeProvider } from "react-native-globalize";
 
 import AddEmissionScreen from "../AddEmissionScreen";
@@ -15,7 +15,7 @@ afterAll(() => {
 });
 
 it("AddEmissionScreen renders correctly", () => {
-  const tree = create(
+  const tree = render(
     <GlobalizeProvider locale="en">
       <AddEmissionScreen />
     </GlobalizeProvider>

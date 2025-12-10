@@ -2,7 +2,8 @@
 
 exports[`Tag renders correctly with airplane icon 1`] = `
 <TouchableOpacity
-  onPress={[Function]}
+  onPress={[MockFunction]}
+  ref={null}
   style={
     {
       "alignItems": "center",
@@ -30,21 +31,23 @@ exports[`Tag renders correctly with airplane icon 1`] = `
     }
   />
   <View
+    ref={null}
     style={
       {
         "flex": 1,
       }
     }
   >
-    <Text.Primary
+    <RCTText
       style={
         {
           "textTransform": "capitalize",
         }
       }
+      testID="Primary"
     >
       Transport
-    </Text.Primary>
+    </RCTText>
   </View>
   <Ionicons
     color="#0F853B"
@@ -56,7 +59,8 @@ exports[`Tag renders correctly with airplane icon 1`] = `
 
 exports[`Tag renders correctly with no icon 1`] = `
 <TouchableOpacity
-  onPress={[Function]}
+  onPress={[MockFunction]}
+  ref={null}
   style={
     {
       "alignItems": "center",
@@ -74,21 +78,23 @@ exports[`Tag renders correctly with no icon 1`] = `
   }
 >
   <View
+    ref={null}
     style={
       {
         "flex": 1,
       }
     }
   >
-    <Text.Primary
+    <RCTText
       style={
         {
           "textTransform": "capitalize",
         }
       }
+      testID="Primary"
     >
       Transport
-    </Text.Primary>
+    </RCTText>
   </View>
   <Ionicons
     color="#0F853B"

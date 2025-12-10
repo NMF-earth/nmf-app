@@ -1,5 +1,5 @@
 import React from "react";
-import { create } from "react-test-renderer";
+import { render } from "@testing-library/react-native";
 
 import TextInput from "../";
 
@@ -10,7 +10,7 @@ const foo = () => {
 };
 
 it("renders correctly TextInput", () => {
-  const tree = create(
+  const tree = render(
     <TextInput
       isOptional={false}
       placeholder={"placeholder"}
@@ -23,7 +23,7 @@ it("renders correctly TextInput", () => {
 });
 
 it("renders correctly TextInput if optional", () => {
-  const tree = create(
+  const tree = render(
     <TextInput
       isOptional={false}
       placeholder={"placeholder"}

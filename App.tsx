@@ -4,7 +4,7 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 import { StatusBar } from "expo-status-bar";
 import * as Font from "expo-font";
 import { GlobalizeProvider } from "react-native-globalize";
-import { locale as localeExpo } from "expo-localization";
+import { getLocales } from "expo-localization";
 import { includes } from "ramda";
 import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
 import ExpoClientConfig from "expo-constants";
@@ -72,8 +72,9 @@ if (!__DEV__) {
 const App: React.FC = () => {
   enableScreens();
 
+  const localeExpo = getLocales()[0].languageTag;
   let lang = localeExpo.substring(0, 2);
-  
+
   if (!includes(lang, supportedLanguages)) {
     lang = defaultLanguage;
   }

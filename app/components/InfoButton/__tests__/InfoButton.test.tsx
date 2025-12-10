@@ -1,9 +1,9 @@
 import React from "react";
-import { create } from "react-test-renderer";
+import { render } from "@testing-library/react-native";
 
 import InfoButton from "..";
 
 it("renders correctly", () => {
-  const tree = create(<InfoButton />).toJSON();
+  const tree = render(<InfoButton />).toJSON();
   expect(tree).toMatchSnapshot();
 });

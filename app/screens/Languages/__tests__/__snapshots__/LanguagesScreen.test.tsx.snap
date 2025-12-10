@@ -2,6 +2,7 @@
 
 exports[`LanguageScreen renders correctly 1`] = `
 <View
+  ref={null}
   style={
     {
       "backgroundColor": "#FFFFFF",
@@ -10,327 +11,79 @@ exports[`LanguageScreen renders correctly 1`] = `
     }
   }
 >
-  <RCTScrollView>
-    <View>
-      <TouchableOpacity
-        onPress={[Function]}
-        style={
-          {
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-          }
-        }
-      >
-        <Text.Primary
-          bold={true}
-          green={true}
-          numberOfLines={1}
-          style={
-            {
-              "paddingVertical": 20,
-            }
-          }
-        >
-          English
-        </Text.Primary>
-        <Ionicons
-          color="#0F853B"
-          name="checkmark"
-          size={26}
-          style={
-            {
-              "marginTop": 18,
-            }
-          }
-        />
-      </TouchableOpacity>
-      <TouchableOpacity
-        onPress={[Function]}
-        style={
-          {
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-          }
-        }
-      >
-        <Text.Primary
-          bold={true}
-          green={false}
-          numberOfLines={1}
-          style={
-            {
-              "paddingVertical": 20,
-            }
-          }
-        >
-          Français
-        </Text.Primary>
-      </TouchableOpacity>
-      <TouchableOpacity
-        onPress={[Function]}
-        style={
-          {
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-          }
-        }
-      >
-        <Text.Primary
-          bold={true}
-          green={false}
-          numberOfLines={1}
-          style={
-            {
-              "paddingVertical": 20,
-            }
-          }
-        >
-          Deutsche
-        </Text.Primary>
-      </TouchableOpacity>
-      <TouchableOpacity
-        onPress={[Function]}
-        style={
-          {
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-          }
-        }
-      >
-        <Text.Primary
-          bold={true}
-          green={false}
-          numberOfLines={1}
-          style={
-            {
-              "paddingVertical": 20,
-            }
-          }
-        >
-          Čeština
-        </Text.Primary>
-      </TouchableOpacity>
-      <TouchableOpacity
-        onPress={[Function]}
-        style={
-          {
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-          }
-        }
-      >
-        <Text.Primary
-          bold={true}
-          green={false}
-          numberOfLines={1}
-          style={
-            {
-              "paddingVertical": 20,
-            }
-          }
-        >
-          Svenska
-        </Text.Primary>
-      </TouchableOpacity>
-      <TouchableOpacity
-        onPress={[Function]}
-        style={
-          {
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-          }
-        }
-      >
-        <Text.Primary
-          bold={true}
-          green={false}
-          numberOfLines={1}
-          style={
-            {
-              "paddingVertical": 20,
-            }
-          }
-        >
-          Pусский
-        </Text.Primary>
-      </TouchableOpacity>
-      <TouchableOpacity
-        onPress={[Function]}
-        style={
-          {
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-          }
-        }
-      >
-        <Text.Primary
-          bold={true}
-          green={false}
-          numberOfLines={1}
-          style={
-            {
-              "paddingVertical": 20,
-            }
-          }
-        >
-          Português
-        </Text.Primary>
-      </TouchableOpacity>
-      <TouchableOpacity
-        onPress={[Function]}
-        style={
-          {
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-          }
-        }
-      >
-        <Text.Primary
-          bold={true}
-          green={false}
-          numberOfLines={1}
-          style={
-            {
-              "paddingVertical": 20,
-            }
-          }
-        >
-          Polski
-        </Text.Primary>
-      </TouchableOpacity>
-      <TouchableOpacity
-        onPress={[Function]}
-        style={
-          {
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-          }
-        }
-      >
-        <Text.Primary
-          bold={true}
-          green={false}
-          numberOfLines={1}
-          style={
-            {
-              "paddingVertical": 20,
-            }
-          }
-        >
-          Dansk
-        </Text.Primary>
-      </TouchableOpacity>
-      <TouchableOpacity
-        onPress={[Function]}
-        style={
-          {
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-          }
-        }
-      >
-        <Text.Primary
-          bold={true}
-          green={false}
-          numberOfLines={1}
-          style={
-            {
-              "paddingVertical": 20,
-            }
-          }
-        >
-          中文（简体）
-        </Text.Primary>
-      </TouchableOpacity>
-      <TouchableOpacity
-        onPress={[Function]}
-        style={
-          {
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-          }
-        }
-      >
-        <Text.Primary
-          bold={true}
-          green={false}
-          numberOfLines={1}
-          style={
-            {
-              "paddingVertical": 20,
-            }
-          }
-        >
-          Bahasa Melayu
-        </Text.Primary>
-      </TouchableOpacity>
-      <TouchableOpacity
-        onPress={[Function]}
-        style={
-          {
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-          }
-        }
-      >
-        <Text.Primary
-          bold={true}
-          green={false}
-          numberOfLines={1}
-          style={
-            {
-              "paddingVertical": 20,
-            }
-          }
-        >
-          Español
-        </Text.Primary>
-      </TouchableOpacity>
-      <TouchableOpacity
-        onPress={[Function]}
-        style={
-          {
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-          }
-        }
-      >
-        <Text.Primary
-          bold={true}
-          green={false}
-          numberOfLines={1}
-          style={
-            {
-              "paddingVertical": 20,
-            }
-          }
-        >
-          Italiano
-        </Text.Primary>
-      </TouchableOpacity>
-      <TouchableOpacity
-        onPress={[Function]}
-        style={
-          {
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-          }
-        }
-      >
-        <Text.Primary
-          bold={true}
-          green={false}
-          numberOfLines={1}
-          style={
-            {
-              "paddingVertical": 20,
-            }
-          }
-        >
-          عربي
-        </Text.Primary>
-      </TouchableOpacity>
-    </View>
-  </RCTScrollView>
+  <ScrollView
+    ref={null}
+  >
+    <SelectableListItem
+      onPress={[Function]}
+      selected={true}
+      title="English"
+    />
+    <SelectableListItem
+      onPress={[Function]}
+      selected={false}
+      title="Français"
+    />
+    <SelectableListItem
+      onPress={[Function]}
+      selected={false}
+      title="Deutsche"
+    />
+    <SelectableListItem
+      onPress={[Function]}
+      selected={false}
+      title="Čeština"
+    />
+    <SelectableListItem
+      onPress={[Function]}
+      selected={false}
+      title="Svenska"
+    />
+    <SelectableListItem
+      onPress={[Function]}
+      selected={false}
+      title="Pусский"
+    />
+    <SelectableListItem
+      onPress={[Function]}
+      selected={false}
+      title="Português"
+    />
+    <SelectableListItem
+      onPress={[Function]}
+      selected={false}
+      title="Polski"
+    />
+    <SelectableListItem
+      onPress={[Function]}
+      selected={false}
+      title="Dansk"
+    />
+    <SelectableListItem
+      onPress={[Function]}
+      selected={false}
+      title="中文（简体）"
+    />
+    <SelectableListItem
+      onPress={[Function]}
+      selected={false}
+      title="Bahasa Melayu"
+    />
+    <SelectableListItem
+      onPress={[Function]}
+      selected={false}
+      title="Español"
+    />
+    <SelectableListItem
+      onPress={[Function]}
+      selected={false}
+      title="Italiano"
+    />
+    <SelectableListItem
+      onPress={[Function]}
+      selected={false}
+      title="عربي"
+    />
+  </ScrollView>
 </View>
 `;

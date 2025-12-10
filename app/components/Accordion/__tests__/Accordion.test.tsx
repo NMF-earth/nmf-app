@@ -1,5 +1,5 @@
 import React from "react";
-import { create } from "react-test-renderer";
+import { render } from "@testing-library/react-native";
 
 import Accordion from "../";
 
@@ -7,7 +7,7 @@ jest.unmock("../");
 
 describe("Accordion", () => {
   it("renders correctly", () => {
-    const tree = create(
+    const tree = render(
       <Accordion>
         <Accordion.Item title="Test title 1">Test Description 1</Accordion.Item>
 

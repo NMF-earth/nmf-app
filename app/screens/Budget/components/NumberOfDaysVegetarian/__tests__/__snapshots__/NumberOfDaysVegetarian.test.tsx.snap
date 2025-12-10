@@ -2,6 +2,7 @@
 
 exports[`NumberOfDaysVegetarian renders correctly 1`] = `
 <View
+  ref={null}
   style={
     {
       "alignItems": "center",
@@ -11,10 +12,11 @@ exports[`NumberOfDaysVegetarian renders correctly 1`] = `
     }
   }
 >
-  <Text.H3
+  <RCTText
     center={true}
+    testID="H3"
   >
     Seems like you haven't eaten any meat nor fish since using the app, good job! 🍾
-  </Text.H3>
+  </RCTText>
 </View>
 `;

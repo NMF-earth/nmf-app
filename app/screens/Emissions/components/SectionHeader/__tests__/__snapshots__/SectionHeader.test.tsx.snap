@@ -3,6 +3,7 @@
 exports[`SectionHeader should render when date 1`] = `
 <TouchableOpacity
   onPress={[Function]}
+  ref={null}
   style={
     {
       "backgroundColor": "#FFFFFF",
@@ -22,7 +23,7 @@ exports[`SectionHeader should render when date 1`] = `
     }
   }
 >
-  <Text.Primary
+  <RCTText
     blue={true}
     bold={true}
     style={
@@ -30,9 +31,10 @@ exports[`SectionHeader should render when date 1`] = `
         "textTransform": "capitalize",
       }
     }
+    testID="Primary"
   >
     December 2020
-  </Text.Primary>
+  </RCTText>
   <Ionicons
     color="#3957D0"
     name="chevron-forward-outline"
@@ -45,6 +47,7 @@ exports[`SectionHeader should render when date 1`] = `
 exports[`SectionHeader should render when title 1`] = `
 <TouchableOpacity
   onPress={[Function]}
+  ref={null}
   style={
     {
       "backgroundColor": "#FFFFFF",
@@ -64,7 +67,7 @@ exports[`SectionHeader should render when title 1`] = `
     }
   }
 >
-  <Text.Primary
+  <RCTText
     blue={true}
     bold={true}
     style={
@@ -72,9 +75,10 @@ exports[`SectionHeader should render when title 1`] = `
         "textTransform": "capitalize",
       }
     }
+    testID="Primary"
   >
     some title
-  </Text.Primary>
+  </RCTText>
   <Ionicons
     color="#3957D0"
     name="chevron-forward-outline"

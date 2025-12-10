@@ -2,6 +2,7 @@
 
 exports[`LegendItem renders correctly 1`] = `
 <View
+  ref={null}
   style={
     {
       "flexDirection": "row",
@@ -10,11 +11,14 @@ exports[`LegendItem renders correctly 1`] = `
     }
   }
 >
-  <Text.Secondary>
+  <RCTText
+    testID="Secondary"
+  >
     Food : 
-  </Text.Secondary>
-  <Text.Secondary
+  </RCTText>
+  <RCTText
     lightGray={true}
+    testID="Secondary"
   >
     <FormattedNumber
       maximumFractionDigits={1}
@@ -22,17 +26,19 @@ exports[`LegendItem renders correctly 1`] = `
     />
      
      kg - 
-  </Text.Secondary>
-  <Text.Secondary
+  </RCTText>
+  <RCTText
     lightGray={true}
+    testID="Secondary"
   >
     60 %
-  </Text.Secondary>
+  </RCTText>
 </View>
 `;
 
 exports[`LegendItem should not render % if percentage is 0 1`] = `
 <View
+  ref={null}
   style={
     {
       "flexDirection": "row",
@@ -41,11 +47,14 @@ exports[`LegendItem should not render % if percentage is 0 1`] = `
     }
   }
 >
-  <Text.Secondary>
+  <RCTText
+    testID="Secondary"
+  >
     Food : 
-  </Text.Secondary>
-  <Text.Secondary
+  </RCTText>
+  <RCTText
     lightGray={true}
+    testID="Secondary"
   >
     <FormattedNumber
       maximumFractionDigits={1}
@@ -53,6 +62,6 @@ exports[`LegendItem should not render % if percentage is 0 1`] = `
     />
      
      g
-  </Text.Secondary>
+  </RCTText>
 </View>
 `;

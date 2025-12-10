@@ -1,6 +1,6 @@
 import "react-native";
 import React from "react";
-import { create } from "react-test-renderer";
+import { render } from "@testing-library/react-native";
 
 import OpenFoodFacts from "../OpenFoodFacts";
 
@@ -10,19 +10,19 @@ describe("<OpenFoodFacts />", () => {
   const props = { ecoScore: "a", novaGroup: 0, nutriscoreGrade: "a" };
 
   test("render correctly", () => {
-    const wrapper = create(<OpenFoodFacts {...props} />);
-    expect(wrapper).toMatchSnapshot();
+    const wrapper = render(<OpenFoodFacts {...props} />);
+    expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   test("render nothing if no data passed", () => {
-    const wrapper = create(<OpenFoodFacts />);
-    expect(wrapper).toMatchSnapshot();
+    const wrapper = render(<OpenFoodFacts />);
+    expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   test("render nothing if bad data passed", () => {
     const badProps = { ecoScore: "y", novaGroup: 10, nutriscoreGrade: "aw" };
 
-    const wrapper = create(<OpenFoodFacts {...badProps} />);
-    expect(wrapper).toMatchSnapshot();
+    const wrapper = render(<OpenFoodFacts {...badProps} />);
+    expect(wrapper.toJSON()).toMatchSnapshot();
   });
 });

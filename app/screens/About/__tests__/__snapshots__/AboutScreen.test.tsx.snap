@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`AboutScreen renders correctly 1`] = `
-<RCTScrollView
+<ScrollView
+  ref={null}
   style={
     {
       "backgroundColor": "#FFFFFF",
@@ -10,96 +11,111 @@ exports[`AboutScreen renders correctly 1`] = `
     }
   }
 >
-  <View>
-    <StickersImage
-      sticker="earth"
-    />
-    <Text.Primary
-      style={
-        {
-          "paddingVertical": 26,
-        }
+  <StickersImage
+    sticker="earth"
+  />
+  <RCTText
+    style={
+      {
+        "paddingVertical": 26,
       }
+    }
+    testID="Primary"
+  >
+    We are a small team concerned by the human impact on the planet. We are not a startup driven by growth or profit to pay dividends to investors. We are transparent and you can have a look to our figures on Indie Hackers. You can join our team if you wanna help the project. Or simply talk around you about our project, give us 5 stars on the store et send us your feedback on the app will help us a lot. Thanks you ✌️
+  </RCTText>
+  <RCTText
+    style={
+      {
+        "paddingVertical": 26,
+      }
+    }
+    testID="H2"
+  >
+    We care about you
+  </RCTText>
+  <RCTText
+    style={
+      {
+        "paddingVertical": 12,
+      }
+    }
+    testID="H3"
+  >
+    Privacy by design
+  </RCTText>
+  <RCTText
+    testID="Primary"
+  >
+    All data provided in the app will never be sold or shared to any companies and we don't track what you do in the app 
+  </RCTText>
+  <RCTText
+    style={
+      {
+        "paddingVertical": 12,
+      }
+    }
+    testID="H3"
+  >
+    Ethic by design
+  </RCTText>
+  <RCTText
+    testID="Primary"
+  >
+    We don't exploit psychological vulnerabilities like bottomless feeds or auto-play to keep users from leaving 
+  </RCTText>
+  <RCTText
+    style={
+      {
+        "paddingVertical": 12,
+      }
+    }
+    testID="H3"
+  >
+    100% Open source
+  </RCTText>
+  <RCTText
+    testID="Primary"
+  >
+    Everyone will be able to add content to the app, verify emissions models and fix any incorrect information
+  </RCTText>
+  <RCTText
+    style={
+      {
+        "paddingVertical": 26,
+      }
+    }
+    testID="H2"
+  >
+    Libraries & contributors
+  </RCTText>
+  <View
+    ref={null}
+    style={
+      {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <RCTText
+      testID="Primary"
     >
-      We are a small team concerned by the human impact on the planet. We are not a startup driven by growth or profit to pay dividends to investors. We are transparent and you can have a look to our figures on Indie Hackers. You can join our team if you wanna help the project. Or simply talk around you about our project, give us 5 stars on the store et send us your feedback on the app will help us a lot. Thanks you ✌️
-    </Text.Primary>
-    <Text.H2
-      style={
-        {
-          "paddingVertical": 26,
-        }
-      }
+      Can be found on 
+    </RCTText>
+    <RCTText
+      testID="Link"
+      url="https://github.com/NMF-earth/nmf-app"
     >
-      We care about you
-    </Text.H2>
-    <Text.H3
-      style={
-        {
-          "paddingVertical": 12,
-        }
-      }
-    >
-      Privacy by design
-    </Text.H3>
-    <Text.Primary>
-      All data provided in the app will never be sold or shared to any companies and we don't track what you do in the app 
-    </Text.Primary>
-    <Text.H3
-      style={
-        {
-          "paddingVertical": 12,
-        }
-      }
-    >
-      Ethic by design
-    </Text.H3>
-    <Text.Primary>
-      We don't exploit psychological vulnerabilities like bottomless feeds or auto-play to keep users from leaving 
-    </Text.Primary>
-    <Text.H3
-      style={
-        {
-          "paddingVertical": 12,
-        }
-      }
-    >
-      100% Open source
-    </Text.H3>
-    <Text.Primary>
-      Everyone will be able to add content to the app, verify emissions models and fix any incorrect information
-    </Text.Primary>
-    <Text.H2
-      style={
-        {
-          "paddingVertical": 26,
-        }
-      }
-    >
-      Libraries & contributors
-    </Text.H2>
-    <View
-      style={
-        {
-          "flexDirection": "row",
-        }
-      }
-    >
-      <Text.Primary>
-        Can be found on 
-      </Text.Primary>
-      <Text.Link
-        url="https://github.com/NMF-earth/nmf-app"
-      >
-        Github
-      </Text.Link>
-    </View>
-    <View
-      style={
-        {
-          "height": 30,
-        }
-      }
-    />
+      Github
+    </RCTText>
   </View>
-</RCTScrollView>
+  <View
+    ref={null}
+    style={
+      {
+        "height": 30,
+      }
+    }
+  />
+</ScrollView>
 `;
