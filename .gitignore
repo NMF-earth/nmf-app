@@ -324,3 +324,5 @@ __generated__
 
 # Temporary files
 .temp
+/android
+/ios
