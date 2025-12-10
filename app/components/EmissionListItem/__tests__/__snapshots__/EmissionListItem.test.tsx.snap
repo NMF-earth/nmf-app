@@ -63,6 +63,7 @@ exports[`EmissionListItem renders correctly if mitigated 1`] = `
     >
       <RCTText
         numberOfLines={1}
+        testID="Primary"
       >
         170 g of red meat
       </RCTText>
@@ -78,6 +79,7 @@ exports[`EmissionListItem renders correctly if mitigated 1`] = `
         <RCTText
           lightGray={true}
           numberOfLines={1}
+          testID="Tertiary"
         >
           <FormattedNumber
             maximumFractionDigits={2}
@@ -88,11 +90,13 @@ exports[`EmissionListItem renders correctly if mitigated 1`] = `
         </RCTText>
         <RCTText
           lightGray={true}
+          testID="Tertiary"
         >
            • 
         </RCTText>
         <RCTText
           green={true}
+          testID="Tertiary"
         >
           Offset
         </RCTText>
@@ -175,6 +179,7 @@ exports[`EmissionListItem renders correctly with audio icon 1`] = `
     >
       <RCTText
         numberOfLines={1}
+        testID="Primary"
       >
         170 g of red meat
       </RCTText>
@@ -190,6 +195,7 @@ exports[`EmissionListItem renders correctly with audio icon 1`] = `
         <RCTText
           lightGray={true}
           numberOfLines={1}
+          testID="Tertiary"
         >
           <FormattedNumber
             maximumFractionDigits={2}
@@ -277,6 +283,7 @@ exports[`EmissionListItem renders correctly with boat icon 1`] = `
     >
       <RCTText
         numberOfLines={1}
+        testID="Primary"
       >
         170 g of red meat
       </RCTText>
@@ -292,6 +299,7 @@ exports[`EmissionListItem renders correctly with boat icon 1`] = `
         <RCTText
           lightGray={true}
           numberOfLines={1}
+          testID="Tertiary"
         >
           <FormattedNumber
             maximumFractionDigits={2}
@@ -379,6 +387,7 @@ exports[`EmissionListItem renders correctly with bus icon 1`] = `
     >
       <RCTText
         numberOfLines={1}
+        testID="Primary"
       >
         170 g of red meat
       </RCTText>
@@ -394,6 +403,7 @@ exports[`EmissionListItem renders correctly with bus icon 1`] = `
         <RCTText
           lightGray={true}
           numberOfLines={1}
+          testID="Tertiary"
         >
           <FormattedNumber
             maximumFractionDigits={2}
@@ -481,6 +491,7 @@ exports[`EmissionListItem renders correctly with car icon 1`] = `
     >
       <RCTText
         numberOfLines={1}
+        testID="Primary"
       >
         170 g of red meat
       </RCTText>
@@ -496,6 +507,7 @@ exports[`EmissionListItem renders correctly with car icon 1`] = `
         <RCTText
           lightGray={true}
           numberOfLines={1}
+          testID="Tertiary"
         >
           <FormattedNumber
             maximumFractionDigits={2}
@@ -583,6 +595,7 @@ exports[`EmissionListItem renders correctly with card icon 1`] = `
     >
       <RCTText
         numberOfLines={1}
+        testID="Primary"
       >
         170 g of red meat
       </RCTText>
@@ -598,6 +611,7 @@ exports[`EmissionListItem renders correctly with card icon 1`] = `
         <RCTText
           lightGray={true}
           numberOfLines={1}
+          testID="Tertiary"
         >
           <FormattedNumber
             maximumFractionDigits={2}
@@ -685,6 +699,7 @@ exports[`EmissionListItem renders correctly with chocolate icon 1`] = `
     >
       <RCTText
         numberOfLines={1}
+        testID="Primary"
       >
         170 g of red meat
       </RCTText>
@@ -700,6 +715,7 @@ exports[`EmissionListItem renders correctly with chocolate icon 1`] = `
         <RCTText
           lightGray={true}
           numberOfLines={1}
+          testID="Tertiary"
         >
           <FormattedNumber
             maximumFractionDigits={2}
@@ -787,6 +803,7 @@ exports[`EmissionListItem renders correctly with coffee icon 1`] = `
     >
       <RCTText
         numberOfLines={1}
+        testID="Primary"
       >
         170 g of red meat
       </RCTText>
@@ -802,6 +819,7 @@ exports[`EmissionListItem renders correctly with coffee icon 1`] = `
         <RCTText
           lightGray={true}
           numberOfLines={1}
+          testID="Tertiary"
         >
           <FormattedNumber
             maximumFractionDigits={2}
@@ -889,6 +907,7 @@ exports[`EmissionListItem renders correctly with electricity icon 1`] = `
     >
       <RCTText
         numberOfLines={1}
+        testID="Primary"
       >
         170 g of red meat
       </RCTText>
@@ -904,6 +923,7 @@ exports[`EmissionListItem renders correctly with electricity icon 1`] = `
         <RCTText
           lightGray={true}
           numberOfLines={1}
+          testID="Tertiary"
         >
           <FormattedNumber
             maximumFractionDigits={2}
@@ -991,6 +1011,7 @@ exports[`EmissionListItem renders correctly with fish icon 1`] = `
     >
       <RCTText
         numberOfLines={1}
+        testID="Primary"
       >
         170 g of red meat
       </RCTText>
@@ -1006,6 +1027,7 @@ exports[`EmissionListItem renders correctly with fish icon 1`] = `
         <RCTText
           lightGray={true}
           numberOfLines={1}
+          testID="Tertiary"
         >
           <FormattedNumber
             maximumFractionDigits={2}
@@ -1093,6 +1115,7 @@ exports[`EmissionListItem renders correctly with full hd video icon 1`] = `
     >
       <RCTText
         numberOfLines={1}
+        testID="Primary"
       >
         170 g of red meat
       </RCTText>
@@ -1108,6 +1131,7 @@ exports[`EmissionListItem renders correctly with full hd video icon 1`] = `
         <RCTText
           lightGray={true}
           numberOfLines={1}
+          testID="Tertiary"
         >
           <FormattedNumber
             maximumFractionDigits={2}
@@ -1195,6 +1219,7 @@ exports[`EmissionListItem renders correctly with hd video icon 1`] = `
     >
       <RCTText
         numberOfLines={1}
+        testID="Primary"
       >
         170 g of red meat
       </RCTText>
@@ -1210,6 +1235,7 @@ exports[`EmissionListItem renders correctly with hd video icon 1`] = `
         <RCTText
           lightGray={true}
           numberOfLines={1}
+          testID="Tertiary"
         >
           <FormattedNumber
             maximumFractionDigits={2}
@@ -1297,6 +1323,7 @@ exports[`EmissionListItem renders correctly with longHaulFlight icon 1`] = `
     >
       <RCTText
         numberOfLines={1}
+        testID="Primary"
       >
         170 g of red meat
       </RCTText>
@@ -1312,6 +1339,7 @@ exports[`EmissionListItem renders correctly with longHaulFlight icon 1`] = `
         <RCTText
           lightGray={true}
           numberOfLines={1}
+          testID="Tertiary"
         >
           <FormattedNumber
             maximumFractionDigits={2}
@@ -1399,6 +1427,7 @@ exports[`EmissionListItem renders correctly with meal icon 1`] = `
     >
       <RCTText
         numberOfLines={1}
+        testID="Primary"
       >
         170 g of red meat
       </RCTText>
@@ -1414,6 +1443,7 @@ exports[`EmissionListItem renders correctly with meal icon 1`] = `
         <RCTText
           lightGray={true}
           numberOfLines={1}
+          testID="Tertiary"
         >
           <FormattedNumber
             maximumFractionDigits={2}
@@ -1501,6 +1531,7 @@ exports[`EmissionListItem renders correctly with mediumHaulFlight icon 1`] = `
     >
       <RCTText
         numberOfLines={1}
+        testID="Primary"
       >
         170 g of red meat
       </RCTText>
@@ -1516,6 +1547,7 @@ exports[`EmissionListItem renders correctly with mediumHaulFlight icon 1`] = `
         <RCTText
           lightGray={true}
           numberOfLines={1}
+          testID="Tertiary"
         >
           <FormattedNumber
             maximumFractionDigits={2}
@@ -1603,6 +1635,7 @@ exports[`EmissionListItem renders correctly with motorbike icon 1`] = `
     >
       <RCTText
         numberOfLines={1}
+        testID="Primary"
       >
         170 g of red meat
       </RCTText>
@@ -1618,6 +1651,7 @@ exports[`EmissionListItem renders correctly with motorbike icon 1`] = `
         <RCTText
           lightGray={true}
           numberOfLines={1}
+          testID="Tertiary"
         >
           <FormattedNumber
             maximumFractionDigits={2}
@@ -1705,6 +1739,7 @@ exports[`EmissionListItem renders correctly with redMeat icon 1`] = `
     >
       <RCTText
         numberOfLines={1}
+        testID="Primary"
       >
         170 g of red meat
       </RCTText>
@@ -1720,6 +1755,7 @@ exports[`EmissionListItem renders correctly with redMeat icon 1`] = `
         <RCTText
           lightGray={true}
           numberOfLines={1}
+          testID="Tertiary"
         >
           <FormattedNumber
             maximumFractionDigits={2}
@@ -1807,6 +1843,7 @@ exports[`EmissionListItem renders correctly with shirt icon 1`] = `
     >
       <RCTText
         numberOfLines={1}
+        testID="Primary"
       >
         170 g of red meat
       </RCTText>
@@ -1822,6 +1859,7 @@ exports[`EmissionListItem renders correctly with shirt icon 1`] = `
         <RCTText
           lightGray={true}
           numberOfLines={1}
+          testID="Tertiary"
         >
           <FormattedNumber
             maximumFractionDigits={2}
@@ -1909,6 +1947,7 @@ exports[`EmissionListItem renders correctly with shortHaulFlight icon 1`] = `
     >
       <RCTText
         numberOfLines={1}
+        testID="Primary"
       >
         170 g of red meat
       </RCTText>
@@ -1924,6 +1963,7 @@ exports[`EmissionListItem renders correctly with shortHaulFlight icon 1`] = `
         <RCTText
           lightGray={true}
           numberOfLines={1}
+          testID="Tertiary"
         >
           <FormattedNumber
             maximumFractionDigits={2}
@@ -2011,6 +2051,7 @@ exports[`EmissionListItem renders correctly with train icon 1`] = `
     >
       <RCTText
         numberOfLines={1}
+        testID="Primary"
       >
         170 g of red meat
       </RCTText>
@@ -2026,6 +2067,7 @@ exports[`EmissionListItem renders correctly with train icon 1`] = `
         <RCTText
           lightGray={true}
           numberOfLines={1}
+          testID="Tertiary"
         >
           <FormattedNumber
             maximumFractionDigits={2}
@@ -2113,6 +2155,7 @@ exports[`EmissionListItem renders correctly with ultra hd video icon 1`] = `
     >
       <RCTText
         numberOfLines={1}
+        testID="Primary"
       >
         170 g of red meat
       </RCTText>
@@ -2128,6 +2171,7 @@ exports[`EmissionListItem renders correctly with ultra hd video icon 1`] = `
         <RCTText
           lightGray={true}
           numberOfLines={1}
+          testID="Tertiary"
         >
           <FormattedNumber
             maximumFractionDigits={2}
@@ -2215,6 +2259,7 @@ exports[`EmissionListItem renders correctly with whiteMeat icon 1`] = `
     >
       <RCTText
         numberOfLines={1}
+        testID="Primary"
       >
         170 g of red meat
       </RCTText>
@@ -2230,6 +2275,7 @@ exports[`EmissionListItem renders correctly with whiteMeat icon 1`] = `
         <RCTText
           lightGray={true}
           numberOfLines={1}
+          testID="Tertiary"
         >
           <FormattedNumber
             maximumFractionDigits={2}

@@ -18,6 +18,7 @@ exports[`MyDataScreen renders correctly 1`] = `
         "paddingVertical": 10,
       }
     }
+    testID="Primary"
   >
     With NMF.earth, you own your data. It means that we don't save your data on any server and therefore that no one but you can access it. No security problem, your data never leaves your phone. However, it also means that you are in charge of saving your data in case you loose your phone for example. To do so, use the export button below to get your data and save it where ever you want to. When you want to import old data, just press the import button but be careful because it will also delete your old data.
   </RCTText>

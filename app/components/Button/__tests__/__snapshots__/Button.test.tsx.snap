@@ -29,6 +29,7 @@ exports[`renders correctly Danger Button 1`] = `
   <RCTText
     bold={true}
     center={true}
+    testID="Primary"
     white={true}
   >
     Primary
@@ -65,6 +66,7 @@ exports[`renders correctly Primary Button 1`] = `
   <RCTText
     bold={true}
     center={true}
+    testID="Primary"
     white={true}
   >
     Primary
@@ -101,6 +103,7 @@ exports[`renders correctly Secondary Button 1`] = `
   <RCTText
     bold={true}
     center={true}
+    testID="Primary"
     white={true}
   >
     Primary
@@ -143,6 +146,7 @@ exports[`renders correctly fullwidth Danger Button 1`] = `
   <RCTText
     bold={true}
     center={true}
+    testID="Primary"
     white={true}
   >
     Primary
@@ -186,6 +190,7 @@ exports[`renders correctly fullwidth Danger Button with icon 1`] = `
   <RCTText
     bold={true}
     center={true}
+    testID="Primary"
     white={true}
   >
     Primary
@@ -238,6 +243,7 @@ exports[`renders correctly fullwidth Primary Button 1`] = `
   <RCTText
     bold={true}
     center={true}
+    testID="Primary"
     white={true}
   >
     Primary
@@ -281,6 +287,7 @@ exports[`renders correctly fullwidth Primary Button with icon 1`] = `
   <RCTText
     bold={true}
     center={true}
+    testID="Primary"
     white={true}
   >
     Primary
@@ -333,6 +340,7 @@ exports[`renders correctly fullwidth Secondary Button 1`] = `
   <RCTText
     bold={true}
     center={true}
+    testID="Primary"
     white={true}
   >
     Primary
@@ -376,6 +384,7 @@ exports[`renders correctly fullwidth Secondary Button with icon 1`] = `
   <RCTText
     bold={true}
     center={true}
+    testID="Primary"
     white={true}
   >
     Primary

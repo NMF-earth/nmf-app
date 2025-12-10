@@ -12,7 +12,9 @@ exports[`EmissionsScreen renders correctly 1`] = `
     }
   }
 >
-  <RCTText>
+  <RCTText
+    testID="H3"
+  >
     Type
   </RCTText>
   <RCTText
@@ -24,11 +26,14 @@ exports[`EmissionsScreen renders correctly 1`] = `
         "paddingTop": 2,
       }
     }
+    testID="Primary"
   >
      - 
     Custom
   </RCTText>
-  <RCTText>
+  <RCTText
+    testID="H3"
+  >
     Quantity
   </RCTText>
   <RCTText
@@ -40,6 +45,7 @@ exports[`EmissionsScreen renders correctly 1`] = `
         "paddingTop": 2,
       }
     }
+    testID="Primary"
   >
     <FormattedNumber
       maximumFractionDigits={2}
@@ -48,7 +54,9 @@ exports[`EmissionsScreen renders correctly 1`] = `
      
     tC02eq
   </RCTText>
-  <RCTText>
+  <RCTText
+    testID="H3"
+  >
     Mitigation
   </RCTText>
   <RCTText
@@ -58,6 +66,7 @@ exports[`EmissionsScreen renders correctly 1`] = `
         "paddingTop": 2,
       }
     }
+    testID="Primary"
   >
     This emission hasn't been mitigated
   </RCTText>
@@ -76,7 +85,9 @@ exports[`EmissionsScreen renders correctly 1`] = `
       ref={null}
     />
   </View>
-  <RCTText>
+  <RCTText
+    testID="H3"
+  >
     Date
   </RCTText>
   <View
@@ -101,6 +112,7 @@ exports[`EmissionsScreen renders correctly 1`] = `
           },
         ]
       }
+      testID="Primary"
     >
       Sunday 
     </RCTText>
@@ -113,6 +125,7 @@ exports[`EmissionsScreen renders correctly 1`] = `
           "paddingTop": 2,
         }
       }
+      testID="Primary"
     >
       21st February 2021
     </RCTText>

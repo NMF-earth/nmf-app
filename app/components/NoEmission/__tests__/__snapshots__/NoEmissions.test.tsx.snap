@@ -29,6 +29,7 @@ exports[`renders correctly NoEmission 1`] = `
           "paddingVertical": 14,
         }
       }
+      testID="H1"
     >
       Hi there 👋
     </RCTText>
@@ -39,6 +40,7 @@ exports[`renders correctly NoEmission 1`] = `
           "textAlign": "center",
         }
       }
+      testID="Primary"
     >
       Thanks for joining our fight against climate change!
     </RCTText>
@@ -49,6 +51,7 @@ exports[`renders correctly NoEmission 1`] = `
           "textAlign": "center",
         }
       }
+      testID="Primary"
     >
       To start tracking your CO2 emissions, tap the button below
     </RCTText>

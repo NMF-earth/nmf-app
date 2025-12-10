@@ -31,6 +31,7 @@ exports[`ComingSoonScreen renders correctly 1`] = `
           "textAlign": "center",
         }
       }
+      testID="Primary"
     >
       This feature is under development and will be available soon.
     </RCTText>
@@ -41,6 +42,7 @@ exports[`ComingSoonScreen renders correctly 1`] = `
           "textAlign": "center",
         }
       }
+      testID="Primary"
     >
       In the mean time, follow us on social media!
     </RCTText>

@@ -19,7 +19,9 @@ exports[`InfoModalScreen renders correctly 1`] = `
       }
     }
   >
-    <RCTText>
+    <RCTText
+      testID="H3"
+    >
       How often this emission happens?
     </RCTText>
     <View
@@ -52,7 +54,9 @@ exports[`InfoModalScreen renders correctly 1`] = `
       }
     }
   >
-    <RCTText>
+    <RCTText
+      testID="H3"
+    >
       Occurences?
     </RCTText>
     <View

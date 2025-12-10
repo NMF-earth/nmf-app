@@ -11,11 +11,14 @@ exports[`LegendItem renders correctly 1`] = `
     }
   }
 >
-  <RCTText>
+  <RCTText
+    testID="Secondary"
+  >
     Food : 
   </RCTText>
   <RCTText
     lightGray={true}
+    testID="Secondary"
   >
     <FormattedNumber
       maximumFractionDigits={1}
@@ -26,6 +29,7 @@ exports[`LegendItem renders correctly 1`] = `
   </RCTText>
   <RCTText
     lightGray={true}
+    testID="Secondary"
   >
     60 %
   </RCTText>
@@ -43,11 +47,14 @@ exports[`LegendItem should not render % if percentage is 0 1`] = `
     }
   }
 >
-  <RCTText>
+  <RCTText
+    testID="Secondary"
+  >
     Food : 
   </RCTText>
   <RCTText
     lightGray={true}
+    testID="Secondary"
   >
     <FormattedNumber
       maximumFractionDigits={1}

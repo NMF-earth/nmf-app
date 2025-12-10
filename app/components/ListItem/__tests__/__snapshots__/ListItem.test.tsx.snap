@@ -26,6 +26,7 @@ exports[`<ListItem /> ListItem renders correctly both topLine and bottomLine 1`]
 >
   <RCTText
     numberOfLines={1}
+    testID="Secondary"
   >
     France
   </RCTText>
@@ -59,6 +60,7 @@ exports[`<ListItem /> ListItem renders correctly wtesth bottomLine 1`] = `
 >
   <RCTText
     numberOfLines={1}
+    testID="Secondary"
   >
     France
   </RCTText>
@@ -92,6 +94,7 @@ exports[`<ListItem /> ListItem renders correctly wtesth topLine 1`] = `
 >
   <RCTText
     numberOfLines={1}
+    testID="Secondary"
   >
     France
   </RCTText>
@@ -121,6 +124,7 @@ exports[`<ListItem /> render 1`] = `
 >
   <RCTText
     numberOfLines={1}
+    testID="Secondary"
   >
     France
   </RCTText>

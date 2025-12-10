@@ -13,6 +13,7 @@ exports[`<OpenFoodFacts /> render correctly 1`] = `
 >
   <RCTText
     center={true}
+    testID="Link"
     url="https://world.openfoodfacts.org/"
   >
     Data from OPEN FOOD FACTS
@@ -122,6 +123,7 @@ exports[`<OpenFoodFacts /> render nothing if bad data passed 1`] = `
 >
   <RCTText
     center={true}
+    testID="Link"
     url="https://world.openfoodfacts.org/"
   >
     Data from OPEN FOOD FACTS
@@ -231,6 +233,7 @@ exports[`<OpenFoodFacts /> render nothing if no data passed 1`] = `
 >
   <RCTText
     center={true}
+    testID="Link"
     url="https://world.openfoodfacts.org/"
   >
     Data from OPEN FOOD FACTS

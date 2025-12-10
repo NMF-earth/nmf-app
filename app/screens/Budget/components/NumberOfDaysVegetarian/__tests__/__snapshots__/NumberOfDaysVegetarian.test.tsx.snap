@@ -14,6 +14,7 @@ exports[`NumberOfDaysVegetarian renders correctly 1`] = `
 >
   <RCTText
     center={true}
+    testID="H3"
   >
     Seems like you haven't eaten any meat nor fish since using the app, good job! 🍾
   </RCTText>

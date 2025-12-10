@@ -17,6 +17,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
         "paddingTop": 30,
       }
     }
+    testID="Primary"
   >
     Please select a country in order to improve emissions calculations for streaming and electricity.
   </RCTText>
@@ -34,6 +35,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
           "paddingVertical": 20,
         }
       }
+      testID="Primary"
     >
       My carbon intensity : 
     </RCTText>
@@ -45,6 +47,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
           "paddingVertical": 20,
         }
       }
+      testID="Primary"
     >
       NaN
     </RCTText>
@@ -56,6 +59,7 @@ exports[`MyLocationScreen renders correctly 1`] = `
           "paddingVertical": 20,
         }
       }
+      testID="Primary"
     >
        gCO₂eq/kWh
     </RCTText>

@@ -114,6 +114,7 @@ exports[`SettingsScreen renders correctly 1`] = `
         "textAlign": "center",
       }
     }
+    testID="Tertiary"
   >
     Version 0.0.1-42
   </RCTText>

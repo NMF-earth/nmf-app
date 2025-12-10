@@ -44,6 +44,7 @@ exports[`Tag renders correctly with airplane icon 1`] = `
           "textTransform": "capitalize",
         }
       }
+      testID="Primary"
     >
       Transport
     </RCTText>
@@ -90,6 +91,7 @@ exports[`Tag renders correctly with no icon 1`] = `
           "textTransform": "capitalize",
         }
       }
+      testID="Primary"
     >
       Transport
     </RCTText>

@@ -28,6 +28,7 @@ exports[`<ListItemSwitch /> ListItem renders correctly with both topLine and bot
         "paddingVertical": 18,
       }
     }
+    testID="Secondary"
   >
     Germany
   </RCTText>
@@ -62,6 +63,7 @@ exports[`<ListItemSwitch /> ListItem renders correctly with bottomLine 1`] = `
         "paddingVertical": 18,
       }
     }
+    testID="Secondary"
   >
     Germany
   </RCTText>
@@ -96,6 +98,7 @@ exports[`<ListItemSwitch /> ListItem renders correctly with topLine 1`] = `
         "paddingVertical": 18,
       }
     }
+    testID="Secondary"
   >
     Germany
   </RCTText>
@@ -126,6 +129,7 @@ exports[`<ListItemSwitch /> render 1`] = `
         "paddingVertical": 18,
       }
     }
+    testID="Secondary"
   >
     Germany
   </RCTText>

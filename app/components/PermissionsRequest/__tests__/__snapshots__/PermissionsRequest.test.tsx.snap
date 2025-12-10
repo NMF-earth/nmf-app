@@ -29,11 +29,13 @@ exports[`renders correctly PermissionsRequest if camera 1`] = `
   >
     <RCTText
       center={true}
+      testID="H2"
     >
       No access to camera
     </RCTText>
     <RCTText
       center={true}
+      testID="Primary"
     >
       Please give NMF.earth app access to camera in your phone settings to use this feature.
     </RCTText>
@@ -81,11 +83,13 @@ exports[`renders correctly PermissionsRequest if notification 1`] = `
   >
     <RCTText
       center={true}
+      testID="H2"
     >
       No permission to send notifications
     </RCTText>
     <RCTText
       center={true}
+      testID="Primary"
     >
       Please give NMF.earth app permission to send you notifications in your phone settings to use this feature.
     </RCTText>

@@ -31,6 +31,7 @@ exports[`AddEmissionScreen renders correctly 1`] = `
             "textTransform": "capitalize",
           }
         }
+        testID="H2"
       />
       <RCTText
         lightGray={true}
@@ -40,6 +41,7 @@ exports[`AddEmissionScreen renders correctly 1`] = `
             "textTransform": "capitalize",
           }
         }
+        testID="Primary"
       >
         Custom
       </RCTText>
@@ -72,7 +74,9 @@ exports[`AddEmissionScreen renders correctly 1`] = `
         }
       }
     >
-      <RCTText>
+      <RCTText
+        testID="H3"
+      >
         Date
       </RCTText>
       <View
@@ -103,7 +107,9 @@ exports[`AddEmissionScreen renders correctly 1`] = `
         }
       }
     >
-      <RCTText>
+      <RCTText
+        testID="H3"
+      >
         Periodicity
       </RCTText>
       <View

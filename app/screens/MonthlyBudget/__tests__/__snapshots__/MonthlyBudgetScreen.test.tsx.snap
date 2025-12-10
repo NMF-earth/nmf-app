@@ -26,6 +26,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
     >
       <RCTText
         bold={true}
+        testID="Primary"
       >
         Slide to set your budget
       </RCTText>
@@ -87,6 +88,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
     </View>
     <RCTText
       lightGray={true}
+      testID="Primary"
     >
       <FormattedNumber
         value={NaN}
@@ -115,6 +117,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
       >
         <RCTText
           bold={true}
+          testID="Primary"
         >
           Average monthly emissions per capita in a sample of countries 
           <TouchableOpacity
@@ -136,6 +139,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
             "marginBottom": 6,
           }
         }
+        testID="Secondary"
       >
         Luxembourg : 
         <FormattedNumber
@@ -152,6 +156,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
             "marginBottom": 6,
           }
         }
+        testID="Secondary"
       >
         United States : 
         <FormattedNumber
@@ -168,6 +173,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
             "marginBottom": 6,
           }
         }
+        testID="Secondary"
       >
         Japan : 
         <FormattedNumber
@@ -184,6 +190,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
             "marginBottom": 6,
           }
         }
+        testID="Secondary"
       >
         Sweden : 
         <FormattedNumber
@@ -200,6 +207,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
             "marginBottom": 6,
           }
         }
+        testID="Secondary"
       >
         France : 
         <FormattedNumber
@@ -216,6 +224,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
             "marginBottom": 6,
           }
         }
+        testID="Secondary"
       >
         China : 
         <FormattedNumber
@@ -232,6 +241,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
             "marginBottom": 6,
           }
         }
+        testID="Secondary"
       >
         Brazil : 
         <FormattedNumber
@@ -248,6 +258,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
             "marginBottom": 6,
           }
         }
+        testID="Secondary"
       >
         India : 
         <FormattedNumber
@@ -264,6 +275,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
             "marginBottom": 6,
           }
         }
+        testID="Secondary"
       >
         Ethiopia : 
         <FormattedNumber
@@ -284,6 +296,7 @@ exports[`MonthlyBudgetScreen renders correctly 1`] = `
       >
         <RCTText
           center={true}
+          testID="Secondary"
         >
           If you wish to respect the Paris agreement (to keep the rise in global average temperature below 2 degrees), set your monthly budget at
            

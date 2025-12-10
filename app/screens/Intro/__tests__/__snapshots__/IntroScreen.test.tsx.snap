@@ -41,6 +41,7 @@ exports[`renders correctly ComingSoon 1`] = `
           "textAlign": "center",
         }
       }
+      testID="H3"
     >
       Welcome to NMF.earth 🌱
     </RCTText>
@@ -51,6 +52,7 @@ exports[`renders correctly ComingSoon 1`] = `
           "textAlign": "center",
         }
       }
+      testID="Tertiary"
     >
       By proceeding, you are agreeing to our terms of use.
     </RCTText>
@@ -60,6 +62,7 @@ exports[`renders correctly ComingSoon 1`] = `
     >
       <RCTText
         green={true}
+        testID="Tertiary"
       >
         Read terms of use
       </RCTText>

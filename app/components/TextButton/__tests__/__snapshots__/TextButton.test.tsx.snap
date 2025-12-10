@@ -42,6 +42,7 @@ exports[`TextButton renders correctly with calendar icon 1`] = `
           "marginHorizontal": 8,
         }
       }
+      testID="Primary"
     >
       some text
     </RCTText>
@@ -105,6 +106,7 @@ exports[`TextButton renders correctly with repeat icon 1`] = `
           "marginHorizontal": 8,
         }
       }
+      testID="Primary"
     >
       some text
     </RCTText>

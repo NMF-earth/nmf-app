@@ -18,6 +18,7 @@ exports[`CategorySelectionScreen renders correctly 1`] = `
         "paddingTop": 20,
       }
     }
+    testID="H2"
   >
     Select a category
   </RCTText>

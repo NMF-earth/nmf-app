@@ -14,6 +14,7 @@ exports[`PeriodBudget renders correctly 1`] = `
   <RCTText
     bold={true}
     center={true}
+    testID="Secondary"
   >
     Budget for 
     this month
@@ -21,6 +22,7 @@ exports[`PeriodBudget renders correctly 1`] = `
     <RCTText
       center={true}
       lightGray={true}
+      testID="Secondary"
     >
       <FormattedNumber
         maximumFractionDigits={0}
@@ -47,6 +49,7 @@ exports[`PeriodBudget renders correctly if tons 1`] = `
   <RCTText
     bold={true}
     center={true}
+    testID="Secondary"
   >
     Budget for 
     this month
@@ -54,6 +57,7 @@ exports[`PeriodBudget renders correctly if tons 1`] = `
     <RCTText
       center={true}
       lightGray={true}
+      testID="Secondary"
     >
       <FormattedNumber
         maximumFractionDigits={0}
