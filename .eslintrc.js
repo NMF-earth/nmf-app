@@ -42,6 +42,7 @@ module.exports = {
   plugins: ["react", "@typescript-eslint", "jest"],
   rules: {
     "@typescript-eslint/explicit-function-return-type": [0],
+    "@typescript-eslint/no-require-imports": "off",
     quotes: [2, "double"],
     "react/display-name": [0],
     "react/prop-types": [0],
