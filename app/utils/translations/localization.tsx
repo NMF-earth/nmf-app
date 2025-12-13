@@ -1,5 +1,5 @@
 /* eslint-disable  @typescript-eslint/explicit-module-boundary-types */
-/* eslint-disable  @typescript-eslint/ban-types */
+
 /* eslint-disable  @typescript-eslint/ban-ts-comment */
 
 import React from "react";
