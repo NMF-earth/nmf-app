@@ -1,5 +1,9 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 /* eslint-disable no-undef */
+
+// These must be at the top to prevent expo-modules-core warnings
+jest.mock("expo-localization", () => require("./expo-localization.mock"));
+jest.mock("expo-linking", () => require("./expo-linking.mock"));
 jest.mock("react-native-svg", () => {
   // eslint-disable-next-line @typescript-eslint/no-var-requires
   const svg = require("./react-native-svg.mock");
