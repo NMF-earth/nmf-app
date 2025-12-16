@@ -6,7 +6,7 @@ import InfoModalScreen from "../../screens/InfoModal";
 const Stack = createStackNavigator();
 
 const InfoModalNavigator = (): React.ReactElement => (
-  <Stack.Navigator>
+  <Stack.Navigator id="InfoModalStack">
     <Stack.Screen
       name="InfoModal"
       options={InfoModalScreen.navigationOptions}

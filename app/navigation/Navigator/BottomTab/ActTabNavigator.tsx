@@ -75,7 +75,7 @@ const TopTabBar = ({ state, navigation }) => {
 };
 
 const ActTabNavigator: NavStatelessComponent = () => (
-  <Tab.Navigator tabBar={(props) => <TopTabBar {...props} />}>
+  <Tab.Navigator id="ActTab" tabBar={(props) => <TopTabBar {...props} />}>
     {tabs.map((tab) => (
       <Tab.Screen key={tab} name={tab} component={ActScreen} options={{ tabBarLabel: tab }} />
     ))}
@@ -87,7 +87,7 @@ const navigationOptions = () => ({
   headerStyle: {
     ...ComponentsStyle.header,
   },
-  headerBackTitleVisible: false,
+  headerBackButtonDisplayMode: "minimal" as const,
   headerTitle: () => <Text.H1>{t("ACT_SCREEN_TITLE")}</Text.H1>,
 });
 

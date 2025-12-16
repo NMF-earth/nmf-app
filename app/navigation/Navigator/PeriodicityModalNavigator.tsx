@@ -6,7 +6,7 @@ import PeriodicityModalScreen from "../../screens/Periodicity";
 const Stack = createStackNavigator();
 
 const PeriodicityModalNavigator = (): React.ReactElement => (
-  <Stack.Navigator>
+  <Stack.Navigator id="PeriodicityModalStack">
     <Stack.Screen
       name="PeriodicityModal"
       options={PeriodicityModalScreen.navigationOptions}

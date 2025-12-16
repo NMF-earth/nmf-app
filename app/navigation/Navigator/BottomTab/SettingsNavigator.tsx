@@ -13,7 +13,7 @@ import LanguagesScreen from "../../../screens/Languages/LanguagesScreen";
 const Stack = createStackNavigator();
 
 const SettingsNavigator = (): React.ReactElement => (
-  <Stack.Navigator>
+  <Stack.Navigator id="SettingsStack">
     <Stack.Screen
       name="Settings"
       options={SettingsScreen.navigationOptions}
