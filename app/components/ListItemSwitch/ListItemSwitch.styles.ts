@@ -12,6 +12,9 @@ export default StyleSheet.create({
   text: {
     paddingVertical: 18,
   },
+  switch: {
+    alignSelf: "center",
+  },
   topLine: {
     borderTopColor: Colors.grey10,
     borderTopWidth: 1.6,

@@ -32,7 +32,7 @@ const ListItemSwitch: React.FC<Props> = ({
   return (
     <View style={containerStyle}>
       <Text.Secondary style={styles.text}>{title}</Text.Secondary>
-      <Switch value={value} onChange={onChange} />
+      <Switch style={styles.switch} value={value} onChange={onChange} />
     </View>
   );
 };
