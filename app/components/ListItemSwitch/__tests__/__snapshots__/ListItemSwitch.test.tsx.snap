@@ -34,6 +34,11 @@ exports[`<ListItemSwitch /> ListItem renders correctly with both topLine and bot
   </RCTText>
   <Switch
     onChange={[Function]}
+    style={
+      {
+        "alignSelf": "center",
+      }
+    }
     value={true}
   />
 </View>
@@ -69,6 +74,11 @@ exports[`<ListItemSwitch /> ListItem renders correctly with bottomLine 1`] = `
   </RCTText>
   <Switch
     onChange={[Function]}
+    style={
+      {
+        "alignSelf": "center",
+      }
+    }
     value={true}
   />
 </View>
@@ -104,6 +114,11 @@ exports[`<ListItemSwitch /> ListItem renders correctly with topLine 1`] = `
   </RCTText>
   <Switch
     onChange={[Function]}
+    style={
+      {
+        "alignSelf": "center",
+      }
+    }
     value={true}
   />
 </View>
@@ -135,6 +150,11 @@ exports[`<ListItemSwitch /> render 1`] = `
   </RCTText>
   <Switch
     onChange={[Function]}
+    style={
+      {
+        "alignSelf": "center",
+      }
+    }
     value={true}
   />
 </View>
