@@ -9,7 +9,7 @@ const navigationOptions = (): StackNavigationOptions => ({
   headerStyle: {
     ...ComponentsStyle.header,
   },
-  headerBackTitleVisible: false,
+  headerBackButtonDisplayMode: "minimal",
   headerTitle: () => <Text.H1>{t("ACT_SCREEN_TITLE")}</Text.H1>,
 });
 

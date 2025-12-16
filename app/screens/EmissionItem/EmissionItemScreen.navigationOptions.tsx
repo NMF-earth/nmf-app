@@ -21,7 +21,7 @@ const navigationOptions = (prop): StackNavigationOptions => {
       ...ComponentsStyle.header,
     },
     headerTintColor: Colors.grey100,
-    headerBackTitleVisible: false,
+    headerBackButtonDisplayMode: "minimal",
     headerRight: () => (showInfoButton ? <InfoButton /> : null),
     headerTitle: () => (
       <Text.Header>

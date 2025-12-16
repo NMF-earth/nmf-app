@@ -11,7 +11,7 @@ const navigationOptions = (): StackNavigationOptions => ({
     ...ComponentsStyle.header,
   },
   headerTintColor: Colors.grey100,
-  headerBackTitleVisible: false,
+  headerBackButtonDisplayMode: "minimal",
   headerTitle: () => (
     <Text.Header style={Layout.androidNavTitle}>{t("FAQ_SCREEN_TITLE")}</Text.Header>
   ),

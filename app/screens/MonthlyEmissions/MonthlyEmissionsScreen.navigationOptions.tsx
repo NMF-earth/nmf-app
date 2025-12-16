@@ -9,7 +9,7 @@ const navigationOptions = ({ route }) => ({
   headerStyle: {
     ...ComponentsStyle.header,
   },
-  headerBackTitleVisible: false,
+  headerBackButtonDisplayMode: "minimal",
   headerTintColor: Colors.grey100,
   headerTitle: () => (
     <Text.Header style={[Layout.androidNavTitle, { textTransform: "capitalize" }]}>
