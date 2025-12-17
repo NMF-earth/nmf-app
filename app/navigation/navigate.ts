@@ -10,7 +10,10 @@ const openAddEmissionNavigator = (navigation) => (props = {}) => {
 };
 
 const openEmissions = (navigation) => (props = {}) => {
-  navigation.navigate("Emissions", props);
+  navigation.navigate("EmissionsNavigator", {
+    screen: "Emissions",
+    params: props,
+  });
 };
 
 /* navigate - modal */
