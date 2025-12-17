@@ -35,7 +35,6 @@ const SettingsOptions = {
 };
 
 const AddEmissionOptions = {
-  showLabel: false,
   tabBarLabel: t("ADD_EMISSION_SCREEN_TAB_NAME"),
   tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name={"add-circle"} />,
 };
@@ -44,6 +43,7 @@ const BottomTabNavigator = (): React.ReactElement => {
   const { bottom } = useSafeAreaInsets();
   return (
     <BottomTab.Navigator
+      id="BottomTab"
       initialRouteName={"EmissionsNavigator"}
       screenOptions={{
         headerShown: false,

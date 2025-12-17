@@ -10,7 +10,7 @@ const navigationOptions = (): StackNavigationOptions => ({
   headerStyle: {
     ...ComponentsStyle.header,
   },
-  headerBackTitleVisible: false,
+  headerBackButtonDisplayMode: "minimal",
   headerTintColor: Colors.grey100,
   headerTitle: () => <Text.Header>{t("MY_DATA_SCREEN_TITLE")}</Text.Header>,
 });

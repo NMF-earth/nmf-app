@@ -8,7 +8,7 @@ import AddEmissionScreen from "../../../screens/AddEmission";
 const Stack = createStackNavigator();
 
 const BudgetNavigator = (): React.ReactElement => (
-  <Stack.Navigator>
+  <Stack.Navigator id="BudgetStack">
     <Stack.Screen name="Budget" options={BudgetScreen.navigationOptions} component={BudgetScreen} />
     <Stack.Screen
       name="MonthlyBudget"

@@ -21,7 +21,7 @@ const RootNavigator = (): React.ReactElement => {
     useSelector(userPreferences.selectors.getAcceptedTermsOfUseVersion);
 
   return (
-    <Stack.Navigator>
+    <Stack.Navigator id="RootStack">
       {hasAcceptedTermsOfUseVersion ? (
         <Stack.Screen name="BottomTab" component={BottomTabNavigator} options={screenOptions} />
       ) : (

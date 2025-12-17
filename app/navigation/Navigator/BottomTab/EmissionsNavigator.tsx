@@ -9,7 +9,7 @@ import RecurringEmissionsScreen from "../../../screens/RecurringEmissions";
 const Stack = createStackNavigator();
 
 const EmissionsNavigator = (): React.ReactElement => (
-  <Stack.Navigator>
+  <Stack.Navigator id="EmissionsStack">
     <Stack.Screen
       name="Emissions"
       options={EmissionsScreen.navigationOptions}

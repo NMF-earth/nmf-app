@@ -1,6 +1,7 @@
 import React from "react";
 import { StyleSheet, TouchableOpacity, View } from "react-native";
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
+import { StackNavigationOptions } from "@react-navigation/stack";
 
 import { Text } from "components";
 import { t } from "utils";
@@ -75,19 +76,19 @@ const TopTabBar = ({ state, navigation }) => {
 };
 
 const ActTabNavigator: NavStatelessComponent = () => (
-  <Tab.Navigator tabBar={(props) => <TopTabBar {...props} />}>
+  <Tab.Navigator id="ActTab" tabBar={(props) => <TopTabBar {...props} />}>
     {tabs.map((tab) => (
       <Tab.Screen key={tab} name={tab} component={ActScreen} options={{ tabBarLabel: tab }} />
     ))}
   </Tab.Navigator>
 );
 
-const navigationOptions = () => ({
+const navigationOptions = (): StackNavigationOptions => ({
   ...ComponentsStyle.transitionBetweenScreenPresets,
   headerStyle: {
     ...ComponentsStyle.header,
   },
-  headerBackTitleVisible: false,
+  headerBackButtonDisplayMode: "minimal",
   headerTitle: () => <Text.H1>{t("ACT_SCREEN_TITLE")}</Text.H1>,
 });
 

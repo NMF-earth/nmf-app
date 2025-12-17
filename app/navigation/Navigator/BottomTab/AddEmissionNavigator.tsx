@@ -9,7 +9,7 @@ import BarCodeScanScreen from "../../../screens/BarCodeScan";
 const Stack = createStackNavigator();
 
 const AddEmissionNavigator = (): React.ReactElement => (
-  <Stack.Navigator>
+  <Stack.Navigator id="AddEmissionStack">
     <Stack.Screen
       name="CategorySelection"
       options={CategorySelectionScreen.navigationOptions}

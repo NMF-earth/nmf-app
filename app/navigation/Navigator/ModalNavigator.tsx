@@ -8,7 +8,7 @@ import InfoModalScreen from "../../screens/InfoModal";
 const Stack = createStackNavigator();
 
 const ModalNavigator = (): React.ReactElement => (
-  <Stack.Navigator>
+  <Stack.Navigator id="ModalStack">
     <Stack.Screen
       name="ComingSoonModal"
       options={ComingSoonScreen.navigationOptions}

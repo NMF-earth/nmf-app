@@ -7,7 +7,7 @@ import ActDetailScreen from "../../../screens/ActDetail";
 const Stack = createStackNavigator();
 
 const ActNavigator = (): React.ReactElement => (
-  <Stack.Navigator>
+  <Stack.Navigator id="ActStack">
     <Stack.Screen
       name="ActTabNavigator"
       options={ActTabNavigator.navigationOptions}
