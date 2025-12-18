@@ -1,5 +1,5 @@
 import React from "react";
-import { createStackNavigator } from "@react-navigation/stack";
+import { createStackNavigator, StackNavigationOptions } from "@react-navigation/stack";
 
 import ActTabNavigator from "./ActTabNavigator";
 import ActDetailScreen from "../../../screens/ActDetail";
@@ -10,13 +10,13 @@ const ActNavigator = (): React.ReactElement => (
   <Stack.Navigator id="ActStack">
     <Stack.Screen
       name="ActTabNavigator"
-      options={ActTabNavigator.navigationOptions}
+      options={ActTabNavigator.navigationOptions as StackNavigationOptions}
       component={ActTabNavigator}
     />
     <Stack.Screen
       name="ActDetail"
       component={ActDetailScreen}
-      options={ActDetailScreen.navigationOptions}
+      options={ActDetailScreen.navigationOptions as StackNavigationOptions}
     />
   </Stack.Navigator>
 );

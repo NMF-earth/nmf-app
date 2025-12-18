@@ -5,7 +5,7 @@ import { StackNavigationOptions } from "@react-navigation/stack";
 
 import { Text } from "components";
 import { t } from "utils";
-import { ComponentsStyle, Colors, Font } from "style";
+import { ComponentsStyle, Colors, Font, Layout } from "style";
 import { NavStatelessComponent } from "interfaces";
 
 import { GuideCategory } from "../../../types/guide";
@@ -89,7 +89,7 @@ const navigationOptions = (): StackNavigationOptions => ({
     ...ComponentsStyle.header,
   },
   headerBackButtonDisplayMode: "minimal",
-  headerTitle: () => <Text.H1>{t("ACT_SCREEN_TITLE")}</Text.H1>,
+  headerTitle: () => <Text.H1 style={Layout.androidNavTitle}>{t("ACT_SCREEN_TITLE")}</Text.H1>,
 });
 
 ActTabNavigator.navigationOptions = navigationOptions();

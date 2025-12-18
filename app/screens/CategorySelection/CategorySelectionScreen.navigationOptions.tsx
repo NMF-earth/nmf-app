@@ -3,7 +3,7 @@ import { StackNavigationOptions } from "@react-navigation/stack";
 
 import { Text } from "components";
 import { t } from "utils";
-import { Colors, ComponentsStyle } from "style";
+import { Colors, ComponentsStyle, Layout } from "style";
 
 const navigationOptions = (): StackNavigationOptions => ({
   ...ComponentsStyle.transitionBetweenScreenPresets,
@@ -12,7 +12,7 @@ const navigationOptions = (): StackNavigationOptions => ({
   },
   headerBackButtonDisplayMode: "minimal",
   headerTintColor: Colors.grey100,
-  headerTitle: () => <Text.H1>{t("CATEGORY_SELECTION_SCREEN_TITLE")}</Text.H1>,
+  headerTitle: () => <Text.H1 style={Layout.androidNavTitle}>{t("CATEGORY_SELECTION_SCREEN_TITLE")}</Text.H1>,
 });
 
 export default navigationOptions;
