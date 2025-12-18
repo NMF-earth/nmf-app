@@ -2,6 +2,7 @@
 
 exports[`SubCategorySelectionScreen renders correctly 1`] = `
 <ScrollView
+  contentInsetAdjustmentBehavior="automatic"
   ref={null}
   style={
     {

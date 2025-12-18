@@ -3,6 +3,7 @@
 exports[`EmissionsScreen renders correctly 1`] = `
 <SectionList
   ListFooterComponent={[Function]}
+  contentInsetAdjustmentBehavior="automatic"
   keyExtractor={[Function]}
   ref={null}
   renderItem={[Function]}
@@ -89,6 +90,7 @@ exports[`EmissionsScreen renders correctly 1`] = `
 exports[`EmissionsScreen renders correctly if no emissions 1`] = `
 <SectionList
   ListFooterComponent={[Function]}
+  contentInsetAdjustmentBehavior="automatic"
   keyExtractor={[Function]}
   ref={null}
   renderItem={[Function]}
@@ -114,6 +116,7 @@ exports[`EmissionsScreen renders correctly if no emissions 1`] = `
 exports[`EmissionsScreen renders correctly if only normal emissions 1`] = `
 <SectionList
   ListFooterComponent={[Function]}
+  contentInsetAdjustmentBehavior="automatic"
   keyExtractor={[Function]}
   ref={null}
   renderItem={[Function]}
@@ -181,6 +184,7 @@ exports[`EmissionsScreen renders correctly if only normal emissions 1`] = `
 exports[`EmissionsScreen renders correctly if only recurring emissions 1`] = `
 <SectionList
   ListFooterComponent={[Function]}
+  contentInsetAdjustmentBehavior="automatic"
   keyExtractor={[Function]}
   ref={null}
   renderItem={[Function]}

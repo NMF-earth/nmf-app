@@ -51,7 +51,7 @@ const SubCategorySelectionScreen: NavStatelessComponent = () => {
   const subCategories = getSubCategory(emissionType);
 
   return (
-    <ScrollView style={styles.container}>
+    <ScrollView style={styles.container} contentInsetAdjustmentBehavior="automatic">
       <Text.H2 style={styles.info}>
         {t("SUB_CATEGORY_SELECTION_SCREEN_SELECT_SUB_CATEGORY")}
       </Text.H2>

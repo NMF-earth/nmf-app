@@ -50,7 +50,7 @@ const BudgetScreen: NavStatelessComponent = () => {
   const totalCurrentYearEmissions = useSelector(selectors.getCurrentYearAllCarbonValue);
 
   return (
-    <ScrollView style={styles.container}>
+    <ScrollView style={styles.container} contentInsetAdjustmentBehavior="automatic">
       <ProgressChart
         isMonth
         totalEmissions={totalCurrentMonthEmissions}

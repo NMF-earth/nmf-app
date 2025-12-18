@@ -32,6 +32,7 @@ const ActScreen: NavStatelessComponent = () => {
   return (
     <FlatList
       style={styles.container}
+      contentInsetAdjustmentBehavior="automatic"
       data={data}
       renderItem={renderItem}
       keyExtractor={(item) => item.title}

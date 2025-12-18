@@ -26,7 +26,7 @@ const CategorySelectionScreen: NavStatelessComponent = () => {
   };
 
   return (
-    <ScrollView style={styles.container}>
+    <ScrollView style={styles.container} contentInsetAdjustmentBehavior="automatic">
       <Text.H2 style={styles.info}>{t("CATEGORY_SELECTION_SCREEN_SELECT_CATEGORY")}</Text.H2>
       {categories.map((category, index) => (
         <Tag

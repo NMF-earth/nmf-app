@@ -96,7 +96,7 @@ const SettingsScreen: NavStatelessComponent = () => {
   const buildNumber = platform.isIOS ? ios.buildNumber : android.versionCode;
 
   return (
-    <ScrollView style={styles.container}>
+    <ScrollView style={styles.container} contentInsetAdjustmentBehavior="automatic">
       {rowItems.map((item, index) => {
         if (item.isSwitchItem) {
           return <ListItemSwitch
