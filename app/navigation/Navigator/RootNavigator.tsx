@@ -1,18 +1,16 @@
 import React from "react";
-import { createStackNavigator } from "@react-navigation/stack";
+import { createNativeStackNavigator, NativeStackNavigationOptions } from "@react-navigation/native-stack";
 import { useSelector } from "react-redux";
 
 import { Preferences } from "constant";
 import { userPreferences } from "ducks";
-import { ComponentsStyle } from "style";
 
 import IntroScreen from "../../screens/Intro";
 import BottomTabNavigator from "./BottomTabNavigator";
 
-const Stack = createStackNavigator();
-const screenOptions = {
+const Stack = createNativeStackNavigator();
+const screenOptions: NativeStackNavigationOptions = {
   headerShown: false,
-  ...ComponentsStyle.transitionBetweenScreenPresets,
 };
 
 const RootNavigator = (): React.ReactElement => {

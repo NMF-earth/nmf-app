@@ -1,5 +1,5 @@
 import React from "react";
-import { createStackNavigator } from "@react-navigation/stack";
+import { createStackNavigator, StackNavigationOptions } from "@react-navigation/stack";
 
 import InfoModalScreen from "../../screens/InfoModal";
 
@@ -9,7 +9,7 @@ const InfoModalNavigator = (): React.ReactElement => (
   <Stack.Navigator id="InfoModalStack">
     <Stack.Screen
       name="InfoModal"
-      options={InfoModalScreen.navigationOptions}
+      options={InfoModalScreen.navigationOptions as StackNavigationOptions}
       component={InfoModalScreen}
     />
   </Stack.Navigator>
