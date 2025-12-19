@@ -120,7 +120,7 @@ const MyDataScreen: NavStatelessComponent = () => {
   };
 
   return (
-    <ScrollView style={styles.container}>
+    <ScrollView style={styles.container} contentInsetAdjustmentBehavior="automatic">
       <Text.Primary style={styles.paragraph}>{t("MY_DATA_SCREEN_BODY")}</Text.Primary>
       <Button.Primary
         fullWidth

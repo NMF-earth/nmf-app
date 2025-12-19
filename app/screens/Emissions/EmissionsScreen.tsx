@@ -27,6 +27,7 @@ const EmissionsScreen: React.FC<Props> = ({ emissions = [], recurringEmissions }
   return (
     <SectionList<EmissionListItemProps>
       style={styles.container}
+      contentInsetAdjustmentBehavior="automatic"
       sections={sections}
       stickySectionHeadersEnabled
       ListFooterComponent={renderListFooter}

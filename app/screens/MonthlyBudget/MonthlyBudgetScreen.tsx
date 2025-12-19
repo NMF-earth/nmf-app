@@ -74,58 +74,56 @@ const MonthlyBudgetScreen: NavStatelessComponent = () => {
   const getDisplayUnits = calculation.getDisplayUnits;
 
   return (
-    <View style={styles.container}>
-      <ScrollView>
-        <View style={styles.personnalBudgetContainer}>
-          <Text.Primary bold>{t("MONTHLY_BUDGET_SCREEN_SLIDE_TO_SET")}</Text.Primary>
+    <ScrollView style={styles.container} contentInsetAdjustmentBehavior="automatic">
+      <View style={styles.personnalBudgetContainer}>
+        <Text.Primary bold>{t("MONTHLY_BUDGET_SCREEN_SLIDE_TO_SET")}</Text.Primary>
+      </View>
+      <Slider
+        minimumTrackTintColor={Colors.primary}
+        maximumTrackTintColor={Colors.grey}
+        thumbTintColor={Colors.primary}
+        style={styles.slider}
+        maximumValue={MAX_MONTHLY_CARBON_BUDGET}
+        minimumValue={MIN_MONTHLY_CARBON_BUDGET}
+        value={sliderValue}
+        onSlidingComplete={setSliderValue}
+      />
+      <Text.Primary lightGray>
+        <FormattedNumber value={Math.round(getDisplayUnitsValue(sliderValue, useMetricUnits))} />{" "}
+        {getDisplayUnits(sliderValue, useMetricUnits)}
+        {"CO2eq"}
+      </Text.Primary>
+      <View style={styles.worldBudgetContainer}>
+        <View style={styles.worldExampleTitle}>
+          <Text.Primary bold>
+            {t("MONTHLY_BUDGET_SCREEN_CARBON_EMISSIONS_WORLD")}
+            <TouchableOpacity onPress={onPressInfoWorldEmission}>
+              <Ionicons
+                name="information-circle"
+                size={26}
+                color={Colors.secondary}
+              />
+            </TouchableOpacity>
+          </Text.Primary>
         </View>
-        <Slider
-          minimumTrackTintColor={Colors.primary}
-          maximumTrackTintColor={Colors.grey}
-          thumbTintColor={Colors.primary}
-          style={styles.slider}
-          maximumValue={MAX_MONTHLY_CARBON_BUDGET}
-          minimumValue={MIN_MONTHLY_CARBON_BUDGET}
-          value={sliderValue}
-          onSlidingComplete={setSliderValue}
-        />
-        <Text.Primary lightGray>
-          <FormattedNumber value={Math.round(getDisplayUnitsValue(sliderValue, useMetricUnits))} />{" "}
-          {getDisplayUnits(sliderValue, useMetricUnits)}
-          {"CO2eq"}
-        </Text.Primary>
-        <View style={styles.worldBudgetContainer}>
-          <View style={styles.worldExampleTitle}>
-            <Text.Primary bold>
-              {t("MONTHLY_BUDGET_SCREEN_CARBON_EMISSIONS_WORLD")}
-              <TouchableOpacity onPress={onPressInfoWorldEmission}>
-                <Ionicons
-                  name="information-circle"
-                  size={26}
-                  color={Colors.secondary}
-                />
-              </TouchableOpacity>
-            </Text.Primary>
-          </View>
-          {translationMonthlyBudgetCountries.map((countryArr, idx) =>
-            CountryExample(countryArr[0], countryArr[1], idx)
-          )}
-          <View style={styles.parisAgreement}>
-            <Text.Secondary center>
-              {t("MONTHLY_BUDGET_SCREEN_PARIS_AGREEMENT")}{" "}
-              {Math.round(getDisplayUnitsValue(167, useMetricUnits))}{" "}
-              {getDisplayUnits(167, useMetricUnits) + "CO2eq"}
-              <TouchableOpacity onPress={onPressInfoParisAgreement}>
-                <Ionicons
-                  name="information-circle"
-                  size={26}
-                  color={Colors.secondary}
-                />
-              </TouchableOpacity>
-            </Text.Secondary>
-          </View>
+        {translationMonthlyBudgetCountries.map((countryArr, idx) =>
+          CountryExample(countryArr[0], countryArr[1], idx)
+        )}
+        <View style={styles.parisAgreement}>
+          <Text.Secondary center>
+            {t("MONTHLY_BUDGET_SCREEN_PARIS_AGREEMENT")}{" "}
+            {Math.round(getDisplayUnitsValue(167, useMetricUnits))}{" "}
+            {getDisplayUnits(167, useMetricUnits) + "CO2eq"}
+            <TouchableOpacity onPress={onPressInfoParisAgreement}>
+              <Ionicons
+                name="information-circle"
+                size={26}
+                color={Colors.secondary}
+              />
+            </TouchableOpacity>
+          </Text.Secondary>
         </View>
-      </ScrollView>
+      </View>
       <View style={styles.buttonContainer}>
         <Button.Secondary
           fullWidth
@@ -134,7 +132,7 @@ const MonthlyBudgetScreen: NavStatelessComponent = () => {
           text={t("MONTHLY_BUDGET_SCREEN_SAVE")}
         />
       </View>
-    </View>
+    </ScrollView>
   );
 };
 

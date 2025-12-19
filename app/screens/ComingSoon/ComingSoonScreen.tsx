@@ -10,7 +10,7 @@ import navigationOptions from "./ComingSoonScreen.navigationOptions";
 
 const ComingSoonScreen: NavStatelessComponent = () => {
   return (
-    <ScrollView style={styles.container}>
+    <ScrollView style={styles.container} contentInsetAdjustmentBehavior="automatic">
       <StickersImage sticker="bike" />
       <View style={styles.textView}>
         <Text.Primary style={styles.paragraph}>

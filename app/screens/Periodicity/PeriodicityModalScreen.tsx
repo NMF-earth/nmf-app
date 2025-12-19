@@ -68,7 +68,7 @@ export const PeriodicityModalScreen: NavStatelessComponent = () => {
     !periodType || !periodTimes || (periodType === PeriodicityType.weekly && weekDays.length === 0);
 
   return (
-    <ScrollView style={styles.container}>
+    <ScrollView style={styles.container} contentInsetAdjustmentBehavior="automatic">
       <View style={styles.tagSection}>
         <Text.H3>{t("PERIODICITY_MODAL_SCREEN_OFTEN")}</Text.H3>
         <View style={styles.tagsContainer}>

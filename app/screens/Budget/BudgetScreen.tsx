@@ -7,6 +7,7 @@ import { Button } from "components";
 import { t } from "utils";
 import { navigate } from "navigation";
 import { NavStatelessComponent } from "interfaces";
+import { useTabBarBottomPadding } from "hooks/useTabBarBottomPadding";
 
 import styles from "./BudgetScreen.styles";
 import { NumberOfDaysVegetarian, ProgressChart } from "./components";
@@ -49,8 +50,14 @@ const BudgetScreen: NavStatelessComponent = () => {
   const customCurrentYearEmissions = useSelector(selectors.getCurrentYearCustomCarbonValue);
   const totalCurrentYearEmissions = useSelector(selectors.getCurrentYearAllCarbonValue);
 
+  const paddingBottom = useTabBarBottomPadding();
+
   return (
-    <ScrollView style={styles.container}>
+    <ScrollView
+      style={styles.container}
+      contentInsetAdjustmentBehavior="automatic"
+      contentContainerStyle={{ paddingBottom: paddingBottom }}
+    >
       <ProgressChart
         isMonth
         totalEmissions={totalCurrentMonthEmissions}

@@ -40,6 +40,7 @@ exports[`<RecurringEmissionsScreen /> render 1`] = `
       },
     }
   }
+  contentInsetAdjustmentBehavior="automatic"
   data={200}
   keyExtractor={[Function]}
   ref={null}

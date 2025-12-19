@@ -28,7 +28,7 @@ const InfoModalScreen: NavStatelessComponent = () => {
   }
 
   return (
-    <ScrollView style={styles.container}>
+    <ScrollView style={styles.container} contentInsetAdjustmentBehavior="automatic">
       <HTML source={{ html }} onLinkPress={ui.onHTMLBodyLinkPress} baseFontStyle={styles.text} />
     </ScrollView>
   );

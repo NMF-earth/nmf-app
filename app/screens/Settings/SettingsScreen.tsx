@@ -7,6 +7,7 @@ import * as Linking from "expo-linking";
 import { useDispatch, useSelector } from "react-redux";
 
 import { ImagesAssets } from "constant";
+import { useTabBarBottomPadding } from "hooks/useTabBarBottomPadding";
 import { Button, Text, SocialMedia, ListItem, ListItemSwitch } from "components";
 import { t, platform } from "utils";
 import { navigate } from "navigation";
@@ -94,9 +95,14 @@ const SettingsScreen: NavStatelessComponent = () => {
   const [steps, setSteps] = useState(0);
   const { version, ios, android } = ExpoConstants.expoConfig;
   const buildNumber = platform.isIOS ? ios.buildNumber : android.versionCode;
+  const bottomPadding = useTabBarBottomPadding();
 
   return (
-    <ScrollView style={styles.container}>
+    <ScrollView
+      style={styles.container}
+      contentInsetAdjustmentBehavior="automatic"
+      contentContainerStyle={{ paddingBottom: bottomPadding }}
+    >
       {rowItems.map((item, index) => {
         if (item.isSwitchItem) {
           return <ListItemSwitch

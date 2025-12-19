@@ -6,6 +6,7 @@ import { SelectableListItem } from "components";
 import { userPreferences } from "ducks";
 import { LocalizationContext, supportedLanguages } from "utils";
 import { NavStatelessComponent } from "interfaces";
+import { useTabBarBottomPadding } from "hooks/useTabBarBottomPadding";
 
 import navigationOptions from "./LanguagesScreen.navigationOptions";
 import styles from "./LanguagesScreen.styles";
@@ -40,9 +41,14 @@ const LanguagesScreen: NavStatelessComponent = () => {
     [dispatch, setLanguage]
   );
 
+  const bottomPadding = useTabBarBottomPadding();
+
   return (
     <View style={styles.container}>
-      <ScrollView>
+      <ScrollView
+        contentInsetAdjustmentBehavior="automatic"
+        contentContainerStyle={{ paddingBottom: bottomPadding }}
+      >
         {Object.keys(supportedLanguages).map((lang: string) => (
           <Language
             key={lang}

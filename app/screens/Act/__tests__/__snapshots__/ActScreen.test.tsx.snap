@@ -17,6 +17,7 @@ exports[`ActScreen renders correctly 1`] = `
       "type": [Function],
     }
   }
+  contentInsetAdjustmentBehavior="automatic"
   data={[]}
   keyExtractor={[Function]}
   ref={null}

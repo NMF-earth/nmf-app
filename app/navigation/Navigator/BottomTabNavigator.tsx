@@ -1,8 +1,6 @@
 import React from "react";
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { useSafeAreaInsets } from "react-native-safe-area-context";
+import { createNativeBottomTabNavigator, type NativeBottomTabNavigationOptions } from "@react-navigation/bottom-tabs/unstable";
 
-import { TabBarIcon } from "components";
 import { t } from "utils";
 import { Colors } from "style";
 
@@ -12,35 +10,34 @@ import EmissionsNavigator from "./BottomTab/EmissionsNavigator";
 import SettingsNavigator from "./BottomTab/SettingsNavigator";
 import AddEmissionNavigator from "./BottomTab/AddEmissionNavigator";
 
-const BottomTab = createBottomTabNavigator();
+const BottomTab = createNativeBottomTabNavigator();
 
-const BudgetOptions = {
+const BudgetOptions: NativeBottomTabNavigationOptions = {
   tabBarLabel: t("BUDGET_SCREEN_TAB_NAME"),
-  tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name={"calculator"} />,
+  tabBarIcon: { type: "image", source: require("../../../assets/images/tabs/budget.png") },
 };
 
-const EmissionsOptions = {
+const EmissionsOptions: NativeBottomTabNavigationOptions = {
   tabBarLabel: t("EMISSIONS_SCREEN_TAB_NAME"),
-  tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name={"stats-chart-sharp"} />,
+  tabBarIcon: { type: "image", source: require("../../../assets/images/tabs/emissions.png") },
 };
 
-const ActOptions = {
+const ActOptions: NativeBottomTabNavigationOptions = {
   tabBarLabel: t("ACT_SCREEN_TAB_NAME"),
-  tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name={"hand-left-sharp"} />,
+  tabBarIcon: { type: "image", source: require("../../../assets/images/tabs/act.png") },
 };
 
-const SettingsOptions = {
+const SettingsOptions: NativeBottomTabNavigationOptions = {
   tabBarLabel: t("SETTINGS_SCREEN_TAB_NAME"),
-  tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name={"options"} />,
+  tabBarIcon: { type: "image", source: require("../../../assets/images/tabs/settings.png") },
 };
 
-const AddEmissionOptions = {
+const AddEmissionOptions: NativeBottomTabNavigationOptions = {
   tabBarLabel: t("ADD_EMISSION_SCREEN_TAB_NAME"),
-  tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name={"add-circle"} />,
+  tabBarIcon: { type: "image", source: require("../../../assets/images/tabs/add.png") },
 };
 
 const BottomTabNavigator = (): React.ReactElement => {
-  const { bottom } = useSafeAreaInsets();
   return (
     <BottomTab.Navigator
       id="BottomTab"
@@ -49,12 +46,7 @@ const BottomTabNavigator = (): React.ReactElement => {
         headerShown: false,
         tabBarActiveTintColor: Colors.primary,
         tabBarInactiveTintColor: Colors.black50,
-        tabBarBadgeStyle: {
-          backgroundColor: Colors.white,
-          borderTopWidth: 2,
-          borderTopColor: Colors.primary10,
-          paddingBottom: bottom / 2 + 6,
-        },
+        tabBarLabelVisibilityMode: "labeled",
       }}
     >
       <BottomTab.Screen
@@ -72,7 +64,11 @@ const BottomTabNavigator = (): React.ReactElement => {
         options={AddEmissionOptions}
         component={AddEmissionNavigator}
       />
-      <BottomTab.Screen name="Act" options={ActOptions} component={ActNavigator} />
+      <BottomTab.Screen
+        name="Act"
+        options={ActOptions}
+        component={ActNavigator}
+      />
       <BottomTab.Screen
         name="SettingsNavigator"
         options={SettingsOptions}
@@ -83,3 +79,4 @@ const BottomTabNavigator = (): React.ReactElement => {
 };
 
 export default BottomTabNavigator;
+

@@ -12,6 +12,7 @@ import { pathOr } from "ramda";
 import { navigate } from "navigation";
 import { Text, TextInput, TextButton, OpenFoodFacts } from "components";
 import { userPreferences } from "ducks";
+import { useTabBarBottomPadding } from "hooks/useTabBarBottomPadding";
 import {
   EmissionType,
   EmissionPayload,
@@ -291,8 +292,14 @@ const AddEmissionScreen = ({ locale = "", language = "" }: LocalizationContextPr
     }
   }, []);
 
+  const paddingBottom = useTabBarBottomPadding();
+
   return (
-    <KeyboardAwareScrollView style={styles.container}>
+    <KeyboardAwareScrollView
+      style={styles.container}
+      contentInsetAdjustmentBehavior="automatic"
+      contentContainerStyle={{ paddingBottom: paddingBottom }}
+    >
       {emissionType == EmissionType.productScanned && !!name && (
         <View style={styles.textContainer}>
           <Text.H2 style={styles.text}>{t("ADD_EMISSION_SCREEN_NAME")}</Text.H2>
@@ -356,6 +363,7 @@ const AddEmissionScreen = ({ locale = "", language = "" }: LocalizationContextPr
         isVisible={isDatePickerVisible}
         isDarkModeEnabled={isDarkModeEnabled}
         mode="date"
+        date={creationDate.toDate()}
         onConfirm={handleConfirm}
         onCancel={hideDatePicker}
       />

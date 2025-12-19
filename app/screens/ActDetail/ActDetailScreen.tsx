@@ -6,6 +6,7 @@ import HTML from "react-native-render-html";
 import { HTMLImage } from "components";
 import { ui } from "utils";
 import { NavStatelessComponent } from "interfaces";
+import { useTabBarBottomPadding } from "hooks/useTabBarBottomPadding";
 
 import styles from "./ActDetailScreen.styles";
 import navigationOptions from "./ActDetailScreen.navigationOptions";
@@ -21,9 +22,14 @@ const ActDetailScreen: NavStatelessComponent = () => {
   // eslint-disable-next-line no-unsafe-optional-chaining
   const { body } = route?.params;
   const contentWidth = useWindowDimensions().width;
+  const paddingBottom = useTabBarBottomPadding();
 
   return (
-    <ScrollView style={styles.container}>
+    <ScrollView
+      style={styles.container}
+      contentInsetAdjustmentBehavior="automatic"
+      contentContainerStyle={{ paddingBottom: paddingBottom }}
+    >
       <HTML
         source={{ html: body }}
         contentWidth={contentWidth}
