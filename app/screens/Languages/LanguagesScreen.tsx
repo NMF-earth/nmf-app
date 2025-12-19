@@ -42,7 +42,7 @@ const LanguagesScreen: NavStatelessComponent = () => {
 
   return (
     <View style={styles.container}>
-      <ScrollView>
+      <ScrollView contentInsetAdjustmentBehavior="automatic">
         {Object.keys(supportedLanguages).map((lang: string) => (
           <Language
             key={lang}

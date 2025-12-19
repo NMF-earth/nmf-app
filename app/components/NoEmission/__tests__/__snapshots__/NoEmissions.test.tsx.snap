@@ -2,6 +2,7 @@
 
 exports[`renders correctly NoEmission 1`] = `
 <ScrollView
+  contentInsetAdjustmentBehavior="automatic"
   ref={null}
   style={
     {

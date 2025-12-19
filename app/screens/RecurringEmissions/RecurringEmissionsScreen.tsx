@@ -36,6 +36,7 @@ const RecurringEmissionsScreen: NavStatelessComponent = () => {
   return (
     <FlatList<EmissionListItemProps>
       style={styles.container}
+      contentInsetAdjustmentBehavior="automatic"
       data={recurringEmissions}
       ListHeaderComponent={renderHeader()}
       keyExtractor={({ id }) => id}

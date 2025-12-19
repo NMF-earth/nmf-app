@@ -64,6 +64,7 @@ const MonthlyEmissions: NavStatelessComponent = () => {
   return (
     <FlatList<EmissionListItemProps>
       style={styles.container}
+      contentInsetAdjustmentBehavior="automatic"
       data={emissions}
       ListHeaderComponent={renderHeader()}
       keyExtractor={({ id }) => id}

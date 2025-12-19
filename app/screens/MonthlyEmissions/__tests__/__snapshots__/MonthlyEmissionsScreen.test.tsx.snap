@@ -52,6 +52,7 @@ exports[`<MonthlyEmissions /> render 1`] = `
       },
     }
   }
+  contentInsetAdjustmentBehavior="automatic"
   data={
     [
       {

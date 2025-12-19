@@ -8,6 +8,7 @@ exports[`FaqScreen renders correctly 1`] = `
       "paddingVertical": 24,
     }
   }
+  contentInsetAdjustmentBehavior="automatic"
   ref={null}
   style={
     {

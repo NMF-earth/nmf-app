@@ -9,7 +9,7 @@ import styles from "./SupportUsScreen.styles";
 import navigationOptions from "./SupportUsScreen.navigationOptions";
 
 const SupportUsScreen: NavStatelessComponent = () => (
-  <ScrollView style={styles.container}>
+  <ScrollView style={styles.container} contentInsetAdjustmentBehavior="automatic">
     <StickersImage sticker="restaurant" />
     <Text.H2 style={styles.title}>{t("SUPPORT_US_SCREEN_WHY_DONATE_TITLE")}</Text.H2>
     <Text.Primary style={styles.paragraph}>

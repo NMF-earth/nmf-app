@@ -89,7 +89,7 @@ const EmissionItemScreen = ({ language = "" }: LocalizationContextProps) => {
   }
 
   return (
-    <ScrollView style={styles.container}>
+    <ScrollView style={styles.container} contentInsetAdjustmentBehavior="automatic">
       {name.length ? (
         <>
           <Text.H3>{t("EMISSION_ITEM_SCREEN_NAME")}</Text.H3>

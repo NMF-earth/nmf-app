@@ -9,7 +9,7 @@ import styles from "./AboutScreen.styles";
 import navigationOptions from "./AboutScreen.navigationOptions";
 
 const AboutScreen: NavStatelessComponent = () => (
-  <ScrollView style={styles.container}>
+  <ScrollView style={styles.container} contentInsetAdjustmentBehavior="automatic">
     <StickersImage sticker="earth" />
     <Text.Primary style={styles.header}>{t("ABOUT_SCREEN_INTRO")}</Text.Primary>
     <Text.H2 style={styles.header}>{t("ABOUT_SCREEN_CARE_HEADER")}</Text.H2>

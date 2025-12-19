@@ -23,7 +23,7 @@ const ActDetailScreen: NavStatelessComponent = () => {
   const contentWidth = useWindowDimensions().width;
 
   return (
-    <ScrollView style={styles.container}>
+    <ScrollView style={styles.container} contentInsetAdjustmentBehavior="automatic">
       <HTML
         source={{ html: body }}
         contentWidth={contentWidth}

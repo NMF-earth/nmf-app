@@ -5,6 +5,7 @@ exports[`AddEmissionScreen renders correctly 1`] = `
   locale="en"
 >
   <KeyboardAwareScrollView
+    contentInsetAdjustmentBehavior="automatic"
     style={
       {
         "alignContent": "flex-start",

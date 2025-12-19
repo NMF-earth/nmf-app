@@ -13,6 +13,7 @@ const FaqScreen: NavStatelessComponent = () => {
     <ScrollView
       style={styles.container}
       contentContainerStyle={styles.contentContainer}
+      contentInsetAdjustmentBehavior="automatic"
     >
       <Accordion>
         {content.map((content, index) => (

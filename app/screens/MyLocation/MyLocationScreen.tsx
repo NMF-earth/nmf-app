@@ -57,7 +57,7 @@ const MyLocationScreen: NavStatelessComponent = () => {
           {" gCO₂eq/kWh"}
         </Text.Primary>
       </View>
-      <ScrollView style={styles.scrollContainer}>
+      <ScrollView style={styles.scrollContainer} contentInsetAdjustmentBehavior="automatic">
         {Object.keys(ElectricityType)
           .filter((item) => item != "danmark")
           .map((country: ElectricityType) => (

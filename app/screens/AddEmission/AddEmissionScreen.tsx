@@ -292,7 +292,7 @@ const AddEmissionScreen = ({ locale = "", language = "" }: LocalizationContextPr
   }, []);
 
   return (
-    <KeyboardAwareScrollView style={styles.container}>
+    <KeyboardAwareScrollView style={styles.container} contentInsetAdjustmentBehavior="automatic">
       {emissionType == EmissionType.productScanned && !!name && (
         <View style={styles.textContainer}>
           <Text.H2 style={styles.text}>{t("ADD_EMISSION_SCREEN_NAME")}</Text.H2>

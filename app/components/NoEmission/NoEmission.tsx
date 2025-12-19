@@ -15,7 +15,7 @@ const NoEmission: React.FC = () => {
   const navigator = navigate(navigation);
 
   return (
-    <ScrollView style={styles.container}>
+    <ScrollView style={styles.container} contentInsetAdjustmentBehavior="automatic">
       <StickersImage sticker="earth" />
       <View style={styles.textView}>
         <Text.H1 style={styles.header}>{t("NO_EMISSION_COMPONENT_TITLE")}</Text.H1>
