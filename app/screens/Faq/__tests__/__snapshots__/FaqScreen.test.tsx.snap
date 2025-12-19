@@ -3,10 +3,15 @@
 exports[`FaqScreen renders correctly 1`] = `
 <ScrollView
   contentContainerStyle={
-    {
-      "paddingHorizontal": 16,
-      "paddingVertical": 24,
-    }
+    [
+      {
+        "paddingHorizontal": 16,
+        "paddingVertical": 24,
+      },
+      {
+        "paddingBottom": 24,
+      },
+    ]
   }
   contentInsetAdjustmentBehavior="automatic"
   ref={null}

@@ -12,6 +12,7 @@ module.exports = function (api) {
             components: "./app/components",
             constant: "./app/constant",
             ducks: "./app/ducks",
+            hooks: "./app/hooks",
             interfaces: "./app/interfaces",
             navigation: "./app/navigation",
             style: "./app/style",

@@ -6,6 +6,7 @@ import { navigate } from "navigation";
 import { EmissionType, NavStatelessComponent } from "interfaces";
 import { Text, Tag } from "components";
 import { t, ui } from "utils";
+import { useTabBarBottomPadding } from "hooks/useTabBarBottomPadding";
 
 import { categories } from "./categoryList";
 import navigationOptions from "./CategorySelectionScreen.navigationOptions";
@@ -25,8 +26,14 @@ const CategorySelectionScreen: NavStatelessComponent = () => {
     }
   };
 
+  const paddingBottom = useTabBarBottomPadding();
+
   return (
-    <ScrollView style={styles.container} contentInsetAdjustmentBehavior="automatic">
+    <ScrollView
+      style={styles.container}
+      contentInsetAdjustmentBehavior="automatic"
+      contentContainerStyle={{ paddingBottom: paddingBottom }}
+    >
       <Text.H2 style={styles.info}>{t("CATEGORY_SELECTION_SCREEN_SELECT_CATEGORY")}</Text.H2>
       {categories.map((category, index) => (
         <Tag

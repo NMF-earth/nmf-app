@@ -5,6 +5,11 @@ exports[`AddEmissionScreen renders correctly 1`] = `
   locale="en"
 >
   <KeyboardAwareScrollView
+    contentContainerStyle={
+      {
+        "paddingBottom": 0,
+      }
+    }
     contentInsetAdjustmentBehavior="automatic"
     style={
       {
@@ -57,6 +62,7 @@ exports[`AddEmissionScreen renders correctly 1`] = `
     <DateTimePickerModal
       cancelTextIOS="Cancel"
       confirmTextIOS="Confirm"
+      date={2019-04-07T10:20:30.000Z}
       isDarkModeEnabled={false}
       isVisible={false}
       locale="en_GB"

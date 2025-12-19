@@ -65,6 +65,11 @@ exports[`MyLocationScreen renders correctly 1`] = `
     </RCTText>
   </View>
   <ScrollView
+    contentContainerStyle={
+      {
+        "paddingBottom": 0,
+      }
+    }
     contentInsetAdjustmentBehavior="automatic"
     ref={null}
     style={

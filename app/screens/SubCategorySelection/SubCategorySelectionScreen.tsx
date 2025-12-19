@@ -6,6 +6,7 @@ import { EmissionType, EmissionModelType, NavStatelessComponent } from "interfac
 import { Text, Tag } from "components";
 import { t, ui } from "utils";
 import { navigate } from "navigation";
+import { useTabBarBottomPadding } from "hooks/useTabBarBottomPadding";
 
 import {
   foodTypes,
@@ -49,9 +50,14 @@ const SubCategorySelectionScreen: NavStatelessComponent = () => {
   const emissionType = route.params?.emissionType;
 
   const subCategories = getSubCategory(emissionType);
+  const paddingBottom = useTabBarBottomPadding();
 
   return (
-    <ScrollView style={styles.container} contentInsetAdjustmentBehavior="automatic">
+    <ScrollView
+      style={styles.container}
+      contentInsetAdjustmentBehavior="automatic"
+      contentContainerStyle={{ paddingBottom: paddingBottom }}
+    >
       <Text.H2 style={styles.info}>
         {t("SUB_CATEGORY_SELECTION_SCREEN_SELECT_SUB_CATEGORY")}
       </Text.H2>

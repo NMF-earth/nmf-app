@@ -2,6 +2,11 @@
 
 exports[`CategorySelectionScreen renders correctly 1`] = `
 <ScrollView
+  contentContainerStyle={
+    {
+      "paddingBottom": 0,
+    }
+  }
   contentInsetAdjustmentBehavior="automatic"
   ref={null}
   style={

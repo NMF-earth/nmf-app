@@ -7,6 +7,7 @@ import { Text, SelectableListItem } from "components";
 import { userPreferences } from "ducks";
 import { t, calculation } from "utils";
 import { NavStatelessComponent } from "interfaces";
+import { useTabBarBottomPadding } from "hooks/useTabBarBottomPadding";
 
 import navigationOptions from "./MyLocationScreen.navigationOptions";
 import styles from "./MyLocationScreen.styles";
@@ -41,6 +42,8 @@ const MyLocationScreen: NavStatelessComponent = () => {
     [dispatch]
   );
 
+  const bottomPadding = useTabBarBottomPadding();
+
   return (
     <View style={styles.container}>
       <Text.Primary style={styles.intro}>{t("MY_LOCATION_SCREEN_INTRO")}</Text.Primary>
@@ -57,7 +60,11 @@ const MyLocationScreen: NavStatelessComponent = () => {
           {" gCO₂eq/kWh"}
         </Text.Primary>
       </View>
-      <ScrollView style={styles.scrollContainer} contentInsetAdjustmentBehavior="automatic">
+      <ScrollView
+        style={styles.scrollContainer}
+        contentInsetAdjustmentBehavior="automatic"
+        contentContainerStyle={{ paddingBottom: bottomPadding }}
+      >
         {Object.keys(ElectricityType)
           .filter((item) => item != "danmark")
           .map((country: ElectricityType) => (

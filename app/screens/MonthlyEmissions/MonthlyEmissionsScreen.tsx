@@ -9,6 +9,7 @@ import { EmissionListItem, EmissionListItemProps, Text } from "components";
 import { budget, userPreferences } from "ducks";
 import { t, calculation } from "utils";
 import { NavStatelessComponent } from "interfaces";
+import { useTabBarBottomPadding } from "hooks/useTabBarBottomPadding";
 
 import { selectors } from "./ducks";
 import styles from "./MonthlyEmissionsScreen.styles";
@@ -61,10 +62,13 @@ const MonthlyEmissions: NavStatelessComponent = () => {
     </View>
   );
 
+  const paddingBottom = useTabBarBottomPadding();
+
   return (
     <FlatList<EmissionListItemProps>
       style={styles.container}
       contentInsetAdjustmentBehavior="automatic"
+      contentContainerStyle={{ paddingBottom: paddingBottom }}
       data={emissions}
       ListHeaderComponent={renderHeader()}
       keyExtractor={({ id }) => id}
