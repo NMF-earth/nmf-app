@@ -4,8 +4,8 @@ import { createMaterialTopTabNavigator } from "@react-navigation/material-top-ta
 import { NativeStackNavigationOptions } from "@react-navigation/native-stack";
 
 import { Text } from "components";
-import { platform, t } from "utils";
-import { Colors, Font, Layout } from "style";
+import { t } from "utils";
+import { Colors, Font } from "style";
 import { NavStatelessComponent } from "interfaces";
 
 import { GuideCategory } from "../../../types/guide";
@@ -85,21 +85,13 @@ const ActTabNavigator: NavStatelessComponent = () => (
 
 const navigationOptions = (): NativeStackNavigationOptions => ({
   title: t("ACT_SCREEN_TITLE"),
-  headerLargeTitleEnabled: false,
-  headerTransparent: false,
-  headerBlurEffect: "regular",
+  headerTitleAlign: "center",
   headerBackButtonDisplayMode: "minimal",
   headerTintColor: Colors.grey100,
-  headerLargeTitleStyle: {
-    fontFamily: Font.FontWeight.Black,
-  },
   headerTitleStyle: {
-    fontFamily: Font.FontWeight.Black,
+    fontFamily: Font.FontWeight.Bold,
+    fontSize: Font.FontSize.Header,
   },
-  headerTitle:
-    platform.isAndroid
-      ? () => <Text.H1 style={Layout.androidNavTitle}>{t("ACT_SCREEN_TITLE")}</Text.H1>
-      : undefined,
 });
 
 ActTabNavigator.navigationOptions = navigationOptions();
