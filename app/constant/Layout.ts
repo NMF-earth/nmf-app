@@ -17,6 +17,6 @@ const screen = {
 };
 
 // Standard Android Bottom Tab Bar height (typically 56dp) plus a small 4dp buffer. We must use a hardcoded value here because the dynamic useBottomTabBarHeight hook causes a crash when used outside the Tab Navigator context (which is the case with our Native Tabs setup)
-const ANDROID_TAB_BAR_HEIGHT = 60;
+const ANDROID_TAB_BAR_HEIGHT = 90;
 
 export { screen, isSmallDevice, PADDING_HORIZONTAL, SPACING, ANDROID_TAB_BAR_HEIGHT };
