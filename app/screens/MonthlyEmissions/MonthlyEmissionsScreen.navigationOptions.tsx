@@ -1,21 +1,16 @@
-/* eslint-disable  @typescript-eslint/explicit-module-boundary-types */
-import React from "react";
+import { NativeStackNavigationOptions } from "@react-navigation/native-stack";
 
-import { Text } from "components";
-import { Layout, ComponentsStyle, Colors } from "style";
+import { Colors, Font } from "style";
 
-const navigationOptions = ({ route }) => ({
-  ...ComponentsStyle.transitionBetweenScreenPresets,
-  headerStyle: {
-    ...ComponentsStyle.header,
-  },
+const navigationOptions = ({ route }): NativeStackNavigationOptions => ({
+  title: route?.params?.monthAndYear,
+  headerTitleAlign: "center",
   headerBackButtonDisplayMode: "minimal",
   headerTintColor: Colors.grey100,
-  headerTitle: () => (
-    <Text.Header style={[Layout.androidNavTitle, { textTransform: "capitalize" }]}>
-      {route?.params?.monthAndYear}
-    </Text.Header>
-  ),
+  headerTitleStyle: {
+    fontFamily: Font.FontWeight.Bold,
+    fontSize: Font.FontSize.Header,
+  },
 });
 
 export default navigationOptions;

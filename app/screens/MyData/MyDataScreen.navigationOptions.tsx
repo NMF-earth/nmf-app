@@ -1,18 +1,17 @@
-import React from "react";
-import { StackNavigationOptions } from "@react-navigation/stack";
+import { NativeStackNavigationOptions } from "@react-navigation/native-stack";
 
-import { Text } from "components";
 import { t } from "utils";
-import { Colors, ComponentsStyle } from "style";
+import { Colors, Font } from "style";
 
-const navigationOptions = (): StackNavigationOptions => ({
-  ...ComponentsStyle.transitionBetweenScreenPresets,
-  headerStyle: {
-    ...ComponentsStyle.header,
-  },
+const navigationOptions = (): NativeStackNavigationOptions => ({
+  title: t("MY_DATA_SCREEN_TITLE"),
+  headerTitleAlign: "center",
   headerBackButtonDisplayMode: "minimal",
   headerTintColor: Colors.grey100,
-  headerTitle: () => <Text.Header>{t("MY_DATA_SCREEN_TITLE")}</Text.Header>,
+  headerTitleStyle: {
+    fontFamily: Font.FontWeight.Bold,
+    fontSize: Font.FontSize.Header,
+  },
 });
 
 export default navigationOptions;
