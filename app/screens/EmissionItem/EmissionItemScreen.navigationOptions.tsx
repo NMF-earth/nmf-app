@@ -1,35 +1,33 @@
 /* eslint-disable  @typescript-eslint/explicit-module-boundary-types */
+
 import React from "react";
 import { path, includes } from "ramda";
 import { FoodType } from "carbon-footprint";
-import { StackNavigationOptions } from "@react-navigation/stack";
+import { NativeStackNavigationOptions } from "@react-navigation/native-stack";
 
-import { Text, InfoButton } from "components";
+import { InfoButton } from "components";
 import { t } from "utils";
-import { Colors, ComponentsStyle } from "style";
+import { Colors, Font } from "style";
 
 const emissionsInfoAvailable = [FoodType.cheese];
 
-const navigationOptions = (prop): StackNavigationOptions => {
+const navigationOptions = (prop): NativeStackNavigationOptions => {
   const emissionModelType = path(["route", "params", "emissionModelType"], prop);
   const showInfoButton = includes(emissionModelType, emissionsInfoAvailable);
   const isRecurringEmission = path(["route", "params", "isRecurringEmission"], prop);
 
   return {
-    ...ComponentsStyle.transitionBetweenScreenPresets,
-    headerStyle: {
-      ...ComponentsStyle.header,
-    },
-    headerTintColor: Colors.grey100,
+    title: isRecurringEmission
+      ? t("EMISSION_ITEM_SCREEN_RECURRING_EMISSION")
+      : t("EMISSION_ITEM_SCREEN_EMISSION"),
+    headerTitleAlign: "center",
     headerBackButtonDisplayMode: "minimal",
+    headerTintColor: Colors.grey100,
     headerRight: () => (showInfoButton ? <InfoButton /> : null),
-    headerTitle: () => (
-      <Text.Header>
-        {isRecurringEmission
-          ? t("EMISSION_ITEM_SCREEN_RECURRING_EMISSION")
-          : t("EMISSION_ITEM_SCREEN_EMISSION")}
-      </Text.Header>
-    ),
+    headerTitleStyle: {
+      fontFamily: Font.FontWeight.Bold,
+      fontSize: Font.FontSize.Header,
+    },
   };
 };
 
