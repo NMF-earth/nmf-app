@@ -6,7 +6,6 @@ import { Colors, Font } from "style";
 
 const navigationOptions = (): NativeStackNavigationOptions => ({
   title: t("MONTHLY_BUDGET_SCREEN_TITLE"),
-  headerTitleAlign: "center",
   headerBackButtonDisplayMode: "minimal",
   headerTintColor: Colors.grey100,
   headerTitleStyle: {

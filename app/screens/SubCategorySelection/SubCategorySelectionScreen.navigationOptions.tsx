@@ -5,7 +5,6 @@ import { Colors, Font } from "style";
 
 const navigationOptions = (): NativeStackNavigationOptions => ({
   title: t("SUB_CATEGORY_SELECTION_SCREEN_TITLE"),
-  headerTitleAlign: "center",
   headerBackButtonDisplayMode: "minimal",
   headerTintColor: Colors.grey100,
   headerTitleStyle: {

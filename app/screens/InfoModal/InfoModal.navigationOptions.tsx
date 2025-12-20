@@ -12,7 +12,6 @@ const navigationOptions = ({ navigation, route }): NativeStackNavigationOptions 
   title: route.params?.emissionModelType
     ? ui.getTranslationEmissionModelType(route.params.emissionModelType)
     : t("INFO_MODAL_SCREEN_METHODOLOGY"),
-  headerTitleAlign: "center",
   headerBackVisible: false,
   headerLeft: () => null,
   headerTransparent: platform.isIOS,

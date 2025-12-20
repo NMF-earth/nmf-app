@@ -7,7 +7,6 @@ import { Colors, Font } from "style";
 
 const navigationOptions = (): NativeStackNavigationOptions => ({
   title: t("ADD_EMISSION_SCREEN_TITLE"),
-  headerTitleAlign: "center",
   headerBackButtonDisplayMode: "minimal",
   headerTintColor: Colors.grey100,
   headerRight: () => <InfoButton />,

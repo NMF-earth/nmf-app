@@ -4,7 +4,6 @@ import { Colors, Font } from "style";
 
 const navigationOptions = ({ route }): NativeStackNavigationOptions => ({
   title: route?.params?.monthAndYear,
-  headerTitleAlign: "center",
   headerBackButtonDisplayMode: "minimal",
   headerTintColor: Colors.grey100,
   headerTitleStyle: {

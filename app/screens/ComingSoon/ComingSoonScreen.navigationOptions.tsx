@@ -10,7 +10,6 @@ import { navigate } from "navigation";
 
 const navigationOptions = ({ navigation }): NativeStackNavigationOptions => ({
   headerTitle: () => null,
-  headerTitleAlign: "center",
   headerBackVisible: false,
   headerLeft: () => null,
   headerTransparent: platform.isIOS,

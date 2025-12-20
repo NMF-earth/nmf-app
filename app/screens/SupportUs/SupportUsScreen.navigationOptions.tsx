@@ -5,7 +5,6 @@ import { Colors, Font } from "style";
 
 const navigationOptions = (): NativeStackNavigationOptions => ({
   title: t("SUPPORT_US_SCREEN_TITLE"),
-  headerTitleAlign: "center",
   headerTintColor: Colors.grey100,
   headerBackButtonDisplayMode: "minimal",
   headerTitleStyle: {

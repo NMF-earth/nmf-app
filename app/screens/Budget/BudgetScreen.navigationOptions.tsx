@@ -9,7 +9,6 @@ const navigationOptions: NativeStackNavigationOptions = {
   headerLargeTitleEnabled: true,
   headerTransparent: platform.isIOS,
   headerBlurEffect: platform.isIOS26OrLater() ? undefined : "regular",
-  headerTitleAlign: "center",
   headerBackButtonDisplayMode: "minimal",
   headerTintColor: Colors.grey100,
   headerLargeTitleStyle: {

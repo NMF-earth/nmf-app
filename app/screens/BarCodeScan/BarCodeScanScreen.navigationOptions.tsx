@@ -5,7 +5,6 @@ import { Colors, Font } from "style";
 
 const navigationOptions = (): NativeStackNavigationOptions => ({
   title: t("BAR_CODE_SCAN_SCREEN_TITLE"),
-  headerTitleAlign: "center",
   headerBackButtonDisplayMode: "minimal",
   headerTintColor: Colors.grey100,
   headerTitleStyle: {

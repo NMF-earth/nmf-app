@@ -10,7 +10,6 @@ import { navigate } from "navigation";
 
 const navigationOptions = ({ navigation }): NativeStackNavigationOptions => ({
   title: t("PERIODICITY_MODAL_SCREEN_TITLE"),
-  headerTitleAlign: "center",
   headerBackVisible: false,
   headerLeft: () => null,
   headerTransparent: platform.isIOS,

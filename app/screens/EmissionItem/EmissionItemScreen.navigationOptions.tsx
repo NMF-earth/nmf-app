@@ -20,7 +20,6 @@ const navigationOptions = (prop): NativeStackNavigationOptions => {
     title: isRecurringEmission
       ? t("EMISSION_ITEM_SCREEN_RECURRING_EMISSION")
       : t("EMISSION_ITEM_SCREEN_EMISSION"),
-    headerTitleAlign: "center",
     headerBackButtonDisplayMode: "minimal",
     headerTintColor: Colors.grey100,
     headerRight: () => (showInfoButton ? <InfoButton /> : null),

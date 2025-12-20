@@ -85,7 +85,6 @@ const ActTabNavigator: NavStatelessComponent = () => (
 
 const navigationOptions = (): NativeStackNavigationOptions => ({
   title: t("ACT_SCREEN_TITLE"),
-  headerTitleAlign: "center",
   headerBackButtonDisplayMode: "minimal",
   headerTintColor: Colors.grey100,
   headerTitleStyle: {
