@@ -1,11 +1,11 @@
 import React from "react";
 import { StyleSheet, TouchableOpacity, View } from "react-native";
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
-import { StackNavigationOptions } from "@react-navigation/stack";
+import { NativeStackNavigationOptions } from "@react-navigation/native-stack";
 
 import { Text } from "components";
 import { t } from "utils";
-import { ComponentsStyle, Colors, Font } from "style";
+import { Colors, Font } from "style";
 import { NavStatelessComponent } from "interfaces";
 
 import { GuideCategory } from "../../../types/guide";
@@ -83,13 +83,14 @@ const ActTabNavigator: NavStatelessComponent = () => (
   </Tab.Navigator>
 );
 
-const navigationOptions = (): StackNavigationOptions => ({
-  ...ComponentsStyle.transitionBetweenScreenPresets,
-  headerStyle: {
-    ...ComponentsStyle.header,
-  },
+const navigationOptions = (): NativeStackNavigationOptions => ({
+  title: t("ACT_SCREEN_TITLE"),
   headerBackButtonDisplayMode: "minimal",
-  headerTitle: () => <Text.H1>{t("ACT_SCREEN_TITLE")}</Text.H1>,
+  headerTintColor: Colors.grey100,
+  headerTitleStyle: {
+    fontFamily: Font.FontWeight.Bold,
+    fontSize: Font.FontSize.Header,
+  },
 });
 
 ActTabNavigator.navigationOptions = navigationOptions();

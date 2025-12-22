@@ -1,20 +1,16 @@
-import React from "react";
-import { StackNavigationOptions } from "@react-navigation/stack";
+import { NativeStackNavigationOptions } from "@react-navigation/native-stack";
 
-import { Text } from "components";
 import { t } from "utils";
-import { Layout, Colors, ComponentsStyle } from "style";
+import { Colors, Font } from "style";
 
-const navigationOptions = (): StackNavigationOptions => ({
-  ...ComponentsStyle.transitionBetweenScreenPresets,
-  headerStyle: {
-    ...ComponentsStyle.header,
-  },
+const navigationOptions = (): NativeStackNavigationOptions => ({
+  title: t("ABOUT_SCREEN_TITLE"),
   headerTintColor: Colors.grey100,
   headerBackButtonDisplayMode: "minimal",
-  headerTitle: () => (
-    <Text.Header style={Layout.androidNavTitle}>{t("ABOUT_SCREEN_TITLE")}</Text.Header>
-  ),
+  headerTitleStyle: {
+    fontFamily: Font.FontWeight.Bold,
+    fontSize: Font.FontSize.Header,
+  },
 });
 
 export default navigationOptions;

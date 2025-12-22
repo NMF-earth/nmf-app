@@ -1,5 +1,5 @@
 import React from "react";
-import { createStackNavigator } from "@react-navigation/stack";
+import { createStackNavigator, StackNavigationOptions } from "@react-navigation/stack";
 
 import PeriodicityModalScreen from "../../screens/Periodicity";
 
@@ -9,7 +9,7 @@ const PeriodicityModalNavigator = (): React.ReactElement => (
   <Stack.Navigator id="PeriodicityModalStack">
     <Stack.Screen
       name="PeriodicityModal"
-      options={PeriodicityModalScreen.navigationOptions}
+      options={PeriodicityModalScreen.navigationOptions as StackNavigationOptions}
       component={PeriodicityModalScreen}
     />
   </Stack.Navigator>

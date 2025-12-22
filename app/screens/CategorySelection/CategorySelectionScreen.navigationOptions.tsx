@@ -1,18 +1,23 @@
-import React from "react";
-import { StackNavigationOptions } from "@react-navigation/stack";
 
-import { Text } from "components";
-import { t } from "utils";
-import { Colors, ComponentsStyle } from "style";
+import { NativeStackNavigationOptions } from "@react-navigation/native-stack";
 
-const navigationOptions = (): StackNavigationOptions => ({
-  ...ComponentsStyle.transitionBetweenScreenPresets,
-  headerStyle: {
-    ...ComponentsStyle.header,
-  },
+import { platform, t } from "utils";
+import { Colors, Font } from "style";
+
+const navigationOptions = (): NativeStackNavigationOptions => ({
+  title: t("CATEGORY_SELECTION_SCREEN_TITLE"),
+  headerLargeTitleEnabled: true,
+  headerTransparent: platform.isIOS,
+  headerBlurEffect: platform.isIOS26OrLater() ? undefined : "regular",
   headerBackButtonDisplayMode: "minimal",
   headerTintColor: Colors.grey100,
-  headerTitle: () => <Text.H1>{t("CATEGORY_SELECTION_SCREEN_TITLE")}</Text.H1>,
+  headerLargeTitleStyle: {
+    fontFamily: Font.FontWeight.Black,
+  },
+  headerTitleStyle: {
+    fontFamily: Font.FontWeight.Bold,
+    fontSize: Font.FontSize.Header,
+  },
 });
 
 export default navigationOptions;

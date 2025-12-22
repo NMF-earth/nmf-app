@@ -1,16 +1,15 @@
-import React from "react";
-import { StackNavigationOptions } from "@react-navigation/stack";
+import { NativeStackNavigationOptions } from "@react-navigation/native-stack";
 
-import { Text } from "components";
 import { t } from "utils";
-import { ComponentsStyle } from "style";
+import { Font } from "style";
 
-const navigationOptions = (): StackNavigationOptions => ({
-  headerStyle: {
-    ...ComponentsStyle.header,
-  },
+const navigationOptions = (): NativeStackNavigationOptions => ({
+  title: t("ACT_SCREEN_TITLE"),
   headerBackButtonDisplayMode: "minimal",
-  headerTitle: () => <Text.H1>{t("ACT_SCREEN_TITLE")}</Text.H1>,
+  headerTitleStyle: {
+    fontFamily: Font.FontWeight.Bold,
+    fontSize: Font.FontSize.Header,
+  },
 });
 
 export default navigationOptions;

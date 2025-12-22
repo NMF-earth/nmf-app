@@ -64,11 +64,9 @@ const BottomTabNavigator = (): React.ReactElement => {
         options={AddEmissionOptions}
         component={AddEmissionNavigator}
       />
-      <BottomTab.Screen
-        name="Act"
-        options={ActOptions}
-        component={ActNavigator}
-      />
+      {__DEV__ && (
+        <BottomTab.Screen name="Act" options={ActOptions} component={ActNavigator} />
+      )}
       <BottomTab.Screen
         name="SettingsNavigator"
         options={SettingsOptions}

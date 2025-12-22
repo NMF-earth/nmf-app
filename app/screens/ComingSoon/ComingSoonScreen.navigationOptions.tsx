@@ -1,43 +1,34 @@
 import React from "react";
 import { TouchableOpacity } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { StackNavigationOptions } from "@react-navigation/stack";
+import { NativeStackNavigationOptions } from "@react-navigation/native-stack";
 
-import { Layout } from "constant";
 import { platform } from "utils";
-import { Colors, ComponentsStyle } from "style";
+import { Colors, Font } from "style";
 import { navigate } from "navigation";
 
-const iconStyle = { paddingRight: Layout.PADDING_HORIZONTAL };
 
-const navigationOptionsAndroid = (): StackNavigationOptions => ({
-  ...ComponentsStyle.transitionBetweenScreenPresets,
-  headerStyle: {
-    ...ComponentsStyle.header,
-  },
+const navigationOptions = ({ navigation }): NativeStackNavigationOptions => ({
   headerTitle: () => null,
-  headerRight: () => null,
-});
-
-const navigationOptionsIOS = ({ navigation }): StackNavigationOptions => ({
-  headerStyle: {
-    ...ComponentsStyle.header,
-    borderBottomWidth: 0,
-  },
-  headerTitle: () => null,
+  headerBackVisible: false,
   headerLeft: () => null,
-  headerRight: () => (
-    <TouchableOpacity
-      style={iconStyle}
-      onPress={() => {
-        navigate(navigation).goBack();
-      }}
-    >
-      <Ionicons name="close" size={32} color={Colors.grey100} />
-    </TouchableOpacity>
-  ),
+  headerTransparent: platform.isIOS,
+  headerBlurEffect: platform.isIOS26OrLater() ? undefined : "regular",
+  headerRight: platform.isIOS
+    ? () => (
+      <TouchableOpacity
+        onPress={() => {
+          navigate(navigation).goBack();
+        }}
+      >
+        <Ionicons name="close" size={32} color={Colors.grey100} />
+      </TouchableOpacity>
+    )
+    : undefined,
+  headerTitleStyle: {
+    fontFamily: Font.FontWeight.Bold,
+    fontSize: Font.FontSize.Header,
+  },
 });
-
-const navigationOptions = platform.isAndroid ? navigationOptionsAndroid : navigationOptionsIOS;
 
 export default navigationOptions;

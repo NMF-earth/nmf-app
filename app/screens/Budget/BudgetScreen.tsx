@@ -97,6 +97,6 @@ const BudgetScreen: NavStatelessComponent = () => {
   );
 };
 
-BudgetScreen.navigationOptions = navigationOptions();
+BudgetScreen.navigationOptions = navigationOptions;
 
 export default BudgetScreen;
