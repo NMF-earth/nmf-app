@@ -33,8 +33,13 @@ const ActDetailScreen: NavStatelessComponent = () => {
       <HTML
         source={{ html: body }}
         contentWidth={contentWidth}
-        onLinkPress={ui.onHTMLBodyLinkPress}
-        baseFontStyle={baseFontStyle}
+        baseStyle={baseFontStyle}
+        tagsStyles={{ a: styles.linkStyle }}
+        renderersProps={{
+          a: {
+            onPress: ui.onHTMLBodyLinkPress,
+          },
+        }}
         renderers={{
           img: (attribs) => {
             // eslint-disable-next-line @typescript-eslint/ban-ts-comment

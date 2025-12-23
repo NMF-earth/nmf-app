@@ -13,12 +13,19 @@ exports[`InfoModalScreen renders correctly 1`] = `
   }
 >
   <HTML
-    baseFontStyle={
+    baseStyle={
       {
         "fontSize": 18,
       }
     }
-    onLinkPress={[Function]}
+    contentWidth={375}
+    renderersProps={
+      {
+        "a": {
+          "onPress": [Function],
+        },
+      }
+    }
     source={
       {
         "html": "<h1>How is your carbon footprint calculated?</h1>
@@ -43,6 +50,14 @@ exports[`InfoModalScreen renders correctly 1`] = `
 <p><strong>GHGdevice</strong> = duration <em>x</em> FactorDevice <em>x</em> electricity[carbonElectricityIntensity];</p>
 <p><em>GHG : greenhouse gases</em></p>
 ",
+      }
+    }
+    tagsStyles={
+      {
+        "a": {
+          "color": "#0F853B",
+          "textDecorationLine": "underline",
+        },
       }
     }
   />
