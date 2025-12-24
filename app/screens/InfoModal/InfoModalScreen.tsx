@@ -1,10 +1,12 @@
 import React from "react";
-import { ScrollView } from "react-native";
+import { ScrollView, StyleSheet } from "react-native";
 import { useRoute } from "@react-navigation/native";
 import HTML from "react-native-render-html";
 
 import { ui } from "utils";
 import { NavStatelessComponent } from "interfaces";
+import { Layout } from "constant";
+import { Colors } from "style";
 
 import styles from "./InfoModalScreen.styles";
 import navigationOptions from "./InfoModal.navigationOptions";
@@ -12,6 +14,12 @@ import methodology from "../../../assets/methodology/methodology.json";
 import emissionInfo from "../../../assets/emission-info/emission-info.json";
 
 const InfoModalScreen: NavStatelessComponent = () => {
+  const linkStyle = StyleSheet.create({
+    a: {
+      color: Colors.primary,
+      textDecorationLine: "underline",
+    },
+  });
   const route = useRoute();
 
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
@@ -32,7 +40,17 @@ const InfoModalScreen: NavStatelessComponent = () => {
       style={styles.container}
       contentInsetAdjustmentBehavior="automatic"
     >
-      <HTML source={{ html }} onLinkPress={ui.onHTMLBodyLinkPress} baseFontStyle={styles.text} />
+      <HTML
+        source={{ html }}
+        contentWidth={Layout.screen.width}
+        baseStyle={styles.text}
+        tagsStyles={linkStyle}
+        renderersProps={{
+          a: {
+            onPress: ui.onHTMLBodyLinkPress,
+          },
+        }}
+      />
     </ScrollView>
   );
 };
