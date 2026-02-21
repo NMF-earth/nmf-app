@@ -1,7 +1,7 @@
 //TODO: check if this import is needed, since secrets are in eas, it might not be the case
 import "dotenv/config";
 
-const buildNumber = 51;
+const buildNumber = 52;
 
 module.exports = () => {
   return {
@@ -23,7 +23,7 @@ module.exports = () => {
     slug: "not-my-fault-earth",
     privacy: "public",
     platforms: ["ios", "android"],
-    version: "0.10.1",
+    version: "0.11.0",
     orientation: "portrait",
     splash: {
       image: "./assets/images/splash.png",
