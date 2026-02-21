@@ -1,7 +1,7 @@
 import React from "react";
 import { ScrollView, StyleSheet } from "react-native";
 import { useRoute } from "@react-navigation/native";
-import HTML from "react-native-render-html";
+import { RenderHTML } from "@native-html/render";
 
 import { ui } from "utils";
 import { NavStatelessComponent } from "interfaces";
@@ -18,6 +18,7 @@ const InfoModalScreen: NavStatelessComponent = () => {
     a: {
       color: Colors.primary,
       textDecorationLine: "underline",
+      textDecorationColor: Colors.primary,
     },
   });
   const route = useRoute();
@@ -40,7 +41,7 @@ const InfoModalScreen: NavStatelessComponent = () => {
       style={styles.container}
       contentInsetAdjustmentBehavior="automatic"
     >
-      <HTML
+      <RenderHTML
         source={{ html }}
         contentWidth={Layout.screen.width}
         baseStyle={styles.text}

@@ -9,5 +9,6 @@ export default StyleSheet.create({
   linkStyle: {
     color: Colors.primary,
     textDecorationLine: "underline",
+    textDecorationColor: Colors.primary,
   },
 });

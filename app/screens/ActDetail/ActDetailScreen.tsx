@@ -1,7 +1,7 @@
 import React from "react";
 import { ScrollView, useWindowDimensions } from "react-native";
 import { useRoute } from "@react-navigation/native";
-import HTML from "react-native-render-html";
+import { RenderHTML } from "@native-html/render";
 
 import { HTMLImage } from "components";
 import { ui } from "utils";
@@ -30,7 +30,7 @@ const ActDetailScreen: NavStatelessComponent = () => {
       contentInsetAdjustmentBehavior="automatic"
       contentContainerStyle={{ paddingBottom: paddingBottom }}
     >
-      <HTML
+      <RenderHTML
         source={{ html: body }}
         contentWidth={contentWidth}
         baseStyle={baseFontStyle}
