@@ -29,10 +29,12 @@ jest.mock("react-redux", () => {
   };
 });
 
-jest.mock("react-native-render-html", () => {
+jest.mock("@native-html/render", () => {
   const createMock = require("../../utils").createMock;
 
-  return createMock("HTML");
+  return {
+    RenderHTML: createMock("RenderHTML"),
+  };
 });
 
 jest.mock("react-native-keyboard-aware-scroll-view", () => {
