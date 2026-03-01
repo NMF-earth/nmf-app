@@ -4,6 +4,7 @@ import { useNavigation } from "@react-navigation/native";
 
 import { t } from "utils";
 import { navigate } from "navigation";
+import { useTabBarBottomPadding } from "hooks/useTabBarBottomPadding";
 
 import Text from "../Text";
 import StickersImage from "../StickersImage";
@@ -13,9 +14,14 @@ import styles from "./NoEmission.styles";
 const NoEmission: React.FC = () => {
   const navigation = useNavigation();
   const navigator = navigate(navigation);
+  const bottomPadding = useTabBarBottomPadding();
 
   return (
-    <ScrollView style={styles.container} contentInsetAdjustmentBehavior="automatic">
+    <ScrollView
+      style={styles.container}
+      contentInsetAdjustmentBehavior="automatic"
+      contentContainerStyle={{ paddingBottom: bottomPadding }}
+    >
       <StickersImage sticker="earth" />
       <View style={styles.textView}>
         <Text.H1 style={styles.header}>{t("NO_EMISSION_COMPONENT_TITLE")}</Text.H1>
