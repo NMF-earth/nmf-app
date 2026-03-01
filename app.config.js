@@ -17,9 +17,14 @@ module.exports = () => {
           "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone",
           "recordAudioAndroid": true
         }
-      ]
+      ],
+      "@react-native-community/datetimepicker",
+      ["@sentry/react-native/expo", {
+        "organization": process.env.SENTRY_ORG || "nmf",
+        "project": process.env.SENTRY_PROJECT || "nmf-earth",
+      }],
+      "expo-sharing"
     ],
-    newArchEnabled: true,
     slug: "not-my-fault-earth",
     privacy: "public",
     platforms: ["ios", "android"],
@@ -34,7 +39,6 @@ module.exports = () => {
       fallbackToCacheTimeout: 0,
     },
     assetBundlePatterns: ["**/*"],
-    jsEngine: "hermes",
     ios: {
       icon: "./assets/images/ios.icon.png",
       bundleIdentifier: "nmf.earth",
@@ -46,21 +50,14 @@ module.exports = () => {
       package: "nmf.earth",
       versionCode: buildNumber,
     },
-    hooks: {
-      postPublish: [
-        {
-          file: "sentry-expo/upload-sourcemaps",
-          config: {
-            organization: "nmf",
-            project: "nmf-earth",
-          },
-        },
-      ],
-    },
+
     extra: {
       eas: {
         projectId: "9e1873d6-966a-49a3-83bc-10254ac6fb27"
       }
+    },
+    experiments: {
+      reactCompiler: true
     }
   };
 };
