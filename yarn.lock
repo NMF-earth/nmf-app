@@ -4195,10 +4195,10 @@ expo-modules-core@55.0.13:
   dependencies:
     invariant "^2.2.4"
 
-expo-notifications@~55.0.10:
-  version "55.0.10"
-  resolved "https://registry.yarnpkg.com/expo-notifications/-/expo-notifications-55.0.10.tgz#7e0e27d9a1168fa01cd1b90009b7396a56de7825"
-  integrity sha512-F+ozrVFthKCwfqz2cXmcqrqwzBMTAwoNBqTZERuFtgc+6I++mweVzLLTtbAy8kBDZ33MA13GKyeq7mw13/rDgw==
+expo-notifications@~55.0.11:
+  version "55.0.11"
+  resolved "https://registry.yarnpkg.com/expo-notifications/-/expo-notifications-55.0.11.tgz#659c861b5ecb81de07fa21cad483e3cf3b970362"
+  integrity sha512-nx9OIx0qJh6HWKW2Jq8uF365q56eDFcAnDMMKOpA3eEFhBy6IzTJNrq9AGdOoylWI4OeVW0Z6wxEXPZOan+9VA==
   dependencies:
     "@expo/image-utils" "^0.8.12"
     abort-controller "^3.0.0"
