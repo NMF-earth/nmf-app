@@ -32,7 +32,7 @@ exports[`EmissionsScreen renders correctly 1`] = `
       {
         "data": [
           {
-            "co2value": 20,
+            "co2value": 17.9,
             "creationDate": "2020-03-01T12:08:16.623Z",
             "emissionModelType": "beans",
             "emissionType": "food",
@@ -61,7 +61,7 @@ exports[`EmissionsScreen renders correctly 1`] = `
       {
         "data": [
           {
-            "co2value": 60,
+            "co2value": 53.7,
             "creationDate": "2020-01-01T12:08:16.623Z",
             "emissionModelType": "beans",
             "emissionType": "food",
@@ -126,7 +126,7 @@ exports[`EmissionsScreen renders correctly if only normal emissions 1`] = `
       {
         "data": [
           {
-            "co2value": 20,
+            "co2value": 17.9,
             "creationDate": "2020-03-01T12:08:16.623Z",
             "emissionModelType": "beans",
             "emissionType": "food",
@@ -155,7 +155,7 @@ exports[`EmissionsScreen renders correctly if only normal emissions 1`] = `
       {
         "data": [
           {
-            "co2value": 60,
+            "co2value": 53.7,
             "creationDate": "2020-01-01T12:08:16.623Z",
             "emissionModelType": "beans",
             "emissionType": "food",

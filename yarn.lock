@@ -2995,10 +2995,10 @@ caniuse-lite@^1.0.30001759:
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001775.tgz#9572266e3f7f77efee5deac1efeb4795879d1b7f"
   integrity sha512-s3Qv7Lht9zbVKE9XoTyRG6wVDCKdtOFIjBGg3+Yhn6JaytuNKPIjBMTMIY1AnOH3seL5mvF+x33oGAyK3hVt3A==
 
-carbon-footprint@1.6.0:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/carbon-footprint/-/carbon-footprint-1.6.0.tgz#56fd264388054972431a9b8e3adf3e827bd52ee3"
-  integrity sha512-8AUQ5UhtBIo9gRevI6h9wHrQ5ur1Y/bujbID49aPRNByr82WecI3opuOwk1Yz6GEnv/g7AvpC86LS+WsvA8rdQ==
+carbon-footprint@1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/carbon-footprint/-/carbon-footprint-1.7.0.tgz#fa4e697126780e5458b74626611d93121bbb3ee3"
+  integrity sha512-DfMxNOLjeHsknUr9Rp/7+UVF1NQqQ7AbXULKirqXt6/P/qk620gBg6SN5XxCI1xlEAoX1QsHQZEhxmVIae/03Q==
 
 chalk@^2.0.1, chalk@^2.4.2:
   version "2.4.2"
@@ -4093,6 +4093,11 @@ expo-application@~55.0.8:
   resolved "https://registry.yarnpkg.com/expo-application/-/expo-application-55.0.8.tgz#5e216efde0f414d2bb8b3989d47151ba75c461ef"
   integrity sha512-PeZk4Zj8LlzRcRtK3J4ouSPBoi9lroYsRbbz/0HEvx+uB6HIaM1qfzgpcctvjkdJJfnidBQNyieW5BVO/qUQ6w==
 
+expo-application@~55.0.9:
+  version "55.0.9"
+  resolved "https://registry.yarnpkg.com/expo-application/-/expo-application-55.0.9.tgz#ed5c8755014f94114d98222b8ba3a1b31b0134e8"
+  integrity sha512-jXTaLKdW4cvGSUjF2UQed9ao4P/7TsEo/To7TjxM+jNa74xCSUCBSTxdQftm6hZWRzXG8KT7rSoQDEL51neh1w==
+
 expo-asset@~55.0.8:
   version "55.0.8"
   resolved "https://registry.yarnpkg.com/expo-asset/-/expo-asset-55.0.8.tgz#17622c3b19a4ab51a962608492b935f8c8637bb1"
@@ -4195,15 +4200,15 @@ expo-modules-core@55.0.13:
   dependencies:
     invariant "^2.2.4"
 
-expo-notifications@~55.0.11:
-  version "55.0.11"
-  resolved "https://registry.yarnpkg.com/expo-notifications/-/expo-notifications-55.0.11.tgz#659c861b5ecb81de07fa21cad483e3cf3b970362"
-  integrity sha512-nx9OIx0qJh6HWKW2Jq8uF365q56eDFcAnDMMKOpA3eEFhBy6IzTJNrq9AGdOoylWI4OeVW0Z6wxEXPZOan+9VA==
+expo-notifications@~55.0.12:
+  version "55.0.12"
+  resolved "https://registry.yarnpkg.com/expo-notifications/-/expo-notifications-55.0.12.tgz#c59df9e6edd40ebe61ccf8b918fcdc3ddff2b2d6"
+  integrity sha512-AUAH1ipq7yChZqwp9P/gfmXNoaleKWvEhnIB6/dhtWtTnZZ5VDHdxqzQIbTemYQyIK6kpUc4JZpR9eU3d59K3g==
   dependencies:
     "@expo/image-utils" "^0.8.12"
     abort-controller "^3.0.0"
     badgin "^1.1.5"
-    expo-application "~55.0.8"
+    expo-application "~55.0.9"
     expo-constants "~55.0.7"
 
 expo-server@^55.0.6:

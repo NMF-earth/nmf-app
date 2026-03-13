@@ -13,7 +13,7 @@ exports[`<MonthlyEmissions /> render 1`] = `
             "key": null,
             "props": {
               "bold": true,
-              "children": "20.08 kgCO2eq",
+              "children": "17.98 kgCO2eq",
               "darkGray": true,
             },
             "type": [Function],
@@ -22,7 +22,7 @@ exports[`<MonthlyEmissions /> render 1`] = `
             "$$typeof": Symbol(react.transitional.element),
             "key": null,
             "props": {
-              "children": "10 % of budget",
+              "children": "9 % of budget",
               "green": true,
               "orange": false,
             },
@@ -61,7 +61,7 @@ exports[`<MonthlyEmissions /> render 1`] = `
   data={
     [
       {
-        "co2value": 20,
+        "co2value": 17.9,
         "creationDate": "2020-03-01T12:08:16.623Z",
         "emissionModelType": "beans",
         "emissionType": "food",
